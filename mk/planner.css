@@ -1,0 +1,238 @@
+html {
+  font-size: calc(10px + (18 - 10) * ((100vw - 300px) / (1600 - 300)));
+  font-family: 'Helvetica', 'Arial', sans-serif;
+}
+
+body {
+  padding: 0.5rem;
+  margin: 0;
+}
+
+.form-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.form-container fieldset {
+  flex: 1 1 auto;
+  margin: 0.5rem;
+}
+
+/*
+ green : 28501f 3b7b2b 5db552 72cf6c
+ blue  : 182a3b 285d8a 448bd1 7ac1eb
+ purple: 522c60 75338d 8d42a1 d386d4
+ gold  : 644625 ae5b21 e0bb50 f6db79
+ gray  : 1d2231 3a4361 485363 638ad3
+*/
+
+.top-bar {
+  display: flex;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border-radius: 0.5rem;
+  background: #0a1d44;
+  color: #fcfcfd;
+}
+
+.top-bar .left {
+  flex-grow: 1;
+}
+
+.top-bar .right {
+  width: 15rem; 
+  font-size: 1rem;
+  text-align: right;
+  align-self: center;
+}
+
+div.green  .highlight { text-decoration: solid underline #3b7b2b 0.15rem; }
+div.blue   .highlight { text-decoration: solid underline #285d8a 0.15rem; }
+div.purple .highlight { text-decoration: solid underline #75338d 0.15rem; }
+div.gold   .highlight { text-decoration: solid underline #ae5b21 0.15rem; }
+div.gold2  .highlight { text-decoration: double underline #ae5b21 0.1rem; }
+div.gray   .highlight { text-decoration: solid underline #3a4361 0.15rem; }
+
+div.green:hover  .highlight { background-color: #72cf6c; }
+div.blue:hover   .highlight { background-color: #7ac1eb; }
+div.purple:hover .highlight { background-color: #d386d4; }
+div.gold:hover   .highlight { background-color: #f6db79; }
+div.gold2:hover  .highlight { background-color: #f6db79; }
+div.gray:hover   .highlight { background-color: #638ad3; }
+
+div.green, div.blue, div.purple, div.gold, div.gray {
+  border-radius: 0.5rem;
+  border: 0.1rem solid;
+}
+div.gold2, div.gold3 {
+  border-radius: 0.5rem;
+  border: 0.3rem double;
+}
+
+div.green  { border-color: #5db55200; }
+div.blue   { border-color: #448bd100; }
+div.purple { border-color: #8d42a100; }
+div.gold   { border-color: #e0bb5000; }
+div.gold2  { border-color: #e0bb5000; }
+div.gray   { border-color: #48536300; }
+
+div.green:hover  { border-color: #5db552; }
+div.blue:hover   { border-color: #448bd1; }
+div.purple:hover { border-color: #8d42a1; }
+div.gold:hover   { border-color: #e0bb50; }
+div.gray:hover   { border-color: #485363; }
+div.gold2:hover {
+  border-color: #e0bb50; 
+  background: linear-gradient(45deg, #f6db794B, #ffffff4B 50%, #f6db794B);
+}
+
+div.green:focus-within { background: #72cf6c; }
+div.blue:focus-within { background: #7ac1eb; }
+div.purple:focus-within { background: #d386d4; }
+div.gold:focus-within { background: #f6db79; }
+div.gray:focus-within { background: #638ad3; }
+div.gold2:focus-within  { background: linear-gradient(45deg, #f6db79, white 50%, #f6db79); }
+
+div.line input[type="number"] {
+  outline: none;
+  padding: 0.1rem;
+  font-weight: bold;
+  border-radius: 0.3rem;
+  border: 0.15rem solid;
+}
+
+div.line input[readonly="readonly"] {
+  font-weight: bold;
+  background-color: #b2c9fa;
+  border: 0.1rem solid;
+}
+
+div.line span.output {
+  display: inline-block;
+  padding: 0.1rem;
+  font-weight: bold;
+  border-radius: 0.3rem;
+  border: 0.1rem dashed;
+}
+
+div.green  input[type="number"] { border-color: #3b7b2b; }
+div.blue   input[type="number"] { border-color: #285d8a; }
+div.purple input[type="number"] { border-color: #75338d; }
+div.gold   input[type="number"] { border-color: #ae5b21; }
+div.gold2  input[type="number"] { border-color: #ae5b21; }
+div.gray   input[type="number"] { border-color: #3a4361; }
+div.green  span.output { border-color: #3b7b2b; }
+div.blue   span.output { border-color: #285d8a; }
+div.purple span.output { border-color: #75338d; }
+div.gold   span.output { border-color: #ae5b21; }
+div.gold2  span.output { border-color: #ae5b21; }
+div.gray   span.output { border-color: #3a4361; }
+
+input[type="checkbox"] { width: 1rem; height: 1rem; }
+div.green  input[type="checkbox"] { accent-color: #3b7b2b; }
+div.blue   input[type="checkbox"] { accent-color: #285d8a; }
+div.purple input[type="checkbox"] { accent-color: #75338d; }
+div.gold   input[type="checkbox"] { accent-color: #ae5b21; }
+div.gold2  input[type="checkbox"] { accent-color: #ae5b21; }
+dlv.gray   input[type="checkbox"] { accent-color: #3a4361; }
+
+fieldset { padding: 0.2rem; }
+fieldset div.line { padding: 0.5rem; }
+fieldset div.line.gold2 { padding: 0.3rem; }
+fieldset div.line label { display: inline-block; width: 18rem; }
+
+#magic-upgrade-form div.line label { width: 16rem; }
+
+input[type="number"] { padding: 0.1rem; width: 4.5rem; }
+input.narrow[type="number"] { width: 2.5rem !important; }
+input.wide[type="number"]   { width: 7.5rem !important; }
+
+span.output { padding: 0.1rem; width: 4.3rem; }
+span.output.narrow { width: 2.3rem !important; }
+span.output.wide { width: 7.3rem !important; }
+
+.collapsible-toggle {
+  display: flex;
+  padding: 0;
+
+  border-radius: 0.5rem 0.5rem 0 0;
+
+  background: #6884bd;
+  color: #fcfcfd;
+}
+
+.collapsible-toggle button.left {
+  border-radius: 0.5rem 0 0 0;
+  border-color: transparent;
+
+  background: #6884bd;
+  color: #fcfcfd;
+}
+
+.collapsible-content {
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border-radius: 0 0 0.5rem 0.5rem;
+  background: linear-gradient(to bottom, #afc0ce, #e5eefd 150px, #e5eefd); 
+}
+
+.collapsible-content.collapsed {
+  height: 0;
+  overflow: hidden;
+}
+
+.collapsible-toggle button.left {
+  flex-grow: 1;
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform:capitalize;
+  cursor: pointer;
+  text-align: left;
+  outline: none;
+}
+
+.collapsible-toggle .right {
+  width: 15rem; 
+  padding: 0.5rem;
+  text-align: right;
+  align-self: center;
+  font-size: 1rem;
+}
+
+.points {
+  font-weight: bold;
+}
+
+.error {
+  background-color:#ffecc2;
+  color: red;
+}
+
+div.help-box {
+  display:block;
+  margin-top: 0.5rem;
+  background-color:#ffecc2;
+  border-radius:0.5rem;
+  border:solid 0.1rem #b69b60;
+  padding: 0.5rem;
+}
+
+div.help-box p {
+  margin: 0 0 0.5rem 0;
+}
+
+div.help-box.shrunk {
+  max-height: 0.3rem;
+  overflow: hidden;
+}
+
+.help-box kbd:before {
+ content: open-quote;
+}
+ 
+.help-box kbd:after {
+ content: close-quote;
+}

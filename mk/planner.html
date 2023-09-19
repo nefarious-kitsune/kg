@@ -1,0 +1,481 @@
+<html>
+<head>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mightiest Kingdom Planner - Why</title>
+  <link href="planner.css" rel="stylesheet" />
+  <script src="planner.js"></script>
+  <script src="planner-unit-talent.js"></script>
+  <script src="planner-dragon.js"></script>
+  <script src="planner-blacksmith.js"></script>
+  <script src="planner-magic.js"></script>
+  <script src="planner-lab.js"></script>
+  <script src="planner-hero.js"></script>
+</head>
+<body>
+
+<h1>Mightiest Kingdom Upgrade Planner</h1>
+
+<p><a href="faq.html">FAQ about this tool</a></p>
+
+<div class="top-bar">
+  <div class="left">Version 0.5.1. Made by [S819][ASM] Kitsune21</div>
+  <div class="right">MK: <span id="total-upgrade-points" class="points">0</span> pts</div>
+</div>
+
+<div class="collapsible-toggle">
+  <button class="left" type="button" onclick="toggleCollapsible('unit-talent-upgrade-content')">Unit Talent Upgrade Plan</button>
+  <div class="right">MK: <span id="unit-talent-upgrade-points" class="points">0</span> pts</div>
+</div>
+<div class="collapsible-content collapsed" id="unit-talent-upgrade-content">
+  <div class="help-box" onclick="this.classList.toggle('shrunk')">
+    <p>In the left panel, enter what <strong>Unit Talent</strong> upgrades you
+    plan to do and quantity of available resources.
+    Small upgrades require Master Talent Book, while
+    big upgrades require Master Talent Book and Crown of Oracle.</p>
+    <p>The right panel will show the result. If you do not have enough
+    resources to do the planned upgrades, the right panel will show
+    red text.</p>
+  </div>
+
+  <form class="form-container" id="unit-talent-upgrade-form">
+    <fieldset class="form-section before-content">
+      <legend>Before</legend>
+      <div class="line blue">
+        <label for="T6UnitTalentUpgradeSmall">Planned <span class="highlight">T6 small</span> upgrade</label>
+        <input id="T6UnitTalentUpgradeSmall" type="number" min="0" max="192" value="0" step="1">
+      </div>
+      <div class="line blue">
+        <label for="T6UnitTalentUpgradeBig">Planned <span class="highlight">T6 big</span> upgrade</label>
+        <input id="T6UnitTalentUpgradeBig" type="number" min="0" max="24" value="0" step="1">
+      </div>
+      <div class="line purple">
+        <label for="T7UnitTalentUpgradeSmall">Planned <span class="highlight">T7 small</span> upgrade</label>
+        <input id="T7UnitTalentUpgradeSmall" type="number" min="0" max="192" value="11" step="1">
+      </div>
+      <div class="line purple">
+        <label for="T7UnitTalentUpgradeBig">Planned <span class="highlight">T7 big</span> upgrade</label>
+        <input id="T7UnitTalentUpgradeBig" type="number" min="0" max="24" value="2" step="1">
+      </div>
+      <div class="line gold">
+        <label for="T8UnitTalentUpgradeSmall">Planned <span class="highlight">T8 small</span> upgrade</label>
+        <input id="T8UnitTalentUpgradeSmall" type="number" min="0" max="192" value="48" step="1">
+      </div>
+      <div class="line gold">
+        <label for="T8UnitTalentUpgradeBig">Planned <span class="highlight">T8 big</span> upgrade</label>
+        <input id="T8UnitTalentUpgradeBig" type="number" min="0" max="24" value="6" step="1">
+      </div>
+      <div class="line gold2">
+        <label for="T9UnitTalentUpgradeSmall">Planned <span class="highlight">T9 small</span> upgrade</label>
+        <input id="T9UnitTalentUpgradeSmall" type="number" min="0" max="192" value="0" step="1">
+      </div>
+      <div class="line gold2">
+        <label for="T9UnitTalentUpgradeBig">Planned <span class="highlight">T9 big</span> upgrade</label>
+        <input id="T9UnitTalentUpgradeBig" type="number" min="0" max="24" value="0" step="1">
+      </div>
+      <hr>
+      <div class="line purple">
+        <label for="TalentBookCount">Available <span class="highlight">Master Talent Book</span></label>
+        <input id="TalentBookCount" type="number" class="wide" min="0" max="9999999999" value="2508000">
+      </div>
+      <div class="line gold">
+        <label for="CrownCount">Available <span class="highlight">Crown of Oracle</span></label>
+        <input id="CrownCount" type="number" class="wide" min="0" max="9999999999" value="216328">
+      </div>
+    </fieldset>
+    <fieldset class="form-section after-content">
+      <legend>After</legend>
+      <div class="line blue">
+        <label>Max <span class="highlight">T6 small</span> upgrade possible</label>
+        <span id="MaxT6UnitTalentUpgradeSmall" class="output">2220</span>
+      </div>
+      <div class="line blue">
+        <label>Max <span class="highlight">T6 big</span> upgrade possible</label>
+        <span id="MaxT6UnitTalentUpgradeBig" class="output">379</span>
+      </div>
+
+      <div class="line purple">
+        <label>Max <span class="highlight">T7 small</span> upgrade possible</label>
+        <span id="MaxT7UnitTalentUpgradeSmall" class="output">2220</span>
+      </div>
+      <div class="line purple">
+        <label>Max <span class="highlight">T7 big</span> upgrade possible</label>
+        <span id="MaxT7UnitTalentUpgradeBig" class="output">379</span>
+      </div>
+
+      <div class="line gold">
+        <label>Max <span class="highlight">T8 small</span> upgrade possible</label>
+        <span id="MaxT8UnitTalentUpgradeSmall" class="output">2220</span>
+      </div>
+      <div class="line gold">
+        <label>Max <span class="highlight">T8 big</span> upgrade possible</label>
+        <span id="MaxT8UnitTalentUpgradeBig" class="output">379</span>
+      </div>
+
+      <div class="line gold2">
+        <label>Max <span class="highlight">T9 small</span> upgrade possible</label>
+        <span id="MaxT9UnitTalentUpgradeSmall" class="output">2220</span>
+      </div>
+      <div class="line gold2">
+        <label>Max <span class="highlight">T9 big</span> upgrade possible</label>
+        <span id="MaxT9UnitTalentUpgradeBig" class="output">379</span>
+      </div>
+
+      <hr>
+      <div class="line purple">
+        <label><span class="highlight">Master Talent Book</span> remaining</label>
+        <span id="TalentBookLeft" class="output wide">66</span>
+      </div>
+      <div class="line gold">
+        <label><span class="highlight">Crown of Oracle</span> remaining</label>
+        <span id="CrownLeft" class="output wide">4292</span>
+      </div>
+    </fieldset>
+  </form>
+</div>
+
+<div class="collapsible-toggle">
+  <button class="left" type="button" onclick="toggleCollapsible('dragon-upgrade-content')">Dragon Upgrade Plan</button>
+  <div class="right">MK: <span id="dragon-upgrade-points" class="points">0</span> pts</div>
+</div>
+<div class="collapsible-content collapsed" id="dragon-upgrade-content">
+  <div class="help-box" onclick="this.classList.toggle('shrunk')">
+    <p>In the left panel, enter your current <strong>Dragon</strong> emblem levels,
+    quantity of available resources, and how you want to use the Free-Pick
+    Dragon Runes.</p>
+
+    <p>The right panel will show the maximum upgrades you could do and
+    quantity of remaining resources.</p>
+  </div>
+  <form class="form-container" id="dragon-upgrade-form">
+    <fieldset class="form-section before-content">
+      <legend>Before</legend>
+      <div class="line green">
+        <label for="BronzeEmblemLevel">Current <span class="highlight">Bronze</span> Emblem level</label>
+        <input id="BronzeEmblemLevel" type="number" min="0" max="99999" value="2010" step="1">
+      </div>
+      <div class="line blue">
+        <label for="SilverEmblemLevel">Current <span class="highlight">Silver</span> Emblem level</label>
+        <input id="SilverEmblemLevel" type="number" min="401" max="402" value="401" step="1">
+      </div>
+      <div class="line purple">
+        <label for="GoldEmblemLevel">Current <span class="highlight">Gold</span> Emblem level</label>
+        <input id="GoldEmblemLevel" type="number" min="100" max="101" value="100" step="1">
+      </div>
+      <div class="line gold">
+        <label for="LegendaryEmblemLevel">Current <span class="highlight">Legendary</span> Emblem level</label>
+        <input id="LegendaryEmblemLevel" type="number" min="20" max="21" value="20" step="1">
+      </div>
+      <hr>
+      <div class="line green">
+        <label for="GreenRuneCount">Available <span class="highlight">Rare</span> Dragon Runes</label>
+        <input id="GreenRuneCount" type="number" min="0" value="124000">
+      </div>
+      <div class="line blue">
+        <label for="BlueRuneCount">Available <span class="highlight">Excellent</span> Dragon Runes</label>
+        <input id="BlueRuneCount" type="number" min="0" value="6600">
+      </div>
+      <div class="line purple">
+        <label for="PurpleRuneCount">Available <span class="highlight">Perfect</span> Dragon Runes</label>
+        <input id="PurpleRuneCount" type="number" min="0" value="155">
+      </div>
+      <div class="line gold">
+        <label for="GoldRuneCount">Available <span class="highlight">Epic</span> Dragon Runes</label>
+        <input id="GoldRuneCount" type="number" min="0" value="99" step="1">
+      </div>
+      <hr>
+      <div class="line gray">
+        <label for="FreeRuneCount">Available <span class="highlight">Free-Pick</span> Dragon Runes</label>
+        <input id="FreeRuneCount" type="number" min="0" value="378" step="1">
+      </div>
+      <div class="line green">
+        <label for="Exchange4Green">Exchange for <span class="highlight">Rare</span> Runes</label>
+        <input id="Exchange4Green" type="checkbox">
+      </div>
+      <div class="line blue">
+        <label for="Exchange4Blue">Exchange for <span class="highlight">Excellent</span> Runes</label>
+        <input id="Exchange4Blue" type="checkbox">
+      </div>
+      <div class="line purple">
+        <label for="Exchange4Purple">Exchange for <span class="highlight">Perfect</span> Runes</label>
+        <input id="Exchange4Purple" type="checkbox" checked="checked">
+      </div>
+      <div class="line gold">
+        <label for="Exchange4Gold">Exchange for <span class="highlight">Epic</span> Runes</label>
+        <input id="Exchange4Gold" type="checkbox" checked="checked">
+      </div>
+      
+    </fieldset>
+    <fieldset class="form-section after-content">
+      <legend>After</legend>
+      <div class="line green">
+        <label>Max <span class="highlight">Bronze</span> Emblem Level</label>
+        <span id="MaxBronzeEmblemLevel" class="output">2220</span>
+      </div>
+      <div class="line blue">
+        <label>Max <span class="highlight">Silver</span> Emblem Level</label>
+        <span id="MaxSilverEmblemLevel" class="output">379</span>
+      </div>
+      <div class="line purple">
+        <label>Max <span class="highlight">Gold</span> Emblem Level</label>
+        <span id="MaxGoldEmblemLevel" class="output">94</span>
+      </div>
+      <div class="line gold">
+        <label>Max <span class="highlight">Legendary</span> Emblem Level</label>
+        <span id="MaxLegendaryEmblemLevel" class="output">19</span>
+      </div>
+      <hr>
+      <div class="line green">
+        <label><span class="highlight">Rare</span> Dragon Runes remaining</label>
+        <span id="GreenRuneLeft" class="output">66</span>
+      </div>
+      <div class="line blue">
+        <label><span class="highlight">Excellent</span> Dragon Runes remaining</label>
+        <span id="BlueRuneLeft" class="output">4292</span>
+      </div>
+      <div class="line purple">
+        <label><span class="highlight">Perfect</span> Dragon Runes remaining</label>
+        <span id="PurpleRuneLeft" class="output">66</span>
+      </div>
+      <div class="line gold">
+        <label><span class="highlight">Epic</span> Dragon Runes remaining</label>
+        <span id="GoldRuneLeft" class="output">179</span>
+      </div>
+      <hr>
+      <div class="line gray">
+        <label><span class="highlight">Free-Pick</span> Dragon Runes remaining</label>
+        <span id="FreeRuneLeft" class="output">378</span>
+      </div>
+    </fieldset>
+  </form>
+</div>
+
+<div class="collapsible-toggle">
+  <button class="left" type="button" onclick="toggleCollapsible('blacksmith-upgrade-content')">Blacksmith Upgrade Plan</button>
+  <div class="right">MK: <span id="blacksmith-upgrade-points" class="points">9,674,120</span> pts</div>
+</div>
+<div class="collapsible-content collapsed" id="blacksmith-upgrade-content">
+  <div class="help-box" onclick="this.classList.toggle('shrunk')">
+    <p>In the left panel, enter your current <strong>Blacksmith</strong> level
+    and quantity of available resources. If you are maxed out, enter <kbd>2000</kbd>
+    as the Blacksmith level.</p>
+
+    <p>The right panel will show the maximum upgrades you could do and
+    quantity of remaining resources.</p>
+  </div>
+  <form class="form-container" id="blacksmith-upgrade-form">
+    <fieldset class="form-section before-content">
+      <legend>Before</legend>
+      <div class="line gray">
+        <label for="BlacksmithLevel">Current <span class="highlight">Blacksmith</span> level</label>
+        <input id="BlacksmithLevel" type="number" min="0" max="2000" step="1" value="1643">
+      </div>
+      <hr>
+      <div class="line blue">
+        <label for="ForgeHammerCount">Available <span class="highlight">Forge Hammer</span></label>
+        <input id="ForgeHammerCount" type="number" min="0" value="34900">
+      </div>
+
+    </fieldset>
+    <fieldset class="form-section after-content">
+      <legend>After</legend>
+      <div class="line gray">
+        <label>Max <span class="highlight">Blacksmith</span> level</label>
+        <span id="MaxBlacksmithLevel" class="output">20</span>
+      </div>
+      <hr>
+      <div class="line blue">
+        <label><span class="highlight">Forge Hammer</span> remaining</label>
+        <span id="ForgeHammerLeft" class="output wide">29741</span>
+      </div>
+    </fieldset>
+  </form>
+</div>
+
+<div class="collapsible-toggle">
+  <button class="left" type="button" onclick="toggleCollapsible('witch-lab-upgrade-content')">Witch's Lab Upgrade Plan</button>
+  <div class="right">MK: <span id="witch-lab-upgrade-points" class="points">9,674,120</span> pts</div>
+</div>
+<div class="collapsible-content collapsed" id="witch-lab-upgrade-content">
+  <div class="help-box" onclick="this.classList.toggle('shrunk')">
+    <p>In the left panel, enter your current <strong>Witch's Lab</strong> level
+    and quantity of available resources. If you are maxed out, enter <kbd>2000</kbd>
+    as the Witch's Lab level.</p>
+
+    <p>The right panel will show the maximum upgrades you could do and
+    quantity of remaining resources.</p>
+  </div>
+  <form class="form-container" id="witch-lab-upgrade-form">
+    <fieldset class="form-section before-content">
+      <legend>Before</legend>
+      <div class="line gray">
+        <label for="WitchLabLevel">Current <span class="highlight">Witch's Lab</span> level</label>
+        <input id="WitchLabLevel" type="number" min="0" max="2000" step="1" value="1778">
+      </div>
+      <hr>
+      <div class="line blue">
+        <label for="LightReagentCount">Available <span class="highlight">Light Reagent</span></label>
+        <input id="LightReagentCount" type="number" min="0" value="51392">
+      </div>
+
+    </fieldset>
+    <fieldset class="form-section after-content">
+      <legend>After</legend>
+      <div class="line gray">
+        <label>Max <span class="highlight">Witch's Lab</span> level</label>
+        <span id="MaxWitchLabLevel" class="output">20</span>
+      </div>
+      <hr>
+      <div class="line blue">
+        <label><span class="highlight">Light Reagent</span> remaining</label>
+        <span id="LightReagentLeft" class="output wide">29741</span>
+      </div>
+    </fieldset>
+  </form>
+</div>
+
+<div class="collapsible-toggle">
+  <button class="left" type="button" onclick="toggleCollapsible('magic-upgrade-content')">Magic Stone Upgrade Plan</button>
+  <div class="right">MK: <span id="magic-upgrade-points" class="points">9,674,120</span> pts</div>
+</div>
+<div class="collapsible-content collapsed" id="magic-upgrade-content">
+  <div class="help-box" onclick="this.classList.toggle('shrunk')">
+    <p>In the left panel, enter your current <strong>Magic Stone</strong> level
+    and quantity of available resources. If you do not have a Magic Stone, enter
+    <kbd>0</kbd> as the stone level. If you have a Magic Stone maxed out, enter
+    <kbd>20</kbd> as the stone level.</p>
+  
+    <p>The right panel will show the maximum upgrades you could do and
+    quantity of remaining resources.</p>
+  </div>
+  
+
+  <form class="form-container" id="magic-upgrade-form">
+    <fieldset class="form-section before-content">
+      <legend>Before</legend>
+      <div class="line green">
+        <label for="T5MagicStoneLevel1">Current <span class="highlight">T5</span> magic stone level</label>
+        <input id="T5MagicStoneLevel1" class="narrow" type="number" min="0" max="20" step="1" value="20">
+        <input id="T5MagicStoneLevel2" class="narrow" type="number" min="0" max="20" step="1" value="20">
+        <input id="T5MagicStoneLevel3" class="narrow" type="number" min="0" max="20" step="1" value="20">
+        <input id="T5MagicStoneLevel4" class="narrow" type="number" min="0" max="20" step="1" value="20">
+        <input id="T5MagicStoneLevel5" class="narrow" type="number" min="0" max="20" step="1" value="20">
+        <input id="T5MagicStoneLevel6" class="narrow" type="number" min="0" max="20" step="1" value="20">
+      </div>
+      <div class="line blue">
+        <label for="T6MagicStoneLevel1">Current <span class="highlight">T6</span> magic stone level</label>
+        <input id="T6MagicStoneLevel1" class="narrow" type="number" min="0" max="20" step="1" value="3">
+        <input id="T6MagicStoneLevel2" class="narrow" type="number" min="0" max="20" step="1" value="1">
+        <input id="T6MagicStoneLevel3" class="narrow" type="number" min="0" max="20" step="1" value="6">
+        <input id="T6MagicStoneLevel4" class="narrow" type="number" min="0" max="20" step="1" value="1">
+        <input id="T6MagicStoneLevel5" class="narrow" type="number" min="0" max="20" step="1" value="2">
+        <input id="T6MagicStoneLevel6" class="narrow" type="number" min="0" max="20" step="1" value="0">
+      </div>
+      <div class="line purple">
+        <label for="T7MagicStoneLevel1">Current <span class="highlight">T7</span> magic stone level</label>
+        <input id="T7MagicStoneLevel1" class="narrow" type="number" min="0" max="20" step="1" value="0">
+        <input id="T7MagicStoneLevel2" class="narrow" type="number" min="0" max="20" step="1" value="0">
+        <input id="T7MagicStoneLevel3" class="narrow" type="number" min="0" max="20" step="1" value="3">
+        <input id="T7MagicStoneLevel4" class="narrow" type="number" min="0" max="20" step="1" value="0">
+        <input id="T7MagicStoneLevel5" class="narrow" type="number" min="0" max="20" step="1" value="0">
+        <input id="T7MagicStoneLevel6" class="narrow" type="number" min="0" max="20" step="1" value="0">
+      </div>
+      <div class="line gold">
+        <label for="T8MagicStoneLevel1">Current <span class="highlight">T8</span> magic stone level</label>
+        <input id="T8MagicStoneLevel1" class="narrow" type="number" min="0" max="20" step="1" value="0">
+        <input id="T8MagicStoneLevel2" class="narrow" type="number" min="0" max="20" step="1" value="0">
+        <input id="T8MagicStoneLevel3" class="narrow" type="number" min="0" max="20" step="1" value="3">
+        <input id="T8MagicStoneLevel4" class="narrow" type="number" min="0" max="20" step="1" value="0">
+        <input id="T8MagicStoneLevel5" class="narrow" type="number" min="0" max="20" step="1" value="0">
+        <input id="T8MagicStoneLevel6" class="narrow" type="number" min="0" max="20" step="1" value="0">
+      </div>
+
+      <hr>
+
+      <div class="line purple">
+        <label for="StrengthPotionCount">Available <span class="highlight">Strengthening Potion</span></label>
+        <input id="StrengthPotionCount" type="number" min="0" value="1667781" class="wide">
+      </div>
+      <div class="line gold">
+        <label for="FortunePotionCount">Available <span class="highlight">Fortune Potion</span></label>
+        <input id="FortunePotionCount" type="number" min="0" value="171590" class="wide">
+      </div>
+
+    </fieldset>
+    <fieldset class="form-section after-content">
+      <legend>After</legend>
+
+      <div class="line green">
+        <label>Max <span class="highlight">T5</span> magic stone level</label>
+        <span id="MaxT5MagicStoneLevel1" class="output narrow">20</span>
+        <span id="MaxT5MagicStoneLevel2" class="output narrow">20</span>
+        <span id="MaxT5MagicStoneLevel3" class="output narrow">20</span>
+        <span id="MaxT5MagicStoneLevel4" class="output narrow">20</span>
+        <span id="MaxT5MagicStoneLevel5" class="output narrow">20</span>
+        <span id="MaxT5MagicStoneLevel6" class="output narrow">20</span>
+      </div>
+      <div class="line green">
+        <label>Max <span class="highlight">T6</span> magic stone level</label>
+        <span id="MaxT6MagicStoneLevel1" class="output narrow">17</span>
+        <span id="MaxT6MagicStoneLevel2" class="output narrow">1</span>
+        <span id="MaxT6MagicStoneLevel3" class="output narrow">5</span>
+        <span id="MaxT6MagicStoneLevel4" class="output narrow">1</span>
+        <span id="MaxT6MagicStoneLevel5" class="output narrow">20</span>
+        <span id="MaxT6MagicStoneLevel6" class="output narrow">0</span>
+      </div>
+      <div class="line purple">
+        <label>Max <span class="highlight">T7</span> magic stone level</label>
+        <span id="MaxT7MagicStoneLevel1" class="output narrow">0</span>
+        <span id="MaxT7MagicStoneLevel2" class="output narrow">0</span>
+        <span id="MaxT7MagicStoneLevel3" class="output narrow">3</span>
+        <span id="MaxT7MagicStoneLevel4" class="output narrow">0</span>
+        <span id="MaxT7MagicStoneLevel5" class="output narrow">0</span>
+        <span id="MaxT7MagicStoneLevel6" class="output narrow">0</span>
+      </div>
+      <div class="line gold">
+        <label>Max <span class="highlight">T8</span> magic stone level</label>
+        <span id="MaxT8MagicStoneLevel1" class="output narrow">0</span>
+        <span id="MaxT8MagicStoneLevel2" class="output narrow">0</span>
+        <span id="MaxT8MagicStoneLevel3" class="output narrow">0</span>
+        <span id="MaxT8MagicStoneLevel4" class="output narrow">0</span>
+        <span id="MaxT8MagicStoneLevel5" class="output narrow">0</span>
+        <span id="MaxT8MagicStoneLevel6" class="output narrow">0</span>
+      </div>
+
+      <hr>
+
+      <div class="line purple">
+        <label><span class="highlight">Strengthening Potion</span> remaining</label>
+        <span id="StrengthPotionLeft" class="output wide">29741</span>
+      </div>
+      <div class="line gold">
+        <label><span class="highlight">Fortune Potion</span> remaining</label>
+        <span id="FortunePotionLeft" class="output wide">1590</span>
+      </div>
+    </fieldset>
+  </form>
+</div>
+
+<div class="collapsible-toggle">
+  <button class="left" type="button" onclick="toggleCollapsible('hero-upgrade-content')">Hero Upgrade Plan</button>
+  <div class="right">MK: <span id="hero-upgrade-points" class="points">9,674,120</span> pts</div>
+</div>
+<div class="collapsible-content collapsed" id="hero-upgrade-content">
+  <div class="help-box" onclick="this.classList.toggle('shrunk')">
+    <p>In the left panel, enter the quantity of SSR <strong>Hero</strong> cards you would be using.</p>
+  </div>
+  <form class="form-container" id="hero-upgrade-form">
+    <fieldset class="form-section before-content">
+      <legend>Before</legend>
+      <div class="line gold">
+        <label for="SSRHeroCount">Available <span class="highlight">SSR Hero</span> cards</label>
+        <input id="SSRHeroCount" type="number" min="0" value="120">
+      </div>
+    </fieldset>
+    <fieldset class="form-section after-content">
+      <legend>After</legend>
+    </fieldset>
+  </form>
+</div>
+
+</body>
+</html>
