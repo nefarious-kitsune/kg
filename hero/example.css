@@ -1,0 +1,122 @@
+/*
+ green : 28501f 3b7b2b 5db552 72cf6c
+ blue  : 182a3b 285d8a 448bd1 7ac1eb
+ purple: 522c60 75338d 8d42a1 d386d4
+ gold  : 644625 ae5b21 e0bb50 f6db79
+ gray  : 1d2231 3a4361 485363 638ad3
+*/
+
+.warrior .header { border: 0.15rem solid #3b7b2b; background-color: #72cf6c; }
+.hunter  .header { border: 0.15rem solid #285d8a; background-color: #7ac1eb; }
+.miner   .header { border: 0.15rem solid #75338d; background-color: #d386d4; }
+.warrior { background-color: #5db552; }
+.hunter  { background-color: #448bd1; }
+.miner   { background-color: #8d42a1; }
+
+.example-pair { display: flex; }
+.example-unit { display: flex; justify-content: center; }
+
+.example-pair .unit1 {
+  position: relative;
+  width: 40rem;
+  padding: 1rem 4rem 1rem 1rem;
+}
+.example-pair .unit2 {
+  width: 40rem;
+  padding: 1rem 1rem 1rem 4rem;
+}
+
+.evo-pair { display: flex; font-size: 2rem;}
+.evo-pair .unit1 { width:50vw; display: flex; justify-content: center; }
+.evo-pair .unit2 { width:50vw; display: flex; justify-content: center; }
+
+.disc {
+  width: 5rem;
+  height: 5rem;
+  background-color:#e0bb50;
+  border-radius: 4em;
+  color: #644625;
+  position:absolute;
+  top:50%;
+  right:-2.5rem;
+  transform:translateY(-50%);
+}
+
+.disc-arrow {
+  text-align: center;
+  position: relative;
+  font-size: 2rem;
+  font-weight: 800;
+  top: 50%; 
+  transform: translateY(-50%);
+}
+
+.example-unit h2 {
+  position:sticky;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.troops-box {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
+
+.hero-set {
+  display: flex;
+  flex-direction: row;
+}
+
+.hero {
+  width: 6rem;
+  height: 8rem;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  border: 0.1rem solid black;
+  /* margin: 0.2rem; */
+}
+
+.hero:first-child .name { font-weight: bold; }
+.hero .name { font-size: 1.0rem; }
+.hero .star { font-size: 0.8rem; }
+
+.stats { display: block; margin: 0.5rem 0 0 0; }
+.stats .stats-desc  { display: inline-block; width: 12rem; }
+.stats .stats-value { display: inline-block; width: 5rem; text-align: right;}
+
+.header-pair {
+  margin-top: 1rem;
+  font-size:1.2rem;
+  display: flex;
+}
+
+.header-pair .unit1,
+.header-pair .unit2 {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.header-pair .header {
+  padding: 0.5rem;
+  text-align:center;
+  position: relative;
+  top: -1rem;
+}
+
+.header-pair .header {
+  width: 10rem;
+  border-radius: 0.5rem;
+  padding: 0.2rem;
+}
+
+div.info {
+  display:block;
+  margin: 0.5rem 0 2.5rem 0;
+  background-color:#ffecc2;
+  border-radius:0.5rem;
+  border:solid 0.1rem #b69b60;
+  padding: 0.5rem;
+}
