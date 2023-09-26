@@ -1,4 +1,4 @@
-const BlacksmithUpgradeCost = [
+[
   {
     "index": 1,
     "startLevel": 0,

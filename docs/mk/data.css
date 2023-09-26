@@ -1,0 +1,28 @@
+/*
+ green : 28501f 3b7b2b 5db552 72cf6c
+ blue  : 182a3b 285d8a 448bd1 7ac1eb
+ purple: 522c60 75338d 8d42a1 d386d4
+ gold  : 644625 ae5b21 e0bb50 f6db79
+ gray  : 1d2231 3a4361 485363 638ad3
+*/
+
+table th, table td { padding: 0.5rem; }
+table { border-collapse: collapse; position: relative;}
+
+table.blacksmith th {  background-color: #5db552; }
+
+table th:first-child { border-radius: 0.8rem 0 0 0; }
+table th:last-child  { border-radius: 0 0.8rem 0 0; }
+
+table thead tr th:first-child { width: 10rem; }
+table thead tr th:last-child  { width: 6rem; }
+table thead tr th { position: sticky; top: 0; /* Don't forget this, required for the stickiness */ }
+
+table tbody tr:nth-child(even) { background-color: #e9e9e9; }
+table tbody td:nth-child(1) { text-align: center; }
+table tbody td:nth-child(2) { text-align: right; }
+table tbody td:nth-child(3) { text-align: left; }
+table tbody td:nth-child(4) { text-align: center; }
+
+table tbody td.verified { color: black; }
+table tbody td.unverified { color: red; }

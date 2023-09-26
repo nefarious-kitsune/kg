@@ -30,16 +30,22 @@ class BlacksmithUpgradePlanner {
 
     let idx = BlacksmithUpgradeCost.findLastIndex((b) => b.startLevel < blacksmithLevel);
 
-    let startLevel =  BlacksmithUpgradeCost[idx    ].startLevel;
-    let endLevel =    BlacksmithUpgradeCost[idx + 1].startLevel;
+    let startLevel =  BlacksmithUpgradeCost[idx].startLevel;
+    let endLevel =
+        (BlacksmithUpgradeCost.length > idx + 1)?
+        BlacksmithUpgradeCost[idx + 1].startLevel:
+        2000;
 
     let canUpgrade = true;
 
     while (canUpgrade) {
       if (blacksmithLevel >= endLevel) {
         idx++;
-        startLevel =  BlacksmithUpgradeCost[idx    ].startLevel;
-        endLevel =    BlacksmithUpgradeCost[idx + 1].startLevel;
+        startLevel =  BlacksmithUpgradeCost[idx].startLevel;
+        endLevel =
+          (BlacksmithUpgradeCost.length > idx + 1)?
+          BlacksmithUpgradeCost[idx + 1].startLevel:
+          2000;
       }
 
       const qtyNeeded = BlacksmithUpgradeCost[idx].cost; // should be (index * 5);

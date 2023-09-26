@@ -31,7 +31,7 @@ for (let i = 1; i < fileData.length; i++) {
     startLevel = parseInt(data[2]);
   }
 
-  if (startLevel >= 2000) startLevel = 2000;
+  if (startLevel >= 2000) break;
  
   const cost = parseInt(data[4]);
 
@@ -43,19 +43,56 @@ for (let i = 1; i < fileData.length; i++) {
       cost: cost,
     }
   )
-
-  if (startLevel >= 2000) break;
 }
 
-console.log(importedData);
+const exportedJSON = JSON.stringify(importedData, null, '  ');
+const exportedJs = 'const BlacksmithUpgradeCost = ' + exportedJSON;
+fs.writeFileSync('../../../docs/mk/blacksmithUpgradeCost.json', exportedJSON);
+fs.writeFileSync('../../../docs/mk/blacksmithUpgradeCost.js', exportedJs);
 
-const exportedJs =
-  'const BlacksmithUpgradeCost = ' +
-  JSON.stringify(importedData, null, '  ');
+const exportedTableRows = [];
+
+for (let i = 1; i < importedData.length; i++) {
+  const startLevel = importedData[i].startLevel;
+  const endLevel =
+    (importedData.length > i+1)?
+    importedData[i+1].startLevel:
+    2000;
+  const cost = importedData[i].cost;
+  const verified = importedData[i].verified;
+
+  exportedTableRows.push(
+`      <tr>
+        <td>${startLevel} → ${startLevel+1}<br>⋮<br>${endLevel-1} → ${endLevel}</td>
+        <td>${cost}</td>
+        <td>Forge Hammer</td>
+        <td class="${verified?'verified':'unverified'}">${verified?'Verified':'Extrapolated'}</td>
+       </tr>`
+  )
+}
+
+const htmlTemplate = fs.readFileSync('template.html', 'utf-8');
+const htmlOutput = htmlTemplate.replace(
+  '<!-- Data -->',
+  exportedTableRows.join('\n'),
+);
 
 fs.writeFileSync(
-  '../../../docs/mk/blacksmithUpgradeCost.js',
-  exportedJs,
+  '../../../docs/mk/blacksmithUpgradeCost.html',
+  htmlOutput,
   {encoding:'utf8',flag:'w'},
 );
+
+
+
+
+
+
+
+
+
+
+
+
+
 
