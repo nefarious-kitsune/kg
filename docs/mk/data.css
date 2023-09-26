@@ -10,6 +10,7 @@ table th, table td { padding: 0.5rem; }
 table { border-collapse: collapse; position: relative;}
 
 table.blacksmith th {  background-color: #5db552; }
+table.witchLab th {  background-color: #448bd1; }
 
 table th:first-child { border-radius: 0.8rem 0 0 0; }
 table th:last-child  { border-radius: 0 0.8rem 0 0; }
