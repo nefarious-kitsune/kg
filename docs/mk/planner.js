@@ -96,8 +96,8 @@ document.addEventListener("DOMContentLoaded", (e) => {
 
   witchLabUP = new LabUpgradePlanner();
   dom = witchLabUP.dom;
-  dom.WitchLabLevel.addEventListener("change", onHeroFieldChange);
-  dom.LightReagentCount.addEventListener("change", onHeroFieldChange);
+  dom.WitchLabLevel.addEventListener("change", onWitchLabFieldChange);
+  dom.LightReagentCount.addEventListener("change", onWitchLabFieldChange);
 
   blacksmithUP = new BlacksmithUpgradePlanner();
   dom = blacksmithUP.dom;
