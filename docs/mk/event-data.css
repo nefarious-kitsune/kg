@@ -1,0 +1,41 @@
+div.table-wrapper {
+  background-color: white;
+  padding: 0rem;
+  width:fit-content;
+  border-radius: 1rem;
+}
+
+table th, table td { padding: 0.5rem; }
+table { border-collapse: collapse; position: relative;}
+table th { background-color: #485363; color: white; }
+
+table th:first-child { border-radius: 0.8rem 0 0 0; }
+table th:last-child  { border-radius: 0 0.8rem 0 0; }
+
+table thead tr th:first-child { width: 5rem; }
+table thead tr th:nth-child(2) { width: 3rem; }
+table thead tr th { width: 8rem; }
+
+tr.new-section { border-top: 0.1rem dashed #638ad3; }
+.phase-points {
+  text-align: right;
+  padding-right: 1rem;
+  background: linear-gradient(to right, #448bd1 0%, #448bd1 100%);
+  background-position: left center;
+  background-repeat: no-repeat;
+}
+
+.final-points {
+  text-align: right;
+  padding-right: 1rem;
+  background: linear-gradient(to right, #8d42a1 0%, #8d42a1 100%);
+  background-position: left center;
+  background-repeat: no-repeat;
+}
+/*
+ green : 28501f 3b7b2b 5db552 72cf6c
+ blue  : 182a3b 285d8a 448bd1 7ac1eb
+ purple: 522c60 75338d 8d42a1 d386d4
+ gold  : 644625 ae5b21 e0bb50 f6db79
+ gray  : 1d2231 3a4361 485363 638ad3
+*/
