@@ -22,3 +22,38 @@ body {
   right: 1rem;
   overflow: auto;
 }
+
+.avatars {
+  margin: 0.5rem 0.5rem 0.5rem 2rem;
+  height: 5rem;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+}
+
+.avatars .avatars_item {
+  margin-left: -1rem;
+  z-index: 1;
+  background-size: contain;
+  box-shadow: 0 0 0 0.2rem #fff;
+}
+
+.avatars_item {
+  border-radius: 50%;
+  width: 4rem;
+  height: 4rem;
+}
+
+.guren { background-image: url('../images/G-Guren.png'); }
+.pythia { background-image: url('../images/G-Pythia.png'); }
+.rosamond { background-image: url('../images/G-Rosamond.png'); }
+
+
+
+
+
+
+
+
+
+
