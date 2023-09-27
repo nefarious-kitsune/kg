@@ -638,13 +638,13 @@ const WitchLabUpgradeCost = [
   {
     "index": 107,
     "startLevel": 1038,
-    "verified": false,
+    "verified": true,
     "cost": 535
   },
   {
     "index": 108,
-    "startLevel": 1050,
-    "verified": false,
+    "startLevel": 1051,
+    "verified": true,
     "cost": 540
   },
   {
@@ -655,13 +655,13 @@ const WitchLabUpgradeCost = [
   },
   {
     "index": 110,
-    "startLevel": 1076,
+    "startLevel": 1075,
     "verified": false,
     "cost": 550
   },
   {
     "index": 111,
-    "startLevel": 1089,
+    "startLevel": 1087,
     "verified": false,
     "cost": 555
   },
@@ -734,210 +734,210 @@ const WitchLabUpgradeCost = [
   {
     "index": 123,
     "startLevel": 1238,
-    "verified": false,
+    "verified": true,
     "cost": 615
   },
   {
     "index": 124,
     "startLevel": 1251,
-    "verified": false,
+    "verified": true,
     "cost": 620
   },
   {
     "index": 125,
-    "startLevel": 1264,
-    "verified": false,
+    "startLevel": 1263,
+    "verified": true,
     "cost": 625
   },
   {
     "index": 126,
-    "startLevel": 1277,
+    "startLevel": 1276,
     "verified": false,
     "cost": 630
   },
   {
     "index": 127,
-    "startLevel": 1290,
+    "startLevel": 1289,
     "verified": false,
     "cost": 635
   },
   {
     "index": 128,
-    "startLevel": 1303,
+    "startLevel": 1302,
     "verified": false,
     "cost": 640
   },
   {
     "index": 129,
-    "startLevel": 1316,
+    "startLevel": 1315,
     "verified": false,
     "cost": 645
   },
   {
     "index": 130,
-    "startLevel": 1329,
+    "startLevel": 1328,
     "verified": false,
     "cost": 650
   },
   {
     "index": 131,
-    "startLevel": 1342,
+    "startLevel": 1341,
     "verified": false,
     "cost": 655
   },
   {
     "index": 132,
-    "startLevel": 1355,
+    "startLevel": 1354,
     "verified": false,
     "cost": 660
   },
   {
     "index": 133,
-    "startLevel": 1368,
+    "startLevel": 1367,
     "verified": false,
     "cost": 665
   },
   {
     "index": 134,
-    "startLevel": 1381,
+    "startLevel": 1380,
     "verified": false,
     "cost": 670
   },
   {
     "index": 135,
-    "startLevel": 1394,
+    "startLevel": 1393,
     "verified": false,
     "cost": 675
   },
   {
     "index": 136,
-    "startLevel": 1407,
+    "startLevel": 1406,
     "verified": false,
     "cost": 680
   },
   {
     "index": 137,
-    "startLevel": 1420,
+    "startLevel": 1419,
     "verified": false,
     "cost": 685
   },
   {
     "index": 138,
-    "startLevel": 1433,
+    "startLevel": 1432,
     "verified": false,
     "cost": 690
   },
   {
     "index": 139,
-    "startLevel": 1446,
+    "startLevel": 1445,
     "verified": false,
     "cost": 695
   },
   {
     "index": 140,
-    "startLevel": 1459,
+    "startLevel": 1458,
     "verified": false,
     "cost": 700
   },
   {
     "index": 141,
-    "startLevel": 1472,
+    "startLevel": 1471,
     "verified": false,
     "cost": 705
   },
   {
     "index": 142,
-    "startLevel": 1485,
+    "startLevel": 1484,
     "verified": false,
     "cost": 710
   },
   {
     "index": 143,
-    "startLevel": 1498,
+    "startLevel": 1497,
     "verified": false,
     "cost": 715
   },
   {
     "index": 144,
-    "startLevel": 1511,
+    "startLevel": 1510,
     "verified": false,
     "cost": 720
   },
   {
     "index": 145,
-    "startLevel": 1524,
+    "startLevel": 1523,
     "verified": false,
     "cost": 725
   },
   {
     "index": 146,
-    "startLevel": 1537,
+    "startLevel": 1536,
     "verified": false,
     "cost": 730
   },
   {
     "index": 147,
-    "startLevel": 1550,
+    "startLevel": 1549,
     "verified": false,
     "cost": 735
   },
   {
     "index": 148,
-    "startLevel": 1563,
+    "startLevel": 1562,
     "verified": false,
     "cost": 740
   },
   {
     "index": 149,
-    "startLevel": 1577,
+    "startLevel": 1576,
     "verified": false,
     "cost": 745
   },
   {
     "index": 150,
-    "startLevel": 1591,
+    "startLevel": 1590,
     "verified": false,
     "cost": 750
   },
   {
     "index": 151,
-    "startLevel": 1604,
+    "startLevel": 1603,
     "verified": false,
     "cost": 755
   },
   {
     "index": 152,
-    "startLevel": 1617,
+    "startLevel": 1616,
     "verified": false,
     "cost": 760
   },
   {
     "index": 153,
-    "startLevel": 1630,
+    "startLevel": 1629,
     "verified": false,
     "cost": 765
   },
   {
     "index": 154,
-    "startLevel": 1643,
+    "startLevel": 1642,
     "verified": false,
     "cost": 770
   },
   {
     "index": 155,
-    "startLevel": 1657,
+    "startLevel": 1656,
     "verified": false,
     "cost": 775
   },
   {
     "index": 156,
-    "startLevel": 1670,
+    "startLevel": 1669,
     "verified": false,
     "cost": 780
   },
   {
     "index": 157,
-    "startLevel": 1683,
+    "startLevel": 1682,
     "verified": false,
     "cost": 785
   },
@@ -949,7 +949,7 @@ const WitchLabUpgradeCost = [
   },
   {
     "index": 159,
-    "startLevel": 1709,
+    "startLevel": 1710,
     "verified": false,
     "cost": 795
   },
@@ -997,79 +997,79 @@ const WitchLabUpgradeCost = [
   },
   {
     "index": 167,
-    "startLevel": 1820,
-    "verified": false,
+    "startLevel": 1819,
+    "verified": true,
     "cost": 835
   },
   {
     "index": 168,
-    "startLevel": 1834,
-    "verified": false,
+    "startLevel": 1833,
+    "verified": true,
     "cost": 840
   },
   {
     "index": 169,
-    "startLevel": 1848,
+    "startLevel": 1847,
     "verified": false,
     "cost": 845
   },
   {
     "index": 170,
-    "startLevel": 1862,
+    "startLevel": 1861,
     "verified": false,
     "cost": 850
   },
   {
     "index": 171,
-    "startLevel": 1876,
+    "startLevel": 1875,
     "verified": false,
     "cost": 855
   },
   {
     "index": 172,
-    "startLevel": 1890,
+    "startLevel": 1889,
     "verified": false,
     "cost": 860
   },
   {
     "index": 173,
-    "startLevel": 1904,
+    "startLevel": 1903,
     "verified": false,
     "cost": 865
   },
   {
     "index": 174,
-    "startLevel": 1918,
+    "startLevel": 1917,
     "verified": false,
     "cost": 870
   },
   {
     "index": 175,
-    "startLevel": 1932,
+    "startLevel": 1931,
     "verified": false,
     "cost": 875
   },
   {
     "index": 176,
-    "startLevel": 1946,
+    "startLevel": 1945,
     "verified": false,
     "cost": 880
   },
   {
     "index": 177,
-    "startLevel": 1960,
+    "startLevel": 1959,
     "verified": false,
     "cost": 885
   },
   {
     "index": 178,
-    "startLevel": 1973,
+    "startLevel": 1972,
     "verified": false,
     "cost": 890
   },
   {
     "index": 179,
-    "startLevel": 1987,
+    "startLevel": 1986,
     "verified": false,
     "cost": 895
   }
