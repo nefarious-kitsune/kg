@@ -10,6 +10,18 @@ body {
   background-attachment: fixed;
 }
 
+.logo-heading {
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin: 1rem;
+  padding: 1rem;
+  font-size: 2rem;
+  background: url('../images/logo.png') no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
 #main-content {
   background: #fadfdfcc;
   border-radius: 2rem;
@@ -34,14 +46,14 @@ body {
 .avatars .avatars_item {
   margin-left: -1rem;
   z-index: 1;
-  background-size: contain;
-  box-shadow: 0 0 0 0.2rem #fff;
 }
 
 .avatars_item {
   border-radius: 50%;
   width: 4rem;
   height: 4rem;
+  background-size: contain;
+  box-shadow: 0 0 0 0.2rem #fff;
 }
 
 .guren { background-image: url('../images/G-Guren.png'); }
