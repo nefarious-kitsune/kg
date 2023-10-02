@@ -1,22 +1,24 @@
-div.table-wrapper {
+div.result-wrapper {
   background-color: white;
   padding: 0rem;
   width:fit-content;
   border-radius: 1rem;
 }
 
-table th, table td { padding: 0.5rem; }
-table { border-collapse: collapse; position: relative;}
-table th { background-color: #485363; color: white; }
+.result-table th,
+.result-table td { padding: 0.5rem; }
+.result-table { border-collapse: collapse; position: relative;}
+.result-table th { background-color: #485363; color: white; }
 
-table th:first-child { border-radius: 0.8rem 0 0 0; }
-table th:last-child  { border-radius: 0 0.8rem 0 0; }
+.result-table th:first-child { border-radius: 0.8rem 0 0 0; }
+.result-table th:last-child  { border-radius: 0 0.8rem 0 0; }
 
-table thead tr th:first-child { width: 5rem; }
-table thead tr th:nth-child(2) { width: 3rem; }
-table thead tr th { width: 8rem; }
+.result-table thead tr th:first-child { width: 5rem; }
+.result-table thead tr th:nth-child(2) { width: 3rem; }
+.result-table thead tr th { width: 8rem; }
 
-tr.new-section { border-top: 0.1rem dashed #638ad3; }
+.result-table tr.new-section { border-top: 0.1rem dashed #638ad3; }
+
 .phase-points {
   text-align: right;
   padding-right: 1rem;
@@ -32,6 +34,30 @@ tr.new-section { border-top: 0.1rem dashed #638ad3; }
   background-position: left center;
   background-repeat: no-repeat;
 }
+
+.mk-container {
+  display:flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  column-gap: 1rem;
+  row-gap: 1.5rem;
+  /* justify-content: space-between; */
+}
+.mk-phase-container {
+  background-color: white;
+  padding: 0rem;
+  width:fit-content;
+  border-radius: 1rem;
+}
+
+.point-table th,
+.point-table td { padding: 0.2rem; }
+.point-table .normal { color: inherit; }
+.point-table .spend { color: #285d8a; font-size: 0.8rem;}
+.point-table .rally { color: #75338d; }
+.point-table tr td:first-child { min-width: 20rem; }
+.point-table tr td:last-child { text-align: right; min-width: 5rem; }
+
 /*
  green : 28501f 3b7b2b 5db552 72cf6c
  blue  : 182a3b 285d8a 448bd1 7ac1eb

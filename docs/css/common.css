@@ -35,6 +35,17 @@ body {
   overflow: auto;
 }
 
+nav#nav-bar {
+  display: block;
+  margin: 0.5rem 0 0.5rem 0;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  background-color: #182a3b;
+  color: white;
+}
+
+nav#nav-bar a { color: #7ac1eb; }
+
 .avatars {
   margin: 0.5rem 0.5rem 0.5rem 2rem;
   height: 5rem;
