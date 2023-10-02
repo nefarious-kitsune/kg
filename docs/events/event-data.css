@@ -20,7 +20,7 @@ tr.new-section { border-top: 0.1rem dashed #638ad3; }
 .phase-points {
   text-align: right;
   padding-right: 1rem;
-  background: linear-gradient(to right, #448bd1 0%, #448bd1 100%);
+  background: linear-gradient(to right, #448bd1 0%, #7ac1eb 100%);
   background-position: left center;
   background-repeat: no-repeat;
 }
@@ -28,7 +28,7 @@ tr.new-section { border-top: 0.1rem dashed #638ad3; }
 .final-points {
   text-align: right;
   padding-right: 1rem;
-  background: linear-gradient(to right, #8d42a1 0%, #8d42a1 100%);
+  background: linear-gradient(to right, #8d42a1 0%, #d386d4 100%);
   background-position: left center;
   background-repeat: no-repeat;
 }
