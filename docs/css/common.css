@@ -23,7 +23,7 @@ body {
 }
 
 #main-content {
-  background: #fadfdfcc;
+  background: #fadfdfe0;
   border-radius: 2rem;
   padding: 1rem;
 
@@ -45,6 +45,54 @@ nav#nav-bar {
 }
 
 nav#nav-bar a { color: #7ac1eb; }
+
+[data-tooltip] {
+  position: relative;
+}
+
+[data-tooltip]:before,
+[data-tooltip]:after {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  -webkit-font-smoothing: antialiased;
+  margin: 0 auto;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.6s ease-in-out 0.4s;
+}
+
+[data-tooltip]:before {
+  content: " ";
+  height: 0;
+  width: 0;
+  top: calc(100% - 1rem);
+  border-style: solid;
+  border-width: 1rem;
+  border-color: transparent transparent #333 transparent;
+}
+
+[data-tooltip]:after {
+  content: attr(data-tooltip);
+  /* white-space: nowrap; */
+  background: #333;
+  min-width: 8rem;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  font-size: 0.9rem;
+  box-sizing: border-box;
+  top: calc(100% + 0.9rem);
+  color: #fff;
+  border-radius: 2px;
+  text-shadow: 0px 1px 1px #000;
+  z-index: 99;
+}
+
+[data-tooltip]:hover:before,
+[data-tooltip]:hover:after {
+  opacity: 1;
+  visibility: visible;
+  transition: 0.4s ease-in-out 0.3s;
+}
 
 .avatars {
   margin: 0.5rem 0.5rem 0.5rem 2rem;
@@ -73,3 +121,4 @@ nav#nav-bar a { color: #7ac1eb; }
 .sahar { background-image: url('../images/A-Sahar.png'); }
 .livia { background-image: url('../images/A-Livia.png'); }
 .gabriel { background-image: url('../images/A-Gabriel.png'); }
+
