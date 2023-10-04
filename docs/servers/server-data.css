@@ -1,6 +1,6 @@
 ul.tag-list {
   list-style-type: none;
-  margin: 0;
+  margin: 0 1rem 0 1rem;
   padding: 0;
 }
   
@@ -11,6 +11,7 @@ ul.tag-list li {
   margin: 0.2rem;
   background-color: #285d8a;
   color: #7ac1eb;
+  font-size: 0.9rem;
 }
 
 ul.tag-list li { background-color: #285d8a; color: #7ac1eb; }
@@ -20,7 +21,6 @@ ul.tag-list li.top100 { background-color: #75338d; color: #d386d4; }
 ul.tag-list li:hover { background-color: #7ac1eb; color: #285d8a; }
 ul.tag-list li.top50:hover  { background-color: #f6db79; color: #ae5b21; }
 ul.tag-list li.top100:hover { background-color: #d386d4; color: #75338d; }
-
 
 /*
  green : 28501f 3b7b2b 5db552 72cf6c
