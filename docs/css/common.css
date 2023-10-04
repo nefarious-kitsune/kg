@@ -17,7 +17,10 @@ body {
   margin: 1rem;
   padding: 1rem;
   font-size: 2rem;
-  background: url('../images/logo.png') no-repeat;
+  font-weight: 800;
+  color: #e5bf7a;
+  text-shadow: 0 0.2rem 0.5rem #3d2525;
+  background: url('../images/katana-300.png') no-repeat;
   background-position: center;
   background-size: contain;
 }
@@ -45,6 +48,21 @@ nav#nav-bar {
 }
 
 nav#nav-bar a { color: #7ac1eb; }
+
+h1 {
+  font-size: 2rem;
+}
+
+h1:before {
+  content: "";
+  display: inline-block;
+  background: url('../images/katana-stand-150.png') no-repeat;
+  background-position: bottom;
+  background-size: contain;
+  width: 3.9rem;
+  height: 2rem;
+  margin: 0;
+}
 
 [data-tooltip] {
   position: relative;
