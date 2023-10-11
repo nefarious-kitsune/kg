@@ -116,61 +116,61 @@
   {
     "index": 20,
     "startLevel": 121,
-    "verified": false,
+    "verified": true,
     "cost": 100
   },
   {
     "index": 21,
     "startLevel": 129,
-    "verified": false,
+    "verified": true,
     "cost": 105
   },
   {
     "index": 22,
     "startLevel": 137,
-    "verified": false,
+    "verified": true,
     "cost": 110
   },
   {
     "index": 23,
     "startLevel": 145,
-    "verified": false,
+    "verified": true,
     "cost": 115
   },
   {
     "index": 24,
     "startLevel": 153,
-    "verified": false,
+    "verified": true,
     "cost": 120
   },
   {
     "index": 25,
-    "startLevel": 161,
-    "verified": false,
+    "startLevel": 162,
+    "verified": true,
     "cost": 125
   },
   {
     "index": 26,
-    "startLevel": 169,
-    "verified": false,
+    "startLevel": 170,
+    "verified": true,
     "cost": 130
   },
   {
     "index": 27,
-    "startLevel": 178,
-    "verified": false,
+    "startLevel": 179,
+    "verified": true,
     "cost": 135
   },
   {
     "index": 28,
     "startLevel": 187,
-    "verified": false,
+    "verified": true,
     "cost": 140
   },
   {
     "index": 29,
     "startLevel": 196,
-    "verified": false,
+    "verified": true,
     "cost": 145
   },
   {
@@ -512,49 +512,49 @@
   {
     "index": 86,
     "startLevel": 788,
-    "verified": false,
+    "verified": true,
     "cost": 430
   },
   {
     "index": 87,
-    "startLevel": 800,
-    "verified": false,
+    "startLevel": 799,
+    "verified": true,
     "cost": 435
   },
   {
     "index": 88,
-    "startLevel": 812,
-    "verified": false,
+    "startLevel": 811,
+    "verified": true,
     "cost": 440
   },
   {
     "index": 89,
-    "startLevel": 824,
-    "verified": false,
+    "startLevel": 823,
+    "verified": true,
     "cost": 445
   },
   {
     "index": 90,
-    "startLevel": 836,
-    "verified": false,
+    "startLevel": 834,
+    "verified": true,
     "cost": 450
   },
   {
     "index": 91,
-    "startLevel": 848,
-    "verified": false,
+    "startLevel": 846,
+    "verified": true,
     "cost": 455
   },
   {
     "index": 92,
-    "startLevel": 860,
-    "verified": false,
+    "startLevel": 858,
+    "verified": true,
     "cost": 460
   },
   {
     "index": 93,
-    "startLevel": 871,
-    "verified": false,
+    "startLevel": 870,
+    "verified": true,
     "cost": 465
   },
   {
@@ -650,19 +650,19 @@
   {
     "index": 109,
     "startLevel": 1063,
-    "verified": false,
+    "verified": true,
     "cost": 545
   },
   {
     "index": 110,
     "startLevel": 1075,
-    "verified": false,
+    "verified": true,
     "cost": 550
   },
   {
     "index": 111,
-    "startLevel": 1087,
-    "verified": false,
+    "startLevel": 1088,
+    "verified": true,
     "cost": 555
   },
   {
@@ -752,19 +752,19 @@
   {
     "index": 126,
     "startLevel": 1276,
-    "verified": false,
+    "verified": true,
     "cost": 630
   },
   {
     "index": 127,
     "startLevel": 1289,
-    "verified": false,
+    "verified": true,
     "cost": 635
   },
   {
     "index": 128,
     "startLevel": 1302,
-    "verified": false,
+    "verified": true,
     "cost": 640
   },
   {
@@ -1010,13 +1010,13 @@
   {
     "index": 169,
     "startLevel": 1847,
-    "verified": false,
+    "verified": true,
     "cost": 845
   },
   {
     "index": 170,
     "startLevel": 1861,
-    "verified": false,
+    "verified": true,
     "cost": 850
   },
   {
@@ -1027,50 +1027,56 @@
   },
   {
     "index": 172,
-    "startLevel": 1889,
-    "verified": false,
+    "startLevel": 1888,
+    "verified": true,
     "cost": 860
   },
   {
     "index": 173,
-    "startLevel": 1903,
+    "startLevel": 1902,
     "verified": false,
     "cost": 865
   },
   {
     "index": 174,
-    "startLevel": 1917,
+    "startLevel": 1916,
     "verified": false,
     "cost": 870
   },
   {
     "index": 175,
-    "startLevel": 1931,
+    "startLevel": 1930,
     "verified": false,
     "cost": 875
   },
   {
     "index": 176,
-    "startLevel": 1945,
+    "startLevel": 1944,
     "verified": false,
     "cost": 880
   },
   {
     "index": 177,
-    "startLevel": 1959,
+    "startLevel": 1958,
     "verified": false,
     "cost": 885
   },
   {
     "index": 178,
-    "startLevel": 1972,
+    "startLevel": 1971,
     "verified": false,
     "cost": 890
   },
   {
     "index": 179,
-    "startLevel": 1986,
+    "startLevel": 1985,
     "verified": false,
     "cost": 895
+  },
+  {
+    "index": 180,
+    "startLevel": 1999,
+    "verified": false,
+    "cost": 900
   }
 ]
