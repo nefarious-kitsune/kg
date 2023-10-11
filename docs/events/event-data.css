@@ -43,11 +43,13 @@ div.result-wrapper {
   row-gap: 1.5rem;
   /* justify-content: space-between; */
 }
+
 .mk-phase-container {
-  background-color: white;
+  /* background-color: #fb9145; */
   padding: 0rem;
   width:fit-content;
-  border-radius: 1rem;
+  border-radius: 0.5rem;
+  border: 2px solid #b42328;
 }
 
 .point-table th,
