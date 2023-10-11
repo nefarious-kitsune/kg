@@ -4,25 +4,139 @@ html {
 }
 
 body {
+  margin: 0;
+} 
+
+main {
+  margin: 1rem;
+}
+
+body.landing {
   background-image: url('../images/background.png');
   background-size: cover;
   background-position: 10% 10%;
   background-attachment: fixed;
 }
 
-.logo-heading {
-  display: block;
-  width: 100%;
-  text-align: center;
-  margin: 1rem;
+body.landing main {
+  position: absolute;
+  background-color: #e8c3d3;
+  border: 0.2rem #fec728 solid;
+  border-radius: 1rem;
+  margin: 2rem 2rem 2rem 30%;
   padding: 1rem;
-  font-size: 2rem;
-  font-weight: 800;
-  color: #e5bf7a;
-  text-shadow: 0 0.2rem 0.5rem #3d2525;
-  background: url('../images/katana-300.png') no-repeat;
+}
+
+body.landing #header {
+  background: linear-gradient(
+    to bottom,
+    #ffffff66 0%,
+    #ffffff66 60%,
+    #b42328 60%,
+    #b42328 100%
+    );
+}
+
+#header {
+  margin: 0;
+  padding: 0.2rem 0.2rem 0.2rem 1rem;
+  height: 4.8rem;
+  background: linear-gradient(
+    to bottom,
+    #ffffff66 0%,
+    #ffffff66 60%,
+    #b42328 60%,
+    #b42328 64%,
+    #ffffff66 64%,
+    #ffffff66 100%
+    );
+}
+
+#header:before {
+  position: relative;
+  float: left;
+  top: 0;
+  content: "";
+  background: white url('../images/katana-stand-150.png') no-repeat;
   background-position: center;
-  background-size: contain;
+  /* background-size: contain; */
+  background-size: 6rem auto;
+  border: #b42328 0.2rem solid;
+  border-radius: 50%;
+  width: 4.5rem;
+  height: 4.5rem;
+}
+
+#site-heading-wrapper {
+  display: flex;
+  height: 3rem;
+  padding: 0 0 0 0.5rem;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+}
+
+#site-heading {
+  padding: 0;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #b42328;
+}
+
+#breadcrumb-wrapper {
+  display: flex;
+  height: 1.8rem;
+  padding: 0 0 0 0.5rem;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+}
+
+#breadcrumb-wrapper nav {
+  display: block;
+  font-size: 0.9rem;
+}
+
+#breadcrumb-wrapper nav .link {
+  color: #b42328;
+  text-decoration: underline solid;
+}
+
+#breadcrumb-wrapper nav .chevron {
+  color: #ea3033;
+}
+
+#breadcrumb-wrapper nav .current {
+  color: #7c1a20;
+}
+
+
+
+
+ul.butterfly {
+	margin: 0;
+  padding: 0;
+}
+
+ul.butterfly li {
+	margin: 0;
+	padding: 0.2rem 0.2rem 0.2rem 1.5rem;
+	list-style: none;
+	background-image: url("../images/butterfly-red.svg");
+	background-repeat: no-repeat;
+	background-position: left 0.5rem;
+	background-size: 1rem;
+}
+
+a {
+  color: #b42328;
+  text-decoration: underline double;
+}
+
+div.info-box {
+  background: #e8c3d3;
+  border-radius:0.5rem;
+  padding: 0.5rem;
 }
 
 #main-content {
@@ -35,7 +149,6 @@ body {
   left: 1rem;
   bottom: 1rem;
   right: 1rem;
-  overflow: auto;
 }
 
 nav#nav-bar {
@@ -53,6 +166,7 @@ h1 {
   font-size: 2rem;
 }
 
+/*
 h1:before {
   content: "";
   display: inline-block;
@@ -63,6 +177,7 @@ h1:before {
   height: 2rem;
   margin: 0;
 }
+*/
 
 [data-tooltip] {
   position: relative;
@@ -121,12 +236,12 @@ h1:before {
   justify-content: flex-end;
 }
 
-.avatars .avatars_item {
+.avatars .avatars-item {
   margin-left: -1rem;
   z-index: 1;
 }
 
-.avatars_item {
+.avatars-item {
   border-radius: 50%;
   width: 4rem;
   height: 4rem;
@@ -137,7 +252,31 @@ h1:before {
 .guren { background-image: url('../images/G-Guren.png'); }
 .pythia { background-image: url('../images/G-Pythia.png'); }
 .rosamond { background-image: url('../images/G-Rosamond.png'); }
+
 .sahar { background-image: url('../images/A-Sahar.png'); }
 .livia { background-image: url('../images/A-Livia.png'); }
 .gabriel { background-image: url('../images/A-Gabriel.png'); }
 
+.tracy { background-image: url('../images/F-Tracy.png'); }
+.erika { background-image: url('../images/F-Erika.png'); }
+.anko { background-image: url('../images/blank-avatar.png'); }
+.cosette { background-image: url('../images/F-Cosette.png'); }
+.paul { background-image: url('../images/blank-avatar.png'); }
+.miku { background-image: url('../images/blank-avatar.png'); }
+.vanessa { background-image: url('../images/blank-avatar.png'); }
+.giselle { background-image: url('../images/F-Giselle.png'); }
+.kenshiro { background-image: url('../images/blank-avatar.png'); }
+.penny { background-image: url('../images/blank-avatar.png'); }
+.apollo { background-image: url('../images/blank-avatar.png'); }
+.christie { background-image: url('../images/blank-avatar.png'); }
+.brie { background-image: url('../images/blank-avatar.png'); }
+.dean { background-image: url('../images/blank-avatar.png'); }
+.dolvar { background-image: url('../images/F-Dolvar.png'); }
+.wallis { background-image: url('../images/blank-avatar.png'); }
+.allen { background-image: url('../images/F-Allen.png'); }
+.dain { background-image: url('../images/blank-avatar.png'); }
+.gro { background-image: url('../images/F-Gro.png'); }
+.simon { background-image: url('../images/blank-avatar.png'); }
+.kris { background-image: url('../images/F-Kris.png'); }
+.ophelia { background-image: url('../images/F-Ophelia.png'); }
+.samar { background-image: url('../images/blank-avatar.png'); }

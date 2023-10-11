@@ -23,8 +23,8 @@
   padding: 0.5rem;
   margin-bottom: 1rem;
   border-radius: 0.5rem;
-  background: #0a1d44;
-  color: #fcfcfd;
+  background: #7c1a20;
+  color: #fec728;
 }
 
 .top-bar .left {
@@ -149,16 +149,16 @@ span.output.wide { width: 7.3rem !important; }
 
   border-radius: 0.5rem 0.5rem 0 0;
 
-  background: #6884bd;
-  color: #fcfcfd;
+  background: #b42328;
+  color: #fec728;
 }
 
 .collapsible-toggle button.left {
   border-radius: 0.5rem 0 0 0;
   border-color: transparent;
 
-  background: #6884bd;
-  color: #fcfcfd;
+  background: #b42328;
+  color: #fec728;
 }
 
 .collapsible-content {

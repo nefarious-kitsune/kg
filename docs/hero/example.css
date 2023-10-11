@@ -119,6 +119,28 @@ table {
   border-spacing: 5rem 0;
 }
 
+.hero-table {
+  margin-left: auto;
+  margin-right: auto;
+  /* background-color:gray; */
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+.hero-table td,
+.hero-table th {
+  border: 0.1rem solid black;
+  border-spacing: 0;
+  padding: 0.5rem;
+}
+
+.hero-table .hero-avatar { border-right: none; }
+.hero-table .hero-name { border-left: none; }
+
+.hero-table .avatars-item { width: 2rem; height: 2rem; }
+
+.from-source { width: 2.5rem; height: 2.5rem; }
+
 .stats { display: block; margin: 0.1rem; padding: 0.2rem 0.5rem 0.2rem 0.5rem; }
 
 .stats .stats-desc  { display: inline-block; width: 12rem; }
@@ -139,9 +161,6 @@ table {
 div.info-box {
   display: flex;
   margin: 0.5rem 0 2.5rem 0;
-  background: #f08686cc;
-  border-radius:0.5rem;
-  padding: 0.5rem;
 }
 
 .info-box .left {
