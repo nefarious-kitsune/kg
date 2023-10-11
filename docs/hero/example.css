@@ -120,9 +120,7 @@ table {
 }
 
 .hero-table {
-  margin-left: auto;
-  margin-right: auto;
-  /* background-color:gray; */
+  margin: 0;
   border-spacing: 0;
   border-collapse: collapse;
 }

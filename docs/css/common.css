@@ -249,9 +249,11 @@ h1:before {
   box-shadow: 0 0 0 0.2rem #fff;
 }
 
+.catherine { background-image: url('../images/G-Catherine.png'); }
 .guren { background-image: url('../images/G-Guren.png'); }
 .pythia { background-image: url('../images/G-Pythia.png'); }
 .rosamond { background-image: url('../images/G-Rosamond.png'); }
+.wendy { background-image: url('../images/G-Wendy.png'); }
 
 .ariza { background-image: url('../images/A-Ariza.png'); }
 .arthur { background-image: url('../images/A-Arthur.png'); }
