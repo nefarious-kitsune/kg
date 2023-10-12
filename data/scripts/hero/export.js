@@ -25,24 +25,30 @@ Kris	March speed +20%	Gathering speed +20%	All troops power +20%		TRUE	FALSE	FAL
 Ophelia	Flame mage troops power +20%	Tower defense	Tower defense		TRUE	FALSE	FALSE	TRUE
 Samar	Flame mage troops power +20%	Tower defense	Tower defense		TRUE	FALSE	FALSE	TRUE
 Anton	Tower defense	Tower defense	Flame mage troops power +20%		TRUE	FALSE	FALSE	TRUE`;
-/*
-  <tr>
-    <td><div class="avatars-item gabriel"></div></td>
-    <td>Erika</td>
-    <td>March speed +25%</td>
-    <td>Recovery speed +15%</td>
-    <td>All troops power +25%</td>
-    <td>Wound regeneration +10%</td>
-    <td>
-      <img class="from-source" src="../images/from-free-pick.png" alt="Free-pick">
-      <img class="from-source" src="../images/from-crystal.png" alt="Wishing crystal">
-      <img class="from-source" src="../images/from-wheel.png" alt="Lucky wheel">
-      <img class="from-source" src="../images/from-advanced.png" alt="Advance recruitment">
-    </td>
-  </tr>
- 
-*/
 
+const archer_data =
+`Padme	March speed +30%	All troops power +20%	All troops power +20%	Wound regeneration +15%	FALSE	FALSE	FALSE	FALSE
+Sahar	March speed +20%	All troops power +25%	Recovery speed +25%	Wound regeneration +10%	FALSE	FALSE	TRUE	TRUE
+Meg	March speed +20%	Recovery speed +15%	All troops power +25%	Wound regeneration +10%	FALSE	FALSE	FALSE	TRUE
+Ptolemy	March speed +20%	Recovery speed +20%	All troops power +20%	Wound regeneration +10%	FALSE	FALSE	FALSE	FALSE
+Livia	March speed +20%	AP reduction -10%	All troops power +25%	Wound regeneration +10%	FALSE	FALSE	TRUE	TRUE
+Richard	March speed +20%	Troops load +15%	All troops power +25%	Wound regeneration +10%	FALSE	FALSE	TRUE	TRUE
+Torvi	March speed +20%	Troops load +15%	All troops power +25%	Wound regeneration +10%	FALSE	FALSE	TRUE	TRUE
+Collin	March speed +30%	Troops load +20%	All troops power +20%	Wound regeneration +10%	FALSE	FALSE	FALSE	TRUE
+Sabastian	March speed +30%	Troops load +20%	All troops power +20%	Wound regeneration +10%	FALSE	FALSE	FALSE	FALSE
+O'Neil	March speed +20%	Troops load +20%	All troops power +25%	Recovery speed +20%	FALSE	FALSE	TRUE	TRUE
+Ariza	March speed +15%	Troops load +15%	All troops power +25%	Recovery speed +20%	FALSE	FALSE	TRUE	TRUE
+Gabriel	March speed +20%	Troops load +20%	All troops power +25%	Recovery speed +10%	TRUE	TRUE	TRUE	TRUE
+Kadir	Troops load +20%	March speed +20%	All troops power +20%	Wound regeneration +10%	FALSE	FALSE	TRUE	TRUE
+Pan	March speed +30%	AP reduction -10%	Recovery speed +15%	Wound regeneration +10%	FALSE	FALSE	FALSE	TRUE
+Fatima	March speed +20%	Troops load +20%	AP reduction -10%	Wound regeneration +10%	FALSE	FALSE	FALSE	TRUE
+Montag	Troops load +20%	Gathering speed +20%	March speed +20%	Wound regeneration +10%	FALSE	FALSE	FALSE	TRUE
+Bella	March speed +20%	Recovery speed +15%	Troops load +20%	Recovery speed +10%	FALSE	FALSE	FALSE	TRUE
+Jennifer	March speed +20%	Tower defense	All troops power +20%	Troops load +10%	TRUE	TRUE	TRUE	TRUE
+Arthur	March speed +20%	Offline gold +20%	All troops power +20%	Gathering speed +20%	TRUE	TRUE	TRUE	TRUE
+Trist	March speed +20%	Offline gold +20%	All troops power +20%	Gathering speed +20%	FALSE	FALSE	FALSE	TRUE
+Harold	Tower defense	AP reduction -10%	Archer troops power +15%		FALSE	FALSE	FALSE	TRUE
+Arwyn	Tower defense	Tower defense	Archer troops power +15%		FALSE	FALSE	FALSE	TRUE`
 
 function getTotalStats(skills, prefix) {
   const indexStart = prefix.length;
@@ -141,23 +147,25 @@ function constructTable(element, raw) {
 
     heroes.push(hero);
 
+    const className = (hero.name === 'O\'Neil'?'oneil':hero.name).toLowerCase() 
+
     table1 += 
       [
         '<tr>',
-        `<td class="hero-avatar"><div class="avatars-item ${hero.name.toLowerCase()}"></div></td>`,
+        `<td class="hero-avatar"><div class="avatars-item ${className}"></div></td>`,
         `<td class="hero-name">${hero.name}</td>`,
         `<td>${skill1}</td>`,
         `<td>${skill2}</td>`,
         `<td>${skill3}</td>`,
         `<td>${skill4}</td>`,
-        `<td>${hero.from.free?htmlFromFree:''}${hero.from.crystal?htmlFromCrystal:''}${hero.from.wheel.advanced?htmlFromWheel:''}${hero.from.advanced?htmlFromAdvanced:''}</td>`,
+        `<td>${hero.from.free?htmlFromFree:''}${hero.from.crystal?htmlFromCrystal:''}${hero.from.wheel?htmlFromWheel:''}${hero.from.advanced?htmlFromAdvanced:''}</td>`,
         `</tr>`,
       ].join('\n') + '\n';
 
     table2 += 
       [
         '<tr>',
-        `<td class="hero-avatar"><div class="avatars-item ${hero.name.toLowerCase()}"></div></td>`,
+        `<td class="hero-avatar"><div class="avatars-item ${className}"></div></td>`,
         `<td class="hero-name">${hero.name}</td>`,
         `<td>${(hero.bonus.speed > 0)?('+' + hero.bonus.speed + '%'):''}</td>`,
         `<td>${(hero.bonus.power > 0)?('+' + hero.bonus.power + '%'):''}</td>`,
@@ -175,22 +183,10 @@ function constructTable(element, raw) {
   return {table1: table1, table2: table2};
 }
 
-const tables = constructTable('fire', fire_data);
+let tables = constructTable('fire', fire_data);
 fs.writeFileSync('./fire-table-1.html', tables.table1);
 fs.writeFileSync('./fire-table-2.html', tables.table2);
 
-console.log(heroes);
-// fs.writeFileSync('./table.html', lines.join('\n'));
-
-{/* <td class="hero-avatar"><div class="avatars-item gabriel"></div></td>
-<td class="hero-name">Tracy</td>
-<td>+30%</td>
-<td>+40%</td>
-<td></td>
-<td>+15%</td>
-<td></td>
-<td></td>
-<td></td>
-<td>★★</td>
-<td>★★★★</td>
-<td></td> */}
+tables = constructTable('archer', archer_data);
+fs.writeFileSync('./archer-table-1.html', tables.table1);
+fs.writeFileSync('./archer-table-2.html', tables.table2);
