@@ -107,8 +107,14 @@ const BlacksmithUpgradePlanner = {
 
     const _finalBlacksmithLevel = _blacksmithLevel;
     const _finalForgeHammerCount = _forgeHammerCount;
-    let _missingForgeHammerCount = - _forgeHammerCount;
+
+    let _missingForgeHammerCount;
     let keepUpgrading = (_blacksmithLevel < 2000);
+    if (keepUpgrading) {
+      _missingForgeHammerCount = - _forgeHammerCount;
+    } else {
+      _missingForgeHammerCount = 0;
+    }
     while (keepUpgrading) {
       if (_blacksmithLevel >= endLevel) {
         idx++;
