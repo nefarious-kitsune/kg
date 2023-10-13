@@ -1,65 +1,165 @@
 import fs from 'fs';
 
-const data =
+const MaxPhasePoints = (     600 * 1000 * 1000);
+const MaxFinalPoints = (2 * 1000 * 1000 * 1000);
+
+const dataServers =
+`S1111	S417	S1028	S1041	S699	S449
+S660	S1020	S666	S863	S459	S886`
+
+const dataFinal =
 `					
-					
-					
-					
-146632500	53449500	50349500	60957500	150365000	161621500
-115162000	45644500	31194000	59775500	116008500	80331000
-79440500	44497500	26612500	51918000	92350500	72312500
-68194000	44076000	26399000	50327000	80344000	60789500
-15863000	7798000	4662000	13936500	9749500	8705000
-15539000	7210500	4452000	10554950	8282500	5671500
-22966805	6437500	3858850	10444350	7906000	4581600
-10336000	4709000	3664500	8438050	7724500	4223500
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
 					
 					
 					`;
 
-const table = data.split('\n').map((row) => row.split('\t'));
+const dataPhase1 =
+`473500000	464594500	446606000	353420500	236015500	227669000
+405164500	446003000	349529500	281831500	227942500	110130000
+300674000	271605500	254101000	268744000	220378000	83961500
+195983000	263302000	230000000	194530500	123166500	74028500`;
 
-const lines = [];
+const dataPhase2 =
+`162662000	89609102	44624000	60473500	13789000	12679000
+33123526	67150554	29481250	59268500	11203500	11719900
+32494000	44569300	22323000	49628000	10503000	8460000
+29355750	38172000	19862500	24800500	10072204	7839000`;
 
-table.forEach((row, index) => {
-  const max = (index < 4)?(500 * 1000 * 1000):(250 * 1000 * 1000);
+const dataPhase3 =
+`132368640	93178960	74101160	77800950	69846440	92252060
+99195560	80277440	58292640	55737800	58648280	37423820
+41322400	51163040	57707160	52239040	23895300	27657160
+36621940	39426000	46349100	49717000	23738220	18660080`;
 
-  const newSection = index % 4 === 0;
+const dataPhase4 =
+`55680244	82648500	10534400	122242264	29135700	30062500
+50681200	60715500	9552000	37572500	16629244	8245154
+36382700	30101700	8504000	30826500	10625628	4515000
+20055500	26624000	7022500	16152244	9253000	4073500`;
 
-  if (newSection) {
-    const phase = index / 4;
-    lines.push('<tr class="new-section">');
-    lines.push(`  <td rowspan="4">${phase==0?'Final':'Phase ' + phase}</th>`);
-  } else {
-    lines.push('<tr>');
-  }
+const dataPhase5 =
+`					
+					
+					
+					`;
 
-  lines.push(`  <td>#${(index === 3)?'20':(index % 4 + 1)}</td>`);
+const dataPhase6 =
+`					
+					
+					
+					`;
 
-  row.forEach((cell) => {
+// Prepare data
+
+function splitData(data) {
+  return data .split('\n').map((row) => row.split('\t'));
+}
+
+const [servers, servers2] = splitData(dataServers);
+// const finalPoints = splitData(dataFinal);
+
+const finalPoints = splitData(dataFinal);
+
+const phasePoints = [
+  splitData(dataPhase1),
+  splitData(dataPhase2),
+  splitData(dataPhase3),
+  splitData(dataPhase4),
+  splitData(dataPhase5),
+  splitData(dataPhase6),
+];
+
+const lines = [
+ '<table class="result-table">',
+ '<thead>',
+ '<tr>',
+ '<th></th>',
+ '<th>Rank</th>',
+];
+
+servers.forEach((s, idx) => lines.push(`<th>${s} vs ${servers2[idx]}</th>`));
+
+lines.push('</tr>');
+lines.push('</thead>');
+lines.push('<tbody>');
+
+function writeFinalPoints(cells) {
+  cells.forEach((cell) => {
     if (cell.length) {
-      const n = parseInt(cell);
-      const percent = Math.round(n * 100 / max);
-      lines.push(`  <td class="${index<4?'final':'phase'}-points" style="background-size: ${percent}% 0.9rem;">${n.toLocaleString('en-US')}</td>`);
+      const points = parseInt(cell);
+      const pointsDisplay = (points/(1000*1000)).toFixed(1) + 'M';
+      const barWidth = (8 * points / MaxFinalPoints);
+      if (barWidth > 4) {
+        lines.push(`<td class="final-points"><div class="bar" style="width: ${barWidth.toFixed(1)}rem">${pointsDisplay}</div></td>`);
+      } else {
+        lines.push(`<td class="final-points"><div class="bar" style="width: ${barWidth.toFixed(1)}rem">&nbsp;</div>${pointsDisplay}</td>`);
+      }
     } else {
-      lines.push(`  <td>N/A</td>`);
+      lines.push(`<td class="final-points">N/A</td>`);
     }
   });
+}
 
-  lines.push('</tr>');
-})
+function writePhasePoints(cells) {
+  cells.forEach((cell) => {
+    if (cell.length) {
+      const points = parseInt(cell);
+      const pointsDisplay = (points/(1000*1000)).toFixed(1) + 'M';
+      const barWidth = (8 * points / MaxPhasePoints);
+      if (barWidth > 4) {
+        lines.push(`<td class="phase-points"><div class="bar" style="width: ${barWidth.toFixed(1)}rem">${pointsDisplay}</div></td>`);
+      } else {
+        lines.push(`<td class="phase-points"><div class="bar" style="width: ${barWidth.toFixed(1)}rem">&nbsp;</div>${pointsDisplay}</td>`);
+      }
+    } else {
+      lines.push(`<td class="phase-points">N/A</td>`);
+    }
+  });
+}
+
+lines.push('<tr class="new-section">');
+lines.push('<td rowspan="5">Final</th>');
+lines.push('<td>#1</td>');
+writeFinalPoints(finalPoints[0]);
+lines.push('</tr>');
+
+lines.push('<tr>');
+lines.push('<td>#2</td>');
+writeFinalPoints(finalPoints[1]);
+lines.push('</tr>');
+
+lines.push('<tr>');
+lines.push('<td>#3</td>');
+writeFinalPoints(finalPoints[2]);
+lines.push('</tr>');
+
+lines.push('<tr>')
+lines.push('<td>&nbsp;</td>')
+for (let i=0; i < servers.length; i++) lines.push('<td>⋮</td>');
+lines.push('</tr>')
+
+lines.push('<tr>')
+lines.push('<td>#20</td>');
+writeFinalPoints(finalPoints[3]);
+lines.push('</tr>');
+
+phasePoints.forEach((phaseData, phaseIdx) => {
+  phaseData.forEach((rankedPoints, rankIdx) => {
+    if (rankIdx === 0) {
+      lines.push('<tr class="new-section">');
+      lines.push(`<td rowspan="4">Phase ${phaseIdx+1}</th>`);
+    } else {
+      lines.push('<tr>')
+    }
+
+    lines.push(`<td>#${(rankIdx + 1)}</td>`);
+    writePhasePoints(rankedPoints);
+    lines.push('</tr>');
+  })
+  
+});
+
+lines.push('</tbody>');
+lines.push('</table>');
 
 fs.writeFileSync('./table.html', lines.join('\n'));
