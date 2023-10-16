@@ -6,16 +6,29 @@
  gray  : 1d2231 3a4361 485363 638ad3
 */
 
-table th, table td { padding: 0.5rem; }
 table { border-collapse: collapse; position: relative;}
 
-table.blacksmith th {  background-color: #5db552; }
-table.witchLab th {  background-color: #448bd1; }
+table.blacksmith th,
+table.witchLab th {
+  background: #7c1a20;
+  color: #fec728;
+  font-weight: normal;
+  padding: 0.5rem; 
+}
+
+table.blacksmith td,
+table.witchLab td {
+  background: white;
+  color: black;
+  font-weight: normal;
+  padding: 0.5rem; 
+  border-top: 0.1rem solid #7c1a20;
+}
 
 table th:first-child { border-radius: 0.8rem 0 0 0; }
 table th:last-child  { border-radius: 0 0.8rem 0 0; }
 
-table thead tr th:first-child { width: 10rem; }
+table thead tr th:first-child { width: 8rem; }
 table thead tr th:last-child  { width: 6rem; }
 table thead tr th { position: sticky; top: 0; /* Don't forget this, required for the stickiness */ }
 
@@ -25,5 +38,5 @@ table tbody td:nth-child(2) { text-align: right; }
 table tbody td:nth-child(3) { text-align: left; }
 table tbody td:nth-child(4) { text-align: center; }
 
-table tbody td.verified { color: black; }
-table tbody td.unverified { color: red; }
+table tbody td.verified { color: #266033; }
+table tbody td.unverified { color: #b42328; }
