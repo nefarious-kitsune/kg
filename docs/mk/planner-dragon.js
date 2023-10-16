@@ -284,7 +284,7 @@ class DragonUpgradePlanner {
               canUpgrade = false;
               runOutOf = 'Epic';
             } else {
-              if ((bag.free + bag.gold) > qtyNeeded) {
+              if ((bag.free + bag.gold) >= qtyNeeded) {
                 bag.free = bag.free - (qtyNeeded - bag.gold);
                 bag.gold = 0;
                 totalPoints += qtyNeeded * 14000;

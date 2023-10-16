@@ -95,7 +95,7 @@ const BlacksmithUpgradePlanner = {
 
       const qtyNeeded = BlacksmithUpgradeCost[idx].cost; // should be (index * 5);
 
-      if (_forgeHammerCount > qtyNeeded) {
+      if (_forgeHammerCount >= qtyNeeded) {
         _blacksmithLevel++;
         _forgeHammerCount -= qtyNeeded;
         totalPoints += qtyNeeded * 70;

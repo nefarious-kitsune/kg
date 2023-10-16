@@ -49,7 +49,7 @@ class LabUpgradePlanner {
 
       const qtyNeeded = WitchLabUpgradeCost[idx].cost; // should be (index * 5);
 
-      if (lightReagentLeft > qtyNeeded) {
+      if (lightReagentLeft >= qtyNeeded) {
         witchLabLevel++;
         lightReagentLeft -= qtyNeeded;
         totalPoints += qtyNeeded * 70;

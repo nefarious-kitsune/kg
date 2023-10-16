@@ -50,7 +50,7 @@ class BlacksmithUpgradePlanner {
 
       const qtyNeeded = BlacksmithUpgradeCost[idx].cost; // should be (index * 5);
 
-      if (forgeHammerLeft > qtyNeeded) {
+      if (forgeHammerLeft >= qtyNeeded) {
         blacksmithLevel++;
         forgeHammerLeft -= qtyNeeded;
         totalPoints += qtyNeeded * 70;

@@ -42,7 +42,7 @@ const WitchLabUpgradePlanner = {
     localStorage.setItem(CURR_REAGENT_COUNT_KEY, up.currLightReagentCount);
     localStorage.setItem(CURR_LAB_LEVEL_KEY  , up.currWitchLabLevel);
   },
-  // 1916 870
+  //  870
 
   getUserData: function() {
     const up = WitchLabUpgradePlanner;
@@ -96,7 +96,7 @@ const WitchLabUpgradePlanner = {
 
       const qtyNeeded = WitchLabUpgradeCost[idx].cost; // should be (index * 5);
 
-      if (_lightReagentCount > qtyNeeded) {
+      if (_lightReagentCount >= qtyNeeded) {
         _labLevel++;
         _lightReagentCount -= qtyNeeded;
         totalPoints += qtyNeeded * 70;
