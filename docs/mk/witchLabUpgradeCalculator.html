@@ -1,14 +1,14 @@
 <html>
 <head>
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Miku's Shrine: Blacksmith Upgrade Calculator</title>
+  <title>Miku's Shrine: Witch's Lab Upgrade Calculator</title>
   <script src="./witchLabUpgradeCost.js"></script>
   <script src="./up-common.js"></script>
   <script src="./up-witch-lab-v2.js"></script>
   <link href="../css/common.css" rel="stylesheet" />
   <link href="./up.css" rel="stylesheet" />
   <script>
-    const tabs = ['witch-labe-upgrade-1', 'witch-labe-upgrade-2', 'witch-labe-upgrade-f'];
+    const labTabs = ['witch-labe-upgrade-1', 'witch-labe-upgrade-2', 'witch-labe-upgrade-f'];
     document.addEventListener("DOMContentLoaded", (e) => {
       WitchLabUpgradePlanner.init();
     })
@@ -43,9 +43,9 @@ You can see the full <a href="./witchLabUpgradeCost">upgrade cost table</a>.
 <div class="collapsible-content" id="witch-labe-upgrade-content">
 
 <div class="up-tab-bar">
-  <button onclick="openTab(0, tabs)" id="witch-labe-upgrade-1-tab" class="up-tab focused">Current</button>
+  <button onclick="openTab(0, labTabs)" id="witch-labe-upgrade-1-tab" class="up-tab focused">Current</button>
   <!-- <button onclick="openTab(1, tabs)" id="witch-labe-upgrade-2-tab" class="up-tab focused">T2</button> -->
-  <button onclick="openTab(2, tabs)" id="witch-labe-upgrade-f-tab" class="up-tab">Calculated</button>
+  <button onclick="openTab(2, labTabs)" id="witch-labe-upgrade-f-tab" class="up-tab">Calculated</button>
 </div>
 <form class="form-container" id="witch-labe-upgrade-form">
   <div class="up-tab-content" id="witch-labe-upgrade-1-content">
@@ -68,7 +68,7 @@ You can see the full <a href="./witchLabUpgradeCost">upgrade cost table</a>.
       <span id="LightReagentLeft" class="output">29741</span>
     </div>
     <p>We estimate that you need <span class="need-more" id="MissingLightReagent">10000</span>
-      more Forge Hammers to upgrade Witch's Lab to level 2000.</p>
+      more Light Reagent to upgrade Witch's Lab to level 2000.</p>
   </div>
 </form>
 </div>

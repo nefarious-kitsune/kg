@@ -8,7 +8,7 @@
   <link href="../css/common.css" rel="stylesheet" />
   <link href="./up.css" rel="stylesheet" />
   <script>
-    const tabs = ['blacksmith-upgrade-1', 'blacksmith-upgrade-2', 'blacksmith-upgrade-f'];
+    const blackTabs = ['blacksmith-upgrade-1', 'blacksmith-upgrade-2', 'blacksmith-upgrade-f'];
     document.addEventListener("DOMContentLoaded", (e) => {
       BlacksmithUpgradePlanner.init();
     })
@@ -46,9 +46,9 @@ You can see the full <a href="./blacksmithUpgradeCost">upgrade cost table</a>.
 <div class="collapsible-content" id="blacksmith-upgrade-content">
 
 <div class="up-tab-bar">
-  <button onclick="openTab(0, tabs)" id="blacksmith-upgrade-1-tab" class="up-tab focused">Current</button>
+  <button onclick="openTab(0, blackTabs)" id="blacksmith-upgrade-1-tab" class="up-tab focused">Current</button>
   <!-- <button onclick="openTab(1, tabs)" id="blacksmith-upgrade-2-tab" class="up-tab focused">T2</button> -->
-  <button onclick="openTab(2, tabs)" id="blacksmith-upgrade-f-tab" class="up-tab">Calculated</button>
+  <button onclick="openTab(2, blackTabs)" id="blacksmith-upgrade-f-tab" class="up-tab">Calculated</button>
 </div>
 <form class="form-container" id="blacksmith-upgrade-form">
   <div class="up-tab-content" id="blacksmith-upgrade-1-content">
