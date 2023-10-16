@@ -110,12 +110,9 @@ body.landing #header {
   color: #7c1a20;
 }
 
-
-
-
 ul.butterfly {
 	margin: 0;
-  padding: 0;
+  padding: 0 0 1rem 0;
 }
 
 ul.butterfly li {

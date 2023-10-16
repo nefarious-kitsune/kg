@@ -4,6 +4,8 @@ const MaxPhasePoints = (1500 * 1000 * 1000);
 const MaxFinalPoints = (2500 * 1000 * 1000);
 const MaxUPFinalPoints = (5 * 1000 * 1000 * 1000);
 
+const hasUP = true;
+
 const rawMKPointData =
 `1447997560	1983227282	688303560	1209937540	642344270	257322484	403362280	364624420	387420496
 1246075610	1926745514	596316340	913109050	551324080	242793302	382249280	322432460	369633540
@@ -62,7 +64,7 @@ const mkPointData = splitData(rawMKPointData);
 const upPointData = splitData(rawUPPointData);
 
 for (let serverIdx = 0; serverIdx < servers.length; serverIdx++) {
-  compiledData.push({
+  const data = {
     server: servers[serverIdx],
     server2: servers2[serverIdx],
     mk: {
@@ -109,13 +111,19 @@ for (let serverIdx = 0; serverIdx < servers.length; serverIdx++) {
         '4':  parseNum(mkPointData[27][serverIdx]),
       }
     },
-    up: {
+    
+  };
+
+  if (hasUP) {
+    data.up = {
       '1':  parseNum(upPointData[0][serverIdx]),
       '2':  parseNum(upPointData[1][serverIdx]),
       '3':  parseNum(upPointData[2][serverIdx]),
       '20': parseNum(upPointData[3][serverIdx]),
-    }
-  })
+    };
+  }
+
+  compiledData.push(data)
 }
 
 const exportedJSON = JSON.stringify(compiledData, null, '  ');
@@ -126,13 +134,14 @@ const mkTableLines = [
   '<thead>',
   '<tr>',
   '<th>Server</th>',
-  '<th class="mk-final-col">Final</th>',
-  '<th class="mk-phase-1-col">Phase 1: Unit</th>',
-  '<th class="mk-phase-2-col">Phase 2: Witch</th>',
-  '<th class="mk-phase-3-col">Phase 3: Dragon</th>',
-  '<th class="mk-phase-4-col">Phase 4: Summon</th>',
-  '<th class="mk-phase-5-col">Phase 5: Gear</th>',
-  '<th class="mk-phase-6-col">Phase 6: Heroes</th>',
+  (hasUP?'<th class="up-final-col">Ultimate Power</th>':''),
+  '<th class="mk-final-col">Mightiest Kingdom Final</th>',
+  '<th class="mk-phase-1-col">1. Unit</th>',
+  '<th class="mk-phase-2-col">2. Witch</th>',
+  '<th class="mk-phase-3-col">3. Dragon</th>',
+  '<th class="mk-phase-4-col">4. Summon</th>',
+  '<th class="mk-phase-5-col">5. Gear</th>',
+  '<th class="mk-phase-6-col">6. Heroes</th>',
   '<th>&nbsp;</th>',
   '</tr>',
   '</thead>',
@@ -142,20 +151,33 @@ const mkTableLines = [
 const serverCount = compiledData.length;
 
 function getMKFinalPointHTML(rank, points) {
+  if (points === null) {
+    return (
+      '<td class="mk-final-col">' + 
+      `<span class="event-rank-${rank}">${rank}</span>` +
+      '<span class="final-point">N/A</span>' +
+      '</td>'
+    )
+  }
+
   let pointsDisplay;
   let barWidth;
 
-  pointsDisplay = (points/(1000*1000)).toFixed(1) + 'M';
+  pointsDisplay = 
+    (points > 10 * 1000 * 1000)?
+    (points/(1000*1000)).toFixed(0) + 'M':
+    (points/(1000*1000)).toFixed(1) + 'M';
+
   barWidth = (16 * points / MaxFinalPoints).toFixed(1);
 
   let html =
     '<td class="mk-final-col">' + 
-    `<span class="final-rank">#${rank}</span>`;
+    `<span class="event-rank-${rank}">${rank}</span>`;
 
   if (barWidth >= 8) {
-    html += `<div class="final-point-bar" style="width: ${barWidth}rem"><span class="final-point">${pointsDisplay}<span></div></td>`;
+    html += `<div class="final-point-bar" style="width: ${barWidth}rem"><span class="final-point">${pointsDisplay}</span></div>`;
   } else {
-    html += `<div class="final-point-bar" style="width: ${barWidth}rem">&nbsp;</div><span class="final-point">${pointsDisplay}<span></td>`;
+    html += `<div class="final-point-bar" style="width: ${barWidth}rem">&nbsp;</div><span class="final-point">${pointsDisplay}</span></td>`;
   }
 
   html += '</td>';
@@ -163,20 +185,33 @@ function getMKFinalPointHTML(rank, points) {
 }
 
 function getMKPhasePointHTML(phase, rank, points) {
+  if (points === null) {
+    return (
+      `<td class="mk-phase-${phase}-col">` + 
+      `<span class="event-rank-${rank}">${rank}</span>` +
+      '<span class="final-point">N/A</span>' +
+      '</td>'
+    )
+  }
+
   let pointsDisplay;
   let barWidth;
 
-  pointsDisplay = (points/(1000*1000)).toFixed(1) + 'M';
+  pointsDisplay = 
+    (points > 10 * 1000 * 1000)?
+    (points/(1000*1000)).toFixed(0) + 'M':
+    (points/(1000*1000)).toFixed(1) + 'M';
+
   barWidth = (6 * points / MaxPhasePoints).toFixed(1);
 
   let html =
     `<td class="mk-phase-${phase}-col">` + 
-    `<span class="phase-rank">#${rank}</span>`;
+    `<span class="event-rank-${rank}">${rank}</span>`;
 
   if (barWidth >= 3) {
-    html += `<div class="phase-point-bar" style="width: ${barWidth}rem"><span class="phase-point">${pointsDisplay}<span></div></td>`;
+    html += `<div class="phase-point-bar" style="width: ${barWidth}rem"><span class="phase-point">${pointsDisplay}</span></div>`;
   } else {
-    html += `<div class="phase-point-bar" style="width: ${barWidth}rem">&nbsp;</div><span class="phase-point">${pointsDisplay}<span></td>`;
+    html += `<div class="phase-point-bar" style="width: ${barWidth}rem">&nbsp;</div><span class="phase-point">${pointsDisplay}</span></td>`;
   }
 
   html += '</td>';
@@ -184,20 +219,33 @@ function getMKPhasePointHTML(phase, rank, points) {
 }
 
 function getUPFinalPointHTML(rank, points) {
+  if (points === null) {
+    return (
+      '<td class="up-final-col">' + 
+      `<span class="event-rank-${rank}">${rank}</span>` +
+      '<span class="final-point">N/A</span>' +
+      '</td>'
+    )
+  }
+
   let pointsDisplay;
   let barWidth;
 
-  pointsDisplay = (points/(1000*1000)).toFixed(1) + 'M';
+  pointsDisplay =
+    (points > 10 * 1000 * 1000)?
+    (points/(1000*1000)).toFixed(0) + 'M':
+    (points/(1000*1000)).toFixed(1) + 'M';
+
   barWidth = (16 * points / MaxUPFinalPoints).toFixed(1);
 
   let html =
-    '<td class="uk-final-col">' + 
-    `<span class="final-rank">#${rank}</span>`;
+    '<td class="up-final-col">' + 
+    `<span class="event-rank-${rank}">${rank}</span>`;
 
   if (barWidth >= 8) {
-    html += `<div class="final-point-bar" style="width: ${barWidth}rem"><span class="final-point">${pointsDisplay}<span></div></td>`;
+    html += `<div class="final-point-bar" style="width: ${barWidth}rem"><span class="final-point">${pointsDisplay}</span></div>`;
   } else {
-    html += `<div class="final-point-bar" style="width: ${barWidth}rem">&nbsp;</div><span class="final-point">${pointsDisplay}<span></td>`;
+    html += `<div class="final-point-bar" style="width: ${barWidth}rem">&nbsp;</div><span class="final-point">${pointsDisplay}</span></td>`;
   }
 
   html += '</td>';
@@ -207,7 +255,10 @@ function getUPFinalPointHTML(rank, points) {
 for (let serverIdx = 0; serverIdx < serverCount; serverIdx++) {
   const serverData = compiledData[serverIdx];
   mkTableLines.push('<tr class="new-section">');
-  mkTableLines.push(`<td rowspan="4" class="server-data">${serverData.server} vs ${serverData.server2}`);
+  mkTableLines.push(`<td rowspan="4" class="server-data">${serverData.server}<span class="vs-server"> vs ${serverData.server2}</span>`);
+
+  if (hasUP) mkTableLines.push(getUPFinalPointHTML(1, serverData.up['1']) );
+
   mkTableLines.push(getMKFinalPointHTML(   1, serverData.mk.final['1']) );
   mkTableLines.push(getMKPhasePointHTML(1, 1, serverData.mk.phase1['1']) );
   mkTableLines.push(getMKPhasePointHTML(2, 1, serverData.mk.phase2['1']) );
@@ -222,7 +273,11 @@ for (let serverIdx = 0; serverIdx < serverCount; serverIdx++) {
   ['2', '3', '4'].forEach((rank) => {
     const fRank = rank === '4'?'20':rank;
     mkTableLines.push('<tr>');
+
+    if (hasUP) mkTableLines.push(getUPFinalPointHTML(fRank, serverData.up[fRank]) );
+
     mkTableLines.push(getMKFinalPointHTML(   fRank, serverData.mk.final[fRank]) );
+
     mkTableLines.push(getMKPhasePointHTML(1, rank, serverData.mk.phase1[rank]) );
     mkTableLines.push(getMKPhasePointHTML(2, rank, serverData.mk.phase2[rank]) );
     mkTableLines.push(getMKPhasePointHTML(3, rank, serverData.mk.phase3[rank]) );
@@ -238,38 +293,3 @@ mkTableLines.push('</tbody>');
 mkTableLines.push('</table>');
 
 fs.writeFileSync('./mk-table.html', mkTableLines.join('\n'));
-
-const upTableLines = [
-  '<table class="up-result-table" id="up-result-table">',
-  '<thead>',
-  '<tr>',
-  '<th>Server</th>',
-  '<th class="up-final-col">Final</th>',
-  '<th>&nbsp;</th>',
-  '</tr>',
-  '</thead>',
-  '<tbody>'
-];
-
-for (let serverIdx = 0; serverIdx < serverCount; serverIdx++) {
-  const serverData = compiledData[serverIdx];
-  upTableLines.push('<tr class="new-section">');
-  upTableLines.push(`<td rowspan="4" class="server-data">${serverData.server}`);
-  upTableLines.push(getUPFinalPointHTML(   1, serverData.up['1']) );
-  upTableLines.push('<td>&nbsp;</td>');
-  mkTableLines.push('</tr>');
-
-  
-  ['2', '3', '20'].forEach((rank) => {
-    const fRank = rank === '4'?'20':rank;
-    upTableLines.push('<tr>');
-    upTableLines.push(getUPFinalPointHTML(   rank, serverData.up[fRank]) );
-    upTableLines.push('<td>&nbsp;</td>');
-    upTableLines.push('</tr>')
-  })
-}
-
-upTableLines.push('</tbody>');
-upTableLines.push('</table>');
-
-fs.writeFileSync('./up-table.html', upTableLines.join('\n'));

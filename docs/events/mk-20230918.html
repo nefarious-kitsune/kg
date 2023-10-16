@@ -1,10 +1,11 @@
 <html>
 <head>
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Miku's Shrine: Mightiest Kingdom Results (20230918 ~ 20230923)</title>
+  <title>Miku's Shrine: Mightiest Kingdom Results (2023-09-18 ~ 2023-09-23)</title>
   <link rel="icon" type="image/x-icon" href="../images/katana-stand-150.png">
   <link href="../css/common.css" rel="stylesheet" />
   <link href="./event-data.css" rel="stylesheet" />
+  <script src="./event-common.js"></script>
 </head>
 <body>
 
@@ -13,9 +14,9 @@
   <div id="breadcrumb-wrapper"><nav>
     <a class="link" href="../content">Home</a>
     <span class="chevron">›</span>
-    <a class="link" href="./">Events</a>
+    <a class="link" href="./mk">Mightiest Kingdom</a>
     <span class="chevron">›</span>
-    <span class="current">2023-09-18 Mightiest Kingdom Results</span>
+    <span class="current">2023-09-18 Results</span>
   </nav></div>
 </header>
 <main>
@@ -26,234 +27,210 @@ a reference to decide when you want to spend resources on
 <abbr data-tooltip="Mightiest Kingdom">MK</abbr> or
 <abbr data-tooltip="Ultimate Power">UP</abbr> events.</p>
 
-<h2>Mightiest Kingdom</h2>
-<p>(2023-09-18 ~ 2023-09-23)</p>
-<div class="result-wrapper">
+<p>(2023-10-09 ~ 2023-10-14)</p>
 
-<table class="result-table">
+<ul class="butterfly">
+  <li>Download data: <a href="./mk-20230918.json">JSON</a></li>
+  <li>2023-09-18 ~ 2023-09-23 result</li>
+  <li><a href="./mk-20230925">2023-09-25 ~ 2023-09-30</a> result</li>
+  <li><a href="./mk-20231009">2023-10-09 ~ 2023-10-14</a> result</li>
+</ul>
+
+<div class="tabbed-table-wrapper-head">Mightiest Kingdom Results</div>
+<div class="tabbed-table-wrapper-content" id="mk-result-content">
+<div class="tabbed-table-tab-bar">
+  <button onclick="openPhase(0, false)" id="mk-tab-0" class="tab focused">Mightiest Kingdom Final</button>
+  <button onclick="openPhase(1, false)" id="mk-tab-1" class="tab">Mightiest Kingdom Phase 1~3</button>
+  <button onclick="openPhase(2, false)" id="mk-tab-2" class="tab">Mightiest Kingdom Phase 4~6</button>
+</div>
+<div class="tabbed-table-content">
+
+<table class="mk-result-table display-final" id="mk-result-table">
 <thead>
 <tr>
-<th></th>
-<th>Rank</th>
-<th>S699 vs S2002</th>
-<th>S819 vs S461</th>
-<th>S626 vs S471</th>
-<th>S1111 vs S788</th>
+<th>Server</th>
+
+<th class="mk-final-col">Mightiest Kingdom Final</th>
+<th class="mk-phase-1-col">1. Unit</th>
+<th class="mk-phase-2-col">2. Witch</th>
+<th class="mk-phase-3-col">3. Dragon</th>
+<th class="mk-phase-4-col">4. Summon</th>
+<th class="mk-phase-5-col">5. Gear</th>
+<th class="mk-phase-6-col">6. Heroes</th>
+<th>&nbsp;</th>
 </tr>
 </thead>
 <tbody>
 <tr class="new-section">
-<td rowspan="5">Final</th>
-<td>#1</td>
-<td class="final-points"><div class="bar" style="width: 1.7rem">&nbsp;</div>412.9M</td>
-<td class="final-points"><div class="bar" style="width: 1.1rem">&nbsp;</div>278.8M</td>
-<td class="final-points"><div class="bar" style="width: 1.0rem">&nbsp;</div>258.2M</td>
-<td class="final-points"><div class="bar" style="width: 1.3rem">&nbsp;</div>337.0M</td>
-</tr>
-<tr>
-<td>#2</td>
-<td class="final-points"><div class="bar" style="width: 1.2rem">&nbsp;</div>309.0M</td>
-<td class="final-points"><div class="bar" style="width: 0.8rem">&nbsp;</div>189.3M</td>
-<td class="final-points"><div class="bar" style="width: 1.0rem">&nbsp;</div>255.5M</td>
-<td class="final-points"><div class="bar" style="width: 1.0rem">&nbsp;</div>248.2M</td>
-</tr>
-<tr>
-<td>#3</td>
-<td class="final-points"><div class="bar" style="width: 1.2rem">&nbsp;</div>297.9M</td>
-<td class="final-points"><div class="bar" style="width: 0.6rem">&nbsp;</div>146.7M</td>
-<td class="final-points"><div class="bar" style="width: 0.8rem">&nbsp;</div>187.6M</td>
-<td class="final-points"><div class="bar" style="width: 0.5rem">&nbsp;</div>132.5M</td>
-</tr>
-<tr>
+<td rowspan="4" class="server-data">S699<span class="vs-server"> vs S2002</span>
+<td class="mk-final-col"><span class="event-rank-1">1</span><div class="final-point-bar" style="width: 2.6rem">&nbsp;</div><span class="final-point">413M</span></td></td>
+<td class="mk-phase-1-col"><span class="event-rank-1">1</span><div class="phase-point-bar" style="width: 0.8rem">&nbsp;</div><span class="phase-point">201M</span></td></td>
+<td class="mk-phase-2-col"><span class="event-rank-1">1</span><div class="phase-point-bar" style="width: 0.1rem">&nbsp;</div><span class="phase-point">30M</span></td></td>
+<td class="mk-phase-3-col"><span class="event-rank-1">1</span><span class="final-point">N/A</span></td>
+<td class="mk-phase-4-col"><span class="event-rank-1">1</span><div class="phase-point-bar" style="width: 0.1rem">&nbsp;</div><span class="phase-point">27M</span></td></td>
+<td class="mk-phase-5-col"><span class="event-rank-1">1</span><div class="phase-point-bar" style="width: 0.5rem">&nbsp;</div><span class="phase-point">121M</span></td></td>
+<td class="mk-phase-6-col"><span class="event-rank-1">1</span><div class="phase-point-bar" style="width: 0.6rem">&nbsp;</div><span class="phase-point">144M</span></td></td>
 <td>&nbsp;</td>
-<td>⋮</td>
-<td>⋮</td>
-<td>⋮</td>
-<td>⋮</td>
 </tr>
 <tr>
-<td>#20</td>
-<td class="final-points"><div class="bar" style="width: 0.3rem">&nbsp;</div>70.5M</td>
-<td class="final-points"><div class="bar" style="width: 0.2rem">&nbsp;</div>49.0M</td>
-<td class="final-points"><div class="bar" style="width: 0.2rem">&nbsp;</div>41.1M</td>
-<td class="final-points"><div class="bar" style="width: 0.2rem">&nbsp;</div>50.9M</td>
+<td class="mk-final-col"><span class="event-rank-2">2</span><div class="final-point-bar" style="width: 2.0rem">&nbsp;</div><span class="final-point">309M</span></td></td>
+<td class="mk-phase-1-col"><span class="event-rank-2">2</span><div class="phase-point-bar" style="width: 0.7rem">&nbsp;</div><span class="phase-point">183M</span></td></td>
+<td class="mk-phase-2-col"><span class="event-rank-2">2</span><div class="phase-point-bar" style="width: 0.1rem">&nbsp;</div><span class="phase-point">15M</span></td></td>
+<td class="mk-phase-3-col"><span class="event-rank-2">2</span><span class="final-point">N/A</span></td>
+<td class="mk-phase-4-col"><span class="event-rank-2">2</span><div class="phase-point-bar" style="width: 0.1rem">&nbsp;</div><span class="phase-point">24M</span></td></td>
+<td class="mk-phase-5-col"><span class="event-rank-2">2</span><div class="phase-point-bar" style="width: 0.3rem">&nbsp;</div><span class="phase-point">80M</span></td></td>
+<td class="mk-phase-6-col"><span class="event-rank-2">2</span><div class="phase-point-bar" style="width: 0.6rem">&nbsp;</div><span class="phase-point">138M</span></td></td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td class="mk-final-col"><span class="event-rank-3">3</span><div class="final-point-bar" style="width: 1.9rem">&nbsp;</div><span class="final-point">298M</span></td></td>
+<td class="mk-phase-1-col"><span class="event-rank-3">3</span><div class="phase-point-bar" style="width: 0.4rem">&nbsp;</div><span class="phase-point">93M</span></td></td>
+<td class="mk-phase-2-col"><span class="event-rank-3">3</span><div class="phase-point-bar" style="width: 0.1rem">&nbsp;</div><span class="phase-point">13M</span></td></td>
+<td class="mk-phase-3-col"><span class="event-rank-3">3</span><span class="final-point">N/A</span></td>
+<td class="mk-phase-4-col"><span class="event-rank-3">3</span><div class="phase-point-bar" style="width: 0.1rem">&nbsp;</div><span class="phase-point">15M</span></td></td>
+<td class="mk-phase-5-col"><span class="event-rank-3">3</span><div class="phase-point-bar" style="width: 0.2rem">&nbsp;</div><span class="phase-point">38M</span></td></td>
+<td class="mk-phase-6-col"><span class="event-rank-3">3</span><div class="phase-point-bar" style="width: 0.3rem">&nbsp;</div><span class="phase-point">83M</span></td></td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td class="mk-final-col"><span class="event-rank-20">20</span><div class="final-point-bar" style="width: 0.5rem">&nbsp;</div><span class="final-point">70M</span></td></td>
+<td class="mk-phase-1-col"><span class="event-rank-4">4</span><div class="phase-point-bar" style="width: 0.3rem">&nbsp;</div><span class="phase-point">84M</span></td></td>
+<td class="mk-phase-2-col"><span class="event-rank-4">4</span><div class="phase-point-bar" style="width: 0.0rem">&nbsp;</div><span class="phase-point">11M</span></td></td>
+<td class="mk-phase-3-col"><span class="event-rank-4">4</span><span class="final-point">N/A</span></td>
+<td class="mk-phase-4-col"><span class="event-rank-4">4</span><div class="phase-point-bar" style="width: 0.0rem">&nbsp;</div><span class="phase-point">11M</span></td></td>
+<td class="mk-phase-5-col"><span class="event-rank-4">4</span><div class="phase-point-bar" style="width: 0.0rem">&nbsp;</div><span class="phase-point">8.8M</span></td></td>
+<td class="mk-phase-6-col"><span class="event-rank-4">4</span><div class="phase-point-bar" style="width: 0.3rem">&nbsp;</div><span class="phase-point">74M</span></td></td>
+<td>&nbsp;</td>
 </tr>
 <tr class="new-section">
-<td rowspan="4">Phase 1</th>
-<td>#1</td>
-<td class="phase-points"><div class="bar" style="width: 2.7rem">&nbsp;</div>201.1M</td>
-<td class="phase-points"><div class="bar" style="width: 2.8rem">&nbsp;</div>206.6M</td>
-<td class="phase-points"><div class="bar" style="width: 1.0rem">&nbsp;</div>75.7M</td>
-<td class="phase-points"><div class="bar" style="width: 1.7rem">&nbsp;</div>124.1M</td>
+<td rowspan="4" class="server-data">S819<span class="vs-server"> vs S461</span>
+<td class="mk-final-col"><span class="event-rank-1">1</span><div class="final-point-bar" style="width: 1.8rem">&nbsp;</div><span class="final-point">279M</span></td></td>
+<td class="mk-phase-1-col"><span class="event-rank-1">1</span><div class="phase-point-bar" style="width: 0.8rem">&nbsp;</div><span class="phase-point">207M</span></td></td>
+<td class="mk-phase-2-col"><span class="event-rank-1">1</span><div class="phase-point-bar" style="width: 0.1rem">&nbsp;</div><span class="phase-point">18M</span></td></td>
+<td class="mk-phase-3-col"><span class="event-rank-1">1</span><span class="final-point">N/A</span></td>
+<td class="mk-phase-4-col"><span class="event-rank-1">1</span><div class="phase-point-bar" style="width: 0.1rem">&nbsp;</div><span class="phase-point">29M</span></td></td>
+<td class="mk-phase-5-col"><span class="event-rank-1">1</span><div class="phase-point-bar" style="width: 0.0rem">&nbsp;</div><span class="phase-point">7.2M</span></td></td>
+<td class="mk-phase-6-col"><span class="event-rank-1">1</span><div class="phase-point-bar" style="width: 0.3rem">&nbsp;</div><span class="phase-point">68M</span></td></td>
+<td>&nbsp;</td>
 </tr>
 <tr>
-<td>#2</td>
-<td class="phase-points"><div class="bar" style="width: 2.4rem">&nbsp;</div>183.1M</td>
-<td class="phase-points"><div class="bar" style="width: 1.5rem">&nbsp;</div>109.8M</td>
-<td class="phase-points"><div class="bar" style="width: 1.0rem">&nbsp;</div>71.6M</td>
-<td class="phase-points"><div class="bar" style="width: 1.3rem">&nbsp;</div>100.7M</td>
+<td class="mk-final-col"><span class="event-rank-2">2</span><div class="final-point-bar" style="width: 1.2rem">&nbsp;</div><span class="final-point">189M</span></td></td>
+<td class="mk-phase-1-col"><span class="event-rank-2">2</span><div class="phase-point-bar" style="width: 0.4rem">&nbsp;</div><span class="phase-point">110M</span></td></td>
+<td class="mk-phase-2-col"><span class="event-rank-2">2</span><div class="phase-point-bar" style="width: 0.0rem">&nbsp;</div><span class="phase-point">10M</span></td></td>
+<td class="mk-phase-3-col"><span class="event-rank-2">2</span><span class="final-point">N/A</span></td>
+<td class="mk-phase-4-col"><span class="event-rank-2">2</span><div class="phase-point-bar" style="width: 0.1rem">&nbsp;</div><span class="phase-point">21M</span></td></td>
+<td class="mk-phase-5-col"><span class="event-rank-2">2</span><div class="phase-point-bar" style="width: 0.0rem">&nbsp;</div><span class="phase-point">3.1M</span></td></td>
+<td class="mk-phase-6-col"><span class="event-rank-2">2</span><div class="phase-point-bar" style="width: 0.3rem">&nbsp;</div><span class="phase-point">67M</span></td></td>
+<td>&nbsp;</td>
 </tr>
 <tr>
-<td>#3</td>
-<td class="phase-points"><div class="bar" style="width: 1.2rem">&nbsp;</div>93.2M</td>
-<td class="phase-points"><div class="bar" style="width: 1.1rem">&nbsp;</div>84.1M</td>
-<td class="phase-points"><div class="bar" style="width: 0.8rem">&nbsp;</div>61.4M</td>
-<td class="phase-points"><div class="bar" style="width: 0.6rem">&nbsp;</div>41.3M</td>
+<td class="mk-final-col"><span class="event-rank-3">3</span><div class="final-point-bar" style="width: 0.9rem">&nbsp;</div><span class="final-point">147M</span></td></td>
+<td class="mk-phase-1-col"><span class="event-rank-3">3</span><div class="phase-point-bar" style="width: 0.3rem">&nbsp;</div><span class="phase-point">84M</span></td></td>
+<td class="mk-phase-2-col"><span class="event-rank-3">3</span><div class="phase-point-bar" style="width: 0.0rem">&nbsp;</div><span class="phase-point">7.9M</span></td></td>
+<td class="mk-phase-3-col"><span class="event-rank-3">3</span><span class="final-point">N/A</span></td>
+<td class="mk-phase-4-col"><span class="event-rank-3">3</span><div class="phase-point-bar" style="width: 0.0rem">&nbsp;</div><span class="phase-point">8.8M</span></td></td>
+<td class="mk-phase-5-col"><span class="event-rank-3">3</span><div class="phase-point-bar" style="width: 0.0rem">&nbsp;</div><span class="phase-point">2.7M</span></td></td>
+<td class="mk-phase-6-col"><span class="event-rank-3">3</span><div class="phase-point-bar" style="width: 0.2rem">&nbsp;</div><span class="phase-point">62M</span></td></td>
+<td>&nbsp;</td>
 </tr>
 <tr>
-<td>#4</td>
-<td class="phase-points"><div class="bar" style="width: 1.1rem">&nbsp;</div>83.6M</td>
-<td class="phase-points"><div class="bar" style="width: 0.7rem">&nbsp;</div>50.6M</td>
-<td class="phase-points"><div class="bar" style="width: 0.7rem">&nbsp;</div>54.1M</td>
-<td class="phase-points"><div class="bar" style="width: 0.5rem">&nbsp;</div>36.9M</td>
+<td class="mk-final-col"><span class="event-rank-20">20</span><div class="final-point-bar" style="width: 0.3rem">&nbsp;</div><span class="final-point">49M</span></td></td>
+<td class="mk-phase-1-col"><span class="event-rank-4">4</span><div class="phase-point-bar" style="width: 0.2rem">&nbsp;</div><span class="phase-point">51M</span></td></td>
+<td class="mk-phase-2-col"><span class="event-rank-4">4</span><div class="phase-point-bar" style="width: 0.0rem">&nbsp;</div><span class="phase-point">7.3M</span></td></td>
+<td class="mk-phase-3-col"><span class="event-rank-4">4</span><span class="final-point">N/A</span></td>
+<td class="mk-phase-4-col"><span class="event-rank-4">4</span><div class="phase-point-bar" style="width: 0.0rem">&nbsp;</div><span class="phase-point">7.6M</span></td></td>
+<td class="mk-phase-5-col"><span class="event-rank-4">4</span><div class="phase-point-bar" style="width: 0.0rem">&nbsp;</div><span class="phase-point">2.5M</span></td></td>
+<td class="mk-phase-6-col"><span class="event-rank-4">4</span><div class="phase-point-bar" style="width: 0.2rem">&nbsp;</div><span class="phase-point">56M</span></td></td>
+<td>&nbsp;</td>
 </tr>
 <tr class="new-section">
-<td rowspan="4">Phase 2</th>
-<td>#1</td>
-<td class="phase-points"><div class="bar" style="width: 0.4rem">&nbsp;</div>30.2M</td>
-<td class="phase-points"><div class="bar" style="width: 0.2rem">&nbsp;</div>17.9M</td>
-<td class="phase-points"><div class="bar" style="width: 0.2rem">&nbsp;</div>12.4M</td>
-<td class="phase-points"><div class="bar" style="width: 0.2rem">&nbsp;</div>12.5M</td>
+<td rowspan="4" class="server-data">S626<span class="vs-server"> vs S471</span>
+<td class="mk-final-col"><span class="event-rank-1">1</span><div class="final-point-bar" style="width: 1.7rem">&nbsp;</div><span class="final-point">258M</span></td></td>
+<td class="mk-phase-1-col"><span class="event-rank-1">1</span><div class="phase-point-bar" style="width: 0.3rem">&nbsp;</div><span class="phase-point">76M</span></td></td>
+<td class="mk-phase-2-col"><span class="event-rank-1">1</span><div class="phase-point-bar" style="width: 0.0rem">&nbsp;</div><span class="phase-point">12M</span></td></td>
+<td class="mk-phase-3-col"><span class="event-rank-1">1</span><span class="final-point">N/A</span></td>
+<td class="mk-phase-4-col"><span class="event-rank-1">1</span><div class="phase-point-bar" style="width: 0.0rem">&nbsp;</div><span class="phase-point">10M</span></td></td>
+<td class="mk-phase-5-col"><span class="event-rank-1">1</span><div class="phase-point-bar" style="width: 0.0rem">&nbsp;</div><span class="phase-point">5.3M</span></td></td>
+<td class="mk-phase-6-col"><span class="event-rank-1">1</span><div class="phase-point-bar" style="width: 0.7rem">&nbsp;</div><span class="phase-point">185M</span></td></td>
+<td>&nbsp;</td>
 </tr>
 <tr>
-<td>#2</td>
-<td class="phase-points"><div class="bar" style="width: 0.2rem">&nbsp;</div>14.6M</td>
-<td class="phase-points"><div class="bar" style="width: 0.1rem">&nbsp;</div>10.5M</td>
-<td class="phase-points"><div class="bar" style="width: 0.1rem">&nbsp;</div>10.3M</td>
-<td class="phase-points"><div class="bar" style="width: 0.1rem">&nbsp;</div>10.6M</td>
+<td class="mk-final-col"><span class="event-rank-2">2</span><div class="final-point-bar" style="width: 1.6rem">&nbsp;</div><span class="final-point">255M</span></td></td>
+<td class="mk-phase-1-col"><span class="event-rank-2">2</span><div class="phase-point-bar" style="width: 0.3rem">&nbsp;</div><span class="phase-point">72M</span></td></td>
+<td class="mk-phase-2-col"><span class="event-rank-2">2</span><div class="phase-point-bar" style="width: 0.0rem">&nbsp;</div><span class="phase-point">10M</span></td></td>
+<td class="mk-phase-3-col"><span class="event-rank-2">2</span><span class="final-point">N/A</span></td>
+<td class="mk-phase-4-col"><span class="event-rank-2">2</span><div class="phase-point-bar" style="width: 0.0rem">&nbsp;</div><span class="phase-point">8.5M</span></td></td>
+<td class="mk-phase-5-col"><span class="event-rank-2">2</span><div class="phase-point-bar" style="width: 0.0rem">&nbsp;</div><span class="phase-point">3.6M</span></td></td>
+<td class="mk-phase-6-col"><span class="event-rank-2">2</span><div class="phase-point-bar" style="width: 0.6rem">&nbsp;</div><span class="phase-point">148M</span></td></td>
+<td>&nbsp;</td>
 </tr>
 <tr>
-<td>#3</td>
-<td class="phase-points"><div class="bar" style="width: 0.2rem">&nbsp;</div>13.0M</td>
-<td class="phase-points"><div class="bar" style="width: 0.1rem">&nbsp;</div>7.9M</td>
-<td class="phase-points"><div class="bar" style="width: 0.1rem">&nbsp;</div>7.0M</td>
-<td class="phase-points"><div class="bar" style="width: 0.1rem">&nbsp;</div>7.7M</td>
+<td class="mk-final-col"><span class="event-rank-3">3</span><div class="final-point-bar" style="width: 1.2rem">&nbsp;</div><span class="final-point">188M</span></td></td>
+<td class="mk-phase-1-col"><span class="event-rank-3">3</span><div class="phase-point-bar" style="width: 0.2rem">&nbsp;</div><span class="phase-point">61M</span></td></td>
+<td class="mk-phase-2-col"><span class="event-rank-3">3</span><div class="phase-point-bar" style="width: 0.0rem">&nbsp;</div><span class="phase-point">7.0M</span></td></td>
+<td class="mk-phase-3-col"><span class="event-rank-3">3</span><span class="final-point">N/A</span></td>
+<td class="mk-phase-4-col"><span class="event-rank-3">3</span><div class="phase-point-bar" style="width: 0.0rem">&nbsp;</div><span class="phase-point">8.0M</span></td></td>
+<td class="mk-phase-5-col"><span class="event-rank-3">3</span><div class="phase-point-bar" style="width: 0.0rem">&nbsp;</div><span class="phase-point">3.0M</span></td></td>
+<td class="mk-phase-6-col"><span class="event-rank-3">3</span><div class="phase-point-bar" style="width: 0.4rem">&nbsp;</div><span class="phase-point">111M</span></td></td>
+<td>&nbsp;</td>
 </tr>
 <tr>
-<td>#4</td>
-<td class="phase-points"><div class="bar" style="width: 0.1rem">&nbsp;</div>11.2M</td>
-<td class="phase-points"><div class="bar" style="width: 0.1rem">&nbsp;</div>7.3M</td>
-<td class="phase-points"><div class="bar" style="width: 0.1rem">&nbsp;</div>5.5M</td>
-<td class="phase-points"><div class="bar" style="width: 0.1rem">&nbsp;</div>5.2M</td>
+<td class="mk-final-col"><span class="event-rank-20">20</span><div class="final-point-bar" style="width: 0.3rem">&nbsp;</div><span class="final-point">41M</span></td></td>
+<td class="mk-phase-1-col"><span class="event-rank-4">4</span><div class="phase-point-bar" style="width: 0.2rem">&nbsp;</div><span class="phase-point">54M</span></td></td>
+<td class="mk-phase-2-col"><span class="event-rank-4">4</span><div class="phase-point-bar" style="width: 0.0rem">&nbsp;</div><span class="phase-point">5.5M</span></td></td>
+<td class="mk-phase-3-col"><span class="event-rank-4">4</span><span class="final-point">N/A</span></td>
+<td class="mk-phase-4-col"><span class="event-rank-4">4</span><div class="phase-point-bar" style="width: 0.0rem">&nbsp;</div><span class="phase-point">7.8M</span></td></td>
+<td class="mk-phase-5-col"><span class="event-rank-4">4</span><div class="phase-point-bar" style="width: 0.0rem">&nbsp;</div><span class="phase-point">2.5M</span></td></td>
+<td class="mk-phase-6-col"><span class="event-rank-4">4</span><div class="phase-point-bar" style="width: 0.4rem">&nbsp;</div><span class="phase-point">110M</span></td></td>
+<td>&nbsp;</td>
 </tr>
 <tr class="new-section">
-<td rowspan="4">Phase 3</th>
-<td>#1</td>
-<td class="phase-points">N/A</td>
-<td class="phase-points">N/A</td>
-<td class="phase-points">N/A</td>
-<td class="phase-points">N/A</td>
+<td rowspan="4" class="server-data">S1111<span class="vs-server"> vs S788</span>
+<td class="mk-final-col"><span class="event-rank-1">1</span><div class="final-point-bar" style="width: 2.2rem">&nbsp;</div><span class="final-point">337M</span></td></td>
+<td class="mk-phase-1-col"><span class="event-rank-1">1</span><div class="phase-point-bar" style="width: 0.5rem">&nbsp;</div><span class="phase-point">124M</span></td></td>
+<td class="mk-phase-2-col"><span class="event-rank-1">1</span><div class="phase-point-bar" style="width: 0.1rem">&nbsp;</div><span class="phase-point">13M</span></td></td>
+<td class="mk-phase-3-col"><span class="event-rank-1">1</span><span class="final-point">N/A</span></td>
+<td class="mk-phase-4-col"><span class="event-rank-1">1</span><div class="phase-point-bar" style="width: 0.2rem">&nbsp;</div><span class="phase-point">38M</span></td></td>
+<td class="mk-phase-5-col"><span class="event-rank-1">1</span><div class="phase-point-bar" style="width: 0.0rem">&nbsp;</div><span class="phase-point">11M</span></td></td>
+<td class="mk-phase-6-col"><span class="event-rank-1">1</span><div class="phase-point-bar" style="width: 0.7rem">&nbsp;</div><span class="phase-point">186M</span></td></td>
+<td>&nbsp;</td>
 </tr>
 <tr>
-<td>#2</td>
-<td class="phase-points">N/A</td>
-<td class="phase-points">N/A</td>
-<td class="phase-points">N/A</td>
-<td class="phase-points">N/A</td>
+<td class="mk-final-col"><span class="event-rank-2">2</span><div class="final-point-bar" style="width: 1.6rem">&nbsp;</div><span class="final-point">248M</span></td></td>
+<td class="mk-phase-1-col"><span class="event-rank-2">2</span><div class="phase-point-bar" style="width: 0.4rem">&nbsp;</div><span class="phase-point">101M</span></td></td>
+<td class="mk-phase-2-col"><span class="event-rank-2">2</span><div class="phase-point-bar" style="width: 0.0rem">&nbsp;</div><span class="phase-point">11M</span></td></td>
+<td class="mk-phase-3-col"><span class="event-rank-2">2</span><span class="final-point">N/A</span></td>
+<td class="mk-phase-4-col"><span class="event-rank-2">2</span><div class="phase-point-bar" style="width: 0.1rem">&nbsp;</div><span class="phase-point">15M</span></td></td>
+<td class="mk-phase-5-col"><span class="event-rank-2">2</span><div class="phase-point-bar" style="width: 0.0rem">&nbsp;</div><span class="phase-point">10M</span></td></td>
+<td class="mk-phase-6-col"><span class="event-rank-2">2</span><div class="phase-point-bar" style="width: 0.3rem">&nbsp;</div><span class="phase-point">82M</span></td></td>
+<td>&nbsp;</td>
 </tr>
 <tr>
-<td>#3</td>
-<td class="phase-points">N/A</td>
-<td class="phase-points">N/A</td>
-<td class="phase-points">N/A</td>
-<td class="phase-points">N/A</td>
+<td class="mk-final-col"><span class="event-rank-3">3</span><div class="final-point-bar" style="width: 0.8rem">&nbsp;</div><span class="final-point">132M</span></td></td>
+<td class="mk-phase-1-col"><span class="event-rank-3">3</span><div class="phase-point-bar" style="width: 0.2rem">&nbsp;</div><span class="phase-point">41M</span></td></td>
+<td class="mk-phase-2-col"><span class="event-rank-3">3</span><div class="phase-point-bar" style="width: 0.0rem">&nbsp;</div><span class="phase-point">7.7M</span></td></td>
+<td class="mk-phase-3-col"><span class="event-rank-3">3</span><span class="final-point">N/A</span></td>
+<td class="mk-phase-4-col"><span class="event-rank-3">3</span><div class="phase-point-bar" style="width: 0.0rem">&nbsp;</div><span class="phase-point">12M</span></td></td>
+<td class="mk-phase-5-col"><span class="event-rank-3">3</span><div class="phase-point-bar" style="width: 0.0rem">&nbsp;</div><span class="phase-point">5.4M</span></td></td>
+<td class="mk-phase-6-col"><span class="event-rank-3">3</span><div class="phase-point-bar" style="width: 0.3rem">&nbsp;</div><span class="phase-point">79M</span></td></td>
+<td>&nbsp;</td>
 </tr>
 <tr>
-<td>#4</td>
-<td class="phase-points">N/A</td>
-<td class="phase-points">N/A</td>
-<td class="phase-points">N/A</td>
-<td class="phase-points">N/A</td>
-</tr>
-<tr class="new-section">
-<td rowspan="4">Phase 4</th>
-<td>#1</td>
-<td class="phase-points"><div class="bar" style="width: 0.4rem">&nbsp;</div>26.9M</td>
-<td class="phase-points"><div class="bar" style="width: 0.4rem">&nbsp;</div>29.0M</td>
-<td class="phase-points"><div class="bar" style="width: 0.1rem">&nbsp;</div>10.1M</td>
-<td class="phase-points"><div class="bar" style="width: 0.5rem">&nbsp;</div>37.7M</td>
-</tr>
-<tr>
-<td>#2</td>
-<td class="phase-points"><div class="bar" style="width: 0.3rem">&nbsp;</div>23.7M</td>
-<td class="phase-points"><div class="bar" style="width: 0.3rem">&nbsp;</div>21.4M</td>
-<td class="phase-points"><div class="bar" style="width: 0.1rem">&nbsp;</div>8.5M</td>
-<td class="phase-points"><div class="bar" style="width: 0.2rem">&nbsp;</div>15.3M</td>
-</tr>
-<tr>
-<td>#3</td>
-<td class="phase-points"><div class="bar" style="width: 0.2rem">&nbsp;</div>14.9M</td>
-<td class="phase-points"><div class="bar" style="width: 0.1rem">&nbsp;</div>8.8M</td>
-<td class="phase-points"><div class="bar" style="width: 0.1rem">&nbsp;</div>8.0M</td>
-<td class="phase-points"><div class="bar" style="width: 0.2rem">&nbsp;</div>11.6M</td>
-</tr>
-<tr>
-<td>#4</td>
-<td class="phase-points"><div class="bar" style="width: 0.2rem">&nbsp;</div>11.3M</td>
-<td class="phase-points"><div class="bar" style="width: 0.1rem">&nbsp;</div>7.6M</td>
-<td class="phase-points"><div class="bar" style="width: 0.1rem">&nbsp;</div>7.8M</td>
-<td class="phase-points"><div class="bar" style="width: 0.1rem">&nbsp;</div>8.8M</td>
-</tr>
-<tr class="new-section">
-<td rowspan="4">Phase 5</th>
-<td>#1</td>
-<td class="phase-points"><div class="bar" style="width: 1.6rem">&nbsp;</div>121.1M</td>
-<td class="phase-points"><div class="bar" style="width: 0.1rem">&nbsp;</div>7.2M</td>
-<td class="phase-points"><div class="bar" style="width: 0.1rem">&nbsp;</div>5.3M</td>
-<td class="phase-points"><div class="bar" style="width: 0.1rem">&nbsp;</div>11.0M</td>
-</tr>
-<tr>
-<td>#2</td>
-<td class="phase-points"><div class="bar" style="width: 1.1rem">&nbsp;</div>79.7M</td>
-<td class="phase-points"><div class="bar" style="width: 0.0rem">&nbsp;</div>3.1M</td>
-<td class="phase-points"><div class="bar" style="width: 0.0rem">&nbsp;</div>3.6M</td>
-<td class="phase-points"><div class="bar" style="width: 0.1rem">&nbsp;</div>10.0M</td>
-</tr>
-<tr>
-<td>#3</td>
-<td class="phase-points"><div class="bar" style="width: 0.5rem">&nbsp;</div>37.8M</td>
-<td class="phase-points"><div class="bar" style="width: 0.0rem">&nbsp;</div>2.7M</td>
-<td class="phase-points"><div class="bar" style="width: 0.0rem">&nbsp;</div>3.0M</td>
-<td class="phase-points"><div class="bar" style="width: 0.1rem">&nbsp;</div>5.4M</td>
-</tr>
-<tr>
-<td>#4</td>
-<td class="phase-points"><div class="bar" style="width: 0.1rem">&nbsp;</div>8.8M</td>
-<td class="phase-points"><div class="bar" style="width: 0.0rem">&nbsp;</div>2.5M</td>
-<td class="phase-points"><div class="bar" style="width: 0.0rem">&nbsp;</div>2.5M</td>
-<td class="phase-points"><div class="bar" style="width: 0.1rem">&nbsp;</div>4.6M</td>
-</tr>
-<tr class="new-section">
-<td rowspan="4">Phase 6</th>
-<td>#1</td>
-<td class="phase-points"><div class="bar" style="width: 1.9rem">&nbsp;</div>144.0M</td>
-<td class="phase-points"><div class="bar" style="width: 0.9rem">&nbsp;</div>67.6M</td>
-<td class="phase-points"><div class="bar" style="width: 2.5rem">&nbsp;</div>185.1M</td>
-<td class="phase-points"><div class="bar" style="width: 2.5rem">&nbsp;</div>185.8M</td>
-</tr>
-<tr>
-<td>#2</td>
-<td class="phase-points"><div class="bar" style="width: 1.8rem">&nbsp;</div>137.5M</td>
-<td class="phase-points"><div class="bar" style="width: 0.9rem">&nbsp;</div>66.8M</td>
-<td class="phase-points"><div class="bar" style="width: 2.0rem">&nbsp;</div>148.1M</td>
-<td class="phase-points"><div class="bar" style="width: 1.1rem">&nbsp;</div>82.0M</td>
-</tr>
-<tr>
-<td>#3</td>
-<td class="phase-points"><div class="bar" style="width: 1.1rem">&nbsp;</div>83.4M</td>
-<td class="phase-points"><div class="bar" style="width: 0.8rem">&nbsp;</div>61.9M</td>
-<td class="phase-points"><div class="bar" style="width: 1.5rem">&nbsp;</div>110.9M</td>
-<td class="phase-points"><div class="bar" style="width: 1.0rem">&nbsp;</div>78.7M</td>
-</tr>
-<tr>
-<td>#4</td>
-<td class="phase-points"><div class="bar" style="width: 1.0rem">&nbsp;</div>74.0M</td>
-<td class="phase-points"><div class="bar" style="width: 0.7rem">&nbsp;</div>56.1M</td>
-<td class="phase-points"><div class="bar" style="width: 1.5rem">&nbsp;</div>109.9M</td>
-<td class="phase-points"><div class="bar" style="width: 0.9rem">&nbsp;</div>66.7M</td>
+<td class="mk-final-col"><span class="event-rank-20">20</span><div class="final-point-bar" style="width: 0.3rem">&nbsp;</div><span class="final-point">51M</span></td></td>
+<td class="mk-phase-1-col"><span class="event-rank-4">4</span><div class="phase-point-bar" style="width: 0.1rem">&nbsp;</div><span class="phase-point">37M</span></td></td>
+<td class="mk-phase-2-col"><span class="event-rank-4">4</span><div class="phase-point-bar" style="width: 0.0rem">&nbsp;</div><span class="phase-point">5.2M</span></td></td>
+<td class="mk-phase-3-col"><span class="event-rank-4">4</span><span class="final-point">N/A</span></td>
+<td class="mk-phase-4-col"><span class="event-rank-4">4</span><div class="phase-point-bar" style="width: 0.0rem">&nbsp;</div><span class="phase-point">8.8M</span></td></td>
+<td class="mk-phase-5-col"><span class="event-rank-4">4</span><div class="phase-point-bar" style="width: 0.0rem">&nbsp;</div><span class="phase-point">4.6M</span></td></td>
+<td class="mk-phase-6-col"><span class="event-rank-4">4</span><div class="phase-point-bar" style="width: 0.3rem">&nbsp;</div><span class="phase-point">67M</span></td></td>
+<td>&nbsp;</td>
 </tr>
 </tbody>
 </table>
+
+
+</div>
+</div>
 
 </div>
 </main>
