@@ -1,27 +1,34 @@
-.assets {
+.asset-list {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: flex-start;
-  gap: 0.5rem;
+  gap: 0.8rem;
+  margin: 0;
+  padding: 0;
 }
 
-.assets li {
+.asset-list li {
   list-style: none;
-  display: inline-block;
-  width: 8rem;
+  display: block;
   align-self: center;
 }
 
-.assets li span {
-  display: block;
-  text-align: center;
+.asset-list li div.title { display: block; text-align: center; }
+.asset-list li div.asset {
+  display: inline-block;
+  width: 6rem;
 }
 
-.assets li svg,
-.assets li object {
+div.asset.light { background-color: #e0e0e0; }
+div.asset.dark { background-color: #666; }
+
+.asset-list a { text-decoration: underline; }
+
+.asset-list li svg,
+.asset-list li object {
   display: block;
   margin: 0 auto;
-  width: auto;
+  width: 4rem;
   height: 4rem;
 }
