@@ -1,0 +1,27 @@
+.assets {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 0.5rem;
+}
+
+.assets li {
+  list-style: none;
+  display: inline-block;
+  width: 8rem;
+  align-self: center;
+}
+
+.assets li span {
+  display: block;
+  text-align: center;
+}
+
+.assets li svg,
+.assets li object {
+  display: block;
+  margin: 0 auto;
+  width: auto;
+  height: 4rem;
+}
