@@ -50,6 +50,27 @@ Trist	March speed +20%	Offline gold +20%	All troops power +20%	Gathering speed +
 Harold	Tower defense	AP reduction -10%	Archer troops power +15%		FALSE	FALSE	FALSE	TRUE
 Arwyn	Tower defense	Tower defense	Archer troops power +15%		FALSE	FALSE	FALSE	TRUE`
 
+const ice_data =
+`Clarence	March speed +30%	All troops power +20%	All troops power +20%	Wound regeneration +15%	FALSE	FALSE	FALSE	FALSE
+Ao Deng Ge Ri Le	March speed +20%	All troops power +20%	All troops power +20%	Wound regeneration +10%	FALSE	FALSE	FALSE	FALSE
+Ao Yue	March speed +20%	Recovery speed +20%	All troops power +20%	Wound regeneration +10%	FALSE	FALSE	FALSE	FALSE
+Filius	March speed +20%	Recovery speed +15%	All troops power +25%	Wound regeneration +10%	FALSE	FALSE	TRUE	TRUE
+Jessica	March speed +20%	AP reduction -10%	All troops power +25%	Wound regeneration +10%	FALSE	FALSE	TRUE	TRUE
+Pedra	March speed +20%	AP reduction -10%	All troops power +25%	Wound regeneration +10%	FALSE	FALSE	TRUE	TRUE
+Lilani	March speed +20%	Troops load +15%	All troops power +25%	Wound regeneration +10%	FALSE	FALSE	TRUE	TRUE
+Parr	March speed +20%	Troops load +15%	All troops power +25%	Wound regeneration +10%	FALSE	FALSE	TRUE	TRUE
+Hana	AP reduction -10%	March speed +15%	All troops power +25%	Wound regeneration +10%	FALSE	FALSE	FALSE	TRUE
+Keith	March speed +30%	Troops load +20%	All troops power +20%	Wound regeneration +10%	FALSE	FALSE	FALSE	TRUE
+Maud	March speed +30%	Troops load +20%	All troops power +20%	Wound regeneration +10%	FALSE	FALSE	FALSE	TRUE
+Vera	March speed +20%	Troops load +10%	All troops power +25%	Wound regeneration +10%	FALSE	FALSE	TRUE	TRUE
+Rudolph	March speed +25%	Troops load +15%	All troops power +25%	Recovery speed +15%	FALSE	FALSE	TRUE	TRUE
+Nathaniel	March speed +30%	Troops load +20%	Recovery speed +15%	Wound regeneration +10%	FALSE	FALSE	FALSE	TRUE
+Paula	March speed +20%	Offline gold +20%	All troops power +20%	Recovery speed +15%	TRUE	TRUE	TRUE	TRUE
+Ralph	March speed +20%	Tower defense	All troops power +20%	Troops load +10%	FALSE	TRUE	TRUE	TRUE
+Hadi	March speed +20%	Offline gold +20%	All troops power +20%	Gathering speed +20%	TRUE	TRUE	TRUE	TRUE
+Nicole	March speed +20%	Offline gold +20%	All troops power +20%	Gathering speed +20%	FALSE	FALSE	TRUE	TRUE
+Merlin	Tower defense	Tower defense	March speed +15%		FALSE	FALSE	FALSE	TRUE`
+
 function getTotalStats(skills, prefix) {
   const indexStart = prefix.length;
   const indexEnd = indexStart + 2;
@@ -103,7 +124,7 @@ function constructTable(element, raw) {
     const recoveryBonus = getTotalStats(skills, 'Recovery speed +');
 
     const warriorTier = 
-      ((speedBonus > 0)?1:0) +
+      ((recoveryBonus > 0)?1:0) +
       ((powerBonus > 0)?1:0) +
       ((regenBonus > 0)?1:0);
 
@@ -147,7 +168,8 @@ function constructTable(element, raw) {
 
     heroes.push(hero);
 
-    const className = (hero.name === 'O\'Neil'?'oneil':hero.name).toLowerCase() 
+    // const className = (hero.name === 'O\'Neil'?'oneil':hero.name).toLowerCase();
+    const className = hero.name.replaceAll('\'', '').replaceAll(' ', '-').toLowerCase();
 
     table1 += 
       [
@@ -190,3 +212,7 @@ fs.writeFileSync('./fire-table-2.html', tables.table2);
 tables = constructTable('archer', archer_data);
 fs.writeFileSync('./archer-table-1.html', tables.table1);
 fs.writeFileSync('./archer-table-2.html', tables.table2);
+
+tables = constructTable('ice', ice_data);
+fs.writeFileSync('./ice-table-1.html', tables.table1);
+fs.writeFileSync('./ice-table-2.html', tables.table2);
