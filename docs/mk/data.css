@@ -40,3 +40,5 @@ table tbody td:nth-child(4) { text-align: center; }
 
 table tbody td.verified { color: #266033; }
 table tbody td.unverified { color: #b42328; }
+
+object.unit-icon { width: auto; height: 2rem; padding: 0; margin: 0;}

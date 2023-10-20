@@ -17,7 +17,11 @@
 .asset-list li div.title { display: block; text-align: center; }
 .asset-list li div.asset {
   display: inline-block;
-  width: 6rem;
+  text-align: center; 
+  margin: 0;
+  padding: 0;
+  width: 5rem;
+  height: 5rem;
 }
 
 div.asset.light { background-color: #e0e0e0; }
@@ -28,7 +32,8 @@ div.asset.dark { background-color: #666; }
 .asset-list li svg,
 .asset-list li object {
   display: block;
-  margin: 0 auto;
-  width: 4rem;
-  height: 4rem;
+  margin: auto;
+  padding: 0;
+  max-height: 5rem;
+  max-width: 5rem;
 }
