@@ -1,71 +1,107 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 17.73 17.73">
+<svg id="Wheel" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 30.07 30.07">
   <defs>
     <style>
-      .cls-1, .cls-4 { fill: #fff; }
+      .cls-1, .cls-4 {
+        fill: #fff;
+      }
+
       .cls-1, .cls-7 {
         stroke: #544464;
         stroke-miterlimit: 10;
         stroke-width: 0.1px;
       }
-      .cls-2 { fill: #fefbd9; }
-      .cls-3 { fill: #6095df; }
-      .cls-5 { clip-path: url(#clip-path); }
-      .cls-6 { fill: #d38dd8; }
-      .cls-7 { fill: none; }
-      .cls-8 { clip-path: url(#clip-path-2); }
-      .cls-9 { fill: #fbea9e; }
-      .cls-10 { fill: #e1af4a; }
-      .cls-11 { fill: #a98338; }
-      .cls-12 { fill: #544464; }
-      .cls-13 { fill: #93895e; }
+
+      .cls-2 {
+        fill: #fefbd9;
+      }
+
+      .cls-3 {
+        fill: #6095df;
+      }
+
+      .cls-5 {
+        clip-path: url(#clip-path);
+      }
+
+      .cls-6 {
+        fill: #d38dd8;
+      }
+
+      .cls-7 {
+        fill: none;
+      }
+
+      .cls-8 {
+        clip-path: url(#clip-path-2);
+      }
+
+      .cls-9 {
+        fill: #fbea9e;
+      }
+
+      .cls-10 {
+        fill: #e1af4a;
+      }
+
+      .cls-11 {
+        fill: #a98338;
+      }
+
+      .cls-12 {
+        fill: #544464;
+      }
+
+      .cls-13 {
+        fill: #93895e;
+      }
     </style>
-    <clipPath id="clip-path" transform="translate(-9.14 -9.14)">
-      <path class="cls-1" d="M18,24.5A6.5,6.5,0,1,1,24.5,18,6.51,6.51,0,0,1,18,24.5ZM24,18a6,6,0,1,0-6,6A6,6,0,0,0,24,18Z"/>
+    <clipPath id="clip-path" transform="translate(3.03 3.03)">
+      <path class="cls-1" d="M12,23A11,11,0,1,1,23,12,11,11,0,0,1,12,23ZM22.18,12A10.18,10.18,0,1,0,12,22.18,10.2,10.2,0,0,0,22.18,12Z"/>
     </clipPath>
-    <clipPath id="clip-path-2" transform="translate(-9.14 -9.14)">
-      <circle class="cls-2" cx="18" cy="18" r="6"/>
+    <clipPath id="clip-path-2" transform="translate(3.03 3.03)">
+      <circle class="cls-2" cx="12" cy="12" r="10.18"/>
     </clipPath>
   </defs>
-  <circle id="outer-circle" class="cls-3" cx="8.86" cy="8.86" r="7.08"/>
+  <circle id="outer-circle" class="cls-3" cx="15.03" cy="15.03" r="12"/>
   <g id="stripped-circle">
-    <path class="cls-4" d="M18,24.5A6.5,6.5,0,1,1,24.5,18,6.51,6.51,0,0,1,18,24.5ZM24,18a6,6,0,1,0-6,6A6,6,0,0,0,24,18Z" transform="translate(-9.14 -9.14)"/>
+    <path class="cls-4" d="M12,23A11,11,0,1,1,23,12,11,11,0,0,1,12,23ZM22.18,12A10.18,10.18,0,1,0,12,22.18,10.2,10.2,0,0,0,22.18,12Z" transform="translate(3.03 3.03)"/>
     <g class="cls-5">
-      <rect class="cls-6" x="17.7" y="11" width="0.6" height="14" transform="translate(-13.18 -3.86) rotate(-15)"/>
-      <rect class="cls-6" x="17.7" y="11" width="0.6" height="14" transform="translate(-16.59 8.86) rotate(-45)"/>
-      <rect class="cls-6" x="17.7" y="11" width="0.6" height="14" transform="translate(-13.18 21.59) rotate(-75)"/>
-      <rect class="cls-6" x="17.7" y="11" width="0.6" height="14" transform="translate(-3.86 30.91) rotate(-105)"/>
-      <rect class="cls-6" x="17.7" y="11" width="0.6" height="14" transform="translate(8.86 34.32) rotate(-135)"/>
-      <rect class="cls-6" x="17.7" y="11" width="0.6" height="14" transform="translate(21.59 30.91) rotate(-165)"/>
+      <rect class="cls-6" x="11.49" y="0.13" width="1.02" height="23.74" transform="matrix(0.97, -0.26, 0.26, 0.97, 0.34, 6.55)"/>
+      <rect class="cls-6" x="11.49" y="0.13" width="1.02" height="23.74" transform="translate(-1.94 15.03) rotate(-45)"/>
+      <rect class="cls-6" x="11.49" y="0.13" width="1.02" height="23.74" transform="translate(0.34 23.52) rotate(-75)"/>
+      <rect class="cls-6" x="11.49" y="0.13" width="1.02" height="23.74" transform="matrix(-0.26, -0.97, 0.97, -0.26, 6.55, 29.73)"/>
+      <rect class="cls-6" x="11.49" y="0.13" width="1.02" height="23.74" transform="translate(15.03 32) rotate(-135)"/>
+      <rect class="cls-6" x="11.49" y="0.13" width="1.02" height="23.74" transform="translate(23.52 29.73) rotate(-165)"/>
     </g>
-    <path class="cls-7" d="M18,24.5A6.5,6.5,0,1,1,24.5,18,6.51,6.51,0,0,1,18,24.5ZM24,18a6,6,0,1,0-6,6A6,6,0,0,0,24,18Z" transform="translate(-9.14 -9.14)"/>
+    <path class="cls-7" d="M12,23A11,11,0,1,1,23,12,11,11,0,0,1,12,23ZM22.18,12A10.18,10.18,0,1,0,12,22.18,10.2,10.2,0,0,0,22.18,12Z" transform="translate(3.03 3.03)"/>
   </g>
   <g id="yellow-bands">
-    <circle class="cls-2" cx="8.86" cy="8.86" r="6"/>
+    <circle class="cls-2" cx="15.03" cy="15.03" r="10.18"/>
     <g class="cls-8">
-      <polygon class="cls-9" points="13.3 16.54 4.43 1.19 8.86 0 8.86 17.73 13.3 16.54"/>
-      <polygon class="cls-9" points="17.73 8.86 0 8.86 1.19 4.43 16.54 13.3 17.73 8.86"/>
-      <polygon class="cls-9" points="13.3 1.19 4.43 16.54 1.19 13.3 16.54 4.43 13.3 1.19"/>
+      <polygon class="cls-9" points="22.55 28.05 7.52 2.01 15.03 0 15.03 30.07 22.55 28.05"/>
+      <polygon class="cls-9" points="30.07 15.03 0 15.03 2.01 7.52 28.05 22.55 30.07 15.03"/>
+      <polygon class="cls-9" points="22.55 2.01 7.52 28.05 2.01 22.55 28.05 7.52 22.55 2.01"/>
     </g>
   </g>
-  <g id="arrow">
-    <path class="cls-10" d="M18,19.37A1.37,1.37,0,0,1,16.63,18,6.14,6.14,0,0,1,18,15.54,6.14,6.14,0,0,1,19.37,18,1.37,1.37,0,0,1,18,19.37Z" transform="translate(-9.14 -9.14)"/>
-    <path class="cls-11" d="M18,16a5.62,5.62,0,0,1,1.12,2,1.12,1.12,0,0,1-2.24,0A5.62,5.62,0,0,1,18,16m0-.85c-.94,1.28-1.62,2.26-1.62,2.89a1.62,1.62,0,0,0,3.24,0c0-.63-.68-1.61-1.62-2.89Z" transform="translate(-9.14 -9.14)"/>
+  <g id="Arrow">
+    <path class="cls-10" d="M12,14.5A2.5,2.5,0,0,1,9.5,12c0-1,1.07-2.53,2.5-4.47C13.43,9.47,14.5,11,14.5,12A2.5,2.5,0,0,1,12,14.5Z" transform="translate(3.03 3.03)"/>
+    <path class="cls-11" d="M12,8c1.26,1.73,2.25,3.21,2.25,4.05a2.25,2.25,0,0,1-4.5,0c0-.84,1-2.32,2.25-4m0-.84C10.41,9.26,9.25,10.93,9.25,12a2.75,2.75,0,0,0,5.5,0c0-1.07-1.16-2.74-2.75-4.89Z" transform="translate(3.03 3.03)"/>
   </g>
   <g id="inner-circle">
-    <path class="cls-12" d="M18,12.1A5.9,5.9,0,1,1,12.1,18,5.91,5.91,0,0,1,18,12.1m0-.1a6,6,0,1,0,6,6,6,6,0,0,0-6-6Z" transform="translate(-9.14 -9.14)"/>
+    <path class="cls-12" d="M12,1.92A10.08,10.08,0,1,1,1.92,12,10.09,10.09,0,0,1,12,1.92m0-.1A10.18,10.18,0,1,0,22.18,12,10.18,10.18,0,0,0,12,1.82Z" transform="translate(3.03 3.03)"/>
   </g>
-  <g id="slots">
-    <rect class="cls-13" x="8.11" y="3.21" width="1.5" height="1.5" rx="0.2"/>
-    <rect class="cls-13" x="8.11" y="13.02" width="1.5" height="1.5" rx="0.2"/>
-    <rect class="cls-13" x="14.8" y="13" width="1.5" height="1.5" rx="0.2" transform="translate(-13.93 0.48) rotate(-30)"/>
-    <rect class="cls-13" x="19.7" y="21.5" width="1.5" height="1.5" rx="0.2" transform="translate(-17.52 4.07) rotate(-30)"/>
-    <rect class="cls-13" x="13" y="14.8" width="1.5" height="1.5" rx="0.2" transform="translate(-15.72 10.55) rotate(-60)"/>
-    <rect class="cls-13" x="21.5" y="19.7" width="1.5" height="1.5" rx="0.2" transform="translate(-15.72 20.36) rotate(-60)"/>
-    <rect class="cls-13" x="12.35" y="17.25" width="1.5" height="1.5" rx="0.2" transform="translate(-14.04 21.96) rotate(-90)"/>
-    <rect class="cls-13" x="22.15" y="17.25" width="1.5" height="1.5" rx="0.2" transform="translate(-4.23 31.77) rotate(-90)"/>
-    <rect class="cls-13" x="13" y="19.7" width="1.5" height="1.5" rx="0.2" transform="translate(-6.22 33.45) rotate(-120)"/>
-    <rect class="cls-13" x="21.5" y="14.8" width="1.5" height="1.5" rx="0.2" transform="translate(10.77 33.45) rotate(-120)"/>
-    <rect class="cls-13" x="14.8" y="21.5" width="1.5" height="1.5" rx="0.2" transform="translate(8.76 40.15) rotate(-150)"/>
-    <rect class="cls-13" x="19.7" y="13" width="1.5" height="1.5" rx="0.2" transform="translate(22.15 26.76) rotate(-150)"/>
+  <g id="Slots">
+    <rect class="cls-13" x="8.58" y="2.7" width="2.54" height="2.54" rx="0.34" transform="translate(2.34 5.72) rotate(-15)"/>
+    <rect class="cls-13" x="12.88" y="18.76" width="2.54" height="2.54" rx="0.34" transform="translate(-1.67 7.38) rotate(-15)"/>
+    <rect class="cls-13" x="4.85" y="4.85" width="2.54" height="2.54" rx="0.34" transform="translate(0.5 9.15) rotate(-45)"/>
+    <rect class="cls-13" x="16.61" y="16.61" width="2.54" height="2.54" rx="0.34" transform="translate(-4.37 20.91) rotate(-45)"/>
+    <rect class="cls-13" x="2.7" y="8.58" width="2.54" height="2.54" rx="0.34" transform="translate(-3.54 14.17) rotate(-75)"/>
+    <rect class="cls-13" x="18.76" y="12.88" width="2.54" height="2.54" rx="0.34" transform="translate(4.21 32.87) rotate(-75)"/>
+    <rect class="cls-13" x="2.7" y="12.88" width="2.54" height="2.54" rx="0.34" transform="translate(-5.64 24.68) rotate(-105)"/>
+    <rect class="cls-13" x="18.76" y="8.58" width="2.54" height="2.54" rx="0.34" transform="translate(18.74 34.78) rotate(-105)"/>
+    <rect class="cls-13" x="4.85" y="16.61" width="2.54" height="2.54" rx="0.34" transform="translate(0.84 37.88) rotate(-135)"/>
+    <rect class="cls-13" x="16.61" y="4.85" width="2.54" height="2.54" rx="0.34" transform="translate(29.23 26.12) rotate(-135)"/>
+    <rect class="cls-13" x="8.58" y="18.76" width="2.54" height="2.54" rx="0.34" transform="translate(17.21 44.96) rotate(-165)"/>
+    <rect class="cls-13" x="12.88" y="2.7" width="2.54" height="2.54" rx="0.34" transform="translate(29.83 14.5) rotate(-165)"/>
   </g>
 </svg>
