@@ -292,4 +292,4 @@ for (let serverIdx = 0; serverIdx < serverCount; serverIdx++) {
 mkTableLines.push('</tbody>');
 mkTableLines.push('</table>');
 
-fs.writeFileSync('./mk-table.html', mkTableLines.join('\n'));
+fs.writeFileSync('./_mk-table.html', mkTableLines.join('\n'));
