@@ -71,6 +71,26 @@ Hadi	March speed +20%	Offline gold +20%	All troops power +20%	Gathering speed +2
 Nicole	March speed +20%	Offline gold +20%	All troops power +20%	Gathering speed +20%	FALSE	FALSE	TRUE	TRUE
 Merlin	Tower defense	Tower defense	March speed +15%		FALSE	FALSE	FALSE	TRUE`
 
+const goblin_data =
+`Tumnus	March speed +30%	All troops power +20%	All troops power +20%	Wound regeneration +15%	FALSE	FALSE	FALSE	FALSE
+Gruen	March speed +25%	Recovery speed +15%	All troops power +25%	Wound regeneration +10%	FALSE	FALSE	TRUE	TRUE
+Wendy	March speed +20%	Recovery speed +15%	All troops power +25%	Wound regeneration +10%	FALSE	FALSE	TRUE	TRUE
+Rosamond	March speed +20%	Troops load +20%	All troops power +30%	Recovery speed +25%	FALSE	TRUE	TRUE	TRUE
+Arwin	March speed +20%	Troops load +15%	All troops power +25%	Wound regeneration +10%	FALSE	FALSE	TRUE	TRUE
+Benjamin	March speed +20%	Troops load +15%	All troops power +25%	Wound regeneration +10%	FALSE	FALSE	TRUE	TRUE
+Lomax	March speed +20%	Troops load +15%	All troops power +25%	Wound regeneration +10%	FALSE	FALSE	TRUE	TRUE
+Meniere	March speed +20%	Troops load +15%	All troops power +25%	Wound regeneration +10%	FALSE	FALSE	TRUE	TRUE
+Chiyoko	March speed +30%	Troops load +20%	All troops power +20%	Wound regeneration +10%	FALSE	FALSE	FALSE	TRUE
+Suad	March speed +30%	Troops load +20%	All troops power +20%	Wound regeneration +10%	FALSE	FALSE	FALSE	TRUE
+Blackwel	March speed +20%	Troops load +20%	All troops power +20%	Wound regeneration +10%	FALSE	FALSE	FALSE	FALSE
+Luvia	March speed +20%	Recovery speed +15%	AP reduction -10%	Wound regeneration +10%	FALSE	FALSE	FALSE	TRUE
+Pythia	AP reduction -10%	March speed +15%	Troops load +20%	Wound regeneration +10%	FALSE	FALSE	FALSE	TRUE
+Claudia	Offline gold +20%	Recovery speed +15%	Goblin troops power +20%	Troops load +20%	FALSE	FALSE	TRUE	TRUE
+Issac	March speed +20%	Offline gold +20%	All troops power +20%	Troops load +10%	FALSE	FALSE	TRUE	TRUE
+Catherine	March speed +20%	Offline gold +20%	All troops power +20%	Gathering speed +20%	TRUE	TRUE	TRUE	TRUE
+Rogers	March speed +20%	Offline gold +20%	All troops power +20%	Gathering speed +20%	FALSE	FALSE	FALSE	TRUE
+Alucard	Tower defense	Tower defense	Offline gold +20%		TRUE	FALSE	FALSE	TRUE`;
+
 function getTotalStats(skills, prefix) {
   const indexStart = prefix.length;
   const indexEnd = indexStart + 2;
@@ -86,18 +106,17 @@ function getTotalStats(skills, prefix) {
   )
 }
 
-const heroes = [];
-
 const htmlFromFree = '<img class="from-source" src="../images/from-free-pick.png" alt="Free-pick">';
 const htmlFromCrystal = '<img class="from-source" src="../images/from-crystal.png" alt="Wishing crystal">';
 const htmlFromWheel = '<img class="from-source" src="../images/from-wheel.png" alt="Lucky wheel">';
 const htmlFromAdvanced = '<img class="from-source" src="../images/from-advanced.png" alt="Advance recruitment"></img>';
 
-function constructTable(element, raw) {
+function compileData(element, raw) {
   const data = raw.split('\n').map((row) => row.split('\t'));
   let table1 = '';
   let table2 = '';
-  
+  const heroes = [];
+
   // const lines = [];
 
   data.forEach((row, index) => {
@@ -202,17 +221,23 @@ function constructTable(element, raw) {
         `</tr>`,
       ].join('\n') + '\n';
   })
-  return {table1: table1, table2: table2};
+  const json = JSON.stringify(heroes, null, '  ')
+  return {table1: table1, table2: table2, json: json};
 }
 
-let tables = constructTable('fire', fire_data);
-fs.writeFileSync('./fire-table-1.html', tables.table1);
-fs.writeFileSync('./fire-table-2.html', tables.table2);
+let compiled = compileData('fire', fire_data);
+fs.writeFileSync('./_fire-table-1.html', compiled.table1);
+fs.writeFileSync('./_fire-table-2.html', compiled.table2);
 
-tables = constructTable('archer', archer_data);
-fs.writeFileSync('./archer-table-1.html', tables.table1);
-fs.writeFileSync('./archer-table-2.html', tables.table2);
+compiled = compileData('archer', archer_data);
+fs.writeFileSync('./_archer-table-1.html', compiled.table1);
+fs.writeFileSync('./_archer-table-2.html', compiled.table2);
 
-tables = constructTable('ice', ice_data);
-fs.writeFileSync('./ice-table-1.html', tables.table1);
-fs.writeFileSync('./ice-table-2.html', tables.table2);
+compiled = compileData('ice', ice_data);
+fs.writeFileSync('./_ice-table-1.html', compiled.table1);
+fs.writeFileSync('./_ice-table-2.html', compiled.table2);
+
+compiled = compileData('goblin', goblin_data);
+fs.writeFileSync('./_goblin-table-1.html', compiled.table1);
+fs.writeFileSync('./_goblin-table-2.html', compiled.table2);
+fs.writeFileSync('./_goblin.json', compiled.json);
