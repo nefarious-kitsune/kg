@@ -10,7 +10,7 @@ table { border-collapse: collapse; position: relative;}
 
 table.blacksmith th,
 table.witchLab th {
-  background: #7c1a20;
+  background: var(--miku-dark-red);
   color: #fec728;
   font-weight: normal;
   padding: 0.5rem; 
@@ -22,7 +22,7 @@ table.witchLab td {
   color: black;
   font-weight: normal;
   padding: 0.5rem; 
-  border-top: 0.1rem solid #7c1a20;
+  border-top: 0.1rem solid var(--miku-dark-red);
 }
 
 table th:first-child { border-radius: 0.8rem 0 0 0; }
@@ -39,6 +39,6 @@ table tbody td:nth-child(3) { text-align: left; }
 table tbody td:nth-child(4) { text-align: center; }
 
 table tbody td.verified { color: #266033; }
-table tbody td.unverified { color: #b42328; }
+table tbody td.unverified { color: var(--miku-red); }
 
 object.unit-icon { width: auto; height: 2rem; padding: 0; margin: 0;}

@@ -1,3 +1,8 @@
+:root {
+  --miku-red: #b42328;
+  --miku-dark-red: #7c1a20;
+}
+
 html {
   font-size: calc(12px + (18 - 12) * ((100vw - 300px) / (1600 - 300)));
   font-family: 'Helvetica', 'Arial', sans-serif;
@@ -32,8 +37,8 @@ body.landing #header {
     to bottom,
     #ffffff66 0%,
     #ffffff66 60%,
-    #b42328 60%,
-    #b42328 100%
+    var(--miku-red) 60%,
+    var(--miku-red) 100%
     );
 }
 
@@ -45,8 +50,8 @@ body.landing #header {
     to bottom,
     #ffffff66 0%,
     #ffffff66 60%,
-    #b42328 60%,
-    #b42328 64%,
+    var(--miku-red) 60%,
+    var(--miku-red) 64%,
     #ffffff66 64%,
     #ffffff66 100%
     );
@@ -61,7 +66,7 @@ body.landing #header {
   background-position: center;
   /* background-size: contain; */
   background-size: 6rem auto;
-  border: #b42328 0.2rem solid;
+  border: var(--miku-red) 0.2rem solid;
   border-radius: 50%;
   width: 4.5rem;
   height: 4.5rem;
@@ -80,7 +85,7 @@ body.landing #header {
   padding: 0;
   font-size: 2.5rem;
   font-weight: bold;
-  color: #b42328;
+  color: var(--miku-red);
 }
 
 #breadcrumb-wrapper {
@@ -98,7 +103,7 @@ body.landing #header {
 }
 
 #breadcrumb-wrapper nav .link {
-  color: #b42328;
+  color: var(--miku-red);
   text-decoration: underline solid;
 }
 
@@ -107,7 +112,7 @@ body.landing #header {
 }
 
 #breadcrumb-wrapper nav .current {
-  color: #7c1a20;
+  color: var(--miku-dark-red);
 }
 
 ul.butterfly {
@@ -126,7 +131,7 @@ ul.butterfly li {
 }
 
 a {
-  color: #b42328;
+  color: var(--miku-red);
   text-decoration: underline double;
 }
 
@@ -163,18 +168,46 @@ h1 {
   font-size: 2rem;
 }
 
-/*
-h1:before {
-  content: "";
+.select-wrapper {
   display: inline-block;
-  background: url('../images/katana-stand-150.png') no-repeat;
-  background-position: bottom;
-  background-size: contain;
-  width: 3.9rem;
-  height: 2rem;
-  margin: 0;
+  position: relative;
+  min-width: 11rem;
 }
-*/
+
+.select-wrapper select {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 100%;
+  font-size: 1rem;
+  padding: 0.2rem 2rem 0.2rem 1em;
+  background-color: #fff;
+  border-radius: 0.25rem;
+  color: #000;
+  cursor: pointer;
+}
+
+.select-wrapper:before,
+.select-wrapper:after {
+  --size: 0.3rem;
+  position: absolute;
+  content: "";
+  right: 1rem;
+  pointer-events: none;
+}
+
+.select-wrapper:before {
+  border-left: var(--size) solid transparent;
+  border-right: var(--size) solid transparent;
+  border-bottom: var(--size) solid black;
+  top: 35%;
+}
+
+.select-wrapper::after {
+  border-left: var(--size) solid transparent;
+  border-right: var(--size) solid transparent;
+  border-top: var(--size) solid black;
+  top: 60%;
+}
 
 [data-tooltip] {
   position: relative;
@@ -224,6 +257,8 @@ h1:before {
   visibility: visible;
   transition: 0.4s ease-in-out 0.3s;
 }
+
+
 
 .avatars {
   margin: 0.5rem 0.5rem 0.5rem 2rem;

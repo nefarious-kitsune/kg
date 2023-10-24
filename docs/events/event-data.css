@@ -32,7 +32,7 @@
 .tabbed-table-wrapper-head {
   padding: 0;
   border-radius: 0.5rem 0.5rem 0 0;
-  background: #7c1a20;
+  background: var(--miku-dark-red);
   color: #fec728;
   padding: 0.5rem;
   font-size: 1.2rem;
@@ -43,7 +43,7 @@
 }
 
 .tabbed-table-wrapper-content {
-  border: 0.1rem solid #7c1a20;
+  border: 0.1rem solid var(--miku-dark-red);
   border-radius: 0 0 0.5rem 0.5rem;
   background: linear-gradient(to bottom, #fb9145, #fb9145 2rem, white 8rem, white); 
 }
@@ -56,7 +56,7 @@
   cursor: pointer;
   color: #fec728;
   text-shadow: 0px 1px 1px #000;
-  background-color: #7c1a20;
+  background-color: var(--miku-dark-red);
 }
 
 .tabbed-table-tab-bar .mk-tab:hover {
@@ -65,13 +65,13 @@
 
 .tabbed-table-tab-bar .focused,
 .tabbed-table-tab-bar .focused:hover {
-  color: #7c1a20;
+  color: var(--miku-dark-red);
   background-color: #fb9145;
 }
 
 .tabbed-table-tab-bar {
   margin: 0;
-  background: #7c1a20;
+  background: var(--miku-dark-red);
   color: #fec728;
 }
 
@@ -96,14 +96,14 @@
 
 .sp-result-table th,
 .mk-result-table th {
-  background: #7c1a20;
+  background: var(--miku-dark-red);
   color: #fec728;
   font-weight: normal;
 }
 .sp-result-table td,
 .mk-result-table td {
   background: white;
-  color: #7c1a20;
+  color: var(--miku-dark-red);
   font-weight: normal;
 }
 
@@ -115,13 +115,13 @@ span.vs-server {
 .sp-result-table thead tr th:last-child { width: 0.5rem; }
 .sp-final-col { width: 16rem; }
 .sp-result-table thead tr th { width: 8rem; }
-.sp-result-table tr.new-section { border-top: 0.1rem solid #7c1a20; }
+.sp-result-table tr.new-section { border-top: 0.1rem solid var(--miku-dark-red); }
 
 .mk-result-table thead tr th:first-child { width: 4rem; }
 .mk-result-table thead tr th:last-child { width: 0.5rem; }
 .mk-final-col, .up-final-col { width: 16rem; }
 .mk-result-table thead tr th { width: 8rem; }
-.mk-result-table tr.new-section { border-top: 0.1rem solid #7c1a20; }
+.mk-result-table tr.new-section { border-top: 0.1rem solid var(--miku-dark-red); }
 
 .mk-result-table.display-final .mk-final-col { display: table-cell; }
 .mk-result-table.display-final .up-final-col,
@@ -205,7 +205,7 @@ span.vs-server {
 
 .phase-point {
   font-size: 0.9rem;
-  /* color: #7c1a20; */
+  /* color: var(--miku-dark-red); */
   margin: 0.2rem 0 0.2rem 0;
 }
 
@@ -226,7 +226,7 @@ span.vs-server {
 
 .phase-point-bar {
   display:inline-block;
-  background: #7c1a20;
+  background: var(--miku-dark-red);
   color: #fec728;
   text-align:right;
   padding-right: 0.3rem;

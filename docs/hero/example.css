@@ -114,10 +114,12 @@ div.info {
 }
 
 table {
-  margin-left: auto;
-  margin-right: auto;
+  /* margin-left: auto;
+  margin-right: auto; */
   border-spacing: 5rem 0;
 }
+
+table td { vertical-align: top;}
 
 .hero-table {
   margin: 0;
@@ -127,7 +129,7 @@ table {
 
 .hero-table td,
 .hero-table th {
-  border: 0.1rem solid black;
+  border: 0.1rem solid var(--miku-dark-red);
   border-spacing: 0;
   padding: 0.5rem;
 }

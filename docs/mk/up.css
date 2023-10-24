@@ -2,19 +2,19 @@
   display: flex;
   padding: 0;
   border-radius: 0.5rem 0.5rem 0 0;
-  background: #7c1a20;
+  background: var(--miku-dark-red);
   color: #fec728;
 }
 
 .collapsible-toggle button.title {
   border-radius: 0.5rem 0 0 0;
   border-color: transparent;
-  background: #7c1a20;
+  background: var(--miku-dark-red);
   color: #fec728;
 }
 
 .collapsible-content {
-  border: 0.1rem solid #7c1a20;
+  border: 0.1rem solid var(--miku-dark-red);
   border-radius: 0 0 0.5rem 0.5rem;
   background: linear-gradient(to bottom, #fb9145, #fb9145 2rem, white 8rem, white); 
 }
@@ -49,22 +49,31 @@
   cursor: pointer;
   color: #fec728;
   text-shadow: 0px 1px 1px #000;
-  background-color: #7c1a20;
+  background-color: var(--miku-dark-red);
 }
 
 .up-tab-bar .up-tab:hover {
-  background-color: #b42328;
+  background-color: var(--miku-red);
 }
 
 .up-tab-bar .focused,
 .up-tab-bar .focused:hover {
-  color: #7c1a20;
+  color: var(--miku-dark-red);
   background-color: #fb9145;
+}
+
+.up-tab svg {
+  fill: #fec728;
+}
+
+.up-tab.focused svg,
+.up-tab.focused:hover svg {
+  fill: var(--miku-dark-red);
 }
 
 .up-tab-bar {
   margin: 0;
-  background: #7c1a20;
+  background: var(--miku-dark-red);
   color: #fec728;
 }
 
@@ -75,6 +84,65 @@
 
 .up-tab-content.hidden {
   display: none;
+}
+
+.field-container {
+  display: block;
+  margin: 0 0 0.4rem 0;
+}
+
+.field-container .label-wrapper {
+  float: left;
+  width: 18rem;
+  margin: 0;
+  padding: 0.2rem 0;
+}
+
+.field-container .value-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  column-gap: 0.8rem;
+  row-gap: 0.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (max-width: 600px) {
+  /* Put the value wrapper in a separate line if the screen is too narrow */
+  .field-container .value-wrapper { clear: both; }
+}
+
+@media screen and (max-width: 700px) {
+  .field-container .input-wrapper .stone-shape { display: none !important; }
+}
+
+/* If an input/out is paired with an icon (e.g. svg), use the wrapper to prevent line break */
+.field-container .output-wrapper,
+.field-container .input-wrapper {
+  display: inline-block;
+  /* margin: 0 0.5rem 0 0; */
+}
+
+.field-container input[type="number"] {
+  outline: none;
+  width: 8rem;
+  padding: 0.2rem;
+  border-radius: 0.3rem;
+  border: 0.1rem solid;
+}
+
+.field-container input[type="checkbox"] {
+  width: 1rem;
+  height: 1rem;
+}
+
+output, span.output {
+  display: inline-block;
+  width: 8rem;
+  padding: 0.2rem;
+  border-radius: 0.3rem;
+  border: 0.1rem solid;
 }
 
 div.line {
@@ -90,7 +158,6 @@ div.line input[type="number"] {
   outline: none;
   width: 8rem;
   padding: 0.2rem;
-  font-weight: bold;
   border-radius: 0.3rem;
   border: 0.1rem solid;
 }
@@ -100,21 +167,92 @@ div.line input[type="checkbox"] {
   height: 1rem;
 }
 
-div.line span.output {
-  display: inline-block;
-  width: 8rem;
-  padding: 0.2rem;
-  font-weight: bold;
-  border-radius: 0.3rem;
-  border: 0.1rem dashed;
-}
-
 .error {
   background-color:#ffecc2;
   color: red;
 }
 
 .need-more {
-  text-decoration: underline 0.05rem dashed #7c1a20;
-  color: #7c1a20;
+  text-decoration: underline 0.05rem dashed var(--miku-dark-red);
+  color: var(--miku-dark-red);
 }
+
+/* Sapphire Amethyst Ruby Amber Malachite Emerald */
+
+.select-wrapper {
+  display: inline-block;
+  position: relative;
+  min-width: 11rem;
+}
+
+.select-wrapper select {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 100%;
+  font-size: 1rem;
+  padding: 0.2rem 2rem 0.2rem 1em;
+  background-color: #fff;
+  border-radius: 0.25rem;
+  color: #000;
+  cursor: pointer;
+}
+
+.select-wrapper.sapphire  select { background-color: #bcb7f5; border: 0.1rem solid #584be5; }
+.select-wrapper.amethyst  select { background-color: #f3ddfe; border: 0.1rem solid #c353fb; }
+.select-wrapper.ruby      select { background-color: #f9d5d4; border: 0.1rem solid #e02d26; }
+.select-wrapper.amber     select { background-color: #f8e8cd; border: 0.1rem solid #de8b05; }
+.select-wrapper.malachite select { background-color: #d9e7eb; border: 0.1rem solid #3f8899; }
+.select-wrapper.emerald   select { background-color: #d7e3ce; border: 0.1rem solid #367209; }
+
+output.sapphire  { background-color: #bcb7f5; border-color: #584be5; }
+output.amethyst  { background-color: #f3ddfe; border-color: #c353fb; }
+output.ruby      { background-color: #f9d5d4; border-color: #e02d26; }
+output.amber     { background-color: #f8e8cd; border-color: #de8b05; }
+output.malachite { background-color: #d9e7eb; border-color: #3f8899; }
+output.emerald   { background-color: #d7e3ce; border-color: #367209; }
+
+output.sapphire,
+output.amethyst,
+output.ruby,
+output.amber,
+output.malachite,
+output.emerald {
+  display: inline-block;
+  width: 3rem !important;
+}
+
+svg.sapphire  { fill: #584be5; }
+svg.amethyst  { fill: #c353fb; }
+svg.ruby      { fill: #e02d26; }
+svg.amber     { fill: #de8b05; }
+svg.malachite { fill: #3f8899; }
+svg.emerald   { fill: #367209; }
+
+/* svg.stone-shape { width: 1.1rem; height: 1.1rem; } */
+svg.stone-shape { width: 1.1rem; height: 1.1rem; }
+
+.up-tab-bar svg.stone-shape { width: 0.9rem; height: 0.9rem; }
+
+div.select-wrapper:before,
+div.select-wrapper:after {
+  --size: 0.3rem;
+  position: absolute;
+  content: "";
+  right: 1rem;
+  pointer-events: none;
+}
+
+div.select-wrapper:before {
+  border-left: var(--size) solid transparent;
+  border-right: var(--size) solid transparent;
+  border-bottom: var(--size) solid black;
+  top: 35%;
+}
+
+div.select-wrapper::after {
+  border-left: var(--size) solid transparent;
+  border-right: var(--size) solid transparent;
+  border-top: var(--size) solid black;
+  top: 60%;
+}
+
