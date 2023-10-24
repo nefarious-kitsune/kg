@@ -10,7 +10,7 @@
   padding: 0rem;
   width:fit-content;
   border-radius: 0.5rem;
-  border: 0.1rem solid #b42328;
+  border: 0.1rem solid var(--miku-red);
 }
 
 .point-table th,
@@ -60,7 +60,7 @@
 }
 
 .tabbed-table-tab-bar .mk-tab:hover {
-  background-color: #b42328;
+  background-color: var(--miku-red);
 }
 
 .tabbed-table-tab-bar .focused,
@@ -211,13 +211,13 @@ span.vs-server {
 
 .final-point {
   font-size: 0.9rem;
-  /* color: #b42328; */
+  /* color: var(--miku-red); */
   margin: 2rem 0 2rem 0;
 }
 
 .final-point-bar {
   display:inline-block;
-  background: #b42328;
+  background: var(--miku-red);
   color: #fec728;
   text-align:right;
   padding-right: 0.1rem;
