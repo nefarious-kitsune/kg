@@ -1,0 +1,155 @@
+<html>
+<head>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Miku's Shrine: Archer troops combo maker</title>
+  <link href="../css/common.css" rel="stylesheet" />
+  <link href="example.css" rel="stylesheet" />
+  <script src="./archer-data.js"></script>
+  <script src="./combo.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", (e) => {
+      cacheDom();
+      calculate();
+    })
+  </script>
+</head>
+<body>
+
+<header id="header">
+  <div id="site-heading-wrapper"><h2 id="site-heading">Miku's Shrine</h2></div>
+  <div id="breadcrumb-wrapper"><nav>
+    <a class="link" href="../content">Home</a>
+    <span class="chevron">›</span>
+    <a class="link" href="./">Hero</a>
+    <span class="chevron">›</span>
+    <a class="link" href="./example">Example</a>
+    <span class="chevron">›</span>
+    <span class="current">Archer 1</span>
+  </nav></div>
+</header>
+
+<main>
+<h1>Archer troops combo maker</h1>
+
+<p>Select your heroes:</p>
+<table class="select-hero-table">
+<thead>
+<tr>
+<!-- <th class="hero-avatar"></th> -->
+<th class="hero-name">Hero Name</th>
+<th style="width: 12rem;">How to get it?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><div class="select-wrapper"
+    ><select id="select-hero-1" onchange="calculate();">
+      <option value="padme">Padme</option>
+      <option value="sahar">Sahar</option>
+      <option value="meg">Meg</option>
+      <option value="ptolemy">Ptolemy</option>
+      <option value="livia" selected="selected">Livia</option>
+      <option value="richard">Richard</option>
+      <option value="torvi">Torvi</option>
+      <option value="collin">Collin</option>
+      <option value="sabastian">Sabastian</option>
+      <option value="oneil">O'Neil</option>
+      <option value="ariza">Ariza</option>
+      <option value="gabriel">Gabriel</option>
+      <option value="kadir">Kadir</option>
+      <option value="pan">Pan</option>
+      <option value="fatima">Fatima</option>
+      <option value="montag">Montag</option>
+      <option value="bella">Bella</option>
+      <option value="jennifer">Jennifer</option>
+      <option value="arthur">Arthur</option>
+      <option value="trist">Trist</option>
+      <option value="harold">Harold</option>
+      <option value="arwyn">Arwyn</option>
+    </select
+  ></div></td>
+  <td
+     ><img id="hero-1-src-free"     class="from-source hidden" src="../images/from-free-pick.png" alt="Free-pick"
+    /><img id="hero-1-src-crystal"  class="from-source hidden" src="../images/from-crystal.png" alt="Wishing crystal"
+    /><img id="hero-1-src-wheel"    class="from-source hidden" src="../images/from-wheel.png" alt="Lucky wheel"
+    /><img id="hero-1-src-advanced" class="from-source hidden" src="../images/from-advanced.png" alt="Advance recruitment"
+  ></td></td>
+</tr>
+<tr>
+  <td><div class="select-wrapper"
+    ><select id="select-hero-2" onchange="calculate();">
+      <option value="padme">Padme</option>
+      <option value="sahar" selected="selected">Sahar</option>
+      <option value="meg">Meg</option>
+      <option value="ptolemy">Ptolemy</option>
+      <option value="livia">Livia</option>
+      <option value="richard">Richard</option>
+      <option value="torvi">Torvi</option>
+      <option value="collin">Collin</option>
+      <option value="sabastian">Sabastian</option>
+      <option value="oneil">O'Neil</option>
+      <option value="ariza">Ariza</option>
+      <option value="gabriel">Gabriel</option>
+      <option value="kadir">Kadir</option>
+      <option value="pan">Pan</option>
+      <option value="fatima">Fatima</option>
+      <option value="montag">Montag</option>
+      <option value="bella">Bella</option>
+      <option value="jennifer">Jennifer</option>
+      <option value="arthur">Arthur</option>
+      <option value="trist">Trist</option>
+      <option value="harold">Harold</option>
+      <option value="arwyn">Arwyn</option>
+    </select
+  ></div></td>
+  <td
+     ><img id="hero-2-src-free"     class="from-source hidden" src="../images/from-free-pick.png" alt="Free-pick"
+    /><img id="hero-2-src-crystal"  class="from-source hidden" src="../images/from-crystal.png" alt="Wishing crystal"
+    /><img id="hero-2-src-wheel"    class="from-source hidden" src="../images/from-wheel.png" alt="Lucky wheel"
+    /><img id="hero-2-src-advanced" class="from-source hidden" src="../images/from-advanced.png" alt="Advance recruitment"
+  ></td></td>
+</tr>
+<tr>
+  <td><div class="select-wrapper"
+    ><select id="select-hero-3" onchange="calculate();">
+      <option value="padme">Padme</option>
+      <option value="sahar">Sahar</option>
+      <option value="meg">Meg</option>
+      <option value="ptolemy">Ptolemy</option>
+      <option value="livia">Livia</option>
+      <option value="richard">Richard</option>
+      <option value="torvi">Torvi</option>
+      <option value="collin">Collin</option>
+      <option value="sabastian">Sabastian</option>
+      <option value="oneil">O'Neil</option>
+      <option value="ariza">Ariza</option>
+      <option value="gabriel" selected="selected">Gabriel</option>
+      <option value="kadir">Kadir</option>
+      <option value="pan">Pan</option>
+      <option value="fatima">Fatima</option>
+      <option value="montag">Montag</option>
+      <option value="bella">Bella</option>
+      <option value="jennifer">Jennifer</option>
+      <option value="arthur">Arthur</option>
+      <option value="trist">Trist</option>
+      <option value="harold">Harold</option>
+      <option value="arwyn">Arwyn</option>
+    </select
+  ></div></td>
+  <td
+     ><img id="hero-3-src-free"     class="from-source hidden" src="../images/from-free-pick.png" alt="Free-pick"
+    /><img id="hero-3-src-crystal"  class="from-source hidden" src="../images/from-crystal.png" alt="Wishing crystal"
+    /><img id="hero-3-src-wheel"    class="from-source hidden" src="../images/from-wheel.png" alt="Lucky wheel"
+    /><img id="hero-3-src-advanced" class="from-source hidden" src="../images/from-advanced.png" alt="Advance recruitment"
+  ></td></td>
+</tr>
+</tbody>
+</table>
+
+
+<div id="table-container">
+
+</div>
+</main>
+</body>
+</html>
