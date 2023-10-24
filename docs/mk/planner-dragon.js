@@ -201,7 +201,7 @@ class DragonUpgradePlanner {
               runOutOf = `Rare (${qtyNeeded})`;
             } else {
               const exchangeRate = 200;
-              if ((bag.free * exchangeRate + bag.green) >  qtyNeeded) {
+              if ((bag.free * exchangeRate + bag.green) >=  qtyNeeded) {
                   const exchanged = Math.ceil((qtyNeeded - bag.green) / exchangeRate);
                   bag.free = bag.free - exchanged;
                   bag.green = bag.green + (exchanged * exchangeRate) - qtyNeeded;
@@ -229,7 +229,7 @@ class DragonUpgradePlanner {
               runOutOf = 'Excellent';
             } else {
               const exchangeRate = 20;
-              if ((bag.free * exchangeRate + bag.blue) >  qtyNeeded) {
+              if ((bag.free * exchangeRate + bag.blue) >=  qtyNeeded) {
                 const exchanged = Math.ceil((qtyNeeded - bag.blue) / exchangeRate);
                 bag.free = bag.free - exchanged;
                 bag.blue = bag.blue + (exchanged * exchangeRate) - qtyNeeded;
@@ -257,7 +257,7 @@ class DragonUpgradePlanner {
               runOutOf = 'Perfect';
             } else {
               const exchangeRate = 2;
-              if ((bag.free * exchangeRate + bag.purple) >  qtyNeeded) {
+              if ((bag.free * exchangeRate + bag.purple) >= qtyNeeded) {
                 const exchanged = Math.ceil((qtyNeeded - bag.purple) / exchangeRate);
                 bag.free = bag.free - exchanged;
                 bag.purple = bag.purple + (exchanged * exchangeRate) - qtyNeeded;
