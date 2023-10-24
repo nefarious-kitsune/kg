@@ -631,26 +631,26 @@ const ElementHeroData = [
     "element": "archer",
     "skills": [
       "March speed +20%",
-      "Offline gold +20%",
+      "Recovery speed +15%",
       "",
       "All troops power +20%",
-      "Gathering speed +20%"
+      "Wound regeneration +10%"
     ],
     "bonus": {
       "ap": 0,
       "speed": 20,
       "power": 20,
-      "regen": 0,
-      "gather": 20,
-      "offline": 20,
+      "regen": 10,
+      "gather": 0,
+      "offline": 0,
       "load": 0,
-      "recovery": 0
+      "recovery": 15
     },
     "tier": {
-      "warrior": 1,
+      "warrior": 3,
       "support": 1,
       "hunter": 0,
-      "miner": 1
+      "miner": 0
     },
     "from": {
       "advanced": false,

@@ -399,7 +399,7 @@ const ElementHeroData = [
     "name": "Rudolph",
     "element": "ice",
     "skills": [
-      "March speed +25%",
+      "March speed +20%",
       "Troops load +15%",
       "",
       "All troops power +25%",
@@ -407,7 +407,7 @@ const ElementHeroData = [
     ],
     "bonus": {
       "ap": 0,
-      "speed": 25,
+      "speed": 20,
       "power": 25,
       "regen": 0,
       "gather": 0,

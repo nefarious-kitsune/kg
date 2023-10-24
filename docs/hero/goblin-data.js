@@ -330,7 +330,7 @@ const ElementHeroData = [
     }
   },
   {
-    "name": "Blackwel",
+    "name": "Blackwell",
     "element": "goblin",
     "skills": [
       "March speed +20%",
