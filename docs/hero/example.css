@@ -125,6 +125,28 @@ table td { vertical-align: top;}
   margin: 0;
   border-spacing: 0;
   border-collapse: collapse;
+  /* table-layout: fixed; */
+  white-space: nowrap;
+}
+
+.hero-table thead th {
+  position: sticky;
+  background-color: white;
+  z-index: 1;
+  top: 0;
+}
+
+.hero-table td.hero-name {
+  position: sticky;
+  background-color: white;
+  left: 0;
+  z-index: 1;
+}
+
+.hero-table th.hero-name {
+  top: 0;
+  left: 0;
+  z-index: 2;
 }
 
 .hero-table td,
