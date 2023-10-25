@@ -33,7 +33,7 @@
   padding: 0;
   border-radius: 0.5rem 0.5rem 0 0;
   background: var(--miku-dark-red);
-  color: #fec728;
+  color: var(--miku-gold);
   padding: 0.5rem;
   font-size: 1.2rem;
   font-weight: bold;
@@ -54,7 +54,7 @@
   margin: 0;
   border: none;
   cursor: pointer;
-  color: #fec728;
+  color: var(--miku-gold);
   text-shadow: 0px 1px 1px #000;
   background-color: var(--miku-dark-red);
 }
@@ -72,7 +72,7 @@
 .tabbed-table-tab-bar {
   margin: 0;
   background: var(--miku-dark-red);
-  color: #fec728;
+  color: var(--miku-gold);
 }
 
 .tabbed-table-content {
@@ -97,7 +97,7 @@
 .sp-result-table th,
 .mk-result-table th {
   background: var(--miku-dark-red);
-  color: #fec728;
+  color: var(--miku-gold);
   font-weight: normal;
 }
 .sp-result-table td,
@@ -218,7 +218,7 @@ span.vs-server {
 .final-point-bar {
   display:inline-block;
   background: var(--miku-red);
-  color: #fec728;
+  color: var(--miku-gold);
   text-align:right;
   padding-right: 0.1rem;
   margin-right: 0.1rem;
@@ -227,7 +227,7 @@ span.vs-server {
 .phase-point-bar {
   display:inline-block;
   background: var(--miku-dark-red);
-  color: #fec728;
+  color: var(--miku-gold);
   text-align:right;
   padding-right: 0.3rem;
   margin-right: 0.2rem;

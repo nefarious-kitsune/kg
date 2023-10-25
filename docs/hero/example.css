@@ -125,8 +125,6 @@ table td { vertical-align: top;}
   margin: 0;
   border-spacing: 0;
   border-collapse: collapse;
-  /* table-layout: fixed; */
-  white-space: nowrap;
 }
 
 .hero-table thead th {
@@ -161,7 +159,7 @@ table td { vertical-align: top;}
 
 .hero-table .avatars-item { width: 2rem; height: 2rem; }
 
-.from-source { width: 2.5rem; height: 2.5rem; display: inline-block; }
+.from-source { width: 2.5rem; height: 2.5rem; }
 .from-source.hidden { display: none; }
 
 .select-hero-table {

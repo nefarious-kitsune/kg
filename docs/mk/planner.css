@@ -29,7 +29,7 @@
   margin-bottom: 1rem;
   border-radius: 0.5rem;
   background: var(--miku-dark-red);
-  color: #fec728;
+  color: var(--miku-gold);
 }
 
 .top-bar .left {
@@ -155,7 +155,7 @@ span.output.wide { width: 7.3rem !important; }
   border-radius: 0.5rem 0.5rem 0 0;
 
   background: var(--miku-red);
-  color: #fec728;
+  color: var(--miku-gold);
 }
 
 .collapsible-toggle button.left {
@@ -163,7 +163,7 @@ span.output.wide { width: 7.3rem !important; }
   border-color: transparent;
 
   background: var(--miku-red);
-  color: #fec728;
+  color: var(--miku-gold);
 }
 
 .collapsible-content {

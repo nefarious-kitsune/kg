@@ -1,6 +1,7 @@
 :root {
-  --miku-red: #b42328;
-  --miku-dark-red: #7c1a20;
+  --miku-red: rgb(180, 35, 40); /*  #b42328; */
+  --miku-dark-red: rgb(124, 26, 32); /* #7c1a20 */
+  --miku-gold: #fec728;
 }
 
 html {
@@ -26,7 +27,7 @@ body.landing {
 body.landing main {
   position: absolute;
   background-color: #e8c3d3;
-  border: 0.2rem #fec728 solid;
+  border: 0.2rem var(--miku-gold) solid;
   border-radius: 1rem;
   margin: 2rem 2rem 2rem 30%;
   padding: 1rem;
@@ -164,9 +165,22 @@ nav#nav-bar {
 
 nav#nav-bar a { color: #7ac1eb; }
 
-h1 {
-  font-size: 2rem;
+main h1,
+main h2,
+main h3,
+main h4,
+main h5,
+main h6 {
+  font-weight: bold;
+  color: var(--miku-dark-red);  
+  text-shadow:
+    1px 1px 4px rgba(124, 26, 32, 0.1),
+    2px 3px 4px rgba(124, 26, 32, 0.15),
+    3px 5px 4px rgba(124, 26, 32, 0.2)
 }
+
+h1 { font-size: 2rem; }
+h2 { font-size: 1.4rem; }
 
 .select-wrapper {
   display: inline-block;

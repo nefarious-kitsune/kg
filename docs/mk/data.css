@@ -11,7 +11,7 @@ table { border-collapse: collapse; position: relative;}
 table.blacksmith th,
 table.witchLab th {
   background: var(--miku-dark-red);
-  color: #fec728;
+  color: var(--miku-gold);
   font-weight: normal;
   padding: 0.5rem; 
 }

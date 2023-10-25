@@ -3,14 +3,14 @@
   padding: 0;
   border-radius: 0.5rem 0.5rem 0 0;
   background: var(--miku-dark-red);
-  color: #fec728;
+  color: var(--miku-gold);
 }
 
 .collapsible-toggle button.title {
   border-radius: 0.5rem 0 0 0;
   border-color: transparent;
   background: var(--miku-dark-red);
-  color: #fec728;
+  color: var(--miku-gold);
 }
 
 .collapsible-content {
@@ -47,7 +47,7 @@
   margin: 0;
   border: none;
   cursor: pointer;
-  color: #fec728;
+  color: var(--miku-gold);
   text-shadow: 0px 1px 1px #000;
   background-color: var(--miku-dark-red);
 }
@@ -63,7 +63,7 @@
 }
 
 .up-tab svg {
-  fill: #fec728;
+  fill: var(--miku-gold);
 }
 
 .up-tab.focused svg,
@@ -74,7 +74,7 @@
 .up-tab-bar {
   margin: 0;
   background: var(--miku-dark-red);
-  color: #fec728;
+  color: var(--miku-gold);
 }
 
 .up-tab-content {
