@@ -21,6 +21,22 @@
 .point-table tr td:first-child { min-width: 20rem; }
 .point-table tr td:last-child { text-align: right; min-width: 5rem; }
 
+.mk-up-container {
+  padding: 0rem;
+  width:fit-content;
+  border-radius: 0.5rem;
+  border: 0.1rem solid var(--miku-red);
+}
+
+.mk-up-point-table th,
+.mk-up-point-table td { padding: 0.2rem; }
+.mk-up-point-table tr td:first-child { min-width: 20rem; }
+.mk-up-point-table tr td:nth-child(2),
+.mk-up-point-table tr td:last-child { text-align: right; min-width: 8rem; }
+.mk-up-point-table .normal { color: inherit; }
+.mk-up-point-table .spend { color: #285d8a; font-size: 0.8rem;}
+.mk-up-point-table .rally { color: #75338d; }
+
 /*
  green : 28501f 3b7b2b 5db552 72cf6c
  blue  : 182a3b 285d8a 448bd1 7ac1eb
