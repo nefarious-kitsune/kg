@@ -2,9 +2,21 @@
   --miku-red: rgb(180, 35, 40); /*  #b42328; */
   --miku-dark-red: rgb(124, 26, 32); /* #7c1a20 */
   --miku-gold: #fec728;
+  --gradient-blue-1: #324d5e;
+  --gradient-blue-2: #3a7495;
+  --gradient-gold-1: #ad741b;
+  --gradient-gold-2: #ffcb1d;
+  --gradient-purple-1: #563b4f;
+  --gradient-purple-2: #824c85;
 }
 
 html {
+  /*
+    font size:
+    19 px @ 1600 px viewport width (desktop)
+    15 px @  820 px viewport width (tablet)
+    12 px @  400 px viewport width (phone)
+   */
   font-size: calc(12px + (18 - 12) * ((100vw - 300px) / (1600 - 300)));
   font-family: 'Helvetica', 'Arial', sans-serif;
 }
@@ -272,7 +284,24 @@ h2 { font-size: 1.4rem; }
   transition: 0.4s ease-in-out 0.3s;
 }
 
+.hidden { display: none !important; }
 
+.icon {
+  display: inline-block;
+  margin: 0.2rem;
+  width: 2.6rem;
+  height: 2.6rem;
+  background-size: contain;
+}
+
+.hero-name-container {
+  display: inline-block;
+}
+
+@media screen and (max-width: 820px) {
+  .hero-name-container .icon { display: none; }
+  .icon { width: 2rem; height: 2rem; }
+}
 
 .avatars {
   margin: 0.5rem 0.5rem 0.5rem 2rem;
@@ -347,3 +376,16 @@ h2 { font-size: 1.4rem; }
 .tracy { background-image: url('../images/F-Tracy.png'); }
 .vanessa { background-image: url('../images/blank-avatar.png'); }
 .wallis { background-image: url('../images/F-Wallis.png'); }
+
+
+.ao-deng-ge-ri-le, .ao-yue,
+.clarence, .etley, .hadi, .hana, .keith, .lilani,
+.maud, .merlin, .nathaniel, .nicole,
+.parr, .paula, .pedra,
+.ralph, .rudolph, .torvi, .trist {
+  background-image: url('../images/blank-avatar.png');
+}
+
+.filius { background-image: url('../images/A-Filius.png'); }
+.jessica { background-image: url('../images/A-Jessica.png'); }
+.vera { background-image: url('../images/A-Vera.png'); }
