@@ -42,7 +42,6 @@ const WitchLabUpgradePlanner = {
     localStorage.setItem(CURR_REAGENT_COUNT_KEY, up.currLightReagentCount);
     localStorage.setItem(CURR_LAB_LEVEL_KEY  , up.currWitchLabLevel);
   },
-  //  870
 
   getUserData: function() {
     const up = WitchLabUpgradePlanner;
