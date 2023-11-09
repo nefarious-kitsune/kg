@@ -49,8 +49,8 @@ body.landing #header {
   background: linear-gradient(
     to bottom,
     #ffffff66 0%,
-    #ffffff66 60%,
-    var(--miku-red) 60%,
+    #ffffff66 90%,
+    var(--miku-red) 90%,
     var(--miku-red) 100%
     );
 }
@@ -58,40 +58,15 @@ body.landing #header {
 #header {
   margin: 0;
   padding: 0.2rem 0.2rem 0.2rem 1rem;
-  height: 4.8rem;
-  background: linear-gradient(
-    to bottom,
-    #ffffff66 0%,
-    #ffffff66 60%,
-    var(--miku-red) 60%,
-    var(--miku-red) 64%,
-    #ffffff66 64%,
-    #ffffff66 100%
-    );
 }
 
 #header:before {
-  position: relative;
-  float: left;
-  top: 0;
-  content: "";
-  background: white url('../images/katana-stand-150.png') no-repeat;
-  background-position: center;
-  /* background-size: contain; */
-  background-size: 6rem auto;
-  border: var(--miku-red) 0.2rem solid;
-  border-radius: 50%;
-  width: 4.5rem;
-  height: 4.5rem;
-}
-
-#site-heading-wrapper {
-  display: flex;
-  height: 3rem;
-  padding: 0 0 0 0.5rem;
-  justify-content: center;
-  align-content: center;
-  flex-direction: column;
+  display: block;
+  content: " ";
+  background: url('../images/logo_text.png') no-repeat;
+  background-size: contain;
+  height: 3.3rem;
+  width: 18.9rem;
 }
 
 #site-heading {
