@@ -130,17 +130,14 @@ body.landing #header {
 
 ul.butterfly {
 	margin: 0;
-  padding: 0 0 1rem 0;
 }
 
 ul.butterfly li {
-	margin: 0;
-	padding: 0.2rem 0.2rem 0.2rem 1.5rem;
-	list-style: none;
-	background-image: url("../images/butterfly-red.svg");
-	background-repeat: no-repeat;
-	background-position: left 0.5rem;
-	background-size: 1rem;
+  list-style-image: url("../images/butterfly-red.svg");
+}
+
+ul.butterfly li::marker {
+  font-size: 1.8em;
 }
 
 a {
