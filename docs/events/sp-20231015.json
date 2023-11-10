@@ -1,0 +1,275 @@
+[
+  {
+    "server": "Global",
+    "points": [
+      {
+        "rank": 1,
+        "points": 3422200
+      },
+      {
+        "rank": 2,
+        "points": 2652300
+      },
+      {
+        "rank": 3,
+        "points": 2339600
+      },
+      {
+        "rank": 10,
+        "points": 1936000
+      }
+    ]
+  },
+  {
+    "server": "S449",
+    "points": [
+      {
+        "rank": 1,
+        "points": 604000
+      },
+      {
+        "rank": 2,
+        "points": 598200
+      },
+      {
+        "rank": 3,
+        "points": 577600
+      },
+      {
+        "rank": 10,
+        "points": 349000
+      }
+    ]
+  },
+  {
+    "server": "S1028",
+    "points": [
+      {
+        "rank": 1,
+        "points": 1022000
+      },
+      {
+        "rank": 2,
+        "points": 875600
+      },
+      {
+        "rank": 3,
+        "points": 804200
+      },
+      {
+        "rank": 10,
+        "points": 403500
+      }
+    ]
+  },
+  {
+    "server": "S699",
+    "points": [
+      {
+        "rank": 1,
+        "points": 1067800
+      },
+      {
+        "rank": 2,
+        "points": 750100
+      },
+      {
+        "rank": 3,
+        "points": 650000
+      },
+      {
+        "rank": 10,
+        "points": 260500
+      }
+    ]
+  },
+  {
+    "server": "S468",
+    "points": [
+      {
+        "rank": 1,
+        "points": 452200
+      },
+      {
+        "rank": 2,
+        "points": 309700
+      },
+      {
+        "rank": 3,
+        "points": 295400
+      },
+      {
+        "rank": 10,
+        "points": 114800
+      }
+    ]
+  },
+  {
+    "server": "S417",
+    "points": [
+      {
+        "rank": 1,
+        "points": 368400
+      },
+      {
+        "rank": 2,
+        "points": 280000
+      },
+      {
+        "rank": 3,
+        "points": 256300
+      },
+      {
+        "rank": 10,
+        "points": 100000
+      }
+    ]
+  },
+  {
+    "server": "S915",
+    "points": [
+      {
+        "rank": 1,
+        "points": 348000
+      },
+      {
+        "rank": 2,
+        "points": 300200
+      },
+      {
+        "rank": 3,
+        "points": 219700
+      },
+      {
+        "rank": 10,
+        "points": 165800
+      }
+    ]
+  },
+  {
+    "server": "S1141",
+    "points": [
+      {
+        "rank": 1,
+        "points": 347200
+      },
+      {
+        "rank": 2,
+        "points": 260300
+      },
+      {
+        "rank": 3,
+        "points": 269000
+      },
+      {
+        "rank": 10,
+        "points": 152500
+      }
+    ]
+  },
+  {
+    "server": "S1111",
+    "points": [
+      {
+        "rank": 1,
+        "points": 322800
+      },
+      {
+        "rank": 2,
+        "points": 254800
+      },
+      {
+        "rank": 3,
+        "points": 224900
+      },
+      {
+        "rank": 10,
+        "points": 164000
+      }
+    ]
+  },
+  {
+    "server": "S770",
+    "points": [
+      {
+        "rank": 1,
+        "points": 252400
+      },
+      {
+        "rank": 2,
+        "points": 228500
+      },
+      {
+        "rank": 3,
+        "points": 186500
+      },
+      {
+        "rank": 10,
+        "points": 79500
+      }
+    ]
+  },
+  {
+    "server": "S551",
+    "points": [
+      {
+        "rank": 1,
+        "points": 161700
+      },
+      {
+        "rank": 2,
+        "points": 134700
+      },
+      {
+        "rank": 3,
+        "points": 113800
+      },
+      {
+        "rank": 10,
+        "points": 70300
+      }
+    ]
+  },
+  {
+    "server": "S898",
+    "points": [
+      {
+        "rank": 1,
+        "points": 147000
+      },
+      {
+        "rank": 2,
+        "points": 80800
+      },
+      {
+        "rank": 3,
+        "points": 67000
+      },
+      {
+        "rank": 8,
+        "points": 53200
+      }
+    ]
+  },
+  {
+    "server": "S626",
+    "points": [
+      {
+        "rank": 1,
+        "points": 2034100
+      },
+      {
+        "rank": 2,
+        "points": 95600
+      },
+      {
+        "rank": 3,
+        "points": 68900
+      },
+      {
+        "rank": 6,
+        "points": 51200
+      }
+    ]
+  }
+]
