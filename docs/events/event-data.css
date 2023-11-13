@@ -121,14 +121,13 @@ span.vs-server {
 }
 
 .sp-result-table thead tr th:first-child { width: 4rem; }
-.sp-result-table thead tr th:last-child { width: 0.5rem; }
 .sp-final-col { width: 16rem; }
 .sp-result-table thead tr th { width: 8rem; }
 .sp-result-table tr.new-section { border-top: 0.1rem solid var(--miku-dark-red); }
 
 .mk-result-table thead tr th:first-child { width: 4rem; }
 .mk-final-col, .up-final-col { width: 16rem; }
-.mk-result-table thead tr th { width: 8rem; }
+.mk-result-table thead tr th { width: 10rem; }
 .mk-result-table tr.new-section { border-top: 0.1rem solid var(--miku-dark-red); }
 
 .mk-result-table.display-final .mk-final-col { display: table-cell; }
@@ -241,6 +240,21 @@ span.vs-server {
   margin-right: 0.2rem;
 }
 
+.phase-point.server1,
+.final-point.server1 {
+  color: var(--miku-dark-green);
+}
+
+.phase-point.server2, 
+.final-point.server2 {
+  color: var(--miku-dark-blue);
+}
+
+.phase-point-bar .phase-point,
+.final-point-bar .final-point {
+  color: white !important;
+}
+
 .phase-point-bar.server1,
 .final-point-bar.server1 {
   background: var(--miku-dark-green);
@@ -251,25 +265,35 @@ span.vs-server {
   background: var(--miku-dark-blue);
 }
 
-.server-col .svs-server1 {
-  display: block;
-  margin:0;
-  padding: 0.2rem;
-  border-radius: 0.4rem;
-  color: var(--miku-gold);
+.tag {
+  font-size: 0.9rem;
+}
+
+.tag.svs-server1 {
+  color: white;
   background: var(--miku-dark-green);
 }
 .server-col .svs-vs {
+  text-align: center;
   display: block;
   color: black;
 }
 
-.server-col .svs-server2 {
-  display: block;
-  margin:0;
-  padding: 0.2rem;
-  border-radius: 0.4rem;
-  color: var(--miku-gold);
+.tag.svs-server2 {
+  color: white;
   background: var(--miku-dark-blue);
 }
 
+.tag.svs-server1,
+.tag.svs-server2 {
+  display: block;
+  margin:0;
+  padding: 0.1rem 0.2rem 0.1rem 0.1rem;
+  clip-path: polygon(
+    0 0,
+    calc(100% - 0.4rem) 0,
+    100% 50%,
+    calc(100% - 0.4rem) 100%,
+    0 100%
+  );
+}

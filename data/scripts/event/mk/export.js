@@ -142,12 +142,14 @@ function getPhasePointHTML(phase, rank, phaseData, server1) {
     `<span class="event-rank-${rank}">${rank}</span>`;
 
   const barClass = `phase-point-bar server${(server === server1)?'1':'2'}`;
+  const pointClass = `phase-point server${(server === server1)?'1':'2'}`;
   const barStyle = `width: ${barWidth.toFixed(1)}rem`;
+  
 
   if (barWidth >= (MaxBarWidth/2)) {
-    html += `<div class="${barClass}" style="${barStyle}"><span class="phase-point">${pointsDisplay}</span></div>`;
+    html += `<div class="${barClass}" style="${barStyle}"><span class="${pointClass}">${pointsDisplay}</span></div>`;
   } else {
-    html += `<div class="${barClass}" style="${barStyle}">&nbsp;</div><span class="phase-point">${pointsDisplay}</span></td>`;
+    html += `<div class="${barClass}" style="${barStyle}">&nbsp;</div><span class="${pointClass}">${pointsDisplay}</span></td>`;
   }
 
   html += '</td>';
@@ -188,12 +190,13 @@ function getFinalPointHTML(rank, finalData, server1) {
     `<span class="event-rank-${rank}">${rank}</span>`;
 
   const barClass = `final-point-bar server${(server === server1)?'1':'2'}`;
+  const pointClass = `final-point server${(server === server1)?'1':'2'}`;
   const barStyle = `width: ${barWidth.toFixed(1)}rem`;
 
   if (barWidth >= (MaxBarWidth/2)) {
-    html += `<div class="${barClass}" style="${barStyle}"><span class="final-point">${pointsDisplay}</span></div>`;
+    html += `<div class="${barClass}" style="${barStyle}"><span class="${pointClass}">${pointsDisplay}</span></div>`;
   } else {
-    html += `<div class="${barClass}" style="${barStyle}">&nbsp;</div><span class="final-point">${pointsDisplay}</span></td>`;
+    html += `<div class="${barClass}" style="${barStyle}">&nbsp;</div><span class="${pointClass}">${pointsDisplay}</span></td>`;
   }
 
   html += '</td>';
@@ -256,9 +259,9 @@ for (let svsIdx = 0; svsIdx < servers1.length; svsIdx++) {
   bodyContent.push('<tr class="new-section">');
   bodyContent.push(
     '<td rowspan="4" class="server-col">' +
-    '<span class="svs-server1">' + svsData.server + '</span>' + 
+    '<span class="tag svs-server1">' + svsData.server + '</span>' + 
     '<span class="svs-vs">vs</span>' + 
-    '<span class="svs-server2">' + svsData.server2 + '</span>' + 
+    '<span class="tag svs-server2">' + svsData.server2 + '</span>' + 
     '</td>',
   );
 
