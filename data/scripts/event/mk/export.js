@@ -11,15 +11,19 @@ const MaxPhasePoints = (1.5 * 1000 * 1000 * 1000);
 const MaxFinalPoints = (2.2 * 1000 * 1000 * 1000);
 
 const evtStartY = parseInt(eventDate.slice(0,4));
-const evtStartM = parseInt(eventDate.slice(4,6));
-const evtStartD = parseInt(eventDate.slice(6  ));
+let evtStartM = parseInt(eventDate.slice(4,6));
+let evtStartD = parseInt(eventDate.slice(6  ));
 
 const exportDirectory = '../../../../docs/events';
 const eventStartDate = new Date(Date.UTC(evtStartY, evtStartM - 1, evtStartD));
 const eventEndDate = new Date()
 eventEndDate.setDate(eventStartDate.getDate() + 5);
 
+if (evtStartM < 10) evtStartM = '0' + evtStartM;
+if (evtStartD < 10) evtStartD = '0' + evtStartD;
+
 const evtEndY = eventEndDate.getUTCFullYear();
+
 let evtEndM = eventEndDate.getUTCMonth() + 1;
 let evtEndD = eventEndDate.getUTCDate();
 if (evtEndM < 10) evtEndM = '0' + evtEndM;
