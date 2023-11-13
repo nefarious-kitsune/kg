@@ -127,7 +127,6 @@ span.vs-server {
 .sp-result-table tr.new-section { border-top: 0.1rem solid var(--miku-dark-red); }
 
 .mk-result-table thead tr th:first-child { width: 4rem; }
-.mk-result-table thead tr th:last-child { width: 0.5rem; }
 .mk-final-col, .up-final-col { width: 16rem; }
 .mk-result-table thead tr th { width: 8rem; }
 .mk-result-table tr.new-section { border-top: 0.1rem solid var(--miku-dark-red); }
@@ -240,5 +239,37 @@ span.vs-server {
   text-align:right;
   padding-right: 0.3rem;
   margin-right: 0.2rem;
+}
+
+.phase-point-bar.server1,
+.final-point-bar.server1 {
+  background: var(--miku-dark-green);
+}
+
+.phase-point-bar.server2, 
+.final-point-bar.server2 {
+  background: var(--miku-dark-blue);
+}
+
+.server-col .svs-server1 {
+  display: block;
+  margin:0;
+  padding: 0.2rem;
+  border-radius: 0.4rem;
+  color: var(--miku-gold);
+  background: var(--miku-dark-green);
+}
+.server-col .svs-vs {
+  display: block;
+  color: black;
+}
+
+.server-col .svs-server2 {
+  display: block;
+  margin:0;
+  padding: 0.2rem;
+  border-radius: 0.4rem;
+  color: var(--miku-gold);
+  background: var(--miku-dark-blue);
 }
 
