@@ -2,16 +2,48 @@
   --miku-red: rgb(180, 35, 40); /*  #b42328; */
   --miku-dark-red: rgb(124, 26, 32); /* #7c1a20 */
   --miku-gold: #fec728;
+
   --gradient-blue-1: #324d5e;
   --gradient-blue-2: #3a7495;
   --gradient-gold-1: #ad741b;
   --gradient-gold-2: #ffcb1d;
   --gradient-purple-1: #563b4f;
   --gradient-purple-2: #824c85;
-  --miku-green: #5db552;
-  --miku-blue: #448bd1;
-  --miku-dark-green: #3b7b2b;
-  --miku-dark-blue: #285d8a;
+
+  --primary-1  : #C9803F; /* Caramel */
+  --secondary-1: #D59E48; /* Sand */
+  --primary-2  : #E0BB50; /* Copper */
+  --secondary-2: #9FB851; /* Olive */
+  --primary-3  : #5DB552; /* Jade */
+  --secondary-3: #51A092; /* Sapphire */
+  --primary-4  : #448BD1; /* Blue */
+  --secondary-4: #7789C2; /* Glaucous */
+  --primary-5  : #AA86B2; /* Iris */
+  --secondary-5: #AF6B96; /* Mauve */
+  --primary-6  : #B35079; /* Rose */
+
+  --light-primary-1  : #DFB38C;
+  --light-secondary-1: #E6C591;
+  --light-primary-2  : #ECD696;
+  --light-secondary-2: #C5D497;
+  --light-primary-3  : #9ED397;
+  --light-secondary-3: #97C6BE;
+  --light-primary-4  : #8FB9E3;
+  --light-secondary-4: #ADB8DA;
+  --light-primary-5  : #CCB6D1;
+  --light-secondary-5: #CFA6C0;
+  --light-primary-6  : #D196AF;
+
+  --dark-neutral:#363E4A;
+  --neutral: #485363; /* Charcoal */
+  --light-neutral: #9198A1;
+
+  /* alternative variable names for primary colors */
+  --orange : #C9803F; /* Caramel */
+  --gold   : #E0BB50; /* Copper */
+  --green  : #5DB552; /* Jade */
+  --blue   : #448BD1; /* Blue */
+  --purple : #AA86B2; /* */
 }
 
 html {
@@ -365,3 +397,99 @@ h2 { font-size: 1.4rem; }
 .filius { background-image: url('../images/A-Filius.png'); }
 .jessica { background-image: url('../images/A-Jessica.png'); }
 .vera { background-image: url('../images/A-Vera.png'); }
+
+.server-tag {
+  display: inline-block;
+  color: white;
+  text-shadow: 0px 1px 1px var(--dark-neutral);
+  font-weight: bold;
+  margin: 0.05rem 0;
+  padding: 0.1rem 0.2rem;
+}
+
+@media screen and (min-width: 100px) { /* Small screen */
+  .server-tag {
+    min-width: 2.5rem;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 390px) { /* Mobile */
+  .server-tag {
+    font-size: 0.8rem;
+    width: 2.5rem;
+    text-align: left;
+    padding: 0.1rem 0.2rem;
+    clip-path: polygon(
+      0 0,
+      calc(100% - 0.2rem) 0,
+      100% 50%,
+      calc(100% - 0.2rem) 100%,
+      0 100%
+    );
+  }
+    
+  .server-tag.right {
+    text-align: right;
+    clip-path: polygon(
+      0 50%,
+      0.2rem 0,
+      100% 0,
+      100% 100%,
+      0.2rem 100%
+    );
+  }
+}
+
+@media screen and (min-width: 600px) { /* Tablet and desktop*/
+  .server-tag {
+    width: 3rem;
+    text-align: left;
+    padding: 0.1rem 0.4rem;
+    clip-path: polygon(
+      0 0,
+      calc(100% - 0.4rem) 0,
+      100% 50%,
+      calc(100% - 0.4rem) 100%,
+      0 100%
+    );
+  }
+    
+  .server-tag.right {
+    text-align: right;
+    clip-path: polygon(
+      0 50%,
+      0.4rem 0,
+      100% 0,
+      100% 100%,
+      0.4rem 100%
+    );
+  }  
+}
+
+.server-tag,
+.server-tag.global { background: var(--neutral); }
+
+.server-tag.server1 { background: var(--primary-1); }
+.server-tag.server2 { background: var(--primary-2); }
+.server-tag.server3 { background: var(--primary-3); }
+.server-tag.server4 { background: var(--primary-4); }
+.server-tag.server5 { background: var(--primary-5); }
+
+.server-tag.server6  { background: var(--secondary-1); }
+.server-tag.server7  { background: var(--secondary-2); }
+.server-tag.server8  { background: var(--secondary-3); }
+.server-tag.server9  { background: var(--secondary-4); }
+.server-tag.server10 { background: var(--secondary-5); }
+
+.server-tag.server11 { background: var(--light-primary-1); }
+.server-tag.server12 { background: var(--light-primary-2); }
+.server-tag.server13 { background: var(--light-primary-3); }
+.server-tag.server14 { background: var(--light-primary-4); }
+.server-tag.server15 { background: var(--light-primary-5); }
+
+.server-tag.server16 { background: var(--light-secondary-1); }
+.server-tag.server17 { background: var(--light-secondary-2); }
+.server-tag.server18 { background: var(--light-secondary-3); }
+.server-tag.server19 { background: var(--light-secondary-4); }
+.server-tag.server20 { background: var(--light-secondary-5); }
