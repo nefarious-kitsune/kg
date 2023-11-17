@@ -5,7 +5,7 @@
   <link rel="icon" type="image/x-icon" href="../images/logo_mini.png">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://kg.kitsune21.com/">
-  <meta property="og:title" content="Miku's Shrine | Mightiest Kingdom results">
+  <meta property="og:title" content="Miku's Shrine | Ultimate Power results">
   <meta property="og:description" content="Past results of the Mightiest Kingdom event">
   <meta property="og:image" content="https://kg.kitsune21.com/images/sheet-2x_n.png">
   <link href="../css/common.css" rel="stylesheet" />
@@ -20,42 +20,36 @@
     <span class="chevron">›</span>
     <a class="link" href="./">Events</a>
     <span class="chevron">›</span>
-    <a class="link" href="./mk-results">Mightiest Kingdom Results</a>
+    <a class="link" href="./mk-results">Ultimate Power Results</a>
     <span class="chevron">›</span>
     <span class="current">{{EVENT START YEAR}}-{{EVENT START MONTH}}-{{EVENT START DAY}}</span>
   </nav></div>
 </header>
 <main>
-<h1>{{EVENT START YEAR}}-{{EVENT START MONTH}}-{{EVENT START DAY}} MK Results</h1>
+<h1>{{EVENT START YEAR}}-{{EVENT START MONTH}}-{{EVENT START DAY}} UP Results</h1>
 
-<p><a href="./mk-points">Event points</a> earned by players in various servers in the
+<p>See also <a href="./mk-{{EVENT START YEAR}}{{EVENT START MONTH}}{{EVENT START DAY}}">{{EVENT START YEAR}}-{{EVENT START MONTH}}-{{EVENT START DAY}} MK results</a>.</p>
+
+<p><a href="./mk-up-points">Event points</a> earned by players in various servers in the
 {{EVENT START YEAR}}-{{EVENT START MONTH}}-{{EVENT START DAY}} ~
 {{EVENT END YEAR}}-{{EVENT END MONTH}}-{{EVENT END DAY}}
-Mightiest Kingdom event. Use this and other <a href="./mk-results">past results</a>
+Ultimate Power event. Use this and other <a href="./mk-results">past results</a>
 as a reference to decide when you want to spend resources on
 <abbr data-tooltip="Mightiest Kingdom">MK</abbr> and
 <abbr data-tooltip="Ultimate Power">UP</abbr> events.</p>
 
-<div class="tabbed-table-wrapper-content" id="mk-result-content">
+<div class="tabbed-table-wrapper-content" id="up-result-content">
 <div class="tabbed-table-tab-bar">
-  <button onclick="switchMKTableView(0)" id="mk-tab-0" class="tab focused">Final</button>
-  <button onclick="switchMKTableView(1)" id="mk-tab-1" class="tab">Phase 1~2</button>
-  <button onclick="switchMKTableView(2)" id="mk-tab-2" class="tab">Phase 3~4</button>
-  <button onclick="switchMKTableView(3)" id="mk-tab-3" class="tab">Phase 5~6</button>
-  <div class="extra">Download: <a href="./mk-{{EVENT START YEAR}}{{EVENT START MONTH}}{{EVENT START DAY}}.json">JSON</a></div>
+  <button onclick="switchUPTableView(0)" id="up-tab-0" class="tab focused">Global</button>
+  <button onclick="switchUPTableView(1)" id="up-tab-1" class="tab">Servers</button>
+  <div class="extra">Download: <a href="./up-{{EVENT START YEAR}}{{EVENT START MONTH}}{{EVENT START DAY}}.json">JSON</a></div>
 </div>
 <div class="tabbed-table-content">
-<table class="result-table mk view-final" id="mk-result-table">
+<table class="result-table up display-global" id="up-result-table">
 <thead>
 <tr>
 <th class="server-col">Server</th>
-<th class="final-col">Mightiest Kingdom Final</th>
-<th class="phase-1-col">1. Unit</th>
-<th class="phase-4-col">2. Summon</th>
-<th class="phase-2-col">3. Witch</th>
-<th class="phase-5-col">4. Gear</th>
-<th class="phase-3-col">5. Dragon</th>
-<th class="phase-6-col">6. Heroes</th>
+<th class="final-col">Final</th>
 </tr>
 </thead>
 <tbody>
