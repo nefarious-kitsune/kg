@@ -2,14 +2,15 @@ import fs from 'fs';
 import {getDateFormatStrings, getUTCDate} from '../../utils/date-utils.js';
 import {formatPoint} from '../../utils/number-utils.js';
 
-const eventStartDate = getUTCDate(2023, 11, 6);
+// const eventStartDate = getUTCDate(2023, 11, 6);
+const eventStartDate = getUTCDate(2023, 10, 9);
 const eventName = 'Ultimate Power';
 const eventDuration = 6; // 6-days
 const eventPrefix = 'up-';
 
 const MaxFinalPoints = (6 * 1000 * 1000 * 1000);
 
-const eventEndDate = new Date()
+const eventEndDate = new Date(eventStartDate);
 eventEndDate.setDate(eventStartDate.getDate() + eventDuration - 1);
 
 const fmtEventStart = getDateFormatStrings(eventStartDate);

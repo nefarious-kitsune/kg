@@ -12,7 +12,7 @@ const eventPrefix = 'mk-';
 const MaxPhasePoints = (1.5 * 1000 * 1000 * 1000); // Up week
 const MaxFinalPoints = (2.2 * 1000 * 1000 * 1000); // Up week
 
-const eventEndDate = new Date()
+const eventEndDate = new Date(eventStartDate);
 eventEndDate.setDate(eventStartDate.getDate() + eventDuration - 1);
 
 const fmtEventStart = getDateFormatStrings(eventStartDate);

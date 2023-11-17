@@ -2,8 +2,8 @@ import fs from 'fs';
 import {getDateFormatStrings, getUTCDate} from '../../utils/date-utils.js';
 import {formatPoint} from '../../utils/number-utils.js';
 
-// const eventStartDate = getUTCDate(2023, 10, 9);
-const eventStartDate = getUTCDate(2023, 10, 23);
+const eventStartDate = getUTCDate(2023, 10, 9);
+// const eventStartDate = getUTCDate(2023, 10, 23);
 
 const eventName = 'Mightiest Kingdom';
 const eventDuration = 6; // 6-days
@@ -14,7 +14,7 @@ const MaxFinalPoints = (600 * 1000 * 1000); // non UP week
 // const MaxPhasePoints = (1.5 * 1000 * 1000 * 1000); // Up week
 // const MaxFinalPoints = (2.2 * 1000 * 1000 * 1000); // Up week
 
-const eventEndDate = new Date()
+const eventEndDate = new Date(eventStartDate);
 eventEndDate.setDate(eventStartDate.getDate() + eventDuration - 1);
 
 const fmtEventStart = getDateFormatStrings(eventStartDate);
