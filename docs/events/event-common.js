@@ -112,14 +112,14 @@ function switchUPTableView(viewIdx) {
     case 0:
       elTab0.classList.add('focused');
       elTab1.classList.remove('focused');
-      elTable.classList.add('display-global');
-      elTable.classList.remove('display-server');
+      elTable.classList.add('view-global');
+      elTable.classList.remove('view-server');
       break;
     case 1:
       elTab0.classList.remove('focused');
       elTab1.classList.add('focused');
-      elTable.classList.remove('display-global');
-      elTable.classList.add('display-server');
+      elTable.classList.remove('view-global');
+      elTable.classList.add('view-server');
       break;
   }
 }

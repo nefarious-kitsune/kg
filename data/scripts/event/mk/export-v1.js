@@ -2,7 +2,9 @@ import fs from 'fs';
 import {getDateFormatStrings, getUTCDate} from '../../utils/date-utils.js';
 import {formatPoint} from '../../utils/number-utils.js';
 
+// const eventStartDate = getUTCDate(2023, 10, 9);
 const eventStartDate = getUTCDate(2023, 10, 23);
+
 const eventName = 'Mightiest Kingdom';
 const eventDuration = 6; // 6-days
 const eventPrefix = 'mk-';
@@ -129,7 +131,7 @@ function getPhasePointHTML(phase, rank, phaseData, servers) {
     `<td class="phase-col phase-${phase}-col">` + 
     `<span class="event-${rankClass}">${rank}</span>` +
     '<div class="bar-container">' +
-    `<span class="bar server2" style="${barStyle}">&thinsp;</span>` +
+    `<span class="bar server1" style="${barStyle}">&thinsp;</span>` +
     '</div>' +
     `<span class="bar-text">${pointsDisplay}</span>` +
     '</td>'
@@ -223,7 +225,7 @@ for (let svsIdx = 0; svsIdx < servers1.length; svsIdx++) {
     '<td rowspan="4" class="server-col">' +
     '<span class="server-tag server1">' + svsData.server + '</span>' + 
     '<span class="svs-vs">vs</span>' + 
-    '<span class="server-tag server2">' + svsData.server2 + '</span>' + 
+    '<span class="server-tag server1">' + svsData.server2 + '</span>' + 
     '</td>',
   );
 

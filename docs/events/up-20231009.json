@@ -1,0 +1,195 @@
+{
+  "event": "Ultimate Power",
+  "start-date": "2023-10-09",
+  "data": [
+    {
+      "server": "S1111",
+      "final": {
+        "1": {
+          "points": 2663289380,
+          "server": "S1111"
+        },
+        "2": {
+          "points": 600659520,
+          "server": "S1111"
+        },
+        "3": {
+          "points": 520013810,
+          "server": "S1111"
+        },
+        "20": {
+          "points": 111877180,
+          "server": "S1111"
+        }
+      }
+    },
+    {
+      "server": "S417",
+      "final": {
+        "1": {
+          "points": 3115106494,
+          "server": "S417"
+        },
+        "2": {
+          "points": 1019363070,
+          "server": "S417"
+        },
+        "3": {
+          "points": 1001071660,
+          "server": "S417"
+        },
+        "20": {
+          "points": 89029800,
+          "server": "S417"
+        }
+      }
+    },
+    {
+      "server": "S1028",
+      "final": {
+        "1": {
+          "points": 801633280,
+          "server": "S1028"
+        },
+        "2": {
+          "points": 797760200,
+          "server": "S1028"
+        },
+        "3": {
+          "points": 754614760,
+          "server": "S1028"
+        },
+        "20": {
+          "points": 189101200,
+          "server": "S1028"
+        }
+      }
+    },
+    {
+      "server": "S1041",
+      "final": {
+        "1": {
+          "points": 919482230,
+          "server": "S1041"
+        },
+        "2": {
+          "points": 784966060,
+          "server": "S1041"
+        },
+        "3": {
+          "points": 756560720,
+          "server": "S1041"
+        },
+        "20": {
+          "points": 83016480,
+          "server": "S1041"
+        }
+      }
+    },
+    {
+      "server": "S699",
+      "final": {
+        "1": {
+          "points": 719510770,
+          "server": "S699"
+        },
+        "2": {
+          "points": 584950080,
+          "server": "S699"
+        },
+        "3": {
+          "points": 436681120,
+          "server": "S699"
+        },
+        "20": {
+          "points": 140154800,
+          "server": "S699"
+        }
+      }
+    },
+    {
+      "server": "S449",
+      "final": {
+        "1": {
+          "points": 3172246710,
+          "server": "S449"
+        },
+        "2": {
+          "points": 488641110,
+          "server": "S449"
+        },
+        "3": {
+          "points": 398693000,
+          "server": "S449"
+        },
+        "20": {
+          "points": 189436560,
+          "server": "S449"
+        }
+      }
+    },
+    {
+      "server": "S915",
+      "final": {
+        "1": {
+          "points": 525999990,
+          "server": "S915"
+        },
+        "2": {
+          "points": 503793500,
+          "server": "S915"
+        },
+        "3": {
+          "points": 483777320,
+          "server": "S915"
+        },
+        "20": {
+          "points": 103745820,
+          "server": "S915"
+        }
+      }
+    },
+    {
+      "server": "S770",
+      "final": {
+        "1": {
+          "points": 410785490,
+          "server": "S770"
+        },
+        "2": {
+          "points": 387231960,
+          "server": "S770"
+        },
+        "3": {
+          "points": 304061760,
+          "server": "S770"
+        },
+        "20": {
+          "points": 59751570,
+          "server": "S770"
+        }
+      }
+    },
+    {
+      "server": "S468",
+      "final": {
+        "1": {
+          "points": 565988180,
+          "server": "S468"
+        },
+        "2": {
+          "points": 529359996,
+          "server": "S468"
+        },
+        "3": {
+          "points": 507267630,
+          "server": "S468"
+        },
+        "20": {
+          "points": 86023760,
+          "server": "S468"
+        }
+      }
+    }
+  ]
+}

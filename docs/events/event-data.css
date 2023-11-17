@@ -178,11 +178,11 @@
 .result-table.view-phase-5-6 .phase-5-col,
 .result-table.view-phase-5-6 .phase-6-col { display: table-cell; }
 
-.result-table.display-global .global-row { display: table-row; }
-.result-table.display-global .server-row { display: none; }
+.result-table.view-global .global-row { display: table-row; }
+.result-table.view-global .server-row { display: none; }
 
-.result-table.display-server .global-row { display: none; }
-.result-table.display-server .server-row { display: table-row; }
+.result-table.view-server .global-row { display: none; }
+.result-table.view-server .server-row { display: table-row; }
 
 .result-table .server-row .server-tag.right { display: none; }
 
