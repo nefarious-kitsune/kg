@@ -2,15 +2,15 @@ import fs from 'fs';
 import {getDateFormatStrings, getUTCDate} from '../../utils/date-utils.js';
 import {formatPoint} from '../../utils/number-utils.js';
 
-const eventStartDate = getUTCDate(2023, 11, 6);
+const eventStartDate = getUTCDate(2023, 10, 23);
 const eventName = 'Mightiest Kingdom';
 const eventDuration = 6; // 6-days
 const eventPrefix = 'mk-';
 
-// const MaxPhasePoints = (350 * 1000 * 1000); // non UP week
-// const MaxFinalPoints = (600 * 1000 * 1000); // non UP week
-const MaxPhasePoints = (1.5 * 1000 * 1000 * 1000); // Up week
-const MaxFinalPoints = (2.2 * 1000 * 1000 * 1000); // Up week
+const MaxPhasePoints = (350 * 1000 * 1000); // non UP week
+const MaxFinalPoints = (600 * 1000 * 1000); // non UP week
+// const MaxPhasePoints = (1.5 * 1000 * 1000 * 1000); // Up week
+// const MaxFinalPoints = (2.2 * 1000 * 1000 * 1000); // Up week
 
 const eventEndDate = new Date()
 eventEndDate.setDate(eventStartDate.getDate() + eventDuration - 1);
@@ -29,13 +29,13 @@ const rawDataRows = fs
   .split('\n');
 
 function getPointData(row, svsIdx) {
-  const dataCol = svsIdx * 2;
-  const serverCol = dataCol + 1;
+  // const dataCol = svsIdx * 2;
+  // const serverCol = dataCol + 1;
 
-  let p = parseInt(row[dataCol]);
+  let p = parseInt(row[svsIdx]);
   if (Number.isNaN(p)) p = null;
 
-  return ({points: p, server: row[serverCol]})
+  return ({points: p, server: null})
 }
 
 const compiledData = {
@@ -111,8 +111,6 @@ function getPhasePointHTML(phase, rank, phaseData, servers) {
   const points = phaseData?.[rank]?.points || null
   
   const rankClass = ((rank ==='1')||(rank ==='2')||(rank === '3'))?'rank-' + rank:'rank';
-  const server = phaseData[rank].server;
-  const serverClass = 'server' + (servers.indexOf(server) + 1);
 
   if (points === null) {
     return (
@@ -120,7 +118,6 @@ function getPhasePointHTML(phase, rank, phaseData, servers) {
       `<span class="event-${rankClass}">${rank}</span>` +
       '<div class="bar-container"></div>' +
       `<span class="bar-text">N/A</span>` +
-      `<div class="server-tag right ${serverClass}">${server}</div>` +
       '</td>'
     )
   }
@@ -132,10 +129,9 @@ function getPhasePointHTML(phase, rank, phaseData, servers) {
     `<td class="phase-col phase-${phase}-col">` + 
     `<span class="event-${rankClass}">${rank}</span>` +
     '<div class="bar-container">' +
-    `<span class="bar ${serverClass}" style="${barStyle}">&thinsp;</span>` +
+    `<span class="bar server2" style="${barStyle}">&thinsp;</span>` +
     '</div>' +
     `<span class="bar-text">${pointsDisplay}</span>` +
-    // `<div class="server-tag right ${serverClass}">${server}</div>` +
     '</td>'
   );
 }
@@ -145,16 +141,13 @@ function getFinalPointHTML(rank, finalData, servers) {
   const points = finalData?.[rank]?.points || null
 
   const rankClass = ((rank ==='1')||(rank ==='2')||(rank === '3'))?'rank-' + rank:'rank';
-  const server = finalData[rank].server;
-  const serverClass = 'server' + (servers.indexOf(server) + 1);
 
   if (points === null) {
     return (
       `<td class="final-col">` + 
       `<span class="event-${rankClass}">${rank}</span>` +
-      '<div class="bar-container"></div>' +
+      '<div class="bar-container">&thinsp;</div>' +
       `<span class="bar-text">N/A</span>` +
-      `<div class="server-tag right ${serverClass}">${server}</div>` +
       '</td>'
     )
   }
@@ -166,10 +159,9 @@ function getFinalPointHTML(rank, finalData, servers) {
     `<td class="final-col">` + 
     `<span class="event-${rankClass}">${rank}</span>` +
     '<div class="bar-container">' +
-    `<span class="bar ${serverClass}" style="${barStyle}">&thinsp;</span>` +
+    `<span class="bar server1" style="${barStyle}">&thinsp;</span>` +
     '</div>' +
     `<span class="bar-text">${pointsDisplay}</span>` +
-    `<div class="server-tag right ${serverClass}">${server}</div>` +
     '</td>'
   );
 }

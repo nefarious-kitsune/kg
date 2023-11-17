@@ -112,13 +112,13 @@ function getFinalPointHTML(rank, finalData, servers) {
   }
 
   const pointsDisplay = formatPoint(points);
-  const barStyle = `width: ${(100 * points / MaxPoints).toFixed(1)}rem`;
+  const barStyle = `width: ${(100 * points / MaxPoints).toFixed(1)}%`;
 
   return (
     `<td class="final-col">` + 
     `<span class="event-${rankClass}">${rank}</span>` +
     '<div class="bar-container">' +
-    `<span class="bar ${serverClass}" style="${barStyle}"></span>` +
+    `<span class="bar ${serverClass}" style="${barStyle}">&thinsp;</span>` +
     '</div>' +
     `<span class="bar-text">${pointsDisplay}</span>` +
     `<div class="server-tag right ${serverClass}">${server}</div>` +
