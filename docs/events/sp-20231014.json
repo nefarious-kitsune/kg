@@ -1,0 +1,303 @@
+{
+  "event": "Great Mongolia Era",
+  "start-date": "2023-10-14",
+  "data": [
+    {
+      "server": "S449",
+      "final": {
+        "1": {
+          "points": 604000,
+          "server": "S449"
+        },
+        "2": {
+          "points": 598200,
+          "server": "S449"
+        },
+        "3": {
+          "points": 577600,
+          "server": "S449"
+        },
+        "10": {
+          "points": 349000,
+          "server": "S449"
+        }
+      }
+    },
+    {
+      "server": "S1028",
+      "final": {
+        "1": {
+          "points": 1022000,
+          "server": "S1028"
+        },
+        "2": {
+          "points": 875600,
+          "server": "S1028"
+        },
+        "3": {
+          "points": 804200,
+          "server": "S1028"
+        },
+        "10": {
+          "points": 403500,
+          "server": "S1028"
+        }
+      }
+    },
+    {
+      "server": "S699",
+      "final": {
+        "1": {
+          "points": 1067800,
+          "server": "S699"
+        },
+        "2": {
+          "points": 750100,
+          "server": "S699"
+        },
+        "3": {
+          "points": 650000,
+          "server": "S699"
+        },
+        "10": {
+          "points": 260500,
+          "server": "S699"
+        }
+      }
+    },
+    {
+      "server": "S468",
+      "final": {
+        "1": {
+          "points": 452200,
+          "server": "S468"
+        },
+        "2": {
+          "points": 309700,
+          "server": "S468"
+        },
+        "3": {
+          "points": 295400,
+          "server": "S468"
+        },
+        "10": {
+          "points": 114800,
+          "server": "S468"
+        }
+      }
+    },
+    {
+      "server": "S417",
+      "final": {
+        "1": {
+          "points": 368400,
+          "server": "S417"
+        },
+        "2": {
+          "points": 280000,
+          "server": "S417"
+        },
+        "3": {
+          "points": 256300,
+          "server": "S417"
+        },
+        "10": {
+          "points": 100000,
+          "server": "S417"
+        }
+      }
+    },
+    {
+      "server": "S915",
+      "final": {
+        "1": {
+          "points": 348000,
+          "server": "S915"
+        },
+        "2": {
+          "points": 300200,
+          "server": "S915"
+        },
+        "3": {
+          "points": 219700,
+          "server": "S915"
+        },
+        "10": {
+          "points": 165800,
+          "server": "S915"
+        }
+      }
+    },
+    {
+      "server": "S1141",
+      "final": {
+        "1": {
+          "points": 347200,
+          "server": "S1141"
+        },
+        "2": {
+          "points": 260300,
+          "server": "S1141"
+        },
+        "3": {
+          "points": 269000,
+          "server": "S1141"
+        },
+        "10": {
+          "points": 152500,
+          "server": "S1141"
+        }
+      }
+    },
+    {
+      "server": "S1111",
+      "final": {
+        "1": {
+          "points": 322800,
+          "server": "S1111"
+        },
+        "2": {
+          "points": 254800,
+          "server": "S1111"
+        },
+        "3": {
+          "points": 224900,
+          "server": "S1111"
+        },
+        "10": {
+          "points": 164000,
+          "server": "S1111"
+        }
+      }
+    },
+    {
+      "server": "S770",
+      "final": {
+        "1": {
+          "points": 252400,
+          "server": "S770"
+        },
+        "2": {
+          "points": 228500,
+          "server": "S770"
+        },
+        "3": {
+          "points": 186500,
+          "server": "S770"
+        },
+        "10": {
+          "points": 79500,
+          "server": "S770"
+        }
+      }
+    },
+    {
+      "server": "S551",
+      "final": {
+        "1": {
+          "points": 161700,
+          "server": "S551"
+        },
+        "2": {
+          "points": 134700,
+          "server": "S551"
+        },
+        "3": {
+          "points": 113800,
+          "server": "S551"
+        },
+        "10": {
+          "points": 70300,
+          "server": "S551"
+        }
+      }
+    },
+    {
+      "server": "S898",
+      "final": {
+        "1": {
+          "points": 147000,
+          "server": "S898"
+        },
+        "2": {
+          "points": 80800,
+          "server": "S898"
+        },
+        "3": {
+          "points": 67000,
+          "server": "S898"
+        },
+        "10": {
+          "points": 53200,
+          "server": "S898"
+        }
+      }
+    },
+    {
+      "server": "S626",
+      "final": {
+        "1": {
+          "points": 2034100,
+          "server": "S626"
+        },
+        "2": {
+          "points": 95600,
+          "server": "S626"
+        },
+        "3": {
+          "points": 68900,
+          "server": "S626"
+        },
+        "10": {
+          "points": 51200,
+          "server": "S626"
+        }
+      }
+    },
+    {
+      "server": "global",
+      "final": {
+        "1": {
+          "points": 3422200,
+          "server": "S448"
+        },
+        "2": {
+          "points": 2652300,
+          "server": "S1197"
+        },
+        "3": {
+          "points": 2339600,
+          "server": "S1020"
+        },
+        "4": {
+          "points": 2147000,
+          "server": "S1020"
+        },
+        "5": {
+          "points": 2052500,
+          "server": "S1020"
+        },
+        "6": {
+          "points": null,
+          "server": ""
+        },
+        "7": {
+          "points": null,
+          "server": ""
+        },
+        "8": {
+          "points": 1989700,
+          "server": "S1052"
+        },
+        "9": {
+          "points": 1936000,
+          "server": "S1010"
+        },
+        "10": {
+          "points": 1936000,
+          "server": "S1132"
+        }
+      }
+    }
+  ]
+}
