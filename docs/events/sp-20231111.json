@@ -1,0 +1,51 @@
+{
+  "event": "Forest Spirit Prayer Festival",
+  "start-date": "2023-11-11",
+  "data": [
+    {
+      "server": "global",
+      "final": {
+        "1": {
+          "points": 13232600,
+          "server": "S1191"
+        },
+        "2": {
+          "points": 2956200,
+          "server": "S448"
+        },
+        "3": {
+          "points": 2670100,
+          "server": "S1028"
+        },
+        "4": {
+          "points": 2662400,
+          "server": "S1020"
+        },
+        "5": {
+          "points": 2541000,
+          "server": "S1196"
+        },
+        "6": {
+          "points": 2515000,
+          "server": "S1020"
+        },
+        "7": {
+          "points": 2513400,
+          "server": "S1020"
+        },
+        "8": {
+          "points": 2510000,
+          "server": "S875"
+        },
+        "9": {
+          "points": 2504000,
+          "server": "S1020"
+        },
+        "10": {
+          "points": 2436700,
+          "server": "S864"
+        }
+      }
+    }
+  ]
+}
