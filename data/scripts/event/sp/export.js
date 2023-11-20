@@ -2,11 +2,11 @@ import fs from 'fs';
 import {getDateFormatStrings, getUTCDate} from '../../utils/date-utils.js';
 import {formatPoint} from '../../utils/number-utils.js';
 
-const eventStartDate = getUTCDate(2023, 10, 14);
+const eventStartDate = getUTCDate(2023, 10, 15);
 
 const eventName = 'Great Mongolia Era';
 const featured = 'Ao Deng Ge Ri Le';
-const eventDuration = 8; // 8-days
+const eventDuration = 9; // 8-days
 const eventPrefix = 'sp-';
 
 const MaxFinalPoints = (4000000);
@@ -164,7 +164,7 @@ for (let svrIdx = 0; svrIdx < svrCount-1; svrIdx++) {
   bodyContent.push(getFinalPointHTML( '1', globalData.final, servers));
   bodyContent.push('</tr>');
 
-  for (let r = 2; r < 10; r++) {
+  for (let r = 2; r <= 10; r++) {
     bodyContent.push('<tr class="global-row">');
     bodyContent.push(getFinalPointHTML( r.toString(), globalData.final, servers));
     bodyContent.push('</tr>');
