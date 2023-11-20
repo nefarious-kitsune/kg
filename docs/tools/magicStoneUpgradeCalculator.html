@@ -59,27 +59,31 @@ You can see the full <a href="./magicStoneUpgradeCost">upgrade cost table</a>.</
 </div>
 <div class="collapsible-content" id="magic-stone-upgrade-content">
 <div class="up-tab-bar">
-  <button onclick="openTab(0, magicTabs)" id="magic-stone-upgrade-res-tab" class="up-tab focused">Resources</button>
+  <button onclick="openTab(0, magicTabs)" id="magic-stone-upgrade-res-tab" class="up-tab focused">Current</button>
+  <!--
   <button onclick="openTab(1, magicTabs)" id="magic-stone-upgrade-t5-tab" class="up-tab"><svg class="stone-shape"><use xlink:href="#shape-oval"/></svg>T5</button>
   <button onclick="openTab(2, magicTabs)" id="magic-stone-upgrade-t6-tab" class="up-tab"><svg class="stone-shape"><use xlink:href="#shape-triangle"/></svg>T6</button>
   <button onclick="openTab(3, magicTabs)" id="magic-stone-upgrade-t7-tab" class="up-tab"><svg class="stone-shape"><use xlink:href="#shape-diamond"/></svg>T7</button>
   <button onclick="openTab(4, magicTabs)" id="magic-stone-upgrade-t8-tab" class="up-tab"><svg class="stone-shape"><use xlink:href="#shape-octagon"/></svg>T8</button>
+  -->
   <button onclick="openTab(5, magicTabs)" id="magic-stone-upgrade-f-tab" class="up-tab">Calculated</button>
 </div>
 <form class="form-container" id="magic-stone-upgrade-form">
-  <div class="up-tab-content hidden" id="magic-stone-upgrade-res-content">
-    <div class="label-wrapper"
-      ><label for="StrengthPotionCount">Available Strength Potion</label
-      ><input id="StrengthPotionCount" type="number" min="0" value="30000"
-    ></div>
-    <div class="label-wrapper"
-      ><label for="FortunePotionCount">Available Fortune Potion</label
-      ><input id="FortunePotionCount" type="number" min="0" value="30000"
-    ></div>
-  </div>
-
+  <div class="up-tab-content" id="magic-stone-upgrade-res-content">
+    <div class="field-container">
+      <div class="label-wrapper"><label for="StrengthPotionCount">Available Strength Potion</label></div>
+      <div class="value-wrapper"><input id="StrengthPotionCount" type="number" min="0" value="30000"></div>
+    </div>
+    <div class="field-container">
+      <div class="label-wrapper"><label for="FortunePotionCount">Available Fortune Potion</label></div>
+      <div class="value-wrapper"><input id="FortunePotionCount" type="number" min="0" value="30000"></div>
+    </div>
+    
+  <!-- </div> -->
+  
   <!-- ******************************** T5 ******************************** -->
-  <div class="up-tab-content hidden" id="magic-stone-upgrade-t5-content">
+
+  <!-- <div class="up-tab-content hidden" id="magic-stone-upgrade-t5-content"> -->
     <div class="field-container">
       <div class="label-wrapper"><label for="T5MagicStoneLevel1">Current T5 Magic Stone levels</label></div>
       <div class="value-wrapper">
@@ -171,10 +175,10 @@ You can see the full <a href="./magicStoneUpgradeCost">upgrade cost table</a>.</
         </div>
       </div>
     </div>
-  </div>
+  <!-- </div> -->
 
   <!-- ******************************** T6 ******************************** -->
-  <div class="up-tab-content hidden" id="magic-stone-upgrade-t6-content">
+  <!-- <div class="up-tab-content hidden" id="magic-stone-upgrade-t6-content"> -->
     <div class="field-container">
       <div class="label-wrapper"><label for="T6MagicStoneLevel1">Current T6 Magic Stone levels</label></div>
       <div class="value-wrapper">
@@ -266,10 +270,10 @@ You can see the full <a href="./magicStoneUpgradeCost">upgrade cost table</a>.</
         </div>
       </div>
     </div>
-  </div>
+  <!-- </div> -->
   
   <!-- ******************************** T7 ******************************** -->
-  <div class="up-tab-content hidden" id="magic-stone-upgrade-t7-content">
+  <!-- <div class="up-tab-content hidden" id="magic-stone-upgrade-t7-content"> -->
     <div class="field-container">
       <div class="label-wrapper"><label for="T7MagicStoneLevel1">Current T7 Magic Stone levels</label></div>
       <div class="value-wrapper">
@@ -361,10 +365,10 @@ You can see the full <a href="./magicStoneUpgradeCost">upgrade cost table</a>.</
         </div>
       </div>
     </div>
-  </div>
+  <!-- </div> -->
 
   <!-- ******************************** T8 ******************************** -->
-  <div class="up-tab-content hidden" id="magic-stone-upgrade-t8-content">
+  <!-- <div class="up-tab-content hidden" id="magic-stone-upgrade-t8-content"> -->
     <div class="field-container">
       <div class="label-wrapper"><label for="T8MagicStoneLevel1">Current T8 Magic Stone levels</label></div>
       <div class="value-wrapper">

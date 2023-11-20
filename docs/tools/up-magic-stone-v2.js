@@ -162,10 +162,14 @@ const MagicStoneUpgradePlanner = {
   },
 
   getUserData: function() {
-    // const up = MagicStoneUpgradePlanner;
-    // const dom = up.dom;
-    // up.currStrengthPotionCount = parseInt(dom.CurrLightReagentCount.value);
-    // up.currWitchLabLevel  = parseInt(dom.CurrWitchLabLevel.value);
+    const up = MagicStoneUpgradePlanner;
+    const dom = up.dom;
+    up.currStrengthPotionCount = parseInt(dom.CurrStrengthPotionCount.value);
+    up.currFortunePotionCount = parseInt(dom.CurrFortunePotionCount.value);
+    up.currT5Levels = up.dom.T5MagicStoneLevel.map((el) => parseInt(el.value));
+    up.currT6Levels = up.dom.T6MagicStoneLevel.map((el) => parseInt(el.value));
+    up.currT7Levels = up.dom.T7MagicStoneLevel.map((el) => parseInt(el.value));
+    up.currT8Levels = up.dom.T8MagicStoneLevel.map((el) => parseInt(el.value));
   },
 
   updateUI: function() {
@@ -186,10 +190,10 @@ const MagicStoneUpgradePlanner = {
     up.currT8Levels.forEach((lvl, i) => dom.T8MagicStoneLevel[i].value = lvl);
 
     dom.MaxT5MagicStoneLevel[0].value = '99';
-    up.finalT5Levels.forEach((lvl, i) => { dom.MaxT5MagicStoneLevel[i].value = lvl; });
-    // up.finalT6Levels.forEach((lvl, i) => dom.MaxT6MagicStoneLevel[i].value = lvl);
-    // up.finalT7Levels.forEach((lvl, i) => dom.MaxT7MagicStoneLevel[i].value = lvl);
-    // up.finalT8Levels.forEach((lvl, i) => dom.MaxT8MagicStoneLevel[i].value = lvl);
+    up.finalT5Levels.forEach((lvl, i) => {dom.MaxT5MagicStoneLevel[i].value = lvl;});
+    up.finalT6Levels.forEach((lvl, i) => {dom.MaxT6MagicStoneLevel[i].value = lvl;});
+    up.finalT7Levels.forEach((lvl, i) => {dom.MaxT7MagicStoneLevel[i].value = lvl;});
+    up.finalT8Levels.forEach((lvl, i) => {dom.MaxT8MagicStoneLevel[i].value = lvl;});
   },
 
   onFieldChange: function() {
@@ -212,8 +216,8 @@ const MagicStoneUpgradePlanner = {
 
     function upgradeStone(level, strPotionCost, forPotionCost) {
       let finalLevel = level;
-      if (level.level === 0) return finalLevel;
-      if (level.level === 20) return finalLevel;
+      if (level === 0) return finalLevel;
+      if (level === 20) return finalLevel;
 
       let canUpgrade = true;
       while (canUpgrade) {
@@ -241,10 +245,10 @@ const MagicStoneUpgradePlanner = {
       return finalLevel;
     }
 
-    up.currT5Levels.forEach((lvl, i) => up.finalT5Levels[i] = upgradeStone(lvl,   10530,   2000));
-    up.currT6Levels.forEach((lvl, i) => up.finalT6Levels[i] = upgradeStone(lvl,   52840,  10000));
-    up.currT7Levels.forEach((lvl, i) => up.finalT7Levels[i] = upgradeStone(lvl,  263200,  50000));
-    up.currT8Levels.forEach((lvl, i) => up.finalT8Levels[i] = upgradeStone(lvl, 1316000, 250000));
+    up.currT5Levels.forEach((lvl, i) => {up.finalT5Levels[i] = upgradeStone(lvl,   10530,   2000)});
+    up.currT6Levels.forEach((lvl, i) => {up.finalT6Levels[i] = upgradeStone(lvl,   52840,  10000)});
+    up.currT7Levels.forEach((lvl, i) => {up.finalT7Levels[i] = upgradeStone(lvl,  263200,  50000)});
+    up.currT8Levels.forEach((lvl, i) => {up.finalT8Levels[i] = upgradeStone(lvl, 1316000, 250000)});
 
     up.totalPoints = totalPoints;
 
