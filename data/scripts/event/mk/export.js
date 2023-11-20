@@ -7,7 +7,7 @@ const eventName = 'Mightiest Kingdom';
 const eventDuration = 6; // 6-days
 const eventPrefix = 'mk-';
 
-const MaxPhasePoints = (500 * 1000 * 1000); // non UP week
+const MaxPhasePoints = (550 * 1000 * 1000); // non UP week
 const MaxFinalPoints = (850 * 1000 * 1000); // non UP week
 // const MaxPhasePoints = (1.5 * 1000 * 1000 * 1000); // Up week
 // const MaxFinalPoints = (2.2 * 1000 * 1000 * 1000); // Up week
