@@ -2,15 +2,15 @@ import fs from 'fs';
 import {getDateFormatStrings, getUTCDate} from '../../utils/date-utils.js';
 import {formatPoint} from '../../utils/number-utils.js';
 
-const eventStartDate = getUTCDate(2023, 11, 6);
+const eventStartDate = getUTCDate(2023, 11, 13);
 const eventName = 'Mightiest Kingdom';
 const eventDuration = 6; // 6-days
 const eventPrefix = 'mk-';
 
-// const MaxPhasePoints = (350 * 1000 * 1000); // non UP week
-// const MaxFinalPoints = (600 * 1000 * 1000); // non UP week
-const MaxPhasePoints = (1.5 * 1000 * 1000 * 1000); // Up week
-const MaxFinalPoints = (2.2 * 1000 * 1000 * 1000); // Up week
+const MaxPhasePoints = (500 * 1000 * 1000); // non UP week
+const MaxFinalPoints = (850 * 1000 * 1000); // non UP week
+// const MaxPhasePoints = (1.5 * 1000 * 1000 * 1000); // Up week
+// const MaxFinalPoints = (2.2 * 1000 * 1000 * 1000); // Up week
 
 const eventEndDate = new Date(eventStartDate);
 eventEndDate.setDate(eventStartDate.getDate() + eventDuration - 1);
@@ -120,7 +120,6 @@ function getPhasePointHTML(phase, rank, phaseData, servers) {
       `<span class="event-${rankClass}">${rank}</span>` +
       '<div class="bar-container"></div>' +
       `<span class="bar-text">N/A</span>` +
-      `<div class="server-tag right ${serverClass}">${server}</div>` +
       '</td>'
     )
   }
@@ -154,7 +153,6 @@ function getFinalPointHTML(rank, finalData, servers) {
       `<span class="event-${rankClass}">${rank}</span>` +
       '<div class="bar-container"></div>' +
       `<span class="bar-text">N/A</span>` +
-      `<div class="server-tag right ${serverClass}">${server}</div>` +
       '</td>'
     )
   }
