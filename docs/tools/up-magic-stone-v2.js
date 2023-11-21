@@ -1,6 +1,6 @@
 /* eslint-env browser */
 
-// version 2.0.0
+// version 2.0.1
 
 const CURR_STRENGTH_POTION_COUNT_KEY = 'planner-magic-stone-curr-strength-potion-count';
 const CURR_FORTUNE_POTION_COUNT_KEY =  'planner-magic-stone-curr-fortune-potion-count';
@@ -286,8 +286,8 @@ const MagicStoneUpgradePlanner = {
     up.finalFortunePotionCount = _fortunePotionCount;
 
     up.missingStrengthPotionCount =
-      (_missingFortunePotion > 0)?
-      _missingFortunePotion:
+      (_missingStrengthPotion > 0)?
+      _missingStrengthPotion:
       0;
 
     up.missingFortunePotionCount =
