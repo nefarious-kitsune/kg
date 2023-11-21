@@ -145,6 +145,7 @@ ul.butterfly {
 
 ul.butterfly li {
   list-style-image: url("../images/butterfly-red.svg");
+  margin-bottom: 0.2rem;
 }
 
 ul.butterfly li::marker {
@@ -153,7 +154,7 @@ ul.butterfly li::marker {
 
 a {
   color: var(--miku-red);
-  text-decoration: underline double;
+  text-decoration: underline;
 }
 
 div.info-box {
