@@ -264,3 +264,9 @@ div.select-wrapper::after {
   padding: 0.1rem 0.2rem;
   color: var(--miku-dark-red);
 }
+
+h1 .version-tag,
+h2 .version-tag {
+  vertical-align: top;
+  text-shadow: none;
+}
