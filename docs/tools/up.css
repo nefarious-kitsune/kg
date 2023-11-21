@@ -256,3 +256,11 @@ div.select-wrapper::after {
   top: 60%;
 }
 
+.version-tag {
+  display: inline-block;
+  border: 0.1rem solid var(--miku-dark-red);
+  border-radius: 0.4rem;
+  font-size: 0.8rem;
+  padding: 0.1rem 0.2rem;
+  color: var(--miku-dark-red);
+}
