@@ -1,5 +1,7 @@
 /* eslint-env browser */
 
+// version 2.0.2
+
 const CURR_FORGE_HAMMER_COUNT_KEY = 'planner-blacksmith-curr-forge-hammer-count';
 const CURR_BLACKSMITH_LEVEL_KEY = 'planner-blacksmith-curr-level';
 

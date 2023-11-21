@@ -1,5 +1,7 @@
 /* eslint-env browser */
 
+// version 2.0.1
+
 const CURR_REAGENT_COUNT_KEY = 'planner-lab-curr-reagent-count';
 const CURR_LAB_LEVEL_KEY = 'planner-lab-curr-level';
 
