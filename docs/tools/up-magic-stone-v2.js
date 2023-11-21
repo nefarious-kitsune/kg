@@ -202,8 +202,8 @@ const MagicStoneUpgradePlanner = {
     dom.StrengthPotionLeft.innerText = up.finalStrengthPotionCount;
     dom.MissingStrengthPotion.innerText = formatNumber(up.missingStrengthPotionCount);
 
-    dom.CurrFortunePotionCount.innerText = up.finalStrengthPotionCount;
-    dom.FortunePotionLeft.innerText = up.finalStrengthPotionCount;
+    dom.CurrFortunePotionCount.innerText = up.finalFortunePotionCount;
+    dom.FortunePotionLeft.innerText = up.finalFortunePotionCount;
     dom.MissingFortunePotion.innerText = formatNumber(up.missingFortunePotionCount);
     
     dom.Points.innerText = formatNumber(up.totalPoints);
@@ -211,8 +211,6 @@ const MagicStoneUpgradePlanner = {
     up.currT6Levels.forEach((lvl, i) => dom.T6MagicStoneLevel[i].value = lvl);
     up.currT7Levels.forEach((lvl, i) => dom.T7MagicStoneLevel[i].value = lvl);
     up.currT8Levels.forEach((lvl, i) => dom.T8MagicStoneLevel[i].value = lvl);
-
-    dom.MaxT5MagicStoneLevel[0].value = '99';
     up.finalT5Levels.forEach((lvl, i) => {dom.MaxT5MagicStoneLevel[i].value = lvl;});
     up.finalT6Levels.forEach((lvl, i) => {dom.MaxT6MagicStoneLevel[i].value = lvl;});
     up.finalT7Levels.forEach((lvl, i) => {dom.MaxT7MagicStoneLevel[i].value = lvl;});

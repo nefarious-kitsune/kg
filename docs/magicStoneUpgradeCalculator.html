@@ -1,0 +1,603 @@
+<html>
+<head>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Miku's Shrine: Magic Stone Upgrade Calculator</title>
+  <script src="./up-common.js"></script>
+  <script src="./up-magic-stone-v2.js"></script>
+  <link href="../css/common.css" rel="stylesheet" />
+  <link href="./up.css" rel="stylesheet" />
+  <script>
+    const magicTabs = [
+      'magic-stone-upgrade-res',
+      'magic-stone-upgrade-t5',
+      'magic-stone-upgrade-t6',
+      'magic-stone-upgrade-t7',
+      'magic-stone-upgrade-t8',
+      'magic-stone-upgrade-f',];
+    document.addEventListener("DOMContentLoaded", (e) => {
+      MagicStoneUpgradePlanner.init();
+    })
+  </script>
+</head>
+<body>
+
+<header id="header">
+  <div id="breadcrumb-wrapper"><nav>
+    <a class="link" href="../content">Home</a>
+    <span class="chevron">›</span>
+    <a class="link" href="./">Tools</a>
+    <span class="chevron">›</span>
+    <span class="current">Magic Stone Upgrade Calculator</span>
+  </nav></div>
+</header>
+
+<main>
+<h1>Magic Stone Upgrade Calculator <span class="version-tag">v2.0.1</span></h1>
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26.15 32.22" display="none">
+  <symbol viewBox="0 0 26.15 32.22" id="shape-oval">
+    <ellipse cx="17.95" cy="18.3" rx="16.25" ry="9.6" transform="translate(-7.93 30.88) rotate(-80.71)"/>
+  </symbol>
+  <symbol viewBox="0 0 26.15 32.22" id="shape-triangle">
+    <polygon points="13.07 5.68 0 28.33 26.15 28.33 13.07 5.68"/>
+  </symbol>
+  <symbol viewBox="0 0 26.15 32.22" id="shape-diamond">
+    <polygon points="13.54 0.11 3.58 15 11.84 31.52 22.57 16.6 13.54 0.11"/>
+  </symbol>
+  <symbol viewBox="0 0 26.15 32.22" id="shape-octagon">
+    <polygon points="12.17 1.55 5.46 3.29 1.76 10.48 2.72 22.58 10.22 30.07 14.5 30.07 21.92 24.07 24.39 9.62 19.58 3.24 12.17 1.55"/>
+  </symbol>
+</svg>
+
+<p>This tool estimates your maximum Magic Stone upgrades and
+the resulting points in Mightiest Kingdom/Ultimate Power event.
+<!--
+  You can see the full <a href="./magicStoneUpgradeCost">upgrade cost table</a>.-->
+</p>
+
+<div class="collapsible-toggle">
+  <button class="title" type="button" onclick="toggleCollapsible('magic-stone-upgrade-content')">Magic Stone Upgrade Plan</button>
+  <div class="points">MK: <span id="magic-stone-upgrade-points" class="points">9,674,120</span> pts</div>
+</div>
+<div class="collapsible-content" id="magic-stone-upgrade-content">
+<div class="up-tab-bar">
+  <button onclick="openTab(0, magicTabs)" id="magic-stone-upgrade-res-tab" class="up-tab focused">Current</button>
+  <!--
+  <button onclick="openTab(1, magicTabs)" id="magic-stone-upgrade-t5-tab" class="up-tab"><svg class="stone-shape"><use xlink:href="#shape-oval"/></svg>T5</button>
+  <button onclick="openTab(2, magicTabs)" id="magic-stone-upgrade-t6-tab" class="up-tab"><svg class="stone-shape"><use xlink:href="#shape-triangle"/></svg>T6</button>
+  <button onclick="openTab(3, magicTabs)" id="magic-stone-upgrade-t7-tab" class="up-tab"><svg class="stone-shape"><use xlink:href="#shape-diamond"/></svg>T7</button>
+  <button onclick="openTab(4, magicTabs)" id="magic-stone-upgrade-t8-tab" class="up-tab"><svg class="stone-shape"><use xlink:href="#shape-octagon"/></svg>T8</button>
+  -->
+  <button onclick="openTab(5, magicTabs)" id="magic-stone-upgrade-f-tab" class="up-tab">Calculated</button>
+</div>
+<form class="form-container" id="magic-stone-upgrade-form">
+  <div class="up-tab-content" id="magic-stone-upgrade-res-content">
+    <div class="field-container">
+      <div class="label-wrapper"><label for="StrengthPotionCount">Available Strengthening Potion</label></div>
+      <div class="value-wrapper"><input id="StrengthPotionCount" type="number" min="0" value="30000"></div>
+    </div>
+    <div class="field-container">
+      <div class="label-wrapper"><label for="FortunePotionCount">Available Fortune Potion</label></div>
+      <div class="value-wrapper"><input id="FortunePotionCount" type="number" min="0" value="30000"></div>
+    </div>
+    
+  <!-- </div> -->
+  
+  <!-- ******************************** T5 ******************************** -->
+
+  <!-- <div class="up-tab-content hidden" id="magic-stone-upgrade-t5-content"> -->
+    <div class="field-container">
+      <div class="label-wrapper"><label for="T5MagicStoneLevel1">Current T5 Magic Stone levels</label></div>
+      <div class="value-wrapper">
+        <div class="input-wrapper">
+          <svg class="stone-shape sapphire"><use xlink:href="#shape-oval"/></svg>
+          <div class="select-wrapper sapphire"><select class="stone-level" id="T5MagicStoneLevel1">
+            <option value="0">I don't have this</option>
+            <option value="1">1</option><option value="2">2</option><option value="3">3</option>
+            <option value="4">4</option><option value="5">5</option><option value="6">6</option>
+            <option value="7">7</option><option value="8">8</option><option value="9">9</option>
+            <option value="10">10</option><option value="11">11</option><option value="12">12</option>
+            <option value="13">13</option><option value="14">14</option><option value="15">15</option>
+            <option value="16">16</option><option value="17">17</option><option value="18">18</option>
+            <option value="19">19</option>
+            <option value="20">20 (max)</option>
+          </select></div>
+        </div>
+        <div class="input-wrapper">
+          <svg class="stone-shape amethyst"><use xlink:href="#shape-oval"/></svg>
+          <div class="select-wrapper amethyst"><select class="stone-level" id="T5MagicStoneLevel2">
+            <option value="0">I don't have this</option>
+            <option value="1">1</option><option value="2">2</option><option value="3">3</option>
+            <option value="4">4</option><option value="5">5</option><option value="6">6</option>
+            <option value="7">7</option><option value="8">8</option><option value="9">9</option>
+            <option value="10">10</option><option value="11">11</option><option value="12">12</option>
+            <option value="13">13</option><option value="14">14</option><option value="15">15</option>
+            <option value="16">16</option><option value="17">17</option><option value="18">18</option>
+            <option value="19">19</option>
+            <option value="20">20 (max)</option>
+          </select></div>
+        </div>
+        <div class="input-wrapper">
+          <svg class="stone-shape ruby"><use xlink:href="#shape-oval"/></svg>
+          <div class="select-wrapper ruby"><select class="stone-level" id="T5MagicStoneLevel3">
+            <option value="0">I don't have this</option>
+            <option value="1">1</option><option value="2">2</option><option value="3">3</option>
+            <option value="4">4</option><option value="5">5</option><option value="6">6</option>
+            <option value="7">7</option><option value="8">8</option><option value="9">9</option>
+            <option value="10">10</option><option value="11">11</option><option value="12">12</option>
+            <option value="13">13</option><option value="14">14</option><option value="15">15</option>
+            <option value="16">16</option><option value="17">17</option><option value="18">18</option>
+            <option value="19">19</option>
+            <option value="20">20 (max)</option>
+          </select></div>
+        </div>
+        <div class="input-wrapper">
+          <svg class="stone-shape amber"><use xlink:href="#shape-oval"/></svg>
+          <div class="select-wrapper amber"><select class="stone-level" id="T5MagicStoneLevel4">
+            <option value="0">I don't have this</option>
+            <option value="1">1</option><option value="2">2</option><option value="3">3</option>
+            <option value="4">4</option><option value="5">5</option><option value="6">6</option>
+            <option value="7">7</option><option value="8">8</option><option value="9">9</option>
+            <option value="10">10</option><option value="11">11</option><option value="12">12</option>
+            <option value="13">13</option><option value="14">14</option><option value="15">15</option>
+            <option value="16">16</option><option value="17">17</option><option value="18">18</option>
+            <option value="19">19</option>
+            <option value="20">20 (max)</option>
+          </select></div>
+        </div>
+        <div class="input-wrapper">
+          <svg class="stone-shape malachite"><use xlink:href="#shape-oval"/></svg>
+          <div class="select-wrapper malachite">
+            <select class="stone-level" id="T5MagicStoneLevel5">
+              <option value="0">I don't have this</option>
+              <option value="1">1</option><option value="2">2</option><option value="3">3</option>
+              <option value="4">4</option><option value="5">5</option><option value="6">6</option>
+              <option value="7">7</option><option value="8">8</option><option value="9">9</option>
+              <option value="10">10</option><option value="11">11</option><option value="12">12</option>
+              <option value="13">13</option><option value="14">14</option><option value="15">15</option>
+              <option value="16">16</option><option value="17">17</option><option value="18">18</option>
+              <option value="19">19</option>
+              <option value="20">20 (max)</option>
+            </select>
+          </div>
+        </div>
+        <div class="input-wrapper">
+          <svg class="stone-shape emerald"><use xlink:href="#shape-oval"/></svg>
+          <div class="select-wrapper emerald"><select class="stone-level" id="T5MagicStoneLevel6">
+            <option value="0">I don't have this</option>
+            <option value="1">1</option><option value="2">2</option><option value="3">3</option>
+            <option value="4">4</option><option value="5">5</option><option value="6">6</option>
+            <option value="7">7</option><option value="8">8</option><option value="9">9</option>
+            <option value="10">10</option><option value="11">11</option><option value="12">12</option>
+            <option value="13">13</option><option value="14">14</option><option value="15">15</option>
+            <option value="16">16</option><option value="17">17</option><option value="18">18</option>
+            <option value="19">19</option>
+            <option value="20">20 (max)</option>
+          </select></div>
+        </div>
+      </div>
+    </div>
+  <!-- </div> -->
+
+  <!-- ******************************** T6 ******************************** -->
+  <!-- <div class="up-tab-content hidden" id="magic-stone-upgrade-t6-content"> -->
+    <div class="field-container">
+      <div class="label-wrapper"><label for="T6MagicStoneLevel1">Current T6 Magic Stone levels</label></div>
+      <div class="value-wrapper">
+        <div class="input-wrapper">
+          <svg class="stone-shape sapphire"><use xlink:href="#shape-triangle"/></svg>
+          <div class="select-wrapper sapphire"><select class="stone-level" id="T6MagicStoneLevel1">
+            <option value="0">I don't have this</option>
+            <option value="1">1</option><option value="2">2</option><option value="3">3</option>
+            <option value="4">4</option><option value="5">5</option><option value="6">6</option>
+            <option value="7">7</option><option value="8">8</option><option value="9">9</option>
+            <option value="10">10</option><option value="11">11</option><option value="12">12</option>
+            <option value="13">13</option><option value="14">14</option><option value="15">15</option>
+            <option value="16">16</option><option value="17">17</option><option value="18">18</option>
+            <option value="19">19</option>
+            <option value="20">20 (max)</option>
+          </select></div>
+        </div>
+        <div class="input-wrapper">
+          <svg class="stone-shape amethyst"><use xlink:href="#shape-triangle"/></svg>
+          <div class="select-wrapper amethyst"><select class="stone-level" id="T6MagicStoneLevel2">
+            <option value="0">I don't have this</option>
+            <option value="1">1</option><option value="2">2</option><option value="3">3</option>
+            <option value="4">4</option><option value="5">5</option><option value="6">6</option>
+            <option value="7">7</option><option value="8">8</option><option value="9">9</option>
+            <option value="10">10</option><option value="11">11</option><option value="12">12</option>
+            <option value="13">13</option><option value="14">14</option><option value="15">15</option>
+            <option value="16">16</option><option value="17">17</option><option value="18">18</option>
+            <option value="19">19</option>
+            <option value="20">20 (max)</option>
+          </select></div>
+        </div>
+        <div class="input-wrapper">
+          <svg class="stone-shape ruby"><use xlink:href="#shape-triangle"/></svg>
+          <div class="select-wrapper ruby"><select class="stone-level" id="T6MagicStoneLevel3">
+            <option value="0">I don't have this</option>
+            <option value="1">1</option><option value="2">2</option><option value="3">3</option>
+            <option value="4">4</option><option value="5">5</option><option value="6">6</option>
+            <option value="7">7</option><option value="8">8</option><option value="9">9</option>
+            <option value="10">10</option><option value="11">11</option><option value="12">12</option>
+            <option value="13">13</option><option value="14">14</option><option value="15">15</option>
+            <option value="16">16</option><option value="17">17</option><option value="18">18</option>
+            <option value="19">19</option>
+            <option value="20">20 (max)</option>
+          </select></div>
+        </div>
+        <div class="input-wrapper">
+          <svg class="stone-shape amber"><use xlink:href="#shape-triangle"/></svg>
+          <div class="select-wrapper amber"><select class="stone-level" id="T6MagicStoneLevel4">
+            <option value="0">I don't have this</option>
+            <option value="1">1</option><option value="2">2</option><option value="3">3</option>
+            <option value="4">4</option><option value="5">5</option><option value="6">6</option>
+            <option value="7">7</option><option value="8">8</option><option value="9">9</option>
+            <option value="10">10</option><option value="11">11</option><option value="12">12</option>
+            <option value="13">13</option><option value="14">14</option><option value="15">15</option>
+            <option value="16">16</option><option value="17">17</option><option value="18">18</option>
+            <option value="19">19</option>
+            <option value="20">20 (max)</option>
+          </select></div>
+        </div>
+        <div class="input-wrapper">
+          <svg class="stone-shape malachite"><use xlink:href="#shape-triangle"/></svg>
+          <div class="select-wrapper malachite">
+            <select class="stone-level" id="T6MagicStoneLevel5">
+              <option value="0">I don't have this</option>
+              <option value="1">1</option><option value="2">2</option><option value="3">3</option>
+              <option value="4">4</option><option value="5">5</option><option value="6">6</option>
+              <option value="7">7</option><option value="8">8</option><option value="9">9</option>
+              <option value="10">10</option><option value="11">11</option><option value="12">12</option>
+              <option value="13">13</option><option value="14">14</option><option value="15">15</option>
+              <option value="16">16</option><option value="17">17</option><option value="18">18</option>
+              <option value="19">19</option>
+              <option value="20">20 (max)</option>
+            </select>
+          </div>
+        </div>
+        <div class="input-wrapper">
+          <svg class="stone-shape emerald"><use xlink:href="#shape-triangle"/></svg>
+          <div class="select-wrapper emerald"><select class="stone-level" id="T6MagicStoneLevel6">
+            <option value="0">I don't have this</option>
+            <option value="1">1</option><option value="2">2</option><option value="3">3</option>
+            <option value="4">4</option><option value="5">5</option><option value="6">6</option>
+            <option value="7">7</option><option value="8">8</option><option value="9">9</option>
+            <option value="10">10</option><option value="11">11</option><option value="12">12</option>
+            <option value="13">13</option><option value="14">14</option><option value="15">15</option>
+            <option value="16">16</option><option value="17">17</option><option value="18">18</option>
+            <option value="19">19</option>
+            <option value="20">20 (max)</option>
+          </select></div>
+        </div>
+      </div>
+    </div>
+  <!-- </div> -->
+  
+  <!-- ******************************** T7 ******************************** -->
+  <!-- <div class="up-tab-content hidden" id="magic-stone-upgrade-t7-content"> -->
+    <div class="field-container">
+      <div class="label-wrapper"><label for="T7MagicStoneLevel1">Current T7 Magic Stone levels</label></div>
+      <div class="value-wrapper">
+        <div class="input-wrapper">
+          <svg class="stone-shape sapphire"><use xlink:href="#shape-diamond"/></svg>
+          <div class="select-wrapper sapphire"><select class="stone-level" id="T7MagicStoneLevel1">
+            <option value="0">I don't have this</option>
+            <option value="1">1</option><option value="2">2</option><option value="3">3</option>
+            <option value="4">4</option><option value="5">5</option><option value="6">6</option>
+            <option value="7">7</option><option value="8">8</option><option value="9">9</option>
+            <option value="10">10</option><option value="11">11</option><option value="12">12</option>
+            <option value="13">13</option><option value="14">14</option><option value="15">15</option>
+            <option value="16">16</option><option value="17">17</option><option value="18">18</option>
+            <option value="19">19</option>
+            <option value="20">20 (max)</option>
+          </select></div>
+        </div>
+        <div class="input-wrapper">
+          <svg class="stone-shape amethyst"><use xlink:href="#shape-diamond"/></svg>
+          <div class="select-wrapper amethyst"><select class="stone-level" id="T7MagicStoneLevel2">
+            <option value="0">I don't have this</option>
+            <option value="1">1</option><option value="2">2</option><option value="3">3</option>
+            <option value="4">4</option><option value="5">5</option><option value="6">6</option>
+            <option value="7">7</option><option value="8">8</option><option value="9">9</option>
+            <option value="10">10</option><option value="11">11</option><option value="12">12</option>
+            <option value="13">13</option><option value="14">14</option><option value="15">15</option>
+            <option value="16">16</option><option value="17">17</option><option value="18">18</option>
+            <option value="19">19</option>
+            <option value="20">20 (max)</option>
+          </select></div>
+        </div>
+        <div class="input-wrapper">
+          <svg class="stone-shape ruby"><use xlink:href="#shape-diamond"/></svg>
+          <div class="select-wrapper ruby"><select class="stone-level" id="T7MagicStoneLevel3">
+            <option value="0">I don't have this</option>
+            <option value="1">1</option><option value="2">2</option><option value="3">3</option>
+            <option value="4">4</option><option value="5">5</option><option value="6">6</option>
+            <option value="7">7</option><option value="8">8</option><option value="9">9</option>
+            <option value="10">10</option><option value="11">11</option><option value="12">12</option>
+            <option value="13">13</option><option value="14">14</option><option value="15">15</option>
+            <option value="16">16</option><option value="17">17</option><option value="18">18</option>
+            <option value="19">19</option>
+            <option value="20">20 (max)</option>
+          </select></div>
+        </div>
+        <div class="input-wrapper">
+          <svg class="stone-shape amber"><use xlink:href="#shape-diamond"/></svg>
+          <div class="select-wrapper amber"><select class="stone-level" id="T7MagicStoneLevel4">
+            <option value="0">I don't have this</option>
+            <option value="1">1</option><option value="2">2</option><option value="3">3</option>
+            <option value="4">4</option><option value="5">5</option><option value="6">6</option>
+            <option value="7">7</option><option value="8">8</option><option value="9">9</option>
+            <option value="10">10</option><option value="11">11</option><option value="12">12</option>
+            <option value="13">13</option><option value="14">14</option><option value="15">15</option>
+            <option value="16">16</option><option value="17">17</option><option value="18">18</option>
+            <option value="19">19</option>
+            <option value="20">20 (max)</option>
+          </select></div>
+        </div>
+        <div class="input-wrapper">
+          <svg class="stone-shape malachite"><use xlink:href="#shape-diamond"/></svg>
+          <div class="select-wrapper malachite">
+            <select class="stone-level" id="T7MagicStoneLevel5">
+              <option value="0">I don't have this</option>
+              <option value="1">1</option><option value="2">2</option><option value="3">3</option>
+              <option value="4">4</option><option value="5">5</option><option value="6">6</option>
+              <option value="7">7</option><option value="8">8</option><option value="9">9</option>
+              <option value="10">10</option><option value="11">11</option><option value="12">12</option>
+              <option value="13">13</option><option value="14">14</option><option value="15">15</option>
+              <option value="16">16</option><option value="17">17</option><option value="18">18</option>
+              <option value="19">19</option>
+              <option value="20">20 (max)</option>
+            </select>
+          </div>
+        </div>
+        <div class="input-wrapper">
+          <svg class="stone-shape emerald"><use xlink:href="#shape-diamond"/></svg>
+          <div class="select-wrapper emerald"><select class="stone-level" id="T7MagicStoneLevel6">
+            <option value="0">I don't have this</option>
+            <option value="1">1</option><option value="2">2</option><option value="3">3</option>
+            <option value="4">4</option><option value="5">5</option><option value="6">6</option>
+            <option value="7">7</option><option value="8">8</option><option value="9">9</option>
+            <option value="10">10</option><option value="11">11</option><option value="12">12</option>
+            <option value="13">13</option><option value="14">14</option><option value="15">15</option>
+            <option value="16">16</option><option value="17">17</option><option value="18">18</option>
+            <option value="19">19</option>
+            <option value="20">20 (max)</option>
+          </select></div>
+        </div>
+      </div>
+    </div>
+  <!-- </div> -->
+
+  <!-- ******************************** T8 ******************************** -->
+  <!-- <div class="up-tab-content hidden" id="magic-stone-upgrade-t8-content"> -->
+    <div class="field-container">
+      <div class="label-wrapper"><label for="T8MagicStoneLevel1">Current T8 Magic Stone levels</label></div>
+      <div class="value-wrapper">
+        <div class="input-wrapper">
+          <svg class="stone-shape sapphire"><use xlink:href="#shape-octagon"/></svg>
+          <div class="select-wrapper sapphire"><select class="stone-level" id="T8MagicStoneLevel1">
+            <option value="0">I don't have this</option>
+            <option value="1">1</option><option value="2">2</option><option value="3">3</option>
+            <option value="4">4</option><option value="5">5</option><option value="6">6</option>
+            <option value="7">7</option><option value="8">8</option><option value="9">9</option>
+            <option value="10">10</option><option value="11">11</option><option value="12">12</option>
+            <option value="13">13</option><option value="14">14</option><option value="15">15</option>
+            <option value="16">16</option><option value="17">17</option><option value="18">18</option>
+            <option value="19">19</option>
+            <option value="20">20 (max)</option>
+          </select></div>
+        </div>
+        <div class="input-wrapper">
+          <svg class="stone-shape amethyst"><use xlink:href="#shape-octagon"/></svg>
+          <div class="select-wrapper amethyst"><select class="stone-level" id="T8MagicStoneLevel2">
+            <option value="0">I don't have this</option>
+            <option value="1">1</option><option value="2">2</option><option value="3">3</option>
+            <option value="4">4</option><option value="5">5</option><option value="6">6</option>
+            <option value="7">7</option><option value="8">8</option><option value="9">9</option>
+            <option value="10">10</option><option value="11">11</option><option value="12">12</option>
+            <option value="13">13</option><option value="14">14</option><option value="15">15</option>
+            <option value="16">16</option><option value="17">17</option><option value="18">18</option>
+            <option value="19">19</option>
+            <option value="20">20 (max)</option>
+          </select></div>
+        </div>
+        <div class="input-wrapper">
+          <svg class="stone-shape ruby"><use xlink:href="#shape-octagon"/></svg>
+          <div class="select-wrapper ruby"><select class="stone-level" id="T8MagicStoneLevel3">
+            <option value="0">I don't have this</option>
+            <option value="1">1</option><option value="2">2</option><option value="3">3</option>
+            <option value="4">4</option><option value="5">5</option><option value="6">6</option>
+            <option value="7">7</option><option value="8">8</option><option value="9">9</option>
+            <option value="10">10</option><option value="11">11</option><option value="12">12</option>
+            <option value="13">13</option><option value="14">14</option><option value="15">15</option>
+            <option value="16">16</option><option value="17">17</option><option value="18">18</option>
+            <option value="19">19</option>
+            <option value="20">20 (max)</option>
+          </select></div>
+        </div>
+        <div class="input-wrapper">
+          <svg class="stone-shape amber"><use xlink:href="#shape-octagon"/></svg>
+          <div class="select-wrapper amber"><select class="stone-level" id="T8MagicStoneLevel4">
+            <option value="0">I don't have this</option>
+            <option value="1">1</option><option value="2">2</option><option value="3">3</option>
+            <option value="4">4</option><option value="5">5</option><option value="6">6</option>
+            <option value="7">7</option><option value="8">8</option><option value="9">9</option>
+            <option value="10">10</option><option value="11">11</option><option value="12">12</option>
+            <option value="13">13</option><option value="14">14</option><option value="15">15</option>
+            <option value="16">16</option><option value="17">17</option><option value="18">18</option>
+            <option value="19">19</option>
+            <option value="20">20 (max)</option>
+          </select></div>
+        </div>
+        <div class="input-wrapper">
+          <svg class="stone-shape malachite"><use xlink:href="#shape-octagon"/></svg>
+          <div class="select-wrapper malachite">
+            <select class="stone-level" id="T8MagicStoneLevel5">
+              <option value="0">I don't have this</option>
+              <option value="1">1</option><option value="2">2</option><option value="3">3</option>
+              <option value="4">4</option><option value="5">5</option><option value="6">6</option>
+              <option value="7">7</option><option value="8">8</option><option value="9">9</option>
+              <option value="10">10</option><option value="11">11</option><option value="12">12</option>
+              <option value="13">13</option><option value="14">14</option><option value="15">15</option>
+              <option value="16">16</option><option value="17">17</option><option value="18">18</option>
+              <option value="19">19</option>
+              <option value="20">20 (max)</option>
+            </select>
+          </div>
+        </div>
+        <div class="input-wrapper">
+          <svg class="stone-shape emerald"><use xlink:href="#shape-octagon"/></svg>
+          <div class="select-wrapper emerald"><select class="stone-level" id="T8MagicStoneLevel6">
+            <option value="0">I don't have this</option>
+            <option value="1">1</option><option value="2">2</option><option value="3">3</option>
+            <option value="4">4</option><option value="5">5</option><option value="6">6</option>
+            <option value="7">7</option><option value="8">8</option><option value="9">9</option>
+            <option value="10">10</option><option value="11">11</option><option value="12">12</option>
+            <option value="13">13</option><option value="14">14</option><option value="15">15</option>
+            <option value="16">16</option><option value="17">17</option><option value="18">18</option>
+            <option value="19">19</option>
+            <option value="20">20 (max)</option>
+          </select></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="up-tab-content hidden" id="magic-stone-upgrade-f-content">
+    <div class="field-container">
+      <div class="label-wrapper"><label for="T5MagicStoneLevel1">Final T5 Magic Stone levels</label></div>
+      <div class="value-wrapper">
+        <div class="input-wrapper">
+          <svg class="stone-shape sapphire"><use xlink:href="#shape-oval"/></svg>
+          <output class="sapphire" id="MaxT5MagicStoneLevel1">20</output>
+        </div>
+        <div class="input-wrapper">
+          <svg class="stone-shape amethyst"><use xlink:href="#shape-oval"/></svg>
+          <output class="amethyst" id="MaxT5MagicStoneLevel2">20</output>
+        </div>
+        <div class="input-wrapper">
+          <svg class="stone-shape ruby"><use xlink:href="#shape-oval"/></svg>
+          <output class="ruby" id="MaxT5MagicStoneLevel3">20</output>
+        </div>
+        <div class="input-wrapper">
+          <svg class="stone-shape amber"><use xlink:href="#shape-oval"/></svg>
+          <output class="amber" id="MaxT5MagicStoneLevel4">20</output>
+        </div>
+        <div class="input-wrapper">
+          <svg class="stone-shape malachite"><use xlink:href="#shape-oval"/></svg>
+          <output class="malachite" id="MaxT5MagicStoneLevel5">20</output>
+        </div>
+        <div class="input-wrapper">
+          <svg class="stone-shape emerald"><use xlink:href="#shape-oval"/></svg>
+          <output class="emerald" id="MaxT5MagicStoneLevel6">20</output>
+        </div>
+      </div>
+    </div>
+    <div class="field-container">
+      <div class="label-wrapper"><label for="T6MagicStoneLevel1">Final T6 Magic Stone levels</label></div>
+      <div class="value-wrapper">
+        <div class="input-wrapper">
+          <svg class="stone-shape sapphire"><use xlink:href="#shape-triangle"/></svg>
+          <output class="sapphire" id="MaxT6MagicStoneLevel1">20</output>
+        </div>
+        <div class="input-wrapper">
+          <svg class="stone-shape amethyst"><use xlink:href="#shape-triangle"/></svg>
+          <output class="amethyst" id="MaxT6MagicStoneLevel2">20</output>
+        </div>
+        <div class="input-wrapper">
+          <svg class="stone-shape ruby"><use xlink:href="#shape-triangle"/></svg>
+          <output class="ruby" id="MaxT6MagicStoneLevel3">20</output>
+        </div>
+        <div class="input-wrapper">
+          <svg class="stone-shape amber"><use xlink:href="#shape-triangle"/></svg>
+          <output class="amber" id="MaxT6MagicStoneLevel4">20</output>
+        </div>
+        <div class="input-wrapper">
+          <svg class="stone-shape malachite"><use xlink:href="#shape-triangle"/></svg>
+          <output class="malachite" id="MaxT6MagicStoneLevel5">20</output>
+        </div>
+        <div class="input-wrapper">
+          <svg class="stone-shape emerald"><use xlink:href="#shape-triangle"/></svg>
+          <output class="emerald" id="MaxT6MagicStoneLevel6">20</output>
+        </div>
+      </div>
+    </div>
+    <div class="field-container">
+      <div class="label-wrapper"><label for="T7MagicStoneLevel1">Final T7 Magic Stone levels</label></div>
+      <div class="value-wrapper">
+        <div class="input-wrapper">
+          <svg class="stone-shape sapphire"><use xlink:href="#shape-diamond"/></svg>
+          <output class="sapphire" id="MaxT7MagicStoneLevel1">20</output>
+        </div>
+        <div class="input-wrapper">
+          <svg class="stone-shape amethyst"><use xlink:href="#shape-diamond"/></svg>
+          <output class="amethyst" id="MaxT7MagicStoneLevel2">20</output>
+        </div>
+        <div class="input-wrapper">
+          <svg class="stone-shape ruby"><use xlink:href="#shape-diamond"/></svg>
+          <output class="ruby" id="MaxT7MagicStoneLevel3">20</output>
+        </div>
+        <div class="input-wrapper">
+          <svg class="stone-shape amber"><use xlink:href="#shape-diamond"/></svg>
+          <output class="amber" id="MaxT7MagicStoneLevel4">20</output>
+        </div>
+        <div class="input-wrapper">
+          <svg class="stone-shape malachite"><use xlink:href="#shape-diamond"/></svg>
+          <output class="malachite" id="MaxT7MagicStoneLevel5">20</output>
+        </div>
+        <div class="input-wrapper">
+          <svg class="stone-shape emerald"><use xlink:href="#shape-diamond"/></svg>
+          <output class="emerald" id="MaxT7MagicStoneLevel6">20</output>
+        </div>
+      </div>
+    </div>
+    <div class="field-container">
+      <div class="label-wrapper"><label for="T8MagicStoneLevel1">Final T8 Magic Stone levels</label></div>
+      <div class="value-wrapper">
+        <div class="input-wrapper">
+          <svg class="stone-shape sapphire"><use xlink:href="#shape-octagon"/></svg>
+          <output class="sapphire" id="MaxT8MagicStoneLevel1">20</output>
+        </div>
+        <div class="input-wrapper">
+          <svg class="stone-shape amethyst"><use xlink:href="#shape-octagon"/></svg>
+          <output class="amethyst" id="MaxT8MagicStoneLevel2">20</output>
+        </div>
+        <div class="input-wrapper">
+          <svg class="stone-shape ruby"><use xlink:href="#shape-octagon"/></svg>
+          <output class="ruby" id="MaxT8MagicStoneLevel3">20</output>
+        </div>
+        <div class="input-wrapper">
+          <svg class="stone-shape amber"><use xlink:href="#shape-octagon"/></svg>
+          <output class="amber" id="MaxT8MagicStoneLevel4">20</output>
+        </div>
+        <div class="input-wrapper">
+          <svg class="stone-shape malachite"><use xlink:href="#shape-octagon"/></svg>
+          <output class="malachite" id="MaxT8MagicStoneLevel5">20</output>
+        </div>
+        <div class="input-wrapper">
+          <svg class="stone-shape emerald"><use xlink:href="#shape-octagon"/></svg>
+          <output class="emerald" id="MaxT8MagicStoneLevel6">20</output>
+        </div>
+      </div>
+    </div>
+    <div class="field-container">
+      <div class="label-wrapper"><label for="StrengthPotionLeft">Strengthening Potion remaining</label></div>
+      <div class="value-wrapper"><output id="StrengthPotionLeft">100</output></div>
+    </div>
+    <div class="field-container">
+      <div class="label-wrapper"><label for="FortunePotionLeft">Fortune Potion remaining</label></div>
+      <div class="value-wrapper"><output id="FortunePotionLeft">100</output></div>
+    </div>
+
+    <p>We estimate that you need <span class="need-more" id="MissingStrengthPotion">99999999</span>
+    more Strengthening Potion and <span class="need-more" id="MissingFortunePotion">99999999</span>
+    more Fortune Potion to upgrade all owned Magic Stones to level 20.</p>
+  </div>
+  
+</form>
+</div>
+
+</main>
+</body>
+</html>
