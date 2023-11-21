@@ -1,12 +1,13 @@
 /* eslint-env browser */
 
+// version 2.0.0
+
 const CURR_STRENGTH_POTION_COUNT_KEY = 'planner-magic-stone-curr-strength-potion-count';
 const CURR_FORTUNE_POTION_COUNT_KEY =  'planner-magic-stone-curr-fortune-potion-count';
 const CURR_MAGIC_STONE_T5_LEVELS_EKY = 'planner-magic-stone-t5-levels';
 const CURR_MAGIC_STONE_T6_LEVELS_EKY = 'planner-magic-stone-t6-levels';
 const CURR_MAGIC_STONE_T7_LEVELS_EKY = 'planner-magic-stone-t7-levels';
 const CURR_MAGIC_STONE_T8_LEVELS_EKY = 'planner-magic-stone-t8-levels';
-const CURR_MAGIC_STONE_T9_LEVELS_EKY = 'planner-magic-stone-t9-levels';
 
 const MagicStoneUpgradePlanner = {
   totalPoints: 0,
@@ -23,7 +24,6 @@ const MagicStoneUpgradePlanner = {
   currT6Levels:  [0, 0, 0, 0, 0, 0], finalT6Levels: [0, 0, 0, 0, 0, 0],
   currT7Levels:  [0, 0, 0, 0, 0, 0], finalT7Levels: [0, 0, 0, 0, 0, 0],
   currT8Levels:  [0, 0, 0, 0, 0, 0], finalT8Levels: [0, 0, 0, 0, 0, 0],
-  currT9Levels:  [0, 0, 0, 0, 0, 0], finalT9Levels: [0, 0, 0, 0, 0, 0],
   
   init: function() {
     const d = document;
@@ -107,22 +107,25 @@ const MagicStoneUpgradePlanner = {
     up.loadData();
     up.calculate();
     up.updateUI();
-    up.dom.CurrStrengthPotionCount.addEventListener("change", up.onFieldChange);
-    up.dom.CurrFortunePotionCount.addEventListener("change", up.onFieldChange);
+    const addListener = (el) => el.addEventListener("change", up.onFieldChange);
+    addListener(up.dom.CurrStrengthPotionCount);
+    addListener(up.dom.CurrFortunePotionCount);
+    up.dom.T5MagicStoneLevel.forEach(addListener);
+    up.dom.T6MagicStoneLevel.forEach(addListener);
+    up.dom.T7MagicStoneLevel.forEach(addListener);
+    up.dom.T8MagicStoneLevel.forEach(addListener);
   },
 
   loadData: function() {
     const up = MagicStoneUpgradePlanner;
-    // const CURR_STRENGTH_POTION_COUNT_KEY = 'planner-magic-stone-curr-strength-potion-count';
-    // const CURR_FORTUNE_POTION_COUNT_KEY =  'planner-magic-stone-curr-fortune-potion-count';
-    // const CURR_MAGIC_STONE_T5_LEVELS_EKY = 'planner-magic-stone-t5-levels';
-    // const CURR_MAGIC_STONE_T6_LEVELS_EKY = 'planner-magic-stone-t6-levels';
-    // const CURR_MAGIC_STONE_T7_LEVELS_EKY = 'planner-magic-stone-t7-levels';
-    // const CURR_MAGIC_STONE_T8_LEVELS_EKY = 'planner-magic-stone-t8-levels';
-    // const CURR_MAGIC_STONE_T9_LEVELS_EKY = 'planner-magic-stone-t9-levels';
+    
+    up.currStrengthPotionCount =
+      localStorage.getItem(CURR_STRENGTH_POTION_COUNT_KEY) ||
+      20000;
 
-    up.currStrengthPotionCount = localStorage.getItem(CURR_STRENGTH_POTION_COUNT_KEY) || 1000;
-    up.currFortunePotionCount = localStorage.getItem(CURR_FORTUNE_POTION_COUNT_KEY) || 1000;
+    up.currFortunePotionCount =
+      localStorage.getItem(CURR_FORTUNE_POTION_COUNT_KEY) ||
+      20000;
 
     function loadStoneLevels(data, defaultLevels) {
       if ((typeof data === 'string') && (data.length > 0)) {
@@ -157,8 +160,28 @@ const MagicStoneUpgradePlanner = {
 
   saveData: function() {
     const up = MagicStoneUpgradePlanner;
-    // localStorage.setItem(CURR_REAGENT_COUNT_KEY, up.currStrengthPotionCount);
-    // localStorage.setItem(CURR_LAB_LEVEL_KEY  , up.currWitchLabLevel);
+    localStorage.setItem(
+      CURR_STRENGTH_POTION_COUNT_KEY,
+      up.currStrengthPotionCount);
+    localStorage.setItem(
+      CURR_FORTUNE_POTION_COUNT_KEY,
+      up.currFortunePotionCount);
+    localStorage.setItem(
+      CURR_MAGIC_STONE_T5_LEVELS_EKY,
+      up.currT5Levels.join(','),
+    );
+    localStorage.setItem(
+      CURR_MAGIC_STONE_T6_LEVELS_EKY,
+      up.currT6Levels.join(','),
+    );
+    localStorage.setItem(
+      CURR_MAGIC_STONE_T7_LEVELS_EKY,
+      up.currT7Levels.join(','),
+    );
+    localStorage.setItem(
+      CURR_MAGIC_STONE_T8_LEVELS_EKY,
+      up.currT8Levels.join(','),
+    );
   },
 
   getUserData: function() {
@@ -177,11 +200,11 @@ const MagicStoneUpgradePlanner = {
     const dom = up.dom;
     dom.CurrStrengthPotionCount.innerText = up.finalStrengthPotionCount;
     dom.StrengthPotionLeft.innerText = up.finalStrengthPotionCount;
-    dom.MissingStrengthPotion.innerText = formatNumber(up.finalStrengthPotionCount);
+    dom.MissingStrengthPotion.innerText = formatNumber(up.missingStrengthPotionCount);
 
     dom.CurrFortunePotionCount.innerText = up.finalStrengthPotionCount;
     dom.FortunePotionLeft.innerText = up.finalStrengthPotionCount;
-    dom.MissingFortunePotion.innerText = formatNumber(up.finalStrengthPotionCount);
+    dom.MissingFortunePotion.innerText = formatNumber(up.missingFortunePotionCount);
     
     dom.Points.innerText = formatNumber(up.totalPoints);
     up.currT5Levels.forEach((lvl, i) => dom.T5MagicStoneLevel[i].value = lvl);
@@ -205,14 +228,15 @@ const MagicStoneUpgradePlanner = {
   },
 
   calculate: function() {
-    let totalPoints = 0;
     const up = MagicStoneUpgradePlanner;
+
+    let _totalPoints = 0;
 
     let _strengthPotionCount = up.currStrengthPotionCount;
     let _fortunePotionCount = up.currFortunePotionCount;
 
-    let _missingStrengthPotion;
-    let _missingFortunePotion;
+    let _missingStrengthPotion = 0;
+    let _missingFortunePotion = 0;
 
     function upgradeStone(level, strPotionCost, forPotionCost) {
       let finalLevel = level;
@@ -230,7 +254,10 @@ const MagicStoneUpgradePlanner = {
           finalLevel++;
           _strengthPotionCount -= strPotionRequired;
           _fortunePotionCount -= forPotionRequired;
-          totalPoints = totalPoints + 3 * strPotionRequired + 28 * forPotionRequired;
+          _totalPoints +=
+              (3 * strPotionRequired )+
+              (28 * forPotionRequired);
+
           if (finalLevel === 20) canUpgrade = false;
         } else {
           canUpgrade = false;
@@ -250,13 +277,23 @@ const MagicStoneUpgradePlanner = {
     up.currT7Levels.forEach((lvl, i) => {up.finalT7Levels[i] = upgradeStone(lvl,  263200,  50000)});
     up.currT8Levels.forEach((lvl, i) => {up.finalT8Levels[i] = upgradeStone(lvl, 1316000, 250000)});
 
-    up.totalPoints = totalPoints;
+    _missingStrengthPotion -= _strengthPotionCount;
+    _missingFortunePotion -= _fortunePotionCount;
+
+    up.totalPoints = _totalPoints;
 
     up.finalStrengthPotionCount = _strengthPotionCount;
     up.finalFortunePotionCount = _fortunePotionCount;
 
-    up.missingStrengthPotionCount = _missingStrengthPotion - _strengthPotionCount;
-    up.missingFortunePotionCount = _missingFortunePotion - _fortunePotionCount;
+    up.missingStrengthPotionCount =
+      (_missingFortunePotion > 0)?
+      _missingFortunePotion:
+      0;
+
+    up.missingFortunePotionCount =
+      (_missingFortunePotion)?
+      _missingFortunePotion:
+      0;
 
     if (typeof MasterPlanner !== 'undefined') MasterPlanner.updateTotalPoints();
   }
