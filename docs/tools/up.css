@@ -110,20 +110,21 @@
 
 @media screen and (max-width: 600px) {
   /* Put the value wrapper in a separate line if the screen is too narrow */
-  .field-container .value-wrapper { clear: both; }
+  .field-container .value-wrapper { clear: both; margin-left: 2rem; }
 }
 
 @media screen and (max-width: 700px) {
   .field-container .input-wrapper .stone-shape { display: none !important; }
 }
-
+/* 
 @media screen and (min-width: 100px) {
   #hero-upgrade-current-content .input-wrapper label { display: none; }
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 700px) {
   #hero-upgrade-current-content .input-wrapper label { display: inline-block; }
 }
+*/
 
 
 /* If an input/out is paired with an icon (e.g. svg), use the wrapper to prevent line break */
