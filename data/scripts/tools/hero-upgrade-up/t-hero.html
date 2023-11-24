@@ -1,16 +1,14 @@
   <div class="field-container">
-    <div class="label-wrapper"><label>Hero {{NUMBER}}</label></div>
+    <div class="label-wrapper">
+      <input
+        id="hero-{{NUMBER}}-name"
+        type="text"
+        list="hero-name-list"
+        value=""
+        placeholder="Hero {{NUMBER}}"
+        class="hero-name"/>
+    </div>
     <div class="value-wrapper">
-      <div class="input-wrapper"
-        ><label for="hero-{{NUMBER}}-name">Name</label>
-        <input
-          id="hero-{{NUMBER}}-name"
-          type="text"
-          list="hero-name-list"
-          value=""
-          placeholder="hero name"
-          class="hero-name"
-      /></div>
       <div class="input-wrapper">
         <label for="hero-{{NUMBER}}-star-level">Star level</label>
         <div class="select-wrapper hero-star-level"

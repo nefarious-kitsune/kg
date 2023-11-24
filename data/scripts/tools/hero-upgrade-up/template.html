@@ -13,8 +13,8 @@
   <link href="./up.css" rel="stylesheet" />
   <script>
     const heroTabs = [
-      'hero-upgrade-res',
-      'hero-upgrade-f',];
+      'hero-upgrade-current',
+      'hero-upgrade-calculated',];
   </script>
 </head>
 <body>
@@ -114,33 +114,32 @@ the resulting points in Mightiest Kingdom/Ultimate Power event.
 </p>
 
 <div class="collapsible-toggle">
-  <button class="title" type="button" onclick="toggleCollapsible('hero-upgrade-content')">Hero Upgrade Plan</button>
+  <button class="title" type="button" onclick="toggleCollapsible('hero-upgrade-content')">Hero Upgrades</button>
   <div class="points">MK: <span id="hero-upgrade-points" class="points">9,674,120</span> pts</div>
 </div>
 <div class="collapsible-content" id="hero-upgrade-content">
 <div class="up-tab-bar">
-  <button onclick="openTab(0, heroTabs)" id="hero-upgrade-res-tab" class="up-tab focused">Current</button>
-  <button onclick="openTab(1, heroTabs)" id="hero-upgrade-f-tab" class="up-tab">Calculated</button>
+  <button onclick="openTab(0, heroTabs)" id="hero-upgrade-current-tab" class="up-tab focused">Current</button>
+  <button onclick="openTab(1, heroTabs)" id="hero-upgrade-calculated-tab" class="up-tab">Calculated</button>
 </div>
-<form class="form-container" id="hero-upgrade-form">
+<form class="form-container" id="hero-upgrade-calculatedorm">
 
-<div class="up-tab-content" id="hero-upgrade-res-content">
+<div class="up-tab-content" id="hero-upgrade-current-content">
   <div class="field-container">
     <div class="label-wrapper"><label for="FreePickCount">Available Free-Pick Hero Cards</label></div>
     <div class="value-wrapper"><input id="FreePickCount" type="number" min="0" value="30000" class="max-100k"></div>
   </div>
   <div class="field-container">
-    <div class="label-wrapper"><label>Hero 1</label></div>
+    <div class="label-wrapper">
+      <input
+        id="hero-1-name"
+        type="text"
+        list="hero-name-list"
+        value="Padme"
+        placeholder="Hero 1"
+        class="hero-name"/>
+    </div>
     <div class="value-wrapper">
-      <div class="input-wrapper"
-        ><label for="hero-1-name">Name</label>
-        <input
-          id="hero-1-name"
-          type="text"
-          list="hero-name-list"
-          value="Erika"
-          class="hero-name"
-      /></div>
       <div class="input-wrapper">
         <label for="hero-1-star-level">Star level</label>
         <div class="select-wrapper hero-star-level"
@@ -183,14 +182,29 @@ the resulting points in Mightiest Kingdom/Ultimate Power event.
       /></div>
     </div>
   </div>
-{{HERO ROWS}}
+{{HERO INPUT ROWS}}
 </div>
 
-<div class="up-tab-content hidden" id="hero-upgrade-f-content">
+<div class="up-tab-content hidden" id="hero-upgrade-calculated-content">
   <div class="field-container">
-    <div class="label-wrapper"><label for="FreePickLeft">Free-Pick Cards remaining</label></div>
-    <div class="value-wrapper"><output id="FreePickLeft">100</output></div>
+    <div class="label-wrapper"><label>Free Pick Hero Cards</label></div>
+    <div class="value-wrapper">
+      <output id="OUTPUT-FREE-PICK-BEFORE"  class="max-100k">1000</output>
+      »
+      <output id="OUTPUT-FREE-PICK-AFTER"  class="max-100k">21</output>
+    </div>
   </div>
+  <div class="field-container">
+    <div class="label-wrapper">
+      <label id="OUTPUT-HERO-1-NAME" class="hero-name">Hero 1</label>
+    </div>
+    <div class="value-wrapper">
+      <output id="OUTPUT-HERO-1-STAR-LEVEL-BEFORE" class="max-10k">&nbsp;</output>
+      »
+      <output id="OUTPUT-HERO-1-STAR-LEVEL-AFTER" class="max-10k">&nbsp;</output>
+    </div>
+  </div>
+{{HERO OUTPUT ROWS}}
 </div>
   
 </form>
