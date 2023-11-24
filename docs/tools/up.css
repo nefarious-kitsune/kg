@@ -82,10 +82,6 @@
   padding: 0.5rem;
 }
 
-.up-tab-content.hidden {
-  display: none;
-}
-
 .field-container {
   display: block;
   margin: 0 0 0.4rem 0;
@@ -93,7 +89,6 @@
 
 .field-container .label-wrapper {
   float: left;
-  width: 18rem;
   margin: 0;
   padding: 0.2rem 0;
 }
@@ -108,23 +103,72 @@
   padding: 0;
 }
 
-@media screen and (max-width: 600px) {
-  /* Put the value wrapper in a separate line if the screen is too narrow */
-  .field-container .value-wrapper { clear: both; margin-left: 2rem; }
-}
-
-@media screen and (max-width: 700px) {
-  .field-container .input-wrapper .stone-shape { display: none !important; }
-}
-/* 
+/*
+   Small mobile screen
+   Label container and value container on separate rows
+ */
 @media screen and (min-width: 100px) {
-  #hero-upgrade-current-content .input-wrapper label { display: none; }
+  .field-container {
+    clear: left;
+    padding-bottom: 0.5rem;
+    border-bottom: 0.1rem solid var(--miku-dark-red);
+  }
+  .field-container .value-wrapper { clear: both; }
+  .field-container .label-wrapper { width: auto; }
+
+  .input-wrapper .stone-shape { display: none; }
+
+  #hero-upgrade-current-content .value-wrapper .input-wrapper label {
+    display: inline-block;
+    min-width: fit-content;
+  }
 }
 
-@media screen and (min-width: 700px) {
-  #hero-upgrade-current-content .input-wrapper label { display: inline-block; }
+/*
+   Medium mobile screen
+   Label container and value container on same row
+   Narrow label container
+ */
+
+@media screen and (min-width: 390px) {
+  .field-container {
+    clear: left;
+    padding-bottom: 0.2rem;
+    border-bottom: none;
+  }
+
+  .field-container .value-wrapper { clear: none; }
+  .field-container .label-wrapper { width: 10rem; padding-right: 1rem; }
+
+  #hero-upgrade-current-content .value-wrapper .input-wrapper label {
+    margin-right: 0.2rem;
+    min-width: 6rem;
+  }
 }
-*/
+
+/*
+   Tablet screen
+ */
+
+@media screen and (min-width: 480px) {
+  .field-container .label-wrapper { width: 12rem; }
+  #hero-upgrade-current-content .value-wrapper .input-wrapper label {
+    min-width: fit-content;
+  }
+}
+
+/*
+   Desktop screen
+ */
+
+@media screen and (min-width: 600px) {
+  .field-container .label-wrapper { width: 14rem; }
+  .input-wrapper .stone-shape { display: inline-block; }
+}
+
+@media screen and (min-width: 800px) {
+  .field-container .label-wrapper { width: 18rem; }
+}
 
 
 /* If an input/out is paired with an icon (e.g. svg), use the wrapper to prevent line break */
@@ -152,57 +196,12 @@ output.hero-name { width: 6rem; }
 input::placeholder { color: var(--neutral); }
 option[disabled] { color: var(--neutral); }
 
-/*
-button.add-row,
-button.del-row {
-  width: 1.5rem;
-  height: 1.5rem;
-  font-weight: bold;
-  font-size: 1rem;
-  color: white;
-  padding: auto;
-  outline: none;
-  border-radius: 0.3rem;
-  border: 0.1rem solid;
-}
-
-button.add-row { background-color: var(--primary-3); }
-button.del-row { background-color: var(--miku-red); }
-*/
-
-output, span.output {
+output {
   display: inline-block;
   width: 8rem;
   padding: 0.2rem;
   border-radius: 0.3rem;
   border: 0.1rem solid;
-}
-
-div.line {
-  padding: 0.2rem 0 0.2rem 0;
-}
-
-div.line label {
-  display: inline-block;
-  width: 18rem;
-}
-
-div.line input[type="number"] {
-  outline: none;
-  width: 8rem;
-  padding: 0.2rem;
-  border-radius: 0.3rem;
-  border: 0.1rem solid;
-}
-
-div.line input[type="checkbox"] {
-  width: 1rem;
-  height: 1rem;
-}
-
-.error {
-  background-color:#ffecc2;
-  color: red;
 }
 
 .need-more {
@@ -258,14 +257,14 @@ div.select-wrapper:after {
 div.select-wrapper:before {
   border-left: var(--size) solid transparent;
   border-right: var(--size) solid transparent;
-  border-bottom: var(--size) solid black;
+  border-bottom: var(--size) solid var(--dark-neutral);
   top: 35%;
 }
 
 div.select-wrapper::after {
   border-left: var(--size) solid transparent;
   border-right: var(--size) solid transparent;
-  border-top: var(--size) solid black;
+  border-top: var(--size) solid var(--dark-neutral);
   top: 60%;
 }
 
