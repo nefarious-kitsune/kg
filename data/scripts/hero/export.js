@@ -152,6 +152,13 @@ fs.writeFileSync('./_fire-table-1.html', compiled.table1);
 fs.writeFileSync('./_fire-table-2.html', compiled.table2);
 fs.writeFileSync('../../../docs/hero/fire-data.js', getDataJsCode(compiled.data));
 
+let selectHTML = compiled
+  .data
+  .sort((a, b) => a.name.localeCompare(b.name))
+  .map((h) => `<option value="${h.name.replaceAll('\'', '').replaceAll(' ', '-').toLowerCase()}">${h.name}</option>`).join('\n');
+
+fs.writeFileSync('./_temp.html', selectHTML);
+
 imported = fs.readFileSync('./ice.tsv', { encoding:'utf8'});
 compiled = compileData('ice', imported);
 fs.writeFileSync('./_ice-table-1.html', compiled.table1);
@@ -163,11 +170,4 @@ compiled = compileData('goblin', imported);
 fs.writeFileSync('./_goblin-table-1.html', compiled.table1);
 fs.writeFileSync('./_goblin-table-2.html', compiled.table2);
 fs.writeFileSync('../../../docs/hero/goblin-data.js', getDataJsCode(compiled.data));
-
-let selectHTML = compiled
-  .data
-  .sort((a, b) => a.name.localeCompare(b.name))
-  .map((h) => `<option value="${h.name.replaceAll('\'', '').replaceAll(' ', '-').toLowerCase()}">${h.name}</option>`).join('\n');
-
-fs.writeFileSync('./_temp.html', selectHTML);
 

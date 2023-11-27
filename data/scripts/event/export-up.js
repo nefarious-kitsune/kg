@@ -2,7 +2,7 @@ import fs from 'fs';
 
 const MaxSpFinalPoints = 4000000;
 
-const rawSpPointData =
+const rawUpPointData =
 `#1	3422200	#1	604000	#1	1022000	#1	1067800	#1	452200	#1	368400	#1	348000	#1	347200	#1	322800	#1	252400	#1	161700	#1	147000	#1	2034100
 #2	2652300	#2	598200	#2	875600	#2	750100	#2	309700	#2	280000	#2	300200	#2	260300	#2	254800	#2	228500	#2	134700	#2	80800	#2	95600
 #3	2339600	#3	577600	#3	804200	#3	650000	#3	295400	#3	256300	#3	219700	#3	269000	#3	224900	#3	186500	#3	113800	#3	67000	#3	68900
@@ -33,7 +33,7 @@ const compiledData = [];
 
 const servers = rawServerData.split('\t\t');
 
-const spPointData = splitData(rawSpPointData);
+const spPointData = splitData(rawUpPointData);
 
 for (let serverIdx = 0; serverIdx < servers.length; serverIdx++) {
   const data = {
@@ -69,7 +69,7 @@ const spTableLines = [
   '<tr>',
   '<th>Server</th>',
   '<th class="up-final-col">Special Event</th>',
-  '<th>&nbsp;</th>',
+  '',
   '</tr>',
   '</thead>',
   '<tbody>'
@@ -84,7 +84,7 @@ function getSpFinalPointHTML(rank, points) {
     return (
       '<td class="up-final-col">' + 
       `<span class="${eventRankClass}">${rank}</span>` +
-      '<span class="final-point">N/A</span>' +
+      '<span class="final-pt">N/A</span>' +
       '</td>'
     )
   }
@@ -97,9 +97,9 @@ function getSpFinalPointHTML(rank, points) {
     `<span class="${eventRankClass}">${rank}</span>`;
 
   if (barWidth >= 7) {
-    html += `<div class="final-point-bar" style="width: ${barWidth}rem"><span class="final-point">${pointsDisplay}</span></div>`;
+    html += `<div class="final-pt-bar" style="width: ${barWidth}rem"><span class="final-pt">${pointsDisplay}</span></div>`;
   } else {
-    html += `<div class="final-point-bar" style="width: ${barWidth}rem">&nbsp;</div><span class="final-point">${pointsDisplay}</span></td>`;
+    html += `<div class="final-pt-bar" style="width: ${barWidth}rem">&nbsp;</div><span class="final-pt">${pointsDisplay}</span></td>`;
   }
 
   html += '</td>';
