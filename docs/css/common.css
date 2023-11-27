@@ -157,6 +157,14 @@ a {
   text-decoration: underline;
 }
 
+em, strong {
+  color: var(--miku-red);
+}
+
+.very-strong {
+  text-transform: uppercase;
+}
+
 div.info-box {
   background: #e8c3d3;
   border-radius:0.5rem;
