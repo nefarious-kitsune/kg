@@ -2,14 +2,14 @@ import fs from 'fs';
 import {getDateFormatStrings, getUTCDate} from '../../utils/date-utils.js';
 import {formatPoint} from '../../utils/number-utils.js';
 
-const eventStartDate = getUTCDate(2023, 10, 15);
+const eventStartDate = getUTCDate(2023, 11, 11);
 
-const eventName = 'Great Mongolia Era';
-const featured = 'Ao Deng Ge Ri Le';
+const eventName = 'Forest Spirit Prayer Festival';
+const featured = 'Rila';
 const eventDuration = 9; // 8-days
 const eventPrefix = 'sp-';
 
-const MaxFinalPoints = (4000000);
+const MaxFinalPoints = (14 * 1000 * 1000);
 
 const eventEndDate = new Date(eventStartDate);
 eventEndDate.setDate(eventStartDate.getDate() + eventDuration - 1);
@@ -21,12 +21,14 @@ const exportDirectory = '../../../../docs/events';
 const dateFragment = `${fmtEventStart.YYYY}${fmtEventStart.MM}${fmtEventStart.DD}`;
 const exportFileFragment = `${exportDirectory}/${eventPrefix}${dateFragment}`;
 
+/*
 const rawServerDataRows =
   fs
     .readFileSync(`${eventPrefix}${dateFragment}.tsv`, 'utf-8')
     .replaceAll('\r','')
     .replaceAll(',','')
     .split('\n');
+*/
 
 const rawGlobalDataRows =
   fs
@@ -60,6 +62,7 @@ const compiledData = {
   'data': [],
 };
 
+/*
 function getPoint(row, svsIdx) {
   let p = parseInt(row[svsIdx]);
   if (Number.isNaN(p)) p = null;
@@ -85,6 +88,7 @@ for (let svsIdx = 0; svsIdx < svrCount; svsIdx++) {
 
   compiledData.data.push(data)
 }
+*/
 
 compiledData.data.push(globalData);
 
@@ -129,6 +133,7 @@ function getFinalPointHTML(rank, finalData, servers) {
 }
 
 // generate server data html
+/*
 for (let svrIdx = 0; svrIdx < svrCount-1; svrIdx++) {
   const svrData = compiledData.data[svrIdx];
   const serverClass = 'server' + (servers.indexOf(svrData.server) + 1);
@@ -151,6 +156,7 @@ for (let svrIdx = 0; svrIdx < svrCount-1; svrIdx++) {
   bodyContent.push(getFinalPointHTML( '10', svrData.final, servers));
   bodyContent.push('</tr>');
 }
+*/
 
 // generate global data html
 {
@@ -183,4 +189,4 @@ const exportedHtml = htmlTemplate
   .replaceAll('{{EVENT NAME}}'  , eventName)
   .replaceAll('{{FEATURED}}'  , featured);
 
-fs.writeFileSync(`${exportFileFragment}.html`, exportedHtml);
+fs.writeFileSync(`${exportFileFragment}-r.html`, exportedHtml);
