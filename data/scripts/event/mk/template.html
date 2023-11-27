@@ -6,7 +6,7 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://kg.kitsune21.com/">
   <meta property="og:title" content="Miku's Shrine | Mightiest Kingdom results">
-  <meta property="og:description" content="Past results of the Mightiest Kingdom event">
+  <meta property="og:description" content="{{EVENT START YEAR}}-{{EVENT START MONTH}}-{{EVENT START DAY}} Mightiest Kingdom point results for {{SERVER LIST}}">
   <meta property="og:image" content="https://kg.kitsune21.com/images/sheet-2x_n.png">
   <link href="../css/common.css" rel="stylesheet" />
   <link href="./event-data.css" rel="stylesheet" />
@@ -42,7 +42,10 @@ as a reference to decide when you want to spend resources on
   <button onclick="switchMKTableView(1)" id="mk-tab-1" class="tab">Phase 1~2</button>
   <button onclick="switchMKTableView(2)" id="mk-tab-2" class="tab">Phase 3~4</button>
   <button onclick="switchMKTableView(3)" id="mk-tab-3" class="tab">Phase 5~6</button>
-  <div class="extra">Download: <a href="./mk-{{EVENT START YEAR}}{{EVENT START MONTH}}{{EVENT START DAY}}.json">JSON</a></div>
+  <div class="extra">Download:
+  <a href="./mk-{{EVENT START YEAR}}{{EVENT START MONTH}}{{EVENT START DAY}}.json">JSON</a> |
+  <a href="{{SHEET LINK}}">Sheet</a>
+</div>
 </div>
 <div class="tabbed-table-content">
 <table class="result-table mk view-final" id="mk-result-table">

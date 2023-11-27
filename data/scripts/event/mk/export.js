@@ -2,7 +2,8 @@ import fs from 'fs';
 import {getDateFormatStrings, getUTCDate} from '../../utils/date-utils.js';
 import {formatPoint} from '../../utils/number-utils.js';
 
-const eventStartDate = getUTCDate(2023, 11, 13);
+const sheetLink = 'https://docs.google.com/spreadsheets/d/1mn85xiMae53coWYnJ-j5TMgIDeWvpaIz64i1n5239q0/edit?usp=sharing';
+const eventStartDate = getUTCDate(2023, 11, 20);
 const eventName = 'Mightiest Kingdom';
 const eventDuration = 6; // 6-days
 const eventPrefix = 'mk-';
@@ -46,6 +47,9 @@ const compiledData = {
 
 const servers1 = rawDataRows[0].split('\t').filter((txt) => txt.length > 0);
 const servers2 = rawDataRows[1].split('\t').filter((txt) => txt.length > 0);
+
+const serverList = servers1.concat(servers2).sort().join(', ');
+
 const pointData = rawDataRows.slice(2).map((row) => row.split('\t'));
 
 for (let svsIdx = 0; svsIdx < servers1.length; svsIdx++) {
@@ -261,6 +265,8 @@ for (let svsIdx = 0; svsIdx < servers1.length; svsIdx++) {
 const htmlTemplate =  fs.readFileSync('template.html', 'utf-8');
 const exportedHtml = htmlTemplate
   .replace('{{TABLE BODY}}', bodyContent.join('\n'))
+  .replaceAll('{{SERVER LIST}}'  , serverList)
+  .replaceAll('{{SHEET LINK}}'  , sheetLink)
   .replaceAll('{{EVENT START YEAR}}' , fmtEventStart.YYYY)
   .replaceAll('{{EVENT START MONTH}}', fmtEventStart.MM)
   .replaceAll('{{EVENT START DAY}}'  , fmtEventStart.DD)
