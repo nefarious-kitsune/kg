@@ -1,0 +1,109 @@
+<html>
+<head>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Miku's Shrine: Text Formatting</title>
+  <link rel="icon" type="image/x-icon" href="../images/logo_mini.png">
+  <link href="../css/common.css" rel="stylesheet" />
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://kg.kitsune21.com/">
+  <meta property="og:title" content="Miku's Shrine | Text Formatting">
+  <meta property="og:description" content="How to format your alliance messages.">
+  <meta property="og:image" content="https://kg.kitsune21.com/images/logo_torri.png">
+  <style>
+    .color-chip {
+      display: inline-block;
+      width: 4rem;
+      text-align: center;
+      margin: 0 0.2rem 0.2rem 0;
+      background-color:#999;
+      padding:0.2rem;
+    }
+  </style>
+</head>
+<body>
+<header id="header">
+  <div id="breadcrumb-wrapper"><nav>
+    <a class="link" href="../content">Home</a>
+    <span class="chevron">›</span>
+    <a class="link" href="./">Guides</a>
+    <span class="chevron">›</span>
+    <span class="current">Free Server Transfer</span>
+  </nav></div>
+</header>
+<main>
+<h1>Text Formatting</h1>
+
+<p>You can format text message with simple code:</p>
+<ul class="butterfly">
+  <li><code>&lt;b&gt;text&lt;/b&gt;</code> will set the text in bold.</li>
+  <li><code>&lt;i&gt;text&lt;/i&gt;</code> will set the text in italic.</li>
+  <li><code>&lt;size=40&gt;text&lt;/size&gt;</code> will set the text size bigger.</li>
+  <li><code>&lt;color=red&gt;text&lt;/color&gt;</code> will set the text in red color.
+    <div style="max-width: 20rem;">
+      <span class="color-chip" style="color:#000000">black</span>
+      <span class="color-chip" style="color:#c0c0c0">silver</span>	
+      <span class="color-chip" style="color:#808080">gray</span>	
+      <span class="color-chip" style="color:#ffffff">white</span>	
+      <span class="color-chip" style="color:#800000">maroon</span>	
+      <span class="color-chip" style="color:#ff0000">red</span>	
+      <span class="color-chip" style="color:#800080">purple</span>	
+      <span class="color-chip" style="color:#ff00ff">fuchsia</span>	
+      <span class="color-chip" style="color:#008000">green</span>	
+      <span class="color-chip" style="color:#00ff00">lime</span>	
+      <span class="color-chip" style="color:#808000">olive</span>	
+      <span class="color-chip" style="color:#ffff00">yellow</span>	
+      <span class="color-chip" style="color:#000080">navy</span>	
+      <span class="color-chip" style="color:#0000ff">blue</span>	
+      <span class="color-chip" style="color:#008080">teal</span>	
+      <span class="color-chip" style="color:#00ffff">aqua</span>
+    </div>
+  </li>
+  <li>
+    Formatting tags must be closed properly. For example,
+    <code>&lt;color=red&gt;&lt;size=40&gt;text&lt;/color&gt;&lt;/size&gt;</code>
+    will not display properly.</li>
+</ul>
+
+<h2>Alliance Message</h2>
+<p>A simple alliance message:</p>
+<textarea style="width:100%; height: 10rem;">
+<size=40>Welcome</size><color=teal><b>Rules</b>\n■ Do tech donation on starred (★) items only.\n■ Alliance Challenge: minimum 400 points\n■ No rally during Evil Spirit Invasion or Lava Haka.\n■ Reset auto rally before you go offline.\n■ No attacking in normal Mithril\n■ If you need PVP/gold, ask in chat first\n♡ Enjoy the game ♡</color>
+</textarea>
+<p><a href="./text-formatting-ex-1.png">Output</a></p>
+
+<h2>Alliance Message 2</h2>
+<p>A more elaborate message:</p>
+<textarea style="width:100%; height: 10rem;">
+<color=white><size=80><color=red>ʚ</color> <color=fuchsia>A</color>WE<color=fuchsia>S</color>OME <color=fuchsia>H</color>OARDS <color=red>ɞ</color></size>
+<size=40><color=yellow>We are gold farms, <I>not</I> gold farmers. Expect to be hit 24/7.</color></size>
+<color=red><b>Rules</b></color>
+☆ <color=red><b>Do not</b></color> attack in normal Mithril
+☆ <color=red><b>Do not</b></color> attack for gold or PvP point. <i>Ask in chat first</i>
+☆ <color=red><b>Do not</b></color> rally Titan during ESI or Lava Haka
+☆ <color=green><b>Do</b></color> read mail and chat BEFORE starting rallies when you first log in!</color>
+</textarea>
+<p><a href="./text-formatting-ex-2.png">Output</a></p>
+
+<h2>Alliance Mail</h2>
+
+<p>
+  You can format mail too. Remember to send the mail to your own alt
+  account first to check that the message is formatted properly.
+</p>
+<p>Input</p>
+<textarea style="width:100%; height: 10rem;">
+<color=maroon><size=60>REMINDER</size></color>
+■ Remember to do your <b>Elemental Lord</b>
+■ At reset, remember to refresh your <b>Alliance Challenge</b> until the quests are all <color=yellow>gold</color>
+■ Hit the <b>Lava Cave</b> as soon as you can.
+■ It's free server transfer week. After you port back to Normal Land, <b>shield up</b>!
+■ ESI will be at UTC 1800 as usual
+
+Quack! Quack!
+~ Commander Ducky <color=yellow>(^)></color>
+</textarea>
+<p><a href="./text-formatting-ex-3.png">Output</a></p>
+
+</main>
+</body>
+</html>
