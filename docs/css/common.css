@@ -3,6 +3,11 @@
   --miku-dark-red: rgb(124, 26, 32); /* #7c1a20 */
   --miku-gold: #fec728;
 
+  --red: #b42328;
+  --yellow: #ce8e13;
+  --green: #7bce1d;
+  --blue: #24e5ff;
+  
   --gradient-blue-1: #324d5e;
   --gradient-blue-2: #3a7495;
   --gradient-gold-1: #ad741b;
@@ -37,6 +42,7 @@
   --dark-neutral:#363E4A;
   --neutral: #485363; /* Charcoal */
   --light-neutral: #9198A1;
+  --pale-neutral: #dadde0;
 
   /* alternative variable names for primary colors */
   --orange : #C9803F; /* Caramel */
