@@ -1,4 +1,4 @@
-.mk-container {
+.event-container {
   display:flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -6,7 +6,7 @@
   row-gap: 1.5rem;
 }
 
-.phase-container {
+.event-phase-container {
   padding: 0rem;
   width:fit-content;
   border-radius: 0.5rem;
