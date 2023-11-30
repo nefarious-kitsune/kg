@@ -16,10 +16,19 @@
 .point-table th,
 .point-table td { padding: 0.2rem; }
 .point-table .normal { color: inherit; }
-.point-table .spend { color: #285d8a; font-size: 0.8rem;}
+.point-table .spend { color: #285d8a; }
+.point-table .spend td:first-child { font-size: 0.8rem;}
 .point-table .rally { color: #75338d; }
-.point-table tr td:first-child { min-width: 20rem; }
-.point-table tr td:last-child { text-align: right; min-width: 5rem; }
+.point-table tr td:first-child {
+  min-width: 20rem;
+  text-align: left;
+}
+.point-table tr td {
+  min-width: 5rem;
+  text-align: right;
+}
+
+.point-table tbody tr:nth-child(even) {background: var(--pale-neutral);}
 
 .mk-up-container {
   padding: 0rem;
@@ -27,15 +36,6 @@
   border-radius: 0.5rem;
   border: 0.1rem solid var(--miku-red);
 }
-
-.mk-up-point-table th,
-.mk-up-point-table td { padding: 0.2rem; }
-.mk-up-point-table tr td:first-child { min-width: 20rem; }
-.mk-up-point-table tr td:nth-child(2),
-.mk-up-point-table tr td:last-child { text-align: right; min-width: 8rem; }
-.mk-up-point-table .normal { color: inherit; }
-.mk-up-point-table .spend { color: #285d8a; font-size: 0.8rem;}
-.mk-up-point-table .rally { color: #75338d; }
 
 .tabbed-table-tab-bar {
   display: flex;
