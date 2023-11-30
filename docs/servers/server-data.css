@@ -21,11 +21,3 @@ ul.tag-list li.top100 { background-color: #75338d; color: #d386d4; }
 ul.tag-list li:hover { background-color: #7ac1eb; color: #285d8a; }
 ul.tag-list li.top50:hover  { background-color: #f6db79; color: #ae5b21; }
 ul.tag-list li.top100:hover { background-color: #d386d4; color: #75338d; }
-
-/*
- green : 28501f 3b7b2b 5db552 72cf6c
- blue  : 182a3b 285d8a 448bd1 7ac1eb
- purple: 522c60 75338d 8d42a1 d386d4
- gold  : 644625 ae5b21 e0bb50 f6db79
- gray  : 1d2231 3a4361 485363 638ad3
-*/
