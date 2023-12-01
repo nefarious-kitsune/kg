@@ -9,6 +9,12 @@
   <meta property="og:title" content="Miku's Shrine | Territory Building">
   <meta property="og:description" content="Some tips on territory building for new R4/R5s.">
   <meta property="og:image" content="https://kg.kitsune21.com/images/logo_torri.png">
+  <link href="../css/model-image.css" rel="stylesheet" />
+  <script src="../js/model-image.js"></script>
+  <link rel="prefetch" href="../images/territory_1.png">
+  <link rel="prefetch" href="../images/territory_2.png">
+  <link rel="prefetch" href="../images/territory_3.png">
+  <link rel="prefetch" href="../images/territory_4.png">
 </head>
 <body>
 <header id="header">
@@ -21,6 +27,12 @@
   </nav></div>
 </header>
 <main>
+<div id="modal-container">
+<button class="close" onclick="closeModal()">&times;</button>
+<img id="modal-image">
+<div id="modal-caption"></div>
+</div>
+
 <h1>Territory Building</h1>
 
 <p>Some tips on territory building for new R4/R5s.</p>
@@ -32,7 +44,11 @@
   Scorched Land, Titans will spawn further away from
   your Central Fortress and your troops will take longer
   time to reach them.
-  <br>(<a href="../images/territory_1.png">See example</a>)
+  <a
+    href="../images/territory_1.png"
+    class="modal-link"
+    data-caption="If you set your hive next to the Scorched Land, Titans would not spawn on one side, and your troops will need to march further to reach the Titans."
+  >Demo</a>
 </li>
 
 <li>
@@ -49,7 +65,11 @@
 
 <li>
   It is possible to <q>jump</q> across another alliance's territory.
-  <br>(<a href="../images/territory_2.png">See example</a>)
+  <a
+    href="../images/territory_2.png"
+    class="modal-link"
+    data-caption="It is possible to 'jump' across another alliance's territory.."
+  >Demo</a>
 </li>
 
 <li>
@@ -59,16 +79,25 @@
 </li>
 
 <li>
-  Central Fortress and Expedition Fortress do not need to be
-  connected to each other. It is best to keep them separate
-  so you can claim more altars.
-  <br>(<a href="../images/territory_3.png">See example</a>)
+  You can build independent territories with two Fortresses.
+  Obelisks need to be connected to  Central Fortress or Expedition Fortress,
+  but the two Fortresses do not need to be connected to each other.
+  Often it is best to keep territories separated so you can claim more altars.
+  <a
+    href="../images/territory_3.png"
+    class="modal-link"
+    data-caption="You can build two independent territories with two fortresses."
+  >Demo</a>
 </li>
 
 <li>
   Build in zig-zag fashion. You can reach more altars
   that way.
-  <br>(<a href="../images/territory_4.png">See example</a>)
+  <a
+    href="../images/territory_4.png"
+    class="modal-link"
+    data-caption="Build in zig-zag fashion (instead of a straight line) so you can reach more area and claim more altars."
+  >Demo</a>
 </li>
 
 <li>
@@ -92,7 +121,6 @@
   Mistakes will be made, and rebuilding is inevitable.
 </li>
 </ul>
-
 </main>
 </body>
 </html>
