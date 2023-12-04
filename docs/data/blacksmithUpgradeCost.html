@@ -2,1639 +2,1385 @@
 <head>
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Miku's Shrine: Blacksmith Upgrade Cost</title>
+  <link rel="icon" type="image/x-icon" href="../images/logo_mini.png">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://kg.kitsune21.com/">
+  <meta property="og:title" content="Miku's Shrine | Blacksmith Upgrade Cost">
+  <meta property="og:description" content="Upgrade cost for Blacksmith">
+  <meta property="og:image" content="https://kg.kitsune21.com/images/sheet-2x_n.png">
   <link href="../css/common.css" rel="stylesheet" />
-  <link href="./up.css" rel="stylesheet" />
   <link href="./data.css" rel="stylesheet" />
 </head>
 <body>
 
 <header id="header">
-  <div id="site-heading-wrapper"><h2 id="site-heading">Miku's Shrine</h2></div>
   <div id="breadcrumb-wrapper"><nav>
     <a class="link" href="../content">Home</a>
     <span class="chevron">›</span>
-    <a class="link" href="./">Upgrade</a>
+    <a class="link" href="./">Data</a>
     <span class="chevron">›</span>
     <span class="current">Blacksmith Upgrade Cost</span>
   </nav></div>
 </header>
-
 <main>
+
 <h1>Blacksmith Upgrade Cost</h1>
 
 <p>
 This table shows the upgrade cost for Blacksmith.
-You can use the <a href="./blacksmithUpgradeCalculator">upgrade calculator</a>
+You can use the <a href="../tools/blacksmithUpgradeCalculator">upgrade calculator</a>
 to estimates your maximum Blacksmith upgrades and
 the resulting points in Mightiest Kingdom/Ultimate Power event.
 </p>
 
-<!-- <p>Created by [S499] [ASM] Kitsune21</p> -->
+<div class="tabbed-table-wrapper-content" id="mk-result-content">
+  
+<div class="tabbed-table-tab-bar">
+<button class="tab focused">Upgrades</button>
+<div class="extra">Download:
+<a href="./blacksmithUpgradeCost.json">JSON</a> |
+<a href="https://docs.google.com/spreadsheets/d/1JyMe59gSBc6PMBqtgLS04gwQFoUw9S5xoA96L-aiUiY/edit?usp=sharing">Sheet</a>
+</div>
+</div>
 
-  <p>Source files:</p>
-  <ul class="butterfly">
-    <!--
-    <li><a href="https://docs.google.com/spreadsheets/d/1JyMe59gSBc6PMBqtgLS04gwQFoUw9S5xoA96L-aiUiY/edit?usp=sharing">Google sheet</a></li>
-    -->
-    <li><a href="./blacksmithUpgradeCost.json">JSON file</a></li>
-  </ul>
-
-  <table class="blacksmith">
-    <thead>
-      <tr>
-        <th>Level</th>
-        <th colspan="2">Cost</th>
-        <th>Verification</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>4 → 5<br>⋮<br>7 → 8</td>
-        <td>10</td>
-        <td>Forge Hammer</td>
-        <td class="verified">Verified</td>
-       </tr>
-      <tr>
-        <td>8 → 9<br>⋮<br>12 → 13</td>
-        <td>15</td>
-        <td>Forge Hammer</td>
-        <td class="verified">Verified</td>
-       </tr>
-      <tr>
-        <td>13 → 14<br>⋮<br>17 → 18</td>
-        <td>20</td>
-        <td>Forge Hammer</td>
-        <td class="verified">Verified</td>
-       </tr>
-      <tr>
-        <td>18 → 19<br>⋮<br>23 → 24</td>
-        <td>25</td>
-        <td>Forge Hammer</td>
-        <td class="verified">Verified</td>
-       </tr>
-      <tr>
-        <td>24 → 25<br>⋮<br>28 → 29</td>
-        <td>30</td>
-        <td>Forge Hammer</td>
-        <td class="verified">Verified</td>
-       </tr>
-      <tr>
-        <td>29 → 30<br>⋮<br>34 → 35</td>
-        <td>35</td>
-        <td>Forge Hammer</td>
-        <td class="verified">Verified</td>
-       </tr>
-      <tr>
-        <td>35 → 36<br>⋮<br>39 → 40</td>
-        <td>40</td>
-        <td>Forge Hammer</td>
-        <td class="verified">Verified</td>
-       </tr>
-      <tr>
-        <td>40 → 41<br>⋮<br>45 → 46</td>
-        <td>45</td>
-        <td>Forge Hammer</td>
-        <td class="verified">Verified</td>
-       </tr>
-      <tr>
-        <td>46 → 47<br>⋮<br>51 → 52</td>
-        <td>50</td>
-        <td>Forge Hammer</td>
-        <td class="verified">Verified</td>
-       </tr>
-      <tr>
-        <td>52 → 53<br>⋮<br>57 → 58</td>
-        <td>55</td>
-        <td>Forge Hammer</td>
-        <td class="verified">Verified</td>
-       </tr>
-      <tr>
-        <td>58 → 59<br>⋮<br>63 → 64</td>
-        <td>60</td>
-        <td>Forge Hammer</td>
-        <td class="verified">Verified</td>
-       </tr>
-      <tr>
-        <td>64 → 65<br>⋮<br>69 → 70</td>
-        <td>65</td>
-        <td>Forge Hammer</td>
-        <td class="verified">Verified</td>
-       </tr>
-      <tr>
-        <td>70 → 71<br>⋮<br>75 → 76</td>
-        <td>70</td>
-        <td>Forge Hammer</td>
-        <td class="verified">Verified</td>
-       </tr>
-      <tr>
-        <td>76 → 77<br>⋮<br>81 → 82</td>
-        <td>75</td>
-        <td>Forge Hammer</td>
-        <td class="verified">Verified</td>
-       </tr>
-      <tr>
-        <td>82 → 83<br>⋮<br>87 → 88</td>
-        <td>80</td>
-        <td>Forge Hammer</td>
-        <td class="verified">Verified</td>
-       </tr>
-      <tr>
-        <td>88 → 89<br>⋮<br>93 → 94</td>
-        <td>85</td>
-        <td>Forge Hammer</td>
-        <td class="verified">Verified</td>
-       </tr>
-      <tr>
-        <td>94 → 95<br>⋮<br>99 → 100</td>
-        <td>90</td>
-        <td>Forge Hammer</td>
-        <td class="verified">Verified</td>
-       </tr>
-      <tr>
-        <td>100 → 101<br>⋮<br>105 → 106</td>
-        <td>95</td>
-        <td>Forge Hammer</td>
-        <td class="verified">Verified</td>
-       </tr>
-      <tr>
-        <td>106 → 107<br>⋮<br>111 → 112</td>
-        <td>100</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>112 → 113<br>⋮<br>117 → 118</td>
-        <td>105</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>118 → 119<br>⋮<br>123 → 124</td>
-        <td>110</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>124 → 125<br>⋮<br>129 → 130</td>
-        <td>115</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>130 → 131<br>⋮<br>135 → 136</td>
-        <td>120</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>136 → 137<br>⋮<br>141 → 142</td>
-        <td>125</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>142 → 143<br>⋮<br>148 → 149</td>
-        <td>130</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>149 → 150<br>⋮<br>155 → 156</td>
-        <td>135</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>156 → 157<br>⋮<br>162 → 163</td>
-        <td>140</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>163 → 164<br>⋮<br>169 → 170</td>
-        <td>145</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>170 → 171<br>⋮<br>176 → 177</td>
-        <td>150</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>177 → 178<br>⋮<br>183 → 184</td>
-        <td>155</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>184 → 185<br>⋮<br>190 → 191</td>
-        <td>160</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>191 → 192<br>⋮<br>196 → 197</td>
-        <td>165</td>
-        <td>Forge Hammer</td>
-        <td class="verified">Verified</td>
-       </tr>
-      <tr>
-        <td>197 → 198<br>⋮<br>203 → 204</td>
-        <td>170</td>
-        <td>Forge Hammer</td>
-        <td class="verified">Verified</td>
-       </tr>
-      <tr>
-        <td>204 → 205<br>⋮<br>210 → 211</td>
-        <td>175</td>
-        <td>Forge Hammer</td>
-        <td class="verified">Verified</td>
-       </tr>
-      <tr>
-        <td>211 → 212<br>⋮<br>217 → 218</td>
-        <td>180</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>218 → 219<br>⋮<br>224 → 225</td>
-        <td>185</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>225 → 226<br>⋮<br>231 → 232</td>
-        <td>190</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>232 → 233<br>⋮<br>238 → 239</td>
-        <td>195</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>239 → 240<br>⋮<br>245 → 246</td>
-        <td>200</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>246 → 247<br>⋮<br>252 → 253</td>
-        <td>205</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>253 → 254<br>⋮<br>259 → 260</td>
-        <td>210</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>260 → 261<br>⋮<br>266 → 267</td>
-        <td>215</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>267 → 268<br>⋮<br>273 → 274</td>
-        <td>220</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>274 → 275<br>⋮<br>280 → 281</td>
-        <td>225</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>281 → 282<br>⋮<br>287 → 288</td>
-        <td>230</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>288 → 289<br>⋮<br>293 → 294</td>
-        <td>235</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>294 → 295<br>⋮<br>300 → 301</td>
-        <td>240</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>301 → 302<br>⋮<br>307 → 308</td>
-        <td>245</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>308 → 309<br>⋮<br>314 → 315</td>
-        <td>250</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>315 → 316<br>⋮<br>321 → 322</td>
-        <td>255</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>322 → 323<br>⋮<br>327 → 328</td>
-        <td>260</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>328 → 329<br>⋮<br>334 → 335</td>
-        <td>265</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>335 → 336<br>⋮<br>341 → 342</td>
-        <td>270</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>342 → 343<br>⋮<br>348 → 349</td>
-        <td>275</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>349 → 350<br>⋮<br>355 → 356</td>
-        <td>280</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>356 → 357<br>⋮<br>362 → 363</td>
-        <td>285</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>363 → 364<br>⋮<br>369 → 370</td>
-        <td>290</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>370 → 371<br>⋮<br>375 → 376</td>
-        <td>295</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>376 → 377<br>⋮<br>382 → 383</td>
-        <td>300</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>383 → 384<br>⋮<br>388 → 389</td>
-        <td>305</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>389 → 390<br>⋮<br>395 → 396</td>
-        <td>310</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>396 → 397<br>⋮<br>404 → 405</td>
-        <td>315</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>405 → 406<br>⋮<br>411 → 412</td>
-        <td>320</td>
-        <td>Forge Hammer</td>
-        <td class="verified">Verified</td>
-       </tr>
-      <tr>
-        <td>412 → 413<br>⋮<br>418 → 419</td>
-        <td>325</td>
-        <td>Forge Hammer</td>
-        <td class="verified">Verified</td>
-       </tr>
-      <tr>
-        <td>419 → 420<br>⋮<br>425 → 426</td>
-        <td>330</td>
-        <td>Forge Hammer</td>
-        <td class="verified">Verified</td>
-       </tr>
-      <tr>
-        <td>426 → 427<br>⋮<br>433 → 434</td>
-        <td>335</td>
-        <td>Forge Hammer</td>
-        <td class="verified">Verified</td>
-       </tr>
-      <tr>
-        <td>434 → 435<br>⋮<br>440 → 441</td>
-        <td>340</td>
-        <td>Forge Hammer</td>
-        <td class="verified">Verified</td>
-       </tr>
-      <tr>
-        <td>441 → 442<br>⋮<br>447 → 448</td>
-        <td>345</td>
-        <td>Forge Hammer</td>
-        <td class="verified">Verified</td>
-       </tr>
-      <tr>
-        <td>448 → 449<br>⋮<br>454 → 455</td>
-        <td>350</td>
-        <td>Forge Hammer</td>
-        <td class="verified">Verified</td>
-       </tr>
-      <tr>
-        <td>455 → 456<br>⋮<br>462 → 463</td>
-        <td>355</td>
-        <td>Forge Hammer</td>
-        <td class="verified">Verified</td>
-       </tr>
-      <tr>
-        <td>463 → 464<br>⋮<br>469 → 470</td>
-        <td>360</td>
-        <td>Forge Hammer</td>
-        <td class="verified">Verified</td>
-       </tr>
-      <tr>
-        <td>470 → 471<br>⋮<br>476 → 477</td>
-        <td>365</td>
-        <td>Forge Hammer</td>
-        <td class="verified">Verified</td>
-       </tr>
-      <tr>
-        <td>477 → 478<br>⋮<br>483 → 484</td>
-        <td>370</td>
-        <td>Forge Hammer</td>
-        <td class="verified">Verified</td>
-       </tr>
-      <tr>
-        <td>484 → 485<br>⋮<br>491 → 492</td>
-        <td>375</td>
-        <td>Forge Hammer</td>
-        <td class="verified">Verified</td>
-       </tr>
-      <tr>
-        <td>492 → 493<br>⋮<br>498 → 499</td>
-        <td>380</td>
-        <td>Forge Hammer</td>
-        <td class="verified">Verified</td>
-       </tr>
-      <tr>
-        <td>499 → 500<br>⋮<br>505 → 506</td>
-        <td>385</td>
-        <td>Forge Hammer</td>
-        <td class="verified">Verified</td>
-       </tr>
-      <tr>
-        <td>506 → 507<br>⋮<br>513 → 514</td>
-        <td>390</td>
-        <td>Forge Hammer</td>
-        <td class="verified">Verified</td>
-       </tr>
-      <tr>
-        <td>514 → 515<br>⋮<br>520 → 521</td>
-        <td>395</td>
-        <td>Forge Hammer</td>
-        <td class="verified">Verified</td>
-       </tr>
-      <tr>
-        <td>521 → 522<br>⋮<br>527 → 528</td>
-        <td>400</td>
-        <td>Forge Hammer</td>
-        <td class="verified">Verified</td>
-       </tr>
-      <tr>
-        <td>528 → 529<br>⋮<br>535 → 536</td>
-        <td>405</td>
-        <td>Forge Hammer</td>
-        <td class="verified">Verified</td>
-       </tr>
-      <tr>
-        <td>536 → 537<br>⋮<br>542 → 543</td>
-        <td>410</td>
-        <td>Forge Hammer</td>
-        <td class="verified">Verified</td>
-       </tr>
-      <tr>
-        <td>543 → 544<br>⋮<br>549 → 550</td>
-        <td>415</td>
-        <td>Forge Hammer</td>
-        <td class="verified">Verified</td>
-       </tr>
-      <tr>
-        <td>550 → 551<br>⋮<br>557 → 558</td>
-        <td>420</td>
-        <td>Forge Hammer</td>
-        <td class="verified">Verified</td>
-       </tr>
-      <tr>
-        <td>558 → 559<br>⋮<br>564 → 565</td>
-        <td>425</td>
-        <td>Forge Hammer</td>
-        <td class="verified">Verified</td>
-       </tr>
-      <tr>
-        <td>565 → 566<br>⋮<br>571 → 572</td>
-        <td>430</td>
-        <td>Forge Hammer</td>
-        <td class="verified">Verified</td>
-       </tr>
-      <tr>
-        <td>572 → 573<br>⋮<br>579 → 580</td>
-        <td>435</td>
-        <td>Forge Hammer</td>
-        <td class="verified">Verified</td>
-       </tr>
-      <tr>
-        <td>580 → 581<br>⋮<br>586 → 587</td>
-        <td>440</td>
-        <td>Forge Hammer</td>
-        <td class="verified">Verified</td>
-       </tr>
-      <tr>
-        <td>587 → 588<br>⋮<br>593 → 594</td>
-        <td>445</td>
-        <td>Forge Hammer</td>
-        <td class="verified">Verified</td>
-       </tr>
-      <tr>
-        <td>594 → 595<br>⋮<br>600 → 601</td>
-        <td>450</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>601 → 602<br>⋮<br>607 → 608</td>
-        <td>455</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>608 → 609<br>⋮<br>615 → 616</td>
-        <td>460</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>616 → 617<br>⋮<br>623 → 624</td>
-        <td>465</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>624 → 625<br>⋮<br>631 → 632</td>
-        <td>470</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>632 → 633<br>⋮<br>639 → 640</td>
-        <td>475</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>640 → 641<br>⋮<br>646 → 647</td>
-        <td>480</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>647 → 648<br>⋮<br>653 → 654</td>
-        <td>485</td>
-        <td>Forge Hammer</td>
-        <td class="verified">Verified</td>
-       </tr>
-      <tr>
-        <td>654 → 655<br>⋮<br>661 → 662</td>
-        <td>490</td>
-        <td>Forge Hammer</td>
-        <td class="verified">Verified</td>
-       </tr>
-      <tr>
-        <td>662 → 663<br>⋮<br>668 → 669</td>
-        <td>495</td>
-        <td>Forge Hammer</td>
-        <td class="verified">Verified</td>
-       </tr>
-      <tr>
-        <td>669 → 670<br>⋮<br>676 → 677</td>
-        <td>500</td>
-        <td>Forge Hammer</td>
-        <td class="verified">Verified</td>
-       </tr>
-      <tr>
-        <td>677 → 678<br>⋮<br>684 → 685</td>
-        <td>505</td>
-        <td>Forge Hammer</td>
-        <td class="verified">Verified</td>
-       </tr>
-      <tr>
-        <td>685 → 686<br>⋮<br>691 → 692</td>
-        <td>510</td>
-        <td>Forge Hammer</td>
-        <td class="verified">Verified</td>
-       </tr>
-      <tr>
-        <td>692 → 693<br>⋮<br>699 → 700</td>
-        <td>515</td>
-        <td>Forge Hammer</td>
-        <td class="verified">Verified</td>
-       </tr>
-      <tr>
-        <td>700 → 701<br>⋮<br>706 → 707</td>
-        <td>520</td>
-        <td>Forge Hammer</td>
-        <td class="verified">Verified</td>
-       </tr>
-      <tr>
-        <td>707 → 708<br>⋮<br>714 → 715</td>
-        <td>525</td>
-        <td>Forge Hammer</td>
-        <td class="verified">Verified</td>
-       </tr>
-      <tr>
-        <td>715 → 716<br>⋮<br>721 → 722</td>
-        <td>530</td>
-        <td>Forge Hammer</td>
-        <td class="verified">Verified</td>
-       </tr>
-      <tr>
-        <td>722 → 723<br>⋮<br>729 → 730</td>
-        <td>535</td>
-        <td>Forge Hammer</td>
-        <td class="verified">Verified</td>
-       </tr>
-      <tr>
-        <td>730 → 731<br>⋮<br>737 → 738</td>
-        <td>540</td>
-        <td>Forge Hammer</td>
-        <td class="verified">Verified</td>
-       </tr>
-      <tr>
-        <td>738 → 739<br>⋮<br>745 → 746</td>
-        <td>545</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>746 → 747<br>⋮<br>753 → 754</td>
-        <td>550</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>754 → 755<br>⋮<br>760 → 761</td>
-        <td>555</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>761 → 762<br>⋮<br>768 → 769</td>
-        <td>560</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>769 → 770<br>⋮<br>775 → 776</td>
-        <td>565</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>776 → 777<br>⋮<br>783 → 784</td>
-        <td>570</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>784 → 785<br>⋮<br>791 → 792</td>
-        <td>575</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>792 → 793<br>⋮<br>798 → 799</td>
-        <td>580</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>799 → 800<br>⋮<br>806 → 807</td>
-        <td>585</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>807 → 808<br>⋮<br>814 → 815</td>
-        <td>590</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>815 → 816<br>⋮<br>821 → 822</td>
-        <td>595</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>822 → 823<br>⋮<br>829 → 830</td>
-        <td>600</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>830 → 831<br>⋮<br>837 → 838</td>
-        <td>605</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>838 → 839<br>⋮<br>845 → 846</td>
-        <td>610</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>846 → 847<br>⋮<br>852 → 853</td>
-        <td>615</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>853 → 854<br>⋮<br>860 → 861</td>
-        <td>620</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>861 → 862<br>⋮<br>868 → 869</td>
-        <td>625</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>869 → 870<br>⋮<br>875 → 876</td>
-        <td>630</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>876 → 877<br>⋮<br>883 → 884</td>
-        <td>635</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>884 → 885<br>⋮<br>890 → 891</td>
-        <td>640</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>891 → 892<br>⋮<br>897 → 898</td>
-        <td>645</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>898 → 899<br>⋮<br>905 → 906</td>
-        <td>650</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>906 → 907<br>⋮<br>913 → 914</td>
-        <td>655</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>914 → 915<br>⋮<br>920 → 921</td>
-        <td>660</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>921 → 922<br>⋮<br>928 → 929</td>
-        <td>665</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>929 → 930<br>⋮<br>936 → 937</td>
-        <td>670</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>937 → 938<br>⋮<br>943 → 944</td>
-        <td>675</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>944 → 945<br>⋮<br>951 → 952</td>
-        <td>680</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>952 → 953<br>⋮<br>959 → 960</td>
-        <td>685</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>960 → 961<br>⋮<br>967 → 968</td>
-        <td>690</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>968 → 969<br>⋮<br>975 → 976</td>
-        <td>695</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>976 → 977<br>⋮<br>983 → 984</td>
-        <td>700</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>984 → 985<br>⋮<br>991 → 992</td>
-        <td>705</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>992 → 993<br>⋮<br>999 → 1000</td>
-        <td>710</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>1000 → 1001<br>⋮<br>1007 → 1008</td>
-        <td>715</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>1008 → 1009<br>⋮<br>1015 → 1016</td>
-        <td>720</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>1016 → 1017<br>⋮<br>1023 → 1024</td>
-        <td>725</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>1024 → 1025<br>⋮<br>1031 → 1032</td>
-        <td>730</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>1032 → 1033<br>⋮<br>1039 → 1040</td>
-        <td>735</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>1040 → 1041<br>⋮<br>1047 → 1048</td>
-        <td>740</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>1048 → 1049<br>⋮<br>1055 → 1056</td>
-        <td>745</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>1056 → 1057<br>⋮<br>1063 → 1064</td>
-        <td>750</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>1064 → 1065<br>⋮<br>1070 → 1071</td>
-        <td>755</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>1071 → 1072<br>⋮<br>1078 → 1079</td>
-        <td>760</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>1079 → 1080<br>⋮<br>1086 → 1087</td>
-        <td>765</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>1087 → 1088<br>⋮<br>1094 → 1095</td>
-        <td>770</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>1095 → 1096<br>⋮<br>1102 → 1103</td>
-        <td>775</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>1103 → 1104<br>⋮<br>1109 → 1110</td>
-        <td>780</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>1110 → 1111<br>⋮<br>1117 → 1118</td>
-        <td>785</td>
-        <td>Forge Hammer</td>
-        <td class="verified">Verified</td>
-       </tr>
-      <tr>
-        <td>1118 → 1119<br>⋮<br>1125 → 1126</td>
-        <td>790</td>
-        <td>Forge Hammer</td>
-        <td class="verified">Verified</td>
-       </tr>
-      <tr>
-        <td>1126 → 1127<br>⋮<br>1133 → 1134</td>
-        <td>795</td>
-        <td>Forge Hammer</td>
-        <td class="verified">Verified</td>
-       </tr>
-      <tr>
-        <td>1134 → 1135<br>⋮<br>1141 → 1142</td>
-        <td>800</td>
-        <td>Forge Hammer</td>
-        <td class="verified">Verified</td>
-       </tr>
-      <tr>
-        <td>1142 → 1143<br>⋮<br>1149 → 1150</td>
-        <td>805</td>
-        <td>Forge Hammer</td>
-        <td class="verified">Verified</td>
-       </tr>
-      <tr>
-        <td>1150 → 1151<br>⋮<br>1156 → 1157</td>
-        <td>810</td>
-        <td>Forge Hammer</td>
-        <td class="verified">Verified</td>
-       </tr>
-      <tr>
-        <td>1157 → 1158<br>⋮<br>1164 → 1165</td>
-        <td>815</td>
-        <td>Forge Hammer</td>
-        <td class="verified">Verified</td>
-       </tr>
-      <tr>
-        <td>1165 → 1166<br>⋮<br>1172 → 1173</td>
-        <td>820</td>
-        <td>Forge Hammer</td>
-        <td class="verified">Verified</td>
-       </tr>
-      <tr>
-        <td>1173 → 1174<br>⋮<br>1180 → 1181</td>
-        <td>825</td>
-        <td>Forge Hammer</td>
-        <td class="verified">Verified</td>
-       </tr>
-      <tr>
-        <td>1181 → 1182<br>⋮<br>1188 → 1189</td>
-        <td>830</td>
-        <td>Forge Hammer</td>
-        <td class="verified">Verified</td>
-       </tr>
-      <tr>
-        <td>1189 → 1190<br>⋮<br>1196 → 1197</td>
-        <td>835</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>1197 → 1198<br>⋮<br>1204 → 1205</td>
-        <td>840</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>1205 → 1206<br>⋮<br>1212 → 1213</td>
-        <td>845</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>1213 → 1214<br>⋮<br>1220 → 1221</td>
-        <td>850</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>1221 → 1222<br>⋮<br>1228 → 1229</td>
-        <td>855</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>1229 → 1230<br>⋮<br>1236 → 1237</td>
-        <td>860</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>1237 → 1238<br>⋮<br>1244 → 1245</td>
-        <td>865</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>1245 → 1246<br>⋮<br>1252 → 1253</td>
-        <td>870</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>1253 → 1254<br>⋮<br>1260 → 1261</td>
-        <td>875</td>
-        <td>Forge Hammer</td>
-        <td class="verified">Verified</td>
-       </tr>
-      <tr>
-        <td>1261 → 1262<br>⋮<br>1268 → 1269</td>
-        <td>880</td>
-        <td>Forge Hammer</td>
-        <td class="verified">Verified</td>
-       </tr>
-      <tr>
-        <td>1269 → 1270<br>⋮<br>1276 → 1277</td>
-        <td>885</td>
-        <td>Forge Hammer</td>
-        <td class="verified">Verified</td>
-       </tr>
-      <tr>
-        <td>1277 → 1278<br>⋮<br>1284 → 1285</td>
-        <td>890</td>
-        <td>Forge Hammer</td>
-        <td class="verified">Verified</td>
-       </tr>
-      <tr>
-        <td>1285 → 1286<br>⋮<br>1292 → 1293</td>
-        <td>895</td>
-        <td>Forge Hammer</td>
-        <td class="verified">Verified</td>
-       </tr>
-      <tr>
-        <td>1293 → 1294<br>⋮<br>1300 → 1301</td>
-        <td>900</td>
-        <td>Forge Hammer</td>
-        <td class="verified">Verified</td>
-       </tr>
-      <tr>
-        <td>1301 → 1302<br>⋮<br>1308 → 1309</td>
-        <td>905</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>1309 → 1310<br>⋮<br>1316 → 1317</td>
-        <td>910</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>1317 → 1318<br>⋮<br>1324 → 1325</td>
-        <td>915</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>1325 → 1326<br>⋮<br>1332 → 1333</td>
-        <td>920</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>1333 → 1334<br>⋮<br>1340 → 1341</td>
-        <td>925</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>1341 → 1342<br>⋮<br>1348 → 1349</td>
-        <td>930</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>1349 → 1350<br>⋮<br>1356 → 1357</td>
-        <td>935</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>1357 → 1358<br>⋮<br>1364 → 1365</td>
-        <td>940</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>1365 → 1366<br>⋮<br>1372 → 1373</td>
-        <td>945</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>1373 → 1374<br>⋮<br>1380 → 1381</td>
-        <td>950</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>1381 → 1382<br>⋮<br>1388 → 1389</td>
-        <td>955</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>1389 → 1390<br>⋮<br>1396 → 1397</td>
-        <td>960</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>1397 → 1398<br>⋮<br>1404 → 1405</td>
-        <td>965</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>1405 → 1406<br>⋮<br>1412 → 1413</td>
-        <td>970</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>1413 → 1414<br>⋮<br>1420 → 1421</td>
-        <td>975</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>1421 → 1422<br>⋮<br>1428 → 1429</td>
-        <td>980</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>1429 → 1430<br>⋮<br>1436 → 1437</td>
-        <td>985</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>1437 → 1438<br>⋮<br>1444 → 1445</td>
-        <td>990</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>1445 → 1446<br>⋮<br>1452 → 1453</td>
-        <td>995</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>1453 → 1454<br>⋮<br>1460 → 1461</td>
-        <td>1000</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>1461 → 1462<br>⋮<br>1468 → 1469</td>
-        <td>1005</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>1469 → 1470<br>⋮<br>1476 → 1477</td>
-        <td>1010</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>1477 → 1478<br>⋮<br>1484 → 1485</td>
-        <td>1015</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>1485 → 1486<br>⋮<br>1492 → 1493</td>
-        <td>1020</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>1493 → 1494<br>⋮<br>1500 → 1501</td>
-        <td>1025</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>1501 → 1502<br>⋮<br>1509 → 1510</td>
-        <td>1030</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>1510 → 1511<br>⋮<br>1517 → 1518</td>
-        <td>1035</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>1518 → 1519<br>⋮<br>1525 → 1526</td>
-        <td>1040</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>1526 → 1527<br>⋮<br>1533 → 1534</td>
-        <td>1045</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>1534 → 1535<br>⋮<br>1541 → 1542</td>
-        <td>1050</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>1542 → 1543<br>⋮<br>1549 → 1550</td>
-        <td>1055</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>1550 → 1551<br>⋮<br>1557 → 1558</td>
-        <td>1060</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>1558 → 1559<br>⋮<br>1565 → 1566</td>
-        <td>1065</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>1566 → 1567<br>⋮<br>1573 → 1574</td>
-        <td>1070</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>1574 → 1575<br>⋮<br>1581 → 1582</td>
-        <td>1075</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>1582 → 1583<br>⋮<br>1590 → 1591</td>
-        <td>1080</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>1591 → 1592<br>⋮<br>1599 → 1600</td>
-        <td>1085</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>1600 → 1601<br>⋮<br>1608 → 1609</td>
-        <td>1090</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>1609 → 1610<br>⋮<br>1617 → 1618</td>
-        <td>1095</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>1618 → 1619<br>⋮<br>1625 → 1626</td>
-        <td>1100</td>
-        <td>Forge Hammer</td>
-        <td class="verified">Verified</td>
-       </tr>
-      <tr>
-        <td>1626 → 1627<br>⋮<br>1634 → 1635</td>
-        <td>1105</td>
-        <td>Forge Hammer</td>
-        <td class="verified">Verified</td>
-       </tr>
-      <tr>
-        <td>1635 → 1636<br>⋮<br>1642 → 1643</td>
-        <td>1110</td>
-        <td>Forge Hammer</td>
-        <td class="verified">Verified</td>
-       </tr>
-      <tr>
-        <td>1643 → 1644<br>⋮<br>1650 → 1651</td>
-        <td>1115</td>
-        <td>Forge Hammer</td>
-        <td class="verified">Verified</td>
-       </tr>
-      <tr>
-        <td>1651 → 1652<br>⋮<br>1658 → 1659</td>
-        <td>1120</td>
-        <td>Forge Hammer</td>
-        <td class="verified">Verified</td>
-       </tr>
-      <tr>
-        <td>1659 → 1660<br>⋮<br>1666 → 1667</td>
-        <td>1125</td>
-        <td>Forge Hammer</td>
-        <td class="verified">Verified</td>
-       </tr>
-      <tr>
-        <td>1667 → 1668<br>⋮<br>1674 → 1675</td>
-        <td>1130</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>1675 → 1676<br>⋮<br>1682 → 1683</td>
-        <td>1135</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>1683 → 1684<br>⋮<br>1690 → 1691</td>
-        <td>1140</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>1691 → 1692<br>⋮<br>1698 → 1699</td>
-        <td>1145</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>1699 → 1700<br>⋮<br>1706 → 1707</td>
-        <td>1150</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>1707 → 1708<br>⋮<br>1714 → 1715</td>
-        <td>1155</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>1715 → 1716<br>⋮<br>1722 → 1723</td>
-        <td>1160</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>1723 → 1724<br>⋮<br>1730 → 1731</td>
-        <td>1165</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>1731 → 1732<br>⋮<br>1738 → 1739</td>
-        <td>1170</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>1739 → 1740<br>⋮<br>1746 → 1747</td>
-        <td>1175</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>1747 → 1748<br>⋮<br>1754 → 1755</td>
-        <td>1180</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>1755 → 1756<br>⋮<br>1762 → 1763</td>
-        <td>1185</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>1763 → 1764<br>⋮<br>1770 → 1771</td>
-        <td>1190</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>1771 → 1772<br>⋮<br>1778 → 1779</td>
-        <td>1195</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>1779 → 1780<br>⋮<br>1786 → 1787</td>
-        <td>1200</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>1787 → 1788<br>⋮<br>1794 → 1795</td>
-        <td>1205</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>1795 → 1796<br>⋮<br>1802 → 1803</td>
-        <td>1210</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>1803 → 1804<br>⋮<br>1810 → 1811</td>
-        <td>1215</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>1811 → 1812<br>⋮<br>1818 → 1819</td>
-        <td>1220</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>1819 → 1820<br>⋮<br>1826 → 1827</td>
-        <td>1225</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>1827 → 1828<br>⋮<br>1834 → 1835</td>
-        <td>1230</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>1835 → 1836<br>⋮<br>1842 → 1843</td>
-        <td>1235</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>1843 → 1844<br>⋮<br>1850 → 1851</td>
-        <td>1240</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>1851 → 1852<br>⋮<br>1858 → 1859</td>
-        <td>1245</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>1859 → 1860<br>⋮<br>1866 → 1867</td>
-        <td>1250</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>1867 → 1868<br>⋮<br>1874 → 1875</td>
-        <td>1255</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>1875 → 1876<br>⋮<br>1883 → 1884</td>
-        <td>1260</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>1884 → 1885<br>⋮<br>1892 → 1893</td>
-        <td>1265</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>1893 → 1894<br>⋮<br>1900 → 1901</td>
-        <td>1270</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>1901 → 1902<br>⋮<br>1909 → 1910</td>
-        <td>1275</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>1910 → 1911<br>⋮<br>1918 → 1919</td>
-        <td>1280</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>1919 → 1920<br>⋮<br>1927 → 1928</td>
-        <td>1285</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>1928 → 1929<br>⋮<br>1936 → 1937</td>
-        <td>1290</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>1937 → 1938<br>⋮<br>1945 → 1946</td>
-        <td>1295</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>1946 → 1947<br>⋮<br>1954 → 1955</td>
-        <td>1300</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>1955 → 1956<br>⋮<br>1963 → 1964</td>
-        <td>1305</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>1964 → 1965<br>⋮<br>1972 → 1973</td>
-        <td>1310</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>1973 → 1974<br>⋮<br>1981 → 1982</td>
-        <td>1315</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>1982 → 1983<br>⋮<br>1990 → 1991</td>
-        <td>1320</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-      <tr>
-        <td>1991 → 1992<br>⋮<br>1999 → 2000</td>
-        <td>1325</td>
-        <td>Forge Hammer</td>
-        <td class="unverified">Extrapolated</td>
-       </tr>
-    </tbody>
-  </table>
-
+<div class="tabbed-table-content">
+<table class="upgrade-table">
+<thead>
+<tr>
+<th class="level-col">Level</th>
+<th class="cost-col">Hammer Cost</th>
+<th class="verification-col">Verification</th>
+</tr>
+</thead>
+<tbody>
+<tr id="bracket-0">
+<td class="level-col">0 → 1<br>⋮<br>3 → 4</td>
+<td class="cost-col">5</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="bracket-1">
+<td class="level-col">4 → 5<br>⋮<br>7 → 8</td>
+<td class="cost-col">10</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="bracket-2">
+<td class="level-col">8 → 9<br>⋮<br>12 → 13</td>
+<td class="cost-col">15</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="bracket-3">
+<td class="level-col">13 → 14<br>⋮<br>17 → 18</td>
+<td class="cost-col">20</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="bracket-4">
+<td class="level-col">18 → 19<br>⋮<br>23 → 24</td>
+<td class="cost-col">25</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="bracket-5">
+<td class="level-col">24 → 25<br>⋮<br>28 → 29</td>
+<td class="cost-col">30</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="bracket-6">
+<td class="level-col">29 → 30<br>⋮<br>34 → 35</td>
+<td class="cost-col">35</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="bracket-7">
+<td class="level-col">35 → 36<br>⋮<br>39 → 40</td>
+<td class="cost-col">40</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="bracket-8">
+<td class="level-col">40 → 41<br>⋮<br>45 → 46</td>
+<td class="cost-col">45</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="bracket-9">
+<td class="level-col">46 → 47<br>⋮<br>51 → 52</td>
+<td class="cost-col">50</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="bracket-10">
+<td class="level-col">52 → 53<br>⋮<br>57 → 58</td>
+<td class="cost-col">55</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="bracket-11">
+<td class="level-col">58 → 59<br>⋮<br>63 → 64</td>
+<td class="cost-col">60</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="bracket-12">
+<td class="level-col">64 → 65<br>⋮<br>69 → 70</td>
+<td class="cost-col">65</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="bracket-13">
+<td class="level-col">70 → 71<br>⋮<br>75 → 76</td>
+<td class="cost-col">70</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="bracket-14">
+<td class="level-col">76 → 77<br>⋮<br>81 → 82</td>
+<td class="cost-col">75</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="bracket-15">
+<td class="level-col">82 → 83<br>⋮<br>87 → 88</td>
+<td class="cost-col">80</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="bracket-16">
+<td class="level-col">88 → 89<br>⋮<br>93 → 94</td>
+<td class="cost-col">85</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="bracket-17">
+<td class="level-col">94 → 95<br>⋮<br>99 → 100</td>
+<td class="cost-col">90</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="bracket-18">
+<td class="level-col">100 → 101<br>⋮<br>106 → 107</td>
+<td class="cost-col">95</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="bracket-19">
+<td class="level-col">107 → 108<br>⋮<br>112 → 113</td>
+<td class="cost-col">100</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="bracket-20">
+<td class="level-col">113 → 114<br>⋮<br>118 → 119</td>
+<td class="cost-col">105</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="bracket-21">
+<td class="level-col">119 → 120<br>⋮<br>124 → 125</td>
+<td class="cost-col">110</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="bracket-22">
+<td class="level-col">125 → 126<br>⋮<br>131 → 132</td>
+<td class="cost-col">115</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="bracket-23">
+<td class="level-col">132 → 133<br>⋮<br>137 → 138</td>
+<td class="cost-col">120</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="bracket-24">
+<td class="level-col">138 → 139<br>⋮<br>144 → 145</td>
+<td class="cost-col">125</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="bracket-25">
+<td class="level-col">145 → 146<br>⋮<br>150 → 151</td>
+<td class="cost-col">130</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="bracket-26">
+<td class="level-col">151 → 152<br>⋮<br>157 → 158</td>
+<td class="cost-col">135</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="bracket-27">
+<td class="level-col">158 → 159<br>⋮<br>163 → 164</td>
+<td class="cost-col">140</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="bracket-28">
+<td class="level-col">164 → 165<br>⋮<br>170 → 171</td>
+<td class="cost-col">145</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="bracket-29">
+<td class="level-col">171 → 172<br>⋮<br>176 → 177</td>
+<td class="cost-col">150</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="bracket-30">
+<td class="level-col">177 → 178<br>⋮<br>183 → 184</td>
+<td class="cost-col">155</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="bracket-31">
+<td class="level-col">184 → 185<br>⋮<br>190 → 191</td>
+<td class="cost-col">160</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="bracket-32">
+<td class="level-col">191 → 192<br>⋮<br>196 → 197</td>
+<td class="cost-col">165</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="bracket-33">
+<td class="level-col">197 → 198<br>⋮<br>203 → 204</td>
+<td class="cost-col">170</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="bracket-34">
+<td class="level-col">204 → 205<br>⋮<br>210 → 211</td>
+<td class="cost-col">175</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="bracket-35">
+<td class="level-col">211 → 212<br>⋮<br>216 → 217</td>
+<td class="cost-col">180</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="bracket-36">
+<td class="level-col">217 → 218<br>⋮<br>223 → 224</td>
+<td class="cost-col">185</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="bracket-37">
+<td class="level-col">224 → 225<br>⋮<br>230 → 231</td>
+<td class="cost-col">190</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="bracket-38">
+<td class="level-col">231 → 232<br>⋮<br>236 → 237</td>
+<td class="cost-col">195</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="bracket-39">
+<td class="level-col">237 → 238<br>⋮<br>243 → 244</td>
+<td class="cost-col">200</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="bracket-40">
+<td class="level-col">244 → 245<br>⋮<br>250 → 251</td>
+<td class="cost-col">205</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="bracket-41">
+<td class="level-col">251 → 252<br>⋮<br>257 → 258</td>
+<td class="cost-col">210</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="bracket-42">
+<td class="level-col">258 → 259<br>⋮<br>264 → 265</td>
+<td class="cost-col">215</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="bracket-43">
+<td class="level-col">265 → 266<br>⋮<br>271 → 272</td>
+<td class="cost-col">220</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="bracket-44">
+<td class="level-col">272 → 273<br>⋮<br>277 → 278</td>
+<td class="cost-col">225</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="bracket-45">
+<td class="level-col">278 → 279<br>⋮<br>284 → 285</td>
+<td class="cost-col">230</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="bracket-46">
+<td class="level-col">285 → 286<br>⋮<br>291 → 292</td>
+<td class="cost-col">235</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="bracket-47">
+<td class="level-col">292 → 293<br>⋮<br>298 → 299</td>
+<td class="cost-col">240</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="bracket-48">
+<td class="level-col">299 → 300<br>⋮<br>305 → 306</td>
+<td class="cost-col">245</td>
+<td class="verification-col unverified">Extrapolated</td>
+</tr>
+<tr id="bracket-49">
+<td class="level-col">306 → 307<br>⋮<br>312 → 313</td>
+<td class="cost-col">250</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="bracket-50">
+<td class="level-col">313 → 314<br>⋮<br>319 → 320</td>
+<td class="cost-col">255</td>
+<td class="verification-col unverified">Extrapolated</td>
+</tr>
+<tr id="bracket-51">
+<td class="level-col">320 → 321<br>⋮<br>326 → 327</td>
+<td class="cost-col">260</td>
+<td class="verification-col unverified">Extrapolated</td>
+</tr>
+<tr id="bracket-52">
+<td class="level-col">327 → 328<br>⋮<br>333 → 334</td>
+<td class="cost-col">265</td>
+<td class="verification-col unverified">Extrapolated</td>
+</tr>
+<tr id="bracket-53">
+<td class="level-col">334 → 335<br>⋮<br>340 → 341</td>
+<td class="cost-col">270</td>
+<td class="verification-col unverified">Extrapolated</td>
+</tr>
+<tr id="bracket-54">
+<td class="level-col">341 → 342<br>⋮<br>347 → 348</td>
+<td class="cost-col">275</td>
+<td class="verification-col unverified">Extrapolated</td>
+</tr>
+<tr id="bracket-55">
+<td class="level-col">348 → 349<br>⋮<br>354 → 355</td>
+<td class="cost-col">280</td>
+<td class="verification-col unverified">Extrapolated</td>
+</tr>
+<tr id="bracket-56">
+<td class="level-col">355 → 356<br>⋮<br>361 → 362</td>
+<td class="cost-col">285</td>
+<td class="verification-col unverified">Extrapolated</td>
+</tr>
+<tr id="bracket-57">
+<td class="level-col">362 → 363<br>⋮<br>368 → 369</td>
+<td class="cost-col">290</td>
+<td class="verification-col unverified">Extrapolated</td>
+</tr>
+<tr id="bracket-58">
+<td class="level-col">369 → 370<br>⋮<br>375 → 376</td>
+<td class="cost-col">295</td>
+<td class="verification-col unverified">Extrapolated</td>
+</tr>
+<tr id="bracket-59">
+<td class="level-col">376 → 377<br>⋮<br>382 → 383</td>
+<td class="cost-col">300</td>
+<td class="verification-col unverified">Extrapolated</td>
+</tr>
+<tr id="bracket-60">
+<td class="level-col">383 → 384<br>⋮<br>389 → 390</td>
+<td class="cost-col">305</td>
+<td class="verification-col unverified">Extrapolated</td>
+</tr>
+<tr id="bracket-61">
+<td class="level-col">390 → 391<br>⋮<br>396 → 397</td>
+<td class="cost-col">310</td>
+<td class="verification-col unverified">Extrapolated</td>
+</tr>
+<tr id="bracket-62">
+<td class="level-col">397 → 398<br>⋮<br>404 → 405</td>
+<td class="cost-col">315</td>
+<td class="verification-col unverified">Extrapolated</td>
+</tr>
+<tr id="bracket-63">
+<td class="level-col">405 → 406<br>⋮<br>411 → 412</td>
+<td class="cost-col">320</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="bracket-64">
+<td class="level-col">412 → 413<br>⋮<br>418 → 419</td>
+<td class="cost-col">325</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="bracket-65">
+<td class="level-col">419 → 420<br>⋮<br>425 → 426</td>
+<td class="cost-col">330</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="bracket-66">
+<td class="level-col">426 → 427<br>⋮<br>433 → 434</td>
+<td class="cost-col">335</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="bracket-67">
+<td class="level-col">434 → 435<br>⋮<br>440 → 441</td>
+<td class="cost-col">340</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="bracket-68">
+<td class="level-col">441 → 442<br>⋮<br>447 → 448</td>
+<td class="cost-col">345</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="bracket-69">
+<td class="level-col">448 → 449<br>⋮<br>454 → 455</td>
+<td class="cost-col">350</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="bracket-70">
+<td class="level-col">455 → 456<br>⋮<br>462 → 463</td>
+<td class="cost-col">355</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="bracket-71">
+<td class="level-col">463 → 464<br>⋮<br>469 → 470</td>
+<td class="cost-col">360</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="bracket-72">
+<td class="level-col">470 → 471<br>⋮<br>476 → 477</td>
+<td class="cost-col">365</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="bracket-73">
+<td class="level-col">477 → 478<br>⋮<br>483 → 484</td>
+<td class="cost-col">370</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="bracket-74">
+<td class="level-col">484 → 485<br>⋮<br>491 → 492</td>
+<td class="cost-col">375</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="bracket-75">
+<td class="level-col">492 → 493<br>⋮<br>498 → 499</td>
+<td class="cost-col">380</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="bracket-76">
+<td class="level-col">499 → 500<br>⋮<br>505 → 506</td>
+<td class="cost-col">385</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="bracket-77">
+<td class="level-col">506 → 507<br>⋮<br>513 → 514</td>
+<td class="cost-col">390</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="bracket-78">
+<td class="level-col">514 → 515<br>⋮<br>520 → 521</td>
+<td class="cost-col">395</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="bracket-79">
+<td class="level-col">521 → 522<br>⋮<br>527 → 528</td>
+<td class="cost-col">400</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="bracket-80">
+<td class="level-col">528 → 529<br>⋮<br>535 → 536</td>
+<td class="cost-col">405</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="bracket-81">
+<td class="level-col">536 → 537<br>⋮<br>542 → 543</td>
+<td class="cost-col">410</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="bracket-82">
+<td class="level-col">543 → 544<br>⋮<br>549 → 550</td>
+<td class="cost-col">415</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="bracket-83">
+<td class="level-col">550 → 551<br>⋮<br>557 → 558</td>
+<td class="cost-col">420</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="bracket-84">
+<td class="level-col">558 → 559<br>⋮<br>564 → 565</td>
+<td class="cost-col">425</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="bracket-85">
+<td class="level-col">565 → 566<br>⋮<br>571 → 572</td>
+<td class="cost-col">430</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="bracket-86">
+<td class="level-col">572 → 573<br>⋮<br>579 → 580</td>
+<td class="cost-col">435</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="bracket-87">
+<td class="level-col">580 → 581<br>⋮<br>586 → 587</td>
+<td class="cost-col">440</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="bracket-88">
+<td class="level-col">587 → 588<br>⋮<br>594 → 595</td>
+<td class="cost-col">445</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="bracket-89">
+<td class="level-col">595 → 596<br>⋮<br>601 → 602</td>
+<td class="cost-col">450</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="bracket-90">
+<td class="level-col">602 → 603<br>⋮<br>609 → 610</td>
+<td class="cost-col">455</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="bracket-91">
+<td class="level-col">610 → 611<br>⋮<br>616 → 617</td>
+<td class="cost-col">460</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="bracket-92">
+<td class="level-col">617 → 618<br>⋮<br>624 → 625</td>
+<td class="cost-col">465</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="bracket-93">
+<td class="level-col">625 → 626<br>⋮<br>631 → 632</td>
+<td class="cost-col">470</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="bracket-94">
+<td class="level-col">632 → 633<br>⋮<br>638 → 639</td>
+<td class="cost-col">475</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="bracket-95">
+<td class="level-col">639 → 640<br>⋮<br>646 → 647</td>
+<td class="cost-col">480</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="bracket-96">
+<td class="level-col">647 → 648<br>⋮<br>653 → 654</td>
+<td class="cost-col">485</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="bracket-97">
+<td class="level-col">654 → 655<br>⋮<br>661 → 662</td>
+<td class="cost-col">490</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="bracket-98">
+<td class="level-col">662 → 663<br>⋮<br>668 → 669</td>
+<td class="cost-col">495</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="bracket-99">
+<td class="level-col">669 → 670<br>⋮<br>676 → 677</td>
+<td class="cost-col">500</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="bracket-100">
+<td class="level-col">677 → 678<br>⋮<br>684 → 685</td>
+<td class="cost-col">505</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="bracket-101">
+<td class="level-col">685 → 686<br>⋮<br>691 → 692</td>
+<td class="cost-col">510</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="bracket-102">
+<td class="level-col">692 → 693<br>⋮<br>699 → 700</td>
+<td class="cost-col">515</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="bracket-103">
+<td class="level-col">700 → 701<br>⋮<br>706 → 707</td>
+<td class="cost-col">520</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="bracket-104">
+<td class="level-col">707 → 708<br>⋮<br>714 → 715</td>
+<td class="cost-col">525</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="bracket-105">
+<td class="level-col">715 → 716<br>⋮<br>721 → 722</td>
+<td class="cost-col">530</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="bracket-106">
+<td class="level-col">722 → 723<br>⋮<br>729 → 730</td>
+<td class="cost-col">535</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="bracket-107">
+<td class="level-col">730 → 731<br>⋮<br>736 → 737</td>
+<td class="cost-col">540</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="bracket-108">
+<td class="level-col">737 → 738<br>⋮<br>744 → 745</td>
+<td class="cost-col">545</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="bracket-109">
+<td class="level-col">745 → 746<br>⋮<br>752 → 753</td>
+<td class="cost-col">550</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="bracket-110">
+<td class="level-col">753 → 754<br>⋮<br>759 → 760</td>
+<td class="cost-col">555</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="bracket-111">
+<td class="level-col">760 → 761<br>⋮<br>767 → 768</td>
+<td class="cost-col">560</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="bracket-112">
+<td class="level-col">768 → 769<br>⋮<br>775 → 776</td>
+<td class="cost-col">565</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="bracket-113">
+<td class="level-col">776 → 777<br>⋮<br>782 → 783</td>
+<td class="cost-col">570</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="bracket-114">
+<td class="level-col">783 → 784<br>⋮<br>790 → 791</td>
+<td class="cost-col">575</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="bracket-115">
+<td class="level-col">791 → 792<br>⋮<br>797 → 798</td>
+<td class="cost-col">580</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="bracket-116">
+<td class="level-col">798 → 799<br>⋮<br>805 → 806</td>
+<td class="cost-col">585</td>
+<td class="verification-col unverified">Extrapolated</td>
+</tr>
+<tr id="bracket-117">
+<td class="level-col">806 → 807<br>⋮<br>813 → 814</td>
+<td class="cost-col">590</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="bracket-118">
+<td class="level-col">814 → 815<br>⋮<br>820 → 821</td>
+<td class="cost-col">595</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="bracket-119">
+<td class="level-col">821 → 822<br>⋮<br>828 → 829</td>
+<td class="cost-col">600</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="bracket-120">
+<td class="level-col">829 → 830<br>⋮<br>836 → 837</td>
+<td class="cost-col">605</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="bracket-121">
+<td class="level-col">837 → 838<br>⋮<br>844 → 845</td>
+<td class="cost-col">610</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="bracket-122">
+<td class="level-col">845 → 846<br>⋮<br>851 → 852</td>
+<td class="cost-col">615</td>
+<td class="verification-col unverified">Extrapolated</td>
+</tr>
+<tr id="bracket-123">
+<td class="level-col">852 → 853<br>⋮<br>858 → 859</td>
+<td class="cost-col">620</td>
+<td class="verification-col unverified">Extrapolated</td>
+</tr>
+<tr id="bracket-124">
+<td class="level-col">859 → 860<br>⋮<br>866 → 867</td>
+<td class="cost-col">625</td>
+<td class="verification-col unverified">Extrapolated</td>
+</tr>
+<tr id="bracket-125">
+<td class="level-col">867 → 868<br>⋮<br>873 → 874</td>
+<td class="cost-col">630</td>
+<td class="verification-col unverified">Extrapolated</td>
+</tr>
+<tr id="bracket-126">
+<td class="level-col">874 → 875<br>⋮<br>881 → 882</td>
+<td class="cost-col">635</td>
+<td class="verification-col unverified">Extrapolated</td>
+</tr>
+<tr id="bracket-127">
+<td class="level-col">882 → 883<br>⋮<br>888 → 889</td>
+<td class="cost-col">640</td>
+<td class="verification-col unverified">Extrapolated</td>
+</tr>
+<tr id="bracket-128">
+<td class="level-col">889 → 890<br>⋮<br>895 → 896</td>
+<td class="cost-col">645</td>
+<td class="verification-col unverified">Extrapolated</td>
+</tr>
+<tr id="bracket-129">
+<td class="level-col">896 → 897<br>⋮<br>903 → 904</td>
+<td class="cost-col">650</td>
+<td class="verification-col unverified">Extrapolated</td>
+</tr>
+<tr id="bracket-130">
+<td class="level-col">904 → 905<br>⋮<br>911 → 912</td>
+<td class="cost-col">655</td>
+<td class="verification-col unverified">Extrapolated</td>
+</tr>
+<tr id="bracket-131">
+<td class="level-col">912 → 913<br>⋮<br>918 → 919</td>
+<td class="cost-col">660</td>
+<td class="verification-col unverified">Extrapolated</td>
+</tr>
+<tr id="bracket-132">
+<td class="level-col">919 → 920<br>⋮<br>926 → 927</td>
+<td class="cost-col">665</td>
+<td class="verification-col unverified">Extrapolated</td>
+</tr>
+<tr id="bracket-133">
+<td class="level-col">927 → 928<br>⋮<br>934 → 935</td>
+<td class="cost-col">670</td>
+<td class="verification-col unverified">Extrapolated</td>
+</tr>
+<tr id="bracket-134">
+<td class="level-col">935 → 936<br>⋮<br>941 → 942</td>
+<td class="cost-col">675</td>
+<td class="verification-col unverified">Extrapolated</td>
+</tr>
+<tr id="bracket-135">
+<td class="level-col">942 → 943<br>⋮<br>949 → 950</td>
+<td class="cost-col">680</td>
+<td class="verification-col unverified">Extrapolated</td>
+</tr>
+<tr id="bracket-136">
+<td class="level-col">950 → 951<br>⋮<br>957 → 958</td>
+<td class="cost-col">685</td>
+<td class="verification-col unverified">Extrapolated</td>
+</tr>
+<tr id="bracket-137">
+<td class="level-col">958 → 959<br>⋮<br>965 → 966</td>
+<td class="cost-col">690</td>
+<td class="verification-col unverified">Extrapolated</td>
+</tr>
+<tr id="bracket-138">
+<td class="level-col">966 → 967<br>⋮<br>973 → 974</td>
+<td class="cost-col">695</td>
+<td class="verification-col unverified">Extrapolated</td>
+</tr>
+<tr id="bracket-139">
+<td class="level-col">974 → 975<br>⋮<br>981 → 982</td>
+<td class="cost-col">700</td>
+<td class="verification-col unverified">Extrapolated</td>
+</tr>
+<tr id="bracket-140">
+<td class="level-col">982 → 983<br>⋮<br>989 → 990</td>
+<td class="cost-col">705</td>
+<td class="verification-col unverified">Extrapolated</td>
+</tr>
+<tr id="bracket-141">
+<td class="level-col">990 → 991<br>⋮<br>997 → 998</td>
+<td class="cost-col">710</td>
+<td class="verification-col unverified">Extrapolated</td>
+</tr>
+<tr id="bracket-142">
+<td class="level-col">998 → 999<br>⋮<br>1005 → 1006</td>
+<td class="cost-col">715</td>
+<td class="verification-col unverified">Extrapolated</td>
+</tr>
+<tr id="bracket-143">
+<td class="level-col">1006 → 1007<br>⋮<br>1013 → 1014</td>
+<td class="cost-col">720</td>
+<td class="verification-col unverified">Extrapolated</td>
+</tr>
+<tr id="bracket-144">
+<td class="level-col">1014 → 1015<br>⋮<br>1021 → 1022</td>
+<td class="cost-col">725</td>
+<td class="verification-col unverified">Extrapolated</td>
+</tr>
+<tr id="bracket-145">
+<td class="level-col">1022 → 1023<br>⋮<br>1029 → 1030</td>
+<td class="cost-col">730</td>
+<td class="verification-col unverified">Extrapolated</td>
+</tr>
+<tr id="bracket-146">
+<td class="level-col">1030 → 1031<br>⋮<br>1037 → 1038</td>
+<td class="cost-col">735</td>
+<td class="verification-col unverified">Extrapolated</td>
+</tr>
+<tr id="bracket-147">
+<td class="level-col">1038 → 1039<br>⋮<br>1045 → 1046</td>
+<td class="cost-col">740</td>
+<td class="verification-col unverified">Extrapolated</td>
+</tr>
+<tr id="bracket-148">
+<td class="level-col">1046 → 1047<br>⋮<br>1053 → 1054</td>
+<td class="cost-col">745</td>
+<td class="verification-col unverified">Extrapolated</td>
+</tr>
+<tr id="bracket-149">
+<td class="level-col">1054 → 1055<br>⋮<br>1061 → 1062</td>
+<td class="cost-col">750</td>
+<td class="verification-col unverified">Extrapolated</td>
+</tr>
+<tr id="bracket-150">
+<td class="level-col">1062 → 1063<br>⋮<br>1069 → 1070</td>
+<td class="cost-col">755</td>
+<td class="verification-col unverified">Extrapolated</td>
+</tr>
+<tr id="bracket-151">
+<td class="level-col">1070 → 1071<br>⋮<br>1077 → 1078</td>
+<td class="cost-col">760</td>
+<td class="verification-col unverified">Extrapolated</td>
+</tr>
+<tr id="bracket-152">
+<td class="level-col">1078 → 1079<br>⋮<br>1085 → 1086</td>
+<td class="cost-col">765</td>
+<td class="verification-col unverified">Extrapolated</td>
+</tr>
+<tr id="bracket-153">
+<td class="level-col">1086 → 1087<br>⋮<br>1093 → 1094</td>
+<td class="cost-col">770</td>
+<td class="verification-col unverified">Extrapolated</td>
+</tr>
+<tr id="bracket-154">
+<td class="level-col">1094 → 1095<br>⋮<br>1101 → 1102</td>
+<td class="cost-col">775</td>
+<td class="verification-col unverified">Extrapolated</td>
+</tr>
+<tr id="bracket-155">
+<td class="level-col">1102 → 1103<br>⋮<br>1109 → 1110</td>
+<td class="cost-col">780</td>
+<td class="verification-col unverified">Extrapolated</td>
+</tr>
+<tr id="bracket-156">
+<td class="level-col">1110 → 1111<br>⋮<br>1117 → 1118</td>
+<td class="cost-col">785</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="bracket-157">
+<td class="level-col">1118 → 1119<br>⋮<br>1125 → 1126</td>
+<td class="cost-col">790</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="bracket-158">
+<td class="level-col">1126 → 1127<br>⋮<br>1133 → 1134</td>
+<td class="cost-col">795</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="bracket-159">
+<td class="level-col">1134 → 1135<br>⋮<br>1141 → 1142</td>
+<td class="cost-col">800</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="bracket-160">
+<td class="level-col">1142 → 1143<br>⋮<br>1149 → 1150</td>
+<td class="cost-col">805</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="bracket-161">
+<td class="level-col">1150 → 1151<br>⋮<br>1156 → 1157</td>
+<td class="cost-col">810</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="bracket-162">
+<td class="level-col">1157 → 1158<br>⋮<br>1164 → 1165</td>
+<td class="cost-col">815</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="bracket-163">
+<td class="level-col">1165 → 1166<br>⋮<br>1172 → 1173</td>
+<td class="cost-col">820</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="bracket-164">
+<td class="level-col">1173 → 1174<br>⋮<br>1180 → 1181</td>
+<td class="cost-col">825</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="bracket-165">
+<td class="level-col">1181 → 1182<br>⋮<br>1188 → 1189</td>
+<td class="cost-col">830</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="bracket-166">
+<td class="level-col">1189 → 1190<br>⋮<br>1196 → 1197</td>
+<td class="cost-col">835</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="bracket-167">
+<td class="level-col">1197 → 1198<br>⋮<br>1204 → 1205</td>
+<td class="cost-col">840</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="bracket-168">
+<td class="level-col">1205 → 1206<br>⋮<br>1212 → 1213</td>
+<td class="cost-col">845</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="bracket-169">
+<td class="level-col">1213 → 1214<br>⋮<br>1220 → 1221</td>
+<td class="cost-col">850</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="bracket-170">
+<td class="level-col">1221 → 1222<br>⋮<br>1228 → 1229</td>
+<td class="cost-col">855</td>
+<td class="verification-col unverified">Extrapolated</td>
+</tr>
+<tr id="bracket-171">
+<td class="level-col">1229 → 1230<br>⋮<br>1236 → 1237</td>
+<td class="cost-col">860</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="bracket-172">
+<td class="level-col">1237 → 1238<br>⋮<br>1244 → 1245</td>
+<td class="cost-col">865</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="bracket-173">
+<td class="level-col">1245 → 1246<br>⋮<br>1252 → 1253</td>
+<td class="cost-col">870</td>
+<td class="verification-col unverified">Extrapolated</td>
+</tr>
+<tr id="bracket-174">
+<td class="level-col">1253 → 1254<br>⋮<br>1260 → 1261</td>
+<td class="cost-col">875</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="bracket-175">
+<td class="level-col">1261 → 1262<br>⋮<br>1268 → 1269</td>
+<td class="cost-col">880</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="bracket-176">
+<td class="level-col">1269 → 1270<br>⋮<br>1276 → 1277</td>
+<td class="cost-col">885</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="bracket-177">
+<td class="level-col">1277 → 1278<br>⋮<br>1284 → 1285</td>
+<td class="cost-col">890</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="bracket-178">
+<td class="level-col">1285 → 1286<br>⋮<br>1292 → 1293</td>
+<td class="cost-col">895</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="bracket-179">
+<td class="level-col">1293 → 1294<br>⋮<br>1300 → 1301</td>
+<td class="cost-col">900</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="bracket-180">
+<td class="level-col">1301 → 1302<br>⋮<br>1308 → 1309</td>
+<td class="cost-col">905</td>
+<td class="verification-col unverified">Extrapolated</td>
+</tr>
+<tr id="bracket-181">
+<td class="level-col">1309 → 1310<br>⋮<br>1316 → 1317</td>
+<td class="cost-col">910</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="bracket-182">
+<td class="level-col">1317 → 1318<br>⋮<br>1324 → 1325</td>
+<td class="cost-col">915</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="bracket-183">
+<td class="level-col">1325 → 1326<br>⋮<br>1332 → 1333</td>
+<td class="cost-col">920</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="bracket-184">
+<td class="level-col">1333 → 1334<br>⋮<br>1340 → 1341</td>
+<td class="cost-col">925</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="bracket-185">
+<td class="level-col">1341 → 1342<br>⋮<br>1349 → 1350</td>
+<td class="cost-col">930</td>
+<td class="verification-col unverified">Extrapolated</td>
+</tr>
+<tr id="bracket-186">
+<td class="level-col">1350 → 1351<br>⋮<br>1357 → 1358</td>
+<td class="cost-col">935</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="bracket-187">
+<td class="level-col">1358 → 1359<br>⋮<br>1365 → 1366</td>
+<td class="cost-col">940</td>
+<td class="verification-col unverified">Extrapolated</td>
+</tr>
+<tr id="bracket-188">
+<td class="level-col">1366 → 1367<br>⋮<br>1373 → 1374</td>
+<td class="cost-col">945</td>
+<td class="verification-col unverified">Extrapolated</td>
+</tr>
+<tr id="bracket-189">
+<td class="level-col">1374 → 1375<br>⋮<br>1381 → 1382</td>
+<td class="cost-col">950</td>
+<td class="verification-col unverified">Extrapolated</td>
+</tr>
+<tr id="bracket-190">
+<td class="level-col">1382 → 1383<br>⋮<br>1389 → 1390</td>
+<td class="cost-col">955</td>
+<td class="verification-col unverified">Extrapolated</td>
+</tr>
+<tr id="bracket-191">
+<td class="level-col">1390 → 1391<br>⋮<br>1397 → 1398</td>
+<td class="cost-col">960</td>
+<td class="verification-col unverified">Extrapolated</td>
+</tr>
+<tr id="bracket-192">
+<td class="level-col">1398 → 1399<br>⋮<br>1405 → 1406</td>
+<td class="cost-col">965</td>
+<td class="verification-col unverified">Extrapolated</td>
+</tr>
+<tr id="bracket-193">
+<td class="level-col">1406 → 1407<br>⋮<br>1413 → 1414</td>
+<td class="cost-col">970</td>
+<td class="verification-col unverified">Extrapolated</td>
+</tr>
+<tr id="bracket-194">
+<td class="level-col">1414 → 1415<br>⋮<br>1421 → 1422</td>
+<td class="cost-col">975</td>
+<td class="verification-col unverified">Extrapolated</td>
+</tr>
+<tr id="bracket-195">
+<td class="level-col">1422 → 1423<br>⋮<br>1429 → 1430</td>
+<td class="cost-col">980</td>
+<td class="verification-col unverified">Extrapolated</td>
+</tr>
+<tr id="bracket-196">
+<td class="level-col">1430 → 1431<br>⋮<br>1437 → 1438</td>
+<td class="cost-col">985</td>
+<td class="verification-col unverified">Extrapolated</td>
+</tr>
+<tr id="bracket-197">
+<td class="level-col">1438 → 1439<br>⋮<br>1445 → 1446</td>
+<td class="cost-col">990</td>
+<td class="verification-col unverified">Extrapolated</td>
+</tr>
+<tr id="bracket-198">
+<td class="level-col">1446 → 1447<br>⋮<br>1453 → 1454</td>
+<td class="cost-col">995</td>
+<td class="verification-col unverified">Extrapolated</td>
+</tr>
+<tr id="bracket-199">
+<td class="level-col">1454 → 1455<br>⋮<br>1461 → 1462</td>
+<td class="cost-col">1000</td>
+<td class="verification-col unverified">Extrapolated</td>
+</tr>
+<tr id="bracket-200">
+<td class="level-col">1462 → 1463<br>⋮<br>1469 → 1470</td>
+<td class="cost-col">1005</td>
+<td class="verification-col unverified">Extrapolated</td>
+</tr>
+<tr id="bracket-201">
+<td class="level-col">1470 → 1471<br>⋮<br>1477 → 1478</td>
+<td class="cost-col">1010</td>
+<td class="verification-col unverified">Extrapolated</td>
+</tr>
+<tr id="bracket-202">
+<td class="level-col">1478 → 1479<br>⋮<br>1485 → 1486</td>
+<td class="cost-col">1015</td>
+<td class="verification-col unverified">Extrapolated</td>
+</tr>
+<tr id="bracket-203">
+<td class="level-col">1486 → 1487<br>⋮<br>1493 → 1494</td>
+<td class="cost-col">1020</td>
+<td class="verification-col unverified">Extrapolated</td>
+</tr>
+<tr id="bracket-204">
+<td class="level-col">1494 → 1495<br>⋮<br>1501 → 1502</td>
+<td class="cost-col">1025</td>
+<td class="verification-col unverified">Extrapolated</td>
+</tr>
+<tr id="bracket-205">
+<td class="level-col">1502 → 1503<br>⋮<br>1510 → 1511</td>
+<td class="cost-col">1030</td>
+<td class="verification-col unverified">Extrapolated</td>
+</tr>
+<tr id="bracket-206">
+<td class="level-col">1511 → 1512<br>⋮<br>1518 → 1519</td>
+<td class="cost-col">1035</td>
+<td class="verification-col unverified">Extrapolated</td>
+</tr>
+<tr id="bracket-207">
+<td class="level-col">1519 → 1520<br>⋮<br>1526 → 1527</td>
+<td class="cost-col">1040</td>
+<td class="verification-col unverified">Extrapolated</td>
+</tr>
+<tr id="bracket-208">
+<td class="level-col">1527 → 1528<br>⋮<br>1534 → 1535</td>
+<td class="cost-col">1045</td>
+<td class="verification-col unverified">Extrapolated</td>
+</tr>
+<tr id="bracket-209">
+<td class="level-col">1535 → 1536<br>⋮<br>1542 → 1543</td>
+<td class="cost-col">1050</td>
+<td class="verification-col unverified">Extrapolated</td>
+</tr>
+<tr id="bracket-210">
+<td class="level-col">1543 → 1544<br>⋮<br>1550 → 1551</td>
+<td class="cost-col">1055</td>
+<td class="verification-col unverified">Extrapolated</td>
+</tr>
+<tr id="bracket-211">
+<td class="level-col">1551 → 1552<br>⋮<br>1558 → 1559</td>
+<td class="cost-col">1060</td>
+<td class="verification-col unverified">Extrapolated</td>
+</tr>
+<tr id="bracket-212">
+<td class="level-col">1559 → 1560<br>⋮<br>1566 → 1567</td>
+<td class="cost-col">1065</td>
+<td class="verification-col unverified">Extrapolated</td>
+</tr>
+<tr id="bracket-213">
+<td class="level-col">1567 → 1568<br>⋮<br>1574 → 1575</td>
+<td class="cost-col">1070</td>
+<td class="verification-col unverified">Extrapolated</td>
+</tr>
+<tr id="bracket-214">
+<td class="level-col">1575 → 1576<br>⋮<br>1582 → 1583</td>
+<td class="cost-col">1075</td>
+<td class="verification-col unverified">Extrapolated</td>
+</tr>
+<tr id="bracket-215">
+<td class="level-col">1583 → 1584<br>⋮<br>1591 → 1592</td>
+<td class="cost-col">1080</td>
+<td class="verification-col unverified">Extrapolated</td>
+</tr>
+<tr id="bracket-216">
+<td class="level-col">1592 → 1593<br>⋮<br>1600 → 1601</td>
+<td class="cost-col">1085</td>
+<td class="verification-col unverified">Extrapolated</td>
+</tr>
+<tr id="bracket-217">
+<td class="level-col">1601 → 1602<br>⋮<br>1609 → 1610</td>
+<td class="cost-col">1090</td>
+<td class="verification-col unverified">Extrapolated</td>
+</tr>
+<tr id="bracket-218">
+<td class="level-col">1610 → 1611<br>⋮<br>1617 → 1618</td>
+<td class="cost-col">1095</td>
+<td class="verification-col unverified">Extrapolated</td>
+</tr>
+<tr id="bracket-219">
+<td class="level-col">1618 → 1619<br>⋮<br>1625 → 1626</td>
+<td class="cost-col">1100</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="bracket-220">
+<td class="level-col">1626 → 1627<br>⋮<br>1634 → 1635</td>
+<td class="cost-col">1105</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="bracket-221">
+<td class="level-col">1635 → 1636<br>⋮<br>1642 → 1643</td>
+<td class="cost-col">1110</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="bracket-222">
+<td class="level-col">1643 → 1644<br>⋮<br>1650 → 1651</td>
+<td class="cost-col">1115</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="bracket-223">
+<td class="level-col">1651 → 1652<br>⋮<br>1658 → 1659</td>
+<td class="cost-col">1120</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="bracket-224">
+<td class="level-col">1659 → 1660<br>⋮<br>1667 → 1668</td>
+<td class="cost-col">1125</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="bracket-225">
+<td class="level-col">1668 → 1669<br>⋮<br>1675 → 1676</td>
+<td class="cost-col">1130</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="bracket-226">
+<td class="level-col">1676 → 1677<br>⋮<br>1683 → 1684</td>
+<td class="cost-col">1135</td>
+<td class="verification-col unverified">Extrapolated</td>
+</tr>
+<tr id="bracket-227">
+<td class="level-col">1684 → 1685<br>⋮<br>1691 → 1692</td>
+<td class="cost-col">1140</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="bracket-228">
+<td class="level-col">1692 → 1693<br>⋮<br>1701 → 1702</td>
+<td class="cost-col">1145</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="bracket-229">
+<td class="level-col">1702 → 1703<br>⋮<br>1708 → 1709</td>
+<td class="cost-col">1150</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="bracket-230">
+<td class="level-col">1709 → 1710<br>⋮<br>1716 → 1717</td>
+<td class="cost-col">1155</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="bracket-231">
+<td class="level-col">1717 → 1718<br>⋮<br>1724 → 1725</td>
+<td class="cost-col">1160</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="bracket-232">
+<td class="level-col">1725 → 1726<br>⋮<br>1733 → 1734</td>
+<td class="cost-col">1165</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="bracket-233">
+<td class="level-col">1734 → 1735<br>⋮<br>1741 → 1742</td>
+<td class="cost-col">1170</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="bracket-234">
+<td class="level-col">1742 → 1743<br>⋮<br>1749 → 1750</td>
+<td class="cost-col">1175</td>
+<td class="verification-col unverified">Extrapolated</td>
+</tr>
+<tr id="bracket-235">
+<td class="level-col">1750 → 1751<br>⋮<br>1757 → 1758</td>
+<td class="cost-col">1180</td>
+<td class="verification-col unverified">Extrapolated</td>
+</tr>
+<tr id="bracket-236">
+<td class="level-col">1758 → 1759<br>⋮<br>1765 → 1766</td>
+<td class="cost-col">1185</td>
+<td class="verification-col unverified">Extrapolated</td>
+</tr>
+<tr id="bracket-237">
+<td class="level-col">1766 → 1767<br>⋮<br>1773 → 1774</td>
+<td class="cost-col">1190</td>
+<td class="verification-col unverified">Extrapolated</td>
+</tr>
+<tr id="bracket-238">
+<td class="level-col">1774 → 1775<br>⋮<br>1781 → 1782</td>
+<td class="cost-col">1195</td>
+<td class="verification-col unverified">Extrapolated</td>
+</tr>
+<tr id="bracket-239">
+<td class="level-col">1782 → 1783<br>⋮<br>1789 → 1790</td>
+<td class="cost-col">1200</td>
+<td class="verification-col unverified">Extrapolated</td>
+</tr>
+<tr id="bracket-240">
+<td class="level-col">1790 → 1791<br>⋮<br>1797 → 1798</td>
+<td class="cost-col">1205</td>
+<td class="verification-col unverified">Extrapolated</td>
+</tr>
+<tr id="bracket-241">
+<td class="level-col">1798 → 1799<br>⋮<br>1805 → 1806</td>
+<td class="cost-col">1210</td>
+<td class="verification-col unverified">Extrapolated</td>
+</tr>
+<tr id="bracket-242">
+<td class="level-col">1806 → 1807<br>⋮<br>1813 → 1814</td>
+<td class="cost-col">1215</td>
+<td class="verification-col unverified">Extrapolated</td>
+</tr>
+<tr id="bracket-243">
+<td class="level-col">1814 → 1815<br>⋮<br>1821 → 1822</td>
+<td class="cost-col">1220</td>
+<td class="verification-col unverified">Extrapolated</td>
+</tr>
+<tr id="bracket-244">
+<td class="level-col">1822 → 1823<br>⋮<br>1829 → 1830</td>
+<td class="cost-col">1225</td>
+<td class="verification-col unverified">Extrapolated</td>
+</tr>
+<tr id="bracket-245">
+<td class="level-col">1830 → 1831<br>⋮<br>1837 → 1838</td>
+<td class="cost-col">1230</td>
+<td class="verification-col unverified">Extrapolated</td>
+</tr>
+<tr id="bracket-246">
+<td class="level-col">1838 → 1839<br>⋮<br>1845 → 1846</td>
+<td class="cost-col">1235</td>
+<td class="verification-col unverified">Extrapolated</td>
+</tr>
+<tr id="bracket-247">
+<td class="level-col">1846 → 1847<br>⋮<br>1853 → 1854</td>
+<td class="cost-col">1240</td>
+<td class="verification-col unverified">Extrapolated</td>
+</tr>
+<tr id="bracket-248">
+<td class="level-col">1854 → 1855<br>⋮<br>1861 → 1862</td>
+<td class="cost-col">1245</td>
+<td class="verification-col unverified">Extrapolated</td>
+</tr>
+<tr id="bracket-249">
+<td class="level-col">1862 → 1863<br>⋮<br>1869 → 1870</td>
+<td class="cost-col">1250</td>
+<td class="verification-col unverified">Extrapolated</td>
+</tr>
+<tr id="bracket-250">
+<td class="level-col">1870 → 1871<br>⋮<br>1877 → 1878</td>
+<td class="cost-col">1255</td>
+<td class="verification-col unverified">Extrapolated</td>
+</tr>
+<tr id="bracket-251">
+<td class="level-col">1878 → 1879<br>⋮<br>1886 → 1887</td>
+<td class="cost-col">1260</td>
+<td class="verification-col unverified">Extrapolated</td>
+</tr>
+<tr id="bracket-252">
+<td class="level-col">1887 → 1888<br>⋮<br>1895 → 1896</td>
+<td class="cost-col">1265</td>
+<td class="verification-col unverified">Extrapolated</td>
+</tr>
+<tr id="bracket-253">
+<td class="level-col">1896 → 1897<br>⋮<br>1903 → 1904</td>
+<td class="cost-col">1270</td>
+<td class="verification-col unverified">Extrapolated</td>
+</tr>
+<tr id="bracket-254">
+<td class="level-col">1904 → 1905<br>⋮<br>1912 → 1913</td>
+<td class="cost-col">1275</td>
+<td class="verification-col unverified">Extrapolated</td>
+</tr>
+<tr id="bracket-255">
+<td class="level-col">1913 → 1914<br>⋮<br>1921 → 1922</td>
+<td class="cost-col">1280</td>
+<td class="verification-col unverified">Extrapolated</td>
+</tr>
+<tr id="bracket-256">
+<td class="level-col">1922 → 1923<br>⋮<br>1930 → 1931</td>
+<td class="cost-col">1285</td>
+<td class="verification-col unverified">Extrapolated</td>
+</tr>
+<tr id="bracket-257">
+<td class="level-col">1931 → 1932<br>⋮<br>1939 → 1940</td>
+<td class="cost-col">1290</td>
+<td class="verification-col unverified">Extrapolated</td>
+</tr>
+<tr id="bracket-258">
+<td class="level-col">1940 → 1941<br>⋮<br>1948 → 1949</td>
+<td class="cost-col">1295</td>
+<td class="verification-col unverified">Extrapolated</td>
+</tr>
+<tr id="bracket-259">
+<td class="level-col">1949 → 1950<br>⋮<br>1957 → 1958</td>
+<td class="cost-col">1300</td>
+<td class="verification-col unverified">Extrapolated</td>
+</tr>
+<tr id="bracket-260">
+<td class="level-col">1958 → 1959<br>⋮<br>1966 → 1967</td>
+<td class="cost-col">1305</td>
+<td class="verification-col unverified">Extrapolated</td>
+</tr>
+<tr id="bracket-261">
+<td class="level-col">1967 → 1968<br>⋮<br>1975 → 1976</td>
+<td class="cost-col">1310</td>
+<td class="verification-col unverified">Extrapolated</td>
+</tr>
+<tr id="bracket-262">
+<td class="level-col">1976 → 1977<br>⋮<br>1984 → 1985</td>
+<td class="cost-col">1315</td>
+<td class="verification-col unverified">Extrapolated</td>
+</tr>
+<tr id="bracket-263">
+<td class="level-col">1985 → 1986<br>⋮<br>1993 → 1994</td>
+<td class="cost-col">1320</td>
+<td class="verification-col unverified">Extrapolated</td>
+</tr>
+<tr id="bracket-264">
+<td class="level-col">1994 → 1995<br>⋮<br>1999 → 2000</td>
+<td class="cost-col">1325</td>
+<td class="verification-col unverified">Extrapolated</td>
+</tr>
+</tbody>
+</table>
 </main>
+
 </body>
 </html>

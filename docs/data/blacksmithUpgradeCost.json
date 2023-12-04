@@ -1,1592 +1,1596 @@
-[
-  {
-    "index": 1,
-    "startLevel": 0,
-    "verified": true,
-    "cost": 5
-  },
-  {
-    "index": 2,
-    "startLevel": 4,
-    "verified": true,
-    "cost": 10
-  },
-  {
-    "index": 3,
-    "startLevel": 8,
-    "verified": true,
-    "cost": 15
-  },
-  {
-    "index": 4,
-    "startLevel": 13,
-    "verified": true,
-    "cost": 20
-  },
-  {
-    "index": 5,
-    "startLevel": 18,
-    "verified": true,
-    "cost": 25
-  },
-  {
-    "index": 6,
-    "startLevel": 24,
-    "verified": true,
-    "cost": 30
-  },
-  {
-    "index": 7,
-    "startLevel": 29,
-    "verified": true,
-    "cost": 35
-  },
-  {
-    "index": 8,
-    "startLevel": 35,
-    "verified": true,
-    "cost": 40
-  },
-  {
-    "index": 9,
-    "startLevel": 40,
-    "verified": true,
-    "cost": 45
-  },
-  {
-    "index": 10,
-    "startLevel": 46,
-    "verified": true,
-    "cost": 50
-  },
-  {
-    "index": 11,
-    "startLevel": 52,
-    "verified": true,
-    "cost": 55
-  },
-  {
-    "index": 12,
-    "startLevel": 58,
-    "verified": true,
-    "cost": 60
-  },
-  {
-    "index": 13,
-    "startLevel": 64,
-    "verified": true,
-    "cost": 65
-  },
-  {
-    "index": 14,
-    "startLevel": 70,
-    "verified": true,
-    "cost": 70
-  },
-  {
-    "index": 15,
-    "startLevel": 76,
-    "verified": true,
-    "cost": 75
-  },
-  {
-    "index": 16,
-    "startLevel": 82,
-    "verified": true,
-    "cost": 80
-  },
-  {
-    "index": 17,
-    "startLevel": 88,
-    "verified": true,
-    "cost": 85
-  },
-  {
-    "index": 18,
-    "startLevel": 94,
-    "verified": true,
-    "cost": 90
-  },
-  {
-    "index": 19,
-    "startLevel": 100,
-    "verified": true,
-    "cost": 95
-  },
-  {
-    "index": 20,
-    "startLevel": 106,
-    "verified": false,
-    "cost": 100
-  },
-  {
-    "index": 21,
-    "startLevel": 112,
-    "verified": false,
-    "cost": 105
-  },
-  {
-    "index": 22,
-    "startLevel": 118,
-    "verified": false,
-    "cost": 110
-  },
-  {
-    "index": 23,
-    "startLevel": 124,
-    "verified": false,
-    "cost": 115
-  },
-  {
-    "index": 24,
-    "startLevel": 130,
-    "verified": false,
-    "cost": 120
-  },
-  {
-    "index": 25,
-    "startLevel": 136,
-    "verified": false,
-    "cost": 125
-  },
-  {
-    "index": 26,
-    "startLevel": 142,
-    "verified": false,
-    "cost": 130
-  },
-  {
-    "index": 27,
-    "startLevel": 149,
-    "verified": false,
-    "cost": 135
-  },
-  {
-    "index": 28,
-    "startLevel": 156,
-    "verified": false,
-    "cost": 140
-  },
-  {
-    "index": 29,
-    "startLevel": 163,
-    "verified": false,
-    "cost": 145
-  },
-  {
-    "index": 30,
-    "startLevel": 170,
-    "verified": false,
-    "cost": 150
-  },
-  {
-    "index": 31,
-    "startLevel": 177,
-    "verified": false,
-    "cost": 155
-  },
-  {
-    "index": 32,
-    "startLevel": 184,
-    "verified": false,
-    "cost": 160
-  },
-  {
-    "index": 33,
-    "startLevel": 191,
-    "verified": true,
-    "cost": 165
-  },
-  {
-    "index": 34,
-    "startLevel": 197,
-    "verified": true,
-    "cost": 170
-  },
-  {
-    "index": 35,
-    "startLevel": 204,
-    "verified": true,
-    "cost": 175
-  },
-  {
-    "index": 36,
-    "startLevel": 211,
-    "verified": false,
-    "cost": 180
-  },
-  {
-    "index": 37,
-    "startLevel": 218,
-    "verified": false,
-    "cost": 185
-  },
-  {
-    "index": 38,
-    "startLevel": 225,
-    "verified": false,
-    "cost": 190
-  },
-  {
-    "index": 39,
-    "startLevel": 232,
-    "verified": false,
-    "cost": 195
-  },
-  {
-    "index": 40,
-    "startLevel": 239,
-    "verified": false,
-    "cost": 200
-  },
-  {
-    "index": 41,
-    "startLevel": 246,
-    "verified": false,
-    "cost": 205
-  },
-  {
-    "index": 42,
-    "startLevel": 253,
-    "verified": false,
-    "cost": 210
-  },
-  {
-    "index": 43,
-    "startLevel": 260,
-    "verified": false,
-    "cost": 215
-  },
-  {
-    "index": 44,
-    "startLevel": 267,
-    "verified": false,
-    "cost": 220
-  },
-  {
-    "index": 45,
-    "startLevel": 274,
-    "verified": false,
-    "cost": 225
-  },
-  {
-    "index": 46,
-    "startLevel": 281,
-    "verified": false,
-    "cost": 230
-  },
-  {
-    "index": 47,
-    "startLevel": 288,
-    "verified": false,
-    "cost": 235
-  },
-  {
-    "index": 48,
-    "startLevel": 294,
-    "verified": false,
-    "cost": 240
-  },
-  {
-    "index": 49,
-    "startLevel": 301,
-    "verified": false,
-    "cost": 245
-  },
-  {
-    "index": 50,
-    "startLevel": 308,
-    "verified": false,
-    "cost": 250
-  },
-  {
-    "index": 51,
-    "startLevel": 315,
-    "verified": false,
-    "cost": 255
-  },
-  {
-    "index": 52,
-    "startLevel": 322,
-    "verified": false,
-    "cost": 260
-  },
-  {
-    "index": 53,
-    "startLevel": 328,
-    "verified": false,
-    "cost": 265
-  },
-  {
-    "index": 54,
-    "startLevel": 335,
-    "verified": false,
-    "cost": 270
-  },
-  {
-    "index": 55,
-    "startLevel": 342,
-    "verified": false,
-    "cost": 275
-  },
-  {
-    "index": 56,
-    "startLevel": 349,
-    "verified": false,
-    "cost": 280
-  },
-  {
-    "index": 57,
-    "startLevel": 356,
-    "verified": false,
-    "cost": 285
-  },
-  {
-    "index": 58,
-    "startLevel": 363,
-    "verified": false,
-    "cost": 290
-  },
-  {
-    "index": 59,
-    "startLevel": 370,
-    "verified": false,
-    "cost": 295
-  },
-  {
-    "index": 60,
-    "startLevel": 376,
-    "verified": false,
-    "cost": 300
-  },
-  {
-    "index": 61,
-    "startLevel": 383,
-    "verified": false,
-    "cost": 305
-  },
-  {
-    "index": 62,
-    "startLevel": 389,
-    "verified": false,
-    "cost": 310
-  },
-  {
-    "index": 63,
-    "startLevel": 396,
-    "verified": false,
-    "cost": 315
-  },
-  {
-    "index": 64,
-    "startLevel": 405,
-    "verified": true,
-    "cost": 320
-  },
-  {
-    "index": 65,
-    "startLevel": 412,
-    "verified": true,
-    "cost": 325
-  },
-  {
-    "index": 66,
-    "startLevel": 419,
-    "verified": true,
-    "cost": 330
-  },
-  {
-    "index": 67,
-    "startLevel": 426,
-    "verified": true,
-    "cost": 335
-  },
-  {
-    "index": 68,
-    "startLevel": 434,
-    "verified": true,
-    "cost": 340
-  },
-  {
-    "index": 69,
-    "startLevel": 441,
-    "verified": true,
-    "cost": 345
-  },
-  {
-    "index": 70,
-    "startLevel": 448,
-    "verified": true,
-    "cost": 350
-  },
-  {
-    "index": 71,
-    "startLevel": 455,
-    "verified": true,
-    "cost": 355
-  },
-  {
-    "index": 72,
-    "startLevel": 463,
-    "verified": true,
-    "cost": 360
-  },
-  {
-    "index": 73,
-    "startLevel": 470,
-    "verified": true,
-    "cost": 365
-  },
-  {
-    "index": 74,
-    "startLevel": 477,
-    "verified": true,
-    "cost": 370
-  },
-  {
-    "index": 75,
-    "startLevel": 484,
-    "verified": true,
-    "cost": 375
-  },
-  {
-    "index": 76,
-    "startLevel": 492,
-    "verified": true,
-    "cost": 380
-  },
-  {
-    "index": 77,
-    "startLevel": 499,
-    "verified": true,
-    "cost": 385
-  },
-  {
-    "index": 78,
-    "startLevel": 506,
-    "verified": true,
-    "cost": 390
-  },
-  {
-    "index": 79,
-    "startLevel": 514,
-    "verified": true,
-    "cost": 395
-  },
-  {
-    "index": 80,
-    "startLevel": 521,
-    "verified": true,
-    "cost": 400
-  },
-  {
-    "index": 81,
-    "startLevel": 528,
-    "verified": true,
-    "cost": 405
-  },
-  {
-    "index": 82,
-    "startLevel": 536,
-    "verified": true,
-    "cost": 410
-  },
-  {
-    "index": 83,
-    "startLevel": 543,
-    "verified": true,
-    "cost": 415
-  },
-  {
-    "index": 84,
-    "startLevel": 550,
-    "verified": true,
-    "cost": 420
-  },
-  {
-    "index": 85,
-    "startLevel": 558,
-    "verified": true,
-    "cost": 425
-  },
-  {
-    "index": 86,
-    "startLevel": 565,
-    "verified": true,
-    "cost": 430
-  },
-  {
-    "index": 87,
-    "startLevel": 572,
-    "verified": true,
-    "cost": 435
-  },
-  {
-    "index": 88,
-    "startLevel": 580,
-    "verified": true,
-    "cost": 440
-  },
-  {
-    "index": 89,
-    "startLevel": 587,
-    "verified": true,
-    "cost": 445
-  },
-  {
-    "index": 90,
-    "startLevel": 594,
-    "verified": false,
-    "cost": 450
-  },
-  {
-    "index": 91,
-    "startLevel": 601,
-    "verified": false,
-    "cost": 455
-  },
-  {
-    "index": 92,
-    "startLevel": 608,
-    "verified": false,
-    "cost": 460
-  },
-  {
-    "index": 93,
-    "startLevel": 616,
-    "verified": false,
-    "cost": 465
-  },
-  {
-    "index": 94,
-    "startLevel": 624,
-    "verified": false,
-    "cost": 470
-  },
-  {
-    "index": 95,
-    "startLevel": 632,
-    "verified": false,
-    "cost": 475
-  },
-  {
-    "index": 96,
-    "startLevel": 640,
-    "verified": false,
-    "cost": 480
-  },
-  {
-    "index": 97,
-    "startLevel": 647,
-    "verified": true,
-    "cost": 485
-  },
-  {
-    "index": 98,
-    "startLevel": 654,
-    "verified": true,
-    "cost": 490
-  },
-  {
-    "index": 99,
-    "startLevel": 662,
-    "verified": true,
-    "cost": 495
-  },
-  {
-    "index": 100,
-    "startLevel": 669,
-    "verified": true,
-    "cost": 500
-  },
-  {
-    "index": 101,
-    "startLevel": 677,
-    "verified": true,
-    "cost": 505
-  },
-  {
-    "index": 102,
-    "startLevel": 685,
-    "verified": true,
-    "cost": 510
-  },
-  {
-    "index": 103,
-    "startLevel": 692,
-    "verified": true,
-    "cost": 515
-  },
-  {
-    "index": 104,
-    "startLevel": 700,
-    "verified": true,
-    "cost": 520
-  },
-  {
-    "index": 105,
-    "startLevel": 707,
-    "verified": true,
-    "cost": 525
-  },
-  {
-    "index": 106,
-    "startLevel": 715,
-    "verified": true,
-    "cost": 530
-  },
-  {
-    "index": 107,
-    "startLevel": 722,
-    "verified": true,
-    "cost": 535
-  },
-  {
-    "index": 108,
-    "startLevel": 730,
-    "verified": true,
-    "cost": 540
-  },
-  {
-    "index": 109,
-    "startLevel": 738,
-    "verified": false,
-    "cost": 545
-  },
-  {
-    "index": 110,
-    "startLevel": 746,
-    "verified": false,
-    "cost": 550
-  },
-  {
-    "index": 111,
-    "startLevel": 754,
-    "verified": false,
-    "cost": 555
-  },
-  {
-    "index": 112,
-    "startLevel": 761,
-    "verified": false,
-    "cost": 560
-  },
-  {
-    "index": 113,
-    "startLevel": 769,
-    "verified": false,
-    "cost": 565
-  },
-  {
-    "index": 114,
-    "startLevel": 776,
-    "verified": false,
-    "cost": 570
-  },
-  {
-    "index": 115,
-    "startLevel": 784,
-    "verified": false,
-    "cost": 575
-  },
-  {
-    "index": 116,
-    "startLevel": 792,
-    "verified": false,
-    "cost": 580
-  },
-  {
-    "index": 117,
-    "startLevel": 799,
-    "verified": false,
-    "cost": 585
-  },
-  {
-    "index": 118,
-    "startLevel": 807,
-    "verified": false,
-    "cost": 590
-  },
-  {
-    "index": 119,
-    "startLevel": 815,
-    "verified": false,
-    "cost": 595
-  },
-  {
-    "index": 120,
-    "startLevel": 822,
-    "verified": false,
-    "cost": 600
-  },
-  {
-    "index": 121,
-    "startLevel": 830,
-    "verified": false,
-    "cost": 605
-  },
-  {
-    "index": 122,
-    "startLevel": 838,
-    "verified": false,
-    "cost": 610
-  },
-  {
-    "index": 123,
-    "startLevel": 846,
-    "verified": false,
-    "cost": 615
-  },
-  {
-    "index": 124,
-    "startLevel": 853,
-    "verified": false,
-    "cost": 620
-  },
-  {
-    "index": 125,
-    "startLevel": 861,
-    "verified": false,
-    "cost": 625
-  },
-  {
-    "index": 126,
-    "startLevel": 869,
-    "verified": false,
-    "cost": 630
-  },
-  {
-    "index": 127,
-    "startLevel": 876,
-    "verified": false,
-    "cost": 635
-  },
-  {
-    "index": 128,
-    "startLevel": 884,
-    "verified": false,
-    "cost": 640
-  },
-  {
-    "index": 129,
-    "startLevel": 891,
-    "verified": false,
-    "cost": 645
-  },
-  {
-    "index": 130,
-    "startLevel": 898,
-    "verified": false,
-    "cost": 650
-  },
-  {
-    "index": 131,
-    "startLevel": 906,
-    "verified": false,
-    "cost": 655
-  },
-  {
-    "index": 132,
-    "startLevel": 914,
-    "verified": false,
-    "cost": 660
-  },
-  {
-    "index": 133,
-    "startLevel": 921,
-    "verified": false,
-    "cost": 665
-  },
-  {
-    "index": 134,
-    "startLevel": 929,
-    "verified": false,
-    "cost": 670
-  },
-  {
-    "index": 135,
-    "startLevel": 937,
-    "verified": false,
-    "cost": 675
-  },
-  {
-    "index": 136,
-    "startLevel": 944,
-    "verified": false,
-    "cost": 680
-  },
-  {
-    "index": 137,
-    "startLevel": 952,
-    "verified": false,
-    "cost": 685
-  },
-  {
-    "index": 138,
-    "startLevel": 960,
-    "verified": false,
-    "cost": 690
-  },
-  {
-    "index": 139,
-    "startLevel": 968,
-    "verified": false,
-    "cost": 695
-  },
-  {
-    "index": 140,
-    "startLevel": 976,
-    "verified": false,
-    "cost": 700
-  },
-  {
-    "index": 141,
-    "startLevel": 984,
-    "verified": false,
-    "cost": 705
-  },
-  {
-    "index": 142,
-    "startLevel": 992,
-    "verified": false,
-    "cost": 710
-  },
-  {
-    "index": 143,
-    "startLevel": 1000,
-    "verified": false,
-    "cost": 715
-  },
-  {
-    "index": 144,
-    "startLevel": 1008,
-    "verified": false,
-    "cost": 720
-  },
-  {
-    "index": 145,
-    "startLevel": 1016,
-    "verified": false,
-    "cost": 725
-  },
-  {
-    "index": 146,
-    "startLevel": 1024,
-    "verified": false,
-    "cost": 730
-  },
-  {
-    "index": 147,
-    "startLevel": 1032,
-    "verified": false,
-    "cost": 735
-  },
-  {
-    "index": 148,
-    "startLevel": 1040,
-    "verified": false,
-    "cost": 740
-  },
-  {
-    "index": 149,
-    "startLevel": 1048,
-    "verified": false,
-    "cost": 745
-  },
-  {
-    "index": 150,
-    "startLevel": 1056,
-    "verified": false,
-    "cost": 750
-  },
-  {
-    "index": 151,
-    "startLevel": 1064,
-    "verified": false,
-    "cost": 755
-  },
-  {
-    "index": 152,
-    "startLevel": 1071,
-    "verified": false,
-    "cost": 760
-  },
-  {
-    "index": 153,
-    "startLevel": 1079,
-    "verified": false,
-    "cost": 765
-  },
-  {
-    "index": 154,
-    "startLevel": 1087,
-    "verified": false,
-    "cost": 770
-  },
-  {
-    "index": 155,
-    "startLevel": 1095,
-    "verified": false,
-    "cost": 775
-  },
-  {
-    "index": 156,
-    "startLevel": 1103,
-    "verified": false,
-    "cost": 780
-  },
-  {
-    "index": 157,
-    "startLevel": 1110,
-    "verified": true,
-    "cost": 785
-  },
-  {
-    "index": 158,
-    "startLevel": 1118,
-    "verified": true,
-    "cost": 790
-  },
-  {
-    "index": 159,
-    "startLevel": 1126,
-    "verified": true,
-    "cost": 795
-  },
-  {
-    "index": 160,
-    "startLevel": 1134,
-    "verified": true,
-    "cost": 800
-  },
-  {
-    "index": 161,
-    "startLevel": 1142,
-    "verified": true,
-    "cost": 805
-  },
-  {
-    "index": 162,
-    "startLevel": 1150,
-    "verified": true,
-    "cost": 810
-  },
-  {
-    "index": 163,
-    "startLevel": 1157,
-    "verified": true,
-    "cost": 815
-  },
-  {
-    "index": 164,
-    "startLevel": 1165,
-    "verified": true,
-    "cost": 820
-  },
-  {
-    "index": 165,
-    "startLevel": 1173,
-    "verified": true,
-    "cost": 825
-  },
-  {
-    "index": 166,
-    "startLevel": 1181,
-    "verified": true,
-    "cost": 830
-  },
-  {
-    "index": 167,
-    "startLevel": 1189,
-    "verified": false,
-    "cost": 835
-  },
-  {
-    "index": 168,
-    "startLevel": 1197,
-    "verified": false,
-    "cost": 840
-  },
-  {
-    "index": 169,
-    "startLevel": 1205,
-    "verified": false,
-    "cost": 845
-  },
-  {
-    "index": 170,
-    "startLevel": 1213,
-    "verified": false,
-    "cost": 850
-  },
-  {
-    "index": 171,
-    "startLevel": 1221,
-    "verified": false,
-    "cost": 855
-  },
-  {
-    "index": 172,
-    "startLevel": 1229,
-    "verified": false,
-    "cost": 860
-  },
-  {
-    "index": 173,
-    "startLevel": 1237,
-    "verified": false,
-    "cost": 865
-  },
-  {
-    "index": 174,
-    "startLevel": 1245,
-    "verified": false,
-    "cost": 870
-  },
-  {
-    "index": 175,
-    "startLevel": 1253,
-    "verified": true,
-    "cost": 875
-  },
-  {
-    "index": 176,
-    "startLevel": 1261,
-    "verified": true,
-    "cost": 880
-  },
-  {
-    "index": 177,
-    "startLevel": 1269,
-    "verified": true,
-    "cost": 885
-  },
-  {
-    "index": 178,
-    "startLevel": 1277,
-    "verified": true,
-    "cost": 890
-  },
-  {
-    "index": 179,
-    "startLevel": 1285,
-    "verified": true,
-    "cost": 895
-  },
-  {
-    "index": 180,
-    "startLevel": 1293,
-    "verified": true,
-    "cost": 900
-  },
-  {
-    "index": 181,
-    "startLevel": 1301,
-    "verified": false,
-    "cost": 905
-  },
-  {
-    "index": 182,
-    "startLevel": 1309,
-    "verified": false,
-    "cost": 910
-  },
-  {
-    "index": 183,
-    "startLevel": 1317,
-    "verified": false,
-    "cost": 915
-  },
-  {
-    "index": 184,
-    "startLevel": 1325,
-    "verified": false,
-    "cost": 920
-  },
-  {
-    "index": 185,
-    "startLevel": 1333,
-    "verified": false,
-    "cost": 925
-  },
-  {
-    "index": 186,
-    "startLevel": 1341,
-    "verified": false,
-    "cost": 930
-  },
-  {
-    "index": 187,
-    "startLevel": 1349,
-    "verified": false,
-    "cost": 935
-  },
-  {
-    "index": 188,
-    "startLevel": 1357,
-    "verified": false,
-    "cost": 940
-  },
-  {
-    "index": 189,
-    "startLevel": 1365,
-    "verified": false,
-    "cost": 945
-  },
-  {
-    "index": 190,
-    "startLevel": 1373,
-    "verified": false,
-    "cost": 950
-  },
-  {
-    "index": 191,
-    "startLevel": 1381,
-    "verified": false,
-    "cost": 955
-  },
-  {
-    "index": 192,
-    "startLevel": 1389,
-    "verified": false,
-    "cost": 960
-  },
-  {
-    "index": 193,
-    "startLevel": 1397,
-    "verified": false,
-    "cost": 965
-  },
-  {
-    "index": 194,
-    "startLevel": 1405,
-    "verified": false,
-    "cost": 970
-  },
-  {
-    "index": 195,
-    "startLevel": 1413,
-    "verified": false,
-    "cost": 975
-  },
-  {
-    "index": 196,
-    "startLevel": 1421,
-    "verified": false,
-    "cost": 980
-  },
-  {
-    "index": 197,
-    "startLevel": 1429,
-    "verified": false,
-    "cost": 985
-  },
-  {
-    "index": 198,
-    "startLevel": 1437,
-    "verified": false,
-    "cost": 990
-  },
-  {
-    "index": 199,
-    "startLevel": 1445,
-    "verified": false,
-    "cost": 995
-  },
-  {
-    "index": 200,
-    "startLevel": 1453,
-    "verified": false,
-    "cost": 1000
-  },
-  {
-    "index": 201,
-    "startLevel": 1461,
-    "verified": false,
-    "cost": 1005
-  },
-  {
-    "index": 202,
-    "startLevel": 1469,
-    "verified": false,
-    "cost": 1010
-  },
-  {
-    "index": 203,
-    "startLevel": 1477,
-    "verified": false,
-    "cost": 1015
-  },
-  {
-    "index": 204,
-    "startLevel": 1485,
-    "verified": false,
-    "cost": 1020
-  },
-  {
-    "index": 205,
-    "startLevel": 1493,
-    "verified": false,
-    "cost": 1025
-  },
-  {
-    "index": 206,
-    "startLevel": 1501,
-    "verified": false,
-    "cost": 1030
-  },
-  {
-    "index": 207,
-    "startLevel": 1510,
-    "verified": false,
-    "cost": 1035
-  },
-  {
-    "index": 208,
-    "startLevel": 1518,
-    "verified": false,
-    "cost": 1040
-  },
-  {
-    "index": 209,
-    "startLevel": 1526,
-    "verified": false,
-    "cost": 1045
-  },
-  {
-    "index": 210,
-    "startLevel": 1534,
-    "verified": false,
-    "cost": 1050
-  },
-  {
-    "index": 211,
-    "startLevel": 1542,
-    "verified": false,
-    "cost": 1055
-  },
-  {
-    "index": 212,
-    "startLevel": 1550,
-    "verified": false,
-    "cost": 1060
-  },
-  {
-    "index": 213,
-    "startLevel": 1558,
-    "verified": false,
-    "cost": 1065
-  },
-  {
-    "index": 214,
-    "startLevel": 1566,
-    "verified": false,
-    "cost": 1070
-  },
-  {
-    "index": 215,
-    "startLevel": 1574,
-    "verified": false,
-    "cost": 1075
-  },
-  {
-    "index": 216,
-    "startLevel": 1582,
-    "verified": false,
-    "cost": 1080
-  },
-  {
-    "index": 217,
-    "startLevel": 1591,
-    "verified": false,
-    "cost": 1085
-  },
-  {
-    "index": 218,
-    "startLevel": 1600,
-    "verified": false,
-    "cost": 1090
-  },
-  {
-    "index": 219,
-    "startLevel": 1609,
-    "verified": false,
-    "cost": 1095
-  },
-  {
-    "index": 220,
-    "startLevel": 1618,
-    "verified": true,
-    "cost": 1100
-  },
-  {
-    "index": 221,
-    "startLevel": 1626,
-    "verified": true,
-    "cost": 1105
-  },
-  {
-    "index": 222,
-    "startLevel": 1635,
-    "verified": true,
-    "cost": 1110
-  },
-  {
-    "index": 223,
-    "startLevel": 1643,
-    "verified": true,
-    "cost": 1115
-  },
-  {
-    "index": 224,
-    "startLevel": 1651,
-    "verified": true,
-    "cost": 1120
-  },
-  {
-    "index": 225,
-    "startLevel": 1659,
-    "verified": true,
-    "cost": 1125
-  },
-  {
-    "index": 226,
-    "startLevel": 1667,
-    "verified": false,
-    "cost": 1130
-  },
-  {
-    "index": 227,
-    "startLevel": 1675,
-    "verified": false,
-    "cost": 1135
-  },
-  {
-    "index": 228,
-    "startLevel": 1683,
-    "verified": false,
-    "cost": 1140
-  },
-  {
-    "index": 229,
-    "startLevel": 1691,
-    "verified": false,
-    "cost": 1145
-  },
-  {
-    "index": 230,
-    "startLevel": 1699,
-    "verified": false,
-    "cost": 1150
-  },
-  {
-    "index": 231,
-    "startLevel": 1707,
-    "verified": false,
-    "cost": 1155
-  },
-  {
-    "index": 232,
-    "startLevel": 1715,
-    "verified": false,
-    "cost": 1160
-  },
-  {
-    "index": 233,
-    "startLevel": 1723,
-    "verified": false,
-    "cost": 1165
-  },
-  {
-    "index": 234,
-    "startLevel": 1731,
-    "verified": false,
-    "cost": 1170
-  },
-  {
-    "index": 235,
-    "startLevel": 1739,
-    "verified": false,
-    "cost": 1175
-  },
-  {
-    "index": 236,
-    "startLevel": 1747,
-    "verified": false,
-    "cost": 1180
-  },
-  {
-    "index": 237,
-    "startLevel": 1755,
-    "verified": false,
-    "cost": 1185
-  },
-  {
-    "index": 238,
-    "startLevel": 1763,
-    "verified": false,
-    "cost": 1190
-  },
-  {
-    "index": 239,
-    "startLevel": 1771,
-    "verified": false,
-    "cost": 1195
-  },
-  {
-    "index": 240,
-    "startLevel": 1779,
-    "verified": false,
-    "cost": 1200
-  },
-  {
-    "index": 241,
-    "startLevel": 1787,
-    "verified": false,
-    "cost": 1205
-  },
-  {
-    "index": 242,
-    "startLevel": 1795,
-    "verified": false,
-    "cost": 1210
-  },
-  {
-    "index": 243,
-    "startLevel": 1803,
-    "verified": false,
-    "cost": 1215
-  },
-  {
-    "index": 244,
-    "startLevel": 1811,
-    "verified": false,
-    "cost": 1220
-  },
-  {
-    "index": 245,
-    "startLevel": 1819,
-    "verified": false,
-    "cost": 1225
-  },
-  {
-    "index": 246,
-    "startLevel": 1827,
-    "verified": false,
-    "cost": 1230
-  },
-  {
-    "index": 247,
-    "startLevel": 1835,
-    "verified": false,
-    "cost": 1235
-  },
-  {
-    "index": 248,
-    "startLevel": 1843,
-    "verified": false,
-    "cost": 1240
-  },
-  {
-    "index": 249,
-    "startLevel": 1851,
-    "verified": false,
-    "cost": 1245
-  },
-  {
-    "index": 250,
-    "startLevel": 1859,
-    "verified": false,
-    "cost": 1250
-  },
-  {
-    "index": 251,
-    "startLevel": 1867,
-    "verified": false,
-    "cost": 1255
-  },
-  {
-    "index": 252,
-    "startLevel": 1875,
-    "verified": false,
-    "cost": 1260
-  },
-  {
-    "index": 253,
-    "startLevel": 1884,
-    "verified": false,
-    "cost": 1265
-  },
-  {
-    "index": 254,
-    "startLevel": 1893,
-    "verified": false,
-    "cost": 1270
-  },
-  {
-    "index": 255,
-    "startLevel": 1901,
-    "verified": false,
-    "cost": 1275
-  },
-  {
-    "index": 256,
-    "startLevel": 1910,
-    "verified": false,
-    "cost": 1280
-  },
-  {
-    "index": 257,
-    "startLevel": 1919,
-    "verified": false,
-    "cost": 1285
-  },
-  {
-    "index": 258,
-    "startLevel": 1928,
-    "verified": false,
-    "cost": 1290
-  },
-  {
-    "index": 259,
-    "startLevel": 1937,
-    "verified": false,
-    "cost": 1295
-  },
-  {
-    "index": 260,
-    "startLevel": 1946,
-    "verified": false,
-    "cost": 1300
-  },
-  {
-    "index": 261,
-    "startLevel": 1955,
-    "verified": false,
-    "cost": 1305
-  },
-  {
-    "index": 262,
-    "startLevel": 1964,
-    "verified": false,
-    "cost": 1310
-  },
-  {
-    "index": 263,
-    "startLevel": 1973,
-    "verified": false,
-    "cost": 1315
-  },
-  {
-    "index": 264,
-    "startLevel": 1982,
-    "verified": false,
-    "cost": 1320
-  },
-  {
-    "index": 265,
-    "startLevel": 1991,
-    "verified": false,
-    "cost": 1325
-  }
-]
+{
+  "table": "Blacksmith Upgrade",
+  "table-date": "2023-12-04",
+  "data": [
+    {
+      "bracket-index": 1,
+      "bracket-start": 0,
+      "hammer-cost": 5,
+      "verified": true
+    },
+    {
+      "bracket-index": 2,
+      "bracket-start": 4,
+      "hammer-cost": 10,
+      "verified": true
+    },
+    {
+      "bracket-index": 3,
+      "bracket-start": 8,
+      "hammer-cost": 15,
+      "verified": true
+    },
+    {
+      "bracket-index": 4,
+      "bracket-start": 13,
+      "hammer-cost": 20,
+      "verified": true
+    },
+    {
+      "bracket-index": 5,
+      "bracket-start": 18,
+      "hammer-cost": 25,
+      "verified": true
+    },
+    {
+      "bracket-index": 6,
+      "bracket-start": 24,
+      "hammer-cost": 30,
+      "verified": true
+    },
+    {
+      "bracket-index": 7,
+      "bracket-start": 29,
+      "hammer-cost": 35,
+      "verified": true
+    },
+    {
+      "bracket-index": 8,
+      "bracket-start": 35,
+      "hammer-cost": 40,
+      "verified": true
+    },
+    {
+      "bracket-index": 9,
+      "bracket-start": 40,
+      "hammer-cost": 45,
+      "verified": true
+    },
+    {
+      "bracket-index": 10,
+      "bracket-start": 46,
+      "hammer-cost": 50,
+      "verified": true
+    },
+    {
+      "bracket-index": 11,
+      "bracket-start": 52,
+      "hammer-cost": 55,
+      "verified": true
+    },
+    {
+      "bracket-index": 12,
+      "bracket-start": 58,
+      "hammer-cost": 60,
+      "verified": true
+    },
+    {
+      "bracket-index": 13,
+      "bracket-start": 64,
+      "hammer-cost": 65,
+      "verified": true
+    },
+    {
+      "bracket-index": 14,
+      "bracket-start": 70,
+      "hammer-cost": 70,
+      "verified": true
+    },
+    {
+      "bracket-index": 15,
+      "bracket-start": 76,
+      "hammer-cost": 75,
+      "verified": true
+    },
+    {
+      "bracket-index": 16,
+      "bracket-start": 82,
+      "hammer-cost": 80,
+      "verified": true
+    },
+    {
+      "bracket-index": 17,
+      "bracket-start": 88,
+      "hammer-cost": 85,
+      "verified": true
+    },
+    {
+      "bracket-index": 18,
+      "bracket-start": 94,
+      "hammer-cost": 90,
+      "verified": true
+    },
+    {
+      "bracket-index": 19,
+      "bracket-start": 100,
+      "hammer-cost": 95,
+      "verified": true
+    },
+    {
+      "bracket-index": 20,
+      "bracket-start": 107,
+      "hammer-cost": 100,
+      "verified": true
+    },
+    {
+      "bracket-index": 21,
+      "bracket-start": 113,
+      "hammer-cost": 105,
+      "verified": true
+    },
+    {
+      "bracket-index": 22,
+      "bracket-start": 119,
+      "hammer-cost": 110,
+      "verified": true
+    },
+    {
+      "bracket-index": 23,
+      "bracket-start": 125,
+      "hammer-cost": 115,
+      "verified": true
+    },
+    {
+      "bracket-index": 24,
+      "bracket-start": 132,
+      "hammer-cost": 120,
+      "verified": true
+    },
+    {
+      "bracket-index": 25,
+      "bracket-start": 138,
+      "hammer-cost": 125,
+      "verified": true
+    },
+    {
+      "bracket-index": 26,
+      "bracket-start": 145,
+      "hammer-cost": 130,
+      "verified": true
+    },
+    {
+      "bracket-index": 27,
+      "bracket-start": 151,
+      "hammer-cost": 135,
+      "verified": true
+    },
+    {
+      "bracket-index": 28,
+      "bracket-start": 158,
+      "hammer-cost": 140,
+      "verified": true
+    },
+    {
+      "bracket-index": 29,
+      "bracket-start": 164,
+      "hammer-cost": 145,
+      "verified": true
+    },
+    {
+      "bracket-index": 30,
+      "bracket-start": 171,
+      "hammer-cost": 150,
+      "verified": true
+    },
+    {
+      "bracket-index": 31,
+      "bracket-start": 177,
+      "hammer-cost": 155,
+      "verified": true
+    },
+    {
+      "bracket-index": 32,
+      "bracket-start": 184,
+      "hammer-cost": 160,
+      "verified": true
+    },
+    {
+      "bracket-index": 33,
+      "bracket-start": 191,
+      "hammer-cost": 165,
+      "verified": true
+    },
+    {
+      "bracket-index": 34,
+      "bracket-start": 197,
+      "hammer-cost": 170,
+      "verified": true
+    },
+    {
+      "bracket-index": 35,
+      "bracket-start": 204,
+      "hammer-cost": 175,
+      "verified": true
+    },
+    {
+      "bracket-index": 36,
+      "bracket-start": 211,
+      "hammer-cost": 180,
+      "verified": true
+    },
+    {
+      "bracket-index": 37,
+      "bracket-start": 217,
+      "hammer-cost": 185,
+      "verified": true
+    },
+    {
+      "bracket-index": 38,
+      "bracket-start": 224,
+      "hammer-cost": 190,
+      "verified": true
+    },
+    {
+      "bracket-index": 39,
+      "bracket-start": 231,
+      "hammer-cost": 195,
+      "verified": true
+    },
+    {
+      "bracket-index": 40,
+      "bracket-start": 237,
+      "hammer-cost": 200,
+      "verified": true
+    },
+    {
+      "bracket-index": 41,
+      "bracket-start": 244,
+      "hammer-cost": 205,
+      "verified": true
+    },
+    {
+      "bracket-index": 42,
+      "bracket-start": 251,
+      "hammer-cost": 210,
+      "verified": true
+    },
+    {
+      "bracket-index": 43,
+      "bracket-start": 258,
+      "hammer-cost": 215,
+      "verified": true
+    },
+    {
+      "bracket-index": 44,
+      "bracket-start": 265,
+      "hammer-cost": 220,
+      "verified": true
+    },
+    {
+      "bracket-index": 45,
+      "bracket-start": 272,
+      "hammer-cost": 225,
+      "verified": true
+    },
+    {
+      "bracket-index": 46,
+      "bracket-start": 278,
+      "hammer-cost": 230,
+      "verified": true
+    },
+    {
+      "bracket-index": 47,
+      "bracket-start": 285,
+      "hammer-cost": 235,
+      "verified": true
+    },
+    {
+      "bracket-index": 48,
+      "bracket-start": 292,
+      "hammer-cost": 240,
+      "verified": true
+    },
+    {
+      "bracket-index": 49,
+      "bracket-start": 299,
+      "hammer-cost": 245,
+      "verified": false
+    },
+    {
+      "bracket-index": 50,
+      "bracket-start": 306,
+      "hammer-cost": 250,
+      "verified": true
+    },
+    {
+      "bracket-index": 51,
+      "bracket-start": 313,
+      "hammer-cost": 255,
+      "verified": false
+    },
+    {
+      "bracket-index": 52,
+      "bracket-start": 320,
+      "hammer-cost": 260,
+      "verified": false
+    },
+    {
+      "bracket-index": 53,
+      "bracket-start": 327,
+      "hammer-cost": 265,
+      "verified": false
+    },
+    {
+      "bracket-index": 54,
+      "bracket-start": 334,
+      "hammer-cost": 270,
+      "verified": false
+    },
+    {
+      "bracket-index": 55,
+      "bracket-start": 341,
+      "hammer-cost": 275,
+      "verified": false
+    },
+    {
+      "bracket-index": 56,
+      "bracket-start": 348,
+      "hammer-cost": 280,
+      "verified": false
+    },
+    {
+      "bracket-index": 57,
+      "bracket-start": 355,
+      "hammer-cost": 285,
+      "verified": false
+    },
+    {
+      "bracket-index": 58,
+      "bracket-start": 362,
+      "hammer-cost": 290,
+      "verified": false
+    },
+    {
+      "bracket-index": 59,
+      "bracket-start": 369,
+      "hammer-cost": 295,
+      "verified": false
+    },
+    {
+      "bracket-index": 60,
+      "bracket-start": 376,
+      "hammer-cost": 300,
+      "verified": false
+    },
+    {
+      "bracket-index": 61,
+      "bracket-start": 383,
+      "hammer-cost": 305,
+      "verified": false
+    },
+    {
+      "bracket-index": 62,
+      "bracket-start": 390,
+      "hammer-cost": 310,
+      "verified": false
+    },
+    {
+      "bracket-index": 63,
+      "bracket-start": 397,
+      "hammer-cost": 315,
+      "verified": false
+    },
+    {
+      "bracket-index": 64,
+      "bracket-start": 405,
+      "hammer-cost": 320,
+      "verified": true
+    },
+    {
+      "bracket-index": 65,
+      "bracket-start": 412,
+      "hammer-cost": 325,
+      "verified": true
+    },
+    {
+      "bracket-index": 66,
+      "bracket-start": 419,
+      "hammer-cost": 330,
+      "verified": true
+    },
+    {
+      "bracket-index": 67,
+      "bracket-start": 426,
+      "hammer-cost": 335,
+      "verified": true
+    },
+    {
+      "bracket-index": 68,
+      "bracket-start": 434,
+      "hammer-cost": 340,
+      "verified": true
+    },
+    {
+      "bracket-index": 69,
+      "bracket-start": 441,
+      "hammer-cost": 345,
+      "verified": true
+    },
+    {
+      "bracket-index": 70,
+      "bracket-start": 448,
+      "hammer-cost": 350,
+      "verified": true
+    },
+    {
+      "bracket-index": 71,
+      "bracket-start": 455,
+      "hammer-cost": 355,
+      "verified": true
+    },
+    {
+      "bracket-index": 72,
+      "bracket-start": 463,
+      "hammer-cost": 360,
+      "verified": true
+    },
+    {
+      "bracket-index": 73,
+      "bracket-start": 470,
+      "hammer-cost": 365,
+      "verified": true
+    },
+    {
+      "bracket-index": 74,
+      "bracket-start": 477,
+      "hammer-cost": 370,
+      "verified": true
+    },
+    {
+      "bracket-index": 75,
+      "bracket-start": 484,
+      "hammer-cost": 375,
+      "verified": true
+    },
+    {
+      "bracket-index": 76,
+      "bracket-start": 492,
+      "hammer-cost": 380,
+      "verified": true
+    },
+    {
+      "bracket-index": 77,
+      "bracket-start": 499,
+      "hammer-cost": 385,
+      "verified": true
+    },
+    {
+      "bracket-index": 78,
+      "bracket-start": 506,
+      "hammer-cost": 390,
+      "verified": true
+    },
+    {
+      "bracket-index": 79,
+      "bracket-start": 514,
+      "hammer-cost": 395,
+      "verified": true
+    },
+    {
+      "bracket-index": 80,
+      "bracket-start": 521,
+      "hammer-cost": 400,
+      "verified": true
+    },
+    {
+      "bracket-index": 81,
+      "bracket-start": 528,
+      "hammer-cost": 405,
+      "verified": true
+    },
+    {
+      "bracket-index": 82,
+      "bracket-start": 536,
+      "hammer-cost": 410,
+      "verified": true
+    },
+    {
+      "bracket-index": 83,
+      "bracket-start": 543,
+      "hammer-cost": 415,
+      "verified": true
+    },
+    {
+      "bracket-index": 84,
+      "bracket-start": 550,
+      "hammer-cost": 420,
+      "verified": true
+    },
+    {
+      "bracket-index": 85,
+      "bracket-start": 558,
+      "hammer-cost": 425,
+      "verified": true
+    },
+    {
+      "bracket-index": 86,
+      "bracket-start": 565,
+      "hammer-cost": 430,
+      "verified": true
+    },
+    {
+      "bracket-index": 87,
+      "bracket-start": 572,
+      "hammer-cost": 435,
+      "verified": true
+    },
+    {
+      "bracket-index": 88,
+      "bracket-start": 580,
+      "hammer-cost": 440,
+      "verified": true
+    },
+    {
+      "bracket-index": 89,
+      "bracket-start": 587,
+      "hammer-cost": 445,
+      "verified": true
+    },
+    {
+      "bracket-index": 90,
+      "bracket-start": 595,
+      "hammer-cost": 450,
+      "verified": true
+    },
+    {
+      "bracket-index": 91,
+      "bracket-start": 602,
+      "hammer-cost": 455,
+      "verified": true
+    },
+    {
+      "bracket-index": 92,
+      "bracket-start": 610,
+      "hammer-cost": 460,
+      "verified": true
+    },
+    {
+      "bracket-index": 93,
+      "bracket-start": 617,
+      "hammer-cost": 465,
+      "verified": true
+    },
+    {
+      "bracket-index": 94,
+      "bracket-start": 625,
+      "hammer-cost": 470,
+      "verified": true
+    },
+    {
+      "bracket-index": 95,
+      "bracket-start": 632,
+      "hammer-cost": 475,
+      "verified": true
+    },
+    {
+      "bracket-index": 96,
+      "bracket-start": 639,
+      "hammer-cost": 480,
+      "verified": true
+    },
+    {
+      "bracket-index": 97,
+      "bracket-start": 647,
+      "hammer-cost": 485,
+      "verified": true
+    },
+    {
+      "bracket-index": 98,
+      "bracket-start": 654,
+      "hammer-cost": 490,
+      "verified": true
+    },
+    {
+      "bracket-index": 99,
+      "bracket-start": 662,
+      "hammer-cost": 495,
+      "verified": true
+    },
+    {
+      "bracket-index": 100,
+      "bracket-start": 669,
+      "hammer-cost": 500,
+      "verified": true
+    },
+    {
+      "bracket-index": 101,
+      "bracket-start": 677,
+      "hammer-cost": 505,
+      "verified": true
+    },
+    {
+      "bracket-index": 102,
+      "bracket-start": 685,
+      "hammer-cost": 510,
+      "verified": true
+    },
+    {
+      "bracket-index": 103,
+      "bracket-start": 692,
+      "hammer-cost": 515,
+      "verified": true
+    },
+    {
+      "bracket-index": 104,
+      "bracket-start": 700,
+      "hammer-cost": 520,
+      "verified": true
+    },
+    {
+      "bracket-index": 105,
+      "bracket-start": 707,
+      "hammer-cost": 525,
+      "verified": true
+    },
+    {
+      "bracket-index": 106,
+      "bracket-start": 715,
+      "hammer-cost": 530,
+      "verified": true
+    },
+    {
+      "bracket-index": 107,
+      "bracket-start": 722,
+      "hammer-cost": 535,
+      "verified": true
+    },
+    {
+      "bracket-index": 108,
+      "bracket-start": 730,
+      "hammer-cost": 540,
+      "verified": true
+    },
+    {
+      "bracket-index": 109,
+      "bracket-start": 737,
+      "hammer-cost": 545,
+      "verified": true
+    },
+    {
+      "bracket-index": 110,
+      "bracket-start": 745,
+      "hammer-cost": 550,
+      "verified": true
+    },
+    {
+      "bracket-index": 111,
+      "bracket-start": 753,
+      "hammer-cost": 555,
+      "verified": true
+    },
+    {
+      "bracket-index": 112,
+      "bracket-start": 760,
+      "hammer-cost": 560,
+      "verified": true
+    },
+    {
+      "bracket-index": 113,
+      "bracket-start": 768,
+      "hammer-cost": 565,
+      "verified": true
+    },
+    {
+      "bracket-index": 114,
+      "bracket-start": 776,
+      "hammer-cost": 570,
+      "verified": true
+    },
+    {
+      "bracket-index": 115,
+      "bracket-start": 783,
+      "hammer-cost": 575,
+      "verified": true
+    },
+    {
+      "bracket-index": 116,
+      "bracket-start": 791,
+      "hammer-cost": 580,
+      "verified": true
+    },
+    {
+      "bracket-index": 117,
+      "bracket-start": 798,
+      "hammer-cost": 585,
+      "verified": false
+    },
+    {
+      "bracket-index": 118,
+      "bracket-start": 806,
+      "hammer-cost": 590,
+      "verified": true
+    },
+    {
+      "bracket-index": 119,
+      "bracket-start": 814,
+      "hammer-cost": 595,
+      "verified": true
+    },
+    {
+      "bracket-index": 120,
+      "bracket-start": 821,
+      "hammer-cost": 600,
+      "verified": true
+    },
+    {
+      "bracket-index": 121,
+      "bracket-start": 829,
+      "hammer-cost": 605,
+      "verified": true
+    },
+    {
+      "bracket-index": 122,
+      "bracket-start": 837,
+      "hammer-cost": 610,
+      "verified": true
+    },
+    {
+      "bracket-index": 123,
+      "bracket-start": 845,
+      "hammer-cost": 615,
+      "verified": false
+    },
+    {
+      "bracket-index": 124,
+      "bracket-start": 852,
+      "hammer-cost": 620,
+      "verified": false
+    },
+    {
+      "bracket-index": 125,
+      "bracket-start": 859,
+      "hammer-cost": 625,
+      "verified": false
+    },
+    {
+      "bracket-index": 126,
+      "bracket-start": 867,
+      "hammer-cost": 630,
+      "verified": false
+    },
+    {
+      "bracket-index": 127,
+      "bracket-start": 874,
+      "hammer-cost": 635,
+      "verified": false
+    },
+    {
+      "bracket-index": 128,
+      "bracket-start": 882,
+      "hammer-cost": 640,
+      "verified": false
+    },
+    {
+      "bracket-index": 129,
+      "bracket-start": 889,
+      "hammer-cost": 645,
+      "verified": false
+    },
+    {
+      "bracket-index": 130,
+      "bracket-start": 896,
+      "hammer-cost": 650,
+      "verified": false
+    },
+    {
+      "bracket-index": 131,
+      "bracket-start": 904,
+      "hammer-cost": 655,
+      "verified": false
+    },
+    {
+      "bracket-index": 132,
+      "bracket-start": 912,
+      "hammer-cost": 660,
+      "verified": false
+    },
+    {
+      "bracket-index": 133,
+      "bracket-start": 919,
+      "hammer-cost": 665,
+      "verified": false
+    },
+    {
+      "bracket-index": 134,
+      "bracket-start": 927,
+      "hammer-cost": 670,
+      "verified": false
+    },
+    {
+      "bracket-index": 135,
+      "bracket-start": 935,
+      "hammer-cost": 675,
+      "verified": false
+    },
+    {
+      "bracket-index": 136,
+      "bracket-start": 942,
+      "hammer-cost": 680,
+      "verified": false
+    },
+    {
+      "bracket-index": 137,
+      "bracket-start": 950,
+      "hammer-cost": 685,
+      "verified": false
+    },
+    {
+      "bracket-index": 138,
+      "bracket-start": 958,
+      "hammer-cost": 690,
+      "verified": false
+    },
+    {
+      "bracket-index": 139,
+      "bracket-start": 966,
+      "hammer-cost": 695,
+      "verified": false
+    },
+    {
+      "bracket-index": 140,
+      "bracket-start": 974,
+      "hammer-cost": 700,
+      "verified": false
+    },
+    {
+      "bracket-index": 141,
+      "bracket-start": 982,
+      "hammer-cost": 705,
+      "verified": false
+    },
+    {
+      "bracket-index": 142,
+      "bracket-start": 990,
+      "hammer-cost": 710,
+      "verified": false
+    },
+    {
+      "bracket-index": 143,
+      "bracket-start": 998,
+      "hammer-cost": 715,
+      "verified": false
+    },
+    {
+      "bracket-index": 144,
+      "bracket-start": 1006,
+      "hammer-cost": 720,
+      "verified": false
+    },
+    {
+      "bracket-index": 145,
+      "bracket-start": 1014,
+      "hammer-cost": 725,
+      "verified": false
+    },
+    {
+      "bracket-index": 146,
+      "bracket-start": 1022,
+      "hammer-cost": 730,
+      "verified": false
+    },
+    {
+      "bracket-index": 147,
+      "bracket-start": 1030,
+      "hammer-cost": 735,
+      "verified": false
+    },
+    {
+      "bracket-index": 148,
+      "bracket-start": 1038,
+      "hammer-cost": 740,
+      "verified": false
+    },
+    {
+      "bracket-index": 149,
+      "bracket-start": 1046,
+      "hammer-cost": 745,
+      "verified": false
+    },
+    {
+      "bracket-index": 150,
+      "bracket-start": 1054,
+      "hammer-cost": 750,
+      "verified": false
+    },
+    {
+      "bracket-index": 151,
+      "bracket-start": 1062,
+      "hammer-cost": 755,
+      "verified": false
+    },
+    {
+      "bracket-index": 152,
+      "bracket-start": 1070,
+      "hammer-cost": 760,
+      "verified": false
+    },
+    {
+      "bracket-index": 153,
+      "bracket-start": 1078,
+      "hammer-cost": 765,
+      "verified": false
+    },
+    {
+      "bracket-index": 154,
+      "bracket-start": 1086,
+      "hammer-cost": 770,
+      "verified": false
+    },
+    {
+      "bracket-index": 155,
+      "bracket-start": 1094,
+      "hammer-cost": 775,
+      "verified": false
+    },
+    {
+      "bracket-index": 156,
+      "bracket-start": 1102,
+      "hammer-cost": 780,
+      "verified": false
+    },
+    {
+      "bracket-index": 157,
+      "bracket-start": 1110,
+      "hammer-cost": 785,
+      "verified": true
+    },
+    {
+      "bracket-index": 158,
+      "bracket-start": 1118,
+      "hammer-cost": 790,
+      "verified": true
+    },
+    {
+      "bracket-index": 159,
+      "bracket-start": 1126,
+      "hammer-cost": 795,
+      "verified": true
+    },
+    {
+      "bracket-index": 160,
+      "bracket-start": 1134,
+      "hammer-cost": 800,
+      "verified": true
+    },
+    {
+      "bracket-index": 161,
+      "bracket-start": 1142,
+      "hammer-cost": 805,
+      "verified": true
+    },
+    {
+      "bracket-index": 162,
+      "bracket-start": 1150,
+      "hammer-cost": 810,
+      "verified": true
+    },
+    {
+      "bracket-index": 163,
+      "bracket-start": 1157,
+      "hammer-cost": 815,
+      "verified": true
+    },
+    {
+      "bracket-index": 164,
+      "bracket-start": 1165,
+      "hammer-cost": 820,
+      "verified": true
+    },
+    {
+      "bracket-index": 165,
+      "bracket-start": 1173,
+      "hammer-cost": 825,
+      "verified": true
+    },
+    {
+      "bracket-index": 166,
+      "bracket-start": 1181,
+      "hammer-cost": 830,
+      "verified": true
+    },
+    {
+      "bracket-index": 167,
+      "bracket-start": 1189,
+      "hammer-cost": 835,
+      "verified": true
+    },
+    {
+      "bracket-index": 168,
+      "bracket-start": 1197,
+      "hammer-cost": 840,
+      "verified": true
+    },
+    {
+      "bracket-index": 169,
+      "bracket-start": 1205,
+      "hammer-cost": 845,
+      "verified": true
+    },
+    {
+      "bracket-index": 170,
+      "bracket-start": 1213,
+      "hammer-cost": 850,
+      "verified": true
+    },
+    {
+      "bracket-index": 171,
+      "bracket-start": 1221,
+      "hammer-cost": 855,
+      "verified": false
+    },
+    {
+      "bracket-index": 172,
+      "bracket-start": 1229,
+      "hammer-cost": 860,
+      "verified": true
+    },
+    {
+      "bracket-index": 173,
+      "bracket-start": 1237,
+      "hammer-cost": 865,
+      "verified": true
+    },
+    {
+      "bracket-index": 174,
+      "bracket-start": 1245,
+      "hammer-cost": 870,
+      "verified": false
+    },
+    {
+      "bracket-index": 175,
+      "bracket-start": 1253,
+      "hammer-cost": 875,
+      "verified": true
+    },
+    {
+      "bracket-index": 176,
+      "bracket-start": 1261,
+      "hammer-cost": 880,
+      "verified": true
+    },
+    {
+      "bracket-index": 177,
+      "bracket-start": 1269,
+      "hammer-cost": 885,
+      "verified": true
+    },
+    {
+      "bracket-index": 178,
+      "bracket-start": 1277,
+      "hammer-cost": 890,
+      "verified": true
+    },
+    {
+      "bracket-index": 179,
+      "bracket-start": 1285,
+      "hammer-cost": 895,
+      "verified": true
+    },
+    {
+      "bracket-index": 180,
+      "bracket-start": 1293,
+      "hammer-cost": 900,
+      "verified": true
+    },
+    {
+      "bracket-index": 181,
+      "bracket-start": 1301,
+      "hammer-cost": 905,
+      "verified": false
+    },
+    {
+      "bracket-index": 182,
+      "bracket-start": 1309,
+      "hammer-cost": 910,
+      "verified": true
+    },
+    {
+      "bracket-index": 183,
+      "bracket-start": 1317,
+      "hammer-cost": 915,
+      "verified": true
+    },
+    {
+      "bracket-index": 184,
+      "bracket-start": 1325,
+      "hammer-cost": 920,
+      "verified": true
+    },
+    {
+      "bracket-index": 185,
+      "bracket-start": 1333,
+      "hammer-cost": 925,
+      "verified": true
+    },
+    {
+      "bracket-index": 186,
+      "bracket-start": 1341,
+      "hammer-cost": 930,
+      "verified": false
+    },
+    {
+      "bracket-index": 187,
+      "bracket-start": 1350,
+      "hammer-cost": 935,
+      "verified": true
+    },
+    {
+      "bracket-index": 188,
+      "bracket-start": 1358,
+      "hammer-cost": 940,
+      "verified": false
+    },
+    {
+      "bracket-index": 189,
+      "bracket-start": 1366,
+      "hammer-cost": 945,
+      "verified": false
+    },
+    {
+      "bracket-index": 190,
+      "bracket-start": 1374,
+      "hammer-cost": 950,
+      "verified": false
+    },
+    {
+      "bracket-index": 191,
+      "bracket-start": 1382,
+      "hammer-cost": 955,
+      "verified": false
+    },
+    {
+      "bracket-index": 192,
+      "bracket-start": 1390,
+      "hammer-cost": 960,
+      "verified": false
+    },
+    {
+      "bracket-index": 193,
+      "bracket-start": 1398,
+      "hammer-cost": 965,
+      "verified": false
+    },
+    {
+      "bracket-index": 194,
+      "bracket-start": 1406,
+      "hammer-cost": 970,
+      "verified": false
+    },
+    {
+      "bracket-index": 195,
+      "bracket-start": 1414,
+      "hammer-cost": 975,
+      "verified": false
+    },
+    {
+      "bracket-index": 196,
+      "bracket-start": 1422,
+      "hammer-cost": 980,
+      "verified": false
+    },
+    {
+      "bracket-index": 197,
+      "bracket-start": 1430,
+      "hammer-cost": 985,
+      "verified": false
+    },
+    {
+      "bracket-index": 198,
+      "bracket-start": 1438,
+      "hammer-cost": 990,
+      "verified": false
+    },
+    {
+      "bracket-index": 199,
+      "bracket-start": 1446,
+      "hammer-cost": 995,
+      "verified": false
+    },
+    {
+      "bracket-index": 200,
+      "bracket-start": 1454,
+      "hammer-cost": 1000,
+      "verified": false
+    },
+    {
+      "bracket-index": 201,
+      "bracket-start": 1462,
+      "hammer-cost": 1005,
+      "verified": false
+    },
+    {
+      "bracket-index": 202,
+      "bracket-start": 1470,
+      "hammer-cost": 1010,
+      "verified": false
+    },
+    {
+      "bracket-index": 203,
+      "bracket-start": 1478,
+      "hammer-cost": 1015,
+      "verified": false
+    },
+    {
+      "bracket-index": 204,
+      "bracket-start": 1486,
+      "hammer-cost": 1020,
+      "verified": false
+    },
+    {
+      "bracket-index": 205,
+      "bracket-start": 1494,
+      "hammer-cost": 1025,
+      "verified": false
+    },
+    {
+      "bracket-index": 206,
+      "bracket-start": 1502,
+      "hammer-cost": 1030,
+      "verified": false
+    },
+    {
+      "bracket-index": 207,
+      "bracket-start": 1511,
+      "hammer-cost": 1035,
+      "verified": false
+    },
+    {
+      "bracket-index": 208,
+      "bracket-start": 1519,
+      "hammer-cost": 1040,
+      "verified": false
+    },
+    {
+      "bracket-index": 209,
+      "bracket-start": 1527,
+      "hammer-cost": 1045,
+      "verified": false
+    },
+    {
+      "bracket-index": 210,
+      "bracket-start": 1535,
+      "hammer-cost": 1050,
+      "verified": false
+    },
+    {
+      "bracket-index": 211,
+      "bracket-start": 1543,
+      "hammer-cost": 1055,
+      "verified": false
+    },
+    {
+      "bracket-index": 212,
+      "bracket-start": 1551,
+      "hammer-cost": 1060,
+      "verified": false
+    },
+    {
+      "bracket-index": 213,
+      "bracket-start": 1559,
+      "hammer-cost": 1065,
+      "verified": false
+    },
+    {
+      "bracket-index": 214,
+      "bracket-start": 1567,
+      "hammer-cost": 1070,
+      "verified": false
+    },
+    {
+      "bracket-index": 215,
+      "bracket-start": 1575,
+      "hammer-cost": 1075,
+      "verified": false
+    },
+    {
+      "bracket-index": 216,
+      "bracket-start": 1583,
+      "hammer-cost": 1080,
+      "verified": false
+    },
+    {
+      "bracket-index": 217,
+      "bracket-start": 1592,
+      "hammer-cost": 1085,
+      "verified": false
+    },
+    {
+      "bracket-index": 218,
+      "bracket-start": 1601,
+      "hammer-cost": 1090,
+      "verified": false
+    },
+    {
+      "bracket-index": 219,
+      "bracket-start": 1610,
+      "hammer-cost": 1095,
+      "verified": false
+    },
+    {
+      "bracket-index": 220,
+      "bracket-start": 1618,
+      "hammer-cost": 1100,
+      "verified": true
+    },
+    {
+      "bracket-index": 221,
+      "bracket-start": 1626,
+      "hammer-cost": 1105,
+      "verified": true
+    },
+    {
+      "bracket-index": 222,
+      "bracket-start": 1635,
+      "hammer-cost": 1110,
+      "verified": true
+    },
+    {
+      "bracket-index": 223,
+      "bracket-start": 1643,
+      "hammer-cost": 1115,
+      "verified": true
+    },
+    {
+      "bracket-index": 224,
+      "bracket-start": 1651,
+      "hammer-cost": 1120,
+      "verified": true
+    },
+    {
+      "bracket-index": 225,
+      "bracket-start": 1659,
+      "hammer-cost": 1125,
+      "verified": true
+    },
+    {
+      "bracket-index": 226,
+      "bracket-start": 1668,
+      "hammer-cost": 1130,
+      "verified": true
+    },
+    {
+      "bracket-index": 227,
+      "bracket-start": 1676,
+      "hammer-cost": 1135,
+      "verified": false
+    },
+    {
+      "bracket-index": 228,
+      "bracket-start": 1684,
+      "hammer-cost": 1140,
+      "verified": true
+    },
+    {
+      "bracket-index": 229,
+      "bracket-start": 1692,
+      "hammer-cost": 1145,
+      "verified": true
+    },
+    {
+      "bracket-index": 230,
+      "bracket-start": 1702,
+      "hammer-cost": 1150,
+      "verified": true
+    },
+    {
+      "bracket-index": 231,
+      "bracket-start": 1709,
+      "hammer-cost": 1155,
+      "verified": true
+    },
+    {
+      "bracket-index": 232,
+      "bracket-start": 1717,
+      "hammer-cost": 1160,
+      "verified": true
+    },
+    {
+      "bracket-index": 233,
+      "bracket-start": 1725,
+      "hammer-cost": 1165,
+      "verified": true
+    },
+    {
+      "bracket-index": 234,
+      "bracket-start": 1734,
+      "hammer-cost": 1170,
+      "verified": true
+    },
+    {
+      "bracket-index": 235,
+      "bracket-start": 1742,
+      "hammer-cost": 1175,
+      "verified": false
+    },
+    {
+      "bracket-index": 236,
+      "bracket-start": 1750,
+      "hammer-cost": 1180,
+      "verified": false
+    },
+    {
+      "bracket-index": 237,
+      "bracket-start": 1758,
+      "hammer-cost": 1185,
+      "verified": false
+    },
+    {
+      "bracket-index": 238,
+      "bracket-start": 1766,
+      "hammer-cost": 1190,
+      "verified": false
+    },
+    {
+      "bracket-index": 239,
+      "bracket-start": 1774,
+      "hammer-cost": 1195,
+      "verified": false
+    },
+    {
+      "bracket-index": 240,
+      "bracket-start": 1782,
+      "hammer-cost": 1200,
+      "verified": false
+    },
+    {
+      "bracket-index": 241,
+      "bracket-start": 1790,
+      "hammer-cost": 1205,
+      "verified": false
+    },
+    {
+      "bracket-index": 242,
+      "bracket-start": 1798,
+      "hammer-cost": 1210,
+      "verified": false
+    },
+    {
+      "bracket-index": 243,
+      "bracket-start": 1806,
+      "hammer-cost": 1215,
+      "verified": false
+    },
+    {
+      "bracket-index": 244,
+      "bracket-start": 1814,
+      "hammer-cost": 1220,
+      "verified": false
+    },
+    {
+      "bracket-index": 245,
+      "bracket-start": 1822,
+      "hammer-cost": 1225,
+      "verified": false
+    },
+    {
+      "bracket-index": 246,
+      "bracket-start": 1830,
+      "hammer-cost": 1230,
+      "verified": false
+    },
+    {
+      "bracket-index": 247,
+      "bracket-start": 1838,
+      "hammer-cost": 1235,
+      "verified": false
+    },
+    {
+      "bracket-index": 248,
+      "bracket-start": 1846,
+      "hammer-cost": 1240,
+      "verified": false
+    },
+    {
+      "bracket-index": 249,
+      "bracket-start": 1854,
+      "hammer-cost": 1245,
+      "verified": false
+    },
+    {
+      "bracket-index": 250,
+      "bracket-start": 1862,
+      "hammer-cost": 1250,
+      "verified": false
+    },
+    {
+      "bracket-index": 251,
+      "bracket-start": 1870,
+      "hammer-cost": 1255,
+      "verified": false
+    },
+    {
+      "bracket-index": 252,
+      "bracket-start": 1878,
+      "hammer-cost": 1260,
+      "verified": false
+    },
+    {
+      "bracket-index": 253,
+      "bracket-start": 1887,
+      "hammer-cost": 1265,
+      "verified": false
+    },
+    {
+      "bracket-index": 254,
+      "bracket-start": 1896,
+      "hammer-cost": 1270,
+      "verified": false
+    },
+    {
+      "bracket-index": 255,
+      "bracket-start": 1904,
+      "hammer-cost": 1275,
+      "verified": false
+    },
+    {
+      "bracket-index": 256,
+      "bracket-start": 1913,
+      "hammer-cost": 1280,
+      "verified": false
+    },
+    {
+      "bracket-index": 257,
+      "bracket-start": 1922,
+      "hammer-cost": 1285,
+      "verified": false
+    },
+    {
+      "bracket-index": 258,
+      "bracket-start": 1931,
+      "hammer-cost": 1290,
+      "verified": false
+    },
+    {
+      "bracket-index": 259,
+      "bracket-start": 1940,
+      "hammer-cost": 1295,
+      "verified": false
+    },
+    {
+      "bracket-index": 260,
+      "bracket-start": 1949,
+      "hammer-cost": 1300,
+      "verified": false
+    },
+    {
+      "bracket-index": 261,
+      "bracket-start": 1958,
+      "hammer-cost": 1305,
+      "verified": false
+    },
+    {
+      "bracket-index": 262,
+      "bracket-start": 1967,
+      "hammer-cost": 1310,
+      "verified": false
+    },
+    {
+      "bracket-index": 263,
+      "bracket-start": 1976,
+      "hammer-cost": 1315,
+      "verified": false
+    },
+    {
+      "bracket-index": 264,
+      "bracket-start": 1985,
+      "hammer-cost": 1320,
+      "verified": false
+    },
+    {
+      "bracket-index": 265,
+      "bracket-start": 1994,
+      "hammer-cost": 1325,
+      "verified": false
+    }
+  ]
+}

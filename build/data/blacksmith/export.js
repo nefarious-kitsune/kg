@@ -1,9 +1,23 @@
 import fs from 'fs';
-const fileData = fs.readFileSync('data.csv', 'utf-8').split('\n');
-const importedData = [];
+import {getDateFormatStrings} from '../../utils/date-utils.js';
 
-for (let i = 1; i < fileData.length; i++) {
-  const data = fileData[i].split(',');
+const exportDirectory = '../../../docs/data';
+const exportFileFragment = `${exportDirectory}/blacksmithUpgradeCost`;
+const tableName = 'Blacksmith Upgrade';
+const fileData = fs.readFileSync('data.csv', 'utf-8').split('\n');
+
+const tableDate = new Date();
+const fmtTableDate = getDateFormatStrings(tableDate);
+const tableDataCode = `${fmtTableDate.YYYY}-${fmtTableDate.MM}-${fmtTableDate.DD}`
+
+const compiledData = {
+  'table': tableName,
+  'table-date': tableDataCode,
+  'data': []
+}
+
+for (let rowIdx = 1; rowIdx < fileData.length; rowIdx++) {
+  const data = fileData[rowIdx].split(',');
   const bracketIndex = parseInt(data[0]);
 
   let startLevel = 0;
@@ -20,64 +34,49 @@ for (let i = 1; i < fileData.length; i++) {
  
   const cost = parseInt(data[4]);
 
-  importedData.push(
+  compiledData.data.push(
     {
-      index: bracketIndex,
-      startLevel: startLevel,
-      verified: verified,
-      cost: cost,
+      'bracket-index': bracketIndex,
+      'bracket-start': startLevel,
+      'hammer-cost': cost,
+      'verified': verified,
     }
   )
 }
 
-const exportedJSON = JSON.stringify(importedData, null, '  ');
-const exportedJs = 'const BlacksmithUpgradeCost = ' + exportedJSON;
-fs.writeFileSync('../../../docs/mk/blacksmithUpgradeCost.json', exportedJSON);
-fs.writeFileSync('../../../docs/mk/blacksmithUpgradeCost.js', exportedJs);
+const exportedJSON = JSON.stringify(compiledData, null, '  ');
 
-const exportedTableRows = [];
+const exportedJs =
+  'const BlacksmithUpgradeCost = ' +
+  JSON.stringify(compiledData.data, null, '  ');
 
-for (let i = 1; i < importedData.length; i++) {
-  const startLevel = importedData[i].startLevel;
+fs.writeFileSync(`${exportFileFragment}.json`, exportedJSON);
+fs.writeFileSync(`${exportFileFragment}.js`, exportedJs);
+
+const tableBody = [];
+
+const BracketCount = compiledData.data.length; 
+
+for (let bracketIndex = 0; bracketIndex < BracketCount; bracketIndex++) {
+  const thisBracket = compiledData.data[bracketIndex];
+  const nextBracket = compiledData.data[bracketIndex+1];
+
+  const startLevel = thisBracket['bracket-start'];
+  
   const endLevel =
-    (importedData.length > i+1)?
-    importedData[i+1].startLevel:
-    2000;
-  const cost = importedData[i].cost;
-  const verified = importedData[i].verified;
+    (BracketCount > bracketIndex+1)?nextBracket['bracket-start']:2000;
 
-  exportedTableRows.push(
-`      <tr>
-        <td>${startLevel} → ${startLevel+1}<br>⋮<br>${endLevel-1} → ${endLevel}</td>
-        <td>${cost}</td>
-        <td>Forge Hammer</td>
-        <td class="${verified?'verified':'unverified'}">${verified?'Verified':'Extrapolated'}</td>
-       </tr>`
-  )
+  const cost = thisBracket['hammer-cost'];
+  const verified = thisBracket.verified;
+
+  tableBody.push(`<tr id="bracket-${bracketIndex}">`)
+  tableBody.push(`<td class="level-col">${startLevel} → ${startLevel+1}<br>⋮<br>${endLevel-1} → ${endLevel}</td>`);
+  tableBody.push(`<td class="cost-col">${cost}</td>`);
+  tableBody.push(`<td class="verification-col ${verified?'verified':'unverified'}">${verified?'Verified':'Extrapolated'}</td>`);
+  tableBody.push('</tr>');
 }
 
 const htmlTemplate = fs.readFileSync('template.html', 'utf-8');
-const htmlOutput = htmlTemplate.replace(
-  '<!-- Data -->',
-  exportedTableRows.join('\n'),
-);
+const htmlOutput = htmlTemplate.replace('{{Data}}',tableBody.join('\n'));
 
-fs.writeFileSync(
-  '../../../docs/mk/blacksmithUpgradeCost.html',
-  htmlOutput,
-  {encoding:'utf8',flag:'w'},
-);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+fs.writeFileSync(`${exportFileFragment}.html`, htmlOutput, {encoding:'utf8',flag:'w'});

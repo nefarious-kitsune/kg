@@ -37,57 +37,6 @@
   border: 0.1rem solid var(--miku-red);
 }
 
-.tabbed-table-tab-bar {
-  display: flex;
-}
-
-.tabbed-table-tab-bar .extra {
-  flex-grow: 1;
-  background: var(--miku-red);
-  background: white;
-  text-align: right;
-  align-self: center;
-  font-size: 1rem;
-}
-
-.tabbed-table-tab-bar .extra img {
-  height: 1rem;
-}
-
-.tabbed-table-tab-bar .tab {
-  flex-grow: 0;
-}
-
-.tabbed-table-tab-bar .tab {
-  display: inline-block;
-  padding: 0.5rem;
-  margin: 0 0.2rem 0 0;
-  border: none;
-  cursor: pointer;
-  color: var(--miku-gold);
-  text-shadow: 0px 1px 1px var(--dark-neutral);
-  background-color: var(--miku-dark-red);
-}
-
-.tabbed-table-tab-bar .tab:hover {
-  background-color: var(--miku-red);
-}
-
-.tabbed-table-tab-bar .focused,
-.tabbed-table-tab-bar .focused:hover {
-  color: var(--miku-dark-red);
-  background-color: #fb9145;
-}
-
-.tabbed-table-tab-bar {
-  margin: 0;
-}
-
-.tabbed-table-content {
-  margin: 0;
-  padding: 0.5rem;
-  background: linear-gradient(to bottom, #fb9145, #fb9145 0.5rem, white 4rem, white); 
-}
 
 /* *********** Default result table styles *********** */
 

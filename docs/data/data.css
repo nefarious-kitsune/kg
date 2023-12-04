@@ -8,7 +8,28 @@
 
 table { border-collapse: collapse; position: relative;}
 
-table.blacksmith th,
+.upgrade-table th,
+.upgrade-table td {
+  padding: 0.1rem 0.5rem;
+  font-size: 1rem;
+}
+
+.upgrade-table {
+  border-collapse: collapse;
+  border: 0.1rem solid var(--miku-dark-red);
+}
+
+.upgrade-table th {
+  background: var(--miku-dark-red);
+  color: var(--miku-gold);
+  font-weight: normal;
+}
+.upgrade-table td {
+  background: white;
+  color: var(--miku-dark-red);
+  font-weight: normal;
+}
+
 table.witchLab th {
   background: var(--miku-dark-red);
   color: var(--miku-gold);
@@ -16,7 +37,6 @@ table.witchLab th {
   padding: 0.5rem; 
 }
 
-table.blacksmith td,
 table.witchLab td {
   background: white;
   color: black;
@@ -25,20 +45,29 @@ table.witchLab td {
   border-top: 0.1rem solid var(--miku-dark-red);
 }
 
-table th:first-child { border-radius: 0.8rem 0 0 0; }
-table th:last-child  { border-radius: 0 0.8rem 0 0; }
+.upgrade-table .level-col  {
+  width: 8rem;
+  text-align: left;
+}
+.upgrade-table .cost-col  {
+  width: 8rem;
+  text-align: right;
+}
+.upgrade-table .verification-col  {
+  width: 6rem;
+  text-align: left;
+}
+.upgrade-table td.verified { color:var(--green); }
+.upgrade-table td.unverified { color: var(--red); }
 
-table thead tr th:first-child { width: 8rem; }
-table thead tr th:last-child  { width: 6rem; }
-table thead tr th { position: sticky; top: 0; /* Don't forget this, required for the stickiness */ }
+.upgrade-table thead tr th {
+  position: sticky;
+  top: 0;
+}
 
-table tbody tr:nth-child(even) { background-color: #e9e9e9; }
-table tbody td:nth-child(1) { text-align: center; }
-table tbody td:nth-child(2) { text-align: right; }
-table tbody td:nth-child(3) { text-align: left; }
-table tbody td:nth-child(4) { text-align: center; }
-
-table tbody td.verified { color: #266033; }
-table tbody td.unverified { color: var(--miku-red); }
+.upgrade-table tbody tr:nth-child(even) td {
+  background: var(--pale-neutral);
+}
 
 object.unit-icon { width: auto; height: 2rem; padding: 0; margin: 0;}
+
