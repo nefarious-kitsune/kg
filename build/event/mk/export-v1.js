@@ -2,6 +2,7 @@ import fs from 'fs';
 import {getDateFormatStrings, getUTCDate} from '../../utils/date-utils.js';
 import {formatPoint} from '../../utils/number-utils.js';
 
+const sheetLink = 'https://docs.google.com/spreadsheets/d/1klpeA92TPTMjee7OsWCwPjXSibQlxrfZkLV535WJ3vA/edit?usp=sharing';
 const eventStartDate = getUTCDate(2023, 10, 9);
 // const eventStartDate = getUTCDate(2023, 10, 23);
 
@@ -9,10 +10,10 @@ const eventName = 'Mightiest Kingdom';
 const eventDuration = 6; // 6-days
 const eventPrefix = 'mk-';
 
-const MaxPhasePoints = (350 * 1000 * 1000); // non UP week
-const MaxFinalPoints = (600 * 1000 * 1000); // non UP week
-// const MaxPhasePoints = (1.5 * 1000 * 1000 * 1000); // Up week
-// const MaxFinalPoints = (2.2 * 1000 * 1000 * 1000); // Up week
+// const MaxPhasePoints = (550 * 1000 * 1000); // non UP week
+// const MaxFinalPoints = (850 * 1000 * 1000); // non UP week
+const MaxPhasePoints = (1.5 * 1000 * 1000 * 1000); // Up week
+const MaxFinalPoints = (2.2 * 1000 * 1000 * 1000); // Up week
 
 const eventEndDate = new Date(eventStartDate);
 eventEndDate.setDate(eventStartDate.getDate() + eventDuration - 1);
@@ -20,7 +21,7 @@ eventEndDate.setDate(eventStartDate.getDate() + eventDuration - 1);
 const fmtEventStart = getDateFormatStrings(eventStartDate);
 const fmtEventEnd   = getDateFormatStrings(eventEndDate);
 
-const exportDirectory = '../../../../docs/events';
+const exportDirectory = '../../../docs/events';
 const dateFragment = `${fmtEventStart.YYYY}${fmtEventStart.MM}${fmtEventStart.DD}`;
 const exportFileFragment = `${exportDirectory}/${eventPrefix}${dateFragment}`;
 
@@ -48,6 +49,7 @@ const compiledData = {
 
 const servers1 = rawDataRows[0].split('\t').filter((txt) => txt.length > 0);
 const servers2 = rawDataRows[1].split('\t').filter((txt) => txt.length > 0);
+const serverList = servers1.concat(servers2).sort().join(', ');
 const pointData = rawDataRows.slice(2).map((row) => row.split('\t'));
 
 for (let svsIdx = 0; svsIdx < servers1.length; svsIdx++) {
@@ -257,6 +259,8 @@ for (let svsIdx = 0; svsIdx < servers1.length; svsIdx++) {
 const htmlTemplate =  fs.readFileSync('template.html', 'utf-8');
 const exportedHtml = htmlTemplate
   .replace('{{TABLE BODY}}', bodyContent.join('\n'))
+  .replaceAll('{{SERVER LIST}}'  , serverList)
+  .replaceAll('{{SHEET LINK}}'  , sheetLink)
   .replaceAll('{{EVENT START YEAR}}' , fmtEventStart.YYYY)
   .replaceAll('{{EVENT START MONTH}}', fmtEventStart.MM)
   .replaceAll('{{EVENT START DAY}}'  , fmtEventStart.DD)
