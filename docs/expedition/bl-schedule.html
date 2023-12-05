@@ -11,6 +11,16 @@
   <link href="../css/common.css" rel="stylesheet" />
   <link href="../css/model-image.css" rel="stylesheet" />
   <script src="../js/model-image.js"></script>
+  <style>
+    table.schedule {
+      border-collapse: collapse;
+    }
+    table.schedule td,
+    table.schedule th {
+      padding: 0.5rem;
+      border: 0.11rem solid var(--miku-dark-red);
+    }
+  </style>
 </head>
 <body>
 <header id="header">
@@ -30,105 +40,157 @@
 <main>
 <h1>Burning Expedition Timeline</h1>
 
-<ul class="butterfly">
-  <li><a href="../images/expedition/bl-timeline.gif">Animated timeline</a></li>
-  <li>
-    Before Expedition starts, R5 should use the
-    <a href="./bl-maps">map worksheet</a>
-    to mark the hive location so that members who can move in at reset
-    can set up a hive by themselves
-  </li>
-  <li>
-    <a
-      href="../images/expedition/bl-map-timeline_D1-0000.png"
-      class="modal-link"
-      data-caption="Burning Expedition starts. Check that your auto-rally is set to join rallies on level-16 Titans"
-    >Day 1 UTC 0000</a>:
-    Burning Expedition starts. Check that your auto-rally is set
-    to join rallies on <em>level-16 Titans</em>.
-  </li>
-  <li>
-    <a
-      href="../images/expedition/bl-map-timeline_D1-1200.png"
-      class="modal-link"
-      data-caption="3 towers open (level-1)"
-    >Day 1 UTC 1200</a>: 3 towers open (level-1).
-  </li>
-  <li>
-    <a
-      href="../images/expedition/bl-map-timeline_D2-0000.png"
-      class="modal-link"
-      data-caption="4 towers open (level-1)"
-    >Day 2 UTC 0000</a>: 4 towers open (level-1).
-  </li>
-  <li>
-    <a
-      href="../images/expedition/bl-map-timeline_D2-1200.png"
-      class="modal-link"
-      data-caption="5 towers open (level-1). One alliance needs to prepare to move their hive outside of the Safe Zone."
-    >Day 2 UTC 1200</a>: 5 towers open (level-1). One alliance
-    needs to
-    <em>prepare to move their hive outside of the Safe Zone</em>.
-  </li>
-  <li>
-    <a
-      href="../images/expedition/bl-map-timeline_D3-0000.png"
-      class="modal-link"
-      data-caption="6 towers open (4 level-1 and 2 level-2)"
-    >Day 3 UTC 0000</a>: 6 towers open (4 level-1 and 2 level-2).
-  </li>
-  <li>
-    <a
-      href="../images/expedition/bl-map-timeline_D3-0200.png"
-      class="modal-link"
-      data-caption="4 towers open (level-2)"
-    >Day 3 UTC 0200</a>: 4 towers open (level-2).
-  </li>
-  <li>
-    <a
-      href="../images/expedition/bl-map-timeline_D3-0400.png"
-      class="modal-link"
-      data-caption="6 towers open (level-2)"
-    >Day 3 UTC 0400</a>: 6 towers open (level-2).
-  </li>
-  <li>
-    <a
-      href="../images/expedition/bl-map-timeline_D3-0600.png"
-      class="modal-link"
-      data-caption="10 towers open (level-2)"
-    >Day 3 UTC 0600</a>: 10 towers open (level-2).
-  </li>
-  <li>
-    <a
-      href="../images/expedition/bl-map-timeline_D3-0800.png"
-      class="modal-link"
-      data-caption="10 towers open (level-2)"
-    >Day 3 UTC 0800</a>: 10 towers open (level-2).
-  </li>
-  <li>
-    <a
-      href="../images/expedition/bl-map-timeline_D3-1000.png"
-      class="modal-link"
-      data-caption="9 towers open (level-2)"
-    >Day 3 UTC 1000</a>: 9 towers open (level-2).
-  </li>
-  <li>
-    <a
-      href="../images/expedition/bl-map-timeline_D3-1200.png"
-      class="modal-link"
-      data-caption="4 towers open (level-2)"
-    >Day 3 UTC 1200</a>: 4 towers open (level-2).
-    First occupation of level-1 towers complete.
-    <em>graphics is wrong. correct later</em>
-  </li>
-  <li>
-    <a
-      href="../images/expedition/bl-map-timeline_D3-1400.png"
-      class="modal-link"
-      data-caption="8 towers open (4 level-1 and 4 level-2)"
-    >Day 3 UTC 1400</a>: level-2 towers complete.
-  </li>
-</ul>
+<table class="schedule">
+<tbody>
+<tr>
+<td colspan="2">Preparation</td>
+<td>
+  Use the <a href="./bl-maps">map worksheet</a>
+  to mark the hive location so that members who can move in at reset
+  can set up a hive by themselves
+</td>
+</tr>
+
+<tr>
+<td rowspan="2">D1</td>
+<td>0000</td>
+<td>
+  <a
+    href="../images/expedition/timeline-4x_D1-0000.png"
+    class="modal-link"
+    data-caption="Burning Expedition starts. Check that your auto-rally is set to join rallies on level-16 Titans"
+  >Map</a>
+  Send reminder mail asking members to check that their
+  auto-rally is set to join rallies on <em>level-16 Titans</em>.
+</td>
+</tr>
+<tr>
+<td>1200</td>
+<td>
+  <a
+    href="../images/expedition/timeline-4x_D1-1200.png"
+    class="modal-link"
+    data-caption="3 towers open (level-1)"
+  >Map</a>
+  3 towers open (level-1).
+</td>
+</tr>
+
+<tr>
+<td rowspan="2">D2</td>
+<td>0000</td>
+<td>
+  <a
+    href="../images/expedition/timeline-4x_D2-0000.png"
+    class="modal-link"
+    data-caption="4 towers open (level-1)."
+  >Map</a>
+  4 towers open (level-1).
+</td>
+</tr>
+<tr>
+<td>1200</td>
+<td>
+  <a
+    href="../images/expedition/timeline-4x_D2-1200.png"
+    class="modal-link"
+    data-caption="5 towers open (level-1). One alliance needs to prepare to move their hive outside of the Safe Zone."
+  >Map</a>
+  5 towers open (level-1). One alliance needs to
+  prepare to move their hive outside of the Safe Zone.
+</td>
+</tr>
+
+<tr>
+<td rowspan="8">D3</td>
+<td>0000</td>
+<td>
+  <a
+    href="../images/expedition/timeline-4x_D3-0000.png"
+    class="modal-link"
+    data-caption="6 towers open (4 level-1 and 2 level-2)."
+  >Map</a>
+  6 towers open (4 level-1 and 2 level-2).
+</td>
+</tr>
+<tr>
+<td>0200</td>
+<td>
+  <a
+    href="../images/expedition/timeline-4x_D3-0200.png"
+    class="modal-link"
+    data-caption="4 towers open (level-2)."
+  >Map</a>
+  4 towers open (level-2).
+</td>
+</tr>
+<tr>
+<td>0400</td>
+<td>
+  <a
+    href="../images/expedition/timeline-4x_D3-0400.png"
+    class="modal-link"
+    data-caption="6 towers open (level-2)"
+  >Map</a>
+  6 towers open (level-2)
+</td>
+</tr>
+<tr>
+<td>0600</td>
+<td>
+  <a
+    href="../images/expedition/timeline-4x_D3-0600.png"
+    class="modal-link"
+    data-caption="10 towers open (level-2)."
+  >Map</a>
+  10 towers open (level-2).
+</td>
+</tr>
+<tr>
+<td>0800</td>
+<td>
+  <a
+    href="../images/expedition/timeline-4x_D3-0800.png"
+    class="modal-link"
+    data-caption="10 towers open (level-2)."
+  >Map</a>
+  10 towers open (level-2).
+</td>
+</tr>
+<td>1000</td>
+<td>
+  <a
+    href="../images/expedition/timeline-4x_D3-1000.png"
+    class="modal-link"
+    data-caption="9 towers open (level-2)."
+  >Map</a>
+  9 towers open (level-2).
+</td>
+</tr>
+<tr>
+<td>1200</td>
+<td>
+  <a
+    href="../images/expedition/timeline-4x_D3-1200.png"
+    class="modal-link"
+    data-caption="4 towers open (level-2). First occupation of level-1 towers complete."
+  >Map</a>
+  4 towers open (level-2). First occupation of level-1 towers complete.
+</td>
+</tr>
+<tr>
+<td>1400</td>
+<td>
+  <a
+    href="../images/expedition/timeline-4x_D3-1400.png"
+    class="modal-link"
+    data-caption="First occupation of level-2 towers complete."
+  >Map</a>
+  First occupation of level-2 towers complete.
+</td>
+</tr>
+</tbody>
+</table>
 
 </main>
 </body>
