@@ -1,10 +1,9 @@
 .modal-link {
   display: inline-block;
-  background-color: var(--miku-red);
-  color: white;
   text-decoration: none;;
   padding: 0.1rem 0.5rem;
   border-radius: 0.2rem;
+  border: 0.1rem solid var(--miku-red);
 }
 #modal-container {
   position: fixed;
