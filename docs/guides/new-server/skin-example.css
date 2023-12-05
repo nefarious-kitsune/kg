@@ -1,0 +1,50 @@
+table.skin-example thead {
+  background: var(--miku-red);
+  color: white;
+}
+table.skin-example tfoot {
+  background: var(--miku-gold);
+  
+}
+table.skin-example {
+  border-collapse: collapse;
+  width: 100%;
+}
+table.skin-example th,
+table.skin-example td {
+  padding: 0.5rem;
+  border: 0.11rem solid var(--miku-dark-red);      
+}
+
+table.skin-example .skin-name {
+  margin-bottom: 0.5rem;
+}
+
+table.skin-example .skill-tag {
+  display: inline-block;
+  width: 3.4rem;
+}
+
+table.skin-example .skill-desc {
+  font-size: 0.98rem;
+  margin-bottom: 0.2rem;
+}
+
+table.skin-example .checked:after {
+  font-weight: bold;
+  content: "✔";
+  color: var(--miku-red);
+  margin-left: 0.5rem;
+}
+
+table.skin-example .duration {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 0.8rem;
+  color: var(--dark-neutral);
+}
+
+table.skin-example caption {
+  padding: 0.2rem;
+  /* caption-side: bottom; */
+}
