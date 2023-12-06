@@ -4,8 +4,8 @@ table.skin-example thead {
 }
 table.skin-example tfoot {
   background: var(--miku-gold);
-  
 }
+
 table.skin-example {
   border-collapse: collapse;
   width: 100%;
