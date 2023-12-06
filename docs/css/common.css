@@ -627,3 +627,11 @@ table.simple .new-section {
 table.simple .sub-section {
   border-top: 0.1rem dashed var(--miku-dark-red);
 }
+
+table.simple td.number {
+  font-family: monospace, monospace ;
+  text-align: right;
+}
+table.simple tbody th {
+  text-align: left;
+}
