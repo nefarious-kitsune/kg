@@ -9,6 +9,10 @@
   <meta property="og:description" content="Guides for Kingdom Guard players on new servers">
   <meta property="og:image" content="https://kg.kitsune21.com/images/logo_torii.png">
   <link href="../../css/common.css" rel="stylesheet" />
+  <link href="../../css/model-image.css" rel="stylesheet" />
+  <script src="../../js/model-image.js"></script>
+  <link rel="prefetch" href="../../images/screenshots/bag-location.png">
+  <link rel="prefetch" href="../../images/screenshots/free-vip-point.png">
 </head>
 <body>
 <header id="header">
@@ -20,6 +24,12 @@
     <span class="current">New Server</span>
   </nav></div>
 </header>
+<div id="modal-container">
+<button class="close" onclick="closeModal()">&times;</button>
+<img id="modal-image">
+<div id="modal-caption"></div>
+</div>
+  
 <main>
 
 <h1>Things to Do (New Servers)</h1>
@@ -37,18 +47,21 @@ get your free Mini Titan avatar frame for up to 2% power increase.
 
 <p>
   Join the
-  <a hre="https://discord.gg/qQwB4Tnv">official Discord server
-  (discord.gg/qQwB4Tnv)</a> and meet other players. You
-  can ask veteran players for tips.
+  <a hre="https://discord.gg/qQwB4Tnv">official Discord server</a>
+  and meet other players. You can ask veteran players for tips.
 </p>
 
 <h2>Get Your Free VIP Points</h2>
 
 <p>
   Go to your bag
-  (<a href="../../images/screenshots/bag-location.png">screenshot</a>)
-  and redeem the free 6o VIP points
-  (<a href="../../images/screenshots/free-vip-point.png">screenshot</a>).
+  <a
+    href="../../images/screenshots/bag-location.png"
+    class="modal-link"
+    data-caption="You can access the bag from the Bag icon at lower right side of the screen."
+  >Bag</a>
+  and redeem the free 60 VIP points.
+  <!-- (<a href="../../images/screenshots/free-vip-point.png">screenshot</a>). -->
   Use the points to upgrade yourself to VIP 2. That will increase your
   Action Points queue by 50
   (the queue will fill up in 15 hours instead of 12 hours).
