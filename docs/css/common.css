@@ -604,3 +604,26 @@ input[type=checkbox]:checked:after {
   padding: 0.5rem;
   background: linear-gradient(to bottom, #fb9145, #fb9145 0.5rem, white 4rem, white); 
 }
+
+table.simple {
+  border-collapse: collapse;
+}
+table.simple td,
+table.simple th {
+  padding: 0.5rem;
+  border: 0.11rem solid var(--miku-dark-red);
+}
+table.simple thead th {
+  background: var(--miku-red);
+  color: white;
+}
+
+table.simple tfoot {
+  background: var(--miku-gold);
+}
+table.simple .new-section {
+  border-top: 0.1rem solid var(--miku-dark-red);
+}
+table.simple .sub-section {
+  border-top: 0.1rem dashed var(--miku-dark-red);
+}
