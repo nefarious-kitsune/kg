@@ -1,0 +1,137 @@
+<html>
+<head>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Miku's Shrine: Hero Base Power</title>
+  <meta property="og:url" content="https://kg.kitsune21.com/">
+  <meta property="og:title" content="Miku's Shrine | Hero Base Power">
+  <meta property="og:description" content="Information on hero base power">
+  <meta property="og:image" content="https://kg.kitsune21.com/images/logo_torii.png">
+  <link href="../css/common.css" rel="stylesheet" />
+  <style>
+    .eq {
+      display: block;
+      margin: 0.2rem 0;
+      font-size: 0.8rem;
+      color: var(--neutral)
+    }
+  </style>
+</head>
+<body>
+<header id="header">
+  <div id="breadcrumb-wrapper"><nav>
+    <a class="link" href="../content">Home</a>
+    <span class="chevron">›</span>
+    <a class="link" href="./">Hero</a>
+    <span class="chevron">›</span>
+    <a class="link" href="./power">Power</a>
+    <span class="chevron">›</span>
+    <span class="current">Unit Base Power</span>
+  </nav></div>
+</header>
+<main>
+<h1>Unit Base Power</h1>
+
+Each troops march has a Unit Base Power. The power depends on
+<ul class="butterfly">
+  <li>Castle level</li>
+  <li>Troops capacity</li>
+  <li>Unit Specialization</li>
+</ul>
+
+<h2>Troops capacity</h2>
+
+<p>By default, each troops march has six (6) units. The unit count
+can be increased to ten (10) via Tech upgrades in the Academy.</p>
+
+<h2>Unit Specialization</h2>
+
+<p>With Unit Specialization, your march can gain additional
+power form units of <em>other elements</em>.</p>
+
+<ul class="butterfly">
+  <li>To increase Archer power, do Unit Specialization on
+    Fire, Ice, and Goblin.
+  </li>
+  <li>To increase Fire power, do Unit Specialization on
+    Archer, Ice, and Goblin.
+  </li>
+  <li>To increase Ice power, do Unit Specialization on
+    Archer, Fire, and Goblin.
+  </li>
+  <li>To increase Goblin power, do Unit Specialization on
+    Archer, Fire, and Ice.
+  </li>
+</ul>
+
+<h2>Example</h2>
+
+<table class="simple">
+<caption>Example</caption>
+<tbody>
+<tr>
+<th colspan="2">Castle Level</th>
+<td class="number">810</td>
+</tr>
+<tr>
+<th colspan="2">Troops Capacity</th>
+<td rowspan="4" class="number">9</td>
+</tr>
+<tr>
+<td>Default troops capacity</td>
+<td class="number">6</td>
+</tr>
+<tr>
+<td>1st Troop Capacity Tech (Level 3)</td>
+<td class="number">+3</td>
+</tr>
+<tr>
+<td>2nd Troop Capacity Tech (level 0)</td>
+<td class="number">+0</td>
+</tr>
+<tr>
+<th colspan="2">Unit Specialization (Archer)</th>
+<td class="number">+0%</td>
+</tr>
+<tr>
+<th colspan="2">Unit Specialization (Fire)</th>
+<td class="number">+10%</td>
+</tr>
+<tr>
+<th colspan="2">Unit Specialization (Ice)</th>
+<td class="number">+20%</td>
+</tr>
+<tr>
+<th colspan="2">Unit Specialization (Goblin)</th>
+<td class="number">+20%</td>
+</tr>
+<tr>
+<th colspan="2">Unit Base Power (Archer)<br>
+<span class="eq">810 × 9 × 10 × (1 + 10% + 20% + 20%)</span>
+</th>
+<td class="number">1093500</td>
+</tr>
+<tr>
+<th colspan="2">Unit Base Power (Fire)<br>
+<span class="eq">810 × 9 × 10 × (1 + 20% + 20%)</span>
+</th>
+<td class="number">1020600</td>
+</tr>
+<tr>
+<th colspan="2">Unit Base Power (Ice)<br>
+<span class="eq">810 × 9 × 10 × (1 + 10% + 20%)</span>
+</th>
+<td class="number">947700</td>
+</tr>
+<tr>
+<th colspan="2">Unit Base Power (Goblin)<br>
+<span class="eq">810 × 9 × 10 × (1 + 10% + 20%)</span>
+</th>
+<td class="number">947700</td>
+</tr>
+              
+</tbody>
+</table>
+
+</main>
+</body>
+</html>
