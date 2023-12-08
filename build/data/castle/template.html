@@ -10,6 +10,12 @@
   <meta property="og:image" content="https://kg.kitsune21.com/images/sheet-2x_n.png">
   <link href="../css/common.css" rel="stylesheet" />
   <link href="./data.css" rel="stylesheet" />
+  <script src="./data-common.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", (e) => {
+      getDom(2);
+    })
+  </script>
 </head>
 <body>
 
@@ -19,7 +25,7 @@
     <span class="chevron">›</span>
     <a class="link" href="./">Data</a>
     <span class="chevron">›</span>
-    <span class="current">Blacksmith Upgrade Cost</span>
+    <span class="current">Castle Upgrade Cost</span>
   </nav></div>
 </header>
 <main>
@@ -35,29 +41,14 @@
 <div class="tabbed-table-wrapper-content">
   
 <div class="tabbed-table-tab-bar">
-<button class="tab focused">Upgrades</button>
+<button onclick="switchTab(0)" id="data-tab-0" class="tab focused">1 ~ 499</button>
+<button onclick="switchTab(1)" id="data-tab-1" class="tab">500 ~</button>
 <div class="extra">Download:
 <a href="./castleUpgradeCost.json">JSON</a>
 <!-- | <a href="">Sheet</a> -->
 </div>
 </div>
-
-<div class="tabbed-table-content">
-<table class="upgrade-table">
-<thead>
-<tr>
-<th class="level-col">Castle Level</th>
-<th class="cost-col">Stone Cost</th>
-<th class="cost-col">Wood Cost</th>
-<th class="cost-col">Iron Cost</th>
-<th class="cost-col">Gold Cost</th>
-<th class="verification-col">Verification</th>
-</tr>
-</thead>
-<tbody>
-{{Data}}
-</tbody>
-</table>
+{{DATA}}
 </main>
 
 </body>

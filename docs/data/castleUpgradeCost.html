@@ -10,6 +10,12 @@
   <meta property="og:image" content="https://kg.kitsune21.com/images/sheet-2x_n.png">
   <link href="../css/common.css" rel="stylesheet" />
   <link href="./data.css" rel="stylesheet" />
+  <script src="./data-common.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", (e) => {
+      getDom(2);
+    })
+  </script>
 </head>
 <body>
 
@@ -19,7 +25,7 @@
     <span class="chevron">›</span>
     <a class="link" href="./">Data</a>
     <span class="chevron">›</span>
-    <span class="current">Blacksmith Upgrade Cost</span>
+    <span class="current">Castle Upgrade Cost</span>
   </nav></div>
 </header>
 <main>
@@ -35,14 +41,14 @@
 <div class="tabbed-table-wrapper-content">
   
 <div class="tabbed-table-tab-bar">
-<button class="tab focused">Upgrades</button>
+<button onclick="switchTab(0)" id="data-tab-0" class="tab focused">1 ~ 499</button>
+<button onclick="switchTab(1)" id="data-tab-1" class="tab">500 ~</button>
 <div class="extra">Download:
 <a href="./castleUpgradeCost.json">JSON</a>
 <!-- | <a href="">Sheet</a> -->
 </div>
 </div>
-
-<div class="tabbed-table-content">
+<div class="tabbed-table-content" id="data-content-0" >
 <table class="upgrade-table">
 <thead>
 <tr>
@@ -2025,6 +2031,736 @@
 </tr>
 </tbody>
 </table>
+</div>
+<div class="tabbed-table-content" id="data-content-1" class="hidden">
+<table class="upgrade-table">
+<thead>
+<tr>
+<th class="level-col">Castle Level</th>
+<th class="cost-col">Stone Cost</th>
+<th class="cost-col">Wood Cost</th>
+<th class="cost-col">Iron Cost</th>
+<th class="cost-col">Gold Cost</th>
+<th class="verification-col">Verification</th>
+</tr>
+</thead>
+<tbody>
+<tr id="level-504">
+<td class="level-col">504 → 505</td>
+<td class="cost-col">420</td>
+<td class="cost-col">5</td>
+<td class="cost-col">0</td>
+<td class="cost-col">1.1M</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="level-505">
+<td class="level-col">505 → 506</td>
+<td class="cost-col">420</td>
+<td class="cost-col">5</td>
+<td class="cost-col">0</td>
+<td class="cost-col">1.1M</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="level-506">
+<td class="level-col">506 → 507</td>
+<td class="cost-col">420</td>
+<td class="cost-col">5</td>
+<td class="cost-col">0</td>
+<td class="cost-col">1.1M</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="level-507">
+<td class="level-col">507 → 508</td>
+<td class="cost-col">425</td>
+<td class="cost-col">10</td>
+<td class="cost-col">0</td>
+<td class="cost-col">1.1M</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="level-508">
+<td class="level-col">508 → 509</td>
+<td class="cost-col">425</td>
+<td class="cost-col">10</td>
+<td class="cost-col">0</td>
+<td class="cost-col">1.1M</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="level-509">
+<td class="level-col">509 → 510</td>
+<td class="cost-col">425</td>
+<td class="cost-col">10</td>
+<td class="cost-col">0</td>
+<td class="cost-col">1.1M</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="level-510">
+<td class="level-col">510 → 511</td>
+<td class="cost-col">425</td>
+<td class="cost-col">10</td>
+<td class="cost-col">0</td>
+<td class="cost-col">1.1M</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="level-511">
+<td class="level-col">511 → 512</td>
+<td class="cost-col">425</td>
+<td class="cost-col">10</td>
+<td class="cost-col">0</td>
+<td class="cost-col">1.1M</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="level-512">
+<td class="level-col">512 → 513</td>
+<td class="cost-col">425</td>
+<td class="cost-col">10</td>
+<td class="cost-col">0</td>
+<td class="cost-col">1.1M</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="level-513">
+<td class="level-col">513 → 514</td>
+<td class="cost-col">425</td>
+<td class="cost-col">10</td>
+<td class="cost-col">0</td>
+<td class="cost-col">1.1M</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="level-514">
+<td class="level-col">514 → 515</td>
+<td class="cost-col">425</td>
+<td class="cost-col">10</td>
+<td class="cost-col">0</td>
+<td class="cost-col">1.1M</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="level-515">
+<td class="level-col">515 → 516</td>
+<td class="cost-col">430</td>
+<td class="cost-col">10</td>
+<td class="cost-col">0</td>
+<td class="cost-col">1.1M</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="level-516">
+<td class="level-col">516 → 517</td>
+<td class="cost-col">430</td>
+<td class="cost-col">10</td>
+<td class="cost-col">0</td>
+<td class="cost-col">1.1M</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="level-517">
+<td class="level-col">517 → 518</td>
+<td class="cost-col">430</td>
+<td class="cost-col">10</td>
+<td class="cost-col">0</td>
+<td class="cost-col">1.1M</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="level-519">
+<td class="level-col">519 → 520</td>
+<td class="cost-col">430</td>
+<td class="cost-col">15</td>
+<td class="cost-col">0</td>
+<td class="cost-col">1.1M</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="level-520">
+<td class="level-col">520 → 521</td>
+<td class="cost-col">430</td>
+<td class="cost-col">15</td>
+<td class="cost-col">0</td>
+<td class="cost-col">1.1M</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="level-521">
+<td class="level-col">521 → 522</td>
+<td class="cost-col">430</td>
+<td class="cost-col">15</td>
+<td class="cost-col">0</td>
+<td class="cost-col">1.1M</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="level-522">
+<td class="level-col">522 → 523</td>
+<td class="cost-col">435</td>
+<td class="cost-col">15</td>
+<td class="cost-col">0</td>
+<td class="cost-col">1.1M</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="level-523">
+<td class="level-col">523 → 524</td>
+<td class="cost-col">435</td>
+<td class="cost-col">15</td>
+<td class="cost-col">0</td>
+<td class="cost-col">1.1M</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="level-524">
+<td class="level-col">524 → 525</td>
+<td class="cost-col">435</td>
+<td class="cost-col">15</td>
+<td class="cost-col">0</td>
+<td class="cost-col">1.1M</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="level-525">
+<td class="level-col">525 → 526</td>
+<td class="cost-col">435</td>
+<td class="cost-col">15</td>
+<td class="cost-col">0</td>
+<td class="cost-col">1.1M</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="level-526">
+<td class="level-col">526 → 527</td>
+<td class="cost-col">435</td>
+<td class="cost-col">15</td>
+<td class="cost-col">0</td>
+<td class="cost-col">1.1M</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="level-527">
+<td class="level-col">527 → 528</td>
+<td class="cost-col">435</td>
+<td class="cost-col">15</td>
+<td class="cost-col">0</td>
+<td class="cost-col">1.1M</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="level-528">
+<td class="level-col">528 → 529</td>
+<td class="cost-col">435</td>
+<td class="cost-col">15</td>
+<td class="cost-col">0</td>
+<td class="cost-col">1.1M</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="level-529">
+<td class="level-col">529 → 530</td>
+<td class="cost-col">435</td>
+<td class="cost-col">15</td>
+<td class="cost-col">0</td>
+<td class="cost-col">1.1M</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="level-530">
+<td class="level-col">530 → 531</td>
+<td class="cost-col">440</td>
+<td class="cost-col">20</td>
+<td class="cost-col">0</td>
+<td class="cost-col">1.1M</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="level-531">
+<td class="level-col">531 → 532</td>
+<td class="cost-col">440</td>
+<td class="cost-col">20</td>
+<td class="cost-col">0</td>
+<td class="cost-col">1.1M</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="level-532">
+<td class="level-col">532 → 533</td>
+<td class="cost-col">440</td>
+<td class="cost-col">20</td>
+<td class="cost-col">0</td>
+<td class="cost-col">1.1M</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="level-533">
+<td class="level-col">533 → 534</td>
+<td class="cost-col">440</td>
+<td class="cost-col">20</td>
+<td class="cost-col">0</td>
+<td class="cost-col">1.1M</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="level-534">
+<td class="level-col">534 → 535</td>
+<td class="cost-col">440</td>
+<td class="cost-col">20</td>
+<td class="cost-col">0</td>
+<td class="cost-col">1.1M</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="level-535">
+<td class="level-col">535 → 536</td>
+<td class="cost-col">440</td>
+<td class="cost-col">20</td>
+<td class="cost-col">0</td>
+<td class="cost-col">1.1M</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="level-536">
+<td class="level-col">536 → 537</td>
+<td class="cost-col">440</td>
+<td class="cost-col">20</td>
+<td class="cost-col">0</td>
+<td class="cost-col">1.1M</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="level-537">
+<td class="level-col">537 → 538</td>
+<td class="cost-col">445</td>
+<td class="cost-col">20</td>
+<td class="cost-col">0</td>
+<td class="cost-col">1.2M</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="level-744">
+<td class="level-col">744 → 745</td>
+<td class="cost-col">575</td>
+<td class="cost-col">80</td>
+<td class="cost-col">0</td>
+<td class="cost-col">1.5M</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="level-745">
+<td class="level-col">745 → 746</td>
+<td class="cost-col">575</td>
+<td class="cost-col">80</td>
+<td class="cost-col">0</td>
+<td class="cost-col">1.5M</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="level-746">
+<td class="level-col">746 → 747</td>
+<td class="cost-col">575</td>
+<td class="cost-col">80</td>
+<td class="cost-col">0</td>
+<td class="cost-col">1.5M</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="level-747">
+<td class="level-col">747 → 748</td>
+<td class="cost-col">575</td>
+<td class="cost-col">80</td>
+<td class="cost-col">0</td>
+<td class="cost-col">1.5M</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="level-748">
+<td class="level-col">748 → 749</td>
+<td class="cost-col">575</td>
+<td class="cost-col">80</td>
+<td class="cost-col">0</td>
+<td class="cost-col">1.5M</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="level-749">
+<td class="level-col">749 → 750</td>
+<td class="cost-col">575</td>
+<td class="cost-col">80</td>
+<td class="cost-col">0</td>
+<td class="cost-col">1.5M</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="level-750">
+<td class="level-col">750 → 751</td>
+<td class="cost-col">575</td>
+<td class="cost-col">85</td>
+<td class="cost-col">0</td>
+<td class="cost-col">1.5M</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="level-751">
+<td class="level-col">751 → 752</td>
+<td class="cost-col">575</td>
+<td class="cost-col">85</td>
+<td class="cost-col">0</td>
+<td class="cost-col">1.5M</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="level-752">
+<td class="level-col">752 → 753</td>
+<td class="cost-col">575</td>
+<td class="cost-col">85</td>
+<td class="cost-col">0</td>
+<td class="cost-col">1.5M</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="level-753">
+<td class="level-col">753 → 754</td>
+<td class="cost-col">575</td>
+<td class="cost-col">85</td>
+<td class="cost-col">0</td>
+<td class="cost-col">1.5M</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="level-754">
+<td class="level-col">754 → 755</td>
+<td class="cost-col">575</td>
+<td class="cost-col">85</td>
+<td class="cost-col">0</td>
+<td class="cost-col">1.5M</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="level-755">
+<td class="level-col">755 → 756</td>
+<td class="cost-col">575</td>
+<td class="cost-col">85</td>
+<td class="cost-col">0</td>
+<td class="cost-col">1.5M</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="level-756">
+<td class="level-col">756 → 757</td>
+<td class="cost-col">575</td>
+<td class="cost-col">85</td>
+<td class="cost-col">0</td>
+<td class="cost-col">1.5M</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="level-757">
+<td class="level-col">757 → 758</td>
+<td class="cost-col">575</td>
+<td class="cost-col">85</td>
+<td class="cost-col">0</td>
+<td class="cost-col">1.5M</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="level-758">
+<td class="level-col">758 → 759</td>
+<td class="cost-col">580</td>
+<td class="cost-col">85</td>
+<td class="cost-col">0</td>
+<td class="cost-col">1.5M</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="level-759">
+<td class="level-col">759 → 760</td>
+<td class="cost-col">585</td>
+<td class="cost-col">85</td>
+<td class="cost-col">0</td>
+<td class="cost-col">1.5M</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="level-760">
+<td class="level-col">760 → 761</td>
+<td class="cost-col">585</td>
+<td class="cost-col">85</td>
+<td class="cost-col">0</td>
+<td class="cost-col">1.5M</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="level-761">
+<td class="level-col">761 → 762</td>
+<td class="cost-col">585</td>
+<td class="cost-col">85</td>
+<td class="cost-col">0</td>
+<td class="cost-col">1.5M</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="level-762">
+<td class="level-col">762 → 763</td>
+<td class="cost-col">585</td>
+<td class="cost-col">85</td>
+<td class="cost-col">0</td>
+<td class="cost-col">1.5M</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="level-763">
+<td class="level-col">763 → 764</td>
+<td class="cost-col">585</td>
+<td class="cost-col">85</td>
+<td class="cost-col">0</td>
+<td class="cost-col">1.5M</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="level-764">
+<td class="level-col">764 → 765</td>
+<td class="cost-col">585</td>
+<td class="cost-col">85</td>
+<td class="cost-col">0</td>
+<td class="cost-col">1.5M</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="level-765">
+<td class="level-col">765 → 766</td>
+<td class="cost-col">585</td>
+<td class="cost-col">85</td>
+<td class="cost-col">0</td>
+<td class="cost-col">1.5M</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="level-766">
+<td class="level-col">766 → 767</td>
+<td class="cost-col">585</td>
+<td class="cost-col">85</td>
+<td class="cost-col">0</td>
+<td class="cost-col">1.5M</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="level-767">
+<td class="level-col">767 → 768</td>
+<td class="cost-col">590</td>
+<td class="cost-col">85</td>
+<td class="cost-col">0</td>
+<td class="cost-col">1.5M</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="level-768">
+<td class="level-col">768 → 769</td>
+<td class="cost-col">590</td>
+<td class="cost-col">85</td>
+<td class="cost-col">0</td>
+<td class="cost-col">1.5M</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="level-769">
+<td class="level-col">769 → 770</td>
+<td class="cost-col">590</td>
+<td class="cost-col">85</td>
+<td class="cost-col">0</td>
+<td class="cost-col">1.5M</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="level-770">
+<td class="level-col">770 → 771</td>
+<td class="cost-col">590</td>
+<td class="cost-col">85</td>
+<td class="cost-col">0</td>
+<td class="cost-col">1.5M</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="level-771">
+<td class="level-col">771 → 772</td>
+<td class="cost-col">590</td>
+<td class="cost-col">85</td>
+<td class="cost-col">0</td>
+<td class="cost-col">1.5M</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="level-772">
+<td class="level-col">772 → 773</td>
+<td class="cost-col">590</td>
+<td class="cost-col">85</td>
+<td class="cost-col">0</td>
+<td class="cost-col">1.5M</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="level-773">
+<td class="level-col">773 → 774</td>
+<td class="cost-col">590</td>
+<td class="cost-col">85</td>
+<td class="cost-col">0</td>
+<td class="cost-col">1.5M</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="level-774">
+<td class="level-col">774 → 775</td>
+<td class="cost-col">590</td>
+<td class="cost-col">90</td>
+<td class="cost-col">0</td>
+<td class="cost-col">1.5M</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="level-775">
+<td class="level-col">775 → 776</td>
+<td class="cost-col">595</td>
+<td class="cost-col">90</td>
+<td class="cost-col">0</td>
+<td class="cost-col">1.5M</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="level-776">
+<td class="level-col">776 → 777</td>
+<td class="cost-col">895</td>
+<td class="cost-col">90</td>
+<td class="cost-col">0</td>
+<td class="cost-col">1.5M</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="level-777">
+<td class="level-col">777 → 778</td>
+<td class="cost-col">895</td>
+<td class="cost-col">90</td>
+<td class="cost-col">0</td>
+<td class="cost-col">1.5M</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="level-777">
+<td class="level-col">777 → 778</td>
+<td class="cost-col">895</td>
+<td class="cost-col">90</td>
+<td class="cost-col">0</td>
+<td class="cost-col">1.5M</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="level-779">
+<td class="level-col">779 → 780</td>
+<td class="cost-col">895</td>
+<td class="cost-col">90</td>
+<td class="cost-col">0</td>
+<td class="cost-col">1.5M</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="level-780">
+<td class="level-col">780 → 781</td>
+<td class="cost-col">895</td>
+<td class="cost-col">90</td>
+<td class="cost-col">0</td>
+<td class="cost-col">1.5M</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="level-781">
+<td class="level-col">781 → 782</td>
+<td class="cost-col">895</td>
+<td class="cost-col">90</td>
+<td class="cost-col">0</td>
+<td class="cost-col">1.5M</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="level-782">
+<td class="level-col">782 → 783</td>
+<td class="cost-col">895</td>
+<td class="cost-col">90</td>
+<td class="cost-col">0</td>
+<td class="cost-col">1.5M</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="level-783">
+<td class="level-col">783 → 784</td>
+<td class="cost-col">895</td>
+<td class="cost-col">90</td>
+<td class="cost-col">0</td>
+<td class="cost-col">1.5M</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="level-784">
+<td class="level-col">784 → 785</td>
+<td class="cost-col">600</td>
+<td class="cost-col">90</td>
+<td class="cost-col">0</td>
+<td class="cost-col">1.5M</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="level-785">
+<td class="level-col">785 → 786</td>
+<td class="cost-col">600</td>
+<td class="cost-col">90</td>
+<td class="cost-col">0</td>
+<td class="cost-col">1.5M</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="level-786">
+<td class="level-col">786 → 787</td>
+<td class="cost-col">600</td>
+<td class="cost-col">90</td>
+<td class="cost-col">0</td>
+<td class="cost-col">1.5M</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="level-787">
+<td class="level-col">787 → 788</td>
+<td class="cost-col">600</td>
+<td class="cost-col">90</td>
+<td class="cost-col">0</td>
+<td class="cost-col">1.5M</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="level-788">
+<td class="level-col">788 → 789</td>
+<td class="cost-col">600</td>
+<td class="cost-col">90</td>
+<td class="cost-col">0</td>
+<td class="cost-col">1.5M</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="level-789">
+<td class="level-col">789 → 790</td>
+<td class="cost-col">600</td>
+<td class="cost-col">95</td>
+<td class="cost-col">0</td>
+<td class="cost-col">1.5M</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="level-790">
+<td class="level-col">790 → 791</td>
+<td class="cost-col">600</td>
+<td class="cost-col">95</td>
+<td class="cost-col">0</td>
+<td class="cost-col">1.5M</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="level-791">
+<td class="level-col">791 → 792</td>
+<td class="cost-col">605</td>
+<td class="cost-col">95</td>
+<td class="cost-col">0</td>
+<td class="cost-col">1.6M</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="level-792">
+<td class="level-col">792 → 793</td>
+<td class="cost-col">605</td>
+<td class="cost-col">95</td>
+<td class="cost-col">0</td>
+<td class="cost-col">1.6M</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="level-793">
+<td class="level-col">793 → 794</td>
+<td class="cost-col">605</td>
+<td class="cost-col">95</td>
+<td class="cost-col">0</td>
+<td class="cost-col">1.6M</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="level-794">
+<td class="level-col">794 → 795</td>
+<td class="cost-col">605</td>
+<td class="cost-col">95</td>
+<td class="cost-col">0</td>
+<td class="cost-col">1.6M</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="level-795">
+<td class="level-col">795 → 796</td>
+<td class="cost-col">605</td>
+<td class="cost-col">95</td>
+<td class="cost-col">0</td>
+<td class="cost-col">1.6M</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="level-796">
+<td class="level-col">796 → 797</td>
+<td class="cost-col">605</td>
+<td class="cost-col">95</td>
+<td class="cost-col">0</td>
+<td class="cost-col">1.6M</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="level-797">
+<td class="level-col">797 → 798</td>
+<td class="cost-col">605</td>
+<td class="cost-col">95</td>
+<td class="cost-col">0</td>
+<td class="cost-col">1.6M</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="level-798">
+<td class="level-col">798 → 799</td>
+<td class="cost-col">605</td>
+<td class="cost-col">95</td>
+<td class="cost-col">0</td>
+<td class="cost-col">1.6M</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+<tr id="level-799">
+<td class="level-col">799 → 800</td>
+<td class="cost-col">605</td>
+<td class="cost-col">95</td>
+<td class="cost-col">0</td>
+<td class="cost-col">1.6M</td>
+<td class="verification-col verified">Verified</td>
+</tr>
+</tbody>
+</table>
+</div>
+
 </main>
 
 </body>
