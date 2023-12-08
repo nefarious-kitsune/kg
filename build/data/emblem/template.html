@@ -1,0 +1,120 @@
+<html>
+<head>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Miku's Shrine: Dragon Upgrade Cost</title>
+  <link rel="icon" type="image/x-icon" href="../images/logo_mini.png">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://kg.kitsune21.com/">
+  <meta property="og:title" content="Miku's Shrine | Dragon Upgrade Cost">
+  <meta property="og:description" content="Upgrade cost for Dragon">
+  <meta property="og:image" content="https://kg.kitsune21.com/images/sheet-2x_n.png">
+  <link href="../css/common.css" rel="stylesheet" />
+  <link href="./data.css" rel="stylesheet" />
+  <script src="./data-common.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", (e) => getDom(4))
+  </script>
+</head>
+<body>
+
+<header id="header">
+  <div id="breadcrumb-wrapper"><nav>
+    <a class="link" href="../content">Home</a>
+    <span class="chevron">›</span>
+    <a class="link" href="./">Data</a>
+    <span class="chevron">›</span>
+    <span class="current">Dragon Upgrade Cost</span>
+  </nav></div>
+</header>
+<main>
+
+<h1>Dragon Upgrade Cost</h1>
+
+<p>These tables show the upgrade cost for Dragon.</p>
+
+<div class="tabbed-table-wrapper-content">
+  
+<div class="tabbed-table-tab-bar">
+<button onclick="switchTab(0)" id="data-tab-0" class="tab focused">Bronze Emblem</button>
+<button onclick="switchTab(1)" id="data-tab-1" class="tab">Silver Emblem</button>
+<button onclick="switchTab(2)" id="data-tab-2" class="tab">Gold Emblem</button>
+<button onclick="switchTab(3)" id="data-tab-3" class="tab">Legendary Emblem</button>
+<div class="extra"></div>
+</div>
+
+<div class="tabbed-table-content" id="data-content-0">
+<table class="upgrade-table">
+<thead>
+<tr>
+<th class="level-col">Bronze Level</th>
+<th class="cost-col">Rare Rune Cost</th>
+</tr>
+</thead>
+<tbody>
+{{T1 DATA}}
+</tbody>
+<tfoot>
+<tr>
+<td colspan="3">After level 50, each Bronze Emblem upgrade costs
+250 Rare Runes.</td>
+</tr>
+</tfoot>
+</table>
+</div>
+<div class="tabbed-table-content" id="data-content-1" class="hidden">
+<table class="upgrade-table">
+<thead>
+<tr>
+<th class="level-col">Silver Level</th>
+<th class="req-col">Bronze Level Required</th>
+<th class="cost-col">Excellent Rune Cost</th>
+</tr>
+</thead>
+<tbody>
+{{T2 DATA}}
+</tbody>
+<tfoot>
+<tr>
+<td colspan="3">After level 50, each Silver Emblem upgrade costs
+125 Excellent Runes.</td>
+</tr>
+</tfoot>
+</table>
+</div>
+<div class="tabbed-table-content" id="data-content-2" class="hidden">
+<table class="upgrade-table">
+<thead>
+<tr>
+<th class="level-col">Gold Level</th>
+<th class="req-col">Silver Level Required</th>
+<th class="cost-col">Perfect Rune Cost</th>
+</tr>
+</thead>
+<tbody>
+{{T3 DATA}}
+</tbody>
+<tfoot>
+<tr>
+<td colspan="3">After level 50, each Gold Emblem upgrade costs 66 Perfect Runes.</td>
+</tr>
+</tfoot>
+</table>
+</div>
+<div class="tabbed-table-content" id="data-content-3" class="hidden">
+<table class="upgrade-table">
+<thead>
+<tr>
+<th class="level-col">Legendary Level</th>
+<th class="req-col">Gold Level Required</th>
+<th class="cost-col">Epic Rune Cost</th>
+</tr>
+</thead>
+<tbody>
+{{T4 DATA}}
+</tbody>
+</table>
+</div>
+</main>
+
+</body>
+</html>

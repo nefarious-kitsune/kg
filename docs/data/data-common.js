@@ -9,8 +9,6 @@ function getDom(viewCount) {
     elTabs.push(d.getElementById(`data-tab-${idx}`));
     elContents.push(d.getElementById(`data-content-${idx}`));
   }
-  console.log(elTabs);
-  console.log(elContents);
 }
 
 function switchTab(viewIdx) {

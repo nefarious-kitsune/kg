@@ -49,14 +49,20 @@ table.witchLab td {
   width: 8rem;
   text-align: left;
 }
-.upgrade-table .cost-col  {
-  width: 8rem;
+
+.upgrade-table th.cost-col  { width: 8rem; }
+.upgrade-table th.req-col   { width: 8rem; }
+.upgrade-table th.verification-col  { width: 6rem; }
+
+.upgrade-table td.cost-col,
+.upgrade-table td.req-col {
   text-align: right;
 }
-.upgrade-table .verification-col  {
-  width: 6rem;
+
+.upgrade-table td.verification-col  {
   text-align: left;
 }
+
 .upgrade-table td.verified { color:var(--green); }
 .upgrade-table td.unverified { color: var(--red); }
 
@@ -69,5 +75,9 @@ table.witchLab td {
   background: var(--pale-neutral);
 }
 
-object.unit-icon { width: auto; height: 2rem; padding: 0; margin: 0;}
+.upgrade-table tfoot th,
+.upgrade-table tfoot td {
+  background: var(--miku-gold);
+}
 
+object.unit-icon { width: auto; height: 2rem; padding: 0; margin: 0;}
