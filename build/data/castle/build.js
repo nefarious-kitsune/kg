@@ -19,9 +19,9 @@ let fileData = [];
 const dataFiles = [
   'data-1.tsv',
   'data-2.tsv',
-  'data-3.tsv',,
+  'data-3.tsv',
   'data-4.tsv',
-  'data-5.tsv'
+  'data-5.tsv',
 ];
 
 dataFiles.forEach((file) => {
