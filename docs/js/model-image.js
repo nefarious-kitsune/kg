@@ -11,6 +11,10 @@ document.addEventListener("DOMContentLoaded", (e) => {
   modalLinks.forEach((el) => el.addEventListener("click", handleClick))
 })
 
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') closeModal()
+})  
+
 function handleClick(event) {
   const el = event.currentTarget;
   modalContainer.style.display = "block";
