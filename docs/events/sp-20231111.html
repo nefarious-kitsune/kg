@@ -10,7 +10,8 @@
   <meta property="og:image" content="https://media.discordapp.net/attachments/1175989547310522448/1175989713769869375/7534ca171c434562a60cf5be6cc0aa6e.jpg?&width=415&height=415">
   <link href="../css/common.css" rel="stylesheet" />
   <link href="./event-data.css" rel="stylesheet" />
-  <!-- <script src="./event-common.js"></script> -->
+  <link href="../css/model-image.css" rel="stylesheet" />
+  <script src="../js/model-image.js"></script>
 </head>
 <body>
 
@@ -23,6 +24,13 @@
     <span class="current">Forest Spirit Prayer Festival</span>
   </nav></div>
 </header>
+
+<div id="modal-container">
+<button class="close" onclick="closeModal()">&times;</button>
+<img id="modal-image">
+<div id="modal-caption"></div>
+</div>
+  
 <main>
 <h1>Forest Spirit Prayer Festival</h1>
 
@@ -61,33 +69,70 @@ puzzle game (Pray and Play Elimination) and receive points.</p>
 <p>The player use the Level-2 Token (Life Essence) to
 do Lucky Draws (Sacred Tree Secret Cave).</p>
 
-<ul class="butterfly">
-  <li
-    ><a href="./sp-20231111-1">Event Tasks:</a>
-    Hospitality of the Forest Elder</li
-  >
-  <li
-    ><a href="./sp-20231111-2">Puzzle:</a>
-    Pray and Play Elimination</li
-  >
-  <li
-    ><a href="./sp-20231111-3">Lucky Draws:</a>
-    Sacred Tree Secret Cave</li
-  >
-  <li
-    ><a href="./sp-20231111-4">Point Rewards:</a>
-    Elder's Reciprocation</li
-  >
-  <li
-    ><a href="./sp-20231111-5">Wishing Pool:</a>
-    Tree of Life</li
-  >
-  <li
-    ><a href="./sp-20231111-6">Daily Tasks:</a>
-    Clay Collection</li
-  >
-</ul>
+<table class="simple">
+<thead>
+<tr>
+<th>Name</th>
+<th>Format</th>
+<th>Screenshot</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th><a href="./sp-20231111-1">Hospitality of the Forest Elder</a></th>
+<td>Event Tasks</td>
+<td><a class="modal-link" data-caption="Hospitality of the Forest Elder"
+  href="https://media.discordapp.net/attachments/1175989547310522448/1175989894674386994/IMG_9978.png"
+>Screenshot</a></td>
+</tr>
 
+<tr>
+<th>Pray and Play Elimination</th>
+<td>Puzzle</td>
+<td><a class="modal-link" data-caption="Pray and Play Elimination"
+  href="https://media.discordapp.net/attachments/1175989547310522448/1175989895316127814/IMG_9991.png"
+>Screenshot</a></td>
+</tr>
+
+<tr>
+<th>Sacred Tree Secret Cave</th>
+<td>Lucky Draws</td>
+<td><a class="modal-link" data-caption="Sacred Tree Secret Cave (Normal Mode)"
+  href="https://media.discordapp.net/attachments/1175989547310522448/1175989897669124148/IMG_9992.png"
+>Normal</a> | <a class="modal-link" data-caption="Sacred Tree Secret Cave (Crazy Mode)"
+href="https://media.discordapp.net/attachments/1175989547310522448/1175989898319237190/IMG_9997.png"
+>Crazy</a></td>
+</tr>
+
+<tr>
+<th>Elder's Reciprocation</th>
+<td>Rewards</td>
+<td><a class="modal-link" data-caption="Elder's Reciprocation"
+  href="https://media.discordapp.net/attachments/1175989547310522448/1175989898969366578/IMG_0005.png"
+>Screenshot</a></td>
+</tr>
+
+
+<tr>
+<th>Tree of Life</th>
+<td>Wishing Pool</td>
+<td><a class="modal-link" data-caption="Elder's Reciprocation"
+  href="https://media.discordapp.net/attachments/1175989547310522448/1175989899627864074/IMG_0007.png"
+>Screenshot</a></td>
+</tr>
+
+
+<tr>
+<th>Clay Collection</th>
+<td>Daily</td>
+<td><a class="modal-link" data-caption="Elder's Reciprocation"
+  href="https://cdn.discordapp.com/attachments/1175989547310522448/1175989900647075900/IMG_0010.png"
+>Screenshot</a></td>
+</tr>
+    
+</tbody>
+</table>
+  
 </main>
 </body>
 </html>
