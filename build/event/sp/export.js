@@ -2,14 +2,14 @@ import fs from 'fs';
 import {getDateFormatStrings, getUTCDate} from '../../utils/date-utils.js';
 import {formatPoint} from '../../utils/number-utils.js';
 
-const eventStartDate = getUTCDate(2023, 11, 11);
+const eventStartDate = getUTCDate(2023, 12, 3);
 
-const eventName = 'Forest Spirit Prayer Festival';
-const featured = 'Rila';
-const eventDuration = 9; // 8-days
+const eventName = 'Jungle Hunting Adventure';
+const featured = 'Johannes';
+const eventDuration = 9; // 9-days
 const eventPrefix = 'sp-';
 
-const MaxFinalPoints = (14 * 1000 * 1000);
+const MaxFinalPoints = (5 * 1000 * 1000);
 
 const eventEndDate = new Date(eventStartDate);
 eventEndDate.setDate(eventStartDate.getDate() + eventDuration - 1);
@@ -17,18 +17,16 @@ eventEndDate.setDate(eventStartDate.getDate() + eventDuration - 1);
 const fmtEventStart = getDateFormatStrings(eventStartDate);
 const fmtEventEnd   = getDateFormatStrings(eventEndDate);
 
-const exportDirectory = '../../../../docs/events';
+const exportDirectory = '../../../docs/events';
 const dateFragment = `${fmtEventStart.YYYY}${fmtEventStart.MM}${fmtEventStart.DD}`;
 const exportFileFragment = `${exportDirectory}/${eventPrefix}${dateFragment}`;
 
-/*
 const rawServerDataRows =
   fs
     .readFileSync(`${eventPrefix}${dateFragment}.tsv`, 'utf-8')
     .replaceAll('\r','')
     .replaceAll(',','')
     .split('\n');
-*/
 
 const rawGlobalDataRows =
   fs
@@ -62,7 +60,6 @@ const compiledData = {
   'data': [],
 };
 
-/*
 function getPoint(row, svsIdx) {
   let p = parseInt(row[svsIdx]);
   if (Number.isNaN(p)) p = null;
@@ -88,7 +85,6 @@ for (let svsIdx = 0; svsIdx < svrCount; svsIdx++) {
 
   compiledData.data.push(data)
 }
-*/
 
 compiledData.data.push(globalData);
 
@@ -124,7 +120,9 @@ function getFinalPointHTML(rank, finalData, servers) {
     `<td class="final-col">` + 
     `<span class="event-${rankClass}">${rank}</span>` +
     '<div class="bar-container">' +
-    `<span class="bar ${serverClass}" style="${barStyle}">&thinsp;</span>` +
+    `<span\n` +
+    `  class="bar ${serverClass}"\n` +
+    `  style="${barStyle}">&thinsp;</span>` +
     '</div>' +
     `<span class="bar-text">${pointsDisplay}</span>` +
     `<div class="server-tag right ${serverClass}">${server}</div>` +
@@ -133,8 +131,7 @@ function getFinalPointHTML(rank, finalData, servers) {
 }
 
 // generate server data html
-/*
-for (let svrIdx = 0; svrIdx < svrCount-1; svrIdx++) {
+for (let svrIdx = 0; svrIdx < svrCount; svrIdx++) {
   const svrData = compiledData.data[svrIdx];
   const serverClass = 'server' + (servers.indexOf(svrData.server) + 1);
   bodyContent.push('<tr class="new-section server-row">');
@@ -156,7 +153,6 @@ for (let svrIdx = 0; svrIdx < svrCount-1; svrIdx++) {
   bodyContent.push(getFinalPointHTML( '10', svrData.final, servers));
   bodyContent.push('</tr>');
 }
-*/
 
 // generate global data html
 {

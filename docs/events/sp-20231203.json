@@ -1,0 +1,219 @@
+{
+  "event": "Jungle Hunting Adventure",
+  "start-date": "2023-12-03",
+  "data": [
+    {
+      "server": "S404",
+      "final": {
+        "1": {
+          "points": 2398100,
+          "server": "S404"
+        },
+        "2": {
+          "points": 1078400,
+          "server": "S404"
+        },
+        "3": {
+          "points": 602000,
+          "server": "S404"
+        },
+        "10": {
+          "points": 296000,
+          "server": "S404"
+        }
+      }
+    },
+    {
+      "server": "S1104",
+      "final": {
+        "1": {
+          "points": 1568200,
+          "server": "S1104"
+        },
+        "2": {
+          "points": 513900,
+          "server": "S1104"
+        },
+        "3": {
+          "points": 500000,
+          "server": "S1104"
+        },
+        "10": {
+          "points": 299000,
+          "server": "S1104"
+        }
+      }
+    },
+    {
+      "server": "S1028",
+      "final": {
+        "1": {
+          "points": 1495300,
+          "server": "S1028"
+        },
+        "2": {
+          "points": 730800,
+          "server": "S1028"
+        },
+        "3": {
+          "points": 697000,
+          "server": "S1028"
+        },
+        "10": {
+          "points": 260000,
+          "server": "S1028"
+        }
+      }
+    },
+    {
+      "server": "S909",
+      "final": {
+        "1": {
+          "points": 615000,
+          "server": "S909"
+        },
+        "2": {
+          "points": 573700,
+          "server": "S909"
+        },
+        "3": {
+          "points": 461000,
+          "server": "S909"
+        },
+        "10": {
+          "points": 135600,
+          "server": "S909"
+        }
+      }
+    },
+    {
+      "server": "S1009",
+      "final": {
+        "1": {
+          "points": 613000,
+          "server": "S1009"
+        },
+        "2": {
+          "points": 600100,
+          "server": "S1009"
+        },
+        "3": {
+          "points": 445000,
+          "server": "S1009"
+        },
+        "10": {
+          "points": 380000,
+          "server": "S1009"
+        }
+      }
+    },
+    {
+      "server": "S1111",
+      "final": {
+        "1": {
+          "points": 574000,
+          "server": "S1111"
+        },
+        "2": {
+          "points": 358000,
+          "server": "S1111"
+        },
+        "3": {
+          "points": 262100,
+          "server": "S1111"
+        },
+        "10": {
+          "points": 102000,
+          "server": "S1111"
+        }
+      }
+    },
+    {
+      "server": "S468",
+      "final": {
+        "1": {
+          "points": 359600,
+          "server": "S468"
+        },
+        "2": {
+          "points": 307000,
+          "server": "S468"
+        },
+        "3": {
+          "points": 284700,
+          "server": "S468"
+        },
+        "10": {
+          "points": 186600,
+          "server": "S468"
+        }
+      }
+    },
+    {
+      "server": "S449",
+      "final": {
+        "1": {
+          "points": 280000,
+          "server": "S449"
+        },
+        "2": {
+          "points": 264700,
+          "server": "S449"
+        },
+        "3": {
+          "points": 256300,
+          "server": "S449"
+        },
+        "10": {
+          "points": 171500,
+          "server": "S449"
+        }
+      }
+    },
+    {
+      "server": "global",
+      "final": {
+        "1": {
+          "points": 3755000,
+          "server": "S1191"
+        },
+        "2": {
+          "points": 2889100,
+          "server": "S448"
+        },
+        "3": {
+          "points": 2398100,
+          "server": "S404"
+        },
+        "4": {
+          "points": 1798000,
+          "server": "S1020"
+        },
+        "5": {
+          "points": 1770000,
+          "server": "S1020"
+        },
+        "6": {
+          "points": 1728800,
+          "server": "S1020"
+        },
+        "7": {
+          "points": 1630000,
+          "server": "S1198"
+        },
+        "8": {
+          "points": 1568200,
+          "server": "S1104"
+        },
+        "9": {
+          "points": 1543100,
+          "server": "S626"
+        },
+        "10": {
+          "points": 1532600,
+          "server": "S1196"
+        }
+      }
+    }
+  ]
+}
