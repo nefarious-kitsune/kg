@@ -66,6 +66,27 @@
       }
     },
     {
+      "server": "S499",
+      "final": {
+        "1": {
+          "points": 628600,
+          "server": "S499"
+        },
+        "2": {
+          "points": 501600,
+          "server": "S499"
+        },
+        "3": {
+          "points": 455300,
+          "server": "S499"
+        },
+        "10": {
+          "points": 161400,
+          "server": "S499"
+        }
+      }
+    },
+    {
       "server": "S909",
       "final": {
         "1": {
@@ -129,6 +150,27 @@
       }
     },
     {
+      "server": "S427",
+      "final": {
+        "1": {
+          "points": 365300,
+          "server": "S427"
+        },
+        "2": {
+          "points": 203500,
+          "server": "S427"
+        },
+        "3": {
+          "points": 170300,
+          "server": "S427"
+        },
+        "10": {
+          "points": 94300,
+          "server": "S427"
+        }
+      }
+    },
+    {
       "server": "S468",
       "final": {
         "1": {
@@ -150,6 +192,48 @@
       }
     },
     {
+      "server": "S915",
+      "final": {
+        "1": {
+          "points": 343200,
+          "server": "S915"
+        },
+        "2": {
+          "points": 235800,
+          "server": "S915"
+        },
+        "3": {
+          "points": 218500,
+          "server": "S915"
+        },
+        "10": {
+          "points": 152400,
+          "server": "S915"
+        }
+      }
+    },
+    {
+      "server": "S1072",
+      "final": {
+        "1": {
+          "points": 294100,
+          "server": "S1072"
+        },
+        "2": {
+          "points": 290300,
+          "server": "S1072"
+        },
+        "3": {
+          "points": 288300,
+          "server": "S1072"
+        },
+        "10": {
+          "points": 216900,
+          "server": "S1072"
+        }
+      }
+    },
+    {
       "server": "S449",
       "final": {
         "1": {
@@ -167,6 +251,69 @@
         "10": {
           "points": 171500,
           "server": "S449"
+        }
+      }
+    },
+    {
+      "server": "S409",
+      "final": {
+        "1": {
+          "points": 234600,
+          "server": "S409"
+        },
+        "2": {
+          "points": 225800,
+          "server": "S409"
+        },
+        "3": {
+          "points": 225500,
+          "server": "S409"
+        },
+        "10": {
+          "points": 174200,
+          "server": "S409"
+        }
+      }
+    },
+    {
+      "server": "S442",
+      "final": {
+        "1": {
+          "points": 139000,
+          "server": "S442"
+        },
+        "2": {
+          "points": 98400,
+          "server": "S442"
+        },
+        "3": {
+          "points": 83200,
+          "server": "S442"
+        },
+        "10": {
+          "points": 62000,
+          "server": "S442"
+        }
+      }
+    },
+    {
+      "server": "S498",
+      "final": {
+        "1": {
+          "points": 104300,
+          "server": "S498"
+        },
+        "2": {
+          "points": 100000,
+          "server": "S498"
+        },
+        "3": {
+          "points": 95400,
+          "server": "S498"
+        },
+        "10": {
+          "points": 67400,
+          "server": "S498"
         }
       }
     },
