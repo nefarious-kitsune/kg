@@ -188,8 +188,28 @@ output.max-1k   { width: 4rem; }
 output.max-10k  { width: 6rem; }
 output.max-100k { width: 6rem; }
 
+output.before { color: var(--dark-neutral); }
+output.narrow-width,
+output.normal-width,
+output.wide-width {
+  display: inline-block;
+  width: fit-content;
+  padding: 0 0.2rem;
+  border-radius: 0;
+  border-top: none;
+  border-bottom: 0.1rem solid;
+  border-right: none;
+  border-left: none;
+}
+
+input.narrow-width { min-width: 4rem; }
+input.normal-width { min-width: 6rem; }
+input.wide-width   { min-width: 8rem; }
+label.narrow-width, output.narrow-width  { min-width: 4rem; }
+label.normal-width, output.normal-width  { min-width: 6rem; }
+label.wide-width,   output.wide-width    { min-width: 8rem; }
+
 input.hero-name { width: 8rem; }
-output.hero-name { width: 6rem; }
 
 .select-wrapper.hero-star-level { min-width: 8rem; }
 
