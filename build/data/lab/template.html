@@ -2,9 +2,18 @@
 <head>
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Miku's Shrine: Witch's Lab Upgrade Cost</title>
+  <link rel="icon" type="image/x-icon" href="../images/logo_mini.png">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://kg.kitsune21.com/">
+  <meta property="og:title" content="Miku's Shrine | Witch's Lab Upgrade Cost">
+  <meta property="og:description" content="Upgrade cost for Witch's Lab">
+  <meta property="og:image" content="https://kg.kitsune21.com/images/sheet-2x_n.png">
   <link href="../css/common.css" rel="stylesheet" />
-  <link href="./up.css" rel="stylesheet" />
   <link href="./data.css" rel="stylesheet" />
+  <script src="./data-common.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", (e) => getDom(4))
+  </script>
 </head>
 <body>
 
@@ -21,33 +30,91 @@
 <main>
 <h1>Witch's Lab Upgrade Cost</h1>
 
-<p>
-This table shows the upgrade cost for Witch's Lab.
-<!-- You can use the <a href="../tools/labUpgradeCalculator">upgrade calculator</a>
-to estimates your maximum Witch's Lab upgrades and
-the resulting points in Mightiest Kingdom/Ultimate Power event. -->
+<p>This table shows the upgrade cost for Witch's Lab.
+Some data are <span class="unverified">extrapolated</span>.
 </p>
 
-<ul class="butterfly">
-  <!--
-  <li><a href="https://docs.google.com/spreadsheets/d/1JyMe59gSBc6PMBqtgLS04gwQFoUw9S5xoA96L-aiUiY/edit?usp=sharing">Google sheet</a></li>
-  -->
-  <li>Download: <a href="./blacksmithUpgradeCost.json">JSON</a></li>
-</ul>
+<p>
+You can use the <a href="../tools/labUpgradeCalculator">upgrade calculator</a>
+to estimates your maximum Witch's Lab and
+the resulting points in Mightiest Kingdom/Ultimate Power event.
+</p>
 
-  <table class="witchLab">
-    <thead>
-      <tr>
-        <th>Level</th>
-        <th colspan="2">Cost</th>
-        <th>Verification</th>
-      </tr>
-    </thead>
-    <tbody>
-<!-- Data -->
-    </tbody>
-  </table>
+<div class="tabbed-table-wrapper-content">
+<div class="tabbed-table-tab-bar">
+<button onclick="switchTab(0)" id="data-tab-0" class="tab focused">0 &hellip; 499</button>
+<button onclick="switchTab(1)" id="data-tab-1" class="tab">500 &hellip; 999</button>
+<button onclick="switchTab(2)" id="data-tab-2" class="tab">1000 &hellip; 1499</button>
+<button onclick="switchTab(3)" id="data-tab-3" class="tab">1500 &hellip; 1999</button>
+<div class="extra">
+  <a href="./witchLabUpgradeCost.json">JSON</a>
+  |
+  <a href="https://docs.google.com/spreadsheets/d/1xBx81DYd9bBExxfX3Py0KUac0KPy9TdIdnOGtbUS_iI/edit?usp=sharing">Sheet</a>
+</div>
+</div>
+    
+<div class="tabbed-table-content" id="data-content-0">
+<table class="upgrade-table">
+<thead>
+<tr>
+<th class="level-col">Level</th>
+<th class="cost-col">Light Reagent Cost (one level)</th>
+<th class="cost-col">Light Reagent Cost (max level)</th>
+</tr>
+</thead>
+<tbody>
+{{Data 1}}
+</tbody>
+</table>
+</div>
 
+<div class="tabbed-table-content" id="data-content-1">
+<table class="upgrade-table">
+<thead>
+<tr>
+<th class="level-col">Level</th>
+<th class="cost-col">Light Reagent Cost (one level)</th>
+<th class="cost-col">Light Reagent Cost (max level)</th>
+</tr>
+</thead>
+<tbody>
+{{Data 2}}
+</tbody>
+</table>
+</div>
+
+<div class="tabbed-table-content" id="data-content-2">
+<table class="upgrade-table">
+<thead>
+<tr>
+<th class="level-col">Level</th>
+<th class="cost-col">Light Reagent Cost (one level)</th>
+<th class="cost-col">Light Reagent Cost (max level)</th>
+</tr>
+</thead>
+<tbody>
+{{Data 3}}
+</tbody>
+</table>
+</div>
+
+<div class="tabbed-table-content" id="data-content-3">
+<table class="upgrade-table">
+<thead>
+<tr>
+<th class="level-col">Level</th>
+<th class="cost-col">Light Reagent Cost (one level)</th>
+<th class="cost-col">Light Reagent Cost (max level)</th>
+</tr>
+</thead>
+<tbody>
+{{Data 4}}
+</tbody>
+</table>
+</div>
+
+</div>
 </main>
+
 </body>
 </html>

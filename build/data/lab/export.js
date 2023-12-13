@@ -1,9 +1,23 @@
 import fs from 'fs';
-const fileData = fs.readFileSync('data.csv', 'utf-8').split('\n');
-const importedData = [];
+import {getDateFormatStrings} from '../../utils/date-utils.js';
 
-for (let i = 1; i < fileData.length; i++) {
-  const data = fileData[i].split(',');
+const exportDirectory = '../../../docs/data';
+const exportFileFragment = `${exportDirectory}/witchLabUpgradeCost`;
+const tableName = 'Witch\'s Lab Upgrade';
+const fileData = fs.readFileSync('data.tsv', 'utf-8').split('\n');
+
+const tableDate = new Date();
+const fmtTableDate = getDateFormatStrings(tableDate);
+const tableDataCode = `${fmtTableDate.YYYY}-${fmtTableDate.MM}-${fmtTableDate.DD}`
+
+const compiledData = {
+  'table': tableName,
+  'table-date': tableDataCode,
+  'data': []
+}
+
+for (let rowIdx = 1; rowIdx < fileData.length; rowIdx++) {
+  const data = fileData[rowIdx].split('\t');
   const bracketIndex = parseInt(data[0]);
 
   let startLevel = 0;
@@ -20,64 +34,96 @@ for (let i = 1; i < fileData.length; i++) {
  
   const cost = parseInt(data[4]);
 
-  importedData.push(
+  compiledData.data.push(
     {
-      index: bracketIndex,
-      startLevel: startLevel,
-      verified: verified,
-      cost: cost,
+      'range-index': bracketIndex,
+      'range-start': startLevel,
+      'reagent-cost': cost,
+      'verified': verified,
     }
   )
 }
 
-const exportedJSON = JSON.stringify(importedData, null, '  ');
-const exportedJs = 'const WitchLabUpgradeCost = ' + exportedJSON;
-fs.writeFileSync('../../../docs/mk/witchLabUpgradeCost.json', exportedJSON);
-fs.writeFileSync('../../../docs/mk/witchLabUpgradeCost.js', exportedJs);
+const exportedJSON = JSON.stringify(compiledData, null, '  ');
+const exportedJs =
+  'const WitchLabUpgradeCost = ' +
+  JSON.stringify(compiledData.data, null, '  ');
 
-const exportedTableRows = [];
+fs.writeFileSync(`${exportFileFragment}.json`, exportedJSON);
+fs.writeFileSync(`${exportFileFragment}.js`, exportedJs);
 
-for (let i = 1; i < importedData.length; i++) {
-  const startLevel = importedData[i].startLevel;
+const RangeCount = compiledData.data.length; 
+
+// Calculate total upgrade cost
+let totalReagentCost = 0;
+for (let rangeIndex = 0; rangeIndex < RangeCount; rangeIndex++) {
+  const thisBracket = compiledData.data[rangeIndex];
+  const nextBracket = compiledData.data[rangeIndex+1];
+  const startLevel = thisBracket['range-start'];
+
   const endLevel =
-    (importedData.length > i+1)?
-    importedData[i+1].startLevel:
-    2000;
-  const cost = importedData[i].cost;
-  const verified = importedData[i].verified;
+    (RangeCount > rangeIndex+1)?nextBracket['range-start']:2000;
 
-  exportedTableRows.push(
-`      <tr>
-        <td>${startLevel} → ${startLevel+1}<br>⋮<br>${endLevel-1} → ${endLevel}</td>
-        <td>${cost}</td>
-        <td>Light Reagent</td>
-        <td class="${verified?'verified':'unverified'}">${verified?'Verified':'Extrapolated'}</td>
-       </tr>`
-  )
+  const cost = thisBracket['reagent-cost'];
+  totalReagentCost += cost * (endLevel - startLevel);
+  if (endLevel === 2000) break;
+}
+
+// Expand data
+const expandedData = [];
+let cumulativeReagentCost = 0;
+
+for (let rangeIndex = 0; rangeIndex < RangeCount; rangeIndex++) {
+  const thisBracket = compiledData.data[rangeIndex];
+  const nextBracket = compiledData.data[rangeIndex+1];
+  const startLevel = thisBracket['range-start'];
+
+  const endLevel =
+    (RangeCount > rangeIndex+1)?nextBracket['range-start']:2000;
+
+  const cost = thisBracket['reagent-cost'];
+  const verified = thisBracket['verified'];
+
+  for (let level = startLevel; level < endLevel; level++) {
+    const row = {
+      level: level,
+      cost: cost,
+      remainingCost: (totalReagentCost - cumulativeReagentCost),
+      verified: verified,
+    };
+    expandedData.push(row);
+
+    cumulativeReagentCost += cost;
+  }
+}
+
+const tableBody1 = []; //   0  ..  499
+const tableBody2 = []; // 500  ..  999
+const tableBody3 = []; // 1000 .. 1499
+const tableBody4 = []; // 1500 .. 1999
+
+for (let idx = 0; idx <= 1999; idx++) {
+  let tableBody;
+  if (idx >= 1500) tableBody = tableBody4;
+  else if (idx >= 1000) tableBody = tableBody3;
+  else if (idx >= 500) tableBody = tableBody2;
+  else tableBody = tableBody1;
+
+  const row = expandedData[idx];
+
+  tableBody.push(`<tr">`)
+  tableBody.push(`<td class="level-col">${row.level} → ${row.level+1}</td>`);
+  tableBody.push(`<td class="${row.verified?'cost-col':'cost-col unverified'}">${row.cost}</td>`);
+  tableBody.push(`<td class="cost-col unverified">${row.remainingCost}</td>`);
+  tableBody.push('</tr>');
 }
 
 const htmlTemplate = fs.readFileSync('template.html', 'utf-8');
-const htmlOutput = htmlTemplate.replace(
-  '<!-- Data -->',
-  exportedTableRows.join('\n'),
-);
+const htmlOutput = htmlTemplate
+  .replace('{{Data 1}}', tableBody1.join('\n'))
+  .replace('{{Data 2}}', tableBody2.join('\n'))
+  .replace('{{Data 3}}', tableBody3.join('\n'))
+  .replace('{{Data 4}}', tableBody4.join('\n'))
+  ;
 
-fs.writeFileSync(
-  '../../../docs/mk/witchLabUpgradeCost.html',
-  htmlOutput,
-  {encoding:'utf8',flag:'w'},
-);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+fs.writeFileSync(`${exportFileFragment}.html`, htmlOutput, {encoding:'utf8',flag:'w'});
