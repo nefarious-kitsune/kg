@@ -1,0 +1,206 @@
+<html><head>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Miku's Shrine: Hero Roles</title>
+  <link href="../css/common.css" rel="stylesheet">
+  <link href="example.css" rel="stylesheet">
+</head>
+<body>
+
+<header id="header">
+  <div id="breadcrumb-wrapper"><nav>
+    <a class="link" href="../content">Home</a>
+    <span class="chevron">›</span>
+    <a class="link" href="./">Hero</a>
+    <span class="chevron">›</span>
+    <a class="link" href="./example">Troops combo</a>
+    <span class="chevron">›</span>
+    <span class="current">Goblin</span>
+  </nav></div>
+</header>
+
+<main>
+<h1>Hero Roles</h1>
+
+<p>
+  In Kingdom Guards, each hero has a different set of
+  skills that make them suitable for one of the following roles:
+</p>
+
+<ul class="butterfly">
+  <li>Support</li>
+  <li>Warrior</li>
+  <li>Hunter</li>
+  <li>Miner</li>
+</ul>
+
+<h2>Lead and Assistant Heroes</h2>
+
+<p>Each troops can have one <strong>lead</strong> hero and
+up to 2 <strong>assistant</strong> heroes.</p>
+
+<p>The <strong>lead</strong> hero will have <em>all</em>
+skills (e.g. march speed and power bonus) activated.</p>
+
+<p>The <strong>assistant</strong> hero(s) will <em>only</em>
+have the power bonus (if available) skill activated.</p>
+  
+<h2>Role: Support</h2>
+
+<p>
+  The two <em>assistant</em> heroes are <strong>Support</strong>
+  heroes. For them, we are only concerned about their
+  <strong>power bonus skill</strong>.
+</p>
+
+<p>Good support heroes include:</p>
+<ul>
+  <li class="el-archer"><a href="./archer-bonus">Archer</a>: Sahar and Ptolemy (25% power bonus)</li>
+  <li class="el-fire"><a href="./fire-bonus">Fire</a>: Cosette and Paul (30% power bonus)</li>
+  <li class="el-ice"><a href="./ice-bonus">Ice</a>: Ao Deng Ge Ri Le (40% power bonus)</li>
+  <li class="el-goblin"><a href="./goblin-bonus">Goblin</a>: Rosamond (30% power bonus)</li>
+</ul>
+
+<h2>Role: Warrior</h2>
+
+<p>
+  The <em>lead</em> hero is a <strong>Warrior</strong> hero
+  if he/she has 3+ of these skills:
+  <strong>march</strong> speed bonus,
+  <strong>power</strong> bonus,
+  <strong>recovery speed</strong> bonus, and
+  <strong>regeneration</strong> bonus.
+</p>
+
+<p>Good Warrior heroes include:</p>
+<ul>
+  <li class="el-archer"><a href="./archer-bonus">Archer</a>: Sahar, Meg, and Ptolemy</li>
+  <li class="el-fire"><a href="./fire-bonus">Fire</a>: Ericka and Anko</li>
+  <li class="el-ice"><a href="./ice-bonus">Ice</a>: Ao Yue and Filius</li>
+  <li class="el-goblin"><a href="./goblin-bonus">Goblin</a>: Gruen and Wendy</li>
+</ul>
+
+<h2>Role: Hunter</h2>
+
+<p>
+  The <em>lead</em> hero is a <strong>Hunter</strong> hero
+  if he/she has the <strong>AP-reduction</strong> bonus. A Hunter hero has the
+  following benefits:
+</p>
+
+<ul class="butterfly">
+  <li>Reduce Action Points needed for rallies.</li>
+  <li>Recover all damage from attacking Lava Haka.</li>
+  <li>Recover all damage from attacking Frost Behemoth.</li>
+  <li>Recover all damage from attacking Evil Defenders in Broken Land towers.</li>
+</ul>
+
+<p>Good Hunter heroes include: Livia, Giselle, Jessica, and Pythia.</p>
+
+<h2>Role: Miner</h2>
+
+<p>(Add information later)</p>
+
+<h2>Configuration Example</h2>
+
+<p>
+The following show how you can change the lead
+hero to get the most out of the hero's skill.
+</p>
+
+<div id="table-container">
+<table><thead><tr>
+<th>
+  <div class="config-box">
+  <p>Miner config</p>
+  <div class="avatars"
+    ><div class="avatars-item pythia"></div
+    ><div class="avatars-item wendy"></div
+    ><div class="avatars-item catherine"></div
+  ></div>
+  </div>
+</th>
+<th>
+  <div class="config-box">
+  <p>Hunter config</p>
+  <div class="avatars"
+    ><div class="avatars-item wendy"></div
+    ><div class="avatars-item catherine"></div
+    ><div class="avatars-item pythia"></div
+  ></div>
+  </div>
+</th>
+<th>
+  <div class="config-box">
+  <p>Warrior config</p>
+  <div class="avatars"
+    ><div class="avatars-item catherine"></div
+    ><div class="avatars-item pythia"></div
+    ><div class="avatars-item wendy"></div
+  ></div>
+  </div>
+</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>
+<div class="star">★★★</div>
+<div class="stats march"><span class="stats-desc">March speed</span><span class="stats-value">+20%</span></div>
+<div class="stats other"><span class="stats-desc">Offline gold</span><span class="stats-value">+20%</span></div>
+</td>
+<td>
+<div class="star">★★★</div>
+<div class="stats march"><span class="stats-desc">March speed</span><span class="stats-value">+15%</span></div>
+<div class="stats other"><span class="stats-desc">AP reduction</span><span class="stats-value">+10%</span></div>
+</td>
+<td>
+<div class="star">★★★</div>
+<div class="stats march"><span class="stats-desc">March speed</span><span class="stats-value">+20%</span></div>
+<div class="stats combat"><span class="stats-desc">Recovery speed</span><span class="stats-value">+15%</span></div>
+</td>
+</tr>
+<tr>
+<td>
+<div class="star">★★★★</div>
+<div class="stats march"><span class="stats-desc">March speed</span><span class="stats-value">+20%</span></div>
+<div class="stats other"><span class="stats-desc">Offline gold</span><span class="stats-value">+20%</span></div>
+<div class="stats combat"><span class="stats-desc">Troops power</span><span class="stats-value">+45%</span></div>
+</td>
+<td>
+<div class="star">★★★★</div>
+<div class="stats march"><span class="stats-desc">March speed</span><span class="stats-value">+15%</span></div>
+<div class="stats other"><span class="stats-desc">AP reduction</span><span class="stats-value">+10%</span></div>
+<div class="stats combat"><span class="stats-desc">Troops power</span><span class="stats-value">+45%</span></div>
+</td>
+<td>
+<div class="star">★★★★</div>
+<div class="stats march"><span class="stats-desc">March speed</span><span class="stats-value">+20%</span></div>
+<div class="stats combat"><span class="stats-desc">Troops power</span><span class="stats-value">+45%</span></div>
+<div class="stats combat"><span class="stats-desc">Recovery speed</span><span class="stats-value">+15%</span></div>
+</td>
+</tr>
+<tr>
+<td>
+<div class="star">★★★★★</div>
+<div class="stats march"><span class="stats-desc">March speed</span><span class="stats-value">+20%</span></div>
+<div class="stats other"><span class="stats-desc">Gathering speed</span><span class="stats-value">+20%</span></div>
+<div class="stats other"><span class="stats-desc">Offline gold</span><span class="stats-value">+20%</span></div>
+<div class="stats combat"><span class="stats-desc">Troops power</span><span class="stats-value">+45%</span></div>
+</td>
+<td>
+<div class="star">★★★★★</div>
+<div class="stats march"><span class="stats-desc">March speed</span><span class="stats-value">+15%</span></div>
+<div class="stats other"><span class="stats-desc">AP reduction</span><span class="stats-value">+10%</span></div>
+<div class="stats combat"><span class="stats-desc">Troops power</span><span class="stats-value">+45%</span></div>
+</td>
+<td>
+<div class="star">★★★★★</div>
+<div class="stats march"><span class="stats-desc">March speed</span><span class="stats-value">+20%</span></div>
+<div class="stats combat"><span class="stats-desc">Troops power</span><span class="stats-value">+45%</span></div>
+<div class="stats combat"><span class="stats-desc">Recovery speed</span><span class="stats-value">+15%</span></div>
+</td>
+</tr>
+</tbody>
+</table></div>
+</main>
+
+</body></html>
