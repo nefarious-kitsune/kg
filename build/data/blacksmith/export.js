@@ -4,7 +4,7 @@ import {getDateFormatStrings} from '../../utils/date-utils.js';
 const exportDirectory = '../../../docs/data';
 const exportFileFragment = `${exportDirectory}/blacksmithUpgradeCost`;
 const tableName = 'Blacksmith Upgrade';
-const fileData = fs.readFileSync('data.csv', 'utf-8').split('\n');
+const fileData = fs.readFileSync('data.tsv', 'utf-8').split('\n');
 
 const tableDate = new Date();
 const fmtTableDate = getDateFormatStrings(tableDate);
@@ -17,7 +17,7 @@ const compiledData = {
 }
 
 for (let rowIdx = 1; rowIdx < fileData.length; rowIdx++) {
-  const data = fileData[rowIdx].split(',');
+  const data = fileData[rowIdx].split('\t');
   const bracketIndex = parseInt(data[0]);
 
   let startLevel = 0;
@@ -36,8 +36,8 @@ for (let rowIdx = 1; rowIdx < fileData.length; rowIdx++) {
 
   compiledData.data.push(
     {
-      'bracket-index': bracketIndex,
-      'bracket-start': startLevel,
+      'range-index': bracketIndex,
+      'range-start': startLevel,
       'hammer-cost': cost,
       'verified': verified,
     }
@@ -45,7 +45,6 @@ for (let rowIdx = 1; rowIdx < fileData.length; rowIdx++) {
 }
 
 const exportedJSON = JSON.stringify(compiledData, null, '  ');
-
 const exportedJs =
   'const BlacksmithUpgradeCost = ' +
   JSON.stringify(compiledData.data, null, '  ');
@@ -53,30 +52,78 @@ const exportedJs =
 fs.writeFileSync(`${exportFileFragment}.json`, exportedJSON);
 fs.writeFileSync(`${exportFileFragment}.js`, exportedJs);
 
-const tableBody = [];
+const RangeCount = compiledData.data.length; 
 
-const BracketCount = compiledData.data.length; 
+// Calculate total upgrade cost
+let totalHammerCost = 0;
+for (let rangeIndex = 0; rangeIndex < RangeCount; rangeIndex++) {
+  const thisBracket = compiledData.data[rangeIndex];
+  const nextBracket = compiledData.data[rangeIndex+1];
+  const startLevel = thisBracket['range-start'];
 
-for (let bracketIndex = 0; bracketIndex < BracketCount; bracketIndex++) {
-  const thisBracket = compiledData.data[bracketIndex];
-  const nextBracket = compiledData.data[bracketIndex+1];
-
-  const startLevel = thisBracket['bracket-start'];
-  
   const endLevel =
-    (BracketCount > bracketIndex+1)?nextBracket['bracket-start']:2000;
+    (RangeCount > rangeIndex+1)?nextBracket['range-start']:2000;
 
   const cost = thisBracket['hammer-cost'];
-  const verified = thisBracket.verified;
+  totalHammerCost += cost * (endLevel - startLevel);
+  if (endLevel === 2000) break;
+}
 
-  tableBody.push(`<tr id="bracket-${bracketIndex}">`)
-  tableBody.push(`<td class="level-col">${startLevel} → ${startLevel+1}<br>⋮<br>${endLevel-1} → ${endLevel}</td>`);
-  tableBody.push(`<td class="cost-col">${cost}</td>`);
-  tableBody.push(`<td class="verification-col ${verified?'verified':'unverified'}">${verified?'Verified':'Extrapolated'}</td>`);
+// Expand data
+const expandedData = [];
+let cumulativeHammerCost = 0;
+
+for (let rangeIndex = 0; rangeIndex < RangeCount; rangeIndex++) {
+  const thisBracket = compiledData.data[rangeIndex];
+  const nextBracket = compiledData.data[rangeIndex+1];
+  const startLevel = thisBracket['range-start'];
+
+  const endLevel =
+    (RangeCount > rangeIndex+1)?nextBracket['range-start']:2000;
+
+  const cost = thisBracket['hammer-cost'];
+  const verified = thisBracket['verified'];
+
+  for (let level = startLevel; level < endLevel; level++) {
+    const row = {
+      level: level,
+      cost: cost,
+      remainingCost: (totalHammerCost - cumulativeHammerCost),
+      verified: verified,
+    };
+    expandedData.push(row);
+
+    cumulativeHammerCost += cost;
+  }
+}
+
+const tableBody1 = []; //   0  ..  499
+const tableBody2 = []; // 500  ..  999
+const tableBody3 = []; // 1000 .. 1499
+const tableBody4 = []; // 1500 .. 1999
+
+for (let idx = 0; idx <= 1999; idx++) {
+  let tableBody;
+  if (idx >= 1500) tableBody = tableBody4;
+  else if (idx >= 1000) tableBody = tableBody3;
+  else if (idx >= 500) tableBody = tableBody2;
+  else tableBody = tableBody1;
+
+  const row = expandedData[idx];
+
+  tableBody.push(`<tr">`)
+  tableBody.push(`<td class="level-col">${row.level} → ${row.level+1}</td>`);
+  tableBody.push(`<td class="${row.verified?'cost-col':'cost-col unverified'}">${row.cost}</td>`);
+  tableBody.push(`<td class="cost-col unverified">${row.remainingCost}</td>`);
   tableBody.push('</tr>');
 }
 
 const htmlTemplate = fs.readFileSync('template.html', 'utf-8');
-const htmlOutput = htmlTemplate.replace('{{Data}}',tableBody.join('\n'));
+const htmlOutput = htmlTemplate
+  .replace('{{Data 1}}', tableBody1.join('\n'))
+  .replace('{{Data 2}}', tableBody2.join('\n'))
+  .replace('{{Data 3}}', tableBody3.join('\n'))
+  .replace('{{Data 4}}', tableBody4.join('\n'))
+  ;
 
 fs.writeFileSync(`${exportFileFragment}.html`, htmlOutput, {encoding:'utf8',flag:'w'});

@@ -1,1594 +1,1594 @@
 {
   "table": "Blacksmith Upgrade",
-  "table-date": "2023-12-04",
+  "table-date": "2023-12-13",
   "data": [
     {
-      "bracket-index": 1,
-      "bracket-start": 0,
+      "range-index": 1,
+      "range-start": 0,
       "hammer-cost": 5,
       "verified": true
     },
     {
-      "bracket-index": 2,
-      "bracket-start": 4,
+      "range-index": 2,
+      "range-start": 4,
       "hammer-cost": 10,
       "verified": true
     },
     {
-      "bracket-index": 3,
-      "bracket-start": 8,
+      "range-index": 3,
+      "range-start": 8,
       "hammer-cost": 15,
       "verified": true
     },
     {
-      "bracket-index": 4,
-      "bracket-start": 13,
+      "range-index": 4,
+      "range-start": 13,
       "hammer-cost": 20,
       "verified": true
     },
     {
-      "bracket-index": 5,
-      "bracket-start": 18,
+      "range-index": 5,
+      "range-start": 18,
       "hammer-cost": 25,
       "verified": true
     },
     {
-      "bracket-index": 6,
-      "bracket-start": 24,
+      "range-index": 6,
+      "range-start": 24,
       "hammer-cost": 30,
       "verified": true
     },
     {
-      "bracket-index": 7,
-      "bracket-start": 29,
+      "range-index": 7,
+      "range-start": 29,
       "hammer-cost": 35,
       "verified": true
     },
     {
-      "bracket-index": 8,
-      "bracket-start": 35,
+      "range-index": 8,
+      "range-start": 35,
       "hammer-cost": 40,
       "verified": true
     },
     {
-      "bracket-index": 9,
-      "bracket-start": 40,
+      "range-index": 9,
+      "range-start": 40,
       "hammer-cost": 45,
       "verified": true
     },
     {
-      "bracket-index": 10,
-      "bracket-start": 46,
+      "range-index": 10,
+      "range-start": 46,
       "hammer-cost": 50,
       "verified": true
     },
     {
-      "bracket-index": 11,
-      "bracket-start": 52,
+      "range-index": 11,
+      "range-start": 52,
       "hammer-cost": 55,
       "verified": true
     },
     {
-      "bracket-index": 12,
-      "bracket-start": 58,
+      "range-index": 12,
+      "range-start": 58,
       "hammer-cost": 60,
       "verified": true
     },
     {
-      "bracket-index": 13,
-      "bracket-start": 64,
+      "range-index": 13,
+      "range-start": 64,
       "hammer-cost": 65,
       "verified": true
     },
     {
-      "bracket-index": 14,
-      "bracket-start": 70,
+      "range-index": 14,
+      "range-start": 70,
       "hammer-cost": 70,
       "verified": true
     },
     {
-      "bracket-index": 15,
-      "bracket-start": 76,
+      "range-index": 15,
+      "range-start": 76,
       "hammer-cost": 75,
       "verified": true
     },
     {
-      "bracket-index": 16,
-      "bracket-start": 82,
+      "range-index": 16,
+      "range-start": 82,
       "hammer-cost": 80,
       "verified": true
     },
     {
-      "bracket-index": 17,
-      "bracket-start": 88,
+      "range-index": 17,
+      "range-start": 88,
       "hammer-cost": 85,
       "verified": true
     },
     {
-      "bracket-index": 18,
-      "bracket-start": 94,
+      "range-index": 18,
+      "range-start": 94,
       "hammer-cost": 90,
       "verified": true
     },
     {
-      "bracket-index": 19,
-      "bracket-start": 100,
+      "range-index": 19,
+      "range-start": 100,
       "hammer-cost": 95,
       "verified": true
     },
     {
-      "bracket-index": 20,
-      "bracket-start": 107,
+      "range-index": 20,
+      "range-start": 107,
       "hammer-cost": 100,
       "verified": true
     },
     {
-      "bracket-index": 21,
-      "bracket-start": 113,
+      "range-index": 21,
+      "range-start": 113,
       "hammer-cost": 105,
       "verified": true
     },
     {
-      "bracket-index": 22,
-      "bracket-start": 119,
+      "range-index": 22,
+      "range-start": 119,
       "hammer-cost": 110,
       "verified": true
     },
     {
-      "bracket-index": 23,
-      "bracket-start": 125,
+      "range-index": 23,
+      "range-start": 125,
       "hammer-cost": 115,
       "verified": true
     },
     {
-      "bracket-index": 24,
-      "bracket-start": 132,
+      "range-index": 24,
+      "range-start": 132,
       "hammer-cost": 120,
       "verified": true
     },
     {
-      "bracket-index": 25,
-      "bracket-start": 138,
+      "range-index": 25,
+      "range-start": 138,
       "hammer-cost": 125,
       "verified": true
     },
     {
-      "bracket-index": 26,
-      "bracket-start": 145,
+      "range-index": 26,
+      "range-start": 145,
       "hammer-cost": 130,
       "verified": true
     },
     {
-      "bracket-index": 27,
-      "bracket-start": 151,
+      "range-index": 27,
+      "range-start": 151,
       "hammer-cost": 135,
       "verified": true
     },
     {
-      "bracket-index": 28,
-      "bracket-start": 158,
+      "range-index": 28,
+      "range-start": 158,
       "hammer-cost": 140,
       "verified": true
     },
     {
-      "bracket-index": 29,
-      "bracket-start": 164,
+      "range-index": 29,
+      "range-start": 164,
       "hammer-cost": 145,
       "verified": true
     },
     {
-      "bracket-index": 30,
-      "bracket-start": 171,
+      "range-index": 30,
+      "range-start": 171,
       "hammer-cost": 150,
       "verified": true
     },
     {
-      "bracket-index": 31,
-      "bracket-start": 177,
+      "range-index": 31,
+      "range-start": 177,
       "hammer-cost": 155,
       "verified": true
     },
     {
-      "bracket-index": 32,
-      "bracket-start": 184,
+      "range-index": 32,
+      "range-start": 184,
       "hammer-cost": 160,
       "verified": true
     },
     {
-      "bracket-index": 33,
-      "bracket-start": 191,
+      "range-index": 33,
+      "range-start": 191,
       "hammer-cost": 165,
       "verified": true
     },
     {
-      "bracket-index": 34,
-      "bracket-start": 197,
+      "range-index": 34,
+      "range-start": 197,
       "hammer-cost": 170,
       "verified": true
     },
     {
-      "bracket-index": 35,
-      "bracket-start": 204,
+      "range-index": 35,
+      "range-start": 204,
       "hammer-cost": 175,
       "verified": true
     },
     {
-      "bracket-index": 36,
-      "bracket-start": 211,
+      "range-index": 36,
+      "range-start": 211,
       "hammer-cost": 180,
       "verified": true
     },
     {
-      "bracket-index": 37,
-      "bracket-start": 217,
+      "range-index": 37,
+      "range-start": 217,
       "hammer-cost": 185,
       "verified": true
     },
     {
-      "bracket-index": 38,
-      "bracket-start": 224,
+      "range-index": 38,
+      "range-start": 224,
       "hammer-cost": 190,
       "verified": true
     },
     {
-      "bracket-index": 39,
-      "bracket-start": 231,
+      "range-index": 39,
+      "range-start": 231,
       "hammer-cost": 195,
       "verified": true
     },
     {
-      "bracket-index": 40,
-      "bracket-start": 237,
+      "range-index": 40,
+      "range-start": 237,
       "hammer-cost": 200,
       "verified": true
     },
     {
-      "bracket-index": 41,
-      "bracket-start": 244,
+      "range-index": 41,
+      "range-start": 244,
       "hammer-cost": 205,
       "verified": true
     },
     {
-      "bracket-index": 42,
-      "bracket-start": 251,
+      "range-index": 42,
+      "range-start": 251,
       "hammer-cost": 210,
       "verified": true
     },
     {
-      "bracket-index": 43,
-      "bracket-start": 258,
+      "range-index": 43,
+      "range-start": 258,
       "hammer-cost": 215,
       "verified": true
     },
     {
-      "bracket-index": 44,
-      "bracket-start": 265,
+      "range-index": 44,
+      "range-start": 265,
       "hammer-cost": 220,
       "verified": true
     },
     {
-      "bracket-index": 45,
-      "bracket-start": 272,
+      "range-index": 45,
+      "range-start": 272,
       "hammer-cost": 225,
       "verified": true
     },
     {
-      "bracket-index": 46,
-      "bracket-start": 278,
+      "range-index": 46,
+      "range-start": 278,
       "hammer-cost": 230,
       "verified": true
     },
     {
-      "bracket-index": 47,
-      "bracket-start": 285,
+      "range-index": 47,
+      "range-start": 285,
       "hammer-cost": 235,
       "verified": true
     },
     {
-      "bracket-index": 48,
-      "bracket-start": 292,
+      "range-index": 48,
+      "range-start": 292,
       "hammer-cost": 240,
       "verified": true
     },
     {
-      "bracket-index": 49,
-      "bracket-start": 299,
+      "range-index": 49,
+      "range-start": 299,
       "hammer-cost": 245,
       "verified": false
     },
     {
-      "bracket-index": 50,
-      "bracket-start": 306,
+      "range-index": 50,
+      "range-start": 306,
       "hammer-cost": 250,
       "verified": true
     },
     {
-      "bracket-index": 51,
-      "bracket-start": 313,
+      "range-index": 51,
+      "range-start": 313,
       "hammer-cost": 255,
       "verified": false
     },
     {
-      "bracket-index": 52,
-      "bracket-start": 320,
+      "range-index": 52,
+      "range-start": 320,
       "hammer-cost": 260,
-      "verified": false
+      "verified": true
     },
     {
-      "bracket-index": 53,
-      "bracket-start": 327,
+      "range-index": 53,
+      "range-start": 327,
       "hammer-cost": 265,
-      "verified": false
+      "verified": true
     },
     {
-      "bracket-index": 54,
-      "bracket-start": 334,
+      "range-index": 54,
+      "range-start": 334,
       "hammer-cost": 270,
       "verified": false
     },
     {
-      "bracket-index": 55,
-      "bracket-start": 341,
+      "range-index": 55,
+      "range-start": 341,
       "hammer-cost": 275,
       "verified": false
     },
     {
-      "bracket-index": 56,
-      "bracket-start": 348,
+      "range-index": 56,
+      "range-start": 348,
       "hammer-cost": 280,
       "verified": false
     },
     {
-      "bracket-index": 57,
-      "bracket-start": 355,
+      "range-index": 57,
+      "range-start": 355,
       "hammer-cost": 285,
       "verified": false
     },
     {
-      "bracket-index": 58,
-      "bracket-start": 362,
+      "range-index": 58,
+      "range-start": 362,
       "hammer-cost": 290,
       "verified": false
     },
     {
-      "bracket-index": 59,
-      "bracket-start": 369,
+      "range-index": 59,
+      "range-start": 369,
       "hammer-cost": 295,
       "verified": false
     },
     {
-      "bracket-index": 60,
-      "bracket-start": 376,
+      "range-index": 60,
+      "range-start": 376,
       "hammer-cost": 300,
       "verified": false
     },
     {
-      "bracket-index": 61,
-      "bracket-start": 383,
+      "range-index": 61,
+      "range-start": 383,
       "hammer-cost": 305,
       "verified": false
     },
     {
-      "bracket-index": 62,
-      "bracket-start": 390,
+      "range-index": 62,
+      "range-start": 390,
       "hammer-cost": 310,
       "verified": false
     },
     {
-      "bracket-index": 63,
-      "bracket-start": 397,
+      "range-index": 63,
+      "range-start": 397,
       "hammer-cost": 315,
       "verified": false
     },
     {
-      "bracket-index": 64,
-      "bracket-start": 405,
+      "range-index": 64,
+      "range-start": 405,
       "hammer-cost": 320,
       "verified": true
     },
     {
-      "bracket-index": 65,
-      "bracket-start": 412,
+      "range-index": 65,
+      "range-start": 412,
       "hammer-cost": 325,
       "verified": true
     },
     {
-      "bracket-index": 66,
-      "bracket-start": 419,
+      "range-index": 66,
+      "range-start": 419,
       "hammer-cost": 330,
       "verified": true
     },
     {
-      "bracket-index": 67,
-      "bracket-start": 426,
+      "range-index": 67,
+      "range-start": 426,
       "hammer-cost": 335,
       "verified": true
     },
     {
-      "bracket-index": 68,
-      "bracket-start": 434,
+      "range-index": 68,
+      "range-start": 434,
       "hammer-cost": 340,
       "verified": true
     },
     {
-      "bracket-index": 69,
-      "bracket-start": 441,
+      "range-index": 69,
+      "range-start": 441,
       "hammer-cost": 345,
       "verified": true
     },
     {
-      "bracket-index": 70,
-      "bracket-start": 448,
+      "range-index": 70,
+      "range-start": 448,
       "hammer-cost": 350,
       "verified": true
     },
     {
-      "bracket-index": 71,
-      "bracket-start": 455,
+      "range-index": 71,
+      "range-start": 455,
       "hammer-cost": 355,
       "verified": true
     },
     {
-      "bracket-index": 72,
-      "bracket-start": 463,
+      "range-index": 72,
+      "range-start": 463,
       "hammer-cost": 360,
       "verified": true
     },
     {
-      "bracket-index": 73,
-      "bracket-start": 470,
+      "range-index": 73,
+      "range-start": 470,
       "hammer-cost": 365,
       "verified": true
     },
     {
-      "bracket-index": 74,
-      "bracket-start": 477,
+      "range-index": 74,
+      "range-start": 477,
       "hammer-cost": 370,
       "verified": true
     },
     {
-      "bracket-index": 75,
-      "bracket-start": 484,
+      "range-index": 75,
+      "range-start": 484,
       "hammer-cost": 375,
       "verified": true
     },
     {
-      "bracket-index": 76,
-      "bracket-start": 492,
+      "range-index": 76,
+      "range-start": 492,
       "hammer-cost": 380,
       "verified": true
     },
     {
-      "bracket-index": 77,
-      "bracket-start": 499,
+      "range-index": 77,
+      "range-start": 499,
       "hammer-cost": 385,
       "verified": true
     },
     {
-      "bracket-index": 78,
-      "bracket-start": 506,
+      "range-index": 78,
+      "range-start": 506,
       "hammer-cost": 390,
       "verified": true
     },
     {
-      "bracket-index": 79,
-      "bracket-start": 514,
+      "range-index": 79,
+      "range-start": 514,
       "hammer-cost": 395,
       "verified": true
     },
     {
-      "bracket-index": 80,
-      "bracket-start": 521,
+      "range-index": 80,
+      "range-start": 521,
       "hammer-cost": 400,
       "verified": true
     },
     {
-      "bracket-index": 81,
-      "bracket-start": 528,
+      "range-index": 81,
+      "range-start": 528,
       "hammer-cost": 405,
       "verified": true
     },
     {
-      "bracket-index": 82,
-      "bracket-start": 536,
+      "range-index": 82,
+      "range-start": 536,
       "hammer-cost": 410,
       "verified": true
     },
     {
-      "bracket-index": 83,
-      "bracket-start": 543,
+      "range-index": 83,
+      "range-start": 543,
       "hammer-cost": 415,
       "verified": true
     },
     {
-      "bracket-index": 84,
-      "bracket-start": 550,
+      "range-index": 84,
+      "range-start": 550,
       "hammer-cost": 420,
       "verified": true
     },
     {
-      "bracket-index": 85,
-      "bracket-start": 558,
+      "range-index": 85,
+      "range-start": 558,
       "hammer-cost": 425,
       "verified": true
     },
     {
-      "bracket-index": 86,
-      "bracket-start": 565,
+      "range-index": 86,
+      "range-start": 565,
       "hammer-cost": 430,
       "verified": true
     },
     {
-      "bracket-index": 87,
-      "bracket-start": 572,
+      "range-index": 87,
+      "range-start": 572,
       "hammer-cost": 435,
       "verified": true
     },
     {
-      "bracket-index": 88,
-      "bracket-start": 580,
+      "range-index": 88,
+      "range-start": 580,
       "hammer-cost": 440,
       "verified": true
     },
     {
-      "bracket-index": 89,
-      "bracket-start": 587,
+      "range-index": 89,
+      "range-start": 587,
       "hammer-cost": 445,
       "verified": true
     },
     {
-      "bracket-index": 90,
-      "bracket-start": 595,
+      "range-index": 90,
+      "range-start": 595,
       "hammer-cost": 450,
       "verified": true
     },
     {
-      "bracket-index": 91,
-      "bracket-start": 602,
+      "range-index": 91,
+      "range-start": 602,
       "hammer-cost": 455,
       "verified": true
     },
     {
-      "bracket-index": 92,
-      "bracket-start": 610,
+      "range-index": 92,
+      "range-start": 610,
       "hammer-cost": 460,
       "verified": true
     },
     {
-      "bracket-index": 93,
-      "bracket-start": 617,
+      "range-index": 93,
+      "range-start": 617,
       "hammer-cost": 465,
       "verified": true
     },
     {
-      "bracket-index": 94,
-      "bracket-start": 625,
+      "range-index": 94,
+      "range-start": 625,
       "hammer-cost": 470,
       "verified": true
     },
     {
-      "bracket-index": 95,
-      "bracket-start": 632,
+      "range-index": 95,
+      "range-start": 632,
       "hammer-cost": 475,
       "verified": true
     },
     {
-      "bracket-index": 96,
-      "bracket-start": 639,
+      "range-index": 96,
+      "range-start": 639,
       "hammer-cost": 480,
       "verified": true
     },
     {
-      "bracket-index": 97,
-      "bracket-start": 647,
+      "range-index": 97,
+      "range-start": 647,
       "hammer-cost": 485,
       "verified": true
     },
     {
-      "bracket-index": 98,
-      "bracket-start": 654,
+      "range-index": 98,
+      "range-start": 654,
       "hammer-cost": 490,
       "verified": true
     },
     {
-      "bracket-index": 99,
-      "bracket-start": 662,
+      "range-index": 99,
+      "range-start": 662,
       "hammer-cost": 495,
       "verified": true
     },
     {
-      "bracket-index": 100,
-      "bracket-start": 669,
+      "range-index": 100,
+      "range-start": 669,
       "hammer-cost": 500,
       "verified": true
     },
     {
-      "bracket-index": 101,
-      "bracket-start": 677,
+      "range-index": 101,
+      "range-start": 677,
       "hammer-cost": 505,
       "verified": true
     },
     {
-      "bracket-index": 102,
-      "bracket-start": 685,
+      "range-index": 102,
+      "range-start": 685,
       "hammer-cost": 510,
       "verified": true
     },
     {
-      "bracket-index": 103,
-      "bracket-start": 692,
+      "range-index": 103,
+      "range-start": 692,
       "hammer-cost": 515,
       "verified": true
     },
     {
-      "bracket-index": 104,
-      "bracket-start": 700,
+      "range-index": 104,
+      "range-start": 700,
       "hammer-cost": 520,
       "verified": true
     },
     {
-      "bracket-index": 105,
-      "bracket-start": 707,
+      "range-index": 105,
+      "range-start": 707,
       "hammer-cost": 525,
       "verified": true
     },
     {
-      "bracket-index": 106,
-      "bracket-start": 715,
+      "range-index": 106,
+      "range-start": 715,
       "hammer-cost": 530,
       "verified": true
     },
     {
-      "bracket-index": 107,
-      "bracket-start": 722,
+      "range-index": 107,
+      "range-start": 722,
       "hammer-cost": 535,
       "verified": true
     },
     {
-      "bracket-index": 108,
-      "bracket-start": 730,
+      "range-index": 108,
+      "range-start": 730,
       "hammer-cost": 540,
       "verified": true
     },
     {
-      "bracket-index": 109,
-      "bracket-start": 737,
+      "range-index": 109,
+      "range-start": 737,
       "hammer-cost": 545,
       "verified": true
     },
     {
-      "bracket-index": 110,
-      "bracket-start": 745,
+      "range-index": 110,
+      "range-start": 745,
       "hammer-cost": 550,
       "verified": true
     },
     {
-      "bracket-index": 111,
-      "bracket-start": 753,
+      "range-index": 111,
+      "range-start": 753,
       "hammer-cost": 555,
       "verified": true
     },
     {
-      "bracket-index": 112,
-      "bracket-start": 760,
+      "range-index": 112,
+      "range-start": 760,
       "hammer-cost": 560,
       "verified": true
     },
     {
-      "bracket-index": 113,
-      "bracket-start": 768,
+      "range-index": 113,
+      "range-start": 768,
       "hammer-cost": 565,
       "verified": true
     },
     {
-      "bracket-index": 114,
-      "bracket-start": 776,
+      "range-index": 114,
+      "range-start": 776,
       "hammer-cost": 570,
       "verified": true
     },
     {
-      "bracket-index": 115,
-      "bracket-start": 783,
+      "range-index": 115,
+      "range-start": 783,
       "hammer-cost": 575,
       "verified": true
     },
     {
-      "bracket-index": 116,
-      "bracket-start": 791,
+      "range-index": 116,
+      "range-start": 791,
       "hammer-cost": 580,
       "verified": true
     },
     {
-      "bracket-index": 117,
-      "bracket-start": 798,
+      "range-index": 117,
+      "range-start": 798,
       "hammer-cost": 585,
       "verified": false
     },
     {
-      "bracket-index": 118,
-      "bracket-start": 806,
+      "range-index": 118,
+      "range-start": 806,
       "hammer-cost": 590,
       "verified": true
     },
     {
-      "bracket-index": 119,
-      "bracket-start": 814,
+      "range-index": 119,
+      "range-start": 814,
       "hammer-cost": 595,
       "verified": true
     },
     {
-      "bracket-index": 120,
-      "bracket-start": 821,
+      "range-index": 120,
+      "range-start": 821,
       "hammer-cost": 600,
       "verified": true
     },
     {
-      "bracket-index": 121,
-      "bracket-start": 829,
+      "range-index": 121,
+      "range-start": 829,
       "hammer-cost": 605,
       "verified": true
     },
     {
-      "bracket-index": 122,
-      "bracket-start": 837,
+      "range-index": 122,
+      "range-start": 837,
       "hammer-cost": 610,
       "verified": true
     },
     {
-      "bracket-index": 123,
-      "bracket-start": 845,
+      "range-index": 123,
+      "range-start": 845,
       "hammer-cost": 615,
-      "verified": false
+      "verified": true
     },
     {
-      "bracket-index": 124,
-      "bracket-start": 852,
+      "range-index": 124,
+      "range-start": 852,
       "hammer-cost": 620,
       "verified": false
     },
     {
-      "bracket-index": 125,
-      "bracket-start": 859,
+      "range-index": 125,
+      "range-start": 859,
       "hammer-cost": 625,
       "verified": false
     },
     {
-      "bracket-index": 126,
-      "bracket-start": 867,
+      "range-index": 126,
+      "range-start": 867,
       "hammer-cost": 630,
       "verified": false
     },
     {
-      "bracket-index": 127,
-      "bracket-start": 874,
+      "range-index": 127,
+      "range-start": 874,
       "hammer-cost": 635,
       "verified": false
     },
     {
-      "bracket-index": 128,
-      "bracket-start": 882,
+      "range-index": 128,
+      "range-start": 882,
       "hammer-cost": 640,
       "verified": false
     },
     {
-      "bracket-index": 129,
-      "bracket-start": 889,
+      "range-index": 129,
+      "range-start": 889,
       "hammer-cost": 645,
       "verified": false
     },
     {
-      "bracket-index": 130,
-      "bracket-start": 896,
+      "range-index": 130,
+      "range-start": 896,
       "hammer-cost": 650,
       "verified": false
     },
     {
-      "bracket-index": 131,
-      "bracket-start": 904,
+      "range-index": 131,
+      "range-start": 904,
       "hammer-cost": 655,
       "verified": false
     },
     {
-      "bracket-index": 132,
-      "bracket-start": 912,
+      "range-index": 132,
+      "range-start": 912,
       "hammer-cost": 660,
       "verified": false
     },
     {
-      "bracket-index": 133,
-      "bracket-start": 919,
+      "range-index": 133,
+      "range-start": 919,
       "hammer-cost": 665,
       "verified": false
     },
     {
-      "bracket-index": 134,
-      "bracket-start": 927,
+      "range-index": 134,
+      "range-start": 927,
       "hammer-cost": 670,
       "verified": false
     },
     {
-      "bracket-index": 135,
-      "bracket-start": 935,
+      "range-index": 135,
+      "range-start": 935,
       "hammer-cost": 675,
       "verified": false
     },
     {
-      "bracket-index": 136,
-      "bracket-start": 942,
+      "range-index": 136,
+      "range-start": 942,
       "hammer-cost": 680,
       "verified": false
     },
     {
-      "bracket-index": 137,
-      "bracket-start": 950,
+      "range-index": 137,
+      "range-start": 950,
       "hammer-cost": 685,
       "verified": false
     },
     {
-      "bracket-index": 138,
-      "bracket-start": 958,
+      "range-index": 138,
+      "range-start": 958,
       "hammer-cost": 690,
       "verified": false
     },
     {
-      "bracket-index": 139,
-      "bracket-start": 966,
+      "range-index": 139,
+      "range-start": 966,
       "hammer-cost": 695,
       "verified": false
     },
     {
-      "bracket-index": 140,
-      "bracket-start": 974,
+      "range-index": 140,
+      "range-start": 974,
       "hammer-cost": 700,
       "verified": false
     },
     {
-      "bracket-index": 141,
-      "bracket-start": 982,
+      "range-index": 141,
+      "range-start": 982,
       "hammer-cost": 705,
       "verified": false
     },
     {
-      "bracket-index": 142,
-      "bracket-start": 990,
+      "range-index": 142,
+      "range-start": 990,
       "hammer-cost": 710,
       "verified": false
     },
     {
-      "bracket-index": 143,
-      "bracket-start": 998,
+      "range-index": 143,
+      "range-start": 998,
       "hammer-cost": 715,
       "verified": false
     },
     {
-      "bracket-index": 144,
-      "bracket-start": 1006,
+      "range-index": 144,
+      "range-start": 1006,
       "hammer-cost": 720,
       "verified": false
     },
     {
-      "bracket-index": 145,
-      "bracket-start": 1014,
+      "range-index": 145,
+      "range-start": 1014,
       "hammer-cost": 725,
       "verified": false
     },
     {
-      "bracket-index": 146,
-      "bracket-start": 1022,
+      "range-index": 146,
+      "range-start": 1022,
       "hammer-cost": 730,
       "verified": false
     },
     {
-      "bracket-index": 147,
-      "bracket-start": 1030,
+      "range-index": 147,
+      "range-start": 1030,
       "hammer-cost": 735,
       "verified": false
     },
     {
-      "bracket-index": 148,
-      "bracket-start": 1038,
+      "range-index": 148,
+      "range-start": 1038,
       "hammer-cost": 740,
       "verified": false
     },
     {
-      "bracket-index": 149,
-      "bracket-start": 1046,
+      "range-index": 149,
+      "range-start": 1046,
       "hammer-cost": 745,
       "verified": false
     },
     {
-      "bracket-index": 150,
-      "bracket-start": 1054,
+      "range-index": 150,
+      "range-start": 1054,
       "hammer-cost": 750,
       "verified": false
     },
     {
-      "bracket-index": 151,
-      "bracket-start": 1062,
+      "range-index": 151,
+      "range-start": 1062,
       "hammer-cost": 755,
       "verified": false
     },
     {
-      "bracket-index": 152,
-      "bracket-start": 1070,
+      "range-index": 152,
+      "range-start": 1070,
       "hammer-cost": 760,
       "verified": false
     },
     {
-      "bracket-index": 153,
-      "bracket-start": 1078,
+      "range-index": 153,
+      "range-start": 1078,
       "hammer-cost": 765,
       "verified": false
     },
     {
-      "bracket-index": 154,
-      "bracket-start": 1086,
+      "range-index": 154,
+      "range-start": 1086,
       "hammer-cost": 770,
       "verified": false
     },
     {
-      "bracket-index": 155,
-      "bracket-start": 1094,
+      "range-index": 155,
+      "range-start": 1094,
       "hammer-cost": 775,
       "verified": false
     },
     {
-      "bracket-index": 156,
-      "bracket-start": 1102,
+      "range-index": 156,
+      "range-start": 1102,
       "hammer-cost": 780,
       "verified": false
     },
     {
-      "bracket-index": 157,
-      "bracket-start": 1110,
+      "range-index": 157,
+      "range-start": 1110,
       "hammer-cost": 785,
       "verified": true
     },
     {
-      "bracket-index": 158,
-      "bracket-start": 1118,
+      "range-index": 158,
+      "range-start": 1118,
       "hammer-cost": 790,
       "verified": true
     },
     {
-      "bracket-index": 159,
-      "bracket-start": 1126,
+      "range-index": 159,
+      "range-start": 1126,
       "hammer-cost": 795,
       "verified": true
     },
     {
-      "bracket-index": 160,
-      "bracket-start": 1134,
+      "range-index": 160,
+      "range-start": 1134,
       "hammer-cost": 800,
       "verified": true
     },
     {
-      "bracket-index": 161,
-      "bracket-start": 1142,
+      "range-index": 161,
+      "range-start": 1142,
       "hammer-cost": 805,
       "verified": true
     },
     {
-      "bracket-index": 162,
-      "bracket-start": 1150,
+      "range-index": 162,
+      "range-start": 1150,
       "hammer-cost": 810,
       "verified": true
     },
     {
-      "bracket-index": 163,
-      "bracket-start": 1157,
+      "range-index": 163,
+      "range-start": 1157,
       "hammer-cost": 815,
       "verified": true
     },
     {
-      "bracket-index": 164,
-      "bracket-start": 1165,
+      "range-index": 164,
+      "range-start": 1165,
       "hammer-cost": 820,
       "verified": true
     },
     {
-      "bracket-index": 165,
-      "bracket-start": 1173,
+      "range-index": 165,
+      "range-start": 1173,
       "hammer-cost": 825,
       "verified": true
     },
     {
-      "bracket-index": 166,
-      "bracket-start": 1181,
+      "range-index": 166,
+      "range-start": 1181,
       "hammer-cost": 830,
       "verified": true
     },
     {
-      "bracket-index": 167,
-      "bracket-start": 1189,
+      "range-index": 167,
+      "range-start": 1189,
       "hammer-cost": 835,
       "verified": true
     },
     {
-      "bracket-index": 168,
-      "bracket-start": 1197,
+      "range-index": 168,
+      "range-start": 1197,
       "hammer-cost": 840,
       "verified": true
     },
     {
-      "bracket-index": 169,
-      "bracket-start": 1205,
+      "range-index": 169,
+      "range-start": 1205,
       "hammer-cost": 845,
       "verified": true
     },
     {
-      "bracket-index": 170,
-      "bracket-start": 1213,
+      "range-index": 170,
+      "range-start": 1213,
       "hammer-cost": 850,
       "verified": true
     },
     {
-      "bracket-index": 171,
-      "bracket-start": 1221,
+      "range-index": 171,
+      "range-start": 1221,
       "hammer-cost": 855,
       "verified": false
     },
     {
-      "bracket-index": 172,
-      "bracket-start": 1229,
+      "range-index": 172,
+      "range-start": 1229,
       "hammer-cost": 860,
       "verified": true
     },
     {
-      "bracket-index": 173,
-      "bracket-start": 1237,
+      "range-index": 173,
+      "range-start": 1237,
       "hammer-cost": 865,
       "verified": true
     },
     {
-      "bracket-index": 174,
-      "bracket-start": 1245,
+      "range-index": 174,
+      "range-start": 1245,
       "hammer-cost": 870,
-      "verified": false
+      "verified": true
     },
     {
-      "bracket-index": 175,
-      "bracket-start": 1253,
+      "range-index": 175,
+      "range-start": 1253,
       "hammer-cost": 875,
       "verified": true
     },
     {
-      "bracket-index": 176,
-      "bracket-start": 1261,
+      "range-index": 176,
+      "range-start": 1261,
       "hammer-cost": 880,
       "verified": true
     },
     {
-      "bracket-index": 177,
-      "bracket-start": 1269,
+      "range-index": 177,
+      "range-start": 1269,
       "hammer-cost": 885,
       "verified": true
     },
     {
-      "bracket-index": 178,
-      "bracket-start": 1277,
+      "range-index": 178,
+      "range-start": 1277,
       "hammer-cost": 890,
       "verified": true
     },
     {
-      "bracket-index": 179,
-      "bracket-start": 1285,
+      "range-index": 179,
+      "range-start": 1285,
       "hammer-cost": 895,
       "verified": true
     },
     {
-      "bracket-index": 180,
-      "bracket-start": 1293,
+      "range-index": 180,
+      "range-start": 1293,
       "hammer-cost": 900,
       "verified": true
     },
     {
-      "bracket-index": 181,
-      "bracket-start": 1301,
+      "range-index": 181,
+      "range-start": 1301,
       "hammer-cost": 905,
       "verified": false
     },
     {
-      "bracket-index": 182,
-      "bracket-start": 1309,
+      "range-index": 182,
+      "range-start": 1309,
       "hammer-cost": 910,
       "verified": true
     },
     {
-      "bracket-index": 183,
-      "bracket-start": 1317,
+      "range-index": 183,
+      "range-start": 1317,
       "hammer-cost": 915,
       "verified": true
     },
     {
-      "bracket-index": 184,
-      "bracket-start": 1325,
+      "range-index": 184,
+      "range-start": 1325,
       "hammer-cost": 920,
       "verified": true
     },
     {
-      "bracket-index": 185,
-      "bracket-start": 1333,
+      "range-index": 185,
+      "range-start": 1333,
       "hammer-cost": 925,
       "verified": true
     },
     {
-      "bracket-index": 186,
-      "bracket-start": 1341,
+      "range-index": 186,
+      "range-start": 1341,
       "hammer-cost": 930,
       "verified": false
     },
     {
-      "bracket-index": 187,
-      "bracket-start": 1350,
+      "range-index": 187,
+      "range-start": 1350,
       "hammer-cost": 935,
       "verified": true
     },
     {
-      "bracket-index": 188,
-      "bracket-start": 1358,
+      "range-index": 188,
+      "range-start": 1358,
       "hammer-cost": 940,
-      "verified": false
+      "verified": true
     },
     {
-      "bracket-index": 189,
-      "bracket-start": 1366,
+      "range-index": 189,
+      "range-start": 1366,
       "hammer-cost": 945,
       "verified": false
     },
     {
-      "bracket-index": 190,
-      "bracket-start": 1374,
+      "range-index": 190,
+      "range-start": 1374,
       "hammer-cost": 950,
       "verified": false
     },
     {
-      "bracket-index": 191,
-      "bracket-start": 1382,
+      "range-index": 191,
+      "range-start": 1382,
       "hammer-cost": 955,
       "verified": false
     },
     {
-      "bracket-index": 192,
-      "bracket-start": 1390,
+      "range-index": 192,
+      "range-start": 1390,
       "hammer-cost": 960,
       "verified": false
     },
     {
-      "bracket-index": 193,
-      "bracket-start": 1398,
+      "range-index": 193,
+      "range-start": 1398,
       "hammer-cost": 965,
       "verified": false
     },
     {
-      "bracket-index": 194,
-      "bracket-start": 1406,
+      "range-index": 194,
+      "range-start": 1406,
       "hammer-cost": 970,
       "verified": false
     },
     {
-      "bracket-index": 195,
-      "bracket-start": 1414,
+      "range-index": 195,
+      "range-start": 1414,
       "hammer-cost": 975,
       "verified": false
     },
     {
-      "bracket-index": 196,
-      "bracket-start": 1422,
+      "range-index": 196,
+      "range-start": 1422,
       "hammer-cost": 980,
       "verified": false
     },
     {
-      "bracket-index": 197,
-      "bracket-start": 1430,
+      "range-index": 197,
+      "range-start": 1430,
       "hammer-cost": 985,
       "verified": false
     },
     {
-      "bracket-index": 198,
-      "bracket-start": 1438,
+      "range-index": 198,
+      "range-start": 1438,
       "hammer-cost": 990,
       "verified": false
     },
     {
-      "bracket-index": 199,
-      "bracket-start": 1446,
+      "range-index": 199,
+      "range-start": 1446,
       "hammer-cost": 995,
       "verified": false
     },
     {
-      "bracket-index": 200,
-      "bracket-start": 1454,
+      "range-index": 200,
+      "range-start": 1454,
       "hammer-cost": 1000,
       "verified": false
     },
     {
-      "bracket-index": 201,
-      "bracket-start": 1462,
+      "range-index": 201,
+      "range-start": 1462,
       "hammer-cost": 1005,
       "verified": false
     },
     {
-      "bracket-index": 202,
-      "bracket-start": 1470,
+      "range-index": 202,
+      "range-start": 1470,
       "hammer-cost": 1010,
       "verified": false
     },
     {
-      "bracket-index": 203,
-      "bracket-start": 1478,
+      "range-index": 203,
+      "range-start": 1478,
       "hammer-cost": 1015,
       "verified": false
     },
     {
-      "bracket-index": 204,
-      "bracket-start": 1486,
+      "range-index": 204,
+      "range-start": 1486,
       "hammer-cost": 1020,
       "verified": false
     },
     {
-      "bracket-index": 205,
-      "bracket-start": 1494,
+      "range-index": 205,
+      "range-start": 1494,
       "hammer-cost": 1025,
       "verified": false
     },
     {
-      "bracket-index": 206,
-      "bracket-start": 1502,
+      "range-index": 206,
+      "range-start": 1502,
       "hammer-cost": 1030,
       "verified": false
     },
     {
-      "bracket-index": 207,
-      "bracket-start": 1511,
+      "range-index": 207,
+      "range-start": 1511,
       "hammer-cost": 1035,
       "verified": false
     },
     {
-      "bracket-index": 208,
-      "bracket-start": 1519,
+      "range-index": 208,
+      "range-start": 1519,
       "hammer-cost": 1040,
       "verified": false
     },
     {
-      "bracket-index": 209,
-      "bracket-start": 1527,
+      "range-index": 209,
+      "range-start": 1527,
       "hammer-cost": 1045,
       "verified": false
     },
     {
-      "bracket-index": 210,
-      "bracket-start": 1535,
+      "range-index": 210,
+      "range-start": 1535,
       "hammer-cost": 1050,
       "verified": false
     },
     {
-      "bracket-index": 211,
-      "bracket-start": 1543,
+      "range-index": 211,
+      "range-start": 1543,
       "hammer-cost": 1055,
       "verified": false
     },
     {
-      "bracket-index": 212,
-      "bracket-start": 1551,
+      "range-index": 212,
+      "range-start": 1551,
       "hammer-cost": 1060,
       "verified": false
     },
     {
-      "bracket-index": 213,
-      "bracket-start": 1559,
+      "range-index": 213,
+      "range-start": 1559,
       "hammer-cost": 1065,
       "verified": false
     },
     {
-      "bracket-index": 214,
-      "bracket-start": 1567,
+      "range-index": 214,
+      "range-start": 1567,
       "hammer-cost": 1070,
       "verified": false
     },
     {
-      "bracket-index": 215,
-      "bracket-start": 1575,
+      "range-index": 215,
+      "range-start": 1575,
       "hammer-cost": 1075,
       "verified": false
     },
     {
-      "bracket-index": 216,
-      "bracket-start": 1583,
+      "range-index": 216,
+      "range-start": 1583,
       "hammer-cost": 1080,
       "verified": false
     },
     {
-      "bracket-index": 217,
-      "bracket-start": 1592,
+      "range-index": 217,
+      "range-start": 1592,
       "hammer-cost": 1085,
       "verified": false
     },
     {
-      "bracket-index": 218,
-      "bracket-start": 1601,
+      "range-index": 218,
+      "range-start": 1601,
       "hammer-cost": 1090,
       "verified": false
     },
     {
-      "bracket-index": 219,
-      "bracket-start": 1610,
+      "range-index": 219,
+      "range-start": 1610,
       "hammer-cost": 1095,
       "verified": false
     },
     {
-      "bracket-index": 220,
-      "bracket-start": 1618,
+      "range-index": 220,
+      "range-start": 1618,
       "hammer-cost": 1100,
       "verified": true
     },
     {
-      "bracket-index": 221,
-      "bracket-start": 1626,
+      "range-index": 221,
+      "range-start": 1626,
       "hammer-cost": 1105,
       "verified": true
     },
     {
-      "bracket-index": 222,
-      "bracket-start": 1635,
+      "range-index": 222,
+      "range-start": 1635,
       "hammer-cost": 1110,
       "verified": true
     },
     {
-      "bracket-index": 223,
-      "bracket-start": 1643,
+      "range-index": 223,
+      "range-start": 1643,
       "hammer-cost": 1115,
       "verified": true
     },
     {
-      "bracket-index": 224,
-      "bracket-start": 1651,
+      "range-index": 224,
+      "range-start": 1651,
       "hammer-cost": 1120,
       "verified": true
     },
     {
-      "bracket-index": 225,
-      "bracket-start": 1659,
+      "range-index": 225,
+      "range-start": 1659,
       "hammer-cost": 1125,
       "verified": true
     },
     {
-      "bracket-index": 226,
-      "bracket-start": 1668,
+      "range-index": 226,
+      "range-start": 1668,
       "hammer-cost": 1130,
       "verified": true
     },
     {
-      "bracket-index": 227,
-      "bracket-start": 1676,
+      "range-index": 227,
+      "range-start": 1676,
       "hammer-cost": 1135,
       "verified": false
     },
     {
-      "bracket-index": 228,
-      "bracket-start": 1684,
+      "range-index": 228,
+      "range-start": 1684,
       "hammer-cost": 1140,
       "verified": true
     },
     {
-      "bracket-index": 229,
-      "bracket-start": 1692,
+      "range-index": 229,
+      "range-start": 1692,
       "hammer-cost": 1145,
       "verified": true
     },
     {
-      "bracket-index": 230,
-      "bracket-start": 1702,
+      "range-index": 230,
+      "range-start": 1702,
       "hammer-cost": 1150,
       "verified": true
     },
     {
-      "bracket-index": 231,
-      "bracket-start": 1709,
+      "range-index": 231,
+      "range-start": 1709,
       "hammer-cost": 1155,
       "verified": true
     },
     {
-      "bracket-index": 232,
-      "bracket-start": 1717,
+      "range-index": 232,
+      "range-start": 1717,
       "hammer-cost": 1160,
       "verified": true
     },
     {
-      "bracket-index": 233,
-      "bracket-start": 1725,
+      "range-index": 233,
+      "range-start": 1725,
       "hammer-cost": 1165,
       "verified": true
     },
     {
-      "bracket-index": 234,
-      "bracket-start": 1734,
+      "range-index": 234,
+      "range-start": 1734,
       "hammer-cost": 1170,
       "verified": true
     },
     {
-      "bracket-index": 235,
-      "bracket-start": 1742,
+      "range-index": 235,
+      "range-start": 1742,
       "hammer-cost": 1175,
       "verified": false
     },
     {
-      "bracket-index": 236,
-      "bracket-start": 1750,
+      "range-index": 236,
+      "range-start": 1750,
       "hammer-cost": 1180,
       "verified": false
     },
     {
-      "bracket-index": 237,
-      "bracket-start": 1758,
+      "range-index": 237,
+      "range-start": 1758,
       "hammer-cost": 1185,
       "verified": false
     },
     {
-      "bracket-index": 238,
-      "bracket-start": 1766,
+      "range-index": 238,
+      "range-start": 1766,
       "hammer-cost": 1190,
       "verified": false
     },
     {
-      "bracket-index": 239,
-      "bracket-start": 1774,
+      "range-index": 239,
+      "range-start": 1774,
       "hammer-cost": 1195,
       "verified": false
     },
     {
-      "bracket-index": 240,
-      "bracket-start": 1782,
+      "range-index": 240,
+      "range-start": 1782,
       "hammer-cost": 1200,
       "verified": false
     },
     {
-      "bracket-index": 241,
-      "bracket-start": 1790,
+      "range-index": 241,
+      "range-start": 1790,
       "hammer-cost": 1205,
       "verified": false
     },
     {
-      "bracket-index": 242,
-      "bracket-start": 1798,
+      "range-index": 242,
+      "range-start": 1798,
       "hammer-cost": 1210,
       "verified": false
     },
     {
-      "bracket-index": 243,
-      "bracket-start": 1806,
+      "range-index": 243,
+      "range-start": 1806,
       "hammer-cost": 1215,
       "verified": false
     },
     {
-      "bracket-index": 244,
-      "bracket-start": 1814,
+      "range-index": 244,
+      "range-start": 1814,
       "hammer-cost": 1220,
       "verified": false
     },
     {
-      "bracket-index": 245,
-      "bracket-start": 1822,
+      "range-index": 245,
+      "range-start": 1822,
       "hammer-cost": 1225,
       "verified": false
     },
     {
-      "bracket-index": 246,
-      "bracket-start": 1830,
+      "range-index": 246,
+      "range-start": 1830,
       "hammer-cost": 1230,
       "verified": false
     },
     {
-      "bracket-index": 247,
-      "bracket-start": 1838,
+      "range-index": 247,
+      "range-start": 1838,
       "hammer-cost": 1235,
       "verified": false
     },
     {
-      "bracket-index": 248,
-      "bracket-start": 1846,
+      "range-index": 248,
+      "range-start": 1846,
       "hammer-cost": 1240,
       "verified": false
     },
     {
-      "bracket-index": 249,
-      "bracket-start": 1854,
+      "range-index": 249,
+      "range-start": 1854,
       "hammer-cost": 1245,
       "verified": false
     },
     {
-      "bracket-index": 250,
-      "bracket-start": 1862,
+      "range-index": 250,
+      "range-start": 1862,
       "hammer-cost": 1250,
       "verified": false
     },
     {
-      "bracket-index": 251,
-      "bracket-start": 1870,
+      "range-index": 251,
+      "range-start": 1870,
       "hammer-cost": 1255,
       "verified": false
     },
     {
-      "bracket-index": 252,
-      "bracket-start": 1878,
+      "range-index": 252,
+      "range-start": 1878,
       "hammer-cost": 1260,
       "verified": false
     },
     {
-      "bracket-index": 253,
-      "bracket-start": 1887,
+      "range-index": 253,
+      "range-start": 1887,
       "hammer-cost": 1265,
       "verified": false
     },
     {
-      "bracket-index": 254,
-      "bracket-start": 1896,
+      "range-index": 254,
+      "range-start": 1896,
       "hammer-cost": 1270,
       "verified": false
     },
     {
-      "bracket-index": 255,
-      "bracket-start": 1904,
+      "range-index": 255,
+      "range-start": 1904,
       "hammer-cost": 1275,
       "verified": false
     },
     {
-      "bracket-index": 256,
-      "bracket-start": 1913,
+      "range-index": 256,
+      "range-start": 1913,
       "hammer-cost": 1280,
       "verified": false
     },
     {
-      "bracket-index": 257,
-      "bracket-start": 1922,
+      "range-index": 257,
+      "range-start": 1922,
       "hammer-cost": 1285,
       "verified": false
     },
     {
-      "bracket-index": 258,
-      "bracket-start": 1931,
+      "range-index": 258,
+      "range-start": 1931,
       "hammer-cost": 1290,
       "verified": false
     },
     {
-      "bracket-index": 259,
-      "bracket-start": 1940,
+      "range-index": 259,
+      "range-start": 1940,
       "hammer-cost": 1295,
       "verified": false
     },
     {
-      "bracket-index": 260,
-      "bracket-start": 1949,
+      "range-index": 260,
+      "range-start": 1949,
       "hammer-cost": 1300,
       "verified": false
     },
     {
-      "bracket-index": 261,
-      "bracket-start": 1958,
+      "range-index": 261,
+      "range-start": 1958,
       "hammer-cost": 1305,
       "verified": false
     },
     {
-      "bracket-index": 262,
-      "bracket-start": 1967,
+      "range-index": 262,
+      "range-start": 1967,
       "hammer-cost": 1310,
       "verified": false
     },
     {
-      "bracket-index": 263,
-      "bracket-start": 1976,
+      "range-index": 263,
+      "range-start": 1976,
       "hammer-cost": 1315,
       "verified": false
     },
     {
-      "bracket-index": 264,
-      "bracket-start": 1985,
+      "range-index": 264,
+      "range-start": 1985,
       "hammer-cost": 1320,
       "verified": false
     },
     {
-      "bracket-index": 265,
-      "bracket-start": 1994,
+      "range-index": 265,
+      "range-start": 1994,
       "hammer-cost": 1325,
       "verified": false
     }

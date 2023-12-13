@@ -10,6 +10,10 @@
   <meta property="og:image" content="https://kg.kitsune21.com/images/sheet-2x_n.png">
   <link href="../css/common.css" rel="stylesheet" />
   <link href="./data.css" rel="stylesheet" />
+  <script src="./data-common.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", (e) => getDom(4))
+  </script>
 </head>
 <body>
 
@@ -28,35 +32,88 @@
 
 <p>
 This table shows the upgrade cost for Blacksmith.
+Some data are <span class="unverified">extrapolated</span>.
+</p>
+
+<p>
 You can use the <a href="../tools/blacksmithUpgradeCalculator">upgrade calculator</a>
 to estimates your maximum Blacksmith upgrades and
 the resulting points in Mightiest Kingdom/Ultimate Power event.
 </p>
 
 <div class="tabbed-table-wrapper-content" id="mk-result-content">
-  
 <div class="tabbed-table-tab-bar">
-<button class="tab focused">Upgrades</button>
-<div class="extra">Download:
+<button onclick="switchTab(0)" id="data-tab-0" class="tab focused">0 &hellip; 499</button>
+<button onclick="switchTab(1)" id="data-tab-1" class="tab">500 &hellip; 999</button>
+<button onclick="switchTab(2)" id="data-tab-2" class="tab">1000 &hellip; 1499</button>
+<button onclick="switchTab(3)" id="data-tab-3" class="tab">1500 &hellip; 1999</button>
+<div class="extra">
 <a href="./blacksmithUpgradeCost.json">JSON</a> |
 <a href="https://docs.google.com/spreadsheets/d/1JyMe59gSBc6PMBqtgLS04gwQFoUw9S5xoA96L-aiUiY/edit?usp=sharing">Sheet</a>
 </div>
 </div>
 
-<div class="tabbed-table-content">
+<div class="tabbed-table-content" id="data-content-0">
 <table class="upgrade-table">
 <thead>
 <tr>
 <th class="level-col">Level</th>
-<th class="cost-col">Hammer Cost</th>
-<th class="verification-col">Verification</th>
+<th class="cost-col">Forge Hammer Cost (one level)</th>
+<th class="cost-col">Forge Hammer Cost (max level)</th>
 </tr>
 </thead>
 <tbody>
-{{Data}}
+{{Data 1}}
 </tbody>
 </table>
-</main>
+</div>
 
+<div class="tabbed-table-content" id="data-content-1">
+<table class="upgrade-table">
+<thead>
+<tr>
+<th class="level-col">Level</th>
+<th class="cost-col">Forge Hammer Cost (one level)</th>
+<th class="cost-col">Forge Hammer Cost (max level)</th>
+</tr>
+</thead>
+<tbody>
+{{Data 2}}
+</tbody>
+</table>
+</div>
+
+<div class="tabbed-table-content" id="data-content-2">
+<table class="upgrade-table">
+<thead>
+<tr>
+<th class="level-col">Level</th>
+<th class="cost-col">Forge Hammer Cost (one level)</th>
+<th class="cost-col">Forge Hammer Cost (max level)</th>
+</tr>
+</thead>
+<tbody>
+{{Data 3}}
+</tbody>
+</table>
+</div>
+
+<div class="tabbed-table-content" id="data-content-3">
+<table class="upgrade-table">
+<thead>
+<tr>
+<th class="level-col">Level</th>
+<th class="cost-col">Forge Hammer Cost (one level)</th>
+<th class="cost-col">Forge Hammer Cost (max level)</th>
+</tr>
+</thead>
+<tbody>
+{{Data 4}}
+</tbody>
+</table>
+</div>
+
+</div>
+</main>
 </body>
 </html>
