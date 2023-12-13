@@ -23,18 +23,20 @@ table { border-collapse: collapse; position: relative;}
   background: var(--miku-dark-red);
   color: var(--miku-gold);
   font-weight: normal;
+  padding: 0.5rem;
 }
 .upgrade-table td {
   background: white;
-  color: var(--miku-dark-red);
+  color: black;
   font-weight: normal;
+  padding: 0.5rem;
 }
 
 table.witchLab th {
   background: var(--miku-dark-red);
   color: var(--miku-gold);
   font-weight: normal;
-  padding: 0.5rem; 
+  padding: 0.5rem;
 }
 
 table.witchLab td {
@@ -63,8 +65,13 @@ table.witchLab td {
   text-align: left;
 }
 
-.upgrade-table td.verified { color:var(--green); }
-.upgrade-table td.unverified { color: var(--red); }
+.unverified {
+  text-decoration-line: underline;
+  text-decoration-style: wavy;
+  text-decoration-color: var(--red);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.1rem;
+}
 
 .upgrade-table thead tr th {
   position: sticky;
