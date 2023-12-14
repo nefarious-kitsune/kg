@@ -6,13 +6,18 @@ const exportDirectory = '../../docs/templates';
 const htmlTemplate = fs.readFileSync('template.html', 'utf-8');
 
 const reTag = /<([/=\d\s\w]*)>/g;
+const reSpaces = /( {2,})/g;
 
 const reColorTag = /<color=(\w+)>/g;
 const reSizeTag = /<size=(\d+)>/g;
 const reEndTag = /<\/(size|color|b|i)>/g;
 
 function replaceSizeTag(math, p1) {
-  return `<span style="font-size:${(parseInt(p1)/20)}rem">`;
+  return `<span style="font-size:${(parseInt(p1)/30)}rem">`;
+}
+
+function replaceSpaces(math, p1) {
+  return ' ' + '&nbsp;'.repeat(p1.length - 1);
 }
 
 function build(fileName, title, description, type) {
@@ -20,11 +25,13 @@ function build(fileName, title, description, type) {
 
   const inputHTML = input
     .replaceAll(reTag, '<span class="format-tag">&lt;$1&gt;</span>')
+    .replaceAll(reSpaces,  replaceSpaces)
     .replaceAll('\n', '<br />');
 
   const outputHTML = input
     .replaceAll(reColorTag, '<span style="color:$1">')
     .replaceAll(reSizeTag,  replaceSizeTag)
+    .replaceAll(reSpaces,  replaceSpaces)
     .replaceAll('<b>', '<span style="font-weight:bold">')
     .replaceAll('<i>', '<span style="font-style:italic">')
     .replaceAll(reEndTag, '</span>')
@@ -51,5 +58,12 @@ build(
   'alliance-welcome',
   'Alliance message',
   'Alliance message example',
+  'message',
+);
+
+build(
+  'alliance-welcome-2',
+  'Alliance message',
+  'Alliance message example (provided by 𝚃𝚛𝚒𝚔𝚝𝚒𝚜)',
   'message',
 );
