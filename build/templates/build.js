@@ -12,6 +12,8 @@ const reColorTag = /<color=(\w+)>/g;
 const reSizeTag = /<size=(\d+)>/g;
 const reEndTag = /<\/(size|color|b|i)>/g;
 
+let indexList = '';
+
 function replaceSizeTag(math, p1) {
   return `<span style="font-size:${(parseInt(p1)/30)}rem">`;
 }
@@ -45,6 +47,8 @@ function build(fileName, title, description, type) {
     .replaceAll('{{TYPE}}', type);
 
   fs.writeFileSync(`${exportDirectory}/${fileName}.html`, htmlOutput, {encoding:'utf8',flag:'w'});
+
+  indexList += ` <li><a href="./${fileName}">${title}</a>: ${description}</li>\n`
 }
 
 build(
@@ -66,4 +70,11 @@ build(
   'Alliance message',
   'Alliance message example (provided by 𝚃𝚛𝚒𝚔𝚝𝚒𝚜)',
   'message',
+);
+
+const indexTemplate = fs.readFileSync('index.html', 'utf-8');
+fs.writeFileSync(
+  `${exportDirectory}/index.html`,
+  indexTemplate.replace('{{LIST}}', indexList),
+  {encoding:'utf8',flag:'w'}
 );
