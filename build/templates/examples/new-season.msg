@@ -1,3 +1,7 @@
+mail
+End of season reminder
+Reminder mail at end of Burning Expedition
+----
 <color=maroon><size=80>REMINDER</size></color>
 ■ Remember to do your <b>Elemental Lord</b>
 ■ At reset, remember to refresh your <b>Alliance Challenge</b> until the quests are all <color=yellow>gold</color>

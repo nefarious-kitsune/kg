@@ -1,3 +1,7 @@
+message
+Alliance message
+Alliance message example
+----
 <size=60><color=red>ʚ</color> <color=fuchsia>Welcome</color> <color=red>ɞ</color></size>
 <size=40><color=yellow>
 Welcome to the family. We require <color=lime>Discord</color> activity. Contact our R4 for the link to our Discord server.</color>

@@ -1,3 +1,7 @@
+message
+Alliance message
+Alliance message example (provided by 𝚃𝚛𝚒𝚔𝚝𝚒𝚜)
+----
 <color=red><size=40>☄︎Burning Expedition ☄︎
 • December 13 17:30 UTC Lava Haka
 • December 14 17:30 UTC Evil Spirit Event
