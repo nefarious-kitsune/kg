@@ -1,4 +1,4 @@
-message
+mail
 SvS thank you mail (win)
 Thank-you message after a SvS loss (provided by 𝚃𝚛𝚒𝚔𝚝𝚒𝚜)
 ----

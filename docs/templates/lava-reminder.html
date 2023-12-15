@@ -1,0 +1,74 @@
+<html>
+<head>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Miku's Shrine: Lava schedule reminder</title>
+  <link rel="icon" type="image/x-icon" href="../images/logo_mini.png">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://kg.kitsune21.com/">
+  <meta property="og:title" content="Miku's Shrine | Lava schedule reminder">
+  <meta property="og:description" content="Reminder and instructions on Lava Haka (provided by 𝚃𝚛𝚒𝚔𝚝𝚒𝚜)">
+  <meta property="og:image" content="https://kg.kitsune21.com/images/logo_torii.png">
+  <link href="../css/common.css" rel="stylesheet" />
+  <link href="../data/data.css" rel="stylesheet" />
+  <script src="../data/data-common.js"></script>
+  <script src="./templates.js"></script>
+  <link href="./templates.css" rel="stylesheet" />
+  <script>
+    document.addEventListener("DOMContentLoaded", (e) => getDom(2))
+  </script>
+</head>
+<body>
+<header id="header">
+  <div id="breadcrumb-wrapper"><nav>
+    <a class="link" href="../content">Home</a>
+    <span class="chevron">›</span>
+    <a class="link" href="./">Templates</a>
+    <span class="chevron">›</span>
+    <span class="current">Lava schedule reminder</span>
+  </nav></div>
+</header>
+<main>
+<h1>Lava schedule reminder</h1>
+<p>Reminder and instructions on Lava Haka (provided by 𝚃𝚛𝚒𝚔𝚝𝚒𝚜)</p>
+<div class="tabbed-table-wrapper-content">
+<div class="tabbed-table-tab-bar">
+<button onclick="switchTab(0)" id="data-tab-0" class="tab focused">Message</button>
+<button onclick="switchTab(1)" id="data-tab-1" class="tab">Preview</button>
+<div class="extra"></div>
+</div>
+<div class="tabbed-table-content" id="data-content-0">
+<button onclick="copyInput()" class="copyText">Copy</button>
+<div id="message-input">
+<span class="format-tag">&lt;size=60&gt;</span><span class="format-tag">&lt;color=red&gt;</span><span class="format-tag">&lt;b&gt;</span><span class="format-tag">&lt;i&gt;</span>Lava Haka<span class="format-tag">&lt;/i&gt;</span><span class="format-tag">&lt;/b&gt;</span><span class="format-tag">&lt;/color&gt;</span><span class="format-tag">&lt;/size&gt;</span><br />
+<span class="format-tag">&lt;color=black&gt;</span>Earn points by fighting monsters and starting rallys (rallys give the most points for ap cost). When you have 100 points you can summon a haka behemoth. <br />
+Each haka behemoth killed gives the alliance points to summon a lava haka. <br />
+When the lava haka is summoned everyone needs to start a rally on it within 5 minutes if it being summoned, always be sure to start a rally before joining one this ensures us the most amount of dmg. It also helps to have all troops at home so you can send them out to help others rally’s. During this time no other rally’s should be started, we want to have all of our power focused on lava.<br />
+We rank up by getting as much damage done during one summoning as we can. <br />
+Haka and lava both will give up to 20 rewards, and you can earn these rewards from auto rally.<br />
+If offline for event -<br />
+Leave auto rally on please <br />
+If online for event - <br />
+Start a rally as soon as possible then join any other rallys you can.<span class="format-tag">&lt;/color&gt;</span><br />
+<br />
+<span class="format-tag">&lt;size=60&gt;</span><span class="format-tag">&lt;color=red&gt;</span><span class="format-tag">&lt;b&gt;</span><span class="format-tag">&lt;i&gt;</span>Lavas summons are at 17:30 UTC<span class="format-tag">&lt;/i&gt;</span><span class="format-tag">&lt;/b&gt;</span><span class="format-tag">&lt;/color&gt;</span><span class="format-tag">&lt;/size&gt;</span>
+</div>
+</div>
+<div class="tabbed-table-content" id="data-content-1" class="hidden">
+<div id="message-output" class="mail">
+<span style="font-size:2.0rem"><span style="color:red"><span style="font-weight:bold"><span style="font-style:italic">Lava Haka</span></span></span></span><br />
+<span style="color:black">Earn points by fighting monsters and starting rallys (rallys give the most points for ap cost). When you have 100 points you can summon a haka behemoth. <br />
+Each haka behemoth killed gives the alliance points to summon a lava haka. <br />
+When the lava haka is summoned everyone needs to start a rally on it within 5 minutes if it being summoned, always be sure to start a rally before joining one this ensures us the most amount of dmg. It also helps to have all troops at home so you can send them out to help others rally’s. During this time no other rally’s should be started, we want to have all of our power focused on lava.<br />
+We rank up by getting as much damage done during one summoning as we can. <br />
+Haka and lava both will give up to 20 rewards, and you can earn these rewards from auto rally.<br />
+If offline for event -<br />
+Leave auto rally on please <br />
+If online for event - <br />
+Start a rally as soon as possible then join any other rallys you can.</span><br />
+<br />
+<span style="font-size:2.0rem"><span style="color:red"><span style="font-weight:bold"><span style="font-style:italic">Lavas summons are at 17:30 UTC</span></span></span></span>
+</div>
+</div>
+</main>
+</body>
+</html>
