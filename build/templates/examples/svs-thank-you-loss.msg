@@ -1,5 +1,5 @@
 mail
-SvS thank you mail (win)
+SvS thank you mail (loss)
 Thank-you message after a SvS loss (provided by 𝚃𝚛𝚒𝚔𝚝𝚒𝚜)
 ----
 <Size=60><color=olive>Hello,</color></size>
