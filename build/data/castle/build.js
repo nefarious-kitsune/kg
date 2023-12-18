@@ -22,6 +22,8 @@ const dataFiles = [
   'data-4.tsv',
 ];
 
+const missingRanges = [];
+
 const tables = [ [], [], [], []];
 const _parseInt = (str) => (str === '')?null:parseInt(str);
 const missingData = '<td class="cost-col missing">&nbsp;</td>';
@@ -68,8 +70,18 @@ for (let tableIndex = 0; tableIndex < 4; tableIndex++) {
           'verified': true,
         }
       )
+    } else {
+      if (missingRanges.length) {
+        const lastRange = missingRanges[missingRanges.length-1];
+        if (level === lastRange.end + 1) {
+          lastRange.end++;
+        } else {
+          missingRanges.push({start: level, end: level});  
+        }
+      } else {
+        missingRanges.push({start: level, end: level});
+      }
     }
-    
   }  
 }
 
@@ -121,3 +133,12 @@ const htmlTemplate = fs.readFileSync('template.html', 'utf-8');
 const htmlOutput = htmlTemplate.replace('{{DATA}}', dataOutput);
 
 fs.writeFileSync(`${exportFileFragment}.html`, htmlOutput, {encoding:'utf8',flag:'w'});
+
+// Report missing ranges:
+let report = 'the following data are missing:\n';
+for (let i=0; i < missingRanges.length; i++) {
+  const range = missingRanges[i];
+  if (range.start === range.end) report += range.start + '\n';
+  else report += range.start + '-' + range.end + '\n';
+}
+console.log(report);
