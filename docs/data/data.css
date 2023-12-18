@@ -82,9 +82,22 @@ table.witchLab td {
   background: var(--pale-neutral);
 }
 
+.upgrade-table tbody .missing {
+  background: var(--light-primary-1);
+}
+
+.upgrade-table tbody tr:nth-child(even) .missing {
+  background: var(--primary-1);
+}
+
 .upgrade-table tfoot th,
 .upgrade-table tfoot td {
   background: var(--miku-gold);
+}
+
+.costUnit {
+  color: var(--dark-neutral);
+  padding-left: 0.2rem;
 }
 
 object.unit-icon { width: auto; height: 2rem; padding: 0; margin: 0;}
