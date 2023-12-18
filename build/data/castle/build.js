@@ -15,39 +15,62 @@ const compiledData = {
   'data': []
 }
 
-let fileData = [];
 const dataFiles = [
   'data-1.tsv',
   'data-2.tsv',
   'data-3.tsv',
   'data-4.tsv',
-  'data-5.tsv',
 ];
 
-dataFiles.forEach((file) => {
-  fileData = fileData.concat(fs.readFileSync(file, 'utf-8').split('\n'));
-});
+const tables = [ [], [], [], []];
+const _parseInt = (str) => (str === '')?null:parseInt(str);
+const missingData = '<td class="cost-col missing">&nbsp;</td>';
 
-for (let rowIdx = 1; rowIdx < fileData.length; rowIdx++) {
-  const [
-    level,
-    /* null */,
-    stoneCost,
-    woodCost,
-    ironCost,
-    goldCost,
-    goldUnit] = fileData[rowIdx].split('\t');
+for (let tableIndex = 0; tableIndex < 4; tableIndex++) {
+  const data = fs.readFileSync(dataFiles[tableIndex], 'utf-8').split('\n');
+  const table = tables[tableIndex];
 
-  compiledData.data.push(
-    {
-      'level': parseInt(level),
-      'stone-cost': parseInt(stoneCost),
-      'wood-cost': (woodCost === '')?0:parseInt(woodCost),
-      'iron-cost': (ironCost === '')?0:parseInt(ironCost),
-      'gold-cost': goldCost + goldUnit,
-      'verified': true,
+  for (let rowIdx = 1; rowIdx < data.length; rowIdx++) {
+    const cols = data[rowIdx].split('\t');
+    const level = parseInt(cols[0]);
+    // const nextLevel = parseInt(cols[1]);
+    const stoneCost = _parseInt(cols[2]);
+    const woodCost = _parseInt(cols[3]);
+    const ironCost = _parseInt(cols[4]);
+    const goldCost = cols[5];
+    const goldUnit = cols[6];
+
+    table.push(`<tr id="level-${level}">`)
+    table.push(`<td class="level-col">${level} → ${level+1}</td>`);
+
+    if (stoneCost === null) table.push(missingData);
+    else table.push(`<td class="cost-col">${stoneCost}</td>`);
+
+    if (woodCost === null) table.push(missingData);
+    else table.push(`<td class="cost-col">${woodCost}</td>`);
+
+    if (ironCost === null) table.push(missingData);
+    else table.push(`<td class="cost-col">${ironCost}</td>`);
+
+    if (goldCost === '') table.push(missingData);
+    else table.push(`<td class="cost-col">${goldCost}<span class="costUnit">${goldUnit}</span></td>`);
+
+    table.push('</tr>');
+
+    if ((stoneCost !== null) && (goldCost !== '')) {
+      compiledData.data.push(
+        {
+          'level': _parseInt(level),
+          'stone-cost': stoneCost,
+          'wood-cost': woodCost,
+          'iron-cost': ironCost,
+          'gold-cost': goldCost + goldUnit,
+          'verified': true,
+        }
+      )
     }
-  )
+    
+  }  
 }
 
 const exportedJSON = JSON.stringify(compiledData, null, '  ');
@@ -62,8 +85,6 @@ fs.writeFileSync(`${exportFileFragment}.json`, exportedJSON);
 /*
 fs.writeFileSync(`${exportFileFragment}.js`, exportedJs);
 */
-
-const tables = [ [], [], ];
 
 const dataContentTemplate =
 `<div class="tabbed-table-content" id="data-content-{{INDEX}}" {{CONTENT-CLASS}}>
@@ -83,24 +104,6 @@ const dataContentTemplate =
 </tbody>
 </table>
 </div>\n`;
-
-const dataCount = compiledData.data.length; 
-for (let dataIndex = 0; dataIndex < dataCount; dataIndex++) {
-  const currData = compiledData.data[dataIndex];
-  let table;
-
-  if (currData.level < 500) table = tables[0];
-  else table = tables[1];
-
-  table.push(`<tr id="level-${currData.level}">`)
-  table.push(`<td class="level-col">${currData.level} → ${currData.level+1}</td>`);
-  table.push(`<td class="cost-col">${currData['stone-cost']}</td>`);
-  table.push(`<td class="cost-col">${currData['wood-cost']}</td>`);
-  table.push(`<td class="cost-col">${currData['iron-cost']}</td>`);
-  table.push(`<td class="cost-col">${currData['gold-cost']}</td>`);
-  table.push(`<td class="verification-col verified">Verified</td>`);
-  table.push('</tr>');
-}
 
 let dataOutput = '';
 

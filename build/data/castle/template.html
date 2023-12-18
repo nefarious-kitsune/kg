@@ -12,9 +12,7 @@
   <link href="./data.css" rel="stylesheet" />
   <script src="./data-common.js"></script>
   <script>
-    document.addEventListener("DOMContentLoaded", (e) => {
-      getDom(2);
-    })
+    document.addEventListener("DOMContentLoaded", (e) => getDom(4))
   </script>
 </head>
 <body>
@@ -42,7 +40,9 @@
   
 <div class="tabbed-table-tab-bar">
 <button onclick="switchTab(0)" id="data-tab-0" class="tab focused">1 ~ 499</button>
-<button onclick="switchTab(1)" id="data-tab-1" class="tab">500 ~</button>
+<button onclick="switchTab(1)" id="data-tab-1" class="tab">500 ~ 999</button>
+<button onclick="switchTab(2)" id="data-tab-2" class="tab">1000 ~ 1499</button>
+<button onclick="switchTab(3)" id="data-tab-3" class="tab">1500 ~ 1999</button>
 <div class="extra">Download:
 <a href="./castleUpgradeCost.json">JSON</a>
 <!-- | <a href="">Sheet</a> -->
