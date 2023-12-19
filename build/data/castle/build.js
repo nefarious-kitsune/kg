@@ -25,49 +25,101 @@ const dataFiles = [
 const missingRanges = [];
 
 const tables = [ [], [], [], []];
-const _parseInt = (str) => (str === '')?null:parseInt(str);
-const missingData = '<td class="cost-col missing">&nbsp;</td>';
+
+const parseIntCost = (str) => {
+  if (str.trim().length === 0) {
+    return [null, false];
+  };
+
+  const cost = parseInt(str);
+  if (isNaN(cost)) {
+    return [null, false];
+  } else {
+    return [cost, str.indexOf('?') === -1];
+  }
+}
+
+const parseDecCost = (str) => {
+  if (str.trim().length === 0) {
+    return [null, false];
+  };
+
+  const cost = parseFloat(str);
+  if (isNaN(cost)) {
+    return [null, false];
+  } else {
+    return [cost, str.indexOf('?') === -1];
+  }
+}
+
+
+const missingData = '<td class="cost-col"><span class="unverified">&nbsp;</span></td>';
+const dataCell = (n, verified) => {
+  if (n === null) return missingData;
+  if (!verified) return `<td class="cost-col"><span class="unverified">${n}</span></td>`;
+  return `<td class="cost-col">${n}</td>`;
+};
 
 for (let tableIndex = 0; tableIndex < 4; tableIndex++) {
   const data = fs.readFileSync(dataFiles[tableIndex], 'utf-8').split('\n');
   const table = tables[tableIndex];
 
   for (let rowIdx = 1; rowIdx < data.length; rowIdx++) {
-    const cols = data[rowIdx].split('\t');
+    const row = data[rowIdx];
+    const cols = row.split('\t');
     const level = parseInt(cols[0]);
     // const nextLevel = parseInt(cols[1]);
-    const stoneCost = _parseInt(cols[2]);
-    const woodCost = _parseInt(cols[3]);
-    const ironCost = _parseInt(cols[4]);
-    const goldCost = cols[5];
+    const [stoneCost, stoneCostVerified] = parseIntCost(cols[2]);
+    const [woodCost, woodCostVerified] = parseIntCost(cols[3]);
+    const [ironCost, ironCostVerified] = parseIntCost(cols[4]);
+    const [goldCost, goldCostVerified] = parseDecCost(cols[5]);
     const goldUnit = cols[6];
+    const verified = (
+      stoneCostVerified &&
+      woodCostVerified &&
+      ironCostVerified &&
+      goldCostVerified
+    );
 
     table.push(`<tr id="level-${level}">`)
     table.push(`<td class="level-col">${level} → ${level+1}</td>`);
 
-    if (stoneCost === null) table.push(missingData);
-    else table.push(`<td class="cost-col">${stoneCost}</td>`);
+    table.push(dataCell(stoneCost, stoneCostVerified));
+    table.push(dataCell(woodCost, woodCostVerified));
+    table.push(dataCell(ironCost, ironCostVerified));
 
-    if (woodCost === null) table.push(missingData);
-    else table.push(`<td class="cost-col">${woodCost}</td>`);
-
-    if (ironCost === null) table.push(missingData);
-    else table.push(`<td class="cost-col">${ironCost}</td>`);
-
-    if (goldCost === '') table.push(missingData);
-    else table.push(`<td class="cost-col">${goldCost}<span class="costUnit">${goldUnit}</span></td>`);
+    if (goldCost === null) table.push(missingData);
+    else {
+      if (!goldCostVerified) {
+        table.push(
+          '<td class="cost-col">' +
+          '<span class="unverified">' +
+          goldCost + 
+          '<span class="costUnit">' + goldUnit + '</span>' +
+          '</span>'+
+          '</td>'
+        )
+      } else {
+        table.push(
+          '<td class="cost-col">' +
+          goldCost + 
+          '<span class="costUnit">' + goldUnit + '</span>' +
+          '</td>'
+        )
+      }
+    }
 
     table.push('</tr>');
 
-    if ((stoneCost !== null) && (goldCost !== '')) {
+    if (verified) {
       compiledData.data.push(
         {
-          'level': _parseInt(level),
+          'level': level,
           'stone-cost': stoneCost,
           'wood-cost': woodCost,
           'iron-cost': ironCost,
           'gold-cost': goldCost + goldUnit,
-          'verified': true,
+          'verified': verified,
         }
       )
     } else {
@@ -136,9 +188,14 @@ fs.writeFileSync(`${exportFileFragment}.html`, htmlOutput, {encoding:'utf8',flag
 
 // Report missing ranges:
 let report = 'the following data are missing:\n';
+let missingCount = 0;
 for (let i=0; i < missingRanges.length; i++) {
   const range = missingRanges[i];
   if (range.start === range.end) report += range.start + '\n';
   else report += range.start + '-' + range.end + '\n';
+
+  missingCount += (range.end - range.start) + 1;
 }
+
 console.log(report);
+console.log('missing ' + missingCount + ' data');
