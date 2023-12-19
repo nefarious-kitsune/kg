@@ -169,6 +169,22 @@ const dataContentTemplate =
 </table>
 </div>\n`;
 
+// Report missing ranges:
+let report = '';
+let missingCount = 0;
+for (let i=0; i < missingRanges.length; i++) {
+  const range = missingRanges[i];
+  if (range.start === range.end) report += range.start + ', ';
+  else report += range.start + '-' + range.end + ', ';
+
+  missingCount += (range.end - range.start) + 1;
+}
+
+report = report.substring(0, report.length - 2);
+
+console.log('the following data are missing:' + report);
+console.log('missing ' + missingCount + ' data');
+
 let dataOutput = '';
 
 for (let tableIndex = 0; tableIndex < tables.length; tableIndex++) {
@@ -182,20 +198,9 @@ for (let tableIndex = 0; tableIndex < tables.length; tableIndex++) {
 }
 
 const htmlTemplate = fs.readFileSync('template.html', 'utf-8');
-const htmlOutput = htmlTemplate.replace('{{DATA}}', dataOutput);
+const htmlOutput = htmlTemplate
+  .replace('{{DATA}}', dataOutput)
+  .replace('{{MISSING RANGES}}', report);
 
 fs.writeFileSync(`${exportFileFragment}.html`, htmlOutput, {encoding:'utf8',flag:'w'});
 
-// Report missing ranges:
-let report = 'the following data are missing:\n';
-let missingCount = 0;
-for (let i=0; i < missingRanges.length; i++) {
-  const range = missingRanges[i];
-  if (range.start === range.end) report += range.start + '\n';
-  else report += range.start + '-' + range.end + '\n';
-
-  missingCount += (range.end - range.start) + 1;
-}
-
-console.log(report);
-console.log('missing ' + missingCount + ' data');
