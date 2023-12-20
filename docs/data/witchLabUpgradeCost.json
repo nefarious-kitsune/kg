@@ -1,6 +1,6 @@
 {
   "table": "Witch's Lab Upgrade",
-  "table-date": "2023-12-13",
+  "table-date": "2023-12-20",
   "data": [
     {
       "range-index": 1,
@@ -798,7 +798,7 @@
       "range-index": 133,
       "range-start": 1366,
       "reagent-cost": 665,
-      "verified": false
+      "verified": true
     },
     {
       "range-index": 134,
@@ -1024,9 +1024,9 @@
     },
     {
       "range-index": 171,
-      "range-start": 1875,
+      "range-start": 1874,
       "reagent-cost": 855,
-      "verified": false
+      "verified": true
     },
     {
       "range-index": 172,
@@ -1056,31 +1056,31 @@
       "range-index": 176,
       "range-start": 1944,
       "reagent-cost": 880,
-      "verified": false
+      "verified": true
     },
     {
       "range-index": 177,
-      "range-start": 1958,
+      "range-start": 1957,
       "reagent-cost": 885,
-      "verified": false
+      "verified": true
     },
     {
       "range-index": 178,
       "range-start": 1971,
       "reagent-cost": 890,
-      "verified": false
+      "verified": true
     },
     {
       "range-index": 179,
       "range-start": 1985,
       "reagent-cost": 895,
-      "verified": false
+      "verified": true
     },
     {
       "range-index": 180,
       "range-start": 1999,
       "reagent-cost": 900,
-      "verified": false
+      "verified": true
     }
   ]
 }
