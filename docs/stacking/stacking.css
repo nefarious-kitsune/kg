@@ -1,0 +1,46 @@
+.eq {
+  display: block;
+  margin: 0.2rem 0;
+  font-size: 0.8rem;
+  color: var(--neutral)
+}
+
+.equation-block {
+  display: block;
+}
+
+.equation-block span {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.equation-block .operator {
+  color: var(--neutral);
+  font-size: 1.2rem;
+}
+
+.equation-block .variable,
+.equation-block .constant {
+  max-width: 5rem;
+  padding: 0.2rem;
+  border: 0.1rem solid var(--miku-red);
+  border-radius: 0.5rem;
+}
+
+.equation-block .variable {
+  font-style: italic;
+}
+
+ul.stats-list li {
+  list-style: none;
+}
+
+ul.stats-list li.level-1:before {
+  content: "L1";
+  
+}
+
+table.stacking td,
+table.stacking th {
+  vertical-align: top;
+}
