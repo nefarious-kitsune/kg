@@ -621,11 +621,12 @@ table.simple thead th {
 table.simple tfoot {
   background: var(--miku-gold);
 }
-table.simple .new-section {
+table.simple .new-section td {
   border-top: 0.1rem solid var(--miku-dark-red);
 }
 table.simple .sub-section {
-  border-top: 0.1rem dashed var(--miku-dark-red);
+  border-top: none;
+  border-top: 0.05rem dotted;
 }
 
 table.simple td.number {
@@ -634,4 +635,17 @@ table.simple td.number {
 }
 table.simple tbody th {
   text-align: left;
+}
+
+h1 .tag,
+h2 .tag {
+  display: inline-block;
+  border: 0.1rem solid var(--miku-dark-red);
+  border-radius: 0.4rem;
+  font-size: 0.8rem;
+  padding: 0.1rem 0.2rem;
+  color: var(--miku-dark-red);
+  vertical-align: top;
+  text-shadow: none;
+  
 }
