@@ -1,6 +1,6 @@
 {
   "table": "Castle Upgrade",
-  "table-date": "2023-12-20",
+  "table-date": "2023-12-26",
   "data": [
     {
       "level": 1,
@@ -7387,9 +7387,337 @@
       "verified": true
     },
     {
+      "level": 937,
+      "stone-cost": 690,
+      "wood-cost": 130,
+      "iron-cost": 0,
+      "gold-cost": "1.8M",
+      "verified": true
+    },
+    {
+      "level": 938,
+      "stone-cost": 690,
+      "wood-cost": 130,
+      "iron-cost": 0,
+      "gold-cost": "1.8M",
+      "verified": true
+    },
+    {
+      "level": 939,
+      "stone-cost": 690,
+      "wood-cost": 130,
+      "iron-cost": 0,
+      "gold-cost": "1.8M",
+      "verified": true
+    },
+    {
+      "level": 940,
+      "stone-cost": 690,
+      "wood-cost": 130,
+      "iron-cost": 0,
+      "gold-cost": "1.8M",
+      "verified": true
+    },
+    {
+      "level": 941,
+      "stone-cost": 690,
+      "wood-cost": 130,
+      "iron-cost": 0,
+      "gold-cost": "1.8M",
+      "verified": true
+    },
+    {
+      "level": 942,
+      "stone-cost": 690,
+      "wood-cost": 130,
+      "iron-cost": 0,
+      "gold-cost": "1.8M",
+      "verified": true
+    },
+    {
+      "level": 943,
+      "stone-cost": 695,
+      "wood-cost": 130,
+      "iron-cost": 0,
+      "gold-cost": "1.8M",
+      "verified": true
+    },
+    {
+      "level": 944,
+      "stone-cost": 695,
+      "wood-cost": 130,
+      "iron-cost": 0,
+      "gold-cost": "1.8M",
+      "verified": true
+    },
+    {
+      "level": 945,
+      "stone-cost": 695,
+      "wood-cost": 130,
+      "iron-cost": 0,
+      "gold-cost": "1.8M",
+      "verified": true
+    },
+    {
+      "level": 946,
+      "stone-cost": 695,
+      "wood-cost": 130,
+      "iron-cost": 0,
+      "gold-cost": "1.8M",
+      "verified": true
+    },
+    {
+      "level": 947,
+      "stone-cost": 695,
+      "wood-cost": 130,
+      "iron-cost": 0,
+      "gold-cost": "1.8M",
+      "verified": true
+    },
+    {
+      "level": 948,
+      "stone-cost": 695,
+      "wood-cost": 130,
+      "iron-cost": 0,
+      "gold-cost": "1.8M",
+      "verified": true
+    },
+    {
+      "level": 949,
+      "stone-cost": 695,
+      "wood-cost": 130,
+      "iron-cost": 0,
+      "gold-cost": "1.8M",
+      "verified": true
+    },
+    {
+      "level": 950,
+      "stone-cost": 695,
+      "wood-cost": 130,
+      "iron-cost": 0,
+      "gold-cost": "1.8M",
+      "verified": true
+    },
+    {
+      "level": 951,
+      "stone-cost": 695,
+      "wood-cost": 130,
+      "iron-cost": 0,
+      "gold-cost": "1.8M",
+      "verified": true
+    },
+    {
+      "level": 952,
+      "stone-cost": 700,
+      "wood-cost": 130,
+      "iron-cost": 0,
+      "gold-cost": "1.8M",
+      "verified": true
+    },
+    {
+      "level": 953,
+      "stone-cost": 700,
+      "wood-cost": 130,
+      "iron-cost": 0,
+      "gold-cost": "1.8M",
+      "verified": true
+    },
+    {
       "level": 954,
       "stone-cost": 700,
       "wood-cost": 130,
+      "iron-cost": 0,
+      "gold-cost": "1.8M",
+      "verified": true
+    },
+    {
+      "level": 955,
+      "stone-cost": 700,
+      "wood-cost": 130,
+      "iron-cost": 0,
+      "gold-cost": "1.8M",
+      "verified": true
+    },
+    {
+      "level": 956,
+      "stone-cost": 700,
+      "wood-cost": 130,
+      "iron-cost": 0,
+      "gold-cost": "1.8M",
+      "verified": true
+    },
+    {
+      "level": 957,
+      "stone-cost": 700,
+      "wood-cost": 130,
+      "iron-cost": 0,
+      "gold-cost": "1.8M",
+      "verified": true
+    },
+    {
+      "level": 958,
+      "stone-cost": 700,
+      "wood-cost": 135,
+      "iron-cost": 0,
+      "gold-cost": "1.8M",
+      "verified": true
+    },
+    {
+      "level": 959,
+      "stone-cost": 700,
+      "wood-cost": 135,
+      "iron-cost": 0,
+      "gold-cost": "1.8M",
+      "verified": true
+    },
+    {
+      "level": 960,
+      "stone-cost": 705,
+      "wood-cost": 135,
+      "iron-cost": 0,
+      "gold-cost": "1.8M",
+      "verified": true
+    },
+    {
+      "level": 961,
+      "stone-cost": 705,
+      "wood-cost": 135,
+      "iron-cost": 0,
+      "gold-cost": "1.8M",
+      "verified": true
+    },
+    {
+      "level": 962,
+      "stone-cost": 705,
+      "wood-cost": 135,
+      "iron-cost": 0,
+      "gold-cost": "1.8M",
+      "verified": true
+    },
+    {
+      "level": 963,
+      "stone-cost": 705,
+      "wood-cost": 135,
+      "iron-cost": 0,
+      "gold-cost": "1.8M",
+      "verified": true
+    },
+    {
+      "level": 964,
+      "stone-cost": 705,
+      "wood-cost": 135,
+      "iron-cost": 0,
+      "gold-cost": "1.8M",
+      "verified": true
+    },
+    {
+      "level": 965,
+      "stone-cost": 705,
+      "wood-cost": 135,
+      "iron-cost": 0,
+      "gold-cost": "1.8M",
+      "verified": true
+    },
+    {
+      "level": 966,
+      "stone-cost": 705,
+      "wood-cost": 135,
+      "iron-cost": 0,
+      "gold-cost": "1.8M",
+      "verified": true
+    },
+    {
+      "level": 967,
+      "stone-cost": 705,
+      "wood-cost": 135,
+      "iron-cost": 0,
+      "gold-cost": "1.8M",
+      "verified": true
+    },
+    {
+      "level": 968,
+      "stone-cost": 705,
+      "wood-cost": 135,
+      "iron-cost": 0,
+      "gold-cost": "1.8M",
+      "verified": true
+    },
+    {
+      "level": 969,
+      "stone-cost": 710,
+      "wood-cost": 135,
+      "iron-cost": 0,
+      "gold-cost": "1.8M",
+      "verified": true
+    },
+    {
+      "level": 970,
+      "stone-cost": 710,
+      "wood-cost": 135,
+      "iron-cost": 0,
+      "gold-cost": "1.8M",
+      "verified": true
+    },
+    {
+      "level": 971,
+      "stone-cost": 710,
+      "wood-cost": 135,
+      "iron-cost": 0,
+      "gold-cost": "1.8M",
+      "verified": true
+    },
+    {
+      "level": 972,
+      "stone-cost": 710,
+      "wood-cost": 135,
+      "iron-cost": 0,
+      "gold-cost": "1.8M",
+      "verified": true
+    },
+    {
+      "level": 973,
+      "stone-cost": 710,
+      "wood-cost": 135,
+      "iron-cost": 0,
+      "gold-cost": "1.8M",
+      "verified": true
+    },
+    {
+      "level": 974,
+      "stone-cost": 710,
+      "wood-cost": 135,
+      "iron-cost": 0,
+      "gold-cost": "1.8M",
+      "verified": true
+    },
+    {
+      "level": 975,
+      "stone-cost": 710,
+      "wood-cost": 135,
+      "iron-cost": 0,
+      "gold-cost": "1.8M",
+      "verified": true
+    },
+    {
+      "level": 976,
+      "stone-cost": 710,
+      "wood-cost": 135,
+      "iron-cost": 0,
+      "gold-cost": "1.8M",
+      "verified": true
+    },
+    {
+      "level": 977,
+      "stone-cost": 715,
+      "wood-cost": 135,
+      "iron-cost": 0,
+      "gold-cost": "1.8M",
+      "verified": true
+    },
+    {
+      "level": 978,
+      "stone-cost": 715,
+      "wood-cost": 135,
       "iron-cost": 0,
       "gold-cost": "1.8M",
       "verified": true
@@ -10883,6 +11211,278 @@
       "verified": true
     },
     {
+      "level": 1548,
+      "stone-cost": 1030,
+      "wood-cost": 255,
+      "iron-cost": 80,
+      "gold-cost": "2.6M",
+      "verified": true
+    },
+    {
+      "level": 1549,
+      "stone-cost": 1030,
+      "wood-cost": 255,
+      "iron-cost": 80,
+      "gold-cost": "2.6M",
+      "verified": true
+    },
+    {
+      "level": 1550,
+      "stone-cost": 1030,
+      "wood-cost": 255,
+      "iron-cost": 80,
+      "gold-cost": "2.6M",
+      "verified": true
+    },
+    {
+      "level": 1551,
+      "stone-cost": 1030,
+      "wood-cost": 255,
+      "iron-cost": 80,
+      "gold-cost": "2.6M",
+      "verified": true
+    },
+    {
+      "level": 1552,
+      "stone-cost": 1030,
+      "wood-cost": 255,
+      "iron-cost": 80,
+      "gold-cost": "2.6M",
+      "verified": true
+    },
+    {
+      "level": 1553,
+      "stone-cost": 1030,
+      "wood-cost": 255,
+      "iron-cost": 80,
+      "gold-cost": "2.6M",
+      "verified": true
+    },
+    {
+      "level": 1554,
+      "stone-cost": 1030,
+      "wood-cost": 255,
+      "iron-cost": 80,
+      "gold-cost": "2.6M",
+      "verified": true
+    },
+    {
+      "level": 1555,
+      "stone-cost": 1030,
+      "wood-cost": 255,
+      "iron-cost": 80,
+      "gold-cost": "2.6M",
+      "verified": true
+    },
+    {
+      "level": 1556,
+      "stone-cost": 1035,
+      "wood-cost": 255,
+      "iron-cost": 80,
+      "gold-cost": "2.6M",
+      "verified": true
+    },
+    {
+      "level": 1557,
+      "stone-cost": 1035,
+      "wood-cost": 255,
+      "iron-cost": 80,
+      "gold-cost": "2.6M",
+      "verified": true
+    },
+    {
+      "level": 1558,
+      "stone-cost": 1035,
+      "wood-cost": 255,
+      "iron-cost": 80,
+      "gold-cost": "2.6M",
+      "verified": true
+    },
+    {
+      "level": 1559,
+      "stone-cost": 1035,
+      "wood-cost": 255,
+      "iron-cost": 80,
+      "gold-cost": "2.6M",
+      "verified": true
+    },
+    {
+      "level": 1560,
+      "stone-cost": 1035,
+      "wood-cost": 255,
+      "iron-cost": 80,
+      "gold-cost": "2.6M",
+      "verified": true
+    },
+    {
+      "level": 1561,
+      "stone-cost": 1035,
+      "wood-cost": 255,
+      "iron-cost": 80,
+      "gold-cost": "2.6M",
+      "verified": true
+    },
+    {
+      "level": 1562,
+      "stone-cost": 1035,
+      "wood-cost": 255,
+      "iron-cost": 80,
+      "gold-cost": "2.6M",
+      "verified": true
+    },
+    {
+      "level": 1563,
+      "stone-cost": 1035,
+      "wood-cost": 255,
+      "iron-cost": 80,
+      "gold-cost": "2.6M",
+      "verified": true
+    },
+    {
+      "level": 1564,
+      "stone-cost": 1035,
+      "wood-cost": 260,
+      "iron-cost": 80,
+      "gold-cost": "2.6M",
+      "verified": true
+    },
+    {
+      "level": 1565,
+      "stone-cost": 1040,
+      "wood-cost": 260,
+      "iron-cost": 80,
+      "gold-cost": "2.6M",
+      "verified": true
+    },
+    {
+      "level": 1566,
+      "stone-cost": 1040,
+      "wood-cost": 260,
+      "iron-cost": 80,
+      "gold-cost": "2.6M",
+      "verified": true
+    },
+    {
+      "level": 1567,
+      "stone-cost": 1040,
+      "wood-cost": 260,
+      "iron-cost": 80,
+      "gold-cost": "2.6M",
+      "verified": true
+    },
+    {
+      "level": 1568,
+      "stone-cost": 1040,
+      "wood-cost": 260,
+      "iron-cost": 85,
+      "gold-cost": "2.6M",
+      "verified": true
+    },
+    {
+      "level": 1569,
+      "stone-cost": 1040,
+      "wood-cost": 260,
+      "iron-cost": 85,
+      "gold-cost": "2.6M",
+      "verified": true
+    },
+    {
+      "level": 1570,
+      "stone-cost": 1040,
+      "wood-cost": 260,
+      "iron-cost": 85,
+      "gold-cost": "2.6M",
+      "verified": true
+    },
+    {
+      "level": 1571,
+      "stone-cost": 1040,
+      "wood-cost": 260,
+      "iron-cost": 85,
+      "gold-cost": "2.6M",
+      "verified": true
+    },
+    {
+      "level": 1572,
+      "stone-cost": 1040,
+      "wood-cost": 260,
+      "iron-cost": 85,
+      "gold-cost": "2.6M",
+      "verified": true
+    },
+    {
+      "level": 1573,
+      "stone-cost": 1040,
+      "wood-cost": 260,
+      "iron-cost": 85,
+      "gold-cost": "2.6M",
+      "verified": true
+    },
+    {
+      "level": 1574,
+      "stone-cost": 1040,
+      "wood-cost": 260,
+      "iron-cost": 85,
+      "gold-cost": "2.6M",
+      "verified": true
+    },
+    {
+      "level": 1575,
+      "stone-cost": 1040,
+      "wood-cost": 260,
+      "iron-cost": 85,
+      "gold-cost": "2.7M",
+      "verified": true
+    },
+    {
+      "level": 1576,
+      "stone-cost": 1045,
+      "wood-cost": 260,
+      "iron-cost": 85,
+      "gold-cost": "2.7M",
+      "verified": true
+    },
+    {
+      "level": 1577,
+      "stone-cost": 1045,
+      "wood-cost": 260,
+      "iron-cost": 85,
+      "gold-cost": "2.7M",
+      "verified": true
+    },
+    {
+      "level": 1578,
+      "stone-cost": 1045,
+      "wood-cost": 260,
+      "iron-cost": 85,
+      "gold-cost": "2.7M",
+      "verified": true
+    },
+    {
+      "level": 1579,
+      "stone-cost": 1045,
+      "wood-cost": 260,
+      "iron-cost": 85,
+      "gold-cost": "2.7M",
+      "verified": true
+    },
+    {
+      "level": 1580,
+      "stone-cost": 1045,
+      "wood-cost": 260,
+      "iron-cost": 85,
+      "gold-cost": "2.7M",
+      "verified": true
+    },
+    {
+      "level": 1581,
+      "stone-cost": 1045,
+      "wood-cost": 260,
+      "iron-cost": 85,
+      "gold-cost": "2.7M",
+      "verified": true
+    },
+    {
       "level": 1623,
       "stone-cost": 1070,
       "wood-cost": 270,
@@ -12107,8 +12707,336 @@
       "verified": true
     },
     {
+      "level": 1789,
+      "stone-cost": 1155,
+      "wood-cost": 300,
+      "iron-cost": 105,
+      "gold-cost": "2.9M",
+      "verified": true
+    },
+    {
+      "level": 1790,
+      "stone-cost": 1155,
+      "wood-cost": 300,
+      "iron-cost": 105,
+      "gold-cost": "2.9M",
+      "verified": true
+    },
+    {
+      "level": 1791,
+      "stone-cost": 1155,
+      "wood-cost": 300,
+      "iron-cost": 105,
+      "gold-cost": "2.9M",
+      "verified": true
+    },
+    {
+      "level": 1792,
+      "stone-cost": 1155,
+      "wood-cost": 300,
+      "iron-cost": 105,
+      "gold-cost": "2.9M",
+      "verified": true
+    },
+    {
+      "level": 1793,
+      "stone-cost": 1155,
+      "wood-cost": 300,
+      "iron-cost": 105,
+      "gold-cost": "2.9M",
+      "verified": true
+    },
+    {
+      "level": 1794,
+      "stone-cost": 1155,
+      "wood-cost": 300,
+      "iron-cost": 105,
+      "gold-cost": "2.9M",
+      "verified": true
+    },
+    {
+      "level": 1795,
+      "stone-cost": 1160,
+      "wood-cost": 300,
+      "iron-cost": 105,
+      "gold-cost": "2.9M",
+      "verified": true
+    },
+    {
+      "level": 1796,
+      "stone-cost": 1160,
+      "wood-cost": 300,
+      "iron-cost": 105,
+      "gold-cost": "2.9M",
+      "verified": true
+    },
+    {
+      "level": 1797,
+      "stone-cost": 1160,
+      "wood-cost": 300,
+      "iron-cost": 105,
+      "gold-cost": "2.9M",
+      "verified": true
+    },
+    {
+      "level": 1798,
+      "stone-cost": 1160,
+      "wood-cost": 300,
+      "iron-cost": 110,
+      "gold-cost": "2.9M",
+      "verified": true
+    },
+    {
+      "level": 1799,
+      "stone-cost": 1160,
+      "wood-cost": 300,
+      "iron-cost": 110,
+      "gold-cost": "2.9M",
+      "verified": true
+    },
+    {
+      "level": 1800,
+      "stone-cost": 1160,
+      "wood-cost": 300,
+      "iron-cost": 110,
+      "gold-cost": "2.9M",
+      "verified": true
+    },
+    {
+      "level": 1801,
+      "stone-cost": 1160,
+      "wood-cost": 300,
+      "iron-cost": 110,
+      "gold-cost": "2.9M",
+      "verified": true
+    },
+    {
+      "level": 1802,
+      "stone-cost": 1160,
+      "wood-cost": 300,
+      "iron-cost": 110,
+      "gold-cost": "2.9M",
+      "verified": true
+    },
+    {
+      "level": 1803,
+      "stone-cost": 1160,
+      "wood-cost": 300,
+      "iron-cost": 110,
+      "gold-cost": "2.9M",
+      "verified": true
+    },
+    {
+      "level": 1804,
+      "stone-cost": 1160,
+      "wood-cost": 305,
+      "iron-cost": 110,
+      "gold-cost": "2.9M",
+      "verified": true
+    },
+    {
       "level": 1805,
       "stone-cost": 1165,
+      "wood-cost": 305,
+      "iron-cost": 110,
+      "gold-cost": "3M",
+      "verified": true
+    },
+    {
+      "level": 1806,
+      "stone-cost": 1165,
+      "wood-cost": 305,
+      "iron-cost": 110,
+      "gold-cost": "3M",
+      "verified": true
+    },
+    {
+      "level": 1807,
+      "stone-cost": 1165,
+      "wood-cost": 305,
+      "iron-cost": 110,
+      "gold-cost": "3M",
+      "verified": true
+    },
+    {
+      "level": 1808,
+      "stone-cost": 1165,
+      "wood-cost": 305,
+      "iron-cost": 110,
+      "gold-cost": "3M",
+      "verified": true
+    },
+    {
+      "level": 1809,
+      "stone-cost": 1165,
+      "wood-cost": 305,
+      "iron-cost": 110,
+      "gold-cost": "3M",
+      "verified": true
+    },
+    {
+      "level": 1810,
+      "stone-cost": 1165,
+      "wood-cost": 305,
+      "iron-cost": 110,
+      "gold-cost": "3M",
+      "verified": true
+    },
+    {
+      "level": 1811,
+      "stone-cost": 1165,
+      "wood-cost": 305,
+      "iron-cost": 110,
+      "gold-cost": "3M",
+      "verified": true
+    },
+    {
+      "level": 1812,
+      "stone-cost": 1165,
+      "wood-cost": 305,
+      "iron-cost": 110,
+      "gold-cost": "3M",
+      "verified": true
+    },
+    {
+      "level": 1813,
+      "stone-cost": 1165,
+      "wood-cost": 305,
+      "iron-cost": 110,
+      "gold-cost": "3M",
+      "verified": true
+    },
+    {
+      "level": 1814,
+      "stone-cost": 1165,
+      "wood-cost": 305,
+      "iron-cost": 110,
+      "gold-cost": "3M",
+      "verified": true
+    },
+    {
+      "level": 1815,
+      "stone-cost": 1170,
+      "wood-cost": 305,
+      "iron-cost": 110,
+      "gold-cost": "3M",
+      "verified": true
+    },
+    {
+      "level": 1816,
+      "stone-cost": 1170,
+      "wood-cost": 305,
+      "iron-cost": 110,
+      "gold-cost": "3M",
+      "verified": true
+    },
+    {
+      "level": 1817,
+      "stone-cost": 1170,
+      "wood-cost": 305,
+      "iron-cost": 110,
+      "gold-cost": "3M",
+      "verified": true
+    },
+    {
+      "level": 1818,
+      "stone-cost": 1170,
+      "wood-cost": 305,
+      "iron-cost": 110,
+      "gold-cost": "3M",
+      "verified": true
+    },
+    {
+      "level": 1819,
+      "stone-cost": 1170,
+      "wood-cost": 305,
+      "iron-cost": 110,
+      "gold-cost": "3M",
+      "verified": true
+    },
+    {
+      "level": 1820,
+      "stone-cost": 1170,
+      "wood-cost": 305,
+      "iron-cost": 110,
+      "gold-cost": "3M",
+      "verified": true
+    },
+    {
+      "level": 1821,
+      "stone-cost": 1170,
+      "wood-cost": 305,
+      "iron-cost": 110,
+      "gold-cost": "3M",
+      "verified": true
+    },
+    {
+      "level": 1822,
+      "stone-cost": 1170,
+      "wood-cost": 305,
+      "iron-cost": 110,
+      "gold-cost": "3M",
+      "verified": true
+    },
+    {
+      "level": 1823,
+      "stone-cost": 1170,
+      "wood-cost": 305,
+      "iron-cost": 110,
+      "gold-cost": "3M",
+      "verified": true
+    },
+    {
+      "level": 1824,
+      "stone-cost": 1170,
+      "wood-cost": 305,
+      "iron-cost": 110,
+      "gold-cost": "3M",
+      "verified": true
+    },
+    {
+      "level": 1825,
+      "stone-cost": 1175,
+      "wood-cost": 305,
+      "iron-cost": 110,
+      "gold-cost": "3M",
+      "verified": true
+    },
+    {
+      "level": 1826,
+      "stone-cost": 1175,
+      "wood-cost": 305,
+      "iron-cost": 110,
+      "gold-cost": "3M",
+      "verified": true
+    },
+    {
+      "level": 1827,
+      "stone-cost": 1175,
+      "wood-cost": 305,
+      "iron-cost": 110,
+      "gold-cost": "3M",
+      "verified": true
+    },
+    {
+      "level": 1828,
+      "stone-cost": 1175,
+      "wood-cost": 305,
+      "iron-cost": 110,
+      "gold-cost": "3M",
+      "verified": true
+    },
+    {
+      "level": 1829,
+      "stone-cost": 1175,
+      "wood-cost": 305,
+      "iron-cost": 110,
+      "gold-cost": "3M",
+      "verified": true
+    },
+    {
+      "level": 1830,
+      "stone-cost": 1175,
       "wood-cost": 305,
       "iron-cost": 110,
       "gold-cost": "3M",
