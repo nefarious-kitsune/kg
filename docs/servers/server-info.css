@@ -1,0 +1,54 @@
+.server-table th,
+.server-table td {
+  padding: 0.1rem 0.5rem;
+  font-size: 1rem;
+}
+
+.server-table {
+  border-collapse: collapse;
+  border: 0.1rem solid var(--miku-dark-red);
+}
+
+.server-table th {
+  background: var(--miku-dark-red);
+  color: var(--miku-gold);
+  font-weight: normal;
+  padding: 0.5rem;
+}
+.server-table td {
+  background: white;
+  color: black;
+  font-weight: normal;
+  padding: 0.5rem;
+}
+
+.server-table tbody tr:nth-child(even) td {
+  background: var(--pale-neutral);
+}
+
+.server-table tfoot th,
+.server-table tfoot td {
+  background: var(--miku-gold);
+}
+
+.server-table .power-col {
+  text-align: right;
+}
+
+
+.status-line {
+  display: list-item;
+  list-style-position: outside;
+  padding: 0 0 0 0.2rem;
+  margin: 0 0 0 0.8rem;
+}
+
+.status-line::marker {
+  display: inline-block;
+  content: "●";
+}
+
+.status-line.unknown::marker { color: var(--pale-neutral); }
+.status-line.green::marker { color: var(--green); }
+.status-line.yellow::marker { color: var(--yellow); }
+.status-line.red::marker { color: var(--red); }
