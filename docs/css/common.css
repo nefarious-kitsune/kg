@@ -457,6 +457,25 @@ input[type=checkbox]:checked:after {
 .jessica { background-image: url('../images/A-Jessica.png'); }
 .vera { background-image: url('../images/A-Vera.png'); }
 
+.alliance-tag {
+  display: inline-block;
+  vertical-align: middle;
+  font-family: monospace monospace;
+  font-size: 0.8rem;
+  font-weight: bold;
+  margin: 0.05rem 0;
+  padding: 0.1rem 0.2rem;
+  width: 3rem;
+}
+
+.alliance-tag:before {
+  content: "[";
+}
+
+.alliance-tag:after {
+  content: "]";
+}
+
 .server-tag {
   display: inline-block;
   color: white;
