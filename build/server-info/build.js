@@ -1,6 +1,6 @@
 import fs from 'fs';
 
-const SeasonNumber = 26;
+const SeasonNumber = 27;
 
 const exportDirectory = `../../docs/servers/S${SeasonNumber}`;
 const exportFileFragment = `${exportDirectory}/server-info`;
