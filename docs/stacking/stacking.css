@@ -31,16 +31,84 @@
   font-style: italic;
 }
 
+ul.stats-list {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
 ul.stats-list li {
   list-style: none;
 }
 
-ul.stats-list li.level-1:before {
+.stats-list-container {
+  /* display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 0.8rem;
+  margin: 0;
+  padding: 0; */
+  column-width: 14rem;
+}
+
+.stats.L0:before {
+  content: "L0";
+  background-color: var(--light-neutral);
+}
+
+.stats.L1:before {
   content: "L1";
-  
+  background-color: var(--primary-3);
+}
+
+.stats.L2:before {
+  content: "L2";
+  background-color: var(--primary-4);
+}
+
+.stats.L3:before {
+  content: "L3";
+  background-color: var(--primary-5);
+}
+
+.stats.L4:before {
+  content: "L4";
+  background-color: var(--primary-2);
+}
+
+.stats.L0:before,
+.stats.L1:before,
+.stats.L2:before,
+.stats.L3:before,
+.stats.L4:before {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: normal;
+  font-style: normal;
+  /* border: 0.1rem solid var(--neutral); */
+  border-radius: 0.2rem;
+  margin-right: 0.2rem;
+  padding: 0.1rem;
+  vertical-align: middle;
+}
+
+table.stacking {
+  width: 100%;
+}
+
+table.stacking {
+  width: 100%;
 }
 
 table.stacking td,
 table.stacking th {
   vertical-align: top;
+}
+
+table.stacking td {
+  background-color: var(--pale-neutral);
+}
+
+table.stacking td.highlighted {
+  background-color: white;
 }

@@ -8,14 +8,6 @@
   <meta property="og:image" content="https://kg.kitsune21.com/images/logo_torii.png">
   <link href="../css/common.css" rel="stylesheet" />
   <link href="./stacking.css" rel="stylesheet" />
-  <style>
-    table ul {
-      padding-left: 0;
-    }
-    table ul li {
-      list-style-position: inside;
-    }
-  </style>
 </head>
 <body>
 <header id="header">
@@ -28,407 +20,43 @@
 <main>
 <h1>Stats and Stacking</h1>
 
-<table class="simple stacking">
-<thead>
-<tr>
-  <th>Level</th>
-  <th>Stats</th>
-  <th>Factors</th>
-  <th>L2 Stacking</th>
-  <th>L3 Stacking</th>
-  <th>L4 Stacking</th>
-</tr>
-</thead>
+<div class="stats-list-container">
+<ul class="stats-list">
+  <li class="stats L0">Castle level</li>
+  <li class="stats L0">Hero class</li>
+  <li class="stats L0">Hero level</li>
+  <li class="stats L0">Unit Specialization</li>
+  <li class="stats L0">Unit evolution level</li>
+  <li class="stats L0">Dragon emblem level</li>
+  <li class="stats L1">Dragon Power</li>
+  <li class="stats L2">Dragon Gear Power</li>
+  <li class="stats L0">Blacksmith level</li>
+  <li class="stats L1">Blacksmith Power</li>
+  <li class="stats L2">Hero Gear Power</li>
+  <li class="stats L0">Magic level</li>
+  <li class="stats L1">Magic Power</li>
+  <li class="stats L2">Magic Stone Power</li>
+  <li class="stats L0">Gallery level</li>
+  <li class="stats L1">Gallery Power</li>
+  <li class="stats L2">Bonds Power</li>
+  <li class="stats L2">Hero Skill Power</li>
+  <li class="stats L2">Unit Talent Power</li>
+  <li class="stats L2">Bonds Power</li>
+  <li class="stats L2">Summon Altar Power</li>
 
-<tbody>
-<tr>
-<th>Level 0</th>
-<th>Wallet Power</th>
-<td>Money</td>
-<td>Everything</td>
-<td>Everything</td>
-<td>Everything</td>
-</tr>
-</tbody>  
+  <li class="stats L3">Treasure Power</li>
 
-<tbody>
-<tr>
-<th rowspan="8">Level 1</th>
-<th><a href="./hero-base-power">Hero Base Power</a></th>
-<td>
-  <ul>
-    <li>Castle level</li>
-    <li>Hero class</li>
-  </ul>
-</td>
-<td>
-  <ul>
-    <li>Bonds Power</li>
-  </ul>
-</td>
-<td>
-  <ul>
-    <li>Treasure Power</li>
-  </ul>
-</td>
-<td rowspan="8">
-  <ul>
-    <li>Item Buff Power</li>
-    <li>Alliance Tech Power</li>
-    <li>Alliance Altar Power</li>
-    <li>Academy Tech Power</li>
-    <li>Artifact Power</li>
-    <li>VIP Power</li>
-    <li>Skin Power</li>
-    <li>Expedition Altar Power</li>
-    <li>Expedition Tech Power</li>
-  </ul>
-</td>
-</tr>
-
-<tr>
-<th><a href="./star-power">Hero Star Power</a></th>
-<td>
-  <ul>
-    <li>Star level</li>
-    <li>Hero class</li>
-  </ul>
-</td>
-<td>
-  <ul>
-    <li>Bonds Power</li>
-  </ul>
-</td>
-<td>
-  <ul>
-    <li>Treasure Power</li>
-  </ul>
-</td>
-</tr>
-
-<th><a href="./unit-base-power">Unit Base Power</a></th>
-<td>
-  <ul>
-    <li>Castle level</li>
-    <li>Troops capacity</li>
-    <li>Unit Specialization</li>
-  </ul>
-</td>
-<td>
-  <ul>
-    <li>Hero Skill Power</li>
-    <li>Unit Talent Power</li>
-  </ul>
-</td>
-<td>
-  <ul>
-    <li>Treasure Power</li>
-  </ul>
-</td>
-</tr>
-
-<th>Unit Evolution Power</th>
-<td>
-  <ul>
-    <li>Unit evolution level</li>
-  </ul>
-</td>
-<td>
-  <ul>
-    <li>Hero Skill Power</li>
-    <li>Unit Talent Power</li>
-  </ul>
-</td>
-<td>
-  <ul>
-    <li>Treasure Power</li>
-  </ul>
-</td>
-</tr>
-
-<tr>
-<th>Dragon Power</th>
-<td>
-  <ul>
-    <li>Dragon emblem levels</li>
-  </ul>
-</td>
-<td>
-  <ul>
-    <li>Dragon Gear Power</li>
-    <li>Summon Altar Power</li>
-  </ul>
-</td>
-<td>
-  <ul>
-    <li>Treasure Power</li>
-  </ul>
-</td>
-</tr>
-
-<tr>
-<th>Blacksmith Power</th>
-<td>
-  <ul>
-    <li>Blacksmith level</li>
-  </ul>
-</td>
-<td>
-  <ul>
-    <li>Hero Gear Power</li>
-    <li>Summon Altar Power</li>
-  </ul>
-</td>
-<td><!-- Treasure Power --></td>
-</tr>
-
-<tr>
-<th>Magic Power</th>
-<td>
-  <ul>
-    <li>Light Magic level</li>
-    <li>Dark Magic level</li>
-  </ul>
-</td>
-<td>
-  <ul>
-    <li>Magic Stone Power</li>
-    <li>Summon Altar Power</li>
-  </ul>
-</td>
-<td>
-  <ul>
-    <li>Treasure Power</li>
-  </ul>
-</td>
-</tr>
-
-<tr>
-<th>Gallery Power</th>
-<td>
-  <ul>
-    <li>Gallery level</li>
-  </ul>
-</td>
-<td></td>
-<td>
-  <ul>
-    <li>Treasure Power</li>
-  </ul>
-</td>
-</tr>
-</tbody>
-
-<tbody>
-<tr>
-<th rowspan="7">Level 2</th>
-<th>Bonds Power</th>
-<td>
-  <ul>
-    <li>Hero element</li>
-    <li>Total number of hero stars</li>
-    <li>Hero Base Power</li>
-    <li>Hero Star Power</li>
-  </ul>
-</td>
-<td></td>
-<td>
-  <ul>
-    <li>Treasure Power</li>
-  </ul>
-</td>
-<td rowspan="7">
-  <ul>
-    <li>Item Buff Power</li>
-    <li>Alliance Tech Power</li>
-    <li>Alliance Altar Power</li>
-    <li>Academy Tech Power</li>
-    <li>Artifact Power</li>
-    <li>VIP Power</li>
-    <li>Skin Power</li>
-    <li>Expedition Altar Power</li>
-    <li>Expedition Tech Power</li>
-  </ul>
-</td>
-</tr>
-
-<tr>
-<th>Hero Skill Power</th>
-<td>
-  <ul>
-    <li>Hero skills</li>
-    <li>Unit Base Power</li>
-    <li>Unit Evolution Power</li>
-  </ul>
-</td>
-<td><!-- L2 --></td>
-<td><!-- L3 --></td>
-</tr>
-
-<tr>
-<th>Unit Talent Power</th>
-<td>
-  <ul>
-    <li>Unit Base Power</li>
-    <li>Unit Evolution Power</li>
-  </ul>
-</td>
-<td><!-- L2 --></td>
-<td><!-- L3 --></td>
-</tr>
-
-<tr>
-<th>Dragon Gear Power</th>
-<td>
-  <ul>
-    <li>Dragon armor</li>
-    <li>Dragon Power</li>
-  </ul>
-</td>
-<td><!-- L2 --></td>
-<td><!-- L3 --></td>
-</tr>
-
-<tr>
-<th>Hero Gear Power</th>
-<td>
-  <ul>
-    <li>Hero weapon</li>
-    <li>Blacksmith Power</li>
-  </ul>
-</td>
-<td><!-- L2 --></td>
-<td><!-- L3 --></td>
-</tr>
-  
-<tr>
-<th>Magic Stone Power</th>
-<td>
-  <ul>
-    <li>Magic Stone levels</li>
-    <li>Magic Power</li>
-  </ul>
-</td>
-<td><!-- L2 --></td>
-<td><!-- L3 --></td>
-</tr>
-
-<tr>
-<th>Summon Altar Power</th>
-<td>
-  <ul>
-    <li>Dragon Power</li>
-    <li>Blacksmith Power</li>
-    <li>Magic Power</li>
-  </ul>
-</td>
-<td><!-- L2 --></td>
-<td><!-- L3 --></td>
-</tr>
-</tbody>
-
-<tbody>
-<tr>
-<th>Level 3</th>
-<th>Treasure Power</th>
-<td>
-  <ul>
-    <li>Hero Base Power</li>
-    <li>Hero Star Power</li>
-    <li>Bonds Power</li>
-    <li>Unit Base Power</li>
-    <li>Unit Evolution Power</li>
-    <li>Dragon Power</li>
-    <!-- <li>Blacksmith Power</li> -->
-    <li>Magic Power</li>
-    <li>Gallery Power</li>
-  </ul>
-</td>
-<td><!-- L2 --></td>
-<td><!-- L3 --></td>
-<td><!-- L4 --></td>
-
-</tr>
-</tbody>
-
-<tbody>
-<tr>
-<th rowspan="8">Level 4</th>
-<th>Item Buff Power</th>
-<td rowspan="8">
-  <ul>
-    <li>Hero Base Power</li>
-    <li>Hero Star Power</li>
-    <li>Hero Skill Power</li>
-    <li>Bonds Power</li>
-    <li>Unit Base Power</li>
-    <li>Unit Evolution Power</li>
-    <li>Dragon Power</li>
-    <li>Dragon Gear Power</li>
-    <li>Blacksmith Power</li>
-    <li>Magic Power</li>
-    <li>Magic Stone Power</li>
-    <li>Gallery Power</li>
-    <li>Summon Altar Power</li>
-  </ul>
-</td>
-<td><!-- L2 --></td>
-<td><!-- L3 --></td>
-<td><!-- L4 --></td>
-</tr>
-
-<tr>
-<th>Alliance Tech Power</th>
-<td><!-- L2 --></td>
-<td><!-- L3 --></td>
-<td><!-- L4 --></td>
-</tr>
-
-<tr>
-<th>Alliance Altar Power</th>
-<td><!-- L2 --></td>
-<td><!-- L3 --></td>
-<td><!-- L4 --></td>
-</tr>
-
-<tr>
-<th>Academy Tech Power</th>
-<td><!-- L2 --></td>
-<td><!-- L3 --></td>
-<td><!-- L4 --></td>
-</tr>
-
-<tr>
-<th>Artifact Power</th>
-<td><!-- L2 --></td>
-<td><!-- L3 --></td>
-<td><!-- L4 --></td>
-</tr>
-
-<tr>
-<th>VIP Power</th>
-<td><!-- L2 --></td>
-<td><!-- L3 --></td>
-<td><!-- L4 --></td>
-</tr>
-
-<tr>
-<th>Skin Power</th>
-<td><!-- L2 --></td>
-<td><!-- L3 --></td>
-<td><!-- L4 --></td>
-</tr>
-
-<tr>
-<th>Expedition Tech Power</th>
-<td><!-- L2 --></td>
-<td><!-- L3 --></td>
-<td><!-- L4 --></td>
-</tr>
-            
-</tbody>
-</table>
-
+  <li class="stats L4">Limited-Time Buff Power</li>
+  <li class="stats L4">Alliance Tech Power</li>
+  <li class="stats L4">Alliance Altar Power</li>
+  <li class="stats L4">Academy Tech Power</li>
+  <li class="stats L4">Artifact Power</li>
+  <li class="stats L4">VIP Power</li>
+  <li class="stats L4">Skin Power</li>
+  <li class="stats L4">Expedition Altar Power</li>
+  <li class="stats L4">Expedition Tech Power</li>
+</ul>
+</div>
 
 </main>
 </body>
