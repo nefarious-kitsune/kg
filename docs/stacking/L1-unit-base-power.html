@@ -31,7 +31,7 @@ These units contribute to the Unit Base Power.</p>
 <a href="./L0-castle-level">Castle level</a>,
 <a href="#troops-capacity">Troops capacity</a>,
 and
-<a href="#unit-specialization">Unit Specialization</a>.
+<a href="./L0-unit-specialization">Unit Specialization</a>.
 </p>
 
 <h2>Calculation</h2>
@@ -39,14 +39,18 @@ and
 <div class="equation-block">
   <span class="result">Unit Base Power</span>
   <span class="operator">=</span>
-  <span class="variable">Castle Level</span>
+  <span class="variable">10× Castle Level</span>
   <span class="operator">×</span>
   <span class="variable">Troops Capacity</span>
   <span class="operator">×</span>
-  <span class="constant">10</span>
+  <span class="parentheses">(</span>
+  <span class="variable">Unit <abbr title="specialization">Spec.</abbr> bonus</abbr></span>
+  <span class="operator">+</span>
+  <span class="constant">100%</span>
+  <span class="parentheses">)</span>
 </div>
 
-<h2>Stacking Graph</h2>
+<h2>Stacking</h2>
 
 <img
  src="../images/stacking/stacking_L1-Unit-Base-Power.png"
@@ -67,88 +71,56 @@ Troops Capacity II: level 1 - ???
 Troops Capacity II: level 2 -   6
 -->
 
-<h2 id="unit-specialization">Unit Specialization</h2>
-
-<p>With Unit Specialization, your march can gain additional
-power form units of <em>other elements</em>.</p>
-
-<ul class="butterfly">
-  <li>To increase Archer power, do Unit Specialization on
-    Fire, Ice, and Goblin.
-  </li>
-  <li>To increase Fire power, do Unit Specialization on
-    Archer, Ice, and Goblin.
-  </li>
-  <li>To increase Ice power, do Unit Specialization on
-    Archer, Fire, and Goblin.
-  </li>
-  <li>To increase Goblin power, do Unit Specialization on
-    Archer, Fire, and Ice.
-  </li>
-</ul>
-
 <h2>Example</h2>
 
 <table class="simple">
 <caption>Example</caption>
 <tbody>
 <tr>
-<th colspan="2">Castle Level</th>
+<th>Castle Level</th>
 <td class="number">810</td>
 </tr>
 <tr>
-<th colspan="2">Troops Capacity</th>
-<td rowspan="4" class="number">9</td>
+<th>Troops Capacity</th>
+<td class="number">9</td>
 </tr>
 <tr>
-<td>Default troops capacity</td>
-<td class="number">6</td>
-</tr>
-<tr>
-<td>1st Troop Capacity Tech (Level 3)</td>
-<td class="number">+3</td>
-</tr>
-<tr>
-<td>2nd Troop Capacity Tech (level 0)</td>
-<td class="number">+0</td>
-</tr>
-<tr>
-<th colspan="2">Unit Specialization (Archer)</th>
+<th>Unit Specialization (Archer)</th>
 <td class="number">+0%</td>
 </tr>
 <tr>
-<th colspan="2">Unit Specialization (Fire)</th>
+<th>Unit Specialization (Fire)</th>
 <td class="number">+10%</td>
 </tr>
 <tr>
-<th colspan="2">Unit Specialization (Ice)</th>
+<th>Unit Specialization (Ice)</th>
 <td class="number">+20%</td>
 </tr>
 <tr>
-<th colspan="2">Unit Specialization (Goblin)</th>
+<th>Unit Specialization (Goblin)</th>
 <td class="number">+20%</td>
 </tr>
 <tr>
-<th colspan="2">Unit Base Power (Archer)<br>
-<span class="eq">810 × 9 × 10 × (1 + 10% + 20% + 20%)</span>
+<th>Unit Base Power (Archer)<br>
+<span class="eq">8100 × 9 × (1 + 10% + 20% + 20%)</span>
 </th>
 <td class="number">1093500</td>
 </tr>
 <tr>
-<th colspan="2">Unit Base Power (Fire)<br>
-<span class="eq">810 × 9 × 10 × (1 + 20% + 20%)</span>
+<th>Unit Base Power (Fire)<br>
+<span class="eq">8100 × 9 × (1+ 0% + 20% + 20%)</span>
 </th>
 <td class="number">1020600</td>
 </tr>
 <tr>
-<th colspan="2">Unit Base Power (Ice)<br>
-<span class="eq">810 × 9 × 10 × (1 + 10% + 20%)</span>
+<th>Unit Base Power (Ice)<br>
+<span class="eq">8100 × 9 × (1 + 0% + 10% + 20%)</span>
 </th>
 <td class="number">947700</td>
 </tr>
 <tr>
-<th colspan="2">Unit Base Power (Goblin)<br>
-<span class="eq">810 × 9 × 10 × (1 + 10% + 20%)</span>
+<th>Unit Base Power (Goblin)<br>
+<span class="eq">8100 × 9 × (1 + 0% + 10% + 20%)</span>
 </th>
 <td class="number">947700</td>
 </tr>

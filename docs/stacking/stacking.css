@@ -19,25 +19,26 @@
   font-size: 1.2rem;
 }
 
-.equation-block .group:before {
-  content: "(";
+.equation-block .parentheses {
+  display: inline-block;
   color: var(--neutral);
-  font-size: 1.2rem;
-}
-
-.equation-block .group:after {
-  content: ")";
-  color: var(--neutral);
-  font-size: 1.2em;
+  /*
+  -webkit-transform: scale(1, 1.6);
+  -moz-transform: scale(1, 1.6);
+  -ms-transform: scale(1, 1.6);
+  -o-transform: scale(1, 1.6);
+  transform: scale(1, 1.6);
+  */
+  font-size: 1.8rem;
 }
 
 .equation-block .variable,
 .equation-block .result,
 .equation-block .constant {
-  max-width: 5rem;
-  padding: 0.2rem;
+  max-width: 6rem;
+  padding: 0.3rem;
   border: 0.1rem solid var(--miku-red);
-  border-radius: 0.5rem;
+  border-radius: 0.25rem;
 }
 
 .equation-block .variable {
