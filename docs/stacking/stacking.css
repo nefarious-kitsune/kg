@@ -19,7 +19,20 @@
   font-size: 1.2rem;
 }
 
+.equation-block .group:before {
+  content: "(";
+  color: var(--neutral);
+  font-size: 1.2rem;
+}
+
+.equation-block .group:after {
+  content: ")";
+  color: var(--neutral);
+  font-size: 1.2em;
+}
+
 .equation-block .variable,
+.equation-block .result,
 .equation-block .constant {
   max-width: 5rem;
   padding: 0.2rem;
