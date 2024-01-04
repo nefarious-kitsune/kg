@@ -673,3 +673,13 @@ h2 .tag {
   text-shadow: none;
   
 }
+
+dl dt {
+  font-weight: bold;
+  color: var(--miku-red);
+  padding-bottom: 1rem;
+}
+
+dl dd {
+  padding-bottom: 1rem;
+}
