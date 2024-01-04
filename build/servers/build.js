@@ -1,5 +1,5 @@
 import fs from 'fs';
-const season = 26;
+const season = 27;
 const exportDirectory = `../../docs/servers/S${season}`;
 
 /**
@@ -56,9 +56,9 @@ for (let serverId = 401; serverId < 1150; serverId++) {
   }
 }
 
-fs.writeFileSync('./_missing.txt', missingServers.join('\n'));
-fs.writeFileSync('./_duplicate.txt', duplicatedServers.join('\n'));
-fs.writeFileSync('./_all.txt', compiledData.all.join('\n'));
+fs.writeFileSync(`./_s${season}/_missing.txt`, missingServers.join('\n'));
+fs.writeFileSync(`./_s${season}/_duplicate.txt`, duplicatedServers.join('\n'));
+fs.writeFileSync(`./_s${season}/_all.txt`, compiledData.all.join('\n'));
 
 const Template = fs.readFileSync('./template.html', 'utf-8');
 
@@ -67,7 +67,7 @@ const DirectTransferTagList = compiledData.direct
   .join('\n');
 
 const AppOnlyTagList = compiledData.application
-  .map((serverId) => '<span class="server-tag server2">S' + serverId + '</span>')
+  .map((serverId) => '<span class="server-tag server4">S' + serverId + '</span>')
   .join('\n');
 
 const LockedTagList = compiledData.locked

@@ -69,7 +69,7 @@ const DirectTransferTagList = compiledData.direct
   .join('\n');
 
 const AppOnlyTagList = compiledData.application
-  .map((serverId) => '<span class="server-tag server2">S' + serverId + '</span>')
+  .map((serverId) => '<span class="server-tag server4">S' + serverId + '</span>')
   .join('\n');
 
 /*
