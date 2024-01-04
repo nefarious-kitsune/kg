@@ -78,7 +78,11 @@ fs.writeFileSync(
   `${exportDirectory}/server-status.html`,
   Template
     .replaceAll('{{SEASON}}', season)
+    .replace('{{DIRECT-COUNT}}', compiledData.direct.length)
+    .replace('{{APPLICATION-COUNT}}', compiledData.application.length)
+    .replace('{{LOCKED-COUNT}}', compiledData.locked.length)
+    .replace('{{CLOSED-COUNT}}', missingServers.length)
     .replace('{{DIRECT-TRANSFER SERVERS}}', DirectTransferTagList)
-    .replace('{{APPLICATION-ONLy SERVERS}}', AppOnlyTagList)
+    .replace('{{APPLICATION-ONLY SERVERS}}', AppOnlyTagList)
     .replace('{{LOCKED SERVERS}}', LockedTagList)
 );

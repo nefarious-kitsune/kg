@@ -28,39 +28,41 @@
 <main>
 <h1>Season-{{SEASON}} Server Status</h1>
 
-Status of S401~1150
-servers during server transfer period of Season {{SEASON}}.
+<p>Status of S401~1150
+servers as of Season {{SEASON}}.</p>
+
 
 <h2><q>Approval-Required</q> Servers</h2>
-<p>
-  Servers that players could <em>transfer with approval</em>. These
-  servers are likely crowded.
-</p>
+<p>The following {{APPLICATION-COUNT}} servers require
+approval for server transfer. These servers are likely crowded.</p>
 
 <div>
-{{APPLICATION-ONLy SERVERS}}
+{{APPLICATION-ONLY SERVERS}}
 </div>
 
 <h2><q>Direct-Transfer</q> Servers</h2>
-<p>
-  Servers that players could <em>transfer directly</em>. These
-  servers are likely moderately active or very active.
-</p>
+
+<p>The following {{DIRECT-COUNT}} servers do not require
+approval for server transfer. These servers are likely moderately active
+or active.</p>
 
 <div>
 {{DIRECT-TRANSFER SERVERS}}
 </div>
 
 <h2><q>Cannot-Transfer</q> Servers</h2>
-<p>
-  Servers that players could not transfer to. These
-  servers are likely <em>dead servers</em>.
-</p>
-
+<p>The following {{LOCKED-COUNT}} servers are locked for
+server transfer. These servers are likely dead.</p>
+  
 <div>
 {{LOCKED SERVERS}}
 </div>
-  
+
+<h2>Closed Servers</h2>
+
+<p>As of season {{SEASON}}, there are
+{{CLOSED-COUNT}} closed servers.</p>
+
 </main>
 </body>
 </html>
