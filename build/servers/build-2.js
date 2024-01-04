@@ -25,16 +25,16 @@ const rawData = {
     getServerNumbers(
       fs.readFileSync(`${exportDirectory}/application-2.txt`, 'utf-8'),
     ),
-  locked:
-    getServerNumbers(
-      fs.readFileSync(`${exportDirectory}/locked-2.txt`, 'utf-8'),
-    ),
+  // locked:
+  //   getServerNumbers(
+  //     fs.readFileSync(`${exportDirectory}/locked-2.txt`, 'utf-8'),
+  //   ),
 };
 
 const compiledData = {
   direct: [],
   application: [],
-  locked: [],
+  // locked: [],
   all: [],
 }
 
@@ -44,8 +44,8 @@ const missingServers = [];
 for (let serverId = start; serverId < end; serverId++) {
   const isDirect = (rawData.direct.indexOf(serverId) != -1)?1:0;
   const isAppOnly = (rawData.application.indexOf(serverId) != -1)?1:0;
-  const isLocked = (rawData.locked.indexOf(serverId) != -1)?1:0;
-  const found = (isDirect + isAppOnly + isLocked);
+  // const isLocked = (rawData.locked.indexOf(serverId) != -1)?1:0;
+  const found = (isDirect + isAppOnly /*+ isLocked*/);
   if (found > 1) {
     duplicatedServers.push(serverId);
   } else if (found === 0) {
@@ -54,7 +54,7 @@ for (let serverId = start; serverId < end; serverId++) {
     compiledData.all.push(serverId);
     if (isDirect === 1) compiledData.direct.push(serverId);
     else if (isAppOnly === 1) compiledData.application.push(serverId);
-    else if (isLocked === 1) compiledData.locked.push(serverId);
+    // else if (isLocked === 1) compiledData.locked.push(serverId);
   }
 }
 
@@ -72,9 +72,11 @@ const AppOnlyTagList = compiledData.application
   .map((serverId) => '<span class="server-tag server2">S' + serverId + '</span>')
   .join('\n');
 
-const LockedTagList = compiledData.application
+/*
+const LockedTagList = compiledData.locked
   .map((serverId) => '<span class="server-tag server1">S' + serverId + '</span>')
   .join('\n');
+*/
 
 fs.writeFileSync(
   `${exportDirectory}/server-status-2.html`,
@@ -82,5 +84,5 @@ fs.writeFileSync(
     .replaceAll('{{SEASON}}', season)
     .replace('{{DIRECT-TRANSFER SERVERS}}', DirectTransferTagList)
     .replace('{{APPLICATION-ONLy SERVERS}}', AppOnlyTagList)
-    .replace('{{LOCKED SERVERS}}', LockedTagList)
+    // .replace('{{LOCKED SERVERS}}', LockedTagList)
 );

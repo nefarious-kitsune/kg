@@ -70,7 +70,7 @@ const AppOnlyTagList = compiledData.application
   .map((serverId) => '<span class="server-tag server2">S' + serverId + '</span>')
   .join('\n');
 
-const LockedTagList = compiledData.application
+const LockedTagList = compiledData.locked
   .map((serverId) => '<span class="server-tag server1">S' + serverId + '</span>')
   .join('\n');
 
