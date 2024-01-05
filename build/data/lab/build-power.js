@@ -2,12 +2,12 @@ import fs from 'fs';
 import {getDateFormatStrings} from '../../utils/date-utils.js';
 
 const exportDirectory = '../../../docs/data';
-const jsFileName = 'reagent-upgrade-cost.js';
-const jsonFileName = 'reagent-upgrade-cost.json';
-const htmlFileName = 'reagent-upgrade-cost.html';
-const sheetLink = 'https://docs.google.com/spreadsheets/d/12nYx5eZFv-58mNlyelezxu3RIl7tV2IUyvmiij0y_OY/edit?usp=sharing';
+const jsFileName = 'magic-power.js';
+const jsonFileName = 'magic-power.json';
+const htmlFileName = 'magic-power.html';
+const sheetLink = 'https://docs.google.com/spreadsheets/d/1eY8rgjvqBpPcNTvLu43f7MytCy_9_AiC5w-VFNihGdM/edit?usp=sharing';
 
-const tableName = 'Light/Dark Reagent Upgrade';
+const tableName = 'Light/Dark Magic Power';
 
 const tableDate = new Date();
 const fmtTableDate = getDateFormatStrings(tableDate);
@@ -23,46 +23,37 @@ function readTsvFile(fName) {
   return fs.readFileSync(fName, 'utf-8').split('\n');
 }
 
-const upgradeData = readTsvFile('reagent-upgrade-cost.tsv');
+const upgradeData = readTsvFile('reagent-power.tsv');
 let totalLightReagentCost = 0;
 
 for (let rowIdx = 1; rowIdx < upgradeData.length; rowIdx++) {
   let [
     level,
-    nextLevel,
-    lightCost,
-    darkCost
+    lightPower,
+    darkPower
   ] = upgradeData[rowIdx].split('\t');
 
   level = parseInt(level);
-  lightCost = parseInt(lightCost);
-  darkCost = parseInt(darkCost) || null;
-
-  totalLightReagentCost += lightCost;
+  lightPower = parseInt(lightPower);
 
   compiledData.data.push(
     {
       'level': level,
-      'light-reagent-cost': lightCost,
-      'dark-reagent-cost': darkCost,
+      'light-power': lightPower,
+      'dark-power': lightPower,
     }
   )
 }
 
 let exportedJSON = JSON.stringify(compiledData, null, '  ');
-let exportedJs =
-  'const ReagentUpgradeCost = ' +
-  JSON.stringify(compiledData.data, null, '  ');
-
 fs.writeFileSync(`${exportDirectory}/${jsonFileName}`, exportedJSON);
-fs.writeFileSync(`${exportDirectory}/${jsFileName}`, exportedJs);
 
 const tableBody1 = []; //   0  ..  499
 const tableBody2 = []; // 500  ..  999
 const tableBody3 = []; // 1000 .. 1499
 const tableBody4 = []; // 1500 .. 1999
 
-let cumulatedCost = 0;
+let previousPower = 0;
 
 for (let level = 0; level < 2000; level++) {
   let tableBody;
@@ -72,20 +63,25 @@ for (let level = 0; level < 2000; level++) {
   else tableBody = tableBody1;
 
   const data = compiledData.data[level];
-  const lightReagentCost = data['light-reagent-cost'];
+  const lightPower = data['light-power'];
 
   tableBody.push(`<tr">`)
-  tableBody.push(`<td class="level-col">${data.level} <span class="next-level">» ${data.level+1}</span></td>`);
-  tableBody.push(`<td class="cost-col">${lightReagentCost}</td>`);
-  tableBody.push(`<td class="cost-col">${totalLightReagentCost - cumulatedCost}</td>`);
-  tableBody.push('</tr>');
+  tableBody.push(`<td class="level-col">${data.level}</td>`);
 
-  cumulatedCost += lightReagentCost;
+  if (level > 0) {
+    const powerIncrease = lightPower - previousPower;
+    tableBody.push(`<td class="power-col"><span class="delta">+${powerIncrease}</span></td>`);
+    previousPower = lightPower;
+  } else {
+    tableBody.push(`<td class="power-col"></td>`);
+  }
+
+  tableBody.push(`<td class="power-col">${lightPower}</td>`);
+  tableBody.push('</tr>');
 }
 
-const htmlTemplate = fs.readFileSync('upgrade.html', 'utf-8');
+const htmlTemplate = fs.readFileSync('power.html', 'utf-8');
 const htmlOutput = htmlTemplate
-  .replaceAll('{{RESOURCE NAME}}', 'Light Reagent')
   .replace('{{JSON FILE NAME}}', jsonFileName)
   .replace('{{SHEET LINK}}', sheetLink)
   .replace('{{Data 1}}', tableBody1.join('\n'))

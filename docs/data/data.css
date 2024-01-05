@@ -1,30 +1,28 @@
-/*
- green : 28501f 3b7b2b 5db552 72cf6c
- blue  : 182a3b 285d8a 448bd1 7ac1eb
- purple: 522c60 75338d 8d42a1 d386d4
- gold  : 644625 ae5b21 e0bb50 f6db79
- gray  : 1d2231 3a4361 485363 638ad3
-*/
-
 table { border-collapse: collapse; position: relative;}
 
+.power-table th,
+.power-table td,
 .upgrade-table th,
 .upgrade-table td {
   padding: 0.1rem 0.5rem;
   font-size: 1rem;
 }
 
+.power-table,
 .upgrade-table {
   border-collapse: collapse;
   border: 0.1rem solid var(--miku-dark-red);
 }
 
+.power-table th,
 .upgrade-table th {
   background: var(--miku-dark-red);
   color: var(--miku-gold);
   font-weight: normal;
   padding: 0.5rem;
 }
+
+.power-table td,
 .upgrade-table td {
   background: white;
   color: black;
@@ -32,22 +30,7 @@ table { border-collapse: collapse; position: relative;}
   padding: 0.5rem;
 }
 
-table.witchLab th {
-  background: var(--miku-dark-red);
-  color: var(--miku-gold);
-  font-weight: normal;
-  padding: 0.5rem;
-}
-
-table.witchLab td {
-  background: white;
-  color: black;
-  font-weight: normal;
-  padding: 0.5rem; 
-  border-top: 0.1rem solid var(--miku-dark-red);
-}
-
-.upgrade-table .level-col  {
+.upgrade-table .level-col {
   width: 8rem;
   text-align: left;
 }
@@ -56,6 +39,10 @@ table.witchLab td {
 .upgrade-table th.req-col   { width: 8rem; }
 .upgrade-table th.verification-col  { width: 6rem; }
 
+.power-table .level-col { width: 4rem; }
+.power-table th.power-col  { width: 8rem; }
+
+.power-table td.power-col,
 .upgrade-table td.cost-col,
 .upgrade-table td.req-col {
   text-align: right;
@@ -64,16 +51,6 @@ table.witchLab td {
 .upgrade-table td.verification-col  {
   text-align: left;
 }
-
-/*
-.unverified {
-  text-decoration-line: underline;
-  text-decoration-style: wavy;
-  text-decoration-color: var(--red);
-  text-decoration-thickness: 1px;
-  text-underline-offset: 0.1rem;
-}
-*/
 
 .unverified:before {
   content: '?';
@@ -90,12 +67,13 @@ table.witchLab td {
   color: var(--miku-red);
 }
 
-
+.power-table thead tr th,
 .upgrade-table thead tr th {
   position: sticky;
   top: 0;
 }
 
+.power-table tbody tr:nth-child(even) td,
 .upgrade-table tbody tr:nth-child(even) td {
   background: var(--pale-neutral);
 }
@@ -108,10 +86,15 @@ table.witchLab td {
   background: var(--primary-1);
 }
 
+.power-table tfoot th,
+.power-table tfoot td,
 .upgrade-table tfoot th,
 .upgrade-table tfoot td {
   background: var(--miku-gold);
 }
+
+.power-table .delta,
+.upgrade-table .delta { font-size: 0.8rem; }
 
 .upgrade-table .next-level {
   color: var(--neutral);
