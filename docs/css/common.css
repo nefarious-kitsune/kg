@@ -632,6 +632,10 @@ table.simple th {
   padding: 0.5rem;
   border: 0.11rem solid var(--miku-dark-red);
 }
+table.simple td {
+  vertical-align: top;
+}
+
 table.simple thead th {
   background: var(--miku-red);
   color: white;
