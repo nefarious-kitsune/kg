@@ -113,6 +113,10 @@ table.witchLab td {
   background: var(--miku-gold);
 }
 
+.upgrade-table .next-level {
+  color: var(--neutral);
+}
+
 .costUnit {
   color: var(--dark-neutral);
   padding-left: 0.2rem;

@@ -1,0 +1,121 @@
+<html>
+<head>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Miku's Shrine: {{RESOURCE NAME}} Upgrade Cost</title>
+  <link rel="icon" type="image/x-icon" href="../images/logo_mini.png">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://kg.kitsune21.com/">
+  <meta property="og:title" content="Miku's Shrine | {{RESOURCE NAME}} Upgrade Cost">
+  <meta property="og:description" content="Upgrade cost for {{RESOURCE NAME}}">
+  <meta property="og:image" content="https://kg.kitsune21.com/images/sheet-2x_n.png">
+  <link href="../css/common.css" rel="stylesheet" />
+  <link href="./data.css" rel="stylesheet" />
+  <script src="./data-common.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", (e) => getDom(4))
+  </script>
+</head>
+<body>
+
+<header id="header">
+  <div id="breadcrumb-wrapper"><nav>
+    <a class="link" href="../content">Home</a>
+    <span class="chevron">›</span>
+    <a class="link" href="./">Upgrade</a>
+    <span class="chevron">›</span>
+    <span class="current">{{RESOURCE NAME}} Upgrade Cost</span>
+  </nav></div>
+</header>
+
+<main>
+<h1>{{RESOURCE NAME}} Upgrade Cost</h1>
+
+<p>
+  This table shows the upgrade cost for {{RESOURCE NAME}}.
+  Information is provided by Drukel.
+</p>
+
+<p>See also:</p>
+
+<ul class="butterfly">
+  <li><a href="../tools/labUpgradeCalculator">Upgrade calculator</a></li>
+</ul>
+
+<div class="tabbed-table-wrapper-content">
+<div class="tabbed-table-tab-bar">
+<button onclick="switchTab(0)" id="data-tab-0" class="tab focused">0 &hellip; 499</button>
+<button onclick="switchTab(1)" id="data-tab-1" class="tab">500 &hellip; 999</button>
+<button onclick="switchTab(2)" id="data-tab-2" class="tab">1000 &hellip; 1499</button>
+<button onclick="switchTab(3)" id="data-tab-3" class="tab">1500 &hellip; 1999</button>
+<div class="extra">
+  <a href="./{{JSON FILE NAME}}">JSON</a>
+  |
+  <a href="{{SHEET LINK}}">Sheet</a>
+</div>
+</div>
+
+<div class="tabbed-table-content" id="data-content-0">
+<table class="upgrade-table">
+<thead>
+<tr>
+<th class="level-col">Level</th>
+<th class="cost-col">{{RESOURCE NAME}} Cost (one level)</th>
+<th class="cost-col">{{RESOURCE NAME}} Cost (max level)</th>
+</tr>
+</thead>
+<tbody>
+{{Data 1}}
+</tbody>
+</table>
+</div>
+
+<div class="tabbed-table-content" id="data-content-1">
+<table class="upgrade-table">
+<thead>
+<tr>
+<th class="level-col">Level</th>
+<th class="cost-col">{{RESOURCE NAME}} Cost (one level)</th>
+<th class="cost-col">{{RESOURCE NAME}} Cost (max level)</th>
+</tr>
+</thead>
+<tbody>
+{{Data 2}}
+</tbody>
+</table>
+</div>
+
+<div class="tabbed-table-content" id="data-content-2">
+<table class="upgrade-table">
+<thead>
+<tr>
+<th class="level-col">Level</th>
+<th class="cost-col">{{RESOURCE NAME}} Cost (one level)</th>
+<th class="cost-col">{{RESOURCE NAME}} Cost (max level)</th>
+</tr>
+</thead>
+<tbody>
+{{Data 3}}
+</tbody>
+</table>
+</div>
+
+<div class="tabbed-table-content" id="data-content-3">
+<table class="upgrade-table">
+<thead>
+<tr>
+<th class="level-col">Level</th>
+<th class="cost-col">{{RESOURCE NAME}} Cost (one level)</th>
+<th class="cost-col">{{RESOURCE NAME}} Cost (max level)</th>
+</tr>
+</thead>
+<tbody>
+{{Data 4}}
+</tbody>
+</table>
+</div>
+
+</div>
+</main>
+
+</body>
+</html>
