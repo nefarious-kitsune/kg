@@ -1,0 +1,7 @@
+.item-list-container {
+  column-width: 14rem;
+}
+
+.expired {
+  color: var(--neutral);
+}
