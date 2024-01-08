@@ -1,0 +1,321 @@
+<html>
+<head>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Miku's Shrine: Season's Challenge</title>
+  <link rel="icon" type="image/x-icon" href="../images/logo_mini.png">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://kg.kitsune21.com/">
+  <meta property="og:title" content="Miku's Shrine | Season's Challenge">
+  <meta property="og:description" content="In-game event: Season's Challenge">
+  <meta property="og:image" content="">
+  <link href="../css/common.css" rel="stylesheet" />
+  <link href="./event-data.css" rel="stylesheet" />
+  <link href="../css/model-image.css" rel="stylesheet" />
+  <script src="../js/model-image.js"></script>
+  <style>
+    .difficulty {
+      display: list-item;
+      list-style-position: outside;
+      padding: 0 0 0 0.2rem;
+      margin: 0 0 0 0.8rem;
+    }
+
+    .difficulty::marker {
+      display: inline-block;
+      content: "●";
+    }
+
+    .difficulty.unknown::marker { color: var(--pale-neutral); }
+    .difficulty.easy::marker { color: var(--primary-4); }
+    .difficulty.normal::marker { color: var(--primary-3); }
+    .difficulty.hard::marker { color: var(--primary-1); }
+    .difficulty.very-hard::marker { color: var(--red); }
+  </style>
+</head>
+<body>
+
+<header id="header">
+  <div id="breadcrumb-wrapper"><nav>
+    <a class="link" href="../content">Home</a>
+    <span class="chevron">›</span>
+    <a class="link" href="./">Events</a>
+    <span class="chevron">›</span>
+    <span class="current">Season's Challenge</span>
+  </nav></div>
+</header>
+
+<div id="modal-container">
+<button class="close" onclick="closeModal()">&times;</button>
+<img id="modal-image">
+<div id="modal-caption"></div>
+</div>
+  
+<main>
+<h1>Season Challenge</h1>
+
+<p>Season Challenge is a 5-day event that let players obtain Hero Cards
+of a featured hero by fulfilling certain quests.
+</p>
+
+<table class="simple">
+<thead>
+<tr>
+<th>Date</th>
+<th>Featured</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>2023-12-11 ~ 2023-12-15</th>
+<td>Blackwell</td>
+</tr>
+<tr>
+<th>2023-12-11 ~ 2023-12-15</th>
+<td>Ptolemy</td>
+</tr>
+</tbody>
+</table>  
+
+<h2>Event Format</h2>
+
+<table class="simple">
+<thead>
+<tr>
+<th>Name</th>
+<th>Screenshot</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>Season Challenge</th>
+<td><a class="modal-link" data-caption="Season Challenge: Season Challenge"
+  href="https://cdn.discordapp.com/attachments/1193726830167994438/1193726914322505758/IMG_0995.png"
+>Screenshot</a></td>
+</tr>
+
+<tr>
+<th>Season Achievements</th>
+<td><a class="modal-link" data-caption="Season Challenge: Season Achievements"
+  href="https://cdn.discordapp.com/attachments/1193726830167994438/1193726914796466216/IMG_0996.png"
+>Screenshot</a></td>
+</tr>
+
+<tr>
+<th>Warrior Chest</th>
+<td>
+  <!--
+  <a class="modal-link" data-caption="Season Challenge: Warrior Chest"
+    href=""
+  >Screenshot</a>
+  -->
+</td>
+</tr>
+
+<tr>
+<th>Season Luxury Gift</th>
+<td><a class="modal-link" data-caption="Season Challenge: Season Luxury Gift"
+  href="https://cdn.discordapp.com/attachments/1193726830167994438/1193726915241054238/IMG_0998.png"
+>Screenshot</a></td>
+</tr>
+    
+</tbody>
+</table>
+
+<h2></h2>
+
+<table class="simple">
+<thead>
+<tr>
+<th>Challenge</th>
+<th>Difficulty</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>Log in for 1 day(s)</td>
+  <td><span class="difficulty easy">Easy</span></td>
+</tr>
+<tr>
+  <td>Log in for 2 day(s)</td>
+  <td><span class="difficulty easy">Easy</span></td> 
+</tr>
+  <td>Log in for 3 day(s)</td>
+  <td><span class="difficulty easy">Easy</span></td>
+</tr>
+<tr>
+  <td>Log in for 4 day(s)</td>
+  <td><span class="difficulty easy">Easy</span></td>
+</tr>
+<tr>
+  <td>Independently gather 500000 Gold</td>
+  <td><span class="difficulty easy">Easy</span></td>
+</tr>
+<tr>
+  <td>Independently gather 1000000 Gold</td>
+  <td><span class="difficulty easy">Easy</span></td>
+</tr>
+<tr>
+  <td>Independently gather 4000000 Gold</td>
+  <td><span class="difficulty easy">Easy</span></td>
+</tr>
+<tr>
+  <td>Independently gather 8000000 Gold</td>
+  <td><span class="difficulty hard">Difficult</span></td>
+</tr>
+<tr>
+  <td>Independently respond to Alliance Help 10 time(s) in total</td>
+  <td><span class="difficulty easy">Easy</span></td>
+</tr>
+<tr>
+  <td>Independently respond to Alliance Help 20 time(s) in total</td>
+  <td><span class="difficulty easy">Easy</span></td>
+</tr>
+<tr>
+  <td>Independently respond to Alliance Help 40 time(s) in total</td>
+  <td><span class="difficulty easy">Easy</span></td>
+</tr>
+<tr>
+  <td>Independently respond to Alliance Help 60 time(s) in total</td>
+  <td><span class="difficulty easy">Easy</span></td>
+</tr>
+<tr>
+  <td>Independently respond to Alliance Help 80 time(s) in total</td>
+  <td><span class="difficulty normal">Normal</span></td>
+</tr>
+<tr>
+  <td><span style="font-style:italic">Featured hero</span> reaches Lv. 10</td>
+  <td><span class="difficulty easy">Easy</span></td>
+</tr>
+<tr>
+  <td><span style="font-style:italic">Featured hero</span> reaches Lv. 50</td>
+  <td><span class="difficulty easy">Easy</span></td>
+</tr>
+<tr>
+  <td><span style="font-style:italic">Featured hero</span> reaches Lv. 100</td>
+  <td><span class="difficulty easy">Easy</span></td>
+</tr>
+
+<tr>
+  <td><span style="font-style:italic">Featured hero</span> Star Level reaches 2 Star(s)</td>
+  <td><span class="difficulty hard">Difficult</span></td>
+</tr>
+<tr>
+  <td><span style="font-style:italic">Featured hero</span> Star Level reaches 3 Star(s)</td>
+  <td><span class="difficulty very-hard">Very difficult</span></td>
+</tr>
+<tr>
+  <td><span style="font-style:italic">Featured hero</span> Star Level reaches 4 Star(s)</td>
+  <td><span class="difficulty very-hard">Very difficult</span></td>
+</tr>
+<tr>
+  <td><span style="font-style:italic">Featured hero</span> Star Level reaches 5 Star(s)</td>
+  <td><span class="difficulty very-hard">Very difficult</span></td>
+</tr>
+<tr>
+  <td>Perform Advanced Recruitment 20 time(s)</td>
+  <td><span class="difficulty easy">Easy</span></td>
+</tr>
+<tr>
+  <td>Perform Advanced Recruitment 50 time(s)</td>
+  <td><span class="difficulty easy">Easy</span></td>
+</tr>
+<tr>
+  <td>Perform Advanced Recruitment 100 time(s)</td>
+  <td><span class="difficulty easy">Easy</span></td>
+</tr>
+<tr>
+  <td>Perform Advanced Recruitment 200 time(s)</td>
+  <td><span class="difficulty hard">Difficult</span></td>
+</tr>
+<tr>
+  <td>Gather 10 000 000 Mithril in the Dimensional Treasure</td>
+  <td><span class="difficulty easy">Easy</span></td>
+</tr>
+<tr>
+  <td>Gather 40 000 000 Mithril in the Dimensional Treasure</td>
+  <td><span class="difficulty easy">Easy</span></td>
+</tr>
+<tr>
+  <td>Gather 60 000 000 Mithril in the Dimensional Treasure</td>
+  <td><span class="difficulty easy">Easy</span></td>
+</tr>
+<tr>
+  <td>Gather 100 000 000 Mithril in the Dimensional Treasure</td>
+  <td><span class="difficulty hard">Difficult</span></td>
+</tr>
+<tr>
+  <td>Perform Normal Recruitment 2000 time(s)</td>
+  <td><span class="difficulty easy">Easy</span></td>
+</tr>
+<tr>
+  <td>Perform Normal Recruitment 4000 time(s)</td>
+  <td><span class="difficulty easy">Easy</span></td>
+</tr>
+<tr>
+  <td>Perform Normal Recruitment 6000 time(s)</td>
+  <td><span class="difficulty easy">Easy</span></td>
+</tr>
+<tr>
+  <td>Perform Normal Recruitment 8000 time(s)</td>
+  <td><span class="difficulty normal">Normal</span></td>
+</tr>
+<tr>
+  <td>Perform Normal Recruitment 10000 time(s)</td>
+  <td><span class="difficulty normal">Normal</span></td>
+</tr>
+<tr>
+  <td>Challenge any level of Titans 50 time(s)</td>
+  <td><span class="difficulty easy">Easy</span></td>
+</tr>
+<tr>
+  <td>Challenge any level of Titans 120 time(s)</td>
+  <td><span class="difficulty easy">Easy</span></td>
+</tr>
+<tr>
+  <td>Challenge any level of Titans 250 time(s)</td>
+  <td><span class="difficulty easy">Easy</span></td>
+</tr>
+<tr>
+  <td>Challenge any level of Titans 400 time(s)</td>
+  <td><span class="difficulty easy">Easy</span></td>
+</tr>
+<tr>
+  <td>Challenge any level of monsters 100 time(s)</td>
+  <td><span class="difficulty easy">Easy</span></td>
+</tr>
+<tr>
+  <td>Challenge any level of monsters 300 time(s)</td>
+  <td><span class="difficulty easy">Easy</span></td>
+</tr>
+<tr>
+  <td>Challenge any level of monsters 800 time(s)</td>
+  <td><span class="difficulty hard">Difficult</span></td>
+</tr>
+<tr>
+  <td>Gain 500 Purchase Points in total</td>
+  <td><span class="difficulty very-hard">P2P only</span></td>
+</tr>
+<tr>
+  <td>Gain 1200 Purchase Points i total
+  </td>
+  <td><span class="difficulty very-hard">P2P only</span></td>
+</tr>
+<tr>
+  <td>Gain 6500 Purchase Points in Total</td>
+  <td><span class="difficulty very-hard">P2P only</span></td>
+</tr>
+<tr>
+  <td>Gain 14000 Purchase Points in Total</td>
+  <td><span class="difficulty very-hard">P2P only</span></td>
+</tr>
+<tr>
+  <td>Gain 42000 Purchase Points in Total</td>
+  <td><span class="difficulty very-hard">P2P only</span></td>
+</tr>
+
+</tbody>
+</table> 
+
+</main>
+</body>
+</html>
