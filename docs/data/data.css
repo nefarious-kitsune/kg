@@ -100,6 +100,7 @@ table { border-collapse: collapse; position: relative;}
   color: var(--neutral);
 }
 
+.unit,
 .costUnit {
   color: var(--dark-neutral);
   padding-left: 0.2rem;

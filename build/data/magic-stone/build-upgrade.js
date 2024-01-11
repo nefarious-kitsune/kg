@@ -60,7 +60,6 @@ for (let tier = 0; tier < maxTier; tier++) {
 const htmlTemplate = fs.readFileSync('upgrade.html', 'utf-8');
 const htmlOutput = htmlTemplate
   .replace('{{TABBED CONTENT}}', tabbedContent)
-  .replace('{{TIER COUNT}}', maxTier)
   ;
 
 fs.writeFileSync(
