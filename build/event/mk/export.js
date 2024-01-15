@@ -2,16 +2,31 @@ import fs from 'fs';
 import {getDateFormatStrings, getUTCDate} from '../../utils/date-utils.js';
 import {formatPoint} from '../../utils/number-utils.js';
 
-const sheetLink = 'https://docs.google.com/spreadsheets/d/1mn85xiMae53coWYnJ-j5TMgIDeWvpaIz64i1n5239q0/edit?usp=sharing';
-const eventStartDate = getUTCDate(2023, 11, 20);
+const sheetLink = 'https://docs.google.com/spreadsheets/d/1grJPcA61Mc7wxZ8BDvGd4qoCrKqKsQe7VeGLoI92dZw/edit?usp=sharing';
+const eventStartDate = getUTCDate(2024, 1, 8);
 const eventName = 'Mightiest Kingdom';
 const eventDuration = 6; // 6-days
 const eventPrefix = 'mk-';
 
-const MaxPhasePoints = (550 * 1000 * 1000); // non UP week
-const MaxFinalPoints = (850 * 1000 * 1000); // non UP week
-// const MaxPhasePoints = (1.5 * 1000 * 1000 * 1000); // Up week
-// const MaxFinalPoints = (2.2 * 1000 * 1000 * 1000); // Up week
+/** @type {boolean} - Indicating if the data only contains the final points */
+const FinalPointOnly = true;
+
+/** @type {boolean} - Indicating if the week also has Ultimate Power event */
+const UltimatePowerWeek = false;
+
+/** @type {number} - Maximum point in the phase point bars */
+let MaxPhasePoints;
+
+/** @type {number} - Maximum point in the final point bars */
+let MaxFinalPoints;
+
+if (UltimatePowerWeek) {
+  MaxPhasePoints = (1.5 * 1000 * 1000 * 1000);
+  MaxFinalPoints = (2.2 * 1000 * 1000 * 1000);
+} else {
+  MaxPhasePoints = (0.9 * 1000 * 1000 * 1000);
+  MaxFinalPoints = (1.8 * 1000 * 1000 * 1000);
+}
 
 const eventEndDate = new Date(eventStartDate);
 eventEndDate.setDate(eventStartDate.getDate() + eventDuration - 1);
@@ -19,7 +34,7 @@ eventEndDate.setDate(eventStartDate.getDate() + eventDuration - 1);
 const fmtEventStart = getDateFormatStrings(eventStartDate);
 const fmtEventEnd   = getDateFormatStrings(eventEndDate);
 
-const exportDirectory = '../../../../docs/events';
+const exportDirectory = '../../../docs/events';
 const dateFragment = `${fmtEventStart.YYYY}${fmtEventStart.MM}${fmtEventStart.DD}`;
 const exportFileFragment = `${exportDirectory}/${eventPrefix}${dateFragment}`;
 
@@ -237,32 +252,42 @@ for (let svsIdx = 0; svsIdx < servers1.length; svsIdx++) {
     '</td>',
   );
 
-  // First row
+  // Generate data for rank #1
   bodyContent.push(svsHTML[svsIdx].final.row1);
-  
-  bodyContent.push(svsHTML[svsIdx].phase1.row1);
-  bodyContent.push(svsHTML[svsIdx].phase2.row1);
-  bodyContent.push(svsHTML[svsIdx].phase3.row1);
-  bodyContent.push(svsHTML[svsIdx].phase4.row1);
-  bodyContent.push(svsHTML[svsIdx].phase5.row1);
-  bodyContent.push(svsHTML[svsIdx].phase6.row1);
+
+  if (!FinalPointOnly) {
+    bodyContent.push(svsHTML[svsIdx].phase1.row1);
+    bodyContent.push(svsHTML[svsIdx].phase2.row1);
+    bodyContent.push(svsHTML[svsIdx].phase3.row1);
+    bodyContent.push(svsHTML[svsIdx].phase4.row1);
+    bodyContent.push(svsHTML[svsIdx].phase5.row1);
+    bodyContent.push(svsHTML[svsIdx].phase6.row1);
+  }
 
   bodyContent.push('</tr>');
  
+  // Generate data for rank #2, #3, and #4/#20
   ['2', '3', '4'].forEach((rowIdx) => {
     bodyContent.push('<tr>');
     bodyContent.push(svsHTML[svsIdx].final['row' + rowIdx]);
-    bodyContent.push(svsHTML[svsIdx].phase1['row' + rowIdx]);
-    bodyContent.push(svsHTML[svsIdx].phase2['row' + rowIdx]);
-    bodyContent.push(svsHTML[svsIdx].phase3['row' + rowIdx]);
-    bodyContent.push(svsHTML[svsIdx].phase4['row' + rowIdx]);
-    bodyContent.push(svsHTML[svsIdx].phase5['row' + rowIdx]);
-    bodyContent.push(svsHTML[svsIdx].phase6['row' + rowIdx]);
+    if (!FinalPointOnly) {
+      bodyContent.push(svsHTML[svsIdx].phase1['row' + rowIdx]);
+      bodyContent.push(svsHTML[svsIdx].phase2['row' + rowIdx]);
+      bodyContent.push(svsHTML[svsIdx].phase3['row' + rowIdx]);
+      bodyContent.push(svsHTML[svsIdx].phase4['row' + rowIdx]);
+      bodyContent.push(svsHTML[svsIdx].phase5['row' + rowIdx]);
+      bodyContent.push(svsHTML[svsIdx].phase6['row' + rowIdx]);
+    }
+    
     bodyContent.push('</tr>')
   })
 }
 
-const htmlTemplate =  fs.readFileSync('template.html', 'utf-8');
+const htmlTemplate =
+  (FinalPointOnly)?
+  fs.readFileSync('template-final-only.html', 'utf-8'):
+  fs.readFileSync('template.html', 'utf-8');
+
 const exportedHtml = htmlTemplate
   .replace('{{TABLE BODY}}', bodyContent.join('\n'))
   .replaceAll('{{SERVER LIST}}'  , serverList)
@@ -274,4 +299,4 @@ const exportedHtml = htmlTemplate
   .replaceAll('{{EVENT END MONTH}}', fmtEventEnd.MM)
   .replaceAll('{{EVENT END DAY}}'  , fmtEventEnd.DD);
 
-  fs.writeFileSync(`${exportFileFragment}.html`, exportedHtml);
+fs.writeFileSync(`${exportFileFragment}.html`, exportedHtml);
