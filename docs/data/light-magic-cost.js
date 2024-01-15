@@ -1,4 +1,4 @@
-const ReagentUpgradeCost = [
+const LightMagicUpgradeCost = [
   {
     "level": 1,
     "light-reagent-cost": 5,

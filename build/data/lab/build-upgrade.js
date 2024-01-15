@@ -2,12 +2,12 @@ import fs from 'fs';
 import {getDateFormatStrings} from '../../utils/date-utils.js';
 
 const exportDirectory = '../../../docs/data';
-const jsFileName = 'reagent-upgrade-cost.js';
-const jsonFileName = 'reagent-upgrade-cost.json';
-const htmlFileName = 'reagent-upgrade-cost.html';
+const jsFileName = 'light-magic-cost.js';
+const jsonFileName = 'light-magic-upgrade-cost.json';
+const htmlFileName = 'light-magic-cost.html';
 const sheetLink = 'https://docs.google.com/spreadsheets/d/12nYx5eZFv-58mNlyelezxu3RIl7tV2IUyvmiij0y_OY/edit?usp=sharing';
 
-const tableName = 'Light/Dark Reagent Upgrade';
+const tableName = 'Light Magic Upgrade Cost';
 
 const tableDate = new Date();
 const fmtTableDate = getDateFormatStrings(tableDate);
@@ -23,7 +23,7 @@ function readTsvFile(fName) {
   return fs.readFileSync(fName, 'utf-8').split('\n');
 }
 
-const upgradeData = readTsvFile('reagent-upgrade-cost.tsv');
+const upgradeData = readTsvFile('light-magic-upgrade-cost.tsv');
 let totalLightReagentCost = 0;
 
 for (let rowIdx = 1; rowIdx < upgradeData.length; rowIdx++) {
@@ -51,7 +51,7 @@ for (let rowIdx = 1; rowIdx < upgradeData.length; rowIdx++) {
 
 let exportedJSON = JSON.stringify(compiledData, null, '  ');
 let exportedJs =
-  'const ReagentUpgradeCost = ' +
+  'const LightMagicUpgradeCost = ' +
   JSON.stringify(compiledData.data, null, '  ');
 
 fs.writeFileSync(`${exportDirectory}/${jsonFileName}`, exportedJSON);
@@ -85,7 +85,6 @@ for (let level = 0; level < 2000; level++) {
 
 const htmlTemplate = fs.readFileSync('upgrade.html', 'utf-8');
 const htmlOutput = htmlTemplate
-  .replaceAll('{{RESOURCE NAME}}', 'Light Reagent')
   .replace('{{JSON FILE NAME}}', jsonFileName)
   .replace('{{SHEET LINK}}', sheetLink)
   .replace('{{Data 1}}', tableBody1.join('\n'))
