@@ -160,7 +160,6 @@ const dataContentTemplate =
 <th class="cost-col">Wood Cost</th>
 <th class="cost-col">Iron Cost</th>
 <th class="cost-col">Gold Cost</th>
-<th class="verification-col">Verification</th>
 </tr>
 </thead>
 <tbody>
