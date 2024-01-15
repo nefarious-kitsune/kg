@@ -1,0 +1,1046 @@
+{
+  "event": "Mightiest Kingdom",
+  "start-date": "2023-12-18",
+  "data": [
+    {
+      "server": "S909",
+      "server2": "S449",
+      "final": {
+        "1": {
+          "points": 1180234320,
+          "server": "S909"
+        },
+        "2": {
+          "points": 1069690480,
+          "server": "S909"
+        },
+        "3": {
+          "points": 1028599280,
+          "server": "S449"
+        },
+        "20": {
+          "points": 235191070,
+          "server": "S449"
+        }
+      },
+      "phase1": {
+        "1": {
+          "points": null,
+          "server": ""
+        },
+        "2": {
+          "points": null,
+          "server": ""
+        },
+        "3": {
+          "points": null,
+          "server": ""
+        },
+        "4": {
+          "points": null,
+          "server": ""
+        }
+      },
+      "phase2": {
+        "1": {
+          "points": null,
+          "server": ""
+        },
+        "2": {
+          "points": null,
+          "server": ""
+        },
+        "3": {
+          "points": null,
+          "server": ""
+        },
+        "4": {
+          "points": null,
+          "server": ""
+        }
+      },
+      "phase3": {
+        "1": {
+          "points": null,
+          "server": ""
+        },
+        "2": {
+          "points": null,
+          "server": ""
+        },
+        "3": {
+          "points": null,
+          "server": ""
+        },
+        "4": {
+          "points": null,
+          "server": ""
+        }
+      },
+      "phase4": {
+        "1": {
+          "points": null,
+          "server": ""
+        },
+        "2": {
+          "points": null,
+          "server": ""
+        },
+        "3": {
+          "points": null,
+          "server": ""
+        },
+        "4": {
+          "points": null,
+          "server": ""
+        }
+      },
+      "phase5": {
+        "1": {
+          "points": null,
+          "server": ""
+        },
+        "2": {
+          "points": null,
+          "server": ""
+        },
+        "3": {
+          "points": null,
+          "server": ""
+        },
+        "4": {
+          "points": null,
+          "server": ""
+        }
+      },
+      "phase6": {
+        "1": {
+          "points": null,
+          "server": ""
+        },
+        "2": {
+          "points": null,
+          "server": ""
+        },
+        "3": {
+          "points": null,
+          "server": ""
+        },
+        "4": {
+          "points": null,
+          "server": ""
+        }
+      }
+    },
+    {
+      "server": "S404",
+      "server2": "S699",
+      "final": {
+        "1": {
+          "points": 1947244490,
+          "server": "S404"
+        },
+        "2": {
+          "points": 1522272120,
+          "server": "S404"
+        },
+        "3": {
+          "points": 1401272900,
+          "server": "S404"
+        },
+        "20": {
+          "points": 230999100,
+          "server": "S699"
+        }
+      },
+      "phase1": {
+        "1": {
+          "points": null,
+          "server": ""
+        },
+        "2": {
+          "points": null,
+          "server": ""
+        },
+        "3": {
+          "points": null,
+          "server": ""
+        },
+        "4": {
+          "points": null,
+          "server": ""
+        }
+      },
+      "phase2": {
+        "1": {
+          "points": null,
+          "server": ""
+        },
+        "2": {
+          "points": null,
+          "server": ""
+        },
+        "3": {
+          "points": null,
+          "server": ""
+        },
+        "4": {
+          "points": null,
+          "server": ""
+        }
+      },
+      "phase3": {
+        "1": {
+          "points": null,
+          "server": ""
+        },
+        "2": {
+          "points": null,
+          "server": ""
+        },
+        "3": {
+          "points": null,
+          "server": ""
+        },
+        "4": {
+          "points": null,
+          "server": ""
+        }
+      },
+      "phase4": {
+        "1": {
+          "points": null,
+          "server": ""
+        },
+        "2": {
+          "points": null,
+          "server": ""
+        },
+        "3": {
+          "points": null,
+          "server": ""
+        },
+        "4": {
+          "points": null,
+          "server": ""
+        }
+      },
+      "phase5": {
+        "1": {
+          "points": null,
+          "server": ""
+        },
+        "2": {
+          "points": null,
+          "server": ""
+        },
+        "3": {
+          "points": null,
+          "server": ""
+        },
+        "4": {
+          "points": null,
+          "server": ""
+        }
+      },
+      "phase6": {
+        "1": {
+          "points": null,
+          "server": ""
+        },
+        "2": {
+          "points": null,
+          "server": ""
+        },
+        "3": {
+          "points": null,
+          "server": ""
+        },
+        "4": {
+          "points": null,
+          "server": ""
+        }
+      }
+    },
+    {
+      "server": "S1104",
+      "server2": "S661",
+      "final": {
+        "1": {
+          "points": 1889767820,
+          "server": "S1104"
+        },
+        "2": {
+          "points": 1134129260,
+          "server": "S1104"
+        },
+        "3": {
+          "points": 1055162750,
+          "server": "S661"
+        },
+        "20": {
+          "points": 242578900,
+          "server": "S661"
+        }
+      },
+      "phase1": {
+        "1": {
+          "points": null,
+          "server": ""
+        },
+        "2": {
+          "points": null,
+          "server": ""
+        },
+        "3": {
+          "points": null,
+          "server": ""
+        },
+        "4": {
+          "points": null,
+          "server": ""
+        }
+      },
+      "phase2": {
+        "1": {
+          "points": null,
+          "server": ""
+        },
+        "2": {
+          "points": null,
+          "server": ""
+        },
+        "3": {
+          "points": null,
+          "server": ""
+        },
+        "4": {
+          "points": null,
+          "server": ""
+        }
+      },
+      "phase3": {
+        "1": {
+          "points": null,
+          "server": ""
+        },
+        "2": {
+          "points": null,
+          "server": ""
+        },
+        "3": {
+          "points": null,
+          "server": ""
+        },
+        "4": {
+          "points": null,
+          "server": ""
+        }
+      },
+      "phase4": {
+        "1": {
+          "points": null,
+          "server": ""
+        },
+        "2": {
+          "points": null,
+          "server": ""
+        },
+        "3": {
+          "points": null,
+          "server": ""
+        },
+        "4": {
+          "points": null,
+          "server": ""
+        }
+      },
+      "phase5": {
+        "1": {
+          "points": null,
+          "server": ""
+        },
+        "2": {
+          "points": null,
+          "server": ""
+        },
+        "3": {
+          "points": null,
+          "server": ""
+        },
+        "4": {
+          "points": null,
+          "server": ""
+        }
+      },
+      "phase6": {
+        "1": {
+          "points": null,
+          "server": ""
+        },
+        "2": {
+          "points": null,
+          "server": ""
+        },
+        "3": {
+          "points": null,
+          "server": ""
+        },
+        "4": {
+          "points": null,
+          "server": ""
+        }
+      }
+    },
+    {
+      "server": "S865",
+      "server2": "S1009",
+      "final": {
+        "1": {
+          "points": 1354805607,
+          "server": "S865"
+        },
+        "2": {
+          "points": 1092811980,
+          "server": "S865"
+        },
+        "3": {
+          "points": 977197084,
+          "server": "S1009"
+        },
+        "20": {
+          "points": 295013298,
+          "server": "S1009"
+        }
+      },
+      "phase1": {
+        "1": {
+          "points": null,
+          "server": ""
+        },
+        "2": {
+          "points": null,
+          "server": ""
+        },
+        "3": {
+          "points": null,
+          "server": ""
+        },
+        "4": {
+          "points": null,
+          "server": ""
+        }
+      },
+      "phase2": {
+        "1": {
+          "points": null,
+          "server": ""
+        },
+        "2": {
+          "points": null,
+          "server": ""
+        },
+        "3": {
+          "points": null,
+          "server": ""
+        },
+        "4": {
+          "points": null,
+          "server": ""
+        }
+      },
+      "phase3": {
+        "1": {
+          "points": null,
+          "server": ""
+        },
+        "2": {
+          "points": null,
+          "server": ""
+        },
+        "3": {
+          "points": null,
+          "server": ""
+        },
+        "4": {
+          "points": null,
+          "server": ""
+        }
+      },
+      "phase4": {
+        "1": {
+          "points": null,
+          "server": ""
+        },
+        "2": {
+          "points": null,
+          "server": ""
+        },
+        "3": {
+          "points": null,
+          "server": ""
+        },
+        "4": {
+          "points": null,
+          "server": ""
+        }
+      },
+      "phase5": {
+        "1": {
+          "points": null,
+          "server": ""
+        },
+        "2": {
+          "points": null,
+          "server": ""
+        },
+        "3": {
+          "points": null,
+          "server": ""
+        },
+        "4": {
+          "points": null,
+          "server": ""
+        }
+      },
+      "phase6": {
+        "1": {
+          "points": null,
+          "server": ""
+        },
+        "2": {
+          "points": null,
+          "server": ""
+        },
+        "3": {
+          "points": null,
+          "server": ""
+        },
+        "4": {
+          "points": null,
+          "server": ""
+        }
+      }
+    },
+    {
+      "server": "S1015",
+      "server2": "S468",
+      "final": {
+        "1": {
+          "points": 1135293060,
+          "server": "S1015"
+        },
+        "2": {
+          "points": 1092428320,
+          "server": "S468"
+        },
+        "3": {
+          "points": 825451790,
+          "server": "S468"
+        },
+        "20": {
+          "points": 310647650,
+          "server": "S468"
+        }
+      },
+      "phase1": {
+        "1": {
+          "points": null,
+          "server": ""
+        },
+        "2": {
+          "points": null,
+          "server": ""
+        },
+        "3": {
+          "points": null,
+          "server": ""
+        },
+        "4": {
+          "points": null,
+          "server": ""
+        }
+      },
+      "phase2": {
+        "1": {
+          "points": null,
+          "server": ""
+        },
+        "2": {
+          "points": null,
+          "server": ""
+        },
+        "3": {
+          "points": null,
+          "server": ""
+        },
+        "4": {
+          "points": null,
+          "server": ""
+        }
+      },
+      "phase3": {
+        "1": {
+          "points": null,
+          "server": ""
+        },
+        "2": {
+          "points": null,
+          "server": ""
+        },
+        "3": {
+          "points": null,
+          "server": ""
+        },
+        "4": {
+          "points": null,
+          "server": ""
+        }
+      },
+      "phase4": {
+        "1": {
+          "points": null,
+          "server": ""
+        },
+        "2": {
+          "points": null,
+          "server": ""
+        },
+        "3": {
+          "points": null,
+          "server": ""
+        },
+        "4": {
+          "points": null,
+          "server": ""
+        }
+      },
+      "phase5": {
+        "1": {
+          "points": null,
+          "server": ""
+        },
+        "2": {
+          "points": null,
+          "server": ""
+        },
+        "3": {
+          "points": null,
+          "server": ""
+        },
+        "4": {
+          "points": null,
+          "server": ""
+        }
+      },
+      "phase6": {
+        "1": {
+          "points": null,
+          "server": ""
+        },
+        "2": {
+          "points": null,
+          "server": ""
+        },
+        "3": {
+          "points": null,
+          "server": ""
+        },
+        "4": {
+          "points": null,
+          "server": ""
+        }
+      }
+    },
+    {
+      "server": "S409",
+      "server2": "S885",
+      "final": {
+        "1": {
+          "points": 1074210880,
+          "server": "S409"
+        },
+        "2": {
+          "points": 638233550,
+          "server": "S885"
+        },
+        "3": {
+          "points": 618874560,
+          "server": "S885"
+        },
+        "20": {
+          "points": 174443580,
+          "server": "S409"
+        }
+      },
+      "phase1": {
+        "1": {
+          "points": null,
+          "server": ""
+        },
+        "2": {
+          "points": null,
+          "server": ""
+        },
+        "3": {
+          "points": null,
+          "server": ""
+        },
+        "4": {
+          "points": null,
+          "server": ""
+        }
+      },
+      "phase2": {
+        "1": {
+          "points": null,
+          "server": ""
+        },
+        "2": {
+          "points": null,
+          "server": ""
+        },
+        "3": {
+          "points": null,
+          "server": ""
+        },
+        "4": {
+          "points": null,
+          "server": ""
+        }
+      },
+      "phase3": {
+        "1": {
+          "points": null,
+          "server": ""
+        },
+        "2": {
+          "points": null,
+          "server": ""
+        },
+        "3": {
+          "points": null,
+          "server": ""
+        },
+        "4": {
+          "points": null,
+          "server": ""
+        }
+      },
+      "phase4": {
+        "1": {
+          "points": null,
+          "server": ""
+        },
+        "2": {
+          "points": null,
+          "server": ""
+        },
+        "3": {
+          "points": null,
+          "server": ""
+        },
+        "4": {
+          "points": null,
+          "server": ""
+        }
+      },
+      "phase5": {
+        "1": {
+          "points": null,
+          "server": ""
+        },
+        "2": {
+          "points": null,
+          "server": ""
+        },
+        "3": {
+          "points": null,
+          "server": ""
+        },
+        "4": {
+          "points": null,
+          "server": ""
+        }
+      },
+      "phase6": {
+        "1": {
+          "points": null,
+          "server": ""
+        },
+        "2": {
+          "points": null,
+          "server": ""
+        },
+        "3": {
+          "points": null,
+          "server": ""
+        },
+        "4": {
+          "points": null,
+          "server": ""
+        }
+      }
+    },
+    {
+      "server": "S1111",
+      "server2": "S904",
+      "final": {
+        "1": {
+          "points": 1051456913,
+          "server": "S904"
+        },
+        "2": {
+          "points": 948120150,
+          "server": "S904"
+        },
+        "3": {
+          "points": 798571320,
+          "server": "S1111"
+        },
+        "20": {
+          "points": 203693830,
+          "server": "S904"
+        }
+      },
+      "phase1": {
+        "1": {
+          "points": null,
+          "server": ""
+        },
+        "2": {
+          "points": null,
+          "server": ""
+        },
+        "3": {
+          "points": null,
+          "server": ""
+        },
+        "4": {
+          "points": null,
+          "server": ""
+        }
+      },
+      "phase2": {
+        "1": {
+          "points": null,
+          "server": ""
+        },
+        "2": {
+          "points": null,
+          "server": ""
+        },
+        "3": {
+          "points": null,
+          "server": ""
+        },
+        "4": {
+          "points": null,
+          "server": ""
+        }
+      },
+      "phase3": {
+        "1": {
+          "points": null,
+          "server": ""
+        },
+        "2": {
+          "points": null,
+          "server": ""
+        },
+        "3": {
+          "points": null,
+          "server": ""
+        },
+        "4": {
+          "points": null,
+          "server": ""
+        }
+      },
+      "phase4": {
+        "1": {
+          "points": null,
+          "server": ""
+        },
+        "2": {
+          "points": null,
+          "server": ""
+        },
+        "3": {
+          "points": null,
+          "server": ""
+        },
+        "4": {
+          "points": null,
+          "server": ""
+        }
+      },
+      "phase5": {
+        "1": {
+          "points": null,
+          "server": ""
+        },
+        "2": {
+          "points": null,
+          "server": ""
+        },
+        "3": {
+          "points": null,
+          "server": ""
+        },
+        "4": {
+          "points": null,
+          "server": ""
+        }
+      },
+      "phase6": {
+        "1": {
+          "points": null,
+          "server": ""
+        },
+        "2": {
+          "points": null,
+          "server": ""
+        },
+        "3": {
+          "points": null,
+          "server": ""
+        },
+        "4": {
+          "points": null,
+          "server": ""
+        }
+      }
+    },
+    {
+      "server": "S1052",
+      "server2": "S499",
+      "final": {
+        "1": {
+          "points": 308537000,
+          "server": "S1052"
+        },
+        "2": {
+          "points": 203759100,
+          "server": "S1052"
+        },
+        "3": {
+          "points": 170224700,
+          "server": "S499"
+        },
+        "20": {
+          "points": 47462000,
+          "server": "S1052"
+        }
+      },
+      "phase1": {
+        "1": {
+          "points": null,
+          "server": ""
+        },
+        "2": {
+          "points": null,
+          "server": ""
+        },
+        "3": {
+          "points": null,
+          "server": ""
+        },
+        "4": {
+          "points": null,
+          "server": ""
+        }
+      },
+      "phase2": {
+        "1": {
+          "points": null,
+          "server": ""
+        },
+        "2": {
+          "points": null,
+          "server": ""
+        },
+        "3": {
+          "points": null,
+          "server": ""
+        },
+        "4": {
+          "points": null,
+          "server": ""
+        }
+      },
+      "phase3": {
+        "1": {
+          "points": null,
+          "server": ""
+        },
+        "2": {
+          "points": null,
+          "server": ""
+        },
+        "3": {
+          "points": null,
+          "server": ""
+        },
+        "4": {
+          "points": null,
+          "server": ""
+        }
+      },
+      "phase4": {
+        "1": {
+          "points": null,
+          "server": ""
+        },
+        "2": {
+          "points": null,
+          "server": ""
+        },
+        "3": {
+          "points": null,
+          "server": ""
+        },
+        "4": {
+          "points": null,
+          "server": ""
+        }
+      },
+      "phase5": {
+        "1": {
+          "points": null,
+          "server": ""
+        },
+        "2": {
+          "points": null,
+          "server": ""
+        },
+        "3": {
+          "points": null,
+          "server": ""
+        },
+        "4": {
+          "points": null,
+          "server": ""
+        }
+      },
+      "phase6": {
+        "1": {
+          "points": null,
+          "server": ""
+        },
+        "2": {
+          "points": null,
+          "server": ""
+        },
+        "3": {
+          "points": null,
+          "server": ""
+        },
+        "4": {
+          "points": null,
+          "server": ""
+        }
+      }
+    }
+  ]
+}
