@@ -5,6 +5,25 @@ const BILLION = THOUSAND * MILLION;
 const TRILLION = THOUSAND * BILLION;
 
 /**
+ * Sanitize max point (e.g. convert 12,330,000 to 13,000,000)
+ * @param {number} n - Number
+ * @returns {number}
+ */
+export function sanitizeMaxPoint(n) {
+  if (n >= 10 * TRILLION) return ( ( Math.floor(n/(TRILLION)) + 1) * TRILLION);
+  if (n >=  1 * TRILLION) return ( ( Math.floor(n/(100 * BILLION)) + 1) * 100 * BILLION);
+  if (n >= 100 * BILLION) return ( ( Math.floor(n/( 10 * BILLION)) + 1) *  10 * BILLION);
+  if (n >=  10 * BILLION) return ( ( Math.floor(n/(  1 * BILLION)) + 1) *   1 * BILLION);
+  if (n >=   1 * BILLION) return ( ( Math.floor(n/(100 * MILLION)) + 1) * 100 * MILLION);
+  if (n >= 100 * MILLION) return ( ( Math.floor(n/( 10 * MILLION)) + 1) *  10 * MILLION);
+  if (n >=  10 * MILLION) return ( ( Math.floor(n/(  1 * MILLION)) + 1) *   1 * MILLION);
+  if (n >=   1 * MILLION) return ( ( Math.floor(n/(100 * THOUSAND)) + 1) * 100 * THOUSAND);
+  if (n >= 100 * THOUSAND) return ( ( Math.floor(n/(10 * THOUSAND)) + 1) *  10 * THOUSAND);
+  if (n >=  10 * THOUSAND) return ( ( Math.floor(n/( 1 * THOUSAND)) + 1) *   1 * THOUSAND);
+  return 10 * THOUSAND;
+}
+
+/**
  * Format points
  * @param {number} n - Number
  * @returns {string}
