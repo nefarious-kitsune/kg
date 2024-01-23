@@ -15,10 +15,20 @@ const contentTemplate = readFileSync(
   resolve(ModulePath, './templates/result-content.html'),
   'utf-8');
 
-// Parse TSV files
-for (let eventIdx = 0; eventIdx < EventData.length; eventIdx++) {
+const indexTemplate = readFileSync(
+  resolve(ModulePath, './templates/result-index.html'),
+  'utf-8');
+
+const indexList = [];
+const eventCount = EventData.length;
+
+for (let eventIdx = 0; eventIdx < eventCount; eventIdx++) {
   const currEventData = EventData[eventIdx];
-  if (currEventData['sheet-url'] === '') continue;
+
+  if (currEventData['sheet-url'] === '') {
+    indexList.push(`  <li>${currEventData.date}</li>`);
+    continue;
+  }
 
   currEventData['svs-results'] = [];
   let maxPhasePoints = [0, 0, 0, 0, 0, 0];
@@ -201,7 +211,6 @@ for (let eventIdx = 0; eventIdx < EventData.length; eventIdx++) {
     htmlOutputSnippets.push(snippets);
   }
 
-  const tabList = [];
   const tableBody = [];
 
   for (let svsIdx = 0; svsIdx < servers1.length; svsIdx++) {
@@ -283,10 +292,11 @@ for (let eventIdx = 0; eventIdx < EventData.length; eventIdx++) {
     .replaceAll('{{TABS}}'  , tabButtons.join('\n'))
   ;
 
+  const outputName = `mk-${yyyy}${mm}${dd}`;
   const outputOptions = {
     type: 'chart',
     path: {
-      base: `/events/mk-yyyymmdd`,
+      base: `/events/${outputName}`,
       icon: '/images/logo_mini.png',
       css: [
         '/css/common.css',
@@ -307,11 +317,53 @@ for (let eventIdx = 0; eventIdx < EventData.length; eventIdx++) {
     description: `Mightiest Kingdom results for the week of ${yyyy}-${mm}-${dd} (${serverList})`,
   };
   const output = buildBase(outputOptions);
+  writeFileSync(`../../../docs/events/${outputName}.html`, output);
 
-  writeFileSync(`../../../docs/events/mk-${yyyy}${mm}${dd}.html`, output);
+  const tempArray = servers1.concat(servers2).sort();
+  const chunkedList = [];
+  const chunkSize = 9;
+  for (let i = 0; i < tempArray.length; i += chunkSize) {
+    const chunk = tempArray.slice(i, i + chunkSize);
+    chunkedList.push(chunk.join(', '));
+  }
+
+  let indexLink = `<a href="./${outputName}">${currEventData.date}</a>`;
+  if (currEventData['up-week']) indexLink = '<strong>'+indexLink+'</strong>';
+  indexList.push(
+    `  <li>${indexLink}\n (` + chunkedList.join(',\n  ') + ')</li>'
+  );
 }
 
+const indexContentHtml = indexTemplate
+  .replaceAll('{{ENTRY LIST}}' , indexList.join('\n'));
+
+const outputName = `mk-results`;
+const outputOptions = {
+  type: 'chart',
+  path: {
+    base: `/events/${outputName}`,
+    icon: '/images/logo_mini.png',
+    css: [
+      '/css/common.css',
+      '/events/event-data.css',
+    ],
+    js: [
+      '/events/event-common.js',
+    ]
+  },
+  breadcrumb: [
+    {path: '/content', title: 'Home'},
+    {path: '/events/', title: 'Events'},
+  ],
+  content: indexContentHtml,
+  shortTitle: 'Mightiest Kingdom Results',
+  title: `Past Mightiest Kingdom Results`,
+  description: `Past results of the Mightiest Kingdom event`,
+};
+const indexOutput = buildBase(outputOptions);
+writeFileSync(`../../../docs/events/${outputName}.html`, indexOutput);
+
 let exportedJSON = JSON.stringify(EventData, null, '  ');
-writeFileSync('exported.json', exportedJSON);
+writeFileSync(`../../../docs/events/${outputName}.json`, exportedJSON);
 
 // console.log(EventData);

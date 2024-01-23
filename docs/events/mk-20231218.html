@@ -1,47 +1,41 @@
 <html>
 <head>
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Mightiest Kingdom Results (2023-12-18 ~ 2023-12-23) - Miku's Shrine</title>
-  <link rel="icon" type="image/x-icon" href="../images/logo_mini.png">
+  <title>2023-12-18 Mightiest Kingdom Results - Miku's Shrine</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://kg.kitsune21.com/">
-  <meta property="og:title" content="Mightiest Kingdom Results (2023-12-18 ~ 2023-12-23) - Miku's Shrine">
-  <meta property="og:description" content="2023-12-18 Mightiest Kingdom point results for S1009, S1015, S1052, S1104, S1111, S404, S409, S449, S468, S499, S661, S699, S865, S885, S904, S909">
+  <meta property="og:title" content="2023-12-18 Mightiest Kingdom Results - Miku's Shrine">
+  <meta property="og:description" content="Mightiest Kingdom results for the week of 2023-12-18 (S1002, S1009, S1015, S1028, S1030, S1041, S1046, S1052, S1072, S1104, S1111, S1119, S1121, S1140, S1141, S404, S409, S415, S427, S442, S448, S449, S468, S498, S499, S558, S661, S699, S863, S865, S875, S885, S904, S909, S914, S915, S942, S991)">
   <meta property="og:image" content="https://kg.kitsune21.com/images/chart-2x_n.png">
-  <link href="../css/common.css" rel="stylesheet" />
-  <link href="./event-data.css" rel="stylesheet" />
-  <script src="./event-common.js"></script>
+  <link rel="icon" href="../images/logo_mini.png"  type="image/x-icon">
+  <link href="../css/common.css" rel="stylesheet">
+  <link href="event-data.css" rel="stylesheet">
+  <script src="event-common.js"></script>
 </head>
 <body>
-
 <header id="header">
   <div id="breadcrumb-wrapper"><nav>
+    <span class="chevron">›</span>
     <a class="link" href="../content">Home</a>
     <span class="chevron">›</span>
     <a class="link" href="./">Events</a>
     <span class="chevron">›</span>
-    <a class="link" href="./mk-results">Mightiest Kingdom Results</a>
+    <a class="link" href="mk-results">Mightiest Kingdom Results</a>
     <span class="chevron">›</span>
     <span class="current">2023-12-18</span>
   </nav></div>
 </header>
 <main>
-
-<h1>2023-12-18 Mightiest Kingdom</h1>
+<h1>2023-12-18 Mightiest Kingdom Results</h1>
 <h2>Event Rewards</h2>
 
-<ul class="butterfly">
-  <li>Overall Ranking (1-3): T9 Hero Gear</li>
-  <li>Overall Ranking (4-20): T8 Hero Gear</li>
-  <li>Daily: T6 Hero Gear</li>
-</ul>
+<p>See <a href="./mk-rewards">Mightiest Kingdom rewards</a>.</p>
 
-<h2>Server Results</h2>
+<h2>Event Results</h2>
 
-<p><a href="./mk-points">Event points</a> earned by players in various servers in the
-2023-12-18 ~
-2023-12-23
-Mightiest Kingdom event.
+<p><a href="./mk-points">Mightiest Kingdom Event points</a> earned by
+players in various servers in the week of 
+2023-12-18.
 
 Use this and other <a href="./mk-results">past results</a>
 as a reference to decide when you want to spend resources on
@@ -50,131 +44,282 @@ as a reference to decide when you want to spend resources on
 
 <div class="tabbed-table-wrapper-content" id="mk-result-content">
 <div class="tabbed-table-tab-bar">
-  <button id="mk-tab-0" class="tab focused">Final</button>
+  <button onclick="switchMKTableView(0)" id="mk-tab-0" class="tab focused">Final</button>
+<button onclick="switchMKTableView(1)" id="mk-tab-1" class="tab">Phase 1~2</button>
+<button id="mk-tab-2" class="tab" disabled="disabled">Phase 3~4</button>
+<button onclick="switchMKTableView(3)" id="mk-tab-3" class="tab">Phase 5~6</button>
   <div class="extra">Download:
-  <a href="./mk-20231218.json">JSON</a> |
-  <a href="https://docs.google.com/spreadsheets/d/1oU_HD_kQTQGbU4FI-01U41ZVXnpSY4NWKG6IJLIVE9Q/edit?usp=sharing">Sheet</a>
+  <a href="./mk-results.json">JSON</a> |
+  <a href="https://docs.google.com/spreadsheets/u/0/d/1oU_HD_kQTQGbU4FI-01U41ZVXnpSY4NWKG6IJLIVE9Q/edit">Sheet</a>
   </div>
 </div>
 <div class="tabbed-table-content">
 <table class="result-table mk view-final" id="mk-result-table">
 <thead>
 <tr>
-<th class="server-col">Server</th>
+<th class="server-col">Servers</th>
 <th class="final-col">Mightiest Kingdom Final</th>
+<th class="phase-1-col">1. Unit</th>
+<th class="phase-4-col">2. Summon</th>
+<th class="phase-2-col">3. Witch</th>
+<th class="phase-5-col">4. Gear</th>
+<th class="phase-3-col">5. Dragon</th>
+<th class="phase-6-col">6. Heroes</th>
 </tr>
 </thead>
 <tbody>
 <tr class="new-section">
-<td rowspan="4" class="server-col"><span class="server-tag server1">S909</span><span class="svs-vs">vs</span><span class="server-tag server2">S449</span></td>
-<td class="final-col"><span class="event-rank-1">1</span><div class="bar-container"><span class="bar server1" style="width: 53.6%">&thinsp;</span></div><span class="bar-text">1.18B</span><div class="server-tag right server1">S909</div></td>
-</tr>
-<tr>
-<td class="final-col"><span class="event-rank-2">2</span><div class="bar-container"><span class="bar server1" style="width: 48.6%">&thinsp;</span></div><span class="bar-text">1.07B</span><div class="server-tag right server1">S909</div></td>
-</tr>
-<tr>
-<td class="final-col"><span class="event-rank-3">3</span><div class="bar-container"><span class="bar server2" style="width: 46.8%">&thinsp;</span></div><span class="bar-text">1.03B</span><div class="server-tag right server2">S449</div></td>
-</tr>
-<tr>
-<td class="final-col"><span class="event-rank">20</span><div class="bar-container"><span class="bar server2" style="width: 10.7%">&thinsp;</span></div><span class="bar-text">235M</span><div class="server-tag right server2">S449</div></td>
-</tr>
-<tr class="new-section">
 <td rowspan="4" class="server-col"><span class="server-tag server1">S404</span><span class="svs-vs">vs</span><span class="server-tag server2">S699</span></td>
-<td class="final-col"><span class="event-rank-1">1</span><div class="bar-container"><span class="bar server1" style="width: 88.5%">&thinsp;</span></div><span class="bar-text">1.95B</span><div class="server-tag right server1">S404</div></td>
+<td class="final-col"><span class="event-rank-1">1</span><div class="bar-container"><span class="bar server1" style="width: 97.4%">&thinsp;</span></div><span class="bar-text">1.95B</span><div class="server-tag right server1">S404</div></td>
 </tr>
 <tr>
-<td class="final-col"><span class="event-rank-2">2</span><div class="bar-container"><span class="bar server1" style="width: 69.2%">&thinsp;</span></div><span class="bar-text">1.52B</span><div class="server-tag right server1">S404</div></td>
+<td class="final-col"><span class="event-rank-2">2</span><div class="bar-container"><span class="bar server1" style="width: 76.1%">&thinsp;</span></div><span class="bar-text">1.52B</span><div class="server-tag right server1">S404</div></td>
 </tr>
 <tr>
-<td class="final-col"><span class="event-rank-3">3</span><div class="bar-container"><span class="bar server1" style="width: 63.7%">&thinsp;</span></div><span class="bar-text">1.40B</span><div class="server-tag right server1">S404</div></td>
+<td class="final-col"><span class="event-rank-3">3</span><div class="bar-container"><span class="bar server1" style="width: 70.1%">&thinsp;</span></div><span class="bar-text">1.40B</span><div class="server-tag right server1">S404</div></td>
 </tr>
 <tr>
-<td class="final-col"><span class="event-rank">20</span><div class="bar-container"><span class="bar server2" style="width: 10.5%">&thinsp;</span></div><span class="bar-text">231M</span><div class="server-tag right server2">S699</div></td>
+<td class="final-col"><span class="event-rank">20</span><div class="bar-container"><span class="bar server2" style="width: 11.5%">&thinsp;</span></div><span class="bar-text">231M</span><div class="server-tag right server2">S699</div></td>
 </tr>
 <tr class="new-section">
 <td rowspan="4" class="server-col"><span class="server-tag server1">S1104</span><span class="svs-vs">vs</span><span class="server-tag server2">S661</span></td>
-<td class="final-col"><span class="event-rank-1">1</span><div class="bar-container"><span class="bar server1" style="width: 85.9%">&thinsp;</span></div><span class="bar-text">1.89B</span><div class="server-tag right server1">S1104</div></td>
+<td class="final-col"><span class="event-rank-1">1</span><div class="bar-container"><span class="bar server1" style="width: 94.5%">&thinsp;</span></div><span class="bar-text">1.89B</span><div class="server-tag right server1">S1104</div></td>
 </tr>
 <tr>
-<td class="final-col"><span class="event-rank-2">2</span><div class="bar-container"><span class="bar server1" style="width: 51.6%">&thinsp;</span></div><span class="bar-text">1.13B</span><div class="server-tag right server1">S1104</div></td>
+<td class="final-col"><span class="event-rank-2">2</span><div class="bar-container"><span class="bar server1" style="width: 56.7%">&thinsp;</span></div><span class="bar-text">1.13B</span><div class="server-tag right server1">S1104</div></td>
 </tr>
 <tr>
-<td class="final-col"><span class="event-rank-3">3</span><div class="bar-container"><span class="bar server2" style="width: 48.0%">&thinsp;</span></div><span class="bar-text">1.06B</span><div class="server-tag right server2">S661</div></td>
+<td class="final-col"><span class="event-rank-3">3</span><div class="bar-container"><span class="bar server2" style="width: 52.8%">&thinsp;</span></div><span class="bar-text">1.06B</span><div class="server-tag right server2">S661</div></td>
 </tr>
 <tr>
-<td class="final-col"><span class="event-rank">20</span><div class="bar-container"><span class="bar server2" style="width: 11.0%">&thinsp;</span></div><span class="bar-text">243M</span><div class="server-tag right server2">S661</div></td>
+<td class="final-col"><span class="event-rank">20</span><div class="bar-container"><span class="bar server2" style="width: 12.1%">&thinsp;</span></div><span class="bar-text">243M</span><div class="server-tag right server2">S661</div></td>
+</tr>
+<tr class="new-section">
+<td rowspan="4" class="server-col"><span class="server-tag server1">S863</span><span class="svs-vs">vs</span><span class="server-tag server2">S427</span></td>
+<td class="final-col"><span class="event-rank-1">1</span><div class="bar-container"><span class="bar server1" style="width: 78.8%">&thinsp;</span></div><span class="bar-text">1.58B</span><div class="server-tag right server1">S863</div></td>
+</tr>
+<tr>
+<td class="final-col"><span class="event-rank-2">2</span><div class="bar-container"><span class="bar server1" style="width: 78.1%">&thinsp;</span></div><span class="bar-text">1.56B</span><div class="server-tag right server1">S863</div></td>
+</tr>
+<tr>
+<td class="final-col"><span class="event-rank-3">3</span><div class="bar-container"><span class="bar server1" style="width: 73.5%">&thinsp;</span></div><span class="bar-text">1.47B</span><div class="server-tag right server1">S863</div></td>
+</tr>
+<tr>
+<td class="final-col"><span class="event-rank">20</span><div class="bar-container"><span class="bar server1" style="width: 13.7%">&thinsp;</span></div><span class="bar-text">273M</span><div class="server-tag right server1">S863</div></td>
+</tr>
+<tr class="new-section">
+<td rowspan="4" class="server-col"><span class="server-tag server1">S875</span><span class="svs-vs">vs</span><span class="server-tag server2">S915</span></td>
+<td class="final-col"><span class="event-rank-1">1</span><div class="bar-container"><span class="bar server1" style="width: 68.3%">&thinsp;</span></div><span class="bar-text">1.37B</span><div class="server-tag right server1">S875</div></td>
+</tr>
+<tr>
+<td class="final-col"><span class="event-rank-2">2</span><div class="bar-container"><span class="bar server1" style="width: 52.8%">&thinsp;</span></div><span class="bar-text">1.06B</span><div class="server-tag right server1">S875</div></td>
+</tr>
+<tr>
+<td class="final-col"><span class="event-rank-3">3</span><div class="bar-container"><span class="bar server1" style="width: 50.5%">&thinsp;</span></div><span class="bar-text">1.01B</span><div class="server-tag right server1">S875</div></td>
+</tr>
+<tr>
+<td class="final-col"><span class="event-rank">20</span><div class="bar-container"><span class="bar server2" style="width: 13.5%">&thinsp;</span></div><span class="bar-text">270M</span><div class="server-tag right server2">S915</div></td>
 </tr>
 <tr class="new-section">
 <td rowspan="4" class="server-col"><span class="server-tag server1">S865</span><span class="svs-vs">vs</span><span class="server-tag server2">S1009</span></td>
-<td class="final-col"><span class="event-rank-1">1</span><div class="bar-container"><span class="bar server1" style="width: 61.6%">&thinsp;</span></div><span class="bar-text">1.35B</span><div class="server-tag right server1">S865</div></td>
+<td class="final-col"><span class="event-rank-1">1</span><div class="bar-container"><span class="bar server1" style="width: 67.7%">&thinsp;</span></div><span class="bar-text">1.35B</span><div class="server-tag right server1">S865</div></td>
 </tr>
 <tr>
-<td class="final-col"><span class="event-rank-2">2</span><div class="bar-container"><span class="bar server1" style="width: 49.7%">&thinsp;</span></div><span class="bar-text">1.09B</span><div class="server-tag right server1">S865</div></td>
+<td class="final-col"><span class="event-rank-2">2</span><div class="bar-container"><span class="bar server1" style="width: 54.6%">&thinsp;</span></div><span class="bar-text">1.09B</span><div class="server-tag right server1">S865</div></td>
 </tr>
 <tr>
-<td class="final-col"><span class="event-rank-3">3</span><div class="bar-container"><span class="bar server2" style="width: 44.4%">&thinsp;</span></div><span class="bar-text">977M</span><div class="server-tag right server2">S1009</div></td>
+<td class="final-col"><span class="event-rank-3">3</span><div class="bar-container"><span class="bar server2" style="width: 48.9%">&thinsp;</span></div><span class="bar-text">977M</span><div class="server-tag right server2">S1009</div></td>
 </tr>
 <tr>
-<td class="final-col"><span class="event-rank">20</span><div class="bar-container"><span class="bar server2" style="width: 13.4%">&thinsp;</span></div><span class="bar-text">295M</span><div class="server-tag right server2">S1009</div></td>
+<td class="final-col"><span class="event-rank">20</span><div class="bar-container"><span class="bar server2" style="width: 14.8%">&thinsp;</span></div><span class="bar-text">295M</span><div class="server-tag right server2">S1009</div></td>
+</tr>
+<tr class="new-section">
+<td rowspan="4" class="server-col"><span class="server-tag server1">S909</span><span class="svs-vs">vs</span><span class="server-tag server2">S449</span></td>
+<td class="final-col"><span class="event-rank-1">1</span><div class="bar-container"><span class="bar server1" style="width: 59.0%">&thinsp;</span></div><span class="bar-text">1.18B</span><div class="server-tag right server1">S909</div></td>
+</tr>
+<tr>
+<td class="final-col"><span class="event-rank-2">2</span><div class="bar-container"><span class="bar server1" style="width: 53.5%">&thinsp;</span></div><span class="bar-text">1.07B</span><div class="server-tag right server1">S909</div></td>
+</tr>
+<tr>
+<td class="final-col"><span class="event-rank-3">3</span><div class="bar-container"><span class="bar server2" style="width: 51.4%">&thinsp;</span></div><span class="bar-text">1.03B</span><div class="server-tag right server2">S449</div></td>
+</tr>
+<tr>
+<td class="final-col"><span class="event-rank">20</span><div class="bar-container"><span class="bar server2" style="width: 11.8%">&thinsp;</span></div><span class="bar-text">235M</span><div class="server-tag right server2">S449</div></td>
 </tr>
 <tr class="new-section">
 <td rowspan="4" class="server-col"><span class="server-tag server1">S1015</span><span class="svs-vs">vs</span><span class="server-tag server2">S468</span></td>
-<td class="final-col"><span class="event-rank-1">1</span><div class="bar-container"><span class="bar server1" style="width: 51.6%">&thinsp;</span></div><span class="bar-text">1.14B</span><div class="server-tag right server1">S1015</div></td>
+<td class="final-col"><span class="event-rank-1">1</span><div class="bar-container"><span class="bar server1" style="width: 56.8%">&thinsp;</span></div><span class="bar-text">1.14B</span><div class="server-tag right server1">S1015</div></td>
 </tr>
 <tr>
-<td class="final-col"><span class="event-rank-2">2</span><div class="bar-container"><span class="bar server2" style="width: 49.7%">&thinsp;</span></div><span class="bar-text">1.09B</span><div class="server-tag right server2">S468</div></td>
+<td class="final-col"><span class="event-rank-2">2</span><div class="bar-container"><span class="bar server2" style="width: 54.6%">&thinsp;</span></div><span class="bar-text">1.09B</span><div class="server-tag right server2">S468</div></td>
 </tr>
 <tr>
-<td class="final-col"><span class="event-rank-3">3</span><div class="bar-container"><span class="bar server2" style="width: 37.5%">&thinsp;</span></div><span class="bar-text">825M</span><div class="server-tag right server2">S468</div></td>
+<td class="final-col"><span class="event-rank-3">3</span><div class="bar-container"><span class="bar server2" style="width: 41.3%">&thinsp;</span></div><span class="bar-text">825M</span><div class="server-tag right server2">S468</div></td>
 </tr>
 <tr>
-<td class="final-col"><span class="event-rank">20</span><div class="bar-container"><span class="bar server2" style="width: 14.1%">&thinsp;</span></div><span class="bar-text">311M</span><div class="server-tag right server2">S468</div></td>
+<td class="final-col"><span class="event-rank">20</span><div class="bar-container"><span class="bar server2" style="width: 15.5%">&thinsp;</span></div><span class="bar-text">311M</span><div class="server-tag right server2">S468</div></td>
 </tr>
 <tr class="new-section">
 <td rowspan="4" class="server-col"><span class="server-tag server1">S409</span><span class="svs-vs">vs</span><span class="server-tag server2">S885</span></td>
-<td class="final-col"><span class="event-rank-1">1</span><div class="bar-container"><span class="bar server1" style="width: 48.8%">&thinsp;</span></div><span class="bar-text">1.07B</span><div class="server-tag right server1">S409</div></td>
+<td class="final-col"><span class="event-rank-1">1</span><div class="bar-container"><span class="bar server1" style="width: 53.7%">&thinsp;</span></div><span class="bar-text">1.07B</span><div class="server-tag right server1">S409</div></td>
 </tr>
 <tr>
-<td class="final-col"><span class="event-rank-2">2</span><div class="bar-container"><span class="bar server2" style="width: 29.0%">&thinsp;</span></div><span class="bar-text">638M</span><div class="server-tag right server2">S885</div></td>
+<td class="final-col"><span class="event-rank-2">2</span><div class="bar-container"><span class="bar server2" style="width: 31.9%">&thinsp;</span></div><span class="bar-text">638M</span><div class="server-tag right server2">S885</div></td>
 </tr>
 <tr>
-<td class="final-col"><span class="event-rank-3">3</span><div class="bar-container"><span class="bar server2" style="width: 28.1%">&thinsp;</span></div><span class="bar-text">619M</span><div class="server-tag right server2">S885</div></td>
+<td class="final-col"><span class="event-rank-3">3</span><div class="bar-container"><span class="bar server2" style="width: 30.9%">&thinsp;</span></div><span class="bar-text">619M</span><div class="server-tag right server2">S885</div></td>
 </tr>
 <tr>
-<td class="final-col"><span class="event-rank">20</span><div class="bar-container"><span class="bar server1" style="width: 7.9%">&thinsp;</span></div><span class="bar-text">174M</span><div class="server-tag right server1">S409</div></td>
+<td class="final-col"><span class="event-rank">20</span><div class="bar-container"><span class="bar server1" style="width: 8.7%">&thinsp;</span></div><span class="bar-text">174M</span><div class="server-tag right server1">S409</div></td>
+</tr>
+<tr class="new-section">
+<td rowspan="4" class="server-col"><span class="server-tag server1">S1030</span><span class="svs-vs">vs</span><span class="server-tag server2">S914</span></td>
+<td class="final-col"><span class="event-rank-1">1</span><div class="bar-container"><span class="bar server1" style="width: 52.9%">&thinsp;</span></div><span class="bar-text">1.06B</span><div class="server-tag right server1">S1030</div></td>
+</tr>
+<tr>
+<td class="final-col"><span class="event-rank-2">2</span><div class="bar-container"><span class="bar server1" style="width: 41.1%">&thinsp;</span></div><span class="bar-text">821M</span><div class="server-tag right server1">S1030</div></td>
+</tr>
+<tr>
+<td class="final-col"><span class="event-rank-3">3</span><div class="bar-container"><span class="bar server2" style="width: 40.8%">&thinsp;</span></div><span class="bar-text">815M</span><div class="server-tag right server2">S914</div></td>
+</tr>
+<tr>
+<td class="final-col"><span class="event-rank">20</span><div class="bar-container"><span class="bar server1" style="width: 11.5%">&thinsp;</span></div><span class="bar-text">229M</span><div class="server-tag right server1">S1030</div></td>
 </tr>
 <tr class="new-section">
 <td rowspan="4" class="server-col"><span class="server-tag server1">S1111</span><span class="svs-vs">vs</span><span class="server-tag server2">S904</span></td>
-<td class="final-col"><span class="event-rank-1">1</span><div class="bar-container"><span class="bar server2" style="width: 47.8%">&thinsp;</span></div><span class="bar-text">1.05B</span><div class="server-tag right server2">S904</div></td>
+<td class="final-col"><span class="event-rank-1">1</span><div class="bar-container"><span class="bar server2" style="width: 52.6%">&thinsp;</span></div><span class="bar-text">1.05B</span><div class="server-tag right server2">S904</div></td>
 </tr>
 <tr>
-<td class="final-col"><span class="event-rank-2">2</span><div class="bar-container"><span class="bar server2" style="width: 43.1%">&thinsp;</span></div><span class="bar-text">948M</span><div class="server-tag right server2">S904</div></td>
+<td class="final-col"><span class="event-rank-2">2</span><div class="bar-container"><span class="bar server2" style="width: 47.4%">&thinsp;</span></div><span class="bar-text">948M</span><div class="server-tag right server2">S904</div></td>
 </tr>
 <tr>
-<td class="final-col"><span class="event-rank-3">3</span><div class="bar-container"><span class="bar server1" style="width: 36.3%">&thinsp;</span></div><span class="bar-text">799M</span><div class="server-tag right server1">S1111</div></td>
+<td class="final-col"><span class="event-rank-3">3</span><div class="bar-container"><span class="bar server1" style="width: 39.9%">&thinsp;</span></div><span class="bar-text">799M</span><div class="server-tag right server1">S1111</div></td>
 </tr>
 <tr>
-<td class="final-col"><span class="event-rank">20</span><div class="bar-container"><span class="bar server2" style="width: 9.3%">&thinsp;</span></div><span class="bar-text">204M</span><div class="server-tag right server2">S904</div></td>
+<td class="final-col"><span class="event-rank">20</span><div class="bar-container"><span class="bar server2" style="width: 10.2%">&thinsp;</span></div><span class="bar-text">204M</span><div class="server-tag right server2">S904</div></td>
+</tr>
+<tr class="new-section">
+<td rowspan="4" class="server-col"><span class="server-tag server1">S1046</span><span class="svs-vs">vs</span><span class="server-tag server2">S1141</span></td>
+<td class="final-col"><span class="event-rank-1">1</span><div class="bar-container"><span class="bar server1" style="width: 50.2%">&thinsp;</span></div><span class="bar-text">1.00B</span><div class="server-tag right server1">S1046</div></td>
+</tr>
+<tr>
+<td class="final-col"><span class="event-rank-2">2</span><div class="bar-container"><span class="bar server2" style="width: 27.6%">&thinsp;</span></div><span class="bar-text">552M</span><div class="server-tag right server2">S1141</div></td>
+</tr>
+<tr>
+<td class="final-col"><span class="event-rank-3">3</span><div class="bar-container"><span class="bar server1" style="width: 25.4%">&thinsp;</span></div><span class="bar-text">508M</span><div class="server-tag right server1">S1046</div></td>
+</tr>
+<tr>
+<td class="final-col"><span class="event-rank">20</span><div class="bar-container"><span class="bar server1" style="width: 11.6%">&thinsp;</span></div><span class="bar-text">233M</span><div class="server-tag right server1">S1046</div></td>
+</tr>
+<tr class="new-section">
+<td rowspan="4" class="server-col"><span class="server-tag server1">S1041</span><span class="svs-vs">vs</span><span class="server-tag server2">S942</span></td>
+<td class="final-col"><span class="event-rank-1">1</span><div class="bar-container"><span class="bar server1" style="width: 43.5%">&thinsp;</span></div><span class="bar-text">870M</span><div class="server-tag right server1">S1041</div></td>
+</tr>
+<tr>
+<td class="final-col"><span class="event-rank-2">2</span><div class="bar-container"><span class="bar server1" style="width: 27.6%">&thinsp;</span></div><span class="bar-text">552M</span><div class="server-tag right server1">S1041</div></td>
+</tr>
+<tr>
+<td class="final-col"><span class="event-rank-3">3</span><div class="bar-container"><span class="bar server1" style="width: 22.3%">&thinsp;</span></div><span class="bar-text">446M</span><div class="server-tag right server1">S1041</div></td>
+</tr>
+<tr>
+<td class="final-col"><span class="event-rank">20</span><div class="bar-container"><span class="bar server1" style="width: 4.9%">&thinsp;</span></div><span class="bar-text">98.4M</span><div class="server-tag right server1">S1041</div></td>
 </tr>
 <tr class="new-section">
 <td rowspan="4" class="server-col"><span class="server-tag server1">S1052</span><span class="svs-vs">vs</span><span class="server-tag server2">S499</span></td>
-<td class="final-col"><span class="event-rank-1">1</span><div class="bar-container"><span class="bar server1" style="width: 14.0%">&thinsp;</span></div><span class="bar-text">309M</span><div class="server-tag right server1">S1052</div></td>
+<td class="final-col"><span class="event-rank-1">1</span><div class="bar-container"><span class="bar server1" style="width: 39.1%">&thinsp;</span></div><span class="bar-text">782M</span><div class="server-tag right server1">S1052</div></td>
 </tr>
 <tr>
-<td class="final-col"><span class="event-rank-2">2</span><div class="bar-container"><span class="bar server1" style="width: 9.3%">&thinsp;</span></div><span class="bar-text">204M</span><div class="server-tag right server1">S1052</div></td>
+<td class="final-col"><span class="event-rank-2">2</span><div class="bar-container"><span class="bar server1" style="width: 32.4%">&thinsp;</span></div><span class="bar-text">649M</span><div class="server-tag right server1">S1052</div></td>
 </tr>
 <tr>
-<td class="final-col"><span class="event-rank-3">3</span><div class="bar-container"><span class="bar server2" style="width: 7.7%">&thinsp;</span></div><span class="bar-text">170M</span><div class="server-tag right server2">S499</div></td>
+<td class="final-col"><span class="event-rank-3">3</span><div class="bar-container"><span class="bar server1" style="width: 31.8%">&thinsp;</span></div><span class="bar-text">635M</span><div class="server-tag right server1">S1052</div></td>
 </tr>
 <tr>
-<td class="final-col"><span class="event-rank">20</span><div class="bar-container"><span class="bar server1" style="width: 2.2%">&thinsp;</span></div><span class="bar-text">47.5M</span><div class="server-tag right server1">S1052</div></td>
+<td class="final-col"><span class="event-rank">20</span><div class="bar-container"><span class="bar server1" style="width: 12.3%">&thinsp;</span></div><span class="bar-text">247M</span><div class="server-tag right server1">S1052</div></td>
+</tr>
+<tr class="new-section">
+<td rowspan="4" class="server-col"><span class="server-tag server1">S1121</span><span class="svs-vs">vs</span><span class="server-tag server2">S442</span></td>
+<td class="final-col"><span class="event-rank-1">1</span><div class="bar-container"><span class="bar server1" style="width: 36.1%">&thinsp;</span></div><span class="bar-text">723M</span><div class="server-tag right server1">S1121</div></td>
+</tr>
+<tr>
+<td class="final-col"><span class="event-rank-2">2</span><div class="bar-container"><span class="bar server1" style="width: 32.0%">&thinsp;</span></div><span class="bar-text">640M</span><div class="server-tag right server1">S1121</div></td>
+</tr>
+<tr>
+<td class="final-col"><span class="event-rank-3">3</span><div class="bar-container"><span class="bar server1" style="width: 26.6%">&thinsp;</span></div><span class="bar-text">533M</span><div class="server-tag right server1">S1121</div></td>
+</tr>
+<tr>
+<td class="final-col"><span class="event-rank">20</span><div class="bar-container"><span class="bar server2" style="width: 11.6%">&thinsp;</span></div><span class="bar-text">231M</span><div class="server-tag right server2">S442</div></td>
+</tr>
+<tr class="new-section">
+<td rowspan="4" class="server-col"><span class="server-tag server1">S1072</span><span class="svs-vs">vs</span><span class="server-tag server2">S415</span></td>
+<td class="final-col"><span class="event-rank-1">1</span><div class="bar-container"><span class="bar server1" style="width: 31.2%">&thinsp;</span></div><span class="bar-text">624M</span><div class="server-tag right server1">S1072</div></td>
+</tr>
+<tr>
+<td class="final-col"><span class="event-rank-2">2</span><div class="bar-container"><span class="bar server2" style="width: 26.7%">&thinsp;</span></div><span class="bar-text">534M</span><div class="server-tag right server2">S415</div></td>
+</tr>
+<tr>
+<td class="final-col"><span class="event-rank-3">3</span><div class="bar-container"><span class="bar server1" style="width: 25.9%">&thinsp;</span></div><span class="bar-text">519M</span><div class="server-tag right server1">S1072</div></td>
+</tr>
+<tr>
+<td class="final-col"><span class="event-rank">20</span><div class="bar-container"><span class="bar server1" style="width: 8.3%">&thinsp;</span></div><span class="bar-text">166M</span><div class="server-tag right server1">S1072</div></td>
+</tr>
+<tr class="new-section">
+<td rowspan="4" class="server-col"><span class="server-tag server1">S1002</span><span class="svs-vs">vs</span><span class="server-tag server2">S498</span></td>
+<td class="final-col"><span class="event-rank-1">1</span><div class="bar-container"><span class="bar server2" style="width: 31.1%">&thinsp;</span></div><span class="bar-text">623M</span><div class="server-tag right server2">S498</div></td>
+</tr>
+<tr>
+<td class="final-col"><span class="event-rank-2">2</span><div class="bar-container"><span class="bar server1" style="width: 29.3%">&thinsp;</span></div><span class="bar-text">586M</span><div class="server-tag right server1">S1002</div></td>
+</tr>
+<tr>
+<td class="final-col"><span class="event-rank-3">3</span><div class="bar-container"><span class="bar server2" style="width: 27.0%">&thinsp;</span></div><span class="bar-text">541M</span><div class="server-tag right server2">S498</div></td>
+</tr>
+<tr>
+<td class="final-col"><span class="event-rank">20</span><div class="bar-container"><span class="bar server1" style="width: 8.0%">&thinsp;</span></div><span class="bar-text">159M</span><div class="server-tag right server1">S1002</div></td>
+</tr>
+<tr class="new-section">
+<td rowspan="4" class="server-col"><span class="server-tag server1">S1140</span><span class="svs-vs">vs</span><span class="server-tag server2">S1119</span></td>
+<td class="final-col"><span class="event-rank-1">1</span><div class="bar-container"><span class="bar server1" style="width: 27.2%">&thinsp;</span></div><span class="bar-text">543M</span><div class="server-tag right server1">S1140</div></td>
+</tr>
+<tr>
+<td class="final-col"><span class="event-rank-2">2</span><div class="bar-container"><span class="bar server1" style="width: 19.7%">&thinsp;</span></div><span class="bar-text">395M</span><div class="server-tag right server1">S1140</div></td>
+</tr>
+<tr>
+<td class="final-col"><span class="event-rank-3">3</span><div class="bar-container"><span class="bar server1" style="width: 19.4%">&thinsp;</span></div><span class="bar-text">388M</span><div class="server-tag right server1">S1140</div></td>
+</tr>
+<tr>
+<td class="final-col"><span class="event-rank">20</span><div class="bar-container"><span class="bar server2" style="width: 8.0%">&thinsp;</span></div><span class="bar-text">160M</span><div class="server-tag right server2">S1119</div></td>
+</tr>
+<tr class="new-section">
+<td rowspan="4" class="server-col"><span class="server-tag server1">S558</span><span class="svs-vs">vs</span><span class="server-tag server2">S991</span></td>
+<td class="final-col"><span class="event-rank-1">1</span><div class="bar-container"><span class="bar server1" style="width: 25.2%">&thinsp;</span></div><span class="bar-text">504M</span><div class="server-tag right server1">S558</div></td>
+</tr>
+<tr>
+<td class="final-col"><span class="event-rank-2">2</span><div class="bar-container"><span class="bar server1" style="width: 23.8%">&thinsp;</span></div><span class="bar-text">476M</span><div class="server-tag right server1">S558</div></td>
+</tr>
+<tr>
+<td class="final-col"><span class="event-rank-3">3</span><div class="bar-container"><span class="bar server1" style="width: 15.9%">&thinsp;</span></div><span class="bar-text">318M</span><div class="server-tag right server1">S558</div></td>
+</tr>
+<tr>
+<td class="final-col"><span class="event-rank">20</span><div class="bar-container"><span class="bar server2" style="width: 5.5%">&thinsp;</span></div><span class="bar-text">110M</span><div class="server-tag right server2">S991</div></td>
+</tr>
+<tr class="new-section">
+<td rowspan="4" class="server-col"><span class="server-tag server1">S1028</span><span class="svs-vs">vs</span><span class="server-tag server2">S448</span></td>
+<td class="final-col"><span class="event-rank-1">1</span><div class="bar-container"></div><span class="bar-text">N/A</span></td>
+</tr>
+<tr>
+<td class="final-col"><span class="event-rank-2">2</span><div class="bar-container"></div><span class="bar-text">N/A</span></td>
+</tr>
+<tr>
+<td class="final-col"><span class="event-rank-3">3</span><div class="bar-container"></div><span class="bar-text">N/A</span></td>
+</tr>
+<tr>
+<td class="final-col"><span class="event-rank">20</span><div class="bar-container"></div><span class="bar-text">N/A</span></td>
 </tr>
 </tbody>
 </table>
 </div>
 </div>
 
-</div>
 </main>
 </body>
 </html>
