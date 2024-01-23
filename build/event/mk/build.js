@@ -1,302 +1,317 @@
-import fs from 'fs';
-import {getDateFormatStrings, getUTCDate} from '../../utils/date-utils.js';
-import {formatPoint} from '../../utils/number-utils.js';
+import { fileURLToPath } from 'url'
+import { dirname, resolve } from 'path'
+import { readFileSync, writeFileSync } from 'fs'
 
-const sheetLink = 'https://docs.google.com/spreadsheets/d/1grJPcA61Mc7wxZ8BDvGd4qoCrKqKsQe7VeGLoI92dZw/edit?usp=sharing';
-const eventStartDate = getUTCDate(2024, 1, 8);
-const eventName = 'Mightiest Kingdom';
-const eventDuration = 6; // 6-days
-const eventPrefix = 'mk-';
+import { sanitizeMaxPoint, formatPoint } from '../../utils/number-utils.js';
+import { buildBase } from '../../base/build.js';
 
-/** @type {boolean} - Indicating if the data only contains the final points */
-const FinalPointOnly = true;
+const ModulePath = dirname(fileURLToPath(import.meta.url));
 
-/** @type {boolean} - Indicating if the week also has Ultimate Power event */
-const UltimatePowerWeek = false;
+const EventData = JSON.parse(readFileSync(
+  resolve(ModulePath, './data/data.json'),
+  'utf-8'));
 
-/** @type {number} - Maximum point in the phase point bars */
-let MaxPhasePoints;
+const contentTemplate = readFileSync(
+  resolve(ModulePath, './templates/result-content.html'),
+  'utf-8');
 
-/** @type {number} - Maximum point in the final point bars */
-let MaxFinalPoints;
+// Parse TSV files
+for (let eventIdx = 0; eventIdx < EventData.length; eventIdx++) {
+  const currEventData = EventData[eventIdx];
+  if (currEventData['sheet-url'] === '') continue;
 
-if (UltimatePowerWeek) {
-  MaxPhasePoints = (1.5 * 1000 * 1000 * 1000);
-  MaxFinalPoints = (2.2 * 1000 * 1000 * 1000);
-} else {
-  MaxPhasePoints = (0.9 * 1000 * 1000 * 1000);
-  MaxFinalPoints = (1.8 * 1000 * 1000 * 1000);
-}
+  currEventData['svs-results'] = [];
+  let maxPhasePoints = [0, 0, 0, 0, 0, 0];
+  let maxFinalPoints = 0;
 
-const eventEndDate = new Date(eventStartDate);
-eventEndDate.setDate(eventStartDate.getDate() + eventDuration - 1);
+  const yyyy = currEventData.date.substring(0, 4);
+  const mm = currEventData.date.substring(5, 7);
+  const dd = currEventData.date.substring(8, 10);
+  const dataFileName = `./data/mk-${yyyy}${mm}${dd}.tsv`;
 
-const fmtEventStart = getDateFormatStrings(eventStartDate);
-const fmtEventEnd   = getDateFormatStrings(eventEndDate);
+  const rawDataRows = readFileSync(dataFileName, 'utf-8')
+    .replaceAll('\r','')
+    .replaceAll(',','')
+    .split('\n');
 
-const exportDirectory = '../../../docs/events';
-const dateFragment = `${fmtEventStart.YYYY}${fmtEventStart.MM}${fmtEventStart.DD}`;
-const exportFileFragment = `${exportDirectory}/${eventPrefix}${dateFragment}`;
+  const servers1 = rawDataRows[0].split('\t').filter((txt) => txt.length > 0);
+  const servers2 = rawDataRows[1].split('\t').filter((txt) => txt.length > 0);
+  const serverList = servers1.concat(servers2).sort().join(', ');
+  // Remove first 2 rows, then split into a table
+  const pointData = rawDataRows.slice(2).map((row) => row.split('\t'));
 
-const rawDataRows = fs
-  .readFileSync(`${eventPrefix}${dateFragment}.tsv`, 'utf-8')
-  .replaceAll('\r','')
-  .replaceAll(',','')
-  .split('\n');
+  function getPointData(row, svsIdx) {
+    const dataCol = svsIdx * 2;
+    const serverCol = dataCol + 1;
+    let p = parseInt(row[dataCol]);
+    if (Number.isNaN(p)) p = null;
+    return ({points: p, server: row[serverCol]})
+  }
 
-function getPointData(row, svsIdx) {
-  const dataCol = svsIdx * 2;
-  const serverCol = dataCol + 1;
+  for (let svsIdx = 0; svsIdx < servers1.length; svsIdx++) {
+    const svsData = {
+      server:  servers1[svsIdx],
+      server2: servers2[svsIdx],
+    };
 
-  let p = parseInt(row[dataCol]);
-  if (Number.isNaN(p)) p = null;
+    currEventData['svs-results'].push(svsData);
 
-  return ({points: p, server: row[serverCol]})
-}
-
-const compiledData = {
-  'event': eventName,
-  'start-date': `${fmtEventStart.YYYY}-${fmtEventStart.MM}-${fmtEventStart.DD}`,
-  'data': [],
-};
-
-const servers1 = rawDataRows[0].split('\t').filter((txt) => txt.length > 0);
-const servers2 = rawDataRows[1].split('\t').filter((txt) => txt.length > 0);
-
-const serverList = servers1.concat(servers2).sort().join(', ');
-
-const pointData = rawDataRows.slice(2).map((row) => row.split('\t'));
-
-for (let svsIdx = 0; svsIdx < servers1.length; svsIdx++) {
-  const data = {
-    server:  servers1[svsIdx],
-    server2: servers2[svsIdx],
-    final: {
+    const finalData =  {
       '1':  getPointData(pointData[0], svsIdx),
       '2':  getPointData(pointData[1], svsIdx),
       '3':  getPointData(pointData[2], svsIdx),
       '20': getPointData(pointData[3], svsIdx),
-    },
-    phase1: {
-      '1':  getPointData(pointData[4], svsIdx),
-      '2':  getPointData(pointData[5], svsIdx),
-      '3':  getPointData(pointData[6], svsIdx),
-      '4':  getPointData(pointData[7], svsIdx),
-    },
-    phase2: {
-      '1':  getPointData(pointData[8], svsIdx),
-      '2':  getPointData(pointData[9], svsIdx),
-      '3':  getPointData(pointData[10], svsIdx),
-      '4':  getPointData(pointData[11], svsIdx),
-    },
-    phase3: {
-      '1':  getPointData(pointData[12], svsIdx),
-      '2':  getPointData(pointData[13], svsIdx),
-      '3':  getPointData(pointData[14], svsIdx),
-      '4':  getPointData(pointData[15], svsIdx),
-    },
-    phase4: {
-      '1':  getPointData(pointData[16], svsIdx),
-      '2':  getPointData(pointData[17], svsIdx),
-      '3':  getPointData(pointData[18], svsIdx),
-      '4':  getPointData(pointData[19], svsIdx),
-    },
-    phase5: {
-      '1':  getPointData(pointData[20], svsIdx),
-      '2':  getPointData(pointData[21], svsIdx),
-      '3':  getPointData(pointData[22], svsIdx),
-      '4':  getPointData(pointData[23], svsIdx),
-    },
-    phase6: {
-      '1':  getPointData(pointData[24], svsIdx),
-      '2':  getPointData(pointData[25], svsIdx),
-      '3':  getPointData(pointData[26], svsIdx),
-      '4':  getPointData(pointData[27], svsIdx),
-    },
-  };
-
-  compiledData.data.push(data)
-}
-
-const exportedJSON = JSON.stringify(compiledData, null, '  ');
-
-fs.writeFileSync(`${exportFileFragment}.json`, exportedJSON);
-
-const bodyContent = [];
-const svsHTML = [];
-
-function getPhasePointHTML(phase, rank, phaseData, servers) {
-  const MaxPoints = MaxPhasePoints;
-  const points = phaseData?.[rank]?.points || null
-  
-  const rankClass = ((rank ==='1')||(rank ==='2')||(rank === '3'))?'rank-' + rank:'rank';
-  const server = phaseData[rank].server;
-  const serverClass = 'server' + (servers.indexOf(server) + 1);
-
-  if (points === null) {
-    return (
-      `<td class="phase-col phase-${phase}-col">` + 
-      `<span class="event-${rankClass}">${rank}</span>` +
-      '<div class="bar-container"></div>' +
-      `<span class="bar-text">N/A</span>` +
-      '</td>'
-    )
-  }
-
-  const pointsDisplay = formatPoint(points);
-  const barStyle = `width: ${(100 * points / MaxPoints).toFixed(1)}%`;
-
-  return (
-    `<td class="phase-col phase-${phase}-col">` + 
-    `<span class="event-${rankClass}">${rank}</span>` +
-    '<div class="bar-container">' +
-    `<span class="bar ${serverClass}" style="${barStyle}">&thinsp;</span>` +
-    '</div>' +
-    `<span class="bar-text">${pointsDisplay}</span>` +
-    // `<div class="server-tag right ${serverClass}">${server}</div>` +
-    '</td>'
-  );
-}
-
-function getFinalPointHTML(rank, finalData, servers) {
-  const MaxPoints = MaxFinalPoints;
-  const points = finalData?.[rank]?.points || null
-
-  const rankClass = ((rank ==='1')||(rank ==='2')||(rank === '3'))?'rank-' + rank:'rank';
-  const server = finalData[rank].server;
-  const serverClass = 'server' + (servers.indexOf(server) + 1);
-
-  if (points === null) {
-    return (
-      `<td class="final-col">` + 
-      `<span class="event-${rankClass}">${rank}</span>` +
-      '<div class="bar-container"></div>' +
-      `<span class="bar-text">N/A</span>` +
-      '</td>'
-    )
-  }
-
-  const pointsDisplay = formatPoint(points);
-  const barStyle = `width: ${(100 * points / MaxPoints).toFixed(1)}%`;
-
-  return (
-    `<td class="final-col">` + 
-    `<span class="event-${rankClass}">${rank}</span>` +
-    '<div class="bar-container">' +
-    `<span class="bar ${serverClass}" style="${barStyle}">&thinsp;</span>` +
-    '</div>' +
-    `<span class="bar-text">${pointsDisplay}</span>` +
-    `<div class="server-tag right ${serverClass}">${server}</div>` +
-    '</td>'
-  );
-}
-
-for (let svsIdx = 0; svsIdx < servers1.length; svsIdx++) {
-  const servers = [servers1 [svsIdx], servers2[svsIdx]];
-  const svsData = compiledData.data[svsIdx];
-  const html = {
-    final: {
-      row1:  getFinalPointHTML( '1', svsData.final, servers),
-      row2:  getFinalPointHTML( '2', svsData.final, servers),
-      row3:  getFinalPointHTML( '3', svsData.final, servers),
-      row4:  getFinalPointHTML('20', svsData.final, servers),
-    },
-    phase1: {
-      row1:  getPhasePointHTML(1, '1', svsData.phase1, servers),
-      row2:  getPhasePointHTML(1, '2', svsData.phase1, servers),
-      row3:  getPhasePointHTML(1, '3', svsData.phase1, servers),
-      row4:  getPhasePointHTML(1, '4', svsData.phase1, servers),
-    },
-    phase2: {
-      row1:  getPhasePointHTML(2, '1', svsData.phase2, servers),
-      row2:  getPhasePointHTML(2, '2', svsData.phase2, servers),
-      row3:  getPhasePointHTML(2, '3', svsData.phase2, servers),
-      row4:  getPhasePointHTML(2, '4', svsData.phase2, servers),
-    },
-    phase3: {
-      row1:  getPhasePointHTML(3, '1', svsData.phase3, servers),
-      row2:  getPhasePointHTML(3, '2', svsData.phase3, servers),
-      row3:  getPhasePointHTML(3, '3', svsData.phase3, servers),
-      row4:  getPhasePointHTML(3, '4', svsData.phase3, servers),
-    },
-    phase4: {
-      row1:  getPhasePointHTML(4, '1', svsData.phase4, servers),
-      row2:  getPhasePointHTML(4, '2', svsData.phase4, servers),
-      row3:  getPhasePointHTML(4, '3', svsData.phase4, servers),
-      row4:  getPhasePointHTML(4, '4', svsData.phase4, servers),
-    },
-    phase5: {
-      row1:  getPhasePointHTML(5, '1', svsData.phase5, servers),
-      row2:  getPhasePointHTML(5, '2', svsData.phase5, servers),
-      row3:  getPhasePointHTML(5, '3', svsData.phase5, servers),
-      row4:  getPhasePointHTML(5, '4', svsData.phase5, servers),
-    },
-    phase6: {
-      row1:  getPhasePointHTML(6, '1', svsData.phase6, servers),
-      row2:  getPhasePointHTML(6, '2', svsData.phase6, servers),
-      row3:  getPhasePointHTML(6, '3', svsData.phase6, servers),
-      row4:  getPhasePointHTML(6, '4', svsData.phase6, servers),
-    },
-  };
-  svsHTML.push(html);
-}
-
-for (let svsIdx = 0; svsIdx < servers1.length; svsIdx++) {
-  const svsData = compiledData.data[svsIdx];
-  bodyContent.push('<tr class="new-section">');
-  bodyContent.push(
-    '<td rowspan="4" class="server-col">' +
-    '<span class="server-tag server1">' + svsData.server + '</span>' + 
-    '<span class="svs-vs">vs</span>' + 
-    '<span class="server-tag server2">' + svsData.server2 + '</span>' + 
-    '</td>',
-  );
-
-  // Generate data for rank #1
-  bodyContent.push(svsHTML[svsIdx].final.row1);
-
-  if (!FinalPointOnly) {
-    bodyContent.push(svsHTML[svsIdx].phase1.row1);
-    bodyContent.push(svsHTML[svsIdx].phase2.row1);
-    bodyContent.push(svsHTML[svsIdx].phase3.row1);
-    bodyContent.push(svsHTML[svsIdx].phase4.row1);
-    bodyContent.push(svsHTML[svsIdx].phase5.row1);
-    bodyContent.push(svsHTML[svsIdx].phase6.row1);
-  }
-
-  bodyContent.push('</tr>');
- 
-  // Generate data for rank #2, #3, and #4/#20
-  ['2', '3', '4'].forEach((rowIdx) => {
-    bodyContent.push('<tr>');
-    bodyContent.push(svsHTML[svsIdx].final['row' + rowIdx]);
-    if (!FinalPointOnly) {
-      bodyContent.push(svsHTML[svsIdx].phase1['row' + rowIdx]);
-      bodyContent.push(svsHTML[svsIdx].phase2['row' + rowIdx]);
-      bodyContent.push(svsHTML[svsIdx].phase3['row' + rowIdx]);
-      bodyContent.push(svsHTML[svsIdx].phase4['row' + rowIdx]);
-      bodyContent.push(svsHTML[svsIdx].phase5['row' + rowIdx]);
-      bodyContent.push(svsHTML[svsIdx].phase6['row' + rowIdx]);
+    };
+    const topPoints = finalData['1'].points;
+    if ((topPoints !== null) && (topPoints > maxFinalPoints)) {
+      maxFinalPoints = topPoints;
     }
+    svsData.final = finalData;
+
+    // if (!currEventData['phase-data']) continue;
+
+    for (let phaseIdx = 0; phaseIdx < 6; phaseIdx++ ) {
+      const phaseData = {
+        '1':  getPointData(pointData[phaseIdx * 4 + 4], svsIdx),
+        '2':  getPointData(pointData[phaseIdx * 4 + 5], svsIdx),
+        '3':  getPointData(pointData[phaseIdx * 4 + 6], svsIdx),
+        '4':  getPointData(pointData[phaseIdx * 4 + 7], svsIdx),
+      };
+      const maxPoints = maxPhasePoints[phaseIdx];
+      const topPoints = phaseData['1'].points;
+      if ((topPoints !== null) && (topPoints > maxPoints)) {
+        maxPhasePoints[phaseIdx] = topPoints;
+      }
+      svsData['phase' + (phaseIdx+1)] = phaseData;
+    }
+  }  
+
+  currEventData['servers'] = [servers1, servers2];
+  currEventData['server-list'] = serverList;
+  currEventData['max-phase-point'] = maxPhasePoints;
+  currEventData['max-final-point'] = maxFinalPoints;
+  
+  const htmlOutputSnippets = [];
+  const MaxDisplayFinalPoint = sanitizeMaxPoint(maxFinalPoints);
+  const MaxDisplayPhasePoint = sanitizeMaxPoint(Math.max(...maxPhasePoints));
+  for (let svsIdx = 0; svsIdx < servers1.length; svsIdx++) {
+    const svsData = currEventData['svs-results'][svsIdx];
+
+    function generateFinalSnippet(rank, finalData, servers) {
+      const MaxPoints = MaxDisplayFinalPoint;
+      const points = finalData?.[rank]?.points || null;
+      const rankClass = ((rank ==='1')||(rank ==='2')||(rank === '3'))?'rank-' + rank:'rank';
+      const server = finalData[rank].server;
+      const serverClass = 'server' + (servers.indexOf(server) + 1);
+      if (points === null) {
+        return (
+          `<td class="final-col">` + 
+          `<span class="event-${rankClass}">${rank}</span>` +
+          '<div class="bar-container"></div>' +
+          `<span class="bar-text">N/A</span>` +
+          '</td>'
+        )
+      }
+      const pointsDisplay = formatPoint(points);
+      const barStyle = `width: ${(100 * points / MaxPoints).toFixed(1)}%`;
+      return (
+        `<td class="final-col">` + 
+        `<span class="event-${rankClass}">${rank}</span>` +
+        '<div class="bar-container">' +
+        `<span class="bar ${serverClass}" style="${barStyle}">&thinsp;</span>` +
+        '</div>' +
+        `<span class="bar-text">${pointsDisplay}</span>` +
+        `<div class="server-tag right ${serverClass}">${server}</div>` +
+        '</td>'
+      );
+    }
+    function generatePhaseSnippet(phase, rank, phaseData, servers) {
+      const MaxPoints = MaxDisplayPhasePoint;
+      const points = phaseData?.[rank]?.points || null;
+      const rankClass = 'rank-' + rank;
+      const server = phaseData[rank].server;
+      const serverClass = 'server' + (servers.indexOf(server) + 1);
+      if (points === null) {
+        return (
+          `<td class="phase-col phase-${phase}-col">` + 
+          `<span class="event-${rankClass}">${rank}</span>` +
+          '<div class="bar-container"></div>' +
+          `<span class="bar-text">N/A</span>` +
+          '</td>'
+        )
+      }
+      const pointsDisplay = formatPoint(points);
+      const barStyle = `width: ${(100 * points / MaxPoints).toFixed(1)}%`;
     
-    bodyContent.push('</tr>')
-  })
+      return (
+        `<td class="phase-col phase-${phase}-col">` + 
+        `<span class="event-${rankClass}">${rank}</span>` +
+        '<div class="bar-container">' +
+        `<span class="bar ${serverClass}" style="${barStyle}">&thinsp;</span>` +
+        '</div>' +
+        `<span class="bar-text">${pointsDisplay}</span>` +
+        '</td>'
+      );
+    }
+    const svsServes = [servers1[svsIdx], servers2[svsIdx]];  
+    const snippets = {
+      final: {
+        row1:  generateFinalSnippet( '1', svsData.final, svsServes),
+        row2:  generateFinalSnippet( '2', svsData.final, svsServes),
+        row3:  generateFinalSnippet( '3', svsData.final, svsServes),
+        row4:  generateFinalSnippet('20', svsData.final, svsServes),
+      },
+      phase1: {
+        row1:  generatePhaseSnippet(1, '1', svsData.phase1, svsServes),
+        row2:  generatePhaseSnippet(1, '2', svsData.phase1, svsServes),
+        row3:  generatePhaseSnippet(1, '3', svsData.phase1, svsServes),
+        row4:  generatePhaseSnippet(1, '4', svsData.phase1, svsServes),
+      },
+      phase2: {
+        row1:  generatePhaseSnippet(2, '1', svsData.phase2, svsServes),
+        row2:  generatePhaseSnippet(2, '2', svsData.phase2, svsServes),
+        row3:  generatePhaseSnippet(2, '3', svsData.phase2, svsServes),
+        row4:  generatePhaseSnippet(2, '4', svsData.phase2, svsServes),
+      },
+      phase3: {
+        row1:  generatePhaseSnippet(3, '1', svsData.phase3, svsServes),
+        row2:  generatePhaseSnippet(3, '2', svsData.phase3, svsServes),
+        row3:  generatePhaseSnippet(3, '3', svsData.phase3, svsServes),
+        row4:  generatePhaseSnippet(3, '4', svsData.phase3, svsServes),
+      },
+      phase4: {
+        row1:  generatePhaseSnippet(4, '1', svsData.phase4, svsServes),
+        row2:  generatePhaseSnippet(4, '2', svsData.phase4, svsServes),
+        row3:  generatePhaseSnippet(4, '3', svsData.phase4, svsServes),
+        row4:  generatePhaseSnippet(4, '4', svsData.phase4, svsServes),
+      },
+      phase5: {
+        row1:  generatePhaseSnippet(5, '1', svsData.phase5, svsServes),
+        row2:  generatePhaseSnippet(5, '2', svsData.phase5, svsServes),
+        row3:  generatePhaseSnippet(5, '3', svsData.phase5, svsServes),
+        row4:  generatePhaseSnippet(5, '4', svsData.phase5, svsServes),
+      },
+      phase6: {
+        row1:  generatePhaseSnippet(6, '1', svsData.phase6, svsServes),
+        row2:  generatePhaseSnippet(6, '2', svsData.phase6, svsServes),
+        row3:  generatePhaseSnippet(6, '3', svsData.phase6, svsServes),
+        row4:  generatePhaseSnippet(6, '4', svsData.phase6, svsServes),
+      },
+    };
+    htmlOutputSnippets.push(snippets);
+  }
+
+  const tabList = [];
+  const tableBody = [];
+
+  for (let svsIdx = 0; svsIdx < servers1.length; svsIdx++) {
+    const svsData = currEventData['svs-results'][svsIdx];
+
+    tableBody.push('<tr class="new-section">');
+    tableBody.push(
+      '<td rowspan="4" class="server-col">' +
+      '<span class="server-tag server1">' + svsData.server + '</span>' + 
+      '<span class="svs-vs">vs</span>' + 
+      '<span class="server-tag server2">' + svsData.server2 + '</span>' + 
+      '</td>',
+    );
+    // Generate data for rank #1
+    tableBody.push(htmlOutputSnippets[svsIdx].final.row1);
+
+    if (!currEventData['phase-data']) {
+      tableBody.push(htmlOutputSnippets[svsIdx].phase1.row1);
+      tableBody.push(htmlOutputSnippets[svsIdx].phase2.row1);
+      tableBody.push(htmlOutputSnippets[svsIdx].phase3.row1);
+      tableBody.push(htmlOutputSnippets[svsIdx].phase4.row1);
+      tableBody.push(htmlOutputSnippets[svsIdx].phase5.row1);
+      tableBody.push(htmlOutputSnippets[svsIdx].phase6.row1);
+    }
+
+    tableBody.push('</tr>');
+
+    // Generate data for rank #2, #3, and #4/#20
+    ['2', '3', '4'].forEach((rowIdx) => {
+      tableBody.push('<tr>');
+      tableBody.push(htmlOutputSnippets[svsIdx].final['row' + rowIdx]);
+      if (!currEventData['phase-data']) {
+        tableBody.push(htmlOutputSnippets[svsIdx].phase1['row' + rowIdx]);
+        tableBody.push(htmlOutputSnippets[svsIdx].phase2['row' + rowIdx]);
+        tableBody.push(htmlOutputSnippets[svsIdx].phase3['row' + rowIdx]);
+        tableBody.push(htmlOutputSnippets[svsIdx].phase4['row' + rowIdx]);
+        tableBody.push(htmlOutputSnippets[svsIdx].phase5['row' + rowIdx]);
+        tableBody.push(htmlOutputSnippets[svsIdx].phase6['row' + rowIdx]);
+      }
+      
+      tableBody.push('</tr>')
+    })
+  }
+
+  const tabButtons = [];
+  if (currEventData['phase-data']) {
+    tabButtons.push(
+      '<button onclick="switchMKTableView(0)" id="mk-tab-0" class="tab focused">Final</button>'
+    );
+
+    if ((maxPhasePoints[0] > 0) || (maxPhasePoints[1] > 0)) {
+      tabButtons.push('<button onclick="switchMKTableView(1)" id="mk-tab-1" class="tab">Phase 1~2</button>');
+    } else {
+      tabButtons.push('<button id="mk-tab-1" class="tab" disabled="disabled">Phase 1~2</button>');
+    }
+
+    if ((maxPhasePoints[2] > 0) || (maxPhasePoints[3] > 0)) {
+      tabButtons.push('<button onclick="switchMKTableView(2)" id="mk-tab-2" class="tab">Phase 3~4</button>');
+    } else {
+      tabButtons.push('<button id="mk-tab-2" class="tab" disabled="disabled">Phase 3~4</button>');
+    }
+
+    if ((maxPhasePoints[4] > 0) || (maxPhasePoints[5] > 0)) {
+      tabButtons.push('<button onclick="switchMKTableView(3)" id="mk-tab-3" class="tab">Phase 5~6</button>');
+    } else {
+      tabButtons.push('<button id="mk-tab-3" class="tab" disabled="disabled">Phase 5~6</button>');
+    }
+  } else {
+    tabButtons.push('<button id="mk-tab-0" class="tab focused">Final</button>');
+  }
+
+  const contentHtml = contentTemplate
+    .replace('{{TABLE BODY}}', tableBody.join('\n'))
+    .replaceAll('{{SERVER LIST}}' , serverList)
+    .replaceAll('{{SHEET LINK}}'  , currEventData['sheet-url'])
+    .replaceAll('{{EVENT START YEAR}}' , yyyy)
+    .replaceAll('{{EVENT START MONTH}}', mm)
+    .replaceAll('{{EVENT START DAY}}'  , dd)
+    .replaceAll('{{TABS}}'  , tabButtons.join('\n'))
+  ;
+
+  const outputOptions = {
+    type: 'chart',
+    path: {
+      base: `/events/mk-yyyymmdd`,
+      icon: '/images/logo_mini.png',
+      css: [
+        '/css/common.css',
+        '/events/event-data.css',
+      ],
+      js: [
+        '/events/event-common.js',
+      ]
+    },
+    breadcrumb: [
+      {path: '/content', title: 'Home'},
+      {path: '/events/', title: 'Events'},
+      {path: '/events/mk-results', title: 'Mightiest Kingdom Results'},
+    ],
+    content: contentHtml,
+    shortTitle: `${yyyy}-${mm}-${dd}`,
+    title: `${yyyy}-${mm}-${dd} Mightiest Kingdom Results`,
+    description: `Mightiest Kingdom results for the week of ${yyyy}-${mm}-${dd} (${serverList})`,
+  };
+  const output = buildBase(outputOptions);
+
+  writeFileSync(`../../../docs/events/mk-${yyyy}${mm}${dd}.html`, output);
 }
 
-const htmlTemplate =
-  (FinalPointOnly)?
-  fs.readFileSync('template-final-only.html', 'utf-8'):
-  fs.readFileSync('template.html', 'utf-8');
+let exportedJSON = JSON.stringify(EventData, null, '  ');
+writeFileSync('exported.json', exportedJSON);
 
-const exportedHtml = htmlTemplate
-  .replace('{{TABLE BODY}}', bodyContent.join('\n'))
-  .replaceAll('{{SERVER LIST}}'  , serverList)
-  .replaceAll('{{SHEET LINK}}'  , sheetLink)
-  .replaceAll('{{EVENT START YEAR}}' , fmtEventStart.YYYY)
-  .replaceAll('{{EVENT START MONTH}}', fmtEventStart.MM)
-  .replaceAll('{{EVENT START DAY}}'  , fmtEventStart.DD)
-  .replaceAll('{{EVENT END YEAR}}' , fmtEventEnd.YYYY)
-  .replaceAll('{{EVENT END MONTH}}', fmtEventEnd.MM)
-  .replaceAll('{{EVENT END DAY}}'  , fmtEventEnd.DD);
-
-fs.writeFileSync(`${exportFileFragment}.html`, exportedHtml);
+// console.log(EventData);
