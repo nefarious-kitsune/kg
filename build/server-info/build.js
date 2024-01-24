@@ -1,6 +1,6 @@
 import fs from 'fs';
 
-const SeasonNumber = 27;
+const SeasonNumber = 28;
 
 const exportDirectory = `../../docs/servers/S${SeasonNumber}`;
 const exportFileFragment = `${exportDirectory}/server-info`;
@@ -13,6 +13,7 @@ for  (let rowIndex = 1; rowIndex < dataRows.length; rowIndex++) {
     colorCode,
     server,
     serverStatus,
+    crossServerSummon,
     allianceTag,
     allianceName,
     sisterTag,
@@ -31,14 +32,20 @@ for  (let rowIndex = 1; rowIndex < dataRows.length; rowIndex++) {
   table.push(`<td><span class="server-tag">${server}</span></td>`);
 
   if (serverStatus.trim() !== '') {
-    let statusClass = 'unknown';
-    if (colorCode.toLowerCase() === 'green') statusClass = 'green';
-    else if (colorCode.toLowerCase() === 'red') statusClass = 'red';
-    else if (colorCode.toLowerCase() === 'yellow') statusClass = 'yellow';
+    // let statusClass = 'unknown';
+    // if (colorCode.toLowerCase() === 'green') statusClass = 'green';
+    // else if (colorCode.toLowerCase() === 'red') statusClass = 'red';
+    // else if (colorCode.toLowerCase() === 'yellow') statusClass = 'yellow';
     table.push(`<td><span class="status-line ${colorCode}">${serverStatus}</span></td>`);
   } else {
     table.push(`<td></td>`);
-  }  
+  }
+
+  if (crossServerSummon === 'TRUE') {
+    table.push(`<td>YES</td>`);
+  } else {
+    table.push(`<td></td>`);
+  }
 
   if (allianceTag.trim() !== '') {
     table.push(`<td><span class="alliance-tag">${allianceTag}</span>${allianceName}</td>`);
