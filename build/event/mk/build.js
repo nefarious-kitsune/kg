@@ -227,7 +227,7 @@ for (let eventIdx = 0; eventIdx < eventCount; eventIdx++) {
     // Generate data for rank #1
     tableBody.push(htmlOutputSnippets[svsIdx].final.row1);
 
-    if (!currEventData['phase-data']) {
+    if (currEventData['phase-data']) {
       tableBody.push(htmlOutputSnippets[svsIdx].phase1.row1);
       tableBody.push(htmlOutputSnippets[svsIdx].phase2.row1);
       tableBody.push(htmlOutputSnippets[svsIdx].phase3.row1);
@@ -242,7 +242,7 @@ for (let eventIdx = 0; eventIdx < eventCount; eventIdx++) {
     ['2', '3', '4'].forEach((rowIdx) => {
       tableBody.push('<tr>');
       tableBody.push(htmlOutputSnippets[svsIdx].final['row' + rowIdx]);
-      if (!currEventData['phase-data']) {
+      if (currEventData['phase-data']) {
         tableBody.push(htmlOutputSnippets[svsIdx].phase1['row' + rowIdx]);
         tableBody.push(htmlOutputSnippets[svsIdx].phase2['row' + rowIdx]);
         tableBody.push(htmlOutputSnippets[svsIdx].phase3['row' + rowIdx]);
