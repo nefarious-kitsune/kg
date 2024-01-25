@@ -687,3 +687,22 @@ dl dt {
 dl dd {
   padding-bottom: 1rem;
 }
+
+blockquote.pull-quote {
+  float: right;
+  max-width: 20rem;
+  margin-left: 2rem;
+  padding-left: 1rem;
+  border-left: 0.25rem solid var(--red);
+}
+
+/* blockquote.pull-quote:before {
+  content: open-quote;
+  color: var(--red);
+}
+
+blockquote.pull-quote:after {
+  content: close-quote;
+  color: var(--red);
+}
+  */
