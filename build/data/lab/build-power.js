@@ -24,7 +24,6 @@ function readTsvFile(fName) {
 }
 
 const upgradeData = readTsvFile('reagent-power.tsv');
-let totalLightReagentCost = 0;
 
 for (let rowIdx = 1; rowIdx < upgradeData.length; rowIdx++) {
   let [
@@ -55,11 +54,11 @@ const tableBody4 = []; // 1500 .. 1999
 
 let previousPower = 0;
 
-for (let level = 0; level < 2000; level++) {
+for (let level = 1; level <= 2000; level++) {
   let tableBody;
-  if (level >= 1500) tableBody = tableBody4;
-  else if (level >= 1000) tableBody = tableBody3;
-  else if (level >= 500) tableBody = tableBody2;
+  if (level >= 1501) tableBody = tableBody4;
+  else if (level >= 1001) tableBody = tableBody3;
+  else if (level >= 501) tableBody = tableBody2;
   else tableBody = tableBody1;
 
   const data = compiledData.data[level];

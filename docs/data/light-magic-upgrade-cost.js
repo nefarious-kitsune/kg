@@ -1,5 +1,10 @@
 const LightMagicUpgradeCost = [
   {
+    "level": 0,
+    "light-reagent-cost": 5,
+    "dark-reagent-cost": null
+  },
+  {
     "level": 1,
     "light-reagent-cost": 5,
     "dark-reagent-cost": null
@@ -11,7 +16,7 @@ const LightMagicUpgradeCost = [
   },
   {
     "level": 3,
-    "light-reagent-cost": 5,
+    "light-reagent-cost": 10,
     "dark-reagent-cost": null
   },
   {
@@ -31,7 +36,7 @@ const LightMagicUpgradeCost = [
   },
   {
     "level": 7,
-    "light-reagent-cost": 10,
+    "light-reagent-cost": 15,
     "dark-reagent-cost": null
   },
   {
@@ -56,7 +61,7 @@ const LightMagicUpgradeCost = [
   },
   {
     "level": 12,
-    "light-reagent-cost": 15,
+    "light-reagent-cost": 20,
     "dark-reagent-cost": null
   },
   {
@@ -81,7 +86,7 @@ const LightMagicUpgradeCost = [
   },
   {
     "level": 17,
-    "light-reagent-cost": 20,
+    "light-reagent-cost": 25,
     "dark-reagent-cost": null
   },
   {
@@ -106,7 +111,7 @@ const LightMagicUpgradeCost = [
   },
   {
     "level": 22,
-    "light-reagent-cost": 25,
+    "light-reagent-cost": 30,
     "dark-reagent-cost": null
   },
   {
@@ -136,7 +141,7 @@ const LightMagicUpgradeCost = [
   },
   {
     "level": 28,
-    "light-reagent-cost": 30,
+    "light-reagent-cost": 35,
     "dark-reagent-cost": null
   },
   {
@@ -166,7 +171,7 @@ const LightMagicUpgradeCost = [
   },
   {
     "level": 34,
-    "light-reagent-cost": 35,
+    "light-reagent-cost": 40,
     "dark-reagent-cost": null
   },
   {
@@ -201,7 +206,7 @@ const LightMagicUpgradeCost = [
   },
   {
     "level": 41,
-    "light-reagent-cost": 40,
+    "light-reagent-cost": 45,
     "dark-reagent-cost": null
   },
   {
@@ -231,7 +236,7 @@ const LightMagicUpgradeCost = [
   },
   {
     "level": 47,
-    "light-reagent-cost": 45,
+    "light-reagent-cost": 50,
     "dark-reagent-cost": null
   },
   {
@@ -266,7 +271,7 @@ const LightMagicUpgradeCost = [
   },
   {
     "level": 54,
-    "light-reagent-cost": 50,
+    "light-reagent-cost": 55,
     "dark-reagent-cost": null
   },
   {
@@ -301,7 +306,7 @@ const LightMagicUpgradeCost = [
   },
   {
     "level": 61,
-    "light-reagent-cost": 55,
+    "light-reagent-cost": 60,
     "dark-reagent-cost": null
   },
   {
@@ -336,7 +341,7 @@ const LightMagicUpgradeCost = [
   },
   {
     "level": 68,
-    "light-reagent-cost": 60,
+    "light-reagent-cost": 65,
     "dark-reagent-cost": null
   },
   {
@@ -371,18 +376,18 @@ const LightMagicUpgradeCost = [
   },
   {
     "level": 75,
-    "light-reagent-cost": 65,
+    "light-reagent-cost": 70,
     "dark-reagent-cost": null
   },
   {
     "level": 76,
     "light-reagent-cost": 70,
-    "dark-reagent-cost": null
+    "dark-reagent-cost": 945
   },
   {
     "level": 77,
     "light-reagent-cost": 70,
-    "dark-reagent-cost": 945
+    "dark-reagent-cost": null
   },
   {
     "level": 78,
@@ -406,7 +411,7 @@ const LightMagicUpgradeCost = [
   },
   {
     "level": 82,
-    "light-reagent-cost": 70,
+    "light-reagent-cost": 75,
     "dark-reagent-cost": null
   },
   {
@@ -446,7 +451,7 @@ const LightMagicUpgradeCost = [
   },
   {
     "level": 90,
-    "light-reagent-cost": 75,
+    "light-reagent-cost": 80,
     "dark-reagent-cost": null
   },
   {
@@ -481,7 +486,7 @@ const LightMagicUpgradeCost = [
   },
   {
     "level": 97,
-    "light-reagent-cost": 80,
+    "light-reagent-cost": 85,
     "dark-reagent-cost": null
   },
   {
@@ -521,18 +526,18 @@ const LightMagicUpgradeCost = [
   },
   {
     "level": 105,
-    "light-reagent-cost": 85,
+    "light-reagent-cost": 90,
     "dark-reagent-cost": null
   },
   {
     "level": 106,
     "light-reagent-cost": 90,
-    "dark-reagent-cost": null
+    "dark-reagent-cost": 1400
   },
   {
     "level": 107,
     "light-reagent-cost": 90,
-    "dark-reagent-cost": 1400
+    "dark-reagent-cost": null
   },
   {
     "level": 108,
@@ -561,7 +566,7 @@ const LightMagicUpgradeCost = [
   },
   {
     "level": 113,
-    "light-reagent-cost": 90,
+    "light-reagent-cost": 95,
     "dark-reagent-cost": null
   },
   {
@@ -601,7 +606,7 @@ const LightMagicUpgradeCost = [
   },
   {
     "level": 121,
-    "light-reagent-cost": 95,
+    "light-reagent-cost": 100,
     "dark-reagent-cost": null
   },
   {
@@ -641,7 +646,7 @@ const LightMagicUpgradeCost = [
   },
   {
     "level": 129,
-    "light-reagent-cost": 100,
+    "light-reagent-cost": 105,
     "dark-reagent-cost": null
   },
   {
@@ -681,7 +686,7 @@ const LightMagicUpgradeCost = [
   },
   {
     "level": 137,
-    "light-reagent-cost": 105,
+    "light-reagent-cost": 110,
     "dark-reagent-cost": null
   },
   {
@@ -721,7 +726,7 @@ const LightMagicUpgradeCost = [
   },
   {
     "level": 145,
-    "light-reagent-cost": 110,
+    "light-reagent-cost": 115,
     "dark-reagent-cost": null
   },
   {
@@ -761,7 +766,7 @@ const LightMagicUpgradeCost = [
   },
   {
     "level": 153,
-    "light-reagent-cost": 115,
+    "light-reagent-cost": 120,
     "dark-reagent-cost": null
   },
   {
@@ -806,7 +811,7 @@ const LightMagicUpgradeCost = [
   },
   {
     "level": 162,
-    "light-reagent-cost": 120,
+    "light-reagent-cost": 125,
     "dark-reagent-cost": null
   },
   {
@@ -846,7 +851,7 @@ const LightMagicUpgradeCost = [
   },
   {
     "level": 170,
-    "light-reagent-cost": 125,
+    "light-reagent-cost": 130,
     "dark-reagent-cost": null
   },
   {
@@ -891,7 +896,7 @@ const LightMagicUpgradeCost = [
   },
   {
     "level": 179,
-    "light-reagent-cost": 130,
+    "light-reagent-cost": 135,
     "dark-reagent-cost": null
   },
   {
@@ -931,7 +936,7 @@ const LightMagicUpgradeCost = [
   },
   {
     "level": 187,
-    "light-reagent-cost": 135,
+    "light-reagent-cost": 140,
     "dark-reagent-cost": null
   },
   {
@@ -976,7 +981,7 @@ const LightMagicUpgradeCost = [
   },
   {
     "level": 196,
-    "light-reagent-cost": 140,
+    "light-reagent-cost": 145,
     "dark-reagent-cost": null
   },
   {
@@ -1021,7 +1026,7 @@ const LightMagicUpgradeCost = [
   },
   {
     "level": 205,
-    "light-reagent-cost": 145,
+    "light-reagent-cost": 150,
     "dark-reagent-cost": null
   },
   {
@@ -1066,7 +1071,7 @@ const LightMagicUpgradeCost = [
   },
   {
     "level": 214,
-    "light-reagent-cost": 150,
+    "light-reagent-cost": 155,
     "dark-reagent-cost": null
   },
   {
@@ -1111,7 +1116,7 @@ const LightMagicUpgradeCost = [
   },
   {
     "level": 223,
-    "light-reagent-cost": 155,
+    "light-reagent-cost": 160,
     "dark-reagent-cost": null
   },
   {
@@ -1156,7 +1161,7 @@ const LightMagicUpgradeCost = [
   },
   {
     "level": 232,
-    "light-reagent-cost": 160,
+    "light-reagent-cost": 165,
     "dark-reagent-cost": null
   },
   {
@@ -1201,7 +1206,7 @@ const LightMagicUpgradeCost = [
   },
   {
     "level": 241,
-    "light-reagent-cost": 165,
+    "light-reagent-cost": 170,
     "dark-reagent-cost": null
   },
   {
@@ -1246,7 +1251,7 @@ const LightMagicUpgradeCost = [
   },
   {
     "level": 250,
-    "light-reagent-cost": 170,
+    "light-reagent-cost": 175,
     "dark-reagent-cost": null
   },
   {
@@ -1296,7 +1301,7 @@ const LightMagicUpgradeCost = [
   },
   {
     "level": 260,
-    "light-reagent-cost": 175,
+    "light-reagent-cost": 180,
     "dark-reagent-cost": null
   },
   {
@@ -1341,7 +1346,7 @@ const LightMagicUpgradeCost = [
   },
   {
     "level": 269,
-    "light-reagent-cost": 180,
+    "light-reagent-cost": 185,
     "dark-reagent-cost": null
   },
   {
@@ -1386,7 +1391,7 @@ const LightMagicUpgradeCost = [
   },
   {
     "level": 278,
-    "light-reagent-cost": 185,
+    "light-reagent-cost": 190,
     "dark-reagent-cost": null
   },
   {
@@ -1436,7 +1441,7 @@ const LightMagicUpgradeCost = [
   },
   {
     "level": 288,
-    "light-reagent-cost": 190,
+    "light-reagent-cost": 195,
     "dark-reagent-cost": null
   },
   {
@@ -1481,7 +1486,7 @@ const LightMagicUpgradeCost = [
   },
   {
     "level": 297,
-    "light-reagent-cost": 195,
+    "light-reagent-cost": 200,
     "dark-reagent-cost": null
   },
   {
@@ -1531,7 +1536,7 @@ const LightMagicUpgradeCost = [
   },
   {
     "level": 307,
-    "light-reagent-cost": 200,
+    "light-reagent-cost": 205,
     "dark-reagent-cost": null
   },
   {
@@ -1576,7 +1581,7 @@ const LightMagicUpgradeCost = [
   },
   {
     "level": 316,
-    "light-reagent-cost": 205,
+    "light-reagent-cost": 210,
     "dark-reagent-cost": null
   },
   {
@@ -1626,7 +1631,7 @@ const LightMagicUpgradeCost = [
   },
   {
     "level": 326,
-    "light-reagent-cost": 210,
+    "light-reagent-cost": 215,
     "dark-reagent-cost": null
   },
   {
@@ -1676,7 +1681,7 @@ const LightMagicUpgradeCost = [
   },
   {
     "level": 336,
-    "light-reagent-cost": 215,
+    "light-reagent-cost": 220,
     "dark-reagent-cost": null
   },
   {
@@ -1726,7 +1731,7 @@ const LightMagicUpgradeCost = [
   },
   {
     "level": 346,
-    "light-reagent-cost": 220,
+    "light-reagent-cost": 225,
     "dark-reagent-cost": null
   },
   {
@@ -1771,7 +1776,7 @@ const LightMagicUpgradeCost = [
   },
   {
     "level": 355,
-    "light-reagent-cost": 225,
+    "light-reagent-cost": 230,
     "dark-reagent-cost": null
   },
   {
@@ -1821,7 +1826,7 @@ const LightMagicUpgradeCost = [
   },
   {
     "level": 365,
-    "light-reagent-cost": 230,
+    "light-reagent-cost": 235,
     "dark-reagent-cost": null
   },
   {
@@ -1871,7 +1876,7 @@ const LightMagicUpgradeCost = [
   },
   {
     "level": 375,
-    "light-reagent-cost": 235,
+    "light-reagent-cost": 240,
     "dark-reagent-cost": null
   },
   {
@@ -1921,7 +1926,7 @@ const LightMagicUpgradeCost = [
   },
   {
     "level": 385,
-    "light-reagent-cost": 240,
+    "light-reagent-cost": 245,
     "dark-reagent-cost": null
   },
   {
@@ -1971,7 +1976,7 @@ const LightMagicUpgradeCost = [
   },
   {
     "level": 395,
-    "light-reagent-cost": 245,
+    "light-reagent-cost": 250,
     "dark-reagent-cost": null
   },
   {
@@ -2026,7 +2031,7 @@ const LightMagicUpgradeCost = [
   },
   {
     "level": 406,
-    "light-reagent-cost": 250,
+    "light-reagent-cost": 255,
     "dark-reagent-cost": null
   },
   {
@@ -2076,7 +2081,7 @@ const LightMagicUpgradeCost = [
   },
   {
     "level": 416,
-    "light-reagent-cost": 255,
+    "light-reagent-cost": 260,
     "dark-reagent-cost": null
   },
   {
@@ -2126,7 +2131,7 @@ const LightMagicUpgradeCost = [
   },
   {
     "level": 426,
-    "light-reagent-cost": 260,
+    "light-reagent-cost": 265,
     "dark-reagent-cost": null
   },
   {
@@ -2176,7 +2181,7 @@ const LightMagicUpgradeCost = [
   },
   {
     "level": 436,
-    "light-reagent-cost": 265,
+    "light-reagent-cost": 270,
     "dark-reagent-cost": null
   },
   {
@@ -2231,7 +2236,7 @@ const LightMagicUpgradeCost = [
   },
   {
     "level": 447,
-    "light-reagent-cost": 270,
+    "light-reagent-cost": 275,
     "dark-reagent-cost": null
   },
   {
@@ -2281,7 +2286,7 @@ const LightMagicUpgradeCost = [
   },
   {
     "level": 457,
-    "light-reagent-cost": 275,
+    "light-reagent-cost": 280,
     "dark-reagent-cost": null
   },
   {
@@ -2336,7 +2341,7 @@ const LightMagicUpgradeCost = [
   },
   {
     "level": 468,
-    "light-reagent-cost": 280,
+    "light-reagent-cost": 285,
     "dark-reagent-cost": null
   },
   {
@@ -2386,7 +2391,7 @@ const LightMagicUpgradeCost = [
   },
   {
     "level": 478,
-    "light-reagent-cost": 285,
+    "light-reagent-cost": 290,
     "dark-reagent-cost": null
   },
   {
@@ -2436,7 +2441,7 @@ const LightMagicUpgradeCost = [
   },
   {
     "level": 488,
-    "light-reagent-cost": 290,
+    "light-reagent-cost": 295,
     "dark-reagent-cost": null
   },
   {
@@ -2491,7 +2496,7 @@ const LightMagicUpgradeCost = [
   },
   {
     "level": 499,
-    "light-reagent-cost": 295,
+    "light-reagent-cost": 300,
     "dark-reagent-cost": null
   },
   {
@@ -2546,7 +2551,7 @@ const LightMagicUpgradeCost = [
   },
   {
     "level": 510,
-    "light-reagent-cost": 300,
+    "light-reagent-cost": 305,
     "dark-reagent-cost": null
   },
   {
@@ -2596,7 +2601,7 @@ const LightMagicUpgradeCost = [
   },
   {
     "level": 520,
-    "light-reagent-cost": 305,
+    "light-reagent-cost": 310,
     "dark-reagent-cost": null
   },
   {
@@ -2651,7 +2656,7 @@ const LightMagicUpgradeCost = [
   },
   {
     "level": 531,
-    "light-reagent-cost": 310,
+    "light-reagent-cost": 315,
     "dark-reagent-cost": null
   },
   {
@@ -2706,7 +2711,7 @@ const LightMagicUpgradeCost = [
   },
   {
     "level": 542,
-    "light-reagent-cost": 315,
+    "light-reagent-cost": 320,
     "dark-reagent-cost": null
   },
   {
@@ -2756,7 +2761,7 @@ const LightMagicUpgradeCost = [
   },
   {
     "level": 552,
-    "light-reagent-cost": 320,
+    "light-reagent-cost": 325,
     "dark-reagent-cost": null
   },
   {
@@ -2811,7 +2816,7 @@ const LightMagicUpgradeCost = [
   },
   {
     "level": 563,
-    "light-reagent-cost": 325,
+    "light-reagent-cost": 330,
     "dark-reagent-cost": null
   },
   {
@@ -2866,7 +2871,7 @@ const LightMagicUpgradeCost = [
   },
   {
     "level": 574,
-    "light-reagent-cost": 330,
+    "light-reagent-cost": 335,
     "dark-reagent-cost": null
   },
   {
@@ -2921,7 +2926,7 @@ const LightMagicUpgradeCost = [
   },
   {
     "level": 585,
-    "light-reagent-cost": 335,
+    "light-reagent-cost": 340,
     "dark-reagent-cost": null
   },
   {
@@ -2976,7 +2981,7 @@ const LightMagicUpgradeCost = [
   },
   {
     "level": 596,
-    "light-reagent-cost": 340,
+    "light-reagent-cost": 345,
     "dark-reagent-cost": null
   },
   {
@@ -3031,7 +3036,7 @@ const LightMagicUpgradeCost = [
   },
   {
     "level": 607,
-    "light-reagent-cost": 345,
+    "light-reagent-cost": 350,
     "dark-reagent-cost": null
   },
   {
@@ -3086,7 +3091,7 @@ const LightMagicUpgradeCost = [
   },
   {
     "level": 618,
-    "light-reagent-cost": 350,
+    "light-reagent-cost": 355,
     "dark-reagent-cost": null
   },
   {
@@ -3141,7 +3146,7 @@ const LightMagicUpgradeCost = [
   },
   {
     "level": 629,
-    "light-reagent-cost": 355,
+    "light-reagent-cost": 360,
     "dark-reagent-cost": null
   },
   {
@@ -3196,7 +3201,7 @@ const LightMagicUpgradeCost = [
   },
   {
     "level": 640,
-    "light-reagent-cost": 360,
+    "light-reagent-cost": 365,
     "dark-reagent-cost": null
   },
   {
@@ -3251,7 +3256,7 @@ const LightMagicUpgradeCost = [
   },
   {
     "level": 651,
-    "light-reagent-cost": 365,
+    "light-reagent-cost": 370,
     "dark-reagent-cost": null
   },
   {
@@ -3306,7 +3311,7 @@ const LightMagicUpgradeCost = [
   },
   {
     "level": 662,
-    "light-reagent-cost": 370,
+    "light-reagent-cost": 375,
     "dark-reagent-cost": null
   },
   {
@@ -3366,7 +3371,7 @@ const LightMagicUpgradeCost = [
   },
   {
     "level": 674,
-    "light-reagent-cost": 375,
+    "light-reagent-cost": 380,
     "dark-reagent-cost": null
   },
   {
@@ -3421,7 +3426,7 @@ const LightMagicUpgradeCost = [
   },
   {
     "level": 685,
-    "light-reagent-cost": 380,
+    "light-reagent-cost": 385,
     "dark-reagent-cost": null
   },
   {
@@ -3476,7 +3481,7 @@ const LightMagicUpgradeCost = [
   },
   {
     "level": 696,
-    "light-reagent-cost": 385,
+    "light-reagent-cost": 390,
     "dark-reagent-cost": null
   },
   {
@@ -3531,7 +3536,7 @@ const LightMagicUpgradeCost = [
   },
   {
     "level": 707,
-    "light-reagent-cost": 390,
+    "light-reagent-cost": 395,
     "dark-reagent-cost": null
   },
   {
@@ -3591,7 +3596,7 @@ const LightMagicUpgradeCost = [
   },
   {
     "level": 719,
-    "light-reagent-cost": 395,
+    "light-reagent-cost": 400,
     "dark-reagent-cost": null
   },
   {
@@ -3646,7 +3651,7 @@ const LightMagicUpgradeCost = [
   },
   {
     "level": 730,
-    "light-reagent-cost": 400,
+    "light-reagent-cost": 405,
     "dark-reagent-cost": null
   },
   {
@@ -3706,7 +3711,7 @@ const LightMagicUpgradeCost = [
   },
   {
     "level": 742,
-    "light-reagent-cost": 405,
+    "light-reagent-cost": 410,
     "dark-reagent-cost": null
   },
   {
@@ -3761,7 +3766,7 @@ const LightMagicUpgradeCost = [
   },
   {
     "level": 753,
-    "light-reagent-cost": 410,
+    "light-reagent-cost": 415,
     "dark-reagent-cost": null
   },
   {
@@ -3821,7 +3826,7 @@ const LightMagicUpgradeCost = [
   },
   {
     "level": 765,
-    "light-reagent-cost": 415,
+    "light-reagent-cost": 420,
     "dark-reagent-cost": null
   },
   {
@@ -3876,7 +3881,7 @@ const LightMagicUpgradeCost = [
   },
   {
     "level": 776,
-    "light-reagent-cost": 420,
+    "light-reagent-cost": 425,
     "dark-reagent-cost": null
   },
   {
@@ -3936,7 +3941,7 @@ const LightMagicUpgradeCost = [
   },
   {
     "level": 788,
-    "light-reagent-cost": 425,
+    "light-reagent-cost": 430,
     "dark-reagent-cost": null
   },
   {
@@ -3991,7 +3996,7 @@ const LightMagicUpgradeCost = [
   },
   {
     "level": 799,
-    "light-reagent-cost": 430,
+    "light-reagent-cost": 435,
     "dark-reagent-cost": null
   },
   {
@@ -4051,7 +4056,7 @@ const LightMagicUpgradeCost = [
   },
   {
     "level": 811,
-    "light-reagent-cost": 435,
+    "light-reagent-cost": 440,
     "dark-reagent-cost": null
   },
   {
@@ -4111,7 +4116,7 @@ const LightMagicUpgradeCost = [
   },
   {
     "level": 823,
-    "light-reagent-cost": 440,
+    "light-reagent-cost": 445,
     "dark-reagent-cost": null
   },
   {
@@ -4166,7 +4171,7 @@ const LightMagicUpgradeCost = [
   },
   {
     "level": 834,
-    "light-reagent-cost": 445,
+    "light-reagent-cost": 450,
     "dark-reagent-cost": null
   },
   {
@@ -4226,7 +4231,7 @@ const LightMagicUpgradeCost = [
   },
   {
     "level": 846,
-    "light-reagent-cost": 450,
+    "light-reagent-cost": 455,
     "dark-reagent-cost": null
   },
   {
@@ -4286,7 +4291,7 @@ const LightMagicUpgradeCost = [
   },
   {
     "level": 858,
-    "light-reagent-cost": 455,
+    "light-reagent-cost": 460,
     "dark-reagent-cost": null
   },
   {
@@ -4346,7 +4351,7 @@ const LightMagicUpgradeCost = [
   },
   {
     "level": 870,
-    "light-reagent-cost": 460,
+    "light-reagent-cost": 465,
     "dark-reagent-cost": null
   },
   {
@@ -4406,7 +4411,7 @@ const LightMagicUpgradeCost = [
   },
   {
     "level": 882,
-    "light-reagent-cost": 465,
+    "light-reagent-cost": 470,
     "dark-reagent-cost": null
   },
   {
@@ -4461,7 +4466,7 @@ const LightMagicUpgradeCost = [
   },
   {
     "level": 893,
-    "light-reagent-cost": 470,
+    "light-reagent-cost": 475,
     "dark-reagent-cost": null
   },
   {
@@ -4521,7 +4526,7 @@ const LightMagicUpgradeCost = [
   },
   {
     "level": 905,
-    "light-reagent-cost": 475,
+    "light-reagent-cost": 480,
     "dark-reagent-cost": null
   },
   {
@@ -4581,7 +4586,7 @@ const LightMagicUpgradeCost = [
   },
   {
     "level": 917,
-    "light-reagent-cost": 480,
+    "light-reagent-cost": 485,
     "dark-reagent-cost": null
   },
   {
@@ -4641,7 +4646,7 @@ const LightMagicUpgradeCost = [
   },
   {
     "level": 929,
-    "light-reagent-cost": 485,
+    "light-reagent-cost": 490,
     "dark-reagent-cost": null
   },
   {
@@ -4696,7 +4701,7 @@ const LightMagicUpgradeCost = [
   },
   {
     "level": 940,
-    "light-reagent-cost": 490,
+    "light-reagent-cost": 495,
     "dark-reagent-cost": null
   },
   {
@@ -4761,7 +4766,7 @@ const LightMagicUpgradeCost = [
   },
   {
     "level": 953,
-    "light-reagent-cost": 495,
+    "light-reagent-cost": 500,
     "dark-reagent-cost": null
   },
   {
@@ -4821,7 +4826,7 @@ const LightMagicUpgradeCost = [
   },
   {
     "level": 965,
-    "light-reagent-cost": 500,
+    "light-reagent-cost": 505,
     "dark-reagent-cost": null
   },
   {
@@ -4881,7 +4886,7 @@ const LightMagicUpgradeCost = [
   },
   {
     "level": 977,
-    "light-reagent-cost": 505,
+    "light-reagent-cost": 510,
     "dark-reagent-cost": null
   },
   {
@@ -4946,7 +4951,7 @@ const LightMagicUpgradeCost = [
   },
   {
     "level": 990,
-    "light-reagent-cost": 510,
+    "light-reagent-cost": 515,
     "dark-reagent-cost": null
   },
   {
@@ -5006,7 +5011,7 @@ const LightMagicUpgradeCost = [
   },
   {
     "level": 1002,
-    "light-reagent-cost": 515,
+    "light-reagent-cost": 520,
     "dark-reagent-cost": null
   },
   {
@@ -5066,7 +5071,7 @@ const LightMagicUpgradeCost = [
   },
   {
     "level": 1014,
-    "light-reagent-cost": 520,
+    "light-reagent-cost": 525,
     "dark-reagent-cost": null
   },
   {
@@ -5126,7 +5131,7 @@ const LightMagicUpgradeCost = [
   },
   {
     "level": 1026,
-    "light-reagent-cost": 525,
+    "light-reagent-cost": 530,
     "dark-reagent-cost": null
   },
   {
@@ -5186,7 +5191,7 @@ const LightMagicUpgradeCost = [
   },
   {
     "level": 1038,
-    "light-reagent-cost": 530,
+    "light-reagent-cost": 535,
     "dark-reagent-cost": null
   },
   {
@@ -5251,7 +5256,7 @@ const LightMagicUpgradeCost = [
   },
   {
     "level": 1051,
-    "light-reagent-cost": 535,
+    "light-reagent-cost": 540,
     "dark-reagent-cost": null
   },
   {
@@ -5311,7 +5316,7 @@ const LightMagicUpgradeCost = [
   },
   {
     "level": 1063,
-    "light-reagent-cost": 540,
+    "light-reagent-cost": 545,
     "dark-reagent-cost": null
   },
   {
@@ -5371,7 +5376,7 @@ const LightMagicUpgradeCost = [
   },
   {
     "level": 1075,
-    "light-reagent-cost": 545,
+    "light-reagent-cost": 550,
     "dark-reagent-cost": null
   },
   {
@@ -5436,7 +5441,7 @@ const LightMagicUpgradeCost = [
   },
   {
     "level": 1088,
-    "light-reagent-cost": 550,
+    "light-reagent-cost": 555,
     "dark-reagent-cost": null
   },
   {
@@ -5496,7 +5501,7 @@ const LightMagicUpgradeCost = [
   },
   {
     "level": 1100,
-    "light-reagent-cost": 555,
+    "light-reagent-cost": 560,
     "dark-reagent-cost": null
   },
   {
@@ -5556,7 +5561,7 @@ const LightMagicUpgradeCost = [
   },
   {
     "level": 1112,
-    "light-reagent-cost": 560,
+    "light-reagent-cost": 565,
     "dark-reagent-cost": null
   },
   {
@@ -5621,7 +5626,7 @@ const LightMagicUpgradeCost = [
   },
   {
     "level": 1125,
-    "light-reagent-cost": 565,
+    "light-reagent-cost": 570,
     "dark-reagent-cost": null
   },
   {
@@ -5681,7 +5686,7 @@ const LightMagicUpgradeCost = [
   },
   {
     "level": 1137,
-    "light-reagent-cost": 570,
+    "light-reagent-cost": 575,
     "dark-reagent-cost": null
   },
   {
@@ -5746,7 +5751,7 @@ const LightMagicUpgradeCost = [
   },
   {
     "level": 1150,
-    "light-reagent-cost": 575,
+    "light-reagent-cost": 580,
     "dark-reagent-cost": null
   },
   {
@@ -5806,7 +5811,7 @@ const LightMagicUpgradeCost = [
   },
   {
     "level": 1162,
-    "light-reagent-cost": 580,
+    "light-reagent-cost": 585,
     "dark-reagent-cost": null
   },
   {
@@ -5871,7 +5876,7 @@ const LightMagicUpgradeCost = [
   },
   {
     "level": 1175,
-    "light-reagent-cost": 585,
+    "light-reagent-cost": 590,
     "dark-reagent-cost": null
   },
   {
@@ -5931,7 +5936,7 @@ const LightMagicUpgradeCost = [
   },
   {
     "level": 1187,
-    "light-reagent-cost": 590,
+    "light-reagent-cost": 595,
     "dark-reagent-cost": null
   },
   {
@@ -5996,7 +6001,7 @@ const LightMagicUpgradeCost = [
   },
   {
     "level": 1200,
-    "light-reagent-cost": 595,
+    "light-reagent-cost": 600,
     "dark-reagent-cost": null
   },
   {
@@ -6061,7 +6066,7 @@ const LightMagicUpgradeCost = [
   },
   {
     "level": 1213,
-    "light-reagent-cost": 600,
+    "light-reagent-cost": 605,
     "dark-reagent-cost": null
   },
   {
@@ -6121,7 +6126,7 @@ const LightMagicUpgradeCost = [
   },
   {
     "level": 1225,
-    "light-reagent-cost": 605,
+    "light-reagent-cost": 610,
     "dark-reagent-cost": null
   },
   {
@@ -6186,7 +6191,7 @@ const LightMagicUpgradeCost = [
   },
   {
     "level": 1238,
-    "light-reagent-cost": 610,
+    "light-reagent-cost": 615,
     "dark-reagent-cost": null
   },
   {
@@ -6251,7 +6256,7 @@ const LightMagicUpgradeCost = [
   },
   {
     "level": 1251,
-    "light-reagent-cost": 615,
+    "light-reagent-cost": 620,
     "dark-reagent-cost": null
   },
   {
@@ -6311,7 +6316,7 @@ const LightMagicUpgradeCost = [
   },
   {
     "level": 1263,
-    "light-reagent-cost": 620,
+    "light-reagent-cost": 625,
     "dark-reagent-cost": null
   },
   {
@@ -6376,7 +6381,7 @@ const LightMagicUpgradeCost = [
   },
   {
     "level": 1276,
-    "light-reagent-cost": 625,
+    "light-reagent-cost": 630,
     "dark-reagent-cost": null
   },
   {
@@ -6441,7 +6446,7 @@ const LightMagicUpgradeCost = [
   },
   {
     "level": 1289,
-    "light-reagent-cost": 630,
+    "light-reagent-cost": 635,
     "dark-reagent-cost": null
   },
   {
@@ -6506,7 +6511,7 @@ const LightMagicUpgradeCost = [
   },
   {
     "level": 1302,
-    "light-reagent-cost": 635,
+    "light-reagent-cost": 640,
     "dark-reagent-cost": null
   },
   {
@@ -6566,7 +6571,7 @@ const LightMagicUpgradeCost = [
   },
   {
     "level": 1314,
-    "light-reagent-cost": 640,
+    "light-reagent-cost": 645,
     "dark-reagent-cost": null
   },
   {
@@ -6631,7 +6636,7 @@ const LightMagicUpgradeCost = [
   },
   {
     "level": 1327,
-    "light-reagent-cost": 645,
+    "light-reagent-cost": 650,
     "dark-reagent-cost": null
   },
   {
@@ -6696,7 +6701,7 @@ const LightMagicUpgradeCost = [
   },
   {
     "level": 1340,
-    "light-reagent-cost": 650,
+    "light-reagent-cost": 655,
     "dark-reagent-cost": null
   },
   {
@@ -6761,7 +6766,7 @@ const LightMagicUpgradeCost = [
   },
   {
     "level": 1353,
-    "light-reagent-cost": 655,
+    "light-reagent-cost": 660,
     "dark-reagent-cost": null
   },
   {
@@ -6826,7 +6831,7 @@ const LightMagicUpgradeCost = [
   },
   {
     "level": 1366,
-    "light-reagent-cost": 660,
+    "light-reagent-cost": 665,
     "dark-reagent-cost": null
   },
   {
@@ -6891,7 +6896,7 @@ const LightMagicUpgradeCost = [
   },
   {
     "level": 1379,
-    "light-reagent-cost": 665,
+    "light-reagent-cost": 670,
     "dark-reagent-cost": null
   },
   {
@@ -6956,7 +6961,7 @@ const LightMagicUpgradeCost = [
   },
   {
     "level": 1392,
-    "light-reagent-cost": 670,
+    "light-reagent-cost": 675,
     "dark-reagent-cost": null
   },
   {
@@ -7021,7 +7026,7 @@ const LightMagicUpgradeCost = [
   },
   {
     "level": 1405,
-    "light-reagent-cost": 675,
+    "light-reagent-cost": 680,
     "dark-reagent-cost": null
   },
   {
@@ -7086,7 +7091,7 @@ const LightMagicUpgradeCost = [
   },
   {
     "level": 1418,
-    "light-reagent-cost": 680,
+    "light-reagent-cost": 685,
     "dark-reagent-cost": null
   },
   {
@@ -7151,7 +7156,7 @@ const LightMagicUpgradeCost = [
   },
   {
     "level": 1431,
-    "light-reagent-cost": 685,
+    "light-reagent-cost": 690,
     "dark-reagent-cost": null
   },
   {
@@ -7216,7 +7221,7 @@ const LightMagicUpgradeCost = [
   },
   {
     "level": 1444,
-    "light-reagent-cost": 690,
+    "light-reagent-cost": 695,
     "dark-reagent-cost": null
   },
   {
@@ -7281,7 +7286,7 @@ const LightMagicUpgradeCost = [
   },
   {
     "level": 1457,
-    "light-reagent-cost": 695,
+    "light-reagent-cost": 700,
     "dark-reagent-cost": null
   },
   {
@@ -7346,7 +7351,7 @@ const LightMagicUpgradeCost = [
   },
   {
     "level": 1470,
-    "light-reagent-cost": 700,
+    "light-reagent-cost": 705,
     "dark-reagent-cost": null
   },
   {
@@ -7416,7 +7421,7 @@ const LightMagicUpgradeCost = [
   },
   {
     "level": 1484,
-    "light-reagent-cost": 705,
+    "light-reagent-cost": 710,
     "dark-reagent-cost": null
   },
   {
@@ -7481,7 +7486,7 @@ const LightMagicUpgradeCost = [
   },
   {
     "level": 1497,
-    "light-reagent-cost": 710,
+    "light-reagent-cost": 715,
     "dark-reagent-cost": null
   },
   {
@@ -7546,7 +7551,7 @@ const LightMagicUpgradeCost = [
   },
   {
     "level": 1510,
-    "light-reagent-cost": 715,
+    "light-reagent-cost": 720,
     "dark-reagent-cost": null
   },
   {
@@ -7611,7 +7616,7 @@ const LightMagicUpgradeCost = [
   },
   {
     "level": 1523,
-    "light-reagent-cost": 720,
+    "light-reagent-cost": 725,
     "dark-reagent-cost": null
   },
   {
@@ -7676,7 +7681,7 @@ const LightMagicUpgradeCost = [
   },
   {
     "level": 1536,
-    "light-reagent-cost": 725,
+    "light-reagent-cost": 730,
     "dark-reagent-cost": null
   },
   {
@@ -7746,7 +7751,7 @@ const LightMagicUpgradeCost = [
   },
   {
     "level": 1550,
-    "light-reagent-cost": 730,
+    "light-reagent-cost": 735,
     "dark-reagent-cost": null
   },
   {
@@ -7811,7 +7816,7 @@ const LightMagicUpgradeCost = [
   },
   {
     "level": 1563,
-    "light-reagent-cost": 735,
+    "light-reagent-cost": 740,
     "dark-reagent-cost": null
   },
   {
@@ -7876,7 +7881,7 @@ const LightMagicUpgradeCost = [
   },
   {
     "level": 1576,
-    "light-reagent-cost": 740,
+    "light-reagent-cost": 745,
     "dark-reagent-cost": null
   },
   {
@@ -7941,7 +7946,7 @@ const LightMagicUpgradeCost = [
   },
   {
     "level": 1589,
-    "light-reagent-cost": 745,
+    "light-reagent-cost": 750,
     "dark-reagent-cost": null
   },
   {
@@ -8011,7 +8016,7 @@ const LightMagicUpgradeCost = [
   },
   {
     "level": 1603,
-    "light-reagent-cost": 750,
+    "light-reagent-cost": 755,
     "dark-reagent-cost": null
   },
   {
@@ -8076,7 +8081,7 @@ const LightMagicUpgradeCost = [
   },
   {
     "level": 1616,
-    "light-reagent-cost": 755,
+    "light-reagent-cost": 760,
     "dark-reagent-cost": null
   },
   {
@@ -8146,7 +8151,7 @@ const LightMagicUpgradeCost = [
   },
   {
     "level": 1630,
-    "light-reagent-cost": 760,
+    "light-reagent-cost": 765,
     "dark-reagent-cost": null
   },
   {
@@ -8211,7 +8216,7 @@ const LightMagicUpgradeCost = [
   },
   {
     "level": 1643,
-    "light-reagent-cost": 765,
+    "light-reagent-cost": 770,
     "dark-reagent-cost": null
   },
   {
@@ -8276,7 +8281,7 @@ const LightMagicUpgradeCost = [
   },
   {
     "level": 1656,
-    "light-reagent-cost": 770,
+    "light-reagent-cost": 775,
     "dark-reagent-cost": null
   },
   {
@@ -8346,7 +8351,7 @@ const LightMagicUpgradeCost = [
   },
   {
     "level": 1670,
-    "light-reagent-cost": 775,
+    "light-reagent-cost": 780,
     "dark-reagent-cost": null
   },
   {
@@ -8411,7 +8416,7 @@ const LightMagicUpgradeCost = [
   },
   {
     "level": 1683,
-    "light-reagent-cost": 780,
+    "light-reagent-cost": 785,
     "dark-reagent-cost": null
   },
   {
@@ -8481,7 +8486,7 @@ const LightMagicUpgradeCost = [
   },
   {
     "level": 1697,
-    "light-reagent-cost": 785,
+    "light-reagent-cost": 790,
     "dark-reagent-cost": null
   },
   {
@@ -8546,7 +8551,7 @@ const LightMagicUpgradeCost = [
   },
   {
     "level": 1710,
-    "light-reagent-cost": 790,
+    "light-reagent-cost": 795,
     "dark-reagent-cost": null
   },
   {
@@ -8616,7 +8621,7 @@ const LightMagicUpgradeCost = [
   },
   {
     "level": 1724,
-    "light-reagent-cost": 795,
+    "light-reagent-cost": 800,
     "dark-reagent-cost": null
   },
   {
@@ -8686,7 +8691,7 @@ const LightMagicUpgradeCost = [
   },
   {
     "level": 1738,
-    "light-reagent-cost": 800,
+    "light-reagent-cost": 805,
     "dark-reagent-cost": null
   },
   {
@@ -8751,7 +8756,7 @@ const LightMagicUpgradeCost = [
   },
   {
     "level": 1751,
-    "light-reagent-cost": 805,
+    "light-reagent-cost": 810,
     "dark-reagent-cost": null
   },
   {
@@ -8821,7 +8826,7 @@ const LightMagicUpgradeCost = [
   },
   {
     "level": 1765,
-    "light-reagent-cost": 810,
+    "light-reagent-cost": 815,
     "dark-reagent-cost": null
   },
   {
@@ -8886,7 +8891,7 @@ const LightMagicUpgradeCost = [
   },
   {
     "level": 1778,
-    "light-reagent-cost": 815,
+    "light-reagent-cost": 820,
     "dark-reagent-cost": null
   },
   {
@@ -8956,7 +8961,7 @@ const LightMagicUpgradeCost = [
   },
   {
     "level": 1792,
-    "light-reagent-cost": 820,
+    "light-reagent-cost": 825,
     "dark-reagent-cost": null
   },
   {
@@ -9026,7 +9031,7 @@ const LightMagicUpgradeCost = [
   },
   {
     "level": 1806,
-    "light-reagent-cost": 825,
+    "light-reagent-cost": 830,
     "dark-reagent-cost": null
   },
   {
@@ -9091,7 +9096,7 @@ const LightMagicUpgradeCost = [
   },
   {
     "level": 1819,
-    "light-reagent-cost": 830,
+    "light-reagent-cost": 835,
     "dark-reagent-cost": null
   },
   {
@@ -9161,7 +9166,7 @@ const LightMagicUpgradeCost = [
   },
   {
     "level": 1833,
-    "light-reagent-cost": 835,
+    "light-reagent-cost": 840,
     "dark-reagent-cost": null
   },
   {
@@ -9231,7 +9236,7 @@ const LightMagicUpgradeCost = [
   },
   {
     "level": 1847,
-    "light-reagent-cost": 840,
+    "light-reagent-cost": 845,
     "dark-reagent-cost": null
   },
   {
@@ -9301,7 +9306,7 @@ const LightMagicUpgradeCost = [
   },
   {
     "level": 1861,
-    "light-reagent-cost": 845,
+    "light-reagent-cost": 850,
     "dark-reagent-cost": null
   },
   {
@@ -9366,7 +9371,7 @@ const LightMagicUpgradeCost = [
   },
   {
     "level": 1874,
-    "light-reagent-cost": 850,
+    "light-reagent-cost": 855,
     "dark-reagent-cost": null
   },
   {
@@ -9436,7 +9441,7 @@ const LightMagicUpgradeCost = [
   },
   {
     "level": 1888,
-    "light-reagent-cost": 855,
+    "light-reagent-cost": 860,
     "dark-reagent-cost": null
   },
   {
@@ -9506,7 +9511,7 @@ const LightMagicUpgradeCost = [
   },
   {
     "level": 1902,
-    "light-reagent-cost": 860,
+    "light-reagent-cost": 865,
     "dark-reagent-cost": null
   },
   {
@@ -9576,7 +9581,7 @@ const LightMagicUpgradeCost = [
   },
   {
     "level": 1916,
-    "light-reagent-cost": 865,
+    "light-reagent-cost": 870,
     "dark-reagent-cost": null
   },
   {
@@ -9646,7 +9651,7 @@ const LightMagicUpgradeCost = [
   },
   {
     "level": 1930,
-    "light-reagent-cost": 870,
+    "light-reagent-cost": 875,
     "dark-reagent-cost": null
   },
   {
@@ -9716,7 +9721,7 @@ const LightMagicUpgradeCost = [
   },
   {
     "level": 1944,
-    "light-reagent-cost": 875,
+    "light-reagent-cost": 880,
     "dark-reagent-cost": null
   },
   {
@@ -9781,7 +9786,7 @@ const LightMagicUpgradeCost = [
   },
   {
     "level": 1957,
-    "light-reagent-cost": 880,
+    "light-reagent-cost": 885,
     "dark-reagent-cost": null
   },
   {
@@ -9851,7 +9856,7 @@ const LightMagicUpgradeCost = [
   },
   {
     "level": 1971,
-    "light-reagent-cost": 885,
+    "light-reagent-cost": 890,
     "dark-reagent-cost": null
   },
   {
@@ -9921,7 +9926,7 @@ const LightMagicUpgradeCost = [
   },
   {
     "level": 1985,
-    "light-reagent-cost": 890,
+    "light-reagent-cost": 895,
     "dark-reagent-cost": null
   },
   {
@@ -9991,11 +9996,6 @@ const LightMagicUpgradeCost = [
   },
   {
     "level": 1999,
-    "light-reagent-cost": 895,
-    "dark-reagent-cost": null
-  },
-  {
-    "level": 2000,
     "light-reagent-cost": 900,
     "dark-reagent-cost": null
   }
