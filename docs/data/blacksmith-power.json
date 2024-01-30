@@ -1,0 +1,10006 @@
+{
+  "table": "Blacksmith Power",
+  "table-date": "2024-01-30",
+  "data": [
+    {
+      "level": 1,
+      "power": 2500,
+      "verified": true
+    },
+    {
+      "level": 2,
+      "power": 5000,
+      "verified": true
+    },
+    {
+      "level": 3,
+      "power": 7500,
+      "verified": true
+    },
+    {
+      "level": 4,
+      "power": 10000,
+      "verified": true
+    },
+    {
+      "level": 5,
+      "power": 15000,
+      "verified": true
+    },
+    {
+      "level": 6,
+      "power": 20000,
+      "verified": true
+    },
+    {
+      "level": 7,
+      "power": 25000,
+      "verified": true
+    },
+    {
+      "level": 8,
+      "power": 30000,
+      "verified": true
+    },
+    {
+      "level": 9,
+      "power": 37500,
+      "verified": true
+    },
+    {
+      "level": 10,
+      "power": 45000,
+      "verified": true
+    },
+    {
+      "level": 11,
+      "power": 52500,
+      "verified": true
+    },
+    {
+      "level": 12,
+      "power": 60000,
+      "verified": true
+    },
+    {
+      "level": 13,
+      "power": 67500,
+      "verified": true
+    },
+    {
+      "level": 14,
+      "power": 77500,
+      "verified": true
+    },
+    {
+      "level": 15,
+      "power": 87500,
+      "verified": true
+    },
+    {
+      "level": 16,
+      "power": 97500,
+      "verified": true
+    },
+    {
+      "level": 17,
+      "power": 107500,
+      "verified": true
+    },
+    {
+      "level": 18,
+      "power": 117500,
+      "verified": true
+    },
+    {
+      "level": 19,
+      "power": 130000,
+      "verified": true
+    },
+    {
+      "level": 20,
+      "power": 142500,
+      "verified": true
+    },
+    {
+      "level": 21,
+      "power": 155000,
+      "verified": true
+    },
+    {
+      "level": 22,
+      "power": 167500,
+      "verified": true
+    },
+    {
+      "level": 23,
+      "power": 180000,
+      "verified": true
+    },
+    {
+      "level": 24,
+      "power": 192500,
+      "verified": true
+    },
+    {
+      "level": 25,
+      "power": 207500,
+      "verified": true
+    },
+    {
+      "level": 26,
+      "power": 222500,
+      "verified": true
+    },
+    {
+      "level": 27,
+      "power": 237500,
+      "verified": true
+    },
+    {
+      "level": 28,
+      "power": 252500,
+      "verified": true
+    },
+    {
+      "level": 29,
+      "power": 267500,
+      "verified": true
+    },
+    {
+      "level": 30,
+      "power": 285000,
+      "verified": true
+    },
+    {
+      "level": 31,
+      "power": 302500,
+      "verified": true
+    },
+    {
+      "level": 32,
+      "power": 320000,
+      "verified": true
+    },
+    {
+      "level": 33,
+      "power": 337500,
+      "verified": true
+    },
+    {
+      "level": 34,
+      "power": 355000,
+      "verified": true
+    },
+    {
+      "level": 35,
+      "power": 372500,
+      "verified": true
+    },
+    {
+      "level": 36,
+      "power": 392500,
+      "verified": true
+    },
+    {
+      "level": 37,
+      "power": 412500,
+      "verified": true
+    },
+    {
+      "level": 38,
+      "power": 432500,
+      "verified": true
+    },
+    {
+      "level": 39,
+      "power": 452500,
+      "verified": true
+    },
+    {
+      "level": 40,
+      "power": 472500,
+      "verified": true
+    },
+    {
+      "level": 41,
+      "power": 495000,
+      "verified": true
+    },
+    {
+      "level": 42,
+      "power": 517500,
+      "verified": true
+    },
+    {
+      "level": 43,
+      "power": 540500,
+      "verified": true
+    },
+    {
+      "level": 44,
+      "power": 562500,
+      "verified": true
+    },
+    {
+      "level": 45,
+      "power": 585500,
+      "verified": true
+    },
+    {
+      "level": 46,
+      "power": 607500,
+      "verified": true
+    },
+    {
+      "level": 47,
+      "power": 632500,
+      "verified": true
+    },
+    {
+      "level": 48,
+      "power": 657500,
+      "verified": true
+    },
+    {
+      "level": 49,
+      "power": 682500,
+      "verified": true
+    },
+    {
+      "level": 50,
+      "power": 707500,
+      "verified": true
+    },
+    {
+      "level": 51,
+      "power": 732500,
+      "verified": true
+    },
+    {
+      "level": 52,
+      "power": 757500,
+      "verified": true
+    },
+    {
+      "level": 53,
+      "power": 785000,
+      "verified": true
+    },
+    {
+      "level": 54,
+      "power": 812500,
+      "verified": true
+    },
+    {
+      "level": 55,
+      "power": 840000,
+      "verified": true
+    },
+    {
+      "level": 56,
+      "power": 867500,
+      "verified": true
+    },
+    {
+      "level": 57,
+      "power": 895000,
+      "verified": true
+    },
+    {
+      "level": 58,
+      "power": 922500,
+      "verified": true
+    },
+    {
+      "level": 59,
+      "power": 952500,
+      "verified": true
+    },
+    {
+      "level": 60,
+      "power": 982500,
+      "verified": true
+    },
+    {
+      "level": 61,
+      "power": 1012500,
+      "verified": true
+    },
+    {
+      "level": 62,
+      "power": 1042500,
+      "verified": true
+    },
+    {
+      "level": 63,
+      "power": 1072500,
+      "verified": true
+    },
+    {
+      "level": 64,
+      "power": 1102500,
+      "verified": true
+    },
+    {
+      "level": 65,
+      "power": 1135000,
+      "verified": true
+    },
+    {
+      "level": 66,
+      "power": 1167500,
+      "verified": true
+    },
+    {
+      "level": 67,
+      "power": 1200000,
+      "verified": true
+    },
+    {
+      "level": 68,
+      "power": 1232500,
+      "verified": true
+    },
+    {
+      "level": 69,
+      "power": 1265000,
+      "verified": true
+    },
+    {
+      "level": 70,
+      "power": 1297500,
+      "verified": true
+    },
+    {
+      "level": 71,
+      "power": 1332500,
+      "verified": true
+    },
+    {
+      "level": 72,
+      "power": 1367500,
+      "verified": true
+    },
+    {
+      "level": 73,
+      "power": 1402500,
+      "verified": true
+    },
+    {
+      "level": 74,
+      "power": 1437500,
+      "verified": true
+    },
+    {
+      "level": 75,
+      "power": 1472500,
+      "verified": true
+    },
+    {
+      "level": 76,
+      "power": 1507500,
+      "verified": true
+    },
+    {
+      "level": 77,
+      "power": 1545000,
+      "verified": true
+    },
+    {
+      "level": 78,
+      "power": 1582500,
+      "verified": true
+    },
+    {
+      "level": 79,
+      "power": 1620000,
+      "verified": true
+    },
+    {
+      "level": 80,
+      "power": 1657500,
+      "verified": true
+    },
+    {
+      "level": 81,
+      "power": 1695000,
+      "verified": true
+    },
+    {
+      "level": 82,
+      "power": 1732500,
+      "verified": true
+    },
+    {
+      "level": 83,
+      "power": 1772500,
+      "verified": true
+    },
+    {
+      "level": 84,
+      "power": 1812500,
+      "verified": true
+    },
+    {
+      "level": 85,
+      "power": 1852500,
+      "verified": true
+    },
+    {
+      "level": 86,
+      "power": 1892500,
+      "verified": true
+    },
+    {
+      "level": 87,
+      "power": 1932500,
+      "verified": true
+    },
+    {
+      "level": 88,
+      "power": 1972500,
+      "verified": true
+    },
+    {
+      "level": 89,
+      "power": 2015000,
+      "verified": true
+    },
+    {
+      "level": 90,
+      "power": 2057500,
+      "verified": true
+    },
+    {
+      "level": 91,
+      "power": 2100000,
+      "verified": true
+    },
+    {
+      "level": 92,
+      "power": 2142500,
+      "verified": true
+    },
+    {
+      "level": 93,
+      "power": 2185000,
+      "verified": true
+    },
+    {
+      "level": 94,
+      "power": 2227500,
+      "verified": true
+    },
+    {
+      "level": 95,
+      "power": 2272500,
+      "verified": true
+    },
+    {
+      "level": 96,
+      "power": 2317500,
+      "verified": true
+    },
+    {
+      "level": 97,
+      "power": 2362500,
+      "verified": true
+    },
+    {
+      "level": 98,
+      "power": 2407500,
+      "verified": true
+    },
+    {
+      "level": 99,
+      "power": 2452500,
+      "verified": true
+    },
+    {
+      "level": 100,
+      "power": 2497500,
+      "verified": true
+    },
+    {
+      "level": 101,
+      "power": 2545000,
+      "verified": true
+    },
+    {
+      "level": 102,
+      "power": 2592500,
+      "verified": true
+    },
+    {
+      "level": 103,
+      "power": 2640000,
+      "verified": true
+    },
+    {
+      "level": 104,
+      "power": 2687500,
+      "verified": true
+    },
+    {
+      "level": 105,
+      "power": 2735000,
+      "verified": true
+    },
+    {
+      "level": 106,
+      "power": 2782500,
+      "verified": true
+    },
+    {
+      "level": 107,
+      "power": 2830000,
+      "verified": true
+    },
+    {
+      "level": 108,
+      "power": 2880000,
+      "verified": true
+    },
+    {
+      "level": 109,
+      "power": 2930000,
+      "verified": true
+    },
+    {
+      "level": 110,
+      "power": 2980000,
+      "verified": true
+    },
+    {
+      "level": 111,
+      "power": 3030000,
+      "verified": true
+    },
+    {
+      "level": 112,
+      "power": 3080000,
+      "verified": true
+    },
+    {
+      "level": 113,
+      "power": 3130000,
+      "verified": true
+    },
+    {
+      "level": 114,
+      "power": 3182500,
+      "verified": true
+    },
+    {
+      "level": 115,
+      "power": 3235000,
+      "verified": true
+    },
+    {
+      "level": 116,
+      "power": 3287500,
+      "verified": true
+    },
+    {
+      "level": 117,
+      "power": 3340000,
+      "verified": true
+    },
+    {
+      "level": 118,
+      "power": 3392500,
+      "verified": true
+    },
+    {
+      "level": 119,
+      "power": 3445000,
+      "verified": true
+    },
+    {
+      "level": 120,
+      "power": 3500000,
+      "verified": true
+    },
+    {
+      "level": 121,
+      "power": 3555000,
+      "verified": true
+    },
+    {
+      "level": 122,
+      "power": 3610000,
+      "verified": true
+    },
+    {
+      "level": 123,
+      "power": 3665000,
+      "verified": true
+    },
+    {
+      "level": 124,
+      "power": 3720000,
+      "verified": true
+    },
+    {
+      "level": 125,
+      "power": 3775000,
+      "verified": true
+    },
+    {
+      "level": 126,
+      "power": 3832500,
+      "verified": true
+    },
+    {
+      "level": 127,
+      "power": 3890000,
+      "verified": true
+    },
+    {
+      "level": 128,
+      "power": 3947500,
+      "verified": true
+    },
+    {
+      "level": 129,
+      "power": 4005000,
+      "verified": true
+    },
+    {
+      "level": 130,
+      "power": 4062500,
+      "verified": true
+    },
+    {
+      "level": 131,
+      "power": 4120000,
+      "verified": true
+    },
+    {
+      "level": 132,
+      "power": 4177500,
+      "verified": true
+    },
+    {
+      "level": 133,
+      "power": 4237500,
+      "verified": true
+    },
+    {
+      "level": 134,
+      "power": 4297500,
+      "verified": true
+    },
+    {
+      "level": 135,
+      "power": 4357500,
+      "verified": true
+    },
+    {
+      "level": 136,
+      "power": 4417500,
+      "verified": true
+    },
+    {
+      "level": 137,
+      "power": 4477500,
+      "verified": true
+    },
+    {
+      "level": 138,
+      "power": 4537500,
+      "verified": true
+    },
+    {
+      "level": 139,
+      "power": 4600000,
+      "verified": true
+    },
+    {
+      "level": 140,
+      "power": 4662500,
+      "verified": true
+    },
+    {
+      "level": 141,
+      "power": 4725000,
+      "verified": true
+    },
+    {
+      "level": 142,
+      "power": 4787500,
+      "verified": true
+    },
+    {
+      "level": 143,
+      "power": 4850000,
+      "verified": true
+    },
+    {
+      "level": 144,
+      "power": 4912500,
+      "verified": true
+    },
+    {
+      "level": 145,
+      "power": 4975000,
+      "verified": true
+    },
+    {
+      "level": 146,
+      "power": 5040000,
+      "verified": true
+    },
+    {
+      "level": 147,
+      "power": 5105000,
+      "verified": true
+    },
+    {
+      "level": 148,
+      "power": 5170000,
+      "verified": true
+    },
+    {
+      "level": 149,
+      "power": 5235000,
+      "verified": true
+    },
+    {
+      "level": 150,
+      "power": 5300000,
+      "verified": true
+    },
+    {
+      "level": 151,
+      "power": 5365000,
+      "verified": true
+    },
+    {
+      "level": 152,
+      "power": 5432500,
+      "verified": true
+    },
+    {
+      "level": 153,
+      "power": 5500000,
+      "verified": true
+    },
+    {
+      "level": 154,
+      "power": 5567500,
+      "verified": true
+    },
+    {
+      "level": 155,
+      "power": 5635000,
+      "verified": true
+    },
+    {
+      "level": 156,
+      "power": 5702500,
+      "verified": true
+    },
+    {
+      "level": 157,
+      "power": 5770000,
+      "verified": true
+    },
+    {
+      "level": 158,
+      "power": 5837500,
+      "verified": true
+    },
+    {
+      "level": 159,
+      "power": 5907500,
+      "verified": true
+    },
+    {
+      "level": 160,
+      "power": 5977500,
+      "verified": true
+    },
+    {
+      "level": 161,
+      "power": 6047500,
+      "verified": true
+    },
+    {
+      "level": 162,
+      "power": 6117500,
+      "verified": true
+    },
+    {
+      "level": 163,
+      "power": 6187500,
+      "verified": true
+    },
+    {
+      "level": 164,
+      "power": 6257500,
+      "verified": true
+    },
+    {
+      "level": 165,
+      "power": 6330000,
+      "verified": true
+    },
+    {
+      "level": 166,
+      "power": 6402500,
+      "verified": true
+    },
+    {
+      "level": 167,
+      "power": 6475000,
+      "verified": true
+    },
+    {
+      "level": 168,
+      "power": 6547500,
+      "verified": true
+    },
+    {
+      "level": 169,
+      "power": 6620000,
+      "verified": true
+    },
+    {
+      "level": 170,
+      "power": 6692500,
+      "verified": true
+    },
+    {
+      "level": 171,
+      "power": 6765000,
+      "verified": true
+    },
+    {
+      "level": 172,
+      "power": 6840000,
+      "verified": true
+    },
+    {
+      "level": 173,
+      "power": 6915000,
+      "verified": true
+    },
+    {
+      "level": 174,
+      "power": 6990000,
+      "verified": true
+    },
+    {
+      "level": 175,
+      "power": 7065000,
+      "verified": true
+    },
+    {
+      "level": 176,
+      "power": 7140000,
+      "verified": true
+    },
+    {
+      "level": 177,
+      "power": 7215000,
+      "verified": true
+    },
+    {
+      "level": 178,
+      "power": 7292500,
+      "verified": true
+    },
+    {
+      "level": 179,
+      "power": 7370000,
+      "verified": true
+    },
+    {
+      "level": 180,
+      "power": 7447500,
+      "verified": true
+    },
+    {
+      "level": 181,
+      "power": 7525000,
+      "verified": true
+    },
+    {
+      "level": 182,
+      "power": 7602500,
+      "verified": true
+    },
+    {
+      "level": 183,
+      "power": 7680000,
+      "verified": true
+    },
+    {
+      "level": 184,
+      "power": 7757500,
+      "verified": true
+    },
+    {
+      "level": 185,
+      "power": 7837500,
+      "verified": true
+    },
+    {
+      "level": 186,
+      "power": 7917500,
+      "verified": true
+    },
+    {
+      "level": 187,
+      "power": 7997500,
+      "verified": true
+    },
+    {
+      "level": 188,
+      "power": 8077500,
+      "verified": true
+    },
+    {
+      "level": 189,
+      "power": 8157500,
+      "verified": true
+    },
+    {
+      "level": 190,
+      "power": 8237500,
+      "verified": true
+    },
+    {
+      "level": 191,
+      "power": 8317500,
+      "verified": true
+    },
+    {
+      "level": 192,
+      "power": 8400000,
+      "verified": true
+    },
+    {
+      "level": 193,
+      "power": 8482500,
+      "verified": true
+    },
+    {
+      "level": 194,
+      "power": 8565000,
+      "verified": true
+    },
+    {
+      "level": 195,
+      "power": 8647500,
+      "verified": true
+    },
+    {
+      "level": 196,
+      "power": 8730000,
+      "verified": true
+    },
+    {
+      "level": 197,
+      "power": 8812500,
+      "verified": true
+    },
+    {
+      "level": 198,
+      "power": 8897500,
+      "verified": true
+    },
+    {
+      "level": 199,
+      "power": 8982500,
+      "verified": true
+    },
+    {
+      "level": 200,
+      "power": 9067500,
+      "verified": true
+    },
+    {
+      "level": 201,
+      "power": 9152500,
+      "verified": true
+    },
+    {
+      "level": 202,
+      "power": 9237500,
+      "verified": true
+    },
+    {
+      "level": 203,
+      "power": 9322500,
+      "verified": true
+    },
+    {
+      "level": 204,
+      "power": 9407500,
+      "verified": true
+    },
+    {
+      "level": 205,
+      "power": 9495000,
+      "verified": true
+    },
+    {
+      "level": 206,
+      "power": 9582500,
+      "verified": true
+    },
+    {
+      "level": 207,
+      "power": 9670000,
+      "verified": true
+    },
+    {
+      "level": 208,
+      "power": 9757500,
+      "verified": true
+    },
+    {
+      "level": 209,
+      "power": 9845000,
+      "verified": true
+    },
+    {
+      "level": 210,
+      "power": 9932500,
+      "verified": true
+    },
+    {
+      "level": 211,
+      "power": 10020000,
+      "verified": true
+    },
+    {
+      "level": 212,
+      "power": 10110000,
+      "verified": true
+    },
+    {
+      "level": 213,
+      "power": 10200000,
+      "verified": true
+    },
+    {
+      "level": 214,
+      "power": 10290000,
+      "verified": true
+    },
+    {
+      "level": 215,
+      "power": 10380000,
+      "verified": true
+    },
+    {
+      "level": 216,
+      "power": 10470000,
+      "verified": true
+    },
+    {
+      "level": 217,
+      "power": 10560000,
+      "verified": true
+    },
+    {
+      "level": 218,
+      "power": 10652500,
+      "verified": true
+    },
+    {
+      "level": 219,
+      "power": 10745000,
+      "verified": true
+    },
+    {
+      "level": 220,
+      "power": 10837500,
+      "verified": true
+    },
+    {
+      "level": 221,
+      "power": 10930000,
+      "verified": true
+    },
+    {
+      "level": 222,
+      "power": 11022500,
+      "verified": true
+    },
+    {
+      "level": 223,
+      "power": 11115000,
+      "verified": true
+    },
+    {
+      "level": 224,
+      "power": 11207500,
+      "verified": true
+    },
+    {
+      "level": 225,
+      "power": 11302500,
+      "verified": true
+    },
+    {
+      "level": 226,
+      "power": 11397500,
+      "verified": true
+    },
+    {
+      "level": 227,
+      "power": 11492500,
+      "verified": true
+    },
+    {
+      "level": 228,
+      "power": 11587500,
+      "verified": true
+    },
+    {
+      "level": 229,
+      "power": 11682500,
+      "verified": true
+    },
+    {
+      "level": 230,
+      "power": 11777500,
+      "verified": true
+    },
+    {
+      "level": 231,
+      "power": 11872500,
+      "verified": true
+    },
+    {
+      "level": 232,
+      "power": 11970000,
+      "verified": true
+    },
+    {
+      "level": 233,
+      "power": 12067500,
+      "verified": true
+    },
+    {
+      "level": 234,
+      "power": 12165000,
+      "verified": true
+    },
+    {
+      "level": 235,
+      "power": 12262500,
+      "verified": true
+    },
+    {
+      "level": 236,
+      "power": 12360000,
+      "verified": true
+    },
+    {
+      "level": 237,
+      "power": 12457500,
+      "verified": true
+    },
+    {
+      "level": 238,
+      "power": 12557500,
+      "verified": true
+    },
+    {
+      "level": 239,
+      "power": 12657500,
+      "verified": true
+    },
+    {
+      "level": 240,
+      "power": 12757500,
+      "verified": true
+    },
+    {
+      "level": 241,
+      "power": 12857500,
+      "verified": true
+    },
+    {
+      "level": 242,
+      "power": 12957500,
+      "verified": true
+    },
+    {
+      "level": 243,
+      "power": 13057500,
+      "verified": true
+    },
+    {
+      "level": 244,
+      "power": 13157500,
+      "verified": true
+    },
+    {
+      "level": 245,
+      "power": 13260000,
+      "verified": true
+    },
+    {
+      "level": 246,
+      "power": 13362500,
+      "verified": true
+    },
+    {
+      "level": 247,
+      "power": 13465000,
+      "verified": true
+    },
+    {
+      "level": 248,
+      "power": 13567500,
+      "verified": true
+    },
+    {
+      "level": 249,
+      "power": 13670000,
+      "verified": true
+    },
+    {
+      "level": 250,
+      "power": 13772500,
+      "verified": true
+    },
+    {
+      "level": 251,
+      "power": 13875000,
+      "verified": true
+    },
+    {
+      "level": 252,
+      "power": 13980000,
+      "verified": true
+    },
+    {
+      "level": 253,
+      "power": 14085000,
+      "verified": true
+    },
+    {
+      "level": 254,
+      "power": 14190000,
+      "verified": true
+    },
+    {
+      "level": 255,
+      "power": 14295000,
+      "verified": true
+    },
+    {
+      "level": 256,
+      "power": 14400000,
+      "verified": true
+    },
+    {
+      "level": 257,
+      "power": 14505000,
+      "verified": true
+    },
+    {
+      "level": 258,
+      "power": 14610000,
+      "verified": true
+    },
+    {
+      "level": 259,
+      "power": 14717500,
+      "verified": true
+    },
+    {
+      "level": 260,
+      "power": 14825000,
+      "verified": true
+    },
+    {
+      "level": 261,
+      "power": 14932500,
+      "verified": true
+    },
+    {
+      "level": 262,
+      "power": 15040000,
+      "verified": true
+    },
+    {
+      "level": 263,
+      "power": 15147500,
+      "verified": true
+    },
+    {
+      "level": 264,
+      "power": 15255000,
+      "verified": true
+    },
+    {
+      "level": 265,
+      "power": 15362500,
+      "verified": true
+    },
+    {
+      "level": 266,
+      "power": 15472500,
+      "verified": true
+    },
+    {
+      "level": 267,
+      "power": 15582500,
+      "verified": true
+    },
+    {
+      "level": 268,
+      "power": 15692500,
+      "verified": true
+    },
+    {
+      "level": 269,
+      "power": 15802500,
+      "verified": true
+    },
+    {
+      "level": 270,
+      "power": 15912500,
+      "verified": true
+    },
+    {
+      "level": 271,
+      "power": 16022500,
+      "verified": true
+    },
+    {
+      "level": 272,
+      "power": 16132500,
+      "verified": true
+    },
+    {
+      "level": 273,
+      "power": 16245000,
+      "verified": true
+    },
+    {
+      "level": 274,
+      "power": 16357500,
+      "verified": true
+    },
+    {
+      "level": 275,
+      "power": 16470000,
+      "verified": true
+    },
+    {
+      "level": 276,
+      "power": 16582500,
+      "verified": true
+    },
+    {
+      "level": 277,
+      "power": 16695000,
+      "verified": true
+    },
+    {
+      "level": 278,
+      "power": 16807500,
+      "verified": true
+    },
+    {
+      "level": 279,
+      "power": 16922500,
+      "verified": true
+    },
+    {
+      "level": 280,
+      "power": 17037500,
+      "verified": true
+    },
+    {
+      "level": 281,
+      "power": 17152500,
+      "verified": true
+    },
+    {
+      "level": 282,
+      "power": 17267500,
+      "verified": true
+    },
+    {
+      "level": 283,
+      "power": 17382500,
+      "verified": true
+    },
+    {
+      "level": 284,
+      "power": 17497500,
+      "verified": true
+    },
+    {
+      "level": 285,
+      "power": 17612500,
+      "verified": true
+    },
+    {
+      "level": 286,
+      "power": 17730000,
+      "verified": true
+    },
+    {
+      "level": 287,
+      "power": 17847500,
+      "verified": true
+    },
+    {
+      "level": 288,
+      "power": 17965000,
+      "verified": true
+    },
+    {
+      "level": 289,
+      "power": 18082500,
+      "verified": true
+    },
+    {
+      "level": 290,
+      "power": 18200000,
+      "verified": true
+    },
+    {
+      "level": 291,
+      "power": 18317500,
+      "verified": true
+    },
+    {
+      "level": 292,
+      "power": 18435000,
+      "verified": true
+    },
+    {
+      "level": 293,
+      "power": 18555000,
+      "verified": true
+    },
+    {
+      "level": 294,
+      "power": 18675000,
+      "verified": true
+    },
+    {
+      "level": 295,
+      "power": 18795000,
+      "verified": true
+    },
+    {
+      "level": 296,
+      "power": 18915000,
+      "verified": true
+    },
+    {
+      "level": 297,
+      "power": 19035000,
+      "verified": true
+    },
+    {
+      "level": 298,
+      "power": 19155000,
+      "verified": true
+    },
+    {
+      "level": 299,
+      "power": 19275000,
+      "verified": true
+    },
+    {
+      "level": 300,
+      "power": 19397500,
+      "verified": false
+    },
+    {
+      "level": 301,
+      "power": 19520000,
+      "verified": false
+    },
+    {
+      "level": 302,
+      "power": 19642500,
+      "verified": false
+    },
+    {
+      "level": 303,
+      "power": 19765000,
+      "verified": false
+    },
+    {
+      "level": 304,
+      "power": 19887500,
+      "verified": false
+    },
+    {
+      "level": 305,
+      "power": 20010000,
+      "verified": false
+    },
+    {
+      "level": 306,
+      "power": 20132500,
+      "verified": false
+    },
+    {
+      "level": 307,
+      "power": 20257500,
+      "verified": false
+    },
+    {
+      "level": 308,
+      "power": 20382500,
+      "verified": false
+    },
+    {
+      "level": 309,
+      "power": 20507500,
+      "verified": false
+    },
+    {
+      "level": 310,
+      "power": 20632500,
+      "verified": false
+    },
+    {
+      "level": 311,
+      "power": 20757500,
+      "verified": false
+    },
+    {
+      "level": 312,
+      "power": 20882500,
+      "verified": false
+    },
+    {
+      "level": 313,
+      "power": 21007500,
+      "verified": false
+    },
+    {
+      "level": 314,
+      "power": 21135000,
+      "verified": false
+    },
+    {
+      "level": 315,
+      "power": 21262500,
+      "verified": false
+    },
+    {
+      "level": 316,
+      "power": 21390000,
+      "verified": false
+    },
+    {
+      "level": 317,
+      "power": 21517500,
+      "verified": false
+    },
+    {
+      "level": 318,
+      "power": 21645000,
+      "verified": false
+    },
+    {
+      "level": 319,
+      "power": 21772500,
+      "verified": false
+    },
+    {
+      "level": 320,
+      "power": 21900000,
+      "verified": false
+    },
+    {
+      "level": 321,
+      "power": 22030000,
+      "verified": false
+    },
+    {
+      "level": 322,
+      "power": 22160000,
+      "verified": false
+    },
+    {
+      "level": 323,
+      "power": 22290000,
+      "verified": false
+    },
+    {
+      "level": 324,
+      "power": 22420000,
+      "verified": false
+    },
+    {
+      "level": 325,
+      "power": 22550000,
+      "verified": false
+    },
+    {
+      "level": 326,
+      "power": 22680000,
+      "verified": false
+    },
+    {
+      "level": 327,
+      "power": 22810000,
+      "verified": true
+    },
+    {
+      "level": 328,
+      "power": 22942500,
+      "verified": true
+    },
+    {
+      "level": 329,
+      "power": 23075000,
+      "verified": true
+    },
+    {
+      "level": 330,
+      "power": 23207500,
+      "verified": true
+    },
+    {
+      "level": 331,
+      "power": 23340000,
+      "verified": true
+    },
+    {
+      "level": 332,
+      "power": 23472500,
+      "verified": true
+    },
+    {
+      "level": 333,
+      "power": 23605000,
+      "verified": true
+    },
+    {
+      "level": 334,
+      "power": 23737500,
+      "verified": true
+    },
+    {
+      "level": 335,
+      "power": 23870000,
+      "verified": false
+    },
+    {
+      "level": 336,
+      "power": 24005000,
+      "verified": false
+    },
+    {
+      "level": 337,
+      "power": 24140000,
+      "verified": false
+    },
+    {
+      "level": 338,
+      "power": 24275000,
+      "verified": false
+    },
+    {
+      "level": 339,
+      "power": 24410000,
+      "verified": false
+    },
+    {
+      "level": 340,
+      "power": 24545000,
+      "verified": false
+    },
+    {
+      "level": 341,
+      "power": 24680000,
+      "verified": false
+    },
+    {
+      "level": 342,
+      "power": 24815000,
+      "verified": false
+    },
+    {
+      "level": 343,
+      "power": 24952500,
+      "verified": false
+    },
+    {
+      "level": 344,
+      "power": 25090000,
+      "verified": false
+    },
+    {
+      "level": 345,
+      "power": 25227500,
+      "verified": false
+    },
+    {
+      "level": 346,
+      "power": 25365000,
+      "verified": false
+    },
+    {
+      "level": 347,
+      "power": 25502500,
+      "verified": false
+    },
+    {
+      "level": 348,
+      "power": 25640000,
+      "verified": false
+    },
+    {
+      "level": 349,
+      "power": 25780000,
+      "verified": false
+    },
+    {
+      "level": 350,
+      "power": 25920000,
+      "verified": false
+    },
+    {
+      "level": 351,
+      "power": 26060000,
+      "verified": false
+    },
+    {
+      "level": 352,
+      "power": 26200000,
+      "verified": false
+    },
+    {
+      "level": 353,
+      "power": 26340000,
+      "verified": false
+    },
+    {
+      "level": 354,
+      "power": 26480000,
+      "verified": false
+    },
+    {
+      "level": 355,
+      "power": 26620000,
+      "verified": false
+    },
+    {
+      "level": 356,
+      "power": 26760000,
+      "verified": false
+    },
+    {
+      "level": 357,
+      "power": 26902500,
+      "verified": false
+    },
+    {
+      "level": 358,
+      "power": 27045000,
+      "verified": false
+    },
+    {
+      "level": 359,
+      "power": 27187500,
+      "verified": false
+    },
+    {
+      "level": 360,
+      "power": 27330000,
+      "verified": false
+    },
+    {
+      "level": 361,
+      "power": 27472500,
+      "verified": false
+    },
+    {
+      "level": 362,
+      "power": 27615000,
+      "verified": false
+    },
+    {
+      "level": 363,
+      "power": 27760000,
+      "verified": false
+    },
+    {
+      "level": 364,
+      "power": 27905000,
+      "verified": false
+    },
+    {
+      "level": 365,
+      "power": 28050000,
+      "verified": false
+    },
+    {
+      "level": 366,
+      "power": 28195000,
+      "verified": false
+    },
+    {
+      "level": 367,
+      "power": 28340000,
+      "verified": false
+    },
+    {
+      "level": 368,
+      "power": 28485000,
+      "verified": false
+    },
+    {
+      "level": 369,
+      "power": 28630000,
+      "verified": false
+    },
+    {
+      "level": 370,
+      "power": 28775000,
+      "verified": false
+    },
+    {
+      "level": 371,
+      "power": 28922500,
+      "verified": false
+    },
+    {
+      "level": 372,
+      "power": 29070000,
+      "verified": false
+    },
+    {
+      "level": 373,
+      "power": 29217500,
+      "verified": false
+    },
+    {
+      "level": 374,
+      "power": 29365000,
+      "verified": false
+    },
+    {
+      "level": 375,
+      "power": 29512500,
+      "verified": false
+    },
+    {
+      "level": 376,
+      "power": 29660000,
+      "verified": false
+    },
+    {
+      "level": 377,
+      "power": 29810000,
+      "verified": false
+    },
+    {
+      "level": 378,
+      "power": 29960000,
+      "verified": false
+    },
+    {
+      "level": 379,
+      "power": 30110000,
+      "verified": false
+    },
+    {
+      "level": 380,
+      "power": 30260000,
+      "verified": false
+    },
+    {
+      "level": 381,
+      "power": 30410000,
+      "verified": false
+    },
+    {
+      "level": 382,
+      "power": 30560000,
+      "verified": false
+    },
+    {
+      "level": 383,
+      "power": 30710000,
+      "verified": false
+    },
+    {
+      "level": 384,
+      "power": 30860000,
+      "verified": false
+    },
+    {
+      "level": 385,
+      "power": 31012500,
+      "verified": false
+    },
+    {
+      "level": 386,
+      "power": 31165000,
+      "verified": false
+    },
+    {
+      "level": 387,
+      "power": 31317500,
+      "verified": false
+    },
+    {
+      "level": 388,
+      "power": 31470000,
+      "verified": false
+    },
+    {
+      "level": 389,
+      "power": 31622500,
+      "verified": false
+    },
+    {
+      "level": 390,
+      "power": 31775000,
+      "verified": false
+    },
+    {
+      "level": 391,
+      "power": 31930000,
+      "verified": false
+    },
+    {
+      "level": 392,
+      "power": 32085000,
+      "verified": false
+    },
+    {
+      "level": 393,
+      "power": 32240000,
+      "verified": false
+    },
+    {
+      "level": 394,
+      "power": 32395000,
+      "verified": false
+    },
+    {
+      "level": 395,
+      "power": 32550000,
+      "verified": false
+    },
+    {
+      "level": 396,
+      "power": 32705000,
+      "verified": false
+    },
+    {
+      "level": 397,
+      "power": 32860000,
+      "verified": false
+    },
+    {
+      "level": 398,
+      "power": 33017500,
+      "verified": false
+    },
+    {
+      "level": 399,
+      "power": 33175000,
+      "verified": false
+    },
+    {
+      "level": 400,
+      "power": 33332500,
+      "verified": false
+    },
+    {
+      "level": 401,
+      "power": 33490000,
+      "verified": false
+    },
+    {
+      "level": 402,
+      "power": 33647500,
+      "verified": false
+    },
+    {
+      "level": 403,
+      "power": 33805000,
+      "verified": false
+    },
+    {
+      "level": 404,
+      "power": 33962500,
+      "verified": false
+    },
+    {
+      "level": 405,
+      "power": 34120000,
+      "verified": false
+    },
+    {
+      "level": 406,
+      "power": 34280000,
+      "verified": false
+    },
+    {
+      "level": 407,
+      "power": 34440000,
+      "verified": false
+    },
+    {
+      "level": 408,
+      "power": 34600000,
+      "verified": false
+    },
+    {
+      "level": 409,
+      "power": 34760000,
+      "verified": false
+    },
+    {
+      "level": 410,
+      "power": 34920000,
+      "verified": false
+    },
+    {
+      "level": 411,
+      "power": 35080000,
+      "verified": false
+    },
+    {
+      "level": 412,
+      "power": 35242500,
+      "verified": false
+    },
+    {
+      "level": 413,
+      "power": 35405000,
+      "verified": false
+    },
+    {
+      "level": 414,
+      "power": 35567500,
+      "verified": false
+    },
+    {
+      "level": 415,
+      "power": 35730000,
+      "verified": false
+    },
+    {
+      "level": 416,
+      "power": 35892500,
+      "verified": false
+    },
+    {
+      "level": 417,
+      "power": 36055000,
+      "verified": false
+    },
+    {
+      "level": 418,
+      "power": 36217500,
+      "verified": false
+    },
+    {
+      "level": 419,
+      "power": 36382500,
+      "verified": false
+    },
+    {
+      "level": 420,
+      "power": 36547500,
+      "verified": false
+    },
+    {
+      "level": 421,
+      "power": 36712500,
+      "verified": false
+    },
+    {
+      "level": 422,
+      "power": 36877500,
+      "verified": false
+    },
+    {
+      "level": 423,
+      "power": 37042500,
+      "verified": false
+    },
+    {
+      "level": 424,
+      "power": 37207500,
+      "verified": false
+    },
+    {
+      "level": 425,
+      "power": 37372500,
+      "verified": false
+    },
+    {
+      "level": 426,
+      "power": 37537500,
+      "verified": false
+    },
+    {
+      "level": 427,
+      "power": 37705000,
+      "verified": false
+    },
+    {
+      "level": 428,
+      "power": 37872500,
+      "verified": false
+    },
+    {
+      "level": 429,
+      "power": 38040000,
+      "verified": false
+    },
+    {
+      "level": 430,
+      "power": 38207500,
+      "verified": false
+    },
+    {
+      "level": 431,
+      "power": 38375000,
+      "verified": false
+    },
+    {
+      "level": 432,
+      "power": 38542500,
+      "verified": false
+    },
+    {
+      "level": 433,
+      "power": 38710000,
+      "verified": false
+    },
+    {
+      "level": 434,
+      "power": 38877500,
+      "verified": false
+    },
+    {
+      "level": 435,
+      "power": 39047500,
+      "verified": false
+    },
+    {
+      "level": 436,
+      "power": 39217500,
+      "verified": false
+    },
+    {
+      "level": 437,
+      "power": 39387500,
+      "verified": false
+    },
+    {
+      "level": 438,
+      "power": 39557500,
+      "verified": false
+    },
+    {
+      "level": 439,
+      "power": 39727500,
+      "verified": false
+    },
+    {
+      "level": 440,
+      "power": 39897500,
+      "verified": false
+    },
+    {
+      "level": 441,
+      "power": 40067500,
+      "verified": false
+    },
+    {
+      "level": 442,
+      "power": 40240000,
+      "verified": false
+    },
+    {
+      "level": 443,
+      "power": 40412500,
+      "verified": false
+    },
+    {
+      "level": 444,
+      "power": 40585000,
+      "verified": false
+    },
+    {
+      "level": 445,
+      "power": 40757500,
+      "verified": false
+    },
+    {
+      "level": 446,
+      "power": 40930000,
+      "verified": false
+    },
+    {
+      "level": 447,
+      "power": 41102500,
+      "verified": false
+    },
+    {
+      "level": 448,
+      "power": 41275000,
+      "verified": false
+    },
+    {
+      "level": 449,
+      "power": 41450000,
+      "verified": false
+    },
+    {
+      "level": 450,
+      "power": 41625000,
+      "verified": false
+    },
+    {
+      "level": 451,
+      "power": 41800000,
+      "verified": false
+    },
+    {
+      "level": 452,
+      "power": 41975000,
+      "verified": false
+    },
+    {
+      "level": 453,
+      "power": 42150000,
+      "verified": false
+    },
+    {
+      "level": 454,
+      "power": 42325000,
+      "verified": false
+    },
+    {
+      "level": 455,
+      "power": 42500000,
+      "verified": false
+    },
+    {
+      "level": 456,
+      "power": 42677500,
+      "verified": false
+    },
+    {
+      "level": 457,
+      "power": 42855000,
+      "verified": false
+    },
+    {
+      "level": 458,
+      "power": 43032500,
+      "verified": false
+    },
+    {
+      "level": 459,
+      "power": 43210000,
+      "verified": false
+    },
+    {
+      "level": 460,
+      "power": 43387500,
+      "verified": false
+    },
+    {
+      "level": 461,
+      "power": 43565000,
+      "verified": false
+    },
+    {
+      "level": 462,
+      "power": 43742500,
+      "verified": false
+    },
+    {
+      "level": 463,
+      "power": 43920000,
+      "verified": false
+    },
+    {
+      "level": 464,
+      "power": 44100000,
+      "verified": false
+    },
+    {
+      "level": 465,
+      "power": 44280000,
+      "verified": false
+    },
+    {
+      "level": 466,
+      "power": 44460000,
+      "verified": false
+    },
+    {
+      "level": 467,
+      "power": 44640000,
+      "verified": false
+    },
+    {
+      "level": 468,
+      "power": 44820000,
+      "verified": false
+    },
+    {
+      "level": 469,
+      "power": 45000000,
+      "verified": false
+    },
+    {
+      "level": 470,
+      "power": 45180000,
+      "verified": false
+    },
+    {
+      "level": 471,
+      "power": 45362500,
+      "verified": false
+    },
+    {
+      "level": 472,
+      "power": 45545000,
+      "verified": false
+    },
+    {
+      "level": 473,
+      "power": 45727500,
+      "verified": false
+    },
+    {
+      "level": 474,
+      "power": 45910000,
+      "verified": false
+    },
+    {
+      "level": 475,
+      "power": 46092500,
+      "verified": false
+    },
+    {
+      "level": 476,
+      "power": 46275000,
+      "verified": false
+    },
+    {
+      "level": 477,
+      "power": 46457500,
+      "verified": false
+    },
+    {
+      "level": 478,
+      "power": 46642500,
+      "verified": false
+    },
+    {
+      "level": 479,
+      "power": 46827500,
+      "verified": false
+    },
+    {
+      "level": 480,
+      "power": 47012500,
+      "verified": false
+    },
+    {
+      "level": 481,
+      "power": 47197500,
+      "verified": false
+    },
+    {
+      "level": 482,
+      "power": 47382500,
+      "verified": false
+    },
+    {
+      "level": 483,
+      "power": 47567500,
+      "verified": false
+    },
+    {
+      "level": 484,
+      "power": 47752500,
+      "verified": false
+    },
+    {
+      "level": 485,
+      "power": 47940000,
+      "verified": false
+    },
+    {
+      "level": 486,
+      "power": 48127500,
+      "verified": false
+    },
+    {
+      "level": 487,
+      "power": 48315000,
+      "verified": false
+    },
+    {
+      "level": 488,
+      "power": 48502500,
+      "verified": false
+    },
+    {
+      "level": 489,
+      "power": 48690000,
+      "verified": false
+    },
+    {
+      "level": 490,
+      "power": 48877500,
+      "verified": false
+    },
+    {
+      "level": 491,
+      "power": 49065000,
+      "verified": false
+    },
+    {
+      "level": 492,
+      "power": 49252500,
+      "verified": false
+    },
+    {
+      "level": 493,
+      "power": 49442500,
+      "verified": false
+    },
+    {
+      "level": 494,
+      "power": 49632500,
+      "verified": false
+    },
+    {
+      "level": 495,
+      "power": 49822500,
+      "verified": false
+    },
+    {
+      "level": 496,
+      "power": 50012500,
+      "verified": false
+    },
+    {
+      "level": 497,
+      "power": 50202500,
+      "verified": false
+    },
+    {
+      "level": 498,
+      "power": 50392500,
+      "verified": false
+    },
+    {
+      "level": 499,
+      "power": 50582500,
+      "verified": false
+    },
+    {
+      "level": 500,
+      "power": 50775000,
+      "verified": false
+    },
+    {
+      "level": 501,
+      "power": 50967500,
+      "verified": false
+    },
+    {
+      "level": 502,
+      "power": 51160000,
+      "verified": false
+    },
+    {
+      "level": 503,
+      "power": 51352500,
+      "verified": false
+    },
+    {
+      "level": 504,
+      "power": 51545000,
+      "verified": false
+    },
+    {
+      "level": 505,
+      "power": 51737500,
+      "verified": false
+    },
+    {
+      "level": 506,
+      "power": 51930000,
+      "verified": false
+    },
+    {
+      "level": 507,
+      "power": 52125000,
+      "verified": false
+    },
+    {
+      "level": 508,
+      "power": 52320000,
+      "verified": false
+    },
+    {
+      "level": 509,
+      "power": 52515000,
+      "verified": false
+    },
+    {
+      "level": 510,
+      "power": 52710000,
+      "verified": false
+    },
+    {
+      "level": 511,
+      "power": 52905000,
+      "verified": false
+    },
+    {
+      "level": 512,
+      "power": 53100000,
+      "verified": false
+    },
+    {
+      "level": 513,
+      "power": 53295000,
+      "verified": false
+    },
+    {
+      "level": 514,
+      "power": 53490000,
+      "verified": false
+    },
+    {
+      "level": 515,
+      "power": 53687500,
+      "verified": false
+    },
+    {
+      "level": 516,
+      "power": 53885000,
+      "verified": false
+    },
+    {
+      "level": 517,
+      "power": 54082500,
+      "verified": false
+    },
+    {
+      "level": 518,
+      "power": 54280000,
+      "verified": false
+    },
+    {
+      "level": 519,
+      "power": 54477500,
+      "verified": false
+    },
+    {
+      "level": 520,
+      "power": 54675000,
+      "verified": false
+    },
+    {
+      "level": 521,
+      "power": 54872500,
+      "verified": false
+    },
+    {
+      "level": 522,
+      "power": 55072500,
+      "verified": false
+    },
+    {
+      "level": 523,
+      "power": 55272500,
+      "verified": false
+    },
+    {
+      "level": 524,
+      "power": 55472500,
+      "verified": false
+    },
+    {
+      "level": 525,
+      "power": 55672500,
+      "verified": false
+    },
+    {
+      "level": 526,
+      "power": 55872500,
+      "verified": false
+    },
+    {
+      "level": 527,
+      "power": 56072500,
+      "verified": false
+    },
+    {
+      "level": 528,
+      "power": 56272500,
+      "verified": false
+    },
+    {
+      "level": 529,
+      "power": 56475000,
+      "verified": false
+    },
+    {
+      "level": 530,
+      "power": 56677500,
+      "verified": false
+    },
+    {
+      "level": 531,
+      "power": 56880000,
+      "verified": false
+    },
+    {
+      "level": 532,
+      "power": 57082500,
+      "verified": false
+    },
+    {
+      "level": 533,
+      "power": 57285000,
+      "verified": false
+    },
+    {
+      "level": 534,
+      "power": 57487500,
+      "verified": false
+    },
+    {
+      "level": 535,
+      "power": 57690000,
+      "verified": false
+    },
+    {
+      "level": 536,
+      "power": 57892500,
+      "verified": false
+    },
+    {
+      "level": 537,
+      "power": 58097500,
+      "verified": false
+    },
+    {
+      "level": 538,
+      "power": 58302500,
+      "verified": false
+    },
+    {
+      "level": 539,
+      "power": 58507500,
+      "verified": false
+    },
+    {
+      "level": 540,
+      "power": 58712500,
+      "verified": false
+    },
+    {
+      "level": 541,
+      "power": 58917500,
+      "verified": false
+    },
+    {
+      "level": 542,
+      "power": 59122500,
+      "verified": false
+    },
+    {
+      "level": 543,
+      "power": 59327500,
+      "verified": false
+    },
+    {
+      "level": 544,
+      "power": 59535000,
+      "verified": false
+    },
+    {
+      "level": 545,
+      "power": 59742500,
+      "verified": false
+    },
+    {
+      "level": 546,
+      "power": 59950000,
+      "verified": false
+    },
+    {
+      "level": 547,
+      "power": 60157500,
+      "verified": false
+    },
+    {
+      "level": 548,
+      "power": 60365000,
+      "verified": false
+    },
+    {
+      "level": 549,
+      "power": 60572500,
+      "verified": false
+    },
+    {
+      "level": 550,
+      "power": 60780000,
+      "verified": false
+    },
+    {
+      "level": 551,
+      "power": 60990000,
+      "verified": false
+    },
+    {
+      "level": 552,
+      "power": 61200000,
+      "verified": false
+    },
+    {
+      "level": 553,
+      "power": 61410000,
+      "verified": false
+    },
+    {
+      "level": 554,
+      "power": 61620000,
+      "verified": false
+    },
+    {
+      "level": 555,
+      "power": 61830000,
+      "verified": false
+    },
+    {
+      "level": 556,
+      "power": 62040000,
+      "verified": false
+    },
+    {
+      "level": 557,
+      "power": 62250000,
+      "verified": false
+    },
+    {
+      "level": 558,
+      "power": 62460000,
+      "verified": false
+    },
+    {
+      "level": 559,
+      "power": 62672500,
+      "verified": false
+    },
+    {
+      "level": 560,
+      "power": 62885000,
+      "verified": false
+    },
+    {
+      "level": 561,
+      "power": 63097500,
+      "verified": false
+    },
+    {
+      "level": 562,
+      "power": 63310000,
+      "verified": false
+    },
+    {
+      "level": 563,
+      "power": 63522500,
+      "verified": false
+    },
+    {
+      "level": 564,
+      "power": 63735000,
+      "verified": false
+    },
+    {
+      "level": 565,
+      "power": 63947500,
+      "verified": false
+    },
+    {
+      "level": 566,
+      "power": 64162500,
+      "verified": false
+    },
+    {
+      "level": 567,
+      "power": 64377500,
+      "verified": false
+    },
+    {
+      "level": 568,
+      "power": 64592500,
+      "verified": false
+    },
+    {
+      "level": 569,
+      "power": 64807500,
+      "verified": false
+    },
+    {
+      "level": 570,
+      "power": 65022500,
+      "verified": false
+    },
+    {
+      "level": 571,
+      "power": 65237500,
+      "verified": false
+    },
+    {
+      "level": 572,
+      "power": 65452500,
+      "verified": false
+    },
+    {
+      "level": 573,
+      "power": 65670000,
+      "verified": false
+    },
+    {
+      "level": 574,
+      "power": 65887500,
+      "verified": false
+    },
+    {
+      "level": 575,
+      "power": 66105000,
+      "verified": false
+    },
+    {
+      "level": 576,
+      "power": 66322500,
+      "verified": false
+    },
+    {
+      "level": 577,
+      "power": 66540000,
+      "verified": false
+    },
+    {
+      "level": 578,
+      "power": 66757500,
+      "verified": false
+    },
+    {
+      "level": 579,
+      "power": 66975000,
+      "verified": false
+    },
+    {
+      "level": 580,
+      "power": 67192500,
+      "verified": false
+    },
+    {
+      "level": 581,
+      "power": 67412500,
+      "verified": false
+    },
+    {
+      "level": 582,
+      "power": 67632500,
+      "verified": false
+    },
+    {
+      "level": 583,
+      "power": 67852500,
+      "verified": false
+    },
+    {
+      "level": 584,
+      "power": 68072500,
+      "verified": false
+    },
+    {
+      "level": 585,
+      "power": 68292500,
+      "verified": false
+    },
+    {
+      "level": 586,
+      "power": 68512500,
+      "verified": false
+    },
+    {
+      "level": 587,
+      "power": 68732500,
+      "verified": false
+    },
+    {
+      "level": 588,
+      "power": 68955000,
+      "verified": false
+    },
+    {
+      "level": 589,
+      "power": 69177500,
+      "verified": false
+    },
+    {
+      "level": 590,
+      "power": 69400000,
+      "verified": false
+    },
+    {
+      "level": 591,
+      "power": 69622500,
+      "verified": false
+    },
+    {
+      "level": 592,
+      "power": 69845000,
+      "verified": false
+    },
+    {
+      "level": 593,
+      "power": 70067500,
+      "verified": false
+    },
+    {
+      "level": 594,
+      "power": 70290000,
+      "verified": false
+    },
+    {
+      "level": 595,
+      "power": 70512500,
+      "verified": false
+    },
+    {
+      "level": 596,
+      "power": 70737500,
+      "verified": false
+    },
+    {
+      "level": 597,
+      "power": 70962500,
+      "verified": false
+    },
+    {
+      "level": 598,
+      "power": 71187500,
+      "verified": false
+    },
+    {
+      "level": 599,
+      "power": 71412500,
+      "verified": false
+    },
+    {
+      "level": 600,
+      "power": 71637500,
+      "verified": false
+    },
+    {
+      "level": 601,
+      "power": 71862500,
+      "verified": false
+    },
+    {
+      "level": 602,
+      "power": 72087500,
+      "verified": false
+    },
+    {
+      "level": 603,
+      "power": 72315000,
+      "verified": false
+    },
+    {
+      "level": 604,
+      "power": 72542500,
+      "verified": false
+    },
+    {
+      "level": 605,
+      "power": 72770000,
+      "verified": false
+    },
+    {
+      "level": 606,
+      "power": 72997500,
+      "verified": false
+    },
+    {
+      "level": 607,
+      "power": 73225000,
+      "verified": false
+    },
+    {
+      "level": 608,
+      "power": 73452500,
+      "verified": false
+    },
+    {
+      "level": 609,
+      "power": 73680000,
+      "verified": false
+    },
+    {
+      "level": 610,
+      "power": 73907500,
+      "verified": false
+    },
+    {
+      "level": 611,
+      "power": 74137500,
+      "verified": false
+    },
+    {
+      "level": 612,
+      "power": 74367500,
+      "verified": false
+    },
+    {
+      "level": 613,
+      "power": 74597500,
+      "verified": false
+    },
+    {
+      "level": 614,
+      "power": 74827500,
+      "verified": false
+    },
+    {
+      "level": 615,
+      "power": 75057500,
+      "verified": false
+    },
+    {
+      "level": 616,
+      "power": 75287500,
+      "verified": false
+    },
+    {
+      "level": 617,
+      "power": 75517500,
+      "verified": true
+    },
+    {
+      "level": 618,
+      "power": 75750000,
+      "verified": true
+    },
+    {
+      "level": 619,
+      "power": 75982500,
+      "verified": true
+    },
+    {
+      "level": 620,
+      "power": 76215000,
+      "verified": true
+    },
+    {
+      "level": 621,
+      "power": 76447500,
+      "verified": true
+    },
+    {
+      "level": 622,
+      "power": 76680000,
+      "verified": true
+    },
+    {
+      "level": 623,
+      "power": 76912500,
+      "verified": true
+    },
+    {
+      "level": 624,
+      "power": 77145000,
+      "verified": true
+    },
+    {
+      "level": 625,
+      "power": 77377500,
+      "verified": true
+    },
+    {
+      "level": 626,
+      "power": 77612500,
+      "verified": true
+    },
+    {
+      "level": 627,
+      "power": 77847500,
+      "verified": true
+    },
+    {
+      "level": 628,
+      "power": 78082500,
+      "verified": true
+    },
+    {
+      "level": 629,
+      "power": 78317500,
+      "verified": true
+    },
+    {
+      "level": 630,
+      "power": 78552500,
+      "verified": true
+    },
+    {
+      "level": 631,
+      "power": 78787500,
+      "verified": true
+    },
+    {
+      "level": 632,
+      "power": 79022500,
+      "verified": true
+    },
+    {
+      "level": 633,
+      "power": 79260000,
+      "verified": true
+    },
+    {
+      "level": 634,
+      "power": 79497500,
+      "verified": true
+    },
+    {
+      "level": 635,
+      "power": 79735000,
+      "verified": true
+    },
+    {
+      "level": 636,
+      "power": 79972500,
+      "verified": true
+    },
+    {
+      "level": 637,
+      "power": 80210000,
+      "verified": true
+    },
+    {
+      "level": 638,
+      "power": 80447500,
+      "verified": true
+    },
+    {
+      "level": 639,
+      "power": 80685000,
+      "verified": true
+    },
+    {
+      "level": 640,
+      "power": 80925000,
+      "verified": true
+    },
+    {
+      "level": 641,
+      "power": 81165000,
+      "verified": true
+    },
+    {
+      "level": 642,
+      "power": 81405000,
+      "verified": true
+    },
+    {
+      "level": 643,
+      "power": 81645000,
+      "verified": true
+    },
+    {
+      "level": 644,
+      "power": 81885000,
+      "verified": true
+    },
+    {
+      "level": 645,
+      "power": 82125000,
+      "verified": true
+    },
+    {
+      "level": 646,
+      "power": 82365000,
+      "verified": true
+    },
+    {
+      "level": 647,
+      "power": 82605000,
+      "verified": true
+    },
+    {
+      "level": 648,
+      "power": 82847500,
+      "verified": true
+    },
+    {
+      "level": 649,
+      "power": 83090000,
+      "verified": true
+    },
+    {
+      "level": 650,
+      "power": 83332500,
+      "verified": true
+    },
+    {
+      "level": 651,
+      "power": 83575000,
+      "verified": true
+    },
+    {
+      "level": 652,
+      "power": 83817500,
+      "verified": true
+    },
+    {
+      "level": 653,
+      "power": 84060000,
+      "verified": true
+    },
+    {
+      "level": 654,
+      "power": 84302500,
+      "verified": true
+    },
+    {
+      "level": 655,
+      "power": 84547500,
+      "verified": true
+    },
+    {
+      "level": 656,
+      "power": 84792500,
+      "verified": true
+    },
+    {
+      "level": 657,
+      "power": 85037500,
+      "verified": true
+    },
+    {
+      "level": 658,
+      "power": 85282500,
+      "verified": true
+    },
+    {
+      "level": 659,
+      "power": 85527500,
+      "verified": true
+    },
+    {
+      "level": 660,
+      "power": 85772500,
+      "verified": true
+    },
+    {
+      "level": 661,
+      "power": 86017500,
+      "verified": true
+    },
+    {
+      "level": 662,
+      "power": 86262500,
+      "verified": true
+    },
+    {
+      "level": 663,
+      "power": 86510000,
+      "verified": true
+    },
+    {
+      "level": 664,
+      "power": 86757500,
+      "verified": true
+    },
+    {
+      "level": 665,
+      "power": 87005000,
+      "verified": true
+    },
+    {
+      "level": 666,
+      "power": 87252500,
+      "verified": true
+    },
+    {
+      "level": 667,
+      "power": 87500000,
+      "verified": true
+    },
+    {
+      "level": 668,
+      "power": 87747500,
+      "verified": true
+    },
+    {
+      "level": 669,
+      "power": 87995000,
+      "verified": true
+    },
+    {
+      "level": 670,
+      "power": 88245000,
+      "verified": true
+    },
+    {
+      "level": 671,
+      "power": 88495000,
+      "verified": true
+    },
+    {
+      "level": 672,
+      "power": 88745000,
+      "verified": true
+    },
+    {
+      "level": 673,
+      "power": 88995000,
+      "verified": true
+    },
+    {
+      "level": 674,
+      "power": 89245000,
+      "verified": true
+    },
+    {
+      "level": 675,
+      "power": 89495000,
+      "verified": true
+    },
+    {
+      "level": 676,
+      "power": 89745000,
+      "verified": true
+    },
+    {
+      "level": 677,
+      "power": 89995000,
+      "verified": true
+    },
+    {
+      "level": 678,
+      "power": 90247500,
+      "verified": true
+    },
+    {
+      "level": 679,
+      "power": 90500000,
+      "verified": true
+    },
+    {
+      "level": 680,
+      "power": 90752500,
+      "verified": true
+    },
+    {
+      "level": 681,
+      "power": 91005000,
+      "verified": true
+    },
+    {
+      "level": 682,
+      "power": 91257500,
+      "verified": true
+    },
+    {
+      "level": 683,
+      "power": 91510000,
+      "verified": true
+    },
+    {
+      "level": 684,
+      "power": 91762500,
+      "verified": true
+    },
+    {
+      "level": 685,
+      "power": 92015000,
+      "verified": true
+    },
+    {
+      "level": 686,
+      "power": 92270000,
+      "verified": true
+    },
+    {
+      "level": 687,
+      "power": 92525000,
+      "verified": true
+    },
+    {
+      "level": 688,
+      "power": 92780000,
+      "verified": true
+    },
+    {
+      "level": 689,
+      "power": 93035000,
+      "verified": true
+    },
+    {
+      "level": 690,
+      "power": 93290000,
+      "verified": true
+    },
+    {
+      "level": 691,
+      "power": 93545000,
+      "verified": true
+    },
+    {
+      "level": 692,
+      "power": 93800000,
+      "verified": true
+    },
+    {
+      "level": 693,
+      "power": 94057500,
+      "verified": true
+    },
+    {
+      "level": 694,
+      "power": 94315000,
+      "verified": true
+    },
+    {
+      "level": 695,
+      "power": 94572500,
+      "verified": true
+    },
+    {
+      "level": 696,
+      "power": 94830000,
+      "verified": true
+    },
+    {
+      "level": 697,
+      "power": 95087500,
+      "verified": true
+    },
+    {
+      "level": 698,
+      "power": 95345000,
+      "verified": true
+    },
+    {
+      "level": 699,
+      "power": 95602500,
+      "verified": true
+    },
+    {
+      "level": 700,
+      "power": 95860000,
+      "verified": true
+    },
+    {
+      "level": 701,
+      "power": 96120000,
+      "verified": true
+    },
+    {
+      "level": 702,
+      "power": 96380000,
+      "verified": true
+    },
+    {
+      "level": 703,
+      "power": 96640000,
+      "verified": true
+    },
+    {
+      "level": 704,
+      "power": 96900000,
+      "verified": true
+    },
+    {
+      "level": 705,
+      "power": 97160000,
+      "verified": true
+    },
+    {
+      "level": 706,
+      "power": 97420000,
+      "verified": true
+    },
+    {
+      "level": 707,
+      "power": 97680000,
+      "verified": true
+    },
+    {
+      "level": 708,
+      "power": 97942500,
+      "verified": true
+    },
+    {
+      "level": 709,
+      "power": 98205000,
+      "verified": true
+    },
+    {
+      "level": 710,
+      "power": 98467500,
+      "verified": true
+    },
+    {
+      "level": 711,
+      "power": 98730000,
+      "verified": true
+    },
+    {
+      "level": 712,
+      "power": 98992500,
+      "verified": true
+    },
+    {
+      "level": 713,
+      "power": 99255000,
+      "verified": true
+    },
+    {
+      "level": 714,
+      "power": 99517500,
+      "verified": true
+    },
+    {
+      "level": 715,
+      "power": 99780000,
+      "verified": true
+    },
+    {
+      "level": 716,
+      "power": 100045000,
+      "verified": true
+    },
+    {
+      "level": 717,
+      "power": 100310000,
+      "verified": true
+    },
+    {
+      "level": 718,
+      "power": 100575000,
+      "verified": true
+    },
+    {
+      "level": 719,
+      "power": 100840000,
+      "verified": true
+    },
+    {
+      "level": 720,
+      "power": 101105000,
+      "verified": true
+    },
+    {
+      "level": 721,
+      "power": 101370000,
+      "verified": true
+    },
+    {
+      "level": 722,
+      "power": 101635000,
+      "verified": true
+    },
+    {
+      "level": 723,
+      "power": 101902500,
+      "verified": true
+    },
+    {
+      "level": 724,
+      "power": 102170000,
+      "verified": true
+    },
+    {
+      "level": 725,
+      "power": 102437500,
+      "verified": true
+    },
+    {
+      "level": 726,
+      "power": 102705000,
+      "verified": true
+    },
+    {
+      "level": 727,
+      "power": 102972500,
+      "verified": true
+    },
+    {
+      "level": 728,
+      "power": 103240000,
+      "verified": true
+    },
+    {
+      "level": 729,
+      "power": 103507500,
+      "verified": true
+    },
+    {
+      "level": 730,
+      "power": 103775000,
+      "verified": true
+    },
+    {
+      "level": 731,
+      "power": 104045000,
+      "verified": true
+    },
+    {
+      "level": 732,
+      "power": 104315000,
+      "verified": true
+    },
+    {
+      "level": 733,
+      "power": 104585000,
+      "verified": true
+    },
+    {
+      "level": 734,
+      "power": 104855000,
+      "verified": true
+    },
+    {
+      "level": 735,
+      "power": 105125000,
+      "verified": true
+    },
+    {
+      "level": 736,
+      "power": 105395000,
+      "verified": true
+    },
+    {
+      "level": 737,
+      "power": 105665000,
+      "verified": true
+    },
+    {
+      "level": 738,
+      "power": 105937500,
+      "verified": true
+    },
+    {
+      "level": 739,
+      "power": 106210000,
+      "verified": true
+    },
+    {
+      "level": 740,
+      "power": 106482500,
+      "verified": true
+    },
+    {
+      "level": 741,
+      "power": 106755000,
+      "verified": true
+    },
+    {
+      "level": 742,
+      "power": 107027500,
+      "verified": true
+    },
+    {
+      "level": 743,
+      "power": 107300000,
+      "verified": true
+    },
+    {
+      "level": 744,
+      "power": 107572500,
+      "verified": true
+    },
+    {
+      "level": 745,
+      "power": 107845000,
+      "verified": true
+    },
+    {
+      "level": 746,
+      "power": 108120000,
+      "verified": true
+    },
+    {
+      "level": 747,
+      "power": 108395000,
+      "verified": true
+    },
+    {
+      "level": 748,
+      "power": 108670000,
+      "verified": true
+    },
+    {
+      "level": 749,
+      "power": 108945000,
+      "verified": true
+    },
+    {
+      "level": 750,
+      "power": 109220000,
+      "verified": true
+    },
+    {
+      "level": 751,
+      "power": 109495000,
+      "verified": true
+    },
+    {
+      "level": 752,
+      "power": 109770000,
+      "verified": true
+    },
+    {
+      "level": 753,
+      "power": 110045000,
+      "verified": true
+    },
+    {
+      "level": 754,
+      "power": 110322500,
+      "verified": true
+    },
+    {
+      "level": 755,
+      "power": 110600000,
+      "verified": true
+    },
+    {
+      "level": 756,
+      "power": 110877500,
+      "verified": true
+    },
+    {
+      "level": 757,
+      "power": 111155000,
+      "verified": true
+    },
+    {
+      "level": 758,
+      "power": 111432500,
+      "verified": true
+    },
+    {
+      "level": 759,
+      "power": 111710000,
+      "verified": true
+    },
+    {
+      "level": 760,
+      "power": 111987500,
+      "verified": true
+    },
+    {
+      "level": 761,
+      "power": 112267500,
+      "verified": true
+    },
+    {
+      "level": 762,
+      "power": 112547500,
+      "verified": true
+    },
+    {
+      "level": 763,
+      "power": 112827500,
+      "verified": true
+    },
+    {
+      "level": 764,
+      "power": 113107500,
+      "verified": true
+    },
+    {
+      "level": 765,
+      "power": 113387500,
+      "verified": true
+    },
+    {
+      "level": 766,
+      "power": 113667500,
+      "verified": true
+    },
+    {
+      "level": 767,
+      "power": 113947500,
+      "verified": true
+    },
+    {
+      "level": 768,
+      "power": 114227500,
+      "verified": true
+    },
+    {
+      "level": 769,
+      "power": 114510000,
+      "verified": true
+    },
+    {
+      "level": 770,
+      "power": 114792500,
+      "verified": true
+    },
+    {
+      "level": 771,
+      "power": 115075000,
+      "verified": true
+    },
+    {
+      "level": 772,
+      "power": 115357500,
+      "verified": true
+    },
+    {
+      "level": 773,
+      "power": 115640000,
+      "verified": true
+    },
+    {
+      "level": 774,
+      "power": 115922500,
+      "verified": true
+    },
+    {
+      "level": 775,
+      "power": 116205000,
+      "verified": true
+    },
+    {
+      "level": 776,
+      "power": 116487500,
+      "verified": true
+    },
+    {
+      "level": 777,
+      "power": 116772500,
+      "verified": true
+    },
+    {
+      "level": 778,
+      "power": 117057500,
+      "verified": true
+    },
+    {
+      "level": 779,
+      "power": 117342500,
+      "verified": true
+    },
+    {
+      "level": 780,
+      "power": 117627500,
+      "verified": true
+    },
+    {
+      "level": 781,
+      "power": 117912500,
+      "verified": true
+    },
+    {
+      "level": 782,
+      "power": 118197500,
+      "verified": true
+    },
+    {
+      "level": 783,
+      "power": 118482500,
+      "verified": true
+    },
+    {
+      "level": 784,
+      "power": 118770000,
+      "verified": true
+    },
+    {
+      "level": 785,
+      "power": 119057500,
+      "verified": true
+    },
+    {
+      "level": 786,
+      "power": 119345000,
+      "verified": true
+    },
+    {
+      "level": 787,
+      "power": 119632500,
+      "verified": true
+    },
+    {
+      "level": 788,
+      "power": 119920000,
+      "verified": true
+    },
+    {
+      "level": 789,
+      "power": 120207500,
+      "verified": true
+    },
+    {
+      "level": 790,
+      "power": 120495000,
+      "verified": true
+    },
+    {
+      "level": 791,
+      "power": 120782500,
+      "verified": true
+    },
+    {
+      "level": 792,
+      "power": 121072500,
+      "verified": true
+    },
+    {
+      "level": 793,
+      "power": 121362500,
+      "verified": true
+    },
+    {
+      "level": 794,
+      "power": 121652500,
+      "verified": true
+    },
+    {
+      "level": 795,
+      "power": 121942500,
+      "verified": true
+    },
+    {
+      "level": 796,
+      "power": 122232500,
+      "verified": true
+    },
+    {
+      "level": 797,
+      "power": 122522500,
+      "verified": true
+    },
+    {
+      "level": 798,
+      "power": 122812500,
+      "verified": true
+    },
+    {
+      "level": 799,
+      "power": 123105000,
+      "verified": false
+    },
+    {
+      "level": 800,
+      "power": 123397500,
+      "verified": false
+    },
+    {
+      "level": 801,
+      "power": 123690000,
+      "verified": false
+    },
+    {
+      "level": 802,
+      "power": 123982500,
+      "verified": false
+    },
+    {
+      "level": 803,
+      "power": 124275000,
+      "verified": false
+    },
+    {
+      "level": 804,
+      "power": 124567500,
+      "verified": false
+    },
+    {
+      "level": 805,
+      "power": 124860000,
+      "verified": false
+    },
+    {
+      "level": 806,
+      "power": 125152500,
+      "verified": false
+    },
+    {
+      "level": 807,
+      "power": 125447500,
+      "verified": false
+    },
+    {
+      "level": 808,
+      "power": 125742500,
+      "verified": false
+    },
+    {
+      "level": 809,
+      "power": 126037500,
+      "verified": false
+    },
+    {
+      "level": 810,
+      "power": 126332500,
+      "verified": false
+    },
+    {
+      "level": 811,
+      "power": 126627500,
+      "verified": false
+    },
+    {
+      "level": 812,
+      "power": 126922500,
+      "verified": false
+    },
+    {
+      "level": 813,
+      "power": 127217500,
+      "verified": false
+    },
+    {
+      "level": 814,
+      "power": 127512500,
+      "verified": false
+    },
+    {
+      "level": 815,
+      "power": 127810000,
+      "verified": false
+    },
+    {
+      "level": 816,
+      "power": 128107500,
+      "verified": false
+    },
+    {
+      "level": 817,
+      "power": 128405000,
+      "verified": false
+    },
+    {
+      "level": 818,
+      "power": 128702500,
+      "verified": false
+    },
+    {
+      "level": 819,
+      "power": 129000000,
+      "verified": false
+    },
+    {
+      "level": 820,
+      "power": 129297500,
+      "verified": false
+    },
+    {
+      "level": 821,
+      "power": 129595000,
+      "verified": false
+    },
+    {
+      "level": 822,
+      "power": 129895000,
+      "verified": false
+    },
+    {
+      "level": 823,
+      "power": 130195000,
+      "verified": false
+    },
+    {
+      "level": 824,
+      "power": 130495000,
+      "verified": false
+    },
+    {
+      "level": 825,
+      "power": 130795000,
+      "verified": false
+    },
+    {
+      "level": 826,
+      "power": 131095000,
+      "verified": false
+    },
+    {
+      "level": 827,
+      "power": 131395000,
+      "verified": false
+    },
+    {
+      "level": 828,
+      "power": 131695000,
+      "verified": false
+    },
+    {
+      "level": 829,
+      "power": 131995000,
+      "verified": false
+    },
+    {
+      "level": 830,
+      "power": 132297500,
+      "verified": false
+    },
+    {
+      "level": 831,
+      "power": 132600000,
+      "verified": false
+    },
+    {
+      "level": 832,
+      "power": 132902500,
+      "verified": false
+    },
+    {
+      "level": 833,
+      "power": 133205000,
+      "verified": false
+    },
+    {
+      "level": 834,
+      "power": 133507500,
+      "verified": false
+    },
+    {
+      "level": 835,
+      "power": 133810000,
+      "verified": false
+    },
+    {
+      "level": 836,
+      "power": 134112500,
+      "verified": false
+    },
+    {
+      "level": 837,
+      "power": 134415000,
+      "verified": false
+    },
+    {
+      "level": 838,
+      "power": 134720000,
+      "verified": false
+    },
+    {
+      "level": 839,
+      "power": 135025000,
+      "verified": false
+    },
+    {
+      "level": 840,
+      "power": 135330000,
+      "verified": false
+    },
+    {
+      "level": 841,
+      "power": 135635000,
+      "verified": false
+    },
+    {
+      "level": 842,
+      "power": 135940000,
+      "verified": false
+    },
+    {
+      "level": 843,
+      "power": 136245000,
+      "verified": false
+    },
+    {
+      "level": 844,
+      "power": 136550000,
+      "verified": false
+    },
+    {
+      "level": 845,
+      "power": 136855000,
+      "verified": false
+    },
+    {
+      "level": 846,
+      "power": 137162500,
+      "verified": false
+    },
+    {
+      "level": 847,
+      "power": 137470000,
+      "verified": false
+    },
+    {
+      "level": 848,
+      "power": 137777500,
+      "verified": false
+    },
+    {
+      "level": 849,
+      "power": 138085000,
+      "verified": true
+    },
+    {
+      "level": 850,
+      "power": 138392500,
+      "verified": true
+    },
+    {
+      "level": 851,
+      "power": 138700000,
+      "verified": true
+    },
+    {
+      "level": 852,
+      "power": 139007500,
+      "verified": true
+    },
+    {
+      "level": 853,
+      "power": 139317500,
+      "verified": true
+    },
+    {
+      "level": 854,
+      "power": 139627500,
+      "verified": true
+    },
+    {
+      "level": 855,
+      "power": 139937500,
+      "verified": true
+    },
+    {
+      "level": 856,
+      "power": 140247500,
+      "verified": true
+    },
+    {
+      "level": 857,
+      "power": 140557500,
+      "verified": true
+    },
+    {
+      "level": 858,
+      "power": 140867500,
+      "verified": true
+    },
+    {
+      "level": 859,
+      "power": 141177500,
+      "verified": true
+    },
+    {
+      "level": 860,
+      "power": 141487500,
+      "verified": true
+    },
+    {
+      "level": 861,
+      "power": 141800000,
+      "verified": true
+    },
+    {
+      "level": 862,
+      "power": 142112500,
+      "verified": true
+    },
+    {
+      "level": 863,
+      "power": 142425000,
+      "verified": true
+    },
+    {
+      "level": 864,
+      "power": 142737500,
+      "verified": true
+    },
+    {
+      "level": 865,
+      "power": 143050000,
+      "verified": true
+    },
+    {
+      "level": 866,
+      "power": 143362500,
+      "verified": true
+    },
+    {
+      "level": 867,
+      "power": 143675000,
+      "verified": true
+    },
+    {
+      "level": 868,
+      "power": 143987500,
+      "verified": true
+    },
+    {
+      "level": 869,
+      "power": 144302500,
+      "verified": true
+    },
+    {
+      "level": 870,
+      "power": 144617500,
+      "verified": true
+    },
+    {
+      "level": 871,
+      "power": 144932500,
+      "verified": true
+    },
+    {
+      "level": 872,
+      "power": 145247500,
+      "verified": true
+    },
+    {
+      "level": 873,
+      "power": 145562500,
+      "verified": true
+    },
+    {
+      "level": 874,
+      "power": 145877500,
+      "verified": true
+    },
+    {
+      "level": 875,
+      "power": 146192500,
+      "verified": true
+    },
+    {
+      "level": 876,
+      "power": 146510000,
+      "verified": true
+    },
+    {
+      "level": 877,
+      "power": 146827500,
+      "verified": true
+    },
+    {
+      "level": 878,
+      "power": 147145000,
+      "verified": false
+    },
+    {
+      "level": 879,
+      "power": 147462500,
+      "verified": false
+    },
+    {
+      "level": 880,
+      "power": 147780000,
+      "verified": false
+    },
+    {
+      "level": 881,
+      "power": 148097500,
+      "verified": false
+    },
+    {
+      "level": 882,
+      "power": 148415000,
+      "verified": false
+    },
+    {
+      "level": 883,
+      "power": 148732500,
+      "verified": false
+    },
+    {
+      "level": 884,
+      "power": 149052500,
+      "verified": false
+    },
+    {
+      "level": 885,
+      "power": 149372500,
+      "verified": false
+    },
+    {
+      "level": 886,
+      "power": 149692500,
+      "verified": false
+    },
+    {
+      "level": 887,
+      "power": 150012500,
+      "verified": false
+    },
+    {
+      "level": 888,
+      "power": 150332500,
+      "verified": false
+    },
+    {
+      "level": 889,
+      "power": 150652500,
+      "verified": false
+    },
+    {
+      "level": 890,
+      "power": 150972500,
+      "verified": false
+    },
+    {
+      "level": 891,
+      "power": 151292500,
+      "verified": false
+    },
+    {
+      "level": 892,
+      "power": 151615000,
+      "verified": false
+    },
+    {
+      "level": 893,
+      "power": 151937500,
+      "verified": false
+    },
+    {
+      "level": 894,
+      "power": 152260000,
+      "verified": false
+    },
+    {
+      "level": 895,
+      "power": 152582500,
+      "verified": false
+    },
+    {
+      "level": 896,
+      "power": 152905000,
+      "verified": false
+    },
+    {
+      "level": 897,
+      "power": 153227500,
+      "verified": false
+    },
+    {
+      "level": 898,
+      "power": 153550000,
+      "verified": false
+    },
+    {
+      "level": 899,
+      "power": 153875000,
+      "verified": false
+    },
+    {
+      "level": 900,
+      "power": 154200000,
+      "verified": false
+    },
+    {
+      "level": 901,
+      "power": 154525000,
+      "verified": false
+    },
+    {
+      "level": 902,
+      "power": 154850000,
+      "verified": false
+    },
+    {
+      "level": 903,
+      "power": 155175000,
+      "verified": false
+    },
+    {
+      "level": 904,
+      "power": 155500000,
+      "verified": false
+    },
+    {
+      "level": 905,
+      "power": 155825000,
+      "verified": false
+    },
+    {
+      "level": 906,
+      "power": 156150000,
+      "verified": false
+    },
+    {
+      "level": 907,
+      "power": 156477500,
+      "verified": false
+    },
+    {
+      "level": 908,
+      "power": 156805000,
+      "verified": false
+    },
+    {
+      "level": 909,
+      "power": 157132500,
+      "verified": false
+    },
+    {
+      "level": 910,
+      "power": 157460000,
+      "verified": false
+    },
+    {
+      "level": 911,
+      "power": 157787500,
+      "verified": false
+    },
+    {
+      "level": 912,
+      "power": 158115000,
+      "verified": false
+    },
+    {
+      "level": 913,
+      "power": 158442500,
+      "verified": false
+    },
+    {
+      "level": 914,
+      "power": 158770000,
+      "verified": false
+    },
+    {
+      "level": 915,
+      "power": 159100000,
+      "verified": false
+    },
+    {
+      "level": 916,
+      "power": 159430000,
+      "verified": false
+    },
+    {
+      "level": 917,
+      "power": 159760000,
+      "verified": false
+    },
+    {
+      "level": 918,
+      "power": 160090000,
+      "verified": false
+    },
+    {
+      "level": 919,
+      "power": 160420000,
+      "verified": false
+    },
+    {
+      "level": 920,
+      "power": 160750000,
+      "verified": false
+    },
+    {
+      "level": 921,
+      "power": 161080000,
+      "verified": false
+    },
+    {
+      "level": 922,
+      "power": 161412500,
+      "verified": false
+    },
+    {
+      "level": 923,
+      "power": 161745000,
+      "verified": false
+    },
+    {
+      "level": 924,
+      "power": 162077500,
+      "verified": false
+    },
+    {
+      "level": 925,
+      "power": 162410000,
+      "verified": false
+    },
+    {
+      "level": 926,
+      "power": 162742500,
+      "verified": false
+    },
+    {
+      "level": 927,
+      "power": 163075000,
+      "verified": false
+    },
+    {
+      "level": 928,
+      "power": 163407500,
+      "verified": false
+    },
+    {
+      "level": 929,
+      "power": 163740000,
+      "verified": false
+    },
+    {
+      "level": 930,
+      "power": 164075000,
+      "verified": false
+    },
+    {
+      "level": 931,
+      "power": 164410000,
+      "verified": false
+    },
+    {
+      "level": 932,
+      "power": 164745000,
+      "verified": false
+    },
+    {
+      "level": 933,
+      "power": 165080000,
+      "verified": false
+    },
+    {
+      "level": 934,
+      "power": 165415000,
+      "verified": false
+    },
+    {
+      "level": 935,
+      "power": 165750000,
+      "verified": false
+    },
+    {
+      "level": 936,
+      "power": 166085000,
+      "verified": false
+    },
+    {
+      "level": 937,
+      "power": 166420000,
+      "verified": false
+    },
+    {
+      "level": 938,
+      "power": 166757500,
+      "verified": false
+    },
+    {
+      "level": 939,
+      "power": 167095000,
+      "verified": false
+    },
+    {
+      "level": 940,
+      "power": 167432500,
+      "verified": false
+    },
+    {
+      "level": 941,
+      "power": 167770000,
+      "verified": false
+    },
+    {
+      "level": 942,
+      "power": 168107500,
+      "verified": false
+    },
+    {
+      "level": 943,
+      "power": 168445000,
+      "verified": false
+    },
+    {
+      "level": 944,
+      "power": 168782500,
+      "verified": false
+    },
+    {
+      "level": 945,
+      "power": 169120000,
+      "verified": false
+    },
+    {
+      "level": 946,
+      "power": 169460000,
+      "verified": false
+    },
+    {
+      "level": 947,
+      "power": 169800000,
+      "verified": false
+    },
+    {
+      "level": 948,
+      "power": 170140000,
+      "verified": false
+    },
+    {
+      "level": 949,
+      "power": 170480000,
+      "verified": false
+    },
+    {
+      "level": 950,
+      "power": 170820000,
+      "verified": false
+    },
+    {
+      "level": 951,
+      "power": 171160000,
+      "verified": false
+    },
+    {
+      "level": 952,
+      "power": 171500000,
+      "verified": false
+    },
+    {
+      "level": 953,
+      "power": 171840000,
+      "verified": false
+    },
+    {
+      "level": 954,
+      "power": 172182500,
+      "verified": false
+    },
+    {
+      "level": 955,
+      "power": 172525000,
+      "verified": false
+    },
+    {
+      "level": 956,
+      "power": 172867500,
+      "verified": false
+    },
+    {
+      "level": 957,
+      "power": 173210000,
+      "verified": false
+    },
+    {
+      "level": 958,
+      "power": 173552500,
+      "verified": false
+    },
+    {
+      "level": 959,
+      "power": 173895000,
+      "verified": false
+    },
+    {
+      "level": 960,
+      "power": 174237500,
+      "verified": false
+    },
+    {
+      "level": 961,
+      "power": 174580000,
+      "verified": false
+    },
+    {
+      "level": 962,
+      "power": 174925000,
+      "verified": false
+    },
+    {
+      "level": 963,
+      "power": 175270000,
+      "verified": false
+    },
+    {
+      "level": 964,
+      "power": 175615000,
+      "verified": false
+    },
+    {
+      "level": 965,
+      "power": 175960000,
+      "verified": false
+    },
+    {
+      "level": 966,
+      "power": 176305000,
+      "verified": false
+    },
+    {
+      "level": 967,
+      "power": 176650000,
+      "verified": false
+    },
+    {
+      "level": 968,
+      "power": 176995000,
+      "verified": false
+    },
+    {
+      "level": 969,
+      "power": 177340000,
+      "verified": false
+    },
+    {
+      "level": 970,
+      "power": 177687500,
+      "verified": false
+    },
+    {
+      "level": 971,
+      "power": 178035000,
+      "verified": false
+    },
+    {
+      "level": 972,
+      "power": 178382500,
+      "verified": false
+    },
+    {
+      "level": 973,
+      "power": 178730000,
+      "verified": false
+    },
+    {
+      "level": 974,
+      "power": 179077500,
+      "verified": false
+    },
+    {
+      "level": 975,
+      "power": 179425000,
+      "verified": false
+    },
+    {
+      "level": 976,
+      "power": 179772500,
+      "verified": false
+    },
+    {
+      "level": 977,
+      "power": 180120000,
+      "verified": false
+    },
+    {
+      "level": 978,
+      "power": 180470000,
+      "verified": false
+    },
+    {
+      "level": 979,
+      "power": 180820000,
+      "verified": false
+    },
+    {
+      "level": 980,
+      "power": 181170000,
+      "verified": false
+    },
+    {
+      "level": 981,
+      "power": 181520000,
+      "verified": false
+    },
+    {
+      "level": 982,
+      "power": 181870000,
+      "verified": false
+    },
+    {
+      "level": 983,
+      "power": 182220000,
+      "verified": false
+    },
+    {
+      "level": 984,
+      "power": 182570000,
+      "verified": false
+    },
+    {
+      "level": 985,
+      "power": 182920000,
+      "verified": false
+    },
+    {
+      "level": 986,
+      "power": 183272500,
+      "verified": false
+    },
+    {
+      "level": 987,
+      "power": 183625000,
+      "verified": false
+    },
+    {
+      "level": 988,
+      "power": 183977500,
+      "verified": false
+    },
+    {
+      "level": 989,
+      "power": 184330000,
+      "verified": false
+    },
+    {
+      "level": 990,
+      "power": 184682500,
+      "verified": false
+    },
+    {
+      "level": 991,
+      "power": 185035000,
+      "verified": false
+    },
+    {
+      "level": 992,
+      "power": 185387500,
+      "verified": false
+    },
+    {
+      "level": 993,
+      "power": 185740000,
+      "verified": false
+    },
+    {
+      "level": 994,
+      "power": 186095000,
+      "verified": false
+    },
+    {
+      "level": 995,
+      "power": 186450000,
+      "verified": false
+    },
+    {
+      "level": 996,
+      "power": 186805000,
+      "verified": false
+    },
+    {
+      "level": 997,
+      "power": 187160000,
+      "verified": false
+    },
+    {
+      "level": 998,
+      "power": 187515000,
+      "verified": false
+    },
+    {
+      "level": 999,
+      "power": 187870000,
+      "verified": false
+    },
+    {
+      "level": 1000,
+      "power": 188225000,
+      "verified": false
+    },
+    {
+      "level": 1001,
+      "power": 188582500,
+      "verified": false
+    },
+    {
+      "level": 1002,
+      "power": 188940000,
+      "verified": false
+    },
+    {
+      "level": 1003,
+      "power": 189297500,
+      "verified": false
+    },
+    {
+      "level": 1004,
+      "power": 189655000,
+      "verified": false
+    },
+    {
+      "level": 1005,
+      "power": 190012500,
+      "verified": false
+    },
+    {
+      "level": 1006,
+      "power": 190370000,
+      "verified": false
+    },
+    {
+      "level": 1007,
+      "power": 190727500,
+      "verified": false
+    },
+    {
+      "level": 1008,
+      "power": 191085000,
+      "verified": false
+    },
+    {
+      "level": 1009,
+      "power": 191445000,
+      "verified": false
+    },
+    {
+      "level": 1010,
+      "power": 191805000,
+      "verified": false
+    },
+    {
+      "level": 1011,
+      "power": 192165000,
+      "verified": false
+    },
+    {
+      "level": 1012,
+      "power": 192525000,
+      "verified": false
+    },
+    {
+      "level": 1013,
+      "power": 192885000,
+      "verified": false
+    },
+    {
+      "level": 1014,
+      "power": 193245000,
+      "verified": false
+    },
+    {
+      "level": 1015,
+      "power": 193605000,
+      "verified": false
+    },
+    {
+      "level": 1016,
+      "power": 193967500,
+      "verified": false
+    },
+    {
+      "level": 1017,
+      "power": 194330000,
+      "verified": false
+    },
+    {
+      "level": 1018,
+      "power": 194692500,
+      "verified": false
+    },
+    {
+      "level": 1019,
+      "power": 195055000,
+      "verified": false
+    },
+    {
+      "level": 1020,
+      "power": 195417500,
+      "verified": false
+    },
+    {
+      "level": 1021,
+      "power": 195780000,
+      "verified": false
+    },
+    {
+      "level": 1022,
+      "power": 196142500,
+      "verified": false
+    },
+    {
+      "level": 1023,
+      "power": 196505000,
+      "verified": false
+    },
+    {
+      "level": 1024,
+      "power": 196870000,
+      "verified": false
+    },
+    {
+      "level": 1025,
+      "power": 197235000,
+      "verified": false
+    },
+    {
+      "level": 1026,
+      "power": 197600000,
+      "verified": false
+    },
+    {
+      "level": 1027,
+      "power": 197965000,
+      "verified": false
+    },
+    {
+      "level": 1028,
+      "power": 198330000,
+      "verified": false
+    },
+    {
+      "level": 1029,
+      "power": 198695000,
+      "verified": false
+    },
+    {
+      "level": 1030,
+      "power": 199060000,
+      "verified": false
+    },
+    {
+      "level": 1031,
+      "power": 199425000,
+      "verified": false
+    },
+    {
+      "level": 1032,
+      "power": 199792500,
+      "verified": false
+    },
+    {
+      "level": 1033,
+      "power": 200160000,
+      "verified": false
+    },
+    {
+      "level": 1034,
+      "power": 200527500,
+      "verified": false
+    },
+    {
+      "level": 1035,
+      "power": 200895000,
+      "verified": false
+    },
+    {
+      "level": 1036,
+      "power": 201262500,
+      "verified": false
+    },
+    {
+      "level": 1037,
+      "power": 201630000,
+      "verified": false
+    },
+    {
+      "level": 1038,
+      "power": 201997500,
+      "verified": false
+    },
+    {
+      "level": 1039,
+      "power": 202365000,
+      "verified": false
+    },
+    {
+      "level": 1040,
+      "power": 202735000,
+      "verified": false
+    },
+    {
+      "level": 1041,
+      "power": 203105000,
+      "verified": false
+    },
+    {
+      "level": 1042,
+      "power": 203475000,
+      "verified": false
+    },
+    {
+      "level": 1043,
+      "power": 203845000,
+      "verified": false
+    },
+    {
+      "level": 1044,
+      "power": 204215000,
+      "verified": false
+    },
+    {
+      "level": 1045,
+      "power": 204585000,
+      "verified": false
+    },
+    {
+      "level": 1046,
+      "power": 204955000,
+      "verified": false
+    },
+    {
+      "level": 1047,
+      "power": 205325000,
+      "verified": false
+    },
+    {
+      "level": 1048,
+      "power": 205697500,
+      "verified": false
+    },
+    {
+      "level": 1049,
+      "power": 206070000,
+      "verified": false
+    },
+    {
+      "level": 1050,
+      "power": 206442500,
+      "verified": false
+    },
+    {
+      "level": 1051,
+      "power": 206815000,
+      "verified": false
+    },
+    {
+      "level": 1052,
+      "power": 207187500,
+      "verified": false
+    },
+    {
+      "level": 1053,
+      "power": 207560000,
+      "verified": false
+    },
+    {
+      "level": 1054,
+      "power": 207932500,
+      "verified": false
+    },
+    {
+      "level": 1055,
+      "power": 208305000,
+      "verified": false
+    },
+    {
+      "level": 1056,
+      "power": 208680000,
+      "verified": false
+    },
+    {
+      "level": 1057,
+      "power": 209055000,
+      "verified": false
+    },
+    {
+      "level": 1058,
+      "power": 209430000,
+      "verified": false
+    },
+    {
+      "level": 1059,
+      "power": 209805000,
+      "verified": false
+    },
+    {
+      "level": 1060,
+      "power": 210180000,
+      "verified": false
+    },
+    {
+      "level": 1061,
+      "power": 210555000,
+      "verified": false
+    },
+    {
+      "level": 1062,
+      "power": 210930000,
+      "verified": false
+    },
+    {
+      "level": 1063,
+      "power": 211305000,
+      "verified": false
+    },
+    {
+      "level": 1064,
+      "power": 211682500,
+      "verified": false
+    },
+    {
+      "level": 1065,
+      "power": 212060000,
+      "verified": false
+    },
+    {
+      "level": 1066,
+      "power": 212437500,
+      "verified": false
+    },
+    {
+      "level": 1067,
+      "power": 212815000,
+      "verified": false
+    },
+    {
+      "level": 1068,
+      "power": 213192500,
+      "verified": false
+    },
+    {
+      "level": 1069,
+      "power": 213570000,
+      "verified": false
+    },
+    {
+      "level": 1070,
+      "power": 213947500,
+      "verified": false
+    },
+    {
+      "level": 1071,
+      "power": 214327500,
+      "verified": false
+    },
+    {
+      "level": 1072,
+      "power": 214707500,
+      "verified": false
+    },
+    {
+      "level": 1073,
+      "power": 215087500,
+      "verified": false
+    },
+    {
+      "level": 1074,
+      "power": 215467500,
+      "verified": false
+    },
+    {
+      "level": 1075,
+      "power": 215847500,
+      "verified": false
+    },
+    {
+      "level": 1076,
+      "power": 216227500,
+      "verified": false
+    },
+    {
+      "level": 1077,
+      "power": 216607500,
+      "verified": false
+    },
+    {
+      "level": 1078,
+      "power": 216987500,
+      "verified": false
+    },
+    {
+      "level": 1079,
+      "power": 217370000,
+      "verified": false
+    },
+    {
+      "level": 1080,
+      "power": 217752500,
+      "verified": false
+    },
+    {
+      "level": 1081,
+      "power": 218135000,
+      "verified": false
+    },
+    {
+      "level": 1082,
+      "power": 218517500,
+      "verified": false
+    },
+    {
+      "level": 1083,
+      "power": 218900000,
+      "verified": false
+    },
+    {
+      "level": 1084,
+      "power": 219282500,
+      "verified": false
+    },
+    {
+      "level": 1085,
+      "power": 219665000,
+      "verified": false
+    },
+    {
+      "level": 1086,
+      "power": 220047500,
+      "verified": false
+    },
+    {
+      "level": 1087,
+      "power": 220432500,
+      "verified": false
+    },
+    {
+      "level": 1088,
+      "power": 220817500,
+      "verified": false
+    },
+    {
+      "level": 1089,
+      "power": 221202500,
+      "verified": false
+    },
+    {
+      "level": 1090,
+      "power": 221587500,
+      "verified": false
+    },
+    {
+      "level": 1091,
+      "power": 221972500,
+      "verified": false
+    },
+    {
+      "level": 1092,
+      "power": 222357500,
+      "verified": false
+    },
+    {
+      "level": 1093,
+      "power": 222742500,
+      "verified": false
+    },
+    {
+      "level": 1094,
+      "power": 223127500,
+      "verified": false
+    },
+    {
+      "level": 1095,
+      "power": 223515000,
+      "verified": false
+    },
+    {
+      "level": 1096,
+      "power": 223902500,
+      "verified": false
+    },
+    {
+      "level": 1097,
+      "power": 224290000,
+      "verified": false
+    },
+    {
+      "level": 1098,
+      "power": 224677500,
+      "verified": false
+    },
+    {
+      "level": 1099,
+      "power": 225065000,
+      "verified": false
+    },
+    {
+      "level": 1100,
+      "power": 225452500,
+      "verified": false
+    },
+    {
+      "level": 1101,
+      "power": 225840000,
+      "verified": false
+    },
+    {
+      "level": 1102,
+      "power": 226227500,
+      "verified": false
+    },
+    {
+      "level": 1103,
+      "power": 226617500,
+      "verified": false
+    },
+    {
+      "level": 1104,
+      "power": 227007500,
+      "verified": false
+    },
+    {
+      "level": 1105,
+      "power": 227397500,
+      "verified": false
+    },
+    {
+      "level": 1106,
+      "power": 227787500,
+      "verified": false
+    },
+    {
+      "level": 1107,
+      "power": 228177500,
+      "verified": false
+    },
+    {
+      "level": 1108,
+      "power": 228567500,
+      "verified": false
+    },
+    {
+      "level": 1109,
+      "power": 228957500,
+      "verified": false
+    },
+    {
+      "level": 1110,
+      "power": 229347500,
+      "verified": false
+    },
+    {
+      "level": 1111,
+      "power": 229740000,
+      "verified": false
+    },
+    {
+      "level": 1112,
+      "power": 230132500,
+      "verified": false
+    },
+    {
+      "level": 1113,
+      "power": 230525000,
+      "verified": false
+    },
+    {
+      "level": 1114,
+      "power": 230917500,
+      "verified": false
+    },
+    {
+      "level": 1115,
+      "power": 231310000,
+      "verified": false
+    },
+    {
+      "level": 1116,
+      "power": 231702500,
+      "verified": false
+    },
+    {
+      "level": 1117,
+      "power": 232095000,
+      "verified": false
+    },
+    {
+      "level": 1118,
+      "power": 232487500,
+      "verified": false
+    },
+    {
+      "level": 1119,
+      "power": 232882500,
+      "verified": false
+    },
+    {
+      "level": 1120,
+      "power": 233277500,
+      "verified": false
+    },
+    {
+      "level": 1121,
+      "power": 233672500,
+      "verified": false
+    },
+    {
+      "level": 1122,
+      "power": 234067500,
+      "verified": false
+    },
+    {
+      "level": 1123,
+      "power": 234462500,
+      "verified": false
+    },
+    {
+      "level": 1124,
+      "power": 234857500,
+      "verified": false
+    },
+    {
+      "level": 1125,
+      "power": 235252500,
+      "verified": false
+    },
+    {
+      "level": 1126,
+      "power": 235647500,
+      "verified": false
+    },
+    {
+      "level": 1127,
+      "power": 236045000,
+      "verified": false
+    },
+    {
+      "level": 1128,
+      "power": 236442500,
+      "verified": false
+    },
+    {
+      "level": 1129,
+      "power": 236840000,
+      "verified": false
+    },
+    {
+      "level": 1130,
+      "power": 237237500,
+      "verified": false
+    },
+    {
+      "level": 1131,
+      "power": 237635000,
+      "verified": false
+    },
+    {
+      "level": 1132,
+      "power": 238032500,
+      "verified": false
+    },
+    {
+      "level": 1133,
+      "power": 238430000,
+      "verified": false
+    },
+    {
+      "level": 1134,
+      "power": 238827500,
+      "verified": false
+    },
+    {
+      "level": 1135,
+      "power": 239227500,
+      "verified": false
+    },
+    {
+      "level": 1136,
+      "power": 239627500,
+      "verified": false
+    },
+    {
+      "level": 1137,
+      "power": 240027500,
+      "verified": false
+    },
+    {
+      "level": 1138,
+      "power": 240427500,
+      "verified": false
+    },
+    {
+      "level": 1139,
+      "power": 240827500,
+      "verified": false
+    },
+    {
+      "level": 1140,
+      "power": 241227500,
+      "verified": false
+    },
+    {
+      "level": 1141,
+      "power": 241627500,
+      "verified": false
+    },
+    {
+      "level": 1142,
+      "power": 242027500,
+      "verified": false
+    },
+    {
+      "level": 1143,
+      "power": 242430000,
+      "verified": false
+    },
+    {
+      "level": 1144,
+      "power": 242832500,
+      "verified": false
+    },
+    {
+      "level": 1145,
+      "power": 243235000,
+      "verified": false
+    },
+    {
+      "level": 1146,
+      "power": 243637500,
+      "verified": false
+    },
+    {
+      "level": 1147,
+      "power": 244040000,
+      "verified": false
+    },
+    {
+      "level": 1148,
+      "power": 244442500,
+      "verified": false
+    },
+    {
+      "level": 1149,
+      "power": 244845000,
+      "verified": false
+    },
+    {
+      "level": 1150,
+      "power": 245247500,
+      "verified": false
+    },
+    {
+      "level": 1151,
+      "power": 245652500,
+      "verified": false
+    },
+    {
+      "level": 1152,
+      "power": 246057500,
+      "verified": false
+    },
+    {
+      "level": 1153,
+      "power": 246462500,
+      "verified": false
+    },
+    {
+      "level": 1154,
+      "power": 246867500,
+      "verified": false
+    },
+    {
+      "level": 1155,
+      "power": 247272500,
+      "verified": false
+    },
+    {
+      "level": 1156,
+      "power": 247677500,
+      "verified": false
+    },
+    {
+      "level": 1157,
+      "power": 248082500,
+      "verified": false
+    },
+    {
+      "level": 1158,
+      "power": 248490000,
+      "verified": false
+    },
+    {
+      "level": 1159,
+      "power": 248897500,
+      "verified": false
+    },
+    {
+      "level": 1160,
+      "power": 249305000,
+      "verified": false
+    },
+    {
+      "level": 1161,
+      "power": 249712500,
+      "verified": false
+    },
+    {
+      "level": 1162,
+      "power": 250120000,
+      "verified": false
+    },
+    {
+      "level": 1163,
+      "power": 250527500,
+      "verified": false
+    },
+    {
+      "level": 1164,
+      "power": 250935000,
+      "verified": false
+    },
+    {
+      "level": 1165,
+      "power": 251342500,
+      "verified": false
+    },
+    {
+      "level": 1166,
+      "power": 251752500,
+      "verified": false
+    },
+    {
+      "level": 1167,
+      "power": 252162500,
+      "verified": false
+    },
+    {
+      "level": 1168,
+      "power": 252572500,
+      "verified": false
+    },
+    {
+      "level": 1169,
+      "power": 252982500,
+      "verified": false
+    },
+    {
+      "level": 1170,
+      "power": 253392500,
+      "verified": false
+    },
+    {
+      "level": 1171,
+      "power": 253802500,
+      "verified": false
+    },
+    {
+      "level": 1172,
+      "power": 254212500,
+      "verified": false
+    },
+    {
+      "level": 1173,
+      "power": 254622500,
+      "verified": false
+    },
+    {
+      "level": 1174,
+      "power": 255035000,
+      "verified": false
+    },
+    {
+      "level": 1175,
+      "power": 255447500,
+      "verified": false
+    },
+    {
+      "level": 1176,
+      "power": 255860000,
+      "verified": false
+    },
+    {
+      "level": 1177,
+      "power": 256272500,
+      "verified": false
+    },
+    {
+      "level": 1178,
+      "power": 256685000,
+      "verified": false
+    },
+    {
+      "level": 1179,
+      "power": 257097500,
+      "verified": false
+    },
+    {
+      "level": 1180,
+      "power": 257510000,
+      "verified": false
+    },
+    {
+      "level": 1181,
+      "power": 257922500,
+      "verified": false
+    },
+    {
+      "level": 1182,
+      "power": 258337500,
+      "verified": false
+    },
+    {
+      "level": 1183,
+      "power": 258752500,
+      "verified": false
+    },
+    {
+      "level": 1184,
+      "power": 259167500,
+      "verified": false
+    },
+    {
+      "level": 1185,
+      "power": 259582500,
+      "verified": false
+    },
+    {
+      "level": 1186,
+      "power": 259997500,
+      "verified": false
+    },
+    {
+      "level": 1187,
+      "power": 260412500,
+      "verified": false
+    },
+    {
+      "level": 1188,
+      "power": 260827500,
+      "verified": false
+    },
+    {
+      "level": 1189,
+      "power": 261242500,
+      "verified": false
+    },
+    {
+      "level": 1190,
+      "power": 261660000,
+      "verified": false
+    },
+    {
+      "level": 1191,
+      "power": 262077500,
+      "verified": false
+    },
+    {
+      "level": 1192,
+      "power": 262495000,
+      "verified": false
+    },
+    {
+      "level": 1193,
+      "power": 262912500,
+      "verified": false
+    },
+    {
+      "level": 1194,
+      "power": 263330000,
+      "verified": false
+    },
+    {
+      "level": 1195,
+      "power": 263747500,
+      "verified": false
+    },
+    {
+      "level": 1196,
+      "power": 264165000,
+      "verified": false
+    },
+    {
+      "level": 1197,
+      "power": 264582500,
+      "verified": false
+    },
+    {
+      "level": 1198,
+      "power": 265002500,
+      "verified": false
+    },
+    {
+      "level": 1199,
+      "power": 265422500,
+      "verified": false
+    },
+    {
+      "level": 1200,
+      "power": 265842500,
+      "verified": false
+    },
+    {
+      "level": 1201,
+      "power": 266262500,
+      "verified": false
+    },
+    {
+      "level": 1202,
+      "power": 266682500,
+      "verified": false
+    },
+    {
+      "level": 1203,
+      "power": 267102500,
+      "verified": false
+    },
+    {
+      "level": 1204,
+      "power": 267522500,
+      "verified": false
+    },
+    {
+      "level": 1205,
+      "power": 267942500,
+      "verified": false
+    },
+    {
+      "level": 1206,
+      "power": 268365000,
+      "verified": false
+    },
+    {
+      "level": 1207,
+      "power": 268787500,
+      "verified": false
+    },
+    {
+      "level": 1208,
+      "power": 269210000,
+      "verified": false
+    },
+    {
+      "level": 1209,
+      "power": 269632500,
+      "verified": false
+    },
+    {
+      "level": 1210,
+      "power": 270055000,
+      "verified": false
+    },
+    {
+      "level": 1211,
+      "power": 270477500,
+      "verified": false
+    },
+    {
+      "level": 1212,
+      "power": 270900000,
+      "verified": false
+    },
+    {
+      "level": 1213,
+      "power": 271322500,
+      "verified": false
+    },
+    {
+      "level": 1214,
+      "power": 271747500,
+      "verified": false
+    },
+    {
+      "level": 1215,
+      "power": 272172500,
+      "verified": false
+    },
+    {
+      "level": 1216,
+      "power": 272597500,
+      "verified": false
+    },
+    {
+      "level": 1217,
+      "power": 273022500,
+      "verified": false
+    },
+    {
+      "level": 1218,
+      "power": 273447500,
+      "verified": false
+    },
+    {
+      "level": 1219,
+      "power": 273872500,
+      "verified": false
+    },
+    {
+      "level": 1220,
+      "power": 274297500,
+      "verified": false
+    },
+    {
+      "level": 1221,
+      "power": 274722500,
+      "verified": false
+    },
+    {
+      "level": 1222,
+      "power": 275150000,
+      "verified": false
+    },
+    {
+      "level": 1223,
+      "power": 275577500,
+      "verified": false
+    },
+    {
+      "level": 1224,
+      "power": 276005000,
+      "verified": false
+    },
+    {
+      "level": 1225,
+      "power": 276432500,
+      "verified": false
+    },
+    {
+      "level": 1226,
+      "power": 276860000,
+      "verified": false
+    },
+    {
+      "level": 1227,
+      "power": 277287500,
+      "verified": false
+    },
+    {
+      "level": 1228,
+      "power": 277715000,
+      "verified": false
+    },
+    {
+      "level": 1229,
+      "power": 278142500,
+      "verified": false
+    },
+    {
+      "level": 1230,
+      "power": 278572500,
+      "verified": false
+    },
+    {
+      "level": 1231,
+      "power": 279002500,
+      "verified": false
+    },
+    {
+      "level": 1232,
+      "power": 279432500,
+      "verified": false
+    },
+    {
+      "level": 1233,
+      "power": 279862500,
+      "verified": false
+    },
+    {
+      "level": 1234,
+      "power": 280292500,
+      "verified": false
+    },
+    {
+      "level": 1235,
+      "power": 280722500,
+      "verified": false
+    },
+    {
+      "level": 1236,
+      "power": 281152500,
+      "verified": false
+    },
+    {
+      "level": 1237,
+      "power": 281582500,
+      "verified": false
+    },
+    {
+      "level": 1238,
+      "power": 282015000,
+      "verified": false
+    },
+    {
+      "level": 1239,
+      "power": 282447500,
+      "verified": false
+    },
+    {
+      "level": 1240,
+      "power": 282880000,
+      "verified": false
+    },
+    {
+      "level": 1241,
+      "power": 283312500,
+      "verified": false
+    },
+    {
+      "level": 1242,
+      "power": 283745000,
+      "verified": false
+    },
+    {
+      "level": 1243,
+      "power": 284177500,
+      "verified": false
+    },
+    {
+      "level": 1244,
+      "power": 284610000,
+      "verified": false
+    },
+    {
+      "level": 1245,
+      "power": 285042500,
+      "verified": false
+    },
+    {
+      "level": 1246,
+      "power": 285477500,
+      "verified": false
+    },
+    {
+      "level": 1247,
+      "power": 285912500,
+      "verified": true
+    },
+    {
+      "level": 1248,
+      "power": 286347500,
+      "verified": true
+    },
+    {
+      "level": 1249,
+      "power": 286782500,
+      "verified": true
+    },
+    {
+      "level": 1250,
+      "power": 287217500,
+      "verified": true
+    },
+    {
+      "level": 1251,
+      "power": 287652500,
+      "verified": true
+    },
+    {
+      "level": 1252,
+      "power": 288087500,
+      "verified": true
+    },
+    {
+      "level": 1253,
+      "power": 288522500,
+      "verified": true
+    },
+    {
+      "level": 1254,
+      "power": 288960000,
+      "verified": true
+    },
+    {
+      "level": 1255,
+      "power": 289397500,
+      "verified": true
+    },
+    {
+      "level": 1256,
+      "power": 289835000,
+      "verified": true
+    },
+    {
+      "level": 1257,
+      "power": 290272500,
+      "verified": true
+    },
+    {
+      "level": 1258,
+      "power": 290710000,
+      "verified": true
+    },
+    {
+      "level": 1259,
+      "power": 291147500,
+      "verified": true
+    },
+    {
+      "level": 1260,
+      "power": 291585000,
+      "verified": true
+    },
+    {
+      "level": 1261,
+      "power": 292022500,
+      "verified": true
+    },
+    {
+      "level": 1262,
+      "power": 292462500,
+      "verified": true
+    },
+    {
+      "level": 1263,
+      "power": 292902500,
+      "verified": true
+    },
+    {
+      "level": 1264,
+      "power": 293342500,
+      "verified": true
+    },
+    {
+      "level": 1265,
+      "power": 293782500,
+      "verified": true
+    },
+    {
+      "level": 1266,
+      "power": 294222500,
+      "verified": true
+    },
+    {
+      "level": 1267,
+      "power": 294662500,
+      "verified": true
+    },
+    {
+      "level": 1268,
+      "power": 295102500,
+      "verified": true
+    },
+    {
+      "level": 1269,
+      "power": 295542500,
+      "verified": true
+    },
+    {
+      "level": 1270,
+      "power": 295985000,
+      "verified": true
+    },
+    {
+      "level": 1271,
+      "power": 296427500,
+      "verified": true
+    },
+    {
+      "level": 1272,
+      "power": 296870000,
+      "verified": true
+    },
+    {
+      "level": 1273,
+      "power": 297312500,
+      "verified": true
+    },
+    {
+      "level": 1274,
+      "power": 297755000,
+      "verified": true
+    },
+    {
+      "level": 1275,
+      "power": 298197500,
+      "verified": true
+    },
+    {
+      "level": 1276,
+      "power": 298640000,
+      "verified": true
+    },
+    {
+      "level": 1277,
+      "power": 299082500,
+      "verified": true
+    },
+    {
+      "level": 1278,
+      "power": 299527500,
+      "verified": true
+    },
+    {
+      "level": 1279,
+      "power": 299972500,
+      "verified": true
+    },
+    {
+      "level": 1280,
+      "power": 300417500,
+      "verified": true
+    },
+    {
+      "level": 1281,
+      "power": 300862500,
+      "verified": true
+    },
+    {
+      "level": 1282,
+      "power": 301307500,
+      "verified": true
+    },
+    {
+      "level": 1283,
+      "power": 301752500,
+      "verified": true
+    },
+    {
+      "level": 1284,
+      "power": 302197500,
+      "verified": true
+    },
+    {
+      "level": 1285,
+      "power": 302642500,
+      "verified": true
+    },
+    {
+      "level": 1286,
+      "power": 303090000,
+      "verified": true
+    },
+    {
+      "level": 1287,
+      "power": 303537500,
+      "verified": true
+    },
+    {
+      "level": 1288,
+      "power": 303985000,
+      "verified": true
+    },
+    {
+      "level": 1289,
+      "power": 304432500,
+      "verified": true
+    },
+    {
+      "level": 1290,
+      "power": 304880000,
+      "verified": true
+    },
+    {
+      "level": 1291,
+      "power": 305327500,
+      "verified": true
+    },
+    {
+      "level": 1292,
+      "power": 305775000,
+      "verified": true
+    },
+    {
+      "level": 1293,
+      "power": 306222500,
+      "verified": true
+    },
+    {
+      "level": 1294,
+      "power": 306672500,
+      "verified": true
+    },
+    {
+      "level": 1295,
+      "power": 307122500,
+      "verified": true
+    },
+    {
+      "level": 1296,
+      "power": 307572500,
+      "verified": true
+    },
+    {
+      "level": 1297,
+      "power": 308022500,
+      "verified": true
+    },
+    {
+      "level": 1298,
+      "power": 308472500,
+      "verified": true
+    },
+    {
+      "level": 1299,
+      "power": 308922500,
+      "verified": true
+    },
+    {
+      "level": 1300,
+      "power": 309372500,
+      "verified": true
+    },
+    {
+      "level": 1301,
+      "power": 309822500,
+      "verified": true
+    },
+    {
+      "level": 1302,
+      "power": 310275000,
+      "verified": true
+    },
+    {
+      "level": 1303,
+      "power": 310727500,
+      "verified": true
+    },
+    {
+      "level": 1304,
+      "power": 311180000,
+      "verified": true
+    },
+    {
+      "level": 1305,
+      "power": 311632500,
+      "verified": true
+    },
+    {
+      "level": 1306,
+      "power": 312085000,
+      "verified": true
+    },
+    {
+      "level": 1307,
+      "power": 312537500,
+      "verified": true
+    },
+    {
+      "level": 1308,
+      "power": 312990000,
+      "verified": true
+    },
+    {
+      "level": 1309,
+      "power": 313442500,
+      "verified": true
+    },
+    {
+      "level": 1310,
+      "power": 313897500,
+      "verified": true
+    },
+    {
+      "level": 1311,
+      "power": 314352500,
+      "verified": true
+    },
+    {
+      "level": 1312,
+      "power": 314807500,
+      "verified": true
+    },
+    {
+      "level": 1313,
+      "power": 315262500,
+      "verified": true
+    },
+    {
+      "level": 1314,
+      "power": 315717500,
+      "verified": true
+    },
+    {
+      "level": 1315,
+      "power": 316172500,
+      "verified": true
+    },
+    {
+      "level": 1316,
+      "power": 316627500,
+      "verified": true
+    },
+    {
+      "level": 1317,
+      "power": 317082500,
+      "verified": true
+    },
+    {
+      "level": 1318,
+      "power": 317540000,
+      "verified": true
+    },
+    {
+      "level": 1319,
+      "power": 317997500,
+      "verified": true
+    },
+    {
+      "level": 1320,
+      "power": 318455000,
+      "verified": true
+    },
+    {
+      "level": 1321,
+      "power": 318912500,
+      "verified": true
+    },
+    {
+      "level": 1322,
+      "power": 319370000,
+      "verified": true
+    },
+    {
+      "level": 1323,
+      "power": 319827500,
+      "verified": true
+    },
+    {
+      "level": 1324,
+      "power": 320285000,
+      "verified": true
+    },
+    {
+      "level": 1325,
+      "power": 320742500,
+      "verified": true
+    },
+    {
+      "level": 1326,
+      "power": 321202500,
+      "verified": true
+    },
+    {
+      "level": 1327,
+      "power": 321662500,
+      "verified": true
+    },
+    {
+      "level": 1328,
+      "power": 322122500,
+      "verified": true
+    },
+    {
+      "level": 1329,
+      "power": 322582500,
+      "verified": true
+    },
+    {
+      "level": 1330,
+      "power": 323042500,
+      "verified": true
+    },
+    {
+      "level": 1331,
+      "power": 323502500,
+      "verified": true
+    },
+    {
+      "level": 1332,
+      "power": 323962500,
+      "verified": true
+    },
+    {
+      "level": 1333,
+      "power": 324422500,
+      "verified": true
+    },
+    {
+      "level": 1334,
+      "power": 324885000,
+      "verified": true
+    },
+    {
+      "level": 1335,
+      "power": 325347500,
+      "verified": true
+    },
+    {
+      "level": 1336,
+      "power": 325810000,
+      "verified": true
+    },
+    {
+      "level": 1337,
+      "power": 326272500,
+      "verified": true
+    },
+    {
+      "level": 1338,
+      "power": 326735000,
+      "verified": true
+    },
+    {
+      "level": 1339,
+      "power": 327197500,
+      "verified": true
+    },
+    {
+      "level": 1340,
+      "power": 327660000,
+      "verified": true
+    },
+    {
+      "level": 1341,
+      "power": 328122500,
+      "verified": true
+    },
+    {
+      "level": 1342,
+      "power": 328585000,
+      "verified": false
+    },
+    {
+      "level": 1343,
+      "power": 329050000,
+      "verified": false
+    },
+    {
+      "level": 1344,
+      "power": 329515000,
+      "verified": false
+    },
+    {
+      "level": 1345,
+      "power": 329980000,
+      "verified": false
+    },
+    {
+      "level": 1346,
+      "power": 330445000,
+      "verified": false
+    },
+    {
+      "level": 1347,
+      "power": 330910000,
+      "verified": false
+    },
+    {
+      "level": 1348,
+      "power": 331375000,
+      "verified": false
+    },
+    {
+      "level": 1349,
+      "power": 331840000,
+      "verified": false
+    },
+    {
+      "level": 1350,
+      "power": 332305000,
+      "verified": false
+    },
+    {
+      "level": 1351,
+      "power": 332772500,
+      "verified": false
+    },
+    {
+      "level": 1352,
+      "power": 333240000,
+      "verified": false
+    },
+    {
+      "level": 1353,
+      "power": 333707500,
+      "verified": false
+    },
+    {
+      "level": 1354,
+      "power": 334175000,
+      "verified": false
+    },
+    {
+      "level": 1355,
+      "power": 334642500,
+      "verified": false
+    },
+    {
+      "level": 1356,
+      "power": 335110000,
+      "verified": false
+    },
+    {
+      "level": 1357,
+      "power": 335577500,
+      "verified": false
+    },
+    {
+      "level": 1358,
+      "power": 336045000,
+      "verified": false
+    },
+    {
+      "level": 1359,
+      "power": 336515000,
+      "verified": false
+    },
+    {
+      "level": 1360,
+      "power": 336985000,
+      "verified": false
+    },
+    {
+      "level": 1361,
+      "power": 337455000,
+      "verified": false
+    },
+    {
+      "level": 1362,
+      "power": 337925000,
+      "verified": false
+    },
+    {
+      "level": 1363,
+      "power": 338395000,
+      "verified": false
+    },
+    {
+      "level": 1364,
+      "power": 338865000,
+      "verified": true
+    },
+    {
+      "level": 1365,
+      "power": 339335000,
+      "verified": true
+    },
+    {
+      "level": 1366,
+      "power": 339805000,
+      "verified": true
+    },
+    {
+      "level": 1367,
+      "power": 340277500,
+      "verified": true
+    },
+    {
+      "level": 1368,
+      "power": 340750000,
+      "verified": true
+    },
+    {
+      "level": 1369,
+      "power": 341222500,
+      "verified": true
+    },
+    {
+      "level": 1370,
+      "power": 341695000,
+      "verified": true
+    },
+    {
+      "level": 1371,
+      "power": 342167500,
+      "verified": true
+    },
+    {
+      "level": 1372,
+      "power": 342640000,
+      "verified": true
+    },
+    {
+      "level": 1373,
+      "power": 343112500,
+      "verified": true
+    },
+    {
+      "level": 1374,
+      "power": 343585000,
+      "verified": true
+    },
+    {
+      "level": 1375,
+      "power": 344060000,
+      "verified": true
+    },
+    {
+      "level": 1376,
+      "power": 344535000,
+      "verified": true
+    },
+    {
+      "level": 1377,
+      "power": 345010000,
+      "verified": true
+    },
+    {
+      "level": 1378,
+      "power": 345485000,
+      "verified": true
+    },
+    {
+      "level": 1379,
+      "power": 345960000,
+      "verified": true
+    },
+    {
+      "level": 1380,
+      "power": 346435000,
+      "verified": true
+    },
+    {
+      "level": 1381,
+      "power": 346910000,
+      "verified": true
+    },
+    {
+      "level": 1382,
+      "power": 347385000,
+      "verified": true
+    },
+    {
+      "level": 1383,
+      "power": 347862500,
+      "verified": true
+    },
+    {
+      "level": 1384,
+      "power": 348340000,
+      "verified": true
+    },
+    {
+      "level": 1385,
+      "power": 348817500,
+      "verified": true
+    },
+    {
+      "level": 1386,
+      "power": 349295000,
+      "verified": true
+    },
+    {
+      "level": 1387,
+      "power": 349772500,
+      "verified": true
+    },
+    {
+      "level": 1388,
+      "power": 350250000,
+      "verified": true
+    },
+    {
+      "level": 1389,
+      "power": 350727500,
+      "verified": true
+    },
+    {
+      "level": 1390,
+      "power": 351205000,
+      "verified": true
+    },
+    {
+      "level": 1391,
+      "power": 351685000,
+      "verified": true
+    },
+    {
+      "level": 1392,
+      "power": 352165000,
+      "verified": true
+    },
+    {
+      "level": 1393,
+      "power": 352645000,
+      "verified": true
+    },
+    {
+      "level": 1394,
+      "power": 353125000,
+      "verified": true
+    },
+    {
+      "level": 1395,
+      "power": 353605000,
+      "verified": true
+    },
+    {
+      "level": 1396,
+      "power": 354085000,
+      "verified": true
+    },
+    {
+      "level": 1397,
+      "power": 354565000,
+      "verified": true
+    },
+    {
+      "level": 1398,
+      "power": 355045000,
+      "verified": true
+    },
+    {
+      "level": 1399,
+      "power": 355527500,
+      "verified": true
+    },
+    {
+      "level": 1400,
+      "power": 356010000,
+      "verified": true
+    },
+    {
+      "level": 1401,
+      "power": 356492500,
+      "verified": true
+    },
+    {
+      "level": 1402,
+      "power": 356975000,
+      "verified": true
+    },
+    {
+      "level": 1403,
+      "power": 357457500,
+      "verified": true
+    },
+    {
+      "level": 1404,
+      "power": 357940000,
+      "verified": true
+    },
+    {
+      "level": 1405,
+      "power": 358422500,
+      "verified": true
+    },
+    {
+      "level": 1406,
+      "power": 358905000,
+      "verified": true
+    },
+    {
+      "level": 1407,
+      "power": 359390000,
+      "verified": true
+    },
+    {
+      "level": 1408,
+      "power": 359875000,
+      "verified": true
+    },
+    {
+      "level": 1409,
+      "power": 360360000,
+      "verified": true
+    },
+    {
+      "level": 1410,
+      "power": 360845000,
+      "verified": true
+    },
+    {
+      "level": 1411,
+      "power": 361330000,
+      "verified": true
+    },
+    {
+      "level": 1412,
+      "power": 361815000,
+      "verified": true
+    },
+    {
+      "level": 1413,
+      "power": 362300000,
+      "verified": true
+    },
+    {
+      "level": 1414,
+      "power": 362785000,
+      "verified": true
+    },
+    {
+      "level": 1415,
+      "power": 363272500,
+      "verified": true
+    },
+    {
+      "level": 1416,
+      "power": 363760000,
+      "verified": true
+    },
+    {
+      "level": 1417,
+      "power": 364247500,
+      "verified": true
+    },
+    {
+      "level": 1418,
+      "power": 364735000,
+      "verified": true
+    },
+    {
+      "level": 1419,
+      "power": 365222500,
+      "verified": true
+    },
+    {
+      "level": 1420,
+      "power": 365710000,
+      "verified": true
+    },
+    {
+      "level": 1421,
+      "power": 366197500,
+      "verified": true
+    },
+    {
+      "level": 1422,
+      "power": 366685000,
+      "verified": true
+    },
+    {
+      "level": 1423,
+      "power": 367175000,
+      "verified": true
+    },
+    {
+      "level": 1424,
+      "power": 367665000,
+      "verified": true
+    },
+    {
+      "level": 1425,
+      "power": 368155000,
+      "verified": true
+    },
+    {
+      "level": 1426,
+      "power": 368645000,
+      "verified": false
+    },
+    {
+      "level": 1427,
+      "power": 369135000,
+      "verified": false
+    },
+    {
+      "level": 1428,
+      "power": 369625000,
+      "verified": false
+    },
+    {
+      "level": 1429,
+      "power": 370115000,
+      "verified": false
+    },
+    {
+      "level": 1430,
+      "power": 370605000,
+      "verified": false
+    },
+    {
+      "level": 1431,
+      "power": 371097500,
+      "verified": false
+    },
+    {
+      "level": 1432,
+      "power": 371590000,
+      "verified": false
+    },
+    {
+      "level": 1433,
+      "power": 372082500,
+      "verified": false
+    },
+    {
+      "level": 1434,
+      "power": 372575000,
+      "verified": false
+    },
+    {
+      "level": 1435,
+      "power": 373067500,
+      "verified": false
+    },
+    {
+      "level": 1436,
+      "power": 373560000,
+      "verified": false
+    },
+    {
+      "level": 1437,
+      "power": 374052500,
+      "verified": false
+    },
+    {
+      "level": 1438,
+      "power": 374545000,
+      "verified": false
+    },
+    {
+      "level": 1439,
+      "power": 375040000,
+      "verified": false
+    },
+    {
+      "level": 1440,
+      "power": 375535000,
+      "verified": false
+    },
+    {
+      "level": 1441,
+      "power": 376030000,
+      "verified": false
+    },
+    {
+      "level": 1442,
+      "power": 376525000,
+      "verified": false
+    },
+    {
+      "level": 1443,
+      "power": 377020000,
+      "verified": false
+    },
+    {
+      "level": 1444,
+      "power": 377515000,
+      "verified": false
+    },
+    {
+      "level": 1445,
+      "power": 378010000,
+      "verified": false
+    },
+    {
+      "level": 1446,
+      "power": 378505000,
+      "verified": false
+    },
+    {
+      "level": 1447,
+      "power": 379000000,
+      "verified": false
+    },
+    {
+      "level": 1448,
+      "power": 379497500,
+      "verified": false
+    },
+    {
+      "level": 1449,
+      "power": 379995000,
+      "verified": false
+    },
+    {
+      "level": 1450,
+      "power": 380492500,
+      "verified": false
+    },
+    {
+      "level": 1451,
+      "power": 380990000,
+      "verified": false
+    },
+    {
+      "level": 1452,
+      "power": 381487500,
+      "verified": false
+    },
+    {
+      "level": 1453,
+      "power": 381985000,
+      "verified": false
+    },
+    {
+      "level": 1454,
+      "power": 382482500,
+      "verified": false
+    },
+    {
+      "level": 1455,
+      "power": 382980000,
+      "verified": false
+    },
+    {
+      "level": 1456,
+      "power": 383480000,
+      "verified": false
+    },
+    {
+      "level": 1457,
+      "power": 383980000,
+      "verified": false
+    },
+    {
+      "level": 1458,
+      "power": 384480000,
+      "verified": false
+    },
+    {
+      "level": 1459,
+      "power": 384980000,
+      "verified": false
+    },
+    {
+      "level": 1460,
+      "power": 385480000,
+      "verified": false
+    },
+    {
+      "level": 1461,
+      "power": 385980000,
+      "verified": false
+    },
+    {
+      "level": 1462,
+      "power": 386480000,
+      "verified": false
+    },
+    {
+      "level": 1463,
+      "power": 386980000,
+      "verified": false
+    },
+    {
+      "level": 1464,
+      "power": 387482500,
+      "verified": false
+    },
+    {
+      "level": 1465,
+      "power": 387985000,
+      "verified": false
+    },
+    {
+      "level": 1466,
+      "power": 388487500,
+      "verified": false
+    },
+    {
+      "level": 1467,
+      "power": 388990000,
+      "verified": false
+    },
+    {
+      "level": 1468,
+      "power": 389492500,
+      "verified": false
+    },
+    {
+      "level": 1469,
+      "power": 389995000,
+      "verified": false
+    },
+    {
+      "level": 1470,
+      "power": 390497500,
+      "verified": false
+    },
+    {
+      "level": 1471,
+      "power": 391000000,
+      "verified": false
+    },
+    {
+      "level": 1472,
+      "power": 391502500,
+      "verified": false
+    },
+    {
+      "level": 1473,
+      "power": 392007500,
+      "verified": false
+    },
+    {
+      "level": 1474,
+      "power": 392512500,
+      "verified": false
+    },
+    {
+      "level": 1475,
+      "power": 393017500,
+      "verified": false
+    },
+    {
+      "level": 1476,
+      "power": 393522500,
+      "verified": false
+    },
+    {
+      "level": 1477,
+      "power": 394027500,
+      "verified": false
+    },
+    {
+      "level": 1478,
+      "power": 394532500,
+      "verified": false
+    },
+    {
+      "level": 1479,
+      "power": 395037500,
+      "verified": false
+    },
+    {
+      "level": 1480,
+      "power": 395542500,
+      "verified": false
+    },
+    {
+      "level": 1481,
+      "power": 396050000,
+      "verified": false
+    },
+    {
+      "level": 1482,
+      "power": 396557500,
+      "verified": false
+    },
+    {
+      "level": 1483,
+      "power": 397065000,
+      "verified": false
+    },
+    {
+      "level": 1484,
+      "power": 397572500,
+      "verified": false
+    },
+    {
+      "level": 1485,
+      "power": 398080000,
+      "verified": false
+    },
+    {
+      "level": 1486,
+      "power": 398587500,
+      "verified": false
+    },
+    {
+      "level": 1487,
+      "power": 399095000,
+      "verified": false
+    },
+    {
+      "level": 1488,
+      "power": 399602500,
+      "verified": false
+    },
+    {
+      "level": 1489,
+      "power": 400112500,
+      "verified": false
+    },
+    {
+      "level": 1490,
+      "power": 400622500,
+      "verified": false
+    },
+    {
+      "level": 1491,
+      "power": 401132500,
+      "verified": false
+    },
+    {
+      "level": 1492,
+      "power": 401642500,
+      "verified": false
+    },
+    {
+      "level": 1493,
+      "power": 402152500,
+      "verified": false
+    },
+    {
+      "level": 1494,
+      "power": 402662500,
+      "verified": false
+    },
+    {
+      "level": 1495,
+      "power": 403172500,
+      "verified": false
+    },
+    {
+      "level": 1496,
+      "power": 403682500,
+      "verified": false
+    },
+    {
+      "level": 1497,
+      "power": 404195000,
+      "verified": false
+    },
+    {
+      "level": 1498,
+      "power": 404707500,
+      "verified": false
+    },
+    {
+      "level": 1499,
+      "power": 405220000,
+      "verified": false
+    },
+    {
+      "level": 1500,
+      "power": 405732500,
+      "verified": false
+    },
+    {
+      "level": 1501,
+      "power": 406245000,
+      "verified": false
+    },
+    {
+      "level": 1502,
+      "power": 406757500,
+      "verified": false
+    },
+    {
+      "level": 1503,
+      "power": 407270000,
+      "verified": false
+    },
+    {
+      "level": 1504,
+      "power": 407782500,
+      "verified": false
+    },
+    {
+      "level": 1505,
+      "power": 408297500,
+      "verified": false
+    },
+    {
+      "level": 1506,
+      "power": 408812500,
+      "verified": false
+    },
+    {
+      "level": 1507,
+      "power": 409327500,
+      "verified": false
+    },
+    {
+      "level": 1508,
+      "power": 409842500,
+      "verified": false
+    },
+    {
+      "level": 1509,
+      "power": 410357500,
+      "verified": false
+    },
+    {
+      "level": 1510,
+      "power": 410872500,
+      "verified": false
+    },
+    {
+      "level": 1511,
+      "power": 411387500,
+      "verified": false
+    },
+    {
+      "level": 1512,
+      "power": 411902500,
+      "verified": false
+    },
+    {
+      "level": 1513,
+      "power": 412420000,
+      "verified": false
+    },
+    {
+      "level": 1514,
+      "power": 412937500,
+      "verified": false
+    },
+    {
+      "level": 1515,
+      "power": 413455000,
+      "verified": false
+    },
+    {
+      "level": 1516,
+      "power": 413972500,
+      "verified": false
+    },
+    {
+      "level": 1517,
+      "power": 414490000,
+      "verified": false
+    },
+    {
+      "level": 1518,
+      "power": 415007500,
+      "verified": false
+    },
+    {
+      "level": 1519,
+      "power": 415525000,
+      "verified": false
+    },
+    {
+      "level": 1520,
+      "power": 416042500,
+      "verified": false
+    },
+    {
+      "level": 1521,
+      "power": 416562500,
+      "verified": false
+    },
+    {
+      "level": 1522,
+      "power": 417082500,
+      "verified": false
+    },
+    {
+      "level": 1523,
+      "power": 417602500,
+      "verified": false
+    },
+    {
+      "level": 1524,
+      "power": 418122500,
+      "verified": false
+    },
+    {
+      "level": 1525,
+      "power": 418642500,
+      "verified": false
+    },
+    {
+      "level": 1526,
+      "power": 419162500,
+      "verified": false
+    },
+    {
+      "level": 1527,
+      "power": 419682500,
+      "verified": false
+    },
+    {
+      "level": 1528,
+      "power": 420202500,
+      "verified": false
+    },
+    {
+      "level": 1529,
+      "power": 420725000,
+      "verified": false
+    },
+    {
+      "level": 1530,
+      "power": 421247500,
+      "verified": false
+    },
+    {
+      "level": 1531,
+      "power": 421770000,
+      "verified": false
+    },
+    {
+      "level": 1532,
+      "power": 422292500,
+      "verified": false
+    },
+    {
+      "level": 1533,
+      "power": 422815000,
+      "verified": false
+    },
+    {
+      "level": 1534,
+      "power": 423337500,
+      "verified": false
+    },
+    {
+      "level": 1535,
+      "power": 423860000,
+      "verified": false
+    },
+    {
+      "level": 1536,
+      "power": 424382500,
+      "verified": false
+    },
+    {
+      "level": 1537,
+      "power": 424905000,
+      "verified": false
+    },
+    {
+      "level": 1538,
+      "power": 425430000,
+      "verified": false
+    },
+    {
+      "level": 1539,
+      "power": 425955000,
+      "verified": false
+    },
+    {
+      "level": 1540,
+      "power": 426480000,
+      "verified": false
+    },
+    {
+      "level": 1541,
+      "power": 427005000,
+      "verified": false
+    },
+    {
+      "level": 1542,
+      "power": 427530000,
+      "verified": false
+    },
+    {
+      "level": 1543,
+      "power": 428055000,
+      "verified": false
+    },
+    {
+      "level": 1544,
+      "power": 428580000,
+      "verified": false
+    },
+    {
+      "level": 1545,
+      "power": 429105000,
+      "verified": false
+    },
+    {
+      "level": 1546,
+      "power": 429632500,
+      "verified": false
+    },
+    {
+      "level": 1547,
+      "power": 430160000,
+      "verified": false
+    },
+    {
+      "level": 1548,
+      "power": 430687500,
+      "verified": false
+    },
+    {
+      "level": 1549,
+      "power": 431215000,
+      "verified": false
+    },
+    {
+      "level": 1550,
+      "power": 431742500,
+      "verified": false
+    },
+    {
+      "level": 1551,
+      "power": 432270000,
+      "verified": false
+    },
+    {
+      "level": 1552,
+      "power": 432797500,
+      "verified": false
+    },
+    {
+      "level": 1553,
+      "power": 433325000,
+      "verified": false
+    },
+    {
+      "level": 1554,
+      "power": 433855000,
+      "verified": false
+    },
+    {
+      "level": 1555,
+      "power": 434385000,
+      "verified": false
+    },
+    {
+      "level": 1556,
+      "power": 434915000,
+      "verified": false
+    },
+    {
+      "level": 1557,
+      "power": 435445000,
+      "verified": false
+    },
+    {
+      "level": 1558,
+      "power": 435975000,
+      "verified": false
+    },
+    {
+      "level": 1559,
+      "power": 436505000,
+      "verified": false
+    },
+    {
+      "level": 1560,
+      "power": 437035000,
+      "verified": false
+    },
+    {
+      "level": 1561,
+      "power": 437565000,
+      "verified": false
+    },
+    {
+      "level": 1562,
+      "power": 438097500,
+      "verified": false
+    },
+    {
+      "level": 1563,
+      "power": 438630000,
+      "verified": false
+    },
+    {
+      "level": 1564,
+      "power": 439162500,
+      "verified": false
+    },
+    {
+      "level": 1565,
+      "power": 439695000,
+      "verified": false
+    },
+    {
+      "level": 1566,
+      "power": 440227500,
+      "verified": false
+    },
+    {
+      "level": 1567,
+      "power": 440760000,
+      "verified": false
+    },
+    {
+      "level": 1568,
+      "power": 441295000,
+      "verified": false
+    },
+    {
+      "level": 1569,
+      "power": 441830000,
+      "verified": false
+    },
+    {
+      "level": 1570,
+      "power": 442365000,
+      "verified": false
+    },
+    {
+      "level": 1571,
+      "power": 442900000,
+      "verified": false
+    },
+    {
+      "level": 1572,
+      "power": 443435000,
+      "verified": false
+    },
+    {
+      "level": 1573,
+      "power": 443970000,
+      "verified": false
+    },
+    {
+      "level": 1574,
+      "power": 444505000,
+      "verified": false
+    },
+    {
+      "level": 1575,
+      "power": 445040000,
+      "verified": false
+    },
+    {
+      "level": 1576,
+      "power": 445575000,
+      "verified": false
+    },
+    {
+      "level": 1577,
+      "power": 446112500,
+      "verified": false
+    },
+    {
+      "level": 1578,
+      "power": 446650000,
+      "verified": false
+    },
+    {
+      "level": 1579,
+      "power": 447187500,
+      "verified": false
+    },
+    {
+      "level": 1580,
+      "power": 447725000,
+      "verified": false
+    },
+    {
+      "level": 1581,
+      "power": 448262500,
+      "verified": false
+    },
+    {
+      "level": 1582,
+      "power": 448800000,
+      "verified": false
+    },
+    {
+      "level": 1583,
+      "power": 449337500,
+      "verified": false
+    },
+    {
+      "level": 1584,
+      "power": 449875000,
+      "verified": false
+    },
+    {
+      "level": 1585,
+      "power": 450412500,
+      "verified": false
+    },
+    {
+      "level": 1586,
+      "power": 450952500,
+      "verified": false
+    },
+    {
+      "level": 1587,
+      "power": 451492500,
+      "verified": false
+    },
+    {
+      "level": 1588,
+      "power": 452032500,
+      "verified": false
+    },
+    {
+      "level": 1589,
+      "power": 452572500,
+      "verified": false
+    },
+    {
+      "level": 1590,
+      "power": 453112500,
+      "verified": false
+    },
+    {
+      "level": 1591,
+      "power": 453652500,
+      "verified": false
+    },
+    {
+      "level": 1592,
+      "power": 454192500,
+      "verified": false
+    },
+    {
+      "level": 1593,
+      "power": 454732500,
+      "verified": false
+    },
+    {
+      "level": 1594,
+      "power": 455275000,
+      "verified": false
+    },
+    {
+      "level": 1595,
+      "power": 455817500,
+      "verified": false
+    },
+    {
+      "level": 1596,
+      "power": 456360000,
+      "verified": false
+    },
+    {
+      "level": 1597,
+      "power": 456902500,
+      "verified": false
+    },
+    {
+      "level": 1598,
+      "power": 457445000,
+      "verified": false
+    },
+    {
+      "level": 1599,
+      "power": 457987500,
+      "verified": false
+    },
+    {
+      "level": 1600,
+      "power": 458530000,
+      "verified": false
+    },
+    {
+      "level": 1601,
+      "power": 459072500,
+      "verified": false
+    },
+    {
+      "level": 1602,
+      "power": 459615000,
+      "verified": false
+    },
+    {
+      "level": 1603,
+      "power": 460160000,
+      "verified": false
+    },
+    {
+      "level": 1604,
+      "power": 460705000,
+      "verified": false
+    },
+    {
+      "level": 1605,
+      "power": 461250000,
+      "verified": false
+    },
+    {
+      "level": 1606,
+      "power": 461795000,
+      "verified": false
+    },
+    {
+      "level": 1607,
+      "power": 462340000,
+      "verified": false
+    },
+    {
+      "level": 1608,
+      "power": 462885000,
+      "verified": false
+    },
+    {
+      "level": 1609,
+      "power": 463430000,
+      "verified": false
+    },
+    {
+      "level": 1610,
+      "power": 463975000,
+      "verified": false
+    },
+    {
+      "level": 1611,
+      "power": 464522500,
+      "verified": false
+    },
+    {
+      "level": 1612,
+      "power": 465070000,
+      "verified": false
+    },
+    {
+      "level": 1613,
+      "power": 465617500,
+      "verified": false
+    },
+    {
+      "level": 1614,
+      "power": 466165000,
+      "verified": false
+    },
+    {
+      "level": 1615,
+      "power": 466712500,
+      "verified": false
+    },
+    {
+      "level": 1616,
+      "power": 467260000,
+      "verified": false
+    },
+    {
+      "level": 1617,
+      "power": 467807500,
+      "verified": false
+    },
+    {
+      "level": 1618,
+      "power": 468355000,
+      "verified": false
+    },
+    {
+      "level": 1619,
+      "power": 468905000,
+      "verified": false
+    },
+    {
+      "level": 1620,
+      "power": 469455000,
+      "verified": false
+    },
+    {
+      "level": 1621,
+      "power": 470005000,
+      "verified": false
+    },
+    {
+      "level": 1622,
+      "power": 470555000,
+      "verified": false
+    },
+    {
+      "level": 1623,
+      "power": 471105000,
+      "verified": false
+    },
+    {
+      "level": 1624,
+      "power": 471655000,
+      "verified": false
+    },
+    {
+      "level": 1625,
+      "power": 472205000,
+      "verified": false
+    },
+    {
+      "level": 1626,
+      "power": 472755000,
+      "verified": false
+    },
+    {
+      "level": 1627,
+      "power": 473307500,
+      "verified": false
+    },
+    {
+      "level": 1628,
+      "power": 473860000,
+      "verified": false
+    },
+    {
+      "level": 1629,
+      "power": 474412500,
+      "verified": false
+    },
+    {
+      "level": 1630,
+      "power": 474965000,
+      "verified": true
+    },
+    {
+      "level": 1631,
+      "power": 475517500,
+      "verified": true
+    },
+    {
+      "level": 1632,
+      "power": 476070000,
+      "verified": true
+    },
+    {
+      "level": 1633,
+      "power": 476622500,
+      "verified": true
+    },
+    {
+      "level": 1634,
+      "power": 477175000,
+      "verified": true
+    },
+    {
+      "level": 1635,
+      "power": 477727500,
+      "verified": true
+    },
+    {
+      "level": 1636,
+      "power": 478282500,
+      "verified": true
+    },
+    {
+      "level": 1637,
+      "power": 478837500,
+      "verified": true
+    },
+    {
+      "level": 1638,
+      "power": 479392500,
+      "verified": true
+    },
+    {
+      "level": 1639,
+      "power": 479947500,
+      "verified": true
+    },
+    {
+      "level": 1640,
+      "power": 480502500,
+      "verified": true
+    },
+    {
+      "level": 1641,
+      "power": 481057500,
+      "verified": true
+    },
+    {
+      "level": 1642,
+      "power": 481612500,
+      "verified": true
+    },
+    {
+      "level": 1643,
+      "power": 482167500,
+      "verified": true
+    },
+    {
+      "level": 1644,
+      "power": 482725000,
+      "verified": true
+    },
+    {
+      "level": 1645,
+      "power": 483282500,
+      "verified": true
+    },
+    {
+      "level": 1646,
+      "power": 483840000,
+      "verified": true
+    },
+    {
+      "level": 1647,
+      "power": 484397500,
+      "verified": true
+    },
+    {
+      "level": 1648,
+      "power": 484955000,
+      "verified": true
+    },
+    {
+      "level": 1649,
+      "power": 485512500,
+      "verified": true
+    },
+    {
+      "level": 1650,
+      "power": 486070000,
+      "verified": true
+    },
+    {
+      "level": 1651,
+      "power": 486627500,
+      "verified": true
+    },
+    {
+      "level": 1652,
+      "power": 487187500,
+      "verified": true
+    },
+    {
+      "level": 1653,
+      "power": 487747500,
+      "verified": true
+    },
+    {
+      "level": 1654,
+      "power": 488307500,
+      "verified": true
+    },
+    {
+      "level": 1655,
+      "power": 488867500,
+      "verified": true
+    },
+    {
+      "level": 1656,
+      "power": 489427500,
+      "verified": true
+    },
+    {
+      "level": 1657,
+      "power": 489987500,
+      "verified": true
+    },
+    {
+      "level": 1658,
+      "power": 490547500,
+      "verified": true
+    },
+    {
+      "level": 1659,
+      "power": 491107500,
+      "verified": true
+    },
+    {
+      "level": 1660,
+      "power": 491670000,
+      "verified": true
+    },
+    {
+      "level": 1661,
+      "power": 492232500,
+      "verified": true
+    },
+    {
+      "level": 1662,
+      "power": 492795000,
+      "verified": true
+    },
+    {
+      "level": 1663,
+      "power": 493357500,
+      "verified": true
+    },
+    {
+      "level": 1664,
+      "power": 493920000,
+      "verified": true
+    },
+    {
+      "level": 1665,
+      "power": 494482500,
+      "verified": true
+    },
+    {
+      "level": 1666,
+      "power": 495045000,
+      "verified": true
+    },
+    {
+      "level": 1667,
+      "power": 495607500,
+      "verified": true
+    },
+    {
+      "level": 1668,
+      "power": 496170000,
+      "verified": true
+    },
+    {
+      "level": 1669,
+      "power": 496735000,
+      "verified": true
+    },
+    {
+      "level": 1670,
+      "power": 497300000,
+      "verified": true
+    },
+    {
+      "level": 1671,
+      "power": 497865000,
+      "verified": true
+    },
+    {
+      "level": 1672,
+      "power": 498430000,
+      "verified": true
+    },
+    {
+      "level": 1673,
+      "power": 498995000,
+      "verified": true
+    },
+    {
+      "level": 1674,
+      "power": 499560000,
+      "verified": true
+    },
+    {
+      "level": 1675,
+      "power": 500125000,
+      "verified": true
+    },
+    {
+      "level": 1676,
+      "power": 500690000,
+      "verified": true
+    },
+    {
+      "level": 1677,
+      "power": 501257500,
+      "verified": false
+    },
+    {
+      "level": 1678,
+      "power": 501825000,
+      "verified": false
+    },
+    {
+      "level": 1679,
+      "power": 502392500,
+      "verified": false
+    },
+    {
+      "level": 1680,
+      "power": 502960000,
+      "verified": false
+    },
+    {
+      "level": 1681,
+      "power": 503527500,
+      "verified": true
+    },
+    {
+      "level": 1682,
+      "power": 504095000,
+      "verified": true
+    },
+    {
+      "level": 1683,
+      "power": 504662500,
+      "verified": false
+    },
+    {
+      "level": 1684,
+      "power": 505232500,
+      "verified": false
+    },
+    {
+      "level": 1685,
+      "power": 505802500,
+      "verified": false
+    },
+    {
+      "level": 1686,
+      "power": 506372500,
+      "verified": false
+    },
+    {
+      "level": 1687,
+      "power": 506942500,
+      "verified": false
+    },
+    {
+      "level": 1688,
+      "power": 507512500,
+      "verified": false
+    },
+    {
+      "level": 1689,
+      "power": 508082500,
+      "verified": false
+    },
+    {
+      "level": 1690,
+      "power": 508652500,
+      "verified": false
+    },
+    {
+      "level": 1691,
+      "power": 509222500,
+      "verified": false
+    },
+    {
+      "level": 1692,
+      "power": 509792500,
+      "verified": false
+    },
+    {
+      "level": 1693,
+      "power": 510365000,
+      "verified": false
+    },
+    {
+      "level": 1694,
+      "power": 510937500,
+      "verified": false
+    },
+    {
+      "level": 1695,
+      "power": 511510000,
+      "verified": false
+    },
+    {
+      "level": 1696,
+      "power": 512082500,
+      "verified": false
+    },
+    {
+      "level": 1697,
+      "power": 512655000,
+      "verified": false
+    },
+    {
+      "level": 1698,
+      "power": 513227500,
+      "verified": false
+    },
+    {
+      "level": 1699,
+      "power": 513800000,
+      "verified": false
+    },
+    {
+      "level": 1700,
+      "power": 514372500,
+      "verified": false
+    },
+    {
+      "level": 1701,
+      "power": 514945000,
+      "verified": false
+    },
+    {
+      "level": 1702,
+      "power": 515517500,
+      "verified": false
+    },
+    {
+      "level": 1703,
+      "power": 516092500,
+      "verified": false
+    },
+    {
+      "level": 1704,
+      "power": 516667500,
+      "verified": false
+    },
+    {
+      "level": 1705,
+      "power": 517242500,
+      "verified": false
+    },
+    {
+      "level": 1706,
+      "power": 517817500,
+      "verified": false
+    },
+    {
+      "level": 1707,
+      "power": 518392500,
+      "verified": false
+    },
+    {
+      "level": 1708,
+      "power": 518967500,
+      "verified": false
+    },
+    {
+      "level": 1709,
+      "power": 519542500,
+      "verified": false
+    },
+    {
+      "level": 1710,
+      "power": 520120000,
+      "verified": false
+    },
+    {
+      "level": 1711,
+      "power": 520697500,
+      "verified": false
+    },
+    {
+      "level": 1712,
+      "power": 521275000,
+      "verified": false
+    },
+    {
+      "level": 1713,
+      "power": 521852500,
+      "verified": false
+    },
+    {
+      "level": 1714,
+      "power": 522430000,
+      "verified": false
+    },
+    {
+      "level": 1715,
+      "power": 523007500,
+      "verified": false
+    },
+    {
+      "level": 1716,
+      "power": 523585000,
+      "verified": false
+    },
+    {
+      "level": 1717,
+      "power": 524162500,
+      "verified": false
+    },
+    {
+      "level": 1718,
+      "power": 524742500,
+      "verified": false
+    },
+    {
+      "level": 1719,
+      "power": 525322500,
+      "verified": false
+    },
+    {
+      "level": 1720,
+      "power": 525902500,
+      "verified": false
+    },
+    {
+      "level": 1721,
+      "power": 526482500,
+      "verified": false
+    },
+    {
+      "level": 1722,
+      "power": 527062500,
+      "verified": false
+    },
+    {
+      "level": 1723,
+      "power": 527642500,
+      "verified": false
+    },
+    {
+      "level": 1724,
+      "power": 528222500,
+      "verified": false
+    },
+    {
+      "level": 1725,
+      "power": 528802500,
+      "verified": false
+    },
+    {
+      "level": 1726,
+      "power": 529385000,
+      "verified": false
+    },
+    {
+      "level": 1727,
+      "power": 529967500,
+      "verified": false
+    },
+    {
+      "level": 1728,
+      "power": 530550000,
+      "verified": false
+    },
+    {
+      "level": 1729,
+      "power": 531132500,
+      "verified": false
+    },
+    {
+      "level": 1730,
+      "power": 531715000,
+      "verified": false
+    },
+    {
+      "level": 1731,
+      "power": 532297500,
+      "verified": false
+    },
+    {
+      "level": 1732,
+      "power": 532880000,
+      "verified": false
+    },
+    {
+      "level": 1733,
+      "power": 533462500,
+      "verified": false
+    },
+    {
+      "level": 1734,
+      "power": 534045000,
+      "verified": false
+    },
+    {
+      "level": 1735,
+      "power": 534630000,
+      "verified": false
+    },
+    {
+      "level": 1736,
+      "power": 535215000,
+      "verified": false
+    },
+    {
+      "level": 1737,
+      "power": 535800000,
+      "verified": false
+    },
+    {
+      "level": 1738,
+      "power": 536385000,
+      "verified": true
+    },
+    {
+      "level": 1739,
+      "power": 536970000,
+      "verified": true
+    },
+    {
+      "level": 1740,
+      "power": 537555000,
+      "verified": true
+    },
+    {
+      "level": 1741,
+      "power": 538140000,
+      "verified": true
+    },
+    {
+      "level": 1742,
+      "power": 538725000,
+      "verified": true
+    },
+    {
+      "level": 1743,
+      "power": 539312500,
+      "verified": true
+    },
+    {
+      "level": 1744,
+      "power": 539900000,
+      "verified": true
+    },
+    {
+      "level": 1745,
+      "power": 540487500,
+      "verified": true
+    },
+    {
+      "level": 1746,
+      "power": 541075000,
+      "verified": true
+    },
+    {
+      "level": 1747,
+      "power": 541662500,
+      "verified": true
+    },
+    {
+      "level": 1748,
+      "power": 542250000,
+      "verified": true
+    },
+    {
+      "level": 1749,
+      "power": 542837500,
+      "verified": true
+    },
+    {
+      "level": 1750,
+      "power": 543425000,
+      "verified": true
+    },
+    {
+      "level": 1751,
+      "power": 544015000,
+      "verified": true
+    },
+    {
+      "level": 1752,
+      "power": 544605000,
+      "verified": true
+    },
+    {
+      "level": 1753,
+      "power": 545195000,
+      "verified": true
+    },
+    {
+      "level": 1754,
+      "power": 545785000,
+      "verified": true
+    },
+    {
+      "level": 1755,
+      "power": 546375000,
+      "verified": true
+    },
+    {
+      "level": 1756,
+      "power": 546965000,
+      "verified": true
+    },
+    {
+      "level": 1757,
+      "power": 547555000,
+      "verified": true
+    },
+    {
+      "level": 1758,
+      "power": 548145000,
+      "verified": true
+    },
+    {
+      "level": 1759,
+      "power": 548737500,
+      "verified": true
+    },
+    {
+      "level": 1760,
+      "power": 549330000,
+      "verified": true
+    },
+    {
+      "level": 1761,
+      "power": 549922500,
+      "verified": true
+    },
+    {
+      "level": 1762,
+      "power": 550515000,
+      "verified": true
+    },
+    {
+      "level": 1763,
+      "power": 551107500,
+      "verified": true
+    },
+    {
+      "level": 1764,
+      "power": 551700000,
+      "verified": true
+    },
+    {
+      "level": 1765,
+      "power": 552292500,
+      "verified": true
+    },
+    {
+      "level": 1766,
+      "power": 552885000,
+      "verified": true
+    },
+    {
+      "level": 1767,
+      "power": 553477500,
+      "verified": true
+    },
+    {
+      "level": 1768,
+      "power": 554072500,
+      "verified": true
+    },
+    {
+      "level": 1769,
+      "power": 554667500,
+      "verified": true
+    },
+    {
+      "level": 1770,
+      "power": 555262500,
+      "verified": true
+    },
+    {
+      "level": 1771,
+      "power": 555857500,
+      "verified": true
+    },
+    {
+      "level": 1772,
+      "power": 556452500,
+      "verified": true
+    },
+    {
+      "level": 1773,
+      "power": 557047500,
+      "verified": true
+    },
+    {
+      "level": 1774,
+      "power": 557642500,
+      "verified": true
+    },
+    {
+      "level": 1775,
+      "power": 558237500,
+      "verified": true
+    },
+    {
+      "level": 1776,
+      "power": 558835000,
+      "verified": true
+    },
+    {
+      "level": 1777,
+      "power": 559432500,
+      "verified": true
+    },
+    {
+      "level": 1778,
+      "power": 560030000,
+      "verified": true
+    },
+    {
+      "level": 1779,
+      "power": 560627500,
+      "verified": true
+    },
+    {
+      "level": 1780,
+      "power": 561225000,
+      "verified": true
+    },
+    {
+      "level": 1781,
+      "power": 561822500,
+      "verified": true
+    },
+    {
+      "level": 1782,
+      "power": 562420000,
+      "verified": true
+    },
+    {
+      "level": 1783,
+      "power": 563017500,
+      "verified": true
+    },
+    {
+      "level": 1784,
+      "power": 563617500,
+      "verified": true
+    },
+    {
+      "level": 1785,
+      "power": 564217500,
+      "verified": true
+    },
+    {
+      "level": 1786,
+      "power": 564817500,
+      "verified": true
+    },
+    {
+      "level": 1787,
+      "power": 565417500,
+      "verified": true
+    },
+    {
+      "level": 1788,
+      "power": 566017500,
+      "verified": true
+    },
+    {
+      "level": 1789,
+      "power": 566617500,
+      "verified": true
+    },
+    {
+      "level": 1790,
+      "power": 567217500,
+      "verified": true
+    },
+    {
+      "level": 1791,
+      "power": 567817500,
+      "verified": true
+    },
+    {
+      "level": 1792,
+      "power": 568417500,
+      "verified": true
+    },
+    {
+      "level": 1793,
+      "power": 569020000,
+      "verified": true
+    },
+    {
+      "level": 1794,
+      "power": 569622500,
+      "verified": true
+    },
+    {
+      "level": 1795,
+      "power": 570225000,
+      "verified": true
+    },
+    {
+      "level": 1796,
+      "power": 570827500,
+      "verified": true
+    },
+    {
+      "level": 1797,
+      "power": 571430000,
+      "verified": true
+    },
+    {
+      "level": 1798,
+      "power": 572032500,
+      "verified": true
+    },
+    {
+      "level": 1799,
+      "power": 572635000,
+      "verified": true
+    },
+    {
+      "level": 1800,
+      "power": 573237500,
+      "verified": true
+    },
+    {
+      "level": 1801,
+      "power": 573842500,
+      "verified": true
+    },
+    {
+      "level": 1802,
+      "power": 574447500,
+      "verified": true
+    },
+    {
+      "level": 1803,
+      "power": 575052500,
+      "verified": true
+    },
+    {
+      "level": 1804,
+      "power": 575657500,
+      "verified": true
+    },
+    {
+      "level": 1805,
+      "power": 576262500,
+      "verified": true
+    },
+    {
+      "level": 1806,
+      "power": 576867500,
+      "verified": true
+    },
+    {
+      "level": 1807,
+      "power": 577472500,
+      "verified": true
+    },
+    {
+      "level": 1808,
+      "power": 578077500,
+      "verified": true
+    },
+    {
+      "level": 1809,
+      "power": 578685000,
+      "verified": true
+    },
+    {
+      "level": 1810,
+      "power": 579292500,
+      "verified": true
+    },
+    {
+      "level": 1811,
+      "power": 579900000,
+      "verified": true
+    },
+    {
+      "level": 1812,
+      "power": 580507500,
+      "verified": true
+    },
+    {
+      "level": 1813,
+      "power": 581115000,
+      "verified": true
+    },
+    {
+      "level": 1814,
+      "power": 581722500,
+      "verified": true
+    },
+    {
+      "level": 1815,
+      "power": 582330000,
+      "verified": true
+    },
+    {
+      "level": 1816,
+      "power": 582937500,
+      "verified": true
+    },
+    {
+      "level": 1817,
+      "power": 583547500,
+      "verified": true
+    },
+    {
+      "level": 1818,
+      "power": 584157500,
+      "verified": true
+    },
+    {
+      "level": 1819,
+      "power": 584767500,
+      "verified": true
+    },
+    {
+      "level": 1820,
+      "power": 585377500,
+      "verified": true
+    },
+    {
+      "level": 1821,
+      "power": 585987500,
+      "verified": true
+    },
+    {
+      "level": 1822,
+      "power": 586597500,
+      "verified": true
+    },
+    {
+      "level": 1823,
+      "power": 587207500,
+      "verified": false
+    },
+    {
+      "level": 1824,
+      "power": 587817500,
+      "verified": false
+    },
+    {
+      "level": 1825,
+      "power": 588427500,
+      "verified": false
+    },
+    {
+      "level": 1826,
+      "power": 589040000,
+      "verified": true
+    },
+    {
+      "level": 1827,
+      "power": 589652500,
+      "verified": true
+    },
+    {
+      "level": 1828,
+      "power": 590265000,
+      "verified": true
+    },
+    {
+      "level": 1829,
+      "power": 590877500,
+      "verified": true
+    },
+    {
+      "level": 1830,
+      "power": 591490000,
+      "verified": true
+    },
+    {
+      "level": 1831,
+      "power": 592102500,
+      "verified": true
+    },
+    {
+      "level": 1832,
+      "power": 592715000,
+      "verified": true
+    },
+    {
+      "level": 1833,
+      "power": 593327500,
+      "verified": true
+    },
+    {
+      "level": 1834,
+      "power": 593942500,
+      "verified": true
+    },
+    {
+      "level": 1835,
+      "power": 594557500,
+      "verified": true
+    },
+    {
+      "level": 1836,
+      "power": 595172500,
+      "verified": true
+    },
+    {
+      "level": 1837,
+      "power": 595787500,
+      "verified": true
+    },
+    {
+      "level": 1838,
+      "power": 596402500,
+      "verified": true
+    },
+    {
+      "level": 1839,
+      "power": 597017500,
+      "verified": true
+    },
+    {
+      "level": 1840,
+      "power": 597632500,
+      "verified": true
+    },
+    {
+      "level": 1841,
+      "power": 598247500,
+      "verified": true
+    },
+    {
+      "level": 1842,
+      "power": 598865000,
+      "verified": true
+    },
+    {
+      "level": 1843,
+      "power": 599482500,
+      "verified": true
+    },
+    {
+      "level": 1844,
+      "power": 600100000,
+      "verified": true
+    },
+    {
+      "level": 1845,
+      "power": 600717500,
+      "verified": true
+    },
+    {
+      "level": 1846,
+      "power": 601335000,
+      "verified": true
+    },
+    {
+      "level": 1847,
+      "power": 601952500,
+      "verified": true
+    },
+    {
+      "level": 1848,
+      "power": 602570000,
+      "verified": true
+    },
+    {
+      "level": 1849,
+      "power": 603187500,
+      "verified": true
+    },
+    {
+      "level": 1850,
+      "power": 603805000,
+      "verified": true
+    },
+    {
+      "level": 1851,
+      "power": 604425000,
+      "verified": true
+    },
+    {
+      "level": 1852,
+      "power": 605045000,
+      "verified": true
+    },
+    {
+      "level": 1853,
+      "power": 605665000,
+      "verified": true
+    },
+    {
+      "level": 1854,
+      "power": 606285000,
+      "verified": true
+    },
+    {
+      "level": 1855,
+      "power": 606905000,
+      "verified": true
+    },
+    {
+      "level": 1856,
+      "power": 607525000,
+      "verified": true
+    },
+    {
+      "level": 1857,
+      "power": 608145000,
+      "verified": true
+    },
+    {
+      "level": 1858,
+      "power": 608765000,
+      "verified": true
+    },
+    {
+      "level": 1859,
+      "power": 609387500,
+      "verified": true
+    },
+    {
+      "level": 1860,
+      "power": 610010000,
+      "verified": true
+    },
+    {
+      "level": 1861,
+      "power": 610632500,
+      "verified": true
+    },
+    {
+      "level": 1862,
+      "power": 611255000,
+      "verified": true
+    },
+    {
+      "level": 1863,
+      "power": 611877500,
+      "verified": true
+    },
+    {
+      "level": 1864,
+      "power": 612500000,
+      "verified": true
+    },
+    {
+      "level": 1865,
+      "power": 613122500,
+      "verified": true
+    },
+    {
+      "level": 1866,
+      "power": 613745000,
+      "verified": true
+    },
+    {
+      "level": 1867,
+      "power": 614370000,
+      "verified": true
+    },
+    {
+      "level": 1868,
+      "power": 614995000,
+      "verified": true
+    },
+    {
+      "level": 1869,
+      "power": 615620000,
+      "verified": true
+    },
+    {
+      "level": 1870,
+      "power": 616245000,
+      "verified": true
+    },
+    {
+      "level": 1871,
+      "power": 616870000,
+      "verified": true
+    },
+    {
+      "level": 1872,
+      "power": 617495000,
+      "verified": true
+    },
+    {
+      "level": 1873,
+      "power": 618120000,
+      "verified": true
+    },
+    {
+      "level": 1874,
+      "power": 618745000,
+      "verified": true
+    },
+    {
+      "level": 1875,
+      "power": 619370000,
+      "verified": true
+    },
+    {
+      "level": 1876,
+      "power": 619997500,
+      "verified": true
+    },
+    {
+      "level": 1877,
+      "power": 620625000,
+      "verified": true
+    },
+    {
+      "level": 1878,
+      "power": 621252500,
+      "verified": true
+    },
+    {
+      "level": 1879,
+      "power": 621880000,
+      "verified": false
+    },
+    {
+      "level": 1880,
+      "power": 622507500,
+      "verified": false
+    },
+    {
+      "level": 1881,
+      "power": 623135000,
+      "verified": false
+    },
+    {
+      "level": 1882,
+      "power": 623762500,
+      "verified": false
+    },
+    {
+      "level": 1883,
+      "power": 624390000,
+      "verified": false
+    },
+    {
+      "level": 1884,
+      "power": 625020000,
+      "verified": false
+    },
+    {
+      "level": 1885,
+      "power": 625650000,
+      "verified": false
+    },
+    {
+      "level": 1886,
+      "power": 626280000,
+      "verified": false
+    },
+    {
+      "level": 1887,
+      "power": 626910000,
+      "verified": false
+    },
+    {
+      "level": 1888,
+      "power": 627540000,
+      "verified": false
+    },
+    {
+      "level": 1889,
+      "power": 628170000,
+      "verified": false
+    },
+    {
+      "level": 1890,
+      "power": 628800000,
+      "verified": false
+    },
+    {
+      "level": 1891,
+      "power": 629430000,
+      "verified": true
+    },
+    {
+      "level": 1892,
+      "power": 630062500,
+      "verified": true
+    },
+    {
+      "level": 1893,
+      "power": 630695000,
+      "verified": true
+    },
+    {
+      "level": 1894,
+      "power": 631327500,
+      "verified": true
+    },
+    {
+      "level": 1895,
+      "power": 631960000,
+      "verified": true
+    },
+    {
+      "level": 1896,
+      "power": 632592500,
+      "verified": true
+    },
+    {
+      "level": 1897,
+      "power": 633225000,
+      "verified": true
+    },
+    {
+      "level": 1898,
+      "power": 633857500,
+      "verified": true
+    },
+    {
+      "level": 1899,
+      "power": 634490000,
+      "verified": true
+    },
+    {
+      "level": 1900,
+      "power": 635122500,
+      "verified": true
+    },
+    {
+      "level": 1901,
+      "power": 635757500,
+      "verified": true
+    },
+    {
+      "level": 1902,
+      "power": 636392500,
+      "verified": true
+    },
+    {
+      "level": 1903,
+      "power": 637027500,
+      "verified": true
+    },
+    {
+      "level": 1904,
+      "power": 637662500,
+      "verified": true
+    },
+    {
+      "level": 1905,
+      "power": 638297500,
+      "verified": true
+    },
+    {
+      "level": 1906,
+      "power": 638932500,
+      "verified": true
+    },
+    {
+      "level": 1907,
+      "power": 639567500,
+      "verified": true
+    },
+    {
+      "level": 1908,
+      "power": 640202500,
+      "verified": true
+    },
+    {
+      "level": 1909,
+      "power": 640840000,
+      "verified": true
+    },
+    {
+      "level": 1910,
+      "power": 641477500,
+      "verified": true
+    },
+    {
+      "level": 1911,
+      "power": 642115000,
+      "verified": true
+    },
+    {
+      "level": 1912,
+      "power": 642752500,
+      "verified": true
+    },
+    {
+      "level": 1913,
+      "power": 643390000,
+      "verified": true
+    },
+    {
+      "level": 1914,
+      "power": 644027500,
+      "verified": true
+    },
+    {
+      "level": 1915,
+      "power": 644665000,
+      "verified": true
+    },
+    {
+      "level": 1916,
+      "power": 645302500,
+      "verified": true
+    },
+    {
+      "level": 1917,
+      "power": 645942500,
+      "verified": true
+    },
+    {
+      "level": 1918,
+      "power": 646582500,
+      "verified": true
+    },
+    {
+      "level": 1919,
+      "power": 647222500,
+      "verified": true
+    },
+    {
+      "level": 1920,
+      "power": 647862500,
+      "verified": true
+    },
+    {
+      "level": 1921,
+      "power": 648502500,
+      "verified": true
+    },
+    {
+      "level": 1922,
+      "power": 649142500,
+      "verified": true
+    },
+    {
+      "level": 1923,
+      "power": 649782500,
+      "verified": true
+    },
+    {
+      "level": 1924,
+      "power": 650422500,
+      "verified": true
+    },
+    {
+      "level": 1925,
+      "power": 651062500,
+      "verified": true
+    },
+    {
+      "level": 1926,
+      "power": 651705000,
+      "verified": true
+    },
+    {
+      "level": 1927,
+      "power": 652347500,
+      "verified": true
+    },
+    {
+      "level": 1928,
+      "power": 652990000,
+      "verified": true
+    },
+    {
+      "level": 1929,
+      "power": 653632500,
+      "verified": true
+    },
+    {
+      "level": 1930,
+      "power": 654275000,
+      "verified": true
+    },
+    {
+      "level": 1931,
+      "power": 654917500,
+      "verified": true
+    },
+    {
+      "level": 1932,
+      "power": 655560000,
+      "verified": true
+    },
+    {
+      "level": 1933,
+      "power": 656202500,
+      "verified": true
+    },
+    {
+      "level": 1934,
+      "power": 656847500,
+      "verified": true
+    },
+    {
+      "level": 1935,
+      "power": 657492500,
+      "verified": true
+    },
+    {
+      "level": 1936,
+      "power": 658137500,
+      "verified": true
+    },
+    {
+      "level": 1937,
+      "power": 658782500,
+      "verified": true
+    },
+    {
+      "level": 1938,
+      "power": 659427500,
+      "verified": true
+    },
+    {
+      "level": 1939,
+      "power": 660072500,
+      "verified": true
+    },
+    {
+      "level": 1940,
+      "power": 660717500,
+      "verified": true
+    },
+    {
+      "level": 1941,
+      "power": 661362500,
+      "verified": true
+    },
+    {
+      "level": 1942,
+      "power": 662007500,
+      "verified": true
+    },
+    {
+      "level": 1943,
+      "power": 662655000,
+      "verified": true
+    },
+    {
+      "level": 1944,
+      "power": 663302500,
+      "verified": true
+    },
+    {
+      "level": 1945,
+      "power": 663950000,
+      "verified": true
+    },
+    {
+      "level": 1946,
+      "power": 664597500,
+      "verified": true
+    },
+    {
+      "level": 1947,
+      "power": 665245000,
+      "verified": true
+    },
+    {
+      "level": 1948,
+      "power": 665892500,
+      "verified": true
+    },
+    {
+      "level": 1949,
+      "power": 666540000,
+      "verified": true
+    },
+    {
+      "level": 1950,
+      "power": 667187500,
+      "verified": true
+    },
+    {
+      "level": 1951,
+      "power": 667837500,
+      "verified": true
+    },
+    {
+      "level": 1952,
+      "power": 668487500,
+      "verified": true
+    },
+    {
+      "level": 1953,
+      "power": 669137500,
+      "verified": true
+    },
+    {
+      "level": 1954,
+      "power": 669787500,
+      "verified": true
+    },
+    {
+      "level": 1955,
+      "power": 670437500,
+      "verified": true
+    },
+    {
+      "level": 1956,
+      "power": 671087500,
+      "verified": true
+    },
+    {
+      "level": 1957,
+      "power": 671737500,
+      "verified": true
+    },
+    {
+      "level": 1958,
+      "power": 672387500,
+      "verified": true
+    },
+    {
+      "level": 1959,
+      "power": 673040000,
+      "verified": true
+    },
+    {
+      "level": 1960,
+      "power": 673692500,
+      "verified": true
+    },
+    {
+      "level": 1961,
+      "power": 674345000,
+      "verified": true
+    },
+    {
+      "level": 1962,
+      "power": 674997500,
+      "verified": true
+    },
+    {
+      "level": 1963,
+      "power": 675650000,
+      "verified": true
+    },
+    {
+      "level": 1964,
+      "power": 676302500,
+      "verified": true
+    },
+    {
+      "level": 1965,
+      "power": 676955000,
+      "verified": true
+    },
+    {
+      "level": 1966,
+      "power": 677607500,
+      "verified": true
+    },
+    {
+      "level": 1967,
+      "power": 678260000,
+      "verified": true
+    },
+    {
+      "level": 1968,
+      "power": 678915000,
+      "verified": true
+    },
+    {
+      "level": 1969,
+      "power": 679570000,
+      "verified": true
+    },
+    {
+      "level": 1970,
+      "power": 680225000,
+      "verified": true
+    },
+    {
+      "level": 1971,
+      "power": 680880000,
+      "verified": true
+    },
+    {
+      "level": 1972,
+      "power": 681535000,
+      "verified": true
+    },
+    {
+      "level": 1973,
+      "power": 682190000,
+      "verified": true
+    },
+    {
+      "level": 1974,
+      "power": 682845000,
+      "verified": true
+    },
+    {
+      "level": 1975,
+      "power": 683500000,
+      "verified": true
+    },
+    {
+      "level": 1976,
+      "power": 684157500,
+      "verified": true
+    },
+    {
+      "level": 1977,
+      "power": 684815000,
+      "verified": true
+    },
+    {
+      "level": 1978,
+      "power": 685472500,
+      "verified": true
+    },
+    {
+      "level": 1979,
+      "power": 686130000,
+      "verified": true
+    },
+    {
+      "level": 1980,
+      "power": 686787500,
+      "verified": true
+    },
+    {
+      "level": 1981,
+      "power": 687445000,
+      "verified": true
+    },
+    {
+      "level": 1982,
+      "power": 688102500,
+      "verified": true
+    },
+    {
+      "level": 1983,
+      "power": 688760000,
+      "verified": true
+    },
+    {
+      "level": 1984,
+      "power": 689420000,
+      "verified": true
+    },
+    {
+      "level": 1985,
+      "power": 690080000,
+      "verified": true
+    },
+    {
+      "level": 1986,
+      "power": 690740000,
+      "verified": true
+    },
+    {
+      "level": 1987,
+      "power": 691400000,
+      "verified": true
+    },
+    {
+      "level": 1988,
+      "power": 692060000,
+      "verified": true
+    },
+    {
+      "level": 1989,
+      "power": 692720000,
+      "verified": true
+    },
+    {
+      "level": 1990,
+      "power": 693380000,
+      "verified": true
+    },
+    {
+      "level": 1991,
+      "power": 694040000,
+      "verified": true
+    },
+    {
+      "level": 1992,
+      "power": 694700000,
+      "verified": true
+    },
+    {
+      "level": 1993,
+      "power": 695362500,
+      "verified": true
+    },
+    {
+      "level": 1994,
+      "power": 696025000,
+      "verified": true
+    },
+    {
+      "level": 1995,
+      "power": 696687500,
+      "verified": true
+    },
+    {
+      "level": 1996,
+      "power": 697350000,
+      "verified": true
+    },
+    {
+      "level": 1997,
+      "power": 698012500,
+      "verified": true
+    },
+    {
+      "level": 1998,
+      "power": 698675000,
+      "verified": true
+    },
+    {
+      "level": 1999,
+      "power": 699337500,
+      "verified": true
+    },
+    {
+      "level": 2000,
+      "power": 700000000,
+      "verified": true
+    }
+  ]
+}

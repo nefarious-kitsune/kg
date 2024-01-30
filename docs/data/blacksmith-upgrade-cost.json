@@ -1,0 +1,10006 @@
+{
+  "table": "Blacksmith Upgrade Cost",
+  "table-date": "2024-01-30",
+  "data": [
+    {
+      "level": 0,
+      "hammer-cost": 5,
+      "verified": true
+    },
+    {
+      "level": 1,
+      "hammer-cost": 5,
+      "verified": true
+    },
+    {
+      "level": 2,
+      "hammer-cost": 5,
+      "verified": true
+    },
+    {
+      "level": 3,
+      "hammer-cost": 5,
+      "verified": true
+    },
+    {
+      "level": 4,
+      "hammer-cost": 10,
+      "verified": true
+    },
+    {
+      "level": 5,
+      "hammer-cost": 10,
+      "verified": true
+    },
+    {
+      "level": 6,
+      "hammer-cost": 10,
+      "verified": true
+    },
+    {
+      "level": 7,
+      "hammer-cost": 10,
+      "verified": true
+    },
+    {
+      "level": 8,
+      "hammer-cost": 15,
+      "verified": true
+    },
+    {
+      "level": 9,
+      "hammer-cost": 15,
+      "verified": true
+    },
+    {
+      "level": 10,
+      "hammer-cost": 15,
+      "verified": true
+    },
+    {
+      "level": 11,
+      "hammer-cost": 15,
+      "verified": true
+    },
+    {
+      "level": 12,
+      "hammer-cost": 15,
+      "verified": true
+    },
+    {
+      "level": 13,
+      "hammer-cost": 20,
+      "verified": true
+    },
+    {
+      "level": 14,
+      "hammer-cost": 20,
+      "verified": true
+    },
+    {
+      "level": 15,
+      "hammer-cost": 20,
+      "verified": true
+    },
+    {
+      "level": 16,
+      "hammer-cost": 20,
+      "verified": true
+    },
+    {
+      "level": 17,
+      "hammer-cost": 20,
+      "verified": true
+    },
+    {
+      "level": 18,
+      "hammer-cost": 25,
+      "verified": true
+    },
+    {
+      "level": 19,
+      "hammer-cost": 25,
+      "verified": true
+    },
+    {
+      "level": 20,
+      "hammer-cost": 25,
+      "verified": true
+    },
+    {
+      "level": 21,
+      "hammer-cost": 25,
+      "verified": true
+    },
+    {
+      "level": 22,
+      "hammer-cost": 25,
+      "verified": true
+    },
+    {
+      "level": 23,
+      "hammer-cost": 25,
+      "verified": true
+    },
+    {
+      "level": 24,
+      "hammer-cost": 30,
+      "verified": true
+    },
+    {
+      "level": 25,
+      "hammer-cost": 30,
+      "verified": true
+    },
+    {
+      "level": 26,
+      "hammer-cost": 30,
+      "verified": true
+    },
+    {
+      "level": 27,
+      "hammer-cost": 30,
+      "verified": true
+    },
+    {
+      "level": 28,
+      "hammer-cost": 30,
+      "verified": true
+    },
+    {
+      "level": 29,
+      "hammer-cost": 35,
+      "verified": true
+    },
+    {
+      "level": 30,
+      "hammer-cost": 35,
+      "verified": true
+    },
+    {
+      "level": 31,
+      "hammer-cost": 35,
+      "verified": true
+    },
+    {
+      "level": 32,
+      "hammer-cost": 35,
+      "verified": true
+    },
+    {
+      "level": 33,
+      "hammer-cost": 35,
+      "verified": true
+    },
+    {
+      "level": 34,
+      "hammer-cost": 35,
+      "verified": true
+    },
+    {
+      "level": 35,
+      "hammer-cost": 40,
+      "verified": true
+    },
+    {
+      "level": 36,
+      "hammer-cost": 40,
+      "verified": true
+    },
+    {
+      "level": 37,
+      "hammer-cost": 40,
+      "verified": true
+    },
+    {
+      "level": 38,
+      "hammer-cost": 40,
+      "verified": true
+    },
+    {
+      "level": 39,
+      "hammer-cost": 40,
+      "verified": true
+    },
+    {
+      "level": 40,
+      "hammer-cost": 45,
+      "verified": true
+    },
+    {
+      "level": 41,
+      "hammer-cost": 45,
+      "verified": true
+    },
+    {
+      "level": 42,
+      "hammer-cost": 45,
+      "verified": true
+    },
+    {
+      "level": 43,
+      "hammer-cost": 45,
+      "verified": true
+    },
+    {
+      "level": 44,
+      "hammer-cost": 45,
+      "verified": true
+    },
+    {
+      "level": 45,
+      "hammer-cost": 45,
+      "verified": true
+    },
+    {
+      "level": 46,
+      "hammer-cost": 50,
+      "verified": true
+    },
+    {
+      "level": 47,
+      "hammer-cost": 50,
+      "verified": true
+    },
+    {
+      "level": 48,
+      "hammer-cost": 50,
+      "verified": true
+    },
+    {
+      "level": 49,
+      "hammer-cost": 50,
+      "verified": true
+    },
+    {
+      "level": 50,
+      "hammer-cost": 50,
+      "verified": true
+    },
+    {
+      "level": 51,
+      "hammer-cost": 50,
+      "verified": true
+    },
+    {
+      "level": 52,
+      "hammer-cost": 55,
+      "verified": true
+    },
+    {
+      "level": 53,
+      "hammer-cost": 55,
+      "verified": true
+    },
+    {
+      "level": 54,
+      "hammer-cost": 55,
+      "verified": true
+    },
+    {
+      "level": 55,
+      "hammer-cost": 55,
+      "verified": true
+    },
+    {
+      "level": 56,
+      "hammer-cost": 55,
+      "verified": true
+    },
+    {
+      "level": 57,
+      "hammer-cost": 55,
+      "verified": true
+    },
+    {
+      "level": 58,
+      "hammer-cost": 60,
+      "verified": true
+    },
+    {
+      "level": 59,
+      "hammer-cost": 60,
+      "verified": true
+    },
+    {
+      "level": 60,
+      "hammer-cost": 60,
+      "verified": true
+    },
+    {
+      "level": 61,
+      "hammer-cost": 60,
+      "verified": true
+    },
+    {
+      "level": 62,
+      "hammer-cost": 60,
+      "verified": true
+    },
+    {
+      "level": 63,
+      "hammer-cost": 60,
+      "verified": true
+    },
+    {
+      "level": 64,
+      "hammer-cost": 65,
+      "verified": true
+    },
+    {
+      "level": 65,
+      "hammer-cost": 65,
+      "verified": true
+    },
+    {
+      "level": 66,
+      "hammer-cost": 65,
+      "verified": true
+    },
+    {
+      "level": 67,
+      "hammer-cost": 65,
+      "verified": true
+    },
+    {
+      "level": 68,
+      "hammer-cost": 65,
+      "verified": true
+    },
+    {
+      "level": 69,
+      "hammer-cost": 65,
+      "verified": true
+    },
+    {
+      "level": 70,
+      "hammer-cost": 70,
+      "verified": true
+    },
+    {
+      "level": 71,
+      "hammer-cost": 70,
+      "verified": true
+    },
+    {
+      "level": 72,
+      "hammer-cost": 70,
+      "verified": true
+    },
+    {
+      "level": 73,
+      "hammer-cost": 70,
+      "verified": true
+    },
+    {
+      "level": 74,
+      "hammer-cost": 70,
+      "verified": true
+    },
+    {
+      "level": 75,
+      "hammer-cost": 70,
+      "verified": true
+    },
+    {
+      "level": 76,
+      "hammer-cost": 75,
+      "verified": true
+    },
+    {
+      "level": 77,
+      "hammer-cost": 75,
+      "verified": true
+    },
+    {
+      "level": 78,
+      "hammer-cost": 75,
+      "verified": true
+    },
+    {
+      "level": 79,
+      "hammer-cost": 75,
+      "verified": true
+    },
+    {
+      "level": 80,
+      "hammer-cost": 75,
+      "verified": true
+    },
+    {
+      "level": 81,
+      "hammer-cost": 75,
+      "verified": true
+    },
+    {
+      "level": 82,
+      "hammer-cost": 80,
+      "verified": true
+    },
+    {
+      "level": 83,
+      "hammer-cost": 80,
+      "verified": true
+    },
+    {
+      "level": 84,
+      "hammer-cost": 80,
+      "verified": true
+    },
+    {
+      "level": 85,
+      "hammer-cost": 80,
+      "verified": true
+    },
+    {
+      "level": 86,
+      "hammer-cost": 80,
+      "verified": true
+    },
+    {
+      "level": 87,
+      "hammer-cost": 80,
+      "verified": true
+    },
+    {
+      "level": 88,
+      "hammer-cost": 85,
+      "verified": true
+    },
+    {
+      "level": 89,
+      "hammer-cost": 85,
+      "verified": true
+    },
+    {
+      "level": 90,
+      "hammer-cost": 85,
+      "verified": true
+    },
+    {
+      "level": 91,
+      "hammer-cost": 85,
+      "verified": true
+    },
+    {
+      "level": 92,
+      "hammer-cost": 85,
+      "verified": true
+    },
+    {
+      "level": 93,
+      "hammer-cost": 85,
+      "verified": true
+    },
+    {
+      "level": 94,
+      "hammer-cost": 90,
+      "verified": true
+    },
+    {
+      "level": 95,
+      "hammer-cost": 90,
+      "verified": true
+    },
+    {
+      "level": 96,
+      "hammer-cost": 90,
+      "verified": true
+    },
+    {
+      "level": 97,
+      "hammer-cost": 90,
+      "verified": true
+    },
+    {
+      "level": 98,
+      "hammer-cost": 90,
+      "verified": true
+    },
+    {
+      "level": 99,
+      "hammer-cost": 90,
+      "verified": true
+    },
+    {
+      "level": 100,
+      "hammer-cost": 95,
+      "verified": true
+    },
+    {
+      "level": 101,
+      "hammer-cost": 95,
+      "verified": true
+    },
+    {
+      "level": 102,
+      "hammer-cost": 95,
+      "verified": true
+    },
+    {
+      "level": 103,
+      "hammer-cost": 95,
+      "verified": true
+    },
+    {
+      "level": 104,
+      "hammer-cost": 95,
+      "verified": true
+    },
+    {
+      "level": 105,
+      "hammer-cost": 95,
+      "verified": true
+    },
+    {
+      "level": 106,
+      "hammer-cost": 95,
+      "verified": true
+    },
+    {
+      "level": 107,
+      "hammer-cost": 100,
+      "verified": true
+    },
+    {
+      "level": 108,
+      "hammer-cost": 100,
+      "verified": true
+    },
+    {
+      "level": 109,
+      "hammer-cost": 100,
+      "verified": true
+    },
+    {
+      "level": 110,
+      "hammer-cost": 100,
+      "verified": true
+    },
+    {
+      "level": 111,
+      "hammer-cost": 100,
+      "verified": true
+    },
+    {
+      "level": 112,
+      "hammer-cost": 100,
+      "verified": true
+    },
+    {
+      "level": 113,
+      "hammer-cost": 105,
+      "verified": true
+    },
+    {
+      "level": 114,
+      "hammer-cost": 105,
+      "verified": true
+    },
+    {
+      "level": 115,
+      "hammer-cost": 105,
+      "verified": true
+    },
+    {
+      "level": 116,
+      "hammer-cost": 105,
+      "verified": true
+    },
+    {
+      "level": 117,
+      "hammer-cost": 105,
+      "verified": true
+    },
+    {
+      "level": 118,
+      "hammer-cost": 105,
+      "verified": true
+    },
+    {
+      "level": 119,
+      "hammer-cost": 110,
+      "verified": true
+    },
+    {
+      "level": 120,
+      "hammer-cost": 110,
+      "verified": true
+    },
+    {
+      "level": 121,
+      "hammer-cost": 110,
+      "verified": true
+    },
+    {
+      "level": 122,
+      "hammer-cost": 110,
+      "verified": true
+    },
+    {
+      "level": 123,
+      "hammer-cost": 110,
+      "verified": true
+    },
+    {
+      "level": 124,
+      "hammer-cost": 110,
+      "verified": true
+    },
+    {
+      "level": 125,
+      "hammer-cost": 115,
+      "verified": true
+    },
+    {
+      "level": 126,
+      "hammer-cost": 115,
+      "verified": true
+    },
+    {
+      "level": 127,
+      "hammer-cost": 115,
+      "verified": true
+    },
+    {
+      "level": 128,
+      "hammer-cost": 115,
+      "verified": true
+    },
+    {
+      "level": 129,
+      "hammer-cost": 115,
+      "verified": true
+    },
+    {
+      "level": 130,
+      "hammer-cost": 115,
+      "verified": true
+    },
+    {
+      "level": 131,
+      "hammer-cost": 115,
+      "verified": true
+    },
+    {
+      "level": 132,
+      "hammer-cost": 120,
+      "verified": true
+    },
+    {
+      "level": 133,
+      "hammer-cost": 120,
+      "verified": true
+    },
+    {
+      "level": 134,
+      "hammer-cost": 120,
+      "verified": true
+    },
+    {
+      "level": 135,
+      "hammer-cost": 120,
+      "verified": true
+    },
+    {
+      "level": 136,
+      "hammer-cost": 120,
+      "verified": true
+    },
+    {
+      "level": 137,
+      "hammer-cost": 120,
+      "verified": true
+    },
+    {
+      "level": 138,
+      "hammer-cost": 125,
+      "verified": true
+    },
+    {
+      "level": 139,
+      "hammer-cost": 125,
+      "verified": true
+    },
+    {
+      "level": 140,
+      "hammer-cost": 125,
+      "verified": true
+    },
+    {
+      "level": 141,
+      "hammer-cost": 125,
+      "verified": true
+    },
+    {
+      "level": 142,
+      "hammer-cost": 125,
+      "verified": true
+    },
+    {
+      "level": 143,
+      "hammer-cost": 125,
+      "verified": true
+    },
+    {
+      "level": 144,
+      "hammer-cost": 125,
+      "verified": true
+    },
+    {
+      "level": 145,
+      "hammer-cost": 130,
+      "verified": true
+    },
+    {
+      "level": 146,
+      "hammer-cost": 130,
+      "verified": true
+    },
+    {
+      "level": 147,
+      "hammer-cost": 130,
+      "verified": true
+    },
+    {
+      "level": 148,
+      "hammer-cost": 130,
+      "verified": true
+    },
+    {
+      "level": 149,
+      "hammer-cost": 130,
+      "verified": true
+    },
+    {
+      "level": 150,
+      "hammer-cost": 130,
+      "verified": true
+    },
+    {
+      "level": 151,
+      "hammer-cost": 135,
+      "verified": true
+    },
+    {
+      "level": 152,
+      "hammer-cost": 135,
+      "verified": true
+    },
+    {
+      "level": 153,
+      "hammer-cost": 135,
+      "verified": true
+    },
+    {
+      "level": 154,
+      "hammer-cost": 135,
+      "verified": true
+    },
+    {
+      "level": 155,
+      "hammer-cost": 135,
+      "verified": true
+    },
+    {
+      "level": 156,
+      "hammer-cost": 135,
+      "verified": true
+    },
+    {
+      "level": 157,
+      "hammer-cost": 135,
+      "verified": true
+    },
+    {
+      "level": 158,
+      "hammer-cost": 140,
+      "verified": true
+    },
+    {
+      "level": 159,
+      "hammer-cost": 140,
+      "verified": true
+    },
+    {
+      "level": 160,
+      "hammer-cost": 140,
+      "verified": true
+    },
+    {
+      "level": 161,
+      "hammer-cost": 140,
+      "verified": true
+    },
+    {
+      "level": 162,
+      "hammer-cost": 140,
+      "verified": true
+    },
+    {
+      "level": 163,
+      "hammer-cost": 140,
+      "verified": true
+    },
+    {
+      "level": 164,
+      "hammer-cost": 145,
+      "verified": true
+    },
+    {
+      "level": 165,
+      "hammer-cost": 145,
+      "verified": true
+    },
+    {
+      "level": 166,
+      "hammer-cost": 145,
+      "verified": true
+    },
+    {
+      "level": 167,
+      "hammer-cost": 145,
+      "verified": true
+    },
+    {
+      "level": 168,
+      "hammer-cost": 145,
+      "verified": true
+    },
+    {
+      "level": 169,
+      "hammer-cost": 145,
+      "verified": true
+    },
+    {
+      "level": 170,
+      "hammer-cost": 145,
+      "verified": true
+    },
+    {
+      "level": 171,
+      "hammer-cost": 150,
+      "verified": true
+    },
+    {
+      "level": 172,
+      "hammer-cost": 150,
+      "verified": true
+    },
+    {
+      "level": 173,
+      "hammer-cost": 150,
+      "verified": true
+    },
+    {
+      "level": 174,
+      "hammer-cost": 150,
+      "verified": true
+    },
+    {
+      "level": 175,
+      "hammer-cost": 150,
+      "verified": true
+    },
+    {
+      "level": 176,
+      "hammer-cost": 150,
+      "verified": true
+    },
+    {
+      "level": 177,
+      "hammer-cost": 155,
+      "verified": true
+    },
+    {
+      "level": 178,
+      "hammer-cost": 155,
+      "verified": true
+    },
+    {
+      "level": 179,
+      "hammer-cost": 155,
+      "verified": true
+    },
+    {
+      "level": 180,
+      "hammer-cost": 155,
+      "verified": true
+    },
+    {
+      "level": 181,
+      "hammer-cost": 155,
+      "verified": true
+    },
+    {
+      "level": 182,
+      "hammer-cost": 155,
+      "verified": true
+    },
+    {
+      "level": 183,
+      "hammer-cost": 155,
+      "verified": true
+    },
+    {
+      "level": 184,
+      "hammer-cost": 160,
+      "verified": true
+    },
+    {
+      "level": 185,
+      "hammer-cost": 160,
+      "verified": true
+    },
+    {
+      "level": 186,
+      "hammer-cost": 160,
+      "verified": true
+    },
+    {
+      "level": 187,
+      "hammer-cost": 160,
+      "verified": true
+    },
+    {
+      "level": 188,
+      "hammer-cost": 160,
+      "verified": true
+    },
+    {
+      "level": 189,
+      "hammer-cost": 160,
+      "verified": true
+    },
+    {
+      "level": 190,
+      "hammer-cost": 160,
+      "verified": true
+    },
+    {
+      "level": 191,
+      "hammer-cost": 165,
+      "verified": true
+    },
+    {
+      "level": 192,
+      "hammer-cost": 165,
+      "verified": true
+    },
+    {
+      "level": 193,
+      "hammer-cost": 165,
+      "verified": true
+    },
+    {
+      "level": 194,
+      "hammer-cost": 165,
+      "verified": true
+    },
+    {
+      "level": 195,
+      "hammer-cost": 165,
+      "verified": true
+    },
+    {
+      "level": 196,
+      "hammer-cost": 165,
+      "verified": true
+    },
+    {
+      "level": 197,
+      "hammer-cost": 170,
+      "verified": true
+    },
+    {
+      "level": 198,
+      "hammer-cost": 170,
+      "verified": true
+    },
+    {
+      "level": 199,
+      "hammer-cost": 170,
+      "verified": true
+    },
+    {
+      "level": 200,
+      "hammer-cost": 170,
+      "verified": true
+    },
+    {
+      "level": 201,
+      "hammer-cost": 170,
+      "verified": true
+    },
+    {
+      "level": 202,
+      "hammer-cost": 170,
+      "verified": true
+    },
+    {
+      "level": 203,
+      "hammer-cost": 170,
+      "verified": true
+    },
+    {
+      "level": 204,
+      "hammer-cost": 175,
+      "verified": true
+    },
+    {
+      "level": 205,
+      "hammer-cost": 175,
+      "verified": true
+    },
+    {
+      "level": 206,
+      "hammer-cost": 175,
+      "verified": true
+    },
+    {
+      "level": 207,
+      "hammer-cost": 175,
+      "verified": true
+    },
+    {
+      "level": 208,
+      "hammer-cost": 175,
+      "verified": true
+    },
+    {
+      "level": 209,
+      "hammer-cost": 175,
+      "verified": true
+    },
+    {
+      "level": 210,
+      "hammer-cost": 175,
+      "verified": true
+    },
+    {
+      "level": 211,
+      "hammer-cost": 180,
+      "verified": true
+    },
+    {
+      "level": 212,
+      "hammer-cost": 180,
+      "verified": true
+    },
+    {
+      "level": 213,
+      "hammer-cost": 180,
+      "verified": true
+    },
+    {
+      "level": 214,
+      "hammer-cost": 180,
+      "verified": true
+    },
+    {
+      "level": 215,
+      "hammer-cost": 180,
+      "verified": true
+    },
+    {
+      "level": 216,
+      "hammer-cost": 180,
+      "verified": true
+    },
+    {
+      "level": 217,
+      "hammer-cost": 185,
+      "verified": true
+    },
+    {
+      "level": 218,
+      "hammer-cost": 185,
+      "verified": true
+    },
+    {
+      "level": 219,
+      "hammer-cost": 185,
+      "verified": true
+    },
+    {
+      "level": 220,
+      "hammer-cost": 185,
+      "verified": true
+    },
+    {
+      "level": 221,
+      "hammer-cost": 185,
+      "verified": true
+    },
+    {
+      "level": 222,
+      "hammer-cost": 185,
+      "verified": true
+    },
+    {
+      "level": 223,
+      "hammer-cost": 185,
+      "verified": true
+    },
+    {
+      "level": 224,
+      "hammer-cost": 190,
+      "verified": true
+    },
+    {
+      "level": 225,
+      "hammer-cost": 190,
+      "verified": true
+    },
+    {
+      "level": 226,
+      "hammer-cost": 190,
+      "verified": true
+    },
+    {
+      "level": 227,
+      "hammer-cost": 190,
+      "verified": true
+    },
+    {
+      "level": 228,
+      "hammer-cost": 190,
+      "verified": true
+    },
+    {
+      "level": 229,
+      "hammer-cost": 190,
+      "verified": true
+    },
+    {
+      "level": 230,
+      "hammer-cost": 190,
+      "verified": true
+    },
+    {
+      "level": 231,
+      "hammer-cost": 195,
+      "verified": true
+    },
+    {
+      "level": 232,
+      "hammer-cost": 195,
+      "verified": true
+    },
+    {
+      "level": 233,
+      "hammer-cost": 195,
+      "verified": true
+    },
+    {
+      "level": 234,
+      "hammer-cost": 195,
+      "verified": true
+    },
+    {
+      "level": 235,
+      "hammer-cost": 195,
+      "verified": true
+    },
+    {
+      "level": 236,
+      "hammer-cost": 195,
+      "verified": true
+    },
+    {
+      "level": 237,
+      "hammer-cost": 200,
+      "verified": true
+    },
+    {
+      "level": 238,
+      "hammer-cost": 200,
+      "verified": true
+    },
+    {
+      "level": 239,
+      "hammer-cost": 200,
+      "verified": true
+    },
+    {
+      "level": 240,
+      "hammer-cost": 200,
+      "verified": true
+    },
+    {
+      "level": 241,
+      "hammer-cost": 200,
+      "verified": true
+    },
+    {
+      "level": 242,
+      "hammer-cost": 200,
+      "verified": true
+    },
+    {
+      "level": 243,
+      "hammer-cost": 200,
+      "verified": true
+    },
+    {
+      "level": 244,
+      "hammer-cost": 205,
+      "verified": true
+    },
+    {
+      "level": 245,
+      "hammer-cost": 205,
+      "verified": true
+    },
+    {
+      "level": 246,
+      "hammer-cost": 205,
+      "verified": true
+    },
+    {
+      "level": 247,
+      "hammer-cost": 205,
+      "verified": true
+    },
+    {
+      "level": 248,
+      "hammer-cost": 205,
+      "verified": true
+    },
+    {
+      "level": 249,
+      "hammer-cost": 205,
+      "verified": true
+    },
+    {
+      "level": 250,
+      "hammer-cost": 205,
+      "verified": true
+    },
+    {
+      "level": 251,
+      "hammer-cost": 210,
+      "verified": true
+    },
+    {
+      "level": 252,
+      "hammer-cost": 210,
+      "verified": true
+    },
+    {
+      "level": 253,
+      "hammer-cost": 210,
+      "verified": true
+    },
+    {
+      "level": 254,
+      "hammer-cost": 210,
+      "verified": true
+    },
+    {
+      "level": 255,
+      "hammer-cost": 210,
+      "verified": true
+    },
+    {
+      "level": 256,
+      "hammer-cost": 210,
+      "verified": true
+    },
+    {
+      "level": 257,
+      "hammer-cost": 210,
+      "verified": true
+    },
+    {
+      "level": 258,
+      "hammer-cost": 215,
+      "verified": true
+    },
+    {
+      "level": 259,
+      "hammer-cost": 215,
+      "verified": true
+    },
+    {
+      "level": 260,
+      "hammer-cost": 215,
+      "verified": true
+    },
+    {
+      "level": 261,
+      "hammer-cost": 215,
+      "verified": true
+    },
+    {
+      "level": 262,
+      "hammer-cost": 215,
+      "verified": true
+    },
+    {
+      "level": 263,
+      "hammer-cost": 215,
+      "verified": true
+    },
+    {
+      "level": 264,
+      "hammer-cost": 215,
+      "verified": true
+    },
+    {
+      "level": 265,
+      "hammer-cost": 220,
+      "verified": true
+    },
+    {
+      "level": 266,
+      "hammer-cost": 220,
+      "verified": true
+    },
+    {
+      "level": 267,
+      "hammer-cost": 220,
+      "verified": true
+    },
+    {
+      "level": 268,
+      "hammer-cost": 220,
+      "verified": true
+    },
+    {
+      "level": 269,
+      "hammer-cost": 220,
+      "verified": true
+    },
+    {
+      "level": 270,
+      "hammer-cost": 220,
+      "verified": true
+    },
+    {
+      "level": 271,
+      "hammer-cost": 220,
+      "verified": true
+    },
+    {
+      "level": 272,
+      "hammer-cost": 225,
+      "verified": true
+    },
+    {
+      "level": 273,
+      "hammer-cost": 225,
+      "verified": true
+    },
+    {
+      "level": 274,
+      "hammer-cost": 225,
+      "verified": true
+    },
+    {
+      "level": 275,
+      "hammer-cost": 225,
+      "verified": true
+    },
+    {
+      "level": 276,
+      "hammer-cost": 225,
+      "verified": true
+    },
+    {
+      "level": 277,
+      "hammer-cost": 225,
+      "verified": true
+    },
+    {
+      "level": 278,
+      "hammer-cost": 230,
+      "verified": true
+    },
+    {
+      "level": 279,
+      "hammer-cost": 230,
+      "verified": true
+    },
+    {
+      "level": 280,
+      "hammer-cost": 230,
+      "verified": true
+    },
+    {
+      "level": 281,
+      "hammer-cost": 230,
+      "verified": true
+    },
+    {
+      "level": 282,
+      "hammer-cost": 230,
+      "verified": true
+    },
+    {
+      "level": 283,
+      "hammer-cost": 230,
+      "verified": true
+    },
+    {
+      "level": 284,
+      "hammer-cost": 230,
+      "verified": true
+    },
+    {
+      "level": 285,
+      "hammer-cost": 235,
+      "verified": true
+    },
+    {
+      "level": 286,
+      "hammer-cost": 235,
+      "verified": true
+    },
+    {
+      "level": 287,
+      "hammer-cost": 235,
+      "verified": true
+    },
+    {
+      "level": 288,
+      "hammer-cost": 235,
+      "verified": true
+    },
+    {
+      "level": 289,
+      "hammer-cost": 235,
+      "verified": true
+    },
+    {
+      "level": 290,
+      "hammer-cost": 235,
+      "verified": true
+    },
+    {
+      "level": 291,
+      "hammer-cost": 235,
+      "verified": true
+    },
+    {
+      "level": 292,
+      "hammer-cost": 240,
+      "verified": true
+    },
+    {
+      "level": 293,
+      "hammer-cost": 240,
+      "verified": true
+    },
+    {
+      "level": 294,
+      "hammer-cost": 240,
+      "verified": true
+    },
+    {
+      "level": 295,
+      "hammer-cost": 240,
+      "verified": true
+    },
+    {
+      "level": 296,
+      "hammer-cost": 240,
+      "verified": true
+    },
+    {
+      "level": 297,
+      "hammer-cost": 240,
+      "verified": true
+    },
+    {
+      "level": 298,
+      "hammer-cost": 240,
+      "verified": true
+    },
+    {
+      "level": 299,
+      "hammer-cost": 245,
+      "verified": false
+    },
+    {
+      "level": 300,
+      "hammer-cost": 245,
+      "verified": false
+    },
+    {
+      "level": 301,
+      "hammer-cost": 245,
+      "verified": false
+    },
+    {
+      "level": 302,
+      "hammer-cost": 245,
+      "verified": false
+    },
+    {
+      "level": 303,
+      "hammer-cost": 245,
+      "verified": false
+    },
+    {
+      "level": 304,
+      "hammer-cost": 245,
+      "verified": false
+    },
+    {
+      "level": 305,
+      "hammer-cost": 245,
+      "verified": false
+    },
+    {
+      "level": 306,
+      "hammer-cost": 250,
+      "verified": true
+    },
+    {
+      "level": 307,
+      "hammer-cost": 250,
+      "verified": true
+    },
+    {
+      "level": 308,
+      "hammer-cost": 250,
+      "verified": true
+    },
+    {
+      "level": 309,
+      "hammer-cost": 250,
+      "verified": true
+    },
+    {
+      "level": 310,
+      "hammer-cost": 250,
+      "verified": true
+    },
+    {
+      "level": 311,
+      "hammer-cost": 250,
+      "verified": true
+    },
+    {
+      "level": 312,
+      "hammer-cost": 250,
+      "verified": true
+    },
+    {
+      "level": 313,
+      "hammer-cost": 255,
+      "verified": false
+    },
+    {
+      "level": 314,
+      "hammer-cost": 255,
+      "verified": false
+    },
+    {
+      "level": 315,
+      "hammer-cost": 255,
+      "verified": false
+    },
+    {
+      "level": 316,
+      "hammer-cost": 255,
+      "verified": false
+    },
+    {
+      "level": 317,
+      "hammer-cost": 255,
+      "verified": false
+    },
+    {
+      "level": 318,
+      "hammer-cost": 255,
+      "verified": false
+    },
+    {
+      "level": 319,
+      "hammer-cost": 255,
+      "verified": false
+    },
+    {
+      "level": 320,
+      "hammer-cost": 260,
+      "verified": true
+    },
+    {
+      "level": 321,
+      "hammer-cost": 260,
+      "verified": true
+    },
+    {
+      "level": 322,
+      "hammer-cost": 260,
+      "verified": true
+    },
+    {
+      "level": 323,
+      "hammer-cost": 260,
+      "verified": true
+    },
+    {
+      "level": 324,
+      "hammer-cost": 260,
+      "verified": true
+    },
+    {
+      "level": 325,
+      "hammer-cost": 260,
+      "verified": true
+    },
+    {
+      "level": 326,
+      "hammer-cost": 260,
+      "verified": true
+    },
+    {
+      "level": 327,
+      "hammer-cost": 265,
+      "verified": true
+    },
+    {
+      "level": 328,
+      "hammer-cost": 265,
+      "verified": true
+    },
+    {
+      "level": 329,
+      "hammer-cost": 265,
+      "verified": true
+    },
+    {
+      "level": 330,
+      "hammer-cost": 265,
+      "verified": true
+    },
+    {
+      "level": 331,
+      "hammer-cost": 265,
+      "verified": true
+    },
+    {
+      "level": 332,
+      "hammer-cost": 265,
+      "verified": true
+    },
+    {
+      "level": 333,
+      "hammer-cost": 265,
+      "verified": true
+    },
+    {
+      "level": 334,
+      "hammer-cost": 265,
+      "verified": false
+    },
+    {
+      "level": 335,
+      "hammer-cost": 270,
+      "verified": false
+    },
+    {
+      "level": 336,
+      "hammer-cost": 270,
+      "verified": false
+    },
+    {
+      "level": 337,
+      "hammer-cost": 270,
+      "verified": false
+    },
+    {
+      "level": 338,
+      "hammer-cost": 270,
+      "verified": false
+    },
+    {
+      "level": 339,
+      "hammer-cost": 270,
+      "verified": false
+    },
+    {
+      "level": 340,
+      "hammer-cost": 270,
+      "verified": false
+    },
+    {
+      "level": 341,
+      "hammer-cost": 270,
+      "verified": false
+    },
+    {
+      "level": 342,
+      "hammer-cost": 275,
+      "verified": false
+    },
+    {
+      "level": 343,
+      "hammer-cost": 275,
+      "verified": false
+    },
+    {
+      "level": 344,
+      "hammer-cost": 275,
+      "verified": false
+    },
+    {
+      "level": 345,
+      "hammer-cost": 275,
+      "verified": false
+    },
+    {
+      "level": 346,
+      "hammer-cost": 275,
+      "verified": false
+    },
+    {
+      "level": 347,
+      "hammer-cost": 275,
+      "verified": false
+    },
+    {
+      "level": 348,
+      "hammer-cost": 280,
+      "verified": false
+    },
+    {
+      "level": 349,
+      "hammer-cost": 280,
+      "verified": false
+    },
+    {
+      "level": 350,
+      "hammer-cost": 280,
+      "verified": false
+    },
+    {
+      "level": 351,
+      "hammer-cost": 280,
+      "verified": false
+    },
+    {
+      "level": 352,
+      "hammer-cost": 280,
+      "verified": false
+    },
+    {
+      "level": 353,
+      "hammer-cost": 280,
+      "verified": false
+    },
+    {
+      "level": 354,
+      "hammer-cost": 280,
+      "verified": false
+    },
+    {
+      "level": 355,
+      "hammer-cost": 280,
+      "verified": false
+    },
+    {
+      "level": 356,
+      "hammer-cost": 285,
+      "verified": false
+    },
+    {
+      "level": 357,
+      "hammer-cost": 285,
+      "verified": false
+    },
+    {
+      "level": 358,
+      "hammer-cost": 285,
+      "verified": false
+    },
+    {
+      "level": 359,
+      "hammer-cost": 285,
+      "verified": false
+    },
+    {
+      "level": 360,
+      "hammer-cost": 285,
+      "verified": false
+    },
+    {
+      "level": 361,
+      "hammer-cost": 285,
+      "verified": false
+    },
+    {
+      "level": 362,
+      "hammer-cost": 290,
+      "verified": false
+    },
+    {
+      "level": 363,
+      "hammer-cost": 290,
+      "verified": false
+    },
+    {
+      "level": 364,
+      "hammer-cost": 290,
+      "verified": false
+    },
+    {
+      "level": 365,
+      "hammer-cost": 290,
+      "verified": false
+    },
+    {
+      "level": 366,
+      "hammer-cost": 290,
+      "verified": false
+    },
+    {
+      "level": 367,
+      "hammer-cost": 290,
+      "verified": false
+    },
+    {
+      "level": 368,
+      "hammer-cost": 290,
+      "verified": false
+    },
+    {
+      "level": 369,
+      "hammer-cost": 290,
+      "verified": false
+    },
+    {
+      "level": 370,
+      "hammer-cost": 295,
+      "verified": false
+    },
+    {
+      "level": 371,
+      "hammer-cost": 295,
+      "verified": false
+    },
+    {
+      "level": 372,
+      "hammer-cost": 295,
+      "verified": false
+    },
+    {
+      "level": 373,
+      "hammer-cost": 295,
+      "verified": false
+    },
+    {
+      "level": 374,
+      "hammer-cost": 295,
+      "verified": false
+    },
+    {
+      "level": 375,
+      "hammer-cost": 295,
+      "verified": false
+    },
+    {
+      "level": 376,
+      "hammer-cost": 300,
+      "verified": false
+    },
+    {
+      "level": 377,
+      "hammer-cost": 300,
+      "verified": false
+    },
+    {
+      "level": 378,
+      "hammer-cost": 300,
+      "verified": false
+    },
+    {
+      "level": 379,
+      "hammer-cost": 300,
+      "verified": false
+    },
+    {
+      "level": 380,
+      "hammer-cost": 300,
+      "verified": false
+    },
+    {
+      "level": 381,
+      "hammer-cost": 300,
+      "verified": false
+    },
+    {
+      "level": 382,
+      "hammer-cost": 300,
+      "verified": false
+    },
+    {
+      "level": 383,
+      "hammer-cost": 300,
+      "verified": false
+    },
+    {
+      "level": 384,
+      "hammer-cost": 305,
+      "verified": false
+    },
+    {
+      "level": 385,
+      "hammer-cost": 305,
+      "verified": false
+    },
+    {
+      "level": 386,
+      "hammer-cost": 305,
+      "verified": false
+    },
+    {
+      "level": 387,
+      "hammer-cost": 305,
+      "verified": false
+    },
+    {
+      "level": 388,
+      "hammer-cost": 305,
+      "verified": false
+    },
+    {
+      "level": 389,
+      "hammer-cost": 305,
+      "verified": false
+    },
+    {
+      "level": 390,
+      "hammer-cost": 310,
+      "verified": false
+    },
+    {
+      "level": 391,
+      "hammer-cost": 310,
+      "verified": false
+    },
+    {
+      "level": 392,
+      "hammer-cost": 310,
+      "verified": false
+    },
+    {
+      "level": 393,
+      "hammer-cost": 310,
+      "verified": false
+    },
+    {
+      "level": 394,
+      "hammer-cost": 310,
+      "verified": false
+    },
+    {
+      "level": 395,
+      "hammer-cost": 310,
+      "verified": false
+    },
+    {
+      "level": 396,
+      "hammer-cost": 310,
+      "verified": false
+    },
+    {
+      "level": 397,
+      "hammer-cost": 315,
+      "verified": false
+    },
+    {
+      "level": 398,
+      "hammer-cost": 315,
+      "verified": false
+    },
+    {
+      "level": 399,
+      "hammer-cost": 315,
+      "verified": false
+    },
+    {
+      "level": 400,
+      "hammer-cost": 315,
+      "verified": false
+    },
+    {
+      "level": 401,
+      "hammer-cost": 315,
+      "verified": false
+    },
+    {
+      "level": 402,
+      "hammer-cost": 315,
+      "verified": false
+    },
+    {
+      "level": 403,
+      "hammer-cost": 315,
+      "verified": false
+    },
+    {
+      "level": 404,
+      "hammer-cost": 315,
+      "verified": false
+    },
+    {
+      "level": 405,
+      "hammer-cost": 320,
+      "verified": true
+    },
+    {
+      "level": 406,
+      "hammer-cost": 320,
+      "verified": true
+    },
+    {
+      "level": 407,
+      "hammer-cost": 320,
+      "verified": true
+    },
+    {
+      "level": 408,
+      "hammer-cost": 320,
+      "verified": true
+    },
+    {
+      "level": 409,
+      "hammer-cost": 320,
+      "verified": true
+    },
+    {
+      "level": 410,
+      "hammer-cost": 320,
+      "verified": true
+    },
+    {
+      "level": 411,
+      "hammer-cost": 325,
+      "verified": true
+    },
+    {
+      "level": 412,
+      "hammer-cost": 325,
+      "verified": true
+    },
+    {
+      "level": 413,
+      "hammer-cost": 325,
+      "verified": true
+    },
+    {
+      "level": 414,
+      "hammer-cost": 325,
+      "verified": true
+    },
+    {
+      "level": 415,
+      "hammer-cost": 325,
+      "verified": true
+    },
+    {
+      "level": 416,
+      "hammer-cost": 325,
+      "verified": true
+    },
+    {
+      "level": 417,
+      "hammer-cost": 325,
+      "verified": true
+    },
+    {
+      "level": 418,
+      "hammer-cost": 330,
+      "verified": true
+    },
+    {
+      "level": 419,
+      "hammer-cost": 330,
+      "verified": true
+    },
+    {
+      "level": 420,
+      "hammer-cost": 330,
+      "verified": true
+    },
+    {
+      "level": 421,
+      "hammer-cost": 330,
+      "verified": true
+    },
+    {
+      "level": 422,
+      "hammer-cost": 330,
+      "verified": true
+    },
+    {
+      "level": 423,
+      "hammer-cost": 330,
+      "verified": true
+    },
+    {
+      "level": 424,
+      "hammer-cost": 330,
+      "verified": true
+    },
+    {
+      "level": 425,
+      "hammer-cost": 330,
+      "verified": true
+    },
+    {
+      "level": 426,
+      "hammer-cost": 335,
+      "verified": true
+    },
+    {
+      "level": 427,
+      "hammer-cost": 335,
+      "verified": true
+    },
+    {
+      "level": 428,
+      "hammer-cost": 335,
+      "verified": true
+    },
+    {
+      "level": 429,
+      "hammer-cost": 335,
+      "verified": true
+    },
+    {
+      "level": 430,
+      "hammer-cost": 335,
+      "verified": true
+    },
+    {
+      "level": 431,
+      "hammer-cost": 335,
+      "verified": true
+    },
+    {
+      "level": 432,
+      "hammer-cost": 335,
+      "verified": true
+    },
+    {
+      "level": 433,
+      "hammer-cost": 335,
+      "verified": true
+    },
+    {
+      "level": 434,
+      "hammer-cost": 340,
+      "verified": true
+    },
+    {
+      "level": 435,
+      "hammer-cost": 340,
+      "verified": true
+    },
+    {
+      "level": 436,
+      "hammer-cost": 340,
+      "verified": true
+    },
+    {
+      "level": 437,
+      "hammer-cost": 340,
+      "verified": true
+    },
+    {
+      "level": 438,
+      "hammer-cost": 340,
+      "verified": true
+    },
+    {
+      "level": 439,
+      "hammer-cost": 340,
+      "verified": true
+    },
+    {
+      "level": 440,
+      "hammer-cost": 340,
+      "verified": true
+    },
+    {
+      "level": 441,
+      "hammer-cost": 345,
+      "verified": true
+    },
+    {
+      "level": 442,
+      "hammer-cost": 345,
+      "verified": true
+    },
+    {
+      "level": 443,
+      "hammer-cost": 345,
+      "verified": true
+    },
+    {
+      "level": 444,
+      "hammer-cost": 345,
+      "verified": true
+    },
+    {
+      "level": 445,
+      "hammer-cost": 345,
+      "verified": true
+    },
+    {
+      "level": 446,
+      "hammer-cost": 345,
+      "verified": true
+    },
+    {
+      "level": 447,
+      "hammer-cost": 345,
+      "verified": true
+    },
+    {
+      "level": 448,
+      "hammer-cost": 350,
+      "verified": true
+    },
+    {
+      "level": 449,
+      "hammer-cost": 350,
+      "verified": true
+    },
+    {
+      "level": 450,
+      "hammer-cost": 350,
+      "verified": true
+    },
+    {
+      "level": 451,
+      "hammer-cost": 350,
+      "verified": true
+    },
+    {
+      "level": 452,
+      "hammer-cost": 350,
+      "verified": true
+    },
+    {
+      "level": 453,
+      "hammer-cost": 350,
+      "verified": true
+    },
+    {
+      "level": 454,
+      "hammer-cost": 350,
+      "verified": true
+    },
+    {
+      "level": 455,
+      "hammer-cost": 355,
+      "verified": true
+    },
+    {
+      "level": 456,
+      "hammer-cost": 355,
+      "verified": true
+    },
+    {
+      "level": 457,
+      "hammer-cost": 355,
+      "verified": true
+    },
+    {
+      "level": 458,
+      "hammer-cost": 355,
+      "verified": true
+    },
+    {
+      "level": 459,
+      "hammer-cost": 355,
+      "verified": true
+    },
+    {
+      "level": 460,
+      "hammer-cost": 355,
+      "verified": true
+    },
+    {
+      "level": 461,
+      "hammer-cost": 355,
+      "verified": true
+    },
+    {
+      "level": 462,
+      "hammer-cost": 355,
+      "verified": true
+    },
+    {
+      "level": 463,
+      "hammer-cost": 360,
+      "verified": true
+    },
+    {
+      "level": 464,
+      "hammer-cost": 360,
+      "verified": true
+    },
+    {
+      "level": 465,
+      "hammer-cost": 360,
+      "verified": true
+    },
+    {
+      "level": 466,
+      "hammer-cost": 360,
+      "verified": true
+    },
+    {
+      "level": 467,
+      "hammer-cost": 360,
+      "verified": true
+    },
+    {
+      "level": 468,
+      "hammer-cost": 360,
+      "verified": true
+    },
+    {
+      "level": 469,
+      "hammer-cost": 360,
+      "verified": true
+    },
+    {
+      "level": 470,
+      "hammer-cost": 365,
+      "verified": true
+    },
+    {
+      "level": 471,
+      "hammer-cost": 365,
+      "verified": true
+    },
+    {
+      "level": 472,
+      "hammer-cost": 365,
+      "verified": true
+    },
+    {
+      "level": 473,
+      "hammer-cost": 365,
+      "verified": true
+    },
+    {
+      "level": 474,
+      "hammer-cost": 365,
+      "verified": true
+    },
+    {
+      "level": 475,
+      "hammer-cost": 365,
+      "verified": true
+    },
+    {
+      "level": 476,
+      "hammer-cost": 365,
+      "verified": true
+    },
+    {
+      "level": 477,
+      "hammer-cost": 370,
+      "verified": true
+    },
+    {
+      "level": 478,
+      "hammer-cost": 370,
+      "verified": true
+    },
+    {
+      "level": 479,
+      "hammer-cost": 370,
+      "verified": true
+    },
+    {
+      "level": 480,
+      "hammer-cost": 370,
+      "verified": true
+    },
+    {
+      "level": 481,
+      "hammer-cost": 370,
+      "verified": true
+    },
+    {
+      "level": 482,
+      "hammer-cost": 370,
+      "verified": true
+    },
+    {
+      "level": 483,
+      "hammer-cost": 370,
+      "verified": true
+    },
+    {
+      "level": 484,
+      "hammer-cost": 375,
+      "verified": true
+    },
+    {
+      "level": 485,
+      "hammer-cost": 375,
+      "verified": true
+    },
+    {
+      "level": 486,
+      "hammer-cost": 375,
+      "verified": true
+    },
+    {
+      "level": 487,
+      "hammer-cost": 375,
+      "verified": true
+    },
+    {
+      "level": 488,
+      "hammer-cost": 375,
+      "verified": true
+    },
+    {
+      "level": 489,
+      "hammer-cost": 375,
+      "verified": true
+    },
+    {
+      "level": 490,
+      "hammer-cost": 375,
+      "verified": true
+    },
+    {
+      "level": 491,
+      "hammer-cost": 375,
+      "verified": true
+    },
+    {
+      "level": 492,
+      "hammer-cost": 380,
+      "verified": true
+    },
+    {
+      "level": 493,
+      "hammer-cost": 380,
+      "verified": true
+    },
+    {
+      "level": 494,
+      "hammer-cost": 380,
+      "verified": true
+    },
+    {
+      "level": 495,
+      "hammer-cost": 380,
+      "verified": true
+    },
+    {
+      "level": 496,
+      "hammer-cost": 380,
+      "verified": true
+    },
+    {
+      "level": 497,
+      "hammer-cost": 380,
+      "verified": true
+    },
+    {
+      "level": 498,
+      "hammer-cost": 380,
+      "verified": true
+    },
+    {
+      "level": 499,
+      "hammer-cost": 385,
+      "verified": true
+    },
+    {
+      "level": 500,
+      "hammer-cost": 385,
+      "verified": true
+    },
+    {
+      "level": 501,
+      "hammer-cost": 385,
+      "verified": true
+    },
+    {
+      "level": 502,
+      "hammer-cost": 385,
+      "verified": true
+    },
+    {
+      "level": 503,
+      "hammer-cost": 385,
+      "verified": true
+    },
+    {
+      "level": 504,
+      "hammer-cost": 385,
+      "verified": true
+    },
+    {
+      "level": 505,
+      "hammer-cost": 385,
+      "verified": true
+    },
+    {
+      "level": 506,
+      "hammer-cost": 390,
+      "verified": true
+    },
+    {
+      "level": 507,
+      "hammer-cost": 390,
+      "verified": true
+    },
+    {
+      "level": 508,
+      "hammer-cost": 390,
+      "verified": true
+    },
+    {
+      "level": 509,
+      "hammer-cost": 390,
+      "verified": true
+    },
+    {
+      "level": 510,
+      "hammer-cost": 390,
+      "verified": true
+    },
+    {
+      "level": 511,
+      "hammer-cost": 390,
+      "verified": true
+    },
+    {
+      "level": 512,
+      "hammer-cost": 390,
+      "verified": true
+    },
+    {
+      "level": 513,
+      "hammer-cost": 390,
+      "verified": true
+    },
+    {
+      "level": 514,
+      "hammer-cost": 395,
+      "verified": true
+    },
+    {
+      "level": 515,
+      "hammer-cost": 395,
+      "verified": true
+    },
+    {
+      "level": 516,
+      "hammer-cost": 395,
+      "verified": true
+    },
+    {
+      "level": 517,
+      "hammer-cost": 395,
+      "verified": true
+    },
+    {
+      "level": 518,
+      "hammer-cost": 395,
+      "verified": true
+    },
+    {
+      "level": 519,
+      "hammer-cost": 395,
+      "verified": true
+    },
+    {
+      "level": 520,
+      "hammer-cost": 395,
+      "verified": true
+    },
+    {
+      "level": 521,
+      "hammer-cost": 400,
+      "verified": true
+    },
+    {
+      "level": 522,
+      "hammer-cost": 400,
+      "verified": true
+    },
+    {
+      "level": 523,
+      "hammer-cost": 400,
+      "verified": true
+    },
+    {
+      "level": 524,
+      "hammer-cost": 400,
+      "verified": true
+    },
+    {
+      "level": 525,
+      "hammer-cost": 400,
+      "verified": true
+    },
+    {
+      "level": 526,
+      "hammer-cost": 400,
+      "verified": true
+    },
+    {
+      "level": 527,
+      "hammer-cost": 400,
+      "verified": true
+    },
+    {
+      "level": 528,
+      "hammer-cost": 405,
+      "verified": true
+    },
+    {
+      "level": 529,
+      "hammer-cost": 405,
+      "verified": true
+    },
+    {
+      "level": 530,
+      "hammer-cost": 405,
+      "verified": true
+    },
+    {
+      "level": 531,
+      "hammer-cost": 405,
+      "verified": true
+    },
+    {
+      "level": 532,
+      "hammer-cost": 405,
+      "verified": true
+    },
+    {
+      "level": 533,
+      "hammer-cost": 405,
+      "verified": true
+    },
+    {
+      "level": 534,
+      "hammer-cost": 405,
+      "verified": true
+    },
+    {
+      "level": 535,
+      "hammer-cost": 405,
+      "verified": true
+    },
+    {
+      "level": 536,
+      "hammer-cost": 410,
+      "verified": true
+    },
+    {
+      "level": 537,
+      "hammer-cost": 410,
+      "verified": true
+    },
+    {
+      "level": 538,
+      "hammer-cost": 410,
+      "verified": true
+    },
+    {
+      "level": 539,
+      "hammer-cost": 410,
+      "verified": true
+    },
+    {
+      "level": 540,
+      "hammer-cost": 410,
+      "verified": true
+    },
+    {
+      "level": 541,
+      "hammer-cost": 410,
+      "verified": true
+    },
+    {
+      "level": 542,
+      "hammer-cost": 410,
+      "verified": true
+    },
+    {
+      "level": 543,
+      "hammer-cost": 415,
+      "verified": true
+    },
+    {
+      "level": 544,
+      "hammer-cost": 415,
+      "verified": true
+    },
+    {
+      "level": 545,
+      "hammer-cost": 415,
+      "verified": true
+    },
+    {
+      "level": 546,
+      "hammer-cost": 415,
+      "verified": true
+    },
+    {
+      "level": 547,
+      "hammer-cost": 415,
+      "verified": true
+    },
+    {
+      "level": 548,
+      "hammer-cost": 415,
+      "verified": true
+    },
+    {
+      "level": 549,
+      "hammer-cost": 415,
+      "verified": true
+    },
+    {
+      "level": 550,
+      "hammer-cost": 420,
+      "verified": true
+    },
+    {
+      "level": 551,
+      "hammer-cost": 420,
+      "verified": true
+    },
+    {
+      "level": 552,
+      "hammer-cost": 420,
+      "verified": true
+    },
+    {
+      "level": 553,
+      "hammer-cost": 420,
+      "verified": true
+    },
+    {
+      "level": 554,
+      "hammer-cost": 420,
+      "verified": true
+    },
+    {
+      "level": 555,
+      "hammer-cost": 420,
+      "verified": true
+    },
+    {
+      "level": 556,
+      "hammer-cost": 420,
+      "verified": true
+    },
+    {
+      "level": 557,
+      "hammer-cost": 420,
+      "verified": true
+    },
+    {
+      "level": 558,
+      "hammer-cost": 425,
+      "verified": true
+    },
+    {
+      "level": 559,
+      "hammer-cost": 425,
+      "verified": true
+    },
+    {
+      "level": 560,
+      "hammer-cost": 425,
+      "verified": true
+    },
+    {
+      "level": 561,
+      "hammer-cost": 425,
+      "verified": true
+    },
+    {
+      "level": 562,
+      "hammer-cost": 425,
+      "verified": true
+    },
+    {
+      "level": 563,
+      "hammer-cost": 425,
+      "verified": true
+    },
+    {
+      "level": 564,
+      "hammer-cost": 425,
+      "verified": true
+    },
+    {
+      "level": 565,
+      "hammer-cost": 430,
+      "verified": true
+    },
+    {
+      "level": 566,
+      "hammer-cost": 430,
+      "verified": true
+    },
+    {
+      "level": 567,
+      "hammer-cost": 430,
+      "verified": true
+    },
+    {
+      "level": 568,
+      "hammer-cost": 430,
+      "verified": true
+    },
+    {
+      "level": 569,
+      "hammer-cost": 430,
+      "verified": true
+    },
+    {
+      "level": 570,
+      "hammer-cost": 430,
+      "verified": true
+    },
+    {
+      "level": 571,
+      "hammer-cost": 430,
+      "verified": true
+    },
+    {
+      "level": 572,
+      "hammer-cost": 435,
+      "verified": true
+    },
+    {
+      "level": 573,
+      "hammer-cost": 435,
+      "verified": true
+    },
+    {
+      "level": 574,
+      "hammer-cost": 435,
+      "verified": true
+    },
+    {
+      "level": 575,
+      "hammer-cost": 435,
+      "verified": true
+    },
+    {
+      "level": 576,
+      "hammer-cost": 435,
+      "verified": true
+    },
+    {
+      "level": 577,
+      "hammer-cost": 435,
+      "verified": true
+    },
+    {
+      "level": 578,
+      "hammer-cost": 435,
+      "verified": true
+    },
+    {
+      "level": 579,
+      "hammer-cost": 435,
+      "verified": true
+    },
+    {
+      "level": 580,
+      "hammer-cost": 440,
+      "verified": true
+    },
+    {
+      "level": 581,
+      "hammer-cost": 440,
+      "verified": true
+    },
+    {
+      "level": 582,
+      "hammer-cost": 440,
+      "verified": true
+    },
+    {
+      "level": 583,
+      "hammer-cost": 440,
+      "verified": true
+    },
+    {
+      "level": 584,
+      "hammer-cost": 440,
+      "verified": true
+    },
+    {
+      "level": 585,
+      "hammer-cost": 440,
+      "verified": true
+    },
+    {
+      "level": 586,
+      "hammer-cost": 440,
+      "verified": true
+    },
+    {
+      "level": 587,
+      "hammer-cost": 445,
+      "verified": true
+    },
+    {
+      "level": 588,
+      "hammer-cost": 445,
+      "verified": true
+    },
+    {
+      "level": 589,
+      "hammer-cost": 445,
+      "verified": true
+    },
+    {
+      "level": 590,
+      "hammer-cost": 445,
+      "verified": true
+    },
+    {
+      "level": 591,
+      "hammer-cost": 445,
+      "verified": true
+    },
+    {
+      "level": 592,
+      "hammer-cost": 445,
+      "verified": true
+    },
+    {
+      "level": 593,
+      "hammer-cost": 445,
+      "verified": true
+    },
+    {
+      "level": 594,
+      "hammer-cost": 445,
+      "verified": true
+    },
+    {
+      "level": 595,
+      "hammer-cost": 450,
+      "verified": true
+    },
+    {
+      "level": 596,
+      "hammer-cost": 450,
+      "verified": true
+    },
+    {
+      "level": 597,
+      "hammer-cost": 450,
+      "verified": true
+    },
+    {
+      "level": 598,
+      "hammer-cost": 450,
+      "verified": true
+    },
+    {
+      "level": 599,
+      "hammer-cost": 450,
+      "verified": true
+    },
+    {
+      "level": 600,
+      "hammer-cost": 450,
+      "verified": true
+    },
+    {
+      "level": 601,
+      "hammer-cost": 450,
+      "verified": true
+    },
+    {
+      "level": 602,
+      "hammer-cost": 455,
+      "verified": true
+    },
+    {
+      "level": 603,
+      "hammer-cost": 455,
+      "verified": true
+    },
+    {
+      "level": 604,
+      "hammer-cost": 455,
+      "verified": true
+    },
+    {
+      "level": 605,
+      "hammer-cost": 455,
+      "verified": true
+    },
+    {
+      "level": 606,
+      "hammer-cost": 455,
+      "verified": true
+    },
+    {
+      "level": 607,
+      "hammer-cost": 455,
+      "verified": true
+    },
+    {
+      "level": 608,
+      "hammer-cost": 455,
+      "verified": true
+    },
+    {
+      "level": 609,
+      "hammer-cost": 455,
+      "verified": true
+    },
+    {
+      "level": 610,
+      "hammer-cost": 460,
+      "verified": true
+    },
+    {
+      "level": 611,
+      "hammer-cost": 460,
+      "verified": true
+    },
+    {
+      "level": 612,
+      "hammer-cost": 460,
+      "verified": true
+    },
+    {
+      "level": 613,
+      "hammer-cost": 460,
+      "verified": true
+    },
+    {
+      "level": 614,
+      "hammer-cost": 460,
+      "verified": true
+    },
+    {
+      "level": 615,
+      "hammer-cost": 460,
+      "verified": true
+    },
+    {
+      "level": 616,
+      "hammer-cost": 460,
+      "verified": true
+    },
+    {
+      "level": 617,
+      "hammer-cost": 465,
+      "verified": true
+    },
+    {
+      "level": 618,
+      "hammer-cost": 465,
+      "verified": true
+    },
+    {
+      "level": 619,
+      "hammer-cost": 465,
+      "verified": true
+    },
+    {
+      "level": 620,
+      "hammer-cost": 465,
+      "verified": true
+    },
+    {
+      "level": 621,
+      "hammer-cost": 465,
+      "verified": true
+    },
+    {
+      "level": 622,
+      "hammer-cost": 465,
+      "verified": true
+    },
+    {
+      "level": 623,
+      "hammer-cost": 465,
+      "verified": true
+    },
+    {
+      "level": 624,
+      "hammer-cost": 465,
+      "verified": true
+    },
+    {
+      "level": 625,
+      "hammer-cost": 470,
+      "verified": true
+    },
+    {
+      "level": 626,
+      "hammer-cost": 470,
+      "verified": true
+    },
+    {
+      "level": 627,
+      "hammer-cost": 470,
+      "verified": true
+    },
+    {
+      "level": 628,
+      "hammer-cost": 470,
+      "verified": true
+    },
+    {
+      "level": 629,
+      "hammer-cost": 470,
+      "verified": true
+    },
+    {
+      "level": 630,
+      "hammer-cost": 470,
+      "verified": true
+    },
+    {
+      "level": 631,
+      "hammer-cost": 470,
+      "verified": true
+    },
+    {
+      "level": 632,
+      "hammer-cost": 475,
+      "verified": true
+    },
+    {
+      "level": 633,
+      "hammer-cost": 475,
+      "verified": true
+    },
+    {
+      "level": 634,
+      "hammer-cost": 475,
+      "verified": true
+    },
+    {
+      "level": 635,
+      "hammer-cost": 475,
+      "verified": true
+    },
+    {
+      "level": 636,
+      "hammer-cost": 475,
+      "verified": true
+    },
+    {
+      "level": 637,
+      "hammer-cost": 475,
+      "verified": true
+    },
+    {
+      "level": 638,
+      "hammer-cost": 475,
+      "verified": true
+    },
+    {
+      "level": 639,
+      "hammer-cost": 480,
+      "verified": true
+    },
+    {
+      "level": 640,
+      "hammer-cost": 480,
+      "verified": true
+    },
+    {
+      "level": 641,
+      "hammer-cost": 480,
+      "verified": true
+    },
+    {
+      "level": 642,
+      "hammer-cost": 480,
+      "verified": true
+    },
+    {
+      "level": 643,
+      "hammer-cost": 480,
+      "verified": true
+    },
+    {
+      "level": 644,
+      "hammer-cost": 480,
+      "verified": true
+    },
+    {
+      "level": 645,
+      "hammer-cost": 480,
+      "verified": true
+    },
+    {
+      "level": 646,
+      "hammer-cost": 480,
+      "verified": true
+    },
+    {
+      "level": 647,
+      "hammer-cost": 485,
+      "verified": true
+    },
+    {
+      "level": 648,
+      "hammer-cost": 485,
+      "verified": true
+    },
+    {
+      "level": 649,
+      "hammer-cost": 485,
+      "verified": true
+    },
+    {
+      "level": 650,
+      "hammer-cost": 485,
+      "verified": true
+    },
+    {
+      "level": 651,
+      "hammer-cost": 485,
+      "verified": true
+    },
+    {
+      "level": 652,
+      "hammer-cost": 485,
+      "verified": true
+    },
+    {
+      "level": 653,
+      "hammer-cost": 485,
+      "verified": true
+    },
+    {
+      "level": 654,
+      "hammer-cost": 490,
+      "verified": true
+    },
+    {
+      "level": 655,
+      "hammer-cost": 490,
+      "verified": true
+    },
+    {
+      "level": 656,
+      "hammer-cost": 490,
+      "verified": true
+    },
+    {
+      "level": 657,
+      "hammer-cost": 490,
+      "verified": true
+    },
+    {
+      "level": 658,
+      "hammer-cost": 490,
+      "verified": true
+    },
+    {
+      "level": 659,
+      "hammer-cost": 490,
+      "verified": true
+    },
+    {
+      "level": 660,
+      "hammer-cost": 490,
+      "verified": true
+    },
+    {
+      "level": 661,
+      "hammer-cost": 490,
+      "verified": true
+    },
+    {
+      "level": 662,
+      "hammer-cost": 495,
+      "verified": true
+    },
+    {
+      "level": 663,
+      "hammer-cost": 495,
+      "verified": true
+    },
+    {
+      "level": 664,
+      "hammer-cost": 495,
+      "verified": true
+    },
+    {
+      "level": 665,
+      "hammer-cost": 495,
+      "verified": true
+    },
+    {
+      "level": 666,
+      "hammer-cost": 495,
+      "verified": true
+    },
+    {
+      "level": 667,
+      "hammer-cost": 495,
+      "verified": true
+    },
+    {
+      "level": 668,
+      "hammer-cost": 495,
+      "verified": true
+    },
+    {
+      "level": 669,
+      "hammer-cost": 500,
+      "verified": true
+    },
+    {
+      "level": 670,
+      "hammer-cost": 500,
+      "verified": true
+    },
+    {
+      "level": 671,
+      "hammer-cost": 500,
+      "verified": true
+    },
+    {
+      "level": 672,
+      "hammer-cost": 500,
+      "verified": true
+    },
+    {
+      "level": 673,
+      "hammer-cost": 500,
+      "verified": true
+    },
+    {
+      "level": 674,
+      "hammer-cost": 500,
+      "verified": true
+    },
+    {
+      "level": 675,
+      "hammer-cost": 500,
+      "verified": true
+    },
+    {
+      "level": 676,
+      "hammer-cost": 500,
+      "verified": true
+    },
+    {
+      "level": 677,
+      "hammer-cost": 505,
+      "verified": true
+    },
+    {
+      "level": 678,
+      "hammer-cost": 505,
+      "verified": true
+    },
+    {
+      "level": 679,
+      "hammer-cost": 505,
+      "verified": true
+    },
+    {
+      "level": 680,
+      "hammer-cost": 505,
+      "verified": true
+    },
+    {
+      "level": 681,
+      "hammer-cost": 505,
+      "verified": true
+    },
+    {
+      "level": 682,
+      "hammer-cost": 505,
+      "verified": true
+    },
+    {
+      "level": 683,
+      "hammer-cost": 505,
+      "verified": true
+    },
+    {
+      "level": 684,
+      "hammer-cost": 505,
+      "verified": true
+    },
+    {
+      "level": 685,
+      "hammer-cost": 510,
+      "verified": true
+    },
+    {
+      "level": 686,
+      "hammer-cost": 510,
+      "verified": true
+    },
+    {
+      "level": 687,
+      "hammer-cost": 510,
+      "verified": true
+    },
+    {
+      "level": 688,
+      "hammer-cost": 510,
+      "verified": true
+    },
+    {
+      "level": 689,
+      "hammer-cost": 510,
+      "verified": true
+    },
+    {
+      "level": 690,
+      "hammer-cost": 510,
+      "verified": true
+    },
+    {
+      "level": 691,
+      "hammer-cost": 510,
+      "verified": true
+    },
+    {
+      "level": 692,
+      "hammer-cost": 515,
+      "verified": true
+    },
+    {
+      "level": 693,
+      "hammer-cost": 515,
+      "verified": true
+    },
+    {
+      "level": 694,
+      "hammer-cost": 515,
+      "verified": true
+    },
+    {
+      "level": 695,
+      "hammer-cost": 515,
+      "verified": true
+    },
+    {
+      "level": 696,
+      "hammer-cost": 515,
+      "verified": true
+    },
+    {
+      "level": 697,
+      "hammer-cost": 515,
+      "verified": true
+    },
+    {
+      "level": 698,
+      "hammer-cost": 515,
+      "verified": true
+    },
+    {
+      "level": 699,
+      "hammer-cost": 515,
+      "verified": true
+    },
+    {
+      "level": 700,
+      "hammer-cost": 520,
+      "verified": true
+    },
+    {
+      "level": 701,
+      "hammer-cost": 520,
+      "verified": true
+    },
+    {
+      "level": 702,
+      "hammer-cost": 520,
+      "verified": true
+    },
+    {
+      "level": 703,
+      "hammer-cost": 520,
+      "verified": true
+    },
+    {
+      "level": 704,
+      "hammer-cost": 520,
+      "verified": true
+    },
+    {
+      "level": 705,
+      "hammer-cost": 520,
+      "verified": true
+    },
+    {
+      "level": 706,
+      "hammer-cost": 520,
+      "verified": true
+    },
+    {
+      "level": 707,
+      "hammer-cost": 525,
+      "verified": true
+    },
+    {
+      "level": 708,
+      "hammer-cost": 525,
+      "verified": true
+    },
+    {
+      "level": 709,
+      "hammer-cost": 525,
+      "verified": true
+    },
+    {
+      "level": 710,
+      "hammer-cost": 525,
+      "verified": true
+    },
+    {
+      "level": 711,
+      "hammer-cost": 525,
+      "verified": true
+    },
+    {
+      "level": 712,
+      "hammer-cost": 525,
+      "verified": true
+    },
+    {
+      "level": 713,
+      "hammer-cost": 525,
+      "verified": true
+    },
+    {
+      "level": 714,
+      "hammer-cost": 525,
+      "verified": true
+    },
+    {
+      "level": 715,
+      "hammer-cost": 530,
+      "verified": true
+    },
+    {
+      "level": 716,
+      "hammer-cost": 530,
+      "verified": true
+    },
+    {
+      "level": 717,
+      "hammer-cost": 530,
+      "verified": true
+    },
+    {
+      "level": 718,
+      "hammer-cost": 530,
+      "verified": true
+    },
+    {
+      "level": 719,
+      "hammer-cost": 530,
+      "verified": true
+    },
+    {
+      "level": 720,
+      "hammer-cost": 530,
+      "verified": true
+    },
+    {
+      "level": 721,
+      "hammer-cost": 530,
+      "verified": true
+    },
+    {
+      "level": 722,
+      "hammer-cost": 535,
+      "verified": true
+    },
+    {
+      "level": 723,
+      "hammer-cost": 535,
+      "verified": true
+    },
+    {
+      "level": 724,
+      "hammer-cost": 535,
+      "verified": true
+    },
+    {
+      "level": 725,
+      "hammer-cost": 535,
+      "verified": true
+    },
+    {
+      "level": 726,
+      "hammer-cost": 535,
+      "verified": true
+    },
+    {
+      "level": 727,
+      "hammer-cost": 535,
+      "verified": true
+    },
+    {
+      "level": 728,
+      "hammer-cost": 535,
+      "verified": true
+    },
+    {
+      "level": 729,
+      "hammer-cost": 535,
+      "verified": true
+    },
+    {
+      "level": 730,
+      "hammer-cost": 540,
+      "verified": true
+    },
+    {
+      "level": 731,
+      "hammer-cost": 540,
+      "verified": true
+    },
+    {
+      "level": 732,
+      "hammer-cost": 540,
+      "verified": true
+    },
+    {
+      "level": 733,
+      "hammer-cost": 540,
+      "verified": true
+    },
+    {
+      "level": 734,
+      "hammer-cost": 540,
+      "verified": true
+    },
+    {
+      "level": 735,
+      "hammer-cost": 540,
+      "verified": true
+    },
+    {
+      "level": 736,
+      "hammer-cost": 540,
+      "verified": true
+    },
+    {
+      "level": 737,
+      "hammer-cost": 545,
+      "verified": true
+    },
+    {
+      "level": 738,
+      "hammer-cost": 545,
+      "verified": true
+    },
+    {
+      "level": 739,
+      "hammer-cost": 545,
+      "verified": true
+    },
+    {
+      "level": 740,
+      "hammer-cost": 545,
+      "verified": true
+    },
+    {
+      "level": 741,
+      "hammer-cost": 545,
+      "verified": true
+    },
+    {
+      "level": 742,
+      "hammer-cost": 545,
+      "verified": true
+    },
+    {
+      "level": 743,
+      "hammer-cost": 545,
+      "verified": true
+    },
+    {
+      "level": 744,
+      "hammer-cost": 545,
+      "verified": true
+    },
+    {
+      "level": 745,
+      "hammer-cost": 550,
+      "verified": true
+    },
+    {
+      "level": 746,
+      "hammer-cost": 550,
+      "verified": true
+    },
+    {
+      "level": 747,
+      "hammer-cost": 550,
+      "verified": true
+    },
+    {
+      "level": 748,
+      "hammer-cost": 550,
+      "verified": true
+    },
+    {
+      "level": 749,
+      "hammer-cost": 550,
+      "verified": true
+    },
+    {
+      "level": 750,
+      "hammer-cost": 550,
+      "verified": true
+    },
+    {
+      "level": 751,
+      "hammer-cost": 550,
+      "verified": true
+    },
+    {
+      "level": 752,
+      "hammer-cost": 550,
+      "verified": true
+    },
+    {
+      "level": 753,
+      "hammer-cost": 555,
+      "verified": true
+    },
+    {
+      "level": 754,
+      "hammer-cost": 555,
+      "verified": true
+    },
+    {
+      "level": 755,
+      "hammer-cost": 555,
+      "verified": true
+    },
+    {
+      "level": 756,
+      "hammer-cost": 555,
+      "verified": true
+    },
+    {
+      "level": 757,
+      "hammer-cost": 555,
+      "verified": true
+    },
+    {
+      "level": 758,
+      "hammer-cost": 555,
+      "verified": true
+    },
+    {
+      "level": 759,
+      "hammer-cost": 555,
+      "verified": true
+    },
+    {
+      "level": 760,
+      "hammer-cost": 560,
+      "verified": true
+    },
+    {
+      "level": 761,
+      "hammer-cost": 560,
+      "verified": true
+    },
+    {
+      "level": 762,
+      "hammer-cost": 560,
+      "verified": true
+    },
+    {
+      "level": 763,
+      "hammer-cost": 560,
+      "verified": true
+    },
+    {
+      "level": 764,
+      "hammer-cost": 560,
+      "verified": true
+    },
+    {
+      "level": 765,
+      "hammer-cost": 560,
+      "verified": true
+    },
+    {
+      "level": 766,
+      "hammer-cost": 560,
+      "verified": true
+    },
+    {
+      "level": 767,
+      "hammer-cost": 560,
+      "verified": true
+    },
+    {
+      "level": 768,
+      "hammer-cost": 565,
+      "verified": true
+    },
+    {
+      "level": 769,
+      "hammer-cost": 565,
+      "verified": true
+    },
+    {
+      "level": 770,
+      "hammer-cost": 565,
+      "verified": true
+    },
+    {
+      "level": 771,
+      "hammer-cost": 565,
+      "verified": true
+    },
+    {
+      "level": 772,
+      "hammer-cost": 565,
+      "verified": true
+    },
+    {
+      "level": 773,
+      "hammer-cost": 565,
+      "verified": true
+    },
+    {
+      "level": 774,
+      "hammer-cost": 565,
+      "verified": true
+    },
+    {
+      "level": 775,
+      "hammer-cost": 565,
+      "verified": true
+    },
+    {
+      "level": 776,
+      "hammer-cost": 570,
+      "verified": true
+    },
+    {
+      "level": 777,
+      "hammer-cost": 570,
+      "verified": true
+    },
+    {
+      "level": 778,
+      "hammer-cost": 570,
+      "verified": true
+    },
+    {
+      "level": 779,
+      "hammer-cost": 570,
+      "verified": true
+    },
+    {
+      "level": 780,
+      "hammer-cost": 570,
+      "verified": true
+    },
+    {
+      "level": 781,
+      "hammer-cost": 570,
+      "verified": true
+    },
+    {
+      "level": 782,
+      "hammer-cost": 570,
+      "verified": true
+    },
+    {
+      "level": 783,
+      "hammer-cost": 575,
+      "verified": true
+    },
+    {
+      "level": 784,
+      "hammer-cost": 575,
+      "verified": true
+    },
+    {
+      "level": 785,
+      "hammer-cost": 575,
+      "verified": true
+    },
+    {
+      "level": 786,
+      "hammer-cost": 575,
+      "verified": true
+    },
+    {
+      "level": 787,
+      "hammer-cost": 575,
+      "verified": true
+    },
+    {
+      "level": 788,
+      "hammer-cost": 575,
+      "verified": true
+    },
+    {
+      "level": 789,
+      "hammer-cost": 575,
+      "verified": true
+    },
+    {
+      "level": 790,
+      "hammer-cost": 575,
+      "verified": true
+    },
+    {
+      "level": 791,
+      "hammer-cost": 580,
+      "verified": true
+    },
+    {
+      "level": 792,
+      "hammer-cost": 580,
+      "verified": true
+    },
+    {
+      "level": 793,
+      "hammer-cost": 580,
+      "verified": true
+    },
+    {
+      "level": 794,
+      "hammer-cost": 580,
+      "verified": true
+    },
+    {
+      "level": 795,
+      "hammer-cost": 580,
+      "verified": true
+    },
+    {
+      "level": 796,
+      "hammer-cost": 580,
+      "verified": true
+    },
+    {
+      "level": 797,
+      "hammer-cost": 580,
+      "verified": true
+    },
+    {
+      "level": 798,
+      "hammer-cost": 585,
+      "verified": false
+    },
+    {
+      "level": 799,
+      "hammer-cost": 585,
+      "verified": false
+    },
+    {
+      "level": 800,
+      "hammer-cost": 585,
+      "verified": false
+    },
+    {
+      "level": 801,
+      "hammer-cost": 585,
+      "verified": false
+    },
+    {
+      "level": 802,
+      "hammer-cost": 585,
+      "verified": false
+    },
+    {
+      "level": 803,
+      "hammer-cost": 585,
+      "verified": false
+    },
+    {
+      "level": 804,
+      "hammer-cost": 585,
+      "verified": false
+    },
+    {
+      "level": 805,
+      "hammer-cost": 585,
+      "verified": false
+    },
+    {
+      "level": 806,
+      "hammer-cost": 590,
+      "verified": true
+    },
+    {
+      "level": 807,
+      "hammer-cost": 590,
+      "verified": true
+    },
+    {
+      "level": 808,
+      "hammer-cost": 590,
+      "verified": true
+    },
+    {
+      "level": 809,
+      "hammer-cost": 590,
+      "verified": true
+    },
+    {
+      "level": 810,
+      "hammer-cost": 590,
+      "verified": true
+    },
+    {
+      "level": 811,
+      "hammer-cost": 590,
+      "verified": true
+    },
+    {
+      "level": 812,
+      "hammer-cost": 590,
+      "verified": true
+    },
+    {
+      "level": 813,
+      "hammer-cost": 590,
+      "verified": true
+    },
+    {
+      "level": 814,
+      "hammer-cost": 595,
+      "verified": true
+    },
+    {
+      "level": 815,
+      "hammer-cost": 595,
+      "verified": true
+    },
+    {
+      "level": 816,
+      "hammer-cost": 595,
+      "verified": true
+    },
+    {
+      "level": 817,
+      "hammer-cost": 595,
+      "verified": true
+    },
+    {
+      "level": 818,
+      "hammer-cost": 595,
+      "verified": true
+    },
+    {
+      "level": 819,
+      "hammer-cost": 595,
+      "verified": true
+    },
+    {
+      "level": 820,
+      "hammer-cost": 595,
+      "verified": true
+    },
+    {
+      "level": 821,
+      "hammer-cost": 600,
+      "verified": true
+    },
+    {
+      "level": 822,
+      "hammer-cost": 600,
+      "verified": true
+    },
+    {
+      "level": 823,
+      "hammer-cost": 600,
+      "verified": true
+    },
+    {
+      "level": 824,
+      "hammer-cost": 600,
+      "verified": true
+    },
+    {
+      "level": 825,
+      "hammer-cost": 600,
+      "verified": true
+    },
+    {
+      "level": 826,
+      "hammer-cost": 600,
+      "verified": true
+    },
+    {
+      "level": 827,
+      "hammer-cost": 600,
+      "verified": true
+    },
+    {
+      "level": 828,
+      "hammer-cost": 600,
+      "verified": true
+    },
+    {
+      "level": 829,
+      "hammer-cost": 605,
+      "verified": true
+    },
+    {
+      "level": 830,
+      "hammer-cost": 605,
+      "verified": true
+    },
+    {
+      "level": 831,
+      "hammer-cost": 605,
+      "verified": true
+    },
+    {
+      "level": 832,
+      "hammer-cost": 605,
+      "verified": true
+    },
+    {
+      "level": 833,
+      "hammer-cost": 605,
+      "verified": true
+    },
+    {
+      "level": 834,
+      "hammer-cost": 605,
+      "verified": true
+    },
+    {
+      "level": 835,
+      "hammer-cost": 605,
+      "verified": true
+    },
+    {
+      "level": 836,
+      "hammer-cost": 605,
+      "verified": true
+    },
+    {
+      "level": 837,
+      "hammer-cost": 610,
+      "verified": true
+    },
+    {
+      "level": 838,
+      "hammer-cost": 610,
+      "verified": true
+    },
+    {
+      "level": 839,
+      "hammer-cost": 610,
+      "verified": true
+    },
+    {
+      "level": 840,
+      "hammer-cost": 610,
+      "verified": true
+    },
+    {
+      "level": 841,
+      "hammer-cost": 610,
+      "verified": true
+    },
+    {
+      "level": 842,
+      "hammer-cost": 610,
+      "verified": true
+    },
+    {
+      "level": 843,
+      "hammer-cost": 610,
+      "verified": true
+    },
+    {
+      "level": 844,
+      "hammer-cost": 610,
+      "verified": true
+    },
+    {
+      "level": 845,
+      "hammer-cost": 615,
+      "verified": true
+    },
+    {
+      "level": 846,
+      "hammer-cost": 615,
+      "verified": true
+    },
+    {
+      "level": 847,
+      "hammer-cost": 615,
+      "verified": true
+    },
+    {
+      "level": 848,
+      "hammer-cost": 615,
+      "verified": true
+    },
+    {
+      "level": 849,
+      "hammer-cost": 615,
+      "verified": true
+    },
+    {
+      "level": 850,
+      "hammer-cost": 615,
+      "verified": true
+    },
+    {
+      "level": 851,
+      "hammer-cost": 615,
+      "verified": true
+    },
+    {
+      "level": 852,
+      "hammer-cost": 620,
+      "verified": true
+    },
+    {
+      "level": 853,
+      "hammer-cost": 620,
+      "verified": true
+    },
+    {
+      "level": 854,
+      "hammer-cost": 620,
+      "verified": true
+    },
+    {
+      "level": 855,
+      "hammer-cost": 620,
+      "verified": true
+    },
+    {
+      "level": 856,
+      "hammer-cost": 620,
+      "verified": true
+    },
+    {
+      "level": 857,
+      "hammer-cost": 620,
+      "verified": true
+    },
+    {
+      "level": 858,
+      "hammer-cost": 620,
+      "verified": true
+    },
+    {
+      "level": 859,
+      "hammer-cost": 620,
+      "verified": true
+    },
+    {
+      "level": 860,
+      "hammer-cost": 625,
+      "verified": true
+    },
+    {
+      "level": 861,
+      "hammer-cost": 625,
+      "verified": true
+    },
+    {
+      "level": 862,
+      "hammer-cost": 625,
+      "verified": true
+    },
+    {
+      "level": 863,
+      "hammer-cost": 625,
+      "verified": true
+    },
+    {
+      "level": 864,
+      "hammer-cost": 625,
+      "verified": true
+    },
+    {
+      "level": 865,
+      "hammer-cost": 625,
+      "verified": true
+    },
+    {
+      "level": 866,
+      "hammer-cost": 625,
+      "verified": true
+    },
+    {
+      "level": 867,
+      "hammer-cost": 625,
+      "verified": true
+    },
+    {
+      "level": 868,
+      "hammer-cost": 630,
+      "verified": true
+    },
+    {
+      "level": 869,
+      "hammer-cost": 630,
+      "verified": true
+    },
+    {
+      "level": 870,
+      "hammer-cost": 630,
+      "verified": true
+    },
+    {
+      "level": 871,
+      "hammer-cost": 630,
+      "verified": true
+    },
+    {
+      "level": 872,
+      "hammer-cost": 630,
+      "verified": true
+    },
+    {
+      "level": 873,
+      "hammer-cost": 630,
+      "verified": true
+    },
+    {
+      "level": 874,
+      "hammer-cost": 630,
+      "verified": true
+    },
+    {
+      "level": 875,
+      "hammer-cost": 635,
+      "verified": true
+    },
+    {
+      "level": 876,
+      "hammer-cost": 635,
+      "verified": true
+    },
+    {
+      "level": 877,
+      "hammer-cost": 635,
+      "verified": false
+    },
+    {
+      "level": 878,
+      "hammer-cost": 635,
+      "verified": false
+    },
+    {
+      "level": 879,
+      "hammer-cost": 635,
+      "verified": false
+    },
+    {
+      "level": 880,
+      "hammer-cost": 635,
+      "verified": false
+    },
+    {
+      "level": 881,
+      "hammer-cost": 635,
+      "verified": false
+    },
+    {
+      "level": 882,
+      "hammer-cost": 635,
+      "verified": false
+    },
+    {
+      "level": 883,
+      "hammer-cost": 640,
+      "verified": false
+    },
+    {
+      "level": 884,
+      "hammer-cost": 640,
+      "verified": false
+    },
+    {
+      "level": 885,
+      "hammer-cost": 640,
+      "verified": false
+    },
+    {
+      "level": 886,
+      "hammer-cost": 640,
+      "verified": false
+    },
+    {
+      "level": 887,
+      "hammer-cost": 640,
+      "verified": false
+    },
+    {
+      "level": 888,
+      "hammer-cost": 640,
+      "verified": false
+    },
+    {
+      "level": 889,
+      "hammer-cost": 640,
+      "verified": false
+    },
+    {
+      "level": 890,
+      "hammer-cost": 640,
+      "verified": false
+    },
+    {
+      "level": 891,
+      "hammer-cost": 645,
+      "verified": false
+    },
+    {
+      "level": 892,
+      "hammer-cost": 645,
+      "verified": false
+    },
+    {
+      "level": 893,
+      "hammer-cost": 645,
+      "verified": false
+    },
+    {
+      "level": 894,
+      "hammer-cost": 645,
+      "verified": false
+    },
+    {
+      "level": 895,
+      "hammer-cost": 645,
+      "verified": false
+    },
+    {
+      "level": 896,
+      "hammer-cost": 645,
+      "verified": false
+    },
+    {
+      "level": 897,
+      "hammer-cost": 645,
+      "verified": false
+    },
+    {
+      "level": 898,
+      "hammer-cost": 650,
+      "verified": false
+    },
+    {
+      "level": 899,
+      "hammer-cost": 650,
+      "verified": false
+    },
+    {
+      "level": 900,
+      "hammer-cost": 650,
+      "verified": false
+    },
+    {
+      "level": 901,
+      "hammer-cost": 650,
+      "verified": false
+    },
+    {
+      "level": 902,
+      "hammer-cost": 650,
+      "verified": false
+    },
+    {
+      "level": 903,
+      "hammer-cost": 650,
+      "verified": false
+    },
+    {
+      "level": 904,
+      "hammer-cost": 650,
+      "verified": false
+    },
+    {
+      "level": 905,
+      "hammer-cost": 650,
+      "verified": false
+    },
+    {
+      "level": 906,
+      "hammer-cost": 655,
+      "verified": false
+    },
+    {
+      "level": 907,
+      "hammer-cost": 655,
+      "verified": false
+    },
+    {
+      "level": 908,
+      "hammer-cost": 655,
+      "verified": false
+    },
+    {
+      "level": 909,
+      "hammer-cost": 655,
+      "verified": false
+    },
+    {
+      "level": 910,
+      "hammer-cost": 655,
+      "verified": false
+    },
+    {
+      "level": 911,
+      "hammer-cost": 655,
+      "verified": false
+    },
+    {
+      "level": 912,
+      "hammer-cost": 655,
+      "verified": false
+    },
+    {
+      "level": 913,
+      "hammer-cost": 655,
+      "verified": false
+    },
+    {
+      "level": 914,
+      "hammer-cost": 660,
+      "verified": false
+    },
+    {
+      "level": 915,
+      "hammer-cost": 660,
+      "verified": false
+    },
+    {
+      "level": 916,
+      "hammer-cost": 660,
+      "verified": false
+    },
+    {
+      "level": 917,
+      "hammer-cost": 660,
+      "verified": false
+    },
+    {
+      "level": 918,
+      "hammer-cost": 660,
+      "verified": false
+    },
+    {
+      "level": 919,
+      "hammer-cost": 660,
+      "verified": false
+    },
+    {
+      "level": 920,
+      "hammer-cost": 660,
+      "verified": false
+    },
+    {
+      "level": 921,
+      "hammer-cost": 665,
+      "verified": false
+    },
+    {
+      "level": 922,
+      "hammer-cost": 665,
+      "verified": false
+    },
+    {
+      "level": 923,
+      "hammer-cost": 665,
+      "verified": false
+    },
+    {
+      "level": 924,
+      "hammer-cost": 665,
+      "verified": false
+    },
+    {
+      "level": 925,
+      "hammer-cost": 665,
+      "verified": false
+    },
+    {
+      "level": 926,
+      "hammer-cost": 665,
+      "verified": false
+    },
+    {
+      "level": 927,
+      "hammer-cost": 665,
+      "verified": false
+    },
+    {
+      "level": 928,
+      "hammer-cost": 665,
+      "verified": false
+    },
+    {
+      "level": 929,
+      "hammer-cost": 670,
+      "verified": false
+    },
+    {
+      "level": 930,
+      "hammer-cost": 670,
+      "verified": false
+    },
+    {
+      "level": 931,
+      "hammer-cost": 670,
+      "verified": false
+    },
+    {
+      "level": 932,
+      "hammer-cost": 670,
+      "verified": false
+    },
+    {
+      "level": 933,
+      "hammer-cost": 670,
+      "verified": false
+    },
+    {
+      "level": 934,
+      "hammer-cost": 670,
+      "verified": false
+    },
+    {
+      "level": 935,
+      "hammer-cost": 670,
+      "verified": false
+    },
+    {
+      "level": 936,
+      "hammer-cost": 670,
+      "verified": false
+    },
+    {
+      "level": 937,
+      "hammer-cost": 675,
+      "verified": false
+    },
+    {
+      "level": 938,
+      "hammer-cost": 675,
+      "verified": false
+    },
+    {
+      "level": 939,
+      "hammer-cost": 675,
+      "verified": false
+    },
+    {
+      "level": 940,
+      "hammer-cost": 675,
+      "verified": false
+    },
+    {
+      "level": 941,
+      "hammer-cost": 675,
+      "verified": false
+    },
+    {
+      "level": 942,
+      "hammer-cost": 675,
+      "verified": false
+    },
+    {
+      "level": 943,
+      "hammer-cost": 675,
+      "verified": false
+    },
+    {
+      "level": 944,
+      "hammer-cost": 675,
+      "verified": false
+    },
+    {
+      "level": 945,
+      "hammer-cost": 680,
+      "verified": false
+    },
+    {
+      "level": 946,
+      "hammer-cost": 680,
+      "verified": false
+    },
+    {
+      "level": 947,
+      "hammer-cost": 680,
+      "verified": false
+    },
+    {
+      "level": 948,
+      "hammer-cost": 680,
+      "verified": false
+    },
+    {
+      "level": 949,
+      "hammer-cost": 680,
+      "verified": false
+    },
+    {
+      "level": 950,
+      "hammer-cost": 680,
+      "verified": false
+    },
+    {
+      "level": 951,
+      "hammer-cost": 680,
+      "verified": false
+    },
+    {
+      "level": 952,
+      "hammer-cost": 680,
+      "verified": false
+    },
+    {
+      "level": 953,
+      "hammer-cost": 685,
+      "verified": false
+    },
+    {
+      "level": 954,
+      "hammer-cost": 685,
+      "verified": false
+    },
+    {
+      "level": 955,
+      "hammer-cost": 685,
+      "verified": false
+    },
+    {
+      "level": 956,
+      "hammer-cost": 685,
+      "verified": false
+    },
+    {
+      "level": 957,
+      "hammer-cost": 685,
+      "verified": false
+    },
+    {
+      "level": 958,
+      "hammer-cost": 685,
+      "verified": false
+    },
+    {
+      "level": 959,
+      "hammer-cost": 685,
+      "verified": false
+    },
+    {
+      "level": 960,
+      "hammer-cost": 685,
+      "verified": false
+    },
+    {
+      "level": 961,
+      "hammer-cost": 690,
+      "verified": false
+    },
+    {
+      "level": 962,
+      "hammer-cost": 690,
+      "verified": false
+    },
+    {
+      "level": 963,
+      "hammer-cost": 690,
+      "verified": false
+    },
+    {
+      "level": 964,
+      "hammer-cost": 690,
+      "verified": false
+    },
+    {
+      "level": 965,
+      "hammer-cost": 690,
+      "verified": false
+    },
+    {
+      "level": 966,
+      "hammer-cost": 690,
+      "verified": false
+    },
+    {
+      "level": 967,
+      "hammer-cost": 690,
+      "verified": false
+    },
+    {
+      "level": 968,
+      "hammer-cost": 690,
+      "verified": false
+    },
+    {
+      "level": 969,
+      "hammer-cost": 695,
+      "verified": false
+    },
+    {
+      "level": 970,
+      "hammer-cost": 695,
+      "verified": false
+    },
+    {
+      "level": 971,
+      "hammer-cost": 695,
+      "verified": false
+    },
+    {
+      "level": 972,
+      "hammer-cost": 695,
+      "verified": false
+    },
+    {
+      "level": 973,
+      "hammer-cost": 695,
+      "verified": false
+    },
+    {
+      "level": 974,
+      "hammer-cost": 695,
+      "verified": false
+    },
+    {
+      "level": 975,
+      "hammer-cost": 695,
+      "verified": false
+    },
+    {
+      "level": 976,
+      "hammer-cost": 695,
+      "verified": false
+    },
+    {
+      "level": 977,
+      "hammer-cost": 700,
+      "verified": false
+    },
+    {
+      "level": 978,
+      "hammer-cost": 700,
+      "verified": false
+    },
+    {
+      "level": 979,
+      "hammer-cost": 700,
+      "verified": false
+    },
+    {
+      "level": 980,
+      "hammer-cost": 700,
+      "verified": false
+    },
+    {
+      "level": 981,
+      "hammer-cost": 700,
+      "verified": false
+    },
+    {
+      "level": 982,
+      "hammer-cost": 700,
+      "verified": false
+    },
+    {
+      "level": 983,
+      "hammer-cost": 700,
+      "verified": false
+    },
+    {
+      "level": 984,
+      "hammer-cost": 700,
+      "verified": false
+    },
+    {
+      "level": 985,
+      "hammer-cost": 705,
+      "verified": false
+    },
+    {
+      "level": 986,
+      "hammer-cost": 705,
+      "verified": false
+    },
+    {
+      "level": 987,
+      "hammer-cost": 705,
+      "verified": false
+    },
+    {
+      "level": 988,
+      "hammer-cost": 705,
+      "verified": false
+    },
+    {
+      "level": 989,
+      "hammer-cost": 705,
+      "verified": false
+    },
+    {
+      "level": 990,
+      "hammer-cost": 705,
+      "verified": false
+    },
+    {
+      "level": 991,
+      "hammer-cost": 705,
+      "verified": false
+    },
+    {
+      "level": 992,
+      "hammer-cost": 705,
+      "verified": false
+    },
+    {
+      "level": 993,
+      "hammer-cost": 710,
+      "verified": false
+    },
+    {
+      "level": 994,
+      "hammer-cost": 710,
+      "verified": false
+    },
+    {
+      "level": 995,
+      "hammer-cost": 710,
+      "verified": false
+    },
+    {
+      "level": 996,
+      "hammer-cost": 710,
+      "verified": false
+    },
+    {
+      "level": 997,
+      "hammer-cost": 710,
+      "verified": false
+    },
+    {
+      "level": 998,
+      "hammer-cost": 710,
+      "verified": false
+    },
+    {
+      "level": 999,
+      "hammer-cost": 710,
+      "verified": false
+    },
+    {
+      "level": 1000,
+      "hammer-cost": 715,
+      "verified": false
+    },
+    {
+      "level": 1001,
+      "hammer-cost": 715,
+      "verified": false
+    },
+    {
+      "level": 1002,
+      "hammer-cost": 715,
+      "verified": false
+    },
+    {
+      "level": 1003,
+      "hammer-cost": 715,
+      "verified": false
+    },
+    {
+      "level": 1004,
+      "hammer-cost": 715,
+      "verified": false
+    },
+    {
+      "level": 1005,
+      "hammer-cost": 715,
+      "verified": false
+    },
+    {
+      "level": 1006,
+      "hammer-cost": 715,
+      "verified": false
+    },
+    {
+      "level": 1007,
+      "hammer-cost": 715,
+      "verified": false
+    },
+    {
+      "level": 1008,
+      "hammer-cost": 720,
+      "verified": false
+    },
+    {
+      "level": 1009,
+      "hammer-cost": 720,
+      "verified": false
+    },
+    {
+      "level": 1010,
+      "hammer-cost": 720,
+      "verified": false
+    },
+    {
+      "level": 1011,
+      "hammer-cost": 720,
+      "verified": false
+    },
+    {
+      "level": 1012,
+      "hammer-cost": 720,
+      "verified": false
+    },
+    {
+      "level": 1013,
+      "hammer-cost": 720,
+      "verified": false
+    },
+    {
+      "level": 1014,
+      "hammer-cost": 720,
+      "verified": false
+    },
+    {
+      "level": 1015,
+      "hammer-cost": 725,
+      "verified": false
+    },
+    {
+      "level": 1016,
+      "hammer-cost": 725,
+      "verified": false
+    },
+    {
+      "level": 1017,
+      "hammer-cost": 725,
+      "verified": false
+    },
+    {
+      "level": 1018,
+      "hammer-cost": 725,
+      "verified": false
+    },
+    {
+      "level": 1019,
+      "hammer-cost": 725,
+      "verified": false
+    },
+    {
+      "level": 1020,
+      "hammer-cost": 725,
+      "verified": false
+    },
+    {
+      "level": 1021,
+      "hammer-cost": 725,
+      "verified": false
+    },
+    {
+      "level": 1022,
+      "hammer-cost": 725,
+      "verified": false
+    },
+    {
+      "level": 1023,
+      "hammer-cost": 730,
+      "verified": false
+    },
+    {
+      "level": 1024,
+      "hammer-cost": 730,
+      "verified": false
+    },
+    {
+      "level": 1025,
+      "hammer-cost": 730,
+      "verified": false
+    },
+    {
+      "level": 1026,
+      "hammer-cost": 730,
+      "verified": false
+    },
+    {
+      "level": 1027,
+      "hammer-cost": 730,
+      "verified": false
+    },
+    {
+      "level": 1028,
+      "hammer-cost": 730,
+      "verified": false
+    },
+    {
+      "level": 1029,
+      "hammer-cost": 730,
+      "verified": false
+    },
+    {
+      "level": 1030,
+      "hammer-cost": 730,
+      "verified": false
+    },
+    {
+      "level": 1031,
+      "hammer-cost": 735,
+      "verified": false
+    },
+    {
+      "level": 1032,
+      "hammer-cost": 735,
+      "verified": false
+    },
+    {
+      "level": 1033,
+      "hammer-cost": 735,
+      "verified": false
+    },
+    {
+      "level": 1034,
+      "hammer-cost": 735,
+      "verified": false
+    },
+    {
+      "level": 1035,
+      "hammer-cost": 735,
+      "verified": false
+    },
+    {
+      "level": 1036,
+      "hammer-cost": 735,
+      "verified": false
+    },
+    {
+      "level": 1037,
+      "hammer-cost": 735,
+      "verified": false
+    },
+    {
+      "level": 1038,
+      "hammer-cost": 735,
+      "verified": false
+    },
+    {
+      "level": 1039,
+      "hammer-cost": 740,
+      "verified": false
+    },
+    {
+      "level": 1040,
+      "hammer-cost": 740,
+      "verified": false
+    },
+    {
+      "level": 1041,
+      "hammer-cost": 740,
+      "verified": false
+    },
+    {
+      "level": 1042,
+      "hammer-cost": 740,
+      "verified": false
+    },
+    {
+      "level": 1043,
+      "hammer-cost": 740,
+      "verified": false
+    },
+    {
+      "level": 1044,
+      "hammer-cost": 740,
+      "verified": false
+    },
+    {
+      "level": 1045,
+      "hammer-cost": 740,
+      "verified": false
+    },
+    {
+      "level": 1046,
+      "hammer-cost": 740,
+      "verified": false
+    },
+    {
+      "level": 1047,
+      "hammer-cost": 745,
+      "verified": false
+    },
+    {
+      "level": 1048,
+      "hammer-cost": 745,
+      "verified": false
+    },
+    {
+      "level": 1049,
+      "hammer-cost": 745,
+      "verified": false
+    },
+    {
+      "level": 1050,
+      "hammer-cost": 745,
+      "verified": false
+    },
+    {
+      "level": 1051,
+      "hammer-cost": 745,
+      "verified": false
+    },
+    {
+      "level": 1052,
+      "hammer-cost": 745,
+      "verified": false
+    },
+    {
+      "level": 1053,
+      "hammer-cost": 745,
+      "verified": false
+    },
+    {
+      "level": 1054,
+      "hammer-cost": 745,
+      "verified": false
+    },
+    {
+      "level": 1055,
+      "hammer-cost": 750,
+      "verified": false
+    },
+    {
+      "level": 1056,
+      "hammer-cost": 750,
+      "verified": false
+    },
+    {
+      "level": 1057,
+      "hammer-cost": 750,
+      "verified": false
+    },
+    {
+      "level": 1058,
+      "hammer-cost": 750,
+      "verified": false
+    },
+    {
+      "level": 1059,
+      "hammer-cost": 750,
+      "verified": false
+    },
+    {
+      "level": 1060,
+      "hammer-cost": 750,
+      "verified": false
+    },
+    {
+      "level": 1061,
+      "hammer-cost": 750,
+      "verified": false
+    },
+    {
+      "level": 1062,
+      "hammer-cost": 750,
+      "verified": false
+    },
+    {
+      "level": 1063,
+      "hammer-cost": 755,
+      "verified": false
+    },
+    {
+      "level": 1064,
+      "hammer-cost": 755,
+      "verified": false
+    },
+    {
+      "level": 1065,
+      "hammer-cost": 755,
+      "verified": false
+    },
+    {
+      "level": 1066,
+      "hammer-cost": 755,
+      "verified": false
+    },
+    {
+      "level": 1067,
+      "hammer-cost": 755,
+      "verified": false
+    },
+    {
+      "level": 1068,
+      "hammer-cost": 755,
+      "verified": false
+    },
+    {
+      "level": 1069,
+      "hammer-cost": 755,
+      "verified": false
+    },
+    {
+      "level": 1070,
+      "hammer-cost": 760,
+      "verified": false
+    },
+    {
+      "level": 1071,
+      "hammer-cost": 760,
+      "verified": false
+    },
+    {
+      "level": 1072,
+      "hammer-cost": 760,
+      "verified": false
+    },
+    {
+      "level": 1073,
+      "hammer-cost": 760,
+      "verified": false
+    },
+    {
+      "level": 1074,
+      "hammer-cost": 760,
+      "verified": false
+    },
+    {
+      "level": 1075,
+      "hammer-cost": 760,
+      "verified": false
+    },
+    {
+      "level": 1076,
+      "hammer-cost": 760,
+      "verified": false
+    },
+    {
+      "level": 1077,
+      "hammer-cost": 760,
+      "verified": false
+    },
+    {
+      "level": 1078,
+      "hammer-cost": 765,
+      "verified": false
+    },
+    {
+      "level": 1079,
+      "hammer-cost": 765,
+      "verified": false
+    },
+    {
+      "level": 1080,
+      "hammer-cost": 765,
+      "verified": false
+    },
+    {
+      "level": 1081,
+      "hammer-cost": 765,
+      "verified": false
+    },
+    {
+      "level": 1082,
+      "hammer-cost": 765,
+      "verified": false
+    },
+    {
+      "level": 1083,
+      "hammer-cost": 765,
+      "verified": false
+    },
+    {
+      "level": 1084,
+      "hammer-cost": 765,
+      "verified": false
+    },
+    {
+      "level": 1085,
+      "hammer-cost": 765,
+      "verified": false
+    },
+    {
+      "level": 1086,
+      "hammer-cost": 770,
+      "verified": false
+    },
+    {
+      "level": 1087,
+      "hammer-cost": 770,
+      "verified": false
+    },
+    {
+      "level": 1088,
+      "hammer-cost": 770,
+      "verified": false
+    },
+    {
+      "level": 1089,
+      "hammer-cost": 770,
+      "verified": false
+    },
+    {
+      "level": 1090,
+      "hammer-cost": 770,
+      "verified": false
+    },
+    {
+      "level": 1091,
+      "hammer-cost": 770,
+      "verified": false
+    },
+    {
+      "level": 1092,
+      "hammer-cost": 770,
+      "verified": false
+    },
+    {
+      "level": 1093,
+      "hammer-cost": 770,
+      "verified": false
+    },
+    {
+      "level": 1094,
+      "hammer-cost": 775,
+      "verified": false
+    },
+    {
+      "level": 1095,
+      "hammer-cost": 775,
+      "verified": false
+    },
+    {
+      "level": 1096,
+      "hammer-cost": 775,
+      "verified": false
+    },
+    {
+      "level": 1097,
+      "hammer-cost": 775,
+      "verified": false
+    },
+    {
+      "level": 1098,
+      "hammer-cost": 775,
+      "verified": false
+    },
+    {
+      "level": 1099,
+      "hammer-cost": 775,
+      "verified": false
+    },
+    {
+      "level": 1100,
+      "hammer-cost": 775,
+      "verified": false
+    },
+    {
+      "level": 1101,
+      "hammer-cost": 775,
+      "verified": false
+    },
+    {
+      "level": 1102,
+      "hammer-cost": 780,
+      "verified": false
+    },
+    {
+      "level": 1103,
+      "hammer-cost": 780,
+      "verified": false
+    },
+    {
+      "level": 1104,
+      "hammer-cost": 780,
+      "verified": false
+    },
+    {
+      "level": 1105,
+      "hammer-cost": 780,
+      "verified": false
+    },
+    {
+      "level": 1106,
+      "hammer-cost": 780,
+      "verified": false
+    },
+    {
+      "level": 1107,
+      "hammer-cost": 780,
+      "verified": false
+    },
+    {
+      "level": 1108,
+      "hammer-cost": 780,
+      "verified": false
+    },
+    {
+      "level": 1109,
+      "hammer-cost": 780,
+      "verified": false
+    },
+    {
+      "level": 1110,
+      "hammer-cost": 785,
+      "verified": true
+    },
+    {
+      "level": 1111,
+      "hammer-cost": 785,
+      "verified": true
+    },
+    {
+      "level": 1112,
+      "hammer-cost": 785,
+      "verified": true
+    },
+    {
+      "level": 1113,
+      "hammer-cost": 785,
+      "verified": true
+    },
+    {
+      "level": 1114,
+      "hammer-cost": 785,
+      "verified": true
+    },
+    {
+      "level": 1115,
+      "hammer-cost": 785,
+      "verified": true
+    },
+    {
+      "level": 1116,
+      "hammer-cost": 785,
+      "verified": true
+    },
+    {
+      "level": 1117,
+      "hammer-cost": 785,
+      "verified": true
+    },
+    {
+      "level": 1118,
+      "hammer-cost": 790,
+      "verified": true
+    },
+    {
+      "level": 1119,
+      "hammer-cost": 790,
+      "verified": true
+    },
+    {
+      "level": 1120,
+      "hammer-cost": 790,
+      "verified": true
+    },
+    {
+      "level": 1121,
+      "hammer-cost": 790,
+      "verified": true
+    },
+    {
+      "level": 1122,
+      "hammer-cost": 790,
+      "verified": true
+    },
+    {
+      "level": 1123,
+      "hammer-cost": 790,
+      "verified": true
+    },
+    {
+      "level": 1124,
+      "hammer-cost": 790,
+      "verified": true
+    },
+    {
+      "level": 1125,
+      "hammer-cost": 790,
+      "verified": true
+    },
+    {
+      "level": 1126,
+      "hammer-cost": 795,
+      "verified": true
+    },
+    {
+      "level": 1127,
+      "hammer-cost": 795,
+      "verified": true
+    },
+    {
+      "level": 1128,
+      "hammer-cost": 795,
+      "verified": true
+    },
+    {
+      "level": 1129,
+      "hammer-cost": 795,
+      "verified": true
+    },
+    {
+      "level": 1130,
+      "hammer-cost": 795,
+      "verified": true
+    },
+    {
+      "level": 1131,
+      "hammer-cost": 795,
+      "verified": true
+    },
+    {
+      "level": 1132,
+      "hammer-cost": 795,
+      "verified": true
+    },
+    {
+      "level": 1133,
+      "hammer-cost": 795,
+      "verified": true
+    },
+    {
+      "level": 1134,
+      "hammer-cost": 800,
+      "verified": true
+    },
+    {
+      "level": 1135,
+      "hammer-cost": 800,
+      "verified": true
+    },
+    {
+      "level": 1136,
+      "hammer-cost": 800,
+      "verified": true
+    },
+    {
+      "level": 1137,
+      "hammer-cost": 800,
+      "verified": true
+    },
+    {
+      "level": 1138,
+      "hammer-cost": 800,
+      "verified": true
+    },
+    {
+      "level": 1139,
+      "hammer-cost": 800,
+      "verified": true
+    },
+    {
+      "level": 1140,
+      "hammer-cost": 800,
+      "verified": true
+    },
+    {
+      "level": 1141,
+      "hammer-cost": 800,
+      "verified": true
+    },
+    {
+      "level": 1142,
+      "hammer-cost": 805,
+      "verified": true
+    },
+    {
+      "level": 1143,
+      "hammer-cost": 805,
+      "verified": true
+    },
+    {
+      "level": 1144,
+      "hammer-cost": 805,
+      "verified": true
+    },
+    {
+      "level": 1145,
+      "hammer-cost": 805,
+      "verified": true
+    },
+    {
+      "level": 1146,
+      "hammer-cost": 805,
+      "verified": true
+    },
+    {
+      "level": 1147,
+      "hammer-cost": 805,
+      "verified": true
+    },
+    {
+      "level": 1148,
+      "hammer-cost": 805,
+      "verified": true
+    },
+    {
+      "level": 1149,
+      "hammer-cost": 805,
+      "verified": true
+    },
+    {
+      "level": 1150,
+      "hammer-cost": 810,
+      "verified": true
+    },
+    {
+      "level": 1151,
+      "hammer-cost": 810,
+      "verified": true
+    },
+    {
+      "level": 1152,
+      "hammer-cost": 810,
+      "verified": true
+    },
+    {
+      "level": 1153,
+      "hammer-cost": 810,
+      "verified": true
+    },
+    {
+      "level": 1154,
+      "hammer-cost": 810,
+      "verified": true
+    },
+    {
+      "level": 1155,
+      "hammer-cost": 810,
+      "verified": true
+    },
+    {
+      "level": 1156,
+      "hammer-cost": 810,
+      "verified": true
+    },
+    {
+      "level": 1157,
+      "hammer-cost": 815,
+      "verified": true
+    },
+    {
+      "level": 1158,
+      "hammer-cost": 815,
+      "verified": true
+    },
+    {
+      "level": 1159,
+      "hammer-cost": 815,
+      "verified": true
+    },
+    {
+      "level": 1160,
+      "hammer-cost": 815,
+      "verified": true
+    },
+    {
+      "level": 1161,
+      "hammer-cost": 815,
+      "verified": true
+    },
+    {
+      "level": 1162,
+      "hammer-cost": 815,
+      "verified": true
+    },
+    {
+      "level": 1163,
+      "hammer-cost": 815,
+      "verified": true
+    },
+    {
+      "level": 1164,
+      "hammer-cost": 815,
+      "verified": true
+    },
+    {
+      "level": 1165,
+      "hammer-cost": 820,
+      "verified": true
+    },
+    {
+      "level": 1166,
+      "hammer-cost": 820,
+      "verified": true
+    },
+    {
+      "level": 1167,
+      "hammer-cost": 820,
+      "verified": true
+    },
+    {
+      "level": 1168,
+      "hammer-cost": 820,
+      "verified": true
+    },
+    {
+      "level": 1169,
+      "hammer-cost": 820,
+      "verified": true
+    },
+    {
+      "level": 1170,
+      "hammer-cost": 820,
+      "verified": true
+    },
+    {
+      "level": 1171,
+      "hammer-cost": 820,
+      "verified": true
+    },
+    {
+      "level": 1172,
+      "hammer-cost": 820,
+      "verified": true
+    },
+    {
+      "level": 1173,
+      "hammer-cost": 825,
+      "verified": true
+    },
+    {
+      "level": 1174,
+      "hammer-cost": 825,
+      "verified": true
+    },
+    {
+      "level": 1175,
+      "hammer-cost": 825,
+      "verified": true
+    },
+    {
+      "level": 1176,
+      "hammer-cost": 825,
+      "verified": true
+    },
+    {
+      "level": 1177,
+      "hammer-cost": 825,
+      "verified": true
+    },
+    {
+      "level": 1178,
+      "hammer-cost": 825,
+      "verified": true
+    },
+    {
+      "level": 1179,
+      "hammer-cost": 825,
+      "verified": true
+    },
+    {
+      "level": 1180,
+      "hammer-cost": 825,
+      "verified": true
+    },
+    {
+      "level": 1181,
+      "hammer-cost": 830,
+      "verified": true
+    },
+    {
+      "level": 1182,
+      "hammer-cost": 830,
+      "verified": true
+    },
+    {
+      "level": 1183,
+      "hammer-cost": 830,
+      "verified": true
+    },
+    {
+      "level": 1184,
+      "hammer-cost": 830,
+      "verified": true
+    },
+    {
+      "level": 1185,
+      "hammer-cost": 830,
+      "verified": true
+    },
+    {
+      "level": 1186,
+      "hammer-cost": 830,
+      "verified": true
+    },
+    {
+      "level": 1187,
+      "hammer-cost": 830,
+      "verified": true
+    },
+    {
+      "level": 1188,
+      "hammer-cost": 830,
+      "verified": true
+    },
+    {
+      "level": 1189,
+      "hammer-cost": 835,
+      "verified": true
+    },
+    {
+      "level": 1190,
+      "hammer-cost": 835,
+      "verified": true
+    },
+    {
+      "level": 1191,
+      "hammer-cost": 835,
+      "verified": true
+    },
+    {
+      "level": 1192,
+      "hammer-cost": 835,
+      "verified": true
+    },
+    {
+      "level": 1193,
+      "hammer-cost": 835,
+      "verified": true
+    },
+    {
+      "level": 1194,
+      "hammer-cost": 835,
+      "verified": true
+    },
+    {
+      "level": 1195,
+      "hammer-cost": 835,
+      "verified": true
+    },
+    {
+      "level": 1196,
+      "hammer-cost": 835,
+      "verified": true
+    },
+    {
+      "level": 1197,
+      "hammer-cost": 840,
+      "verified": true
+    },
+    {
+      "level": 1198,
+      "hammer-cost": 840,
+      "verified": true
+    },
+    {
+      "level": 1199,
+      "hammer-cost": 840,
+      "verified": true
+    },
+    {
+      "level": 1200,
+      "hammer-cost": 840,
+      "verified": true
+    },
+    {
+      "level": 1201,
+      "hammer-cost": 840,
+      "verified": true
+    },
+    {
+      "level": 1202,
+      "hammer-cost": 840,
+      "verified": true
+    },
+    {
+      "level": 1203,
+      "hammer-cost": 840,
+      "verified": true
+    },
+    {
+      "level": 1204,
+      "hammer-cost": 840,
+      "verified": true
+    },
+    {
+      "level": 1205,
+      "hammer-cost": 845,
+      "verified": true
+    },
+    {
+      "level": 1206,
+      "hammer-cost": 845,
+      "verified": true
+    },
+    {
+      "level": 1207,
+      "hammer-cost": 845,
+      "verified": true
+    },
+    {
+      "level": 1208,
+      "hammer-cost": 845,
+      "verified": true
+    },
+    {
+      "level": 1209,
+      "hammer-cost": 845,
+      "verified": true
+    },
+    {
+      "level": 1210,
+      "hammer-cost": 845,
+      "verified": true
+    },
+    {
+      "level": 1211,
+      "hammer-cost": 845,
+      "verified": true
+    },
+    {
+      "level": 1212,
+      "hammer-cost": 845,
+      "verified": true
+    },
+    {
+      "level": 1213,
+      "hammer-cost": 850,
+      "verified": true
+    },
+    {
+      "level": 1214,
+      "hammer-cost": 850,
+      "verified": true
+    },
+    {
+      "level": 1215,
+      "hammer-cost": 850,
+      "verified": true
+    },
+    {
+      "level": 1216,
+      "hammer-cost": 850,
+      "verified": true
+    },
+    {
+      "level": 1217,
+      "hammer-cost": 850,
+      "verified": true
+    },
+    {
+      "level": 1218,
+      "hammer-cost": 850,
+      "verified": true
+    },
+    {
+      "level": 1219,
+      "hammer-cost": 850,
+      "verified": true
+    },
+    {
+      "level": 1220,
+      "hammer-cost": 850,
+      "verified": true
+    },
+    {
+      "level": 1221,
+      "hammer-cost": 855,
+      "verified": false
+    },
+    {
+      "level": 1222,
+      "hammer-cost": 855,
+      "verified": false
+    },
+    {
+      "level": 1223,
+      "hammer-cost": 855,
+      "verified": false
+    },
+    {
+      "level": 1224,
+      "hammer-cost": 855,
+      "verified": false
+    },
+    {
+      "level": 1225,
+      "hammer-cost": 855,
+      "verified": false
+    },
+    {
+      "level": 1226,
+      "hammer-cost": 855,
+      "verified": false
+    },
+    {
+      "level": 1227,
+      "hammer-cost": 855,
+      "verified": false
+    },
+    {
+      "level": 1228,
+      "hammer-cost": 855,
+      "verified": false
+    },
+    {
+      "level": 1229,
+      "hammer-cost": 860,
+      "verified": true
+    },
+    {
+      "level": 1230,
+      "hammer-cost": 860,
+      "verified": true
+    },
+    {
+      "level": 1231,
+      "hammer-cost": 860,
+      "verified": true
+    },
+    {
+      "level": 1232,
+      "hammer-cost": 860,
+      "verified": true
+    },
+    {
+      "level": 1233,
+      "hammer-cost": 860,
+      "verified": true
+    },
+    {
+      "level": 1234,
+      "hammer-cost": 860,
+      "verified": true
+    },
+    {
+      "level": 1235,
+      "hammer-cost": 860,
+      "verified": true
+    },
+    {
+      "level": 1236,
+      "hammer-cost": 860,
+      "verified": true
+    },
+    {
+      "level": 1237,
+      "hammer-cost": 865,
+      "verified": true
+    },
+    {
+      "level": 1238,
+      "hammer-cost": 865,
+      "verified": true
+    },
+    {
+      "level": 1239,
+      "hammer-cost": 865,
+      "verified": true
+    },
+    {
+      "level": 1240,
+      "hammer-cost": 865,
+      "verified": true
+    },
+    {
+      "level": 1241,
+      "hammer-cost": 865,
+      "verified": true
+    },
+    {
+      "level": 1242,
+      "hammer-cost": 865,
+      "verified": true
+    },
+    {
+      "level": 1243,
+      "hammer-cost": 865,
+      "verified": true
+    },
+    {
+      "level": 1244,
+      "hammer-cost": 865,
+      "verified": true
+    },
+    {
+      "level": 1245,
+      "hammer-cost": 870,
+      "verified": true
+    },
+    {
+      "level": 1246,
+      "hammer-cost": 870,
+      "verified": true
+    },
+    {
+      "level": 1247,
+      "hammer-cost": 870,
+      "verified": true
+    },
+    {
+      "level": 1248,
+      "hammer-cost": 870,
+      "verified": true
+    },
+    {
+      "level": 1249,
+      "hammer-cost": 870,
+      "verified": true
+    },
+    {
+      "level": 1250,
+      "hammer-cost": 870,
+      "verified": true
+    },
+    {
+      "level": 1251,
+      "hammer-cost": 870,
+      "verified": true
+    },
+    {
+      "level": 1252,
+      "hammer-cost": 870,
+      "verified": true
+    },
+    {
+      "level": 1253,
+      "hammer-cost": 875,
+      "verified": true
+    },
+    {
+      "level": 1254,
+      "hammer-cost": 875,
+      "verified": true
+    },
+    {
+      "level": 1255,
+      "hammer-cost": 875,
+      "verified": true
+    },
+    {
+      "level": 1256,
+      "hammer-cost": 875,
+      "verified": true
+    },
+    {
+      "level": 1257,
+      "hammer-cost": 875,
+      "verified": true
+    },
+    {
+      "level": 1258,
+      "hammer-cost": 875,
+      "verified": true
+    },
+    {
+      "level": 1259,
+      "hammer-cost": 875,
+      "verified": true
+    },
+    {
+      "level": 1260,
+      "hammer-cost": 875,
+      "verified": true
+    },
+    {
+      "level": 1261,
+      "hammer-cost": 880,
+      "verified": true
+    },
+    {
+      "level": 1262,
+      "hammer-cost": 880,
+      "verified": true
+    },
+    {
+      "level": 1263,
+      "hammer-cost": 880,
+      "verified": true
+    },
+    {
+      "level": 1264,
+      "hammer-cost": 880,
+      "verified": true
+    },
+    {
+      "level": 1265,
+      "hammer-cost": 880,
+      "verified": true
+    },
+    {
+      "level": 1266,
+      "hammer-cost": 880,
+      "verified": true
+    },
+    {
+      "level": 1267,
+      "hammer-cost": 880,
+      "verified": true
+    },
+    {
+      "level": 1268,
+      "hammer-cost": 880,
+      "verified": true
+    },
+    {
+      "level": 1269,
+      "hammer-cost": 885,
+      "verified": true
+    },
+    {
+      "level": 1270,
+      "hammer-cost": 885,
+      "verified": true
+    },
+    {
+      "level": 1271,
+      "hammer-cost": 885,
+      "verified": true
+    },
+    {
+      "level": 1272,
+      "hammer-cost": 885,
+      "verified": true
+    },
+    {
+      "level": 1273,
+      "hammer-cost": 885,
+      "verified": true
+    },
+    {
+      "level": 1274,
+      "hammer-cost": 885,
+      "verified": true
+    },
+    {
+      "level": 1275,
+      "hammer-cost": 885,
+      "verified": true
+    },
+    {
+      "level": 1276,
+      "hammer-cost": 885,
+      "verified": true
+    },
+    {
+      "level": 1277,
+      "hammer-cost": 890,
+      "verified": true
+    },
+    {
+      "level": 1278,
+      "hammer-cost": 890,
+      "verified": true
+    },
+    {
+      "level": 1279,
+      "hammer-cost": 890,
+      "verified": true
+    },
+    {
+      "level": 1280,
+      "hammer-cost": 890,
+      "verified": true
+    },
+    {
+      "level": 1281,
+      "hammer-cost": 890,
+      "verified": true
+    },
+    {
+      "level": 1282,
+      "hammer-cost": 890,
+      "verified": true
+    },
+    {
+      "level": 1283,
+      "hammer-cost": 890,
+      "verified": true
+    },
+    {
+      "level": 1284,
+      "hammer-cost": 890,
+      "verified": true
+    },
+    {
+      "level": 1285,
+      "hammer-cost": 895,
+      "verified": true
+    },
+    {
+      "level": 1286,
+      "hammer-cost": 895,
+      "verified": true
+    },
+    {
+      "level": 1287,
+      "hammer-cost": 895,
+      "verified": true
+    },
+    {
+      "level": 1288,
+      "hammer-cost": 895,
+      "verified": true
+    },
+    {
+      "level": 1289,
+      "hammer-cost": 895,
+      "verified": true
+    },
+    {
+      "level": 1290,
+      "hammer-cost": 895,
+      "verified": true
+    },
+    {
+      "level": 1291,
+      "hammer-cost": 895,
+      "verified": true
+    },
+    {
+      "level": 1292,
+      "hammer-cost": 895,
+      "verified": true
+    },
+    {
+      "level": 1293,
+      "hammer-cost": 900,
+      "verified": true
+    },
+    {
+      "level": 1294,
+      "hammer-cost": 900,
+      "verified": true
+    },
+    {
+      "level": 1295,
+      "hammer-cost": 900,
+      "verified": true
+    },
+    {
+      "level": 1296,
+      "hammer-cost": 900,
+      "verified": true
+    },
+    {
+      "level": 1297,
+      "hammer-cost": 900,
+      "verified": true
+    },
+    {
+      "level": 1298,
+      "hammer-cost": 900,
+      "verified": true
+    },
+    {
+      "level": 1299,
+      "hammer-cost": 900,
+      "verified": true
+    },
+    {
+      "level": 1300,
+      "hammer-cost": 900,
+      "verified": true
+    },
+    {
+      "level": 1301,
+      "hammer-cost": 905,
+      "verified": true
+    },
+    {
+      "level": 1302,
+      "hammer-cost": 905,
+      "verified": true
+    },
+    {
+      "level": 1303,
+      "hammer-cost": 905,
+      "verified": true
+    },
+    {
+      "level": 1304,
+      "hammer-cost": 905,
+      "verified": true
+    },
+    {
+      "level": 1305,
+      "hammer-cost": 905,
+      "verified": true
+    },
+    {
+      "level": 1306,
+      "hammer-cost": 905,
+      "verified": true
+    },
+    {
+      "level": 1307,
+      "hammer-cost": 905,
+      "verified": true
+    },
+    {
+      "level": 1308,
+      "hammer-cost": 905,
+      "verified": true
+    },
+    {
+      "level": 1309,
+      "hammer-cost": 910,
+      "verified": true
+    },
+    {
+      "level": 1310,
+      "hammer-cost": 910,
+      "verified": true
+    },
+    {
+      "level": 1311,
+      "hammer-cost": 910,
+      "verified": true
+    },
+    {
+      "level": 1312,
+      "hammer-cost": 910,
+      "verified": true
+    },
+    {
+      "level": 1313,
+      "hammer-cost": 910,
+      "verified": true
+    },
+    {
+      "level": 1314,
+      "hammer-cost": 910,
+      "verified": true
+    },
+    {
+      "level": 1315,
+      "hammer-cost": 910,
+      "verified": true
+    },
+    {
+      "level": 1316,
+      "hammer-cost": 910,
+      "verified": true
+    },
+    {
+      "level": 1317,
+      "hammer-cost": 915,
+      "verified": true
+    },
+    {
+      "level": 1318,
+      "hammer-cost": 915,
+      "verified": true
+    },
+    {
+      "level": 1319,
+      "hammer-cost": 915,
+      "verified": true
+    },
+    {
+      "level": 1320,
+      "hammer-cost": 915,
+      "verified": true
+    },
+    {
+      "level": 1321,
+      "hammer-cost": 915,
+      "verified": true
+    },
+    {
+      "level": 1322,
+      "hammer-cost": 915,
+      "verified": true
+    },
+    {
+      "level": 1323,
+      "hammer-cost": 915,
+      "verified": true
+    },
+    {
+      "level": 1324,
+      "hammer-cost": 915,
+      "verified": true
+    },
+    {
+      "level": 1325,
+      "hammer-cost": 920,
+      "verified": true
+    },
+    {
+      "level": 1326,
+      "hammer-cost": 920,
+      "verified": true
+    },
+    {
+      "level": 1327,
+      "hammer-cost": 920,
+      "verified": true
+    },
+    {
+      "level": 1328,
+      "hammer-cost": 920,
+      "verified": true
+    },
+    {
+      "level": 1329,
+      "hammer-cost": 920,
+      "verified": true
+    },
+    {
+      "level": 1330,
+      "hammer-cost": 920,
+      "verified": true
+    },
+    {
+      "level": 1331,
+      "hammer-cost": 920,
+      "verified": true
+    },
+    {
+      "level": 1332,
+      "hammer-cost": 920,
+      "verified": true
+    },
+    {
+      "level": 1333,
+      "hammer-cost": 925,
+      "verified": true
+    },
+    {
+      "level": 1334,
+      "hammer-cost": 925,
+      "verified": true
+    },
+    {
+      "level": 1335,
+      "hammer-cost": 925,
+      "verified": true
+    },
+    {
+      "level": 1336,
+      "hammer-cost": 925,
+      "verified": true
+    },
+    {
+      "level": 1337,
+      "hammer-cost": 925,
+      "verified": true
+    },
+    {
+      "level": 1338,
+      "hammer-cost": 925,
+      "verified": true
+    },
+    {
+      "level": 1339,
+      "hammer-cost": 925,
+      "verified": true
+    },
+    {
+      "level": 1340,
+      "hammer-cost": 925,
+      "verified": true
+    },
+    {
+      "level": 1341,
+      "hammer-cost": 925,
+      "verified": false
+    },
+    {
+      "level": 1342,
+      "hammer-cost": 930,
+      "verified": false
+    },
+    {
+      "level": 1343,
+      "hammer-cost": 930,
+      "verified": false
+    },
+    {
+      "level": 1344,
+      "hammer-cost": 930,
+      "verified": false
+    },
+    {
+      "level": 1345,
+      "hammer-cost": 930,
+      "verified": false
+    },
+    {
+      "level": 1346,
+      "hammer-cost": 930,
+      "verified": false
+    },
+    {
+      "level": 1347,
+      "hammer-cost": 930,
+      "verified": false
+    },
+    {
+      "level": 1348,
+      "hammer-cost": 930,
+      "verified": false
+    },
+    {
+      "level": 1349,
+      "hammer-cost": 930,
+      "verified": false
+    },
+    {
+      "level": 1350,
+      "hammer-cost": 935,
+      "verified": true
+    },
+    {
+      "level": 1351,
+      "hammer-cost": 935,
+      "verified": true
+    },
+    {
+      "level": 1352,
+      "hammer-cost": 935,
+      "verified": true
+    },
+    {
+      "level": 1353,
+      "hammer-cost": 935,
+      "verified": true
+    },
+    {
+      "level": 1354,
+      "hammer-cost": 935,
+      "verified": true
+    },
+    {
+      "level": 1355,
+      "hammer-cost": 935,
+      "verified": true
+    },
+    {
+      "level": 1356,
+      "hammer-cost": 935,
+      "verified": true
+    },
+    {
+      "level": 1357,
+      "hammer-cost": 935,
+      "verified": true
+    },
+    {
+      "level": 1358,
+      "hammer-cost": 940,
+      "verified": true
+    },
+    {
+      "level": 1359,
+      "hammer-cost": 940,
+      "verified": true
+    },
+    {
+      "level": 1360,
+      "hammer-cost": 940,
+      "verified": true
+    },
+    {
+      "level": 1361,
+      "hammer-cost": 940,
+      "verified": true
+    },
+    {
+      "level": 1362,
+      "hammer-cost": 940,
+      "verified": true
+    },
+    {
+      "level": 1363,
+      "hammer-cost": 940,
+      "verified": true
+    },
+    {
+      "level": 1364,
+      "hammer-cost": 940,
+      "verified": true
+    },
+    {
+      "level": 1365,
+      "hammer-cost": 940,
+      "verified": true
+    },
+    {
+      "level": 1366,
+      "hammer-cost": 945,
+      "verified": true
+    },
+    {
+      "level": 1367,
+      "hammer-cost": 945,
+      "verified": true
+    },
+    {
+      "level": 1368,
+      "hammer-cost": 945,
+      "verified": true
+    },
+    {
+      "level": 1369,
+      "hammer-cost": 945,
+      "verified": true
+    },
+    {
+      "level": 1370,
+      "hammer-cost": 945,
+      "verified": true
+    },
+    {
+      "level": 1371,
+      "hammer-cost": 945,
+      "verified": true
+    },
+    {
+      "level": 1372,
+      "hammer-cost": 945,
+      "verified": true
+    },
+    {
+      "level": 1373,
+      "hammer-cost": 945,
+      "verified": true
+    },
+    {
+      "level": 1374,
+      "hammer-cost": 950,
+      "verified": true
+    },
+    {
+      "level": 1375,
+      "hammer-cost": 950,
+      "verified": true
+    },
+    {
+      "level": 1376,
+      "hammer-cost": 950,
+      "verified": true
+    },
+    {
+      "level": 1377,
+      "hammer-cost": 950,
+      "verified": true
+    },
+    {
+      "level": 1378,
+      "hammer-cost": 950,
+      "verified": true
+    },
+    {
+      "level": 1379,
+      "hammer-cost": 950,
+      "verified": true
+    },
+    {
+      "level": 1380,
+      "hammer-cost": 950,
+      "verified": true
+    },
+    {
+      "level": 1381,
+      "hammer-cost": 950,
+      "verified": true
+    },
+    {
+      "level": 1382,
+      "hammer-cost": 955,
+      "verified": true
+    },
+    {
+      "level": 1383,
+      "hammer-cost": 955,
+      "verified": true
+    },
+    {
+      "level": 1384,
+      "hammer-cost": 955,
+      "verified": true
+    },
+    {
+      "level": 1385,
+      "hammer-cost": 955,
+      "verified": true
+    },
+    {
+      "level": 1386,
+      "hammer-cost": 955,
+      "verified": true
+    },
+    {
+      "level": 1387,
+      "hammer-cost": 955,
+      "verified": true
+    },
+    {
+      "level": 1388,
+      "hammer-cost": 955,
+      "verified": true
+    },
+    {
+      "level": 1389,
+      "hammer-cost": 955,
+      "verified": true
+    },
+    {
+      "level": 1390,
+      "hammer-cost": 960,
+      "verified": true
+    },
+    {
+      "level": 1391,
+      "hammer-cost": 960,
+      "verified": true
+    },
+    {
+      "level": 1392,
+      "hammer-cost": 960,
+      "verified": true
+    },
+    {
+      "level": 1393,
+      "hammer-cost": 960,
+      "verified": true
+    },
+    {
+      "level": 1394,
+      "hammer-cost": 960,
+      "verified": true
+    },
+    {
+      "level": 1395,
+      "hammer-cost": 960,
+      "verified": true
+    },
+    {
+      "level": 1396,
+      "hammer-cost": 960,
+      "verified": true
+    },
+    {
+      "level": 1397,
+      "hammer-cost": 960,
+      "verified": true
+    },
+    {
+      "level": 1398,
+      "hammer-cost": 965,
+      "verified": true
+    },
+    {
+      "level": 1399,
+      "hammer-cost": 965,
+      "verified": true
+    },
+    {
+      "level": 1400,
+      "hammer-cost": 965,
+      "verified": true
+    },
+    {
+      "level": 1401,
+      "hammer-cost": 965,
+      "verified": true
+    },
+    {
+      "level": 1402,
+      "hammer-cost": 965,
+      "verified": true
+    },
+    {
+      "level": 1403,
+      "hammer-cost": 965,
+      "verified": true
+    },
+    {
+      "level": 1404,
+      "hammer-cost": 965,
+      "verified": true
+    },
+    {
+      "level": 1405,
+      "hammer-cost": 965,
+      "verified": true
+    },
+    {
+      "level": 1406,
+      "hammer-cost": 970,
+      "verified": true
+    },
+    {
+      "level": 1407,
+      "hammer-cost": 970,
+      "verified": true
+    },
+    {
+      "level": 1408,
+      "hammer-cost": 970,
+      "verified": true
+    },
+    {
+      "level": 1409,
+      "hammer-cost": 970,
+      "verified": true
+    },
+    {
+      "level": 1410,
+      "hammer-cost": 970,
+      "verified": true
+    },
+    {
+      "level": 1411,
+      "hammer-cost": 970,
+      "verified": true
+    },
+    {
+      "level": 1412,
+      "hammer-cost": 970,
+      "verified": true
+    },
+    {
+      "level": 1413,
+      "hammer-cost": 970,
+      "verified": true
+    },
+    {
+      "level": 1414,
+      "hammer-cost": 975,
+      "verified": true
+    },
+    {
+      "level": 1415,
+      "hammer-cost": 975,
+      "verified": true
+    },
+    {
+      "level": 1416,
+      "hammer-cost": 975,
+      "verified": true
+    },
+    {
+      "level": 1417,
+      "hammer-cost": 975,
+      "verified": true
+    },
+    {
+      "level": 1418,
+      "hammer-cost": 975,
+      "verified": true
+    },
+    {
+      "level": 1419,
+      "hammer-cost": 975,
+      "verified": true
+    },
+    {
+      "level": 1420,
+      "hammer-cost": 975,
+      "verified": true
+    },
+    {
+      "level": 1421,
+      "hammer-cost": 975,
+      "verified": true
+    },
+    {
+      "level": 1422,
+      "hammer-cost": 980,
+      "verified": true
+    },
+    {
+      "level": 1423,
+      "hammer-cost": 980,
+      "verified": true
+    },
+    {
+      "level": 1424,
+      "hammer-cost": 980,
+      "verified": true
+    },
+    {
+      "level": 1425,
+      "hammer-cost": 980,
+      "verified": false
+    },
+    {
+      "level": 1426,
+      "hammer-cost": 980,
+      "verified": false
+    },
+    {
+      "level": 1427,
+      "hammer-cost": 980,
+      "verified": false
+    },
+    {
+      "level": 1428,
+      "hammer-cost": 980,
+      "verified": false
+    },
+    {
+      "level": 1429,
+      "hammer-cost": 980,
+      "verified": false
+    },
+    {
+      "level": 1430,
+      "hammer-cost": 985,
+      "verified": false
+    },
+    {
+      "level": 1431,
+      "hammer-cost": 985,
+      "verified": false
+    },
+    {
+      "level": 1432,
+      "hammer-cost": 985,
+      "verified": false
+    },
+    {
+      "level": 1433,
+      "hammer-cost": 985,
+      "verified": false
+    },
+    {
+      "level": 1434,
+      "hammer-cost": 985,
+      "verified": false
+    },
+    {
+      "level": 1435,
+      "hammer-cost": 985,
+      "verified": false
+    },
+    {
+      "level": 1436,
+      "hammer-cost": 985,
+      "verified": false
+    },
+    {
+      "level": 1437,
+      "hammer-cost": 985,
+      "verified": false
+    },
+    {
+      "level": 1438,
+      "hammer-cost": 990,
+      "verified": false
+    },
+    {
+      "level": 1439,
+      "hammer-cost": 990,
+      "verified": false
+    },
+    {
+      "level": 1440,
+      "hammer-cost": 990,
+      "verified": false
+    },
+    {
+      "level": 1441,
+      "hammer-cost": 990,
+      "verified": false
+    },
+    {
+      "level": 1442,
+      "hammer-cost": 990,
+      "verified": false
+    },
+    {
+      "level": 1443,
+      "hammer-cost": 990,
+      "verified": false
+    },
+    {
+      "level": 1444,
+      "hammer-cost": 990,
+      "verified": false
+    },
+    {
+      "level": 1445,
+      "hammer-cost": 990,
+      "verified": false
+    },
+    {
+      "level": 1446,
+      "hammer-cost": 990,
+      "verified": false
+    },
+    {
+      "level": 1447,
+      "hammer-cost": 995,
+      "verified": false
+    },
+    {
+      "level": 1448,
+      "hammer-cost": 995,
+      "verified": false
+    },
+    {
+      "level": 1449,
+      "hammer-cost": 995,
+      "verified": false
+    },
+    {
+      "level": 1450,
+      "hammer-cost": 995,
+      "verified": false
+    },
+    {
+      "level": 1451,
+      "hammer-cost": 995,
+      "verified": false
+    },
+    {
+      "level": 1452,
+      "hammer-cost": 995,
+      "verified": false
+    },
+    {
+      "level": 1453,
+      "hammer-cost": 995,
+      "verified": false
+    },
+    {
+      "level": 1454,
+      "hammer-cost": 995,
+      "verified": false
+    },
+    {
+      "level": 1455,
+      "hammer-cost": 1000,
+      "verified": false
+    },
+    {
+      "level": 1456,
+      "hammer-cost": 1000,
+      "verified": false
+    },
+    {
+      "level": 1457,
+      "hammer-cost": 1000,
+      "verified": false
+    },
+    {
+      "level": 1458,
+      "hammer-cost": 1000,
+      "verified": false
+    },
+    {
+      "level": 1459,
+      "hammer-cost": 1000,
+      "verified": false
+    },
+    {
+      "level": 1460,
+      "hammer-cost": 1000,
+      "verified": false
+    },
+    {
+      "level": 1461,
+      "hammer-cost": 1000,
+      "verified": false
+    },
+    {
+      "level": 1462,
+      "hammer-cost": 1000,
+      "verified": false
+    },
+    {
+      "level": 1463,
+      "hammer-cost": 1005,
+      "verified": false
+    },
+    {
+      "level": 1464,
+      "hammer-cost": 1005,
+      "verified": false
+    },
+    {
+      "level": 1465,
+      "hammer-cost": 1005,
+      "verified": false
+    },
+    {
+      "level": 1466,
+      "hammer-cost": 1005,
+      "verified": false
+    },
+    {
+      "level": 1467,
+      "hammer-cost": 1005,
+      "verified": false
+    },
+    {
+      "level": 1468,
+      "hammer-cost": 1005,
+      "verified": false
+    },
+    {
+      "level": 1469,
+      "hammer-cost": 1005,
+      "verified": false
+    },
+    {
+      "level": 1470,
+      "hammer-cost": 1005,
+      "verified": false
+    },
+    {
+      "level": 1471,
+      "hammer-cost": 1005,
+      "verified": false
+    },
+    {
+      "level": 1472,
+      "hammer-cost": 1010,
+      "verified": false
+    },
+    {
+      "level": 1473,
+      "hammer-cost": 1010,
+      "verified": false
+    },
+    {
+      "level": 1474,
+      "hammer-cost": 1010,
+      "verified": false
+    },
+    {
+      "level": 1475,
+      "hammer-cost": 1010,
+      "verified": false
+    },
+    {
+      "level": 1476,
+      "hammer-cost": 1010,
+      "verified": false
+    },
+    {
+      "level": 1477,
+      "hammer-cost": 1010,
+      "verified": false
+    },
+    {
+      "level": 1478,
+      "hammer-cost": 1010,
+      "verified": false
+    },
+    {
+      "level": 1479,
+      "hammer-cost": 1010,
+      "verified": false
+    },
+    {
+      "level": 1480,
+      "hammer-cost": 1015,
+      "verified": false
+    },
+    {
+      "level": 1481,
+      "hammer-cost": 1015,
+      "verified": false
+    },
+    {
+      "level": 1482,
+      "hammer-cost": 1015,
+      "verified": false
+    },
+    {
+      "level": 1483,
+      "hammer-cost": 1015,
+      "verified": false
+    },
+    {
+      "level": 1484,
+      "hammer-cost": 1015,
+      "verified": false
+    },
+    {
+      "level": 1485,
+      "hammer-cost": 1015,
+      "verified": false
+    },
+    {
+      "level": 1486,
+      "hammer-cost": 1015,
+      "verified": false
+    },
+    {
+      "level": 1487,
+      "hammer-cost": 1015,
+      "verified": false
+    },
+    {
+      "level": 1488,
+      "hammer-cost": 1020,
+      "verified": false
+    },
+    {
+      "level": 1489,
+      "hammer-cost": 1020,
+      "verified": false
+    },
+    {
+      "level": 1490,
+      "hammer-cost": 1020,
+      "verified": false
+    },
+    {
+      "level": 1491,
+      "hammer-cost": 1020,
+      "verified": false
+    },
+    {
+      "level": 1492,
+      "hammer-cost": 1020,
+      "verified": false
+    },
+    {
+      "level": 1493,
+      "hammer-cost": 1020,
+      "verified": false
+    },
+    {
+      "level": 1494,
+      "hammer-cost": 1020,
+      "verified": false
+    },
+    {
+      "level": 1495,
+      "hammer-cost": 1020,
+      "verified": false
+    },
+    {
+      "level": 1496,
+      "hammer-cost": 1025,
+      "verified": false
+    },
+    {
+      "level": 1497,
+      "hammer-cost": 1025,
+      "verified": false
+    },
+    {
+      "level": 1498,
+      "hammer-cost": 1025,
+      "verified": false
+    },
+    {
+      "level": 1499,
+      "hammer-cost": 1025,
+      "verified": false
+    },
+    {
+      "level": 1500,
+      "hammer-cost": 1025,
+      "verified": false
+    },
+    {
+      "level": 1501,
+      "hammer-cost": 1025,
+      "verified": false
+    },
+    {
+      "level": 1502,
+      "hammer-cost": 1025,
+      "verified": false
+    },
+    {
+      "level": 1503,
+      "hammer-cost": 1025,
+      "verified": false
+    },
+    {
+      "level": 1504,
+      "hammer-cost": 1030,
+      "verified": false
+    },
+    {
+      "level": 1505,
+      "hammer-cost": 1030,
+      "verified": false
+    },
+    {
+      "level": 1506,
+      "hammer-cost": 1030,
+      "verified": false
+    },
+    {
+      "level": 1507,
+      "hammer-cost": 1030,
+      "verified": false
+    },
+    {
+      "level": 1508,
+      "hammer-cost": 1030,
+      "verified": false
+    },
+    {
+      "level": 1509,
+      "hammer-cost": 1030,
+      "verified": false
+    },
+    {
+      "level": 1510,
+      "hammer-cost": 1030,
+      "verified": false
+    },
+    {
+      "level": 1511,
+      "hammer-cost": 1030,
+      "verified": false
+    },
+    {
+      "level": 1512,
+      "hammer-cost": 1035,
+      "verified": false
+    },
+    {
+      "level": 1513,
+      "hammer-cost": 1035,
+      "verified": false
+    },
+    {
+      "level": 1514,
+      "hammer-cost": 1035,
+      "verified": false
+    },
+    {
+      "level": 1515,
+      "hammer-cost": 1035,
+      "verified": false
+    },
+    {
+      "level": 1516,
+      "hammer-cost": 1035,
+      "verified": false
+    },
+    {
+      "level": 1517,
+      "hammer-cost": 1035,
+      "verified": false
+    },
+    {
+      "level": 1518,
+      "hammer-cost": 1035,
+      "verified": false
+    },
+    {
+      "level": 1519,
+      "hammer-cost": 1035,
+      "verified": false
+    },
+    {
+      "level": 1520,
+      "hammer-cost": 1040,
+      "verified": false
+    },
+    {
+      "level": 1521,
+      "hammer-cost": 1040,
+      "verified": false
+    },
+    {
+      "level": 1522,
+      "hammer-cost": 1040,
+      "verified": false
+    },
+    {
+      "level": 1523,
+      "hammer-cost": 1040,
+      "verified": false
+    },
+    {
+      "level": 1524,
+      "hammer-cost": 1040,
+      "verified": false
+    },
+    {
+      "level": 1525,
+      "hammer-cost": 1040,
+      "verified": false
+    },
+    {
+      "level": 1526,
+      "hammer-cost": 1040,
+      "verified": false
+    },
+    {
+      "level": 1527,
+      "hammer-cost": 1040,
+      "verified": false
+    },
+    {
+      "level": 1528,
+      "hammer-cost": 1045,
+      "verified": false
+    },
+    {
+      "level": 1529,
+      "hammer-cost": 1045,
+      "verified": false
+    },
+    {
+      "level": 1530,
+      "hammer-cost": 1045,
+      "verified": false
+    },
+    {
+      "level": 1531,
+      "hammer-cost": 1045,
+      "verified": false
+    },
+    {
+      "level": 1532,
+      "hammer-cost": 1045,
+      "verified": false
+    },
+    {
+      "level": 1533,
+      "hammer-cost": 1045,
+      "verified": false
+    },
+    {
+      "level": 1534,
+      "hammer-cost": 1045,
+      "verified": false
+    },
+    {
+      "level": 1535,
+      "hammer-cost": 1045,
+      "verified": false
+    },
+    {
+      "level": 1536,
+      "hammer-cost": 1045,
+      "verified": false
+    },
+    {
+      "level": 1537,
+      "hammer-cost": 1050,
+      "verified": false
+    },
+    {
+      "level": 1538,
+      "hammer-cost": 1050,
+      "verified": false
+    },
+    {
+      "level": 1539,
+      "hammer-cost": 1050,
+      "verified": false
+    },
+    {
+      "level": 1540,
+      "hammer-cost": 1050,
+      "verified": false
+    },
+    {
+      "level": 1541,
+      "hammer-cost": 1050,
+      "verified": false
+    },
+    {
+      "level": 1542,
+      "hammer-cost": 1050,
+      "verified": false
+    },
+    {
+      "level": 1543,
+      "hammer-cost": 1050,
+      "verified": false
+    },
+    {
+      "level": 1544,
+      "hammer-cost": 1050,
+      "verified": false
+    },
+    {
+      "level": 1545,
+      "hammer-cost": 1055,
+      "verified": false
+    },
+    {
+      "level": 1546,
+      "hammer-cost": 1055,
+      "verified": false
+    },
+    {
+      "level": 1547,
+      "hammer-cost": 1055,
+      "verified": false
+    },
+    {
+      "level": 1548,
+      "hammer-cost": 1055,
+      "verified": false
+    },
+    {
+      "level": 1549,
+      "hammer-cost": 1055,
+      "verified": false
+    },
+    {
+      "level": 1550,
+      "hammer-cost": 1055,
+      "verified": false
+    },
+    {
+      "level": 1551,
+      "hammer-cost": 1055,
+      "verified": false
+    },
+    {
+      "level": 1552,
+      "hammer-cost": 1055,
+      "verified": false
+    },
+    {
+      "level": 1553,
+      "hammer-cost": 1060,
+      "verified": false
+    },
+    {
+      "level": 1554,
+      "hammer-cost": 1060,
+      "verified": false
+    },
+    {
+      "level": 1555,
+      "hammer-cost": 1060,
+      "verified": false
+    },
+    {
+      "level": 1556,
+      "hammer-cost": 1060,
+      "verified": false
+    },
+    {
+      "level": 1557,
+      "hammer-cost": 1060,
+      "verified": false
+    },
+    {
+      "level": 1558,
+      "hammer-cost": 1060,
+      "verified": false
+    },
+    {
+      "level": 1559,
+      "hammer-cost": 1060,
+      "verified": false
+    },
+    {
+      "level": 1560,
+      "hammer-cost": 1060,
+      "verified": false
+    },
+    {
+      "level": 1561,
+      "hammer-cost": 1065,
+      "verified": false
+    },
+    {
+      "level": 1562,
+      "hammer-cost": 1065,
+      "verified": false
+    },
+    {
+      "level": 1563,
+      "hammer-cost": 1065,
+      "verified": false
+    },
+    {
+      "level": 1564,
+      "hammer-cost": 1065,
+      "verified": false
+    },
+    {
+      "level": 1565,
+      "hammer-cost": 1065,
+      "verified": false
+    },
+    {
+      "level": 1566,
+      "hammer-cost": 1065,
+      "verified": false
+    },
+    {
+      "level": 1567,
+      "hammer-cost": 1070,
+      "verified": false
+    },
+    {
+      "level": 1568,
+      "hammer-cost": 1070,
+      "verified": false
+    },
+    {
+      "level": 1569,
+      "hammer-cost": 1070,
+      "verified": false
+    },
+    {
+      "level": 1570,
+      "hammer-cost": 1070,
+      "verified": false
+    },
+    {
+      "level": 1571,
+      "hammer-cost": 1070,
+      "verified": false
+    },
+    {
+      "level": 1572,
+      "hammer-cost": 1070,
+      "verified": false
+    },
+    {
+      "level": 1573,
+      "hammer-cost": 1070,
+      "verified": false
+    },
+    {
+      "level": 1574,
+      "hammer-cost": 1070,
+      "verified": false
+    },
+    {
+      "level": 1575,
+      "hammer-cost": 1070,
+      "verified": false
+    },
+    {
+      "level": 1576,
+      "hammer-cost": 1075,
+      "verified": false
+    },
+    {
+      "level": 1577,
+      "hammer-cost": 1075,
+      "verified": false
+    },
+    {
+      "level": 1578,
+      "hammer-cost": 1075,
+      "verified": false
+    },
+    {
+      "level": 1579,
+      "hammer-cost": 1075,
+      "verified": false
+    },
+    {
+      "level": 1580,
+      "hammer-cost": 1075,
+      "verified": false
+    },
+    {
+      "level": 1581,
+      "hammer-cost": 1075,
+      "verified": false
+    },
+    {
+      "level": 1582,
+      "hammer-cost": 1075,
+      "verified": false
+    },
+    {
+      "level": 1583,
+      "hammer-cost": 1075,
+      "verified": false
+    },
+    {
+      "level": 1584,
+      "hammer-cost": 1075,
+      "verified": false
+    },
+    {
+      "level": 1585,
+      "hammer-cost": 1080,
+      "verified": false
+    },
+    {
+      "level": 1586,
+      "hammer-cost": 1080,
+      "verified": false
+    },
+    {
+      "level": 1587,
+      "hammer-cost": 1080,
+      "verified": false
+    },
+    {
+      "level": 1588,
+      "hammer-cost": 1080,
+      "verified": false
+    },
+    {
+      "level": 1589,
+      "hammer-cost": 1080,
+      "verified": false
+    },
+    {
+      "level": 1590,
+      "hammer-cost": 1080,
+      "verified": false
+    },
+    {
+      "level": 1591,
+      "hammer-cost": 1080,
+      "verified": false
+    },
+    {
+      "level": 1592,
+      "hammer-cost": 1080,
+      "verified": false
+    },
+    {
+      "level": 1593,
+      "hammer-cost": 1085,
+      "verified": false
+    },
+    {
+      "level": 1594,
+      "hammer-cost": 1085,
+      "verified": false
+    },
+    {
+      "level": 1595,
+      "hammer-cost": 1085,
+      "verified": false
+    },
+    {
+      "level": 1596,
+      "hammer-cost": 1085,
+      "verified": false
+    },
+    {
+      "level": 1597,
+      "hammer-cost": 1085,
+      "verified": false
+    },
+    {
+      "level": 1598,
+      "hammer-cost": 1085,
+      "verified": false
+    },
+    {
+      "level": 1599,
+      "hammer-cost": 1085,
+      "verified": false
+    },
+    {
+      "level": 1600,
+      "hammer-cost": 1085,
+      "verified": false
+    },
+    {
+      "level": 1601,
+      "hammer-cost": 1085,
+      "verified": false
+    },
+    {
+      "level": 1602,
+      "hammer-cost": 1090,
+      "verified": false
+    },
+    {
+      "level": 1603,
+      "hammer-cost": 1090,
+      "verified": false
+    },
+    {
+      "level": 1604,
+      "hammer-cost": 1090,
+      "verified": false
+    },
+    {
+      "level": 1605,
+      "hammer-cost": 1090,
+      "verified": false
+    },
+    {
+      "level": 1606,
+      "hammer-cost": 1090,
+      "verified": false
+    },
+    {
+      "level": 1607,
+      "hammer-cost": 1090,
+      "verified": false
+    },
+    {
+      "level": 1608,
+      "hammer-cost": 1090,
+      "verified": false
+    },
+    {
+      "level": 1609,
+      "hammer-cost": 1090,
+      "verified": false
+    },
+    {
+      "level": 1610,
+      "hammer-cost": 1095,
+      "verified": false
+    },
+    {
+      "level": 1611,
+      "hammer-cost": 1095,
+      "verified": false
+    },
+    {
+      "level": 1612,
+      "hammer-cost": 1095,
+      "verified": false
+    },
+    {
+      "level": 1613,
+      "hammer-cost": 1095,
+      "verified": false
+    },
+    {
+      "level": 1614,
+      "hammer-cost": 1095,
+      "verified": false
+    },
+    {
+      "level": 1615,
+      "hammer-cost": 1095,
+      "verified": false
+    },
+    {
+      "level": 1616,
+      "hammer-cost": 1095,
+      "verified": false
+    },
+    {
+      "level": 1617,
+      "hammer-cost": 1095,
+      "verified": false
+    },
+    {
+      "level": 1618,
+      "hammer-cost": 1100,
+      "verified": true
+    },
+    {
+      "level": 1619,
+      "hammer-cost": 1100,
+      "verified": true
+    },
+    {
+      "level": 1620,
+      "hammer-cost": 1100,
+      "verified": true
+    },
+    {
+      "level": 1621,
+      "hammer-cost": 1100,
+      "verified": true
+    },
+    {
+      "level": 1622,
+      "hammer-cost": 1100,
+      "verified": true
+    },
+    {
+      "level": 1623,
+      "hammer-cost": 1100,
+      "verified": true
+    },
+    {
+      "level": 1624,
+      "hammer-cost": 1100,
+      "verified": true
+    },
+    {
+      "level": 1625,
+      "hammer-cost": 1100,
+      "verified": true
+    },
+    {
+      "level": 1626,
+      "hammer-cost": 1105,
+      "verified": true
+    },
+    {
+      "level": 1627,
+      "hammer-cost": 1105,
+      "verified": true
+    },
+    {
+      "level": 1628,
+      "hammer-cost": 1105,
+      "verified": true
+    },
+    {
+      "level": 1629,
+      "hammer-cost": 1105,
+      "verified": true
+    },
+    {
+      "level": 1630,
+      "hammer-cost": 1105,
+      "verified": true
+    },
+    {
+      "level": 1631,
+      "hammer-cost": 1105,
+      "verified": true
+    },
+    {
+      "level": 1632,
+      "hammer-cost": 1105,
+      "verified": true
+    },
+    {
+      "level": 1633,
+      "hammer-cost": 1105,
+      "verified": true
+    },
+    {
+      "level": 1634,
+      "hammer-cost": 1105,
+      "verified": true
+    },
+    {
+      "level": 1635,
+      "hammer-cost": 1110,
+      "verified": true
+    },
+    {
+      "level": 1636,
+      "hammer-cost": 1110,
+      "verified": true
+    },
+    {
+      "level": 1637,
+      "hammer-cost": 1110,
+      "verified": true
+    },
+    {
+      "level": 1638,
+      "hammer-cost": 1110,
+      "verified": true
+    },
+    {
+      "level": 1639,
+      "hammer-cost": 1110,
+      "verified": true
+    },
+    {
+      "level": 1640,
+      "hammer-cost": 1110,
+      "verified": true
+    },
+    {
+      "level": 1641,
+      "hammer-cost": 1110,
+      "verified": true
+    },
+    {
+      "level": 1642,
+      "hammer-cost": 1110,
+      "verified": true
+    },
+    {
+      "level": 1643,
+      "hammer-cost": 1115,
+      "verified": true
+    },
+    {
+      "level": 1644,
+      "hammer-cost": 1115,
+      "verified": true
+    },
+    {
+      "level": 1645,
+      "hammer-cost": 1115,
+      "verified": true
+    },
+    {
+      "level": 1646,
+      "hammer-cost": 1115,
+      "verified": true
+    },
+    {
+      "level": 1647,
+      "hammer-cost": 1115,
+      "verified": true
+    },
+    {
+      "level": 1648,
+      "hammer-cost": 1115,
+      "verified": true
+    },
+    {
+      "level": 1649,
+      "hammer-cost": 1115,
+      "verified": true
+    },
+    {
+      "level": 1650,
+      "hammer-cost": 1115,
+      "verified": true
+    },
+    {
+      "level": 1651,
+      "hammer-cost": 1120,
+      "verified": true
+    },
+    {
+      "level": 1652,
+      "hammer-cost": 1120,
+      "verified": true
+    },
+    {
+      "level": 1653,
+      "hammer-cost": 1120,
+      "verified": true
+    },
+    {
+      "level": 1654,
+      "hammer-cost": 1120,
+      "verified": true
+    },
+    {
+      "level": 1655,
+      "hammer-cost": 1120,
+      "verified": true
+    },
+    {
+      "level": 1656,
+      "hammer-cost": 1120,
+      "verified": true
+    },
+    {
+      "level": 1657,
+      "hammer-cost": 1120,
+      "verified": true
+    },
+    {
+      "level": 1658,
+      "hammer-cost": 1120,
+      "verified": true
+    },
+    {
+      "level": 1659,
+      "hammer-cost": 1125,
+      "verified": true
+    },
+    {
+      "level": 1660,
+      "hammer-cost": 1125,
+      "verified": true
+    },
+    {
+      "level": 1661,
+      "hammer-cost": 1125,
+      "verified": true
+    },
+    {
+      "level": 1662,
+      "hammer-cost": 1125,
+      "verified": true
+    },
+    {
+      "level": 1663,
+      "hammer-cost": 1125,
+      "verified": true
+    },
+    {
+      "level": 1664,
+      "hammer-cost": 1125,
+      "verified": true
+    },
+    {
+      "level": 1665,
+      "hammer-cost": 1125,
+      "verified": true
+    },
+    {
+      "level": 1666,
+      "hammer-cost": 1125,
+      "verified": true
+    },
+    {
+      "level": 1667,
+      "hammer-cost": 1125,
+      "verified": true
+    },
+    {
+      "level": 1668,
+      "hammer-cost": 1130,
+      "verified": true
+    },
+    {
+      "level": 1669,
+      "hammer-cost": 1130,
+      "verified": true
+    },
+    {
+      "level": 1670,
+      "hammer-cost": 1130,
+      "verified": true
+    },
+    {
+      "level": 1671,
+      "hammer-cost": 1130,
+      "verified": true
+    },
+    {
+      "level": 1672,
+      "hammer-cost": 1130,
+      "verified": true
+    },
+    {
+      "level": 1673,
+      "hammer-cost": 1130,
+      "verified": true
+    },
+    {
+      "level": 1674,
+      "hammer-cost": 1130,
+      "verified": true
+    },
+    {
+      "level": 1675,
+      "hammer-cost": 1130,
+      "verified": true
+    },
+    {
+      "level": 1676,
+      "hammer-cost": 1135,
+      "verified": false
+    },
+    {
+      "level": 1677,
+      "hammer-cost": 1135,
+      "verified": false
+    },
+    {
+      "level": 1678,
+      "hammer-cost": 1135,
+      "verified": false
+    },
+    {
+      "level": 1679,
+      "hammer-cost": 1135,
+      "verified": false
+    },
+    {
+      "level": 1680,
+      "hammer-cost": 1135,
+      "verified": false
+    },
+    {
+      "level": 1681,
+      "hammer-cost": 1135,
+      "verified": true
+    },
+    {
+      "level": 1682,
+      "hammer-cost": 1135,
+      "verified": false
+    },
+    {
+      "level": 1683,
+      "hammer-cost": 1140,
+      "verified": false
+    },
+    {
+      "level": 1684,
+      "hammer-cost": 1140,
+      "verified": true
+    },
+    {
+      "level": 1685,
+      "hammer-cost": 1140,
+      "verified": true
+    },
+    {
+      "level": 1686,
+      "hammer-cost": 1140,
+      "verified": true
+    },
+    {
+      "level": 1687,
+      "hammer-cost": 1140,
+      "verified": true
+    },
+    {
+      "level": 1688,
+      "hammer-cost": 1140,
+      "verified": true
+    },
+    {
+      "level": 1689,
+      "hammer-cost": 1140,
+      "verified": true
+    },
+    {
+      "level": 1690,
+      "hammer-cost": 1140,
+      "verified": true
+    },
+    {
+      "level": 1691,
+      "hammer-cost": 1140,
+      "verified": true
+    },
+    {
+      "level": 1692,
+      "hammer-cost": 1145,
+      "verified": true
+    },
+    {
+      "level": 1693,
+      "hammer-cost": 1145,
+      "verified": true
+    },
+    {
+      "level": 1694,
+      "hammer-cost": 1145,
+      "verified": true
+    },
+    {
+      "level": 1695,
+      "hammer-cost": 1145,
+      "verified": true
+    },
+    {
+      "level": 1696,
+      "hammer-cost": 1145,
+      "verified": true
+    },
+    {
+      "level": 1697,
+      "hammer-cost": 1145,
+      "verified": true
+    },
+    {
+      "level": 1698,
+      "hammer-cost": 1145,
+      "verified": true
+    },
+    {
+      "level": 1699,
+      "hammer-cost": 1145,
+      "verified": true
+    },
+    {
+      "level": 1700,
+      "hammer-cost": 1145,
+      "verified": true
+    },
+    {
+      "level": 1701,
+      "hammer-cost": 1145,
+      "verified": true
+    },
+    {
+      "level": 1702,
+      "hammer-cost": 1150,
+      "verified": true
+    },
+    {
+      "level": 1703,
+      "hammer-cost": 1150,
+      "verified": true
+    },
+    {
+      "level": 1704,
+      "hammer-cost": 1150,
+      "verified": true
+    },
+    {
+      "level": 1705,
+      "hammer-cost": 1150,
+      "verified": true
+    },
+    {
+      "level": 1706,
+      "hammer-cost": 1150,
+      "verified": true
+    },
+    {
+      "level": 1707,
+      "hammer-cost": 1150,
+      "verified": true
+    },
+    {
+      "level": 1708,
+      "hammer-cost": 1150,
+      "verified": true
+    },
+    {
+      "level": 1709,
+      "hammer-cost": 1155,
+      "verified": true
+    },
+    {
+      "level": 1710,
+      "hammer-cost": 1155,
+      "verified": true
+    },
+    {
+      "level": 1711,
+      "hammer-cost": 1155,
+      "verified": true
+    },
+    {
+      "level": 1712,
+      "hammer-cost": 1155,
+      "verified": true
+    },
+    {
+      "level": 1713,
+      "hammer-cost": 1155,
+      "verified": true
+    },
+    {
+      "level": 1714,
+      "hammer-cost": 1155,
+      "verified": true
+    },
+    {
+      "level": 1715,
+      "hammer-cost": 1155,
+      "verified": true
+    },
+    {
+      "level": 1716,
+      "hammer-cost": 1155,
+      "verified": true
+    },
+    {
+      "level": 1717,
+      "hammer-cost": 1160,
+      "verified": true
+    },
+    {
+      "level": 1718,
+      "hammer-cost": 1160,
+      "verified": true
+    },
+    {
+      "level": 1719,
+      "hammer-cost": 1160,
+      "verified": true
+    },
+    {
+      "level": 1720,
+      "hammer-cost": 1160,
+      "verified": true
+    },
+    {
+      "level": 1721,
+      "hammer-cost": 1160,
+      "verified": true
+    },
+    {
+      "level": 1722,
+      "hammer-cost": 1160,
+      "verified": true
+    },
+    {
+      "level": 1723,
+      "hammer-cost": 1160,
+      "verified": true
+    },
+    {
+      "level": 1724,
+      "hammer-cost": 1160,
+      "verified": true
+    },
+    {
+      "level": 1725,
+      "hammer-cost": 1165,
+      "verified": true
+    },
+    {
+      "level": 1726,
+      "hammer-cost": 1165,
+      "verified": true
+    },
+    {
+      "level": 1727,
+      "hammer-cost": 1165,
+      "verified": true
+    },
+    {
+      "level": 1728,
+      "hammer-cost": 1165,
+      "verified": true
+    },
+    {
+      "level": 1729,
+      "hammer-cost": 1165,
+      "verified": true
+    },
+    {
+      "level": 1730,
+      "hammer-cost": 1165,
+      "verified": true
+    },
+    {
+      "level": 1731,
+      "hammer-cost": 1165,
+      "verified": true
+    },
+    {
+      "level": 1732,
+      "hammer-cost": 1165,
+      "verified": true
+    },
+    {
+      "level": 1733,
+      "hammer-cost": 1165,
+      "verified": true
+    },
+    {
+      "level": 1734,
+      "hammer-cost": 1170,
+      "verified": true
+    },
+    {
+      "level": 1735,
+      "hammer-cost": 1170,
+      "verified": true
+    },
+    {
+      "level": 1736,
+      "hammer-cost": 1170,
+      "verified": true
+    },
+    {
+      "level": 1737,
+      "hammer-cost": 1170,
+      "verified": true
+    },
+    {
+      "level": 1738,
+      "hammer-cost": 1170,
+      "verified": true
+    },
+    {
+      "level": 1739,
+      "hammer-cost": 1170,
+      "verified": true
+    },
+    {
+      "level": 1740,
+      "hammer-cost": 1170,
+      "verified": true
+    },
+    {
+      "level": 1741,
+      "hammer-cost": 1170,
+      "verified": true
+    },
+    {
+      "level": 1742,
+      "hammer-cost": 1175,
+      "verified": false
+    },
+    {
+      "level": 1743,
+      "hammer-cost": 1175,
+      "verified": true
+    },
+    {
+      "level": 1744,
+      "hammer-cost": 1175,
+      "verified": true
+    },
+    {
+      "level": 1745,
+      "hammer-cost": 1175,
+      "verified": true
+    },
+    {
+      "level": 1746,
+      "hammer-cost": 1175,
+      "verified": true
+    },
+    {
+      "level": 1747,
+      "hammer-cost": 1175,
+      "verified": true
+    },
+    {
+      "level": 1748,
+      "hammer-cost": 1175,
+      "verified": true
+    },
+    {
+      "level": 1749,
+      "hammer-cost": 1175,
+      "verified": true
+    },
+    {
+      "level": 1750,
+      "hammer-cost": 1180,
+      "verified": true
+    },
+    {
+      "level": 1751,
+      "hammer-cost": 1180,
+      "verified": true
+    },
+    {
+      "level": 1752,
+      "hammer-cost": 1180,
+      "verified": true
+    },
+    {
+      "level": 1753,
+      "hammer-cost": 1180,
+      "verified": true
+    },
+    {
+      "level": 1754,
+      "hammer-cost": 1180,
+      "verified": true
+    },
+    {
+      "level": 1755,
+      "hammer-cost": 1180,
+      "verified": true
+    },
+    {
+      "level": 1756,
+      "hammer-cost": 1180,
+      "verified": true
+    },
+    {
+      "level": 1757,
+      "hammer-cost": 1180,
+      "verified": true
+    },
+    {
+      "level": 1758,
+      "hammer-cost": 1185,
+      "verified": true
+    },
+    {
+      "level": 1759,
+      "hammer-cost": 1185,
+      "verified": true
+    },
+    {
+      "level": 1760,
+      "hammer-cost": 1185,
+      "verified": true
+    },
+    {
+      "level": 1761,
+      "hammer-cost": 1185,
+      "verified": true
+    },
+    {
+      "level": 1762,
+      "hammer-cost": 1185,
+      "verified": true
+    },
+    {
+      "level": 1763,
+      "hammer-cost": 1185,
+      "verified": true
+    },
+    {
+      "level": 1764,
+      "hammer-cost": 1185,
+      "verified": true
+    },
+    {
+      "level": 1765,
+      "hammer-cost": 1185,
+      "verified": true
+    },
+    {
+      "level": 1766,
+      "hammer-cost": 1185,
+      "verified": true
+    },
+    {
+      "level": 1767,
+      "hammer-cost": 1190,
+      "verified": true
+    },
+    {
+      "level": 1768,
+      "hammer-cost": 1190,
+      "verified": true
+    },
+    {
+      "level": 1769,
+      "hammer-cost": 1190,
+      "verified": true
+    },
+    {
+      "level": 1770,
+      "hammer-cost": 1190,
+      "verified": true
+    },
+    {
+      "level": 1771,
+      "hammer-cost": 1190,
+      "verified": true
+    },
+    {
+      "level": 1772,
+      "hammer-cost": 1190,
+      "verified": true
+    },
+    {
+      "level": 1773,
+      "hammer-cost": 1190,
+      "verified": true
+    },
+    {
+      "level": 1774,
+      "hammer-cost": 1190,
+      "verified": true
+    },
+    {
+      "level": 1775,
+      "hammer-cost": 1195,
+      "verified": true
+    },
+    {
+      "level": 1776,
+      "hammer-cost": 1195,
+      "verified": true
+    },
+    {
+      "level": 1777,
+      "hammer-cost": 1195,
+      "verified": true
+    },
+    {
+      "level": 1778,
+      "hammer-cost": 1195,
+      "verified": true
+    },
+    {
+      "level": 1779,
+      "hammer-cost": 1195,
+      "verified": true
+    },
+    {
+      "level": 1780,
+      "hammer-cost": 1195,
+      "verified": true
+    },
+    {
+      "level": 1781,
+      "hammer-cost": 1195,
+      "verified": true
+    },
+    {
+      "level": 1782,
+      "hammer-cost": 1195,
+      "verified": true
+    },
+    {
+      "level": 1783,
+      "hammer-cost": 1200,
+      "verified": true
+    },
+    {
+      "level": 1784,
+      "hammer-cost": 1200,
+      "verified": true
+    },
+    {
+      "level": 1785,
+      "hammer-cost": 1200,
+      "verified": true
+    },
+    {
+      "level": 1786,
+      "hammer-cost": 1200,
+      "verified": true
+    },
+    {
+      "level": 1787,
+      "hammer-cost": 1200,
+      "verified": true
+    },
+    {
+      "level": 1788,
+      "hammer-cost": 1200,
+      "verified": true
+    },
+    {
+      "level": 1789,
+      "hammer-cost": 1200,
+      "verified": true
+    },
+    {
+      "level": 1790,
+      "hammer-cost": 1200,
+      "verified": true
+    },
+    {
+      "level": 1791,
+      "hammer-cost": 1200,
+      "verified": true
+    },
+    {
+      "level": 1792,
+      "hammer-cost": 1205,
+      "verified": true
+    },
+    {
+      "level": 1793,
+      "hammer-cost": 1205,
+      "verified": true
+    },
+    {
+      "level": 1794,
+      "hammer-cost": 1205,
+      "verified": true
+    },
+    {
+      "level": 1795,
+      "hammer-cost": 1205,
+      "verified": true
+    },
+    {
+      "level": 1796,
+      "hammer-cost": 1205,
+      "verified": true
+    },
+    {
+      "level": 1797,
+      "hammer-cost": 1205,
+      "verified": true
+    },
+    {
+      "level": 1798,
+      "hammer-cost": 1205,
+      "verified": true
+    },
+    {
+      "level": 1799,
+      "hammer-cost": 1205,
+      "verified": true
+    },
+    {
+      "level": 1800,
+      "hammer-cost": 1210,
+      "verified": true
+    },
+    {
+      "level": 1801,
+      "hammer-cost": 1210,
+      "verified": true
+    },
+    {
+      "level": 1802,
+      "hammer-cost": 1210,
+      "verified": true
+    },
+    {
+      "level": 1803,
+      "hammer-cost": 1210,
+      "verified": true
+    },
+    {
+      "level": 1804,
+      "hammer-cost": 1210,
+      "verified": true
+    },
+    {
+      "level": 1805,
+      "hammer-cost": 1210,
+      "verified": true
+    },
+    {
+      "level": 1806,
+      "hammer-cost": 1210,
+      "verified": true
+    },
+    {
+      "level": 1807,
+      "hammer-cost": 1210,
+      "verified": true
+    },
+    {
+      "level": 1808,
+      "hammer-cost": 1215,
+      "verified": true
+    },
+    {
+      "level": 1809,
+      "hammer-cost": 1215,
+      "verified": true
+    },
+    {
+      "level": 1810,
+      "hammer-cost": 1215,
+      "verified": true
+    },
+    {
+      "level": 1811,
+      "hammer-cost": 1215,
+      "verified": true
+    },
+    {
+      "level": 1812,
+      "hammer-cost": 1215,
+      "verified": true
+    },
+    {
+      "level": 1813,
+      "hammer-cost": 1215,
+      "verified": true
+    },
+    {
+      "level": 1814,
+      "hammer-cost": 1215,
+      "verified": true
+    },
+    {
+      "level": 1815,
+      "hammer-cost": 1215,
+      "verified": true
+    },
+    {
+      "level": 1816,
+      "hammer-cost": 1220,
+      "verified": true
+    },
+    {
+      "level": 1817,
+      "hammer-cost": 1220,
+      "verified": true
+    },
+    {
+      "level": 1818,
+      "hammer-cost": 1220,
+      "verified": true
+    },
+    {
+      "level": 1819,
+      "hammer-cost": 1220,
+      "verified": true
+    },
+    {
+      "level": 1820,
+      "hammer-cost": 1220,
+      "verified": true
+    },
+    {
+      "level": 1821,
+      "hammer-cost": 1220,
+      "verified": true
+    },
+    {
+      "level": 1822,
+      "hammer-cost": 1220,
+      "verified": false
+    },
+    {
+      "level": 1823,
+      "hammer-cost": 1220,
+      "verified": false
+    },
+    {
+      "level": 1824,
+      "hammer-cost": 1220,
+      "verified": false
+    },
+    {
+      "level": 1825,
+      "hammer-cost": 1225,
+      "verified": false
+    },
+    {
+      "level": 1826,
+      "hammer-cost": 1225,
+      "verified": true
+    },
+    {
+      "level": 1827,
+      "hammer-cost": 1225,
+      "verified": true
+    },
+    {
+      "level": 1828,
+      "hammer-cost": 1225,
+      "verified": true
+    },
+    {
+      "level": 1829,
+      "hammer-cost": 1225,
+      "verified": true
+    },
+    {
+      "level": 1830,
+      "hammer-cost": 1225,
+      "verified": true
+    },
+    {
+      "level": 1831,
+      "hammer-cost": 1225,
+      "verified": true
+    },
+    {
+      "level": 1832,
+      "hammer-cost": 1225,
+      "verified": true
+    },
+    {
+      "level": 1833,
+      "hammer-cost": 1230,
+      "verified": true
+    },
+    {
+      "level": 1834,
+      "hammer-cost": 1230,
+      "verified": true
+    },
+    {
+      "level": 1835,
+      "hammer-cost": 1230,
+      "verified": true
+    },
+    {
+      "level": 1836,
+      "hammer-cost": 1230,
+      "verified": true
+    },
+    {
+      "level": 1837,
+      "hammer-cost": 1230,
+      "verified": true
+    },
+    {
+      "level": 1838,
+      "hammer-cost": 1230,
+      "verified": true
+    },
+    {
+      "level": 1839,
+      "hammer-cost": 1230,
+      "verified": true
+    },
+    {
+      "level": 1840,
+      "hammer-cost": 1230,
+      "verified": true
+    },
+    {
+      "level": 1841,
+      "hammer-cost": 1235,
+      "verified": true
+    },
+    {
+      "level": 1842,
+      "hammer-cost": 1235,
+      "verified": true
+    },
+    {
+      "level": 1843,
+      "hammer-cost": 1235,
+      "verified": true
+    },
+    {
+      "level": 1844,
+      "hammer-cost": 1235,
+      "verified": true
+    },
+    {
+      "level": 1845,
+      "hammer-cost": 1235,
+      "verified": true
+    },
+    {
+      "level": 1846,
+      "hammer-cost": 1235,
+      "verified": true
+    },
+    {
+      "level": 1847,
+      "hammer-cost": 1235,
+      "verified": true
+    },
+    {
+      "level": 1848,
+      "hammer-cost": 1235,
+      "verified": true
+    },
+    {
+      "level": 1849,
+      "hammer-cost": 1235,
+      "verified": true
+    },
+    {
+      "level": 1850,
+      "hammer-cost": 1240,
+      "verified": true
+    },
+    {
+      "level": 1851,
+      "hammer-cost": 1240,
+      "verified": true
+    },
+    {
+      "level": 1852,
+      "hammer-cost": 1240,
+      "verified": true
+    },
+    {
+      "level": 1853,
+      "hammer-cost": 1240,
+      "verified": true
+    },
+    {
+      "level": 1854,
+      "hammer-cost": 1240,
+      "verified": true
+    },
+    {
+      "level": 1855,
+      "hammer-cost": 1240,
+      "verified": true
+    },
+    {
+      "level": 1856,
+      "hammer-cost": 1240,
+      "verified": true
+    },
+    {
+      "level": 1857,
+      "hammer-cost": 1240,
+      "verified": true
+    },
+    {
+      "level": 1858,
+      "hammer-cost": 1245,
+      "verified": true
+    },
+    {
+      "level": 1859,
+      "hammer-cost": 1245,
+      "verified": true
+    },
+    {
+      "level": 1860,
+      "hammer-cost": 1245,
+      "verified": true
+    },
+    {
+      "level": 1861,
+      "hammer-cost": 1245,
+      "verified": true
+    },
+    {
+      "level": 1862,
+      "hammer-cost": 1245,
+      "verified": true
+    },
+    {
+      "level": 1863,
+      "hammer-cost": 1245,
+      "verified": true
+    },
+    {
+      "level": 1864,
+      "hammer-cost": 1245,
+      "verified": true
+    },
+    {
+      "level": 1865,
+      "hammer-cost": 1245,
+      "verified": true
+    },
+    {
+      "level": 1866,
+      "hammer-cost": 1250,
+      "verified": true
+    },
+    {
+      "level": 1867,
+      "hammer-cost": 1250,
+      "verified": true
+    },
+    {
+      "level": 1868,
+      "hammer-cost": 1250,
+      "verified": true
+    },
+    {
+      "level": 1869,
+      "hammer-cost": 1250,
+      "verified": true
+    },
+    {
+      "level": 1870,
+      "hammer-cost": 1250,
+      "verified": true
+    },
+    {
+      "level": 1871,
+      "hammer-cost": 1250,
+      "verified": true
+    },
+    {
+      "level": 1872,
+      "hammer-cost": 1250,
+      "verified": true
+    },
+    {
+      "level": 1873,
+      "hammer-cost": 1250,
+      "verified": true
+    },
+    {
+      "level": 1874,
+      "hammer-cost": 1250,
+      "verified": true
+    },
+    {
+      "level": 1875,
+      "hammer-cost": 1255,
+      "verified": true
+    },
+    {
+      "level": 1876,
+      "hammer-cost": 1255,
+      "verified": true
+    },
+    {
+      "level": 1877,
+      "hammer-cost": 1255,
+      "verified": true
+    },
+    {
+      "level": 1878,
+      "hammer-cost": 1255,
+      "verified": false
+    },
+    {
+      "level": 1879,
+      "hammer-cost": 1255,
+      "verified": false
+    },
+    {
+      "level": 1880,
+      "hammer-cost": 1255,
+      "verified": false
+    },
+    {
+      "level": 1881,
+      "hammer-cost": 1255,
+      "verified": false
+    },
+    {
+      "level": 1882,
+      "hammer-cost": 1255,
+      "verified": false
+    },
+    {
+      "level": 1883,
+      "hammer-cost": 1260,
+      "verified": false
+    },
+    {
+      "level": 1884,
+      "hammer-cost": 1260,
+      "verified": false
+    },
+    {
+      "level": 1885,
+      "hammer-cost": 1260,
+      "verified": false
+    },
+    {
+      "level": 1886,
+      "hammer-cost": 1260,
+      "verified": false
+    },
+    {
+      "level": 1887,
+      "hammer-cost": 1260,
+      "verified": false
+    },
+    {
+      "level": 1888,
+      "hammer-cost": 1260,
+      "verified": false
+    },
+    {
+      "level": 1889,
+      "hammer-cost": 1260,
+      "verified": false
+    },
+    {
+      "level": 1890,
+      "hammer-cost": 1260,
+      "verified": false
+    },
+    {
+      "level": 1891,
+      "hammer-cost": 1265,
+      "verified": true
+    },
+    {
+      "level": 1892,
+      "hammer-cost": 1265,
+      "verified": true
+    },
+    {
+      "level": 1893,
+      "hammer-cost": 1265,
+      "verified": true
+    },
+    {
+      "level": 1894,
+      "hammer-cost": 1265,
+      "verified": true
+    },
+    {
+      "level": 1895,
+      "hammer-cost": 1265,
+      "verified": true
+    },
+    {
+      "level": 1896,
+      "hammer-cost": 1265,
+      "verified": true
+    },
+    {
+      "level": 1897,
+      "hammer-cost": 1265,
+      "verified": true
+    },
+    {
+      "level": 1898,
+      "hammer-cost": 1265,
+      "verified": true
+    },
+    {
+      "level": 1899,
+      "hammer-cost": 1265,
+      "verified": true
+    },
+    {
+      "level": 1900,
+      "hammer-cost": 1270,
+      "verified": true
+    },
+    {
+      "level": 1901,
+      "hammer-cost": 1270,
+      "verified": true
+    },
+    {
+      "level": 1902,
+      "hammer-cost": 1270,
+      "verified": true
+    },
+    {
+      "level": 1903,
+      "hammer-cost": 1270,
+      "verified": true
+    },
+    {
+      "level": 1904,
+      "hammer-cost": 1270,
+      "verified": true
+    },
+    {
+      "level": 1905,
+      "hammer-cost": 1270,
+      "verified": true
+    },
+    {
+      "level": 1906,
+      "hammer-cost": 1270,
+      "verified": true
+    },
+    {
+      "level": 1907,
+      "hammer-cost": 1270,
+      "verified": true
+    },
+    {
+      "level": 1908,
+      "hammer-cost": 1275,
+      "verified": true
+    },
+    {
+      "level": 1909,
+      "hammer-cost": 1275,
+      "verified": true
+    },
+    {
+      "level": 1910,
+      "hammer-cost": 1275,
+      "verified": true
+    },
+    {
+      "level": 1911,
+      "hammer-cost": 1275,
+      "verified": true
+    },
+    {
+      "level": 1912,
+      "hammer-cost": 1275,
+      "verified": true
+    },
+    {
+      "level": 1913,
+      "hammer-cost": 1275,
+      "verified": true
+    },
+    {
+      "level": 1914,
+      "hammer-cost": 1275,
+      "verified": true
+    },
+    {
+      "level": 1915,
+      "hammer-cost": 1275,
+      "verified": true
+    },
+    {
+      "level": 1916,
+      "hammer-cost": 1280,
+      "verified": true
+    },
+    {
+      "level": 1917,
+      "hammer-cost": 1280,
+      "verified": true
+    },
+    {
+      "level": 1918,
+      "hammer-cost": 1280,
+      "verified": true
+    },
+    {
+      "level": 1919,
+      "hammer-cost": 1280,
+      "verified": true
+    },
+    {
+      "level": 1920,
+      "hammer-cost": 1280,
+      "verified": true
+    },
+    {
+      "level": 1921,
+      "hammer-cost": 1280,
+      "verified": true
+    },
+    {
+      "level": 1922,
+      "hammer-cost": 1280,
+      "verified": true
+    },
+    {
+      "level": 1923,
+      "hammer-cost": 1280,
+      "verified": true
+    },
+    {
+      "level": 1924,
+      "hammer-cost": 1280,
+      "verified": true
+    },
+    {
+      "level": 1925,
+      "hammer-cost": 1285,
+      "verified": true
+    },
+    {
+      "level": 1926,
+      "hammer-cost": 1285,
+      "verified": true
+    },
+    {
+      "level": 1927,
+      "hammer-cost": 1285,
+      "verified": true
+    },
+    {
+      "level": 1928,
+      "hammer-cost": 1285,
+      "verified": true
+    },
+    {
+      "level": 1929,
+      "hammer-cost": 1285,
+      "verified": true
+    },
+    {
+      "level": 1930,
+      "hammer-cost": 1285,
+      "verified": true
+    },
+    {
+      "level": 1931,
+      "hammer-cost": 1285,
+      "verified": true
+    },
+    {
+      "level": 1932,
+      "hammer-cost": 1285,
+      "verified": true
+    },
+    {
+      "level": 1933,
+      "hammer-cost": 1290,
+      "verified": true
+    },
+    {
+      "level": 1934,
+      "hammer-cost": 1290,
+      "verified": true
+    },
+    {
+      "level": 1935,
+      "hammer-cost": 1290,
+      "verified": true
+    },
+    {
+      "level": 1936,
+      "hammer-cost": 1290,
+      "verified": true
+    },
+    {
+      "level": 1937,
+      "hammer-cost": 1290,
+      "verified": true
+    },
+    {
+      "level": 1938,
+      "hammer-cost": 1290,
+      "verified": true
+    },
+    {
+      "level": 1939,
+      "hammer-cost": 1290,
+      "verified": true
+    },
+    {
+      "level": 1940,
+      "hammer-cost": 1290,
+      "verified": true
+    },
+    {
+      "level": 1941,
+      "hammer-cost": 1290,
+      "verified": true
+    },
+    {
+      "level": 1942,
+      "hammer-cost": 1295,
+      "verified": true
+    },
+    {
+      "level": 1943,
+      "hammer-cost": 1295,
+      "verified": true
+    },
+    {
+      "level": 1944,
+      "hammer-cost": 1295,
+      "verified": true
+    },
+    {
+      "level": 1945,
+      "hammer-cost": 1295,
+      "verified": true
+    },
+    {
+      "level": 1946,
+      "hammer-cost": 1295,
+      "verified": true
+    },
+    {
+      "level": 1947,
+      "hammer-cost": 1295,
+      "verified": true
+    },
+    {
+      "level": 1948,
+      "hammer-cost": 1295,
+      "verified": true
+    },
+    {
+      "level": 1949,
+      "hammer-cost": 1295,
+      "verified": true
+    },
+    {
+      "level": 1950,
+      "hammer-cost": 1300,
+      "verified": true
+    },
+    {
+      "level": 1951,
+      "hammer-cost": 1300,
+      "verified": true
+    },
+    {
+      "level": 1952,
+      "hammer-cost": 1300,
+      "verified": true
+    },
+    {
+      "level": 1953,
+      "hammer-cost": 1300,
+      "verified": true
+    },
+    {
+      "level": 1954,
+      "hammer-cost": 1300,
+      "verified": true
+    },
+    {
+      "level": 1955,
+      "hammer-cost": 1300,
+      "verified": true
+    },
+    {
+      "level": 1956,
+      "hammer-cost": 1300,
+      "verified": true
+    },
+    {
+      "level": 1957,
+      "hammer-cost": 1300,
+      "verified": true
+    },
+    {
+      "level": 1958,
+      "hammer-cost": 1305,
+      "verified": true
+    },
+    {
+      "level": 1959,
+      "hammer-cost": 1305,
+      "verified": true
+    },
+    {
+      "level": 1960,
+      "hammer-cost": 1305,
+      "verified": true
+    },
+    {
+      "level": 1961,
+      "hammer-cost": 1305,
+      "verified": true
+    },
+    {
+      "level": 1962,
+      "hammer-cost": 1305,
+      "verified": true
+    },
+    {
+      "level": 1963,
+      "hammer-cost": 1305,
+      "verified": true
+    },
+    {
+      "level": 1964,
+      "hammer-cost": 1305,
+      "verified": true
+    },
+    {
+      "level": 1965,
+      "hammer-cost": 1305,
+      "verified": true
+    },
+    {
+      "level": 1966,
+      "hammer-cost": 1305,
+      "verified": true
+    },
+    {
+      "level": 1967,
+      "hammer-cost": 1310,
+      "verified": true
+    },
+    {
+      "level": 1968,
+      "hammer-cost": 1310,
+      "verified": true
+    },
+    {
+      "level": 1969,
+      "hammer-cost": 1310,
+      "verified": true
+    },
+    {
+      "level": 1970,
+      "hammer-cost": 1310,
+      "verified": true
+    },
+    {
+      "level": 1971,
+      "hammer-cost": 1310,
+      "verified": true
+    },
+    {
+      "level": 1972,
+      "hammer-cost": 1310,
+      "verified": true
+    },
+    {
+      "level": 1973,
+      "hammer-cost": 1310,
+      "verified": true
+    },
+    {
+      "level": 1974,
+      "hammer-cost": 1310,
+      "verified": true
+    },
+    {
+      "level": 1975,
+      "hammer-cost": 1315,
+      "verified": true
+    },
+    {
+      "level": 1976,
+      "hammer-cost": 1315,
+      "verified": true
+    },
+    {
+      "level": 1977,
+      "hammer-cost": 1315,
+      "verified": true
+    },
+    {
+      "level": 1978,
+      "hammer-cost": 1315,
+      "verified": true
+    },
+    {
+      "level": 1979,
+      "hammer-cost": 1315,
+      "verified": true
+    },
+    {
+      "level": 1980,
+      "hammer-cost": 1315,
+      "verified": true
+    },
+    {
+      "level": 1981,
+      "hammer-cost": 1315,
+      "verified": true
+    },
+    {
+      "level": 1982,
+      "hammer-cost": 1315,
+      "verified": true
+    },
+    {
+      "level": 1983,
+      "hammer-cost": 1320,
+      "verified": true
+    },
+    {
+      "level": 1984,
+      "hammer-cost": 1320,
+      "verified": true
+    },
+    {
+      "level": 1985,
+      "hammer-cost": 1320,
+      "verified": true
+    },
+    {
+      "level": 1986,
+      "hammer-cost": 1320,
+      "verified": true
+    },
+    {
+      "level": 1987,
+      "hammer-cost": 1320,
+      "verified": true
+    },
+    {
+      "level": 1988,
+      "hammer-cost": 1320,
+      "verified": true
+    },
+    {
+      "level": 1989,
+      "hammer-cost": 1320,
+      "verified": true
+    },
+    {
+      "level": 1990,
+      "hammer-cost": 1320,
+      "verified": true
+    },
+    {
+      "level": 1991,
+      "hammer-cost": 1320,
+      "verified": true
+    },
+    {
+      "level": 1992,
+      "hammer-cost": 1325,
+      "verified": true
+    },
+    {
+      "level": 1993,
+      "hammer-cost": 1325,
+      "verified": true
+    },
+    {
+      "level": 1994,
+      "hammer-cost": 1325,
+      "verified": true
+    },
+    {
+      "level": 1995,
+      "hammer-cost": 1325,
+      "verified": true
+    },
+    {
+      "level": 1996,
+      "hammer-cost": 1325,
+      "verified": true
+    },
+    {
+      "level": 1997,
+      "hammer-cost": 1325,
+      "verified": true
+    },
+    {
+      "level": 1998,
+      "hammer-cost": 1325,
+      "verified": true
+    },
+    {
+      "level": 1999,
+      "hammer-cost": 1325,
+      "verified": true
+    }
+  ]
+}
