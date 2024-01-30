@@ -2,9 +2,9 @@ import fs from 'fs';
 import {getDateFormatStrings} from '../../utils/date-utils.js';
 
 const exportDirectory = '../../../docs/data';
-const jsFileName = 'light-magic-cost.js';
+const jsFileName = 'light-magic-upgrade-cost-cost.js';
 const jsonFileName = 'light-magic-upgrade-cost.json';
-const htmlFileName = 'light-magic-cost.html';
+const htmlFileName = 'light-magic-upgrade-cost.html';
 const sheetLink = 'https://docs.google.com/spreadsheets/d/12nYx5eZFv-58mNlyelezxu3RIl7tV2IUyvmiij0y_OY/edit?usp=sharing';
 
 const tableName = 'Light Magic Upgrade Cost';
