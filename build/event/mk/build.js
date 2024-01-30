@@ -26,7 +26,7 @@ for (let eventIdx = 0; eventIdx < eventCount; eventIdx++) {
   const currEventData = EventData[eventIdx];
 
   if (currEventData['sheet-url'] === '') {
-    indexList.push(`  <li>${currEventData.date}</li>`);
+    indexList.unshift(`  <li>${currEventData.date}</li>`);
     continue;
   }
 
@@ -329,7 +329,7 @@ for (let eventIdx = 0; eventIdx < eventCount; eventIdx++) {
 
   let indexLink = `<a href="./${outputName}">${currEventData.date}</a>`;
   if (currEventData['up-week']) indexLink = '<strong>'+indexLink+'</strong>';
-  indexList.push(
+  indexList.unshift(
     `  <li>${indexLink}\n (` + chunkedList.join(',\n  ') + ')</li>'
   );
 }
