@@ -328,3 +328,67 @@
   display: block;
   margin:0;
 }
+
+table.calendar {
+  border-collapse: collapse;
+}
+
+table.calendar td,
+table.calendar th {
+  padding: 0.5rem;
+  /* border: 0.11rem solid var(--miku-dark-red); */
+}
+table.calendar td {
+  vertical-align: top;
+}
+
+table.calendar thead th {
+  background: var(--miku-red);
+  color: white;
+}
+
+table.calendar tbody td.date-col {
+  width: 1.8rem;
+  height: 3rem;
+}
+
+table.calendar tbody .even-month {
+  background-color: var(--pale-neutral);
+}
+
+table.calendar div.date {
+  font-size: 1.1rem;
+  color: var(--dark-neutral);
+  text-align: center;
+}
+
+table.calendar tbody th {
+  text-align: left;
+  vertical-align: top;
+  font-size: 1.2rem;
+  color: var(--dark-neutral);
+}
+
+table.calendar .marker-container {
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+table.calendar .marker3 {
+  color: var(--red);
+}
+
+table.calendar .marker2 {
+  color: var(--yellow);
+}
+
+table.calendar .marker1 {
+  color: var(--green);
+}
+
+/* table.calendar .marker3,
+table.calendar .marker2,
+table.calendar .marker1 {
+  display: inline-block;
+  text-align: center;
+} */
