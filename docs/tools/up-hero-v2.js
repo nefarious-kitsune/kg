@@ -143,7 +143,7 @@ const HeroUpgradePlanner = {
       this.outputs['hero-star-before'][idx].innerText = heroStarDisplayText[this.data['hero-star-before'][idx]];
       this.outputs['hero-star-after' ][idx].innerText = heroStarDisplayText[this.data['hero-star-after'][idx]];
     }
-    this.outputs['points'].innerText = this.data['points'];
+    this.outputs['points'].innerText = formatNumber(this.data['points']);
   },
 
   onFieldChange: function() {
