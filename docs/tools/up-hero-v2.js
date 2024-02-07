@@ -167,7 +167,7 @@ const HeroUpgradePlanner = {
         let keepUpgrading = (starAfter >= 20)?false:true;
 
         while (keepUpgrading) {
-          const cost = heroUpgradeCost[starAfter + 1];
+          const cost = heroUpgradeCost[starAfter];
           if (cardAfter > cost) {
             starAfter++;
             cardAfter -= cost;
