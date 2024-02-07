@@ -1,0 +1,1265 @@
+<html>
+<head>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Miku's Shrine: Hero Upgrade Calculator</title>
+  <link rel="icon" type="image/x-icon" href="../images/logo_mini.png">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://kg.kitsune21.com/">
+  <meta property="og:title" content="Miku's Shrine | Hero Upgrade Calculator">
+  <meta property="og:description" content="Tool for estimating your maximum Hero upgrades and the resulting points in Mightiest Kingdom event.">
+  <meta property="og:image" content="https://kg.kitsune21.com/images/calculator-2x_n.png">
+  <script src="./up-hero-v2.js"></script>
+  <script src="./up-common.js"></script>
+  <link href="../css/common.css" rel="stylesheet">
+  <link href="./up.css" rel="stylesheet">
+  <script>
+    const heroTabs = [
+      'hero-upgrade-current',
+      'hero-upgrade-calculated',];
+      
+    document.addEventListener("DOMContentLoaded", (e) => {
+      HeroUpgradePlanner.init();
+    })
+  </script>
+</head>
+<body>
+
+<header id="header">
+  <div id="breadcrumb-wrapper"><nav>
+    <a class="link" href="../content">Home</a>
+    <span class="chevron">›</span>
+    <a class="link" href="./">Tools</a>
+    <span class="chevron">›</span>
+    <span class="current">Hero Upgrade Calculator</span>
+  </nav></div>
+</header>
+
+<datalist id="hero-name-list">
+  <option value="Padme"></option>
+  <option value="Sahar"></option>
+  <option value="Meg"></option>
+  <option value="Ptolemy"></option>
+  <option value="Livia"></option>
+  <option value="Richard"></option>
+  <option value="Torvi"></option>
+  <option value="Collin"></option>
+  <option value="Sabastian"></option>
+  <option value="O'Neil"></option>
+  <option value="Ariza"></option>
+  <option value="Gabriel"></option>
+  <option value="Kadir"></option>
+  <option value="Pan"></option>
+  <option value="Fatima"></option>
+  <option value="Montag"></option>
+  <option value="Bella"></option>
+  <option value="Jennifer"></option>
+  <option value="Arthur"></option>
+  <option value="Trist"></option>
+  <option value="Tracy"></option>
+  <option value="Erika"></option>
+  <option value="Anko"></option>
+  <option value="Cosette"></option>
+  <option value="Paul"></option>
+  <option value="Miku"></option>
+  <option value="Vanessa"></option>
+  <option value="Giselle"></option>
+  <option value="Kenshiro"></option>
+  <option value="Penny"></option>
+  <option value="Apollo"></option>
+  <option value="Christie"></option>
+  <option value="Brie"></option>
+  <option value="Dean"></option>
+  <option value="Dolvar"></option>
+  <option value="Wallis"></option>
+  <option value="Allen"></option>
+  <option value="Dain"></option>
+  <option value="Gro"></option>
+  <option value="Simon"></option>
+  <option value="Tumnus"></option>
+  <option value="Gruen"></option>
+  <option value="Wendy"></option>
+  <option value="Rosamond"></option>
+  <option value="Arwin"></option>
+  <option value="Benjamin"></option>
+  <option value="Lomax"></option>
+  <option value="Meniere"></option>
+  <option value="Chiyoko"></option>
+  <option value="Suad"></option>
+  <option value="Blackwell"></option>
+  <option value="Luvia"></option>
+  <option value="Pythia"></option>
+  <option value="Claudia"></option>
+  <option value="Issac"></option>
+  <option value="Catherine"></option>
+  <option value="Rogers"></option>
+  <option value="Clarence"></option>
+  <option value="Ao Deng Ge Ri Le"></option>
+  <option value="Ao Yue"></option>
+  <option value="Filius"></option>
+  <option value="Jessica"></option>
+  <option value="Pedra"></option>
+  <option value="Lilani"></option>
+  <option value="Parr"></option>
+  <option value="Hana"></option>
+  <option value="Keith"></option>
+  <option value="Maud"></option>
+  <option value="Vera"></option>
+  <option value="Rudolph"></option>
+  <option value="Nathaniel"></option>
+  <option value="Paula"></option>
+  <option value="Ralph"></option>
+  <option value="Hadi"></option>
+  <option value="Nicole"></option>
+</datalist>  
+<main>
+<h1>Hero Upgrade Calculator <span class="version-tag">v2.0.1</span></h1>
+
+<p>This tool estimates your maximum Hero upgrades and
+the resulting points in Mightiest Kingdom/Ultimate Power event.
+</p>
+
+<div class="collapsible-toggle">
+  <button class="title" type="button" onclick="toggleCollapsible('hero-upgrade-content')">Hero Upgrades</button>
+  <div class="points">MK: <span id="o-hero-upgrade-points" class="points">9,674,120</span> pts</div>
+</div>
+<div class="collapsible-content" id="hero-upgrade-content">
+<div class="up-tab-bar">
+  <button onclick="openTab(0, heroTabs)" id="hero-upgrade-current-tab" class="up-tab focused">Current</button>
+  <button onclick="openTab(1, heroTabs)" id="hero-upgrade-calculated-tab" class="up-tab">Calculated</button>
+</div>
+<form class="form-container" id="hero-upgrade-calculated">
+
+<div class="up-tab-content" id="hero-upgrade-current-content">
+  <div class="field-container">
+    <div class="label-wrapper">
+      <input
+        id="i-hero-name-1"
+        type="text"
+        list="hero-name-list"
+        value=""
+        placeholder="Hero 1"
+        class="hero-name"/>
+    </div>
+    <div class="value-wrapper">
+      <div class="input-wrapper">
+        <label for="i-hero-star-level-1">Star level</label>
+        <div class="select-wrapper hero-star-level">
+          <select id="i-hero-star-level-1" >
+            <option disabled selected>Hero star level</option>
+            <option value="0" >0/2</option>
+            <option value="1" >1/2</option>
+            <option value="2" >★</option>
+            <option value="3" >★ 1/3</option>
+            <option value="4" >★ 2/3</option>
+            <option value="5" >★★</option>
+            <option value="6" >★★ 1/4</option>
+            <option value="7" >★★ 2/4</option>
+            <option value="8" >★★ 3/4</option>
+            <option value="9">★★★</option>
+            <option value="10">★★★ 1/5</option>
+            <option value="11">★★★ 2/5</option>
+            <option value="12">★★★ 3/5</option>
+            <option value="13">★★★ 4/5</option>
+            <option value="14">★★★★</option>
+            <option value="15">★★★★ 1/5</option>
+            <option value="16">★★★★ 2/5</option>
+            <option value="17">★★★★ 3/5</option>
+            <option value="18">★★★★ 4/5</option>
+            <option value="19">★★★★★</option>
+          </select>
+        </div>
+      </div>
+      <div class="input-wrapper" data-tooltip="Number of cards as shown on hero avatar icon">
+        <label for="i-hero-card-1">Cards</label>
+        <input id="i-hero-card-1" type="number" min="1" max="1000" step="1" value="" placeholder="# of cards" class="max-10k">
+      </div>
+      <div class="input-wrapper"><input type="button" onclick="resetRow(1)" value="Reset"></div>
+    </div>
+  </div>
+    <div class="field-container">
+    <div class="label-wrapper">
+      <input
+        id="i-hero-name-2"
+        type="text"
+        list="hero-name-list"
+        value=""
+        placeholder="Hero 2"
+        class="hero-name"/>
+    </div>
+    <div class="value-wrapper">
+      <div class="input-wrapper">
+        <label for="i-hero-star-level-2">Star level</label>
+        <div class="select-wrapper hero-star-level">
+          <select id="i-hero-star-level-2" >
+            <option disabled selected>Hero star level</option>
+            <option value="0" >0/2</option>
+            <option value="1" >1/2</option>
+            <option value="2" >★</option>
+            <option value="3" >★ 1/3</option>
+            <option value="4" >★ 2/3</option>
+            <option value="5" >★★</option>
+            <option value="6" >★★ 1/4</option>
+            <option value="7" >★★ 2/4</option>
+            <option value="8" >★★ 3/4</option>
+            <option value="9">★★★</option>
+            <option value="10">★★★ 1/5</option>
+            <option value="11">★★★ 2/5</option>
+            <option value="12">★★★ 3/5</option>
+            <option value="13">★★★ 4/5</option>
+            <option value="14">★★★★</option>
+            <option value="15">★★★★ 1/5</option>
+            <option value="16">★★★★ 2/5</option>
+            <option value="17">★★★★ 3/5</option>
+            <option value="18">★★★★ 4/5</option>
+            <option value="19">★★★★★</option>
+          </select>
+        </div>
+      </div>
+      <div class="input-wrapper" data-tooltip="Number of cards as shown on hero avatar icon">
+        <label for="i-hero-card-2">Cards</label>
+        <input id="i-hero-card-2" type="number" min="1" max="1000" step="1" value="" placeholder="# of cards" class="max-10k">
+      </div>
+      <div class="input-wrapper"><input type="button" onclick="resetRow(2)" value="Reset"></div>
+    </div>
+  </div>
+    <div class="field-container">
+    <div class="label-wrapper">
+      <input
+        id="i-hero-name-3"
+        type="text"
+        list="hero-name-list"
+        value=""
+        placeholder="Hero 3"
+        class="hero-name"/>
+    </div>
+    <div class="value-wrapper">
+      <div class="input-wrapper">
+        <label for="i-hero-star-level-3">Star level</label>
+        <div class="select-wrapper hero-star-level">
+          <select id="i-hero-star-level-3" >
+            <option disabled selected>Hero star level</option>
+            <option value="0" >0/2</option>
+            <option value="1" >1/2</option>
+            <option value="2" >★</option>
+            <option value="3" >★ 1/3</option>
+            <option value="4" >★ 2/3</option>
+            <option value="5" >★★</option>
+            <option value="6" >★★ 1/4</option>
+            <option value="7" >★★ 2/4</option>
+            <option value="8" >★★ 3/4</option>
+            <option value="9">★★★</option>
+            <option value="10">★★★ 1/5</option>
+            <option value="11">★★★ 2/5</option>
+            <option value="12">★★★ 3/5</option>
+            <option value="13">★★★ 4/5</option>
+            <option value="14">★★★★</option>
+            <option value="15">★★★★ 1/5</option>
+            <option value="16">★★★★ 2/5</option>
+            <option value="17">★★★★ 3/5</option>
+            <option value="18">★★★★ 4/5</option>
+            <option value="19">★★★★★</option>
+          </select>
+        </div>
+      </div>
+      <div class="input-wrapper" data-tooltip="Number of cards as shown on hero avatar icon">
+        <label for="i-hero-card-3">Cards</label>
+        <input id="i-hero-card-3" type="number" min="1" max="1000" step="1" value="" placeholder="# of cards" class="max-10k">
+      </div>
+      <div class="input-wrapper"><input type="button" onclick="resetRow(3)" value="Reset"></div>
+    </div>
+  </div>
+    <div class="field-container">
+    <div class="label-wrapper">
+      <input
+        id="i-hero-name-4"
+        type="text"
+        list="hero-name-list"
+        value=""
+        placeholder="Hero 4"
+        class="hero-name"/>
+    </div>
+    <div class="value-wrapper">
+      <div class="input-wrapper">
+        <label for="i-hero-star-level-4">Star level</label>
+        <div class="select-wrapper hero-star-level">
+          <select id="i-hero-star-level-4" >
+            <option disabled selected>Hero star level</option>
+            <option value="0" >0/2</option>
+            <option value="1" >1/2</option>
+            <option value="2" >★</option>
+            <option value="3" >★ 1/3</option>
+            <option value="4" >★ 2/3</option>
+            <option value="5" >★★</option>
+            <option value="6" >★★ 1/4</option>
+            <option value="7" >★★ 2/4</option>
+            <option value="8" >★★ 3/4</option>
+            <option value="9">★★★</option>
+            <option value="10">★★★ 1/5</option>
+            <option value="11">★★★ 2/5</option>
+            <option value="12">★★★ 3/5</option>
+            <option value="13">★★★ 4/5</option>
+            <option value="14">★★★★</option>
+            <option value="15">★★★★ 1/5</option>
+            <option value="16">★★★★ 2/5</option>
+            <option value="17">★★★★ 3/5</option>
+            <option value="18">★★★★ 4/5</option>
+            <option value="19">★★★★★</option>
+          </select>
+        </div>
+      </div>
+      <div class="input-wrapper" data-tooltip="Number of cards as shown on hero avatar icon">
+        <label for="i-hero-card-4">Cards</label>
+        <input id="i-hero-card-4" type="number" min="1" max="1000" step="1" value="" placeholder="# of cards" class="max-10k">
+      </div>
+      <div class="input-wrapper"><input type="button" onclick="resetRow(4)" value="Reset"></div>
+    </div>
+  </div>
+    <div class="field-container">
+    <div class="label-wrapper">
+      <input
+        id="i-hero-name-5"
+        type="text"
+        list="hero-name-list"
+        value=""
+        placeholder="Hero 5"
+        class="hero-name"/>
+    </div>
+    <div class="value-wrapper">
+      <div class="input-wrapper">
+        <label for="i-hero-star-level-5">Star level</label>
+        <div class="select-wrapper hero-star-level">
+          <select id="i-hero-star-level-5" >
+            <option disabled selected>Hero star level</option>
+            <option value="0" >0/2</option>
+            <option value="1" >1/2</option>
+            <option value="2" >★</option>
+            <option value="3" >★ 1/3</option>
+            <option value="4" >★ 2/3</option>
+            <option value="5" >★★</option>
+            <option value="6" >★★ 1/4</option>
+            <option value="7" >★★ 2/4</option>
+            <option value="8" >★★ 3/4</option>
+            <option value="9">★★★</option>
+            <option value="10">★★★ 1/5</option>
+            <option value="11">★★★ 2/5</option>
+            <option value="12">★★★ 3/5</option>
+            <option value="13">★★★ 4/5</option>
+            <option value="14">★★★★</option>
+            <option value="15">★★★★ 1/5</option>
+            <option value="16">★★★★ 2/5</option>
+            <option value="17">★★★★ 3/5</option>
+            <option value="18">★★★★ 4/5</option>
+            <option value="19">★★★★★</option>
+          </select>
+        </div>
+      </div>
+      <div class="input-wrapper" data-tooltip="Number of cards as shown on hero avatar icon">
+        <label for="i-hero-card-5">Cards</label>
+        <input id="i-hero-card-5" type="number" min="1" max="1000" step="1" value="" placeholder="# of cards" class="max-10k">
+      </div>
+      <div class="input-wrapper"><input type="button" onclick="resetRow(5)" value="Reset"></div>
+    </div>
+  </div>
+    <div class="field-container">
+    <div class="label-wrapper">
+      <input
+        id="i-hero-name-6"
+        type="text"
+        list="hero-name-list"
+        value=""
+        placeholder="Hero 6"
+        class="hero-name"/>
+    </div>
+    <div class="value-wrapper">
+      <div class="input-wrapper">
+        <label for="i-hero-star-level-6">Star level</label>
+        <div class="select-wrapper hero-star-level">
+          <select id="i-hero-star-level-6" >
+            <option disabled selected>Hero star level</option>
+            <option value="0" >0/2</option>
+            <option value="1" >1/2</option>
+            <option value="2" >★</option>
+            <option value="3" >★ 1/3</option>
+            <option value="4" >★ 2/3</option>
+            <option value="5" >★★</option>
+            <option value="6" >★★ 1/4</option>
+            <option value="7" >★★ 2/4</option>
+            <option value="8" >★★ 3/4</option>
+            <option value="9">★★★</option>
+            <option value="10">★★★ 1/5</option>
+            <option value="11">★★★ 2/5</option>
+            <option value="12">★★★ 3/5</option>
+            <option value="13">★★★ 4/5</option>
+            <option value="14">★★★★</option>
+            <option value="15">★★★★ 1/5</option>
+            <option value="16">★★★★ 2/5</option>
+            <option value="17">★★★★ 3/5</option>
+            <option value="18">★★★★ 4/5</option>
+            <option value="19">★★★★★</option>
+          </select>
+        </div>
+      </div>
+      <div class="input-wrapper" data-tooltip="Number of cards as shown on hero avatar icon">
+        <label for="i-hero-card-6">Cards</label>
+        <input id="i-hero-card-6" type="number" min="1" max="1000" step="1" value="" placeholder="# of cards" class="max-10k">
+      </div>
+      <div class="input-wrapper"><input type="button" onclick="resetRow(6)" value="Reset"></div>
+    </div>
+  </div>
+    <div class="field-container">
+    <div class="label-wrapper">
+      <input
+        id="i-hero-name-7"
+        type="text"
+        list="hero-name-list"
+        value=""
+        placeholder="Hero 7"
+        class="hero-name"/>
+    </div>
+    <div class="value-wrapper">
+      <div class="input-wrapper">
+        <label for="i-hero-star-level-7">Star level</label>
+        <div class="select-wrapper hero-star-level">
+          <select id="i-hero-star-level-7" >
+            <option disabled selected>Hero star level</option>
+            <option value="0" >0/2</option>
+            <option value="1" >1/2</option>
+            <option value="2" >★</option>
+            <option value="3" >★ 1/3</option>
+            <option value="4" >★ 2/3</option>
+            <option value="5" >★★</option>
+            <option value="6" >★★ 1/4</option>
+            <option value="7" >★★ 2/4</option>
+            <option value="8" >★★ 3/4</option>
+            <option value="9">★★★</option>
+            <option value="10">★★★ 1/5</option>
+            <option value="11">★★★ 2/5</option>
+            <option value="12">★★★ 3/5</option>
+            <option value="13">★★★ 4/5</option>
+            <option value="14">★★★★</option>
+            <option value="15">★★★★ 1/5</option>
+            <option value="16">★★★★ 2/5</option>
+            <option value="17">★★★★ 3/5</option>
+            <option value="18">★★★★ 4/5</option>
+            <option value="19">★★★★★</option>
+          </select>
+        </div>
+      </div>
+      <div class="input-wrapper" data-tooltip="Number of cards as shown on hero avatar icon">
+        <label for="i-hero-card-7">Cards</label>
+        <input id="i-hero-card-7" type="number" min="1" max="1000" step="1" value="" placeholder="# of cards" class="max-10k">
+      </div>
+      <div class="input-wrapper"><input type="button" onclick="resetRow(7)" value="Reset"></div>
+    </div>
+  </div>
+    <div class="field-container">
+    <div class="label-wrapper">
+      <input
+        id="i-hero-name-8"
+        type="text"
+        list="hero-name-list"
+        value=""
+        placeholder="Hero 8"
+        class="hero-name"/>
+    </div>
+    <div class="value-wrapper">
+      <div class="input-wrapper">
+        <label for="i-hero-star-level-8">Star level</label>
+        <div class="select-wrapper hero-star-level">
+          <select id="i-hero-star-level-8" >
+            <option disabled selected>Hero star level</option>
+            <option value="0" >0/2</option>
+            <option value="1" >1/2</option>
+            <option value="2" >★</option>
+            <option value="3" >★ 1/3</option>
+            <option value="4" >★ 2/3</option>
+            <option value="5" >★★</option>
+            <option value="6" >★★ 1/4</option>
+            <option value="7" >★★ 2/4</option>
+            <option value="8" >★★ 3/4</option>
+            <option value="9">★★★</option>
+            <option value="10">★★★ 1/5</option>
+            <option value="11">★★★ 2/5</option>
+            <option value="12">★★★ 3/5</option>
+            <option value="13">★★★ 4/5</option>
+            <option value="14">★★★★</option>
+            <option value="15">★★★★ 1/5</option>
+            <option value="16">★★★★ 2/5</option>
+            <option value="17">★★★★ 3/5</option>
+            <option value="18">★★★★ 4/5</option>
+            <option value="19">★★★★★</option>
+          </select>
+        </div>
+      </div>
+      <div class="input-wrapper" data-tooltip="Number of cards as shown on hero avatar icon">
+        <label for="i-hero-card-8">Cards</label>
+        <input id="i-hero-card-8" type="number" min="1" max="1000" step="1" value="" placeholder="# of cards" class="max-10k">
+      </div>
+      <div class="input-wrapper"><input type="button" onclick="resetRow(8)" value="Reset"></div>
+    </div>
+  </div>
+    <div class="field-container">
+    <div class="label-wrapper">
+      <input
+        id="i-hero-name-9"
+        type="text"
+        list="hero-name-list"
+        value=""
+        placeholder="Hero 9"
+        class="hero-name"/>
+    </div>
+    <div class="value-wrapper">
+      <div class="input-wrapper">
+        <label for="i-hero-star-level-9">Star level</label>
+        <div class="select-wrapper hero-star-level">
+          <select id="i-hero-star-level-9" >
+            <option disabled selected>Hero star level</option>
+            <option value="0" >0/2</option>
+            <option value="1" >1/2</option>
+            <option value="2" >★</option>
+            <option value="3" >★ 1/3</option>
+            <option value="4" >★ 2/3</option>
+            <option value="5" >★★</option>
+            <option value="6" >★★ 1/4</option>
+            <option value="7" >★★ 2/4</option>
+            <option value="8" >★★ 3/4</option>
+            <option value="9">★★★</option>
+            <option value="10">★★★ 1/5</option>
+            <option value="11">★★★ 2/5</option>
+            <option value="12">★★★ 3/5</option>
+            <option value="13">★★★ 4/5</option>
+            <option value="14">★★★★</option>
+            <option value="15">★★★★ 1/5</option>
+            <option value="16">★★★★ 2/5</option>
+            <option value="17">★★★★ 3/5</option>
+            <option value="18">★★★★ 4/5</option>
+            <option value="19">★★★★★</option>
+          </select>
+        </div>
+      </div>
+      <div class="input-wrapper" data-tooltip="Number of cards as shown on hero avatar icon">
+        <label for="i-hero-card-9">Cards</label>
+        <input id="i-hero-card-9" type="number" min="1" max="1000" step="1" value="" placeholder="# of cards" class="max-10k">
+      </div>
+      <div class="input-wrapper"><input type="button" onclick="resetRow(9)" value="Reset"></div>
+    </div>
+  </div>
+    <div class="field-container">
+    <div class="label-wrapper">
+      <input
+        id="i-hero-name-10"
+        type="text"
+        list="hero-name-list"
+        value=""
+        placeholder="Hero 10"
+        class="hero-name"/>
+    </div>
+    <div class="value-wrapper">
+      <div class="input-wrapper">
+        <label for="i-hero-star-level-10">Star level</label>
+        <div class="select-wrapper hero-star-level">
+          <select id="i-hero-star-level-10" >
+            <option disabled selected>Hero star level</option>
+            <option value="0" >0/2</option>
+            <option value="1" >1/2</option>
+            <option value="2" >★</option>
+            <option value="3" >★ 1/3</option>
+            <option value="4" >★ 2/3</option>
+            <option value="5" >★★</option>
+            <option value="6" >★★ 1/4</option>
+            <option value="7" >★★ 2/4</option>
+            <option value="8" >★★ 3/4</option>
+            <option value="9">★★★</option>
+            <option value="10">★★★ 1/5</option>
+            <option value="11">★★★ 2/5</option>
+            <option value="12">★★★ 3/5</option>
+            <option value="13">★★★ 4/5</option>
+            <option value="14">★★★★</option>
+            <option value="15">★★★★ 1/5</option>
+            <option value="16">★★★★ 2/5</option>
+            <option value="17">★★★★ 3/5</option>
+            <option value="18">★★★★ 4/5</option>
+            <option value="19">★★★★★</option>
+          </select>
+        </div>
+      </div>
+      <div class="input-wrapper" data-tooltip="Number of cards as shown on hero avatar icon">
+        <label for="i-hero-card-10">Cards</label>
+        <input id="i-hero-card-10" type="number" min="1" max="1000" step="1" value="" placeholder="# of cards" class="max-10k">
+      </div>
+      <div class="input-wrapper"><input type="button" onclick="resetRow(10)" value="Reset"></div>
+    </div>
+  </div>
+    <div class="field-container">
+    <div class="label-wrapper">
+      <input
+        id="i-hero-name-11"
+        type="text"
+        list="hero-name-list"
+        value=""
+        placeholder="Hero 11"
+        class="hero-name"/>
+    </div>
+    <div class="value-wrapper">
+      <div class="input-wrapper">
+        <label for="i-hero-star-level-11">Star level</label>
+        <div class="select-wrapper hero-star-level">
+          <select id="i-hero-star-level-11" >
+            <option disabled selected>Hero star level</option>
+            <option value="0" >0/2</option>
+            <option value="1" >1/2</option>
+            <option value="2" >★</option>
+            <option value="3" >★ 1/3</option>
+            <option value="4" >★ 2/3</option>
+            <option value="5" >★★</option>
+            <option value="6" >★★ 1/4</option>
+            <option value="7" >★★ 2/4</option>
+            <option value="8" >★★ 3/4</option>
+            <option value="9">★★★</option>
+            <option value="10">★★★ 1/5</option>
+            <option value="11">★★★ 2/5</option>
+            <option value="12">★★★ 3/5</option>
+            <option value="13">★★★ 4/5</option>
+            <option value="14">★★★★</option>
+            <option value="15">★★★★ 1/5</option>
+            <option value="16">★★★★ 2/5</option>
+            <option value="17">★★★★ 3/5</option>
+            <option value="18">★★★★ 4/5</option>
+            <option value="19">★★★★★</option>
+          </select>
+        </div>
+      </div>
+      <div class="input-wrapper" data-tooltip="Number of cards as shown on hero avatar icon">
+        <label for="i-hero-card-11">Cards</label>
+        <input id="i-hero-card-11" type="number" min="1" max="1000" step="1" value="" placeholder="# of cards" class="max-10k">
+      </div>
+      <div class="input-wrapper"><input type="button" onclick="resetRow(11)" value="Reset"></div>
+    </div>
+  </div>
+    <div class="field-container">
+    <div class="label-wrapper">
+      <input
+        id="i-hero-name-12"
+        type="text"
+        list="hero-name-list"
+        value=""
+        placeholder="Hero 12"
+        class="hero-name"/>
+    </div>
+    <div class="value-wrapper">
+      <div class="input-wrapper">
+        <label for="i-hero-star-level-12">Star level</label>
+        <div class="select-wrapper hero-star-level">
+          <select id="i-hero-star-level-12" >
+            <option disabled selected>Hero star level</option>
+            <option value="0" >0/2</option>
+            <option value="1" >1/2</option>
+            <option value="2" >★</option>
+            <option value="3" >★ 1/3</option>
+            <option value="4" >★ 2/3</option>
+            <option value="5" >★★</option>
+            <option value="6" >★★ 1/4</option>
+            <option value="7" >★★ 2/4</option>
+            <option value="8" >★★ 3/4</option>
+            <option value="9">★★★</option>
+            <option value="10">★★★ 1/5</option>
+            <option value="11">★★★ 2/5</option>
+            <option value="12">★★★ 3/5</option>
+            <option value="13">★★★ 4/5</option>
+            <option value="14">★★★★</option>
+            <option value="15">★★★★ 1/5</option>
+            <option value="16">★★★★ 2/5</option>
+            <option value="17">★★★★ 3/5</option>
+            <option value="18">★★★★ 4/5</option>
+            <option value="19">★★★★★</option>
+          </select>
+        </div>
+      </div>
+      <div class="input-wrapper" data-tooltip="Number of cards as shown on hero avatar icon">
+        <label for="i-hero-card-12">Cards</label>
+        <input id="i-hero-card-12" type="number" min="1" max="1000" step="1" value="" placeholder="# of cards" class="max-10k">
+      </div>
+      <div class="input-wrapper"><input type="button" onclick="resetRow(12)" value="Reset"></div>
+    </div>
+  </div>
+    <div class="field-container">
+    <div class="label-wrapper">
+      <input
+        id="i-hero-name-13"
+        type="text"
+        list="hero-name-list"
+        value=""
+        placeholder="Hero 13"
+        class="hero-name"/>
+    </div>
+    <div class="value-wrapper">
+      <div class="input-wrapper">
+        <label for="i-hero-star-level-13">Star level</label>
+        <div class="select-wrapper hero-star-level">
+          <select id="i-hero-star-level-13" >
+            <option disabled selected>Hero star level</option>
+            <option value="0" >0/2</option>
+            <option value="1" >1/2</option>
+            <option value="2" >★</option>
+            <option value="3" >★ 1/3</option>
+            <option value="4" >★ 2/3</option>
+            <option value="5" >★★</option>
+            <option value="6" >★★ 1/4</option>
+            <option value="7" >★★ 2/4</option>
+            <option value="8" >★★ 3/4</option>
+            <option value="9">★★★</option>
+            <option value="10">★★★ 1/5</option>
+            <option value="11">★★★ 2/5</option>
+            <option value="12">★★★ 3/5</option>
+            <option value="13">★★★ 4/5</option>
+            <option value="14">★★★★</option>
+            <option value="15">★★★★ 1/5</option>
+            <option value="16">★★★★ 2/5</option>
+            <option value="17">★★★★ 3/5</option>
+            <option value="18">★★★★ 4/5</option>
+            <option value="19">★★★★★</option>
+          </select>
+        </div>
+      </div>
+      <div class="input-wrapper" data-tooltip="Number of cards as shown on hero avatar icon">
+        <label for="i-hero-card-13">Cards</label>
+        <input id="i-hero-card-13" type="number" min="1" max="1000" step="1" value="" placeholder="# of cards" class="max-10k">
+      </div>
+      <div class="input-wrapper"><input type="button" onclick="resetRow(13)" value="Reset"></div>
+    </div>
+  </div>
+    <div class="field-container">
+    <div class="label-wrapper">
+      <input
+        id="i-hero-name-14"
+        type="text"
+        list="hero-name-list"
+        value=""
+        placeholder="Hero 14"
+        class="hero-name"/>
+    </div>
+    <div class="value-wrapper">
+      <div class="input-wrapper">
+        <label for="i-hero-star-level-14">Star level</label>
+        <div class="select-wrapper hero-star-level">
+          <select id="i-hero-star-level-14" >
+            <option disabled selected>Hero star level</option>
+            <option value="0" >0/2</option>
+            <option value="1" >1/2</option>
+            <option value="2" >★</option>
+            <option value="3" >★ 1/3</option>
+            <option value="4" >★ 2/3</option>
+            <option value="5" >★★</option>
+            <option value="6" >★★ 1/4</option>
+            <option value="7" >★★ 2/4</option>
+            <option value="8" >★★ 3/4</option>
+            <option value="9">★★★</option>
+            <option value="10">★★★ 1/5</option>
+            <option value="11">★★★ 2/5</option>
+            <option value="12">★★★ 3/5</option>
+            <option value="13">★★★ 4/5</option>
+            <option value="14">★★★★</option>
+            <option value="15">★★★★ 1/5</option>
+            <option value="16">★★★★ 2/5</option>
+            <option value="17">★★★★ 3/5</option>
+            <option value="18">★★★★ 4/5</option>
+            <option value="19">★★★★★</option>
+          </select>
+        </div>
+      </div>
+      <div class="input-wrapper" data-tooltip="Number of cards as shown on hero avatar icon">
+        <label for="i-hero-card-14">Cards</label>
+        <input id="i-hero-card-14" type="number" min="1" max="1000" step="1" value="" placeholder="# of cards" class="max-10k">
+      </div>
+      <div class="input-wrapper"><input type="button" onclick="resetRow(14)" value="Reset"></div>
+    </div>
+  </div>
+    <div class="field-container">
+    <div class="label-wrapper">
+      <input
+        id="i-hero-name-15"
+        type="text"
+        list="hero-name-list"
+        value=""
+        placeholder="Hero 15"
+        class="hero-name"/>
+    </div>
+    <div class="value-wrapper">
+      <div class="input-wrapper">
+        <label for="i-hero-star-level-15">Star level</label>
+        <div class="select-wrapper hero-star-level">
+          <select id="i-hero-star-level-15" >
+            <option disabled selected>Hero star level</option>
+            <option value="0" >0/2</option>
+            <option value="1" >1/2</option>
+            <option value="2" >★</option>
+            <option value="3" >★ 1/3</option>
+            <option value="4" >★ 2/3</option>
+            <option value="5" >★★</option>
+            <option value="6" >★★ 1/4</option>
+            <option value="7" >★★ 2/4</option>
+            <option value="8" >★★ 3/4</option>
+            <option value="9">★★★</option>
+            <option value="10">★★★ 1/5</option>
+            <option value="11">★★★ 2/5</option>
+            <option value="12">★★★ 3/5</option>
+            <option value="13">★★★ 4/5</option>
+            <option value="14">★★★★</option>
+            <option value="15">★★★★ 1/5</option>
+            <option value="16">★★★★ 2/5</option>
+            <option value="17">★★★★ 3/5</option>
+            <option value="18">★★★★ 4/5</option>
+            <option value="19">★★★★★</option>
+          </select>
+        </div>
+      </div>
+      <div class="input-wrapper" data-tooltip="Number of cards as shown on hero avatar icon">
+        <label for="i-hero-card-15">Cards</label>
+        <input id="i-hero-card-15" type="number" min="1" max="1000" step="1" value="" placeholder="# of cards" class="max-10k">
+      </div>
+      <div class="input-wrapper"><input type="button" onclick="resetRow(15)" value="Reset"></div>
+    </div>
+  </div>
+    <div class="field-container">
+    <div class="label-wrapper">
+      <input
+        id="i-hero-name-16"
+        type="text"
+        list="hero-name-list"
+        value=""
+        placeholder="Hero 16"
+        class="hero-name"/>
+    </div>
+    <div class="value-wrapper">
+      <div class="input-wrapper">
+        <label for="i-hero-star-level-16">Star level</label>
+        <div class="select-wrapper hero-star-level">
+          <select id="i-hero-star-level-16" >
+            <option disabled selected>Hero star level</option>
+            <option value="0" >0/2</option>
+            <option value="1" >1/2</option>
+            <option value="2" >★</option>
+            <option value="3" >★ 1/3</option>
+            <option value="4" >★ 2/3</option>
+            <option value="5" >★★</option>
+            <option value="6" >★★ 1/4</option>
+            <option value="7" >★★ 2/4</option>
+            <option value="8" >★★ 3/4</option>
+            <option value="9">★★★</option>
+            <option value="10">★★★ 1/5</option>
+            <option value="11">★★★ 2/5</option>
+            <option value="12">★★★ 3/5</option>
+            <option value="13">★★★ 4/5</option>
+            <option value="14">★★★★</option>
+            <option value="15">★★★★ 1/5</option>
+            <option value="16">★★★★ 2/5</option>
+            <option value="17">★★★★ 3/5</option>
+            <option value="18">★★★★ 4/5</option>
+            <option value="19">★★★★★</option>
+          </select>
+        </div>
+      </div>
+      <div class="input-wrapper" data-tooltip="Number of cards as shown on hero avatar icon">
+        <label for="i-hero-card-16">Cards</label>
+        <input id="i-hero-card-16" type="number" min="1" max="1000" step="1" value="" placeholder="# of cards" class="max-10k">
+      </div>
+      <div class="input-wrapper"><input type="button" onclick="resetRow(16)" value="Reset"></div>
+    </div>
+  </div>
+    <div class="field-container">
+    <div class="label-wrapper">
+      <input
+        id="i-hero-name-17"
+        type="text"
+        list="hero-name-list"
+        value=""
+        placeholder="Hero 17"
+        class="hero-name"/>
+    </div>
+    <div class="value-wrapper">
+      <div class="input-wrapper">
+        <label for="i-hero-star-level-17">Star level</label>
+        <div class="select-wrapper hero-star-level">
+          <select id="i-hero-star-level-17" >
+            <option disabled selected>Hero star level</option>
+            <option value="0" >0/2</option>
+            <option value="1" >1/2</option>
+            <option value="2" >★</option>
+            <option value="3" >★ 1/3</option>
+            <option value="4" >★ 2/3</option>
+            <option value="5" >★★</option>
+            <option value="6" >★★ 1/4</option>
+            <option value="7" >★★ 2/4</option>
+            <option value="8" >★★ 3/4</option>
+            <option value="9">★★★</option>
+            <option value="10">★★★ 1/5</option>
+            <option value="11">★★★ 2/5</option>
+            <option value="12">★★★ 3/5</option>
+            <option value="13">★★★ 4/5</option>
+            <option value="14">★★★★</option>
+            <option value="15">★★★★ 1/5</option>
+            <option value="16">★★★★ 2/5</option>
+            <option value="17">★★★★ 3/5</option>
+            <option value="18">★★★★ 4/5</option>
+            <option value="19">★★★★★</option>
+          </select>
+        </div>
+      </div>
+      <div class="input-wrapper" data-tooltip="Number of cards as shown on hero avatar icon">
+        <label for="i-hero-card-17">Cards</label>
+        <input id="i-hero-card-17" type="number" min="1" max="1000" step="1" value="" placeholder="# of cards" class="max-10k">
+      </div>
+      <div class="input-wrapper"><input type="button" onclick="resetRow(17)" value="Reset"></div>
+    </div>
+  </div>
+    <div class="field-container">
+    <div class="label-wrapper">
+      <input
+        id="i-hero-name-18"
+        type="text"
+        list="hero-name-list"
+        value=""
+        placeholder="Hero 18"
+        class="hero-name"/>
+    </div>
+    <div class="value-wrapper">
+      <div class="input-wrapper">
+        <label for="i-hero-star-level-18">Star level</label>
+        <div class="select-wrapper hero-star-level">
+          <select id="i-hero-star-level-18" >
+            <option disabled selected>Hero star level</option>
+            <option value="0" >0/2</option>
+            <option value="1" >1/2</option>
+            <option value="2" >★</option>
+            <option value="3" >★ 1/3</option>
+            <option value="4" >★ 2/3</option>
+            <option value="5" >★★</option>
+            <option value="6" >★★ 1/4</option>
+            <option value="7" >★★ 2/4</option>
+            <option value="8" >★★ 3/4</option>
+            <option value="9">★★★</option>
+            <option value="10">★★★ 1/5</option>
+            <option value="11">★★★ 2/5</option>
+            <option value="12">★★★ 3/5</option>
+            <option value="13">★★★ 4/5</option>
+            <option value="14">★★★★</option>
+            <option value="15">★★★★ 1/5</option>
+            <option value="16">★★★★ 2/5</option>
+            <option value="17">★★★★ 3/5</option>
+            <option value="18">★★★★ 4/5</option>
+            <option value="19">★★★★★</option>
+          </select>
+        </div>
+      </div>
+      <div class="input-wrapper" data-tooltip="Number of cards as shown on hero avatar icon">
+        <label for="i-hero-card-18">Cards</label>
+        <input id="i-hero-card-18" type="number" min="1" max="1000" step="1" value="" placeholder="# of cards" class="max-10k">
+      </div>
+      <div class="input-wrapper"><input type="button" onclick="resetRow(18)" value="Reset"></div>
+    </div>
+  </div>
+    <div class="field-container">
+    <div class="label-wrapper">
+      <input
+        id="i-hero-name-19"
+        type="text"
+        list="hero-name-list"
+        value=""
+        placeholder="Hero 19"
+        class="hero-name"/>
+    </div>
+    <div class="value-wrapper">
+      <div class="input-wrapper">
+        <label for="i-hero-star-level-19">Star level</label>
+        <div class="select-wrapper hero-star-level">
+          <select id="i-hero-star-level-19" >
+            <option disabled selected>Hero star level</option>
+            <option value="0" >0/2</option>
+            <option value="1" >1/2</option>
+            <option value="2" >★</option>
+            <option value="3" >★ 1/3</option>
+            <option value="4" >★ 2/3</option>
+            <option value="5" >★★</option>
+            <option value="6" >★★ 1/4</option>
+            <option value="7" >★★ 2/4</option>
+            <option value="8" >★★ 3/4</option>
+            <option value="9">★★★</option>
+            <option value="10">★★★ 1/5</option>
+            <option value="11">★★★ 2/5</option>
+            <option value="12">★★★ 3/5</option>
+            <option value="13">★★★ 4/5</option>
+            <option value="14">★★★★</option>
+            <option value="15">★★★★ 1/5</option>
+            <option value="16">★★★★ 2/5</option>
+            <option value="17">★★★★ 3/5</option>
+            <option value="18">★★★★ 4/5</option>
+            <option value="19">★★★★★</option>
+          </select>
+        </div>
+      </div>
+      <div class="input-wrapper" data-tooltip="Number of cards as shown on hero avatar icon">
+        <label for="i-hero-card-19">Cards</label>
+        <input id="i-hero-card-19" type="number" min="1" max="1000" step="1" value="" placeholder="# of cards" class="max-10k">
+      </div>
+      <div class="input-wrapper"><input type="button" onclick="resetRow(19)" value="Reset"></div>
+    </div>
+  </div>
+    <div class="field-container">
+    <div class="label-wrapper">
+      <input
+        id="i-hero-name-20"
+        type="text"
+        list="hero-name-list"
+        value=""
+        placeholder="Hero 20"
+        class="hero-name"/>
+    </div>
+    <div class="value-wrapper">
+      <div class="input-wrapper">
+        <label for="i-hero-star-level-20">Star level</label>
+        <div class="select-wrapper hero-star-level">
+          <select id="i-hero-star-level-20" >
+            <option disabled selected>Hero star level</option>
+            <option value="0" >0/2</option>
+            <option value="1" >1/2</option>
+            <option value="2" >★</option>
+            <option value="3" >★ 1/3</option>
+            <option value="4" >★ 2/3</option>
+            <option value="5" >★★</option>
+            <option value="6" >★★ 1/4</option>
+            <option value="7" >★★ 2/4</option>
+            <option value="8" >★★ 3/4</option>
+            <option value="9">★★★</option>
+            <option value="10">★★★ 1/5</option>
+            <option value="11">★★★ 2/5</option>
+            <option value="12">★★★ 3/5</option>
+            <option value="13">★★★ 4/5</option>
+            <option value="14">★★★★</option>
+            <option value="15">★★★★ 1/5</option>
+            <option value="16">★★★★ 2/5</option>
+            <option value="17">★★★★ 3/5</option>
+            <option value="18">★★★★ 4/5</option>
+            <option value="19">★★★★★</option>
+          </select>
+        </div>
+      </div>
+      <div class="input-wrapper" data-tooltip="Number of cards as shown on hero avatar icon">
+        <label for="i-hero-card-20">Cards</label>
+        <input id="i-hero-card-20" type="number" min="1" max="1000" step="1" value="" placeholder="# of cards" class="max-10k">
+      </div>
+      <div class="input-wrapper"><input type="button" onclick="resetRow(20)" value="Reset"></div>
+    </div>
+  </div>
+  
+</div>
+
+<div class="up-tab-content hidden" id="hero-upgrade-calculated-content">
+  <div class="field-container">
+    <div class="label-wrapper">
+      <label id="o-hero-name-1" class="wide-width">Hero 1</label>
+    </div>
+    <div class="value-wrapper">
+      <output id="o-hero-star-before-1" class="before normal-width">&nbsp;</output>
+      »
+      <output id="o-hero-star-after-1" class="after normal-width">&nbsp;</output>
+    </div>
+  </div>
+  <div class="field-container">
+    <div class="label-wrapper">
+      <label id="o-hero-name-2" class="wide-width">Hero 2</label>
+    </div>
+    <div class="value-wrapper">
+      <output id="o-hero-star-before-2" class="before normal-width">&nbsp;</output>
+      »
+      <output id="o-hero-star-after-2" class="after normal-width">&nbsp;</output>
+    </div>
+  </div>
+  <div class="field-container">
+    <div class="label-wrapper">
+      <label id="o-hero-name-3" class="wide-width">Hero 3</label>
+    </div>
+    <div class="value-wrapper">
+      <output id="o-hero-star-before-3" class="before normal-width">&nbsp;</output>
+      »
+      <output id="o-hero-star-after-3" class="after normal-width">&nbsp;</output>
+    </div>
+  </div>
+  <div class="field-container">
+    <div class="label-wrapper">
+      <label id="o-hero-name-4" class="wide-width">Hero 4</label>
+    </div>
+    <div class="value-wrapper">
+      <output id="o-hero-star-before-4" class="before normal-width">&nbsp;</output>
+      »
+      <output id="o-hero-star-after-4" class="after normal-width">&nbsp;</output>
+    </div>
+  </div>
+  <div class="field-container">
+    <div class="label-wrapper">
+      <label id="o-hero-name-5" class="wide-width">Hero 5</label>
+    </div>
+    <div class="value-wrapper">
+      <output id="o-hero-star-before-5" class="before normal-width">&nbsp;</output>
+      »
+      <output id="o-hero-star-after-5" class="after normal-width">&nbsp;</output>
+    </div>
+  </div>
+  <div class="field-container">
+    <div class="label-wrapper">
+      <label id="o-hero-name-6" class="wide-width">Hero 6</label>
+    </div>
+    <div class="value-wrapper">
+      <output id="o-hero-star-before-6" class="before normal-width">&nbsp;</output>
+      »
+      <output id="o-hero-star-after-6" class="after normal-width">&nbsp;</output>
+    </div>
+  </div>
+  <div class="field-container">
+    <div class="label-wrapper">
+      <label id="o-hero-name-7" class="wide-width">Hero 7</label>
+    </div>
+    <div class="value-wrapper">
+      <output id="o-hero-star-before-7" class="before normal-width">&nbsp;</output>
+      »
+      <output id="o-hero-star-after-7" class="after normal-width">&nbsp;</output>
+    </div>
+  </div>
+  <div class="field-container">
+    <div class="label-wrapper">
+      <label id="o-hero-name-8" class="wide-width">Hero 8</label>
+    </div>
+    <div class="value-wrapper">
+      <output id="o-hero-star-before-8" class="before normal-width">&nbsp;</output>
+      »
+      <output id="o-hero-star-after-8" class="after normal-width">&nbsp;</output>
+    </div>
+  </div>
+  <div class="field-container">
+    <div class="label-wrapper">
+      <label id="o-hero-name-9" class="wide-width">Hero 9</label>
+    </div>
+    <div class="value-wrapper">
+      <output id="o-hero-star-before-9" class="before normal-width">&nbsp;</output>
+      »
+      <output id="o-hero-star-after-9" class="after normal-width">&nbsp;</output>
+    </div>
+  </div>
+  <div class="field-container">
+    <div class="label-wrapper">
+      <label id="o-hero-name-10" class="wide-width">Hero 10</label>
+    </div>
+    <div class="value-wrapper">
+      <output id="o-hero-star-before-10" class="before normal-width">&nbsp;</output>
+      »
+      <output id="o-hero-star-after-10" class="after normal-width">&nbsp;</output>
+    </div>
+  </div>
+  <div class="field-container">
+    <div class="label-wrapper">
+      <label id="o-hero-name-11" class="wide-width">Hero 11</label>
+    </div>
+    <div class="value-wrapper">
+      <output id="o-hero-star-before-11" class="before normal-width">&nbsp;</output>
+      »
+      <output id="o-hero-star-after-11" class="after normal-width">&nbsp;</output>
+    </div>
+  </div>
+  <div class="field-container">
+    <div class="label-wrapper">
+      <label id="o-hero-name-12" class="wide-width">Hero 12</label>
+    </div>
+    <div class="value-wrapper">
+      <output id="o-hero-star-before-12" class="before normal-width">&nbsp;</output>
+      »
+      <output id="o-hero-star-after-12" class="after normal-width">&nbsp;</output>
+    </div>
+  </div>
+  <div class="field-container">
+    <div class="label-wrapper">
+      <label id="o-hero-name-13" class="wide-width">Hero 13</label>
+    </div>
+    <div class="value-wrapper">
+      <output id="o-hero-star-before-13" class="before normal-width">&nbsp;</output>
+      »
+      <output id="o-hero-star-after-13" class="after normal-width">&nbsp;</output>
+    </div>
+  </div>
+  <div class="field-container">
+    <div class="label-wrapper">
+      <label id="o-hero-name-14" class="wide-width">Hero 14</label>
+    </div>
+    <div class="value-wrapper">
+      <output id="o-hero-star-before-14" class="before normal-width">&nbsp;</output>
+      »
+      <output id="o-hero-star-after-14" class="after normal-width">&nbsp;</output>
+    </div>
+  </div>
+  <div class="field-container">
+    <div class="label-wrapper">
+      <label id="o-hero-name-15" class="wide-width">Hero 15</label>
+    </div>
+    <div class="value-wrapper">
+      <output id="o-hero-star-before-15" class="before normal-width">&nbsp;</output>
+      »
+      <output id="o-hero-star-after-15" class="after normal-width">&nbsp;</output>
+    </div>
+  </div>
+  <div class="field-container">
+    <div class="label-wrapper">
+      <label id="o-hero-name-16" class="wide-width">Hero 16</label>
+    </div>
+    <div class="value-wrapper">
+      <output id="o-hero-star-before-16" class="before normal-width">&nbsp;</output>
+      »
+      <output id="o-hero-star-after-16" class="after normal-width">&nbsp;</output>
+    </div>
+  </div>
+  <div class="field-container">
+    <div class="label-wrapper">
+      <label id="o-hero-name-17" class="wide-width">Hero 17</label>
+    </div>
+    <div class="value-wrapper">
+      <output id="o-hero-star-before-17" class="before normal-width">&nbsp;</output>
+      »
+      <output id="o-hero-star-after-17" class="after normal-width">&nbsp;</output>
+    </div>
+  </div>
+  <div class="field-container">
+    <div class="label-wrapper">
+      <label id="o-hero-name-18" class="wide-width">Hero 18</label>
+    </div>
+    <div class="value-wrapper">
+      <output id="o-hero-star-before-18" class="before normal-width">&nbsp;</output>
+      »
+      <output id="o-hero-star-after-18" class="after normal-width">&nbsp;</output>
+    </div>
+  </div>
+  <div class="field-container">
+    <div class="label-wrapper">
+      <label id="o-hero-name-19" class="wide-width">Hero 19</label>
+    </div>
+    <div class="value-wrapper">
+      <output id="o-hero-star-before-19" class="before normal-width">&nbsp;</output>
+      »
+      <output id="o-hero-star-after-19" class="after normal-width">&nbsp;</output>
+    </div>
+  </div>
+  <div class="field-container">
+    <div class="label-wrapper">
+      <label id="o-hero-name-20" class="wide-width">Hero 20</label>
+    </div>
+    <div class="value-wrapper">
+      <output id="o-hero-star-before-20" class="before normal-width">&nbsp;</output>
+      »
+      <output id="o-hero-star-after-20" class="after normal-width">&nbsp;</output>
+    </div>
+  </div>
+
+</div>
+  
+</form>
+</div>
+
+</main>
+</body>
+</html>

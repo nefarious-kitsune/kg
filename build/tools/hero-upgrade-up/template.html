@@ -1,20 +1,25 @@
 <html>
 <head>
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Miku's Shrine: Hero Upgrade Calculator</title>
+  <title>Hero Upgrade Calculator - Miku's Shrine</title>
   <link rel="icon" type="image/x-icon" href="../images/logo_mini.png">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://kg.kitsune21.com/">
-  <meta property="og:title" content="Miku's Shrine | Hero Upgrade Calculator">
+  <meta property="og:title" content="Hero Upgrade Calculator - Miku's Shrine">
   <meta property="og:description" content="Tool for estimating your maximum Hero upgrades and the resulting points in Mightiest Kingdom event.">
   <meta property="og:image" content="https://kg.kitsune21.com/images/calculator-2x_n.png">
+  <script src="./up-hero-v2.js"></script>
   <script src="./up-common.js"></script>
-  <link href="../css/common.css" rel="stylesheet" />
-  <link href="./up.css" rel="stylesheet" />
+  <link href="../css/common.css" rel="stylesheet">
+  <link href="./up.css" rel="stylesheet">
   <script>
     const heroTabs = [
       'hero-upgrade-current',
       'hero-upgrade-calculated',];
+      
+    document.addEventListener("DOMContentLoaded", (e) => {
+      HeroUpgradePlanner.init();
+    })
   </script>
 </head>
 <body>
@@ -115,95 +120,20 @@ the resulting points in Mightiest Kingdom/Ultimate Power event.
 
 <div class="collapsible-toggle">
   <button class="title" type="button" onclick="toggleCollapsible('hero-upgrade-content')">Hero Upgrades</button>
-  <div class="points">MK: <span id="hero-upgrade-points" class="points">9,674,120</span> pts</div>
+  <div class="points">MK: <span id="o-hero-upgrade-points" class="points">9,674,120</span> pts</div>
 </div>
 <div class="collapsible-content" id="hero-upgrade-content">
 <div class="up-tab-bar">
   <button onclick="openTab(0, heroTabs)" id="hero-upgrade-current-tab" class="up-tab focused">Current</button>
   <button onclick="openTab(1, heroTabs)" id="hero-upgrade-calculated-tab" class="up-tab">Calculated</button>
 </div>
-<form class="form-container" id="hero-upgrade-calculatedorm">
+<form class="form-container" id="hero-upgrade-calculated">
 
 <div class="up-tab-content" id="hero-upgrade-current-content">
-  <div class="field-container">
-    <div class="label-wrapper"><label for="FreePickCount">Available Free-Pick Hero Cards</label></div>
-    <div class="value-wrapper"><input id="FreePickCount" type="number" min="0" value="30000" class="max-100k"></div>
-  </div>
-  <div class="field-container">
-    <div class="label-wrapper">
-      <input
-        id="hero-1-name"
-        type="text"
-        list="hero-name-list"
-        value="Padme"
-        placeholder="Hero 1"
-        class="hero-name"/>
-    </div>
-    <div class="value-wrapper">
-      <div class="input-wrapper">
-        <label for="hero-1-star-level">Star level</label>
-        <div class="select-wrapper hero-star-level"
-          ><select id="hero-1-star-level">
-            <option disabled>Hero star level</option>
-            <option value="0" >----</option>
-            <option value="1" >☆</option>
-            <option value="2" >☆ 1/2</option>
-            <option value="3" >★</option>
-            <option value="4" >★ 1/3</option>
-            <option value="5" >★ 2/3</option>
-            <option value="6" >★★</option>
-            <option value="7" selected="selected">★★ 1/4</option>
-            <option value="8" >★★ 2/4</option>
-            <option value="9" >★★ 3/4</option>
-            <option value="10">★★★</option>
-            <option value="11">★★★ 1/5</option>
-            <option value="12">★★★ 2/5</option>
-            <option value="13">★★★ 3/5</option>
-            <option value="14">★★★ 4/5</option>
-            <option value="15">★★★★</option>
-            <option value="16">★★★★ 1/5</option>
-            <option value="17">★★★★ 2/5</option>
-            <option value="18">★★★★ 3/5</option>
-            <option value="19">★★★★ 4/5</option>
-            <option value="20">★★★★★</option>
-          </select
-        ></div
-      ></div>
-      <div class="input-wrapper" data-tooltip="Number of cards as shown on hero avatar icon"
-        ><label for="hero-1-cards">Cards</label>
-        <input
-          id="hero-1-cards"
-          type="number"
-          min="1"
-          max="1000"
-          step="1"
-          value="20"
-          class="max-10k"
-      /></div>
-    </div>
-  </div>
 {{HERO INPUT ROWS}}
 </div>
 
 <div class="up-tab-content hidden" id="hero-upgrade-calculated-content">
-  <div class="field-container">
-    <div class="label-wrapper"><label>Free Pick Hero Cards</label></div>
-    <div class="value-wrapper">
-      <output id="OUTPUT-FREE-PICK-BEFORE"  class="max-100k">1000</output>
-      »
-      <output id="OUTPUT-FREE-PICK-AFTER"  class="max-100k">21</output>
-    </div>
-  </div>
-  <div class="field-container">
-    <div class="label-wrapper">
-      <label id="OUTPUT-HERO-1-NAME" class="hero-name">Hero 1</label>
-    </div>
-    <div class="value-wrapper">
-      <output id="OUTPUT-HERO-1-STAR-LEVEL-BEFORE" class="max-10k">&nbsp;</output>
-      »
-      <output id="OUTPUT-HERO-1-STAR-LEVEL-AFTER" class="max-10k">&nbsp;</output>
-    </div>
-  </div>
 {{HERO OUTPUT ROWS}}
 </div>
   

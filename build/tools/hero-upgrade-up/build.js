@@ -2,7 +2,7 @@ import fs from 'fs';
 
 const exportDirectory = '../../../docs/tools';
 const importFileName = 'template';
-const exportFileName = 'heroUpgradeCalculator';
+const exportFileName = 'hero-upgrade-calculator';
 
 const mainTemplate = fs.readFileSync(`${importFileName}.html`, 'utf-8');
 const heroInputRowTemplate =  fs.readFileSync('t-hero-input.html',  'utf-8');
