@@ -144,13 +144,13 @@ imported = fs.readFileSync('./archer.tsv', { encoding:'utf8'});
 compiled = compileData('archer', imported);
 fs.writeFileSync('./_archer-table-1.html', compiled.table1);
 fs.writeFileSync('./_archer-table-2.html', compiled.table2);
-fs.writeFileSync('../../../docs/hero/archer-data.js', getDataJsCode(compiled.data));
+fs.writeFileSync('../../docs/hero/archer-data.js', getDataJsCode(compiled.data));
 
 imported = fs.readFileSync('./fire.tsv', { encoding:'utf8'});
 compiled = compileData('fire', imported);
 fs.writeFileSync('./_fire-table-1.html', compiled.table1);
 fs.writeFileSync('./_fire-table-2.html', compiled.table2);
-fs.writeFileSync('../../../docs/hero/fire-data.js', getDataJsCode(compiled.data));
+fs.writeFileSync('../../docs/hero/fire-data.js', getDataJsCode(compiled.data));
 
 let selectHTML = compiled
   .data
@@ -163,11 +163,11 @@ imported = fs.readFileSync('./ice.tsv', { encoding:'utf8'});
 compiled = compileData('ice', imported);
 fs.writeFileSync('./_ice-table-1.html', compiled.table1);
 fs.writeFileSync('./_ice-table-2.html', compiled.table2);
-fs.writeFileSync('../../../docs/hero/ice-data.js', getDataJsCode(compiled.data));
+fs.writeFileSync('../../docs/hero/ice-data.js', getDataJsCode(compiled.data));
 
 imported = fs.readFileSync('./goblin.tsv', { encoding:'utf8'});
 compiled = compileData('goblin', imported);
 fs.writeFileSync('./_goblin-table-1.html', compiled.table1);
 fs.writeFileSync('./_goblin-table-2.html', compiled.table2);
-fs.writeFileSync('../../../docs/hero/goblin-data.js', getDataJsCode(compiled.data));
+fs.writeFileSync('../../docs/hero/goblin-data.js', getDataJsCode(compiled.data));
 

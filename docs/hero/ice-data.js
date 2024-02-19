@@ -66,7 +66,73 @@ const ElementHeroData = [
     }
   },
   {
+    "name": "Judy",
+    "element": "ice",
+    "skills": [
+      "March speed +20%",
+      "All troops power +20%",
+      "",
+      "All troops power +20%",
+      "Wound regeneration +10%"
+    ],
+    "bonus": {
+      "ap": 0,
+      "speed": 20,
+      "power": 40,
+      "regen": 10,
+      "gather": 0,
+      "offline": 0,
+      "load": 0,
+      "recovery": 0
+    },
+    "tier": {
+      "warrior": 2,
+      "support": 4,
+      "hunter": 0,
+      "miner": 0
+    },
+    "from": {
+      "advanced": false,
+      "wheel": false,
+      "crystal": false,
+      "free": false
+    }
+  },
+  {
     "name": "Ao Yue",
+    "element": "ice",
+    "skills": [
+      "March speed +20%",
+      "Recovery speed +20%",
+      "",
+      "All troops power +20%",
+      "Wound regeneration +10%"
+    ],
+    "bonus": {
+      "ap": 0,
+      "speed": 20,
+      "power": 20,
+      "regen": 10,
+      "gather": 0,
+      "offline": 0,
+      "load": 0,
+      "recovery": 20
+    },
+    "tier": {
+      "warrior": 3,
+      "support": 1,
+      "hunter": 0,
+      "miner": 0
+    },
+    "from": {
+      "advanced": false,
+      "wheel": false,
+      "crystal": false,
+      "free": false
+    }
+  },
+  {
+    "name": "Trishy",
     "element": "ice",
     "skills": [
       "March speed +20%",

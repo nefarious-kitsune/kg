@@ -66,6 +66,105 @@ const ElementHeroData = [
     }
   },
   {
+    "name": "Boudica",
+    "element": "goblin",
+    "skills": [
+      "March speed +25%",
+      "Recovery speed +15%",
+      "",
+      "All troops power +25%",
+      "Wound regeneration +10%"
+    ],
+    "bonus": {
+      "ap": 0,
+      "speed": 25,
+      "power": 25,
+      "regen": 10,
+      "gather": 0,
+      "offline": 0,
+      "load": 0,
+      "recovery": 15
+    },
+    "tier": {
+      "warrior": 3,
+      "support": 2,
+      "hunter": 0,
+      "miner": 0
+    },
+    "from": {
+      "advanced": false,
+      "wheel": false,
+      "crystal": false,
+      "free": false
+    }
+  },
+  {
+    "name": "Lilith",
+    "element": "goblin",
+    "skills": [
+      "March speed +20%",
+      "Recovery speed +20%",
+      "",
+      "All troops power +20%",
+      "Wound regeneration +10%"
+    ],
+    "bonus": {
+      "ap": 0,
+      "speed": 20,
+      "power": 20,
+      "regen": 10,
+      "gather": 0,
+      "offline": 0,
+      "load": 0,
+      "recovery": 20
+    },
+    "tier": {
+      "warrior": 3,
+      "support": 1,
+      "hunter": 0,
+      "miner": 0
+    },
+    "from": {
+      "advanced": false,
+      "wheel": false,
+      "crystal": false,
+      "free": true
+    }
+  },
+  {
+    "name": "Rila",
+    "element": "goblin",
+    "skills": [
+      "March speed +20%",
+      "Recovery speed +20%",
+      "",
+      "All troops power +20%",
+      "Wound regeneration +10%"
+    ],
+    "bonus": {
+      "ap": 0,
+      "speed": 20,
+      "power": 20,
+      "regen": 10,
+      "gather": 0,
+      "offline": 0,
+      "load": 0,
+      "recovery": 20
+    },
+    "tier": {
+      "warrior": 3,
+      "support": 1,
+      "hunter": 0,
+      "miner": 0
+    },
+    "from": {
+      "advanced": false,
+      "wheel": false,
+      "crystal": false,
+      "free": true
+    }
+  },
+  {
     "name": "Wendy",
     "element": "goblin",
     "skills": [
@@ -129,6 +228,39 @@ const ElementHeroData = [
       "wheel": true,
       "crystal": true,
       "free": true
+    }
+  },
+  {
+    "name": "Angelina",
+    "element": "goblin",
+    "skills": [
+      "March speed +20%",
+      "Troops load +20%",
+      "",
+      "All troops power +30%",
+      "Recovery speed +25%"
+    ],
+    "bonus": {
+      "ap": 0,
+      "speed": 20,
+      "power": 30,
+      "regen": 0,
+      "gather": 0,
+      "offline": 0,
+      "load": 20,
+      "recovery": 25
+    },
+    "tier": {
+      "warrior": 2,
+      "support": 3,
+      "hunter": 0,
+      "miner": 0
+    },
+    "from": {
+      "advanced": false,
+      "wheel": false,
+      "crystal": false,
+      "free": false
     }
   },
   {
