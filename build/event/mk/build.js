@@ -292,19 +292,23 @@ for (let eventIdx = 0; eventIdx < eventCount; eventIdx++) {
     .replaceAll('{{TABS}}'  , tabButtons.join('\n'))
   ;
 
-  const outputName = `mk-${yyyy}${mm}${dd}`;
-  const outputOptions = {
+  const resultOutputName = `mk-${yyyy}${mm}${dd}`;
+  const resultOutputOptions = {
     type: 'chart',
     path: {
-      base: `/events/${outputName}`,
+      base: `/events/${resultOutputName}`,
       icon: '/images/logo_mini.png',
-      css: [
+    },
+    css: {
+      links: [
         '/css/common.css',
         '/events/event-data.css',
       ],
-      js: [
+    },
+    js: {
+      links: [
         '/events/event-common.js',
-      ]
+      ],
     },
     breadcrumb: [
       {path: '/content', title: 'Home'},
@@ -316,8 +320,8 @@ for (let eventIdx = 0; eventIdx < eventCount; eventIdx++) {
     title: `${yyyy}-${mm}-${dd} Mightiest Kingdom Results`,
     description: `Mightiest Kingdom results for the week of ${yyyy}-${mm}-${dd} (${serverList})`,
   };
-  const output = buildBase(outputOptions);
-  writeFileSync(`../../../docs/events/${outputName}.html`, output);
+  const output = buildBase(resultOutputOptions);
+  writeFileSync(`../../../docs/events/${resultOutputName}.html`, output);
 
   const tempArray = servers1.concat(servers2).sort();
   const chunkedList = [];
@@ -327,7 +331,7 @@ for (let eventIdx = 0; eventIdx < eventCount; eventIdx++) {
     chunkedList.push(chunk.join(', '));
   }
 
-  let indexLink = `<a href="./${outputName}">${currEventData.date}</a>`;
+  let indexLink = `<a href="./${resultOutputName}">${currEventData.date}</a>`;
   if (currEventData['up-week']) indexLink = '<strong>'+indexLink+'</strong>';
   indexList.unshift(
     `  <li>${indexLink}\n (` + chunkedList.join(',\n  ') + ')</li>'
@@ -337,19 +341,23 @@ for (let eventIdx = 0; eventIdx < eventCount; eventIdx++) {
 const indexContentHtml = indexTemplate
   .replaceAll('{{ENTRY LIST}}' , indexList.join('\n'));
 
-const outputName = `mk-results`;
-const outputOptions = {
+const indexOutputName = `mk-results`;
+const indexOutputOptions = {
   type: 'chart',
   path: {
-    base: `/events/${outputName}`,
+    base: `/events/${indexOutputName}`,
     icon: '/images/logo_mini.png',
-    css: [
+  },
+  css: {
+    links: [
       '/css/common.css',
       '/events/event-data.css',
     ],
-    js: [
+  },
+  js: {
+    links: [
       '/events/event-common.js',
-    ]
+    ],
   },
   breadcrumb: [
     {path: '/content', title: 'Home'},
@@ -360,10 +368,10 @@ const outputOptions = {
   title: `Past Mightiest Kingdom Results`,
   description: `Past results of the Mightiest Kingdom event`,
 };
-const indexOutput = buildBase(outputOptions);
-writeFileSync(`../../../docs/events/${outputName}.html`, indexOutput);
+const indexOutput = buildBase(indexOutputOptions);
+writeFileSync(`../../../docs/events/${indexOutputName}.html`, indexOutput);
 
 let exportedJSON = JSON.stringify(EventData, null, '  ');
-writeFileSync(`../../../docs/events/${outputName}.json`, exportedJSON);
+writeFileSync(`../../../docs/events/${indexOutputName}.json`, exportedJSON);
 
 // console.log(EventData);

@@ -50,31 +50,45 @@ function buildBreadcrumb(pageOptions) {
 }
 
 /**
- * Build stylesheet links
+ * Build stylesheet content
  * @param {PageOptions} pageOptions - Options
  * @returns {string}
  */
-function buildCssLinks(pageOptions) {
+function buildCssContent(pageOptions) {
   const basePath = pageOptions.path.base;
-  const cssLinks = pageOptions.path.css;
   const lines = [];
-  for (let idx = 0; idx < cssLinks.length; idx++) {
-    lines.push(`  <link href="${relativePath(basePath, cssLinks[idx])}" rel="stylesheet">`);
+  if (pageOptions?.css?.links?.length) {
+    const cssLinks = pageOptions.css.links;
+    for (let idx = 0; idx < cssLinks.length; idx++) {
+      lines.push(`  <link href="${relativePath(basePath, cssLinks[idx])}" rel="stylesheet">`);
+    }
+  }
+  if (pageOptions?.css?.embedded?.length) {
+    lines.push('<style>');
+    lines.push(pageOptions.css.embedded);
+    lines.push('</style>');
   }
   return lines.join('\n');
 }
 
 /**
- * Build JavaScript links
+ * Build JavaScript content
  * @param {PageOptions} pageOptions - Options
  * @returns {string}
  */
-function buildJsLinks(pageOptions) {
+function buildJsContent(pageOptions) {
   const basePath = pageOptions.path.base;
-  const jsLinks = pageOptions.path.js;
   const lines = [];
-  for (let idx = 0; idx < jsLinks.length; idx++) {
-    lines.push(`  <script src="${relativePath(basePath, jsLinks[idx])}"></script>`);
+  if (pageOptions?.js?.links?.length) {
+    const jsLinks = pageOptions.js.links;
+    for (let idx = 0; idx < jsLinks.length; idx++) {
+      lines.push(`  <script src="${relativePath(basePath, jsLinks[idx])}"></script>`);
+    }
+  }
+  if (pageOptions?.js?.embedded?.length) {
+    lines.push('<script>');
+    lines.push(pageOptions.js.embedded);
+    lines.push('</style>');
   }
   return lines.join('\n');
 }
@@ -97,41 +111,10 @@ export function buildBase(o) {
   return BaseTemplate
     .replace('{{ICON PATH}}', pageIconPath)
     .replace('{{BREADCRUMB}}', buildBreadcrumb(o))
-    .replace('{{CSS LINKS}}', buildCssLinks(o))
-    .replace('{{JS LINKS}}', buildJsLinks(o))
+    .replace('{{CSS}}', buildCssContent(o))
+    .replace('{{JAVASCRIPT}}', buildJsContent(o))
     .replaceAll('{{PAGE TITLE}}', o.title)
     .replace('{{PAGE CONTENT}}', o.content)
     .replace('{{OG DESCRIPTION}}', o.description)
     .replace('{{OG IMAGE}}', ogImage)
 }
-
-/*
-
-// Example usage
-
-const testOptions = {
-  type: 'chart',
-  path: {
-    base: '/section/sub-section/page-name',
-    icon: '/images/logo_mini.png',
-    css: [
-      '/css/common.css',
-      '/section/styles.css',
-    ],
-    js: [
-      '/section/custom-js.js',
-    ]
-  },
-  breadcrumb: [
-    {path: '/content', title: 'Home'},
-    {path: '/section/', title: 'Section title'},
-    {path: '/events/sub-section/', title: 'Sub-section title'},
-  ],
-  content: 'content in <main></main>',
-  title: 'long title',
-  shortTitle: 'short title',
-};
-const output = buildBase(testOptions);
-console.log(output);
-
-*/
