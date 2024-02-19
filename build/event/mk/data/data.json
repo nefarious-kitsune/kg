@@ -1,0 +1,14 @@
+[
+  { "date": "2023-11-06", "up-week": true, "phase-data": true, "final-data": true, "sheet-url": "https://docs.google.com/spreadsheets/u/0/d/1nf68cbrWuRaCZkbSyXgaMQvqMhgDLVQemIPRVnybrjM/edit"},
+  { "date": "2023-11-13", "up-week": false, "phase-data": true, "final-data": true, "sheet-url": "https://docs.google.com/spreadsheets/d/1tZSYGxhHaXz7m2bOlb0EDzn1Zd0AVMnfON3eX0v3g68/edit"},
+  { "date": "2023-11-20", "up-week": false, "phase-data": true, "final-data": true, "sheet-url": "https://docs.google.com/spreadsheets/d/1mn85xiMae53coWYnJ-j5TMgIDeWvpaIz64i1n5239q0/edit"},
+  { "date": "2023-11-27", "up-week": false, "phase-data": false, "final-data": false, "sheet-url": ""},
+  { "date": "2023-12-04", "up-week": false, "phase-data": true, "final-data": true, "sheet-url": "https://docs.google.com/spreadsheets/u/0/d/17yI_4HgSPdWuclj3X1bns9TVLNWCbBqF6pzt5f-5HNc/edit"},
+  { "date": "2023-12-11", "up-week": false, "phase-data": false, "final-data": true, "sheet-url": "https://docs.google.com/spreadsheets/u/0/d/1MYYUZ_kZSWhJTvEsJVOfCaxGaH1sLM9S2gEYnDRhWw4/edit"},
+  { "date": "2023-12-18", "up-week": true, "phase-data": true, "final-data": true, "sheet-url": "https://docs.google.com/spreadsheets/u/0/d/1oU_HD_kQTQGbU4FI-01U41ZVXnpSY4NWKG6IJLIVE9Q/edit"},
+  { "date": "2023-12-25", "up-week": false, "phase-data": false, "final-data": false, "sheet-url": ""},
+  { "date": "2024-01-01", "up-week": false, "phase-data": true, "final-data": true, "sheet-url": "https://docs.google.com/spreadsheets/u/0/d/1AEChBHIJAJD0FltWGxkxUvuajIjyDPAXMv40er8n9hc/edit"},
+  { "date": "2024-01-08", "up-week": false, "phase-data": false, "final-data": true, "sheet-url": "https://docs.google.com/spreadsheets/u/0/d/1grJPcA61Mc7wxZ8BDvGd4qoCrKqKsQe7VeGLoI92dZw/edit"},
+  { "date": "2024-01-15", "up-week": true, "phase-data": true, "final-data": true, "sheet-url": "https://docs.google.com/spreadsheets/u/0/d/1UXKJOQchB8CKAgEqmvLwXumLGRGKkaL8_d4nh1tt4j4/edit"},
+  { "date": "2024-01-22", "up-week": false, "phase-data": false, "final-data": true, "sheet-url": "https://docs.google.com/spreadsheets/u/1/d/185gJxIV7uz6YhLfL6ZiPpOZ9r42trjkF_gCrKQhaYAE/edit"}
+]
