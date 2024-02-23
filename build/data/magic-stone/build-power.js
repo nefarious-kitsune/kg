@@ -39,7 +39,7 @@ for (let tierIdx = 0; tierIdx < 9; tierIdx++) {
   for (let levelIdx = 0; levelIdx < 20; levelIdx++) {
     bonus = powerBonus[tierIdx][levelIdx];
     
-    tbody.push(`<tr">`)
+    tbody.push(`<tr>`)
     tbody.push(`<td class="level-col">${levelIdx + 1}</td>`);
 
   

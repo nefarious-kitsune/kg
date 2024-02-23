@@ -54,7 +54,7 @@ for (let level = 0; level < 2000; level++) {
   const data = importedData[level];
   const hammerCost = data['hammer-cost'];
 
-  tableBody.push(`<tr">`)
+  tableBody.push(`<tr>`)
   tableBody.push(`<td class="level-col">${data.level} <span class="next-level">» ${data.level+1}</span></td>`);
 
   if (data['cost-verified']) {

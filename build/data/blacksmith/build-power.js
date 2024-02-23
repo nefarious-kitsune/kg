@@ -49,7 +49,7 @@ for (let level = 1; level <= 2000; level++) {
   const data = importedData[level];
   const power = data.power;
 
-  tableBody.push(`<tr">`)
+  tableBody.push(`<tr>`)
   tableBody.push(`<td class="level-col">${data.level}</td>`);
 
   if (level > 0) {

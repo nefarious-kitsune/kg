@@ -74,7 +74,7 @@ for (let level = 0; level < 2000; level++) {
   const data = compiledData.data[level];
   const lightReagentCost = data['light-reagent-cost'];
 
-  tableBody.push(`<tr">`)
+  tableBody.push(`<tr>`)
   tableBody.push(`<td class="level-col">${data.level} <span class="next-level">» ${data.level+1}</span></td>`);
   tableBody.push(`<td class="cost-col">${lightReagentCost}</td>`);
   tableBody.push(`<td class="cost-col">${totalLightReagentCost - cumulatedCost}</td>`);

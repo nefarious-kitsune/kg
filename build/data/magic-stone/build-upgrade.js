@@ -39,7 +39,7 @@ for (let tier = 0; tier < maxTier; tier++) {
   const [strPotion, forPotion] = upgradeCost[tier];
 
   for (let level=0; level < 20; level++) {
-    tableBody.push(`<tr">`)
+    tableBody.push(`<tr>`)
     tableBody.push(`<td class="level-col">${level} <span class="next-level">» ${level+1}</span></td>`);
     tableBody.push(`<td class="cost-col">${strPotion}</td>`);
     tableBody.push(`<td class="cost-col">${level>=10?forPotion:''}</td>`);
