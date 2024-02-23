@@ -2,6 +2,8 @@ table { border-collapse: collapse; position: relative;}
 
 .power-table th,
 .power-table td,
+.bonus-table th,
+.bonus-table td,
 .upgrade-table th,
 .upgrade-table td {
   padding: 0.1rem 0.5rem;
@@ -9,12 +11,14 @@ table { border-collapse: collapse; position: relative;}
 }
 
 .power-table,
+.bonus-table,
 .upgrade-table {
   border-collapse: collapse;
   border: 0.1rem solid var(--miku-dark-red);
 }
 
 .power-table th,
+.bonus-table th,
 .upgrade-table th {
   background: var(--miku-dark-red);
   color: var(--miku-gold);
@@ -23,6 +27,7 @@ table { border-collapse: collapse; position: relative;}
 }
 
 .power-table td,
+.bonus-table td,
 .upgrade-table td {
   background: white;
   color: black;
@@ -42,7 +47,11 @@ table { border-collapse: collapse; position: relative;}
 .power-table .level-col { width: 4rem; }
 .power-table th.power-col  { width: 8rem; }
 
+.bonus-table .level-col { width: 4rem; }
+.bonus-table th.bonus-col  { width: 8rem; }
+
 .power-table td.power-col,
+.bonus-table td.bonus-col,
 .upgrade-table td.cost-col,
 .upgrade-table td.req-col {
   text-align: right;
@@ -68,12 +77,14 @@ table { border-collapse: collapse; position: relative;}
 }
 
 .power-table thead tr th,
+.bonus-table thead tr th,
 .upgrade-table thead tr th {
   position: sticky;
   top: 0;
 }
 
 .power-table tbody tr:nth-child(even) td,
+.bonus-table tbody tr:nth-child(even) td,
 .upgrade-table tbody tr:nth-child(even) td {
   background: var(--pale-neutral);
 }
@@ -86,14 +97,14 @@ table { border-collapse: collapse; position: relative;}
   background: var(--primary-1);
 }
 
-.power-table tfoot th,
-.power-table tfoot td,
-.upgrade-table tfoot th,
-.upgrade-table tfoot td {
+.power-table tfoot th,   .power-table tfoot td,
+.bonus-table tfoot th,   .bonus-table tfoot td,
+.upgrade-table tfoot th, .upgrade-table tfoot td {
   background: var(--miku-gold);
 }
 
 .power-table .delta,
+.bonus-table .delta,
 .upgrade-table .delta { font-size: 0.8rem; }
 
 .upgrade-table .next-level {
