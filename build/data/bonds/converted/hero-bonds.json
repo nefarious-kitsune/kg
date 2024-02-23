@@ -1,0 +1,1222 @@
+[
+  {
+    "star-count": 7,
+    "bonus-percent": 14,
+    "verified": true
+  },
+  {
+    "star-count": 8,
+    "bonus-percent": 16,
+    "verified": true
+  },
+  {
+    "star-count": 9,
+    "bonus-percent": 18,
+    "verified": true
+  },
+  {
+    "star-count": 10,
+    "bonus-percent": 20,
+    "verified": true
+  },
+  {
+    "star-count": 11,
+    "bonus-percent": 22,
+    "verified": true
+  },
+  {
+    "star-count": 12,
+    "bonus-percent": 24,
+    "verified": true
+  },
+  {
+    "star-count": 13,
+    "bonus-percent": 26,
+    "verified": true
+  },
+  {
+    "star-count": 14,
+    "bonus-percent": 28,
+    "verified": true
+  },
+  {
+    "star-count": 15,
+    "bonus-percent": 30,
+    "verified": true
+  },
+  {
+    "star-count": 16,
+    "bonus-percent": 32,
+    "verified": true
+  },
+  {
+    "star-count": 17,
+    "bonus-percent": 34,
+    "verified": true
+  },
+  {
+    "star-count": 18,
+    "bonus-percent": 36,
+    "verified": true
+  },
+  {
+    "star-count": 19,
+    "bonus-percent": 38,
+    "verified": true
+  },
+  {
+    "star-count": 20,
+    "bonus-percent": 40,
+    "verified": true
+  },
+  {
+    "star-count": 21,
+    "bonus-percent": 42,
+    "verified": true
+  },
+  {
+    "star-count": 22,
+    "bonus-percent": 44,
+    "verified": true
+  },
+  {
+    "star-count": 23,
+    "bonus-percent": 46,
+    "verified": true
+  },
+  {
+    "star-count": 24,
+    "bonus-percent": 48,
+    "verified": true
+  },
+  {
+    "star-count": 25,
+    "bonus-percent": 50,
+    "verified": true
+  },
+  {
+    "star-count": 26,
+    "bonus-percent": 52,
+    "verified": true
+  },
+  {
+    "star-count": 27,
+    "bonus-percent": 54,
+    "verified": true
+  },
+  {
+    "star-count": 28,
+    "bonus-percent": 56,
+    "verified": true
+  },
+  {
+    "star-count": 29,
+    "bonus-percent": 58,
+    "verified": true
+  },
+  {
+    "star-count": 30,
+    "bonus-percent": 60,
+    "verified": true
+  },
+  {
+    "star-count": 31,
+    "bonus-percent": 63,
+    "verified": true
+  },
+  {
+    "star-count": 32,
+    "bonus-percent": 65,
+    "verified": true
+  },
+  {
+    "star-count": 33,
+    "bonus-percent": 68,
+    "verified": true
+  },
+  {
+    "star-count": 34,
+    "bonus-percent": 70,
+    "verified": true
+  },
+  {
+    "star-count": 35,
+    "bonus-percent": 73,
+    "verified": true
+  },
+  {
+    "star-count": 36,
+    "bonus-percent": 75,
+    "verified": true
+  },
+  {
+    "star-count": 37,
+    "bonus-percent": 78,
+    "verified": true
+  },
+  {
+    "star-count": 38,
+    "bonus-percent": 80,
+    "verified": true
+  },
+  {
+    "star-count": 39,
+    "bonus-percent": 83,
+    "verified": true
+  },
+  {
+    "star-count": 40,
+    "bonus-percent": 85,
+    "verified": true
+  },
+  {
+    "star-count": 41,
+    "bonus-percent": 88,
+    "verified": true
+  },
+  {
+    "star-count": 42,
+    "bonus-percent": 90,
+    "verified": true
+  },
+  {
+    "star-count": 43,
+    "bonus-percent": 93,
+    "verified": true
+  },
+  {
+    "star-count": 44,
+    "bonus-percent": 95,
+    "verified": true
+  },
+  {
+    "star-count": 45,
+    "bonus-percent": 98,
+    "verified": true
+  },
+  {
+    "star-count": 46,
+    "bonus-percent": 100,
+    "verified": true
+  },
+  {
+    "star-count": 47,
+    "bonus-percent": 103,
+    "verified": true
+  },
+  {
+    "star-count": 48,
+    "bonus-percent": 105,
+    "verified": true
+  },
+  {
+    "star-count": 49,
+    "bonus-percent": 108,
+    "verified": true
+  },
+  {
+    "star-count": 50,
+    "bonus-percent": 110,
+    "verified": false
+  },
+  {
+    "star-count": 51,
+    "bonus-percent": 113,
+    "verified": false
+  },
+  {
+    "star-count": 52,
+    "bonus-percent": 115,
+    "verified": true
+  },
+  {
+    "star-count": 53,
+    "bonus-percent": 118,
+    "verified": true
+  },
+  {
+    "star-count": 54,
+    "bonus-percent": 120,
+    "verified": true
+  },
+  {
+    "star-count": 55,
+    "bonus-percent": 123,
+    "verified": true
+  },
+  {
+    "star-count": 56,
+    "bonus-percent": 125,
+    "verified": true
+  },
+  {
+    "star-count": 57,
+    "bonus-percent": 128,
+    "verified": true
+  },
+  {
+    "star-count": 58,
+    "bonus-percent": 130,
+    "verified": true
+  },
+  {
+    "star-count": 59,
+    "bonus-percent": 133,
+    "verified": true
+  },
+  {
+    "star-count": 60,
+    "bonus-percent": 135,
+    "verified": true
+  },
+  {
+    "star-count": 61,
+    "bonus-percent": 139,
+    "verified": true
+  },
+  {
+    "star-count": 62,
+    "bonus-percent": 142,
+    "verified": true
+  },
+  {
+    "star-count": 63,
+    "bonus-percent": 146,
+    "verified": true
+  },
+  {
+    "star-count": 64,
+    "bonus-percent": 149,
+    "verified": true
+  },
+  {
+    "star-count": 65,
+    "bonus-percent": 153,
+    "verified": true
+  },
+  {
+    "star-count": 66,
+    "bonus-percent": 156,
+    "verified": true
+  },
+  {
+    "star-count": 67,
+    "bonus-percent": 160,
+    "verified": true
+  },
+  {
+    "star-count": 68,
+    "bonus-percent": 163,
+    "verified": true
+  },
+  {
+    "star-count": 69,
+    "bonus-percent": 167,
+    "verified": true
+  },
+  {
+    "star-count": 70,
+    "bonus-percent": 170,
+    "verified": true
+  },
+  {
+    "star-count": 71,
+    "bonus-percent": 174,
+    "verified": true
+  },
+  {
+    "star-count": 72,
+    "bonus-percent": 177,
+    "verified": true
+  },
+  {
+    "star-count": 73,
+    "bonus-percent": 181,
+    "verified": true
+  },
+  {
+    "star-count": 74,
+    "bonus-percent": 184,
+    "verified": true
+  },
+  {
+    "star-count": 75,
+    "bonus-percent": 188,
+    "verified": true
+  },
+  {
+    "star-count": 76,
+    "bonus-percent": 191,
+    "verified": true
+  },
+  {
+    "star-count": 77,
+    "bonus-percent": 195,
+    "verified": true
+  },
+  {
+    "star-count": 78,
+    "bonus-percent": 198,
+    "verified": true
+  },
+  {
+    "star-count": 79,
+    "bonus-percent": 202,
+    "verified": true
+  },
+  {
+    "star-count": 80,
+    "bonus-percent": 205,
+    "verified": true
+  },
+  {
+    "star-count": 81,
+    "bonus-percent": 209,
+    "verified": true
+  },
+  {
+    "star-count": 82,
+    "bonus-percent": 212,
+    "verified": true
+  },
+  {
+    "star-count": 83,
+    "bonus-percent": 216,
+    "verified": true
+  },
+  {
+    "star-count": 84,
+    "bonus-percent": 219,
+    "verified": true
+  },
+  {
+    "star-count": 85,
+    "bonus-percent": 223,
+    "verified": true
+  },
+  {
+    "star-count": 86,
+    "bonus-percent": 226,
+    "verified": true
+  },
+  {
+    "star-count": 87,
+    "bonus-percent": 230,
+    "verified": false
+  },
+  {
+    "star-count": 88,
+    "bonus-percent": 233,
+    "verified": false
+  },
+  {
+    "star-count": 89,
+    "bonus-percent": 237,
+    "verified": true
+  },
+  {
+    "star-count": 90,
+    "bonus-percent": 240,
+    "verified": true
+  },
+  {
+    "star-count": 91,
+    "bonus-percent": 245,
+    "verified": true
+  },
+  {
+    "star-count": 92,
+    "bonus-percent": 250,
+    "verified": true
+  },
+  {
+    "star-count": 93,
+    "bonus-percent": 255,
+    "verified": true
+  },
+  {
+    "star-count": 94,
+    "bonus-percent": 260,
+    "verified": true
+  },
+  {
+    "star-count": 95,
+    "bonus-percent": 265,
+    "verified": true
+  },
+  {
+    "star-count": 96,
+    "bonus-percent": 270,
+    "verified": true
+  },
+  {
+    "star-count": 97,
+    "bonus-percent": 275,
+    "verified": true
+  },
+  {
+    "star-count": 98,
+    "bonus-percent": 280,
+    "verified": true
+  },
+  {
+    "star-count": 99,
+    "bonus-percent": 285,
+    "verified": false
+  },
+  {
+    "star-count": 100,
+    "bonus-percent": 290,
+    "verified": false
+  },
+  {
+    "star-count": 101,
+    "bonus-percent": 295,
+    "verified": false
+  },
+  {
+    "star-count": 102,
+    "bonus-percent": 300,
+    "verified": false
+  },
+  {
+    "star-count": 103,
+    "bonus-percent": 305,
+    "verified": false
+  },
+  {
+    "star-count": 104,
+    "bonus-percent": 310,
+    "verified": false
+  },
+  {
+    "star-count": 105,
+    "bonus-percent": 315,
+    "verified": false
+  },
+  {
+    "star-count": 106,
+    "bonus-percent": 320,
+    "verified": false
+  },
+  {
+    "star-count": 107,
+    "bonus-percent": 325,
+    "verified": true
+  },
+  {
+    "star-count": 108,
+    "bonus-percent": 330,
+    "verified": true
+  },
+  {
+    "star-count": 109,
+    "bonus-percent": 335,
+    "verified": true
+  },
+  {
+    "star-count": 110,
+    "bonus-percent": 340,
+    "verified": true
+  },
+  {
+    "star-count": 111,
+    "bonus-percent": 345,
+    "verified": true
+  },
+  {
+    "star-count": 112,
+    "bonus-percent": 350,
+    "verified": true
+  },
+  {
+    "star-count": 113,
+    "bonus-percent": 355,
+    "verified": true
+  },
+  {
+    "star-count": 114,
+    "bonus-percent": 360,
+    "verified": true
+  },
+  {
+    "star-count": 115,
+    "bonus-percent": 365,
+    "verified": true
+  },
+  {
+    "star-count": 116,
+    "bonus-percent": 370,
+    "verified": true
+  },
+  {
+    "star-count": 117,
+    "bonus-percent": 375,
+    "verified": true
+  },
+  {
+    "star-count": 118,
+    "bonus-percent": 380,
+    "verified": true
+  },
+  {
+    "star-count": 119,
+    "bonus-percent": 385,
+    "verified": true
+  },
+  {
+    "star-count": 120,
+    "bonus-percent": 390,
+    "verified": true
+  },
+  {
+    "star-count": 121,
+    "bonus-percent": 397,
+    "verified": true
+  },
+  {
+    "star-count": 122,
+    "bonus-percent": 404,
+    "verified": true
+  },
+  {
+    "star-count": 123,
+    "bonus-percent": 411,
+    "verified": true
+  },
+  {
+    "star-count": 124,
+    "bonus-percent": 418,
+    "verified": true
+  },
+  {
+    "star-count": 125,
+    "bonus-percent": 425,
+    "verified": false
+  },
+  {
+    "star-count": 126,
+    "bonus-percent": 432,
+    "verified": false
+  },
+  {
+    "star-count": 127,
+    "bonus-percent": 439,
+    "verified": false
+  },
+  {
+    "star-count": 128,
+    "bonus-percent": 446,
+    "verified": false
+  },
+  {
+    "star-count": 129,
+    "bonus-percent": 453,
+    "verified": true
+  },
+  {
+    "star-count": 130,
+    "bonus-percent": 460,
+    "verified": true
+  },
+  {
+    "star-count": 131,
+    "bonus-percent": 467,
+    "verified": true
+  },
+  {
+    "star-count": 132,
+    "bonus-percent": 474,
+    "verified": true
+  },
+  {
+    "star-count": 133,
+    "bonus-percent": 481,
+    "verified": true
+  },
+  {
+    "star-count": 134,
+    "bonus-percent": 488,
+    "verified": true
+  },
+  {
+    "star-count": 135,
+    "bonus-percent": 495,
+    "verified": true
+  },
+  {
+    "star-count": 136,
+    "bonus-percent": 502,
+    "verified": true
+  },
+  {
+    "star-count": 137,
+    "bonus-percent": 509,
+    "verified": true
+  },
+  {
+    "star-count": 138,
+    "bonus-percent": 516,
+    "verified": true
+  },
+  {
+    "star-count": 139,
+    "bonus-percent": 523,
+    "verified": true
+  },
+  {
+    "star-count": 140,
+    "bonus-percent": 530,
+    "verified": true
+  },
+  {
+    "star-count": 141,
+    "bonus-percent": 537,
+    "verified": true
+  },
+  {
+    "star-count": 142,
+    "bonus-percent": 544,
+    "verified": true
+  },
+  {
+    "star-count": 143,
+    "bonus-percent": 551,
+    "verified": true
+  },
+  {
+    "star-count": 144,
+    "bonus-percent": 558,
+    "verified": true
+  },
+  {
+    "star-count": 145,
+    "bonus-percent": 565,
+    "verified": true
+  },
+  {
+    "star-count": 146,
+    "bonus-percent": 572,
+    "verified": true
+  },
+  {
+    "star-count": 147,
+    "bonus-percent": 579,
+    "verified": true
+  },
+  {
+    "star-count": 148,
+    "bonus-percent": 586,
+    "verified": true
+  },
+  {
+    "star-count": 149,
+    "bonus-percent": 593,
+    "verified": true
+  },
+  {
+    "star-count": 150,
+    "bonus-percent": 600,
+    "verified": true
+  },
+  {
+    "star-count": 151,
+    "bonus-percent": 611,
+    "verified": true
+  },
+  {
+    "star-count": 152,
+    "bonus-percent": 621,
+    "verified": true
+  },
+  {
+    "star-count": 153,
+    "bonus-percent": 632,
+    "verified": true
+  },
+  {
+    "star-count": 154,
+    "bonus-percent": 642,
+    "verified": true
+  },
+  {
+    "star-count": 155,
+    "bonus-percent": 653,
+    "verified": true
+  },
+  {
+    "star-count": 156,
+    "bonus-percent": 663,
+    "verified": true
+  },
+  {
+    "star-count": 157,
+    "bonus-percent": 674,
+    "verified": true
+  },
+  {
+    "star-count": 158,
+    "bonus-percent": 684,
+    "verified": true
+  },
+  {
+    "star-count": 159,
+    "bonus-percent": 695,
+    "verified": true
+  },
+  {
+    "star-count": 160,
+    "bonus-percent": 705,
+    "verified": true
+  },
+  {
+    "star-count": 161,
+    "bonus-percent": 716,
+    "verified": true
+  },
+  {
+    "star-count": 162,
+    "bonus-percent": 726,
+    "verified": true
+  },
+  {
+    "star-count": 163,
+    "bonus-percent": 737,
+    "verified": true
+  },
+  {
+    "star-count": 164,
+    "bonus-percent": 747,
+    "verified": true
+  },
+  {
+    "star-count": 165,
+    "bonus-percent": 758,
+    "verified": true
+  },
+  {
+    "star-count": 166,
+    "bonus-percent": 768,
+    "verified": true
+  },
+  {
+    "star-count": 167,
+    "bonus-percent": 779,
+    "verified": true
+  },
+  {
+    "star-count": 168,
+    "bonus-percent": 789,
+    "verified": true
+  },
+  {
+    "star-count": 169,
+    "bonus-percent": 800,
+    "verified": true
+  },
+  {
+    "star-count": 170,
+    "bonus-percent": 810,
+    "verified": true
+  },
+  {
+    "star-count": 171,
+    "bonus-percent": 821,
+    "verified": true
+  },
+  {
+    "star-count": 172,
+    "bonus-percent": 831,
+    "verified": true
+  },
+  {
+    "star-count": 173,
+    "bonus-percent": 842,
+    "verified": true
+  },
+  {
+    "star-count": 174,
+    "bonus-percent": 852,
+    "verified": true
+  },
+  {
+    "star-count": 175,
+    "bonus-percent": 863,
+    "verified": true
+  },
+  {
+    "star-count": 176,
+    "bonus-percent": 873,
+    "verified": true
+  },
+  {
+    "star-count": 177,
+    "bonus-percent": 884,
+    "verified": true
+  },
+  {
+    "star-count": 178,
+    "bonus-percent": 894,
+    "verified": true
+  },
+  {
+    "star-count": 179,
+    "bonus-percent": 905,
+    "verified": true
+  },
+  {
+    "star-count": 180,
+    "bonus-percent": 915,
+    "verified": true
+  },
+  {
+    "star-count": 181,
+    "bonus-percent": 930,
+    "verified": true
+  },
+  {
+    "star-count": 182,
+    "bonus-percent": 945,
+    "verified": true
+  },
+  {
+    "star-count": 183,
+    "bonus-percent": 960,
+    "verified": false
+  },
+  {
+    "star-count": 184,
+    "bonus-percent": 975,
+    "verified": false
+  },
+  {
+    "star-count": 185,
+    "bonus-percent": 990,
+    "verified": false
+  },
+  {
+    "star-count": 186,
+    "bonus-percent": 1005,
+    "verified": false
+  },
+  {
+    "star-count": 187,
+    "bonus-percent": 1020,
+    "verified": false
+  },
+  {
+    "star-count": 188,
+    "bonus-percent": 1035,
+    "verified": false
+  },
+  {
+    "star-count": 189,
+    "bonus-percent": 1050,
+    "verified": false
+  },
+  {
+    "star-count": 190,
+    "bonus-percent": 1065,
+    "verified": false
+  },
+  {
+    "star-count": 191,
+    "bonus-percent": 1080,
+    "verified": false
+  },
+  {
+    "star-count": 192,
+    "bonus-percent": 1095,
+    "verified": false
+  },
+  {
+    "star-count": 193,
+    "bonus-percent": 1110,
+    "verified": false
+  },
+  {
+    "star-count": 194,
+    "bonus-percent": 1125,
+    "verified": false
+  },
+  {
+    "star-count": 195,
+    "bonus-percent": 1140,
+    "verified": false
+  },
+  {
+    "star-count": 196,
+    "bonus-percent": 1155,
+    "verified": false
+  },
+  {
+    "star-count": 197,
+    "bonus-percent": 1170,
+    "verified": false
+  },
+  {
+    "star-count": 198,
+    "bonus-percent": 1185,
+    "verified": false
+  },
+  {
+    "star-count": 199,
+    "bonus-percent": 1200,
+    "verified": false
+  },
+  {
+    "star-count": 200,
+    "bonus-percent": 1215,
+    "verified": false
+  },
+  {
+    "star-count": 201,
+    "bonus-percent": 1230,
+    "verified": true
+  },
+  {
+    "star-count": 202,
+    "bonus-percent": 1245,
+    "verified": true
+  },
+  {
+    "star-count": 203,
+    "bonus-percent": 1260,
+    "verified": true
+  },
+  {
+    "star-count": 204,
+    "bonus-percent": 1275,
+    "verified": true
+  },
+  {
+    "star-count": 205,
+    "bonus-percent": 1290,
+    "verified": true
+  },
+  {
+    "star-count": 206,
+    "bonus-percent": 1305,
+    "verified": true
+  },
+  {
+    "star-count": 207,
+    "bonus-percent": 1320,
+    "verified": true
+  },
+  {
+    "star-count": 208,
+    "bonus-percent": 1335,
+    "verified": true
+  },
+  {
+    "star-count": 209,
+    "bonus-percent": 1350,
+    "verified": true
+  },
+  {
+    "star-count": 210,
+    "bonus-percent": 1370,
+    "verified": true
+  },
+  {
+    "star-count": 211,
+    "bonus-percent": 1390,
+    "verified": true
+  },
+  {
+    "star-count": 212,
+    "bonus-percent": 1410,
+    "verified": true
+  },
+  {
+    "star-count": 213,
+    "bonus-percent": 1430,
+    "verified": true
+  },
+  {
+    "star-count": 214,
+    "bonus-percent": 1450,
+    "verified": true
+  },
+  {
+    "star-count": 215,
+    "bonus-percent": 1470,
+    "verified": true
+  },
+  {
+    "star-count": 216,
+    "bonus-percent": 1490,
+    "verified": true
+  },
+  {
+    "star-count": 217,
+    "bonus-percent": 1510,
+    "verified": true
+  },
+  {
+    "star-count": 218,
+    "bonus-percent": 1530,
+    "verified": true
+  },
+  {
+    "star-count": 219,
+    "bonus-percent": 1550,
+    "verified": true
+  },
+  {
+    "star-count": 220,
+    "bonus-percent": 1570,
+    "verified": true
+  },
+  {
+    "star-count": 221,
+    "bonus-percent": 1590,
+    "verified": true
+  },
+  {
+    "star-count": 222,
+    "bonus-percent": 1610,
+    "verified": true
+  },
+  {
+    "star-count": 223,
+    "bonus-percent": 1630,
+    "verified": true
+  },
+  {
+    "star-count": 224,
+    "bonus-percent": 1650,
+    "verified": true
+  },
+  {
+    "star-count": 225,
+    "bonus-percent": 1670,
+    "verified": true
+  },
+  {
+    "star-count": 226,
+    "bonus-percent": 1690,
+    "verified": true
+  },
+  {
+    "star-count": 227,
+    "bonus-percent": 1710,
+    "verified": true
+  },
+  {
+    "star-count": 228,
+    "bonus-percent": 1730,
+    "verified": true
+  },
+  {
+    "star-count": 229,
+    "bonus-percent": 1750,
+    "verified": true
+  },
+  {
+    "star-count": 230,
+    "bonus-percent": 1770,
+    "verified": true
+  },
+  {
+    "star-count": 231,
+    "bonus-percent": 1790,
+    "verified": true
+  },
+  {
+    "star-count": 232,
+    "bonus-percent": 1810,
+    "verified": true
+  },
+  {
+    "star-count": 233,
+    "bonus-percent": 1830,
+    "verified": true
+  },
+  {
+    "star-count": 234,
+    "bonus-percent": 1850,
+    "verified": true
+  },
+  {
+    "star-count": 235,
+    "bonus-percent": 1870,
+    "verified": true
+  },
+  {
+    "star-count": 236,
+    "bonus-percent": 1890,
+    "verified": true
+  },
+  {
+    "star-count": 237,
+    "bonus-percent": 1910,
+    "verified": true
+  },
+  {
+    "star-count": 238,
+    "bonus-percent": 1930,
+    "verified": true
+  },
+  {
+    "star-count": 239,
+    "bonus-percent": 1950,
+    "verified": true
+  },
+  {
+    "star-count": 240,
+    "bonus-percent": 1970,
+    "verified": true
+  },
+  {
+    "star-count": 241,
+    "bonus-percent": 2010,
+    "verified": true
+  },
+  {
+    "star-count": 242,
+    "bonus-percent": 2050,
+    "verified": true
+  },
+  {
+    "star-count": 243,
+    "bonus-percent": 2090,
+    "verified": true
+  },
+  {
+    "star-count": 244,
+    "bonus-percent": 2130,
+    "verified": true
+  },
+  {
+    "star-count": 245,
+    "bonus-percent": 2170,
+    "verified": true
+  },
+  {
+    "star-count": 246,
+    "bonus-percent": 2210,
+    "verified": true
+  },
+  {
+    "star-count": 247,
+    "bonus-percent": 2250,
+    "verified": false
+  },
+  {
+    "star-count": 248,
+    "bonus-percent": 2290,
+    "verified": false
+  },
+  {
+    "star-count": 249,
+    "bonus-percent": 2330,
+    "verified": false
+  },
+  {
+    "star-count": 250,
+    "bonus-percent": 2370,
+    "verified": false
+  }
+]
