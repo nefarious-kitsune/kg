@@ -9,8 +9,7 @@ import {
 
 const ModulePath = dirname(fileURLToPath(import.meta.url));
 
-const StartOfCalendar = getUTCDate(2023, 9, 4); // Monday
-// const StartOfCalendar = getUTCDate(2023, 9, 3); // Sunday
+const StartOfCalendar = getUTCDate(2023, 6, 12); // Monday
 let EndOfCalendar = new Date(StartOfCalendar);
 
 const OneDay = 24 * 60 * 60 * 1000;
@@ -48,8 +47,8 @@ let StartOfWeek = new Date(StartOfCalendar);
 while (StartOfWeek.valueOf() < EndOfCalendar.valueOf()) {
   const currentDate = new Date(StartOfWeek);
   const calenderRow =  {
-    month: 12,
-    year: 2099,
+    month: currentDate.getUTCMonth() + 1,
+    year: currentDate.getUTCFullYear(),
     days: [],
     mainEventIdx: -1, // event index of the main event
   };
@@ -57,11 +56,8 @@ while (StartOfWeek.valueOf() < EndOfCalendar.valueOf()) {
   const eventsThisWeek = [];
 
   for (let dayOfWeek = 0; dayOfWeek < 7; dayOfWeek++) {
-    const Y = currentDate.getUTCFullYear();
     const D = currentDate.getUTCDate();
     const M = currentDate.getUTCMonth() + 1;
-    calenderRow.month = Math.min(calenderRow.month, M);
-    calenderRow.year = Math.min(calenderRow.year, Y);
 
     const calendarDay = {
       month: M,
