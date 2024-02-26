@@ -4,9 +4,6 @@ import { readFileSync, writeFileSync } from 'fs'
 import { buildBase } from '../../base/build.js';
 const ModulePath = dirname(fileURLToPath(import.meta.url));
 
-const Year = 2023;
-const Quarter = 4;
-
 const DisplayStartDate = [2023, 9, 4];
 const OneDay = 24 * 60 * 60 * 1000;
 
@@ -76,7 +73,15 @@ const MonthColumn = [
   null,
   null,
   null,
-  { title:'Mar', rowSpan:2, evenMonth: false},
+  { title:'Mar', rowSpan:4, evenMonth: false},
+  null,
+  null,
+  null,
+  { title:'Apr', rowSpan:5, evenMonth: true},
+  null,
+  null,
+  null,
+  null,
 ]
 
 const TableBody = [];
@@ -144,13 +149,37 @@ MonthColumn.forEach((firstCol) => {
   TableBody.push('</tr>')
 })
 
-const Template = readFileSync(resolve(ModulePath, './templates/event-cal.html'), 'utf-8');
+const contentTemplate = readFileSync(resolve(ModulePath, './templates/event-cal.html'), 'utf-8');
+
+const content = contentTemplate
+  .replace('{{TABLE BODY}}', TableBody.join('\n'))
+  ;
+
+const outputOptions = {
+  type: 'page',
+  path: {
+    base: `/events/event-cal`,
+    icon: '/images/logo_mini.png',
+  },
+  css: {
+    links: [
+      '/css/common.css',
+      '/events/event-data.css',
+    ],
+  },
+  breadcrumb: [
+    {path: '/content', title: 'Home'},
+    {path: '/events/', title: 'Events'},
+  ],
+  content: content,
+  shortTitle: 'Event Calendar',
+  title: `Event Calendar`,
+  description: `Calender of special events`,
+};
+
+const output = buildBase(outputOptions);
 
 writeFileSync(
   resolve(ModulePath, '../../../docs/events/event-cal.html'),
-  Template.replace('{{TABLE BODY}}', TableBody.join('\n')),
+  output,
 )
-
-
-
-
