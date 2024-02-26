@@ -24,5 +24,17 @@ export function getDateFormatStrings(date) {
 export function getUTCDate(year, month, day) {
   // Sanity helper
   const monthIdx = month - 1;
-  return new Date(Date.UTC(year, monthIdx, day));
+  return new Date(Date.UTC(year, monthIdx, day, 0, 0, 0));
+}
+
+/**
+ * Get UTC date from YYYY-MM-DD formatted string
+ * @param {string} str
+ * @returns {Date}
+ */
+export function parseUTCDateString(str) {
+  const yyyy = parseInt(str.substring(0, 4));
+  const mm = parseInt(str.substring(5, 7));
+  const dd = parseInt(str.substring(8, 10));
+  return getUTCDate(yyyy, mm, dd)
 }

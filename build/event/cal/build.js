@@ -2,17 +2,18 @@ import { fileURLToPath } from 'url'
 import { dirname, resolve } from 'path'
 import { readFileSync, writeFileSync } from 'fs'
 import { buildBase } from '../../base/build.js';
+import {
+  parseUTCDateString,
+  getUTCDate,
+} from '../../utils/date-utils.js'
+
 const ModulePath = dirname(fileURLToPath(import.meta.url));
 
-const DisplayStartDate = [2023, 9, 4];
-const OneDay = 24 * 60 * 60 * 1000;
+const StartOfCalendar = getUTCDate(2023, 9, 4); // Monday
+// const StartOfCalendar = getUTCDate(2023, 9, 3); // Sunday
+let EndOfCalendar = new Date(StartOfCalendar);
 
-function parseDate(str) {
-  const yyyy = parseInt(str.substring(0, 4));
-  const mm = parseInt(str.substring(5, 7));
-  const dd = parseInt(str.substring(8, 10));
-  return new Date(Date.UTC(yyyy, mm-1, dd, 0, 0, 0));
-}
+const OneDay = 24 * 60 * 60 * 1000;
 
 function readTsvFile(fName) {
   return readFileSync(resolve(ModulePath, fName), 'utf-8')
@@ -22,134 +23,168 @@ function readTsvFile(fName) {
 
 const events = [];
 readTsvFile('./data/events.tsv').forEach((row) => {
-  let [start, end, title] = row.split('\t');
-  start = parseDate(start);
-  end = parseDate(end);
-  const duration = 1 + (end.valueOf() - start.valueOf()) / OneDay;
-  let eventType = 2;
-  if (duration >= 9) eventType = 3;
-  else if (duration <= 5) eventType = 1;
+  const [
+    startDateString,
+    endDateString,
+    title
+  ] = row.split('\t');
+  const startDate = parseUTCDateString(startDateString);
+  const endDate = parseUTCDateString(endDateString);
+  const duration = 1 + (endDate.valueOf() - startDate.valueOf()) / OneDay;
+
+  if (endDate.valueOf() > EndOfCalendar.valueOf()) EndOfCalendar = endDate;
+
   events.push({
-    start: start,
-    end: end,
-    type: eventType,
+    start: startDate,
+    end: endDate,
+    duration: duration,
     title: title,
   });
-})
+});
 
-const currentDate = new Date(Date.UTC(
-  DisplayStartDate[0],
-  DisplayStartDate[1]-1,
-  DisplayStartDate[2],
-  0,
-  0,
-  0)
-);
+const calendarGrid = [];
+let StartOfWeek = new Date(StartOfCalendar);
 
-const MonthColumn = [
-  { title:'Sep', rowSpan:4, evenMonth: false},
-  null,
-  null,
-  null,
-  { title:'Oct', rowSpan:5, evenMonth: true},
-  null,
-  null,
-  null,
-  null,
-  { title:'Nov', rowSpan:4, evenMonth: false},
-  null,
-  null,
-  null,
-  { title:'Dec', rowSpan:4, evenMonth: true},
-  null,
-  null,
-  null,
-  { title:'Jan', rowSpan:5, evenMonth: false},
-  null,
-  null,
-  null,
-  null,
-  { title:'Feb', rowSpan:4, evenMonth: true},
-  null,
-  null,
-  null,
-  { title:'Mar', rowSpan:4, evenMonth: false},
-  null,
-  null,
-  null,
-  { title:'Apr', rowSpan:5, evenMonth: true},
-  null,
-  null,
-  null,
-  null,
-]
+while (StartOfWeek.valueOf() < EndOfCalendar.valueOf()) {
+  const currentDate = new Date(StartOfWeek);
+  const calenderRow =  {
+    month: 12,
+    year: 2099,
+    days: [],
+    mainEventIdx: -1, // event index of the main event
+  };
+
+  const eventsThisWeek = [];
+
+  for (let dayOfWeek = 0; dayOfWeek < 7; dayOfWeek++) {
+    const Y = currentDate.getUTCFullYear();
+    const D = currentDate.getUTCDate();
+    const M = currentDate.getUTCMonth() + 1;
+    calenderRow.month = Math.min(calenderRow.month, M);
+    calenderRow.year = Math.min(calenderRow.year, Y);
+
+    const calendarDay = {
+      month: M,
+      day: D,
+      eventIdx: [],
+    };
+
+    events.forEach((evt, eventIdx) => {
+      if ((currentDate.valueOf() >= evt.start.valueOf()) && (currentDate.valueOf() <= evt.end.valueOf())) {
+        calendarDay.eventIdx.push(eventIdx);
+        const evt = eventsThisWeek.find((evt) => evt.eventIdx = eventIdx);
+        if (evt !== undefined) evt.count ++;
+        else eventsThisWeek.push({eventIdx: eventIdx, count: 1});
+      }
+    });
+
+    calenderRow.days.push(calendarDay);
+
+    currentDate.setDate(currentDate.getDate() + 1);
+  } // for (dayOfWeek)
+
+  if (eventsThisWeek.length > 0) {
+    eventsThisWeek.sort((a,b) => a.count < b.count);
+    calenderRow.mainEventIdx = eventsThisWeek[0].eventIdx;
+  }
+  
+  calendarGrid.push(calenderRow);
+  StartOfWeek = currentDate;
+} // while
 
 const TableBody = [];
+let previousRow;
 
-MonthColumn.forEach((firstCol) => {
-  TableBody.push('<tr>')
-  if (firstCol !== null) {
+const monthNames = [
+  'Jan', 'Feb', 'Mar',
+  'Apr', 'May', 'Jun',
+  'Jul', 'Aug', 'Sep',
+  'Oct', 'Nov', 'Dec',
+];
+
+calendarGrid.forEach((thisWeek, rowIdx) => {
+  TableBody.push('<tr>');
+
+  // Month cell
+  if ((rowIdx === 0) || (thisWeek.month !== previousRow.month)) {
+    const lastRowIdx = calendarGrid.findLastIndex((lastRow) => lastRow.month === thisWeek.month);
     TableBody.push(
       '<th' +
-      ` class="month-col"` +
-      // ` class="month-col${firstCol.evenMonth?' even-month':''}"` +
-      ` rowspan="${firstCol.rowSpan}">`+
-      firstCol.title + `</th>`
+      ` class="month-col ${(thisWeek.month % 2 === 0)?'even':'odd'}-month"` +
+      ` rowspan="${lastRowIdx - rowIdx + 1}">`+
+      monthNames[thisWeek.month-1].toUpperCase() + ' ' + thisWeek.year +
+      '</th>'
     )
   }
 
-  let mainEventTitle = '';
-  let mainEventType = null;
-
-  for (let day = 1; day < 7+1; day++) {
-    const D = currentDate.getDate();
-    const M = currentDate.getMonth();
-    let evenMonthClass = '';
-    if (M % 2 === 1) evenMonthClass = ' even-month';
+  // Day cells
+  for (let dayOfWeek = 0; dayOfWeek < 7; dayOfWeek++) {
+    const thisDay = thisWeek.days[dayOfWeek];
 
     let marker = '';
-    events.forEach((evt) => {
-      if ((currentDate >= evt.start) && (currentDate <= evt.end)) {
-        switch (evt.type) {
-          case 3: marker += '<span class="marker3">★</span>'; break;
-          case 2: marker += '<span class="marker2">✱</span>'; break;
-          default: marker += '<span class="marker1">●</span>';
-        }
-        if (currentDate.valueOf() === evt.start.valueOf()) {
-          mainEventTitle = evt.title;
-          mainEventType = evt.type;
-        }
+    thisDay.eventIdx.forEach((eventIdx) => {
+      const duration = events[eventIdx].duration;
+      if (duration >= 9) {
+        marker += '<span class="marker3">★</span>';
+      } else if (duration > 5) {
+        marker += '<span class="marker2">●</span>'; // was ✱ before
+      } else {
+        marker += '<span class="marker1">●</span>';
       }
-    })
+    });
+
     TableBody.push(
-      `<td class="date-col${evenMonthClass}">` +
-      `<div class="date">${D}</div>` + 
+      `<td class="date-col ${(thisDay.month % 2 === 0)?'even':'odd'}-month">` +
+      `<div class="date">${thisDay.day}</div>` + 
       `<div class="marker-container">${marker}</div>` +
       '</td>'
-      )
-    currentDate.setDate(currentDate.getDate() + 1);
-  }
-
-  if (mainEventType !== null) {
-    let marker = '';
-    switch (mainEventType) {
-      case 3: marker += '<span class="marker3">★</span>'; break;
-      case 2: marker += '<span class="marker2">✱</span>'; break;
-      default: marker += '<span class="marker1">●</span>';
-    }
-    TableBody.push(
-      '<td class="detail-col">' +
-      marker + mainEventTitle +
-      '</td>'
     );
-  } else {
-    TableBody.push('<td class="detail-col"></td>');
+  } // for (dayOfWeek)
+
+  // Detail cell
+  if ((rowIdx === 0) || (thisWeek.mainEventIdx !== previousRow.mainEventIdx)) {
+    if (thisWeek.mainEventIdx === -1) {
+      TableBody.push('<td class="detail-col"></td>')
+    } else {
+      const lastRowIdx = calendarGrid.findLastIndex(
+        (lastRow) => lastRow.mainEventIdx === thisWeek.mainEventIdx
+      );
+      let marker;
+      const mainEvent = events[thisWeek.mainEventIdx];
+      const duration = mainEvent.duration;
+      if (duration >= 9) {
+        marker = '<span class="marker3">★</span>';
+      } else if (duration > 5) {
+        marker = '<span class="marker2">●</span>';
+      } else {
+        marker = '<span class="marker1">●</span>';
+      }
+      
+      TableBody.push(
+        `<td class="detail-col" rowspan="${lastRowIdx - rowIdx + 1}">` +
+        marker + ' ' + mainEvent.title + '</td>'
+      );
+    }
   }
 
-  TableBody.push('</tr>')
-})
+  TableBody.push('</tr>');
+  previousRow = thisWeek;
+});
 
-const contentTemplate = readFileSync(resolve(ModulePath, './templates/event-cal.html'), 'utf-8');
+// const dayOfWeek = [
+//   {title: 'Saturday', abbr: 'S'},
+//   {title: 'Sunday', abbr: 'S'},
+//   {title: 'Monday', abbr: 'M'},
+//   {title: 'Tuesday', abbr: 'Tu'},
+//   {title: 'Wednesday', abbr: 'W'},
+//   {title: 'Thursday', abbr: 'Th'},
+//   {title: 'Friday', abbr: 'F'},
+// ];
+
+const contentTemplate = readFileSync(
+  resolve(ModulePath, './templates/event-cal.html'),
+  'utf-8',
+);
 
 const content = contentTemplate
   .replace('{{TABLE BODY}}', TableBody.join('\n'))
