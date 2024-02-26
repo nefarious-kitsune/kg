@@ -313,7 +313,8 @@ for (let eventIdx = 0; eventIdx < eventCount; eventIdx++) {
     breadcrumb: [
       {path: '/content', title: 'Home'},
       {path: '/events/', title: 'Events'},
-      {path: '/events/mk-results', title: 'Mightiest Kingdom Results'},
+      {path: '/events/mk', title: 'Mightiest Kingdom'},
+      {path: '/events/mk-results', title: 'Results'},
     ],
     content: contentHtml,
     shortTitle: `${yyyy}-${mm}-${dd}`,
@@ -362,9 +363,10 @@ const indexOutputOptions = {
   breadcrumb: [
     {path: '/content', title: 'Home'},
     {path: '/events/', title: 'Events'},
+    {path: '/events/mk', title: 'Mightiest Kingdom'},
   ],
   content: indexContentHtml,
-  shortTitle: 'Mightiest Kingdom Results',
+  shortTitle: 'Results',
   title: `Past Mightiest Kingdom Results`,
   description: `Past results of the Mightiest Kingdom event`,
 };
