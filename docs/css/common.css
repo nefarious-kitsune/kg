@@ -624,6 +624,10 @@ input[type=checkbox]:checked:after {
   background: linear-gradient(to bottom, #fb9145, #fb9145 0.5rem, white 4rem, white); 
 }
 
+table {
+  font-size: 1rem;
+}
+
 table.simple {
   border-collapse: collapse;
 }
