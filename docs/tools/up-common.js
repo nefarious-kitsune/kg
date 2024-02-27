@@ -8,10 +8,6 @@ function formatNumber(value) {
   return str;
 }
 
-function toggleCollapsible(id) {
-  document.getElementById(id).classList.toggle('collapsed');
-}
-
 function openTab(selected, tabNames) {
   const d = document;
   tabNames.forEach((tabName, i) => {
