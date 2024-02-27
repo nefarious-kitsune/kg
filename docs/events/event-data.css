@@ -71,30 +71,6 @@
   font-weight: normal;
 }
 
-.result-table.display-final .final-col { display: table-cell; }
-.result-table.display-final .phase-1-col,
-.result-table.display-final .phase-2-col,
-.result-table.display-final .phase-3-col,
-.result-table.display-final .phase-4-col,
-.result-table.display-final .phase-5-col,
-.result-table.display-final .phase-6-col { display: none; }
-
-.result-table.display-phase-1-3 .final-col,
-.result-table.display-phase-1-3 .phase-4-col,
-.result-table.display-phase-1-3 .phase-5-col,
-.result-table.display-phase-1-3 .phase-6-col { display: none; }
-.result-table.display-phase-1-3 .phase-1-col,
-.result-table.display-phase-1-3 .phase-2-col,
-.result-table.display-phase-1-3 .phase-3-col { display: table-cell; }
-
-.result-table.display-phase-4-6 .final-col,
-.result-table.display-phase-4-6 .phase-1-col,
-.result-table.display-phase-4-6 .phase-2-col,
-.result-table.display-phase-4-6 .phase-3-col { display: none; }
-.result-table.display-phase-4-6 .phase-4-col,
-.result-table.display-phase-4-6 .phase-5-col,
-.result-table.display-phase-4-6 .phase-6-col { display: table-cell; }
-
 .result-table.view-final .final-col { display: table-cell; }
 .result-table.view-final .phase-1-col,
 .result-table.view-final .phase-2-col,
