@@ -76,14 +76,14 @@ function buildContent(elHeroData) {
       `<td class="skill-col">${data.skills[3]}</td>`,
       `<td class="skill-col">${data.skills[4]}</td>`,
 
-      `<td class="total-bonus-col">${formatBonus('+', data['total-bonus']['march-speed'])}</td>`,
-      `<td class="total-bonus-col">${formatBonus('+', data['total-bonus']['power'])}</td>`,
-      `<td class="total-bonus-col">${formatBonus('+', data['total-bonus']['recovery-speed'])}</td>`,
-      `<td class="total-bonus-col">${formatBonus('+', data['total-bonus']['wound-regeneration'])}</td>`,
-      `<td class="total-bonus-col">${formatBonus('+', data['total-bonus']['troops-load'])}</td>`,
-      `<td class="total-bonus-col">${formatBonus('+', data['total-bonus']['gathering-speed'])}</td>`,
-      `<td class="total-bonus-col">${formatBonus('+', data['total-bonus']['offline-gold'])}</td>`,
-      `<td class="total-bonus-col">${formatBonus('-', data['total-bonus']['ap-reduction'])}</td>`,
+      `<td class="total-combat-col">${formatBonus('+', data['total-bonus']['march-speed'])}</td>`,
+      `<td class="total-combat-col">${formatBonus('+', data['total-bonus']['power'])}</td>`,
+      `<td class="total-combat-col">${formatBonus('+', data['total-bonus']['recovery-speed'])}</td>`,
+      `<td class="total-combat-col">${formatBonus('+', data['total-bonus']['wound-regeneration'])}</td>`,
+      `<td class="total-utility-col">${formatBonus('+', data['total-bonus']['troops-load'])}</td>`,
+      `<td class="total-utility-col">${formatBonus('+', data['total-bonus']['gathering-speed'])}</td>`,
+      `<td class="total-utility-col">${formatBonus('+', data['total-bonus']['offline-gold'])}</td>`,
+      `<td class="total-utility-col">${formatBonus('-', data['total-bonus']['ap-reduction'])}</td>`,
 
       `<td class="acquisition-col">${data.acquisition['advanced-recruitment']?'✔':''}</td>`,
       `<td class="acquisition-col">${data.acquisition['lucky-wheel']?'✔':''}</td>`,
@@ -142,6 +142,6 @@ function buildElementContent(elName, elHeroData) {
 }
 
 writeFileSync(
-  resolve(ExportPath, './fire.html'),
+  resolve(ExportPath, './fire-skills.html'),
   buildElementContent('Fire Mage', fireHeroData),
 );

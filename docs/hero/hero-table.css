@@ -7,25 +7,12 @@
   vertical-align: top;
 }
 
-.hero-table thead th {
+.hero-table thead {
   position: sticky;
   background: var(--miku-red);
   color: white;
   z-index: 1;
   top: 0;
-}
-
-.hero-table td.hero-name {
-  position: sticky;
-  background-color: white;
-  left: 0;
-  z-index: 1;
-}
-
-.hero-table th.hero-name {
-  top: 0;
-  left: 0;
-  z-index: 2;
 }
 
 .hero-table td,
@@ -50,38 +37,64 @@
   text-align: center;
 }
 
-.hero-table .acquisition-col { width: 8rem; }
-.hero-table .other-acquisition-col { width: 10rem; }
+.hero-table .acquisition-col { width: 6rem; }
+.hero-table .other-acquisition-col { width: 8rem; }
 .hero-table .skill-col { width: 10rem; }
-.hero-table .total-bonus-col { width: 8rem; }
+.hero-table .total-combat-col { width: 8rem; }
+.hero-table .total-utility-col { width: 8rem; }
 .hero-table .role-col { width: 6rem; }
 
+.hero-table.view-skills .skill-header-col,
 .hero-table.view-skills .skill-col { display: table-cell; }
-.hero-table.view-skills .total-bonus-col,
+.hero-table.view-skills .total-combat-header-col,
+.hero-table.view-skills .total-combat-col,
+.hero-table.view-skills .total-utility-header-col,
+.hero-table.view-skills .total-utility-col,
 .hero-table.view-skills .acquisition-col,
 .hero-table.view-skills .other-acquisition-col,
+.hero-table.view-skills .role-header-col,
 .hero-table.view-skills .role-col { display: none; }
 
-.hero-table.view-total-bonuses .total-bonus-col { display: table-cell; }
-.hero-table.view-total-bonuses .skill-col,
-.hero-table.view-total-bonuses .acquisition-col,
-.hero-table.view-total-bonuses .other-acquisition-col,
-.hero-table.view-total-bonuses .role-col { display: none; }
+.hero-table.view-total-combat .total-combat-header-col,
+.hero-table.view-total-combat .total-combat-col { display: table-cell; }
+.hero-table.view-total-combat .skill-header-col,
+.hero-table.view-total-combat .skill-col,
+.hero-table.view-total-combat .total-utility-header-col,
+.hero-table.view-total-combat .total-utility-col,
+.hero-table.view-total-combat .acquisition-col,
+.hero-table.view-total-combat .other-acquisition-col,
+.hero-table.view-total-combat .role-header-col,
+.hero-table.view-total-combat .role-col { display: none; }
 
-.hero-table.view-total-bonuses .total-bonus-col { display: table-cell; }
-.hero-table.view-total-bonuses .skill-col,
-.hero-table.view-total-bonuses .acquisition-col,
-.hero-table.view-total-bonuses .other-acquisition-col,
-.hero-table.view-total-bonuses .role-col { display: none; }
+.hero-table.view-total-utility .total-utility-header-col,
+.hero-table.view-total-utility .total-utility-col { display: table-cell; }
+.hero-table.view-total-utility .skill-header-col,
+.hero-table.view-total-utility .skill-col,
+.hero-table.view-total-utility .total-combat-header-col,
+.hero-table.view-total-utility .total-combat-col,
+.hero-table.view-total-utility .acquisition-col,
+.hero-table.view-total-utility .other-acquisition-col,
+.hero-table.view-total-utility .role-header-col,
+.hero-table.view-total-utility .role-col { display: none; }
 
+.hero-table.view-acquisition .skill-header-col,
 .hero-table.view-acquisition .skill-col,
-.hero-table.view-acquisition .total-bonus-col,
+.hero-table.view-acquisition .total-combat-header-col,
+.hero-table.view-acquisition .total-combat-col,
+.hero-table.view-acquisition .total-utility-header-col,
+.hero-table.view-acquisition .total-utility-col,
+.hero-table.view-acquisition .role-header-col,
 .hero-table.view-acquisition .role-col { display: none; }
 .hero-table.view-acquisition .acquisition-col,
 .hero-table.view-acquisition .other-acquisition-col { display: table-cell; }
 
+.hero-table.view-role .skill-header-col,
 .hero-table.view-role .skill-col,
-.hero-table.view-role .total-bonus-col,
+.hero-table.view-role .total-combat-header-col,
+.hero-table.view-role .total-combat-col,
+.hero-table.view-role .total-utility-header-col,
+.hero-table.view-role .total-utility-col,
 .hero-table.view-role .other-acquisition-col,
 .hero-table.view-role .acquisition-col { display: none; }
+.hero-table.view-role .role-header-col
 .hero-table.view-role .role-col { display: table-cell; }
