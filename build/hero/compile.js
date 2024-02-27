@@ -105,7 +105,8 @@ function compileData(element, raw) {
     const loadBonus = getTotalStats(skills, 'Troops load +');
     const recoveryBonus = getTotalStats(skills, 'Recovery speed +');
 
-    const warriorTier = 
+    const warriorTier =
+      ((speedBonus > 0)?1:0) +
       ((recoveryBonus > 0)?1:0) +
       ((powerBonus > 0)?1:0) +
       ((regenBonus > 0)?1:0);

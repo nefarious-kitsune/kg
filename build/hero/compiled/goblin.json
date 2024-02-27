@@ -21,7 +21,7 @@
       "recovery-speed": 0
     },
     "tier": {
-      "warrior": 2,
+      "warrior": 3,
       "support": 4,
       "hunter": 0,
       "miner": 0
@@ -56,7 +56,7 @@
       "recovery-speed": 15
     },
     "tier": {
-      "warrior": 3,
+      "warrior": 4,
       "support": 2,
       "hunter": 0,
       "miner": 0
@@ -91,7 +91,7 @@
       "recovery-speed": 15
     },
     "tier": {
-      "warrior": 3,
+      "warrior": 4,
       "support": 2,
       "hunter": 0,
       "miner": 0
@@ -126,7 +126,7 @@
       "recovery-speed": 20
     },
     "tier": {
-      "warrior": 3,
+      "warrior": 4,
       "support": 1,
       "hunter": 0,
       "miner": 0
@@ -161,7 +161,7 @@
       "recovery-speed": 20
     },
     "tier": {
-      "warrior": 3,
+      "warrior": 4,
       "support": 1,
       "hunter": 0,
       "miner": 0
@@ -196,7 +196,7 @@
       "recovery-speed": 15
     },
     "tier": {
-      "warrior": 3,
+      "warrior": 4,
       "support": 2,
       "hunter": 0,
       "miner": 0
@@ -231,7 +231,7 @@
       "recovery-speed": 25
     },
     "tier": {
-      "warrior": 2,
+      "warrior": 3,
       "support": 3,
       "hunter": 0,
       "miner": 0
@@ -266,7 +266,7 @@
       "recovery-speed": 25
     },
     "tier": {
-      "warrior": 2,
+      "warrior": 3,
       "support": 3,
       "hunter": 0,
       "miner": 0
@@ -301,7 +301,7 @@
       "recovery-speed": 0
     },
     "tier": {
-      "warrior": 2,
+      "warrior": 3,
       "support": 2,
       "hunter": 0,
       "miner": 0
@@ -336,7 +336,7 @@
       "recovery-speed": 0
     },
     "tier": {
-      "warrior": 2,
+      "warrior": 3,
       "support": 2,
       "hunter": 0,
       "miner": 0
@@ -371,7 +371,7 @@
       "recovery-speed": 0
     },
     "tier": {
-      "warrior": 2,
+      "warrior": 3,
       "support": 2,
       "hunter": 0,
       "miner": 0
@@ -406,7 +406,7 @@
       "recovery-speed": 0
     },
     "tier": {
-      "warrior": 2,
+      "warrior": 3,
       "support": 2,
       "hunter": 0,
       "miner": 0
@@ -441,7 +441,7 @@
       "recovery-speed": 0
     },
     "tier": {
-      "warrior": 2,
+      "warrior": 3,
       "support": 1,
       "hunter": 0,
       "miner": 0
@@ -476,7 +476,7 @@
       "recovery-speed": 0
     },
     "tier": {
-      "warrior": 2,
+      "warrior": 3,
       "support": 1,
       "hunter": 0,
       "miner": 0
@@ -511,7 +511,7 @@
       "recovery-speed": 0
     },
     "tier": {
-      "warrior": 2,
+      "warrior": 3,
       "support": 1,
       "hunter": 0,
       "miner": 0
@@ -546,7 +546,7 @@
       "recovery-speed": 15
     },
     "tier": {
-      "warrior": 2,
+      "warrior": 3,
       "support": 0,
       "hunter": 1,
       "miner": 0
@@ -581,7 +581,7 @@
       "recovery-speed": 0
     },
     "tier": {
-      "warrior": 1,
+      "warrior": 2,
       "support": 0,
       "hunter": 1,
       "miner": 0
@@ -651,7 +651,7 @@
       "recovery-speed": 0
     },
     "tier": {
-      "warrior": 1,
+      "warrior": 2,
       "support": 1,
       "hunter": 0,
       "miner": 0
@@ -686,7 +686,7 @@
       "recovery-speed": 0
     },
     "tier": {
-      "warrior": 1,
+      "warrior": 2,
       "support": 1,
       "hunter": 0,
       "miner": 1
@@ -721,7 +721,7 @@
       "recovery-speed": 0
     },
     "tier": {
-      "warrior": 1,
+      "warrior": 2,
       "support": 1,
       "hunter": 0,
       "miner": 1
