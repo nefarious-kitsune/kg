@@ -1,0 +1,75 @@
+.hero-table {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+.hero-table td {
+  vertical-align: top;
+}
+
+.hero-table thead th {
+  position: sticky;
+  background: var(--miku-red);
+  color: white;
+  z-index: 1;
+  top: 0;
+}
+
+.hero-table td.hero-name {
+  position: sticky;
+  background-color: white;
+  left: 0;
+  z-index: 1;
+}
+
+.hero-table th.hero-name {
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.hero-table td,
+.hero-table th {
+  border: 0.1rem solid var(--miku-dark-red);
+  border-spacing: 0;
+  padding: 0.5rem;
+}
+
+.hero-table .hero-avatar { border-right: none; }
+.hero-table .hero-name { border-left: none; }
+
+.hero-table .avatars-item { width: 2rem; height: 2rem; }
+
+.hero-table .acquisition-col {
+  font-weight: bold;
+  color: var(--miku-red);
+  text-align: center;
+}
+
+.hero-table .other-acquisition-col {
+  text-align: center;
+}
+
+.hero-table.view-skills .skill-col { display: table-cell; }
+.hero-table.view-skills .total-bonus-col,
+.hero-table.view-skills .acquisition-col,
+.hero-table.view-skills .other-acquisition-col,
+.hero-table.view-skills .role-col { display: none; }
+
+.hero-table.view-total-bonuses .total-bonus-col { display: table-cell; }
+.hero-table.view-total-bonuses .skill-col,
+.hero-table.view-total-bonuses .acquisition-col,
+.hero-table.view-total-bonuses .other-acquisition-col,
+.hero-table.view-total-bonuses .role-col { display: none; }
+
+.hero-table.view-acquisition .skill-col,
+.hero-table.view-acquisition .total-bonus-col,
+.hero-table.view-acquisition .role-col { display: none; }
+.hero-table.view-acquisition .acquisition-col,
+.hero-table.view-acquisition .other-acquisition-col { display: table-cell; }
+
+.hero-table.view-role .skill-col,
+.hero-table.view-role .total-bonus-col,
+.hero-table.view-role .other-acquisition-col,
+.hero-table.view-role .acquisition-col { display: none; }
+.hero-table.view-role .role-col { display: table-cell; }
