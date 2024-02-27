@@ -421,8 +421,8 @@ input[type=checkbox]:checked:after {
 .trist { background-image: url('../images/A-Trist.png'); }
 
 .allen { background-image: url('../images/F-Allen.png'); }
-.anko { background-image: url('../images/blank-avatar.png'); }
-.apollo { background-image: url('../images/F-Anko.png'); }
+.anko { background-image: url('../images/F-Anko.png'); }
+.apollo { background-image: url('../images/blank-avatar.png'); }
 .brie { background-image: url('../images/blank-avatar.png'); }
 .christie { background-image: url('../images/F-Christie.png'); }
 .cosette { background-image: url('../images/F-Cosette.png'); }
