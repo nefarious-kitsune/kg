@@ -1,0 +1,50 @@
+<h1>{{ELEMENT NAME}} Heroes</h1>
+
+<p>Information of {{ELEMENT NAME}} heroes.</p>
+
+<div class="tabbed-table-wrapper">
+<div class="tabbed-table-tab-bar">
+<button onclick="switchHeroTableView(0)" id="hero-tab-0" class="tab focused">Skills</button>
+<button onclick="switchHeroTableView(1)" id="hero-tab-1" class="tab">Total Bonuses</button>
+<button onclick="switchHeroTableView(2)" id="hero-tab-2" class="tab">Acquisition</button>
+<button onclick="switchHeroTableView(3)" id="hero-tab-3" class="tab">Role</button>
+<div class="extra"><a href="./{{JSON FILE NAME}}">JSON</a></div>
+</div>
+
+<div class="tabbed-table-content">
+<table class="hero-table view-skills" id="hero-table">
+<thead>
+<tr>
+<th class="hero-avatar"></th>
+<th class="hero-name">Name</th>
+<th class="skill-col">1 Star</th>
+<th class="skill-col">2 Star</th>
+<th class="skill-col">3 Star</th>
+<th class="skill-col">4 Star</th>
+<th class="skill-col">5 Star</th>
+
+<th class="total-bonus-col"><abbr title="March Speed">Speed</abbr></th>
+<th class="total-bonus-col"><abbr title="Troops Power">Power</abbr></th>
+<th class="total-bonus-col"><abbr title="Recovery Speed">Heal</abbr></th>
+<th class="total-bonus-col"><abbr title="Wound Regeneration">Regen.</abbr></th>
+<th class="total-bonus-col"><abbr title="Troops Load">Load</abbr></th>
+<th class="total-bonus-col"><abbr title="Gathering Speed">Gather.</abbr></th>
+<th class="total-bonus-col"><abbr title="Offline Gold">Offline</abbr></th>
+<th class="total-bonus-col"><abbr title="Action Point">AP</abbr></th>
+
+<th class="acquisition-col"><abbr title="Advanced Recruitment">Adv.</abbr></th>
+<th class="acquisition-col"><abbr title="Lucky Wheel">Wheel</abbr></th>
+<th class="acquisition-col"><abbr title="Wishing Crystal Ball">Crystal</abbr></th>
+<th class="acquisition-col"><abbr title="Free-Pick Hero Card">Free</abbr></th>
+<th class="other-acquisition-col">Other</th>
+
+<th class="role-col">Warrior</th>
+<th class="role-col">Support</th>
+<th class="role-col">Other</th>
+</tr>
+</thead>
+<tbody>
+{{TABLE BODY}}
+</tbody>
+</table>
+</div>

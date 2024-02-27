@@ -40,21 +40,33 @@
 
 .hero-table .avatars-item { width: 2rem; height: 2rem; }
 
-.hero-table .acquisition-col {
+.hero-table td.acquisition-col {
   font-weight: bold;
   color: var(--miku-red);
   text-align: center;
 }
 
-.hero-table .other-acquisition-col {
+.hero-table td.other-acquisition-col {
   text-align: center;
 }
+
+.hero-table .acquisition-col { width: 8rem; }
+.hero-table .other-acquisition-col { width: 10rem; }
+.hero-table .skill-col { width: 10rem; }
+.hero-table .total-bonus-col { width: 8rem; }
+.hero-table .role-col { width: 6rem; }
 
 .hero-table.view-skills .skill-col { display: table-cell; }
 .hero-table.view-skills .total-bonus-col,
 .hero-table.view-skills .acquisition-col,
 .hero-table.view-skills .other-acquisition-col,
 .hero-table.view-skills .role-col { display: none; }
+
+.hero-table.view-total-bonuses .total-bonus-col { display: table-cell; }
+.hero-table.view-total-bonuses .skill-col,
+.hero-table.view-total-bonuses .acquisition-col,
+.hero-table.view-total-bonuses .other-acquisition-col,
+.hero-table.view-total-bonuses .role-col { display: none; }
 
 .hero-table.view-total-bonuses .total-bonus-col { display: table-cell; }
 .hero-table.view-total-bonuses .skill-col,
