@@ -5,9 +5,10 @@
 <div class="tabbed-table-wrapper">
 <div class="tabbed-table-tab-bar">
 <button onclick="switchHeroTableView(0)" id="hero-tab-0" class="tab focused">Skills</button>
-<button onclick="switchHeroTableView(1)" id="hero-tab-1" class="tab">Total Bonuses</button>
-<button onclick="switchHeroTableView(2)" id="hero-tab-2" class="tab">Acquisition</button>
-<button onclick="switchHeroTableView(3)" id="hero-tab-3" class="tab">Role</button>
+<button onclick="switchHeroTableView(1)" id="hero-tab-1" class="tab">Combat</button>
+<button onclick="switchHeroTableView(2)" id="hero-tab-2" class="tab">Utility</button>
+<button onclick="switchHeroTableView(3)" id="hero-tab-3" class="tab">How to Get</button>
+<button onclick="switchHeroTableView(4)" id="hero-tab-4" class="tab">Role</button>
 <div class="extra"><a href="./{{JSON FILE NAME}}">JSON</a></div>
 </div>
 
@@ -15,32 +16,43 @@
 <table class="hero-table view-skills" id="hero-table">
 <thead>
 <tr>
-<th class="hero-avatar"></th>
-<th class="hero-name">Name</th>
+<th class="avatar-col" rowspan="2"></th>
+<th class="name-col" rowspan="2">Name</th>
+
+<th class="skill-header-col" colspan="5">Skills</th>
+<th class="total-combat-header-col" colspan="4">Combat (Fully Promoted)</th>
+<th class="total-utility-header-col" colspan="4">Utility (Fully Promoted)</th>
+
+<th class="acquisition-col" rowspan="2"><abbr data-tooltip="Advanced Recruitment" tabindex="0">Adv. Recruit.</abbr></th>
+<th class="acquisition-col" rowspan="2">Lucky Wheel</th>
+<th class="acquisition-col" rowspan="2"><abbr data-tooltip="Wishing Crystal Ball" tabindex="0">Crystal Ball</abbr></th>
+<th class="acquisition-col" rowspan="2"><abbr data-tooltip="Free-Pick Hero Card" tabindex="0">Free-Pick</abbr></th>
+<th class="other-acquisition-col" rowspan="2">Other</th>
+
+<th class="role-header-col" colspan="3">Roles</th>
+
+</tr>
+<tr>
 <th class="skill-col">1 Star</th>
 <th class="skill-col">2 Star</th>
 <th class="skill-col">3 Star</th>
 <th class="skill-col">4 Star</th>
 <th class="skill-col">5 Star</th>
 
-<th class="total-bonus-col"><abbr title="March Speed">Speed</abbr></th>
-<th class="total-bonus-col"><abbr title="Troops Power">Power</abbr></th>
-<th class="total-bonus-col"><abbr title="Recovery Speed">Heal</abbr></th>
-<th class="total-bonus-col"><abbr title="Wound Regeneration">Regen.</abbr></th>
-<th class="total-bonus-col"><abbr title="Troops Load">Load</abbr></th>
-<th class="total-bonus-col"><abbr title="Gathering Speed">Gather.</abbr></th>
-<th class="total-bonus-col"><abbr title="Offline Gold">Offline</abbr></th>
-<th class="total-bonus-col"><abbr title="Action Point">AP</abbr></th>
+<th class="total-combat-col"><abbr data-tooltip="March Speed" tabindex="0">Speed</abbr></th>
+<th class="total-combat-col"><abbr data-tooltip="Troops Power" tabindex="0">Power</abbr></th>
+<th class="total-combat-col"><abbr data-tooltip="Recovery Speed" tabindex="0">Recovery</abbr></th>
+<th class="total-combat-col"><abbr data-tooltip="Wound Regeneration" tabindex="0">Regen.</abbr></th>
 
-<th class="acquisition-col"><abbr title="Advanced Recruitment">Adv.</abbr></th>
-<th class="acquisition-col"><abbr title="Lucky Wheel">Wheel</abbr></th>
-<th class="acquisition-col"><abbr title="Wishing Crystal Ball">Crystal</abbr></th>
-<th class="acquisition-col"><abbr title="Free-Pick Hero Card">Free</abbr></th>
-<th class="other-acquisition-col">Other</th>
+<th class="total-utility-col"><abbr data-tooltip="Troops Load" tabindex="0">Load</abbr></th>
+<th class="total-utility-col"><abbr data-tooltip="Gathering Speed" tabindex="0">Gather.</abbr></th>
+<th class="total-utility-col"><abbr data-tooltip="Offline Gold" tabindex="0">Offline</abbr></th>
+<th class="total-utility-col"><abbr data-tooltip="Action Point" tabindex="0">AP</abbr></th>
 
 <th class="role-col">Warrior</th>
 <th class="role-col">Support</th>
 <th class="role-col">Other</th>
+
 </tr>
 </thead>
 <tbody>
