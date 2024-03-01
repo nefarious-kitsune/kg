@@ -68,8 +68,8 @@ function buildContent(elHeroData) {
 
     tableBody.push(
       '<tr>',
-      `<td class="hero-avatar"><div class="avatars-item ${className}"></div></td>`,
-      `<td class="hero-name">${data.name}</td>`,
+      `<td class="avatar-col"><div class="avatars-item ${className}"></div></td>`,
+      `<td class="name-col">${data.name}</td>`,
       `<td class="skill-col">${data.skills[0]}</td>`,
       `<td class="skill-col">${data.skills[1]}</td>`,
       `<td class="skill-col">${data.skills[2]}</td>`,

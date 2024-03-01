@@ -304,6 +304,7 @@ input[type=checkbox]:checked:after {
 
 [data-tooltip] {
   position: relative;
+  text-decoration: underline dotted;
 }
 
 [data-tooltip]:before,

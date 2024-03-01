@@ -22,8 +22,19 @@
   padding: 0.5rem;
 }
 
-.hero-table .hero-avatar { border-right: none; }
-.hero-table .hero-name { border-left: none; }
+/* Default */
+.hero-table .avatar-col { display: none; }
+
+/* Tablet screen */
+@media screen and (min-width: 480px) {
+  .hero-table .avatar-col {
+    display: table-cell;
+    border-right: none;
+  }
+  .hero-table .name-col {
+    border-left: none;
+  }
+}
 
 .hero-table .avatars-item { width: 2rem; height: 2rem; }
 
