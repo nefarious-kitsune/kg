@@ -454,9 +454,9 @@ input[type=checkbox]:checked:after {
   background-image: url('../images/blank-avatar.png');
 }
 
-.filius { background-image: url('../images/A-Filius.png'); }
-.jessica { background-image: url('../images/A-Jessica.png'); }
-.vera { background-image: url('../images/A-Vera.png'); }
+.filius { background-image: url('../images/I-Filius.png'); }
+.jessica { background-image: url('../images/I-Jessica.png'); }
+.vera { background-image: url('../images/I-Vera.png'); }
 
 .alliance-tag {
   display: inline-block;
