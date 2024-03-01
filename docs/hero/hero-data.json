@@ -1010,7 +1010,7 @@
       "advanced-recruitment": false,
       "lucky-wheel": false,
       "crystal-ball": false,
-      "free-pick": false,
+      "free-pick": true,
       "other": ""
     }
   },
@@ -1780,7 +1780,7 @@
       "advanced-recruitment": false,
       "lucky-wheel": false,
       "crystal-ball": false,
-      "free-pick": false,
+      "free-pick": true,
       "other": ""
     }
   },
@@ -1815,7 +1815,7 @@
       "advanced-recruitment": false,
       "lucky-wheel": false,
       "crystal-ball": false,
-      "free-pick": false,
+      "free-pick": true,
       "other": ""
     }
   },
@@ -1850,7 +1850,7 @@
       "advanced-recruitment": false,
       "lucky-wheel": false,
       "crystal-ball": false,
-      "free-pick": false,
+      "free-pick": true,
       "other": ""
     }
   },
@@ -1885,7 +1885,7 @@
       "advanced-recruitment": false,
       "lucky-wheel": false,
       "crystal-ball": false,
-      "free-pick": false,
+      "free-pick": true,
       "other": ""
     }
   },
@@ -1995,6 +1995,41 @@
     }
   },
   {
+    "name": "Hana",
+    "rarity": "SSR",
+    "element": "ice",
+    "skills": [
+      "AP reduction -10%",
+      "March speed +15%",
+      "",
+      "All troops power +25%",
+      "Wound regeneration +10%"
+    ],
+    "total-bonus": {
+      "ap-reduction": 10,
+      "march-speed": 15,
+      "power": 25,
+      "wound-regeneration": 10,
+      "gathering-speed": 0,
+      "offline-gold": 0,
+      "troops-load": 0,
+      "recovery-speed": 0
+    },
+    "tier": {
+      "warrior": 3,
+      "support": 2,
+      "hunter": 1,
+      "miner": 0
+    },
+    "acquisition": {
+      "advanced-recruitment": false,
+      "lucky-wheel": false,
+      "crystal-ball": false,
+      "free-pick": true,
+      "other": ""
+    }
+  },
+  {
     "name": "Lilani",
     "rarity": "SSR",
     "element": "ice",
@@ -2065,36 +2100,106 @@
     }
   },
   {
-    "name": "Hana",
+    "name": "Rudolph",
     "rarity": "SSR",
     "element": "ice",
     "skills": [
-      "AP reduction -10%",
-      "March speed +15%",
+      "March speed +20%",
+      "Troops load +15%",
       "",
       "All troops power +25%",
-      "Wound regeneration +10%"
+      "Recovery speed +15%"
     ],
     "total-bonus": {
-      "ap-reduction": 10,
-      "march-speed": 15,
+      "ap-reduction": 0,
+      "march-speed": 20,
       "power": 25,
-      "wound-regeneration": 10,
+      "wound-regeneration": 0,
       "gathering-speed": 0,
       "offline-gold": 0,
-      "troops-load": 0,
-      "recovery-speed": 0
+      "troops-load": 15,
+      "recovery-speed": 15
     },
     "tier": {
       "warrior": 3,
       "support": 2,
-      "hunter": 1,
+      "hunter": 0,
       "miner": 0
     },
     "acquisition": {
       "advanced-recruitment": false,
       "lucky-wheel": false,
-      "crystal-ball": false,
+      "crystal-ball": true,
+      "free-pick": true,
+      "other": "Bounty Hall"
+    }
+  },
+  {
+    "name": "Vera",
+    "rarity": "SSR",
+    "element": "ice",
+    "skills": [
+      "March speed +20%",
+      "Troops load +10%",
+      "",
+      "All troops power +25%",
+      "Wound regeneration +10%"
+    ],
+    "total-bonus": {
+      "ap-reduction": 0,
+      "march-speed": 20,
+      "power": 25,
+      "wound-regeneration": 10,
+      "gathering-speed": 0,
+      "offline-gold": 0,
+      "troops-load": 10,
+      "recovery-speed": 0
+    },
+    "tier": {
+      "warrior": 3,
+      "support": 2,
+      "hunter": 0,
+      "miner": 0
+    },
+    "acquisition": {
+      "advanced-recruitment": false,
+      "lucky-wheel": false,
+      "crystal-ball": true,
+      "free-pick": true,
+      "other": ""
+    }
+  },
+  {
+    "name": "Paula",
+    "rarity": "SSR",
+    "element": "ice",
+    "skills": [
+      "March speed +20%",
+      "Offline gold +20%",
+      "",
+      "All troops power +20%",
+      "Recovery speed +15%"
+    ],
+    "total-bonus": {
+      "ap-reduction": 0,
+      "march-speed": 20,
+      "power": 20,
+      "wound-regeneration": 0,
+      "gathering-speed": 0,
+      "offline-gold": 20,
+      "troops-load": 0,
+      "recovery-speed": 15
+    },
+    "tier": {
+      "warrior": 3,
+      "support": 1,
+      "hunter": 0,
+      "miner": 0
+    },
+    "acquisition": {
+      "advanced-recruitment": true,
+      "lucky-wheel": true,
+      "crystal-ball": true,
       "free-pick": true,
       "other": ""
     }
@@ -2170,76 +2275,6 @@
     }
   },
   {
-    "name": "Vera",
-    "rarity": "SSR",
-    "element": "ice",
-    "skills": [
-      "March speed +20%",
-      "Troops load +10%",
-      "",
-      "All troops power +25%",
-      "Wound regeneration +10%"
-    ],
-    "total-bonus": {
-      "ap-reduction": 0,
-      "march-speed": 20,
-      "power": 25,
-      "wound-regeneration": 10,
-      "gathering-speed": 0,
-      "offline-gold": 0,
-      "troops-load": 10,
-      "recovery-speed": 0
-    },
-    "tier": {
-      "warrior": 3,
-      "support": 2,
-      "hunter": 0,
-      "miner": 0
-    },
-    "acquisition": {
-      "advanced-recruitment": false,
-      "lucky-wheel": false,
-      "crystal-ball": true,
-      "free-pick": true,
-      "other": ""
-    }
-  },
-  {
-    "name": "Rudolph",
-    "rarity": "SSR",
-    "element": "ice",
-    "skills": [
-      "March speed +20%",
-      "Troops load +15%",
-      "",
-      "All troops power +25%",
-      "Recovery speed +15%"
-    ],
-    "total-bonus": {
-      "ap-reduction": 0,
-      "march-speed": 20,
-      "power": 25,
-      "wound-regeneration": 0,
-      "gathering-speed": 0,
-      "offline-gold": 0,
-      "troops-load": 15,
-      "recovery-speed": 15
-    },
-    "tier": {
-      "warrior": 3,
-      "support": 2,
-      "hunter": 0,
-      "miner": 0
-    },
-    "acquisition": {
-      "advanced-recruitment": false,
-      "lucky-wheel": false,
-      "crystal-ball": true,
-      "free-pick": true,
-      "other": "Bounty Hall"
-    }
-  },
-  {
     "name": "Nathaniel",
     "rarity": "SSR",
     "element": "ice",
@@ -2272,76 +2307,6 @@
       "crystal-ball": false,
       "free-pick": true,
       "other": ""
-    }
-  },
-  {
-    "name": "Paula",
-    "rarity": "SSR",
-    "element": "ice",
-    "skills": [
-      "March speed +20%",
-      "Offline gold +20%",
-      "",
-      "All troops power +20%",
-      "Recovery speed +15%"
-    ],
-    "total-bonus": {
-      "ap-reduction": 0,
-      "march-speed": 20,
-      "power": 20,
-      "wound-regeneration": 0,
-      "gathering-speed": 0,
-      "offline-gold": 20,
-      "troops-load": 0,
-      "recovery-speed": 15
-    },
-    "tier": {
-      "warrior": 3,
-      "support": 1,
-      "hunter": 0,
-      "miner": 0
-    },
-    "acquisition": {
-      "advanced-recruitment": true,
-      "lucky-wheel": true,
-      "crystal-ball": true,
-      "free-pick": true,
-      "other": ""
-    }
-  },
-  {
-    "name": "Ralph",
-    "rarity": "SSR",
-    "element": "ice",
-    "skills": [
-      "March speed +20%",
-      "Tower defense",
-      "",
-      "All troops power +20%",
-      "Troops load +10%"
-    ],
-    "total-bonus": {
-      "ap-reduction": 0,
-      "march-speed": 20,
-      "power": 20,
-      "wound-regeneration": 0,
-      "gathering-speed": 0,
-      "offline-gold": 0,
-      "troops-load": 10,
-      "recovery-speed": 0
-    },
-    "tier": {
-      "warrior": 2,
-      "support": 1,
-      "hunter": 0,
-      "miner": 0
-    },
-    "acquisition": {
-      "advanced-recruitment": false,
-      "lucky-wheel": true,
-      "crystal-ball": true,
-      "free-pick": true,
-      "other": "Elemental Lord"
     }
   },
   {
@@ -2412,6 +2377,41 @@
       "crystal-ball": true,
       "free-pick": true,
       "other": "Bounty Hall"
+    }
+  },
+  {
+    "name": "Ralph",
+    "rarity": "SSR",
+    "element": "ice",
+    "skills": [
+      "March speed +20%",
+      "Tower defense",
+      "",
+      "All troops power +20%",
+      "Troops load +10%"
+    ],
+    "total-bonus": {
+      "ap-reduction": 0,
+      "march-speed": 20,
+      "power": 20,
+      "wound-regeneration": 0,
+      "gathering-speed": 0,
+      "offline-gold": 0,
+      "troops-load": 10,
+      "recovery-speed": 0
+    },
+    "tier": {
+      "warrior": 2,
+      "support": 1,
+      "hunter": 0,
+      "miner": 0
+    },
+    "acquisition": {
+      "advanced-recruitment": false,
+      "lucky-wheel": true,
+      "crystal-ball": true,
+      "free-pick": true,
+      "other": "Elemental Lord"
     }
   },
   {

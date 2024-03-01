@@ -70,7 +70,6 @@ function buildContent(elHeroData) {
       'regeneration',
       '<abbr data-tooltip="regeneration" tabindex="0">regen.</abbr>'
     ))
-      
 
     tableBody.push(
       '<tr>',
@@ -150,4 +149,9 @@ function buildElementContent(elName, elHeroData) {
 writeFileSync(
   resolve(ExportPath, './fire-skills.html'),
   buildElementContent('Fire Mage', fireHeroData),
+);
+
+writeFileSync(
+  resolve(ExportPath, './ice-skills.html'),
+  buildElementContent('Ice Wizard', iceHeroData),
 );

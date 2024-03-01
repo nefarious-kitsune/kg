@@ -170,7 +170,7 @@
       "advanced-recruitment": false,
       "lucky-wheel": false,
       "crystal-ball": false,
-      "free-pick": false,
+      "free-pick": true,
       "other": ""
     }
   },
