@@ -113,6 +113,7 @@ const contentTemplate = readFileSync(
 function buildElementContent(elName, elHeroData) {
   const content = contentTemplate
     .replaceAll('{{ELEMENT NAME}}', elName)
+    .replaceAll('{{JSON FILE NAME}}', 'hero-data.json')
     .replace('{{TABLE BODY}}', buildContent(elHeroData))
   ;
 
