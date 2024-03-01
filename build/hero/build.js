@@ -66,15 +66,21 @@ function buildContent(elHeroData) {
       .replaceAll(' ', '-') // Change "Ao Yue" to "ao-yue"
       .toLowerCase();
 
+    const skillDesc = data.skills.map((s) => s.replace(
+      'regeneration',
+      '<abbr data-tooltip="regeneration" tabindex="0">regen.</abbr>'
+    ))
+      
+
     tableBody.push(
       '<tr>',
       `<td class="avatar-col"><div class="avatars-item ${className}"></div></td>`,
       `<td class="name-col">${data.name}</td>`,
-      `<td class="skill-col">${data.skills[0]}</td>`,
-      `<td class="skill-col">${data.skills[1]}</td>`,
-      `<td class="skill-col">${data.skills[2]}</td>`,
-      `<td class="skill-col">${data.skills[3]}</td>`,
-      `<td class="skill-col">${data.skills[4]}</td>`,
+      `<td class="skill-col">${skillDesc[0]}</td>`,
+      `<td class="skill-col">${skillDesc[1]}</td>`,
+      `<td class="skill-col">${skillDesc[2]}</td>`,
+      `<td class="skill-col">${skillDesc[3]}</td>`,
+      `<td class="skill-col">${skillDesc[4]}</td>`,
 
       `<td class="total-combat-col">${formatBonus('+', data['total-bonus']['march-speed'])}</td>`,
       `<td class="total-combat-col">${formatBonus('+', data['total-bonus']['power'])}</td>`,
