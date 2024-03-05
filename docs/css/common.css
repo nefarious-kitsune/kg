@@ -200,6 +200,33 @@ nav#nav-bar {
 
 nav#nav-bar a { color: #7ac1eb; }
 
+div.pagination-wrapper {
+  text-align: center;
+}
+
+nav.pagination {
+  display: inline-block;
+}
+
+nav.pagination a {
+  color: black;
+  float: left;
+  padding: 0.4rem 0.8rem;
+  margin: 0 0.2rem;
+  border-radius: 0.4rem;
+  text-decoration: none;
+  transition: background-color .3s;
+}
+
+.pagination a.active {
+  background-color: var(--miku-red);
+  color: white;
+}
+
+.pagination a:hover:not(.active) {
+  background-color: var(--light-neutral);
+}
+
 main h1,
 main h2,
 main h3,
