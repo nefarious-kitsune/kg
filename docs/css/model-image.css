@@ -22,8 +22,8 @@
 #modal-image {
   margin: auto;
   display: block;
-  width: 80%;
-  max-width: 700px;
+  max-width: calc(100vw - 4rem) !important;
+  max-height: calc(100vh - 4rem - 100px) !important;
 }
 
 #modal-caption {
@@ -73,8 +73,4 @@
   color: #bbb;
   text-decoration: none;
   cursor: pointer;
-}
-
-@media only screen and (max-width: 700px){
-  .modal-image { width: 100%; }
 }
