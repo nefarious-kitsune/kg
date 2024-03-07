@@ -661,6 +661,16 @@ table tbody td {
   vertical-align: top;
 }
 
+/*
+  If first child of a table cell is a <ul>,
+  assume that it's the only child and left-flush the content
+*/
+table tbody td > ul:first-child {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 1rem;
+}
+
 table.simple {
   border-collapse: collapse;
 }
