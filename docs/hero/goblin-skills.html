@@ -1,222 +1,640 @@
 <html>
 <head>
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Miku's Shrine: Goblin hero skills</title>
-  <link href="../css/common.css" rel="stylesheet" />
-  <link href="./example.css" rel="stylesheet" />
+  <title>Goblin Heroes - Miku's Shrine</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://kg.kitsune21.com/">
+  <meta property="og:title" content="Goblin Heroes - Miku's Shrine">
+  <meta property="og:description" content="Information on skills, means of acquisition, and roles of Goblin Heroes">
+  <meta property="og:image" content="https://kg.kitsune21.com/images/sheet-2x_n.png">
+  <link rel="icon" href="../images/logo_mini.png"  type="image/x-icon">
+  <link href="../css/common.css" rel="stylesheet">
+  <link href="hero-table.css" rel="stylesheet">
+  <script src="hero-table.js"></script>
 </head>
 <body>
-
 <header id="header">
   <div id="breadcrumb-wrapper"><nav>
+    <span class="chevron">›</span>
     <a class="link" href="../content">Home</a>
     <span class="chevron">›</span>
     <a class="link" href="./">Hero</a>
     <span class="chevron">›</span>
-    <span class="current">Hero Skills</span>
+    <span class="current">Goblin</span>
   </nav></div>
 </header>
-
 <main>
+<h1>Goblin Heroes</h1>
 
-<h1>Goblin hero skills</h1>
-<table class="hero-table">
+<p>Information of Goblin heroes.</p>
+
+<div class="tabbed-table-wrapper">
+<div class="tabbed-table-tab-bar">
+<button onclick="switchHeroTableView(0)" id="hero-tab-0" class="tab focused">Skills</button>
+<button onclick="switchHeroTableView(1)" id="hero-tab-1" class="tab">Combat</button>
+<button onclick="switchHeroTableView(2)" id="hero-tab-2" class="tab">Utility</button>
+<button onclick="switchHeroTableView(3)" id="hero-tab-3" class="tab">How to Get</button>
+<button onclick="switchHeroTableView(4)" id="hero-tab-4" class="tab">Role</button>
+<div class="extra"><a href="./hero-data.json">JSON</a></div>
+</div>
+
+<div class="tabbed-table-content">
+<table class="hero-table view-skills" id="hero-table">
 <thead>
 <tr>
-<th class="hero-avatar"></th>
-<th class="hero-name">Name</th>
-<th style="width: 10rem;">Skill 1</th>
-<th style="width: 10rem;">Skill 2</th>
-<th style="width: 10rem;">Skill 3</th>
-<th style="width: 10rem;">Skill 4</th>
-<th style="width: 10rem;">Skill 5</th>
-<th style="width: 12rem;">How to get it?</th>
+<th class="avatar-col" rowspan="2"></th>
+<th class="name-col" rowspan="2">Name</th>
+
+<th class="skill-header-col" colspan="5">Skills</th>
+<th class="total-combat-header-col" colspan="4">Combat (Fully Promoted)</th>
+<th class="total-utility-header-col" colspan="4">Utility (Fully Promoted)</th>
+
+<th class="acquisition-col" rowspan="2"><abbr data-tooltip="Advanced Recruitment" tabindex="0">Adv. Recruit.</abbr></th>
+<th class="acquisition-col" rowspan="2">Lucky Wheel</th>
+<th class="acquisition-col" rowspan="2"><abbr data-tooltip="Wishing Crystal Ball" tabindex="0">Crystal Ball</abbr></th>
+<th class="acquisition-col" rowspan="2"><abbr data-tooltip="Free-Pick Hero Card" tabindex="0">Free-Pick</abbr></th>
+<th class="other-acquisition-col" rowspan="2">Other</th>
+
+<th class="role-header-col" colspan="3">Roles</th>
+
+</tr>
+<tr>
+<th class="skill-col">1 Star</th>
+<th class="skill-col">2 Star</th>
+<th class="skill-col">3 Star</th>
+<th class="skill-col">4 Star</th>
+<th class="skill-col">5 Star</th>
+
+<th class="total-combat-col"><abbr data-tooltip="March Speed" tabindex="0">Speed</abbr></th>
+<th class="total-combat-col"><abbr data-tooltip="Troops Power" tabindex="0">Power</abbr></th>
+<th class="total-combat-col"><abbr data-tooltip="Recovery Speed" tabindex="0">Recovery</abbr></th>
+<th class="total-combat-col"><abbr data-tooltip="Wound Regeneration" tabindex="0">Regen.</abbr></th>
+
+<th class="total-utility-col"><abbr data-tooltip="Troops Load" tabindex="0">Load</abbr></th>
+<th class="total-utility-col"><abbr data-tooltip="Gathering Speed" tabindex="0">Gather.</abbr></th>
+<th class="total-utility-col"><abbr data-tooltip="Offline Gold" tabindex="0">Offline</abbr></th>
+<th class="total-utility-col"><abbr data-tooltip="Action Point" tabindex="0">AP</abbr></th>
+
+<th class="role-col">Warrior</th>
+<th class="role-col">Support</th>
+<th class="role-col">Other</th>
+
 </tr>
 </thead>
 <tbody>
 <tr>
-<td class="hero-avatar"><div class="avatars-item tumnus"></div></td>
-<td class="hero-name">Tumnus</td>
-<td>March speed +30%</td>
-<td>All troops power +20%</td>
-<td></td>
-<td>All troops power +20%</td>
-<td>Wound regeneration +15%</td>
-<td></td>
+<td class="avatar-col"><div class="avatars-item tumnus"></div></td>
+<td class="name-col">Tumnus</td>
+<td class="skill-col">March speed +30%</td>
+<td class="skill-col">All troops power +20%</td>
+<td class="skill-col"></td>
+<td class="skill-col">All troops power +20%</td>
+<td class="skill-col">Wound <abbr data-tooltip="regeneration" tabindex="0">regen.</abbr> +15%</td>
+<td class="total-combat-col">+30%</td>
+<td class="total-combat-col">+40%</td>
+<td class="total-combat-col"></td>
+<td class="total-combat-col">+15%</td>
+<td class="total-utility-col"></td>
+<td class="total-utility-col"></td>
+<td class="total-utility-col"></td>
+<td class="total-utility-col"></td>
+<td class="acquisition-col"></td>
+<td class="acquisition-col"></td>
+<td class="acquisition-col"></td>
+<td class="acquisition-col"></td>
+<td class="other-acquisition-col"></td>
+<td class="role-col">★★★</td>
+<td class="role-col">★★★★</td>
+<td class="role-col"></td>
 </tr>
 <tr>
-<td class="hero-avatar"><div class="avatars-item gruen"></div></td>
-<td class="hero-name">Gruen</td>
-<td>March speed +25%</td>
-<td>Recovery speed +15%</td>
-<td></td>
-<td>All troops power +25%</td>
-<td>Wound regeneration +10%</td>
-<td><img class="from-source" src="../images/from-free-pick.png" alt="Free-pick"><img class="from-source" src="../images/from-crystal.png" alt="Wishing crystal"></td>
+<td class="avatar-col"><div class="avatars-item gruen"></div></td>
+<td class="name-col">Gruen</td>
+<td class="skill-col">March speed +25%</td>
+<td class="skill-col">Recovery speed +15%</td>
+<td class="skill-col"></td>
+<td class="skill-col">All troops power +25%</td>
+<td class="skill-col">Wound <abbr data-tooltip="regeneration" tabindex="0">regen.</abbr> +10%</td>
+<td class="total-combat-col">+25%</td>
+<td class="total-combat-col">+25%</td>
+<td class="total-combat-col">+15%</td>
+<td class="total-combat-col">+10%</td>
+<td class="total-utility-col"></td>
+<td class="total-utility-col"></td>
+<td class="total-utility-col"></td>
+<td class="total-utility-col"></td>
+<td class="acquisition-col"></td>
+<td class="acquisition-col"></td>
+<td class="acquisition-col">✔</td>
+<td class="acquisition-col">✔</td>
+<td class="other-acquisition-col">Bounty Hall</td>
+<td class="role-col">★★★★</td>
+<td class="role-col">★★</td>
+<td class="role-col"></td>
 </tr>
 <tr>
-<td class="hero-avatar"><div class="avatars-item wendy"></div></td>
-<td class="hero-name">Wendy</td>
-<td>March speed +20%</td>
-<td>Recovery speed +15%</td>
-<td></td>
-<td>All troops power +25%</td>
-<td>Wound regeneration +10%</td>
-<td><img class="from-source" src="../images/from-free-pick.png" alt="Free-pick"><img class="from-source" src="../images/from-crystal.png" alt="Wishing crystal"></td>
+<td class="avatar-col"><div class="avatars-item boudica"></div></td>
+<td class="name-col">Boudica</td>
+<td class="skill-col">March speed +25%</td>
+<td class="skill-col">Recovery speed +15%</td>
+<td class="skill-col"></td>
+<td class="skill-col">All troops power +25%</td>
+<td class="skill-col">Wound <abbr data-tooltip="regeneration" tabindex="0">regen.</abbr> +10%</td>
+<td class="total-combat-col">+25%</td>
+<td class="total-combat-col">+25%</td>
+<td class="total-combat-col">+15%</td>
+<td class="total-combat-col">+10%</td>
+<td class="total-utility-col"></td>
+<td class="total-utility-col"></td>
+<td class="total-utility-col"></td>
+<td class="total-utility-col"></td>
+<td class="acquisition-col"></td>
+<td class="acquisition-col"></td>
+<td class="acquisition-col"></td>
+<td class="acquisition-col"></td>
+<td class="other-acquisition-col"></td>
+<td class="role-col">★★★★</td>
+<td class="role-col">★★</td>
+<td class="role-col"></td>
 </tr>
 <tr>
-<td class="hero-avatar"><div class="avatars-item rosamond"></div></td>
-<td class="hero-name">Rosamond</td>
-<td>March speed +20%</td>
-<td>Troops load +20%</td>
-<td></td>
-<td>All troops power +30%</td>
-<td>Recovery speed +25%</td>
-<td><img class="from-source" src="../images/from-free-pick.png" alt="Free-pick"><img class="from-source" src="../images/from-crystal.png" alt="Wishing crystal"><img class="from-source" src="../images/from-wheel.png" alt="Lucky wheel"></td>
+<td class="avatar-col"><div class="avatars-item lilith"></div></td>
+<td class="name-col">Lilith</td>
+<td class="skill-col">March speed +20%</td>
+<td class="skill-col">Recovery speed +20%</td>
+<td class="skill-col"></td>
+<td class="skill-col">All troops power +20%</td>
+<td class="skill-col">Wound <abbr data-tooltip="regeneration" tabindex="0">regen.</abbr> +10%</td>
+<td class="total-combat-col">+20%</td>
+<td class="total-combat-col">+20%</td>
+<td class="total-combat-col">+20%</td>
+<td class="total-combat-col">+10%</td>
+<td class="total-utility-col"></td>
+<td class="total-utility-col"></td>
+<td class="total-utility-col"></td>
+<td class="total-utility-col"></td>
+<td class="acquisition-col"></td>
+<td class="acquisition-col"></td>
+<td class="acquisition-col"></td>
+<td class="acquisition-col">✔</td>
+<td class="other-acquisition-col"> </td>
+<td class="role-col">★★★★</td>
+<td class="role-col">★</td>
+<td class="role-col"></td>
 </tr>
 <tr>
-<td class="hero-avatar"><div class="avatars-item arwin"></div></td>
-<td class="hero-name">Arwin</td>
-<td>March speed +20%</td>
-<td>Troops load +15%</td>
-<td></td>
-<td>All troops power +25%</td>
-<td>Wound regeneration +10%</td>
-<td><img class="from-source" src="../images/from-free-pick.png" alt="Free-pick"><img class="from-source" src="../images/from-crystal.png" alt="Wishing crystal"></td>
+<td class="avatar-col"><div class="avatars-item rila"></div></td>
+<td class="name-col">Rila</td>
+<td class="skill-col">March speed +20%</td>
+<td class="skill-col">Recovery speed +20%</td>
+<td class="skill-col"></td>
+<td class="skill-col">All troops power +20%</td>
+<td class="skill-col">Wound <abbr data-tooltip="regeneration" tabindex="0">regen.</abbr> +10%</td>
+<td class="total-combat-col">+20%</td>
+<td class="total-combat-col">+20%</td>
+<td class="total-combat-col">+20%</td>
+<td class="total-combat-col">+10%</td>
+<td class="total-utility-col"></td>
+<td class="total-utility-col"></td>
+<td class="total-utility-col"></td>
+<td class="total-utility-col"></td>
+<td class="acquisition-col"></td>
+<td class="acquisition-col"></td>
+<td class="acquisition-col"></td>
+<td class="acquisition-col">✔</td>
+<td class="other-acquisition-col"></td>
+<td class="role-col">★★★★</td>
+<td class="role-col">★</td>
+<td class="role-col"></td>
 </tr>
 <tr>
-<td class="hero-avatar"><div class="avatars-item benjamin"></div></td>
-<td class="hero-name">Benjamin</td>
-<td>March speed +20%</td>
-<td>Troops load +15%</td>
-<td></td>
-<td>All troops power +25%</td>
-<td>Wound regeneration +10%</td>
-<td><img class="from-source" src="../images/from-free-pick.png" alt="Free-pick"><img class="from-source" src="../images/from-crystal.png" alt="Wishing crystal"></td>
+<td class="avatar-col"><div class="avatars-item wendy"></div></td>
+<td class="name-col">Wendy</td>
+<td class="skill-col">March speed +20%</td>
+<td class="skill-col">Recovery speed +15%</td>
+<td class="skill-col"></td>
+<td class="skill-col">All troops power +25%</td>
+<td class="skill-col">Wound <abbr data-tooltip="regeneration" tabindex="0">regen.</abbr> +10%</td>
+<td class="total-combat-col">+20%</td>
+<td class="total-combat-col">+25%</td>
+<td class="total-combat-col">+15%</td>
+<td class="total-combat-col">+10%</td>
+<td class="total-utility-col"></td>
+<td class="total-utility-col"></td>
+<td class="total-utility-col"></td>
+<td class="total-utility-col"></td>
+<td class="acquisition-col"></td>
+<td class="acquisition-col"></td>
+<td class="acquisition-col">✔</td>
+<td class="acquisition-col">✔</td>
+<td class="other-acquisition-col"></td>
+<td class="role-col">★★★★</td>
+<td class="role-col">★★</td>
+<td class="role-col"></td>
 </tr>
 <tr>
-<td class="hero-avatar"><div class="avatars-item lomax"></div></td>
-<td class="hero-name">Lomax</td>
-<td>March speed +20%</td>
-<td>Troops load +15%</td>
-<td></td>
-<td>All troops power +25%</td>
-<td>Wound regeneration +10%</td>
-<td><img class="from-source" src="../images/from-free-pick.png" alt="Free-pick"><img class="from-source" src="../images/from-crystal.png" alt="Wishing crystal"></td>
+<td class="avatar-col"><div class="avatars-item rosamond"></div></td>
+<td class="name-col">Rosamond</td>
+<td class="skill-col">March speed +20%</td>
+<td class="skill-col">Troops load +20%</td>
+<td class="skill-col"></td>
+<td class="skill-col">All troops power +30%</td>
+<td class="skill-col">Recovery speed +25%</td>
+<td class="total-combat-col">+20%</td>
+<td class="total-combat-col">+30%</td>
+<td class="total-combat-col">+25%</td>
+<td class="total-combat-col"></td>
+<td class="total-utility-col">+20%</td>
+<td class="total-utility-col"></td>
+<td class="total-utility-col"></td>
+<td class="total-utility-col"></td>
+<td class="acquisition-col"></td>
+<td class="acquisition-col">✔</td>
+<td class="acquisition-col">✔</td>
+<td class="acquisition-col">✔</td>
+<td class="other-acquisition-col">Elemental Lord</td>
+<td class="role-col">★★★</td>
+<td class="role-col">★★★</td>
+<td class="role-col"></td>
 </tr>
 <tr>
-<td class="hero-avatar"><div class="avatars-item meniere"></div></td>
-<td class="hero-name">Meniere</td>
-<td>March speed +20%</td>
-<td>Troops load +15%</td>
-<td></td>
-<td>All troops power +25%</td>
-<td>Wound regeneration +10%</td>
-<td><img class="from-source" src="../images/from-free-pick.png" alt="Free-pick"><img class="from-source" src="../images/from-crystal.png" alt="Wishing crystal"></td>
+<td class="avatar-col"><div class="avatars-item angelina"></div></td>
+<td class="name-col">Angelina</td>
+<td class="skill-col">March speed +20%</td>
+<td class="skill-col">Troops load +20%</td>
+<td class="skill-col"></td>
+<td class="skill-col">All troops power +30%</td>
+<td class="skill-col">Recovery speed +25%</td>
+<td class="total-combat-col">+20%</td>
+<td class="total-combat-col">+30%</td>
+<td class="total-combat-col">+25%</td>
+<td class="total-combat-col"></td>
+<td class="total-utility-col">+20%</td>
+<td class="total-utility-col"></td>
+<td class="total-utility-col"></td>
+<td class="total-utility-col"></td>
+<td class="acquisition-col"></td>
+<td class="acquisition-col"></td>
+<td class="acquisition-col"></td>
+<td class="acquisition-col"></td>
+<td class="other-acquisition-col"></td>
+<td class="role-col">★★★</td>
+<td class="role-col">★★★</td>
+<td class="role-col"></td>
 </tr>
 <tr>
-<td class="hero-avatar"><div class="avatars-item chiyoko"></div></td>
-<td class="hero-name">Chiyoko</td>
-<td>March speed +30%</td>
-<td>Troops load +20%</td>
-<td></td>
-<td>All troops power +20%</td>
-<td>Wound regeneration +10%</td>
-<td><img class="from-source" src="../images/from-free-pick.png" alt="Free-pick"></td>
+<td class="avatar-col"><div class="avatars-item arwin"></div></td>
+<td class="name-col">Arwin</td>
+<td class="skill-col">March speed +20%</td>
+<td class="skill-col">Troops load +15%</td>
+<td class="skill-col"></td>
+<td class="skill-col">All troops power +25%</td>
+<td class="skill-col">Wound <abbr data-tooltip="regeneration" tabindex="0">regen.</abbr> +10%</td>
+<td class="total-combat-col">+20%</td>
+<td class="total-combat-col">+25%</td>
+<td class="total-combat-col"></td>
+<td class="total-combat-col">+10%</td>
+<td class="total-utility-col">+15%</td>
+<td class="total-utility-col"></td>
+<td class="total-utility-col"></td>
+<td class="total-utility-col"></td>
+<td class="acquisition-col"></td>
+<td class="acquisition-col"></td>
+<td class="acquisition-col">✔</td>
+<td class="acquisition-col">✔</td>
+<td class="other-acquisition-col"></td>
+<td class="role-col">★★★</td>
+<td class="role-col">★★</td>
+<td class="role-col"></td>
 </tr>
 <tr>
-<td class="hero-avatar"><div class="avatars-item suad"></div></td>
-<td class="hero-name">Suad</td>
-<td>March speed +30%</td>
-<td>Troops load +20%</td>
-<td></td>
-<td>All troops power +20%</td>
-<td>Wound regeneration +10%</td>
-<td><img class="from-source" src="../images/from-free-pick.png" alt="Free-pick"></td>
+<td class="avatar-col"><div class="avatars-item benjamin"></div></td>
+<td class="name-col">Benjamin</td>
+<td class="skill-col">March speed +20%</td>
+<td class="skill-col">Troops load +15%</td>
+<td class="skill-col"></td>
+<td class="skill-col">All troops power +25%</td>
+<td class="skill-col">Wound <abbr data-tooltip="regeneration" tabindex="0">regen.</abbr> +10%</td>
+<td class="total-combat-col">+20%</td>
+<td class="total-combat-col">+25%</td>
+<td class="total-combat-col"></td>
+<td class="total-combat-col">+10%</td>
+<td class="total-utility-col">+15%</td>
+<td class="total-utility-col"></td>
+<td class="total-utility-col"></td>
+<td class="total-utility-col"></td>
+<td class="acquisition-col"></td>
+<td class="acquisition-col"></td>
+<td class="acquisition-col">✔</td>
+<td class="acquisition-col">✔</td>
+<td class="other-acquisition-col"></td>
+<td class="role-col">★★★</td>
+<td class="role-col">★★</td>
+<td class="role-col"></td>
 </tr>
 <tr>
-<td class="hero-avatar"><div class="avatars-item blackwell"></div></td>
-<td class="hero-name">Blackwell</td>
-<td>March speed +20%</td>
-<td>Troops load +20%</td>
-<td></td>
-<td>All troops power +20%</td>
-<td>Wound regeneration +10%</td>
-<td></td>
+<td class="avatar-col"><div class="avatars-item lomax"></div></td>
+<td class="name-col">Lomax</td>
+<td class="skill-col">March speed +20%</td>
+<td class="skill-col">Troops load +15%</td>
+<td class="skill-col"></td>
+<td class="skill-col">All troops power +25%</td>
+<td class="skill-col">Wound <abbr data-tooltip="regeneration" tabindex="0">regen.</abbr> +10%</td>
+<td class="total-combat-col">+20%</td>
+<td class="total-combat-col">+25%</td>
+<td class="total-combat-col"></td>
+<td class="total-combat-col">+10%</td>
+<td class="total-utility-col">+15%</td>
+<td class="total-utility-col"></td>
+<td class="total-utility-col"></td>
+<td class="total-utility-col"></td>
+<td class="acquisition-col"></td>
+<td class="acquisition-col"></td>
+<td class="acquisition-col">✔</td>
+<td class="acquisition-col">✔</td>
+<td class="other-acquisition-col"></td>
+<td class="role-col">★★★</td>
+<td class="role-col">★★</td>
+<td class="role-col"></td>
 </tr>
 <tr>
-<td class="hero-avatar"><div class="avatars-item luvia"></div></td>
-<td class="hero-name">Luvia</td>
-<td>March speed +20%</td>
-<td>Recovery speed +15%</td>
-<td></td>
-<td>AP reduction -10%</td>
-<td>Wound regeneration +10%</td>
-<td><img class="from-source" src="../images/from-free-pick.png" alt="Free-pick"></td>
+<td class="avatar-col"><div class="avatars-item meniere"></div></td>
+<td class="name-col">Meniere</td>
+<td class="skill-col">March speed +20%</td>
+<td class="skill-col">Troops load +15%</td>
+<td class="skill-col"></td>
+<td class="skill-col">All troops power +25%</td>
+<td class="skill-col">Wound <abbr data-tooltip="regeneration" tabindex="0">regen.</abbr> +10%</td>
+<td class="total-combat-col">+20%</td>
+<td class="total-combat-col">+25%</td>
+<td class="total-combat-col"></td>
+<td class="total-combat-col">+10%</td>
+<td class="total-utility-col">+15%</td>
+<td class="total-utility-col"></td>
+<td class="total-utility-col"></td>
+<td class="total-utility-col"></td>
+<td class="acquisition-col"></td>
+<td class="acquisition-col"></td>
+<td class="acquisition-col">✔</td>
+<td class="acquisition-col">✔</td>
+<td class="other-acquisition-col">Bounty Hall</td>
+<td class="role-col">★★★</td>
+<td class="role-col">★★</td>
+<td class="role-col"></td>
 </tr>
 <tr>
-<td class="hero-avatar"><div class="avatars-item pythia"></div></td>
-<td class="hero-name">Pythia</td>
-<td>AP reduction -10%</td>
-<td>March speed +15%</td>
-<td></td>
-<td>Troops load +20%</td>
-<td>Wound regeneration +10%</td>
-<td><img class="from-source" src="../images/from-free-pick.png" alt="Free-pick"></td>
+<td class="avatar-col"><div class="avatars-item chiyoko"></div></td>
+<td class="name-col">Chiyoko</td>
+<td class="skill-col">March speed +30%</td>
+<td class="skill-col">Troops load +20%</td>
+<td class="skill-col"></td>
+<td class="skill-col">All troops power +20%</td>
+<td class="skill-col">Wound <abbr data-tooltip="regeneration" tabindex="0">regen.</abbr> +10%</td>
+<td class="total-combat-col">+30%</td>
+<td class="total-combat-col">+20%</td>
+<td class="total-combat-col"></td>
+<td class="total-combat-col">+10%</td>
+<td class="total-utility-col">+20%</td>
+<td class="total-utility-col"></td>
+<td class="total-utility-col"></td>
+<td class="total-utility-col"></td>
+<td class="acquisition-col"></td>
+<td class="acquisition-col"></td>
+<td class="acquisition-col"></td>
+<td class="acquisition-col">✔</td>
+<td class="other-acquisition-col"></td>
+<td class="role-col">★★★</td>
+<td class="role-col">★</td>
+<td class="role-col"></td>
 </tr>
 <tr>
-<td class="hero-avatar"><div class="avatars-item claudia"></div></td>
-<td class="hero-name">Claudia</td>
-<td>Offline gold +20%</td>
-<td>Recovery speed +15%</td>
-<td></td>
-<td>Goblin troops power +20%</td>
-<td>Troops load +20%</td>
-<td><img class="from-source" src="../images/from-free-pick.png" alt="Free-pick"><img class="from-source" src="../images/from-crystal.png" alt="Wishing crystal"></td>
+<td class="avatar-col"><div class="avatars-item suad"></div></td>
+<td class="name-col">Suad</td>
+<td class="skill-col">March speed +30%</td>
+<td class="skill-col">Troops load +20%</td>
+<td class="skill-col"></td>
+<td class="skill-col">All troops power +20%</td>
+<td class="skill-col">Wound <abbr data-tooltip="regeneration" tabindex="0">regen.</abbr> +10%</td>
+<td class="total-combat-col">+30%</td>
+<td class="total-combat-col">+20%</td>
+<td class="total-combat-col"></td>
+<td class="total-combat-col">+10%</td>
+<td class="total-utility-col">+20%</td>
+<td class="total-utility-col"></td>
+<td class="total-utility-col"></td>
+<td class="total-utility-col"></td>
+<td class="acquisition-col"></td>
+<td class="acquisition-col"></td>
+<td class="acquisition-col"></td>
+<td class="acquisition-col">✔</td>
+<td class="other-acquisition-col"></td>
+<td class="role-col">★★★</td>
+<td class="role-col">★</td>
+<td class="role-col"></td>
 </tr>
 <tr>
-<td class="hero-avatar"><div class="avatars-item issac"></div></td>
-<td class="hero-name">Issac</td>
-<td>March speed +20%</td>
-<td>Offline gold +20%</td>
-<td></td>
-<td>All troops power +20%</td>
-<td>Troops load +10%</td>
-<td><img class="from-source" src="../images/from-free-pick.png" alt="Free-pick"><img class="from-source" src="../images/from-crystal.png" alt="Wishing crystal"></td>
+<td class="avatar-col"><div class="avatars-item blackwell"></div></td>
+<td class="name-col">Blackwell</td>
+<td class="skill-col">March speed +20%</td>
+<td class="skill-col">Troops load +20%</td>
+<td class="skill-col"></td>
+<td class="skill-col">All troops power +20%</td>
+<td class="skill-col">Wound <abbr data-tooltip="regeneration" tabindex="0">regen.</abbr> +10%</td>
+<td class="total-combat-col">+20%</td>
+<td class="total-combat-col">+20%</td>
+<td class="total-combat-col"></td>
+<td class="total-combat-col">+10%</td>
+<td class="total-utility-col">+20%</td>
+<td class="total-utility-col"></td>
+<td class="total-utility-col"></td>
+<td class="total-utility-col"></td>
+<td class="acquisition-col"></td>
+<td class="acquisition-col"></td>
+<td class="acquisition-col"></td>
+<td class="acquisition-col"></td>
+<td class="other-acquisition-col"></td>
+<td class="role-col">★★★</td>
+<td class="role-col">★</td>
+<td class="role-col"></td>
 </tr>
 <tr>
-<td class="hero-avatar"><div class="avatars-item catherine"></div></td>
-<td class="hero-name">Catherine</td>
-<td>March speed +20%</td>
-<td>Offline gold +20%</td>
-<td></td>
-<td>All troops power +20%</td>
-<td>Gathering speed +20%</td>
-<td><img class="from-source" src="../images/from-free-pick.png" alt="Free-pick"><img class="from-source" src="../images/from-crystal.png" alt="Wishing crystal"><img class="from-source" src="../images/from-wheel.png" alt="Lucky wheel"><img class="from-source" src="../images/from-advanced.png" alt="Advance recruitment"></img></td>
+<td class="avatar-col"><div class="avatars-item luvia"></div></td>
+<td class="name-col">Luvia</td>
+<td class="skill-col">March speed +20%</td>
+<td class="skill-col">Recovery speed +15%</td>
+<td class="skill-col"></td>
+<td class="skill-col">AP reduction -10%</td>
+<td class="skill-col">Wound <abbr data-tooltip="regeneration" tabindex="0">regen.</abbr> +10%</td>
+<td class="total-combat-col">+20%</td>
+<td class="total-combat-col"></td>
+<td class="total-combat-col">+15%</td>
+<td class="total-combat-col">+10%</td>
+<td class="total-utility-col"></td>
+<td class="total-utility-col"></td>
+<td class="total-utility-col"></td>
+<td class="total-utility-col">-10%</td>
+<td class="acquisition-col"></td>
+<td class="acquisition-col"></td>
+<td class="acquisition-col"></td>
+<td class="acquisition-col">✔</td>
+<td class="other-acquisition-col"></td>
+<td class="role-col">★★★</td>
+<td class="role-col"></td>
+<td class="role-col">Hunter</td>
 </tr>
 <tr>
-<td class="hero-avatar"><div class="avatars-item rogers"></div></td>
-<td class="hero-name">Rogers</td>
-<td>March speed +20%</td>
-<td>Offline gold +20%</td>
-<td></td>
-<td>All troops power +20%</td>
-<td>Gathering speed +20%</td>
-<td><img class="from-source" src="../images/from-free-pick.png" alt="Free-pick"></td>
+<td class="avatar-col"><div class="avatars-item pythia"></div></td>
+<td class="name-col">Pythia</td>
+<td class="skill-col">AP reduction -10%</td>
+<td class="skill-col">March speed +15%</td>
+<td class="skill-col"></td>
+<td class="skill-col">Troops load +20%</td>
+<td class="skill-col">Wound <abbr data-tooltip="regeneration" tabindex="0">regen.</abbr> +10%</td>
+<td class="total-combat-col">+15%</td>
+<td class="total-combat-col"></td>
+<td class="total-combat-col"></td>
+<td class="total-combat-col">+10%</td>
+<td class="total-utility-col">+20%</td>
+<td class="total-utility-col"></td>
+<td class="total-utility-col"></td>
+<td class="total-utility-col">-10%</td>
+<td class="acquisition-col"></td>
+<td class="acquisition-col"></td>
+<td class="acquisition-col"></td>
+<td class="acquisition-col">✔</td>
+<td class="other-acquisition-col"></td>
+<td class="role-col">★★</td>
+<td class="role-col"></td>
+<td class="role-col">Hunter</td>
 </tr>
 <tr>
-<td class="hero-avatar"><div class="avatars-item alucard"></div></td>
-<td class="hero-name">Alucard</td>
-<td>Tower defense</td>
-<td>Tower defense</td>
-<td>Offline gold +20%</td>
-<td></td>
-<td></td>
-<td><img class="from-source" src="../images/from-free-pick.png" alt="Free-pick"><img class="from-source" src="../images/from-advanced.png" alt="Advance recruitment"></img></td>
+<td class="avatar-col"><div class="avatars-item claudia"></div></td>
+<td class="name-col">Claudia</td>
+<td class="skill-col">Offline gold +20%</td>
+<td class="skill-col">Recovery speed +15%</td>
+<td class="skill-col"></td>
+<td class="skill-col">Goblin troops power +20%</td>
+<td class="skill-col">Troops load +20%</td>
+<td class="total-combat-col"></td>
+<td class="total-combat-col">+20%</td>
+<td class="total-combat-col">+15%</td>
+<td class="total-combat-col"></td>
+<td class="total-utility-col">+20%</td>
+<td class="total-utility-col"></td>
+<td class="total-utility-col">+20%</td>
+<td class="total-utility-col"></td>
+<td class="acquisition-col"></td>
+<td class="acquisition-col"></td>
+<td class="acquisition-col">✔</td>
+<td class="acquisition-col">✔</td>
+<td class="other-acquisition-col"></td>
+<td class="role-col">★★</td>
+<td class="role-col">★</td>
+<td class="role-col"></td>
 </tr>
-        
+<tr>
+<td class="avatar-col"><div class="avatars-item issac"></div></td>
+<td class="name-col">Issac</td>
+<td class="skill-col">March speed +20%</td>
+<td class="skill-col">Offline gold +20%</td>
+<td class="skill-col"></td>
+<td class="skill-col">All troops power +20%</td>
+<td class="skill-col">Troops load +10%</td>
+<td class="total-combat-col">+20%</td>
+<td class="total-combat-col">+20%</td>
+<td class="total-combat-col"></td>
+<td class="total-combat-col"></td>
+<td class="total-utility-col">+10%</td>
+<td class="total-utility-col"></td>
+<td class="total-utility-col">+20%</td>
+<td class="total-utility-col"></td>
+<td class="acquisition-col"></td>
+<td class="acquisition-col"></td>
+<td class="acquisition-col">✔</td>
+<td class="acquisition-col">✔</td>
+<td class="other-acquisition-col"></td>
+<td class="role-col">★★</td>
+<td class="role-col">★</td>
+<td class="role-col"></td>
+</tr>
+<tr>
+<td class="avatar-col"><div class="avatars-item catherine"></div></td>
+<td class="name-col">Catherine</td>
+<td class="skill-col">March speed +20%</td>
+<td class="skill-col">Offline gold +20%</td>
+<td class="skill-col"></td>
+<td class="skill-col">All troops power +20%</td>
+<td class="skill-col">Gathering speed +20%</td>
+<td class="total-combat-col">+20%</td>
+<td class="total-combat-col">+20%</td>
+<td class="total-combat-col"></td>
+<td class="total-combat-col"></td>
+<td class="total-utility-col"></td>
+<td class="total-utility-col">+20%</td>
+<td class="total-utility-col">+20%</td>
+<td class="total-utility-col"></td>
+<td class="acquisition-col">✔</td>
+<td class="acquisition-col">✔</td>
+<td class="acquisition-col">✔</td>
+<td class="acquisition-col">✔</td>
+<td class="other-acquisition-col"></td>
+<td class="role-col">★★</td>
+<td class="role-col">★</td>
+<td class="role-col">Miner</td>
+</tr>
+<tr>
+<td class="avatar-col"><div class="avatars-item rogers"></div></td>
+<td class="name-col">Rogers</td>
+<td class="skill-col">March speed +20%</td>
+<td class="skill-col">Offline gold +20%</td>
+<td class="skill-col"></td>
+<td class="skill-col">All troops power +20%</td>
+<td class="skill-col">Gathering speed +20%</td>
+<td class="total-combat-col">+20%</td>
+<td class="total-combat-col">+20%</td>
+<td class="total-combat-col"></td>
+<td class="total-combat-col"></td>
+<td class="total-utility-col"></td>
+<td class="total-utility-col">+20%</td>
+<td class="total-utility-col">+20%</td>
+<td class="total-utility-col"></td>
+<td class="acquisition-col"></td>
+<td class="acquisition-col"></td>
+<td class="acquisition-col"></td>
+<td class="acquisition-col">✔</td>
+<td class="other-acquisition-col"></td>
+<td class="role-col">★★</td>
+<td class="role-col">★</td>
+<td class="role-col">Miner</td>
+</tr>
+<tr>
+<td class="avatar-col"><div class="avatars-item alucard"></div></td>
+<td class="name-col">Alucard</td>
+<td class="skill-col">Tower defense</td>
+<td class="skill-col">Tower defense</td>
+<td class="skill-col">Offline gold +20%</td>
+<td class="skill-col"></td>
+<td class="skill-col"></td>
+<td class="total-combat-col"></td>
+<td class="total-combat-col"></td>
+<td class="total-combat-col"></td>
+<td class="total-combat-col"></td>
+<td class="total-utility-col"></td>
+<td class="total-utility-col"></td>
+<td class="total-utility-col">+20%</td>
+<td class="total-utility-col"></td>
+<td class="acquisition-col">✔</td>
+<td class="acquisition-col"></td>
+<td class="acquisition-col"></td>
+<td class="acquisition-col">✔</td>
+<td class="other-acquisition-col"></td>
+<td class="role-col"></td>
+<td class="role-col"></td>
+<td class="role-col"></td>
+</tr>
 </tbody>
 </table>
+</div>
 
 </main>
 </body>

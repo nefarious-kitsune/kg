@@ -161,3 +161,8 @@ writeFileSync(
   resolve(ExportPath, './archer-skills.html'),
   buildElementContent('Archer', archerHeroData),
 );
+
+writeFileSync(
+  resolve(ExportPath, './goblin-skills.html'),
+  buildElementContent('Goblin', goblinHeroData),
+);
