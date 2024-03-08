@@ -424,7 +424,7 @@
     "rarity": "SSR",
     "element": "archer",
     "skills": [
-      "March speed +15%",
+      "March speed +20%",
       "Troops load +15%",
       "",
       "All troops power +25%",
@@ -432,7 +432,7 @@
     ],
     "total-bonus": {
       "ap-reduction": 0,
-      "march-speed": 15,
+      "march-speed": 20,
       "power": 25,
       "wound-regeneration": 0,
       "gathering-speed": 0,
@@ -462,13 +462,13 @@
       "March speed +20%",
       "Troops load +20%",
       "",
-      "All troops power +25%",
+      "All troops power +20%",
       "Recovery speed +10%"
     ],
     "total-bonus": {
       "ap-reduction": 0,
       "march-speed": 20,
-      "power": 25,
+      "power": 20,
       "wound-regeneration": 0,
       "gathering-speed": 0,
       "offline-gold": 0,
@@ -477,7 +477,7 @@
     },
     "tier": {
       "warrior": 3,
-      "support": 2,
+      "support": 1,
       "hunter": 0,
       "miner": 0
     },
@@ -497,22 +497,22 @@
       "Troops load +20%",
       "March speed +20%",
       "",
-      "All troops power +20%",
+      "Recovery speed +15%",
       "Wound regeneration +10%"
     ],
     "total-bonus": {
       "ap-reduction": 0,
       "march-speed": 20,
-      "power": 20,
+      "power": 0,
       "wound-regeneration": 10,
       "gathering-speed": 0,
       "offline-gold": 0,
       "troops-load": 20,
-      "recovery-speed": 0
+      "recovery-speed": 15
     },
     "tier": {
       "warrior": 3,
-      "support": 1,
+      "support": 0,
       "hunter": 0,
       "miner": 0
     },
@@ -532,7 +532,7 @@
       "March speed +30%",
       "AP reduction -10%",
       "",
-      "Recovery speed +15%",
+      "Troops load +20%",
       "Wound regeneration +10%"
     ],
     "total-bonus": {
@@ -542,11 +542,11 @@
       "wound-regeneration": 10,
       "gathering-speed": 0,
       "offline-gold": 0,
-      "troops-load": 0,
-      "recovery-speed": 15
+      "troops-load": 20,
+      "recovery-speed": 0
     },
     "tier": {
-      "warrior": 3,
+      "warrior": 2,
       "support": 0,
       "hunter": 1,
       "miner": 0
@@ -638,20 +638,20 @@
       "Recovery speed +15%",
       "",
       "Troops load +20%",
-      "Recovery speed +10%"
+      "Wound regeneration +10%"
     ],
     "total-bonus": {
       "ap-reduction": 0,
       "march-speed": 20,
       "power": 0,
-      "wound-regeneration": 0,
+      "wound-regeneration": 10,
       "gathering-speed": 0,
       "offline-gold": 0,
       "troops-load": 20,
-      "recovery-speed": 25
+      "recovery-speed": 15
     },
     "tier": {
-      "warrior": 2,
+      "warrior": 3,
       "support": 0,
       "hunter": 0,
       "miner": 0
@@ -776,8 +776,8 @@
     "skills": [
       "Tower defense",
       "AP reduction -10%",
-      "Archer troops power +15%",
       "",
+      "Archer troops power +15%",
       ""
     ],
     "total-bonus": {
