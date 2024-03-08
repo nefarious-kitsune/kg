@@ -111,10 +111,51 @@ const contentTemplate = readFileSync(
 );
 
 function buildElementContent(elName, elHeroData) {
+  let paginationLinks = '';
+
+  if (elName === 'Archer') {
+    paginationLinks = [
+      // '<a href="./goblin-skills">&laquo;</a>',
+      '<a href="#" class="active">Archer</a>',
+      '<a href="./fire-skills">Fire</a>',
+      '<a href="./ice-skills">Ice</a>',
+      '<a href="./goblin-skills">Goblin</a>',
+      // '<a href="./fire-skills">&raquo;</a>',
+    ].join('\n');
+  } else if (elName === 'Fire Mage') {
+    paginationLinks = [
+      // '<a href="./archer-skills">&laquo;</a>',
+      '<a href="./archer-skills">Archer</a>',
+      '<a href="#" class="active">Fire</a>',
+      '<a href="./ice-skills">Ice</a>',
+      '<a href="./goblin-skills">Goblin</a>',
+      // '<a href="./ice-skills">&raquo;</a>',
+    ].join('\n');
+  } else if (elName === 'Ice Wizard') {
+    paginationLinks = [
+      // '<a href="./fire-skills">&laquo;</a>',
+      '<a href="./archer-skills">Archer</a>',
+      '<a href="./fire-skills">Fire</a>',
+      '<a href="#" class="active">Ice</a>',
+      '<a href="./goblin-skills">Goblin</a>',
+      // '<a href="./ice-skills">&raquo;</a>',
+    ].join('\n');
+  } else if (elName === 'Goblin') {
+    paginationLinks = [
+      // '<a href="./fire-skills">&laquo;</a>',
+      '<a href="./archer-skills">Archer</a>',
+      '<a href="./fire-skills">Fire</a>',
+      '<a href="./ice-skills">Ice</a>',
+      '<a href="#" class="active">Goblin</a>',
+      // '<a href="./archer-skills">&raquo;</a>',
+    ].join('\n');
+  }
+
   const content = contentTemplate
     .replaceAll('{{ELEMENT NAME}}', elName)
     .replaceAll('{{JSON FILE NAME}}', 'hero-data.json')
     .replace('{{TABLE BODY}}', buildContent(elHeroData))
+    .replace('{{PAGINATION LINKS}}', paginationLinks)
   ;
 
   const outputOptions = {
