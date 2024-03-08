@@ -477,7 +477,7 @@ input[type=checkbox]:checked:after {
 .etley, .hadi, .keith, .lilani,
 .maud, .merlin, .nathaniel,
 .parr, .paula,
-.ralph, .rudolph, .torvi, .trist {
+.rudolph, .torvi, .trist {
   background-image: url('../images/blank-avatar.png');
 }
 
@@ -487,6 +487,7 @@ input[type=checkbox]:checked:after {
 .jessica { background-image: url('../images/I-Jessica.png'); }
 .nicole { background-image: url('../images/I-Nicole.png'); }
 .pedra { background-image: url('../images/I-Pedra.png'); }
+.ralph { background-image: url('../images/I-Ralph.png'); }
 .vera { background-image: url('../images/I-Vera.png'); }
 
 .alliance-tag {
