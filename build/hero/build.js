@@ -156,3 +156,8 @@ writeFileSync(
   resolve(ExportPath, './ice-skills.html'),
   buildElementContent('Ice Wizard', iceHeroData),
 );
+
+writeFileSync(
+  resolve(ExportPath, './archer-skills.html'),
+  buildElementContent('Archer', archerHeroData),
+);
