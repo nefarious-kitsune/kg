@@ -1,4 +1,3 @@
-SSR	Tracy	March speed +30%	All troops power +20%		All troops power +20%	Wound regeneration +15%	FALSE	FALSE	FALSE	FALSE	
 SSR	Anko	March speed +30%	Recovery speed +15%		All troops power +20%	Wound regeneration +10%	FALSE	FALSE	FALSE	TRUE	
 SSR	Lovelace	March speed +30%	Recovery speed +15%		All troops power +20%	Wound regeneration +10%	FALSE	FALSE	FALSE	TRUE	
 SSR	Erika	March speed +25%	Recovery speed +15%		All troops power +25%	Wound regeneration +10%	TRUE	TRUE	TRUE	TRUE	
@@ -6,6 +5,7 @@ SSR	Daria	March speed +25%	Recovery speed +15%		All troops power +25%	Wound rege
 SSR	Vanessa	March speed +20%	Recovery speed +15%		All troops power +20%	Wound regeneration +10%	FALSE	FALSE	FALSE	TRUE	
 SSR	Miku	AP reduction -20%	March speed +15%		All troops power +25%	Wound regeneration +10%	FALSE	FALSE	FALSE	FALSE	
 SSR	Giselle	March speed +20%	AP reduction -10%		All troops power +25%	Wound regeneration +10%	FALSE	FALSE	FALSE	TRUE	
+SSR	Tracy	March speed +30%	All troops power +20%		All troops power +20%	Wound regeneration +15%	FALSE	FALSE	FALSE	FALSE	
 SSR	Cosette	March speed +20%	Troops load +30%		All troops power +30%	Recovery speed +25%	FALSE	FALSE	TRUE	TRUE	Bounty Hall
 SSR	Paul	March speed +20%	Troops load +20%		All troops power +30%	Recovery speed +25%	FALSE	FALSE	TRUE	TRUE	Bounty Hall
 SSR	Kenshiro	March speed +20%	Troops load +15%		All troops power +25%	Wound regeneration +10%	FALSE	FALSE	FALSE	TRUE	

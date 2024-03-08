@@ -1,40 +1,5 @@
 [
   {
-    "name": "Padme",
-    "rarity": "SSR",
-    "element": "archer",
-    "skills": [
-      "March speed +30%",
-      "All troops power +20%",
-      "",
-      "All troops power +20%",
-      "Wound regeneration +15%"
-    ],
-    "total-bonus": {
-      "ap-reduction": 0,
-      "march-speed": 30,
-      "power": 40,
-      "wound-regeneration": 15,
-      "gathering-speed": 0,
-      "offline-gold": 0,
-      "troops-load": 0,
-      "recovery-speed": 0
-    },
-    "tier": {
-      "warrior": 3,
-      "support": 4,
-      "hunter": 0,
-      "miner": 0
-    },
-    "acquisition": {
-      "advanced-recruitment": false,
-      "lucky-wheel": false,
-      "crystal-ball": false,
-      "free-pick": false,
-      "other": ""
-    }
-  },
-  {
     "name": "Sahar",
     "rarity": "SSR",
     "element": "archer",
@@ -346,6 +311,41 @@
       "lucky-wheel": false,
       "crystal-ball": false,
       "free-pick": true,
+      "other": ""
+    }
+  },
+  {
+    "name": "Padme",
+    "rarity": "SSR",
+    "element": "archer",
+    "skills": [
+      "March speed +30%",
+      "All troops power +20%",
+      "",
+      "All troops power +20%",
+      "Wound regeneration +15%"
+    ],
+    "total-bonus": {
+      "ap-reduction": 0,
+      "march-speed": 30,
+      "power": 40,
+      "wound-regeneration": 15,
+      "gathering-speed": 0,
+      "offline-gold": 0,
+      "troops-load": 0,
+      "recovery-speed": 0
+    },
+    "tier": {
+      "warrior": 3,
+      "support": 4,
+      "hunter": 0,
+      "miner": 0
+    },
+    "acquisition": {
+      "advanced-recruitment": false,
+      "lucky-wheel": false,
+      "crystal-ball": false,
+      "free-pick": false,
       "other": ""
     }
   },

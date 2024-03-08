@@ -1,21 +1,25 @@
-SSR	Clarence	March speed +30%	All troops power +20%		All troops power +20%	Wound regeneration +15%	FALSE	FALSE	FALSE	FALSE	
-SSR	Ao Deng Ge Ri Le	March speed +20%	All troops power +20%		All troops power +20%	Wound regeneration +10%	FALSE	FALSE	FALSE	TRUE	
-SSR	Judy	March speed +20%	All troops power +20%		All troops power +20%	Wound regeneration +10%	FALSE	FALSE	FALSE	TRUE	
-SSR	Ao Yue	March speed +20%	Recovery speed +20%		All troops power +20%	Wound regeneration +10%	FALSE	FALSE	FALSE	TRUE	
-SSR	Trishy	March speed +20%	Recovery speed +20%		All troops power +20%	Wound regeneration +10%	FALSE	FALSE	FALSE	TRUE	
-SSR	Filius	March speed +20%	Recovery speed +15%		All troops power +25%	Wound regeneration +10%	FALSE	FALSE	TRUE	TRUE	
-SSR	Jessica	March speed +20%	AP reduction -10%		All troops power +25%	Wound regeneration +10%	FALSE	FALSE	TRUE	TRUE	Bounty Hall
-SSR	Pedra	March speed +20%	AP reduction -10%		All troops power +25%	Wound regeneration +10%	FALSE	FALSE	TRUE	TRUE	
-SSR	Hana	AP reduction -10%	March speed +15%		All troops power +25%	Wound regeneration +10%	FALSE	FALSE	FALSE	TRUE	
-SSR	Lilani	March speed +20%	Troops load +15%		All troops power +25%	Wound regeneration +10%	FALSE	FALSE	TRUE	TRUE	
-SSR	Parr	March speed +20%	Troops load +15%		All troops power +25%	Wound regeneration +10%	FALSE	FALSE	TRUE	TRUE	
-SSR	Rudolph	March speed +20%	Troops load +15%		All troops power +25%	Recovery speed +15%	FALSE	FALSE	TRUE	TRUE	Bounty Hall
-SSR	Vera	March speed +20%	Troops load +10%		All troops power +25%	Wound regeneration +10%	FALSE	FALSE	TRUE	TRUE	
-SSR	Paula	March speed +20%	Offline gold +20%		All troops power +20%	Recovery speed +15%	TRUE	TRUE	TRUE	TRUE	
-SSR	Keith	March speed +30%	Troops load +20%		All troops power +20%	Wound regeneration +10%	FALSE	FALSE	FALSE	TRUE	
-SSR	Maud	March speed +30%	Troops load +20%		All troops power +20%	Wound regeneration +10%	FALSE	FALSE	FALSE	TRUE	
-SSR	Nathaniel	March speed +30%	Troops load +20%		Recovery speed +15%	Wound regeneration +10%	FALSE	FALSE	FALSE	TRUE	
-SSR	Hadi	March speed +20%	Offline gold +20%		All troops power +20%	Gathering speed +20%	TRUE	TRUE	TRUE	TRUE	
-SSR	Nicole	March speed +20%	Offline gold +20%		All troops power +20%	Gathering speed +20%	FALSE	FALSE	TRUE	TRUE	Bounty Hall
-SSR	Ralph	March speed +20%	Tower defense		All troops power +20%	Troops load +10%	FALSE	TRUE	TRUE	TRUE	Elemental Lord
-SR	Merlin	Tower defense	Tower defense	March speed +15%			FALSE	FALSE	FALSE	TRUE	
+SSR	Anko	March speed +30%	Recovery speed +15%		All troops power +20%	Wound regeneration +10%	FALSE	FALSE	FALSE	TRUE	
+SSR	Lovelace	March speed +30%	Recovery speed +15%		All troops power +20%	Wound regeneration +10%	FALSE	FALSE	FALSE	TRUE	
+SSR	Erika	March speed +25%	Recovery speed +15%		All troops power +25%	Wound regeneration +10%	TRUE	TRUE	TRUE	TRUE	
+SSR	Daria	March speed +25%	Recovery speed +15%		All troops power +25%	Wound regeneration +10%	FALSE	FALSE	FALSE	TRUE	
+SSR	Vanessa	March speed +20%	Recovery speed +15%		All troops power +20%	Wound regeneration +10%	FALSE	FALSE	FALSE	TRUE	
+SSR	Miku	AP reduction -20%	March speed +15%		All troops power +25%	Wound regeneration +10%	FALSE	FALSE	FALSE	FALSE	
+SSR	Giselle	March speed +20%	AP reduction -10%		All troops power +25%	Wound regeneration +10%	FALSE	FALSE	FALSE	TRUE	
+SSR	Tracy	March speed +30%	All troops power +20%		All troops power +20%	Wound regeneration +15%	FALSE	FALSE	FALSE	FALSE	
+SSR	Cosette	March speed +20%	Troops load +30%		All troops power +30%	Recovery speed +25%	FALSE	FALSE	TRUE	TRUE	Bounty Hall
+SSR	Paul	March speed +20%	Troops load +20%		All troops power +30%	Recovery speed +25%	FALSE	FALSE	TRUE	TRUE	Bounty Hall
+SSR	Kenshiro	March speed +20%	Troops load +15%		All troops power +25%	Wound regeneration +10%	FALSE	FALSE	FALSE	TRUE	
+SSR	Penny	March speed +20%	Troops load +15%		All troops power +25%	Wound regeneration +10%	FALSE	FALSE	FALSE	TRUE	
+SSR	Christie	March speed +20%	Troops load +15%		All troops power +25%	Wound regeneration +10%	FALSE	FALSE	TRUE	TRUE	
+SSR	Dolvar	March speed +20%	Troops load +15%		All troops power +25%	Wound regeneration +15%	FALSE	FALSE	TRUE	TRUE	Bounty Hall
+SSR	Wallis	March speed +20%	Troops load +15%		All troops power +25%	Wound regeneration +15%	FALSE	FALSE	TRUE	TRUE	
+SSR	Allen	March speed +20%	Troops load +10%		All troops power +25%	Recovery speed +15%	FALSE	TRUE	TRUE	TRUE	
+SSR	Gro	March speed +15%	Flame mage troops power +20%		Tower defense	Recovery speed +15%	TRUE	TRUE	TRUE	TRUE	Elemental Lord
+SSR	Dean	Troops load +15%	All troops power +20%		Recovery speed +15%	Wound regeneration +10%	FALSE	FALSE	TRUE	TRUE	
+SSR	Simon	March speed +20%	Offline gold +20%		All troops power +20%	Gathering speed +20%	TRUE	FALSE	FALSE	TRUE	
+SSR	Brie	Troops load +20%	Recovery speed +15%		All troops power +20%	Wound regeneration +10%	FALSE	FALSE	FALSE	TRUE	
+SSR	Apollo	March speed +30%	Troops load +20%		All troops power +20%	Wound regeneration +10%	FALSE	FALSE	TRUE	TRUE	
+SSR	Dain	March speed +20%	Troops load +20%		Recovery speed +15%	Wound regeneration +10%	FALSE	FALSE	FALSE	TRUE	
+SR	Kris	March speed +20%	Gathering speed +20%		All troops power +20%	Troops load +15%	TRUE	FALSE	FALSE	TRUE	
+SR	Ophelia	Flame mage troops power +20%		Tower defense		Tower defense	TRUE	FALSE	FALSE	TRUE	
+SR	Samar	Flame mage troops power +20%		Tower defense		Flame mage troops power +20%	TRUE	FALSE	FALSE	TRUE	
