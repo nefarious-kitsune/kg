@@ -474,15 +474,19 @@ input[type=checkbox]:checked:after {
 
 
 .ao-deng-ge-ri-le, .ao-yue,
-.clarence, .etley, .hadi, .hana, .keith, .lilani,
-.maud, .merlin, .nathaniel, .nicole,
-.parr, .paula, .pedra,
+.etley, .hadi, .keith, .lilani,
+.maud, .merlin, .nathaniel,
+.parr, .paula,
 .ralph, .rudolph, .torvi, .trist {
   background-image: url('../images/blank-avatar.png');
 }
 
+.clarence { background-image: url('../images/I-Clarence.png'); }
 .filius { background-image: url('../images/I-Filius.png'); }
+.hana { background-image: url('../images/I-Hana.png'); }
 .jessica { background-image: url('../images/I-Jessica.png'); }
+.nicole { background-image: url('../images/I-Nicole.png'); }
+.pedra { background-image: url('../images/I-Pedra.png'); }
 .vera { background-image: url('../images/I-Vera.png'); }
 
 .alliance-tag {
