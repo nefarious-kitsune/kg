@@ -1,8 +1,12 @@
-_*.*
-*._*
-_*
+# Work-in-progress and other temporary files
+-*.*
+*.-*
+
+# Temp files by builder scripts
+cache/
+
+# Binary files
 *.ai
-*.tsv
 
 # Logs
 logs
