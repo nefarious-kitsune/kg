@@ -611,8 +611,6 @@ input[type=checkbox]:checked:after {
 
 .tabbed-table-tab-bar .extra {
   flex-grow: 1;
-  background: var(--miku-red);
-  background: white;
   text-align: right;
   align-self: center;
   font-size: 1rem;
