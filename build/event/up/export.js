@@ -3,7 +3,7 @@ import {getDateFormatStrings, getUTCDate} from '../../utils/date-utils.js';
 import {formatPoint} from '../../utils/number-utils.js';
 
 // const eventStartDate = getUTCDate(2023, 11, 6);
-const eventStartDate = getUTCDate(2023, 10, 9);
+const eventStartDate = getUTCDate(2023, 12, 18);
 const eventName = 'Ultimate Power';
 const eventDuration = 6; // 6-days
 const eventPrefix = 'up-';
@@ -16,7 +16,7 @@ eventEndDate.setDate(eventStartDate.getDate() + eventDuration - 1);
 const fmtEventStart = getDateFormatStrings(eventStartDate);
 const fmtEventEnd   = getDateFormatStrings(eventEndDate);
 
-const exportDirectory = '../../../../docs/events';
+const exportDirectory = '../../../docs/events';
 const dateFragment = `${fmtEventStart.YYYY}${fmtEventStart.MM}${fmtEventStart.DD}`;
 const exportFileFragment = `${exportDirectory}/${eventPrefix}${dateFragment}`;
 
