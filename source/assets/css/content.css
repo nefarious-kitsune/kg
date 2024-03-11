@@ -1,0 +1,77 @@
+header:first-child nav {
+  display: flex;
+  height: 1.8rem;
+  padding: 0 0 0 0.5rem;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+
+  ul.breadcrumb {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: block;
+    font-size: 0.9rem;
+
+    li {
+      display: inline;
+      color: var(--miku-dark-red);
+    }
+
+    li+li:before {
+      padding: 0 0.2rem 0 0;
+      color: #ea3033;
+      content: "\203A";
+      /* › \203A  */
+      /* » \00BB  */
+    }
+
+    li:last-child {
+      font-weight: bold;
+    }
+
+    a {
+      color: var(--miku-red) !important;
+      text-decoration: underline solid !important;
+    }
+  }
+}
+
+ul.pagination {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: inline-block;
+  text-align: center;
+  font-size: 0.9rem;
+
+  li {
+    display: inline;
+    float: left;
+    padding: 0.4rem 0.8rem;
+    margin: 0 0.2rem;
+    border-radius: 0.4rem;
+    transition: background-color .3s;
+
+    a {
+      color: black;
+      text-decoration: none !important;
+    }
+
+    &.selected {
+      font-weight: bold;
+      color: white;
+      background-color: var(--miku-red);
+    }
+
+    &.selected a { color: white; }
+
+    &:not(.selected):hover {
+      background-color: var(--light-neutral);
+    }
+  }
+}
+
+.very-strong {
+  text-transform: uppercase;
+}
