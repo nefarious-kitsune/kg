@@ -19,7 +19,7 @@ export function copyStatic(subDir) {
     const destPath = destBasePath + relPath;
     const destDir = dirname(destPath);
     if (!fs.existsSync(destDir)) fs.mkdirSync(destDir, { recursive: true })
-    fs.copyFile(srcPath, destPath, fs.constants.COPYFILE_FICLONE);
+    fs.copyFileSync(srcPath, destPath, fs.constants.COPYFILE_FICLONE);
     console.log(`${relPath} copied`);
   })
 }

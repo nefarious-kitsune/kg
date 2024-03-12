@@ -81,6 +81,8 @@ header:first-child {
   }
 }
 
+.hidden { display: none; }
+
 /* ------------------ Basic Format ------------------ */
 
 h1, h2, h3, h4, h5, h6 {
@@ -112,6 +114,7 @@ table { /* default */
   border-collapse: collapse;
 
   th, td {
+    background-color: white;
     padding: 0.5rem;
   }
 
