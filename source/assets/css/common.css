@@ -103,3 +103,60 @@ a {
 em, strong {
   color: var(--miku-dark-red);
 }
+
+/* --------------------- Tables --------------------- */
+
+
+table { /* default */
+  font-size: 1rem;
+  border-collapse: collapse;
+
+  th, td {
+    padding: 0.5rem;
+  }
+
+  tbody td {
+    vertical-align: top;
+  }
+
+  tbody th {
+    text-align: left;
+    vertical-align: top;
+  }  
+}
+
+table.sticky-header { /* sticky header */
+  thead tr th {
+    position: sticky;
+    top: 0;
+  }
+}
+
+table.basic-table { /* basic table (red header, gold footer */
+  thead th {
+    background: var(--miku-red);
+    color: white;
+  }
+
+  tfoot {
+    background: var(--miku-gold);
+  }
+}
+
+table.border-all { /* border on all cells */
+  border-collapse: collapse;
+  td, th { border: 0.11rem solid var(--miku-dark-red); }
+}
+
+table.border-simple { /* border on "sections" only */
+  border-collapse: collapse;
+  border: 0.11rem solid var(--miku-dark-red);
+  thead, tbody, tfoot { border: 0.11rem solid var(--miku-dark-red); }
+  td, th { border: none; }
+}
+
+table.alt-rows { /* alternating rows */
+  tbody tr:nth-child(even) {
+    background: var(--pale-neutral);
+  }
+}
