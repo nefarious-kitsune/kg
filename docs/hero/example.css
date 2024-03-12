@@ -121,44 +121,6 @@ table {
 
 table td { vertical-align: top;}
 
-.hero-table {
-  margin: 0;
-  border-spacing: 0;
-  border-collapse: collapse;
-}
-
-.hero-table thead th {
-  position: sticky;
-  background-color: white;
-  z-index: 1;
-  top: 0;
-}
-
-.hero-table td.hero-name {
-  position: sticky;
-  background-color: white;
-  left: 0;
-  z-index: 1;
-}
-
-.hero-table th.hero-name {
-  top: 0;
-  left: 0;
-  z-index: 2;
-}
-
-.hero-table td,
-.hero-table th {
-  border: 0.1rem solid var(--miku-dark-red);
-  border-spacing: 0;
-  padding: 0.5rem;
-}
-
-.hero-table .hero-avatar { border-right: none; }
-.hero-table .hero-name { border-left: none; }
-
-.hero-table .avatars-item { width: 2rem; height: 2rem; }
-
 .from-source { width: 2.5rem; height: 2.5rem; }
 .from-source.hidden { display: none; }
 

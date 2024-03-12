@@ -99,7 +99,7 @@ function getRole(fullStats) {
   if (fullStats.ap > 0) return HunterRole;
 
   if (
-    (fullStats.power >= 50) &&
+    (fullStats.power >= 40) &&
     (fullStats.recovery > 0) &&
     (fullStats.speed > 0)
   ) return WarriorRole;
