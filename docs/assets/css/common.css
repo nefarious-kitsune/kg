@@ -1,0 +1,162 @@
+:root {
+  --miku-red: rgb(180, 35, 40); /*  #b42328; */
+  --miku-dark-red: rgb(124, 26, 32); /* #7c1a20 */
+  --miku-gold: #fec728;
+
+  --red: #b42328;
+  --yellow: #ce8e13;
+  --green: #7bce1d;
+  --blue: #24e5ff;
+  
+  --gradient-blue-1: #324d5e;
+  --gradient-blue-2: #3a7495;
+  --gradient-gold-1: #ad741b;
+  --gradient-gold-2: #ffcb1d;
+  --gradient-purple-1: #563b4f;
+  --gradient-purple-2: #824c85;
+
+  --primary-1  : #C9803F; /* Caramel */
+  --secondary-1: #D59E48; /* Sand */
+  --primary-2  : #E0BB50; /* Copper */
+  --secondary-2: #9FB851; /* Olive */
+  --primary-3  : #5DB552; /* Jade */
+  --secondary-3: #51A092; /* Sapphire */
+  --primary-4  : #448BD1; /* Blue */
+  --secondary-4: #7789C2; /* Glaucous */
+  --primary-5  : #AA86B2; /* Iris */
+  --secondary-5: #AF6B96; /* Mauve */
+  --primary-6  : #B35079; /* Rose */
+
+  --light-primary-1  : #DFB38C;
+  --light-secondary-1: #E6C591;
+  --light-primary-2  : #ECD696;
+  --light-secondary-2: #C5D497;
+  --light-primary-3  : #9ED397;
+  --light-secondary-3: #97C6BE;
+  --light-primary-4  : #8FB9E3;
+  --light-secondary-4: #ADB8DA;
+  --light-primary-5  : #CCB6D1;
+  --light-secondary-5: #CFA6C0;
+  --light-primary-6  : #D196AF;
+
+  --dark-neutral:#363E4A;
+  --neutral: #485363; /* Charcoal */
+  --light-neutral: #9198A1;
+  --pale-neutral: #dadde0;
+
+  /* alternative variable names for primary colors */
+  --orange : #C9803F; /* Caramel */
+  --gold   : #E0BB50; /* Copper */
+  --green  : #5DB552; /* Jade */
+  --blue   : #448BD1; /* Blue */
+  --purple : #AA86B2; /* */
+}
+
+html {
+  /*
+    font size:
+    19 px @ 1600 px viewport width (desktop)
+    15 px @  820 px viewport width (tablet)
+    12 px @  400 px viewport width (phone)
+   */
+  font-size: calc(12px + (18 - 12) * ((100vw - 300px) / (1600 - 300)));
+  font-family: 'Helvetica', 'Arial', sans-serif;
+}
+
+/* ----------------- General Layout ----------------- */
+
+body { margin: 0;    } 
+main { margin: 1rem; }
+header:first-child {
+  margin: 0;
+  padding: 0.2rem 0.2rem 0.2rem 1rem;
+
+  &:before {
+    display: block;
+    content: " ";
+    background: url('../../images/logo_text.png') no-repeat;
+    background-size: contain;
+    height: 3.3rem;
+    width: 18.9rem;
+  }
+}
+
+/* ------------------ Basic Format ------------------ */
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  color: var(--miku-dark-red);  
+  text-shadow:
+    1px 1px 4px rgba(124, 26, 32, 0.1),
+    2px 3px 4px rgba(124, 26, 32, 0.15),
+    3px 5px 4px rgba(124, 26, 32, 0.2)
+}
+
+h1 { font-size: 2rem; }
+h2 { font-size: 1.4rem; }
+
+a {
+  color: var(--miku-red);
+  text-decoration: underline;
+}
+
+em, strong {
+  color: var(--miku-dark-red);
+}
+
+/* --------------------- Tables --------------------- */
+
+
+table { /* default */
+  font-size: 1rem;
+  border-collapse: collapse;
+
+  th, td {
+    padding: 0.5rem;
+  }
+
+  tbody td {
+    vertical-align: top;
+  }
+
+  tbody th {
+    text-align: left;
+    vertical-align: top;
+  }  
+}
+
+table.sticky-header { /* sticky header */
+  thead tr th {
+    position: sticky;
+    top: 0;
+  }
+}
+
+table.basic-table { /* basic table (red header, gold footer */
+  thead th {
+    background: var(--miku-red);
+    color: white;
+  }
+
+  tfoot {
+    background: var(--miku-gold);
+  }
+}
+
+table.border-all { /* border on all cells */
+  border-collapse: collapse;
+  td, th { border: 0.11rem solid var(--miku-dark-red); }
+}
+
+table.border-simple { /* border on "sections" only */
+  border-collapse: collapse;
+  border: 0.11rem solid var(--miku-dark-red);
+  thead, tbody, tfoot { border: 0.11rem solid var(--miku-dark-red); }
+  td, th { border: none; }
+}
+
+table.alt-rows { /* alternating rows */
+  tbody tr:nth-child(even) {
+    background: var(--pale-neutral);
+  }
+}
