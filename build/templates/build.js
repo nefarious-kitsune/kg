@@ -1,43 +1,59 @@
 import fs from 'fs';
 
 const exportDirectory = '../../docs/templates';
-// const exportFileFragment = `${exportDirectory}/dragonUpgradeCost`;
 
 const htmlTemplate = fs.readFileSync('template.html', 'utf-8');
 
-const reTag = /<([/=\d\s\w]*)>/g;
-const reSpaces = /( {2,})/g;
+const reTag = /<([/=\d\s\w]*)>/ig;
+const reSpaces = /( {2,})/ig;
 
-const reColorTag = /<color=(\w+)>/g;
-const reSizeTag = /<size=(\d+)>/g;
-const reEndTag = /<\/(size|color|b|i)>/g;
+const reBoldTag = /<b>/ig;
+const reItalicTag = /<i>/ig;
+const reColorTag = /<color=(\w+)>/ig;
+const reSizeTag = /<size=(\d+)>/ig;
+const reEndTag = /<\/(size|color|b|i)>/ig;
 
 let indexList = '';
 
+function replaceTag(math, p1) {
+  return `<span class="format-tag">&lt;${p1.toLowerCase()}&gt;</span>`;
+}
+
+function replaceColorTag(math, p1) {
+  return `<span style="color:${p1.toLowerCase()}">`;
+}
+
 function replaceSizeTag(math, p1) {
-  return `<span style="font-size:${(parseInt(p1)/30)}rem">`;
+  return `<span style="font-size:${(parseInt(p1)/30).toFixed(1)}rem">`;
 }
 
 function replaceSpaces(math, p1) {
   return ' ' + '&nbsp;'.repeat(p1.length - 1);
 }
 
-function build(fileName, title, description, type) {
-  const input = fs.readFileSync(`./examples/${fileName}.msg`, 'utf-8');
+function build(fileName) {
+  const fileContent = fs
+    .readFileSync(`./examples/${fileName}.msg`, 'utf-8')
+    .split('\n');
+
+  const type = fileContent[0].trim().toLowerCase();
+  const title = fileContent[1].trim();
+  const description = fileContent[2].trim();
+  const input = fileContent.slice(4).join('\n');
 
   const inputHTML = input
-    .replaceAll(reTag, '<span class="format-tag">&lt;$1&gt;</span>')
+    .replaceAll(reTag, replaceTag)
     .replaceAll(reSpaces,  replaceSpaces)
-    .replaceAll('\n', '<br />');
+    .replaceAll('\n', '<br />\n');
 
   const outputHTML = input
-    .replaceAll(reColorTag, '<span style="color:$1">')
+    .replaceAll(reColorTag, replaceColorTag)
     .replaceAll(reSizeTag,  replaceSizeTag)
     .replaceAll(reSpaces,  replaceSpaces)
-    .replaceAll('<b>', '<span style="font-weight:bold">')
-    .replaceAll('<i>', '<span style="font-style:italic">')
+    .replaceAll(reBoldTag, '<span style="font-weight:bold">')
+    .replaceAll(reItalicTag, '<span style="font-style:italic">')
     .replaceAll(reEndTag, '</span>')
-    .replaceAll('\n', '<br />');
+    .replaceAll('\n', '<br />\n');
 
   const htmlOutput =  htmlTemplate
     .replaceAll('{{TITLE}}', title)
@@ -51,26 +67,19 @@ function build(fileName, title, description, type) {
   indexList += ` <li><a href="./${fileName}">${title}</a>: ${description}</li>\n`
 }
 
-build(
-  'new-season',
-  'End of season reminder',
-  'Reminder mail at end of Burning Expedition',
-  'mail',
-);
-
-build(
+const files = [
   'alliance-welcome',
-  'Alliance message',
-  'Alliance message example',
-  'message',
-);
-
-build(
   'alliance-welcome-2',
-  'Alliance message',
-  'Alliance message example (provided by 𝚃𝚛𝚒𝚔𝚝𝚒𝚜)',
-  'message',
-);
+  'alliance-tech-reminder',
+  'svs-thank-you-win',
+  'svs-thank-you-loss',
+  'new-season',
+  'lava-reminder',
+  'esi-reminder',
+  'lava-cave-reminder',
+];
+
+files.forEach((fileName) => build(fileName));
 
 const indexTemplate = fs.readFileSync('index.html', 'utf-8');
 fs.writeFileSync(
