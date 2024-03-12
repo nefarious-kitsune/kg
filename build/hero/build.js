@@ -35,7 +35,7 @@ const HeroData = []
   .concat(iceHeroData)
   .concat(goblinHeroData);
 
-const ExportPath = resolve(ModulePath, '../../docs/hero/');
+const ExportPath = resolve(ModulePath, '../../docs/heroes/');
 
 writeFileSync(
   resolve(ExportPath, './hero-data.json'),
@@ -161,23 +161,23 @@ function buildElementContent(elName, elHeroData) {
   const outputOptions = {
     type: 'sheet',
     path: {
-      base: `/hero/element`,
+      base: `/heroes/element`,
       icon: '/images/logo_mini.png',
     },
     css: {
       links: [
         '/css/common.css',
-        '/hero/hero-table.css',
+        '/heroes/hero-table.css',
       ],
     },
     js: {
       links: [
-        '/hero/hero-table.js',
+        '/heroes/hero-table.js',
       ],
     },
     breadcrumb: [
       {path: '/content', title: 'Home'},
-      {path: '/hero/', title: 'Hero'},
+      {path: '/heroes/', title: 'Hero'},
     ],
     content: content,
     shortTitle: elName,

@@ -176,5 +176,5 @@ importedData = fs.readFileSync('./data/goblin.tsv', { encoding:'utf8'});
 compiledData = compileData('goblin', importedData);
 fs.writeFileSync('./compiled/goblin.json', JSON.stringify(compiledData, null, '  '));
 
-// fs.writeFileSync('../../docs/hero/hero-data-archer.json', JSONData);
-// fs.writeFileSync('../../docs/hero/hero-data-archer.js', 'const ElementHeroData = ' + JSONData);
+// fs.writeFileSync('../../docs/heroes/hero-data-archer.json', JSONData);
+// fs.writeFileSync('../../docs/heroes/hero-data-archer.js', 'const ElementHeroData = ' + JSONData);
