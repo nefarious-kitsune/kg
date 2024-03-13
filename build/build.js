@@ -5,4 +5,4 @@
 import {copyStatic} from './base/copy-static.js';
 
 copyStatic('assets/');
-copyStatic('heroes/showcases/');
+copyStatic('marches/');
