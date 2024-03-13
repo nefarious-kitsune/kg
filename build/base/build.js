@@ -1,7 +1,7 @@
-import { fileURLToPath } from 'url'
-import { dirname, resolve } from 'path'
-import { readFileSync } from 'fs'
-import { relativePath } from '../utils/uri-utils.js';
+import {fileURLToPath} from 'url';
+import {dirname, resolve} from 'path';
+import {readFileSync} from 'fs';
+import {relativePath} from '../utils/uri-utils.js';
 
 const ModulePath = dirname(fileURLToPath(import.meta.url));
 const BaseTemplate = readFileSync(resolve(ModulePath, './base.html'), 'utf-8');
@@ -24,13 +24,13 @@ const BaseTemplate = readFileSync(resolve(ModulePath, './base.html'), 'utf-8');
  * @property {string} [shortTitle] - Short title of the page (for breadcrumb)
  * @property {string} content - Main content of the page
  * @property {string} description - Summary description of the page
- * @property {'page'|'sheet'|'graph'|'chart'|'calculator'} type - Type of the page
+ * @property {'page'|'sheet'|'graph'|'chart'|'calculator'} type - Page type
  */
 
 /**
  * Build breadcrumb
  * @param {PageOptions} pageOptions - Options
- * @returns {string}
+ * @return {string}
  */
 function buildBreadcrumb(pageOptions) {
   const breadcrumb = pageOptions.breadcrumb;
@@ -52,7 +52,7 @@ function buildBreadcrumb(pageOptions) {
 /**
  * Build stylesheet content
  * @param {PageOptions} pageOptions - Options
- * @returns {string}
+ * @return {string}
  */
 function buildCssContent(pageOptions) {
   const basePath = pageOptions.path.base;
@@ -60,7 +60,8 @@ function buildCssContent(pageOptions) {
   if (pageOptions?.css?.links?.length) {
     const cssLinks = pageOptions.css.links;
     for (let idx = 0; idx < cssLinks.length; idx++) {
-      lines.push(`  <link href="${relativePath(basePath, cssLinks[idx])}" rel="stylesheet">`);
+      const relLink = relativePath(basePath, cssLinks[idx]);
+      lines.push(`  <link href="${relLink}" rel="stylesheet">`);
     }
   }
   if (pageOptions?.css?.embedded?.length) {
@@ -74,7 +75,7 @@ function buildCssContent(pageOptions) {
 /**
  * Build JavaScript content
  * @param {PageOptions} pageOptions - Options
- * @returns {string}
+ * @return {string}
  */
 function buildJsContent(pageOptions) {
   const basePath = pageOptions.path.base;
@@ -82,7 +83,8 @@ function buildJsContent(pageOptions) {
   if (pageOptions?.js?.links?.length) {
     const jsLinks = pageOptions.js.links;
     for (let idx = 0; idx < jsLinks.length; idx++) {
-      lines.push(`  <script src="${relativePath(basePath, jsLinks[idx])}"></script>`);
+      const relLink = relativePath(basePath, jsLinks[idx]);
+      lines.push(`  <script src="${relLink}"></script>`);
     }
   }
   if (pageOptions?.js?.embedded?.length) {
@@ -95,7 +97,7 @@ function buildJsContent(pageOptions) {
 
 /**
  * @param {PageOptions} o - Options
- * @returns {string}
+ * @return {string}
  */
 export function buildBase(o) {
   const pageIconPath = relativePath(o.path.base, o.path.icon);
@@ -109,12 +111,12 @@ export function buildBase(o) {
     default: ogImage = 'page-2x_n.png';
   }
   return BaseTemplate
-    .replace('{{ICON PATH}}', pageIconPath)
-    .replace('{{BREADCRUMB}}', buildBreadcrumb(o))
-    .replace('{{CSS}}', buildCssContent(o))
-    .replace('{{JAVASCRIPT}}', buildJsContent(o))
-    .replaceAll('{{PAGE TITLE}}', o.title)
-    .replace('{{PAGE CONTENT}}', o.content)
-    .replace('{{OG DESCRIPTION}}', o.description)
-    .replace('{{OG IMAGE}}', ogImage)
+      .replace('{{ICON PATH}}', pageIconPath)
+      .replace('{{BREADCRUMB}}', buildBreadcrumb(o))
+      .replace('{{CSS}}', buildCssContent(o))
+      .replace('{{JAVASCRIPT}}', buildJsContent(o))
+      .replaceAll('{{PAGE TITLE}}', o.title)
+      .replace('{{PAGE CONTENT}}', o.content)
+      .replace('{{OG DESCRIPTION}}', o.description)
+      .replace('{{OG IMAGE}}', ogImage);
 }
