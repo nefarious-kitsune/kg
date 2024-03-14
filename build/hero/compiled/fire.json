@@ -848,12 +848,12 @@
       "",
       "Tower defense",
       "",
-      "Flame mage troops power +20%"
+      "Tower defense"
     ],
     "total-bonus": {
       "ap-reduction": 0,
       "march-speed": 0,
-      "power": 40,
+      "power": 20,
       "wound-regeneration": 0,
       "gathering-speed": 0,
       "offline-gold": 0,
@@ -862,7 +862,7 @@
     },
     "tier": {
       "warrior": 1,
-      "support": 4,
+      "support": 1,
       "hunter": 0,
       "miner": 0
     },
