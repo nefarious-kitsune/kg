@@ -144,6 +144,15 @@ export function processHtml(srcContent) {
       pageDescription = ogDesc;
       metaTags.push(`<meta property="og:description" content="${ogDesc}">`);
     }
+
+    let tagEndingPos = processedContent.indexOf('</title>\n');
+    if (tagEndingPos !== -1) {
+      tagEndingPos += '</title>\n'.length;
+      processedContent =
+          processedContent.slice(0, tagEndingPos) +
+          metaTags.map((line) => '  ' + line + '\n').join('') +
+          processedContent.slice(tagEndingPos);
+    }
   }
 
   return {
