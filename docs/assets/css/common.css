@@ -108,7 +108,6 @@ em, strong {
 
 /* --------------------- Tables --------------------- */
 
-
 table { /* default */
   font-size: 1rem;
   border-collapse: collapse;
@@ -162,4 +161,22 @@ table.alt-rows { /* alternating rows */
   tbody tr:nth-child(even) {
     background: var(--pale-neutral);
   }
+}
+
+/* --------------------- Lists  --------------------- */
+
+/*
+  If first child of a table cell is a <ul>,
+  assume that it's the only child and left-flush the content
+*/
+table tbody td > ul:first-child {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 1rem;
+}
+
+ul.compact-list {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 1rem;
 }
