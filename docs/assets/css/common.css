@@ -83,6 +83,12 @@ header:first-child {
 
 .hidden { display: none; }
 
+:target,
+:target td,
+:target th {
+  background-color: var(--miku-gold) !important;
+}
+
 /* ------------------ Basic Format ------------------ */
 
 h1, h2, h3, h4, h5, h6 {
@@ -158,7 +164,7 @@ table.border-simple { /* border on "sections" only */
 }
 
 table.alt-rows { /* alternating rows */
-  tbody tr:nth-child(even) {
+  tbody tr:nth-child(even) td {
     background: var(--pale-neutral);
   }
 }

@@ -72,6 +72,14 @@ ul.pagination {
   }
 }
 
+ul.inline-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: inline-block;
+  li { display: inline; }
+}
+
 .very-strong {
   text-transform: uppercase;
 }
