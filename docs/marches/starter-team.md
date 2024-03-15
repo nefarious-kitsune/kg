@@ -13,7 +13,9 @@ make adjustments accordingly. In fact,
 __you can build an effective team with just C-tier and D-tier heroes__.
 
 ---
-*You can build an effective team with just C-tier and D-tier heroes*
+
+> *You can build an effective team with just C-tier and D-tier heroes*
+
 ---
 
 If you are F2P (free-2-play) or a light spender, here are some tips to build
