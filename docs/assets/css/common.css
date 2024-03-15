@@ -108,8 +108,17 @@ a {
   text-decoration: underline;
 }
 
+a:not([href]) {
+  color: black;
+  text-decoration: none;
+}
+
 em, strong {
   color: var(--miku-dark-red);
+}
+
+strong.important {
+  text-transform: uppercase;
 }
 
 /* --------------------- Tables --------------------- */

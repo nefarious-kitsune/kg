@@ -1,3 +1,5 @@
+/* ----------------- General Layout ----------------- */
+
 header:first-child nav {
   display: flex;
   height: 1.8rem;
@@ -21,7 +23,7 @@ header:first-child nav {
     li+li:before {
       padding: 0 0.2rem 0 0;
       color: #ea3033;
-      content: "\203A";
+      content: "\00BB";
       /* › \203A  */
       /* » \00BB  */
     }
@@ -72,14 +74,46 @@ ul.pagination {
   }
 }
 
+ul.timeline {
+  display: block;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  li {
+    display: inline-block;
+
+    a {
+      display: inline-block;
+      padding: 0.2rem 0.2rem;
+      border-radius: 0.2rem;
+      transition: background-color .3s;
+      text-decoration: none !important;
+    }
+
+    a[href="#"] {
+      color: black;
+      font-weight: bold;
+    }
+
+    a[href]:not([href="#"]):hover {
+      background-color: var(--light-neutral);
+    }
+  }
+
+  li+li:before {
+    display: inline-block;
+    padding: 0.2rem 0.2rem;
+    font-weight: bold;
+    color: var(--light-neutral);
+    content: "\203A";
+  }
+}
+
 ul.inline-list {
   padding: 0;
   margin: 0;
   list-style: none;
   display: inline-block;
   li { display: inline; }
-}
-
-.very-strong {
-  text-transform: uppercase;
 }
