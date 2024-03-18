@@ -7,7 +7,7 @@
   --yellow: #ce8e13;
   --green: #7bce1d;
   --blue: #24e5ff;
-  
+
   --gradient-blue-1: #324d5e;
   --gradient-blue-2: #3a7495;
   --gradient-gold-1: #ad741b;
@@ -63,9 +63,13 @@ html {
   font-family: 'Helvetica', 'Arial', sans-serif;
 }
 
+@media screen and (min-width: 500px) {
+  
+}
+
 /* ----------------- General Layout ----------------- */
 
-body { margin: 0;    } 
+body { margin: 0;    }
 main { margin: 1rem; }
 header:first-child {
   margin: 0;
@@ -83,17 +87,11 @@ header:first-child {
 
 .hidden { display: none; }
 
-:target,
-:target td,
-:target th {
-  background-color: var(--miku-gold) !important;
-}
-
 /* ------------------ Basic Format ------------------ */
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
-  color: var(--miku-dark-red);  
+  color: var(--miku-dark-red);
   text-shadow:
     1px 1px 4px rgba(124, 26, 32, 0.1),
     2px 3px 4px rgba(124, 26, 32, 0.15),
@@ -136,10 +134,8 @@ table { /* default */
     vertical-align: top;
   }
 
-  tbody th {
-    text-align: left;
-    vertical-align: top;
-  }  
+  th { text-align: left; }
+  tbody th { vertical-align: top; }
 }
 
 table.sticky-header { /* sticky header */
@@ -173,6 +169,7 @@ table.border-simple { /* border on "sections" only */
 }
 
 table.alt-rows { /* alternating rows */
+  tbody tr:nth-child(even) th,
   tbody tr:nth-child(even) td {
     background: var(--pale-neutral);
   }

@@ -7,3 +7,4 @@ import {copyStatic} from './base/copy-static.js';
 copyStatic('assets/');
 copyStatic('marches/');
 copyStatic('features/');
+copyStatic('territories/');
