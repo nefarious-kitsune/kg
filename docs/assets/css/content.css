@@ -121,8 +121,8 @@ div.quick-access {
 
 section {
   padding: 0.8rem;
-  & > p { margin: 0 0 0.5rem 0;}
-  & p:last-child { padding: 0; }
+  p { padding: 0 0 1rem 0;}
+  p:last-child { padding: 0;}
   h1, h2, h3, h4 { padding: 0rem; }
 }
 
