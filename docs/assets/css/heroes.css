@@ -1,0 +1,157 @@
+.hero-avatar {
+  position: relative;
+  display: inline-block;
+  width: 5rem;
+  height: 5rem;
+  background-size: 130% 130%;
+  background-position: center;
+  border: var(--gold) solid 0.2rem;
+  border-radius: 0.6rem;
+
+  &[data-star]:before {
+    position: absolute;
+    top:  -0.4rem;
+    left: 0.2rem;
+    display: block;
+    color: var(--gold);
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-shadow:
+      -1px -1px 0 var(--dark-neutral),
+       1px -1px 0 var(--dark-neutral),
+      -1px  1px 0 var(--dark-neutral),
+       1px  1px 0 var(--dark-neutral);
+  }
+
+  &[data-star]:before { content: " "; }
+  &[data-star="1"]:before { content: "\2605"; }
+  &[data-star="2"]:before { content: "\2605\2605"; }
+  &[data-star="3"]:before { content: "\2605\2605\2605"; }
+  &[data-star="4"]:before { content: "\2605\2605\2605\2605"; }
+  &[data-star="5"]:before { content: "\2605\2605\2605\2605\2605"; }
+
+  &[data-level]:after {
+    position: absolute;
+    display: block;
+    width: 4.6rem;
+    margin: 0 0.2rem;
+    bottom: 0.1rem;
+    padding: 0 0.1rem;
+    font-size: 0.9rem;
+    font-weight: bold;
+    content: "Lv. " attr(data-level);
+    background: rgba(255, 255, 255, 0.6);
+    color: var(--dark-neutral);
+  }
+
+  &.daniel    { background-image: url('../heroes/Hero-0.png'); }
+  &.anton     { background-image: url('../heroes/Hero-1.png'); }
+  &.etley     { background-image: url('../heroes/Hero-2.png'); }
+  &.arwyn     { background-image: url('../heroes/Hero-3.png'); }
+  &.peter     { background-image: url('../heroes/Hero-4.png'); }
+  &.ophelia   { background-image: url('../heroes/Hero-5.png'); }
+  &.merlin    { background-image: url('../heroes/Hero-6.png'); }
+  &.arthur    { background-image: url('../heroes/Hero-7.png'); }
+  &.claudia   { background-image: url('../heroes/Hero-8.png'); }
+  &.alucard   { background-image: url('../heroes/Hero-9.png'); }
+  &.gro       { background-image: url('../heroes/Hero-10.png'); }
+  &.catherine { background-image: url('../heroes/Hero-11.png'); }
+  &.hadi      { background-image: url('../heroes/Hero-12.png'); }
+  &.paula     { background-image: url('../heroes/Hero-13.png'); }
+  &.kris      { background-image: url('../heroes/Hero-14.png'); }
+  &.ralph     { background-image: url('../heroes/Hero-15.png'); }
+  &.gabriel   { background-image: url('../heroes/Hero-16.png'); }
+  &.erika     { background-image: url('../heroes/Hero-17.png'); }
+  &.jennifer  { background-image: url('../heroes/Hero-18.png'); }
+  &.issac     { background-image: url('../heroes/Hero-19.png'); }
+  &.allen     { background-image: url('../heroes/Hero-20.png'); }
+  &.nicole    { background-image: url('../heroes/Hero-21.png'); }
+  &.harold    { background-image: url('../heroes/Hero-22.png'); }
+  &.rosamond  { background-image: url('../heroes/Hero-23.png'); }
+  &.ariza     { background-image: url('../heroes/Hero-24.png'); }
+  &.penny     { background-image: url('../heroes/Hero-25.png'); }
+  &.o-neil    { background-image: url('../heroes/Hero-26.png'); }
+  &.sahar     { background-image: url('../heroes/Hero-27.png'); }
+  &.dolvar    { background-image: url('../heroes/Hero-28.png'); }
+  &.paul      { background-image: url('../heroes/Hero-29.png'); }
+  &.gruen     { background-image: url('../heroes/Hero-30.png'); }
+  &.wallis    { background-image: url('../heroes/Hero-31.png'); }
+  &.rudolph   { background-image: url('../heroes/Hero-32.png'); }
+  &.meniere   { background-image: url('../heroes/Hero-33.png'); }
+  &.jessica   { background-image: url('../heroes/Hero-34.png'); }
+  &.lomax     { background-image: url('../heroes/Hero-35.png'); }
+  &.vera      { background-image: url('../heroes/Hero-36.png'); }
+  &.tumnus    { background-image: url('../heroes/Hero-37.png'); }
+  &.christie  { background-image: url('../heroes/Hero-38.png'); }
+  &.lilani    { background-image: url('../heroes/Hero-39.png'); }
+  &.torvi     { background-image: url('../heroes/Hero-40.png'); }
+  &.arwin     { background-image: url('../heroes/Hero-41.png'); }
+  &.richard   { background-image: url('../heroes/Hero-42.png'); }
+  &.pedra     { background-image: url('../heroes/Hero-43.png'); }
+  &.filius    { background-image: url('../heroes/Hero-44.png'); }
+  &.clarence  { background-image: url('../heroes/Hero-45.png'); }
+  &.livia     { background-image: url('../heroes/Hero-46.png'); }
+  &.kenshiro  { background-image: url('../heroes/Hero-47.png'); }
+  &.padme     { background-image: url('../heroes/Hero-48.png'); }
+  &.tracy     { background-image: url('../heroes/Hero-49.png'); }
+  &.miku      { background-image: url('../heroes/Hero-50.png'); }
+  &.benjamin  { background-image: url('../heroes/Hero-51.png'); }
+  &.cosette   { background-image: url('../heroes/Hero-52.png'); }
+  &.maud      { background-image: url('../heroes/Hero-53.png'); }
+  &.giselle   { background-image: url('../heroes/Hero-54.png'); }
+  &.wendy     { background-image: url('../heroes/Hero-55.png'); }
+  &.samar     { background-image: url('../heroes/Hero-56.png'); }
+  &.apollo    { background-image: url('../heroes/Hero-57.png'); }
+  &.dean      { background-image: url('../heroes/Hero-58.png'); }
+  &.Kadir     { background-image: url('../heroes/Hero-59.png'); }
+  &.maud      { background-image: url('../heroes/Hero-60.png'); }
+  &.dain      { background-image: url('../heroes/Hero-61.png'); }
+  &.suad      { background-image: url('../heroes/Hero-62.png'); }
+  &.collin    { background-image: url('../heroes/Hero-63.png'); }
+  &.anko      { background-image: url('../heroes/Hero-64.png'); }
+  &.chiyoko   { background-image: url('../heroes/Hero-65.png'); }
+  &.sabastian { background-image: url('../heroes/Hero-66.png'); }
+  &.keith     { background-image: url('../heroes/Hero-67.png'); }
+  &.brie      { background-image: url('../heroes/Hero-68.png'); }
+  &.nathaniel { background-image: url('../heroes/Hero-69.png'); }
+  &.pan       { background-image: url('../heroes/Hero-70.png'); }
+  &.vanessa   { background-image: url('../heroes/Hero-71.png'); }
+  &.fatima    { background-image: url('../heroes/Hero-72.png'); }
+  &.luvia     { background-image: url('../heroes/Hero-73.png'); }
+  &.bella     { background-image: url('../heroes/Hero-74.png'); }
+  &.meg       { background-image: url('../heroes/Hero-468.png'); }
+  &.hana      { background-image: url('../heroes/Hero-469.png'); }
+  &.pythia    { background-image: url('../heroes/Hero-470.png'); }
+  &.montag    { background-image: url('../heroes/Hero-471.png'); }
+  &.rogers    { background-image: url('../heroes/Hero-473.png'); }
+  &.blackwell { background-image: url('../heroes/Hero-474.png'); }
+  &.simon     { background-image: url('../heroes/Hero-475.png'); }
+  &.trist     { background-image: url('../heroes/Hero-476.png'); }
+  &.ptolemy   { background-image: url('../heroes/Hero-477.png'); }
+  &.ao-deng   { background-image: url('../heroes/Hero-478.png'); }
+  &.ao-yue    { background-image: url('../heroes/Hero-479.png'); }
+  &.lilith    { background-image: url('../heroes/Hero-480.png'); }
+  &.rila      { background-image: url('../heroes/Hero-481.png'); }
+  &.johannes  { background-image: url('../heroes/Hero-482.png'); }
+  &.maya      { background-image: url('../heroes/Hero-483.png'); }
+  &.daria     { background-image: url('../heroes/Hero-484.png'); }
+  &.lovelace  { background-image: url('../heroes/Hero-485.png'); }
+  &.judy      { background-image: url('../heroes/Hero-486.png'); }
+  &.trishy    { background-image: url('../heroes/Hero-487.png'); }
+  &.boudica   { background-image: url('../heroes/Hero-488.png'); }
+  &.angelica  { background-image: url('../heroes/Hero-489.png'); }
+  &.doris     { background-image: url('../heroes/Hero-492.png'); }
+
+  &.daniel { border-color: var(--green); }
+  &.anton, &.etley, &.peter { border-color: var(--blue); }
+  
+  &.arwyn, &.harold,
+  &.kris,  &.ophelia, &.samar,
+  &.merlin,
+  &.alucard { border-color: var(--purple); }
+
+  &.blank {
+    border-color: var(--pale-neutral);
+    background: var(--light-neutral);
+  }
+}

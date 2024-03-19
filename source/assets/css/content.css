@@ -140,6 +140,7 @@ div.col-flex {
   padding: 0;
 
   .col {
+    flex: 1 0 0;
     align-items: start;
   }
 }
