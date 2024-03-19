@@ -1,3 +1,6 @@
+# Igore symbolic links
+source/assets/heroes
+
 # Work-in-progress and other temporary files
 -*.*
 *.-*
