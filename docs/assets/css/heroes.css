@@ -17,10 +17,9 @@
     font-size: 1.2rem;
     font-weight: bold;
     text-shadow:
-      -1px -1px 0 var(--dark-neutral),
-       1px -1px 0 var(--dark-neutral),
-      -1px  1px 0 var(--dark-neutral),
-       1px  1px 0 var(--dark-neutral);
+      1px 1px 1px var(--dark-neutral),
+      0 0 2px var(--orange),
+      0 0 4px var(--orange);
   }
 
   &[data-star]:before { content: " "; }

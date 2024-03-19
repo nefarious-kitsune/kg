@@ -75,8 +75,6 @@ main > ul { margin-left: 1.2rem !important; }
 @media screen and (min-width: 390px) { /* Mobile */
 }
 
-
-
 @media screen and (min-width: 500px) {
   h1::before,
   h1::after {
@@ -122,17 +120,17 @@ div.quick-access {
   margin-bottom: 0.8rem;
   justify-content: center;
   align-content: center;
-  flex-direction: column;
+  flex-direction: row;
+  /* margin: 1rem auto; */
 
   ul.quick-access-links {
-    display: block;
+    margin: 0;
+    display: inline-block;
     list-style: none;
     background-color: var(--neutral);
-    margin: 1rem auto;
     padding: 0.4rem 1rem;
     border-radius: 1rem;
     color: white;
-
     
     li {
       display: inline-block;
@@ -143,15 +141,11 @@ div.quick-access {
         text-decoration: none;
       }
 
-      a:not([href="#"]):hover,
-      a:not([href="#"]):focus {
-        color: var(--miku-gold);
-      }
-
       a[href="#"] {
         font-weight: bold;
         cursor: default;
       }
+
     }
 
     li+li:before {
@@ -162,7 +156,33 @@ div.quick-access {
       content: "|";
     }
   }
+
+  a.prev, a.next {
+    display: inline-block;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 0.4rem 0.5rem;
+    min-width: 3rem;
+    color: var(--dark-neutral);
+    &[href] { color: var(--miku-red); }
+  }
+  a.prev { text-align: right; }
 }
+
+
+li.prev, li.next {
+  /* background-color: red; */
+  a {
+    color: var(--miku-gold);
+    font-weight: bold;
+    text-decoration: none;
+  }
+  a:not([href="#"]):hover,
+  a:not([href="#"]):focus {
+    color: var(--miku-gold);
+  }
+}
+
 
 /* ------------------ Flex Layout  ------------------ */
 
