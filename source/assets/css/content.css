@@ -39,24 +39,56 @@ header:first-child nav {
   }
 }
 
-h1 {
-  /* font-size: 2rem;
-  line-height: 2rem;
-  padding: 0;
-  font-weight: bold;
-  color: var(--miku-dark-red); */
-  text-align: center;
+/* ------------------ Basic Format ------------------ */
+
+main { padding: 0; margin: 0; }
+
+/* Paragraph spacing */
+section > p, div > p { padding-bottom: 0.8rem; }
+p:last-child { padding-bottom: 0; }
+
+/* Paddings. Needed for :target to work */
+main > h1,
+main > h2, main > h3,
+main > h4, main > div,
+main > p,
+main > section {
+  padding-left: 1.2rem;
+  padding-right: 1.2rem;
+}
+main > section {
+  padding-top: 0.6rem;
+  padding-top: 0.6rem;
+  & > *:first-child { margin-block-start: 0; }
+  & > *:last-child { padding-bottom: 0; }
 }
 
-h1::before,
-h1::after {
-  display: inline-block;
-  content: "";
-  border-top: .2rem solid var(--miku-dark-red);
-  width: 3rem;
-  margin: 0 1rem;
-  transform: translateY(-0.5rem);
+/* Fixing broken UL. All <ul> should be contained by <div> */
+main > ul { margin-left: 1.2rem !important; }
+
+/* -------------------- Headings -------------------- */
+
+@media screen and (min-width: 0px) { /* Small screen */
 }
+
+@media screen and (min-width: 390px) { /* Mobile */
+}
+
+
+
+@media screen and (min-width: 500px) {
+  h1::before,
+  h1::after {
+    display: inline-block;
+    content: "";
+    border-top: .2rem solid var(--miku-dark-red);
+    width: 3rem;
+    margin: 0 1rem;
+    transform: translateY(-0.5rem);
+  }
+}
+
+h1 { text-align: center; }
 
 /* ----------- Anchors & Focus Animation  ----------- */
 
@@ -80,13 +112,13 @@ tr:target th {
 /* --------- Sections & Section Navigation  --------- */
 
 div.quick-access {
-  font-size: 1rem;
   position: sticky;
   top: 0.2rem;
 
   display: flex;
   height: 1.8rem;
   margin-top: 0.5rem;
+  margin-bottom: 0.8rem;
   justify-content: center;
   align-content: center;
   flex-direction: column;
@@ -108,27 +140,28 @@ div.quick-access {
       a {
         color: white;
         text-decoration: none;
-      }  
+      }
+
+      a:not([href="#"]):hover,
+      a:not([href="#"]):focus {
+        color: var(--miku-gold);
+      }
+
+      a[href="#"] {
+        font-weight: bold;
+        cursor: default;
+      }
     }
 
     li+li:before {
-      padding: 0 0.2rem 0 0;
+      display: inline-block;
+      padding-left: 0.2rem;
+      padding-right: 0.2rem;
       color: var(--light-neutral);
       content: "|";
     }
   }
 }
-
-section {
-  padding: 0.8rem;
-  p { padding: 0 0 1rem 0;}
-  p:last-child { padding: 0;}
-  h1, h2, h3, h4 { padding: 0rem; }
-}
-
-/* section[id]:target {
-  padding-top: 2rem;
-} */
 
 /* ------------------ Flex Layout  ------------------ */
 
@@ -146,6 +179,19 @@ div.col-flex {
 }
 
 /* --------------------- Lists  --------------------- */
+
+ul.butterfly {
+  padding-left: 1.8rem;
+}
+
+ul.butterfly li {
+  list-style-image: url("../../images/butterfly-red.svg");
+  margin-bottom: 0.2rem;
+}
+
+ul.butterfly li::marker {
+  font-size: 1.8em;
+}
 
 ul.pagination {
   padding: 0;
@@ -182,46 +228,18 @@ ul.pagination {
   }
 }
 
-ul.timeline {
-  display: block;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-
-  li {
-    display: inline-block;
-
-    a {
-      display: inline-block;
-      padding: 0.2rem 0.2rem;
-      border-radius: 0.2rem;
-      transition: background-color .3s;
-      text-decoration: none !important;
-    }
-
-    a[href="#"] {
-      color: black;
-      font-weight: bold;
-    }
-
-    a[href]:not([href="#"]):hover {
-      background-color: var(--light-neutral);
-    }
-  }
-
-  li+li:before {
-    display: inline-block;
-    padding: 0.2rem 0.2rem;
-    font-weight: bold;
-    color: var(--light-neutral);
-    content: "\203A";
-  }
+ul.timeline li+li:before {
+  display: inline-block;
+  padding-left: 0.2rem;
+  padding-right: 0.2rem;
+  font-weight: bold;
+  content: "\203A" !important
 }
 
 ul.inline-list {
+  display: inline-block;
+  list-style: none;
   padding: 0;
   margin: 0;
-  list-style: none;
-  display: inline-block;
   li { display: inline; }
 }

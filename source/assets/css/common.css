@@ -63,10 +63,6 @@ html {
   font-family: 'Helvetica', 'Arial', sans-serif;
 }
 
-@media screen and (min-width: 500px) {
-  
-}
-
 /* ----------------- General Layout ----------------- */
 
 body { margin: 0;    }
@@ -91,6 +87,10 @@ header:first-child {
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
+}
+
+h1 {
+  font-size: 1.8rem;
   color: var(--miku-dark-red);
   text-shadow:
     1px 1px 4px rgba(124, 26, 32, 0.1),
@@ -98,8 +98,17 @@ h1, h2, h3, h4, h5, h6 {
     3px 5px 4px rgba(124, 26, 32, 0.2)
 }
 
-h1 { font-size: 2rem; }
-h2 { font-size: 1.4rem; }
+h2 {
+  font-size: 1.4rem;
+  color: var(--miku-dark-red);
+  text-shadow:
+    1px 1px 4px rgba(124, 26, 32, 0.1),
+    2px 3px 4px rgba(124, 26, 32, 0.2)
+}
+
+/* h2, h3, h4, h5, h6 {
+
+} */
 
 a {
   color: var(--miku-red);
