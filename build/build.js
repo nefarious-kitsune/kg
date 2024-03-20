@@ -8,3 +8,8 @@ copyStatic('assets/');
 copyStatic('marches/');
 copyStatic('features/');
 copyStatic('territories/');
+
+const elements = ['archer', 'fire', 'ice', 'goblin'];
+
+import {buildElementData} from './heroes/build-data.js';
+elements.forEach((el) => buildElementData(el));
