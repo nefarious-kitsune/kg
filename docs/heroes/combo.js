@@ -121,12 +121,11 @@ function writeTableHeadHTML(selectedCombos) {
     const class2 = combo.names[2].replaceAll('\'', '').replaceAll(' ', '-').toLowerCase();  
   
     const configName = ['Warrior', 'Hunter', 'Miner', ''][combo.role];
-    TableHeadHTML += `<th><div class="config-box"><p>${configName} config</p>`;
-    TableHeadHTML += '<div class="avatars">';
-    TableHeadHTML += `<div class="avatars-item ${class2}"></div>`;
-    TableHeadHTML += `<div class="avatars-item ${class1}"></div>`;
-    TableHeadHTML += `<div class="avatars-item ${class0}"></div>`;
-    TableHeadHTML += '</div></th>\n';
+    TableHeadHTML += `<th><p>${configName} config</p>`;
+    TableHeadHTML += `<div class="hero-avatar ${class2}"></div>`;
+    TableHeadHTML += `<div class="hero-avatar ${class1}"></div>`;
+    TableHeadHTML += `<div class="hero-avatar ${class0}"></div>`;
+    TableHeadHTML += '</th>\n';
   });
 
   return '<thead><tr>\n' + TableHeadHTML + '</tr></thead>\n';
