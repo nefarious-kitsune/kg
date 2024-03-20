@@ -68,12 +68,12 @@
   &.harold    { background-image: url('../heroes/Hero-22.png'); }
   &.rosamond  { background-image: url('../heroes/Hero-23.png'); }
   &.ariza     { background-image: url('../heroes/Hero-24.png'); }
-  &.penny     { background-image: url('../heroes/Hero-25.png'); }
+  &.cosette   { background-image: url('../heroes/Hero-25.png'); }
   &.o-neil    { background-image: url('../heroes/Hero-26.png'); }
   &.sahar     { background-image: url('../heroes/Hero-27.png'); }
   &.dolvar    { background-image: url('../heroes/Hero-28.png'); }
   &.paul      { background-image: url('../heroes/Hero-29.png'); }
-  &.gruen     { background-image: url('../heroes/Hero-30.png'); }
+  &.guren     { background-image: url('../heroes/Hero-30.png'); }
   &.wallis    { background-image: url('../heroes/Hero-31.png'); }
   &.rudolph   { background-image: url('../heroes/Hero-32.png'); }
   &.meniere   { background-image: url('../heroes/Hero-33.png'); }
@@ -95,7 +95,7 @@
   &.tracy     { background-image: url('../heroes/Hero-49.png'); }
   &.miku      { background-image: url('../heroes/Hero-50.png'); }
   &.benjamin  { background-image: url('../heroes/Hero-51.png'); }
-  &.cosette   { background-image: url('../heroes/Hero-52.png'); }
+  &.penny     { background-image: url('../heroes/Hero-52.png'); }
   &.maud      { background-image: url('../heroes/Hero-53.png'); }
   &.giselle   { background-image: url('../heroes/Hero-54.png'); }
   &.wendy     { background-image: url('../heroes/Hero-55.png'); }
