@@ -500,8 +500,8 @@ function calcRating() {
     );
 
     heroData.rating.mining = round(
-        0.5 * (bonus.march / maxBonus.march) +
-        2.0 * (bonus.gathering / maxBonus.gathering) +
+        1.0 * (bonus.march / maxBonus.march) +
+        2.5 * (bonus.gathering / maxBonus.gathering) +
         1.5 * (bonus.load / maxBonus.load),
     );
   });

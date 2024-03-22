@@ -476,7 +476,7 @@
       "attacking": 6,
       "defending": 2,
       "hunting": 3.5,
-      "mining": 1.5
+      "mining": 2
     },
     "acquisition": {
       "normal": 0,
@@ -598,7 +598,7 @@
       "attacking": 10,
       "defending": 6,
       "hunting": 2,
-      "mining": 0.5
+      "mining": 1
     },
     "acquisition": {
       "normal": 0,
@@ -659,7 +659,7 @@
       "attacking": 6.5,
       "defending": 4,
       "hunting": 1.5,
-      "mining": 1
+      "mining": 1.5
     },
     "acquisition": {
       "normal": 0,
@@ -720,7 +720,7 @@
       "attacking": 6.5,
       "defending": 4,
       "hunting": 1.5,
-      "mining": 1
+      "mining": 1.5
     },
     "acquisition": {
       "normal": 0,
@@ -842,7 +842,7 @@
       "attacking": 5.5,
       "defending": 4.5,
       "hunting": 1.5,
-      "mining": 1
+      "mining": 1.5
     },
     "acquisition": {
       "normal": 0,
@@ -903,7 +903,7 @@
       "attacking": 7.5,
       "defending": 3.5,
       "hunting": 2,
-      "mining": 1.5
+      "mining": 2
     },
     "acquisition": {
       "normal": 0,
@@ -964,7 +964,7 @@
       "attacking": 7.5,
       "defending": 3.5,
       "hunting": 2,
-      "mining": 1.5
+      "mining": 2
     },
     "acquisition": {
       "normal": 0,
@@ -1086,7 +1086,7 @@
       "attacking": 4,
       "defending": 1.5,
       "hunting": 1.5,
-      "mining": 2.5
+      "mining": 3
     },
     "acquisition": {
       "normal": 0,
@@ -1328,7 +1328,7 @@
       "attacking": 4.5,
       "defending": 2,
       "hunting": 1.5,
-      "mining": 3.5
+      "mining": 4
     },
     "acquisition": {
       "normal": 0,
@@ -1481,7 +1481,7 @@
       "attacking": 8,
       "defending": 5.5,
       "hunting": 2,
-      "mining": 0.5
+      "mining": 1
     },
     "acquisition": {
       "normal": 0,
@@ -1542,7 +1542,7 @@
       "attacking": 8,
       "defending": 5.5,
       "hunting": 2,
-      "mining": 0.5
+      "mining": 1
     },
     "acquisition": {
       "normal": 0,
@@ -1603,7 +1603,7 @@
       "attacking": 8,
       "defending": 5.5,
       "hunting": 1.5,
-      "mining": 0.5
+      "mining": 1
     },
     "acquisition": {
       "normal": 0,
@@ -1664,7 +1664,7 @@
       "attacking": 8,
       "defending": 5.5,
       "hunting": 1.5,
-      "mining": 0.5
+      "mining": 1
     },
     "acquisition": {
       "normal": 0,
@@ -1908,7 +1908,7 @@
       "attacking": 10,
       "defending": 6,
       "hunting": 2,
-      "mining": 0.5
+      "mining": 1
     },
     "acquisition": {
       "normal": 0,
@@ -2091,7 +2091,7 @@
       "attacking": 6.5,
       "defending": 4,
       "hunting": 1.5,
-      "mining": 1
+      "mining": 1.5
     },
     "acquisition": {
       "normal": 0,
@@ -2152,7 +2152,7 @@
       "attacking": 6.5,
       "defending": 4,
       "hunting": 1.5,
-      "mining": 1
+      "mining": 1.5
     },
     "acquisition": {
       "normal": 0,
@@ -2213,7 +2213,7 @@
       "attacking": 6.5,
       "defending": 4,
       "hunting": 1.5,
-      "mining": 1
+      "mining": 1.5
     },
     "acquisition": {
       "normal": 0,
@@ -2274,7 +2274,7 @@
       "attacking": 7.5,
       "defending": 5,
       "hunting": 1.5,
-      "mining": 1
+      "mining": 1.5
     },
     "acquisition": {
       "normal": 0,
@@ -2335,7 +2335,7 @@
       "attacking": 7.5,
       "defending": 5,
       "hunting": 1.5,
-      "mining": 1
+      "mining": 1.5
     },
     "acquisition": {
       "normal": 0,
@@ -2571,7 +2571,7 @@
       "attacking": 4,
       "defending": 1.5,
       "hunting": 1.5,
-      "mining": 2.5
+      "mining": 3
     },
     "acquisition": {
       "normal": 0,
@@ -2693,7 +2693,7 @@
       "attacking": 7.5,
       "defending": 3.5,
       "hunting": 2,
-      "mining": 1.5
+      "mining": 2
     },
     "acquisition": {
       "normal": 0,
@@ -2809,7 +2809,7 @@
       "attacking": 4,
       "defending": 1.5,
       "hunting": 1.5,
-      "mining": 2.5
+      "mining": 3
     },
     "acquisition": {
       "normal": 0,
@@ -3082,7 +3082,7 @@
       "attacking": 8,
       "defending": 5.5,
       "hunting": 1.5,
-      "mining": 0.5
+      "mining": 1
     },
     "acquisition": {
       "normal": 0,
@@ -3143,7 +3143,7 @@
       "attacking": 8,
       "defending": 5.5,
       "hunting": 1.5,
-      "mining": 0.5
+      "mining": 1
     },
     "acquisition": {
       "normal": 0,
@@ -3387,7 +3387,7 @@
       "attacking": 10,
       "defending": 6,
       "hunting": 2,
-      "mining": 0.5
+      "mining": 1
     },
     "acquisition": {
       "normal": 0,
@@ -3570,7 +3570,7 @@
       "attacking": 6.5,
       "defending": 4,
       "hunting": 1.5,
-      "mining": 1
+      "mining": 1.5
     },
     "acquisition": {
       "normal": 0,
@@ -3631,7 +3631,7 @@
       "attacking": 6.5,
       "defending": 4,
       "hunting": 1.5,
-      "mining": 1
+      "mining": 1.5
     },
     "acquisition": {
       "normal": 0,
@@ -3692,7 +3692,7 @@
       "attacking": 6.5,
       "defending": 4,
       "hunting": 1.5,
-      "mining": 1
+      "mining": 1.5
     },
     "acquisition": {
       "normal": 0,
@@ -3753,7 +3753,7 @@
       "attacking": 6.5,
       "defending": 4,
       "hunting": 1.5,
-      "mining": 1
+      "mining": 1.5
     },
     "acquisition": {
       "normal": 0,
@@ -3814,7 +3814,7 @@
       "attacking": 7.5,
       "defending": 3.5,
       "hunting": 2,
-      "mining": 1.5
+      "mining": 2
     },
     "acquisition": {
       "normal": 0,
@@ -3875,7 +3875,7 @@
       "attacking": 7.5,
       "defending": 3.5,
       "hunting": 2,
-      "mining": 1.5
+      "mining": 2
     },
     "acquisition": {
       "normal": 0,
@@ -4058,7 +4058,7 @@
       "attacking": 4,
       "defending": 1.5,
       "hunting": 1.5,
-      "mining": 2.5
+      "mining": 3
     },
     "acquisition": {
       "normal": 0,
@@ -4119,7 +4119,7 @@
       "attacking": 4,
       "defending": 1.5,
       "hunting": 1.5,
-      "mining": 2.5
+      "mining": 3
     },
     "acquisition": {
       "normal": 0,
@@ -4774,7 +4774,7 @@
       "attacking": 10,
       "defending": 6,
       "hunting": 2,
-      "mining": 0.5
+      "mining": 1
     },
     "acquisition": {
       "normal": 0,
@@ -4835,7 +4835,7 @@
       "attacking": 6.5,
       "defending": 4,
       "hunting": 1.5,
-      "mining": 1
+      "mining": 1.5
     },
     "acquisition": {
       "normal": 0,
@@ -4896,7 +4896,7 @@
       "attacking": 6.5,
       "defending": 4,
       "hunting": 1.5,
-      "mining": 1
+      "mining": 1.5
     },
     "acquisition": {
       "normal": 0,
@@ -4957,7 +4957,7 @@
       "attacking": 5,
       "defending": 3.5,
       "hunting": 1.5,
-      "mining": 1
+      "mining": 1.5
     },
     "acquisition": {
       "normal": 0,
@@ -5140,7 +5140,7 @@
       "attacking": 7.5,
       "defending": 3.5,
       "hunting": 2,
-      "mining": 1.5
+      "mining": 2
     },
     "acquisition": {
       "normal": 0,
@@ -5201,7 +5201,7 @@
       "attacking": 7.5,
       "defending": 3.5,
       "hunting": 2,
-      "mining": 1.5
+      "mining": 2
     },
     "acquisition": {
       "normal": 0,
@@ -5262,7 +5262,7 @@
       "attacking": 6.5,
       "defending": 4,
       "hunting": 2,
-      "mining": 1.5
+      "mining": 2
     },
     "acquisition": {
       "normal": 0,
@@ -5323,7 +5323,7 @@
       "attacking": 4,
       "defending": 1.5,
       "hunting": 1.5,
-      "mining": 2.5
+      "mining": 3
     },
     "acquisition": {
       "normal": 0,
@@ -5384,7 +5384,7 @@
       "attacking": 4,
       "defending": 1.5,
       "hunting": 1.5,
-      "mining": 2.5
+      "mining": 3
     },
     "acquisition": {
       "normal": 0,
