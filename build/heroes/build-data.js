@@ -18,8 +18,9 @@ const ExportPath = resolve(ProjectPath, './docs/heroes/');
 
 /**
  * @typedef {Object} HeroSkill
- * @property {HeroProperty} name - In-game skill name
- * @property {HeroProperty} description - In-game skill description
+ * @property {string} name - In-game skill name
+ * @property {string} description - In-game skill description
+ * @property {string} desc - Short skill description
  * @property {HeroProperty} property - Property that is affected by this skill
  * @property {number} percent - Numerical value of the skill
  * @property {boolean} elemental - For 'unit-power', is this skill elemental?
@@ -107,6 +108,7 @@ function addSkill(data, desc) {
       description:
         'March Speed of the troop on the world map ' +
         `+${value}% (cannot stack)`,
+      desc: desc,
       property: prop,
       percent: value,
       elemental: false,
@@ -124,6 +126,7 @@ function addSkill(data, desc) {
     heroSkill = {
       name: 'First Aid',
       description: `Recovery Speed of wounded units in the troop +${value}%`,
+      desc: desc,
       property: prop,
       percent: value,
       elemental: false,
@@ -141,6 +144,7 @@ function addSkill(data, desc) {
     heroSkill = {
       name: 'Regeneration',
       description: `Recovery of units wounded in battle +${value}%`,
+      desc: desc,
       property: prop,
       percent: value,
       elemental: false,
@@ -160,6 +164,7 @@ function addSkill(data, desc) {
       heroSkill = {
         name: 'Guerrilla Master',
         description: `Power of all units in the troop +${value}%`,
+        desc: desc,
         property: prop,
         percent: value,
         elemental: false,
@@ -169,6 +174,7 @@ function addSkill(data, desc) {
         heroSkill = {
           name: 'Archery Master',
           description: `Power of all Archers in the troops +${value}%`,
+          desc: desc,
           property: prop,
           percent: value,
           elemental: true,
@@ -177,6 +183,7 @@ function addSkill(data, desc) {
         heroSkill = {
           name: 'Blaze Expert',
           description: `Power of all Flame Mages in the troop +${value}%`,
+          desc: desc,
           property: prop,
           percent: value,
           elemental: true,
@@ -187,6 +194,7 @@ function addSkill(data, desc) {
         heroSkill = {
           name: 'Inspiration',
           description: `Power of all Goblins in the troop +${value}%`,
+          desc: desc,
           property: prop,
           percent: value,
           elemental: true,
@@ -209,6 +217,7 @@ function addSkill(data, desc) {
       description:
         `Attacking a monster costs ${value}% less AP. ` +
         'Attacking monsters restore an additional 90% of wounded soldiers',
+      desc: desc,
       property: prop,
       percent: value,
       elemental: false,
@@ -226,6 +235,7 @@ function addSkill(data, desc) {
     heroSkill = {
       name: 'Load',
       description: `Troop Load +${value}%`,
+      desc: desc,
       property: prop,
       percent: value,
       elemental: false,
@@ -243,6 +253,7 @@ function addSkill(data, desc) {
     heroSkill = {
       name: 'Gathering Master',
       description: `Gold Gathering Speed +${value}%`,
+      desc: desc,
       property: prop,
       percent: value,
       elemental: false,
@@ -260,6 +271,7 @@ function addSkill(data, desc) {
     heroSkill = {
       name: 'Overseer',
       description: `Offline Gold Output Speed increases by ${value}%`,
+      desc: desc,
       property: prop,
       percent: value,
       elemental: false,
@@ -276,6 +288,7 @@ function addSkill(data, desc) {
         heroSkill = {
           name: 'Clearcast',
           description: `(TD) Attack Speed of Flame Mages +20%`,
+          desc: desc,
           property: 'TD',
           percent: 0,
           elemental: false,
@@ -285,6 +298,7 @@ function addSkill(data, desc) {
         heroSkill = {
           name: 'Fire Master',
           description: `(TD) Attack of Flame Mages +20%`,
+          desc: desc,
           property: 'TD',
           percent: 0,
           elemental: false,
@@ -294,6 +308,7 @@ function addSkill(data, desc) {
         heroSkill = {
           name: 'Master of Defense',
           description: '(TD) Attack of all units +10%',
+          desc: desc,
           property: 'TD',
           percent: 0,
           elemental: false,
@@ -303,6 +318,7 @@ function addSkill(data, desc) {
         heroSkill = {
           name: 'Rapid Shot',
           description: '(TD) Attack Speed of Archers +15%',
+          desc: desc,
           property: 'TD',
           percent: 0,
           elemental: false,
@@ -312,6 +328,7 @@ function addSkill(data, desc) {
         heroSkill = {
           name: 'Piercing Arrow',
           description: '(TD) Attack of Archers +15%',
+          desc: desc,
           property: 'TD',
           percent: 0,
           elemental: false,
@@ -321,6 +338,7 @@ function addSkill(data, desc) {
         heroSkill = {
           name: 'Enhanced Freeze',
           description: '(TD) Attack of Ice Wizard +20%',
+          desc: desc,
           property: 'TD',
           percent: 0,
           elemental: false,
@@ -330,6 +348,7 @@ function addSkill(data, desc) {
         heroSkill = {
           name: 'Enhanced Freeze',
           description: '(TD) Attack of Ice Wizard +30%',
+          desc: desc,
           property: 'TD',
           percent: 0,
           elemental: false,
@@ -339,6 +358,7 @@ function addSkill(data, desc) {
         heroSkill = {
           name: 'Poison',
           description: '(TD) Attack of Goblins +15%',
+          desc: desc,
           property: 'TD',
           percent: 0,
           elemental: false,
@@ -348,6 +368,7 @@ function addSkill(data, desc) {
         heroSkill = {
           name: 'Orc Counter',
           description: '(TD) This Hero deals +200% damage versus Orc',
+          desc: desc,
           property: 'TD',
           percent: 0,
           elemental: false,
@@ -357,6 +378,7 @@ function addSkill(data, desc) {
         heroSkill = {
           name: 'Orc Curse',
           description: '(TD) Damage versus Orcs +40%',
+          desc: desc,
           property: 'TD',
           percent: 0,
           elemental: false,

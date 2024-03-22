@@ -1,0 +1,77 @@
+<html>
+<!-- <meta-data>
+  <og-image></og-image>
+  <og-desc>
+    Information on skills, means of acquisition, and roles of Fire Mage Heroes
+  </og-desc>
+  <tag-list>heroes</tag-list>
+</meta-data> -->
+<head>
+  <title>Skills of Fire Mage Heroes</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link href="../assets/css/common.css" rel="stylesheet">
+  <link href="../assets/css/content.css" rel="stylesheet">
+  <link href="../assets/css/heroes.css" rel="stylesheet">
+  <link href="./hero-tables.css" rel="stylesheet">
+  <style>.hero-avatar {width: 2rem; height: 2rem;}</style>
+</head>
+
+<body class="content">
+
+<header><nav><ul class="breadcrumb">
+  <li><a href="../content">Home</a></li>
+  <li>Heroes</li>
+  <li>Fire Mage Heroes</li>
+</ul></nav></header>
+
+<main class="content">
+<h1>{{TITLE}}</h1>
+
+<!--
+<div class="quick-access">
+<a class="prev" href="./goblin-heroes">« Archer</a>
+<ul class="quick-access-links">
+  <li><a href="#">Skills</a></li>
+  <li><a href="#">Combat</a></li>
+  <li><a href="#">Utility</a></li>
+  <li><a href="#">How to Get</a></li>
+</ul>
+<a class="next" href="./goblin-heroes">Ice »</a>
+</div>
+-->
+<section id="hero-skills">
+<table class="basic-table hero-skills-table">
+<thead>
+<tr>
+<th class="name-col">Name</th>
+<th class="skill-col">1-Star</th>
+<th class="skill-col">2-Star</th>
+<th class="skill-col">4-Star</th>
+<th class="skill-col">5-Star</th>
+</tr>
+</thead>
+<tbody>
+{{SSR DATA}}
+</tbody>
+</table>
+
+<table class="basic-table hero-skills-table">
+<thead>
+<tr>
+<th class="name-col">Name</th>
+<th class="skill-col">1-Star</th>
+<th class="skill-col">2-Star</th>
+<th class="skill-col">3-Star</th>
+<th class="skill-col">4-Star</th>
+</tr>
+</thead>
+<tbody>
+{{SSR DATA}}
+</tbody>
+</table>
+
+</section>
+
+</main>
+</body>
+</html>
