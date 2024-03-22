@@ -108,7 +108,7 @@
     },
     "rating": {
       "attacking": 7,
-      "defending": 6,
+      "defending": 6.5,
       "hunting": 1.5,
       "mining": 0.5
     },
@@ -169,7 +169,7 @@
     },
     "rating": {
       "attacking": 7,
-      "defending": 6,
+      "defending": 6.5,
       "hunting": 1.5,
       "mining": 0.5
     },
@@ -230,7 +230,7 @@
     },
     "rating": {
       "attacking": 7,
-      "defending": 6,
+      "defending": 6.5,
       "hunting": 1.5,
       "mining": 0.5
     },
@@ -291,7 +291,7 @@
     },
     "rating": {
       "attacking": 7,
-      "defending": 5.5,
+      "defending": 6.5,
       "hunting": 1.5,
       "mining": 0.5
     },
@@ -352,7 +352,7 @@
     },
     "rating": {
       "attacking": 7,
-      "defending": 5.5,
+      "defending": 6,
       "hunting": 1.5,
       "mining": 0.5
     },
@@ -413,7 +413,7 @@
     },
     "rating": {
       "attacking": 6.5,
-      "defending": 4,
+      "defending": 5,
       "hunting": 3,
       "mining": 0.5
     },
@@ -474,7 +474,7 @@
     },
     "rating": {
       "attacking": 6,
-      "defending": 2,
+      "defending": 2.5,
       "hunting": 3.5,
       "mining": 2
     },
@@ -535,7 +535,7 @@
     },
     "rating": {
       "attacking": 4.5,
-      "defending": 2,
+      "defending": 2.5,
       "hunting": 3,
       "mining": 1.5
     },
@@ -596,7 +596,7 @@
     },
     "rating": {
       "attacking": 10,
-      "defending": 6,
+      "defending": 8,
       "hunting": 2,
       "mining": 1
     },
@@ -657,7 +657,7 @@
     },
     "rating": {
       "attacking": 6.5,
-      "defending": 4,
+      "defending": 5,
       "hunting": 1.5,
       "mining": 1.5
     },
@@ -718,7 +718,7 @@
     },
     "rating": {
       "attacking": 6.5,
-      "defending": 4,
+      "defending": 5,
       "hunting": 1.5,
       "mining": 1.5
     },
@@ -779,7 +779,7 @@
     },
     "rating": {
       "attacking": 5.5,
-      "defending": 4.5,
+      "defending": 4,
       "hunting": 1.5,
       "mining": 1.5
     },
@@ -840,7 +840,7 @@
     },
     "rating": {
       "attacking": 5.5,
-      "defending": 4.5,
+      "defending": 4,
       "hunting": 1.5,
       "mining": 1.5
     },
@@ -901,7 +901,7 @@
     },
     "rating": {
       "attacking": 7.5,
-      "defending": 3.5,
+      "defending": 4.5,
       "hunting": 2,
       "mining": 2
     },
@@ -962,7 +962,7 @@
     },
     "rating": {
       "attacking": 7.5,
-      "defending": 3.5,
+      "defending": 4.5,
       "hunting": 2,
       "mining": 2
     },
@@ -1023,7 +1023,7 @@
     },
     "rating": {
       "attacking": 4.5,
-      "defending": 2.5,
+      "defending": 3,
       "hunting": 1.5,
       "mining": 1.5
     },
@@ -1084,7 +1084,7 @@
     },
     "rating": {
       "attacking": 4,
-      "defending": 1.5,
+      "defending": 2,
       "hunting": 1.5,
       "mining": 3
     },
@@ -1143,7 +1143,7 @@
     },
     "rating": {
       "attacking": 4,
-      "defending": 1.5,
+      "defending": 2,
       "hunting": 1.5,
       "mining": 1
     },
@@ -1326,7 +1326,7 @@
     },
     "rating": {
       "attacking": 4.5,
-      "defending": 2,
+      "defending": 2.5,
       "hunting": 1.5,
       "mining": 4
     },
@@ -1373,7 +1373,7 @@
     },
     "rating": {
       "attacking": 1,
-      "defending": 1,
+      "defending": 1.5,
       "hunting": 1.5,
       "mining": 0
     },
@@ -1418,7 +1418,7 @@
     },
     "rating": {
       "attacking": 1,
-      "defending": 1,
+      "defending": 1.5,
       "hunting": 0,
       "mining": 0
     },
@@ -1479,7 +1479,7 @@
     },
     "rating": {
       "attacking": 8,
-      "defending": 5.5,
+      "defending": 6,
       "hunting": 2,
       "mining": 1
     },
@@ -1540,7 +1540,7 @@
     },
     "rating": {
       "attacking": 8,
-      "defending": 5.5,
+      "defending": 6,
       "hunting": 2,
       "mining": 1
     },
@@ -1601,7 +1601,7 @@
     },
     "rating": {
       "attacking": 8,
-      "defending": 5.5,
+      "defending": 6.5,
       "hunting": 1.5,
       "mining": 1
     },
@@ -1662,7 +1662,7 @@
     },
     "rating": {
       "attacking": 8,
-      "defending": 5.5,
+      "defending": 6.5,
       "hunting": 1.5,
       "mining": 1
     },
@@ -1723,7 +1723,7 @@
     },
     "rating": {
       "attacking": 7,
-      "defending": 5.5,
+      "defending": 6,
       "hunting": 1.5,
       "mining": 0.5
     },
@@ -1784,7 +1784,7 @@
     },
     "rating": {
       "attacking": 6,
-      "defending": 4,
+      "defending": 5,
       "hunting": 4,
       "mining": 0.5
     },
@@ -1845,7 +1845,7 @@
     },
     "rating": {
       "attacking": 6.5,
-      "defending": 4,
+      "defending": 5,
       "hunting": 3,
       "mining": 0.5
     },
@@ -1906,7 +1906,7 @@
     },
     "rating": {
       "attacking": 10,
-      "defending": 6,
+      "defending": 8,
       "hunting": 2,
       "mining": 1
     },
@@ -1967,7 +1967,7 @@
     },
     "rating": {
       "attacking": 6,
-      "defending": 5.5,
+      "defending": 5,
       "hunting": 1.5,
       "mining": 2
     },
@@ -2028,7 +2028,7 @@
     },
     "rating": {
       "attacking": 6,
-      "defending": 5.5,
+      "defending": 5,
       "hunting": 1.5,
       "mining": 1.5
     },
@@ -2089,7 +2089,7 @@
     },
     "rating": {
       "attacking": 6.5,
-      "defending": 4,
+      "defending": 5,
       "hunting": 1.5,
       "mining": 1.5
     },
@@ -2150,7 +2150,7 @@
     },
     "rating": {
       "attacking": 6.5,
-      "defending": 4,
+      "defending": 5,
       "hunting": 1.5,
       "mining": 1.5
     },
@@ -2211,7 +2211,7 @@
     },
     "rating": {
       "attacking": 6.5,
-      "defending": 4,
+      "defending": 5,
       "hunting": 1.5,
       "mining": 1.5
     },
@@ -2272,7 +2272,7 @@
     },
     "rating": {
       "attacking": 7.5,
-      "defending": 5,
+      "defending": 6.5,
       "hunting": 1.5,
       "mining": 1.5
     },
@@ -2333,7 +2333,7 @@
     },
     "rating": {
       "attacking": 7.5,
-      "defending": 5,
+      "defending": 6.5,
       "hunting": 1.5,
       "mining": 1.5
     },
@@ -2447,7 +2447,7 @@
     },
     "rating": {
       "attacking": 4,
-      "defending": 3.5,
+      "defending": 3,
       "hunting": 1,
       "mining": 0.5
     },
@@ -2508,7 +2508,7 @@
     },
     "rating": {
       "attacking": 4,
-      "defending": 5.5,
+      "defending": 6,
       "hunting": 0,
       "mining": 1
     },
@@ -2569,7 +2569,7 @@
     },
     "rating": {
       "attacking": 4,
-      "defending": 1.5,
+      "defending": 2,
       "hunting": 1.5,
       "mining": 3
     },
@@ -2630,7 +2630,7 @@
     },
     "rating": {
       "attacking": 4,
-      "defending": 5.5,
+      "defending": 6,
       "hunting": 0,
       "mining": 1
     },
@@ -2691,7 +2691,7 @@
     },
     "rating": {
       "attacking": 7.5,
-      "defending": 3.5,
+      "defending": 4.5,
       "hunting": 2,
       "mining": 2
     },
@@ -2807,7 +2807,7 @@
     },
     "rating": {
       "attacking": 4,
-      "defending": 1.5,
+      "defending": 2,
       "hunting": 1.5,
       "mining": 3
     },
@@ -2852,7 +2852,7 @@
     },
     "rating": {
       "attacking": 1.5,
-      "defending": 1.5,
+      "defending": 2,
       "hunting": 0,
       "mining": 0
     },
@@ -2897,7 +2897,7 @@
     },
     "rating": {
       "attacking": 1.5,
-      "defending": 1.5,
+      "defending": 2,
       "hunting": 0,
       "mining": 0
     },
@@ -2958,7 +2958,7 @@
     },
     "rating": {
       "attacking": 7,
-      "defending": 6,
+      "defending": 6.5,
       "hunting": 1.5,
       "mining": 0.5
     },
@@ -3019,7 +3019,7 @@
     },
     "rating": {
       "attacking": 7,
-      "defending": 6,
+      "defending": 6.5,
       "hunting": 1.5,
       "mining": 0.5
     },
@@ -3080,7 +3080,7 @@
     },
     "rating": {
       "attacking": 8,
-      "defending": 5.5,
+      "defending": 6.5,
       "hunting": 1.5,
       "mining": 1
     },
@@ -3141,7 +3141,7 @@
     },
     "rating": {
       "attacking": 8,
-      "defending": 5.5,
+      "defending": 6.5,
       "hunting": 1.5,
       "mining": 1
     },
@@ -3202,7 +3202,7 @@
     },
     "rating": {
       "attacking": 7,
-      "defending": 5.5,
+      "defending": 6.5,
       "hunting": 1.5,
       "mining": 0.5
     },
@@ -3324,7 +3324,7 @@
     },
     "rating": {
       "attacking": 4,
-      "defending": 2,
+      "defending": 2.5,
       "hunting": 2.5,
       "mining": 1.5
     },
@@ -3385,7 +3385,7 @@
     },
     "rating": {
       "attacking": 10,
-      "defending": 6,
+      "defending": 8,
       "hunting": 2,
       "mining": 1
     },
@@ -3446,7 +3446,7 @@
     },
     "rating": {
       "attacking": 6,
-      "defending": 5.5,
+      "defending": 5,
       "hunting": 1.5,
       "mining": 1.5
     },
@@ -3507,7 +3507,7 @@
     },
     "rating": {
       "attacking": 6,
-      "defending": 5.5,
+      "defending": 5,
       "hunting": 1.5,
       "mining": 1.5
     },
@@ -3568,7 +3568,7 @@
     },
     "rating": {
       "attacking": 6.5,
-      "defending": 4,
+      "defending": 5,
       "hunting": 1.5,
       "mining": 1.5
     },
@@ -3629,7 +3629,7 @@
     },
     "rating": {
       "attacking": 6.5,
-      "defending": 4,
+      "defending": 5,
       "hunting": 1.5,
       "mining": 1.5
     },
@@ -3690,7 +3690,7 @@
     },
     "rating": {
       "attacking": 6.5,
-      "defending": 4,
+      "defending": 5,
       "hunting": 1.5,
       "mining": 1.5
     },
@@ -3751,7 +3751,7 @@
     },
     "rating": {
       "attacking": 6.5,
-      "defending": 4,
+      "defending": 5,
       "hunting": 1.5,
       "mining": 1.5
     },
@@ -3812,7 +3812,7 @@
     },
     "rating": {
       "attacking": 7.5,
-      "defending": 3.5,
+      "defending": 4.5,
       "hunting": 2,
       "mining": 2
     },
@@ -3873,7 +3873,7 @@
     },
     "rating": {
       "attacking": 7.5,
-      "defending": 3.5,
+      "defending": 4.5,
       "hunting": 2,
       "mining": 2
     },
@@ -3934,7 +3934,7 @@
     },
     "rating": {
       "attacking": 6,
-      "defending": 3.5,
+      "defending": 4.5,
       "hunting": 1.5,
       "mining": 1.5
     },
@@ -3995,7 +3995,7 @@
     },
     "rating": {
       "attacking": 4,
-      "defending": 1.5,
+      "defending": 2,
       "hunting": 1.5,
       "mining": 1
     },
@@ -4056,7 +4056,7 @@
     },
     "rating": {
       "attacking": 4,
-      "defending": 1.5,
+      "defending": 2,
       "hunting": 1.5,
       "mining": 3
     },
@@ -4117,7 +4117,7 @@
     },
     "rating": {
       "attacking": 4,
-      "defending": 1.5,
+      "defending": 2,
       "hunting": 1.5,
       "mining": 3
     },
@@ -4172,7 +4172,7 @@
     },
     "rating": {
       "attacking": 2,
-      "defending": 3.5,
+      "defending": 3,
       "hunting": 0,
       "mining": 1
     },
@@ -4284,7 +4284,7 @@
     },
     "rating": {
       "attacking": 7.5,
-      "defending": 5,
+      "defending": 6.5,
       "hunting": 1.5,
       "mining": 0.5
     },
@@ -4345,7 +4345,7 @@
     },
     "rating": {
       "attacking": 7.5,
-      "defending": 5,
+      "defending": 6.5,
       "hunting": 1.5,
       "mining": 0.5
     },
@@ -4406,7 +4406,7 @@
     },
     "rating": {
       "attacking": 7,
-      "defending": 6,
+      "defending": 6.5,
       "hunting": 1.5,
       "mining": 0.5
     },
@@ -4467,7 +4467,7 @@
     },
     "rating": {
       "attacking": 7,
-      "defending": 6,
+      "defending": 6.5,
       "hunting": 1.5,
       "mining": 0.5
     },
@@ -4528,7 +4528,7 @@
     },
     "rating": {
       "attacking": 7,
-      "defending": 5.5,
+      "defending": 6.5,
       "hunting": 1.5,
       "mining": 0.5
     },
@@ -4589,7 +4589,7 @@
     },
     "rating": {
       "attacking": 6.5,
-      "defending": 4,
+      "defending": 5,
       "hunting": 3,
       "mining": 0.5
     },
@@ -4650,7 +4650,7 @@
     },
     "rating": {
       "attacking": 6.5,
-      "defending": 4,
+      "defending": 5,
       "hunting": 3,
       "mining": 0.5
     },
@@ -4711,7 +4711,7 @@
     },
     "rating": {
       "attacking": 6,
-      "defending": 4,
+      "defending": 5,
       "hunting": 2.5,
       "mining": 0.5
     },
@@ -4772,7 +4772,7 @@
     },
     "rating": {
       "attacking": 10,
-      "defending": 6,
+      "defending": 8,
       "hunting": 2,
       "mining": 1
     },
@@ -4833,7 +4833,7 @@
     },
     "rating": {
       "attacking": 6.5,
-      "defending": 4,
+      "defending": 5,
       "hunting": 1.5,
       "mining": 1.5
     },
@@ -4894,7 +4894,7 @@
     },
     "rating": {
       "attacking": 6.5,
-      "defending": 4,
+      "defending": 5,
       "hunting": 1.5,
       "mining": 1.5
     },
@@ -5016,7 +5016,7 @@
     },
     "rating": {
       "attacking": 6.5,
-      "defending": 4,
+      "defending": 5,
       "hunting": 1.5,
       "mining": 1
     },
@@ -5077,7 +5077,7 @@
     },
     "rating": {
       "attacking": 5,
-      "defending": 3.5,
+      "defending": 3,
       "hunting": 1.5,
       "mining": 0.5
     },
@@ -5138,7 +5138,7 @@
     },
     "rating": {
       "attacking": 7.5,
-      "defending": 3.5,
+      "defending": 4.5,
       "hunting": 2,
       "mining": 2
     },
@@ -5199,7 +5199,7 @@
     },
     "rating": {
       "attacking": 7.5,
-      "defending": 3.5,
+      "defending": 4.5,
       "hunting": 2,
       "mining": 2
     },
@@ -5321,7 +5321,7 @@
     },
     "rating": {
       "attacking": 4,
-      "defending": 1.5,
+      "defending": 2,
       "hunting": 1.5,
       "mining": 3
     },
@@ -5382,7 +5382,7 @@
     },
     "rating": {
       "attacking": 4,
-      "defending": 1.5,
+      "defending": 2,
       "hunting": 1.5,
       "mining": 3
     },
@@ -5441,7 +5441,7 @@
     },
     "rating": {
       "attacking": 4,
-      "defending": 1.5,
+      "defending": 2,
       "hunting": 1.5,
       "mining": 1
     },

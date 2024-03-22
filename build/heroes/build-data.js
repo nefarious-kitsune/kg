@@ -479,6 +479,11 @@ function calcRating() {
     // Round to nearest 0.5
     const round = (num) => Math.round(num*2)/2;
 
+    // Rating of a hero's ability in ATTACKING castles and towers, based on
+    //   1) how quickly can the hero reach the target (Rapid March),
+    //   2) can the hero defend home city after returning? (Regeneration),
+    //   3) unit-power boost (Guerrilla Master)
+    //   4) saving on healing scroll (First Aid)
     const attackRating = round(
         4 * (bonus.march / maxBonus.march) +
         3 * (bonus.regeneration / maxBonus.regeneration) +
@@ -488,10 +493,14 @@ function calcRating() {
 
     heroData.rating.attacking = Math.min(10, attackRating);
 
+    // Rating of a hero's ability in DEFENDING towers, based on
+    //   1) health recovered after a successful defense? (Regeneration),
+    //   2) unit-power boost (Guerrilla Master)
+    //   3) saving on healing scroll (First Aid)
     heroData.rating.defending = round(
-        3 * (bonus['unit-power'] / maxBonus['unit-power']) +
-        3 * (bonus.regeneration / maxBonus.regeneration) +
-        3 * (bonus.recovery / maxBonus.recovery),
+        4 * (bonus.regeneration / maxBonus.regeneration) +
+        4 * (bonus['unit-power'] / maxBonus['unit-power']) +
+        2 * (bonus.recovery / maxBonus.recovery),
     );
 
     heroData.rating.hunting = round(
