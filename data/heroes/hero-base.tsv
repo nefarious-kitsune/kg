@@ -1,0 +1,94 @@
+Element	Class	Name	Skill 1	Skill 2	Skill 3	Skill 4	Skill 4	Free-Pick	Crystal	Wheel	Recruitment	
+Archer	SSR	Sahar	March Speed +20%	Unit Power +25% (All)		Recovery +25%	Regeneration +10%	TRUE	TRUE	FALSE		Bounty Hall
+Archer	SSR	Johannes	March Speed +20%	Recovery +20%		Unit Power +20% (All)	Regeneration +10%	TRUE	FALSE	FALSE		
+Archer	SSR	Maya	March Speed +20%	Recovery +20%		Unit Power +20% (All)	Regeneration +10%	TRUE	FALSE	FALSE		
+Archer	SSR	Ptolemy	March Speed +20%	Recovery +20%		Unit Power +20% (All)	Regeneration +10%	TRUE	FALSE	FALSE		
+Archer	SSR	Meg	March Speed +20%	Recovery +15%		Unit Power +25% (All)	Regeneration +10%	TRUE	FALSE	FALSE		
+Archer	SSR	Trist	March Speed +20%	Recovery +15%		Unit Power +20% (All)	Regeneration +10%	TRUE	FALSE	FALSE		
+Archer	SSR	Livia	March Speed +20%	AP Discount 10%		Unit Power +25% (All)	Regeneration +10%	TRUE	TRUE	FALSE		
+Archer	SSR	Pan	March Speed +30%	AP Discount 10%		Load +20%	Regeneration +10%	TRUE	FALSE	FALSE		
+Archer	SSR	Fatima	March Speed +20%	Load +20%		AP Discount 10%	Regeneration +10%	TRUE	FALSE	FALSE		
+Archer	SSR	Padme	March Speed +30%	Unit Power +20% (All)		Unit Power +20% (All)	Regeneration +15%	FALSE	FALSE	FALSE		
+Archer	SSR	Richard	March Speed +20%	Load +15%		Unit Power +25% (All)	Regeneration +10%	TRUE	TRUE	FALSE		
+Archer	SSR	Torvi	March Speed +20%	Load +15%		Unit Power +25% (All)	Regeneration +10%	TRUE	TRUE	FALSE		
+Archer	SSR	O'Neil	March Speed +20%	Load +20%		Unit Power +25% (All)	Recovery +20%	TRUE	TRUE	FALSE		
+Archer	SSR	Ariza	March Speed +20%	Load +15%		Unit Power +25% (All)	Recovery +20%	TRUE	TRUE	FALSE		Bounty Hall
+Archer	SSR	Collin	March Speed +30%	Load +20%		Unit Power +20% (All)	Regeneration +10%	TRUE	FALSE	FALSE		
+Archer	SSR	Sabastian	March Speed +30%	Load +20%		Unit Power +20% (All)	Regeneration +10%	TRUE	FALSE	FALSE		
+Archer	SSR	Gabriel	March Speed +20%	Load +20%		Unit Power +20% (All)	Recovery +10%	TRUE	TRUE	TRUE		Dimension Tunnel
+Archer	SSR	Arthur	March Speed +20%	Offline Gold +20%		Unit Power +20% (All)	Gathering +20%	TRUE	TRUE	TRUE		
+Archer	SSR	Jennifer	March Speed +20%	(TD) Attack +15% (Archer)		Unit Power +20% (All)	Load +10%	TRUE	TRUE	TRUE		Elemental Lord
+Archer	SSR	Kadir	Load +20%	March Speed +20%		Recovery +15%	Regeneration +10%	TRUE	TRUE	FALSE		
+Archer	SSR	Bella	March Speed +20%	Recovery +15%		Load +20%	Regeneration +10%	TRUE	FALSE	FALSE		
+Archer	SSR	Montag	Load +20%	Gathering +20%		March Speed +20%	Regeneration +10%	TRUE	FALSE	FALSE		
+Archer	SR	Harold	(TD) Attack +10% (All)	AP Discount 10%		Unit Power +15% (Archer)		TRUE	FALSE	FALSE		
+Archer	SR	Arwyn	(TD) Attack Speed +15% (Archer)	(TD) Attack +15% (Archer)	Unit Power +15% (Archer)			TRUE	FALSE	FALSE		
+Fire	SSR	Anko	March Speed +30%	Recovery +15%		Unit Power +20% (All)	Regeneration +10%	TRUE	FALSE	FALSE		
+Fire	SSR	Lovelace	March Speed +30%	Recovery +15%		Unit Power +20% (All)	Regeneration +10%	TRUE	FALSE	FALSE		
+Fire	SSR	Erika	March Speed +25%	Recovery +15%		Unit Power +25% (All)	Regeneration +10%	TRUE	TRUE	TRUE		
+Fire	SSR	Daria	March Speed +25%	Recovery +15%		Unit Power +25% (All)	Regeneration +10%	TRUE	FALSE	FALSE		
+Fire	SSR	Vanessa	March Speed +20%	Recovery +15%		Unit Power +20% (All)	Regeneration +10%	TRUE	FALSE	FALSE		
+Fire	SSR	Miku	AP Discount 20%	March Speed +15%		Unit Power +25% (All)	Regeneration +10%	FALSE	FALSE	FALSE		
+Fire	SSR	Giselle	March Speed +20%	AP Discount 10%		Unit Power +25% (All)	Regeneration +10%	TRUE	FALSE	FALSE		
+Fire	SSR	Tracy	March Speed +30%	Unit Power +20% (All)		Unit Power +20% (All)	Regeneration +15%	FALSE	FALSE	FALSE		
+Fire	SSR	Cosette	March Speed +20%	Load +30%		Unit Power +30% (All)	Recovery +25%	TRUE	TRUE	FALSE		Bounty Hall
+Fire	SSR	Paul	March Speed +20%	Load +20%		Unit Power +30% (All)	Recovery +25%	TRUE	TRUE	FALSE		Bounty Hall
+Fire	SSR	Kenshiro	March Speed +20%	Load +15%		Unit Power +25% (All)	Regeneration +10%	TRUE	FALSE	FALSE		
+Fire	SSR	Penny	March Speed +20%	Load +15%		Unit Power +25% (All)	Regeneration +10%	TRUE	FALSE	FALSE		
+Fire	SSR	Christie	March Speed +20%	Load +15%		Unit Power +25% (All)	Regeneration +10%	TRUE	TRUE	FALSE		
+Fire	SSR	Dolvar	March Speed +20%	Load +15%		Unit Power +25% (All)	Regeneration +15%	TRUE	TRUE	FALSE		Bounty Hall
+Fire	SSR	Wallis	March Speed +20%	Load +15%		Unit Power +25% (All)	Regeneration +15%	TRUE	TRUE	FALSE		
+Fire	SSR	Allen	March Speed +20%	Load +10%		Unit Power +25% (All)	Recovery +15%	TRUE	TRUE	TRUE		
+Fire	SSR	Gro	March Speed +15%	Unit Power +20% (Fire)		(TD) Damage vs Orcs +40%	Recovery +15%	TRUE	TRUE	TRUE		Elemental Lord
+Fire	SSR	Dean	Load +15%	Unit Power +20% (All)		Recovery +15%	Regeneration +10%	TRUE	TRUE	FALSE		
+Fire	SSR	Simon	March Speed +20%	Offline Gold +20%		Unit Power +20% (All)	Gathering +20%	TRUE	FALSE	FALSE		
+Fire	SSR	Brie	Load +20%	Recovery +15%		Unit Power +20% (All)	Regeneration +10%	TRUE	FALSE	FALSE		
+Fire	SSR	Apollo	March Speed +30%	Load +20%		Unit Power +20% (All)	Regeneration +10%	TRUE	TRUE	FALSE		
+Fire	SSR	Dain	March Speed +20%	Load +20%		Recovery +15%	Regeneration +10%	TRUE	FALSE	FALSE		
+Fire	SR	Kris	March Speed +20%	Gathering +20%		Unit Power +20% (All)		TRUE	FALSE	FALSE		
+Fire	SR	Ophelia	Unit Power +20% (Fire)		(TD) Attack Speed +20% (Fire)		(TD) Attack +20% (Fire)	TRUE	FALSE	FALSE		
+Fire	SR	Samar	Unit Power +20% (Fire)		(TD) Attack Speed +20% (Fire)		(TD) Attack +20% (Fire)	TRUE	FALSE	FALSE		
+Goblin	SSR	Lilith	March Speed +20%	Recovery +20%		Unit Power +20% (All)	Regeneration +10%	TRUE	FALSE	FALSE		
+Goblin	SSR	Rila	March Speed +20%	Recovery +20%		Unit Power +20% (All)	Regeneration +10%	TRUE	FALSE	FALSE		
+Goblin	SSR	Gruen	March Speed +25%	Recovery +15%		Unit Power +25% (All)	Regeneration +10%	TRUE	TRUE	FALSE		Bounty Hall
+Goblin	SSR	Boudica	March Speed +25%	Recovery +15%		Unit Power +25% (All)	Regeneration +10%	FALSE	FALSE	FALSE		
+Goblin	SSR	Wendy	March Speed +20%	Recovery +15%		Unit Power +25% (All)	Regeneration +10%	TRUE	TRUE	FALSE		
+Goblin	SSR	Luvia	March Speed +20%	Recovery +15%		AP Discount 10%	Regeneration +10%	TRUE	FALSE	FALSE		
+Goblin	SSR	Pythia	AP Discount 10%	March Speed +15%		Load +20%	Regeneration +10%	TRUE	FALSE	FALSE		
+Goblin	SSR	Tumnus	March Speed +30%	Unit Power +20% (All)		Unit Power +20% (All)	Regeneration +15%	FALSE	FALSE	FALSE		
+Goblin	SSR	Rosamond	March Speed +20%	Load +20%		Unit Power +30% (All)	Recovery +25%	TRUE	TRUE	TRUE		Elemental Lord
+Goblin	SSR	Angelina	March Speed +20%	Load +20%		Unit Power +30% (All)	Recovery +25%	FALSE	FALSE	FALSE		
+Goblin	SSR	Arwin	March Speed +20%	Load +15%		Unit Power +25% (All)	Regeneration +10%	TRUE	TRUE	FALSE		
+Goblin	SSR	Benjamin	March Speed +20%	Load +15%		Unit Power +25% (All)	Regeneration +10%	TRUE	TRUE	FALSE		
+Goblin	SSR	Lomax	March Speed +20%	Load +15%		Unit Power +25% (All)	Regeneration +10%	TRUE	TRUE	FALSE		
+Goblin	SSR	Meniere	March Speed +20%	Load +15%		Unit Power +25% (All)	Regeneration +10%	TRUE	TRUE	FALSE		Bounty Hall
+Goblin	SSR	Chiyoko	March Speed +30%	Load +20%		Unit Power +20% (All)	Regeneration +10%	TRUE	FALSE	FALSE		
+Goblin	SSR	Suad	March Speed +30%	Load +20%		Unit Power +20% (All)	Regeneration +10%	TRUE	FALSE	FALSE		
+Goblin	SSR	Blackwell	March Speed +20%	Load +20%		Unit Power +20% (All)	Regeneration +10%	FALSE	FALSE	FALSE		
+Goblin	SSR	Issac	March Speed +20%	Offline Gold +20%		Unit Power +20% (All)	Load +10%	TRUE	TRUE	FALSE		
+Goblin	SSR	Catherine	March Speed +20%	Offline Gold +20%		Unit Power +20% (All)	Gathering +20%	TRUE	TRUE	TRUE		
+Goblin	SSR	Rogers	March Speed +20%	Offline Gold +20%		Unit Power +20% (All)	Gathering +20%	TRUE	FALSE	FALSE		
+Goblin	SSR	Claudia	Offline Gold +20%	Recovery +15%		Unit Power +20% (Goblin)	Load +20%	TRUE	TRUE	FALSE		
+Goblin	SR	Alucard	(TD) Attack +15% (Goblin)	(TD) Damage vs Orcs +200%	Offline Gold +20%			TRUE	FALSE	FALSE		
+Ice	SSR	Ao Deng Ge Ri Le	March Speed +20%	Unit Power +20% (All)		Unit Power +20% (All)	Regeneration +10%	TRUE	FALSE	FALSE		
+Ice	SSR	Judy	March Speed +20%	Unit Power +20% (All)		Unit Power +20% (All)	Regeneration +10%	TRUE	FALSE	FALSE		
+Ice	SSR	Ao Yue	March Speed +20%	Recovery +20%		Unit Power +20% (All)	Regeneration +10%	TRUE	FALSE	FALSE		
+Ice	SSR	Trishy	March Speed +20%	Recovery +20%		Unit Power +20% (All)	Regeneration +10%	TRUE	FALSE	FALSE		
+Ice	SSR	Filius	March Speed +20%	Recovery +15%		Unit Power +25% (All)	Regeneration +10%	TRUE	TRUE	FALSE		
+Ice	SSR	Jessica	March Speed +20%	AP Discount 10%		Unit Power +25% (All)	Regeneration +10%	TRUE	TRUE	FALSE		Bounty Hall
+Ice	SSR	Pedra	March Speed +20%	AP Discount 10%		Unit Power +25% (All)	Regeneration +10%	TRUE	TRUE	FALSE		
+Ice	SSR	Hana	AP Discount 10%	March Speed +15%		Unit Power +25% (All)	Regeneration +10%	TRUE	FALSE	FALSE		
+Ice	SSR	Clarence	March Speed +30%	Unit Power +20% (All)		Unit Power +20% (All)	Regeneration +15%	FALSE	FALSE	FALSE		
+Ice	SSR	Lilani	March Speed +20%	Load +15%		Unit Power +25% (All)	Regeneration +10%	TRUE	TRUE	FALSE		
+Ice	SSR	Parr	March Speed +20%	Load +15%		Unit Power +25% (All)	Regeneration +10%	TRUE	TRUE	FALSE		
+Ice	SSR	Rudolph	March Speed +20%	Load +15%		Unit Power +25% (All)	Recovery +15%	TRUE	TRUE	FALSE		Bounty Hall
+Ice	SSR	Vera	March Speed +20%	Load +10%		Unit Power +25% (All)	Regeneration +10%	TRUE	TRUE	FALSE		
+Ice	SSR	Paula	March Speed +20%	Offline Gold +20%		Unit Power +20% (All)	Recovery +15%	TRUE	TRUE	TRUE		
+Ice	SSR	Keith	March Speed +30%	Load +20%		Unit Power +20% (All)	Regeneration +10%	TRUE	FALSE	FALSE		
+Ice	SSR	Maud	March Speed +30%	Load +20%		Unit Power +20% (All)	Regeneration +10%	TRUE	FALSE	FALSE		
+Ice	SSR	Nathaniel	March Speed +30%	Load +20%		Recovery +15%	Regeneration +10%	TRUE	FALSE	FALSE		
+Ice	SSR	Hadi	March Speed +20%	Offline Gold +20%		Unit Power +20% (All)	Gathering +20%	TRUE	TRUE	TRUE		
+Ice	SSR	Nicole	March Speed +20%	Offline Gold +20%		Unit Power +20% (All)	Gathering +20%	TRUE	TRUE	FALSE		Bounty Hall
+Ice	SSR	Ralph	March Speed +20%	(TD) Attack +30% (Ice)		Unit Power +20% (All)	Load +10%	TRUE	TRUE	TRUE		Elemental Lord
+Ice	SR	Merlin	(TD) Attack +20% (Ice)	(TD) Damage vs Orcs +40%	March Speed +15%			TRUE	FALSE	FALSE		
+								FALSE	FALSE	FALSE		
