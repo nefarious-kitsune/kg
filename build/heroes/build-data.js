@@ -19,8 +19,8 @@ const ExportPath = resolve(ProjectPath, './docs/heroes/');
 /**
  * @typedef {Object} HeroSkill
  * @property {string} name - In-game skill name
- * @property {string} description - In-game skill description
- * @property {string} desc - Short skill description
+ * @property {string} long-description - In-game skill description
+ * @property {string} short-description - Short skill description
  * @property {HeroProperty} property - Property that is affected by this skill
  * @property {number} percent - Numerical value of the skill
  * @property {boolean} elemental - For 'unit-power', is this skill elemental?
@@ -73,327 +73,73 @@ const ExportPath = resolve(ProjectPath, './docs/heroes/');
 
 /** @type {HeroData[]} */
 const HeroBase = [];
+const SkillLookups = new Map();
+
+/**
+ * Load skill lookups
+ */
+function loadSkillLookups() {
+  const tsvFilePath = resolve(DataPath, 'hero-skill-lookup.tsv');
+  const rows = readFileSync(tsvFilePath, {encoding: 'utf8'}).split('\n');
+  rows.forEach((row) => {
+    let [
+      lookupString,
+      skillName,
+      percent,
+      property,
+      elemental,
+      shortDesc,
+      longDesc,
+    ] = row.split('\t');
+
+    // Skip blank line from copy/paste
+    if (lookupString === '') return;
+
+    percent = parseInt(percent);
+
+    shortDesc = shortDesc
+        .replace('{{value}}', percent)
+        .trim();
+
+    longDesc = longDesc
+        .replace('{{value}}', percent)
+        .replace('\\n', '\n')
+        .trim();
+
+    /** @type {HeroSkill} */
+    const heroSkill = {
+      'name': skillName,
+      'long-description': longDesc,
+      'short-description': shortDesc,
+      'property': property,
+      'percent': percent,
+      'elemental': (elemental === 'TRUE'),
+    };
+
+    SkillLookups.set(
+        lookupString.toLowerCase().trim(),
+        heroSkill,
+    );
+  });
+}
 
 /**
  * Add a skill
  * @param {HeroData} data
- * @param {string} desc
+ * @param {string} inputString
  */
-function addSkill(data, desc) {
-  /** @type {HeroSkill} */ let heroSkill;
-  /** @type {string} */ let prefix;
-  /** @type {number} */ let value;
-  /** @type {HeroProperty} */ let prop;
-
-  const desc__ = desc.toLowerCase().trim();
-  if (desc__.length === 0) {
+function addSkill(data, inputString) {
+  const nameLookup = inputString.toLowerCase().trim();
+  if (nameLookup.length === 0) {
     data.skills.push(null);
     return;
   }
-
-  let start = 0;
-  let end = 0;
-  let skip = false;
-
-  prefix = 'march speed +';
-  prop = 'march';
-  if (desc__.startsWith(prefix)) {
-    start = prefix.length;
-    end = start + 2;
-    value = parseInt(desc__.substring(start, end));
-    heroSkill = {
-      name: ['Merlin', 'Gro'].includes(data.name)?
-        'Initiative':
-        'Rapid March',
-      description:
-        'March Speed of the troop on the world map ' +
-        `+${value}% (cannot stack)`,
-      desc: desc,
-      property: prop,
-      percent: value,
-      elemental: false,
-    };
-    data.bonus[prop] += value;
-    skip = true;
-  };
-
-  prefix = 'recovery +';
-  prop = 'recovery';
-  if (!skip && (desc__.startsWith(prefix))) {
-    start = prefix.length;
-    end = start + 2;
-    value = parseInt(desc__.substring(start, end));
-    heroSkill = {
-      name: 'First Aid',
-      description: `Recovery Speed of wounded units in the troop +${value}%`,
-      desc: desc,
-      property: prop,
-      percent: value,
-      elemental: false,
-    };
-    data.bonus[prop] += value;
-    skip = true;
-  };
-
-  prefix = 'regeneration +';
-  prop = 'regeneration';
-  if (!skip && (desc__.startsWith(prefix))) {
-    start = prefix.length;
-    end = start + 2;
-    value = parseInt(desc__.substring(start, end));
-    heroSkill = {
-      name: 'Regeneration',
-      description: `Recovery of units wounded in battle +${value}%`,
-      desc: desc,
-      property: prop,
-      percent: value,
-      elemental: false,
-    };
-    data.bonus[prop] += value;
-    skip = true;
-  };
-
-  prefix = 'unit power +';
-  prop = 'unit-power';
-  if (!skip && (desc__.startsWith(prefix))) {
-    start = prefix.length;
-    end = start + 2;
-    value = parseInt(desc__.substring(start, end));
-    const neutral = desc__.toLowerCase().endsWith('(all)');
-    if (neutral) {
-      heroSkill = {
-        name: 'Guerrilla Master',
-        description: `Power of all units in the troop +${value}%`,
-        desc: desc,
-        property: prop,
-        percent: value,
-        elemental: false,
-      };
-    } else {
-      if (data.element === 'archer') {
-        heroSkill = {
-          name: 'Archery Master',
-          description: `Power of all Archers in the troops +${value}%`,
-          desc: desc,
-          property: prop,
-          percent: value,
-          elemental: true,
-        };
-      } else if (data.element === 'fire') {
-        heroSkill = {
-          name: 'Blaze Expert',
-          description: `Power of all Flame Mages in the troop +${value}%`,
-          desc: desc,
-          property: prop,
-          percent: value,
-          elemental: true,
-        };
-      } else if (data.element === 'ice') {
-        // skip
-      } else if (data.element === 'goblin') { // Claudia
-        heroSkill = {
-          name: 'Inspiration',
-          description: `Power of all Goblins in the troop +${value}%`,
-          desc: desc,
-          property: prop,
-          percent: value,
-          elemental: true,
-        };
-      }
-    }
-
-    data.bonus[prop] += value;
-    skip = true;
-  };
-
-  prefix = 'ap discount ';
-  prop = 'AP';
-  if (!skip && (desc__.startsWith(prefix))) {
-    start = prefix.length;
-    end = start + 2;
-    value = parseInt(desc__.substring(start, end));
-    heroSkill = {
-      name: 'Monster Counter',
-      description:
-        `Attacking a monster costs ${value}% less AP. ` +
-        'Attacking monsters restore an additional 90% of wounded soldiers',
-      desc: desc,
-      property: prop,
-      percent: value,
-      elemental: false,
-    };
-    data.bonus[prop] += value;
-    skip = true;
-  };
-
-  prefix = 'load +';
-  prop = 'load';
-  if (!skip && (desc__.startsWith(prefix))) {
-    start = prefix.length;
-    end = start + 2;
-    value = parseInt(desc__.substring(start, end));
-    heroSkill = {
-      name: 'Load',
-      description: `Troop Load +${value}%`,
-      desc: desc,
-      property: prop,
-      percent: value,
-      elemental: false,
-    };
-    data.bonus[prop] += value;
-    skip = true;
-  };
-
-  prefix = 'gathering +';
-  prop = 'gathering';
-  if (!skip && (desc__.startsWith(prefix))) {
-    start = prefix.length;
-    end = start + 2;
-    value = parseInt(desc__.substring(start, end));
-    heroSkill = {
-      name: 'Gathering Master',
-      description: `Gold Gathering Speed +${value}%`,
-      desc: desc,
-      property: prop,
-      percent: value,
-      elemental: false,
-    };
-    data.bonus[prop] += value;
-    skip = true;
-  };
-
-  prefix = 'offline gold +';
-  prop = 'offline';
-  if (!skip && (desc__.startsWith(prefix))) {
-    start = prefix.length;
-    end = start + 2;
-    value = parseInt(desc__.substring(start, end));
-    heroSkill = {
-      name: 'Overseer',
-      description: `Offline Gold Output Speed increases by ${value}%`,
-      desc: desc,
-      property: prop,
-      percent: value,
-      elemental: false,
-    };
-    data.bonus[prop] += value;
-    skip = true;
-  };
-
-  prefix = '(TD)';
-  prop = 'TD';
-  if (!skip && (desc.startsWith(prefix))) {
-    switch (desc) {
-      case '(TD) Attack Speed +20% (Fire)': // Samar & Ophelia
-        heroSkill = {
-          name: 'Clearcast',
-          description: `(TD) Attack Speed of Flame Mages +20%`,
-          desc: desc,
-          property: 'TD',
-          percent: 0,
-          elemental: false,
-        };
-        break;
-      case '(TD) Attack +20% (Fire)': // Samar & Ophelia
-        heroSkill = {
-          name: 'Fire Master',
-          description: `(TD) Attack of Flame Mages +20%`,
-          desc: desc,
-          property: 'TD',
-          percent: 0,
-          elemental: false,
-        };
-        break;
-      case '(TD) Attack +10% (All)': // Harold
-        heroSkill = {
-          name: 'Master of Defense',
-          description: '(TD) Attack of all units +10%',
-          desc: desc,
-          property: 'TD',
-          percent: 0,
-          elemental: false,
-        };
-        break;
-      case '(TD) Attack Speed +15% (Archer)': // Arwyn
-        heroSkill = {
-          name: 'Rapid Shot',
-          description: '(TD) Attack Speed of Archers +15%',
-          desc: desc,
-          property: 'TD',
-          percent: 0,
-          elemental: false,
-        };
-        break;
-      case '(TD) Attack +15% (Archer)': // Arwyn
-        heroSkill = {
-          name: 'Piercing Arrow',
-          description: '(TD) Attack of Archers +15%',
-          desc: desc,
-          property: 'TD',
-          percent: 0,
-          elemental: false,
-        };
-        break;
-      case '(TD) Attack +20% (Ice)': // Merlin
-        heroSkill = {
-          name: 'Enhanced Freeze',
-          description: '(TD) Attack of Ice Wizard +20%',
-          desc: desc,
-          property: 'TD',
-          percent: 0,
-          elemental: false,
-        };
-        break;
-      case '(TD) Attack +30% (Ice)': // Ralph
-        heroSkill = {
-          name: 'Enhanced Freeze',
-          description: '(TD) Attack of Ice Wizard +30%',
-          desc: desc,
-          property: 'TD',
-          percent: 0,
-          elemental: false,
-        };
-        break;
-      case '(TD) Attack +15% (Goblin)': // Alucard
-        heroSkill = {
-          name: 'Poison',
-          description: '(TD) Attack of Goblins +15%',
-          desc: desc,
-          property: 'TD',
-          percent: 0,
-          elemental: false,
-        };
-        break;
-      case '(TD) Damage vs Orcs +200%': // Alucard
-        heroSkill = {
-          name: 'Orc Counter',
-          description: '(TD) This Hero deals +200% damage versus Orc',
-          desc: desc,
-          property: 'TD',
-          percent: 0,
-          elemental: false,
-        };
-        break;
-      case '(TD) Damage vs Orcs +40%':
-        heroSkill = {
-          name: 'Orc Curse',
-          description: '(TD) Damage versus Orcs +40%',
-          desc: desc,
-          property: 'TD',
-          percent: 0,
-          elemental: false,
-        };
-        break;
-    }
-    heroSkill = {property: prop, percent: 0, elemental: false};
-    skip = true;
-  };
-
-  if (!skip) {
-    console.warn('skill not added:', desc__);
-    data.skills.push(null);
+  if (SkillLookups.has(nameLookup)) {
+    const skill = SkillLookups.get(nameLookup);
+    if (skill.property !== 'TD') data.bonus[skill.prop] += skill.percent;
+    data.skills.push(skill);
   } else {
-    data.skills.push(heroSkill);
+    data.skills.push(null);
   }
 }
 
@@ -608,6 +354,7 @@ function saveRating() {
   writeFileSync(resolve(ExportPath, 'hero-rating.tsv'), content);
 }
 
+loadSkillLookups();
 buildDatabase();
 calcRating();
 saveRating();

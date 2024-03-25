@@ -1,0 +1,37 @@
+Rapid March +30%	Rapid March	30	march	FALSE	March Speed +{{value}}%	March Speed of the troop on the world map +{{value}}% (cannot stack)
+Rapid March +25%	Rapid March	25	march	FALSE	March Speed +{{value}}%	March Speed of the troop on the world map +{{value}}% (cannot stack)
+Rapid March +20%	Rapid March	20	march	FALSE	March Speed +{{value}}%	March Speed of the troop on the world map +{{value}}% (cannot stack)
+Rapid March +15%	Rapid March	15	march	FALSE	March Speed +{{value}}%	March Speed of the troop on the world map +{{value}}% (cannot stack)
+Initiative +15%	Initiative	15	march	FALSE	March Speed +{{value}}%	March Speed of the troop on the world map +{{value}}% (cannot stack)
+Load +5%	Load	5	load	FALSE	Load +{{value}}%	Troop Load +{{value}}%
+Load +10%	Load	10	load	FALSE	Load +{{value}}%	Troop Load +{{value}}%
+Load +15%	Load	15	load	FALSE	Load +{{value}}%	Troop Load +{{value}}%
+Load +20%	Load	20	load	FALSE	Load +{{value}}%	Troop Load +{{value}}%
+Load +30%	Load	30	load	FALSE	Load +{{value}}%	Troop Load +{{value}}%
+Guerrilla Master +20%	Guerrilla Master	20	unit-power	FALSE	Unit Power +{{value}}%	Power of all units in the troop +{{value}}%
+Guerrilla Master +25%	Guerrilla Master	25	unit-power	FALSE	Unit Power +{{value}}%	Power of all units in the troop +{{value}}%
+Guerrilla Master +30%	Guerrilla Master	30	unit-power	FALSE	Unit Power +{{value}}%	Power of all units in the troop +{{value}}%
+Inspiration +20%	Inspiration	20	unit-power	TRUE	Unit Power +{{value}}% (Goblin)	Power of all Goblins in the troop +{{value}}%
+Inspiration +15%	Inspiration	15	unit-power	TRUE	Unit Power +{{value}}% (Goblin)	Power of all Goblins in the troop +{{value}}%
+Archery Master +15%	Archery Master	15	unit-power	TRUE	Unit Power +{{value}}% (Archer)	Power of all Archers in the troops +{{value}}%
+Blaze Expert +20%	Blaze Expert	20	unit-power	TRUE	Unit Power +{{value}}% (Fire)	Power of all Flame Mages in the troop +{{value}}%
+First Aid +10%	First Aid	10	recovery	FALSE	Recovery +{{value}}%	Recovery Speed of wounded units in the troop +{{value}}%
+First Aid +15%	First Aid	15	recovery	FALSE	Recovery +{{value}}%	Recovery Speed of wounded units in the troop +{{value}}%
+First Aid +20%	First Aid	20	recovery	FALSE	Recovery +{{value}}%	Recovery Speed of wounded units in the troop +{{value}}%
+First Aid +25%	First Aid	25	recovery	FALSE	Recovery +{{value}}%	Recovery Speed of wounded units in the troop +{{value}}%
+Regeneration +15%	Regeneration	15	recovery	FALSE	Regeneration +{{value}}%	Recovery of units wounded in battle +{{value}}%
+Regeneration +10%	Regeneration	10	recovery	FALSE	Regeneration +{{value}}%	Recovery of units wounded in battle +{{value}}%
+Monster Counter -20%	Monster Counter	20	AP	FALSE	AP Discount {{value}}%	Attacking a monster costs {{value}}% less AP.\nAttacking monsters restore an additional 90% of wounded soldiers
+Monster Counter -10%	Monster Counter	10	AP	FALSE	AP Discount {{value}}%	Attacking a monster costs {{value}}% less AP.\nAttacking monsters restore an additional 90% of wounded soldiers
+Gathering Master +20%	Gathering Master	20	gathering	FALSE	Gathering +{{value}}%	Gold Gathering Speed +{{value}}%
+Overseer +20%	Overseer	20	offline	FALSE	Offline +{{value}}%	Offline Gold Output Speed increases by {{value}}%
+Clearcast +20%	Clearcast	20	TD	FALSE	Tower Defense	(TD) Attack Speed of Flame Mages +20%
+Fire Master +20%	Fire Master	20	TD	FALSE	Tower Defense	(TD) Attack of Flame Mages +{{value}}%
+Rapid Shot +15%	Rapid Shot	15	TD	FALSE	Tower Defense	(TD) Attack Speed of Archers +{{value}}%
+Enhanced Freeze +20%	Enhanced Freeze	20	TD	FALSE	Tower Defense	(TD) Attack of Ice Wizard +{{value}}%
+Enhanced Freeze +30%	Enhanced Freeze	30	TD	FALSE	Tower Defense	(TD) Attack of Ice Wizard +{{value}}%
+Piercing Arrow +15%	Piercing Arrow	15	TD	FALSE	Tower Defense	(TD) Attack of Archers +{{value}}%
+Master of Defense +10%	Master of Defense	10	TD	FALSE	Tower Defense	(TD) Attack of all units +{{value}}%
+Poison +15%	Poison	15	TD	FALSE	Tower Defense	(TD) Attack of Goblins +{{value}}%
+Orc Counter +200%	Orc Counter	200	TD	FALSE	Tower Defense	(TD) This Hero deals +{{value}}% damage versus Orc
+Orc Curse +40%	Orc Curse	40	TD	FALSE	Tower Defense	(TD) Damage versus Orcs +{{value}}%
