@@ -39,16 +39,15 @@ const ElementHeroData = [
       }
     ],
     'bonus': {
-      'march': 0,
-      'recovery': 0,
+      'march': 20,
+      'recovery': 35,
       'regeneration': 0,
-      'unit-power': 0,
+      'unit-power': 25,
       'elemental': false,
       'AP': 0,
       'gathering': 0,
       'load': 0,
-      'offline': 0,
-      'undefined': null
+      'offline': 0
     },
     'acquisition': {
       'normal': 0,
@@ -59,11 +58,12 @@ const ElementHeroData = [
       'free-pick': true
     },
     'rating': {
-      'attacking': 0,
-      'defending': 0,
-      'hunting': 0,
-      'mining': 0
-    }
+      'attacking': 8,
+      'defending': 5,
+      'hunting': 1,
+      'mining': 1
+    },
+    'tier': 'B'
   },
   {
     'element': 'Archer',
@@ -105,16 +105,15 @@ const ElementHeroData = [
       }
     ],
     'bonus': {
-      'march': 0,
-      'recovery': 0,
+      'march': 20,
+      'recovery': 30,
       'regeneration': 0,
-      'unit-power': 0,
+      'unit-power': 20,
       'elemental': false,
       'AP': 0,
       'gathering': 0,
       'load': 0,
-      'offline': 0,
-      'undefined': null
+      'offline': 0
     },
     'acquisition': {
       'normal': 0,
@@ -125,11 +124,12 @@ const ElementHeroData = [
       'free-pick': true
     },
     'rating': {
-      'attacking': 0,
-      'defending': 0,
-      'hunting': 0,
-      'mining': 0
-    }
+      'attacking': 7.5,
+      'defending': 4.5,
+      'hunting': 1,
+      'mining': 1
+    },
+    'tier': 'B'
   },
   {
     'element': 'Archer',
@@ -171,16 +171,15 @@ const ElementHeroData = [
       }
     ],
     'bonus': {
-      'march': 0,
-      'recovery': 0,
+      'march': 20,
+      'recovery': 30,
       'regeneration': 0,
-      'unit-power': 0,
+      'unit-power': 20,
       'elemental': false,
       'AP': 0,
       'gathering': 0,
       'load': 0,
-      'offline': 0,
-      'undefined': null
+      'offline': 0
     },
     'acquisition': {
       'normal': 0,
@@ -191,11 +190,12 @@ const ElementHeroData = [
       'free-pick': true
     },
     'rating': {
-      'attacking': 0,
-      'defending': 0,
-      'hunting': 0,
-      'mining': 0
-    }
+      'attacking': 7.5,
+      'defending': 4.5,
+      'hunting': 1,
+      'mining': 1
+    },
+    'tier': 'B'
   },
   {
     'element': 'Archer',
@@ -237,16 +237,15 @@ const ElementHeroData = [
       }
     ],
     'bonus': {
-      'march': 0,
-      'recovery': 0,
+      'march': 20,
+      'recovery': 30,
       'regeneration': 0,
-      'unit-power': 0,
+      'unit-power': 20,
       'elemental': false,
       'AP': 0,
       'gathering': 0,
       'load': 0,
-      'offline': 0,
-      'undefined': null
+      'offline': 0
     },
     'acquisition': {
       'normal': 0,
@@ -257,11 +256,12 @@ const ElementHeroData = [
       'free-pick': true
     },
     'rating': {
-      'attacking': 0,
-      'defending': 0,
-      'hunting': 0,
-      'mining': 0
-    }
+      'attacking': 7.5,
+      'defending': 4.5,
+      'hunting': 1,
+      'mining': 1
+    },
+    'tier': 'B'
   },
   {
     'element': 'Archer',
@@ -303,16 +303,15 @@ const ElementHeroData = [
       }
     ],
     'bonus': {
-      'march': 0,
-      'recovery': 0,
+      'march': 20,
+      'recovery': 25,
       'regeneration': 0,
-      'unit-power': 0,
+      'unit-power': 25,
       'elemental': false,
       'AP': 0,
       'gathering': 0,
       'load': 0,
-      'offline': 0,
-      'undefined': null
+      'offline': 0
     },
     'acquisition': {
       'normal': 0,
@@ -323,11 +322,12 @@ const ElementHeroData = [
       'free-pick': true
     },
     'rating': {
-      'attacking': 0,
-      'defending': 0,
-      'hunting': 0,
-      'mining': 0
-    }
+      'attacking': 7.5,
+      'defending': 4.5,
+      'hunting': 1,
+      'mining': 1
+    },
+    'tier': 'B'
   },
   {
     'element': 'Archer',
@@ -369,16 +369,15 @@ const ElementHeroData = [
       }
     ],
     'bonus': {
-      'march': 0,
-      'recovery': 0,
+      'march': 20,
+      'recovery': 25,
       'regeneration': 0,
-      'unit-power': 0,
+      'unit-power': 20,
       'elemental': false,
       'AP': 0,
       'gathering': 0,
       'load': 0,
-      'offline': 0,
-      'undefined': null
+      'offline': 0
     },
     'acquisition': {
       'normal': 0,
@@ -389,11 +388,12 @@ const ElementHeroData = [
       'free-pick': true
     },
     'rating': {
-      'attacking': 0,
-      'defending': 0,
-      'hunting': 0,
-      'mining': 0
-    }
+      'attacking': 7,
+      'defending': 4.5,
+      'hunting': 1,
+      'mining': 1
+    },
+    'tier': 'C'
   },
   {
     'element': 'Archer',
@@ -435,16 +435,15 @@ const ElementHeroData = [
       }
     ],
     'bonus': {
-      'march': 0,
-      'recovery': 0,
+      'march': 20,
+      'recovery': 10,
       'regeneration': 0,
-      'unit-power': 0,
+      'unit-power': 25,
       'elemental': false,
-      'AP': 0,
+      'AP': 10,
       'gathering': 0,
       'load': 0,
-      'offline': 0,
-      'undefined': null
+      'offline': 0
     },
     'acquisition': {
       'normal': 0,
@@ -455,11 +454,12 @@ const ElementHeroData = [
       'free-pick': true
     },
     'rating': {
-      'attacking': 0,
-      'defending': 0,
-      'hunting': 0,
-      'mining': 0
-    }
+      'attacking': 6.5,
+      'defending': 4,
+      'hunting': 3,
+      'mining': 1
+    },
+    'tier': 'C'
   },
   {
     'element': 'Archer',
@@ -501,16 +501,15 @@ const ElementHeroData = [
       }
     ],
     'bonus': {
-      'march': 0,
-      'recovery': 0,
+      'march': 30,
+      'recovery': 10,
       'regeneration': 0,
       'unit-power': 0,
       'elemental': false,
-      'AP': 0,
+      'AP': 10,
       'gathering': 0,
-      'load': 0,
-      'offline': 0,
-      'undefined': null
+      'load': 20,
+      'offline': 0
     },
     'acquisition': {
       'normal': 0,
@@ -521,11 +520,12 @@ const ElementHeroData = [
       'free-pick': true
     },
     'rating': {
-      'attacking': 0,
-      'defending': 0,
-      'hunting': 0,
-      'mining': 0
-    }
+      'attacking': 5.5,
+      'defending': 1,
+      'hunting': 3,
+      'mining': 2
+    },
+    'tier': 'C'
   },
   {
     'element': 'Archer',
@@ -567,16 +567,15 @@ const ElementHeroData = [
       }
     ],
     'bonus': {
-      'march': 0,
-      'recovery': 0,
+      'march': 20,
+      'recovery': 10,
       'regeneration': 0,
       'unit-power': 0,
       'elemental': false,
-      'AP': 0,
+      'AP': 10,
       'gathering': 0,
-      'load': 0,
-      'offline': 0,
-      'undefined': null
+      'load': 20,
+      'offline': 0
     },
     'acquisition': {
       'normal': 0,
@@ -587,11 +586,12 @@ const ElementHeroData = [
       'free-pick': true
     },
     'rating': {
-      'attacking': 0,
-      'defending': 0,
-      'hunting': 0,
-      'mining': 0
-    }
+      'attacking': 4.5,
+      'defending': 1,
+      'hunting': 3,
+      'mining': 2
+    },
+    'tier': 'D'
   },
   {
     'element': 'Archer',
@@ -633,16 +633,15 @@ const ElementHeroData = [
       }
     ],
     'bonus': {
-      'march': 0,
-      'recovery': 0,
+      'march': 30,
+      'recovery': 15,
       'regeneration': 0,
-      'unit-power': 0,
+      'unit-power': 40,
       'elemental': false,
       'AP': 0,
       'gathering': 0,
       'load': 0,
-      'offline': 0,
-      'undefined': null
+      'offline': 0
     },
     'acquisition': {
       'normal': 0,
@@ -653,11 +652,12 @@ const ElementHeroData = [
       'free-pick': false
     },
     'rating': {
-      'attacking': 0,
-      'defending': 0,
-      'hunting': 0,
-      'mining': 0
-    }
+      'attacking': 8.5,
+      'defending': 5,
+      'hunting': 1,
+      'mining': 1
+    },
+    'tier': 'A'
   },
   {
     'element': 'Archer',
@@ -699,16 +699,15 @@ const ElementHeroData = [
       }
     ],
     'bonus': {
-      'march': 0,
-      'recovery': 0,
+      'march': 20,
+      'recovery': 10,
       'regeneration': 0,
-      'unit-power': 0,
+      'unit-power': 25,
       'elemental': false,
       'AP': 0,
       'gathering': 0,
-      'load': 0,
-      'offline': 0,
-      'undefined': null
+      'load': 15,
+      'offline': 0
     },
     'acquisition': {
       'normal': 0,
@@ -719,11 +718,12 @@ const ElementHeroData = [
       'free-pick': true
     },
     'rating': {
-      'attacking': 0,
-      'defending': 0,
-      'hunting': 0,
-      'mining': 0
-    }
+      'attacking': 6.5,
+      'defending': 4,
+      'hunting': 1,
+      'mining': 1.5
+    },
+    'tier': 'C'
   },
   {
     'element': 'Archer',
@@ -765,16 +765,15 @@ const ElementHeroData = [
       }
     ],
     'bonus': {
-      'march': 0,
-      'recovery': 0,
+      'march': 20,
+      'recovery': 10,
       'regeneration': 0,
-      'unit-power': 0,
+      'unit-power': 25,
       'elemental': false,
       'AP': 0,
       'gathering': 0,
-      'load': 0,
-      'offline': 0,
-      'undefined': null
+      'load': 15,
+      'offline': 0
     },
     'acquisition': {
       'normal': 0,
@@ -785,11 +784,12 @@ const ElementHeroData = [
       'free-pick': true
     },
     'rating': {
-      'attacking': 0,
-      'defending': 0,
-      'hunting': 0,
-      'mining': 0
-    }
+      'attacking': 6.5,
+      'defending': 4,
+      'hunting': 1,
+      'mining': 1.5
+    },
+    'tier': 'C'
   },
   {
     'element': 'Archer',
@@ -831,16 +831,15 @@ const ElementHeroData = [
       }
     ],
     'bonus': {
-      'march': 0,
-      'recovery': 0,
+      'march': 20,
+      'recovery': 20,
       'regeneration': 0,
-      'unit-power': 0,
+      'unit-power': 25,
       'elemental': false,
       'AP': 0,
       'gathering': 0,
-      'load': 0,
-      'offline': 0,
-      'undefined': null
+      'load': 20,
+      'offline': 0
     },
     'acquisition': {
       'normal': 0,
@@ -851,11 +850,12 @@ const ElementHeroData = [
       'free-pick': true
     },
     'rating': {
-      'attacking': 0,
-      'defending': 0,
-      'hunting': 0,
-      'mining': 0
-    }
+      'attacking': 7,
+      'defending': 4.5,
+      'hunting': 1,
+      'mining': 2
+    },
+    'tier': 'B'
   },
   {
     'element': 'Archer',
@@ -897,16 +897,15 @@ const ElementHeroData = [
       }
     ],
     'bonus': {
-      'march': 0,
-      'recovery': 0,
+      'march': 20,
+      'recovery': 20,
       'regeneration': 0,
-      'unit-power': 0,
+      'unit-power': 25,
       'elemental': false,
       'AP': 0,
       'gathering': 0,
-      'load': 0,
-      'offline': 0,
-      'undefined': null
+      'load': 15,
+      'offline': 0
     },
     'acquisition': {
       'normal': 0,
@@ -917,11 +916,12 @@ const ElementHeroData = [
       'free-pick': true
     },
     'rating': {
-      'attacking': 0,
-      'defending': 0,
-      'hunting': 0,
-      'mining': 0
-    }
+      'attacking': 7,
+      'defending': 4.5,
+      'hunting': 1,
+      'mining': 1.5
+    },
+    'tier': 'C'
   },
   {
     'element': 'Archer',
@@ -963,16 +963,15 @@ const ElementHeroData = [
       }
     ],
     'bonus': {
-      'march': 0,
-      'recovery': 0,
+      'march': 30,
+      'recovery': 10,
       'regeneration': 0,
-      'unit-power': 0,
+      'unit-power': 20,
       'elemental': false,
       'AP': 0,
       'gathering': 0,
-      'load': 0,
-      'offline': 0,
-      'undefined': null
+      'load': 20,
+      'offline': 0
     },
     'acquisition': {
       'normal': 0,
@@ -983,11 +982,12 @@ const ElementHeroData = [
       'free-pick': true
     },
     'rating': {
-      'attacking': 0,
-      'defending': 0,
-      'hunting': 0,
-      'mining': 0
-    }
+      'attacking': 7.5,
+      'defending': 3.5,
+      'hunting': 1,
+      'mining': 2
+    },
+    'tier': 'B'
   },
   {
     'element': 'Archer',
@@ -1029,16 +1029,15 @@ const ElementHeroData = [
       }
     ],
     'bonus': {
-      'march': 0,
-      'recovery': 0,
+      'march': 30,
+      'recovery': 10,
       'regeneration': 0,
-      'unit-power': 0,
+      'unit-power': 20,
       'elemental': false,
       'AP': 0,
       'gathering': 0,
-      'load': 0,
-      'offline': 0,
-      'undefined': null
+      'load': 20,
+      'offline': 0
     },
     'acquisition': {
       'normal': 0,
@@ -1049,11 +1048,12 @@ const ElementHeroData = [
       'free-pick': true
     },
     'rating': {
-      'attacking': 0,
-      'defending': 0,
-      'hunting': 0,
-      'mining': 0
-    }
+      'attacking': 7.5,
+      'defending': 3.5,
+      'hunting': 1,
+      'mining': 2
+    },
+    'tier': 'B'
   },
   {
     'element': 'Archer',
@@ -1095,16 +1095,15 @@ const ElementHeroData = [
       }
     ],
     'bonus': {
-      'march': 0,
-      'recovery': 0,
+      'march': 20,
+      'recovery': 10,
       'regeneration': 0,
-      'unit-power': 0,
+      'unit-power': 20,
       'elemental': false,
       'AP': 0,
       'gathering': 0,
-      'load': 0,
-      'offline': 0,
-      'undefined': null
+      'load': 20,
+      'offline': 0
     },
     'acquisition': {
       'normal': 0,
@@ -1115,11 +1114,12 @@ const ElementHeroData = [
       'free-pick': true
     },
     'rating': {
-      'attacking': 0,
-      'defending': 0,
-      'hunting': 0,
-      'mining': 0
-    }
+      'attacking': 6.5,
+      'defending': 3.5,
+      'hunting': 1,
+      'mining': 2
+    },
+    'tier': 'C'
   },
   {
     'element': 'Archer',
@@ -1161,16 +1161,15 @@ const ElementHeroData = [
       }
     ],
     'bonus': {
-      'march': 0,
+      'march': 20,
       'recovery': 0,
       'regeneration': 0,
-      'unit-power': 0,
+      'unit-power': 20,
       'elemental': false,
       'AP': 0,
-      'gathering': 0,
+      'gathering': 20,
       'load': 0,
-      'offline': 0,
-      'undefined': null
+      'offline': 20
     },
     'acquisition': {
       'normal': 0,
@@ -1181,11 +1180,12 @@ const ElementHeroData = [
       'free-pick': true
     },
     'rating': {
-      'attacking': 0,
-      'defending': 0,
-      'hunting': 0,
-      'mining': 0
-    }
+      'attacking': 5,
+      'defending': 2.5,
+      'hunting': 1,
+      'mining': 3.5
+    },
+    'tier': 'D'
   },
   {
     'element': 'Archer',
@@ -1227,16 +1227,15 @@ const ElementHeroData = [
       }
     ],
     'bonus': {
-      'march': 0,
+      'march': 20,
       'recovery': 0,
       'regeneration': 0,
-      'unit-power': 0,
+      'unit-power': 20,
       'elemental': false,
       'AP': 0,
       'gathering': 0,
-      'load': 0,
-      'offline': 0,
-      'undefined': null
+      'load': 10,
+      'offline': 0
     },
     'acquisition': {
       'normal': 0,
@@ -1247,11 +1246,12 @@ const ElementHeroData = [
       'free-pick': true
     },
     'rating': {
-      'attacking': 0,
-      'defending': 0,
-      'hunting': 0,
-      'mining': 0
-    }
+      'attacking': 5,
+      'defending': 2.5,
+      'hunting': 1,
+      'mining': 1.5
+    },
+    'tier': 'D'
   },
   {
     'element': 'Archer',
@@ -1293,16 +1293,15 @@ const ElementHeroData = [
       }
     ],
     'bonus': {
-      'march': 0,
-      'recovery': 0,
+      'march': 20,
+      'recovery': 25,
       'regeneration': 0,
       'unit-power': 0,
       'elemental': false,
       'AP': 0,
       'gathering': 0,
-      'load': 0,
-      'offline': 0,
-      'undefined': null
+      'load': 20,
+      'offline': 0
     },
     'acquisition': {
       'normal': 0,
@@ -1313,11 +1312,12 @@ const ElementHeroData = [
       'free-pick': true
     },
     'rating': {
-      'attacking': 0,
-      'defending': 0,
-      'hunting': 0,
-      'mining': 0
-    }
+      'attacking': 5,
+      'defending': 1.5,
+      'hunting': 1,
+      'mining': 2
+    },
+    'tier': 'D'
   },
   {
     'element': 'Archer',
@@ -1359,16 +1359,15 @@ const ElementHeroData = [
       }
     ],
     'bonus': {
-      'march': 0,
-      'recovery': 0,
+      'march': 20,
+      'recovery': 25,
       'regeneration': 0,
       'unit-power': 0,
       'elemental': false,
       'AP': 0,
       'gathering': 0,
-      'load': 0,
-      'offline': 0,
-      'undefined': null
+      'load': 20,
+      'offline': 0
     },
     'acquisition': {
       'normal': 0,
@@ -1379,11 +1378,12 @@ const ElementHeroData = [
       'free-pick': true
     },
     'rating': {
-      'attacking': 0,
-      'defending': 0,
-      'hunting': 0,
-      'mining': 0
-    }
+      'attacking': 5,
+      'defending': 1.5,
+      'hunting': 1,
+      'mining': 2
+    },
+    'tier': 'D'
   },
   {
     'element': 'Archer',
@@ -1425,16 +1425,15 @@ const ElementHeroData = [
       }
     ],
     'bonus': {
-      'march': 0,
-      'recovery': 0,
+      'march': 20,
+      'recovery': 10,
       'regeneration': 0,
       'unit-power': 0,
       'elemental': false,
       'AP': 0,
-      'gathering': 0,
-      'load': 0,
-      'offline': 0,
-      'undefined': null
+      'gathering': 20,
+      'load': 20,
+      'offline': 0
     },
     'acquisition': {
       'normal': 0,
@@ -1445,11 +1444,12 @@ const ElementHeroData = [
       'free-pick': true
     },
     'rating': {
-      'attacking': 0,
-      'defending': 0,
-      'hunting': 0,
-      'mining': 0
-    }
+      'attacking': 4.5,
+      'defending': 1,
+      'hunting': 1,
+      'mining': 4.5
+    },
+    'tier': 'D'
   },
   {
     'element': 'Archer',
@@ -1487,13 +1487,12 @@ const ElementHeroData = [
       'march': 0,
       'recovery': 0,
       'regeneration': 0,
-      'unit-power': 0,
+      'unit-power': 15,
       'elemental': false,
-      'AP': 0,
+      'AP': 10,
       'gathering': 0,
       'load': 0,
-      'offline': 0,
-      'undefined': null
+      'offline': 0
     },
     'acquisition': {
       'normal': 0,
@@ -1504,11 +1503,12 @@ const ElementHeroData = [
       'free-pick': true
     },
     'rating': {
-      'attacking': 0,
-      'defending': 0,
-      'hunting': 0,
+      'attacking': 2,
+      'defending': 2.5,
+      'hunting': 2,
       'mining': 0
-    }
+    },
+    'tier': 'E'
   },
   {
     'element': 'Archer',
@@ -1546,13 +1546,12 @@ const ElementHeroData = [
       'march': 0,
       'recovery': 0,
       'regeneration': 0,
-      'unit-power': 0,
+      'unit-power': 15,
       'elemental': false,
       'AP': 0,
       'gathering': 0,
       'load': 0,
-      'offline': 0,
-      'undefined': null
+      'offline': 0
     },
     'acquisition': {
       'normal': 0,
@@ -1563,11 +1562,12 @@ const ElementHeroData = [
       'free-pick': true
     },
     'rating': {
-      'attacking': 0,
-      'defending': 0,
+      'attacking': 2,
+      'defending': 2.5,
       'hunting': 0,
       'mining': 0
-    }
+    },
+    'tier': 'E'
   },
   {
     'element': 'Fire',
@@ -1609,16 +1609,15 @@ const ElementHeroData = [
       }
     ],
     'bonus': {
-      'march': 0,
-      'recovery': 0,
+      'march': 30,
+      'recovery': 25,
       'regeneration': 0,
-      'unit-power': 0,
+      'unit-power': 20,
       'elemental': false,
       'AP': 0,
       'gathering': 0,
       'load': 0,
-      'offline': 0,
-      'undefined': null
+      'offline': 0
     },
     'acquisition': {
       'normal': 0,
@@ -1629,11 +1628,12 @@ const ElementHeroData = [
       'free-pick': true
     },
     'rating': {
-      'attacking': 0,
-      'defending': 0,
-      'hunting': 0,
-      'mining': 0
-    }
+      'attacking': 8,
+      'defending': 4.5,
+      'hunting': 1,
+      'mining': 1
+    },
+    'tier': 'B'
   },
   {
     'element': 'Fire',
@@ -1675,16 +1675,15 @@ const ElementHeroData = [
       }
     ],
     'bonus': {
-      'march': 0,
-      'recovery': 0,
+      'march': 30,
+      'recovery': 25,
       'regeneration': 0,
-      'unit-power': 0,
+      'unit-power': 20,
       'elemental': false,
       'AP': 0,
       'gathering': 0,
       'load': 0,
-      'offline': 0,
-      'undefined': null
+      'offline': 0
     },
     'acquisition': {
       'normal': 0,
@@ -1695,11 +1694,12 @@ const ElementHeroData = [
       'free-pick': true
     },
     'rating': {
-      'attacking': 0,
-      'defending': 0,
-      'hunting': 0,
-      'mining': 0
-    }
+      'attacking': 8,
+      'defending': 4.5,
+      'hunting': 1,
+      'mining': 1
+    },
+    'tier': 'B'
   },
   {
     'element': 'Fire',
@@ -1741,16 +1741,15 @@ const ElementHeroData = [
       }
     ],
     'bonus': {
-      'march': 0,
-      'recovery': 0,
+      'march': 25,
+      'recovery': 25,
       'regeneration': 0,
-      'unit-power': 0,
+      'unit-power': 25,
       'elemental': false,
       'AP': 0,
       'gathering': 0,
       'load': 0,
-      'offline': 0,
-      'undefined': null
+      'offline': 0
     },
     'acquisition': {
       'normal': 0,
@@ -1761,11 +1760,12 @@ const ElementHeroData = [
       'free-pick': true
     },
     'rating': {
-      'attacking': 0,
-      'defending': 0,
-      'hunting': 0,
-      'mining': 0
-    }
+      'attacking': 8,
+      'defending': 4.5,
+      'hunting': 1,
+      'mining': 1
+    },
+    'tier': 'B'
   },
   {
     'element': 'Fire',
@@ -1807,16 +1807,15 @@ const ElementHeroData = [
       }
     ],
     'bonus': {
-      'march': 0,
-      'recovery': 0,
+      'march': 25,
+      'recovery': 25,
       'regeneration': 0,
-      'unit-power': 0,
+      'unit-power': 25,
       'elemental': false,
       'AP': 0,
       'gathering': 0,
       'load': 0,
-      'offline': 0,
-      'undefined': null
+      'offline': 0
     },
     'acquisition': {
       'normal': 0,
@@ -1827,11 +1826,12 @@ const ElementHeroData = [
       'free-pick': true
     },
     'rating': {
-      'attacking': 0,
-      'defending': 0,
-      'hunting': 0,
-      'mining': 0
-    }
+      'attacking': 8,
+      'defending': 4.5,
+      'hunting': 1,
+      'mining': 1
+    },
+    'tier': 'B'
   },
   {
     'element': 'Fire',
@@ -1873,16 +1873,15 @@ const ElementHeroData = [
       }
     ],
     'bonus': {
-      'march': 0,
-      'recovery': 0,
+      'march': 20,
+      'recovery': 25,
       'regeneration': 0,
-      'unit-power': 0,
+      'unit-power': 20,
       'elemental': false,
       'AP': 0,
       'gathering': 0,
       'load': 0,
-      'offline': 0,
-      'undefined': null
+      'offline': 0
     },
     'acquisition': {
       'normal': 0,
@@ -1893,11 +1892,12 @@ const ElementHeroData = [
       'free-pick': true
     },
     'rating': {
-      'attacking': 0,
-      'defending': 0,
-      'hunting': 0,
-      'mining': 0
-    }
+      'attacking': 7,
+      'defending': 4.5,
+      'hunting': 1,
+      'mining': 1
+    },
+    'tier': 'C'
   },
   {
     'element': 'Fire',
@@ -1939,16 +1939,15 @@ const ElementHeroData = [
       }
     ],
     'bonus': {
-      'march': 0,
-      'recovery': 0,
+      'march': 15,
+      'recovery': 10,
       'regeneration': 0,
-      'unit-power': 0,
+      'unit-power': 25,
       'elemental': false,
-      'AP': 0,
+      'AP': 20,
       'gathering': 0,
       'load': 0,
-      'offline': 0,
-      'undefined': null
+      'offline': 0
     },
     'acquisition': {
       'normal': 0,
@@ -1959,11 +1958,12 @@ const ElementHeroData = [
       'free-pick': false
     },
     'rating': {
-      'attacking': 0,
-      'defending': 0,
-      'hunting': 0,
-      'mining': 0
-    }
+      'attacking': 6,
+      'defending': 4,
+      'hunting': 4.5,
+      'mining': 0.5
+    },
+    'tier': 'C'
   },
   {
     'element': 'Fire',
@@ -2005,16 +2005,15 @@ const ElementHeroData = [
       }
     ],
     'bonus': {
-      'march': 0,
-      'recovery': 0,
+      'march': 20,
+      'recovery': 10,
       'regeneration': 0,
-      'unit-power': 0,
+      'unit-power': 25,
       'elemental': false,
-      'AP': 0,
+      'AP': 10,
       'gathering': 0,
       'load': 0,
-      'offline': 0,
-      'undefined': null
+      'offline': 0
     },
     'acquisition': {
       'normal': 0,
@@ -2025,11 +2024,12 @@ const ElementHeroData = [
       'free-pick': true
     },
     'rating': {
-      'attacking': 0,
-      'defending': 0,
-      'hunting': 0,
-      'mining': 0
-    }
+      'attacking': 6.5,
+      'defending': 4,
+      'hunting': 3,
+      'mining': 1
+    },
+    'tier': 'C'
   },
   {
     'element': 'Fire',
@@ -2071,16 +2071,15 @@ const ElementHeroData = [
       }
     ],
     'bonus': {
-      'march': 0,
-      'recovery': 0,
+      'march': 30,
+      'recovery': 15,
       'regeneration': 0,
-      'unit-power': 0,
+      'unit-power': 40,
       'elemental': false,
       'AP': 0,
       'gathering': 0,
       'load': 0,
-      'offline': 0,
-      'undefined': null
+      'offline': 0
     },
     'acquisition': {
       'normal': 0,
@@ -2091,11 +2090,12 @@ const ElementHeroData = [
       'free-pick': false
     },
     'rating': {
-      'attacking': 0,
-      'defending': 0,
-      'hunting': 0,
-      'mining': 0
-    }
+      'attacking': 8.5,
+      'defending': 5,
+      'hunting': 1,
+      'mining': 1
+    },
+    'tier': 'A'
   },
   {
     'element': 'Fire',
@@ -2137,16 +2137,15 @@ const ElementHeroData = [
       }
     ],
     'bonus': {
-      'march': 0,
-      'recovery': 0,
+      'march': 20,
+      'recovery': 25,
       'regeneration': 0,
-      'unit-power': 0,
+      'unit-power': 30,
       'elemental': false,
       'AP': 0,
       'gathering': 0,
-      'load': 0,
-      'offline': 0,
-      'undefined': null
+      'load': 30,
+      'offline': 0
     },
     'acquisition': {
       'normal': 0,
@@ -2157,11 +2156,12 @@ const ElementHeroData = [
       'free-pick': true
     },
     'rating': {
-      'attacking': 0,
-      'defending': 0,
-      'hunting': 0,
-      'mining': 0
-    }
+      'attacking': 7.5,
+      'defending': 5,
+      'hunting': 1,
+      'mining': 2.5
+    },
+    'tier': 'B'
   },
   {
     'element': 'Fire',
@@ -2203,16 +2203,15 @@ const ElementHeroData = [
       }
     ],
     'bonus': {
-      'march': 0,
-      'recovery': 0,
+      'march': 20,
+      'recovery': 25,
       'regeneration': 0,
-      'unit-power': 0,
+      'unit-power': 30,
       'elemental': false,
       'AP': 0,
       'gathering': 0,
-      'load': 0,
-      'offline': 0,
-      'undefined': null
+      'load': 20,
+      'offline': 0
     },
     'acquisition': {
       'normal': 0,
@@ -2223,11 +2222,12 @@ const ElementHeroData = [
       'free-pick': true
     },
     'rating': {
-      'attacking': 0,
-      'defending': 0,
-      'hunting': 0,
-      'mining': 0
-    }
+      'attacking': 7.5,
+      'defending': 5,
+      'hunting': 1,
+      'mining': 2
+    },
+    'tier': 'B'
   },
   {
     'element': 'Fire',
@@ -2269,16 +2269,15 @@ const ElementHeroData = [
       }
     ],
     'bonus': {
-      'march': 0,
-      'recovery': 0,
+      'march': 20,
+      'recovery': 10,
       'regeneration': 0,
-      'unit-power': 0,
+      'unit-power': 25,
       'elemental': false,
       'AP': 0,
       'gathering': 0,
-      'load': 0,
-      'offline': 0,
-      'undefined': null
+      'load': 15,
+      'offline': 0
     },
     'acquisition': {
       'normal': 0,
@@ -2289,11 +2288,12 @@ const ElementHeroData = [
       'free-pick': true
     },
     'rating': {
-      'attacking': 0,
-      'defending': 0,
-      'hunting': 0,
-      'mining': 0
-    }
+      'attacking': 6.5,
+      'defending': 4,
+      'hunting': 1,
+      'mining': 1.5
+    },
+    'tier': 'C'
   },
   {
     'element': 'Fire',
@@ -2335,16 +2335,15 @@ const ElementHeroData = [
       }
     ],
     'bonus': {
-      'march': 0,
-      'recovery': 0,
+      'march': 20,
+      'recovery': 10,
       'regeneration': 0,
-      'unit-power': 0,
+      'unit-power': 25,
       'elemental': false,
       'AP': 0,
       'gathering': 0,
-      'load': 0,
-      'offline': 0,
-      'undefined': null
+      'load': 15,
+      'offline': 0
     },
     'acquisition': {
       'normal': 0,
@@ -2355,11 +2354,12 @@ const ElementHeroData = [
       'free-pick': true
     },
     'rating': {
-      'attacking': 0,
-      'defending': 0,
-      'hunting': 0,
-      'mining': 0
-    }
+      'attacking': 6.5,
+      'defending': 4,
+      'hunting': 1,
+      'mining': 1.5
+    },
+    'tier': 'C'
   },
   {
     'element': 'Fire',
@@ -2401,16 +2401,15 @@ const ElementHeroData = [
       }
     ],
     'bonus': {
-      'march': 0,
-      'recovery': 0,
+      'march': 20,
+      'recovery': 10,
       'regeneration': 0,
-      'unit-power': 0,
+      'unit-power': 25,
       'elemental': false,
       'AP': 0,
       'gathering': 0,
-      'load': 0,
-      'offline': 0,
-      'undefined': null
+      'load': 15,
+      'offline': 0
     },
     'acquisition': {
       'normal': 0,
@@ -2421,11 +2420,12 @@ const ElementHeroData = [
       'free-pick': true
     },
     'rating': {
-      'attacking': 0,
-      'defending': 0,
-      'hunting': 0,
-      'mining': 0
-    }
+      'attacking': 6.5,
+      'defending': 4,
+      'hunting': 1,
+      'mining': 1.5
+    },
+    'tier': 'C'
   },
   {
     'element': 'Fire',
@@ -2467,16 +2467,15 @@ const ElementHeroData = [
       }
     ],
     'bonus': {
-      'march': 0,
-      'recovery': 0,
+      'march': 20,
+      'recovery': 15,
       'regeneration': 0,
-      'unit-power': 0,
+      'unit-power': 25,
       'elemental': false,
       'AP': 0,
       'gathering': 0,
-      'load': 0,
-      'offline': 0,
-      'undefined': null
+      'load': 15,
+      'offline': 0
     },
     'acquisition': {
       'normal': 0,
@@ -2487,11 +2486,12 @@ const ElementHeroData = [
       'free-pick': true
     },
     'rating': {
-      'attacking': 0,
-      'defending': 0,
-      'hunting': 0,
-      'mining': 0
-    }
+      'attacking': 7,
+      'defending': 4,
+      'hunting': 1,
+      'mining': 1.5
+    },
+    'tier': 'C'
   },
   {
     'element': 'Fire',
@@ -2533,16 +2533,15 @@ const ElementHeroData = [
       }
     ],
     'bonus': {
-      'march': 0,
-      'recovery': 0,
+      'march': 20,
+      'recovery': 15,
       'regeneration': 0,
-      'unit-power': 0,
+      'unit-power': 25,
       'elemental': false,
       'AP': 0,
       'gathering': 0,
-      'load': 0,
-      'offline': 0,
-      'undefined': null
+      'load': 15,
+      'offline': 0
     },
     'acquisition': {
       'normal': 0,
@@ -2553,11 +2552,12 @@ const ElementHeroData = [
       'free-pick': true
     },
     'rating': {
-      'attacking': 0,
-      'defending': 0,
-      'hunting': 0,
-      'mining': 0
-    }
+      'attacking': 7,
+      'defending': 4,
+      'hunting': 1,
+      'mining': 1.5
+    },
+    'tier': 'C'
   },
   {
     'element': 'Fire',
@@ -2599,16 +2599,15 @@ const ElementHeroData = [
       }
     ],
     'bonus': {
-      'march': 0,
-      'recovery': 0,
+      'march': 20,
+      'recovery': 15,
       'regeneration': 0,
-      'unit-power': 0,
+      'unit-power': 25,
       'elemental': false,
       'AP': 0,
       'gathering': 0,
-      'load': 0,
-      'offline': 0,
-      'undefined': null
+      'load': 10,
+      'offline': 0
     },
     'acquisition': {
       'normal': 0,
@@ -2619,11 +2618,12 @@ const ElementHeroData = [
       'free-pick': true
     },
     'rating': {
-      'attacking': 0,
-      'defending': 0,
-      'hunting': 0,
-      'mining': 0
-    }
+      'attacking': 7,
+      'defending': 4,
+      'hunting': 1,
+      'mining': 1.5
+    },
+    'tier': 'C'
   },
   {
     'element': 'Fire',
@@ -2665,16 +2665,15 @@ const ElementHeroData = [
       }
     ],
     'bonus': {
-      'march': 0,
-      'recovery': 0,
+      'march': 15,
+      'recovery': 15,
       'regeneration': 0,
-      'unit-power': 0,
+      'unit-power': 20,
       'elemental': false,
       'AP': 0,
       'gathering': 0,
       'load': 0,
-      'offline': 0,
-      'undefined': null
+      'offline': 0
     },
     'acquisition': {
       'normal': 0,
@@ -2685,11 +2684,12 @@ const ElementHeroData = [
       'free-pick': true
     },
     'rating': {
-      'attacking': 0,
-      'defending': 0,
-      'hunting': 0,
-      'mining': 0
-    }
+      'attacking': 6,
+      'defending': 4,
+      'hunting': 0.5,
+      'mining': 0.5
+    },
+    'tier': 'C'
   },
   {
     'element': 'Fire',
@@ -2732,15 +2732,14 @@ const ElementHeroData = [
     ],
     'bonus': {
       'march': 0,
-      'recovery': 0,
+      'recovery': 25,
       'regeneration': 0,
-      'unit-power': 0,
+      'unit-power': 20,
       'elemental': false,
       'AP': 0,
       'gathering': 0,
-      'load': 0,
-      'offline': 0,
-      'undefined': null
+      'load': 15,
+      'offline': 0
     },
     'acquisition': {
       'normal': 0,
@@ -2751,11 +2750,12 @@ const ElementHeroData = [
       'free-pick': true
     },
     'rating': {
-      'attacking': 0,
-      'defending': 0,
+      'attacking': 4,
+      'defending': 4.5,
       'hunting': 0,
-      'mining': 0
-    }
+      'mining': 1
+    },
+    'tier': 'D'
   },
   {
     'element': 'Fire',
@@ -2797,16 +2797,15 @@ const ElementHeroData = [
       }
     ],
     'bonus': {
-      'march': 0,
+      'march': 20,
       'recovery': 0,
       'regeneration': 0,
-      'unit-power': 0,
+      'unit-power': 20,
       'elemental': false,
       'AP': 0,
-      'gathering': 0,
+      'gathering': 20,
       'load': 0,
-      'offline': 0,
-      'undefined': null
+      'offline': 20
     },
     'acquisition': {
       'normal': 0,
@@ -2817,11 +2816,12 @@ const ElementHeroData = [
       'free-pick': true
     },
     'rating': {
-      'attacking': 0,
-      'defending': 0,
-      'hunting': 0,
-      'mining': 0
-    }
+      'attacking': 5,
+      'defending': 2.5,
+      'hunting': 1,
+      'mining': 3.5
+    },
+    'tier': 'D'
   },
   {
     'element': 'Fire',
@@ -2864,15 +2864,14 @@ const ElementHeroData = [
     ],
     'bonus': {
       'march': 0,
-      'recovery': 0,
+      'recovery': 25,
       'regeneration': 0,
-      'unit-power': 0,
+      'unit-power': 20,
       'elemental': false,
       'AP': 0,
       'gathering': 0,
-      'load': 0,
-      'offline': 0,
-      'undefined': null
+      'load': 20,
+      'offline': 0
     },
     'acquisition': {
       'normal': 0,
@@ -2883,11 +2882,12 @@ const ElementHeroData = [
       'free-pick': true
     },
     'rating': {
-      'attacking': 0,
-      'defending': 0,
+      'attacking': 4,
+      'defending': 4.5,
       'hunting': 0,
-      'mining': 0
-    }
+      'mining': 1
+    },
+    'tier': 'D'
   },
   {
     'element': 'Fire',
@@ -2929,16 +2929,15 @@ const ElementHeroData = [
       }
     ],
     'bonus': {
-      'march': 0,
-      'recovery': 0,
+      'march': 30,
+      'recovery': 10,
       'regeneration': 0,
-      'unit-power': 0,
+      'unit-power': 20,
       'elemental': false,
       'AP': 0,
       'gathering': 0,
-      'load': 0,
-      'offline': 0,
-      'undefined': null
+      'load': 20,
+      'offline': 0
     },
     'acquisition': {
       'normal': 0,
@@ -2949,11 +2948,12 @@ const ElementHeroData = [
       'free-pick': true
     },
     'rating': {
-      'attacking': 0,
-      'defending': 0,
-      'hunting': 0,
-      'mining': 0
-    }
+      'attacking': 7.5,
+      'defending': 3.5,
+      'hunting': 1,
+      'mining': 2
+    },
+    'tier': 'B'
   },
   {
     'element': 'Fire',
@@ -2995,16 +2995,15 @@ const ElementHeroData = [
       }
     ],
     'bonus': {
-      'march': 0,
-      'recovery': 0,
+      'march': 20,
+      'recovery': 25,
       'regeneration': 0,
       'unit-power': 0,
       'elemental': false,
       'AP': 0,
       'gathering': 0,
-      'load': 0,
-      'offline': 0,
-      'undefined': null
+      'load': 20,
+      'offline': 0
     },
     'acquisition': {
       'normal': 0,
@@ -3015,11 +3014,12 @@ const ElementHeroData = [
       'free-pick': true
     },
     'rating': {
-      'attacking': 0,
-      'defending': 0,
-      'hunting': 0,
-      'mining': 0
-    }
+      'attacking': 5,
+      'defending': 1.5,
+      'hunting': 1,
+      'mining': 2
+    },
+    'tier': 'D'
   },
   {
     'element': 'Fire',
@@ -3054,16 +3054,15 @@ const ElementHeroData = [
       null
     ],
     'bonus': {
-      'march': 0,
+      'march': 20,
       'recovery': 0,
       'regeneration': 0,
-      'unit-power': 0,
+      'unit-power': 20,
       'elemental': false,
       'AP': 0,
-      'gathering': 0,
+      'gathering': 20,
       'load': 0,
-      'offline': 0,
-      'undefined': null
+      'offline': 0
     },
     'acquisition': {
       'normal': 0,
@@ -3074,11 +3073,12 @@ const ElementHeroData = [
       'free-pick': true
     },
     'rating': {
-      'attacking': 0,
-      'defending': 0,
-      'hunting': 0,
-      'mining': 0
-    }
+      'attacking': 5,
+      'defending': 2.5,
+      'hunting': 1,
+      'mining': 3.5
+    },
+    'tier': 'D'
   },
   {
     'element': 'Fire',
@@ -3116,13 +3116,12 @@ const ElementHeroData = [
       'march': 0,
       'recovery': 0,
       'regeneration': 0,
-      'unit-power': 0,
+      'unit-power': 20,
       'elemental': false,
       'AP': 0,
       'gathering': 0,
       'load': 0,
-      'offline': 0,
-      'undefined': null
+      'offline': 0
     },
     'acquisition': {
       'normal': 0,
@@ -3133,11 +3132,12 @@ const ElementHeroData = [
       'free-pick': true
     },
     'rating': {
-      'attacking': 0,
-      'defending': 0,
+      'attacking': 2,
+      'defending': 2.5,
       'hunting': 0,
       'mining': 0
-    }
+    },
+    'tier': 'E'
   },
   {
     'element': 'Fire',
@@ -3175,13 +3175,12 @@ const ElementHeroData = [
       'march': 0,
       'recovery': 0,
       'regeneration': 0,
-      'unit-power': 0,
+      'unit-power': 20,
       'elemental': false,
       'AP': 0,
       'gathering': 0,
       'load': 0,
-      'offline': 0,
-      'undefined': null
+      'offline': 0
     },
     'acquisition': {
       'normal': 0,
@@ -3192,11 +3191,12 @@ const ElementHeroData = [
       'free-pick': true
     },
     'rating': {
-      'attacking': 0,
-      'defending': 0,
+      'attacking': 2,
+      'defending': 2.5,
       'hunting': 0,
       'mining': 0
-    }
+    },
+    'tier': 'E'
   },
   {
     'element': 'Goblin',
@@ -3238,16 +3238,15 @@ const ElementHeroData = [
       }
     ],
     'bonus': {
-      'march': 0,
-      'recovery': 0,
+      'march': 20,
+      'recovery': 30,
       'regeneration': 0,
-      'unit-power': 0,
+      'unit-power': 20,
       'elemental': false,
       'AP': 0,
       'gathering': 0,
       'load': 0,
-      'offline': 0,
-      'undefined': null
+      'offline': 0
     },
     'acquisition': {
       'normal': 0,
@@ -3258,11 +3257,12 @@ const ElementHeroData = [
       'free-pick': true
     },
     'rating': {
-      'attacking': 0,
-      'defending': 0,
-      'hunting': 0,
-      'mining': 0
-    }
+      'attacking': 7.5,
+      'defending': 4.5,
+      'hunting': 1,
+      'mining': 1
+    },
+    'tier': 'B'
   },
   {
     'element': 'Goblin',
@@ -3304,16 +3304,15 @@ const ElementHeroData = [
       }
     ],
     'bonus': {
-      'march': 0,
-      'recovery': 0,
+      'march': 20,
+      'recovery': 30,
       'regeneration': 0,
-      'unit-power': 0,
+      'unit-power': 20,
       'elemental': false,
       'AP': 0,
       'gathering': 0,
       'load': 0,
-      'offline': 0,
-      'undefined': null
+      'offline': 0
     },
     'acquisition': {
       'normal': 0,
@@ -3324,11 +3323,12 @@ const ElementHeroData = [
       'free-pick': true
     },
     'rating': {
-      'attacking': 0,
-      'defending': 0,
-      'hunting': 0,
-      'mining': 0
-    }
+      'attacking': 7.5,
+      'defending': 4.5,
+      'hunting': 1,
+      'mining': 1
+    },
+    'tier': 'B'
   },
   {
     'element': 'Goblin',
@@ -3370,16 +3370,15 @@ const ElementHeroData = [
       }
     ],
     'bonus': {
-      'march': 0,
-      'recovery': 0,
+      'march': 25,
+      'recovery': 25,
       'regeneration': 0,
-      'unit-power': 0,
+      'unit-power': 25,
       'elemental': false,
       'AP': 0,
       'gathering': 0,
       'load': 0,
-      'offline': 0,
-      'undefined': null
+      'offline': 0
     },
     'acquisition': {
       'normal': 0,
@@ -3390,11 +3389,12 @@ const ElementHeroData = [
       'free-pick': true
     },
     'rating': {
-      'attacking': 0,
-      'defending': 0,
-      'hunting': 0,
-      'mining': 0
-    }
+      'attacking': 8,
+      'defending': 4.5,
+      'hunting': 1,
+      'mining': 1
+    },
+    'tier': 'B'
   },
   {
     'element': 'Goblin',
@@ -3436,16 +3436,15 @@ const ElementHeroData = [
       }
     ],
     'bonus': {
-      'march': 0,
-      'recovery': 0,
+      'march': 25,
+      'recovery': 25,
       'regeneration': 0,
-      'unit-power': 0,
+      'unit-power': 25,
       'elemental': false,
       'AP': 0,
       'gathering': 0,
       'load': 0,
-      'offline': 0,
-      'undefined': null
+      'offline': 0
     },
     'acquisition': {
       'normal': 0,
@@ -3456,11 +3455,12 @@ const ElementHeroData = [
       'free-pick': false
     },
     'rating': {
-      'attacking': 0,
-      'defending': 0,
-      'hunting': 0,
-      'mining': 0
-    }
+      'attacking': 8,
+      'defending': 4.5,
+      'hunting': 1,
+      'mining': 1
+    },
+    'tier': 'B'
   },
   {
     'element': 'Goblin',
@@ -3502,16 +3502,15 @@ const ElementHeroData = [
       }
     ],
     'bonus': {
-      'march': 0,
-      'recovery': 0,
+      'march': 20,
+      'recovery': 25,
       'regeneration': 0,
-      'unit-power': 0,
+      'unit-power': 25,
       'elemental': false,
       'AP': 0,
       'gathering': 0,
       'load': 0,
-      'offline': 0,
-      'undefined': null
+      'offline': 0
     },
     'acquisition': {
       'normal': 0,
@@ -3522,11 +3521,12 @@ const ElementHeroData = [
       'free-pick': true
     },
     'rating': {
-      'attacking': 0,
-      'defending': 0,
-      'hunting': 0,
-      'mining': 0
-    }
+      'attacking': 7.5,
+      'defending': 4.5,
+      'hunting': 1,
+      'mining': 1
+    },
+    'tier': 'B'
   },
   {
     'element': 'Goblin',
@@ -3568,16 +3568,15 @@ const ElementHeroData = [
       }
     ],
     'bonus': {
-      'march': 0,
-      'recovery': 0,
+      'march': 20,
+      'recovery': 25,
       'regeneration': 0,
       'unit-power': 0,
       'elemental': false,
-      'AP': 0,
+      'AP': 10,
       'gathering': 0,
       'load': 0,
-      'offline': 0,
-      'undefined': null
+      'offline': 0
     },
     'acquisition': {
       'normal': 0,
@@ -3588,11 +3587,12 @@ const ElementHeroData = [
       'free-pick': true
     },
     'rating': {
-      'attacking': 0,
-      'defending': 0,
-      'hunting': 0,
-      'mining': 0
-    }
+      'attacking': 5,
+      'defending': 1.5,
+      'hunting': 3,
+      'mining': 1
+    },
+    'tier': 'D'
   },
   {
     'element': 'Goblin',
@@ -3634,16 +3634,15 @@ const ElementHeroData = [
       }
     ],
     'bonus': {
-      'march': 0,
-      'recovery': 0,
+      'march': 15,
+      'recovery': 10,
       'regeneration': 0,
       'unit-power': 0,
       'elemental': false,
-      'AP': 0,
+      'AP': 10,
       'gathering': 0,
-      'load': 0,
-      'offline': 0,
-      'undefined': null
+      'load': 20,
+      'offline': 0
     },
     'acquisition': {
       'normal': 0,
@@ -3654,11 +3653,12 @@ const ElementHeroData = [
       'free-pick': true
     },
     'rating': {
-      'attacking': 0,
-      'defending': 0,
-      'hunting': 0,
-      'mining': 0
-    }
+      'attacking': 4,
+      'defending': 1,
+      'hunting': 2.5,
+      'mining': 2
+    },
+    'tier': 'D'
   },
   {
     'element': 'Goblin',
@@ -3700,16 +3700,15 @@ const ElementHeroData = [
       }
     ],
     'bonus': {
-      'march': 0,
-      'recovery': 0,
+      'march': 30,
+      'recovery': 15,
       'regeneration': 0,
-      'unit-power': 0,
+      'unit-power': 40,
       'elemental': false,
       'AP': 0,
       'gathering': 0,
       'load': 0,
-      'offline': 0,
-      'undefined': null
+      'offline': 0
     },
     'acquisition': {
       'normal': 0,
@@ -3720,11 +3719,12 @@ const ElementHeroData = [
       'free-pick': false
     },
     'rating': {
-      'attacking': 0,
-      'defending': 0,
-      'hunting': 0,
-      'mining': 0
-    }
+      'attacking': 8.5,
+      'defending': 5,
+      'hunting': 1,
+      'mining': 1
+    },
+    'tier': 'A'
   },
   {
     'element': 'Goblin',
@@ -3766,16 +3766,15 @@ const ElementHeroData = [
       }
     ],
     'bonus': {
-      'march': 0,
-      'recovery': 0,
+      'march': 20,
+      'recovery': 25,
       'regeneration': 0,
-      'unit-power': 0,
+      'unit-power': 30,
       'elemental': false,
       'AP': 0,
       'gathering': 0,
-      'load': 0,
-      'offline': 0,
-      'undefined': null
+      'load': 20,
+      'offline': 0
     },
     'acquisition': {
       'normal': 0,
@@ -3786,11 +3785,12 @@ const ElementHeroData = [
       'free-pick': true
     },
     'rating': {
-      'attacking': 0,
-      'defending': 0,
-      'hunting': 0,
-      'mining': 0
-    }
+      'attacking': 7.5,
+      'defending': 5,
+      'hunting': 1,
+      'mining': 2
+    },
+    'tier': 'B'
   },
   {
     'element': 'Goblin',
@@ -3832,16 +3832,15 @@ const ElementHeroData = [
       }
     ],
     'bonus': {
-      'march': 0,
-      'recovery': 0,
+      'march': 20,
+      'recovery': 25,
       'regeneration': 0,
-      'unit-power': 0,
+      'unit-power': 30,
       'elemental': false,
       'AP': 0,
       'gathering': 0,
-      'load': 0,
-      'offline': 0,
-      'undefined': null
+      'load': 20,
+      'offline': 0
     },
     'acquisition': {
       'normal': 0,
@@ -3852,11 +3851,12 @@ const ElementHeroData = [
       'free-pick': false
     },
     'rating': {
-      'attacking': 0,
-      'defending': 0,
-      'hunting': 0,
-      'mining': 0
-    }
+      'attacking': 7.5,
+      'defending': 5,
+      'hunting': 1,
+      'mining': 2
+    },
+    'tier': 'B'
   },
   {
     'element': 'Goblin',
@@ -3898,16 +3898,15 @@ const ElementHeroData = [
       }
     ],
     'bonus': {
-      'march': 0,
-      'recovery': 0,
+      'march': 20,
+      'recovery': 10,
       'regeneration': 0,
-      'unit-power': 0,
+      'unit-power': 25,
       'elemental': false,
       'AP': 0,
       'gathering': 0,
-      'load': 0,
-      'offline': 0,
-      'undefined': null
+      'load': 15,
+      'offline': 0
     },
     'acquisition': {
       'normal': 0,
@@ -3918,11 +3917,12 @@ const ElementHeroData = [
       'free-pick': true
     },
     'rating': {
-      'attacking': 0,
-      'defending': 0,
-      'hunting': 0,
-      'mining': 0
-    }
+      'attacking': 6.5,
+      'defending': 4,
+      'hunting': 1,
+      'mining': 1.5
+    },
+    'tier': 'C'
   },
   {
     'element': 'Goblin',
@@ -3964,16 +3964,15 @@ const ElementHeroData = [
       }
     ],
     'bonus': {
-      'march': 0,
-      'recovery': 0,
+      'march': 20,
+      'recovery': 10,
       'regeneration': 0,
-      'unit-power': 0,
+      'unit-power': 25,
       'elemental': false,
       'AP': 0,
       'gathering': 0,
-      'load': 0,
-      'offline': 0,
-      'undefined': null
+      'load': 15,
+      'offline': 0
     },
     'acquisition': {
       'normal': 0,
@@ -3984,11 +3983,12 @@ const ElementHeroData = [
       'free-pick': true
     },
     'rating': {
-      'attacking': 0,
-      'defending': 0,
-      'hunting': 0,
-      'mining': 0
-    }
+      'attacking': 6.5,
+      'defending': 4,
+      'hunting': 1,
+      'mining': 1.5
+    },
+    'tier': 'C'
   },
   {
     'element': 'Goblin',
@@ -4030,16 +4030,15 @@ const ElementHeroData = [
       }
     ],
     'bonus': {
-      'march': 0,
-      'recovery': 0,
+      'march': 20,
+      'recovery': 10,
       'regeneration': 0,
-      'unit-power': 0,
+      'unit-power': 25,
       'elemental': false,
       'AP': 0,
       'gathering': 0,
-      'load': 0,
-      'offline': 0,
-      'undefined': null
+      'load': 15,
+      'offline': 0
     },
     'acquisition': {
       'normal': 0,
@@ -4050,11 +4049,12 @@ const ElementHeroData = [
       'free-pick': true
     },
     'rating': {
-      'attacking': 0,
-      'defending': 0,
-      'hunting': 0,
-      'mining': 0
-    }
+      'attacking': 6.5,
+      'defending': 4,
+      'hunting': 1,
+      'mining': 1.5
+    },
+    'tier': 'C'
   },
   {
     'element': 'Goblin',
@@ -4096,16 +4096,15 @@ const ElementHeroData = [
       }
     ],
     'bonus': {
-      'march': 0,
-      'recovery': 0,
+      'march': 20,
+      'recovery': 10,
       'regeneration': 0,
-      'unit-power': 0,
+      'unit-power': 25,
       'elemental': false,
       'AP': 0,
       'gathering': 0,
-      'load': 0,
-      'offline': 0,
-      'undefined': null
+      'load': 15,
+      'offline': 0
     },
     'acquisition': {
       'normal': 0,
@@ -4116,11 +4115,12 @@ const ElementHeroData = [
       'free-pick': true
     },
     'rating': {
-      'attacking': 0,
-      'defending': 0,
-      'hunting': 0,
-      'mining': 0
-    }
+      'attacking': 6.5,
+      'defending': 4,
+      'hunting': 1,
+      'mining': 1.5
+    },
+    'tier': 'C'
   },
   {
     'element': 'Goblin',
@@ -4162,16 +4162,15 @@ const ElementHeroData = [
       }
     ],
     'bonus': {
-      'march': 0,
-      'recovery': 0,
+      'march': 30,
+      'recovery': 10,
       'regeneration': 0,
-      'unit-power': 0,
+      'unit-power': 20,
       'elemental': false,
       'AP': 0,
       'gathering': 0,
-      'load': 0,
-      'offline': 0,
-      'undefined': null
+      'load': 20,
+      'offline': 0
     },
     'acquisition': {
       'normal': 0,
@@ -4182,11 +4181,12 @@ const ElementHeroData = [
       'free-pick': true
     },
     'rating': {
-      'attacking': 0,
-      'defending': 0,
-      'hunting': 0,
-      'mining': 0
-    }
+      'attacking': 7.5,
+      'defending': 3.5,
+      'hunting': 1,
+      'mining': 2
+    },
+    'tier': 'B'
   },
   {
     'element': 'Goblin',
@@ -4228,16 +4228,15 @@ const ElementHeroData = [
       }
     ],
     'bonus': {
-      'march': 0,
-      'recovery': 0,
+      'march': 30,
+      'recovery': 10,
       'regeneration': 0,
-      'unit-power': 0,
+      'unit-power': 20,
       'elemental': false,
       'AP': 0,
       'gathering': 0,
-      'load': 0,
-      'offline': 0,
-      'undefined': null
+      'load': 20,
+      'offline': 0
     },
     'acquisition': {
       'normal': 0,
@@ -4248,11 +4247,12 @@ const ElementHeroData = [
       'free-pick': true
     },
     'rating': {
-      'attacking': 0,
-      'defending': 0,
-      'hunting': 0,
-      'mining': 0
-    }
+      'attacking': 7.5,
+      'defending': 3.5,
+      'hunting': 1,
+      'mining': 2
+    },
+    'tier': 'B'
   },
   {
     'element': 'Goblin',
@@ -4294,16 +4294,15 @@ const ElementHeroData = [
       }
     ],
     'bonus': {
-      'march': 0,
-      'recovery': 0,
+      'march': 20,
+      'recovery': 10,
       'regeneration': 0,
-      'unit-power': 0,
+      'unit-power': 20,
       'elemental': false,
       'AP': 0,
       'gathering': 0,
-      'load': 0,
-      'offline': 0,
-      'undefined': null
+      'load': 20,
+      'offline': 0
     },
     'acquisition': {
       'normal': 0,
@@ -4314,11 +4313,12 @@ const ElementHeroData = [
       'free-pick': false
     },
     'rating': {
-      'attacking': 0,
-      'defending': 0,
-      'hunting': 0,
-      'mining': 0
-    }
+      'attacking': 6.5,
+      'defending': 3.5,
+      'hunting': 1,
+      'mining': 2
+    },
+    'tier': 'C'
   },
   {
     'element': 'Goblin',
@@ -4360,16 +4360,15 @@ const ElementHeroData = [
       }
     ],
     'bonus': {
-      'march': 0,
+      'march': 20,
       'recovery': 0,
       'regeneration': 0,
-      'unit-power': 0,
+      'unit-power': 20,
       'elemental': false,
       'AP': 0,
       'gathering': 0,
-      'load': 0,
-      'offline': 0,
-      'undefined': null
+      'load': 10,
+      'offline': 20
     },
     'acquisition': {
       'normal': 0,
@@ -4380,11 +4379,12 @@ const ElementHeroData = [
       'free-pick': true
     },
     'rating': {
-      'attacking': 0,
-      'defending': 0,
-      'hunting': 0,
-      'mining': 0
-    }
+      'attacking': 5,
+      'defending': 2.5,
+      'hunting': 1,
+      'mining': 1.5
+    },
+    'tier': 'D'
   },
   {
     'element': 'Goblin',
@@ -4426,16 +4426,15 @@ const ElementHeroData = [
       }
     ],
     'bonus': {
-      'march': 0,
+      'march': 20,
       'recovery': 0,
       'regeneration': 0,
-      'unit-power': 0,
+      'unit-power': 20,
       'elemental': false,
       'AP': 0,
-      'gathering': 0,
+      'gathering': 20,
       'load': 0,
-      'offline': 0,
-      'undefined': null
+      'offline': 20
     },
     'acquisition': {
       'normal': 0,
@@ -4446,11 +4445,12 @@ const ElementHeroData = [
       'free-pick': true
     },
     'rating': {
-      'attacking': 0,
-      'defending': 0,
-      'hunting': 0,
-      'mining': 0
-    }
+      'attacking': 5,
+      'defending': 2.5,
+      'hunting': 1,
+      'mining': 3.5
+    },
+    'tier': 'D'
   },
   {
     'element': 'Goblin',
@@ -4492,16 +4492,15 @@ const ElementHeroData = [
       }
     ],
     'bonus': {
-      'march': 0,
+      'march': 20,
       'recovery': 0,
       'regeneration': 0,
-      'unit-power': 0,
+      'unit-power': 20,
       'elemental': false,
       'AP': 0,
-      'gathering': 0,
+      'gathering': 20,
       'load': 0,
-      'offline': 0,
-      'undefined': null
+      'offline': 20
     },
     'acquisition': {
       'normal': 0,
@@ -4512,11 +4511,12 @@ const ElementHeroData = [
       'free-pick': true
     },
     'rating': {
-      'attacking': 0,
-      'defending': 0,
-      'hunting': 0,
-      'mining': 0
-    }
+      'attacking': 5,
+      'defending': 2.5,
+      'hunting': 1,
+      'mining': 3.5
+    },
+    'tier': 'D'
   },
   {
     'element': 'Goblin',
@@ -4559,15 +4559,14 @@ const ElementHeroData = [
     ],
     'bonus': {
       'march': 0,
-      'recovery': 0,
+      'recovery': 15,
       'regeneration': 0,
-      'unit-power': 0,
+      'unit-power': 20,
       'elemental': false,
       'AP': 0,
       'gathering': 0,
-      'load': 0,
-      'offline': 0,
-      'undefined': null
+      'load': 20,
+      'offline': 20
     },
     'acquisition': {
       'normal': 0,
@@ -4578,11 +4577,12 @@ const ElementHeroData = [
       'free-pick': true
     },
     'rating': {
-      'attacking': 0,
-      'defending': 0,
+      'attacking': 3.5,
+      'defending': 4,
       'hunting': 0,
-      'mining': 0
-    }
+      'mining': 1
+    },
+    'tier': 'E'
   },
   {
     'element': 'Goblin',
@@ -4625,8 +4625,7 @@ const ElementHeroData = [
       'AP': 0,
       'gathering': 0,
       'load': 0,
-      'offline': 0,
-      'undefined': null
+      'offline': 20
     },
     'acquisition': {
       'normal': 0,
@@ -4683,16 +4682,15 @@ const ElementHeroData = [
       }
     ],
     'bonus': {
-      'march': 0,
-      'recovery': 0,
+      'march': 20,
+      'recovery': 10,
       'regeneration': 0,
-      'unit-power': 0,
+      'unit-power': 40,
       'elemental': false,
       'AP': 0,
       'gathering': 0,
       'load': 0,
-      'offline': 0,
-      'undefined': null
+      'offline': 0
     },
     'acquisition': {
       'normal': 0,
@@ -4703,11 +4701,12 @@ const ElementHeroData = [
       'free-pick': true
     },
     'rating': {
-      'attacking': 0,
-      'defending': 0,
-      'hunting': 0,
-      'mining': 0
-    }
+      'attacking': 7.5,
+      'defending': 5,
+      'hunting': 1,
+      'mining': 1
+    },
+    'tier': 'B'
   },
   {
     'element': 'Ice',
@@ -4749,16 +4748,15 @@ const ElementHeroData = [
       }
     ],
     'bonus': {
-      'march': 0,
-      'recovery': 0,
+      'march': 20,
+      'recovery': 10,
       'regeneration': 0,
-      'unit-power': 0,
+      'unit-power': 40,
       'elemental': false,
       'AP': 0,
       'gathering': 0,
       'load': 0,
-      'offline': 0,
-      'undefined': null
+      'offline': 0
     },
     'acquisition': {
       'normal': 0,
@@ -4769,11 +4767,12 @@ const ElementHeroData = [
       'free-pick': true
     },
     'rating': {
-      'attacking': 0,
-      'defending': 0,
-      'hunting': 0,
-      'mining': 0
-    }
+      'attacking': 7.5,
+      'defending': 5,
+      'hunting': 1,
+      'mining': 1
+    },
+    'tier': 'B'
   },
   {
     'element': 'Ice',
@@ -4815,16 +4814,15 @@ const ElementHeroData = [
       }
     ],
     'bonus': {
-      'march': 0,
-      'recovery': 0,
+      'march': 20,
+      'recovery': 30,
       'regeneration': 0,
-      'unit-power': 0,
+      'unit-power': 20,
       'elemental': false,
       'AP': 0,
       'gathering': 0,
       'load': 0,
-      'offline': 0,
-      'undefined': null
+      'offline': 0
     },
     'acquisition': {
       'normal': 0,
@@ -4835,11 +4833,12 @@ const ElementHeroData = [
       'free-pick': true
     },
     'rating': {
-      'attacking': 0,
-      'defending': 0,
-      'hunting': 0,
-      'mining': 0
-    }
+      'attacking': 7.5,
+      'defending': 4.5,
+      'hunting': 1,
+      'mining': 1
+    },
+    'tier': 'B'
   },
   {
     'element': 'Ice',
@@ -4881,16 +4880,15 @@ const ElementHeroData = [
       }
     ],
     'bonus': {
-      'march': 0,
-      'recovery': 0,
+      'march': 20,
+      'recovery': 30,
       'regeneration': 0,
-      'unit-power': 0,
+      'unit-power': 20,
       'elemental': false,
       'AP': 0,
       'gathering': 0,
       'load': 0,
-      'offline': 0,
-      'undefined': null
+      'offline': 0
     },
     'acquisition': {
       'normal': 0,
@@ -4901,11 +4899,12 @@ const ElementHeroData = [
       'free-pick': true
     },
     'rating': {
-      'attacking': 0,
-      'defending': 0,
-      'hunting': 0,
-      'mining': 0
-    }
+      'attacking': 7.5,
+      'defending': 4.5,
+      'hunting': 1,
+      'mining': 1
+    },
+    'tier': 'B'
   },
   {
     'element': 'Ice',
@@ -4947,16 +4946,15 @@ const ElementHeroData = [
       }
     ],
     'bonus': {
-      'march': 0,
-      'recovery': 0,
+      'march': 20,
+      'recovery': 25,
       'regeneration': 0,
-      'unit-power': 0,
+      'unit-power': 25,
       'elemental': false,
       'AP': 0,
       'gathering': 0,
       'load': 0,
-      'offline': 0,
-      'undefined': null
+      'offline': 0
     },
     'acquisition': {
       'normal': 0,
@@ -4967,11 +4965,12 @@ const ElementHeroData = [
       'free-pick': true
     },
     'rating': {
-      'attacking': 0,
-      'defending': 0,
-      'hunting': 0,
-      'mining': 0
-    }
+      'attacking': 7.5,
+      'defending': 4.5,
+      'hunting': 1,
+      'mining': 1
+    },
+    'tier': 'B'
   },
   {
     'element': 'Ice',
@@ -5013,16 +5012,15 @@ const ElementHeroData = [
       }
     ],
     'bonus': {
-      'march': 0,
-      'recovery': 0,
+      'march': 20,
+      'recovery': 10,
       'regeneration': 0,
-      'unit-power': 0,
+      'unit-power': 25,
       'elemental': false,
-      'AP': 0,
+      'AP': 10,
       'gathering': 0,
       'load': 0,
-      'offline': 0,
-      'undefined': null
+      'offline': 0
     },
     'acquisition': {
       'normal': 0,
@@ -5033,11 +5031,12 @@ const ElementHeroData = [
       'free-pick': true
     },
     'rating': {
-      'attacking': 0,
-      'defending': 0,
-      'hunting': 0,
-      'mining': 0
-    }
+      'attacking': 6.5,
+      'defending': 4,
+      'hunting': 3,
+      'mining': 1
+    },
+    'tier': 'C'
   },
   {
     'element': 'Ice',
@@ -5079,16 +5078,15 @@ const ElementHeroData = [
       }
     ],
     'bonus': {
-      'march': 0,
-      'recovery': 0,
+      'march': 20,
+      'recovery': 10,
       'regeneration': 0,
-      'unit-power': 0,
+      'unit-power': 25,
       'elemental': false,
-      'AP': 0,
+      'AP': 10,
       'gathering': 0,
       'load': 0,
-      'offline': 0,
-      'undefined': null
+      'offline': 0
     },
     'acquisition': {
       'normal': 0,
@@ -5099,11 +5097,12 @@ const ElementHeroData = [
       'free-pick': true
     },
     'rating': {
-      'attacking': 0,
-      'defending': 0,
-      'hunting': 0,
-      'mining': 0
-    }
+      'attacking': 6.5,
+      'defending': 4,
+      'hunting': 3,
+      'mining': 1
+    },
+    'tier': 'C'
   },
   {
     'element': 'Ice',
@@ -5145,16 +5144,15 @@ const ElementHeroData = [
       }
     ],
     'bonus': {
-      'march': 0,
-      'recovery': 0,
+      'march': 15,
+      'recovery': 10,
       'regeneration': 0,
-      'unit-power': 0,
+      'unit-power': 25,
       'elemental': false,
-      'AP': 0,
+      'AP': 10,
       'gathering': 0,
       'load': 0,
-      'offline': 0,
-      'undefined': null
+      'offline': 0
     },
     'acquisition': {
       'normal': 0,
@@ -5165,11 +5163,12 @@ const ElementHeroData = [
       'free-pick': true
     },
     'rating': {
-      'attacking': 0,
-      'defending': 0,
-      'hunting': 0,
-      'mining': 0
-    }
+      'attacking': 6,
+      'defending': 4,
+      'hunting': 2.5,
+      'mining': 0.5
+    },
+    'tier': 'C'
   },
   {
     'element': 'Ice',
@@ -5211,16 +5210,15 @@ const ElementHeroData = [
       }
     ],
     'bonus': {
-      'march': 0,
-      'recovery': 0,
+      'march': 30,
+      'recovery': 15,
       'regeneration': 0,
-      'unit-power': 0,
+      'unit-power': 40,
       'elemental': false,
       'AP': 0,
       'gathering': 0,
       'load': 0,
-      'offline': 0,
-      'undefined': null
+      'offline': 0
     },
     'acquisition': {
       'normal': 0,
@@ -5231,11 +5229,12 @@ const ElementHeroData = [
       'free-pick': false
     },
     'rating': {
-      'attacking': 0,
-      'defending': 0,
-      'hunting': 0,
-      'mining': 0
-    }
+      'attacking': 8.5,
+      'defending': 5,
+      'hunting': 1,
+      'mining': 1
+    },
+    'tier': 'A'
   },
   {
     'element': 'Ice',
@@ -5277,16 +5276,15 @@ const ElementHeroData = [
       }
     ],
     'bonus': {
-      'march': 0,
-      'recovery': 0,
+      'march': 20,
+      'recovery': 10,
       'regeneration': 0,
-      'unit-power': 0,
+      'unit-power': 25,
       'elemental': false,
       'AP': 0,
       'gathering': 0,
-      'load': 0,
-      'offline': 0,
-      'undefined': null
+      'load': 15,
+      'offline': 0
     },
     'acquisition': {
       'normal': 0,
@@ -5297,11 +5295,12 @@ const ElementHeroData = [
       'free-pick': true
     },
     'rating': {
-      'attacking': 0,
-      'defending': 0,
-      'hunting': 0,
-      'mining': 0
-    }
+      'attacking': 6.5,
+      'defending': 4,
+      'hunting': 1,
+      'mining': 1.5
+    },
+    'tier': 'C'
   },
   {
     'element': 'Ice',
@@ -5343,16 +5342,15 @@ const ElementHeroData = [
       }
     ],
     'bonus': {
-      'march': 0,
-      'recovery': 0,
+      'march': 20,
+      'recovery': 10,
       'regeneration': 0,
-      'unit-power': 0,
+      'unit-power': 25,
       'elemental': false,
       'AP': 0,
       'gathering': 0,
-      'load': 0,
-      'offline': 0,
-      'undefined': null
+      'load': 15,
+      'offline': 0
     },
     'acquisition': {
       'normal': 0,
@@ -5363,11 +5361,12 @@ const ElementHeroData = [
       'free-pick': true
     },
     'rating': {
-      'attacking': 0,
-      'defending': 0,
-      'hunting': 0,
-      'mining': 0
-    }
+      'attacking': 6.5,
+      'defending': 4,
+      'hunting': 1,
+      'mining': 1.5
+    },
+    'tier': 'C'
   },
   {
     'element': 'Ice',
@@ -5409,16 +5408,15 @@ const ElementHeroData = [
       }
     ],
     'bonus': {
-      'march': 0,
-      'recovery': 0,
+      'march': 20,
+      'recovery': 15,
       'regeneration': 0,
-      'unit-power': 0,
+      'unit-power': 25,
       'elemental': false,
       'AP': 0,
       'gathering': 0,
-      'load': 0,
-      'offline': 0,
-      'undefined': null
+      'load': 15,
+      'offline': 0
     },
     'acquisition': {
       'normal': 0,
@@ -5429,11 +5427,12 @@ const ElementHeroData = [
       'free-pick': true
     },
     'rating': {
-      'attacking': 0,
-      'defending': 0,
-      'hunting': 0,
-      'mining': 0
-    }
+      'attacking': 7,
+      'defending': 4,
+      'hunting': 1,
+      'mining': 1.5
+    },
+    'tier': 'C'
   },
   {
     'element': 'Ice',
@@ -5475,16 +5474,15 @@ const ElementHeroData = [
       }
     ],
     'bonus': {
-      'march': 0,
-      'recovery': 0,
+      'march': 20,
+      'recovery': 10,
       'regeneration': 0,
-      'unit-power': 0,
+      'unit-power': 25,
       'elemental': false,
       'AP': 0,
       'gathering': 0,
-      'load': 0,
-      'offline': 0,
-      'undefined': null
+      'load': 10,
+      'offline': 0
     },
     'acquisition': {
       'normal': 0,
@@ -5495,11 +5493,12 @@ const ElementHeroData = [
       'free-pick': true
     },
     'rating': {
-      'attacking': 0,
-      'defending': 0,
-      'hunting': 0,
-      'mining': 0
-    }
+      'attacking': 6.5,
+      'defending': 4,
+      'hunting': 1,
+      'mining': 1.5
+    },
+    'tier': 'C'
   },
   {
     'element': 'Ice',
@@ -5541,16 +5540,15 @@ const ElementHeroData = [
       }
     ],
     'bonus': {
-      'march': 0,
-      'recovery': 0,
+      'march': 20,
+      'recovery': 15,
       'regeneration': 0,
-      'unit-power': 0,
+      'unit-power': 20,
       'elemental': false,
       'AP': 0,
       'gathering': 0,
       'load': 0,
-      'offline': 0,
-      'undefined': null
+      'offline': 20
     },
     'acquisition': {
       'normal': 0,
@@ -5561,11 +5559,12 @@ const ElementHeroData = [
       'free-pick': true
     },
     'rating': {
-      'attacking': 0,
-      'defending': 0,
-      'hunting': 0,
-      'mining': 0
-    }
+      'attacking': 6.5,
+      'defending': 4,
+      'hunting': 1,
+      'mining': 1
+    },
+    'tier': 'C'
   },
   {
     'element': 'Ice',
@@ -5607,16 +5606,15 @@ const ElementHeroData = [
       }
     ],
     'bonus': {
-      'march': 0,
-      'recovery': 0,
+      'march': 30,
+      'recovery': 10,
       'regeneration': 0,
-      'unit-power': 0,
+      'unit-power': 20,
       'elemental': false,
       'AP': 0,
       'gathering': 0,
-      'load': 0,
-      'offline': 0,
-      'undefined': null
+      'load': 20,
+      'offline': 0
     },
     'acquisition': {
       'normal': 0,
@@ -5627,11 +5625,12 @@ const ElementHeroData = [
       'free-pick': true
     },
     'rating': {
-      'attacking': 0,
-      'defending': 0,
-      'hunting': 0,
-      'mining': 0
-    }
+      'attacking': 7.5,
+      'defending': 3.5,
+      'hunting': 1,
+      'mining': 2
+    },
+    'tier': 'B'
   },
   {
     'element': 'Ice',
@@ -5673,16 +5672,15 @@ const ElementHeroData = [
       }
     ],
     'bonus': {
-      'march': 0,
-      'recovery': 0,
+      'march': 30,
+      'recovery': 10,
       'regeneration': 0,
-      'unit-power': 0,
+      'unit-power': 20,
       'elemental': false,
       'AP': 0,
       'gathering': 0,
-      'load': 0,
-      'offline': 0,
-      'undefined': null
+      'load': 20,
+      'offline': 0
     },
     'acquisition': {
       'normal': 0,
@@ -5693,11 +5691,12 @@ const ElementHeroData = [
       'free-pick': true
     },
     'rating': {
-      'attacking': 0,
-      'defending': 0,
-      'hunting': 0,
-      'mining': 0
-    }
+      'attacking': 7.5,
+      'defending': 3.5,
+      'hunting': 1,
+      'mining': 2
+    },
+    'tier': 'B'
   },
   {
     'element': 'Ice',
@@ -5739,16 +5738,15 @@ const ElementHeroData = [
       }
     ],
     'bonus': {
-      'march': 0,
-      'recovery': 0,
+      'march': 30,
+      'recovery': 25,
       'regeneration': 0,
       'unit-power': 0,
       'elemental': false,
       'AP': 0,
       'gathering': 0,
-      'load': 0,
-      'offline': 0,
-      'undefined': null
+      'load': 20,
+      'offline': 0
     },
     'acquisition': {
       'normal': 0,
@@ -5759,11 +5757,12 @@ const ElementHeroData = [
       'free-pick': true
     },
     'rating': {
-      'attacking': 0,
-      'defending': 0,
-      'hunting': 0,
-      'mining': 0
-    }
+      'attacking': 6,
+      'defending': 1.5,
+      'hunting': 1,
+      'mining': 2
+    },
+    'tier': 'C'
   },
   {
     'element': 'Ice',
@@ -5805,16 +5804,15 @@ const ElementHeroData = [
       }
     ],
     'bonus': {
-      'march': 0,
+      'march': 20,
       'recovery': 0,
       'regeneration': 0,
-      'unit-power': 0,
+      'unit-power': 20,
       'elemental': false,
       'AP': 0,
-      'gathering': 0,
+      'gathering': 20,
       'load': 0,
-      'offline': 0,
-      'undefined': null
+      'offline': 20
     },
     'acquisition': {
       'normal': 0,
@@ -5825,11 +5823,12 @@ const ElementHeroData = [
       'free-pick': true
     },
     'rating': {
-      'attacking': 0,
-      'defending': 0,
-      'hunting': 0,
-      'mining': 0
-    }
+      'attacking': 5,
+      'defending': 2.5,
+      'hunting': 1,
+      'mining': 3.5
+    },
+    'tier': 'D'
   },
   {
     'element': 'Ice',
@@ -5871,16 +5870,15 @@ const ElementHeroData = [
       }
     ],
     'bonus': {
-      'march': 0,
+      'march': 20,
       'recovery': 0,
       'regeneration': 0,
-      'unit-power': 0,
+      'unit-power': 20,
       'elemental': false,
       'AP': 0,
-      'gathering': 0,
+      'gathering': 20,
       'load': 0,
-      'offline': 0,
-      'undefined': null
+      'offline': 20
     },
     'acquisition': {
       'normal': 0,
@@ -5891,11 +5889,12 @@ const ElementHeroData = [
       'free-pick': true
     },
     'rating': {
-      'attacking': 0,
-      'defending': 0,
-      'hunting': 0,
-      'mining': 0
-    }
+      'attacking': 5,
+      'defending': 2.5,
+      'hunting': 1,
+      'mining': 3.5
+    },
+    'tier': 'D'
   },
   {
     'element': 'Ice',
@@ -5937,16 +5936,15 @@ const ElementHeroData = [
       }
     ],
     'bonus': {
-      'march': 0,
+      'march': 20,
       'recovery': 0,
       'regeneration': 0,
-      'unit-power': 0,
+      'unit-power': 20,
       'elemental': false,
       'AP': 0,
       'gathering': 0,
-      'load': 0,
-      'offline': 0,
-      'undefined': null
+      'load': 10,
+      'offline': 0
     },
     'acquisition': {
       'normal': 0,
@@ -5957,11 +5955,12 @@ const ElementHeroData = [
       'free-pick': true
     },
     'rating': {
-      'attacking': 0,
-      'defending': 0,
-      'hunting': 0,
-      'mining': 0
-    }
+      'attacking': 5,
+      'defending': 2.5,
+      'hunting': 1,
+      'mining': 1.5
+    },
+    'tier': 'D'
   },
   {
     'element': 'Ice',
@@ -5996,7 +5995,7 @@ const ElementHeroData = [
       null
     ],
     'bonus': {
-      'march': 0,
+      'march': 15,
       'recovery': 0,
       'regeneration': 0,
       'unit-power': 0,
@@ -6004,8 +6003,7 @@ const ElementHeroData = [
       'AP': 0,
       'gathering': 0,
       'load': 0,
-      'offline': 0,
-      'undefined': null
+      'offline': 0
     },
     'acquisition': {
       'normal': 0,
@@ -6016,10 +6014,11 @@ const ElementHeroData = [
       'free-pick': true
     },
     'rating': {
-      'attacking': 0,
+      'attacking': 2.5,
       'defending': 0,
-      'hunting': 0,
-      'mining': 0
-    }
+      'hunting': 0.5,
+      'mining': 0.5
+    },
+    'tier': 'E'
   }
 ]

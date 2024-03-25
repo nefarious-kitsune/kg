@@ -136,7 +136,7 @@ function addSkill(data, inputString) {
   }
   if (SkillLookups.has(nameLookup)) {
     const skill = SkillLookups.get(nameLookup);
-    if (skill.property !== 'TD') data.bonus[skill.prop] += skill.percent;
+    if (skill.property !== 'TD') data.bonus[skill.property] += skill.percent;
     data.skills.push(skill);
   } else {
     data.skills.push(null);
