@@ -10,6 +10,7 @@ copyStatic('features/');
 copyStatic('territories/');
 
 copyStatic('mail/');
+copyStatic('guides/');
 
 const elements = ['archer', 'fire', 'ice', 'goblin'];
 
