@@ -1,0 +1,138 @@
+<html>
+<!-- <meta-data>
+  <og-image></og-image>
+  <og-desc>
+    Online editor for composing, validating, and previewing text
+    for Alliance Mails and Alliance Messages.
+  </og-desc>
+  <tag-list>mail, template</tag-list>
+</meta-data> -->
+<head>
+  <title>Online Mail Editor</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link href="../assets/css/common.css" rel="stylesheet">
+  <link href="../assets/css/content.css" rel="stylesheet">
+  <style>
+    #input {
+      width:100%;
+      height:8rem;
+      padding: 0.8rem;
+      margin-right: auto;
+      margin-left: auto;
+      border: 0.1rem solid var(--neutral);
+      outline: none;
+    }
+
+    #output {
+      min-height: 8rem;
+      margin-right: auto;
+      margin-left: auto;
+      padding: 0.8rem;
+      font-size: 1rem;
+      border: 0.1rem solid var(--neutral);
+      background-color: var(--pale-neutral);
+    }
+   
+    #output.mail {
+      background-color: #c6d4e1;
+    }
+
+    #output.message {
+      background-color: #283b5c;
+      color: #7c9fdf;
+    }
+
+    #output.error {
+      background-color: var(--miku-gold);
+      color: var(--miku-red);
+    }
+
+    .button { font-size: 1.2rem; }
+  </style>
+  <script src="./parser.js"></script>
+  <script>
+    function validate() {
+      const inputText = document.getElementById('input').value;
+      const previewPanel = document.getElementById('output');
+
+      if (document.getElementById('dark-mode').checked) {
+        previewPanel.classList.remove('mail');
+        previewPanel.classList.add('message');
+      } else {
+        previewPanel.classList.remove('message');
+        previewPanel.classList.add('mail');
+      }
+
+      try {
+        const previewText = parser.parse(inputText);
+        previewPanel.classList.remove('error');
+        previewPanel.innerHTML = previewText;
+      } catch (e) {
+        previewPanel.innerHTML = 'Your message contains an error!';
+        previewPanel.classList.remove('mail');
+        previewPanel.classList.remove('message');
+        previewPanel.classList.add('error');
+      }
+    }
+  </script>
+</head>
+
+<body class="content">
+
+<header><nav><ul class="breadcrumb">
+  <li><a href="../content">Home</a></li>
+  <li>Mail</li>
+  <li>Online Editor</li>
+</ul></nav></header>
+
+<main class="content">
+<h1>{{TITLE}}</h1>
+
+<p>
+  Enter formatted text of your mail and
+  tap <q>Preview</q> to see a preview of the mail.
+</p>
+
+<p>
+  This tool is based on reverse engineering of the text formatting
+  rules and may not replicate the output exactly. To ensure that
+  your in-game mail/message will be displayed properly, send it to
+  your alt account first. This tool is written in PEG
+  (<a href="./parser.peggy">PEG source code</a>).
+</p>
+
+<p>
+ 
+</p>
+
+<section>
+<h2>Input</h2>
+<textarea id="input" style="width:100%;height:8rem;">
+&lt;size=40>&lt;color=red>Welcome&lt;/color>&lt;/size>
+&lt;size=30>&lt;color=white>☆ Stay active. 3 day offline = kick.
+☆ No &lt;b>attack&lt;/b> in normal Mithril
+☆ No Titan rally during Evil Spirit Invasion or Lava Haka
+☆ Do tech donation points and help with territory building.
+☆ Remember to reset Auto Rally before you go offline.
+☆ Respect others. No drama in Kingdom Chat.
+☆ Read mail and chat BEFORE starting rallies when you first log in!
+&lt;/color>&lt;/size>
+</textarea>
+
+<p>
+<button class="button" onclick="validate()">Preview</button>
+<input type="radio" id="dark-mode" name="message-mode" value="dark" checked/> <label for="dark-mode">Alliance Message</label>
+<input type="radio" id="white-mode" name="message-mode" value="white"/> <label for="white-mode">Alliance Mail</label>
+</p>
+</section>
+
+<section>
+<h2>Output</h2>
+<div id="output">
+Tap <q>Preview</q> to see a preview of the formatted text.
+</div>
+</section>
+  
+</main>
+</body>
+</html>

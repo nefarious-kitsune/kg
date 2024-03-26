@@ -9,6 +9,8 @@ copyStatic('marches/');
 copyStatic('features/');
 copyStatic('territories/');
 
+copyStatic('mail/');
+
 const elements = ['archer', 'fire', 'ice', 'goblin'];
 
 // import {buildElementData} from './heroes/build-data.js';

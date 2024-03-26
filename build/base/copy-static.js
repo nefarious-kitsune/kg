@@ -17,7 +17,7 @@ export function copyStatic(subDir) {
   const destBasePath = resolve(ProjectPath, './docs/', subDir);
   const srcFilePaths = getFilesFromDir(
       srcBasePath,
-      ['.css', '.html', '.js'],
+      ['.css', '.html', '.js', '.peggy'],
       6,
   );
 
