@@ -1,0 +1,64 @@
+<html>
+<!-- <meta-data>
+<og-image></og-image>
+<og-desc>Alliance Message template</og-desc>
+<tag-list>mail, template</tag-list>
+</meta-data> -->
+<head>
+  <title>Alliance Tech reminder</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link href="../../assets/css/common.css" rel="stylesheet">
+  <link href="../../assets/css/content.css" rel="stylesheet">
+  <link href="../mail.css" rel="stylesheet">
+  <script src="../mail.js"></script>
+  <script src="../parser.js"></script>
+</head>
+
+<body class="content">
+
+<header><nav><ul class="breadcrumb">
+  <li><a href="../../content">Home</a></li>
+  <li><a href="../">Mail</a></li>
+  <li><a href="./">Templates</a></li>
+  <li>{{TITLE}}</li>
+</ul></nav></header>
+
+<main class="content">
+<h1>{{TITLE}}</h1>
+
+<p>{{PAGE-DESC}}</p>
+
+<section>
+<h2>Input</h2>
+<p>
+<button class="editor-button" onclick="copyInput()">Copy</button>
+<button class="editor-button" onclick="validateInput()">Preview</button>
+<input type="radio" id="dark-mode" name="message-mode"  onchange="switchMode()" checked/>
+<label for="dark-mode">Alliance Message</label>
+<input type="radio" id="white-mode" name="message-mode" onchange="switchMode()" />
+<label for="white-mode">Alliance Mail</label>
+</p>
+
+<textarea id="input"><escape-me>
+<size=60><color=red>ʚ</color> <color=fuchsia>Welcome</color> <color=red>ɞ</color></size>
+<size=40><color=yellow>
+Welcome to the family. We require <color=lime>Discord</color> activity. Contact our R4 for the link to our Discord server.</color>
+<color=white>
+<color=red><b>Ground Rules</b></color>
+☆ <color=red><b>Do not</b></color> attack in normal Mithril
+☆ <color=red><b>Do not</b></color> attack for gold or PvP point. <i>Ask in Kingdom Chat first</i>
+☆ <color=red><b>Do not</b></color> start a rally during ESI or Lava Haka
+☆ <color=green><b>Do</b></color> read mail and chat BEFORE starting rallies when you first log in!
+</color></size>
+</escape-me></textarea>
+</section>
+
+<section>
+<h2>Output</h2>
+<div id="output">
+</div>
+</section>
+
+</main>
+</body>
+</html>

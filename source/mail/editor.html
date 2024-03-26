@@ -33,18 +33,6 @@
   tap <q>Preview</q> to see a preview of the mail.
 </p>
 
-<p>
-  This tool is based on reverse engineering of the text formatting
-  rules and may not replicate the output exactly. To ensure that
-  your in-game mail/message will be displayed properly, send it to
-  your alt account first. This tool is written in PEG
-  (<a href="./parser.peggy">PEG source code</a>).
-</p>
-
-<p>
- 
-</p>
-
 <section>
 <h2>Input</h2>
 <p>
@@ -56,26 +44,30 @@
 <label for="white-mode">Alliance Mail</label>
 </p>
   
-<textarea id="input" style="width:100%;height:8rem;">
-&lt;size=40>&lt;color=red>Welcome&lt;/color>&lt;/size>
-&lt;size=30>&lt;color=white>☆ Stay active. 3 day offline = kick.
-☆ No &lt;b>attack&lt;/b> in normal Mithril
-☆ No Titan rally during Evil Spirit Invasion or Lava Haka
-☆ Do tech donation points and help with territory building.
-☆ Remember to reset Auto Rally before you go offline.
-☆ Respect others. No drama in Kingdom Chat.
-☆ Read mail and chat BEFORE starting rallies when you first log in!
-&lt;/color>&lt;/size>
+<textarea id="input">
 </textarea>
 </section>
 
 <section>
 <h2>Output</h2>
 <div id="output">
-Tap <q>Preview</q> to see a preview of the formatted text.
 </div>
 </section>
-  
+
+<section>
+<h2>Note</h2>
+<p>
+  This tool is based on reverse engineering of the text formatting
+  rules and may not replicate the output exactly. To ensure that
+  your in-game mail/message will be displayed properly, send it to
+  your alt account first.
+</p>
+<p>
+  The validator code is created using PEG
+  (<a href="./parser.peggy">source code</a>).
+</p>
+</section>
+
 </main>
 </body>
 </html>

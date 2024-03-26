@@ -1,0 +1,65 @@
+<html>
+<!-- <meta-data>
+<og-image></og-image>
+<og-desc>
+Alliance Mail template for reminders at end of a Burning Expedition season
+</og-desc>
+<tag-list>mail, template</tag-list>
+</meta-data> -->
+<head>
+  <title>End of season reminder</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link href="../../assets/css/common.css" rel="stylesheet">
+  <link href="../../assets/css/content.css" rel="stylesheet">
+  <link href="../mail.css" rel="stylesheet">
+  <script src="../mail.js"></script>
+  <script src="../parser.js"></script>
+</head>
+
+<body class="content">
+
+<header><nav><ul class="breadcrumb">
+  <li><a href="../../content">Home</a></li>
+  <li><a href="../">Mail</a></li>
+  <li><a href="./">Templates</a></li>
+  <li>{{TITLE}}</li>
+</ul></nav></header>
+
+<main class="content">
+<h1>{{TITLE}}</h1>
+
+<p>{{PAGE-DESC}}</p>
+
+<section>
+<h2>Input</h2>
+<p>
+<button class="editor-button" onclick="copyInput()">Copy</button>
+<button class="editor-button" onclick="validateInput()">Preview</button>
+<input type="radio" id="dark-mode" name="message-mode"  onchange="switchMode()"/>
+<label for="dark-mode">Alliance Message</label>
+<input type="radio" id="white-mode" name="message-mode" onchange="switchMode()" checked/>
+<label for="white-mode">Alliance Mail</label>
+</p>
+
+<textarea id="input"><escape-me>
+<color=maroon><size=60>REMINDER</size></color>
+■ Remember to do your <color=navy>Elemental Lord</color>
+■ At reset, remember to refresh your <color=navy>Alliance Challenge</color> until the quests are all SSR (gold)
+■ Hit the <color=navy>Lava Cave</color> as soon as you can.
+■ It's free server transfer week. After you port back to Normal Land, <color=navy>shield up</color>!
+■ ESI will be at UTC 1800 as usual
+
+Quack! Quack!
+~ Commander Ducky <color=orange>(^)></color>
+</escape-me></textarea>
+</section>
+
+<section>
+<h2>Output</h2>
+<div id="output">
+</div>
+</section>
+
+</main>
+</body>
+</html>

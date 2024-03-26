@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<!--  -->
+<head>
+  <title>End of season reminder - Miku's Shrine</title>
+  <link rel="icon" type="image/x-icon" href="/images/logo_mini.png">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://kg.kitsune21.com/images/page-2x_n.png">
+  <meta property="og:url" content="https://kg.kitsune21.com/">
+  <meta property="og:title" content="End of season reminder - Miku's Shrine">
+  <meta property="og:description" content="Alliance Mail template for reminders at end of a Burning Expedition season">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link href="../../assets/css/common.css" rel="stylesheet">
+  <link href="../../assets/css/content.css" rel="stylesheet">
+  <link href="../mail.css" rel="stylesheet">
+  <script src="../mail.js"></script>
+  <script src="../parser.js"></script>
+</head>
+
+<body class="content">
+
+<header><nav><ul class="breadcrumb">
+  <li><a href="../../content">Home</a></li>
+  <li><a href="../">Mail</a></li>
+  <li><a href="./">Templates</a></li>
+  <li>End of season reminder</li>
+</ul></nav></header>
+
+<main class="content">
+<h1>End of season reminder</h1>
+
+<p>Alliance Mail template for reminders at end of a Burning Expedition season</p>
+
+<section>
+<h2>Input</h2>
+<p>
+<button class="editor-button" onclick="copyInput()">Copy</button>
+<button class="editor-button" onclick="validateInput()">Preview</button>
+<input type="radio" id="dark-mode" name="message-mode"  onchange="switchMode()"/>
+<label for="dark-mode">Alliance Message</label>
+<input type="radio" id="white-mode" name="message-mode" onchange="switchMode()" checked/>
+<label for="white-mode">Alliance Mail</label>
+</p>
+
+<textarea id="input">&lt;color=maroon&gt;&lt;size=60&gt;REMINDER&lt;/size&gt;&lt;/color&gt;
+■ Remember to do your &lt;color=navy&gt;Elemental Lord&lt;/color&gt;
+■ At reset, remember to refresh your &lt;color=navy&gt;Alliance Challenge&lt;/color&gt; until the quests are all SSR (gold)
+■ Hit the &lt;color=navy&gt;Lava Cave&lt;/color&gt; as soon as you can.
+■ It's free server transfer week. After you port back to Normal Land, &lt;color=navy&gt;shield up&lt;/color&gt;!
+■ ESI will be at UTC 1800 as usual
+
+Quack! Quack!
+~ Commander Ducky &lt;color=orange&gt;(^)&gt;&lt;/color&gt;</textarea>
+</section>
+
+<section>
+<h2>Output</h2>
+<div id="output">
+</div>
+</section>
+
+</main>
+</body>
+</html>

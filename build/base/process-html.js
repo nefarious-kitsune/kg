@@ -139,10 +139,11 @@ export function processHtml(srcContent) {
     else ogTitle = pageTitle + ' - ' + SiteTitle;
     metaTags.push(`<meta property="og:title" content="${ogTitle}">`);
 
-    ogDesc = condenseText(ogDesc);
-    if (ogDesc !=='') {
-      pageDescription = ogDesc;
-      metaTags.push(`<meta property="og:description" content="${ogDesc}">`);
+    pageDescription = condenseText(ogDesc);
+    if (pageDescription !=='') {
+      metaTags.push(
+          `<meta property="og:description" content="${pageDescription}">`);
+      processedContent = processedContent.replaceAll('{{PAGE-DESC}}', ogDesc);
     }
 
     let tagEndingPos = processedContent.indexOf('</title>\n');
@@ -153,6 +154,20 @@ export function processHtml(srcContent) {
           metaTags.map((line) => '  ' + line + '\n').join('') +
           processedContent.slice(tagEndingPos);
     }
+  }
+
+  // Get page title, and replace {{TITLE}} with page title
+  extracted = findInnerContent('escape-me', processedContent);
+  if (extracted.start !== -1) {
+    const escaped = extracted.content
+        .replaceAll('&', '&amp;')
+        .replaceAll('<', '&lt;')
+        .replaceAll('>', '&gt;');
+    processedContent =
+        processedContent.slice(0, extracted.head) +
+        escaped +
+        processedContent.slice(extracted.tail);
+    processedContent = processedContent.replaceAll('{{TITLE}}', pageTitle);
   }
 
   return {

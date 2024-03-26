@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<!--  -->
+<head>
+  <title>Alliance Tech reminder - Miku's Shrine</title>
+  <link rel="icon" type="image/x-icon" href="/images/logo_mini.png">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://kg.kitsune21.com/images/page-2x_n.png">
+  <meta property="og:url" content="https://kg.kitsune21.com/">
+  <meta property="og:title" content="Alliance Tech reminder - Miku's Shrine">
+  <meta property="og:description" content="Alliance Message template">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link href="../../assets/css/common.css" rel="stylesheet">
+  <link href="../../assets/css/content.css" rel="stylesheet">
+  <link href="../mail.css" rel="stylesheet">
+  <script src="../mail.js"></script>
+  <script src="../parser.js"></script>
+</head>
+
+<body class="content">
+
+<header><nav><ul class="breadcrumb">
+  <li><a href="../../content">Home</a></li>
+  <li><a href="../">Mail</a></li>
+  <li><a href="./">Templates</a></li>
+  <li>Alliance Tech reminder</li>
+</ul></nav></header>
+
+<main class="content">
+<h1>Alliance Tech reminder</h1>
+
+<p>Alliance Message template</p>
+
+<section>
+<h2>Input</h2>
+<p>
+<button class="editor-button" onclick="copyInput()">Copy</button>
+<button class="editor-button" onclick="validateInput()">Preview</button>
+<input type="radio" id="dark-mode" name="message-mode"  onchange="switchMode()" checked/>
+<label for="dark-mode">Alliance Message</label>
+<input type="radio" id="white-mode" name="message-mode" onchange="switchMode()" />
+<label for="white-mode">Alliance Mail</label>
+</p>
+
+<textarea id="input">&lt;size=60&gt;&lt;color=red&gt;ʚ&lt;/color&gt; &lt;color=fuchsia&gt;Welcome&lt;/color&gt; &lt;color=red&gt;ɞ&lt;/color&gt;&lt;/size&gt;
+&lt;size=40&gt;&lt;color=yellow&gt;
+Welcome to the family. We require &lt;color=lime&gt;Discord&lt;/color&gt; activity. Contact our R4 for the link to our Discord server.&lt;/color&gt;
+&lt;color=white&gt;
+&lt;color=red&gt;&lt;b&gt;Ground Rules&lt;/b&gt;&lt;/color&gt;
+☆ &lt;color=red&gt;&lt;b&gt;Do not&lt;/b&gt;&lt;/color&gt; attack in normal Mithril
+☆ &lt;color=red&gt;&lt;b&gt;Do not&lt;/b&gt;&lt;/color&gt; attack for gold or PvP point. &lt;i&gt;Ask in Kingdom Chat first&lt;/i&gt;
+☆ &lt;color=red&gt;&lt;b&gt;Do not&lt;/b&gt;&lt;/color&gt; start a rally during ESI or Lava Haka
+☆ &lt;color=green&gt;&lt;b&gt;Do&lt;/b&gt;&lt;/color&gt; read mail and chat BEFORE starting rallies when you first log in!
+&lt;/color&gt;&lt;/size&gt;</textarea>
+</section>
+
+<section>
+<h2>Output</h2>
+<div id="output">
+</div>
+</section>
+
+</main>
+</body>
+</html>

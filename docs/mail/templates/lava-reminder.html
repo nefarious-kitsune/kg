@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<!--  -->
+<head>
+  <title>Lava reminder - Miku's Shrine</title>
+  <link rel="icon" type="image/x-icon" href="/images/logo_mini.png">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://kg.kitsune21.com/images/page-2x_n.png">
+  <meta property="og:url" content="https://kg.kitsune21.com/">
+  <meta property="og:title" content="Lava reminder - Miku's Shrine">
+  <meta property="og:description" content="Alliance Mail template for reminder/instructions on Lava Haka (provided by 𝚃𝚛𝚒𝚔𝚝𝚒𝚜)">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link href="../../assets/css/common.css" rel="stylesheet">
+  <link href="../../assets/css/content.css" rel="stylesheet">
+  <link href="../mail.css" rel="stylesheet">
+  <script src="../mail.js"></script>
+  <script src="../parser.js"></script>
+</head>
+
+<body class="content">
+
+<header><nav><ul class="breadcrumb">
+  <li><a href="../../content">Home</a></li>
+  <li><a href="../">Mail</a></li>
+  <li><a href="./">Templates</a></li>
+  <li>Lava reminder</li>
+</ul></nav></header>
+
+<main class="content">
+<h1>Lava reminder</h1>
+
+<p>Alliance Mail template for reminder/instructions on Lava Haka
+(provided by 𝚃𝚛𝚒𝚔𝚝𝚒𝚜)</p>
+
+<section>
+<h2>Input</h2>
+<p>
+<button class="editor-button" onclick="copyInput()">Copy</button>
+<button class="editor-button" onclick="validateInput()">Preview</button>
+<input type="radio" id="dark-mode" name="message-mode"  onchange="switchMode()"/>
+<label for="dark-mode">Alliance Message</label>
+<input type="radio" id="white-mode" name="message-mode" onchange="switchMode()" checked/>
+<label for="white-mode">Alliance Mail</label>
+</p>
+
+<textarea id="input">&lt;Size=60&gt;&lt;color=red&gt;&lt;b&gt;&lt;I&gt;Lava Haka&lt;/I&gt;&lt;/b&gt;&lt;/color&gt;&lt;/size&gt;
+&lt;Color=black&gt;Earn points by fighting monsters and starting rallys (rallys give the most points for ap cost). When you have 100 points you can summon a haka behemoth. 
+Each haka behemoth killed gives the alliance points to summon a lava haka. 
+When the lava haka is summoned everyone needs to start a rally on it within 5 minutes if it being summoned, always be sure to start a rally before joining one this ensures us the most amount of dmg. It also helps to have all troops at home so you can send them out to help others rally’s. During this time no other rally’s should be started, we want to have all of our power focused on lava.
+We rank up by getting as much damage done during one summoning as we can. 
+Haka and lava both will give up to 20 rewards, and you can earn these rewards from auto rally.
+If offline for event -
+Leave auto rally on please 
+If online for event - 
+Start a rally as soon as possible then join any other rallys you can.&lt;/color&gt;
+
+&lt;Size=60&gt;&lt;color=red&gt;&lt;b&gt;&lt;I&gt;Lavas summons are at 17:30 UTC&lt;/I&gt;&lt;/b&gt;&lt;/color&gt;&lt;/size&gt;</textarea>
+</section>
+
+<section>
+<h2>Output</h2>
+<div id="output">
+</div>
+</section>
+
+</main>
+</body>
+</html>

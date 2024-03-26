@@ -1,0 +1,59 @@
+<html>
+<!-- <meta-data>
+<og-image></og-image>
+<og-desc>
+Thank-you message after a SvS loss (provided by 𝚃𝚛𝚒𝚔𝚝𝚒𝚜)
+</og-desc>
+<tag-list>mail, template</tag-list>
+</meta-data> -->
+<head>
+  <title>SvS thank you mail (loss)</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link href="../../assets/css/common.css" rel="stylesheet">
+  <link href="../../assets/css/content.css" rel="stylesheet">
+  <link href="../mail.css" rel="stylesheet">
+  <script src="../mail.js"></script>
+  <script src="../parser.js"></script>
+</head>
+
+<body class="content">
+
+<header><nav><ul class="breadcrumb">
+  <li><a href="../../content">Home</a></li>
+  <li><a href="../">Mail</a></li>
+  <li><a href="./">Templates</a></li>
+  <li>{{TITLE}}</li>
+</ul></nav></header>
+
+<main class="content">
+<h1>{{TITLE}}</h1>
+
+<p>{{PAGE-DESC}}</p>
+
+<section>
+<h2>Input</h2>
+<p>
+<button class="editor-button" onclick="copyInput()">Copy</button>
+<button class="editor-button" onclick="validateInput()">Preview</button>
+<input type="radio" id="dark-mode" name="message-mode"  onchange="switchMode()"/>
+<label for="dark-mode">Alliance Message</label>
+<input type="radio" id="white-mode" name="message-mode" onchange="switchMode()" checked/>
+<label for="white-mode">Alliance Mail</label>
+</p>
+
+<textarea id="input"><escape-me>
+<Size=60><color=olive>Hello,</color></size>
+<I><color=black>We all worked extremely hard this SvS and we wanted to thank everyone for their efforts!</color></i>
+<size=50><b><color=olive>We'll get it next time!</color></b></size>
+</escape-me></textarea>
+</section>
+
+<section>
+<h2>Output</h2>
+<div id="output">
+</div>
+</section>
+
+</main>
+</body>
+</html>

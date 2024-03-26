@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<!--  -->
+<head>
+  <title>Lava Cave reminder - Miku's Shrine</title>
+  <link rel="icon" type="image/x-icon" href="/images/logo_mini.png">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://kg.kitsune21.com/images/page-2x_n.png">
+  <meta property="og:url" content="https://kg.kitsune21.com/">
+  <meta property="og:title" content="Lava Cave reminder - Miku's Shrine">
+  <meta property="og:description" content="Alliance Mail template for reminding people to do Lava Cave (provided by 𝚃𝚛𝚒𝚔𝚝𝚒𝚜)">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link href="../../assets/css/common.css" rel="stylesheet">
+  <link href="../../assets/css/content.css" rel="stylesheet">
+  <link href="../mail.css" rel="stylesheet">
+  <script src="../mail.js"></script>
+  <script src="../parser.js"></script>
+</head>
+
+<body class="content">
+
+<header><nav><ul class="breadcrumb">
+  <li><a href="../../content">Home</a></li>
+  <li><a href="../">Mail</a></li>
+  <li><a href="./">Templates</a></li>
+  <li>Lava Cave reminder</li>
+</ul></nav></header>
+
+<main class="content">
+<h1>Lava Cave reminder</h1>
+
+<p>Alliance Mail template for reminding people to do Lava Cave
+(provided by 𝚃𝚛𝚒𝚔𝚝𝚒𝚜)</p>
+
+<section>
+<h2>Input</h2>
+<p>
+<button class="editor-button" onclick="copyInput()">Copy</button>
+<button class="editor-button" onclick="validateInput()">Preview</button>
+<input type="radio" id="dark-mode" name="message-mode"  onchange="switchMode()"/>
+<label for="dark-mode">Alliance Message</label>
+<input type="radio" id="white-mode" name="message-mode" onchange="switchMode()" checked/>
+<label for="white-mode">Alliance Mail</label>
+</p>
+
+<textarea id="input">&lt;size=60&gt;&lt;color=maroon&gt;Hello everyone!&lt;/color&gt;&lt;/size&gt;
+&lt;i&gt;&lt;color=black&gt;Here's your daily reminder to do lava cave&lt;/color&gt;&lt;/i&gt;
+&lt;size=50&gt;&lt;b&gt;&lt;color=maroon&gt;Let's get those alliance coins! 〜⁠(⁠꒪⁠꒳⁠꒪⁠)⁠〜&lt;/color&gt;&lt;/b&gt;&lt;/size&gt;</textarea>
+</section>
+
+<section>
+<h2>Output</h2>
+<div id="output">
+</div>
+</section>
+
+</main>
+</body>
+</html>
