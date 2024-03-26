@@ -1,0 +1,42 @@
+#input {
+  min-height:8rem;
+  padding: 0.8rem;
+  margin-right: auto;
+  margin-left: auto;
+  border: 0.1rem solid var(--neutral);
+  outline: none;
+  resize: none;
+}
+
+#output {
+  min-height: 8rem;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0.8rem;
+  font-size: 1rem;
+  border: 0.1rem solid var(--neutral);
+  background-color: var(--pale-neutral);
+}
+
+#output.mail {
+  background-color: #c6d4e1;
+}
+
+#output.message {
+  background-color: #283b5c;
+  color: #7c9fdf;
+}
+
+#output.error {
+  background-color: var(--miku-gold) !important;
+  color: var(--miku-red) !important;
+}
+
+.editor-button {
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  border: 0.1rem solid var(--miku-red);
+  background-color: white;
+  margin: 0 0.1rem;
+  padding: 0.4rem;
+}
