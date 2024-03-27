@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<!--  -->
+<head>
+  <title>Lava Cave Introduction - Miku's Shrine</title>
+  <link rel="icon" type="image/x-icon" href="/images/logo_mini.png">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://kg.kitsune21.com/images/page-2x_n.png">
+  <meta property="og:url" content="https://kg.kitsune21.com/">
+  <meta property="og:title" content="Lava Cave Introduction - Miku's Shrine">
+  <meta property="og:description" content="Compose and preview an introductory tutorial on Lava Cave to new players">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link href="../assets//css/common.css" rel="stylesheet">
+  <link href="../assets//css/content.css" rel="stylesheet">
+  <link href="./mail.css" rel="stylesheet">
+  <script src="./mail.js"></script>
+  <script src="./parser.js"></script>
+</head>
+
+<body class="content">
+
+<header><nav><ul class="breadcrumb">
+  <li><a href="../content">Home</a></li>
+  <li><a href="./">Mail</a></li>
+  <li>Online Mail Editor</li>
+</ul></nav></header>
+
+<main class="content">
+<h1>Lava Cave Introduction</h1>
+
+<p>Compose and preview an introductory tutorial on Lava Cave
+  to new players</p>
+
+<section>
+<h2>Input</h2>
+<p>
+<button class="editor-button" onclick="copyInput()">Copy</button>
+<button class="editor-button" onclick="validateInput()">Preview</button>
+</p>
+
+<textarea id="input">&lt;b&gt;Lava Cave&lt;/b&gt; is opening soon (Alliance Tab, bottom right). This is an Alliance-only event that runs every week (Mon - Sat).
+
+The &lt;b&gt;objective&lt;/b&gt; is to clear each stage as quickly as possible
+
+- Everyone starts with &lt;color=red&gt;12 Attacks&lt;/color&gt; and &lt;color=blue&gt;12 Moves&lt;/color&gt;
+
+- &lt;color=blue&gt;1 Move&lt;/color&gt; is needed to remove a slate to discover monsters, gate, and boulders
+
+- &lt;color=blue&gt;15 Moves&lt;/color&gt; are needed to remove a boulder
+
+- &lt;color=red&gt;2 Attacks&lt;/color&gt; are needed to defeat a &lt;i&gt;Normal Monster&lt;/i&gt; and deal &lt;color=maroon&gt;4 Damages&lt;/color&gt; against Boss Haka
+
+- &lt;color=red&gt;5 Attacks&lt;/color&gt; are needed to defeat a &lt;i&gt;Elite Monster&lt;/i&gt; and deal &lt;color=maroon&gt;15 Damages&lt;/color&gt; against Boss Haka
+
+- The &lt;i&gt;Boss Haka&lt;/i&gt; has 134 health points. 
+
+- The &lt;i&gt;Gate&lt;/i&gt; is always at the top row of the map. When the Boss is defeated, the Gate will unlock and you can proceed to the next stage. Going through the Gate does not require any &lt;color=blue&gt;Move&lt;/color&gt;
+
+&lt;size=40&gt;Some tips to play Lava Cave&lt;/size&gt;
+
+- Attack small monsters whenever possible because it is more efficient.
+
+- Only attack the Boss when there is no other option
+
+- Keep an eye out for the red flags (these can be placed by R4/R5 only). The flags provide some direction on what to focus on (attacking a monster or breaking a boulder).
+
+- If the &lt;b&gt;Gate&lt;/b&gt; is revealed, check if the Gate has a &lt;b&gt;lock icon&lt;/b&gt;. Sometimes the Boss is defeated before we can reveal the Gate. If the Gate is open (not locked), proceed to the next stage.
+
+- Do not waste &lt;color=blue&gt;Moves&lt;/color&gt; on a free boulder (nothing surrounds it)
+
+We have to work together and everyone needs to participate. There are rewards for each stage we complete.
+
+Any questions, please reach out.</textarea>
+</section>
+
+<section>
+<h2>Output</h2>
+<div id="output" class="mail">
+</div>
+</section>
+
+</main>
+</body>
+</html>

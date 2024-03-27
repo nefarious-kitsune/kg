@@ -1,0 +1,84 @@
+<html>
+<!-- <meta-data>
+<og-image></og-image>
+<og-desc>
+  Compose and preview an introductory tutorial on Lava Cave
+  to new players
+</og-desc>
+</meta-data> -->
+<head>
+  <title>Lava Cave Introduction</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link href="../assets//css/common.css" rel="stylesheet">
+  <link href="../assets//css/content.css" rel="stylesheet">
+  <link href="./mail.css" rel="stylesheet">
+  <script src="./mail.js"></script>
+  <script src="./parser.js"></script>
+</head>
+
+<body class="content">
+
+<header><nav><ul class="breadcrumb">
+  <li><a href="../content">Home</a></li>
+  <li><a href="./">Mail</a></li>
+  <li>Online Mail Editor</li>
+</ul></nav></header>
+
+<main class="content">
+<h1>{{TITLE}}</h1>
+
+<p>{{PAGE-DESC}}</p>
+
+<section>
+<h2>Input</h2>
+<p>
+<button class="editor-button" onclick="copyInput()">Copy</button>
+<button class="editor-button" onclick="validateInput()">Preview</button>
+</p>
+
+<textarea id="input"><escape-me>
+<b>Lava Cave</b> is opening soon (Alliance Tab, bottom right). This is an Alliance-only event that runs every week (Mon - Sat).
+
+The <b>objective</b> is to clear each stage as quickly as possible
+
+- Everyone starts with <color=red>12 Attacks</color> and <color=blue>12 Moves</color>
+
+- <color=blue>1 Move</color> is needed to remove a slate to discover monsters, gate, and boulders
+
+- <color=blue>15 Moves</color> are needed to remove a boulder
+
+- <color=red>2 Attacks</color> are needed to defeat a <i>Normal Monster</i> and deal <color=maroon>4 Damages</color> against Boss Haka
+
+- <color=red>5 Attacks</color> are needed to defeat a <i>Elite Monster</i> and deal <color=maroon>15 Damages</color> against Boss Haka
+
+- The <i>Boss Haka</i> has 134 health points. 
+
+- The <i>Gate</i> is always at the top row of the map. When the Boss is defeated, the Gate will unlock and you can proceed to the next stage. Going through the Gate does not require any <color=blue>Move</color>
+
+<size=40>Some tips to play Lava Cave</size>
+
+- Attack small monsters whenever possible because it is more efficient.
+
+- Only attack the Boss when there is no other option
+
+- Keep an eye out for the red flags (these can be placed by R4/R5 only). The flags provide some direction on what to focus on (attacking a monster or breaking a boulder).
+
+- If the <b>Gate</b> is revealed, check if the Gate has a <b>lock icon</b>. Sometimes the Boss is defeated before we can reveal the Gate. If the Gate is open (not locked), proceed to the next stage.
+
+- Do not waste <color=blue>Moves</color> on a free boulder (nothing surrounds it)
+
+We have to work together and everyone needs to participate. There are rewards for each stage we complete.
+
+Any questions, please reach out.
+</escape-me></textarea>
+</section>
+
+<section>
+<h2>Output</h2>
+<div id="output" class="mail">
+</div>
+</section>
+
+</main>
+</body>
+</html>
