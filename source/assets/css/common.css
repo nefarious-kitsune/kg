@@ -4,9 +4,6 @@
   --miku-gold: #fec728;
 
   --red: #b42328;
-  --yellow: #ce8e13;
-  --green: #7bce1d;
-  --blue: #24e5ff;
 
   --gradient-blue-1: #324d5e;
   --gradient-blue-2: #3a7495;
@@ -120,7 +117,8 @@ a:not([href]) {
   text-decoration: none;
 }
 
-em, strong {
+em.highlight,
+strong.highlight {
   color: var(--miku-dark-red);
 }
 
