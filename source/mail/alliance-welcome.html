@@ -1,8 +1,9 @@
 <html>
 <!-- <meta-data>
 <og-image></og-image>
-<og-desc>Alliance Message template</og-desc>
-<tag-list>mail, template</tag-list>
+<og-desc>
+  Compose and preview an Alliance Notice with basic rules
+</og-desc>
 </meta-data> -->
 <head>
   <title>Alliance Tech reminder</title>
@@ -33,10 +34,6 @@
 <p>
 <button class="editor-button" onclick="copyInput()">Copy</button>
 <button class="editor-button" onclick="validateInput()">Preview</button>
-<input type="radio" id="dark-mode" name="message-mode"  onchange="switchMode()" checked/>
-<label for="dark-mode">Alliance Message</label>
-<input type="radio" id="white-mode" name="message-mode" onchange="switchMode()" />
-<label for="white-mode">Alliance Mail</label>
 </p>
 
 <textarea id="input"><escape-me>
@@ -55,7 +52,7 @@ Welcome to the family. We require <color=lime>Discord</color> activity. Contact 
 
 <section>
 <h2>Output</h2>
-<div id="output">
+<div id="output" class="message">
 </div>
 </section>
 
