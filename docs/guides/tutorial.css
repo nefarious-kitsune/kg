@@ -1,0 +1,222 @@
+:root {
+  --footer-colour: #F05E35; /* Deep Orange */
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #333;
+  color: #fff;
+  font-size: 1.1em;
+  line-height: 1.5;
+  text-align: center;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding: 1em 0;
+}
+
+p {
+  margin: 0;
+  padding: 1em 0;
+}
+
+.btn {
+  display: inline-block;
+  background: #333;
+  color: #fff;
+  text-decoration: none;
+  padding: 1em 2em;
+  border: 1px solid #666;
+  margin: 0.5em 0;
+}
+
+.btn:hover {
+  background: #eaeaea;
+  color: #333;
+}
+
+/* Header Showcase */
+
+#showcase {
+  min-height: 450px;
+  color: #fff;
+  text-align: center;
+}
+
+#showcase .bg-image {
+  position: absolute;
+  /* Darkened Background Image Trick -- This Does Not Dim Text Overlay */
+  background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), 
+    url("https://marklchaves.files.wordpress.com/2020/03/bali-nyuh-kuning-cafe-laptop-coffee-1-ed-wb.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 450px;
+  z-index: -1;
+  opacity: 0.4;
+}
+
+#showcase h1 {
+  padding-top: 100px;
+  padding-bottom: 0;
+}
+
+#showcase .content-wrap,
+#section-a .content-wrap,
+#section-f .content-wrap {
+  padding: 0 1.5em;
+}
+
+/**
+ * Staggered Sections
+ */
+
+/* Section A & F */
+
+#section-a, #section-f {
+  background: #eaeaea;
+  color: #333;
+  padding-bottom: 2em;
+}
+
+.card-content {
+  padding: 1.5em;
+}
+
+/* Section C */
+
+#section-c {
+  background: #fff;
+  color: #333;
+  padding: 2em;
+}
+
+/* Section D & G / Boxes */
+
+#section-d .box,
+#section-g .box {
+  padding: 2em;
+  color: #fff;
+}
+
+#section-d .box:first-child {
+  /* background: #2690d4; */
+}
+
+/* Section E & H / Boxes */
+
+#section-e .box,
+#section-h .box {
+  padding: 2em;
+  color: #fff;
+}
+
+#section-e .box:last-child {
+  /* background: #2690d4; */
+}
+
+/* Footer */
+
+#main-footer {
+  padding: 2em;
+  background: #000;
+  color: #fff;
+  text-align: center;
+}
+
+#main-footer a {
+  color: var(--footer-colour);
+  text-decoration: none;
+}
+
+#d-left {
+  min-height: 344px;
+  background: no-repeat center url(https://www.caughtmyeye.dev/assets/images/surabaya/surabaya-car-free-day-bapak-penjual-topi-517w.webp);
+}
+
+#e-right {
+  min-height: 344px;
+  background: no-repeat center url(https://www.caughtmyeye.dev/assets/images/surabaya/surabaya-pasar-atom-800w.jpg);
+}
+
+#g-left {
+  min-height: 344px;
+  background: no-repeat center url(https://www.caughtmyeye.dev/assets/images/surabaya/surabaya-car-free-day-bapak-penjual-topi-517w.webp);
+}
+
+#h-right {
+  min-height: 344px;
+  background: no-repeat center url(https://www.caughtmyeye.dev/assets/images/surabaya/surabaya-pasar-atom-800w.jpg);
+}
+
+/**
+ * Note that we are using CSS Grid here.
+ */
+
+/* Media Queries */
+
+@media (min-width: 700px) {
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr;
+  }
+
+  #section-a .content-text,
+  #section-f .content-text {
+    columns: 2;
+    column-gap: 2em;
+  }
+
+  #section-a .content-text p,
+  #section-f .content-text p {
+    padding-top: 0;
+  }
+
+  .content-wrap,
+  #section-b ul {
+    grid-column: 2/4;
+  }
+
+  .box,
+  #main-footer div {
+    grid-column: span 2;
+  }
+
+  #section-b ul {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  #section-b li {
+    width: 31%;
+  }
+
+  /** 
+   * Mobile First - The images are placed above the text by
+   * default.
+   * 
+   * Only Re-order Columns for Larger Displays 
+   *
+   * These two lines of code is where the rubber meets the road.
+   * This only affects the second row where we will put the text
+   * on the left and the image on the right.
+   */
+  #section-h.grid div:nth-of-type(1) {
+    order: 2; /* This is the image. Make it go to the right. */
+  }
+  #section-h.grid div:nth-of-type(2) {
+    order: 1; /* This is the text. Make it go to the left. */
+  }
+}
