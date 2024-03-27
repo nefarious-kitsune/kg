@@ -1,16 +1,13 @@
 <!DOCTYPE html>
 <html>
-<!--  -->
+<!-- <og-image></og-image>
+<og-desc>
+  Compose and preview a thank-you note after a SvS win
+  (provided by 𝚃𝚛𝚒𝚔𝚝𝚒𝚜)
+</og-desc>
+</meta-data> -->
 <head>
   <title>SvS thank you mail (loss) - Miku's Shrine</title>
-  <link rel="icon" type="image/x-icon" href="/images/logo_mini.png">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="format-detection" content="telephone=no">
-  <meta property="og:type" content="website">
-  <meta property="og:image" content="https://kg.kitsune21.com/images/page-2x_n.png">
-  <meta property="og:url" content="https://kg.kitsune21.com/">
-  <meta property="og:title" content="SvS thank you mail (loss) - Miku's Shrine">
-  <meta property="og:description" content="Thank-you message after a SvS win (provided by 𝚃𝚛𝚒𝚔𝚝𝚒𝚜)">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link href="../../assets/css/common.css" rel="stylesheet">
   <link href="../../assets/css/content.css" rel="stylesheet">
@@ -21,27 +18,22 @@
 
 <body class="content">
 
-<header><nav><ul class="breadcrumb">
-  <li><a href="../../content">Home</a></li>
-  <li><a href="../">Mail</a></li>
-  <li><a href="./">Templates</a></li>
-  <li>SvS thank you mail (loss)</li>
-</ul></nav></header>
+  <header><nav><ul class="breadcrumb">
+    <li><a href="../content">Home</a></li>
+    <li><a href="./">Mail</a></li>
+    <li>Online Mail Editor</li>
+  </ul></nav></header>
 
 <main class="content">
 <h1>SvS thank you mail (loss)</h1>
 
-<p>Thank-you message after a SvS win (provided by 𝚃𝚛𝚒𝚔𝚝𝚒𝚜)</p>
+<p>{{PAGE-DESC}}</p>
 
 <section>
 <h2>Input</h2>
 <p>
 <button class="editor-button" onclick="copyInput()">Copy</button>
 <button class="editor-button" onclick="validateInput()">Preview</button>
-<input type="radio" id="dark-mode" name="message-mode"  onchange="switchMode()"/>
-<label for="dark-mode">Alliance Message</label>
-<input type="radio" id="white-mode" name="message-mode" onchange="switchMode()" checked/>
-<label for="white-mode">Alliance Mail</label>
 </p>
 
 <textarea id="input">&lt;size=40&gt;&lt;color=teal&gt;Hi all!&lt;/color&gt;&lt;/size&gt;
@@ -51,7 +43,7 @@
 
 <section>
 <h2>Output</h2>
-<div id="output">
+<div id="output" class="mail">
 </div>
 </section>
 

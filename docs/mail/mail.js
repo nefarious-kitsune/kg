@@ -10,25 +10,10 @@ document.addEventListener('DOMContentLoaded', (e) => {
   validateInput();
 });
 
-
-/**
- * Change mail mode
- */
-function switchMode() {
-  if (document.getElementById('dark-mode').checked) {
-    previewElement.classList.remove('mail');
-    previewElement.classList.add('message');
-  } else {
-    previewElement.classList.remove('message');
-    previewElement.classList.add('mail');
-  }
-}
-
 /**
  * Validate input and generate a preview
  */
 function validateInput() {
-  switchMode();
   const inputText = inputElement.value;
   try {
     const previewText = parser.parse(inputText);

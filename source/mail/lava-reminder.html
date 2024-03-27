@@ -2,10 +2,9 @@
 <!-- <meta-data>
 <og-image></og-image>
 <og-desc>
-Alliance Mail template for reminder/instructions on Lava Haka
-(provided by 𝚃𝚛𝚒𝚔𝚝𝚒𝚜)
+  Compose and preview a reminder message on
+  Lava Haka summoning time and instructions. (by 𝚃𝚛𝚒𝚔𝚝𝚒𝚜)
 </og-desc>
-<tag-list>mail, template</tag-list>
 </meta-data> -->
 <head>
   <title>Lava reminder</title>
@@ -20,10 +19,9 @@ Alliance Mail template for reminder/instructions on Lava Haka
 <body class="content">
 
 <header><nav><ul class="breadcrumb">
-  <li><a href="../../content">Home</a></li>
-  <li><a href="../">Mail</a></li>
-  <li><a href="./">Templates</a></li>
-  <li>{{TITLE}}</li>
+  <li><a href="../content">Home</a></li>
+  <li><a href="./">Mail</a></li>
+  <li>Online Mail Editor</li>
 </ul></nav></header>
 
 <main class="content">
@@ -36,10 +34,6 @@ Alliance Mail template for reminder/instructions on Lava Haka
 <p>
 <button class="editor-button" onclick="copyInput()">Copy</button>
 <button class="editor-button" onclick="validateInput()">Preview</button>
-<input type="radio" id="dark-mode" name="message-mode"  onchange="switchMode()"/>
-<label for="dark-mode">Alliance Message</label>
-<input type="radio" id="white-mode" name="message-mode" onchange="switchMode()" checked/>
-<label for="white-mode">Alliance Mail</label>
 </p>
 
 <textarea id="input"><escape-me>
@@ -60,7 +54,7 @@ Start a rally as soon as possible then join any other rallys you can.</color>
 
 <section>
 <h2>Output</h2>
-<div id="output">
+<div id="output" class="mail">
 </div>
 </section>
 

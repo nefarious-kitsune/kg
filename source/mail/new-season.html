@@ -1,10 +1,9 @@
 <html>
-<!-- <meta-data>
-<og-image></og-image>
+<!-- <og-image></og-image>
 <og-desc>
-Alliance Mail template for reminders at end of a Burning Expedition season
+  Compose and preview an end-of-season reminder message
+  at end of a Burning Expedition season
 </og-desc>
-<tag-list>mail, template</tag-list>
 </meta-data> -->
 <head>
   <title>End of season reminder</title>
@@ -18,12 +17,11 @@ Alliance Mail template for reminders at end of a Burning Expedition season
 
 <body class="content">
 
-<header><nav><ul class="breadcrumb">
-  <li><a href="../../content">Home</a></li>
-  <li><a href="../">Mail</a></li>
-  <li><a href="./">Templates</a></li>
-  <li>{{TITLE}}</li>
-</ul></nav></header>
+  <header><nav><ul class="breadcrumb">
+    <li><a href="../content">Home</a></li>
+    <li><a href="./">Mail</a></li>
+    <li>Online Mail Editor</li>
+  </ul></nav></header>
 
 <main class="content">
 <h1>{{TITLE}}</h1>
@@ -35,10 +33,6 @@ Alliance Mail template for reminders at end of a Burning Expedition season
 <p>
 <button class="editor-button" onclick="copyInput()">Copy</button>
 <button class="editor-button" onclick="validateInput()">Preview</button>
-<input type="radio" id="dark-mode" name="message-mode"  onchange="switchMode()"/>
-<label for="dark-mode">Alliance Message</label>
-<input type="radio" id="white-mode" name="message-mode" onchange="switchMode()" checked/>
-<label for="white-mode">Alliance Mail</label>
 </p>
 
 <textarea id="input"><escape-me>
@@ -56,7 +50,7 @@ Quack! Quack!
 
 <section>
 <h2>Output</h2>
-<div id="output">
+<div id="output" class="mail">
 </div>
 </section>
 

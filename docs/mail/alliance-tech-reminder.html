@@ -10,7 +10,7 @@
   <meta property="og:image" content="https://kg.kitsune21.com/images/page-2x_n.png">
   <meta property="og:url" content="https://kg.kitsune21.com/">
   <meta property="og:title" content="Alliance Tech reminder - Miku's Shrine">
-  <meta property="og:description" content="Alliance Mail template for reminding people to do Alliance Tech (provided by 𝚃𝚛𝚒𝚔𝚝𝚒𝚜)">
+  <meta property="og:description" content="Compose and preview a reminder message on Alliance Tech (by 𝚃𝚛𝚒𝚔𝚝𝚒𝚜)">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link href="../../assets/css/common.css" rel="stylesheet">
   <link href="../../assets/css/content.css" rel="stylesheet">
@@ -22,27 +22,21 @@
 <body class="content">
 
 <header><nav><ul class="breadcrumb">
-  <li><a href="../../content">Home</a></li>
-  <li><a href="../">Mail</a></li>
-  <li><a href="./">Templates</a></li>
-  <li>Alliance Tech reminder</li>
+  <li><a href="../content">Home</a></li>
+  <li><a href="./">Mail</a></li>
+  <li>Online Mail Editor</li>
 </ul></nav></header>
 
 <main class="content">
 <h1>Alliance Tech reminder</h1>
 
-<p>Alliance Mail template for reminding people to do Alliance Tech
-    (provided by 𝚃𝚛𝚒𝚔𝚝𝚒𝚜)</p>
+<p>Compose and preview a reminder message on Alliance Tech (by 𝚃𝚛𝚒𝚔𝚝𝚒𝚜)</p>
 
 <section>
 <h2>Input</h2>
 <p>
 <button class="editor-button" onclick="copyInput()">Copy</button>
 <button class="editor-button" onclick="validateInput()">Preview</button>
-<input type="radio" id="dark-mode" name="message-mode"  onchange="switchMode()"/>
-<label for="dark-mode">Alliance Message</label>
-<input type="radio" id="white-mode" name="message-mode" onchange="switchMode()" checked/>
-<label for="white-mode">Alliance Mail</label>
 </p>
 
 <textarea id="input">Hello everyone!
@@ -54,7 +48,7 @@ This helps us all in so many ways as efficiently as possible ♡</textarea>
 
 <section>
 <h2>Output</h2>
-<div id="output">
+<div id="output" class="mail">
 </div>
 </section>
 
