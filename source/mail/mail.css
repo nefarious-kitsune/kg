@@ -91,3 +91,12 @@ ul.template-list {
   margin: 0 0.1rem;
   padding: 0.4rem;
 }
+
+.color-chip {
+  display: inline-block;
+  width: 4rem;
+  text-align: center;
+  margin: 0 0.2rem 0.2rem 0;
+  background-color:#999;
+  padding:0.2rem;
+}
