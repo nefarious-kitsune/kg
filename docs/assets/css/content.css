@@ -89,6 +89,13 @@ main > ul { margin-left: 1.2rem !important; }
 
 h1 { text-align: center; }
 
+/* --------------- Simple Text Styles --------------- */
+
+.blue { text-decoration: underline 0.1rem var(--blue); }
+.orange { text-decoration: underline 0.1rem var(--orange); }
+.green { text-decoration: underline 0.1rem var(--green); }
+.purple { text-decoration: underline 0.1rem var(--purple); }
+
 /* ----------- Anchors & Focus Animation  ----------- */
 
 section,
