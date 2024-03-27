@@ -1,5 +1,3 @@
-
-
 .template-list-container {
   column-width: 18rem;
 }
@@ -49,14 +47,14 @@ ul.template-list {
   -webkit-box-sizing: border-box;
       -moz-box-sizing: border-box;
           box-sizing: border-box;
-  height:8rem;
+  min-height: 8rem;
   /* max-width: 80%; */
   padding: 0.8rem;
   margin-right: auto;
   margin-left: auto;
   border: 0.1rem solid var(--neutral);
   outline: none;
-  resize: none;
+  resize: vertical;
 }
 
 #output {

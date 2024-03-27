@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<!--  -->
+<head>
+  <title>Online Notice Editor - Miku's Shrine</title>
+  <link rel="icon" type="image/x-icon" href="/images/logo_mini.png">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://kg.kitsune21.com/images/page-2x_n.png">
+  <meta property="og:url" content="https://kg.kitsune21.com/">
+  <meta property="og:title" content="Online Notice Editor - Miku's Shrine">
+  <meta property="og:description" content="Compose and preview an Alliance Mail message.">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link href="../assets/css/common.css" rel="stylesheet">
+  <link href="../assets/css/content.css" rel="stylesheet">
+  <link href="./mail.css" rel="stylesheet">
+  <script src="./mail.js"></script>
+  <script src="./parser.js"></script>
+</head>
+
+<body class="content">
+
+<header><nav><ul class="breadcrumb">
+  <li><a href="../content">Home</a></li>
+  <li><a href="./">Mail</a></li>
+  <li>Online Notice Editor</li>
+</ul></nav></header>
+
+<main class="content">
+<h1>Online Notice Editor</h1>
+
+<section>
+<h2>Input</h2>
+<p>
+<button class="editor-button" onclick="copyInput()">Copy</button>
+<button class="editor-button" onclick="validateInput()">Preview</button>
+</p>
+  
+<textarea id="input">
+</textarea>
+</section>
+
+<section>
+<h2>Output</h2>
+<div id="output" class="message">
+</div>
+</section>
+
+<section>
+<h2>Note</h2>
+<p>
+  This tool is based on reverse engineering of the text formatting
+  rules and may not replicate the output exactly. To ensure that
+  your in-game mail/message will be displayed properly, send it to
+  your alt account first.
+</p>
+<p>
+  The validator code is created using PEG
+  (<a href="./parser.peggy">source code</a>).
+</p>
+</section>
+
+</main>
+</body>
+</html>
