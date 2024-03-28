@@ -19,11 +19,11 @@
     .tutorial-section .content-box {
       /* padding: 1rem; */
       /* background-color: #333; */
+      font-size: 1.2rem;
     }
     .tutorial-section .image-box {
       /* padding: 1rem; */
       /* background-color: #666; */
-      text-align: center;
 
       img {
         max-width: 100%;
@@ -37,13 +37,25 @@
   @media (min-width: 700px) {
     .tutorial-section {
       display: grid;
+      max-width: 60rem;
       grid-template-columns: repeat(3, 1fr); 
       gap: 1rem;
+
       margin: 0;
+
+      h2 {
+        margin-block-start: 0;
+        margin-top: 0;
+        padding-top: 0;
+      }
     }
 
     .content-box {
       grid-column: span 2;
+    }
+
+    .image-box {
+      text-align: center;
     }
 
     .tutorial-section.stagger .image-box {
@@ -59,43 +71,86 @@
 <body class="content">
 
 <header><nav><ul class="breadcrumb">
-  <li><a href="/../content">Home</a></li>
-  <li>Lava Cave</li>
+  <li><a href="../content">Home</a></li>
+  <li><a href="./">Lava Cave</a></li>
 </ul></nav></header>
 
 <main class="content">
 <h1>Lava Cave Tips</h1>
-<p>Tips on doing Lava Cave</p>
 
 <section class="tutorial-section">
+<div class="image-box"><img src="../assets/guides/tip-lava-cave_4.png"></div>
+<div class="content-box">
+<h2>Hit the small monsters first</h2>
+<p>
+  When you defeat the Normal and Elite monsters, the Haka Boss will
+  take additional damage. Concentrate on the small monsters first
+  so that you can defeat the Haka Boss more efficiently.
+</p>
+</div>
+</section>
+  
+
+<section class="tutorial-section stagger">
 <div class="image-box"><img src="../assets/guides/tip-lava-cave_1.png"></div>
 <div class="content-box">
-<h2>Don't reveal Haka Boss too soon</h2>
+<h2>Uncover Haka Boss last</h2>
 <p>
-  If you have the Cave Map and can see everything under slates,
+  If you have the Cave Map and can see through tiles,
   leave Haka Boss as the last thing you uncover. When you
-  uncover something, all neighboring slates become unlocked.
+  uncover something, all neighboring tiles become unlocked,
+  and you could accidentally lock up small monsters.
+</p>
+</div>
+</section>
+
+<section class="tutorial-section">
+<div class="image-box"><img src="../assets/guides/tip-lava-cave_2.png"></div>
+<div class="content-box">
+<h2>Watch the Exit</h2>
+<p>
+  Sometimes the Exit is blocked by many Boulders and
+  Haka Boss is defeated before the Exit is uncovered. If you
+  see that there is no red cross sign on the Exit Exit, it means
+  the Exit is already open, so proceed to the next stage.
 </p>
 </div>
 </section>
 
 <section class="tutorial-section stagger">
-<div class="image-box"><img src="../assets/guides/tip-lava-cave_2.png"></div>
+<div class="image-box"><img src="../assets/guides/tip-lava-cave_3.png"></div>
 <div class="content-box">
-<h2>Watch the Gate</h2>
+<h2>Do not hit free boulders</h2>
 <p>
-  Sometimes the path to the Gate is blocked by many Boulders and
-  Haka Boss is defeated before the Gate is uncovered. If you
-  see that there is no red cross sign on the Gate, it means
-  the Gate is already open, so proceed to the next stage.
+  As the stage level increases, so will Haka Boss's health point. When
+  you are at very high level, you might get frustrated that you have
+  12 Moves but no Attack. Do not take your frustration out on the
+  free Boulders. Lava Cave is about team work, and you do not want to
+  send the wrong message.
 </p>
 </div>
 </section>
 
-<!-- Watch for the gate
-Attack small monsters whenever possible because it is more efficient.
-don't hit lone boulder -->
-  
+<section class="tutorial-section">
+<div class="image-box"><img src="../assets/guides/tip-lava-cave_5.png"></div>
+<div class="content-box">
+<h2>Give direction</h2>
+<p>
+  R4 and R5 can set flags on the map to help members on deciding how
+  to use their Moves/Attacks.
+</p>
+<p>
+  Also, send out regular reminder mails on Lava Cave. You may
+  use pre-written <a href="../mail">mail templates</a>.
+</p>
+</div>
+</section>
+
+<!--
+send mail
+set flag
+use alts
+-->
 </main>
 </body>
 </html>
