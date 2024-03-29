@@ -2,14 +2,14 @@
 <html>
 <!--  -->
 <head>
-  <title>Layer-2 Bonds Power - Miku's Shrine</title>
+  <title>Layer-2 Skills Power - Miku's Shrine</title>
   <link rel="icon" type="image/x-icon" href="/images/logo_mini.png">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="format-detection" content="telephone=no">
   <meta property="og:type" content="website">
   <meta property="og:image" content="https://kg.kitsune21.com/images/page-2x_n.png">
   <meta property="og:url" content="https://kg.kitsune21.com/">
-  <meta property="og:title" content="Layer-2 Bonds Power - Miku's Shrine">
+  <meta property="og:title" content="Layer-2 Skills Power - Miku's Shrine">
   <meta property="og:description" content="Information and stacking graph for Layer-2 Bonds Power">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link href="../assets/css/common.css" rel="stylesheet">
@@ -20,45 +20,46 @@
 <header><nav><ul class="breadcrumb">
   <li><a href="../content">Home</a></li>
   <li><a href="./">Stacking</a></li>
-  <li>Layer-2 Bonds Power</li>
-  <li>Layer-2 Bonds Power</li>
+  <li>Layer-2 Skills Power</li>
+  <li>Layer-2 Skills Power</li>
 </ul></nav></header>
 <main>
 
-<h1>Layer-2 Bonds Power</h1>
+<h1>Layer-2 Skills Power</h1>
 <section id="overview">
 <p>
-  When a <a href="../marches/">Troops March</a> has three heroes of
-  the same element, each hero in the march gains Bonds Power. 
+  When a hero in a <a href="../marches/">Troops March</a> has 
+  applicable bonus unit-power skill (e.g. Guerrilla Master), the
+  Troops Unit gain gains Bonds Power. 
 </p>
 
 <p>
-  The Bonds Power depends on
-  <a href="../data/hero-bonds">Hero Bonds</a> level,
-  Hero Base Power, and
-  Hero Star Power.
+  The Skills Power depends on
+  total percentage of applicable skills,
+  <a href="./L1-unit-base-power">Unit Base Power</a>, and
+  Unit Evolution Power.
 </p>
 </section>
 
 <section id="calculation">
 <h2>Calculation</h2>
 <div class="equation-block">
-  <span class="result">Bonds Power</span>
+  <span class="result">Skills Power</span>
   <span class="operator">=</span>
   <span class="parentheses">(</span>
-  <span class="variable">Hero Base Power</span>
+  <span class="variable">Unit Base Power</span>
   <span class="operator">+</span>
-  <span class="variable">Hero Star Power</span>
+  <span class="variable">Unit Evol. Power</span>
   <span class="parentheses">)</span>
   <span class="operator">×</span>
-  <span class="variable">Hero Bonds power bonus</span>
+  <span class="variable">Unit-Power bonus</span>
 </div>
 </section>
 
 <section id="stacking-graph">
 <h2>Stacking</h2>
 <img
- src="../images/stacking/stacking_L2-Bonds-Power.png"
+ src="../images/stacking/stacking_L2-Hero-Skill-Power.png"
  style="padding:1rem; width:100%; max-width:752px; height:auto;"
 >
 </section>

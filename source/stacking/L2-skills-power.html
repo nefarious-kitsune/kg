@@ -1,0 +1,66 @@
+<html>
+<!-- <meta-data>
+<og-image></og-image>
+<og-desc>
+Information and stacking graph for Layer-2 Bonds Power
+</og-desc>
+<tag-list>territories</tag-list>
+</meta-data> -->
+<head>
+  <title>Layer-2 Skills Power</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link href="../assets/css/common.css" rel="stylesheet">
+  <link href="../assets/css/content.css" rel="stylesheet">
+  <link href="./stacking.css" rel="stylesheet">
+</head>
+<body>
+<header><nav><ul class="breadcrumb">
+  <li><a href="../content">Home</a></li>
+  <li><a href="./">Stacking</a></li>
+  <li>Layer-2 Skills Power</li>
+  <li>{{TITLE}}</li>
+</ul></nav></header>
+<main>
+
+<h1>{{TITLE}}</h1>
+<section id="overview">
+<p>
+  When a hero in a <a href="../marches/">Troops March</a> has 
+  applicable bonus unit-power skill (e.g. Guerrilla Master), the
+  Troops Unit gain gains Bonds Power. 
+</p>
+
+<p>
+  The Skills Power depends on
+  total percentage of applicable skills,
+  <a href="./L1-unit-base-power">Unit Base Power</a>, and
+  Unit Evolution Power.
+</p>
+</section>
+
+<section id="calculation">
+<h2>Calculation</h2>
+<div class="equation-block">
+  <span class="result">Skills Power</span>
+  <span class="operator">=</span>
+  <span class="parentheses">(</span>
+  <span class="variable">Unit Base Power</span>
+  <span class="operator">+</span>
+  <span class="variable">Unit Evol. Power</span>
+  <span class="parentheses">)</span>
+  <span class="operator">×</span>
+  <span class="variable">Unit-Power bonus</span>
+</div>
+</section>
+
+<section id="stacking-graph">
+<h2>Stacking</h2>
+<img
+ src="../images/stacking/stacking_L2-Hero-Skill-Power.png"
+ style="padding:1rem; width:100%; max-width:752px; height:auto;"
+>
+</section>
+
+</main>
+</body>
+</html>
