@@ -13,6 +13,7 @@ copyStatic('mail/');
 copyStatic('guides/');
 copyStatic('lava-cave/');
 copyStatic('events/');
+copyStatic('stacking/');
 
 const elements = ['archer', 'fire', 'ice', 'goblin'];
 
