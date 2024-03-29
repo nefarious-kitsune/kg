@@ -53,11 +53,9 @@
       text-align: center;
     }
 
-    .tutorial-section.stagger .image-box {
-      order: 2; /* This is the image. Make it go to the right. */
-    }
-    .tutorial-section.stagger .content-box {
-      order: 1; /* This is the text. Make it go to the left. */
+    .tutorial-section.stagger {
+      .image-box { order: 2; }
+      .content-box { order: 1; }
     }
   }
   </style>
