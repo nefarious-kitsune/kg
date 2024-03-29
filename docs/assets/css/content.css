@@ -91,6 +91,7 @@ h1 { text-align: center; }
 
 /* --------------- Simple Text Styles --------------- */
 
+.red { text-decoration: underline 0.2rem var(--red); }
 .blue { text-decoration: underline 0.2rem var(--blue); }
 .orange { text-decoration: underline 0.2rem var(--orange); }
 .green { text-decoration: underline 0.2rem var(--green); }

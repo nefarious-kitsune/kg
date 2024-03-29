@@ -25,6 +25,64 @@
 
 <main>
 <h1>Stacking</h1>
+
+<section>
+
+<h2>What is Stacking?</h2>
+
+<p>
+  In Kingdom Guard, different stats (power, carrying load,
+  marching speed, etc.) are composed from different <em>layer</em>.
+</p>
+
+<p>
+  At the most fundamental layer (Layer-0) are stats such as
+  Unit Capacity, Castle level, and Hero class. These Layer-0 stats are used
+  to calculate Layer-1 stats, which are in turn used to calculate Layer-2
+  stats, and so forth.
+</p>
+
+</section>
+
+<section>
+<h2>Example</h2>
+
+<p>
+  For example, let's say the Castle level is
+  <span class="blue">500</span> and Unit capacity is
+  <span class="blue">7</span>, then the
+  <a href="./L1-unit-base-power">Unit Base Power</a> would be
+  <span class="blue">500</span> x 10 x
+  <span class="blue">7</span> =
+  <span class="orange">35000</span>.
+</p>
+
+<p>
+  Let's say that the Troops March has Filius, Jessica, and Clarence
+  all at 4-star, then the <a href="./L2-skills-power">Hero Skills Power</a>
+  would be <span class="orange">35000</span> x (25% + 25% + 40%) =
+  <span class="purple">31500</span>.
+</p>
+ 
+<p>
+  Let's say the player has 10% power bonus from Skins, the Skin Power
+  would be
+  (<span class="orange">35000</span> + <span class="purple">31500</span>) x 10%
+  = <span class="red">6650</span>.
+</p>
+
+<p>
+  To find the total Unit Power (base and derived), you
+  <strong class="highlight">add up the numbers</strong>. So that will be
+  <span class="orange">35000</span> +
+  <span class="purple">31500</span> +
+  <span class="red">6650</span>
+  = 35000.
+</p>
+</section>
+
+<section>
+<h2>Lists of Stats</h2>
 <div class="stats-list-container">
 <ul class="stats-list">
   <li class="stats L0"><a href="./L0-castle-level">Castle level</a></li>
@@ -61,6 +119,7 @@
   <li class="stats L4"><a href="./L4-power">Expedition Tech Power</a></li>
 </ul>
 </div>
+</section>
 
 </main>
 </body>
