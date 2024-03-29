@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+<!--  -->
+<head>
+  <title>Mightiest Kingdom Phases - Miku's Shrine</title>
+  <link rel="icon" type="image/x-icon" href="/images/logo_mini.png">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://kg.kitsune21.com/images/page-2x_n.png">
+  <meta property="og:url" content="https://kg.kitsune21.com/">
+  <meta property="og:title" content="Mightiest Kingdom Phases - Miku's Shrine">
+  <meta property="og:description" content="Information on phases and points of Mightiest Kingdom phases">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+  <link href="../../assets/css/common.css" rel="stylesheet">
+  <link href="../../assets/css/content.css" rel="stylesheet">
+  <style>
+  .phase-container {
+    display: flex;
+    flex-direction: column;
+    .quest-row { flex-grow: 0 };
+    .quest-row:last-child { flex-grow: 1 };
+
+    h2 {
+      color: black;
+      text-shadow: none;
+      font-size: 1.2rem;
+    }
+
+    .unit { background-color: var(--light-primary-1);}
+    .magic { background-color: var(--light-primary-2);}
+    .blacksmith { background-color: var(--light-primary-3);}
+    .dragon { background-color: var(--light-primary-4);}
+    .hero { background-color: var(--light-primary-5);}
+    .summon { background-color: var(--light-primary-6);}
+    .common { background-color: var(--light-neutral);}
+    
+    .quest-row {
+      display: flex;
+      padding: 0.25rem 0.5rem;
+      margin-bottom: 0;
+      justify-content: start; /* left */
+      align-content: start; /* top */
+      flex-direction: row;
+
+      .quest-desc {
+        flex-grow: 1;
+      }
+      .quest-point {
+        flex-grow: 0;
+        text-align: right;
+        width: 4rem;
+      }
+    }
+
+    .quest-row.p2p {
+      color: var(--miku-dark-red);
+      .quest-desc {
+        font-size: 0.9rem;
+      }
+    }
+  }
+
+  @media screen and (min-width: 620px) {
+    h2 {
+      margin-block-start: 0;
+      margin-block-end: 0.2rem;
+      padding: 0;
+    }
+  }
+  
+  @media screen and (min-width: 600px) and (max-width: 1000px) {
+    .phase-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      /* grid-auto-rows: 18rem; */
+      grid-auto-flow: dense; /* don't forget this */
+      column-gap: 1rem;
+      row-gap: 2rem;
+      justify-content: center;
+    }
+    .phase-1 { order: 1; grid-row: span 2; }
+    .phase-3 { order: 2; }
+    .phase-4 { order: 3; grid-row: span 2; }
+    .phase-2 { order: 4; grid-row: span 2; }
+    .phase-5 { order: 5; }
+    .phase-6 { order: 6; }
+    .phase-common { order: 5; }
+  }
+
+  @media screen and (min-width: 1000px) {
+    .phase-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); /* only 3 here */
+      /* grid-auto-rows: 18rem; */
+      grid-auto-flow: dense; /* don't forget this */
+      column-gap: 1rem;
+      row-gap: 2rem;
+      justify-content: center;
+
+      .phase-1 { grid-row: span 2; }
+      .phase-2 { grid-row: span 2; }
+    }
+  }
+  </style>
+</head>
+
+<body class="content">
+
+<header><nav><ul class="breadcrumb">
+  <li><a href="../../content">Home</a></li>
+  <li><a href="../">Events</a></li>
+  <li><a href="./">Mightiest Kingdom</a></li>
+  <li>MK Phases</li>
+</ul></nav></header>
+
+<main class="content">
+<h1>Mightiest Kingdom Phases</h1>
+
+<div class="phase-grid">
+<section class="phase-container phase-1">
+<h2>Phase 1: Unit</h2>
+<div class="quest-row unit">
+  <div class="quest-desc">Tier 1 Unit EXP Book spent</div>
+  <div class="quest-point">800</div>
+</div>
+<div class="quest-row unit">
+  <div class="quest-desc">Tier 2 Unit EXP Book spent</div>
+  <div class="quest-point">4&#8201;000</div>
+</div>
+<div class="quest-row unit">
+  <div class="quest-desc">Tier 3 Unit EXP Book spent</div>
+  <div class="quest-point">20&#8201;000</div>
+</div>
+<div class="quest-row unit">
+  <div class="quest-desc">Tier 4 Unit EXP Book spent</div>
+  <div class="quest-point">100&#8201;000</div>
+</div>
+<div class="quest-row unit">
+  <div class="quest-desc">Master Talent Book spent</div>
+  <div class="quest-point">5</div>
+</div>
+<div class="quest-row unit">
+  <div class="quest-desc">Crown of Oracle spent</div>
+  <div class="quest-point">56</div>
+</div>
+</section>
+
+<section class="phase-container phase-2">
+<h2>Phase 2: Summon</h2>
+<div class="quest-row magic">
+  <div class="quest-desc">Light Reagent spent</div>
+  <div class="quest-point">70</div>
+</div>
+<div class="quest-row blacksmith">
+  <div class="quest-desc">Forge Hammer spent</div>
+  <div class="quest-point">100</div>
+</div>
+<div class="quest-row summon p2p">
+  <div class="quest-desc">Advanced Summoning spell obtained through purchase</div>
+  <div class="quest-point">14</div>
+</div>
+<div class="quest-row summon p2p">
+  <div class="quest-desc">Perfect Summoning spell obtained through purchase</div>
+  <div class="quest-point">140</div>
+</div>
+<div class="quest-row dragon">
+  <div class="quest-desc">Rare Dragon Rune spent</div>
+  <div class="quest-point">70</div>
+</div>
+<div class="quest-row dragon">
+  <div class="quest-desc">Excellent Dragon Run spent</div>
+  <div class="quest-point">700</div>
+</div>
+<div class="quest-row dragon">
+  <div class="quest-desc">Perfect Dragon Run spent</div>
+  <div class="quest-point">7&#8201;000</div>
+</div>
+<div class="quest-row dragon">
+  <div class="quest-desc">Epic Dragon Run spent</div>
+  <div class="quest-point">14&#8201;000</div>
+</div>
+</section>
+
+<section class="phase-container phase-3">
+<h2>Phase 3: Witch</h2>
+<div class="quest-row magic">
+  <div class="quest-desc">Light Reagent spent</div>
+  <div class="quest-point">70</div>
+</div>
+<div class="quest-row magic">
+  <div class="quest-desc">Strengthening Potion spent</div>
+  <div class="quest-point">3</div>
+</div>
+<div class="quest-row magic">
+  <div class="quest-desc">Fortune Potion spent</div>
+  <div class="quest-point">28</div>
+</div>
+</section>
+
+<section class="phase-container phase-4">
+<h2>Phase 4: Gear</h2>
+<div class="quest-row blacksmith">
+  <div class="quest-desc">Forge Hammer spent</div>
+  <div class="quest-point">100</div>
+</div>
+<div class="quest-row blacksmith p2p">
+  <div class="quest-desc">Elemental Vial obtained through purchase</div>
+  <div class="quest-point">14</div>
+</div>
+<div class="quest-row blacksmith p2p">
+  <div class="quest-desc">Blood of Titan obtained through purchase</div>
+  <div class="quest-point">140</div>
+</div>
+</section>
+
+<section class="phase-container phase-5">
+<h2>Phase 5: Dragon</h2>
+<div class="quest-row dragon">
+  <div class="quest-desc">Rare Dragon Rune spent</div>
+  <div class="quest-point">70</div>
+</div>
+<div class="quest-row dragon">
+  <div class="quest-desc">Excellent Dragon Run spent</div>
+  <div class="quest-point">700</div>
+</div>
+<div class="quest-row dragon">
+  <div class="quest-desc">Perfect Dragon Run spent</div>
+  <div class="quest-point">7&#8201;000</div>
+</div>
+<div class="quest-row dragon">
+  <div class="quest-desc">Epic Dragon Run spent</div>
+  <div class="quest-point">14&#8201;000</div>
+</div>
+<div class="quest-row dragon p2p">
+  <div class="quest-desc">Dragon Soul Stone obtained through purchase</div>
+  <div class="quest-point">14</div>
+</div>
+<div class="quest-row dragon p2p">
+  <div class="quest-desc">Deluxe Dragon Soul Stone obtained through purchase</div>
+  <div class="quest-point">140</div>
+</div>
+</section>
+
+<section class="phase-container phase-6">
+<h2>Phase 6: Heroes</h2>
+<div class="quest-row hero">
+  <div class="quest-desc">N Hero Card spent</div>
+  <div class="quest-point">100</div>
+</div>
+<div class="quest-row hero">
+  <div class="quest-desc">N Hero Card spent</div>
+  <div class="quest-point">700</div>
+</div>
+<div class="quest-row hero">
+  <div class="quest-desc">SR Hero Card spent</div>
+  <div class="quest-point">3&#8201;500</div>
+</div>
+<div class="quest-row hero">
+  <div class="quest-desc">SSR Hero Card spent</div>
+  <div class="quest-point">14&#8201;000</div>
+</div>
+</section>
+
+<section class="phase-container phase-common">
+<h2>Common to all phases</h2>
+<div class="quest-row common">
+  <div class="quest-desc">Each monster defeated</div>
+  <div class="quest-point">500</div>
+</div>
+<div class="quest-row common">
+  <div class="quest-desc">Titan rallied and defeated</div>
+  <div class="quest-point">1&#8201;000</div>
+</div>
+<div class="quest-row common">
+  <div class="quest-desc">Evil Guard rallied and defeated</div>
+  <div class="quest-point">1&#8201;000</div>
+</div>
+<div class="quest-row common">
+  <div class="quest-desc">Dark Priest defeated</div>
+  <div class="quest-point">500</div>
+</div>
+<div class="quest-row common">
+  <div class="quest-desc">Gallery Shard consumed</div>
+  <div class="quest-point">1&#8201;000</div>
+</div>
+</section>
+</div>
+
+</main>
+</body>
+</html>
