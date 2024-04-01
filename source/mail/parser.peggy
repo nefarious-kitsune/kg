@@ -27,6 +27,14 @@
 // Space is allowed in size tag
 //   Valid   : <size=60 >Size 60</size>
 
+{
+  function flatten(head, startTag, innerFragments, endTag) {
+    let innerContent = '';
+    if (Array.isArray(innerFragments)) innerContent = innerFragments.join('');
+    return (head||'') + startTag + innerContent + endTag;
+  }
+}
+
 ExportedContent
   = fragments:Fragment* {
     return fragments.join('');
@@ -44,10 +52,10 @@ Text
   }
 
 Fragment
-  = head:Text? start:BoldStart   inner:Fragment* end:BoldEnd { return (head||'') + start + inner + end }
-  / head:Text? start:ItalicStart inner:Fragment* end:ItalicEnd { return (head||'') + start + inner + end }
-  / head:Text? start:SizeStart   inner:Fragment* end:SizeEnd { return (head||'') + start + inner + end }
-  / head:Text? start:ColorStart  inner:Fragment* end:ColorEnd { return (head||'') + start + inner + end }
+  = head:Text? start:BoldStart   inner:Fragment* end:BoldEnd   { return flatten(head, start, inner, end); }
+  / head:Text? start:ItalicStart inner:Fragment* end:ItalicEnd { return flatten(head, start, inner, end); }
+  / head:Text? start:SizeStart   inner:Fragment* end:SizeEnd   { return flatten(head, start, inner, end); }
+  / head:Text? start:ColorStart  inner:Fragment* end:ColorEnd  { return flatten(head, start, inner, end); }
   / Text
   ;
 

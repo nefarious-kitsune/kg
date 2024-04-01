@@ -250,10 +250,10 @@ function peg$parse(input, options) {
       .replaceAll('\n', '<br>\n')
       .replaceAll('\\n', '<br>\n');
   };
-  var peg$f2 = function(head, start, inner, end) { return (head||'') + start + inner + end };
-  var peg$f3 = function(head, start, inner, end) { return (head||'') + start + inner + end };
-  var peg$f4 = function(head, start, inner, end) { return (head||'') + start + inner + end };
-  var peg$f5 = function(head, start, inner, end) { return (head||'') + start + inner + end };
+  var peg$f2 = function(head, start, inner, end) { return flatten(head, start, inner, end); };
+  var peg$f3 = function(head, start, inner, end) { return flatten(head, start, inner, end); };
+  var peg$f4 = function(head, start, inner, end) { return flatten(head, start, inner, end); };
+  var peg$f5 = function(head, start, inner, end) { return flatten(head, start, inner, end); };
   var peg$f6 = function() { return '<span style="font-weight:bold">'};
   var peg$f7 = function() { return '<span style="font-style:italic">'};
   var peg$f8 = function(color) {
@@ -1275,6 +1275,13 @@ function peg$parse(input, options) {
     }
 
     return s0;
+  }
+
+
+  function flatten(head, startTag, innerFragments, endTag) {
+    let innerContent = '';
+    if (Array.isArray(innerFragments)) innerContent = innerFragments.join('');
+    return (head||'') + startTag + innerContent + endTag;
   }
 
   peg$result = peg$startRuleFunction();
