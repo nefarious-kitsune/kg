@@ -1,4 +1,4 @@
-# FAQ
+# Frequently Asked Questions
 
 Please DM me (@kitsune021) in Discord to request for entry here.
 

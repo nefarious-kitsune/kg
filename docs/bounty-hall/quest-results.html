@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<!--  -->
+<head>
+  <title>Bounty Hall Quest Results - Miku's Shrine</title>
+  <link rel="icon" type="image/x-icon" href="/images/logo_mini.png">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://kg.kitsune21.com/images/page-2x_n.png">
+  <meta property="og:url" content="https://kg.kitsune21.com/">
+  <meta property="og:title" content="Bounty Hall Quest Results - Miku's Shrine">
+  <meta property="og:description" content="Explaining 5 different possible outcomes of Bounty Hall quests and how they would look on game UI.">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link href="../assets/css/common.css" rel="stylesheet">
+  <link href="../assets/css/content.css" rel="stylesheet">
+  <style>
+  .bh-result-section .content-box {
+    font-size: 1.2rem;
+  }
+  .bh-result-section .image-box {
+    img {
+      max-width: 100%;
+      height: auto;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+          box-sizing: border-box;
+    }
+  }
+
+  @media (min-width: 700px) {
+    .bh-result-section {
+      display: grid;
+      max-width: 60rem;
+      grid-template-columns: 3fr 2fr; 
+      gap: 1rem;
+
+      margin: 0;
+      margin-block-end: 1rem;
+
+      h2 {
+        margin-block-start: 0;
+        margin-top: 0;
+        padding-top: 0;
+      }
+    }
+
+    .image-box {
+      text-align: center;
+    }
+
+    .bh-result-section.stagger {
+      grid-template-columns: 2fr 3fr; 
+      .image-box { order: 2; }
+      .content-box { order: 1; }
+    }
+  }
+  </style>
+</head>
+
+<body class="content">
+
+<header><nav><ul class="breadcrumb">
+  <li><a href="/../content">Home</a></li>
+  <li>Bounty Hall</li>
+</ul></nav></header>
+
+<main class="content">
+<h1>Bounty Hall Quest Results</h1>
+<section>
+<p>
+When you claim Bounty Hall rewards, you can see the results of your quest.
+</p>
+</section>
+
+<section class="bh-result-section">
+<div class="image-box"><img
+  src="../assets/screenshots/bounty-hall-quest-failed.png"></div>
+<div class="content-box">
+If the quest <strong class="highlight">fails</strong>, you will receive
+some gems as consolation.
+</div>
+</section>
+
+<section class="bh-result-section stagger">
+<div class="image-box"><img
+  src="../assets/screenshots/bounty-hall-quest-success.png"></div>
+<div class="content-box">
+If the quest is <strong class="highlight">successful</strong>, you will
+receive the full rewards.
+</div>
+</section>
+
+<section class="bh-result-section">
+<div class="image-box"><img
+  src="../assets/screenshots/bounty-hall-quest-crit.png"></div>
+<div class="content-box">
+If the quest is <strong class="highlight">critically successful</strong>,
+you will receive double the rewards.
+</div>
+</section>
+
+<section class="bh-result-section stagger">
+<div class="image-box"><img
+  src="../assets/screenshots/bounty-hall-quest-up.png"></div>
+<div class="content-box">
+If the quest received <strong class="highlight">upgrade</strong> and is
+<strong class="highlight">successful</strong>, you will
+receive the double the rewards.
+</div>
+</section>
+
+<section class="bh-result-section">
+<div class="image-box"><img
+  src="../assets/screenshots/bounty-hall-quest-up-crit.png"></div>
+<div class="content-box">
+If the quest received <strong class="highlight">upgrade</strong> and is
+<strong class="highlight">critically successful</strong>,
+you will receive triple the rewards.
+</div>
+</section>
+  
+</main>
+</body>
+</html>
