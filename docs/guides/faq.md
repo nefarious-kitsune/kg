@@ -26,9 +26,9 @@ Unfortunately, if you have a Central Fortress, bots will always appear there.
 
 ----
 
-### Goddess Trial
+## Goddess Trial
 
-## How do I pass Tech levels?
+### How do I pass Tech levels?
 
 Do Tech upgrades in Academy. Tech Power in Goddess Trial is related to the
 number of upgrades in the Academy.
