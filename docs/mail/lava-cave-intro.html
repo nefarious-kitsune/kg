@@ -33,14 +33,12 @@
 <p>Compose and preview an introductory tutorial on Lava Cave
   to new players</p>
 
-<section>
+<div class="editor-container">
+<section id="edit-pane">
 <h2>Edit</h2>
 <div class="toolbar">
   <div class="group"><!--
-  --><button class="editor-button" onclick="copyInput()">Copy</button><!--
-  --></div>
-  <div class="group"><!--
-  --><button class="editor-button" onclick="validateInput()">Preview</button><!--
+  --><button class="text-button" onclick="copyInput()">Copy</button><!--
   --></div>
   <div class="group"><!--
   --><button class="color-button color-black" onclick="setColor('black')"><span></span></button><!--
@@ -55,7 +53,9 @@
   --><button class="color-button color-purple" onclick="setColor('purple')"><span></span></button><!--
   --></div>
   <div class="group"><!--
-  --><button class="editor-button" onclick="setBold()" style="font-weight: bold;">B</button><!--
+  --><button class="editor-button" onclick="setBold()">Bold</button><!--
+  --><button class="editor-button" onclick="setItalic()">Italic</button><!--
+  --><button class="editor-button" onclick="setBig()">Big</button><!--
   --></div>
 </div>
 
@@ -94,12 +94,12 @@ We have to work together and everyone needs to participate. There are rewards fo
 Any questions, please reach out.</textarea>
 </section>
 
-<section>
+<section id="preview-pane">
 <h2>Preview</h2>
 <div id="output" class="mail">
 </div>
 </section>
-
+</div>
 </main>
 </body>
 </html>

@@ -28,14 +28,12 @@
 
 <p>{{PAGE-DESC}}</p>
 
-<section>
+<div class="editor-container">
+<section id="edit-pane">
 <h2>Edit</h2>
 <div class="toolbar">
   <div class="group"><!--
-  --><button class="editor-button" onclick="copyInput()">Copy</button><!--
-  --></div>
-  <div class="group"><!--
-  --><button class="editor-button" onclick="validateInput()">Preview</button><!--
+  --><button class="text-button" onclick="copyInput()">Copy</button><!--
   --></div>
   <div class="group"><!--
   --><button class="color-button color-gray"   onclick="setColor('gray')"><span></span></button><!--
@@ -50,7 +48,9 @@
   --><button class="color-button color-aqua"   onclick="setColor('aqua')"><span></span></button><!--
   --></div>
   <div class="group"><!--
-  --><button class="editor-button" onclick="setBold()" style="font-weight: bold;">B</button><!--
+  --><button class="editor-button" onclick="setBold()">Bold</button><!--
+  --><button class="editor-button" onclick="setItalic()">Italic</button><!--
+  --><button class="editor-button" onclick="setBig()">Big</button><!--
   --></div>
 </div>
 
@@ -68,11 +68,12 @@ Welcome to the family. We require <color=lime>Discord</color> activity. Contact 
 </escape-me></textarea>
 </section>
 
-<section>
+<section id="preview-pane">
 <h2>Preview</h2>
 <div id="output" class="message">
 </div>
 </section>
+</div>
 
 </main>
 </body>

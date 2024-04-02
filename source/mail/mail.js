@@ -4,25 +4,46 @@
 let inputElement;
 let previewElement;
 
+let previewDelay;
+let previewPending = false;
+
 document.addEventListener('DOMContentLoaded', (e) => {
   inputElement = document.getElementById('input');
   previewElement = document.getElementById('output');
-  validateInput();
+  inputElement.addEventListener('input', inputChange);
+  updatePreview();
 });
 
 /**
  * Validate input and generate a preview
  */
-function validateInput() {
+function updatePreview() {
+  if (previewPending) clearTimeout(previewDelay);
+  inputElement.classList.remove('preview-pending');
+  previewPending = false;
+
   const inputText = inputElement.value;
   try {
     const previewText = parser.parse(inputText);
     previewElement.classList.remove('error');
     previewElement.innerHTML = previewText;
   } catch (e) {
-    previewElement.innerHTML = 'Your message contains an error!';
+    // previewElement.innerHTML = 'Your message contains an error!';
     previewElement.classList.add('error');
   }
+}
+
+/**
+ * Watch for input change
+ */
+function inputChange() {
+  if (previewPending) {
+    clearTimeout(previewDelay);
+  } else {
+    previewPending = true;
+    inputElement.classList.add('preview-pending');
+  };
+  previewDelay = setTimeout(updatePreview, 800);
 }
 
 /**
@@ -49,30 +70,35 @@ function copyInput() {
  * @param {*} colorName
  */
 function setColor(colorName) {
-  const selStart = inputElement.selectionStart;
-  const selEnd = inputElement.selectionEnd;
-  const value = inputElement.value;
   const startTag = '<color=' + colorName + '>';
   const endTag = '</color>';
-
-  const inserted = startTag + value.substring(selStart, selEnd) + endTag;
-
-  inputElement.focus();
-  inputElement.value =
-      value.substring(0, selStart)+ inserted + value.substring(selEnd);
-  inputElement.setSelectionRange(
-      selStart + startTag.length,
-      selEnd + startTag.length,
-  );
+  setFormatting(startTag, endTag);
 }
 
 /** Add a bold tag */
 function setBold() {
+  setFormatting('<b>', '</b>');
+}
+
+/** Add an italic tag */
+function setItalic() {
+  setFormatting('<i>', '</i>');
+}
+
+/** Add a size tag */
+function setBig() {
+  setFormatting('<size=60>', '</size>');
+}
+
+/**
+ * Format the selected text
+ * @param {*} startTag 
+ * @param {*} endTag 
+ */
+function setFormatting(startTag, endTag) {
   const selStart = inputElement.selectionStart;
   const selEnd = inputElement.selectionEnd;
   const value = inputElement.value;
-  const startTag = '<b>';
-  const endTag = '</b>';
 
   const inserted = startTag + value.substring(selStart, selEnd) + endTag;
 
@@ -83,4 +109,5 @@ function setBold() {
       selStart + startTag.length,
       selEnd + startTag.length,
   );
+  inputChange();
 }

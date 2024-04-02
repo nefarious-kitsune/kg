@@ -30,14 +30,12 @@
 <main class="content">
 <h1>Online Mail Editor</h1>
 
-<section>
+<div class="editor-container">
+<section id="edit-pane">
 <h2>Edit</h2>
 <div class="toolbar">
   <div class="group"><!--
-  --><button class="editor-button" onclick="copyInput()">Copy</button><!--
-  --></div>
-  <div class="group"><!--
-  --><button class="editor-button" onclick="validateInput()">Preview</button><!--
+  --><button class="text-button" onclick="copyInput()">Copy</button><!--
   --></div>
   <div class="group"><!--
   --><button class="color-button color-black" onclick="setColor('black')"><span></span></button><!--
@@ -52,7 +50,9 @@
   --><button class="color-button color-purple" onclick="setColor('purple')"><span></span></button><!--
   --></div>
   <div class="group"><!--
-  --><button class="editor-button" onclick="setBold()" style="font-weight: bold;">B</button><!--
+  --><button class="editor-button" onclick="setBold()">Bold</button><!--
+  --><button class="editor-button" onclick="setItalic()">Italic</button><!--
+  --><button class="editor-button" onclick="setBig()">Big</button><!--
   --></div>
 </div>
   
@@ -60,11 +60,12 @@
 </textarea>
 </section>
 
-<section>
+<section id="preview-pane">
 <h2>Preview</h2>
 <div id="output" class="mail">
 </div>
 </section>
+</div>
 
 <section>
 <h2>Note</h2>

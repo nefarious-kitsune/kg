@@ -33,14 +33,12 @@
 <p>Compose and preview a reminder message on
   rules during a Lava Haka summon</p>
 
-<section>
+<div class="editor-container">
+<section id="edit-pane">
 <h2>Edit</h2>
 <div class="toolbar">
   <div class="group"><!--
-  --><button class="editor-button" onclick="copyInput()">Copy</button><!--
-  --></div>
-  <div class="group"><!--
-  --><button class="editor-button" onclick="validateInput()">Preview</button><!--
+  --><button class="text-button" onclick="copyInput()">Copy</button><!--
   --></div>
   <div class="group"><!--
   --><button class="color-button color-black" onclick="setColor('black')"><span></span></button><!--
@@ -55,7 +53,9 @@
   --><button class="color-button color-purple" onclick="setColor('purple')"><span></span></button><!--
   --></div>
   <div class="group"><!--
-  --><button class="editor-button" onclick="setBold()" style="font-weight: bold;">B</button><!--
+  --><button class="editor-button" onclick="setBold()">Bold</button><!--
+  --><button class="editor-button" onclick="setItalic()">Italic</button><!--
+  --><button class="editor-button" onclick="setBig()">Big</button><!--
   --></div>
 </div>
 
@@ -76,11 +76,12 @@ So,
 - If you come online &lt;i&gt;late&lt;/i&gt; and the Lava Haka has &lt;b&gt;less than 5 minutes&lt;/b&gt; left on the clock, do not start a rally because you won't have time. Instead, join someone’s rally instead.</textarea>
 </section>
 
-<section>
+<section id="preview-pane">
 <h2>Preview</h2>
 <div id="output" class="mail">
 </div>
 </section>
+</div>
 
 </main>
 </body>

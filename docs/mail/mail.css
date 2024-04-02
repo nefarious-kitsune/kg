@@ -40,7 +40,6 @@ ul.template-list {
   }
 }
 
-
 #input {
   display: block;
   width: 100%;
@@ -55,6 +54,11 @@ ul.template-list {
   border: 0.1rem solid var(--neutral);
   outline: none;
   resize: vertical;
+}
+
+#input.preview-pending {
+  border: 0.1rem solid var(--miku-red);
+  outline: 0.2rem solid var(--miku-gold);
 }
 
 #output {
@@ -76,9 +80,59 @@ ul.template-list {
   color: #7c9fdf;
 }
 
-#output.error {
-  background-color: var(--miku-gold) !important;
-  color: var(--miku-red) !important;
+#output {
+  position: relative;;
+}
+
+#output.error:before {
+  content: "There is an error with the text formatting";
+  display: block;
+  position: absolute;
+  padding: 0.5rem;
+  top: 0.5rem;
+  background-color: var(--miku-gold);
+  color: var(--miku-red);
+  border: 0.1rem solid var(--miku-red);
+}
+
+@media (min-width: 700px) {
+  .editor-container {
+    display: grid;
+    grid-template-columns: auto 25rem;
+    gap: 0.5rem;
+    margin: 0;
+
+    h2 {
+      margin-block-start: 0;
+      margin-top: 0;
+      padding-top: 0;
+    }
+
+    #preview-pane {
+      display: flex;
+      flex-direction: column;
+      height: 25rem;
+      #output {
+        flex-grow: 1;
+        overflow-y: scroll;
+      }
+    }
+
+    #edit-pane {
+      display: flex;
+      flex-direction: column;
+      height: 25rem;
+
+      .toolbar { flex-grow: 0; }
+      #input {
+        flex-grow: 2;
+        height: 100%;
+        /* overflow-y: scroll;
+        resize: none; */
+      }
+    }
+    
+  }
 }
 
 .toolbar {
@@ -88,23 +142,14 @@ ul.template-list {
   margin-block-end: 0;
   padding: 0.2rem;
 
-  background-color: var(--light-neutral);
-  button { background-color: var(--pale-neutral); }
+  background-color: var(--dark-neutral);
+  .group { background-color: var(--pale-neutral); }
 
   .group {
     display: inline-block;
-    padding: 0;
+    padding: 0.1rem;
     margin-right: 0.5rem;
-    white-space-collapse: discard;
-
-    button:first-child {
-      border-top-left-radius: 0.4rem;
-      border-bottom-left-radius: 0.4rem;
-    }
-    button:last-child {
-      border-top-right-radius: 0.4rem;
-      border-bottom-right-radius: 0.4rem;
-    }
+    border-radius: 0.4rem;
   }
 
   button {
@@ -112,19 +157,20 @@ ul.template-list {
     font-size: 1rem;
     line-height: 1rem;
     border: none;
+    border-radius: 0.4rem;
+    background-color: var(--pale-neutral); 
     border: 0.1rem solid transparent;
-    /* background-color: white; */
-    margin: 0 0;
-    padding: 0.4rem;
+    margin: 0.2rem;
+    padding: 0.2rem;
     height: 1.8rem;
+    text-align: center;
   }
 
   button:hover,
   button:focus {
-    border: 0.1rem solid var(--miku-red);
+    border: 0.1rem solid var(--dark-neutral);
+    background-color: var(--light-neutral);
   }
-
-  /* .editor-button {  } */
 
   .color-button {
     width: 1.8rem;
@@ -133,7 +179,7 @@ ul.template-list {
       display: block;
       width: 0.8rem;
       height: 0.8rem;
-      margin: 0;
+      margin: auto;
       border: 0.1rem solid black;
     }
 
