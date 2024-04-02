@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<!--  -->
+<head>
+  <title>Personal Championship Tips - Miku's Shrine</title>
+  <link rel="icon" type="image/x-icon" href="/images/logo_mini.png">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://kg.kitsune21.com/images/page-2x_n.png">
+  <meta property="og:url" content="https://kg.kitsune21.com/">
+  <meta property="og:title" content="Personal Championship Tips - Miku's Shrine">
+  <meta property="og:description" content="Alliance Mail for tips on opening the correct chests for Personal Championship">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link href="../assets/css/common.css" rel="stylesheet">
+  <link href="../assets/css/content.css" rel="stylesheet">
+  <link href="./mail.css" rel="stylesheet">
+  <script src="./mail.js"></script>
+  <script src="./parser.js"></script>
+</head>
+
+<body class="content">
+
+<header><nav><ul class="breadcrumb">
+  <li><a href="../content">Home</a></li>
+  <li><a href="./">Mail</a></li>
+  <li>Online Mail Editor</li>
+</ul></nav></header>
+
+<main class="content">
+<h1>Personal Championship Tips</h1>
+
+<p>Alliance Mail for tips on opening the correct chests for Personal Championship</p>
+
+<section>
+<h2>Edit</h2>
+<div class="toolbar">
+  <div class="group"><!--
+  --><button class="editor-button" onclick="copyInput()">Copy</button><!--
+  --></div>
+  <div class="group"><!--
+  --><button class="editor-button" onclick="validateInput()">Preview</button><!--
+  --></div>
+  <div class="group"><!--
+  --><button class="color-button color-black" onclick="setColor('black')"><span></span></button><!--
+  --><button class="color-button color-gray"  onclick="setColor('gray')"><span></span></button><!--
+  --><button class="color-button color-maroon" onclick="setColor('maroon')"><span></span></button><!--
+  --><button class="color-button color-red" onclick="setColor('red')"><span></span></button><!--
+  --><button class="color-button color-green"  onclick="setColor('green')"><span></span></button><!--
+  --><button class="color-button color-olive" onclick="setColor('olive')"><span></span></button><!--
+  --><button class="color-button color-teal" onclick="setColor('teal')"><span></span></button><!--
+  --><button class="color-button color-blue" onclick="setColor('blue')"><span></span></button><!--
+  --><button class="color-button color-navy" onclick="setColor('navy')"><span></span></button><!--
+  --><button class="color-button color-purple" onclick="setColor('purple')"><span></span></button><!--
+  --></div>
+  <div class="group"><!--
+  --><button class="editor-button" onclick="setBold()" style="font-weight: bold;">B</button><!--
+  --></div>
+</div>
+
+<textarea id="input">&lt;size=50&gt;Personal Championship Tips&lt;/size&gt;
+
+In this event, you need to obtain resources. You can do that by opening chests which can be found in your bag. 
+
+Check &lt;size=50&gt;&lt;color=maroon&gt;what you need&lt;/color&gt;&lt;/size&gt; on each day, and make sure you open the &lt;size=50&gt;&lt;color=maroon&gt;correct chests&lt;/color&gt;!&lt;/size&gt;
+
+Treasures (and approximate quantity) in 100 chest openings:
+
+&lt;size=50&gt;Normal Chests&lt;/size&gt;
+- &lt;color=blue&gt;&lt;b&gt;10× Skill Shards&lt;/b&gt;&lt;/color&gt;
+- 15× Rare Dragon Rune
+- 25× T1 Unit EXP Books
+- 15× Normal Recruitment Cards.
+
+&lt;size=50&gt;Advanced Chests&lt;/size&gt;
+- &lt;color=maroon&gt;&lt;b&gt;1000× Stones&lt;/b&gt;&lt;/color&gt;
+- 200× T1 Unit EXP Books
+
+&lt;size=50&gt;Supreme Chests&lt;/size&gt;
+- &lt;color=maroon&gt;&lt;b&gt;3040× Stones&lt;/b&gt;&lt;/color&gt;
+- &lt;color=blue&gt;&lt;b&gt;140× Skill Shards&lt;/b&gt;&lt;/color&gt;
+- 430× Excellent Dragon Rune
+- 490× T1 Unit EXP Books
+- 4040× Daniel</textarea>
+</section>
+
+<section>
+<h2>Preview</h2>
+<div id="output" class="mail">
+</div>
+</section>
+
+</main>
+</body>
+</html>
