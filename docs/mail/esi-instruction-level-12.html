@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<!--  -->
+<head>
+  <title>ESI Reminder - Miku's Shrine</title>
+  <link rel="icon" type="image/x-icon" href="/images/logo_mini.png">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://kg.kitsune21.com/images/page-2x_n.png">
+  <meta property="og:url" content="https://kg.kitsune21.com/">
+  <meta property="og:title" content="ESI Reminder - Miku's Shrine">
+  <meta property="og:description" content="Compose and preview a reminder message on ESI time and instruction">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link href="../assets/css/common.css" rel="stylesheet">
+  <link href="../assets/css/content.css" rel="stylesheet">
+  <link href="./mail.css" rel="stylesheet">
+  <script src="./mail.js"></script>
+  <script src="./parser.js"></script>
+</head>
+
+<body class="content">
+
+<header><nav><ul class="breadcrumb">
+  <li><a href="../content">Home</a></li>
+  <li><a href="./">Mail</a></li>
+  <li>Online Mail Editor</li>
+</ul></nav></header>
+
+<main class="content">
+<h1>ESI Reminder</h1>
+
+<p>Compose and preview a reminder message on ESI time and instruction</p>
+
+<div class="editor-container">
+<section id="edit-pane">
+<h2>Edit</h2>
+<div class="toolbar">
+  <div class="group"><!--
+  --><button class="text-button" onclick="copyInput()">Copy</button><!--
+  --></div>
+  <div class="group"><!--
+  --><button class="color-button color-black" onclick="setColor('black')"><span></span></button><!--
+  --><button class="color-button color-gray"  onclick="setColor('gray')"><span></span></button><!--
+  --><button class="color-button color-maroon" onclick="setColor('maroon')"><span></span></button><!--
+  --><button class="color-button color-red" onclick="setColor('red')"><span></span></button><!--
+  --><button class="color-button color-green"  onclick="setColor('green')"><span></span></button><!--
+  --><button class="color-button color-olive" onclick="setColor('olive')"><span></span></button><!--
+  --><button class="color-button color-teal" onclick="setColor('teal')"><span></span></button><!--
+  --><button class="color-button color-blue" onclick="setColor('blue')"><span></span></button><!--
+  --><button class="color-button color-navy" onclick="setColor('navy')"><span></span></button><!--
+  --><button class="color-button color-purple" onclick="setColor('purple')"><span></span></button><!--
+  --></div>
+  <div class="group"><!--
+  --><button class="editor-button" onclick="setBold()">Bold</button><!--
+  --><button class="editor-button" onclick="setItalic()">Italic</button><!--
+  --><button class="editor-button" onclick="setBig()">Big</button><!--
+  --></div>
+</div>
+
+<textarea id="input">&lt;size=40&gt;Evil Spirit Invasion @ &lt;color=maroon&gt;UTC 1800&lt;/color&gt;&lt;/size&gt;
+
+Level-12, 600 km from hive
+
+&lt;b&gt;Wave 18&lt;/b&gt;: &lt;color=navy&gt;1.1B&lt;/color&gt; @ &lt;color=maroon&gt;1 h 10 min&lt;/color&gt;
+&lt;b&gt;Wave 14&lt;/b&gt;: &lt;color=navy&gt;4.4B&lt;/color&gt; @ &lt;color=maroon&gt;1 h 20 min&lt;/color&gt;
+&lt;b&gt;Wave 17&lt;/b&gt;: &lt;color=navy&gt;5.3B&lt;/color&gt; @ &lt;color=maroon&gt;1 h 25 min&lt;/color&gt;
+&lt;b&gt;Wave 20&lt;/b&gt;: &lt;color=navy&gt;12B&lt;/color&gt; @ &lt;color=maroon&gt;2 h 30 min&lt;/color&gt;
+
+- You need &lt;b&gt;&lt;color=navy&gt;1.1B&lt;/color&gt;&lt;/b&gt; at home to pass Wave 18
+
+- Only reinforce castles that need reinforcement
+
+- No teleport during the invasion
+
+- No Titan rally during the invasion
+
+- Big player: &lt;b&gt;max one&lt;/b&gt; troops in the Fortress
+
+- Small player: no troops limit in the Fortress
+
+&lt;b&gt;&lt;color=maroon&gt;Reinforcement needed&lt;/color&gt;&lt;/b&gt;
+
+&lt;color=red&gt;940M&lt;/color&gt; - Daniel
+&lt;color=blue&gt;919M&lt;/color&gt; - Jessica
+&lt;color=red&gt;869M&lt;/color&gt; - Paula
+&lt;color=blue&gt;859M&lt;/color&gt; - Lilith
+&lt;color=red&gt;766M&lt;/color&gt; - Miku
+&lt;color=blue&gt;744M&lt;/color&gt; - Catherine</textarea>
+</section>
+
+<section id="preview-pane">
+<h2>Preview</h2>
+<div id="output" class="mail">
+</div>
+</section>
+</div>
+
+</main>
+</body>
+</html>
