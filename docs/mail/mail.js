@@ -43,3 +43,44 @@ function copyInput() {
 
   navigator.clipboard.writeText(inputElement.innerText);
 }
+
+/**
+ * Add a color tag
+ * @param {*} colorName
+ */
+function setColor(colorName) {
+  const selStart = inputElement.selectionStart;
+  const selEnd = inputElement.selectionEnd;
+  const value = inputElement.value;
+  const startTag = '<color=' + colorName + '>';
+  const endTag = '</color>';
+
+  const inserted = startTag + value.substring(selStart, selEnd) + endTag;
+
+  inputElement.focus();
+  inputElement.value =
+      value.substring(0, selStart)+ inserted + value.substring(selEnd);
+  inputElement.setSelectionRange(
+      selStart + startTag.length,
+      selEnd + startTag.length,
+  );
+}
+
+/** Add a bold tag */
+function setBold() {
+  const selStart = inputElement.selectionStart;
+  const selEnd = inputElement.selectionEnd;
+  const value = inputElement.value;
+  const startTag = '<b>';
+  const endTag = '</b>';
+
+  const inserted = startTag + value.substring(selStart, selEnd) + endTag;
+
+  inputElement.focus();
+  inputElement.value =
+      value.substring(0, selStart)+ inserted + value.substring(selEnd);
+  inputElement.setSelectionRange(
+      selStart + startTag.length,
+      selEnd + startTag.length,
+  );
+}

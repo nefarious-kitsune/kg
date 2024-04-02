@@ -29,11 +29,31 @@
 <p>{{PAGE-DESC}}</p>
 
 <section>
-<h2>Input</h2>
-<p>
-<button class="editor-button" onclick="copyInput()">Copy</button>
-<button class="editor-button" onclick="validateInput()">Preview</button>
-</p>
+<h2>Edit</h2>
+
+<div class="toolbar">
+  <div class="group"><!--
+  --><button class="editor-button" onclick="copyInput()">Copy</button><!--
+  --></div>
+  <div class="group"><!--
+  --><button class="editor-button" onclick="validateInput()">Preview</button><!--
+  --></div>
+  <div class="group"><!--
+  --><button class="color-button color-black" onclick="setColor('black')"><span></span></button><!--
+  --><button class="color-button color-gray"  onclick="setColor('gray')"><span></span></button><!--
+  --><button class="color-button color-maroon" onclick="setColor('maroon')"><span></span></button><!--
+  --><button class="color-button color-red" onclick="setColor('red')"><span></span></button><!--
+  --><button class="color-button color-green"  onclick="setColor('green')"><span></span></button><!--
+  --><button class="color-button color-olive" onclick="setColor('olive')"><span></span></button><!--
+  --><button class="color-button color-teal" onclick="setColor('teal')"><span></span></button><!--
+  --><button class="color-button color-blue" onclick="setColor('blue')"><span></span></button><!--
+  --><button class="color-button color-navy" onclick="setColor('navy')"><span></span></button><!--
+  --><button class="color-button color-purple" onclick="setColor('purple')"><span></span></button><!--
+  --></div>
+  <div class="group"><!--
+  --><button class="editor-button" onclick="setBold()" style="font-weight: bold;">B</button><!--
+  --></div>
+</div>
 
 <textarea id="input"><escape-me>
 Hello everyone!
@@ -45,7 +65,7 @@ This helps us all in so many ways as efficiently as possible ♡
 </section>
 
 <section>
-<h2>Output</h2>
+<h2>Preview</h2>
 <div id="output" class="mail">
 </div>
 </section>

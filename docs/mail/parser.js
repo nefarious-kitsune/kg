@@ -275,7 +275,7 @@ function peg$parse(input, options) {
   var peg$f20 = function() { return 'purple'; };
   var peg$f21 = function() { return 'fuchsia';};
   var peg$f22 = function() { return 'green';  };
-  var peg$f23 = function() { return 'limek';  };
+  var peg$f23 = function() { return 'lime';   };
   var peg$f24 = function() { return 'olive';  };
   var peg$f25 = function() { return 'yellow'; };
   var peg$f26 = function() { return 'navy';   };

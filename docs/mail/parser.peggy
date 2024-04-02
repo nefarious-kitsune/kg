@@ -102,7 +102,7 @@ ColorCode
   / "purple"i  { return 'purple'; }
   / "fuchsia"i { return 'fuchsia';}
   / "green"i   { return 'green';  }
-  / "lime"i    { return 'limek';  }
+  / "lime"i    { return 'lime';   }
   / "olive"i   { return 'olive';  }
   / "yellow"i  { return 'yellow'; }
   / "navy"i    { return 'navy';   }
