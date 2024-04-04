@@ -23,10 +23,27 @@
       tbody tr:nth-child(even) td.server {
         background: var(--light-primary-6);
       }
-      tbody tr:nth-child(even) th.server,
-      tbody tr:nth-child(even) td.server {
+      tbody tr:nth-child(even) th.personal,
+      tbody tr:nth-child(even) td.personal {
         background: var(--light-primary-2);
       }
+      tbody tr td.milestone:first-child {
+        font-weight: bold;
+      }
+      .event {
+        display: list-item;
+        list-style-position: outside;
+        padding: 0 0 0 0.2rem;
+        margin: 0 0 0 0.8rem;
+      }
+      .event::marker {
+        display: inline-block;
+        content: "●";
+        color: var(--pale-neutral);
+      }
+      .event.ml::marker { color: var(--primary-1); }
+      .event.pc::marker { color: var(--primary-2); }
+      .event.kop::marker { color: var(--primary-3); }
     }
   </style>
 </head>
@@ -108,7 +125,7 @@
 </tr>
 <tr>
 <th>Day 7</th>
-<td class="milestone">Fog lifts</td>
+<td class="milestone">First fog lift</td>
 <td class="milestone">Blacksmith unlocks</td>
 <td class="server"></td>
 <td class="server"></td>
