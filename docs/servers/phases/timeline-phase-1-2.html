@@ -16,13 +16,15 @@
   <style>
     table.calender {
       tbody tr td.m1 { font-weight: bold; }
-      tbody tr { height: 1px; }
+      tbody tr { height: 1px; min-height: 2rem; }
       tbody td,
       tbody th {
         height: inherit;
-        /* padding: 0.2rem 0.1rem; */
         padding: 0;
       }
+      td.m1, td.m2,
+      td.s1, td.s2,
+      td.p1, td.p2 { width: 14rem;}
       .event {
         height: 100%;
         padding: 0.2rem;
@@ -71,7 +73,7 @@
 </thead>
 <tbody>
 <tr>
-  <th>Day 1</th>
+  <th>1</th>
   <td class="m1"></td>
   <td class="m2"></td>
   <td class="s1"></td>
@@ -80,7 +82,7 @@
   <td class="p2"></td>
 </tr>
 <tr>
-  <th>Day 2</th>
+  <th>2</th>
   <td class="m1"></td>
   <td class="m2"></td>
   <td class="s1"></td>
@@ -89,157 +91,166 @@
   <td class="p2"></td>
 </tr>
 <tr>
-  <th>Day 3</th>
-  <td class="m1"><div class="event"></div></td>
+  <th>3</th>
+  <td class="m1"><div class="event">&nbsp;</div></td>
   <td class="m2"><div class="event">Dragon Nests</div></td>
-  <td class="s1"><div class="event"></div></td>
-  <td class="s2"><div class="event"></div></td>
+  <td class="s1"><div class="event">&nbsp;</div></td>
+  <td class="s2"><div class="event">&nbsp;</div></td>
   <td class="p1" rowspan="7"><div class="event ml"><a href="../../events/ml/">Mightiest Kingdom</a></div></td>
-  <td class="p2"><div class="event"></div></td>
+  <td class="p2"><div class="event">&nbsp;</div></td>
 </tr>
 <tr>
-  <th>Day 4</th>
-  <td class="m1"><div class="event"></div></td>
-  <td class="m2"><div class="event"></div></td>
-  <td class="s1"><div class="event"></div></td>
-  <td class="s2"><div class="event"></div></td>
-  <!-- <td class="personal">MK</td> -->
-  <td class="p2"><div class="event"></div></td>
+  <th>4</th>
+  <td class="m1"><div class="event">&nbsp;</div></td>
+  <td class="m2"><div class="event">&nbsp;</div></td>
+  <td class="s1"><div class="event">&nbsp;</div></td>
+  <td class="s2"><div class="event">&nbsp;</div></td>
+  <!-- MK -->
+  <td class="p2"><div class="event">&nbsp;</div></td>
 </tr>
 <tr>
-  <th>Day 5</th>
-  <td class="m1"><div class="event"></div></td>
-  <td class="m2"><div class="event"></div></td>
-  <td class="s1"><div class="event"></div></td>
-  <td class="s2"><div class="event"></div></td>
-  <!-- <td class="personal">MK</td> -->
-  <td class="p2"><div class="event"></div></td>
+  <th>5</th>
+  <td class="m1"><div class="event">&nbsp;</div></td>
+  <td class="m2"><div class="event">&nbsp;</div></td>
+  <td class="s1"><div class="event">&nbsp;</div></td>
+  <td class="s2"><div class="event">&nbsp;</div></td>
+  <!-- MK -->
+  <td class="p2"><div class="event">&nbsp;</div></td>
 </tr>
 <tr>
-  <th>Day 6</th>
-  <td class="m1"><div class="event"></div></td>
-  <td class="m2"><div class="event"></div></td>
-  <td class="s1"><div class="event"></div></td>
-  <td class="s2"><div class="event"></div></td>
-  <!-- <td class="personal">MK</td> -->
-  <td class="p2"><div class="event"></div></td>
+  <th>6</th>
+  <td class="m1"><div class="event">&nbsp;</div></td>
+  <td class="m2"><div class="event">&nbsp;</div></td>
+  <td class="s1"><div class="event">&nbsp;</div></td>
+  <td class="s2"><div class="event">&nbsp;</div></td>
+  <!-- MK -->
+  <td class="p2"><div class="event">&nbsp;</div></td>
 </tr>
 <tr>
-  <th>Day 7</th>
+  <th>7</th>
   <td class="m1"><div class="event milestone">1st fog lift</div></td>
   <td class="m2"><div class="event">Blacksmith</div></td>
-  <td class="s1"><div class="event"></div></td>
-  <td class="s2"><div class="event"></div></td>
-  <!-- <td class="personal">MK</td> -->
-  <td class="p2"><div class="event"></div></td>
+  <td class="s1"><div class="event">&nbsp;</div></td>
+  <td class="s2"><div class="event">&nbsp;</div></td>
+  <!-- MK -->
+  <td class="p2"><div class="event">&nbsp;</div></td>
 </tr>
 <tr>
-  <th>Day 8</th>
-  <td class="m1"><div class="event"></div></td>
-  <td class="m2"><div class="event"></div></td>
-  <td class="s1"><div class="event"></div></td>
-  <td class="s2"><div class="event"></div></td>
-  <!-- <td class="personal">MK</td> -->
-  <td class="p2"><div class="event"></div></td>
+  <th>8</th>
+  <td class="m1"><div class="event">&nbsp;</div></td>
+  <td class="m2"><div class="event">&nbsp;</div></td>
+  <td class="s1"><div class="event">&nbsp;</div></td>
+  <td class="s2"><div class="event">&nbsp;</div></td>
+  <!-- MK -->
+  <td class="p2"><div class="event">&nbsp;</div></td>
 </tr>
 <tr>
-  <th>Day 9</th>
-  <td class="m1"><div class="event"></div></td>
-  <td class="m2"><div class="event"></div></td>
-  <td class="s1"><div class="event"></div></td>
-  <td class="s2"><div class="event"></div></td>
-  <!-- <td class="personal">MK</td> -->
-  <td class="p2"><div class="event"></div></td>
+  <th>9</th>
+  <td class="m1"><div class="event">&nbsp;</div></td>
+  <td class="m2"><div class="event">&nbsp;</div></td>
+  <td class="s1"><div class="event">&nbsp;</div></td>
+  <td class="s2"><div class="event">&nbsp;</div></td>
+  <!-- MK -->
+  <td class="p2"><div class="event">&nbsp;</div></td>
 </tr>
 <tr>
-  <th>Day 10</th>
-  <td class="m1"><div class="event"></div></td>
+  <th>10</th>
+  <td class="m1"><div class="event">&nbsp;</div></td>
   <td class="m2"><div class="event">Dimensional Tunnel</div></td>
-  <td class="s1"><div class="event"></div></td>
-  <td class="s2"><div class="event"></div></td>
+  <td class="s1"><div class="event">&nbsp;</div></td>
+  <td class="s2"><div class="event">&nbsp;</div></td>
   <td class="p1" rowspan="7"><div class="event pc"><a href="../../events/pc/">Personal Championship</a></div></td>
   <td class="p2" rowspan="3"><div class="event wc">Wishing Crystal Ball</div></td>
 </tr>
 <tr>
-  <th>Day 11</th>
+  <th>11</th>
   <td class="m1"><div class="event milestone">2nd fog lift</div></td>
-  <td class="m2"><div class="event">11</div></td>
-  <td class="s1"><div class="event">11</div></td>
-  <td class="s2"><div class="event">11</div></td>
+  <td class="m2"><div class="event">&nbsp;</div></td>
+  <td class="s1"><div class="event">&nbsp;</div></td>
+  <td class="s2"><div class="event">&nbsp;</div></td>
   <!-- PC -->
   <!-- WC -->
 </tr>
 <tr>
-  <th>Day 12</th>
-  <td class="m1"><div class="event"></div></td>
-  <td class="m2"><div class="event"></div></td>
+  <th>12</th>
+  <td class="m1"><div class="event">&nbsp;</div></td>
+  <td class="m2"><div class="event">&nbsp;</div></td>
   <td class="s1"><div class="event esi">Evil Spirit Invasion</div></td>
-  <td class="s2"><div class="event"></div></td>
+  <td class="s2"><div class="event">&nbsp;</div></td>
   <!-- PC -->
   <!-- WC -->
 </tr>
 <tr>
-  <th>Day 13</th>
-  <td class="m1"><div class="event"></div></td>
-  <td class="m2"><div class="event"></div></td>
-  <td class="s1"><div class="event"></div></td>
-  <td class="s2"><div class="event"></div></td>
+  <th>13</th>
+  <td class="m1"><div class="event">&nbsp;</div></td>
+  <td class="m2"><div class="event">&nbsp;</div></td>
+  <td class="s1"><div class="event">&nbsp;</div></td>
+  <td class="s2"><div class="event">&nbsp;</div></td>
   <!-- <td class="p1"><div class="event">PC</div></td> -->
-  <td class="p2"><div class="event"></div></td>
+  <td class="p2"><div class="event">&nbsp;</div></td>
 </tr>
 <tr>
-  <th>Day 14</th>
-  <td class="m1"><div class="event"></div></td>
-  <td class="m2"><div class="event"></div></td>
-  <td class="s1"><div class="event"></div></td>
-  <td class="s2"><div class="event"></div></td>
+  <th>14</th>
+  <td class="m1"><div class="event">&nbsp;</div></td>
+  <td class="m2"><div class="event">&nbsp;</div></td>
+  <td class="s1"><div class="event">&nbsp;</div></td>
+  <td class="s2"><div class="event">&nbsp;</div></td>
   <!-- <td class="p1"><div class="event">PC</div></td> -->
-  <td class="p2"><div class="event"></div></td>
+  <td class="p2"><div class="event">&nbsp;</div></td>
 </tr>
 <tr>
-  <th>Day 15</th>
-  <td class="m1"><div class="event"></div></td>
-  <td class="m2"><div class="event"></div></td>
+  <th>15</th>
+  <td class="m1"><div class="event">&nbsp;</div></td>
+  <td class="m2"><div class="event">&nbsp;</div></td>
   <td class="s1"><div class="event esi">Evil Spirit Invasion</div></td>
-  <td class="s2"><div class="event"></div></td>
+  <td class="s2"><div class="event">&nbsp;</div></td>
   <!-- <td class="p1"><div class="event">PC</div></td> -->
-  <td class="p2"><div class="event"></div></td>
+  <td class="p2"><div class="event">&nbsp;</div></td>
 </tr>
 <tr>
-  <th>Day 16</th>
+  <th>16</th>
   <td class="m1"><div class="event milestone">3rd fog lift</div></td>
   <td class="m2"><div class="event">Dragon Nests/Artifacts</div></td>
-  <td class="s1"><div class="event"></div></td>
-  <td class="s2"><div class="event"></div></td>
+  <td class="s1"><div class="event">&nbsp;</div></td>
+  <td class="s2"><div class="event">&nbsp;</div></td>
   <!-- <td class="p1"><div class="event">PC</div></td> -->
-  <td class="p2"><div class="event"></div></td>
+  <td class="p2"><div class="event">&nbsp;</div></td>
 </tr>
 <tr>
-<th>Day 17</th>
-  <td class="m1"><div class="event"></div></td>
-  <td class="m2"><div class="event"></div></td>
-  <td class="s1"><div class="event"></div></td>
-  <td class="s2" rowspan="5"><div class="event lt"></div>Lava Trial</td>
-  <td class="p1"><div class="event kp">King of Power</div></td>
-  <td class="p2"><div class="event"></div></td>
+<th>17</th>
+  <td class="m1"><div class="event">&nbsp;</div></td>
+  <td class="m2"><div class="event">&nbsp;</div></td>
+  <td class="s1"><div class="event">&nbsp;</div></td>
+  <td class="s2" rowspan="4"><div class="event lt">Lava Trial</div></td>
+  <td class="p1" rowspan="4"><div class="event kp">King of Power</div></td>
+  <td class="p2"><div class="event">&nbsp;</div></td>
 </tr>
 <tr>
-  <th>Day 18</th>
-  <td class="m1"><div class="event"></div></td>
-  <td class="m2"><div class="event"></div></td>
-  <td class="s1"><div class="event"></div></td>
-<!--   Lava Trial -->
-<!--   King of Power -->
-  <td class="p2"><div class="event"></div></td>
+  <th>18</th>
+  <td class="m1"><div class="event">&nbsp;</div></td>
+  <td class="m2"><div class="event">&nbsp;</div></td>
+  <td class="s1"><div class="event">&nbsp;</div></td>
+  <!-- Lava Trial -->
+  <!-- King of Power -->
+  <td class="p2"><div class="event">&nbsp;</div></td>
 </tr>
 <tr>
-  <th>Day 19</th>
-  <td class="m1"><div class="event"></div></td>
-  <td class="m2"><div class="event"></div></td>
-  <td class="s1"><div class="event">Elemental Lord</div></td>
-<!--   Lava Trial -->
-<!--   King of Power -->
-  <td class="p2"><div class="event"></div></td>
+  <th>19</th>
+  <td class="m1"><div class="event">&nbsp;</div></td>
+  <td class="m2"><div class="event">&nbsp;</div></td>
+  <td class="s1" rowspan="2"><div class="event">Elemental Lord</div></td>
+  <!-- Lava Trial -->
+  <!-- King of Power -->
+  <td class="p2"><div class="event">&nbsp;</div></td>
+</tr>
+<tr>
+  <th>20</th>
+  <td class="m1"><div class="event milestone">Sentry War</div></td>
+  <td class="m2"><div class="event">Dragon Nests</div></td>
+  <!-- Elemental Lord -->
+  <!-- Lava Trial -->
+  <!-- King of Power -->
+  <td class="p2"><div class="event">&nbsp;</div></td>
 </tr>
 </tbody>
 </table>
