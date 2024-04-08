@@ -34,10 +34,17 @@ table.calender {
   tbody {
     /* the following 3 rules ensure that event box will fill the cell */
     tr { height: 1px; }
-    td, th { height: inherit; }
-    .no-event, .event {
+    td, th { height: inherit;}
+    /* Make sure event blocks are displayed correctly on Safari */
+    td > a,
+    .no-event,
+    .event {
+      display: block;
       box-sizing: border-box;
       height: 100%;
+    }
+
+    .no-event, .event {
       padding: 0.25rem;
     }
 

@@ -139,11 +139,11 @@ div.quick-access {
   z-index: 99;
 
   ul.quick-access-links {
-    margin: 0;
     display: inline-block;
     list-style: none;
+    margin: 0;
+    padding: 0;
     background-color: var(--neutral);
-    padding: 0.4rem 1rem;
     border-radius: 1rem;
     color: white;
     
@@ -152,6 +152,7 @@ div.quick-access {
       color: var(--light-neutral);
       margin-block-start: 0;
       margin-block-end: 0;
+      padding: 0.4rem 0;
 
       a {
         color: white;
@@ -164,11 +165,13 @@ div.quick-access {
       }
 
     }
+    li { padding: 0.4rem 0.2rem; }
+    li:first-child { padding-left: 0.8rem; }
+    li:last-child { padding-right: 0.8rem; }
 
     li+li:before {
       display: inline-block;
-      padding-left: 0.2rem;
-      padding-right: 0.2rem;
+      padding: 0 0.2rem 0 0;
       color: var(--light-neutral);
       content: "|";
     }
