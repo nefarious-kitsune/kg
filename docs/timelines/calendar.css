@@ -62,15 +62,23 @@ table.calender {
     }
 
     .event.continue-to-next {
-      /* border-bottom: none !important; */
-
       clip-path: polygon(
         0 0,
         100% 0,
-        100% calc(100% - 1rem),
+        100% calc(100% - 0.5rem),
         50% 100%,
-        0 calc(100% - 1rem)
+        0 calc(100% - 0.5rem)
       );
+    }
+    .event.continue-from-previous {
+      clip-path: polygon(
+        0 0,
+        50% 0.5rem,
+        100% 0,
+        100% 100%,
+        0 100%
+      );
+      padding-top: 1rem;
     }
 
     .no-event {
