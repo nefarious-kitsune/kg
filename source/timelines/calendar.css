@@ -1,0 +1,145 @@
+
+@media screen and (min-width: 0px) { /* Small screen */
+  table.calender {
+    thead tr th { width: 8rem; }
+    thead tr th:first-child { width: 2rem; }
+  }
+}
+
+@media screen and (min-width: 390px) { /* Mobile */
+  table.calender {
+    thead tr th { width: 10rem; }
+  }
+}
+
+@media screen and (min-width: 500px) { /* Phablet */
+  table.calender {
+    thead tr th { width: 14rem; }
+  }
+}
+
+@media screen and (min-width: 700px) { /* Tablet */
+  table.calender {
+    thead tr th { width: 10rem; }
+  }
+}
+
+
+table.calender {
+  margin-left:auto;
+  margin-right:auto;
+
+  border-collapse: collapse;
+
+  tbody {
+    /* the following 3 rules ensure that event box will fill the cell */
+    tr { height: 1px; }
+    td, th { height: inherit; }
+    .no-event, .event {
+      box-sizing: border-box;
+      height: 100%;
+      padding: 0.25rem;
+    }
+
+    /* minimum 2-line height */
+    td, th {
+      line-height: 1rem;
+      padding: 0.25rem;
+    }
+    th {
+      height: 3rem;
+    }
+
+    td {
+      border: 0.1rem dotted var(--neutral);
+    }
+
+    .event.continue-to-next {
+      /* border-bottom: none !important; */
+
+      clip-path: polygon(
+        0 0,
+        100% 0,
+        100% calc(100% - 1rem),
+        50% 100%,
+        0 calc(100% - 1rem)
+      );
+    }
+
+    .no-event {
+      color: var(--dark-neutral);
+      background-color: var(--pale-neutral);
+    }
+
+    .event {
+      border-style: solid;
+      border-width: 0 0 0 0.3rem ;
+      border-color: var(--secondary-3);
+      background-color: var(--pale-secondary-3);
+    }
+
+    .event.milestone {
+      border-color: var(--miku-gold);
+      background-color: var(--miku-light-gold);
+    }
+    
+    /* server */
+    .event.lava-trial {
+      border-color: var(--primary-1);
+      background-color: var(--pale-primary-1);
+    }
+    .event.esi {
+      border-color: var(--primary-5);
+      background-color: var(--pale-primary-5);
+    }
+    .event.elemental {
+      border-color: var(--primary-6);
+      background-color: var(--pale-primary-6);
+    }
+
+    /* personal */
+    .event.mightiest {
+      border-color: var(--primary-1);
+      background-color: var(--pale-primary-1);
+    }
+    .event.PC {
+      border-color: var(--primary-4);
+      background-color: var(--pale-primary-4);
+    }
+    .event.power {
+      border-color: var(--primary-3);
+      background-color: var(--pale-primary-3);
+    }
+
+    .event.wishing {
+      border-color: var(--secondary-2);
+      background-color: var(--pale-secondary-2);
+    }
+    .event.lucky {
+      border-color: var(--secondary-3);
+      background-color: var(--pale-secondary-3);
+    }
+    .event.treasure {
+      border-color: var(--secondary-4);
+      background-color: var(--pale-secondary-4);
+    }
+    .event.auction {
+      border-color: var(--secondary-5);
+      background-color: var(--pale-secondary-5);
+    }
+  
+    .event {
+      /* background-color: var(--pale-neutral); */
+    }
+  }
+
+  tbody tr td.m1 { font-weight: bold; }
+
+  tbody th {
+    background-color: var(--miku-red);
+    color: white;
+    text-align: center;
+  }
+
+  /* tr.even td { background-color: var(--pale-neutral); } */
+}

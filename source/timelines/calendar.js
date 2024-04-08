@@ -16,10 +16,10 @@ function switchMKTableView(viewIdx) {
       elTab3.classList.remove('focused');
       elTable.classList.add('view-final');
       elTable.classList.remove(
-          // 'view-final',
-          'view-phase-1-2',
-          'view-phase-3-4',
-          'view-phase-5-6',
+        // 'view-final',
+        'view-phase-1-2',
+        'view-phase-3-4',
+        'view-phase-5-6'
       );
       break;
     case 1:
@@ -29,10 +29,10 @@ function switchMKTableView(viewIdx) {
       elTab3.classList.remove('focused');
       elTable.classList.add('view-phase-1-2');
       elTable.classList.remove(
-          'view-final',
-          // 'view-phase-1-2'
-          'view-phase-3-4',
-          'view-phase-5-6',
+        'view-final',
+        // 'view-phase-1-2'
+        'view-phase-3-4',
+        'view-phase-5-6'
       );
       break;
     case 2:
@@ -42,10 +42,10 @@ function switchMKTableView(viewIdx) {
       elTab3.classList.remove('focused');
       elTable.classList.add('view-phase-3-4');
       elTable.classList.remove(
-          'view-final',
-          'view-phase-1-2',
-          // 'view-phase-3-4'
-          'view-phase-5-6',
+        'view-final',
+        'view-phase-1-2',
+        // 'view-phase-3-4'
+        'view-phase-5-6'
       );
       break;
     case 3:
@@ -55,10 +55,10 @@ function switchMKTableView(viewIdx) {
       elTab3.classList.add('focused');
       elTable.classList.add('view-phase-5-6');
       elTable.classList.remove(
-          'view-final',
-          'view-phase-1-2',
-          'view-phase-3-4',
-          // 'view-phase-5-6'
+        'view-final',
+        'view-phase-1-2',
+        'view-phase-3-4'
+        // 'view-phase-5-6'
       );
       break;
   }

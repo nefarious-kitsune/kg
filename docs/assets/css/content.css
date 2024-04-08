@@ -174,7 +174,7 @@ div.quick-access {
     }
   }
 
-  a.prev, a.next {
+  a.prev, a.next, a.current {
     display: inline-block;
     font-weight: bold;
     text-decoration: none;
@@ -184,6 +184,21 @@ div.quick-access {
     &[href] { color: var(--miku-red); }
   }
   a.prev { text-align: right; }
+}
+
+@media screen and (min-width: 0px) { /* Small screen */
+  div.quick-access {
+    a.current { display: none; }
+  }
+}
+
+@media screen and (min-width: 390px) { /* Mobile */
+}
+
+@media screen and (min-width: 700px) {
+  div.quick-access {
+    a.current { display: inline-block; }
+  }
 }
 
 

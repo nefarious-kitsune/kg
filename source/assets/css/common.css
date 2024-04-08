@@ -2,6 +2,8 @@
   --miku-red: rgb(180, 35, 40); /*  #b42328; */
   --miku-dark-red: rgb(124, 26, 32); /* #7c1a20 */
   --miku-gold: #fec728;
+  --miku-light-gold: #fedd7e;
+  --miku-pale-gold: #ffe9a9;
 
   --red: #b42328;
 
@@ -28,6 +30,18 @@
   --light-primary-5  : #CCB6D1;
   --light-secondary-5: #CFA6C0;
   --light-primary-6  : #D196AF;
+
+  --pale-primary-1  : #E9CCB2;
+  --pale-secondary-1: #EED8B6;
+  --pale-primary-2  : #F3E4B9;
+  --pale-secondary-2: #D9E3B9;
+  --pale-primary-3  : #BEE1BA;
+  --pale-secondary-3: #B9D9D3;
+  --pale-primary-4  : #B4D1ED;
+  --pale-secondary-4: #C9D0E7;
+  --pale-primary-5  : #DDCFE0;
+  --pale-secondary-5: #DFC4D5;
+  --pale-primary-6  : #E1B9C9;
 
   --dark-neutral:#363E4A;
   --neutral: #485363; /* Charcoal */
