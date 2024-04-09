@@ -24,6 +24,112 @@
   }
 }
 
+.no-event {
+  font-weight: bold;
+  color: var(--dark-neutral);
+  background-color: var(--pale-neutral);
+}
+
+.sync {
+  background: repeating-linear-gradient(
+    45deg,
+    transparent,
+    transparent 0.4rem,
+    var(--pale-neutral) 0.4rem,
+    var(--pale-neutral) 0.8rem
+  );
+}
+
+.fog-2 {
+  background: repeating-linear-gradient(
+    45deg,
+    transparent,
+    transparent 0.2rem,
+    var(--pale-neutral) 0.2rem,
+    var(--pale-neutral) 0.3rem,
+    transparent 0.3rem,
+    transparent 0.5rem,
+    var(--pale-neutral) 0.5rem,
+    var(--pale-neutral) 0.7rem
+  ),
+  repeating-linear-gradient(
+    -45deg,
+    transparent,
+    transparent 0.2rem,
+    var(--pale-neutral) 0.2rem,
+    var(--pale-neutral) 0.3rem,
+    transparent 0.3rem,
+    transparent 0.5rem,
+    var(--pale-neutral) 0.5rem,
+    var(--pale-neutral) 0.7rem
+  );
+  background-blend-mode: lighten;
+}
+
+.fog-2 {
+  background: repeating-linear-gradient(
+    45deg,
+    transparent,
+    transparent 0.3rem,
+    var(--pale-neutral) 0.3rem,
+    var(--pale-neutral) 0.4rem,
+    transparent 0.4rem,
+    transparent 0.7rem,
+    var(--pale-neutral) 0.7rem,
+    var(--pale-neutral) 0.9rem
+  ),
+  repeating-linear-gradient(
+    -45deg,
+    transparent,
+    transparent 0.3rem,
+    var(--pale-neutral) 0.3rem,
+    var(--pale-neutral) 0.4rem,
+    transparent 0.4rem,
+    transparent 0.7rem,
+    var(--pale-neutral) 0.7rem,
+    var(--pale-neutral) 0.9rem
+  );
+  background-blend-mode: lighten;
+}
+
+.fog-1 {
+  background: repeating-linear-gradient(
+    30deg,
+    transparent,
+    transparent 0.4rem,
+    var(--pale-neutral) 0.4rem,
+    var(--pale-neutral) 0.5rem
+  ),
+  repeating-linear-gradient(
+    -30deg,
+    transparent,
+    transparent 0.4rem,
+    var(--pale-neutral) 0.4rem,
+    var(--pale-neutral) 0.5rem
+  );
+  background-blend-mode: lighten;
+}
+
+.fog-3 {
+  background-image: radial-gradient(white 40%, transparent 40%);
+  background-size: 0.4rem 0.4rem;
+
+  /* background: repeating-linear-gradient(
+    45deg,
+    var(--pale-neutral),
+    var(--pale-neutral) 0.3rem,
+    transparent 0.3rem,
+    transparent 0.5rem
+  ),
+  repeating-linear-gradient(
+    -45deg,
+    var(--pale-neutral),
+    var(--pale-neutral) 0.2rem,
+    transparent 0.2rem,
+    transparent 0.5rem
+  ); */
+  /* background-blend-mode: lighten; */
+}
 
 table.calender {
   margin-left:auto;
@@ -35,8 +141,9 @@ table.calender {
     /* the following 3 rules ensure that event box will fill the cell */
     tr { height: 1px; }
     td, th { height: inherit;}
-    /* Make sure event blocks are displayed correctly on Safari */
-    td > a,
+
+    td > a, /* Make sure event blocks are displayed correctly on Safari */
+    .day,
     .no-event,
     .event {
       display: block;
@@ -44,7 +151,7 @@ table.calender {
       height: 100%;
     }
 
-    .no-event, .event {
+    .day, .no-event, .event {
       padding: 0.25rem;
     }
 
@@ -53,13 +160,26 @@ table.calender {
       line-height: 1rem;
       padding: 0.25rem;
     }
+
     th {
       height: 3rem;
+      /* background-color: var(--miku-red); */
+      /* color: white; */
+      font-size: 0.9rem;
+      text-align: center;
+      text-transform: uppercase;
+      color: var(--dark-neutral);
     }
 
-    td {
-      border: 0.1rem dotted var(--neutral);
+    th:hover .day,
+    th:hover ~ td .event,
+    th:hover ~ td .no-event {
+      outline: 0.2rem solid var(--light-neutral);
     }
+
+    /* td {
+      border: 0.1rem dotted var(--neutral);
+    } */
 
     .event.continue-to-next {
       clip-path: polygon(
@@ -81,11 +201,6 @@ table.calender {
       padding-top: 1rem;
     }
 
-    .no-event {
-      color: var(--dark-neutral);
-      background-color: var(--pale-neutral);
-    }
-
     .event {
       border-style: solid;
       border-width: 0 0 0 0.3rem ;
@@ -96,16 +211,26 @@ table.calender {
     .event.milestone {
       border-color: var(--miku-gold);
       background-color: var(--miku-light-gold);
+      font-weight: bold;
+      color: var(--miku-red);
     }
-    
-    /* server */
-    .event.lava-trial {
+    .event.unlock {
       border-color: var(--primary-1);
       background-color: var(--pale-primary-1);
     }
-    .event.esi {
+    .event.fog {
+      border-color: var(--secondary-1);
+      background-color: var(--pale-secondary-1);
+    }
+
+    /* server */
+    .event.lava-trial {
       border-color: var(--primary-5);
       background-color: var(--pale-primary-5);
+    }
+    .event.esi {
+      border-color: var(--secondary-5);
+      background-color: var(--pale-secondary-5);
     }
     .event.elemental {
       border-color: var(--primary-6);
@@ -114,12 +239,12 @@ table.calender {
 
     /* personal */
     .event.mightiest {
-      border-color: var(--primary-1);
-      background-color: var(--pale-primary-1);
-    }
-    .event.PC {
       border-color: var(--primary-4);
       background-color: var(--pale-primary-4);
+    }
+    .event.PC {
+      border-color: var(--secondary-4);
+      background-color: var(--pale-secondary-4);
     }
     .event.power {
       border-color: var(--primary-3);
@@ -127,34 +252,20 @@ table.calender {
     }
 
     .event.wishing {
-      border-color: var(--secondary-2);
-      background-color: var(--pale-secondary-2);
-    }
-    .event.lucky {
       border-color: var(--secondary-3);
       background-color: var(--pale-secondary-3);
     }
+    .event.lucky {
+      border-color: var(--primary-3);
+      background-color: var(--pale-primary-3);
+    }
     .event.treasure {
+      border-color: var(--primary-4);
+      background-color: var(--pale-primary-4);
+    }
+    .event.auction {
       border-color: var(--secondary-4);
       background-color: var(--pale-secondary-4);
     }
-    .event.auction {
-      border-color: var(--secondary-5);
-      background-color: var(--pale-secondary-5);
-    }
-  
-    .event {
-      /* background-color: var(--pale-neutral); */
-    }
   }
-
-  tbody tr td.m1 { font-weight: bold; }
-
-  tbody th {
-    background-color: var(--miku-red);
-    color: white;
-    text-align: center;
-  }
-
-  /* tr.even td { background-color: var(--pale-neutral); } */
 }
