@@ -1,134 +1,104 @@
 
 @media screen and (min-width: 0px) { /* Small screen */
   table.calender {
-    thead tr th { width: 8rem; }
+    tbody td { width: 8rem; }
     thead tr th:first-child { width: 2rem; }
   }
 }
 
 @media screen and (min-width: 390px) { /* Mobile */
-  table.calender {
-    thead tr th { width: 10rem; }
-  }
+  table.calender tbody td { width: 10rem; }
 }
 
 @media screen and (min-width: 500px) { /* Phablet */
-  table.calender {
-    thead tr th { width: 14rem; }
-  }
+  table.calender tbody td {width: 12rem; }
 }
 
 @media screen and (min-width: 700px) { /* Tablet */
-  table.calender {
-    thead tr th { width: 10rem; }
-  }
+  table.calender tbody td { width: 6rem; }
+}
+
+@media screen and (min-width: 750px) { /* Tablet */
+  table.calender tbody td { width: 7rem; }
+}
+
+@media screen and (min-width: 800px) { /* Tablet */
+  table.calender tbody td { width: 8rem; }
+}
+
+.event {
+  border-style: solid;
+  border-width: 0 0 0 0.3rem ;
+  border-color: var(--secondary-3);
+  background-color: var(--pale-secondary-3);
 }
 
 .no-event {
   font-weight: bold;
   color: var(--dark-neutral);
-  background-color: var(--pale-neutral);
 }
 
 .sync {
+  background: var(--miku-pale-gold);
+}
+
+.syncing {
+  border-color: var(--miku-light-gold);
   background: repeating-linear-gradient(
     45deg,
-    transparent,
-    transparent 0.4rem,
+    var(--pale-neutral),
     var(--pale-neutral) 0.4rem,
+    var(--miku-pale-gold) 0.4rem,
+    var(--miku-pale-gold) 0.8rem
+  );
+}
+
+.local {
+  background-color: var(--pale-neutral);
+}
+
+.fog-2 {
+  background: repeating-linear-gradient(
+    -45deg,
+    transparent,
+    transparent 0.2rem,
+    var(--pale-neutral) 0.2rem,
+    var(--pale-neutral) 0.3rem,
+    transparent 0.3rem,
+    transparent 0.6rem,
+    var(--pale-neutral) 0.6rem,
     var(--pale-neutral) 0.8rem
-  );
-}
-
-.fog-2 {
-  background: repeating-linear-gradient(
-    45deg,
-    transparent,
-    transparent 0.2rem,
-    var(--pale-neutral) 0.2rem,
-    var(--pale-neutral) 0.3rem,
-    transparent 0.3rem,
-    transparent 0.5rem,
-    var(--pale-neutral) 0.5rem,
-    var(--pale-neutral) 0.7rem
-  ),
-  repeating-linear-gradient(
-    -45deg,
-    transparent,
-    transparent 0.2rem,
-    var(--pale-neutral) 0.2rem,
-    var(--pale-neutral) 0.3rem,
-    transparent 0.3rem,
-    transparent 0.5rem,
-    var(--pale-neutral) 0.5rem,
-    var(--pale-neutral) 0.7rem
-  );
-  background-blend-mode: lighten;
-}
-
-.fog-2 {
-  background: repeating-linear-gradient(
-    45deg,
-    transparent,
-    transparent 0.3rem,
-    var(--pale-neutral) 0.3rem,
-    var(--pale-neutral) 0.4rem,
-    transparent 0.4rem,
-    transparent 0.7rem,
-    var(--pale-neutral) 0.7rem,
-    var(--pale-neutral) 0.9rem
-  ),
-  repeating-linear-gradient(
-    -45deg,
-    transparent,
-    transparent 0.3rem,
-    var(--pale-neutral) 0.3rem,
-    var(--pale-neutral) 0.4rem,
-    transparent 0.4rem,
-    transparent 0.7rem,
-    var(--pale-neutral) 0.7rem,
-    var(--pale-neutral) 0.9rem
   );
   background-blend-mode: lighten;
 }
 
 .fog-1 {
   background: repeating-linear-gradient(
-    30deg,
+    45deg,
     transparent,
-    transparent 0.4rem,
-    var(--pale-neutral) 0.4rem,
-    var(--pale-neutral) 0.5rem
-  ),
-  repeating-linear-gradient(
-    -30deg,
-    transparent,
-    transparent 0.4rem,
-    var(--pale-neutral) 0.4rem,
-    var(--pale-neutral) 0.5rem
+    transparent 0.3rem,
+    var(--pale-neutral) 0.3rem,
+    var(--pale-neutral) 0.4rem
   );
   background-blend-mode: lighten;
 }
 
 .fog-3 {
-  background-image: radial-gradient(white 40%, transparent 40%);
-  background-size: 0.4rem 0.4rem;
+  background: var(--pale-neutral);
+  background-image:
+    radial-gradient(circle at center, white 24%, transparent 24%),
+    radial-gradient(circle at center, white 32%, transparent 32%);
+  background-size: 0.8rem 0.8rem;
+  background-position: 0 0, 0.4rem 0.4rem;
+}
 
-  /* background: repeating-linear-gradient(
-    45deg,
-    var(--pale-neutral),
-    var(--pale-neutral) 0.3rem,
-    transparent 0.3rem,
-    transparent 0.5rem
-  ),
-  repeating-linear-gradient(
-    -45deg,
-    var(--pale-neutral),
-    var(--pale-neutral) 0.2rem,
-    transparent 0.2rem,
-    transparent 0.5rem
-  ); */
-  /* background-blend-mode: lighten; */
+.frozen {
+  background: var(--pale-secondary-4);
+  background-image:
+    radial-gradient(circle at center, white 20%, transparent 20%),
+    radial-gradient(circle at center, white 25%, transparent 25%);
+  background-size: 0.9rem 0.9rem;
+  background-position: 0 0, 0.45rem 0.45rem;
 }
 
 table.calender {
@@ -201,18 +171,17 @@ table.calender {
       padding-top: 1rem;
     }
 
-    .event {
-      border-style: solid;
-      border-width: 0 0 0 0.3rem ;
-      border-color: var(--secondary-3);
-      background-color: var(--pale-secondary-3);
-    }
-
     .event.milestone {
       border-color: var(--miku-gold);
       background-color: var(--miku-light-gold);
       font-weight: bold;
       color: var(--miku-red);
+    }
+    .event.expedition {
+      border-color: var(--miku-dark-red);
+      background-color: var(--miku-red);
+      font-weight: bold;
+      color: white;
     }
     .event.unlock {
       border-color: var(--primary-1);
@@ -221,6 +190,10 @@ table.calender {
     .event.fog {
       border-color: var(--secondary-1);
       background-color: var(--pale-secondary-1);
+    }
+    .event.transfer {
+      border-color: var(--primary-1);
+      background-color: var(--pale-primary-1);
     }
 
     /* server */
@@ -266,6 +239,23 @@ table.calender {
     .event.auction {
       border-color: var(--secondary-4);
       background-color: var(--pale-secondary-4);
+    }
+  }
+
+  tbody {
+    tr:last-child td,
+    tr:last-child th {
+      height: 3.25rem;
+      padding-bottom: 0.5rem;
+      /* border-top: 0.15rem dashed var(--light-neutral); */
+    }
+  }
+  tbody ~ tbody {
+    tr:first-child td,
+    tr:first-child th {
+      padding-top: 0.5rem;
+      height: 3.25rem;
+      border-top: 0.1rem solid var(--miku-red);
     }
   }
 }
