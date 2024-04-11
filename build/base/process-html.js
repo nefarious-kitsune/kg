@@ -52,8 +52,6 @@ function processMetaData(content) {
   const extracted = extractHtmlElement(source, metaPos);
   if (extracted === null) return false;
 
-  console.log(extracted);
-
   let ogImage = extracted.element['og-image'];
   if (!ogImage) ogImage = DefaultImages.page;
   else if (ogImage === 'sheet') ogImage = DefaultImages.sheet;
