@@ -306,3 +306,61 @@ ul.inline-list {
   margin: 0;
   li { display: inline; }
 }
+
+/* -------------------- Tooltips -------------------- */
+
+[text-hint] {
+  position: relative;
+}
+
+li > span[text-hint], p > span[text-hint],
+li > abbr[text-hint], p > abbr[text-hint], span > abbr[text-hint] {
+  text-decoration: underline var(--miku-dark-red) dotted;
+  text-underline-offset: 0.2rem;
+}
+
+[text-hint]:before,
+[text-hint]:after {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  -webkit-font-smoothing: antialiased;
+  margin: 0 auto;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.6s ease-in-out 0.4s;
+  text-align: center;
+}
+
+[text-hint]:before {
+  content: " ";
+  height: 0;
+  width: 0;
+  top: calc(100% - 1rem);
+  border-style: solid;
+  border-width: 1rem;
+  border-color: transparent transparent var(--neutral) transparent;
+  z-index: 99;
+}
+
+[text-hint]:after {
+  content: attr(text-hint);
+  /* white-space: nowrap; */
+  background: var(--neutral);
+  min-width: 6rem;
+  padding: 0.5rem;
+  font-size: 0.9rem;
+  box-sizing: border-box;
+  top: calc(100% + 0.9rem);
+  color: #fff;
+  border-radius: 0.5rem;
+  text-shadow: 0px 1px 1px #000;
+  z-index: 99;
+}
+
+[text-hint]:hover:before,
+[text-hint]:hover:after {
+  opacity: 1;
+  visibility: visible;
+  transition: 0.4s ease-in-out 0.3s;
+}

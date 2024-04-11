@@ -1,3 +1,6 @@
+import {extractHtmlElement} from './parse-html-element.js';
+import {processHeroAvatars} from './process-hero-avatars.js';
+
 const SiteTitle = 'Miku\'s Shrine';
 const PageTitleEnding = ' - ' + SiteTitle;
 const DOCTYPE = '<!DOCTYPE html>';
@@ -10,170 +13,126 @@ const DefaultImages = {
 };
 
 /**
- * Remove all trailing spaces, leading spaces, and line breaks
- * @param {string} text
- * @return {string}
+ * @param {object} content
+ * @return {boolean}
  */
-function condenseText(text) {
-  return text
-      .split('\n')
-      .map((line) => line.trim())
-      .join(' ');
+function processTitle(content) {
+  let source = content.source;
+  const titlePos = source.indexOf('<title');
+  if (titlePos === -1) return false;
+
+  const extracted = extractHtmlElement(content.source, titlePos);
+  if (extracted === null) return false;
+
+  let pageTitle = extracted.innerContent;
+
+  if (pageTitle.endsWith(PageTitleEnding)) {
+    pageTitle = pageTitle.slice(-PageTitleEnding.length);
+  } else {
+    // Add site title to the end of the page title
+    source =
+      extracted.head +
+      `<head>${pageTitle}${PageTitleEnding}</head>` +
+      extracted.tail;
+  };
+  content.pageTitle = pageTitle;
+  return true;
 }
 
 /**
- * @typedef {Object} ContentMatch
- * @property {string} content - Found content
- * @property {number} start - Start position of the raw content
- * @property {number} end - End position of the raw content
- * @property {number} head - Start position <tag>
- * @property {number} tail - End position of </tag>
+ * @param {object} content
+ * @return {boolean}
  */
+function processMetaData(content) {
+  const source = content.source;
+  const metaPos = source.indexOf('<page-data');
+  if (metaPos === -1) return false;
 
-/**
- * Find content closed by <tagName> and </tabName> in a source content
- * @param {string} tagName - Tag name
- * @param {string} srcContent - Source content
- * @return {ContentMatch} Found content
- */
-function findInnerContent(tagName, srcContent) {
-  const _head = srcContent.indexOf(`<${tagName}>`);
-  const _end = srcContent.indexOf(`</${tagName}>`);
-  if ((_head !== -1) && (_end !== -1)) {
-    const _start = _head + tagName.length + 2;
-    return {
-      content: srcContent.slice(_start, _end).trim(),
-      start: _start,
-      end: _end,
-      head: _head,
-      tail: _end + (tagName.length + 3),
-    };
+  const extracted = extractHtmlElement(source, metaPos);
+  if (extracted === null) return false;
+
+  let ogImage = extracted.element['og-image'];
+  if (!ogImage) ogImage = DefaultImages.page;
+  else if (ogImage === 'sheet') ogImage = DefaultImages.sheet;
+  else if (ogImage === 'chart') ogImage = DefaultImages.chart;
+  else if (ogImage === 'graph') ogImage = DefaultImages.graph;
+  else if (ogImage === 'calculator') ogImage = DefaultImages.calculator;
+
+  const metaTags = [
+    '<link rel="icon" type="image/x-icon" href="/images/logo_mini.png">',
+    '<meta name="format-detection" content="telephone=no">',
+    '<meta property="og:type" content="website">',
+    '<meta property="og:url" content="https://kg.kitsune21.com/">',
+  ];
+
+  if (content.pageTitle) {
+    metaTags.push(
+        `<meta property="og:title" content="${content.pageTitle}">`,
+    );
   }
 
-  return {
-    content: '',
-    start: -1,
-    end: -1,
-    head: -1,
-    tail: -1,
-  };
-};
+  if (extracted.element['og-desc']) {
+    metaTags.push(
+        '<meta property="og:description" ' +
+        `content="${extracted.element['og-desc']}"></meta>`,
+    );
+  }
+
+  content.source =
+      extracted.head +
+      metaTags.join('\n') +
+      extracted.tail;
+
+  return true;
+}
+
+/**
+ * @param {object} content
+ * @return {boolean}
+ */
+function processEscapeMe(content) {
+  const source = content.source;
+  const escPos = source.indexOf('<escape-me');
+  if (escPos === -1) return false;
+
+  const extracted = extractHtmlElement(content.source, escPos);
+  if (extracted === null) return false;
+
+  const innerContent = extracted.innerContent
+      .replaceAll('&', '&amp;')
+      .replaceAll('<', '&lt;')
+      .replaceAll('>', '&gt;')
+      .trim();
+
+  content.source =
+    extracted.head +
+    innerContent +
+    extracted.tail;
+
+  return true;
+}
 
 /**
  * @param {string} srcContent - source content
  * @return {object} - processed content
  */
 export function processHtml(srcContent) {
-  let pageTitle = '';
-  let pageDescription = '';
-  let pageTags = [];
+  srcContent = srcContent.replaceAll('\r', ''); // Remove all \r characters
 
-  let processedContent = srcContent;
-
-  // Get rid of accidental \r characters
-  processedContent = processedContent.replaceAll('\r', '');
-
-  // Make sure the output is valid HTML
-  if (!processedContent.startsWith(DOCTYPE)) {
-    processedContent = DOCTYPE + '\n' + processedContent;
+  if (!srcContent.startsWith(DOCTYPE)) { // ensure valid HTML
+    srcContent = DOCTYPE + '\n' + srcContent;
   }
 
-  let extracted;
+  const result = {source: srcContent};
 
-  // Get page title, and replace {{TITLE}} with page title
-  extracted = findInnerContent('title', processedContent);
-  if (extracted.start !== -1) {
-    pageTitle = extracted.content;
-    if (pageTitle.endsWith(PageTitleEnding)) {
-      pageTitle = pageTitle.slice(-PageTitleEnding.length);
-    } else {
-      // Add site title to the end of the page title
-      processedContent =
-        processedContent.slice(0, extracted.end) +
-        PageTitleEnding +
-        processedContent.slice(extracted.end);
-    };
-    processedContent = processedContent.replaceAll('{{TITLE}}', pageTitle);
+  processTitle(result);
+  processEscapeMe(result);
+  processMetaData(result);
+  processHeroAvatars(result);
+
+  if (result.pageTitle) {
+    result.source = result.source.replaceAll('{{TITLE}}', result.pageTitle);
   }
 
-  extracted = findInnerContent('meta-data', processedContent);
-  if (extracted.start !== -1) {
-    const metaContent = extracted.content;
-    // First, remove OG content
-    if (processedContent.charAt(extracted.tail) === '\n') {
-      processedContent =
-        processedContent.slice(0, extracted.head) +
-        processedContent.slice(extracted.tail + 1);
-    } else {
-      processedContent =
-        processedContent.slice(0, extracted.head) +
-        processedContent.slice(extracted.tail);
-    }
-
-    let ogImage = findInnerContent('og-image', metaContent).content;
-    let ogDesc = findInnerContent('og-desc', metaContent).content;
-    const tagList = findInnerContent('tag-list', metaContent).content;
-
-    if (ogImage === '') ogImage = DefaultImages.page;
-    else if (ogImage === 'sheet') ogImage = DefaultImages.sheet;
-    else if (ogImage === 'chart') ogImage = DefaultImages.chart;
-    else if (ogImage === 'graph') ogImage = DefaultImages.graph;
-    else if (ogImage === 'calculator') ogImage = DefaultImages.calculator;
-
-    pageTags =
-      (tagList.length > 0)?
-      (tagList.split(',').map((t) => t.trim())):
-      [];
-
-    const metaTags = [
-      '<link rel="icon" type="image/x-icon" href="/images/logo_mini.png">',
-      '<meta name="viewport" content="width=device-width,initial-scale=1">',
-      '<meta name="format-detection" content="telephone=no">',
-      '<meta property="og:type" content="website">',
-      `<meta property="og:image" content="${ogImage}">`,
-      '<meta property="og:url" content="https://kg.kitsune21.com/">',
-    ];
-
-    let ogTitle = '';
-    if (pageTitle ==='') ogTitle = SiteTitle;
-    else ogTitle = pageTitle + ' - ' + SiteTitle;
-    metaTags.push(`<meta property="og:title" content="${ogTitle}">`);
-
-    pageDescription = condenseText(ogDesc);
-    if (pageDescription !=='') {
-      metaTags.push(
-          `<meta property="og:description" content="${pageDescription}">`);
-      processedContent = processedContent.replaceAll('{{PAGE-DESC}}', ogDesc);
-    }
-
-    let tagEndingPos = processedContent.indexOf('</title>\n');
-    if (tagEndingPos !== -1) {
-      tagEndingPos += '</title>\n'.length;
-      processedContent =
-          processedContent.slice(0, tagEndingPos) +
-          metaTags.map((line) => '  ' + line + '\n').join('') +
-          processedContent.slice(tagEndingPos);
-    }
-  }
-
-  // Get page title, and replace {{TITLE}} with page title
-  extracted = findInnerContent('escape-me', processedContent);
-  if (extracted.start !== -1) {
-    const escaped = extracted.content
-        .replaceAll('&', '&amp;')
-        .replaceAll('<', '&lt;')
-        .replaceAll('>', '&gt;');
-    processedContent =
-        processedContent.slice(0, extracted.head) +
-        escaped +
-        processedContent.slice(extracted.tail);
-    processedContent = processedContent.replaceAll('{{TITLE}}', pageTitle);
-  }
-
-  return {
-    title: pageTitle,
-    description: pageDescription,
-    tags: pageTags,
-    content: processedContent,
-  };
+  return result;
 }
