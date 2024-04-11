@@ -1,5 +1,6 @@
 import {extractHtmlElement} from './parse-html-element.js';
 import {processHeroAvatars} from './process-hero-avatars.js';
+import {processHeroNames} from './process-hero-names.js';
 
 const SiteTitle = 'Miku\'s Shrine';
 const PageTitleEnding = ' - ' + SiteTitle;
@@ -17,7 +18,7 @@ const DefaultImages = {
  * @return {boolean}
  */
 function processTitle(content) {
-  let source = content.source;
+  const source = content.source;
   const titlePos = source.indexOf('<title');
   if (titlePos === -1) return false;
 
@@ -30,9 +31,9 @@ function processTitle(content) {
     pageTitle = pageTitle.slice(-PageTitleEnding.length);
   } else {
     // Add site title to the end of the page title
-    source =
+    content.source =
       extracted.head +
-      `<head>${pageTitle}${PageTitleEnding}</head>` +
+      `<title>${pageTitle}${PageTitleEnding}</title>` +
       extracted.tail;
   };
   content.pageTitle = pageTitle;
@@ -50,6 +51,8 @@ function processMetaData(content) {
 
   const extracted = extractHtmlElement(source, metaPos);
   if (extracted === null) return false;
+
+  console.log(extracted);
 
   let ogImage = extracted.element['og-image'];
   if (!ogImage) ogImage = DefaultImages.page;
@@ -129,6 +132,7 @@ export function processHtml(srcContent) {
   processEscapeMe(result);
   processMetaData(result);
   processHeroAvatars(result);
+  processHeroNames(result);
 
   if (result.pageTitle) {
     result.source = result.source.replaceAll('{{TITLE}}', result.pageTitle);

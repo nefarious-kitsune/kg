@@ -155,7 +155,7 @@ export function extractHtmlElement(source, startPos) {
     (sourceChars[currPos] === '/') &&
     (sourceChars[currPos+1] === '>')
   ) {
-    result.tail = source.slice(currPos + 2);
+    result.tail = sourceChars.slice(currPos + 2).join('');
     return result;
   }
 
