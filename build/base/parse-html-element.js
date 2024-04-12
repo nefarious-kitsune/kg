@@ -126,7 +126,7 @@ export function extractHtmlElement(source, startPos) {
   };
 
   const result = {
-    element: {name: ''},
+    element: {'tag-name': ''},
     innerContent: null,
     head: head,
     tail: '',
@@ -140,7 +140,7 @@ export function extractHtmlElement(source, startPos) {
 
   const tagName = parseIdentifier();
   if (tagName === null) return null;
-  result.element.name = tagName;
+  result.element['tag-name'] = tagName;
 
   let attribute = parseAttribute();
   while (attribute !== null) {
@@ -154,6 +154,20 @@ export function extractHtmlElement(source, startPos) {
   if (
     (sourceChars[currPos] === '/') &&
     (sourceChars[currPos+1] === '>')
+  ) {
+    result.tail = sourceChars.slice(currPos + 2).join('');
+    return result;
+  }
+
+  // Handle void element
+  if (
+    (sourceChars[currPos] === '>') &&
+    (
+      [
+        'area', 'base', 'br', 'col', 'embed', 'hr', 'img',
+        'input', 'link', 'meta', 'source', 'track', 'wbr',
+      ].indexOf(tagName) !== -1
+    )
   ) {
     result.tail = sourceChars.slice(currPos + 2).join('');
     return result;

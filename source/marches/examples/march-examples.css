@@ -26,6 +26,10 @@
   padding-top: 1rem;
 }
 
+#march-2, #march-4 {
+  background-color: var(--pale-neutral);
+}
+
 @media (min-width: 600px) {
   .march-example {
     display: grid;

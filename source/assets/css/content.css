@@ -33,7 +33,7 @@ header:first-child nav {
     }
 
     a {
-      color: var(--miku-red) !important;
+      color: var(--miku-dark-red) !important;
       text-decoration: underline solid !important;
     }
   }
@@ -41,8 +41,23 @@ header:first-child nav {
 
 /* ------------------ Basic Format ------------------ */
 
-main { padding: 0; margin: 0; }
-main.content { margin-bottom: 10rem; }
+body {
+  padding-bottom: 10rem;
+}
+
+header {
+  padding: 0;
+  margin: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+main {
+  padding: 0;
+  margin: 0 0 10rem 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
 
 /* Paragraph spacing */
 section > p, div > p { margin-block-end: 0.8rem; }
@@ -67,6 +82,31 @@ main > section {
 /* Fixing broken UL. All <ul> should be contained by <div> */
 main > ul { margin-left: 1.2rem !important; }
 
+html {
+  background-image: url('../../images/background.png');
+  background-size: cover;
+  background-position: bottom left;
+  background-attachment: fixed;
+}
+body {
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+header, main {
+  margin: 0;
+  padding: 0;
+  border-left: 1px solid var(--miku-red);
+  border-right: 1px solid var(--miku-dark-red);
+}
+header {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+main {
+  background-color: white;
+  border-bottom: 1px solid var(--miku-dark-red);
+}
+
 /* -------------------- Headings -------------------- */
 
 @media screen and (min-width: 0px) { /* Small screen */
@@ -87,7 +127,11 @@ main > ul { margin-left: 1.2rem !important; }
   }
 }
 
-h1 { text-align: center; }
+h1 {
+  text-align: center;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
 
 /* --------------- Simple Text Styles --------------- */
 

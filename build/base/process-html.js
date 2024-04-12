@@ -46,10 +46,18 @@ function processTitle(content) {
  */
 function processMetaData(content) {
   const source = content.source;
-  const metaPos = source.indexOf('<page-data');
-  if (metaPos === -1) return false;
+  let extracted;
+  let metaPos = 0;
 
-  const extracted = extractHtmlElement(source, metaPos);
+  while (true) {
+    metaPos = source.indexOf('<meta', metaPos);
+    if (metaPos === -1) return false;
+    extracted = extractHtmlElement(source, metaPos);
+    if (extracted === null) return false;
+    if (extracted.element['page-data']) break;
+    metaPos = source.length - extracted.tail.length;
+  }
+
   if (extracted === null) return false;
 
   let ogImage = extracted.element['og-image'];
