@@ -143,8 +143,6 @@ body {
   margin-right: auto;
 }
 header, main {
-  margin: 0;
-  padding: 0;
   border-left: 1px solid var(--miku-red);
   border-right: 1px solid var(--miku-dark-red);
 }
