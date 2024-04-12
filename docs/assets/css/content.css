@@ -63,7 +63,9 @@ nav.left-right {
   }
 
   .left-arrow a:hover,
-  .right-arrow a:hover {
+  .left-arrow a:focus,
+  .right-arrow a:hover,
+  .right-arrow a:focus {
     -webkit-transition: .2s ease-in;
     -moz-transition: .2s ease-in;
     -o-transition: .2s ease-in;
@@ -72,8 +74,10 @@ nav.left-right {
     color: white;
   }
 
-  .left-arrow a:hover { left: 0; }
-  .right-arrow a:hover { right: 0; }
+  .left-arrow a:hover,
+  .left-arrow a:focus { left: 0; }
+  .right-arrow a:hover,
+  .right-arrow a:focus { right: 0; }
 
   a {
     padding: 2rem 0.8rem;
@@ -450,7 +454,9 @@ li > abbr[text-hint], p > abbr[text-hint], span > abbr[text-hint] {
 }
 
 [text-hint]:hover:before,
-[text-hint]:hover:after {
+[text-hint]:hover:after,
+[text-hint]:focus:before,
+[text-hint]:focus:after {
   opacity: 1;
   visibility: visible;
   transition: 0.4s ease-in-out 0.3s;

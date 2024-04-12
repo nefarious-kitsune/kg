@@ -141,9 +141,13 @@ table.calender {
       color: var(--dark-neutral);
     }
 
+    
     th:hover .day,
     th:hover ~ td .event,
-    th:hover ~ td .no-event {
+    th:hover ~ td .no-event,
+    th:focus .day,
+    th:focus ~ td .event,
+    th:focus ~ td .no-event {
       outline: 0.2rem solid var(--light-neutral);
     }
 
