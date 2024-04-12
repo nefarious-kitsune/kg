@@ -39,6 +39,55 @@ header:first-child nav {
   }
 }
 
+nav.left-right {
+  .left-arrow a {
+    position: fixed;
+    z-index: 100;
+    left: -5px;
+    top: 45%;
+    -webkit-transition: .2s ease-in;
+    -moz-transition: .2s ease-in;
+    -o-transition: .2s ease-in;
+    transition: .2s ease-in;
+  }
+
+  .right-arrow a {
+    position: fixed;
+    z-index: 100;
+    right: -5px;
+    top: 45%;
+    -webkit-transition: .2s ease-in;
+    -moz-transition: .2s ease-in;
+    -o-transition: .2s ease-in;
+    transition: .2s ease-in;
+  }
+
+  .left-arrow a:hover,
+  .right-arrow a:hover {
+    -webkit-transition: .2s ease-in;
+    -moz-transition: .2s ease-in;
+    -o-transition: .2s ease-in;
+    transition: .2s ease-in;
+    background: var(--miku-dark-red);
+    color: white;
+  }
+
+  .left-arrow a:hover { left: 0; }
+  .right-arrow a:hover { right: 0; }
+
+  a {
+    padding: 2rem 0.8rem;
+    background: rgba(0, 0, 0, 0.65);
+    color: var(--light-neutral);
+    text-decoration: none;
+    font-size: 1.6rem;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  nav.left-right { display: none;}
+}
+
 /* ------------------ Basic Format ------------------ */
 
 body {
