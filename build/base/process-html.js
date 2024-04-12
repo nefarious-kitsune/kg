@@ -72,6 +72,7 @@ function processMetaData(content) {
     '<meta name="format-detection" content="telephone=no">',
     '<meta property="og:type" content="website">',
     '<meta property="og:url" content="https://kg.kitsune21.com/">',
+    `<meta property="og:image" content="${ogImage}">`,
   ];
 
   if (content.pageTitle) {

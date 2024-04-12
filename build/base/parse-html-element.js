@@ -169,7 +169,7 @@ export function extractHtmlElement(source, startPos) {
       ].indexOf(tagName) !== -1
     )
   ) {
-    result.tail = sourceChars.slice(currPos + 2).join('');
+    result.tail = sourceChars.slice(currPos + 1).join('');
     return result;
   }
 
