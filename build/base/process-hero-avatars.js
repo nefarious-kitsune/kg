@@ -145,17 +145,17 @@ function processHeroAvatar(content) {
 
   if (HeroName) {
     replaceWith = `<div class="${classList.join(' ')}" ` +
-      `text-hint="${HeroName}"\n  >`;
+      `text-hint="${HeroName}" tabindex="0"\n  >`;
   } else {
     replaceWith = `<div class="${classList.join(' ')}"\n  >`;
   }
 
   if (extracted.element['star-level']) {
     const startLevel = parseInt(extracted.element['star-level']);
-    const stars = '★'.repeat(startLevel);
+    // const stars = '★'.repeat(startLevel);
 
     replaceWith += '<span\n' +
-      '  ' + 'class="hero-avatar-star-level">' + stars + '</span\n  >';
+      '  ' + `class="hero-avatar-star-level level-${startLevel}"></span\n  >`;
   }
 
   if (HeroName) {

@@ -121,7 +121,7 @@ function processHeroName(content) {
     const heroId = HeroNameToClassMap[HeroName.toLowerCase()];
     if (heroId) {
       replaceWith =
-        `<span class="hero-name ${heroId}" image-hint>` +
+        `<span class="hero-name ${heroId}" image-hint tabindex="0">` +
         HeroName + '</span>';
     } else {
       replaceWith = HeroName;
