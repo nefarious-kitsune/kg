@@ -97,7 +97,7 @@ const HeroNameToClassMap = {
   'judy':      'judy',
   'trishy':    'trishy',
   'boudica':   'boudica',
-  'angelica':  'angelica',
+  'angelina':  'angelina',
   'doris':     'doris',
 };
 
