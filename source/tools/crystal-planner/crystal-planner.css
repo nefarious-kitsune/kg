@@ -38,6 +38,7 @@ label > output {
   width: 10rem;
 }
 
+.star-level-group-0 { background-color: var(--pale-neutral); }
 .star-level-group-1 { background-color: var(--pale-primary-3); }
 .star-level-group-2 { background-color: var(--pale-primary-4); }
 .star-level-group-3 { background-color: var(--pale-primary-5); }

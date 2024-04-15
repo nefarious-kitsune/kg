@@ -48,6 +48,7 @@ function calc(n) {
   else if (cardCount >= 1) cardCount--;
 
   const IndexToCardCount = [
+    0, 0,
     20, 40, 0,
     70, 110, 160, 0,
     220, 290, 370, 450, 0,
