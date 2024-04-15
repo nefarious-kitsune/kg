@@ -408,10 +408,12 @@ ul.inline-list {
   position: relative;
 }
 
-li > span[text-hint], p > span[text-hint],
-li > abbr[text-hint], p > abbr[text-hint], span > abbr[text-hint] {
-  text-decoration: underline var(--miku-dark-red) dotted;
-  text-underline-offset: 0.2rem;
+li, p, span, label {
+  & > span[text-hint],
+  & > abbr[text-hint] {
+    text-decoration: underline dotted var(--miku-dark-red);
+    text-underline-offset: 0.2rem;
+  }
 }
 
 [text-hint]:before,

@@ -62,7 +62,7 @@
 }
 
 .hero-name[image-hint] {
-  text-decoration: underline var(--miku-dark-red) dotted;
+  text-decoration: underline dotted var(--miku-dark-red);
   text-underline-offset: 0.2rem;
   display: inline-block;
   position: relative;

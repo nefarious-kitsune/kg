@@ -15,6 +15,7 @@ copyStatic('guides/');
 copyStatic('lava-cave/');
 copyStatic('events/');
 copyStatic('timelines/');
+copyStatic('tools/');
 copyStatic('stacking/');
 
 const elements = ['archer', 'fire', 'ice', 'goblin'];

@@ -1,0 +1,50 @@
+.hero-avatar { float: right; }
+
+label {
+  display: block;
+  margin-block-end: 0.4rem;
+}
+
+label > span {
+  display: inline-block;
+  width: 10rem;
+}
+
+label > input,
+label > output {
+  display: inline-block;
+  border-radius: 0.2rem;
+  border: 0.1rem solid var(--neutral);
+  padding: 0.2rem;
+  width: 6rem;
+  font-size: 1rem;
+}
+
+label > output {
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.hero-selector,
+.star-level-selector {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 0.2rem;
+  border: 0.1rem solid var(--neutral);
+  padding: 0.2rem;
+  font-size: 1rem;
+  outline: none;
+  width: 10rem;
+}
+
+.star-level-group-1 { background-color: var(--pale-primary-3); }
+.star-level-group-2 { background-color: var(--pale-primary-4); }
+.star-level-group-3 { background-color: var(--pale-primary-5); }
+.star-level-group-4 { background-color: var(--pale-primary-6); }
+.star-level-group-5 { background-color: var(--pale-primary-1); }
+.star-level-group-1:checked { background-color: var(--primary-3); }
+.star-level-group-2:checked { background-color: var(--primary-4); }
+.star-level-group-3:checked { background-color: var(--primary-5); }
+.star-level-group-4:checked { background-color: var(--primary-6); }
+.star-level-group-5:checked { background-color: var(--primary-1); }
