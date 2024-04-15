@@ -445,7 +445,7 @@ li, p, span, label {
   /* white-space: nowrap; */
   background: var(--neutral);
   min-width: 6rem;
-  padding: 0.5rem;
+  padding: 0.2rem;
   font-size: 0.9rem;
   box-sizing: border-box;
   top: calc(100% + 0.9rem);

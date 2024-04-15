@@ -6,6 +6,7 @@ import {copyStatic} from './base/copy-static.js';
 
 copyStatic('assets/');
 copyStatic('marches/');
+copyStatic('heroes/');
 copyStatic('bounty-hall/');
 copyStatic('features/');
 copyStatic('territories/');
