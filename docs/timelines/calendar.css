@@ -1,31 +1,4 @@
 
-@media screen and (min-width: 0px) { /* Small screen */
-  table.calender {
-    tbody td { width: 8rem; }
-    thead tr th:first-child { width: 2rem; }
-  }
-}
-
-@media screen and (min-width: 390px) { /* Mobile */
-  table.calender tbody td { width: 10rem; }
-}
-
-@media screen and (min-width: 500px) { /* Phablet */
-  table.calender tbody td {width: 12rem; }
-}
-
-@media screen and (min-width: 700px) { /* Tablet */
-  table.calender tbody td { width: 6rem; }
-}
-
-@media screen and (min-width: 750px) { /* Tablet */
-  table.calender tbody td { width: 7rem; }
-}
-
-@media screen and (min-width: 800px) { /* Tablet */
-  table.calender tbody td { width: 8rem; }
-}
-
 .event {
   border-style: solid;
   border-width: 0 0 0 0.3rem ;
@@ -101,11 +74,22 @@
   background-position: 0 0, 0.45rem 0.45rem;
 }
 
+.calender-container {
+  width: 100%;
+  overflow-x: auto;
+}
+
 table.calender {
   margin-left:auto;
   margin-right:auto;
 
   border-collapse: collapse;
+
+  .event-col {
+    min-width: 6rem;
+    width: calc(6rem + (24 - 6) * ((100vw - 300px) / (1200 - 300))) !important;
+  }
+  .day-col { width: 2rem; }
 
   tbody {
     /* the following 3 rules ensure that event box will fill the cell */

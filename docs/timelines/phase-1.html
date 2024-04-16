@@ -1,22 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Phase 1 Timeline - Miku's Shrine</title>
+<title>Phase 1 - Miku's Shrine</title>
 <link rel="icon" type="image/x-icon" href="/images/logo_mini.png">
 <meta name="format-detection" content="telephone=no">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://kg.kitsune21.com/">
 <meta property="og:image" content="https://kg.kitsune21.com/images/page-2x_n.png">
-<meta property="og:title" content="Phase 1 Timeline">
+<meta property="og:title" content="Phase 1">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <link href="../assets/css/common.css" rel="stylesheet">
 <link href="../assets/css/content.css" rel="stylesheet">
-<link href="../assets/tabbed/tabbed-table.css" rel="stylesheet">
-<script src="../assets/tabbed/tabbed-table.js"></script>
 <link href="./calendar.css" rel="stylesheet">
 </head>
 
-<body class="content">
+<body>
 
 <header><nav><ul class="breadcrumb">
   <li><a href="../content">Home</a></li>
@@ -24,21 +22,13 @@
   <li>Phase 1</li>
 </ul></nav></header>
 
-<main class="content">
-<h1>Phase 1 Timeline</h1>
-
-<div class="quick-access">
-  <ul class="quick-access-links" id="Tabbed-Table-Tab-List"
-    ><li><a onclick="switchView(this)" class="table-tab selected">Milestone</a></li
-    ><li><a onclick="switchView(this)" class="table-tab">Server</a></li
-    ><li><a onclick="switchView(this)" class="table-tab">Personal</a></li
-  ></ul>
-</div>
+<main>
+<h1>Phase 1</h1>
 
 <nav class="left-right">
   <div class="right-arrow"><a href="./phase-2">↠</a></div>
 </nav>
-  
+
 <section>
 <p style="text-align: center;">
   All events are <strong class="local">local</strong> to the Kingdom,
@@ -48,215 +38,219 @@
   The Great Fog will gradually lift away and reveal more territory to the Lords.
 </p>
 
-<table class="basic-table calender" id="Tabbed-Table">
+<div class="calender-container">
+
+<table class="basic-table calender">
 <thead>
 <tr>
-  <th>Day</th>
-  <th class="view-1">Milestone</th>
-  <th class="view-1">Milestone</th>
-  <th class="view-2">Event</th>
-  <th class="view-2">Event</th>
-  <th class="view-3">Event</th>
-  <th class="view-3">Event</th>
+  <th class="day-col">Day</th>
+  <th class="event-col">Milestone</th>
+  <th class="event-col">Milestone</th>
+  <th class="event-col">Event</th>
+  <th class="event-col">Event</th>
+  <th class="event-col">Event</th>
+  <th class="event-col">Event</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <th><div class="day">Day 1</div></th>
-  <!-- <td class="view-1" rowspan="6"><div class="event fog"
+  <th class="day-col"><div class="day">Day 1</div></th>
+  <!-- <td class="event-col" rowspan="6"><div class="event fog"
     ><strong>The Great Fog</strong> (Phase 1)</div></td> -->
-  <td class="view-1"><div class="no-event fog-1">Fog 1/3</div></td>
-  <td class="view-1"><div class="no-event fog-1"></div></td>
-  <td class="view-2"><div class="no-event fog-1"></div></td>
-  <td class="view-2"><div class="no-event fog-1"></div></td>
-  <td class="view-3"><div class="no-event fog-1"></div></td>
-  <td class="view-3"><div class="no-event fog-1"></div></td>
+  <td class="event-col"><div class="no-event fog-1">Fog 1/3</div></td>
+  <td class="event-col"><div class="no-event fog-1"></div></td>
+  <td class="event-col"><div class="no-event fog-1"></div></td>
+  <td class="event-col"><div class="no-event fog-1"></div></td>
+  <td class="event-col"><div class="no-event fog-1"></div></td>
+  <td class="event-col"><div class="no-event fog-1"></div></td>
 </tr>
 <tr class="even">
-  <th><div class="day">Day 2</div></th>
-  <td class="view-1"><div class="no-event fog-1"></div></td>
-  <td class="view-1"><div class="no-event fog-1"></div></td>
-  <td class="view-2"><div class="no-event fog-1"></div></td>
-  <td class="view-2"><div class="no-event fog-1"></div></td>
-  <td class="view-3"><div class="no-event fog-1"></div></td>
-  <td class="view-3"><div class="no-event fog-1"></div></td>
+  <th class="day-col"><div class="day">Day 2</div></th>
+  <td class="event-col"><div class="no-event fog-1"></div></td>
+  <td class="event-col"><div class="no-event fog-1"></div></td>
+  <td class="event-col"><div class="no-event fog-1"></div></td>
+  <td class="event-col"><div class="no-event fog-1"></div></td>
+  <td class="event-col"><div class="no-event fog-1"></div></td>
+  <td class="event-col"><div class="no-event fog-1"></div></td>
 </tr>
 <tr>
-  <th><div class="day">Day 3</div></th>
-  <td class="view-1"><div class="no-event fog-1"></div></td>
-  <td class="view-1"><div class="event unlock">Lv 1-3 Dragon Nests unlock</div></td>
-  <td class="view-2"><div class="no-event fog-1"></div></td>
-  <td class="view-2"><div class="no-event fog-1"></div></td>
-  <td class="view-3" rowspan="7"
+  <th class="day-col"><div class="day">Day 3</div></th>
+  <td class="event-col"><div class="no-event fog-1"></div></td>
+  <td class="event-col"><div class="event unlock">Lv 1-3 Dragon Nests unlock</div></td>
+  <td class="event-col"><div class="no-event fog-1"></div></td>
+  <td class="event-col"><div class="no-event fog-1"></div></td>
+  <td class="event-col" rowspan="7"
     ><a href="../../events/ml/"
       ><div class="event mightiest">Mightiest Lord</div
     ></a
   ></td>
-  <td class="view-3"><div class="no-event fog-1"></div></td>
+  <td class="event-col"><div class="no-event fog-1"></div></td>
 </tr>
 <tr class="even">
-  <th><div class="day">Day 4</div></th>
-  <td class="view-1"><div class="no-event fog-1"></div></td>
-  <td class="view-1"><div class="no-event fog-1"></div></td>
-  <td class="view-2"><div class="no-event fog-1"></div></td>
-  <td class="view-2"><div class="no-event fog-1"></div></td>
+  <th class="day-col"><div class="day">Day 4</div></th>
+  <td class="event-col"><div class="no-event fog-1"></div></td>
+  <td class="event-col"><div class="no-event fog-1"></div></td>
+  <td class="event-col"><div class="no-event fog-1"></div></td>
+  <td class="event-col"><div class="no-event fog-1"></div></td>
   <!-- MK -->
-  <td class="view-3"><div class="no-event fog-1"></div></td>
+  <td class="event-col"><div class="no-event fog-1"></div></td>
 </tr>
 <tr>
-  <th><div class="day">Day 5</div></th>
-  <td class="view-1"><div class="no-event fog-1"></div></td>
-  <td class="view-1"><div class="no-event fog-1"></div></td>
-  <td class="view-2"><div class="no-event fog-1"></div></td>
-  <td class="view-2"><div class="no-event fog-1"></div></td>
+  <th class="day-col"><div class="day">Day 5</div></th>
+  <td class="event-col"><div class="no-event fog-1"></div></td>
+  <td class="event-col"><div class="no-event fog-1"></div></td>
+  <td class="event-col"><div class="no-event fog-1"></div></td>
+  <td class="event-col"><div class="no-event fog-1"></div></td>
   <!-- MK -->
-  <td class="view-3"><div class="no-event fog-1"></div></td>
+  <td class="event-col"><div class="no-event fog-1"></div></td>
 </tr>
 <tr class="even">
-  <th><div class="day">Day 6</div></th>
-  <td class="view-1"><div class="no-event fog-1"></div></td>
-  <td class="view-1"><div class="no-event fog-1"></div></td>
-  <td class="view-2"><div class="no-event fog-1"></div></td>
-  <td class="view-2"><div class="no-event fog-1"></div></td>
+  <th class="day-col"><div class="day">Day 6</div></th>
+  <td class="event-col"><div class="no-event fog-1"></div></td>
+  <td class="event-col"><div class="no-event fog-1"></div></td>
+  <td class="event-col"><div class="no-event fog-1"></div></td>
+  <td class="event-col"><div class="no-event fog-1"></div></td>
   <!-- MK -->
-  <td class="view-3"><div class="no-event fog-1"></div></td>
+  <td class="event-col"><div class="no-event fog-1"></div></td>
 </tr>
 <tr>
-  <th><div class="day">Day 7</div></th>
-  <td class="view-1"><div class="no-event fog-2">Fog 2/3</div></td>
-  <td class="view-1"><div class="event unlock">Blacksmith unlock</div></td>
-  <td class="view-2"><div class="no-event fog-2"></div></td>
-  <td class="view-2"><div class="no-event fog-2"></div></td>
+  <th class="day-col"><div class="day">Day 7</div></th>
+  <td class="event-col"><div class="no-event fog-2">Fog 2/3</div></td>
+  <td class="event-col"><div class="event unlock">Blacksmith unlock</div></td>
+  <td class="event-col"><div class="no-event fog-2"></div></td>
+  <td class="event-col"><div class="no-event fog-2"></div></td>
   <!-- MK -->
-  <td class="view-3"><div class="no-event fog-2"></div></td>
+  <td class="event-col"><div class="no-event fog-2"></div></td>
 </tr>
 <tr>
-  <th><div class="day">Day 8</div></th>
-  <td class="view-1"><div class="no-event fog-2"></div></td>
-  <td class="view-1"><div class="no-event fog-2"></div></td>
-  <td class="view-2"><div class="no-event fog-2"></div></td>
-  <td class="view-2"><div class="no-event fog-2"></div></td>
+  <th class="day-col"><div class="day">Day 8</div></th>
+  <td class="event-col"><div class="no-event fog-2"></div></td>
+  <td class="event-col"><div class="no-event fog-2"></div></td>
+  <td class="event-col"><div class="no-event fog-2"></div></td>
+  <td class="event-col"><div class="no-event fog-2"></div></td>
   <!-- MK -->
-  <td class="view-3"><div class="no-event fog-2"></div></td>
+  <td class="event-col"><div class="no-event fog-2"></div></td>
 </tr>
 <tr>
-  <th><div class="day">Day 9</div></th>
-  <td class="view-1"><div class="no-event fog-2"></div></td>
-  <td class="view-1"><div class="no-event fog-2"></div></td>
-  <td class="view-2"><div class="no-event fog-2"></div></td>
-  <td class="view-2"><div class="no-event fog-2"></div></td>
+  <th class="day-col"><div class="day">Day 9</div></th>
+  <td class="event-col"><div class="no-event fog-2"></div></td>
+  <td class="event-col"><div class="no-event fog-2"></div></td>
+  <td class="event-col"><div class="no-event fog-2"></div></td>
+  <td class="event-col"><div class="no-event fog-2"></div></td>
   <!-- MK -->
-  <td class="view-3"><div class="no-event fog-2"></div></td>
+  <td class="event-col"><div class="no-event fog-2"></div></td>
 </tr>
 <tr>
-  <th><div class="day">Day 10</div></th>
-  <td class="view-1"><div class="no-event fog-2"></div></td>
-  <td class="view-1"><div class="event unlock">Dimensional Tunnel unlocks</div></td>
-  <td class="view-2"><div class="no-event fog-2"></div></td>
-  <td class="view-2"><div class="no-event fog-2"></div></td>
-  <td class="view-3" rowspan="7"
+  <th class="day-col"><div class="day">Day 10</div></th>
+  <td class="event-col"><div class="no-event fog-2"></div></td>
+  <td class="event-col"><div class="event unlock">Dimensional Tunnel unlocks</div></td>
+  <td class="event-col"><div class="no-event fog-2"></div></td>
+  <td class="event-col"><div class="no-event fog-2"></div></td>
+  <td class="event-col" rowspan="7"
     ><a href="../../events/pc/"
       ><div class="event PC">Personal Championship</div
     ></a
   ></td>
-  <td class="view-3" rowspan="3"
+  <td class="event-col" rowspan="3"
     ><div class="event wishing">Wishing Crystal Ball</div
   ></td>
 </tr>
 <tr>
-  <th><div class="day">Day 11</div></th>
-  <!-- <td class="view-1" rowspan="5"><div class="event fog"
+  <th class="day-col"><div class="day">Day 11</div></th>
+  <!-- <td class="event-col" rowspan="5"><div class="event fog"
     ><strong>The Great Fog</strong> (Phase 3)</div></td> -->
-  <td class="view-1"><div class="no-event fog-3">Fog 3/3</div></td>
-  <td class="view-1"><div class="no-event fog-3"></div></td>
-  <td class="view-2"><div class="no-event fog-3"></div></td>
-  <td class="view-2"><div class="no-event fog-3"></div></td>
+  <td class="event-col"><div class="no-event fog-3">Fog 3/3</div></td>
+  <td class="event-col"><div class="no-event fog-3"></div></td>
+  <td class="event-col"><div class="no-event fog-3"></div></td>
+  <td class="event-col"><div class="no-event fog-3"></div></td>
   <!-- Personal Championship 2/7 -->
   <!-- WC -->
 </tr>
 <tr>
-  <th><div class="day">Day 12</div></th>
-  <td class="view-1"><div class="no-event fog-3"></div></td>
-  <td class="view-1"><div class="no-event fog-3"></div></td>
-  <td class="view-2"><div class="event esi">Evil Spirit Invasion</div></td>
-  <td class="view-2"><div class="no-event fog-3"></div></td>
+  <th class="day-col"><div class="day">Day 12</div></th>
+  <td class="event-col"><div class="no-event fog-3"></div></td>
+  <td class="event-col"><div class="no-event fog-3"></div></td>
+  <td class="event-col"><div class="event esi">Evil Spirit Invasion</div></td>
+  <td class="event-col"><div class="no-event fog-3"></div></td>
   <!-- Personal Championship 3/7 -->
   <!-- WC -->
 </tr>
 <tr>
-  <th><div class="day">Day 13</div></th>
-  <td class="view-1"><div class="no-event fog-3"></div></td>
-  <td class="view-1"><div class="no-event fog-3"></div></td>
-  <td class="view-2"><div class="no-event fog-3"></div></td>
-  <td class="view-2"><div class="no-event fog-3"></div></td>
+  <th class="day-col"><div class="day">Day 13</div></th>
+  <td class="event-col"><div class="no-event fog-3"></div></td>
+  <td class="event-col"><div class="no-event fog-3"></div></td>
+  <td class="event-col"><div class="no-event fog-3"></div></td>
+  <td class="event-col"><div class="no-event fog-3"></div></td>
   <!-- Personal Championship 4/7 -->
-  <td class="view-3"><div class="no-event fog-3"></div></td>
+  <td class="event-col"><div class="no-event fog-3"></div></td>
 </tr>
 <tr>
-  <th><div class="day">Day 14</div></th>
-  <td class="view-1"><div class="no-event fog-3"></div></td>
-  <td class="view-1"><div class="no-event fog-3"></div></td>
-  <td class="view-2"><div class="no-event fog-3"></div></td>
-  <td class="view-2"><div class="no-event fog-3"></div></td>
+  <th class="day-col"><div class="day">Day 14</div></th>
+  <td class="event-col"><div class="no-event fog-3"></div></td>
+  <td class="event-col"><div class="no-event fog-3"></div></td>
+  <td class="event-col"><div class="no-event fog-3"></div></td>
+  <td class="event-col"><div class="no-event fog-3"></div></td>
   <!-- Personal Championship 5/7 -->
-  <td class="view-3"><div class="no-event fog-3"></div></td>
+  <td class="event-col"><div class="no-event fog-3"></div></td>
 </tr>
 <tr>
-  <th><div class="day">Day 15</div></th>
-  <td class="view-1"><div class="no-event fog-3"></div></td>
-  <td class="view-1"><div class="no-event fog-3"></div></td>
-  <td class="view-2"><div class="event esi">Evil Spirit Invasion</div></td>
-  <td class="view-2"><div class="no-event fog-3"></div></td>
+  <th class="day-col"><div class="day">Day 15</div></th>
+  <td class="event-col"><div class="no-event fog-3"></div></td>
+  <td class="event-col"><div class="no-event fog-3"></div></td>
+  <td class="event-col"><div class="event esi">Evil Spirit Invasion</div></td>
+  <td class="event-col"><div class="no-event fog-3"></div></td>
   <!-- Personal Championship 6/7 -->
-  <td class="view-3" rowspan="4"><div class="event auction">Auction House</div></td>
+  <td class="event-col" rowspan="4"><div class="event auction">Auction House</div></td>
 </tr>
 <tr>
-  <th><div class="day">Day 16</div></th>
-  <td class="view-1"><div class="no-event local">No fog</div></td>
-  <td class="view-1"><div class="event unlock">Artifacts &amp; Lv 4 Nests unlock</div></td>
-  <td class="view-2"><div class="no-event local"></div></td>
-  <td class="view-2"><div class="no-event local"></div></td>
+  <th class="day-col"><div class="day">Day 16</div></th>
+  <td class="event-col"><div class="no-event local">No fog</div></td>
+  <td class="event-col"><div class="event unlock">Artifacts &amp; Lv 4 Nests unlock</div></td>
+  <td class="event-col"><div class="no-event local"></div></td>
+  <td class="event-col"><div class="no-event local"></div></td>
   <!-- Personal Championship 7/7 -->
   <!-- Auction House 2/4 -->
 </tr>
 <tr>
-<th><div class="day">Day 17</div></th>
-  <td class="view-1"><div class="no-event local"></div></td>
-  <td class="view-1"><div class="no-event local"></div></td>
-  <td class="view-2"><div class="no-event local"></div></td>
-  <td class="view-2" rowspan="4"><div class="event lava-trial continue-to-next">Lava Trial</div></td>
-  <td class="view-3" rowspan="4"><div class="event power">King of Power</div></td>
+<th class="day-col"><div class="day">Day 17</div></th>
+  <td class="event-col"><div class="no-event local"></div></td>
+  <td class="event-col"><div class="no-event local"></div></td>
+  <td class="event-col"><div class="no-event local"></div></td>
+  <td class="event-col" rowspan="4"><div class="event lava-trial continue-to-next">Lava Trial</div></td>
+  <td class="event-col" rowspan="4"><div class="event power">King of Power</div></td>
   <!-- Auction House 3/4 -->
 </tr>
 <tr>
-  <th><div class="day">Day 18</div></th>
-  <td class="view-1"><div class="no-event local"></div></td>
-  <td class="view-1"><div class="no-event local"></div></td>
-  <td class="view-2"><div class="no-event local"></div></td>
+  <th class="day-col"><div class="day">Day 18</div></th>
+  <td class="event-col"><div class="no-event local"></div></td>
+  <td class="event-col"><div class="no-event local"></div></td>
+  <td class="event-col"><div class="no-event local"></div></td>
   <!-- Lava Trial -->
   <!-- King of Power 2/4 -->
   <!-- Auction House 5/4 -->
 </tr>
 <tr>
-  <th><div class="day">Day 19</div></th>
-  <td class="view-1"><div class="no-event local"></div></td>
-  <td class="view-1"><div class="no-event local"></div></td>
-  <td class="view-2" rowspan="2"><div class="event elemental">Element Lord</div></td>
+  <th class="day-col"><div class="day">Day 19</div></th>
+  <td class="event-col"><div class="no-event local"></div></td>
+  <td class="event-col"><div class="no-event local"></div></td>
+  <td class="event-col" rowspan="2"><div class="event elemental">Element Lord</div></td>
   <!-- Lava Trial -->
   <!-- King of Power 3/4 -->
-  <td class="view-3"><div class="no-event local"></div></td>
+  <td class="event-col"><div class="no-event local"></div></td>
 </tr>
 <tr>
-  <th><div class="day">Day 20</div></th>
-  <td class="view-1"><div class="event milestone">Sentry War</div></td>
-  <td class="view-1"><div class="event unlock">Lv 5 Dragon Nests unlock</div></td>
+  <th class="day-col"><div class="day">Day 20</div></th>
+  <td class="event-col"><div class="event milestone">Sentry War</div></td>
+  <td class="event-col"><div class="event unlock">Lv 5 Dragon Nests unlock</div></td>
   <!-- Element Lord -->
   <!-- Lava Trial -->
   <!-- King of Power 4/4 -->
-  <td class="view-3"><div class="no-event local"></div></td>
+  <td class="event-col"><div class="no-event local"></div></td>
 </tr>
 </tbody>
 </table>
+
+</div>
 </section>
 
 </main>
