@@ -125,8 +125,6 @@ body {
 
 header,
 main {
-  /* margin-block-start: 0;
-  margin-block-end: 0; */
   border-left: 1px solid var(--miku-red);
   border-right: 1px solid var(--miku-dark-red);
 }
@@ -179,8 +177,8 @@ main > ul { margin-left: 1.2rem !important; }
 
 h1 {
   text-align: center;
+  padding-top: 2rem;
   margin-block-start: 0;
-  margin-block-end: 0;
 }
 
 /* --------------- Simple Text Styles --------------- */
@@ -307,7 +305,6 @@ li.prev, li.next {
     color: var(--miku-gold);
   }
 }
-
 
 /* ------------------ Flex Layout  ------------------ */
 
