@@ -83,8 +83,8 @@ function processMetaData(content) {
 
   if (extracted.element['og-desc']) {
     metaTags.push(
-        '<meta property="og:description" ' +
-        `content="${extracted.element['og-desc']}"></meta>`,
+        `<meta property="og:description"\n` +
+        `  content="${extracted.element['og-desc']}">`,
     );
   }
 
