@@ -19,7 +19,7 @@
   margin-block-end: 0.8rem;
 
   .hero-name {
-    display: inline-block;
+    display: inline;
     margin: 0;
     margin-right: 0.5rem;
   }
