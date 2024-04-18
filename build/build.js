@@ -13,6 +13,7 @@ copyStatic('territories/');
 
 copyStatic('mail/');
 copyStatic('guides/');
+copyStatic('tower-defense/');
 copyStatic('lava-cave/');
 copyStatic('events/');
 copyStatic('timelines/');
