@@ -400,10 +400,18 @@ ul.inline-list {
   position: relative;
 }
 
-li, p, span, label {
+li, p, span, label, td {
   & > span[text-hint],
   & > abbr[text-hint] {
     text-decoration: underline dotted var(--miku-dark-red);
+    text-underline-offset: 0.2rem;
+  }
+}
+
+th {
+  & > span[text-hint],
+  & > abbr[text-hint] {
+    text-decoration: underline dotted;
     text-underline-offset: 0.2rem;
   }
 }
