@@ -1,0 +1,95 @@
+.phase-container {
+  display: flex;
+  flex-direction: column;
+  .quest-row { flex-grow: 0 };
+  .quest-row:last-child { flex-grow: 1 };
+
+  h2 {
+    color: black;
+    text-shadow: none;
+    font-size: 1.2rem;
+  }
+
+  .unit { background-color: var(--light-primary-1);}
+  .tech { background-color: var(--light-primary-2);}
+  .blacksmith { background-color: var(--light-primary-3);}
+  .dragon { background-color: var(--light-primary-4);}
+  .hero { background-color: var(--light-primary-5);}
+  .castle { background-color: var(--light-primary-6);}
+  .common { background-color: var(--pale-neutral);}
+  
+  .quest-row {
+    display: flex;
+    padding: 0.25rem 0.5rem;
+    margin-bottom: 0;
+    justify-content: start; /* left */
+    align-content: start; /* top */
+    flex-direction: row;
+
+    .quest-desc {
+      flex-grow: 1;
+    }
+    .quest-point {
+      flex-grow: 0;
+      text-align: right;
+      width: 4rem;
+    }
+  }
+
+  .quest-row.p2p {
+    color: var(--miku-dark-red);
+    .quest-desc {
+      font-size: 0.9rem;
+    }
+  }
+}
+
+.phase-1 h2 { color: var(--miku-red); }
+.phase-7 h2 { color: var(--miku-red); }
+
+@media screen and (min-width: 620px) {
+  h2 {
+    margin-block-start: 0;
+    margin-block-end: 0.2rem;
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 1000px) {
+  .phase-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: max-content;
+    grid-auto-flow: dense; /* don't forget this */
+    column-gap: 1rem;
+    row-gap: 2rem;
+    justify-content: center;
+  }
+  .phase-1 { order: 1; }
+  .phase-5 { order: 2; grid-row: span 2; }
+  .phase-2 { order: 3; }
+  .phase-3 { order: 4; }
+  .phase-6 { order: 5; grid-row: span 2; }
+  .phase-4 { order: 6;  grid-row: span 2; }
+  .phase-7 { order: 7;}
+}
+
+@media screen and (min-width: 1000px) {
+  .phase-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* only 3 here */
+    /* grid-auto-rows: 18rem; */
+    grid-auto-flow: dense; /* don't forget this */
+    column-gap: 1rem;
+    row-gap: 2rem;
+    justify-content: center;
+
+    .phase-1 { order: 1; grid-row: span 1; }
+    .phase-4 { order: 2; grid-row: span 2; }
+    .phase-6 { order: 3; grid-row: span 3; }
+    .phase-2 { order: 4; grid-row: span 1; }
+    .phase-3 { order: 5; grid-row: span 2; }
+    .phase-5 { order: 6; grid-row: span 2; }
+    .phase-7 { order: 7; }
+  }
+}
