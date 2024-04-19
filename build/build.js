@@ -14,6 +14,7 @@ copyStatic('territories/');
 copyStatic('mail/');
 copyStatic('guides/');
 copyStatic('tower-defense/');
+copyStatic('servers/');
 copyStatic('lava-cave/');
 copyStatic('events/');
 copyStatic('timelines/');

@@ -1,98 +1,248 @@
+<!DOCTYPE html>
 <html>
 <head>
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Server Clusters - Miku's Shrine</title>
-  <link rel="icon" type="image/x-icon" href="../images/logo_mini.png">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://kg.kitsune21.com/">
-  <meta property="og:title" content="Server Clusters - Miku's Shrine">
-  <meta property="og:description" content="Explanation of different server clusters">
-  <meta property="og:image" content="https://kg.kitsune21.com/images/logo_torii.png">
-  <link href="../css/common.css" rel="stylesheet">
+<title>Server Clusters - Miku's Shrine</title>
+<link rel="icon" type="image/x-icon" href="/images/logo_mini.png">
+<meta name="format-detection" content="telephone=no">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://kg.kitsune21.com/">
+<meta property="og:image" content="https://kg.kitsune21.com/images/page-2x_n.png">
+<meta property="og:title" content="Server Clusters">
+<meta property="og:description"
+  content="Information on how servers are organized and their respective systems">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link href="../assets/css/common.css" rel="stylesheet">
+<link href="../assets/css/content.css" rel="stylesheet">
 </head>
+
 <body>
-<header id="header">
-  <div id="breadcrumb-wrapper"><nav>
-    <a class="link" href="../content">Home</a>
-    <span class="chevron">›</span>
-    <a class="link" href="./">Servers</a>
-    <span class="chevron">›</span>
-    <span class="current">Server Groups</span>
-  </nav></div>
-</header>
+
+<header><nav><ul class="breadcrumb">
+  <li><a href="../content">Home</a></li>
+  <li><a href="./">Servers</a></li>
+  <li>Clusters</li>
+</ul></nav></header>
 
 <main>
-<h1>Server Cluster</h1>
 
-<p>There are three main groups of Kingdom Guard servers, which many players
-refer to as S1, S2, and S3 servers.</p>
+<h1>Server Clusters</h1>
 
-<p>The first cluster (S1) include all servers numbered 9001 to 9024. The entire
-group was locked shortly after the second group was opened.</p>
+<p>In Kingdom Guard, servers are grouped into various groups.</p>
 
-<p>
-  The second cluster (S2) include all servers numbered 401 to 1150
-  as well as 2002.
-  As of Season 27, the group has around 360 active servers
-  (see <a href="./S27/server-status">Server Status</a>).
-</p>
+<section id="official">
+<h2>Official Grouping</h2>
+<p>Servers are grouped into four clusters</p>
+<ul>
+  <li><strong>S1</strong>: 9001 ~ S024</li>
+  <li><strong>S2</strong>: 401 ~ 1150, 2002</li>
+  <li><strong>S3</strong>: 1151 ~ 1598</li>
+  <li><strong>S4</strong>: 1599 ~</li>
+</ul>
+</section>
 
-<p>
-  The third cluster (S3) included all servers numbered 1151 or above.
-  New servers in this cluster are opened on a daily basis
-  (see <a href="./s3-history">S3 opening history</a>).
-</p>
+<section id="unofficial">
+<h2>Unofficial Grouping</h2>
 
-<h2>Server Differences</h2>
+<p style="font-style: italic;">The following is an unofficial description
+  of the server clusters. A different naming scheme is used in order to
+  captivate the complexity of the actual mechanism.</p>
 
-<p>S2 and S3 servers have different configurations. Because of this,
-transfer between the two groups is currently impossible.</p>
+<p>Servers are grouped into several <strong>Main Clusters</strong>, which
+  are further divided into <strong>Sub Clusters</strong>. In general,
+  servers in the Main Cluster play the same <strong>system</strong>.</p>
 
-<table class="simple">
-  <thead>
-    <tr>
-      <th style="background-color: var(--green); width: 50%">S2<br>
-      <span style="font-size:0.8rem;">(Recommended)</span></th>
-      <th>S3<br>
-      <span style="font-size:0.8rem;">(Not recommended)</span></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Tower defense <a href="../guides/passing-levels">leveling</a>
-        can be very difficult.</td>
-      <td>Tower defense leveling is easier.</td>
-    </tr>
-    <tr>
-      <td>All Academy tech research require large amount of gold.</td>
-      <td>Some Academy tech research do not require gold.</td>
-    </tr>
-    <tr>
-      <td>
-        A beginner can complete Imperial Treasure
-        Ⅰ, Ⅱ, Ⅲ, and Ⅳ and reach VIP&#8209;5 without spending.
-      </td>
-      <td>
-        Only one Imperial Treasure event is available, and
-        a beginner can reach VIP&#8209;2 without spending.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        All high-tier game items are unlocked, and some
-        middle-tier are freely obtainable through events.
-        For example, as of 2024-01-05, the highest tier of
-        Dragon Armor is T8 (Gilded), and players can
-        obtain T5 (Legendary) for free through event.
-      </td>
-      <td>
-        Many high-tier game items are still locked, and P2P
-        players need to pay premium prices for middle-tier
-        items such as T4 (Immortal) Dragon Armors.
-      </td>
-    </tr>
-  </tbody>
+<table class="basic-table border-all">
+<thead>
+<tr>
+  <th>Main Cluster</th>
+  <th>Sub Cluster</th>
+  <th>System</th>
+  <th>Server Numbers</th>
+  <th>Server Count</th>
+  <th>Server Age Difference</th>
+  <th>Note</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>C100</td>
+  <td>C101</td>
+  <td>System 1</td>
+  <td>9001 ~ 9024</td>
+  <td>24</td>
+  <td></td>
+  <td>Closed cluster. No new character creation is possible</td>
+</tr>
+<tr>
+  <td>C200</td>
+  <td>C201</td>
+  <td rowspan="2">System 2</td>
+  <td>401 ~ 1150, 2002</td>
+  <td>749</td>
+  <td>632d</td>
+  <td>Season 30 (as of 2024-04-15)</td>
+</tr>
+<tr>
+  <td rowspan="8">C300</td>
+  <td>C301</td>
+  <!-- <td>System 2</td> -->
+  <td>1151 ~ 1195</td>
+  <td>24</td>
+  <td>29d</td>
+  <td>Season 29 (as of 2024-04-15)</td>
+</tr>
+<tr>
+  <td>C302</td>
+  <td>?</td>
+  <td>1196 ~ 1235</td>
+  <td>40</td>
+  <td>54d</td>
+  <td>Season 7 (as of 2024-04-15)</td>
+</tr>
+<tr>
+  <td>C303</td>
+  <td>?</td>
+  <td>1236 ~ 1275</td>
+  <td>40</td>
+  <td>27d</td>
+  <td>Season 6 (as of 2024-04-15)</td>
+</tr>
+<tr>
+  <td>C304</td>
+  <td rowspan="4">System 3b</td>
+  <td>1276 ~ 1346</td>
+  <td>71</td>
+  <td>28d</td>
+  <td>Season 5 (as of 2024-04-15)</td>
+</tr>
+<tr>
+  <td>C305</td>
+  <!-- <td>System 3b</td> -->
+  <td>1347 ~ 1428</td>
+  <td>82</td>
+  <td>28d</td>
+  <td>Season 4 (as of 2024-04-15)</td>
+</tr>
+<tr>
+  <td>C306</td>
+  <!-- <td>System 3b</td> -->
+  <td>1429 ~ 1490</td>
+  <td>62</td>
+  <td>28d</td>
+  <td>Season 3 (as of 2024-04-15)</td>
+</tr>
+<tr>
+  <td>C307</td>
+  <!-- <td>System 3b</td> -->
+  <td>1491 ~ 1574</td>
+  <td>84</td>
+  <td>27d</td>
+  <td>Season 2 (as of 2024-04-15)</td>
+</tr>
+<tr>
+  <td>C30X</td>
+  <td>System 3x</td>
+  <td>1578 ~ 1598</td>
+  <td>21</td>
+  <td>7d</td>
+  <td>Season 1 (as of 2024-04-15)</td>
+</tr>
+<tr>
+  <td>C400</td>
+  <td>C401</td>
+  <td>System 4</td>
+  <td>1599 ~ 1778</td>
+  <td>180</td>
+  <td>41d</td>
+  <td>Season 0 or Season 1 (as of 2024-04-15)</td>
+</tr>
+</tbody>
 </table>
+
+<h3>Cross-Server Matching</h3>
+
+<p>The following are based on Main Clusters</p>
+<ul class="compacct-list">
+  <lI>Dimensional Tunnel</lI>
+  <lI>Dimensional Tunnel Cross-Server Leaderboard</lI>
+  <lI>Lave Cave Leaderboard</lI>
+  <lI>Evil Spirit Invasion Leaderboard</lI>
+  <!-- <lI>Lava Haka Leaderboard</lI> -->
+  <lI>Ultimate Power Leaderboard</lI>
+  <lI>Ultimate Hunting Leaderboard</lI>
+  <lI>Wishing Pool in special events</lI>
+  <lI>Cross-Server Leaderboard in special events</lI>
+</ul>
+
+<p>The following are based on Sub Clusters</p>
+<ul class="compacct-list">
+  <lI>Cross-Server Invasion matching</lI>
+  <lI>Mightiest Kingdom matching</lI>
+  <lI>Burning Expedition matching</lI>
+  <!-- <lI>The Battle of the Dragon matching</lI> -->
+  <lI>Personal Server transfer and cross-server summoning</lI>
+  <lI>Alliance Cross-Server Summon</lI>
+</ul>
+
+
+<h3>Systems</h3>
+<table class="basic-table border-all">
+<thead>
+<tr>
+  <th>System</th>
+  <th>Changes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <th>System 1</th>
+  <td>Original system</td>
+</tr>
+<tr>
+  <th>System 2</th>
+  <td><ul class="compact-list">
+    <li>Standardized World Map (variant A and B)</li>
+    <li>Reduced unit evolution upgrade cost and reduced unit powers</li>
+  </ul></td>
+</tr>
+<tr>
+  <th>System 3</th>
+  <td><ul class="compact-list">
+    <li>World Map variant B</li>
+    <li>The releases of tiers and heroes are gradual and <em>asynchronous</em></li>
+  </ul></td>
+</tr>
+<tr>
+  <th>System 3b</th>
+  <td><ul class="compact-list">
+    <li>Alliance and World Map unlock requirement adjusted</li><!-- was lv 5 and lv 5 -->
+    <li>Some Academy Tech upgrades have reduced cost</li>
+    <li>Beginner events Imperial Treasure II, III, and IV removed</li>
+    <li>Beginner event Beginner Gift (aka 10-day full-refund pack) removed</li>
+    <li>Server welcoming event Personal Championship added</li>
+    <li>Cost reduction for some Academy Tech upgrades</li>
+    <li>Territory Protection added to Alliance Tech</li>
+    <li>Dragon and Dragon Armor unlocking requirements adjusted</li>
+  </ul></td>
+</tr>
+<tr>
+  <th>System 3x</th>
+  <td><ul class="compact-list">
+    <li>Experimental hero upgrade system</li>
+    <li>Experimental tower defense layout</li>
+    <li>Gem quest added to Bounty Hall</li>
+  </ul></td>
+</tr>
+<tr>
+  <th>System 4</th>
+  <td><ul class="compact-list">
+    <li>Gem quest added to Bounty Hall</li>
+  </ul></td>
+</tr>
+</tbody>
+</table>
+
+</section>
 
 </main>
 </body>
