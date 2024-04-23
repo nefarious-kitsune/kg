@@ -28,13 +28,10 @@ export function copyStatic(subDir) {
     if (!fs.existsSync(destDir)) fs.mkdirSync(destDir, {recursive: true});
     if (extname(srcPath) === '.html') {
       const fileContent = readFileSync(srcPath, 'utf-8');
-      const processed = processHtml(fileContent);
+      const processed = processHtml(fileContent, srcPath, srcBasePath);
       writeFileSync(destPath, processed.source);
-      // console.log(processed.title + ' - ' + processed.tags.join(', '));
     } else {
       fs.copyFileSync(srcPath, destPath, fs.constants.COPYFILE_FICLONE);
     }
-
-    // console.log(`${relPath} copied`);
   });
 }

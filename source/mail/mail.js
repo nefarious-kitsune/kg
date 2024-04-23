@@ -62,7 +62,7 @@ function copyInput() {
     window.getSelection().addRange(range);
   }
 
-  navigator.clipboard.writeText(inputElement.innerText);
+  navigator.clipboard.writeText(inputElement.value);
 }
 
 /**

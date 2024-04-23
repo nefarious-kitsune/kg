@@ -1,21 +1,19 @@
 <html>
-<!-- <meta-data>
-<og-image></og-image>
-<og-desc>
-  Compose and preview a reminder message on Alliance Tech (by 𝚃𝚛𝚒𝚔𝚝𝚒𝚜)
-</og-desc>
-</meta-data> -->
 <head>
-  <title>Alliance Tech reminder</title>
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link href="../assets/css/common.css" rel="stylesheet">
-  <link href="../assets/css/content.css" rel="stylesheet">
-  <link href="./mail.css" rel="stylesheet">
-  <script src="./mail.js"></script>
-  <script src="./parser.js"></script>
+<title>Alliance Tech reminder</title>
+<meta page-data
+  og-desc="Compose and preview a reminder message on Alliance Tech (template by 𝚃𝚛𝚒𝚔𝚝𝚒𝚜)"
+  tag-list= "servers"
+>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link href="../assets/css/common.css" rel="stylesheet">
+<link href="../assets/css/content.css" rel="stylesheet">
+<link href="./mail.css" rel="stylesheet">
+<script src="./mail.js"></script>
+<script src="./parser.js"></script>
 </head>
 
-<body class="content">
+<body>
 
 <header><nav><ul class="breadcrumb">
   <li><a href="../content">Home</a></li>
@@ -23,7 +21,8 @@
   <li>Online Mail Editor</li>
 </ul></nav></header>
 
-<main class="content">
+<main>
+
 <h1>{{TITLE}}</h1>
 
 <p>{{PAGE-DESC}}</p>
@@ -31,37 +30,9 @@
 <section>
 <h2>Edit</h2>
 
-<div class="toolbar">
-  <div class="group"><!--
-  --><button class="editor-button" onclick="copyInput()">Copy</button><!--
-  --></div>
-  <div class="group"><!--
-  --><button class="editor-button" onclick="validateInput()">Preview</button><!--
-  --></div>
-  <div class="group"><!--
-  --><button class="color-button color-black" onclick="setColor('black')"><span></span></button><!--
-  --><button class="color-button color-gray"  onclick="setColor('gray')"><span></span></button><!--
-  --><button class="color-button color-maroon" onclick="setColor('maroon')"><span></span></button><!--
-  --><button class="color-button color-red" onclick="setColor('red')"><span></span></button><!--
-  --><button class="color-button color-green"  onclick="setColor('green')"><span></span></button><!--
-  --><button class="color-button color-olive" onclick="setColor('olive')"><span></span></button><!--
-  --><button class="color-button color-teal" onclick="setColor('teal')"><span></span></button><!--
-  --><button class="color-button color-blue" onclick="setColor('blue')"><span></span></button><!--
-  --><button class="color-button color-navy" onclick="setColor('navy')"><span></span></button><!--
-  --><button class="color-button color-purple" onclick="setColor('purple')"><span></span></button><!--
-  --></div>
-  <div class="group"><!--
-  --><button class="editor-button" onclick="setBold()" style="font-weight: bold;">B</button><!--
-  --></div>
-</div>
+<fragment src="__toolbar-mail.html"/>
 
-<textarea id="input"><escape-me>
-Hello everyone!
-
-<Size=50><I>Please remember to use your <color=purple>alliance tech points</color> on the <b><color=purple>starred</color></b> research points as often as possible</i></size>
-
-This helps us all in so many ways as efficiently as possible ♡
-</escape-me></textarea>
+<textarea id="input"><escape-me><fragment src="./templates/__tech-reminder.md"/></escape-me></textarea>
 </section>
 
 <section id="preview-pane">
@@ -69,7 +40,6 @@ This helps us all in so many ways as efficiently as possible ♡
 <div id="output" class="mail">
 </div>
 </section>
-</div>
 
 </main>
 </body>

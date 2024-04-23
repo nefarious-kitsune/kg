@@ -3,6 +3,7 @@ import {extractHtmlElement} from './parse-html-element.js';
 import {replaceHeroAvatar} from './replacers/hero-avatar.js';
 import {replaceHeroName} from './replacers/hero-name.js';
 import {replaceTitle} from './replacers/title.js';
+import {replaceFragment} from './replacers/fragment.js';
 
 const DOCTYPE = '<!DOCTYPE html>';
 const DefaultImages = {
@@ -60,6 +61,7 @@ function processMetaData(content) {
         `<meta property="og:description"\n` +
         `  content="${extracted.element['og-desc']}">`,
     );
+    content.pageDesc = extracted.element['og-desc'];
   }
 
   content.source =
@@ -98,27 +100,40 @@ function processEscapeMe(content) {
 
 /**
  * @param {string} srcContent - source content
+ * @param {string} filePath - path of the file
+ * @param {string} basePath - path of the base directory (<project>/source/)
  * @return {object} - processed content
  */
-export function processHtml(srcContent) {
+export function processHtml(srcContent, filePath, basePath) {
   srcContent = srcContent.replaceAll('\r', ''); // Remove all \r characters
 
   if (!srcContent.startsWith(DOCTYPE)) { // ensure valid HTML
     srcContent = DOCTYPE + '\n' + srcContent;
   }
 
-  const processed = {source: srcContent};
+  const processed = {
+    source: srcContent,
+    filePath: filePath,
+    rootPath: basePath,
+  };
 
   replaceTitle(processed);
-  processEscapeMe(processed);
   processMetaData(processed);
 
   while (replaceHeroAvatar(processed)) {};
   while (replaceHeroName(processed)) {};
+  while (replaceFragment(processed)) {};
+
+  processEscapeMe(processed);
 
   if (processed.pageTitle) {
     processed.source = processed.source
         .replaceAll('{{TITLE}}', processed.pageTitle);
+  }
+
+  if (processed.pageDesc) {
+    processed.source = processed.source
+        .replaceAll('{{PAGE-DESC}}', processed.pageDesc);
   }
 
   return processed;

@@ -95,46 +95,6 @@ ul.template-list {
   border: 0.1rem solid var(--miku-red);
 }
 
-@media (min-width: 700px) {
-  .editor-container {
-    display: grid;
-    grid-template-columns: auto 25rem;
-    gap: 0.5rem;
-    margin: 0;
-
-    h2 {
-      margin-block-start: 0;
-      margin-top: 0;
-      padding-top: 0;
-    }
-
-    #preview-pane {
-      display: flex;
-      flex-direction: column;
-      height: 25rem;
-      #output {
-        flex-grow: 1;
-        overflow-y: scroll;
-      }
-    }
-
-    #edit-pane {
-      display: flex;
-      flex-direction: column;
-      height: 25rem;
-
-      .toolbar { flex-grow: 0; }
-      #input {
-        flex-grow: 2;
-        height: 100%;
-        /* overflow-y: scroll;
-        resize: none; */
-      }
-    }
-    
-  }
-}
-
 .toolbar {
   display: flex;
   align-items: start;
