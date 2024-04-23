@@ -1,9 +1,9 @@
 import {extractHtmlElement} from './parse-html-element.js';
-import {processHeroAvatars} from './process-hero-avatars.js';
-import {processHeroNames} from './process-hero-names.js';
 
-const SiteTitle = 'Miku\'s Shrine';
-const PageTitleEnding = ' - ' + SiteTitle;
+import {replaceHeroAvatar} from './replacers/hero-avatar.js';
+import {replaceHeroName} from './replacers/hero-name.js';
+import {replaceTitle} from './replacers/title.js';
+
 const DOCTYPE = '<!DOCTYPE html>';
 const DefaultImages = {
   page: 'https://kg.kitsune21.com/images/page-2x_n.png',
@@ -13,32 +13,6 @@ const DefaultImages = {
   calculator: 'https://kg.kitsune21.com/images/calculator-2x_n.png',
 };
 
-/**
- * @param {object} content
- * @return {boolean}
- */
-function processTitle(content) {
-  const source = content.source;
-  const titlePos = source.indexOf('<title');
-  if (titlePos === -1) return false;
-
-  const extracted = extractHtmlElement(content.source, titlePos);
-  if (extracted === null) return false;
-
-  let pageTitle = extracted.innerContent;
-
-  if (pageTitle.endsWith(PageTitleEnding)) {
-    pageTitle = pageTitle.slice(-PageTitleEnding.length);
-  } else {
-    // Add site title to the end of the page title
-    content.source =
-      extracted.head +
-      `<title>${pageTitle}${PageTitleEnding}</title>` +
-      extracted.tail;
-  };
-  content.pageTitle = pageTitle;
-  return true;
-}
 
 /**
  * @param {object} content
@@ -133,17 +107,19 @@ export function processHtml(srcContent) {
     srcContent = DOCTYPE + '\n' + srcContent;
   }
 
-  const result = {source: srcContent};
+  const processed = {source: srcContent};
 
-  processTitle(result);
-  processEscapeMe(result);
-  processMetaData(result);
-  processHeroAvatars(result);
-  processHeroNames(result);
+  replaceTitle(processed);
+  processEscapeMe(processed);
+  processMetaData(processed);
 
-  if (result.pageTitle) {
-    result.source = result.source.replaceAll('{{TITLE}}', result.pageTitle);
+  while (replaceHeroAvatar(processed)) {};
+  while (replaceHeroName(processed)) {};
+
+  if (processed.pageTitle) {
+    processed.source = processed.source
+        .replaceAll('{{TITLE}}', processed.pageTitle);
   }
 
-  return result;
+  return processed;
 }

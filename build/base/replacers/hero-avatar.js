@@ -1,7 +1,7 @@
 /* eslint-disable key-spacing */
 import {extractHtmlElement} from '../parse-html-element.js';
 
-const HeroNameToClassMap = {
+export const HeroNameToClassMap = {
   'daniel':    'daniel',
   'anton':     'anton',
   'etley':     'etley',
@@ -112,7 +112,7 @@ const srHeroes = [
  * @param {object} content
  * @return {boolean}
  */
-function processHeroAvatar(content) {
+export function replaceHeroAvatar(content) {
   const source = content.source;
   const tagPos = source.indexOf('<hero-avatar');
   if (tagPos === -1) return false;
@@ -192,9 +192,9 @@ function processHeroAvatar(content) {
  * @return {boolean}
  */
 export function processHeroAvatars(content) {
-  let result = processHeroAvatar(content);
+  let result = replaceHeroAvatar(content);
   while (result) {
-    result = processHeroAvatar(content);
+    result = replaceHeroAvatar(content);
   }
   return true;
 }
