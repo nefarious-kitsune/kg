@@ -1,5 +1,5 @@
 /* eslint-disable key-spacing */
-import {extractHtmlElement} from './parse-html-element.js';
+import {extractHtmlElement} from '../parse-html-element.js';
 
 const HeroNameToClassMap = {
   'daniel':    'daniel',
@@ -101,83 +101,32 @@ const HeroNameToClassMap = {
   'doris':     'doris',
 };
 
-const rHeroes = [
-  'anton', 'etley', 'peter'];
-const srHeroes = [
-  'arwyn', 'harold', 'kris',
-  'ophelia', 'samar', 'merlin',
-  'alucard'];
-
 /**
  * @param {object} content
  * @return {boolean}
  */
-function processHeroAvatar(content) {
+function processHeroName(content) {
   const source = content.source;
-  const tagPos = source.indexOf('<hero-avatar');
+  const tagPos = source.indexOf('<hero-name');
   if (tagPos === -1) return false;
 
   const extracted = extractHtmlElement(content.source, tagPos);
   if (extracted === null) return false;
 
+  let replaceWith = '';
+
   const HeroName = extracted.innerContent;
-  let heroId;
 
-  const classList = ['hero-avatar'];
   if (HeroName) {
-    heroId = HeroNameToClassMap[HeroName.toLowerCase()];
-    // known hero
+    const heroId = HeroNameToClassMap[HeroName.toLowerCase()];
     if (heroId) {
-      classList.push(heroId);
-      if (heroId === 'daniel') classList.push('n');
-      else if (rHeroes.indexOf(heroId) !== -1) classList.push('r');
-      else if (srHeroes.indexOf(heroId) !== -1) classList.push('sr');
-      else classList.push('ssr');
+      replaceWith =
+        `<span class="hero-name ${heroId}" image-hint tabindex="0">` +
+        HeroName + '</span>';
     } else {
-      classList.push('blank');
-      classList.push('ssr');
+      replaceWith = HeroName;
     }
-  } else {
-    classList.push('blank');
-  }
-
-  let replaceWith;
-
-  if (HeroName) {
-    replaceWith = `<div class="${classList.join(' ')}" ` +
-      `text-hint="${HeroName}" tabindex="0"\n  >`;
-  } else {
-    replaceWith = `<div class="${classList.join(' ')}"\n  >`;
-  }
-
-  if (extracted.element['star-level']) {
-    const startLevel = parseInt(extracted.element['star-level']);
-    // const stars = '★'.repeat(startLevel);
-
-    replaceWith += '<span\n' +
-      '  ' + `class="hero-avatar-star-level level-${startLevel}"></span\n  >`;
-  }
-
-  if (HeroName) {
-    if (heroId) {
-      replaceWith += '<span\n' +
-        '  ' + 'class="hero-avatar-name">' + HeroName + '</span\n  >';
-    } else {
-      replaceWith += '<span\n' +
-        '  ' + 'class="hero-avatar-unknown-name">' + HeroName + '</span\n  >';
-    }
-  } else {
-    replaceWith += '<span\n' +
-      '  ' + 'class="hero-avatar-unknown-name">&nbsp;</span\n  >';
-  }
-
-  if (extracted.element['exp-level']) {
-    const expLevel = extracted.element['exp-level'];
-    replaceWith += '<span\n' +
-        '  ' + 'class="hero-avatar-exp-level">Lv. ' + expLevel + '</span>\n  ';
-  }
-
-  replaceWith += '</div>';
+  };
 
   content.source =
       extracted.head +
@@ -191,10 +140,10 @@ function processHeroAvatar(content) {
  * @param {object} content
  * @return {boolean}
  */
-export function processHeroAvatars(content) {
-  let result = processHeroAvatar(content);
+export function processHeroNames(content) {
+  let result = processHeroName(content);
   while (result) {
-    result = processHeroAvatar(content);
+    result = processHeroName(content);
   }
   return true;
 }

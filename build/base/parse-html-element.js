@@ -52,7 +52,7 @@ export function extractHtmlElement(source, startPos) {
       char = nextChar();
     }
     if (currPos > savedPos) {
-      return sourceChars.slice(savedPos, currPos);
+      return sourceChars.slice(savedPos, currPos).join('');
     } else {
       currPos = savedPos;
       return null;
