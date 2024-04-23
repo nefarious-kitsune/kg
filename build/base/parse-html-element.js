@@ -177,13 +177,21 @@ export function extractHtmlElement(source, startPos) {
     currPos++;
 
     const tail = sourceChars.slice(currPos).join('');
-    const endTag = `</${tagName}>`;
-    const endTagPos = tail.indexOf(endTag);
 
-    if (endTagPos === -1) return null;
+    // search for </tag> or </tag \n>
+    const endTagSearchString = `</${tagName}`;
+    const endTagStart = tail.indexOf(endTagSearchString);
+    if (endTagStart === -1) return null;
 
-    result.innerContent = tail.slice(0, endTagPos);
-    result.tail = tail.slice(endTagPos + endTag.length);
+    let endTagEnd = endTagStart + endTagSearchString.length;
+    while (
+      ' \n\r'.indexOf( tail.charAt(endTagEnd) ) !== -1
+    ) endTagEnd++;
+
+    if (tail.charAt(endTagEnd) !== '>') return null;
+
+    result.innerContent = tail.slice(0, endTagStart);
+    result.tail = tail.slice(endTagEnd + 1);
 
     // result.endPos = currPos + 1;
     return result;

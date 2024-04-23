@@ -53,6 +53,7 @@ ul.template-list {
   margin-left: auto;
   border: 0.1rem solid var(--neutral);
   outline: none;
+  font-size: 1.2rem;
   resize: vertical;
 }
 

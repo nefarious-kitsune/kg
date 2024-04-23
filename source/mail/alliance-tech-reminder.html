@@ -1,9 +1,9 @@
 <html>
 <head>
-<title>Alliance Tech reminder</title>
+<title>Alliance Mail - Tech Reminder</title>
 <meta page-data
   og-desc="Compose and preview a reminder message on Alliance Tech (template by 𝚃𝚛𝚒𝚔𝚝𝚒𝚜)"
-  tag-list= "servers"
+  tag-list= "alliance mail"
 >
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <link href="../assets/css/common.css" rel="stylesheet">
@@ -24,22 +24,22 @@
 <main>
 
 <h1>{{TITLE}}</h1>
-
 <p>{{PAGE-DESC}}</p>
 
-<section>
+<div class="editor-container">
+<section id="edit-pane">
 <h2>Edit</h2>
-
 <fragment src="__toolbar-mail.html"/>
-
-<textarea id="input"><escape-me><fragment src="./templates/__tech-reminder.md"/></escape-me></textarea>
+<textarea id="input" placeholder="Enter your Alliance Mail message"><escape-me
+  ><fragment src="./templates/__tech-reminder.md"/></escape-me
+></textarea>
 </section>
 
 <section id="preview-pane">
 <h2>Preview</h2>
-<div id="output" class="mail">
-</div>
+<div id="output" class="mail"></div>
 </section>
+</div>
 
 </main>
 </body>

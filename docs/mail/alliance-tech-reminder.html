@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Alliance Tech reminder - Miku's Shrine</title>
+<title>Alliance Mail - Tech Reminder - Miku's Shrine</title>
 <link rel="icon" type="image/x-icon" href="/images/logo_mini.png">
 <meta name="format-detection" content="telephone=no">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://kg.kitsune21.com/">
 <meta property="og:image" content="https://kg.kitsune21.com/images/page-2x_n.png">
-<meta property="og:title" content="Alliance Tech reminder">
+<meta property="og:title" content="Alliance Mail - Tech Reminder">
 <meta property="og:description"
   content="Compose and preview a reminder message on Alliance Tech (template by 𝚃𝚛𝚒𝚔𝚝𝚒𝚜)">
 <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -28,13 +28,12 @@
 
 <main>
 
-<h1>Alliance Tech reminder</h1>
-
+<h1>Alliance Mail - Tech Reminder</h1>
 <p>Compose and preview a reminder message on Alliance Tech (template by 𝚃𝚛𝚒𝚔𝚝𝚒𝚜)</p>
 
-<section>
+<div class="editor-container">
+<section id="edit-pane">
 <h2>Edit</h2>
-
 <div class="toolbar">
   <div class="group"><!--
   --><button class="text-button" onclick="copyInput()">Copy</button><!--
@@ -57,8 +56,7 @@
   --><button class="editor-button" onclick="setBig()">Big</button><!--
   --></div>
 </div>
-
-<textarea id="input">Hello everyone!
+<textarea id="input" placeholder="Enter your Alliance Mail message">Hello everyone!
 
 &lt;Size=50&gt;&lt;I&gt;Please remember to use your &lt;color=purple&gt;alliance tech points&lt;/color&gt; on the &lt;b&gt;&lt;color=purple&gt;starred&lt;/color&gt;&lt;/b&gt; research points as often as possible&lt;/i&gt;&lt;/size&gt;
 
@@ -67,9 +65,9 @@ This helps us all in so many ways as efficiently as possible ♡</textarea>
 
 <section id="preview-pane">
 <h2>Preview</h2>
-<div id="output" class="mail">
-</div>
+<div id="output" class="mail"></div>
 </section>
+</div>
 
 </main>
 </body>
