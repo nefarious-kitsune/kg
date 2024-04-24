@@ -113,7 +113,7 @@ function buildTemplate(distance) {
   table.push('  ' + buildTH(arrivals[1]));
   table.push('  ' + buildTH(arrivals[0]));
   table.push('</tr></thead>');
-  table.push('<body><tr>');
+  table.push('<tbody><tr>');
   table.push('  ' + buildTD(arrivals[19]));
   table.push('  ' + `<td>&hellip;</td>`);
   // table.push('  ' + buildTD(arrivals[6]));

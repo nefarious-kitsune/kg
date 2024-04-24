@@ -1,0 +1,50 @@
+<html>
+<head>
+<title>Alliance Mail - ESI Intro</title>
+<meta page-data
+  og-desc="Mail template for Lv. 1 Evil Spirit Invasion in easy mode"
+  tag-list= "alliance mail"
+>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link href="../assets/css/common.css" rel="stylesheet">
+<link href="../assets/css/content.css" rel="stylesheet">
+<link href="./mail.css" rel="stylesheet">
+<script src="./mail.js"></script>
+<script src="./parser.js"></script>
+</head>
+
+<body>
+
+<header><nav><ul class="breadcrumb">
+  <li><a href="../content">Home</a></li>
+  <li><a href="./">Mail</a></li>
+  <li>Online Mail Editor</li>
+</ul></nav></header>
+
+<main>
+<h1>{{TITLE}}</h1>
+
+<p>Mail template for level-1 <a href="../esi">Evil Spirit Invasion</a>
+  in <a href="../esi/normal#easy">easy mode</a>
+  (start <strong>300</strong>km away from the hive).</p>
+
+<div class="editor-container">
+<section id="edit-pane">
+<h2>Edit</h2>
+<fragment src="__toolbar-mail.html"/>
+<textarea id="input" placeholder="Enter your Alliance Mail message"><escape-me
+  ><fragment src="./templates/__esi_easy.md"/></escape-me
+></textarea>
+</section>
+
+<section id="preview-pane">
+<h2>Preview</h2>
+<div id="output" class="mail"></div>
+</section>
+</div>
+
+<fragment src="__note.html"/>
+
+</main>
+</body>
+</html>
