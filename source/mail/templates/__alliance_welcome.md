@@ -1,10 +1,11 @@
 <size=60><color=fuchsia>Welcome</color></size>
-<size=40><color=yellow>
-Welcome to the family. We require <color=lime>Discord</color> activity. Contact our R4 for the link to our Discord server.</color>
+<size=45><color=yellow>Welcome to the family. Please follow Alliance rules and reach out if you have any question.</color>
+
 <color=white>
-<color=red><b>Ground Rules</b></color>
-☆ <color=red><b>Do not</b></color> attack in normal Mithril
-☆ <color=red><b>Do not</b></color> attack for gold or PvP point. <i>Ask in Kingdom Chat first</i>
-☆ <color=red><b>Do not</b></color> start a rally during ESI or Lava Haka
-☆ <color=green><b>Do</b></color> read mail and chat BEFORE starting rallies when you first log in!
+☆ Stay active.
+☆ Do Tech donation
+☆ Help with territory building
+☆ Remember to reset Auto Rally before you go offline.
+☆ Respect others. No drama in Kingdom Chat.
+☆ Read mail and chat for instructions
 </color></size>

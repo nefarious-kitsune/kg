@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Alliance Notice - Welcome Message 2 - Miku's Shrine</title>
+<title>Alliance Announcement Template - Miku's Shrine</title>
 <link rel="icon" type="image/x-icon" href="/images/logo_mini.png">
 <meta name="format-detection" content="telephone=no">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://kg.kitsune21.com/">
 <meta property="og:image" content="https://kg.kitsune21.com/images/page-2x_n.png">
-<meta property="og:title" content="Alliance Notice - Welcome Message 2">
+<meta property="og:title" content="Alliance Announcement Template">
 <meta property="og:description"
-  content="Compose and preview an Alliance Board Notice with rules and event instruction/schedule (template by 𝚃𝚛𝚒𝚔𝚝𝚒𝚜)">
+  content="Announcement template for a new alliance in the second week of a server">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <link href="../assets/css/common.css" rel="stylesheet">
 <link href="../assets/css/content.css" rel="stylesheet">
@@ -23,13 +23,13 @@
 <header><nav><ul class="breadcrumb">
   <li><a href="../content">Home</a></li>
   <li><a href="./">Mail</a></li>
-  <li>Online Mail Editor</li>
+  <li>Announcement Editor</li>
 </ul></nav></header>
 
 <main>
 
-<h1>Alliance Notice - Welcome Message 2</h1>
-<p>Compose and preview an Alliance Board Notice with rules and event instruction/schedule (template by 𝚃𝚛𝚒𝚔𝚝𝚒𝚜)</p>
+<h1>Alliance Announcement Template</h1>
+<p>Announcement template for a new alliance in the second week of a server</p>
 
 <div class="editor-container">
 <section id="edit-pane">
@@ -56,30 +56,30 @@
   --><button class="editor-button" onclick="setBig()">Big</button><!--
   --></div>
 </div>
-<textarea id="input" placeholder="Enter your Alliance Board notice">&lt;color=red&gt;&lt;size=40&gt;☄︎ Burning Expedition ☄︎
-• December 13 17:30 UTC Lava Haka
-• December 14 17:30 UTC Evil Spirit Event
-• December 15 19:00 UTC Battle of Dragons
-• December 15 Elemental Lords starts
-• December 17 Throne ♛⚔︎♕
-&lt;/size&gt;&lt;/color&gt;
-&lt;b&gt;&lt;i&gt;Normal Mithril mine is to remain peaceful.&lt;/i&gt;&lt;/b&gt;
-&lt;color=silver&gt;&lt;size=30&gt;
-Alliance Standards -
-• We expect you to be active
-• Please read mail
-• Respond to R4/R5 when sent a private message
-• Do not actively disturb events
-• If online during an event we will note when you are actively not participating if needed.&lt;/size&gt;&lt;/color&gt;
+<textarea id="input" placeholder="Enter your announcement message">&lt;color=white&gt;&lt;size=50&gt;&lt;color=yellow&gt;UTC 1100&lt;/color&gt; Lava Haka
+&lt;color=yellow&gt;UTC 1200&lt;/color&gt; Evil Spirit Invasion
+Join Discord: &lt;color=lime&gt;https://discord.gg/XXXXX&lt;/color&gt;&lt;/size&gt;
+&lt;size=35&gt;
+☆ Stay active.
+☆ Respect normal Mithril peace
+☆ No Titan rally during Evil Spirit Invasion or Lava Haka
+☆ Do tech donation and help with territory building.
+☆ Remember to reset Auto Rally before you go offline.
+☆ Respect others. No drama in Kingdom Chat.
+☆ Read mail and chat BEFORE starting rallies when you first log in!
 
-&lt;b&gt;&lt;i&gt;- PVP Guidelines -
-• Please don’t attack active castles.
-  ➜ This is a kickable action
-• Please do not destroy castles
-  ➜ This is so they can be farmed
-• If hit please bring up with R5
-  ➜ We defend our own.&lt;/i&gt;&lt;/b&gt;
-&lt;color=silver&gt;** You can always message someone for PvP, just let us know that its mutual so we don’t think we’re being attacked.&lt;/color&gt;</textarea>
+&lt;size=40&gt;Be Active&lt;/size&gt;
+
+You expect you to &lt;color=yellow&gt;be active&lt;/color&gt; and to &lt;color=yellow&gt;participate&lt;/color&gt; in events. Read all mail for instructions and feel free to reach out if you don't understand something. Respond to any a private message from R4/R5.
+
+If you need to be &lt;color=lime&gt;offline&lt;/color&gt; due to real-life, please let R4/R5 know.
+
+&lt;size=40&gt;Demotion / Kick&lt;/size&gt;
+
+If you are demoted, it means either (1) you were offline for too long, or (2) you broke a rule. Please reach out to R4/R5 to resolve the issue as soon as you can.
+
+You may be kicked if you (1) attack an active castle for gold/PvP, (2) attack in normal Mithril, or (3) you are demoted to R1 but you have never reached out to resolve the problem.
+&lt;/size&gt;&lt;/color&gt;</textarea>
 </section>
 
 <section id="preview-pane">
@@ -87,6 +87,21 @@ Alliance Standards -
 <div id="output" class="message"></div>
 </section>
 </div>
+
+<section>
+<h2>Note</h2>
+<p>
+  This tool is based on reverse engineering of the
+  <a href="./text-formatting">text formatting</a>
+  rules and may not replicate the output exactly. To ensure that
+  your in-game mail/message will be displayed properly, send it to
+  your alt account first.
+</p>
+<p>
+  The validator code is created using PEG
+  (<a href="./parser.peggy">source code</a>).
+</p>
+</section>
 
 </main>
 </body>

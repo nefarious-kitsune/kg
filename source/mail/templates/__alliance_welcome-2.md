@@ -1,24 +1,24 @@
-<color=red><size=40>☄︎ Burning Expedition ☄︎
-• December 13 17:30 UTC Lava Haka
-• December 14 17:30 UTC Evil Spirit Event
-• December 15 19:00 UTC Battle of Dragons
-• December 15 Elemental Lords starts
-• December 17 Throne ♛⚔︎♕
-</size></color>
-<b><i>Normal Mithril mine is to remain peaceful.</i></b>
-<color=silver><size=30>
-Alliance Standards -
-• We expect you to be active
-• Please read mail
-• Respond to R4/R5 when sent a private message
-• Do not actively disturb events
-• If online during an event we will note when you are actively not participating if needed.</size></color>
+<color=white><size=50><color=yellow>UTC 1100</color> Lava Haka
+<color=yellow>UTC 1200</color> Evil Spirit Invasion
+Join Discord: <color=lime>https://discord.gg/XXXXX</color></size>
+<size=35>
+☆ Stay active.
+☆ Respect normal Mithril peace
+☆ No Titan rally during Evil Spirit Invasion or Lava Haka
+☆ Do tech donation and help with territory building.
+☆ Remember to reset Auto Rally before you go offline.
+☆ Respect others. No drama in Kingdom Chat.
+☆ Read mail and chat BEFORE starting rallies when you first log in!
 
-<b><i>- PVP Guidelines -
-• Please don’t attack active castles.
-  ➜ This is a kickable action
-• Please do not destroy castles
-  ➜ This is so they can be farmed
-• If hit please bring up with R5
-  ➜ We defend our own.</i></b>
-<color=silver>** You can always message someone for PvP, just let us know that its mutual so we don’t think we’re being attacked.</color>
+<size=40>Be Active</size>
+
+You expect you to <color=yellow>be active</color> and to <color=yellow>participate</color> in events. Read all mail for instructions and feel free to reach out if you don't understand something. Respond to any a private message from R4/R5.
+
+If you need to be <color=lime>offline</color> due to real-life, please let R4/R5 know.
+
+<size=40>Demotion / Kick</size>
+
+If you are demoted, it means either (1) you were offline for too long, or (2) you broke a rule. Please reach out to R4/R5 to resolve the issue as soon as you can.
+
+You may be kicked if you (1) attack an active castle for gold/PvP, (2) attack in normal Mithril, or (3) you are demoted to R1 but you have never reached out to resolve the problem.
+</size></color>

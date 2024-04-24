@@ -1,36 +1,35 @@
 <!DOCTYPE html>
 <html>
-<!--  -->
 <head>
-  <title>Alliance Notice - Miku's Shrine</title>
-  <link rel="icon" type="image/x-icon" href="/images/logo_mini.png">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="format-detection" content="telephone=no">
-  <meta property="og:type" content="website">
-  <meta property="og:image" content="https://kg.kitsune21.com/images/page-2x_n.png">
-  <meta property="og:url" content="https://kg.kitsune21.com/">
-  <meta property="og:title" content="Alliance Notice - Miku's Shrine">
-  <meta property="og:description" content="Compose and preview an Alliance Notice with basic rules">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link href="../assets/css/common.css" rel="stylesheet">
-  <link href="../assets/css/content.css" rel="stylesheet">
-  <link href="./mail.css" rel="stylesheet">
-  <script src="./mail.js"></script>
-  <script src="./parser.js"></script>
+<title>Alliance Announcement Template - Miku's Shrine</title>
+<link rel="icon" type="image/x-icon" href="/images/logo_mini.png">
+<meta name="format-detection" content="telephone=no">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://kg.kitsune21.com/">
+<meta property="og:image" content="https://kg.kitsune21.com/images/page-2x_n.png">
+<meta property="og:title" content="Alliance Announcement Template">
+<meta property="og:description"
+  content="Announcement template for a new alliance in the first week of a server">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link href="../assets/css/common.css" rel="stylesheet">
+<link href="../assets/css/content.css" rel="stylesheet">
+<link href="./mail.css" rel="stylesheet">
+<script src="./mail.js"></script>
+<script src="./parser.js"></script>
 </head>
 
-<body class="content">
+<body>
 
 <header><nav><ul class="breadcrumb">
   <li><a href="../content">Home</a></li>
   <li><a href="./">Mail</a></li>
-  <li>Online Mail Editor</li>
+  <li>Announcement Editor</li>
 </ul></nav></header>
 
-<main class="content">
-<h1>Alliance Notice</h1>
+<main>
 
-<p>Compose and preview an Alliance Notice with basic rules</p>
+<h1>Alliance Announcement Template</h1>
+<p>Announcement template for a new alliance in the first week of a server</p>
 
 <div class="editor-container">
 <section id="edit-pane">
@@ -57,16 +56,16 @@
   --><button class="editor-button" onclick="setBig()">Big</button><!--
   --></div>
 </div>
+<textarea id="input" placeholder="Enter your announcement message">&lt;size=60&gt;&lt;color=fuchsia&gt;Welcome&lt;/color&gt;&lt;/size&gt;
+&lt;size=45&gt;&lt;color=yellow&gt;Welcome to the family. Please follow Alliance rules and reach out if you have any question.&lt;/color&gt;
 
-<textarea id="input">&lt;size=60&gt;&lt;color=fuchsia&gt;Welcome&lt;/color&gt;&lt;/size&gt;
-&lt;size=40&gt;&lt;color=yellow&gt;
-Welcome to the family. We require &lt;color=lime&gt;Discord&lt;/color&gt; activity. Contact our R4 for the link to our Discord server.&lt;/color&gt;
 &lt;color=white&gt;
-&lt;color=red&gt;&lt;b&gt;Ground Rules&lt;/b&gt;&lt;/color&gt;
-☆ &lt;color=red&gt;&lt;b&gt;Do not&lt;/b&gt;&lt;/color&gt; attack in normal Mithril
-☆ &lt;color=red&gt;&lt;b&gt;Do not&lt;/b&gt;&lt;/color&gt; attack for gold or PvP point. &lt;i&gt;Ask in Kingdom Chat first&lt;/i&gt;
-☆ &lt;color=red&gt;&lt;b&gt;Do not&lt;/b&gt;&lt;/color&gt; start a rally during ESI or Lava Haka
-☆ &lt;color=green&gt;&lt;b&gt;Do&lt;/b&gt;&lt;/color&gt; read mail and chat BEFORE starting rallies when you first log in!
+☆ Stay active.
+☆ Do Tech donation
+☆ Help with territory building
+☆ Remember to reset Auto Rally before you go offline.
+☆ Respect others. No drama in Kingdom Chat.
+☆ Read mail and chat for instructions
 &lt;/color&gt;&lt;/size&gt;</textarea>
 </section>
 
@@ -76,6 +75,21 @@ Welcome to the family. We require &lt;color=lime&gt;Discord&lt;/color&gt; activi
 </div>
 </section>
 </div>
+
+<section>
+<h2>Note</h2>
+<p>
+  This tool is based on reverse engineering of the
+  <a href="./text-formatting">text formatting</a>
+  rules and may not replicate the output exactly. To ensure that
+  your in-game mail/message will be displayed properly, send it to
+  your alt account first.
+</p>
+<p>
+  The validator code is created using PEG
+  (<a href="./parser.peggy">source code</a>).
+</p>
+</section>
 
 </main>
 </body>
