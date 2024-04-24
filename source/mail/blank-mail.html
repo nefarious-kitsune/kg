@@ -1,20 +1,19 @@
 <html>
-<!-- <meta-data>
-<og-image></og-image>
-<og-desc>Compose and preview an Alliance Mail message.</og-desc>
-<tag-list>alliance mail</tag-list>
-</meta-data> -->
 <head>
-  <title>Online Mail Editor</title>
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link href="../assets/css/common.css" rel="stylesheet">
-  <link href="../assets/css/content.css" rel="stylesheet">
-  <link href="./mail.css" rel="stylesheet">
-  <script src="./mail.js"></script>
-  <script src="./parser.js"></script>
+<title>Blank Alliance Mail</title>
+<meta page-data
+  og-desc="Compose and preview an Alliance Mail message"
+  tag-list= "alliance mail"
+>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link href="../assets/css/common.css" rel="stylesheet">
+<link href="../assets/css/content.css" rel="stylesheet">
+<link href="./mail.css" rel="stylesheet">
+<script src="./mail.js"></script>
+<script src="./parser.js"></script>
 </head>
 
-<body class="content">
+<body>
 
 <header><nav><ul class="breadcrumb">
   <li><a href="../content">Home</a></li>
@@ -22,37 +21,15 @@
   <li>Online Mail Editor</li>
 </ul></nav></header>
 
-<main class="content">
+<main>
+
 <h1>{{TITLE}}</h1>
 
 <div class="editor-container">
 <section id="edit-pane">
 <h2>Edit</h2>
-<div class="toolbar">
-  <div class="group"><!--
-  --><button class="text-button" onclick="copyInput()">Copy</button><!--
-  --></div>
-  <div class="group"><!--
-  --><button class="color-button color-black" onclick="setColor('black')"><span></span></button><!--
-  --><button class="color-button color-gray"  onclick="setColor('gray')"><span></span></button><!--
-  --><button class="color-button color-maroon" onclick="setColor('maroon')"><span></span></button><!--
-  --><button class="color-button color-red" onclick="setColor('red')"><span></span></button><!--
-  --><button class="color-button color-green"  onclick="setColor('green')"><span></span></button><!--
-  --><button class="color-button color-olive" onclick="setColor('olive')"><span></span></button><!--
-  --><button class="color-button color-teal" onclick="setColor('teal')"><span></span></button><!--
-  --><button class="color-button color-blue" onclick="setColor('blue')"><span></span></button><!--
-  --><button class="color-button color-navy" onclick="setColor('navy')"><span></span></button><!--
-  --><button class="color-button color-purple" onclick="setColor('purple')"><span></span></button><!--
-  --></div>
-  <div class="group"><!--
-  --><button class="editor-button" onclick="setBold()">Bold</button><!--
-  --><button class="editor-button" onclick="setItalic()">Italic</button><!--
-  --><button class="editor-button" onclick="setBig()">Big</button><!--
-  --></div>
-</div>
-  
-<textarea id="input">
-</textarea>
+<fragment src="__toolbar-mail.html"/>  
+<textarea id="input" placeholder="Enter your Alliance Mail message"></textarea>
 </section>
 
 <section id="preview-pane">
@@ -62,19 +39,7 @@
 </section>
 </div>
 
-<section>
-<h2>Note</h2>
-<p>
-  This tool is based on reverse engineering of the text formatting
-  rules and may not replicate the output exactly. To ensure that
-  your in-game mail/message will be displayed properly, send it to
-  your alt account first.
-</p>
-<p>
-  The validator code is created using PEG
-  (<a href="./parser.peggy">source code</a>).
-</p>
-</section>
+<fragment src="__note.html"/>
 
 </main>
 </body>
