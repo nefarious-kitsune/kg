@@ -444,12 +444,13 @@ th {
   content: attr(text-hint);
   /* white-space: nowrap; */
   background: var(--neutral);
+  color: #fff;
   min-width: 6rem;
-  padding: 0.2rem;
+  max-width: 10rem;
+  padding: 0.4rem;
   font-size: 0.9rem;
   box-sizing: border-box;
   top: calc(100% + 0.9rem);
-  color: #fff;
   border-radius: 0.5rem;
   text-shadow: 0px 1px 1px #000;
   z-index: 99;

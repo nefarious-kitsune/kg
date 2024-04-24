@@ -11,6 +11,10 @@ copyStatic('bounty-hall/');
 copyStatic('features/');
 copyStatic('territories/');
 
+// Build ESI files
+import './esi/build-esi-tables.js'; // generate template files
+copyStatic('esi/');
+
 copyStatic('mail/');
 copyStatic('guides/');
 copyStatic('tower-defense/');
