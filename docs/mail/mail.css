@@ -74,11 +74,13 @@ ul.template-list {
 
 #output.mail {
   background-color: #c6d4e1;
+  font-size: 16px;
 }
 
 #output.notice {
   background-color: #283b5c;
   color: #7c9fdf;
+  font-size: 12px;
 }
 
 #output {
