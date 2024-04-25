@@ -1,0 +1,1 @@
+<color=#f60>gold</color>

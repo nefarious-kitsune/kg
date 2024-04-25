@@ -215,7 +215,6 @@ const parser = {
         char = this.nextChar();
       }
       value = value.toLowerCase();
-      console.log(value);
       if (NamedColors.indexOf(value.toLowerCase()) === -1) {
         valid = false;
       };
@@ -433,6 +432,7 @@ const parser = {
   parse(source) {
     this.currentPos = 0;
     this.source = source;
+    this.root.length = 0;
     while (true) {
       const next = this.parseNext();
       if (next.type === 'eof') break;

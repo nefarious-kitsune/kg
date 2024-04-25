@@ -1,4 +1,4 @@
-<size=40><color=yellow>Welcome to the family. Please follow Alliance rules and reach out if you have any question.</color>
+<size=40><color=orange>Welcome to the family. Please follow Alliance rules and reach out if you have any question.</color>
 
 <color=white>
 ☆ Peace in normal Mithril. No Attack.
