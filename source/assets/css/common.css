@@ -162,6 +162,8 @@ table.basic-table { /* basic table (red header, gold footer */
   thead th {
     background: var(--miku-red);
     color: white;
+
+    a { color: white; }
   }
 
   tfoot {

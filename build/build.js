@@ -25,6 +25,8 @@ copyStatic('timelines/');
 copyStatic('tools/');
 copyStatic('stacking/');
 
+copyStatic('p2p/');
+
 const elements = ['archer', 'fire', 'ice', 'goblin'];
 
 // import {buildElementData} from './heroes/build-data.js';
