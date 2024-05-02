@@ -25,6 +25,9 @@ copyStatic('timelines/');
 copyStatic('tools/');
 copyStatic('stacking/');
 
+
+// Build ESI files
+import './p2p/build-vip-tables.js'; // generate template files
 copyStatic('p2p/');
 
 const elements = ['archer', 'fire', 'ice', 'goblin'];

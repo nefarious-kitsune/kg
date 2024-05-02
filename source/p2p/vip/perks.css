@@ -1,0 +1,36 @@
+.perk-row {
+  display: flex;
+  padding: 0.25rem 0.5rem;
+  margin-bottom: 0;
+  justify-content: start; /* left */
+  align-content: start; /* top */
+  flex-direction: row;
+
+  .perk-desc {
+    flex-grow: 1;
+  }
+  .perk-value {
+    flex-grow: 0;
+    text-align: right;
+    width: 4rem;
+  }
+}
+
+.perk-row.na {
+  color: var(--neutral);
+}
+
+.unverified:before {
+  content: '?';
+  display: inline-block;
+  font-size: 0.8rem;
+  padding: 0.1rem 0.2rem;
+  margin-right: 0.2rem;
+  border: 1px dotted var(--miku-red);
+  border-radius: 0.2rem;
+  color: var(--miku-red);
+}
+
+.unverified {
+  color: var(--miku-red);
+}
