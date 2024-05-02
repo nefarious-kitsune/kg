@@ -426,7 +426,7 @@ ul.inline-list {
   position: relative;
 }
 
-li, p, span, label, td {
+li, p, div, span, label, td {
   & > span[text-hint],
   & > abbr[text-hint] {
     text-decoration: underline dotted var(--miku-dark-red);

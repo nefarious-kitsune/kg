@@ -9,7 +9,22 @@
   .perk-desc {
     flex-grow: 1;
   }
-  .perk-value {
+  
+  .prev-value {
+    flex-grow: 0;
+    text-align: right;
+    width: 6rem;
+    color: var(--neutral);
+  }
+
+  .prev-value::after {
+    content: "»";
+    display: inline-block;
+    width: 1rem;
+    padding: 0 0 0 .5rem;
+  }
+
+  .this-value {
     flex-grow: 0;
     text-align: right;
     width: 4rem;
@@ -19,6 +34,11 @@
 .perk-row.na {
   color: var(--neutral);
 }
+
+.perk-row.changed {
+  color: var(--miku-red);
+}
+
 
 .unverified:before {
   content: '?';
