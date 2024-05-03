@@ -56,10 +56,12 @@
   &.sr  { border-color: var(--light-primary-5);  outline-color: var(--primary-5 );}
   &.ssr { border-color: var(--light-primary-2);  outline-color: var(--primary-2 );}
 
-  &.blank {
-    background: var(--light-neutral);
+  &.blank { background: transparent; }
+  &.blank.ssr {
+    background: linear-gradient(-45deg, #FF9927 0%, #D5793F 100%);
   }
 }
+
 
 .hero-name[image-hint] {
   text-decoration: underline dotted var(--miku-dark-red);
