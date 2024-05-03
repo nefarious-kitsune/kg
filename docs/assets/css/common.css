@@ -153,8 +153,24 @@ table { /* default */
 
 table.sticky-header { /* sticky header */
   thead tr th {
+    position: -webkit-sticky;
     position: sticky;
     top: 0;
+    z-index: 9;
+  }
+}
+
+table.sticky-col { /* sticky column */
+  thead tr > *:first-child,
+  tbody tr > *:first-child {
+    position: -webkit-sticky;
+    position: sticky;
+    left: 0;
+    z-index: 9;
+  }
+
+  tbody tr > *:first-child {
+    background-color: white;
   }
 }
 

@@ -75,6 +75,7 @@
 }
 
 .calender-container {
+  position: relative;
   width: 100%;
   overflow-x: auto;
 }
@@ -89,6 +90,7 @@ table.calender {
     min-width: 6rem;
     width: calc(6rem + (24 - 6) * ((100vw - 300px) / (1200 - 300))) !important;
   }
+
   .day-col { width: 2rem; }
 
   tbody {
@@ -125,7 +127,6 @@ table.calender {
       color: var(--dark-neutral);
     }
 
-    
     th:hover .day,
     th:hover ~ td .event,
     th:hover ~ td .no-event,
