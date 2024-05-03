@@ -45,7 +45,7 @@ function buildPage(level) {
   let perkTable = '';
 
   const APLimit = tsvData[2][level + 1];
-  const RecoveryReduction = tsvData[3][level + 1];
+  const RecoveryReduction = tsvData[3][level + 1] || '0';
   // Recovery speed: APs / minute
   const RecoverySpeed = 3.6 * (100 + parseInt(RecoveryReduction)) / 100;
   const RecoveryTime = Math.floor((APLimit - 15) / RecoverySpeed);
