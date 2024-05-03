@@ -78,7 +78,6 @@
   position: relative;
   width: 100%;
   overflow-x: auto;
-  /* overflow: auto; */
 }
 
 table.calender {
@@ -92,16 +91,7 @@ table.calender {
     width: calc(6rem + (24 - 6) * ((100vw - 300px) / (1200 - 300))) !important;
   }
 
-  .day-col {
-    width: 2rem;
-    /* position: -webkit-sticky;
-    position: sticky;
-    background-color: white; */
-  }
-
-  tbody td.day-col {
-    /* background-color: white; */
-  }
+  .day-col { width: 2rem; }
 
   tbody {
     /* the following 3 rules ensure that event box will fill the cell */
