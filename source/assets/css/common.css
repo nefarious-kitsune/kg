@@ -143,12 +143,13 @@ table { /* default */
     padding: 0.5rem;
   }
 
-  tbody td {
-    vertical-align: top;
-  }
-
   th { text-align: left; }
-  tbody th { vertical-align: top; }
+
+  tbody th,
+  tbody td { vertical-align: top; }
+  
+  th.right-align,
+  td.right-align { text-align: right; }
 }
 
 table.sticky-header { /* sticky header */
