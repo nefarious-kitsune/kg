@@ -39,7 +39,6 @@
   color: var(--miku-red);
 }
 
-
 .unverified:before {
   content: '?';
   display: inline-block;
@@ -53,4 +52,17 @@
 
 .unverified {
   color: var(--miku-red);
+}
+
+.vip-container {
+  position: relative;
+  width: 100%;
+  overflow-x: auto;
+}
+
+table.vip {
+  height: 100%;
+  th { width: 5rem; }
+  th.desc-col { width: 24rem; }
+  td.na { background-color: var(--pale-neutral); }
 }
