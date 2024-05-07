@@ -7,11 +7,24 @@ import {replaceFragment} from './replacers/fragment.js';
 
 const DOCTYPE = '<!DOCTYPE html>';
 const DefaultImages = {
+  /*
   page: 'https://kg.kitsune21.com/images/page-2x_n.png',
   sheet: 'https://kg.kitsune21.com/images/sheet-2x_n.png',
   chart: 'https://kg.kitsune21.com/images/chart-2x_n.png',
   graph: 'https://kg.kitsune21.com/images/graph-2x_n.png',
   calculator: 'https://kg.kitsune21.com/images/calculator-2x_n.png',
+  */
+  info: 'https://kg.kitsune21.com/assets/icons/site_info.png',
+  hero: 'https://kg.kitsune21.com/assets/icons/site_info-hero.png',
+  data: 'https://kg.kitsune21.com/assets/icons/site_data.png',
+
+  page: 'https://kg.kitsune21.com/assets/icons/site_info.png',
+  sheet: 'https://kg.kitsune21.com/assets/icons/site_data.png',
+
+  chart: 'https://kg.kitsune21.com/assets/icons/site_chart.png',
+  graph: 'https://kg.kitsune21.com/assets/icons/site-stacking.png',
+  calculator: 'https://kg.kitsune21.com/assets/icons/site_calculator.png',
+  calendar: 'https://kg.kitsune21.com/assets/icons/site_calendar.png',
 };
 
 
