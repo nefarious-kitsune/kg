@@ -120,50 +120,6 @@ nav.left-right {
 
 /* ------------------ Basic Format ------------------ */
 
-html {
-  /*
-    Image by Nyankosensei
-    https://anime.goodfon.com/art-anime/wallpaper-park-sakura-vesna.html
-  */
-  background-image: url('../images/park-sakura-vesna.jpg');
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-}
-
-header {
-  padding: 0;
-  margin: 0;
-}
-
-main {
-  padding: 0 0 2rem 0;
-  margin: 0 0 10rem 0;
-}
-
-body {
-  width: 100%;
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-bottom: 10rem;
-}
-
-header,
-main {
-  border-left: 1px solid var(--miku-red);
-  border-right: 1px solid var(--miku-dark-red);
-}
-
-header {
-  background-color: rgba(255, 255, 255, 0.4);
-}
-
-main {
-  background-color: white;
-  border-bottom: 1px solid var(--miku-dark-red);
-}
-
 /* Paragraph spacing */
 section > p, div > p { margin-block-end: 0.8rem; }
 p:last-child { margin-block-end: 0; }

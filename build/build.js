@@ -21,7 +21,7 @@ copyStatic('tower-defense/');
 copyStatic('servers/');
 copyStatic('lava-cave/');
 copyStatic('events/');
-copyStatic('timelines/');
+copyStatic('calendars/');
 copyStatic('tools/');
 copyStatic('stacking/');
 

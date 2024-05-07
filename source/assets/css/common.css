@@ -1,3 +1,5 @@
+/* ---------------------- Root ---------------------- */
+
 :root {
   --miku-red: rgb(180, 35, 40); /*  #b42328; */
   --miku-dark-red: rgb(124, 26, 32); /* #7c1a20 */
@@ -67,16 +69,67 @@ html {
   font-family: 'Helvetica', 'Arial', sans-serif;
 }
 
-/* ----------------- General Layout ----------------- */
+/* ------------------- Page Layout ------------------- */
 
-body, body { margin: 0; }
+html {
+  /*
+    Image by Nyankosensei
+    https://anime.goodfon.com/art-anime/wallpaper-park-sakura-vesna.html
+  */
+  background-image: url('../images/park-sakura-vesna.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+body {
+  width: 100%;
+  max-width: 840px;
+  margin: 0 auto 0 auto;
+  padding: 0;
+}
+
+header {
+  padding: 0;
+  margin: 0;
+}
+
+main {
+  padding: 0 0 2rem 0;
+  margin: 0 0 20rem 0;
+}
+
+header,
+main {
+  border-left: 1px solid var(--miku-red);
+  border-right: 1px solid var(--miku-dark-red);
+}
+
+header {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+main {
+  border-bottom: 1px solid var(--miku-dark-red);
+}
+
+body main {
+  background-color: white;
+}
+
+body.landing main {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+/* ----------------- Header Section ----------------- */
+
 header:first-child {
   margin: 0;
   padding: 0.2rem 0.2rem 0.2rem 1rem;
 
   &:before {
     display: block;
-    content: " ";
+    content: "";
     background: url('../../images/logo_text.png') no-repeat;
     background-size: contain;
     height: 3.3rem;
@@ -84,9 +137,25 @@ header:first-child {
   }
 }
 
-.hidden { display: none; }
+/* ------------------ Body Section ------------------ */
 
-/* ------------------ Basic Format ------------------ */
+/* Paddings. Needed for :target to work */
+main > h1,
+main > h2, main > h3,
+main > h4, main > div,
+main > p,
+main > section {
+  padding-left: 1.2rem;
+  padding-right: 1.2rem;
+}
+main > section {
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
+  & > *:first-child { margin-block-start: 0; }
+  & > *:last-child { padding-bottom: 0; }
+}
+
+/* ----------------- Text and Links ----------------- */
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
@@ -131,6 +200,10 @@ strong.highlight {
 strong.important {
   text-transform: uppercase;
 }
+
+/* -------------------- Others -------------------- */
+
+.hidden { display: none; }
 
 /* --------------------- Tables --------------------- */
 
