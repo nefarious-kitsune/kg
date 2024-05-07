@@ -46,9 +46,9 @@ function buildPage(level) {
 
   const APLimit = tsvData[2][level + 1];
   const RecoveryReduction = tsvData[3][level + 1] || '0';
-  // Recovery speed: APs / minute
+  // Recovery speed: 3.6 minutes / AP
   const RecoverySpeed = 3.6 * (100 + parseInt(RecoveryReduction)) / 100;
-  const RecoveryTime = Math.floor((APLimit - 15) / RecoverySpeed);
+  const RecoveryTime = Math.floor((APLimit - 15) * RecoverySpeed);
   const RHours = Math.floor(RecoveryTime / 60);
   const RMinutes = RecoveryTime - (RHours * 60);
   content = content
