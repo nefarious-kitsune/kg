@@ -56,24 +56,3 @@ body.landing {
     justify-content: center;
   }
 }
-
-/*
-body.landing main {
-  position: absolute;
-  background-color: #e8c3d3;
-  border: 0.2rem var(--miku-gold) solid;
-  border-radius: 1rem;
-  margin: 2rem 2rem 2rem 30%;
-  padding: 1rem;
-}
-
-body.landing #header {
-  background: linear-gradient(
-      to bottom,
-      #ffffff66 0%,
-      #ffffff66 90%,
-      var(--miku-red) 90%,
-      var(--miku-red) 100%
-    );
-}
-*/
