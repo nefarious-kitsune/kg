@@ -39,7 +39,7 @@
   .quest-row.p2p {
     color: var(--miku-dark-red);
     .quest-desc {
-      font-size: 0.9rem;
+      font-size: 0.8rem;
     }
   }
 }
