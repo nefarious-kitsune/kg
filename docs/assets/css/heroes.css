@@ -12,7 +12,7 @@
   border: 0.1rem solid var(--light-neutral);
   outline: 0.15rem solid var(--neutral);
 
-  .hero-avatar-name { visibility: hidden; }
+  .hero-avatar-name { visibility: hidden; overflow: clip; }
   .hero-avatar-unknown-name { visibility: visible; }
   .hero-avatar-name, .hero-avatar-unknown-name {
     flex-grow: 1;
