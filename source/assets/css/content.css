@@ -380,6 +380,7 @@ ul.inline-list {
 
 [text-hint] {
   position: relative;
+  display: inline-block;
 }
 
 li, p, div, span, label, td {
