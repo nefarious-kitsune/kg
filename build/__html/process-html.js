@@ -133,9 +133,9 @@ export function processHtml(srcContent, filePath, basePath) {
   replaceTitle(processed);
   processMetaData(processed);
 
+  while (replaceFragment(processed)) {};
   while (replaceHeroAvatar(processed)) {};
   while (replaceHeroName(processed)) {};
-  while (replaceFragment(processed)) {};
 
   processEscapeMe(processed);
 

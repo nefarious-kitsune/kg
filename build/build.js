@@ -8,7 +8,10 @@ copyDirectory('./', 0);
 
 copyDirectory('assets/');
 copyDirectory('marches/');
+
+import './heroes/build.js';
 copyDirectory('heroes/');
+
 copyDirectory('bounty-hall/');
 copyDirectory('features/');
 copyDirectory('territories/');
