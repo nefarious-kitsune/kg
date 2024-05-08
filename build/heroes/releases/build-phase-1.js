@@ -19,15 +19,21 @@ function buildTable() {
   const TableBody = [];
   for (let rowIdx=1; rowIdx < tsvData.length; rowIdx++) {
     const row = tsvData[rowIdx];
+    const [
+      name, advRecruit, statsRecruit, freePick,
+      crystal, wheel, other,
+    ] = row;
+
     TableBody.push('<tr>');
 
-    TableBody.push(`<td><hero-name>${row[0]}</hero-name></td>`);
+    TableBody.push(`<td><hero-name>${name}</hero-name></td>`);
 
-    if (row[1]) {
+    if (advRecruit) {
       TableBody.push(
           '<td>' +
           '<img class="icon" ' +
-            `text-hint="${row[1]}" ` +
+            'tabindex="0" ' +
+            `text-hint="Advanced Recruitment (${advRecruit})" ` +
             'src="../../assets/icons/recruit-adv-2x_s.png">' +
           '</td>',
       );
@@ -35,11 +41,12 @@ function buildTable() {
       TableBody.push('<td></td>');
     }
 
-    if (row[2]) {
+    if (statsRecruit) {
       TableBody.push(
           '<td><img ' +
             'class="icon" ' +
-            `text-hint="${row[2]}" ` +
+            'tabindex="0" ' +
+            `text-hint="Stats Recruitment (${statsRecruit})" ` +
             'src="../../assets/icons/recruit-stats-2x_s.png"' +
           '></td>',
       );
@@ -47,7 +54,7 @@ function buildTable() {
       TableBody.push('<td></td>');
     }
 
-    if (row[3]==='TRUE') {
+    if (freePick==='TRUE') {
       TableBody.push(
           '<td>' +
           '<img class="icon" src="../../assets/icons/recruit-ssr-2x_s.png">' +
@@ -57,7 +64,7 @@ function buildTable() {
       TableBody.push('<td></td>');
     }
 
-    if (row[4]==='TRUE') {
+    if (crystal==='TRUE') {
       TableBody.push(
           '<td>' +
           '<img class="icon" src="../../assets/icons/event-crystal-2x_s.png">' +
@@ -67,7 +74,7 @@ function buildTable() {
       TableBody.push('<td></td>');
     }
 
-    if (row[5]==='TRUE') {
+    if (wheel==='TRUE') {
       TableBody.push(
           '<td>' +
           '<img class="icon" src="../../assets/icons/event-wheel-2x_s.png">' +
@@ -77,7 +84,7 @@ function buildTable() {
       TableBody.push('<td></td>');
     }
 
-    TableBody.push('<td>' + row[6] + '</td>');
+    TableBody.push('<td>' + other + '</td>');
 
     TableBody.push('</tr>');
   }
