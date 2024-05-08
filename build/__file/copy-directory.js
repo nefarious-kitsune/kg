@@ -19,7 +19,7 @@ export function copyDirectory(subDir, maxDepth) {
   const srcFilePaths = getFilesFromDir(
       srcBasePath,
       ['.css', '.html', '.js'],
-      maxDepth?maxDepth:6,
+      (typeof maxDepth === 'number')?maxDepth:6,
   );
 
   srcFilePaths.forEach((relPath) => {

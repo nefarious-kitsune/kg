@@ -7,24 +7,14 @@ import {replaceFragment} from './replacers/fragment.js';
 
 const DOCTYPE = '<!DOCTYPE html>';
 const DefaultImages = {
-  /*
-  page: 'https://kg.kitsune21.com/images/page-2x_n.png',
-  sheet: 'https://kg.kitsune21.com/images/sheet-2x_n.png',
-  chart: 'https://kg.kitsune21.com/images/chart-2x_n.png',
-  graph: 'https://kg.kitsune21.com/images/graph-2x_n.png',
-  calculator: 'https://kg.kitsune21.com/images/calculator-2x_n.png',
-  */
   info: 'https://kg.kitsune21.com/assets/icons/site_info.png',
   hero: 'https://kg.kitsune21.com/assets/icons/site_info-hero.png',
   data: 'https://kg.kitsune21.com/assets/icons/site_data.png',
-
-  page: 'https://kg.kitsune21.com/assets/icons/site_info.png',
-  sheet: 'https://kg.kitsune21.com/assets/icons/site_data.png',
-
   chart: 'https://kg.kitsune21.com/assets/icons/site_chart.png',
-  graph: 'https://kg.kitsune21.com/assets/icons/site-stacking.png',
+  stacking: 'https://kg.kitsune21.com/assets/icons/site-stacking.png',
   calculator: 'https://kg.kitsune21.com/assets/icons/site_calculator.png',
   calendar: 'https://kg.kitsune21.com/assets/icons/site_calendar.png',
+  mail: 'https://kg.kitsune21.com/assets/icons/site_mail.png',
 };
 
 
@@ -49,11 +39,15 @@ function processMetaData(content) {
   if (extracted === null) return false;
 
   let ogImage = extracted.element['og-image'];
-  if (!ogImage) ogImage = DefaultImages.page;
-  else if (ogImage === 'sheet') ogImage = DefaultImages.sheet;
+  if (!ogImage) ogImage = DefaultImages.info;
+  else if (ogImage === 'info') ogImage = DefaultImages.info;
+  else if (ogImage === 'hero') ogImage = DefaultImages.hero;
+  else if (ogImage === 'data') ogImage = DefaultImages.data;
   else if (ogImage === 'chart') ogImage = DefaultImages.chart;
-  else if (ogImage === 'graph') ogImage = DefaultImages.graph;
+  else if (ogImage === 'stacking') ogImage = DefaultImages.stacking;
   else if (ogImage === 'calculator') ogImage = DefaultImages.calculator;
+  else if (ogImage === 'calendar') ogImage = DefaultImages.calendar;
+  else if (ogImage === 'mail') ogImage = DefaultImages.mail;
 
   const metaTags = [
     '<link rel="icon" type="image/x-icon" href="/images/logo_mini.png">',
