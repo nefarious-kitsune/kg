@@ -2,33 +2,30 @@
 // import './event/mk/build.js';
 // import './server-info/build.js';
 
-import {copyStatic} from './base/copy-static.js';
+import {copyDirectory} from './__file/copy-directory.js';
 
-copyStatic('assets/');
-copyStatic('marches/');
-copyStatic('heroes/');
-copyStatic('bounty-hall/');
-copyStatic('features/');
-copyStatic('territories/');
+copyDirectory('./', 0);
+
+copyDirectory('assets/');
+copyDirectory('marches/');
+copyDirectory('heroes/');
+copyDirectory('bounty-hall/');
+copyDirectory('features/');
+copyDirectory('territories/');
 
 // Build ESI files
 import './esi/build-esi-tables.js'; // generate template files
-copyStatic('esi/');
+copyDirectory('esi/');
 
-copyStatic('mail/');
-copyStatic('guides/');
-copyStatic('tower-defense/');
-copyStatic('servers/');
-copyStatic('lava-cave/');
-copyStatic('events/');
-copyStatic('calendars/');
-copyStatic('tools/');
-copyStatic('stacking/');
+copyDirectory('mail/');
+copyDirectory('guides/');
+copyDirectory('tower-defense/');
+copyDirectory('servers/');
+copyDirectory('lava-cave/');
+copyDirectory('events/');
+copyDirectory('calendars/');
+copyDirectory('tools/');
+copyDirectory('stacking/');
 
 import './p2p/build.js'; // Build VIP tables
-copyStatic('p2p/');
-
-const elements = ['archer', 'fire', 'ice', 'goblin'];
-
-// import {buildElementData} from './heroes/build-data.js';
-// elements.forEach((el) => buildElementData(el));
+copyDirectory('p2p/');

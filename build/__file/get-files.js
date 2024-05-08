@@ -1,4 +1,4 @@
-import {readFileSync, writeFileSync, readdirSync, statSync} from 'fs';
+import {readdirSync, statSync} from 'fs';
 import {join, extname, basename} from 'path';
 
 /**

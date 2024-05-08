@@ -2,7 +2,7 @@ import {fileURLToPath} from 'url';
 import {dirname, resolve} from 'path';
 import {writeFileSync, readFileSync} from 'fs';
 
-import {processHtml} from '../base/process-html.js';
+import {processHtml} from '../__html/process-html.js';
 
 const ModulePath = dirname(fileURLToPath(import.meta.url));
 const ProjectPath = resolve(ModulePath, '../../');

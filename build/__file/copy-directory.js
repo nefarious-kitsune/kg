@@ -1,24 +1,25 @@
 import {fileURLToPath} from 'url';
 import {dirname, resolve, extname} from 'path';
-import {readFileSync, writeFileSync} from 'fs';
 import fs from 'fs';
-import {getFilesFromDir} from '../utils/file-utils.js';
-import {processHtml} from './process-html.js';
+
+import {getFilesFromDir} from './get-files.js';
+import {processHtml} from '../__html/process-html.js';
 
 const ModulePath = dirname(fileURLToPath(import.meta.url));
 const ProjectPath = resolve(ModulePath, '../../');
 
 /**
- * Copy static files
- * @param {string} subDir
+ * Copy files from source/ to docs/
+ * @param {string} subDir - sub directory
+ * @param {number} maxDepth
  */
-export function copyStatic(subDir) {
+export function copyDirectory(subDir, maxDepth) {
   const srcBasePath = resolve(ProjectPath, './source/', subDir);
   const destBasePath = resolve(ProjectPath, './docs/', subDir);
   const srcFilePaths = getFilesFromDir(
       srcBasePath,
-      ['.css', '.html', '.js', '.peggy'],
-      6,
+      ['.css', '.html', '.js'],
+      maxDepth?maxDepth:6,
   );
 
   srcFilePaths.forEach((relPath) => {
@@ -27,9 +28,9 @@ export function copyStatic(subDir) {
     const destDir = dirname(destPath);
     if (!fs.existsSync(destDir)) fs.mkdirSync(destDir, {recursive: true});
     if (extname(srcPath) === '.html') {
-      const fileContent = readFileSync(srcPath, 'utf-8');
+      const fileContent = fs.readFileSync(srcPath, 'utf-8');
       const processed = processHtml(fileContent, srcPath, srcBasePath);
-      writeFileSync(destPath, processed.source);
+      fs.writeFileSync(destPath, processed.source);
     } else {
       fs.copyFileSync(srcPath, destPath, fs.constants.COPYFILE_FICLONE);
     }

@@ -1,4 +1,4 @@
-import {extractHtmlElement} from '../parse-html-element.js';
+import {extractHtmlElement} from '../extract-element.js';
 
 const SiteTitle = 'Miku\'s Shrine';
 const PageTitleEnding = ' - ' + SiteTitle;

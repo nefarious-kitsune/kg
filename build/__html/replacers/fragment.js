@@ -1,6 +1,6 @@
 import {readFileSync} from 'fs';
 import {dirname, resolve} from 'path';
-import {extractHtmlElement} from '../parse-html-element.js';
+import {extractHtmlElement} from '../extract-element.js';
 
 /**
  * Replace <fragment> with content from other files

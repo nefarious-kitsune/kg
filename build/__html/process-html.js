@@ -1,4 +1,4 @@
-import {extractHtmlElement} from './parse-html-element.js';
+import {extractHtmlElement} from './extract-element.js';
 
 import {replaceHeroAvatar} from './replacers/hero-avatar.js';
 import {replaceHeroName} from './replacers/hero-name.js';

@@ -1,5 +1,5 @@
 /* eslint-disable key-spacing */
-import {extractHtmlElement} from '../parse-html-element.js';
+import {extractHtmlElement} from '../extract-element.js';
 import {HeroNameToClassMap} from './hero-avatar.js';
 
 /**
