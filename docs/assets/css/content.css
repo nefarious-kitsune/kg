@@ -165,11 +165,11 @@ h1 {
 
 /* --------------- Simple Text Styles --------------- */
 
-.red { text-decoration: underline 0.2rem var(--red); }
-.blue { text-decoration: underline 0.2rem var(--blue); }
-.orange { text-decoration: underline 0.2rem var(--orange); }
-.green { text-decoration: underline 0.2rem var(--green); }
-.purple { text-decoration: underline 0.2rem var(--purple); }
+.red { text-decoration: underline 0.15rem var(--red); }
+.blue { text-decoration: underline 0.15rem var(--blue); }
+.orange { text-decoration: underline 0.15rem var(--orange); }
+.green { text-decoration: underline 0.15rem var(--green); }
+.purple { text-decoration: underline 0.15rem var(--purple); }
 
 /* ----------- Anchors & Focus Animation  ----------- */
 
