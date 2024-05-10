@@ -20,6 +20,7 @@ copyDirectory('territories/');
 import './esi/build-esi-tables.js'; // generate template files
 copyDirectory('esi/');
 
+copyDirectory('beginner/');
 copyDirectory('skins/');
 
 copyDirectory('mail/');
