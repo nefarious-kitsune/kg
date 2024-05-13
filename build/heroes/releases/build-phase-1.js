@@ -32,8 +32,8 @@ function buildTable() {
       TableBody.push(
           '<td>' +
           '<img class="icon" ' +
-            'tabindex="0" ' +
-            `text-hint="Advanced Recruitment (${advRecruit})" ` +
+            'alt="Advanced Recruitment card" ' +
+            `title="${advRecruit}" ` +
             'src="../../assets/icons/recruit-adv-2x_s.png">' +
           '</td>',
       );
@@ -45,8 +45,8 @@ function buildTable() {
       TableBody.push(
           '<td><img ' +
             'class="icon" ' +
-            'tabindex="0" ' +
-            `text-hint="Stats Recruitment (${statsRecruit})" ` +
+            'alt="Stats Recruitment card" ' +
+            `title="${statsRecruit}" ` +
             'src="../../assets/icons/recruit-stats-2x_s.png"' +
           '></td>',
       );
@@ -56,8 +56,10 @@ function buildTable() {
 
     if (freePick==='TRUE') {
       TableBody.push(
-          '<td>' +
-          '<img class="icon" src="../../assets/icons/recruit-ssr-2x_s.png">' +
+          '<td><img ' +
+            'class="icon" ' +
+            'alt="Free-Pick Hero card" ' +
+            'src="../../assets/icons/recruit-ssr-2x_s.png">' +
           '</td>',
       );
     } else {
@@ -66,8 +68,10 @@ function buildTable() {
 
     if (crystal==='TRUE') {
       TableBody.push(
-          '<td>' +
-          '<img class="icon" src="../../assets/icons/event-crystal-2x_s.png">' +
+          '<td><img ' +
+            'class="icon" ' +
+            'alt="Wishing Crystal Ball" ' +
+            'src="../../assets/icons/event-crystal-2x_s.png">' +
           '</td>',
       );
     } else {
@@ -76,8 +80,10 @@ function buildTable() {
 
     if (wheel==='TRUE') {
       TableBody.push(
-          '<td>' +
-          '<img class="icon" src="../../assets/icons/event-wheel-2x_s.png">' +
+          '<td><img ' +
+            'class="icon" ' +
+            'alt="Lucky WHeel" ' +
+            'src="../../assets/icons/event-wheel-2x_s.png">' +
           '</td>',
       );
     } else {
