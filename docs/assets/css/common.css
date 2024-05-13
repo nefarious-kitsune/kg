@@ -59,14 +59,25 @@
 }
 
 html {
-  /*
-    font size:
-    19 px @ 1600 px viewport width (desktop)
-    15 px @  820 px viewport width (tablet)
-    12 px @  400 px viewport width (phone)
-   */
-  font-size: calc(12px + (18 - 12) * ((100vw - 300px) / (1600 - 300)));
   font-family: 'Helvetica', 'Arial', sans-serif;
+}
+
+/* ------------------- Fluid Size ------------------- */
+
+html {
+  font-size: 12px;
+}
+
+@media screen and (min-width: 300px) {
+  html {
+    font-size: calc(12px + 6 * ((100vw - 320px) / (880 - 300)));
+  }
+}
+
+@media screen and (min-width: 880px) {
+  html {
+    font-size: 18px;
+  }
 }
 
 /* ------------------- Page Layout ------------------- */

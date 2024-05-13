@@ -450,9 +450,21 @@ th {
   transition: 0.4s ease-in-out 0.3s;
 }
 
-/* ---------------- Images and Icons ---------------- */
+/* ---------------- Fluid Icon Sizes ---------------- */
 
 img.icon {
-  height: 32px;
+  height: 22px;
   width: auto;
+}
+
+@media screen and (min-width: 300px) {
+  img.icon {
+    font-size: calc(22px + 10 * ((100vw - 320px) / (880 - 300)));
+  }
+}
+
+@media screen and (min-width: 880px) {
+  img.icon {
+    height: 32px;
+  }
 }

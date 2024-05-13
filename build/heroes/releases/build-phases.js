@@ -14,7 +14,7 @@ const srcBasePath = resolve(ProjectPath, './source/');
 function buildTemplate(phaseName) {
   const tsvFilePath = resolve(
       srcBasePath,
-      `heroes/releases/${phaseName}.tsv`,
+      `heroes/releases/__data/${phaseName}.tsv`,
   );
   const tsvData = readFileSync(tsvFilePath, {encoding: 'utf8'})
       .split('\n')
@@ -107,3 +107,4 @@ function buildTemplate(phaseName) {
 
 buildTemplate('phase-1');
 buildTemplate('phase-3');
+buildTemplate('season-2');
