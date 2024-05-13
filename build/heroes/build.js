@@ -1,1 +1,1 @@
-import './releases/build-phase-1.js';
+import './releases/build-phases.js';

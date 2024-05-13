@@ -7,15 +7,19 @@ const ProjectPath = resolve(ModulePath, '../../../');
 
 const srcBasePath = resolve(ProjectPath, './source/');
 
-const tsvFilePath = resolve(srcBasePath, 'heroes/releases/phase-1.tsv');
-const tsvData = readFileSync(tsvFilePath, {encoding: 'utf8'})
-    .split('\n')
-    .map((row) => row.split('\t'));
-
 /**
- * Build table
+ * Build template table content
+ * @param {string} phaseName - name of the phase
  */
-function buildTable() {
+function buildTemplate(phaseName) {
+  const tsvFilePath = resolve(
+      srcBasePath,
+      `heroes/releases/${phaseName}.tsv`,
+  );
+  const tsvData = readFileSync(tsvFilePath, {encoding: 'utf8'})
+      .split('\n')
+      .map((row) => row.split('\t'));
+
   const TableBody = [];
   for (let rowIdx=1; rowIdx < tsvData.length; rowIdx++) {
     const row = tsvData[rowIdx];
@@ -96,9 +100,10 @@ function buildTable() {
   }
 
   writeFileSync(
-      resolve(srcBasePath, `heroes/releases/__temp/--phase-1.html`),
+      resolve(srcBasePath, `heroes/releases/__temp/--${phaseName}.html`),
       TableBody.join('\n'),
   );
 }
 
-buildTable();
+buildTemplate('phase-1');
+buildTemplate('phase-3');
