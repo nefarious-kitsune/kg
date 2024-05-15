@@ -1,4 +1,22 @@
+/* --------------------------- Events  --------------------------- */
 
+.event-table tr td:nth-child(2),
+.event-table tr th:nth-child(2) { display: none; }
+
+@media screen and (min-width: 700px) {
+  .event-table tr td:nth-child(2),
+  .event-table tr th:nth-child(2) { display: table-cell; }
+}
+
+/*
+.event-table {
+  .main-event td { background-color: var(--pale-primary-1); }
+  .minor-event td { background-color: var(--pale-primary-3); }
+  .seasonal-event td { background-color: var(--pale-primary-5); }  
+}
+*/
+
+/* ---------------------------- Phase ---------------------------- */
 .event {
   border-style: solid;
   border-width: 0 0 0 0.3rem ;

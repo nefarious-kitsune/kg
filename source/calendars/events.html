@@ -1,0 +1,45 @@
+<html>
+<head>
+<title>Event Calendar</title>
+<meta page-data
+  og-desc="Schedule of past and current special events"
+  tag-list= "schedule, server phase"
+>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link href="../assets/css/common.css" rel="stylesheet">
+<link href="../assets/css/content.css" rel="stylesheet">
+<link href="./calendar.css" rel="stylesheet">
+</head>
+
+<body>
+
+<header><nav><ul class="breadcrumb">
+  <li><a href="../content">Home</a></li>
+  <li><a href="./">Timelines</a></li>
+  <li>Phase 1</li>
+</ul></nav></header>
+
+<main>
+<h1>{{TITLE}}</h1>
+
+<section>
+<p>There are 3 types of events that rotate every 28 days:</p>
+
+<table class="basic-table sticky-header event-table alt-rows">
+<thead>
+<tr>
+  <th>Start</th>
+  <th>End</th>
+  <th>Event Name</th>
+  <th>Rewards</th>
+</tr>
+</thead>
+<tbody>
+<fragment src="./__temp/--events.html"/>
+</tbody>
+</table>
+
+</section>
+
+</main>
+</body></html>
