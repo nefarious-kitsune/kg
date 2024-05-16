@@ -11,6 +11,7 @@ const DefaultImages = {
   hero: 'https://kg.kitsune21.com/assets/icons/site_info-hero.png',
   data: 'https://kg.kitsune21.com/assets/icons/site_data.png',
   chart: 'https://kg.kitsune21.com/assets/icons/site_chart.png',
+  server: 'https://kg.kitsune21.com/assets/icons/site_cluster.png',
   stacking: 'https://kg.kitsune21.com/assets/icons/site-stacking.png',
   calculator: 'https://kg.kitsune21.com/assets/icons/site_calculator.png',
   calendar: 'https://kg.kitsune21.com/assets/icons/site_calendar.png',
@@ -44,6 +45,7 @@ function processMetaData(content) {
   else if (ogImage === 'hero') ogImage = DefaultImages.hero;
   else if (ogImage === 'data') ogImage = DefaultImages.data;
   else if (ogImage === 'chart') ogImage = DefaultImages.chart;
+  else if (ogImage === 'server') ogImage = DefaultImages.server;
   else if (ogImage === 'stacking') ogImage = DefaultImages.stacking;
   else if (ogImage === 'calculator') ogImage = DefaultImages.calculator;
   else if (ogImage === 'calendar') ogImage = DefaultImages.calendar;
