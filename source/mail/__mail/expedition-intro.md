@@ -1,12 +1,12 @@
 <size=60><b><color=teal>Burning Expedition</color></b></size>
 
-Burning Expedition will start soon. In this 3-week event, we will form a <b><color=#90c>Faction</color></b> with 1~3 other alliances. We will fight 3 other <color=#90c>Factions</color> for the throne.
+Burning Expedition will start soon. In this 3-week event, there are <color=#90c>4 Factions</color>.
 
-Normally the Factions will form alliances and the event will become 2 vs 2.
+Our <b><color=#90c>Faction</color></b> will include us and 1~3 other alliances. Normally the Factions will form alliances and the event will become 2 vs 2.
 
 <size=50><b><color=teal>What will happen?</color></b></size>
 
-The event happens in <b><color=#a00>Broken Land</color></b>. The 4 <color=#90c>Factions</color> will starts from 4 corners. The Factions will gradually expand territory by taking <b><color=#27e>Level-2 Towers</color></b>.
+The event happens in <b><color=#a00>Broken Land</color></b>. The 4 <color=#90c>Factions</color> will starts from 4 corners. The Factions will gradually expand territory by taking <b><color=#07b>Towers</color></b>.
 
 <b>Day 1 & 2</b>: We take <b><color=#07b>Lv. 1 Towers</color></b>. Each tower needs 12 hours of occupation.
 
