@@ -23,6 +23,8 @@ copyDirectory('esi/');
 copyDirectory('beginner/');
 copyDirectory('skins/');
 
+copyDirectory('maps/');
+
 copyDirectory('mail/');
 copyDirectory('guides/');
 copyDirectory('tower-defense/');
