@@ -1,33 +1,35 @@
 <!DOCTYPE html>
 <html>
-<!-- <meta-data>
-<og-image></og-image>
-<og-desc>
-  Alliance Mail for tips on opening the correct chests for Personal Championship
-</og-desc>
-</meta-data> -->
 <head>
-  <title>Personal Championship Tips - Miku's Shrine</title>
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link href="../assets/css/common.css" rel="stylesheet">
-  <link href="../assets/css/content.css" rel="stylesheet">
-  <link href="./mail.css" rel="stylesheet">
-  <script src="./mail.js"></script>
-  <script src="./parser.js"></script>
+<title>Personal Championship Tips - Miku's Shrine</title>
+<link rel="icon" type="image/x-icon" href="/images/logo_mini.png">
+<meta name="format-detection" content="telephone=no">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://kg.kitsune21.com/">
+<meta property="og:image" content="https://kg.kitsune21.com/assets/icons/site_info.png">
+<meta property="og:title" content="Personal Championship Tips">
+<meta property="og:description"
+  content="Alliance Mail for tips on opening the correct chests for Personal Championship">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link href="../assets/css/common.css" rel="stylesheet">
+<link href="../assets/css/content.css" rel="stylesheet">
+<link href="./mail.css" rel="stylesheet">
+<script src="./mail.js"></script>
+<script src="./parser.js"></script>
 </head>
 
-<body class="content">
+<body>
 
 <header><nav><ul class="breadcrumb">
   <li><a href="../content">Home</a></li>
   <li><a href="./">Mail</a></li>
-  <li>Online Mail Editor</li>
+  <li>Mail Editor</li>
 </ul></nav></header>
 
-<main class="content">
+<main>
 <h1>Personal Championship Tips</h1>
 
-<p>{{PAGE-DESC}}</p>
+<p>Alliance Mail for tips on opening the correct chests for Personal Championship</p>
 
 <div class="editor-container">
 <section id="edit-pane">
@@ -55,7 +57,7 @@
   --></div>
 </div>
 
-<textarea id="input">&lt;size=50&gt;Personal Championship Tips&lt;/size&gt;
+<textarea id="input" placeholder="Enter your Alliance Mail message">&lt;size=50&gt;Personal Championship Tips&lt;/size&gt;
 
 In this event, you need to obtain resources. You can do that by opening chests which can be found in your bag. 
 
@@ -83,10 +85,20 @@ Treasures (and estimated quantity) in 100 chest openings:
 
 <section id="preview-pane">
 <h2>Preview</h2>
-<div id="output" class="mail">
-</div>
+<div id="output" class="mail"></div>
 </section>
 </div>
+
+<section>
+<h2>Note</h2>
+<p>
+  This tool is based on reverse engineering of the
+  <a href="./text-formatting">text formatting</a>
+  rules and may not replicate the output exactly. To ensure that
+  your in-game mail/message will be displayed properly, send it to
+  your alt account first.
+</p>
+</section>
 
 </main>
 </body>

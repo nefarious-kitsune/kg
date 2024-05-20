@@ -1,22 +1,24 @@
 <!DOCTYPE html>
 <html>
-<!-- <meta-data>
-<og-image></og-image>
-<og-desc>
-  Compose and preview a reminder message on Lava Cave (by 𝚃𝚛𝚒𝚔𝚝𝚒𝚜)
-</og-desc>
-</meta-data> -->
 <head>
-  <title>Lava Cave Reminder - Miku's Shrine</title>
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link href="../assets/css/common.css" rel="stylesheet">
-  <link href="../assets/css/content.css" rel="stylesheet">
-  <link href="./mail.css" rel="stylesheet">
-  <script src="./mail.js"></script>
-  <script src="./parser.js"></script>
+<title>Lava Cave Reminder Mail Template - Miku's Shrine</title>
+<link rel="icon" type="image/x-icon" href="/images/logo_mini.png">
+<meta name="format-detection" content="telephone=no">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://kg.kitsune21.com/">
+<meta property="og:image" content="https://kg.kitsune21.com/assets/icons/site_info.png">
+<meta property="og:title" content="Lava Cave Reminder Mail Template">
+<meta property="og:description"
+  content="Mail template for reminding members to do Lava Cave (by 𝚃𝚛𝚒𝚔𝚝𝚒𝚜)">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link href="../assets/css/common.css" rel="stylesheet">
+<link href="../assets/css/content.css" rel="stylesheet">
+<link href="./mail.css" rel="stylesheet">
+<script src="./mail.js"></script>
+<script src="./parser.js"></script>
 </head>
 
-<body class="content">
+<body>
 
 <header><nav><ul class="breadcrumb">
   <li><a href="../content">Home</a></li>
@@ -24,10 +26,10 @@
   <li>Online Mail Editor</li>
 </ul></nav></header>
 
-<main class="content">
-<h1>Lava Cave Reminder</h1>
+<main>
+<h1>Lava Cave Reminder Mail Template</h1>
 
-<p>{{PAGE-DESC}}</p>
+<p>Mail template for reminding members to do Lava Cave (by 𝚃𝚛𝚒𝚔𝚝𝚒𝚜)</p>
 
 <div class="editor-container">
 <section id="edit-pane">
@@ -54,18 +56,28 @@
   --><button class="editor-button" onclick="setBig()">Big</button><!--
   --></div>
 </div>
-
-<textarea id="input">&lt;size=60&gt;&lt;color=maroon&gt;Hello everyone!&lt;/color&gt;&lt;/size&gt;
+  
+<textarea id="input" placeholder="Enter your Alliance Mail message">&lt;size=60&gt;&lt;color=maroon&gt;Hello everyone!&lt;/color&gt;&lt;/size&gt;
 &lt;i&gt;&lt;color=black&gt;Here's your daily reminder to do lava cave&lt;/color&gt;&lt;/i&gt;
 &lt;size=50&gt;&lt;b&gt;&lt;color=maroon&gt;Let's get those alliance coins! 〜⁠(⁠꒪⁠꒳⁠꒪⁠)⁠〜&lt;/color&gt;&lt;/b&gt;&lt;/size&gt;</textarea>
 </section>
 
 <section id="preview-pane">
 <h2>Preview</h2>
-<div id="output" class="mail">
-</div>
+<div id="output" class="mail"></div>
 </section>
 </div>
+
+<section>
+<h2>Note</h2>
+<p>
+  This tool is based on reverse engineering of the
+  <a href="./text-formatting">text formatting</a>
+  rules and may not replicate the output exactly. To ensure that
+  your in-game mail/message will be displayed properly, send it to
+  your alt account first.
+</p>
+</section>
 
 </main>
 </body>
