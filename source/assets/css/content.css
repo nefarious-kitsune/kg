@@ -324,12 +324,12 @@ ul.butterfly {
   padding-left: 1.8rem;
 }
 
-ul.butterfly li {
+ul.butterfly > li {
   list-style-image: url("../../images/butterfly-red.svg");
   margin-bottom: 0.2rem;
 }
 
-ul.butterfly li::marker {
+ul.butterfly > li::marker {
   font-size: 1.8em;
 }
 
