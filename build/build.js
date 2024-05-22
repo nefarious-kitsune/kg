@@ -42,3 +42,5 @@ import './p2p/build.js'; // Build VIP tables
 copyDirectory('p2p/');
 
 copyDirectory('voices/');
+
+copyDirectory('wars/');
