@@ -6,13 +6,13 @@ Our <b><color=#90c>Faction</color></b> will include us and 1~3 other alliances. 
 
 <size=50><b><color=teal>What will happen?</color></b></size>
 
-The event happens in <b><color=#a00>Broken Land</color></b>. The 4 <color=#90c>Factions</color> will starts from 4 corners. The Factions will gradually expand territory by taking <b><color=#07b>Towers</color></b>.
+The event happens in <b><color=#a00>Broken Land</color></b>. The 4 <color=#90c>Factions</color> will starts from 4 corners. The Factions will gradually expand territory by taking <b><color=#07b>Fortresses</color></b>.
 
-<b>Day 1 & 2</b>: We take <b><color=#07b>Lv. 1 Towers</color></b>. Each tower needs 12 hours of occupation.
+<b>Day 1 & 2</b>: We take <b><color=#07b>Lv. 1 Fortresses</color></b>. Each Fortress needs 12 hours of occupation.
 
-<b>Day 3</b>: We take <b><color=#07b>Lv. 2 Towers</color></b>. Each tower needs 2 hours of occupation.
+<b>Day 3</b>: We take <b><color=#07b>Lv. 2 Fortresses</color></b>. Each Fortress needs 2 hours of occupation.
 
-<b>Day 5</b>: We take <b><color=#07b>Mountain Pass</color></b>. At UTC 1200, we can move outside of our home territory and take <b><color=#07b>Level-2 Towers</color></b>. Each tower needs 2 hours of occupation. There will be <color=#a00>PvP battles</color>.
+<b>Day 5</b>: We take <b><color=#07b>Mountain Pass</color></b>. At UTC 1200, we can move outside of our home territory and take <b><color=#07b>Level-2 Fortresses</color></b>. Each Fortress needs 2 hours of occupation. There will be <color=#a00>PvP battles</color>.
 
 <b>Day 15</b>: We can <color=#a00>attack</color> enemy Faction's <b><color=#07b>Mountain Pass</color></b> of enemy Faction and then <color=#a00>invade</color> into their home territory.
 
@@ -30,9 +30,9 @@ Teleport to the Broken Land as soon as you can. To come to Broken Land, tap the 
 
 Every day we have 4 <b><color=#294>free teleports</color></b> to move between Normal Land and Broken Land. Use those free teleports wisely. When we move hive, you can use a free teleport to go back to Normal Land and then another one to move to our new hive on Broken Land.
 
-<size=50><b><color=teal>Towers</color></b></size>
+<size=50><b><color=teal>Fortresses</color></b></size>
 
-The Towers have 100b ~ 300b defense. When you attack towers, use <color=#90c>AP-discount heroes</color> (Miku, Harold, Pedra, Jessica, and Pan). These heroes will recover all damage from your attacks.
+Fortresses have 100b ~ 300b defense. When you attack Fortresses, use <color=#90c>AP-discount heroes</color> (Miku, Harold, Pedra, Jessica, and Pan). You do not need to consume Action Points to attack Fortresses, but those heroes can recover all damage from your attacks.
 
 <size=50><b><color=teal>Hive</color></b></size>
 
