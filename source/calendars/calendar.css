@@ -19,9 +19,17 @@
 /* ---------------------------- Phase ---------------------------- */
 .event {
   border-style: solid;
-  border-width: 0 0 0 0.3rem ;
+  border-width: 0 0 0 0.15rem ;
   border-color: var(--secondary-3);
   background-color: var(--pale-secondary-3);
+}
+
+.event.war,
+.event.expedition,
+.event.dragon-valley {
+  border-style: double;
+  border-width: 0 0 0 0.3rem ;
+  border-color: var(--miku-red);
 }
 
 .no-event {
@@ -30,7 +38,8 @@
 }
 
 .sync {
-  background: var(--miku-pale-gold);
+  /* background: var(--miku-pale-gold); */
+  background: var(--pale-neutral);
 }
 
 .syncing {
@@ -188,18 +197,13 @@ table.calender {
       );
       padding-top: 1rem;
     }
-
-    .event.milestone {
-      border-color: var(--miku-gold);
-      background-color: var(--miku-light-gold);
-      font-weight: bold;
+    .event.expedition {
+      background-color: var(--pale-primary-1);
       color: var(--miku-red);
     }
-    .event.expedition {
-      border-color: var(--miku-dark-red);
-      background-color: var(--miku-red);
-      font-weight: bold;
-      color: white;
+    .event.war {
+      background-color: var(--pale-primary-2);
+      color: var(--miku-red);
     }
     .event.unlock {
       border-color: var(--primary-1);
@@ -210,8 +214,19 @@ table.calender {
       background-color: var(--pale-secondary-1);
     }
     .event.transfer {
+      border-color: var(--primary-3);
+      background-color: var(--pale-primary-3);
+    }
+    .event.castle-event {
       border-color: var(--primary-1);
       background-color: var(--pale-primary-1);
+    }
+    .event.frame-event {
+      border-color: var(--primary-2);
+      background-color: var(--pale-primary-2);
+    }
+    .event a {
+      color: inherit !important;
     }
 
     /* server */
@@ -263,8 +278,8 @@ table.calender {
     tr:first-child td,
     tr:first-child th {
       padding-top: 0.5rem;
-      height: 3.25rem;
-      border-top: 0.1rem solid var(--miku-red);
+      height: 3.3rem;
+      border-top: 0.15rem solid var(--miku-red);
     }
   }
 }
