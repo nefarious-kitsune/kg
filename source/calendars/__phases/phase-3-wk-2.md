@@ -11,9 +11,9 @@
     ><div class="event lava-trial">Lava Trial</div
   ></td>
   <td class="event-col" rowspan="6"
-    ><a href="../../events/mk/"
-      ><div class="event mightiest">Mightiest Kingdom</div
-    ></a
+    ><a href="../../events/up/"><div class="event mightiest">
+      Ultimate Hunting + Mightiest Kingdom
+    </div></a
   ></td>
   <td class="event-col"><div class="no-event frozen"></div></td>
   <td class="event-col"><div
