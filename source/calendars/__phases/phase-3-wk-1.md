@@ -16,9 +16,9 @@
     ><div class="event castle-event continue-from-previous continue-to-next">Special Event
     <br><img
     class="icon" title="Avatar Frame" alt="Avatar Frame"
-    src="../assets/icons/emoji_frame.png"><img
+    src="../assets/icons/emoji_frame-gray.png"><img
     class="icon" title="Castle Skin" alt="Castle Skin"
-    src="../assets/icons/emoji_castle.png"></div
+    src="../assets/icons/emoji_castle-gray.png"></div
   ></td>
 </tr>
 <tr>

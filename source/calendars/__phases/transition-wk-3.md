@@ -27,7 +27,7 @@
   <td class="event-col" rowspan="6"
     ><div class="event frame-event continue-to-next">Special Event<br><img
     class="icon" title="Avatar Frame" alt="Avatar Frame"
-    src="../assets/icons/emoji_frame.png"></div
+    src="../assets/icons/emoji_frame-gray.png"></div
   ></td>
 </tr>
 <tr>

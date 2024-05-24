@@ -50,27 +50,27 @@ function buildTemplate() {
       if (frameName==='TBA') frameName = 'Avatar Frame';
       rewards += '<img\n' +
         `    class="icon" title="${frameName}" alt="Avatar Frame"\n` +
-        '    src="../assets/icons/emoji_frame.png">';
+        '    src="../assets/icons/emoji_frame-gray.png">';
     }
 
     if (eventType === 1) {
       if (castleName==='TBA') castleName = 'Castle Skin';
       rewards += '<img\n' +
         `    class="icon" title="${castleName}" alt="Castle Skin"\n` +
-        '    src="../assets/icons/emoji_castle.png">';
+        '    src="../assets/icons/emoji_castle-gray.png">';
     }
 
     if ((eventType === 1)||(eventType === 3)) {
       if (heroName==='TBA') heroName = 'Hero';
       rewards += '<img\n' +
         `    class="icon" title="${heroName}" alt="Hero"\n` +
-        '    src="../assets/icons/emoji_hero.png">';
+        '    src="../assets/icons/emoji_hero-gray.png">';
     }
 
     if (eventType === 2) {
       rewards += '<img\n' +
         `    class="icon" title="Silver Coupon" alt="Silver Coupon"\n` +
-        '    src="../assets/icons/emoji_coupon.png">';
+        '    src="../assets/icons/emoji_coupon-gray.png">';
     }
 
     TableBody.push(
