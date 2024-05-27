@@ -1,0 +1,11 @@
+.countdown {
+  width: fit-content;
+  border: 0.1rem solid var(--miku-red);
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+
+  #transfer-end,
+  #transfer-start {
+    font-weight: bold;
+  }
+}
