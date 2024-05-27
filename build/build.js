@@ -27,6 +27,7 @@ copyDirectory('maps/');
 
 copyDirectory('mail/');
 copyDirectory('guides/');
+copyDirectory('resources/');
 copyDirectory('tower-defense/');
 copyDirectory('servers/');
 copyDirectory('lava-cave/');
