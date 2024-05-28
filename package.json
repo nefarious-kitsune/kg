@@ -12,5 +12,9 @@
     "eslint": "^8.57.0",
     "eslint-config-google": "^0.14.0",
     "urijs": "^1.19.11"
+  },
+  "dependencies": {
+    "save-dev": "^0.0.1-security",
+    "yaml": "^2.4.1"
   }
 }
