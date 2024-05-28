@@ -14,15 +14,12 @@ export function getFilesFromDir(searchPath, fileTypes, maxDepth) {
 
   const traverse = (parentPath, currentDepth) => {
     readdirSync(parentPath).forEach((file) => {
+      if ((file.startsWith('-')) ||(file.startsWith('_'))) return;
+
       const currentPath = join(parentPath, file);
       if (statSync(currentPath).isFile()) {
-        const name = basename(currentPath);
         const ext = extname(currentPath);
-        if (
-          (!name.startsWith('-')) &&
-          (!name.startsWith('_')) &&
-          (fileTypes.indexOf(ext) != -1)
-        ) {
+        if (fileTypes.indexOf(ext) != -1) {
           results.push(currentPath.slice(searchPath.length));
         }
       } else if (statSync(currentPath).isDirectory()) {
