@@ -27,7 +27,7 @@ function buildPage(level) {
   const nextLevel = (level >= 19)?1:(level+1);
 
   const vipPoints = tsvData[1][level + 1];
-  const pt = parseInt(String(vipPoints).replace(',', ''));
+  const pt = parseInt(String(vipPoints).replaceAll(',', ''));
   const iapSpending = (pt / 10)
       .toLocaleString('en-US', {maximumFractionDigits: 0});
   const gcSpending = (pt * 10 / 110) // 100 GC = 10 VIP points, 110 GC = $1.00
