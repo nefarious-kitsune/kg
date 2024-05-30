@@ -21,6 +21,8 @@ import './esi/build-esi-tables.js'; // generate template files
 copyDirectory('esi/');
 
 copyDirectory('beginner/');
+
+import './skins/build.js';
 copyDirectory('skins/');
 
 copyDirectory('maps/');
