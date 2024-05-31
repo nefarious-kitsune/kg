@@ -106,5 +106,5 @@ function buildTemplate(phaseName) {
 }
 
 buildTemplate('phase-1');
-buildTemplate('phase-3');
+buildTemplate('transition');
 buildTemplate('season-2');
