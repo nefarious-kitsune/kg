@@ -463,6 +463,7 @@ th {
 img.icon {
   height: 22px;
   width: auto;
+  vertical-align: middle;
 }
 
 @media screen and (min-width: 300px) {
