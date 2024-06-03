@@ -16,7 +16,9 @@
   <td class="event-col" rowspan="3"
     ><div class="event lucky">Lucky Wheel</div
   ></td>
-  <td class="event-col"><div class="no-event frozen"></div></td>
+  <td class="event-col"
+    ><div class="event treasure continue-from-previous">Alliance Treasure</div
+  ></td>
 </tr>
 <tr>
   <th class="day-col"><div class="day">Tue</div></th>

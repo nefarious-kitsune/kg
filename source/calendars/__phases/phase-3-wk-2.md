@@ -67,7 +67,9 @@
   <td class="event-col"><div class="no-event frozen"></div></td>
   <!-- Mightiest Kingdom 6/6 -->
   <td class="event-col"><div class="no-event frozen"></div></td>
-  <td class="event-col"><div class="no-event frozen"></div></td>
+  <td class="event-col" rowspan="2"
+    ><div class="event treasure continue-to-next">Alliance Treasure</div
+  ></td>
 </tr>
 <tr>
   <th class="day-col"><div class="day">Sun</div></th>
@@ -77,5 +79,5 @@
   <td class="event-col"><div class="no-event frozen"></div></td>
   <td class="event-col"><div class="no-event frozen"></div></td>
   <td class="event-col"><div class="no-event frozen"></div></td>
-  <td class="event-col"><div class="no-event frozen"></div></td>
+  <!-- Alliance Treasure -->
 </tr>
