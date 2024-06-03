@@ -20,7 +20,7 @@ function buildTemplate() {
       .map((row) => row.split('\t'));
 
   const TableBody = [];
-  for (let rowIdx=1; rowIdx < tsvData.length; rowIdx++) {
+  for (let rowIdx= (tsvData.length -1 ); rowIdx > 1; rowIdx--) {
     const row = tsvData[rowIdx];
     let [
       startDateString,
