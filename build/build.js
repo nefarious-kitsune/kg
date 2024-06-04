@@ -49,3 +49,5 @@ copyDirectory('voices/');
 copyDirectory('ccc/');
 
 copyDirectory('wars/');
+
+copyDirectory('community/');
