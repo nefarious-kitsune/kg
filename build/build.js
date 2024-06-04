@@ -8,6 +8,7 @@ copyDirectory('./', 0);
 
 copyDirectory('assets/');
 copyDirectory('marches/');
+copyDirectory('units/');
 
 import './heroes/build.js';
 copyDirectory('heroes/');
