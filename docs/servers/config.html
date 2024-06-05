@@ -13,30 +13,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <link href="../assets/css/common.css" rel="stylesheet">
 <link href="../assets/css/content.css" rel="stylesheet">
-<style>
-  .fixed, .fixed td {
-    background-color: var(--pale-primary-4);}
-  .group-based,
-  .group-based td {
-    background-color: var(--pale-primary-3);}
-  .season-based,
-  .season-based td {
-    background-color: var(--pale-primary-2);
-  }
-  .mixed td {
-    background: repeating-linear-gradient(
-      -45deg,
-      var(--pale-primary-3),
-      var(--pale-primary-3) 0.3rem,
-      white 0.3rem,
-      white 0.5rem,
-      var(--pale-primary-2) 0.5rem,
-      var(--pale-primary-2) 0.8rem,
-      white 0.8rem,
-      white 1rem
-    );
-  }
-</style>
+<link href="./categories.css" rel="stylesheet">
 </head>
 
 <body>
@@ -44,34 +21,39 @@
 <header><nav><ul class="breadcrumb">
   <li><a href="../content">Home</a></li>
   <li><a href="./">Servers</a></li>
-  <li>Server Configurations</li>
+  <li>Configurations</li>
 </ul></nav></header>
 
 <main>
 <h1>Server Configurations</h1>
 
-<div class="quick-access">
-  <ul class="quick-access-links">
-  <li><a href="#config">Config.</a></li>
-  <li><a href="#matching">Matching</a></li>
-  <li><a href="#example">Example</a></li>
-</ul>
-</div>
-
 <section>
 <p>Server configuration can be</p>
 <ul class="compact-list">
-  <li><strong class="fixed">Fixed</strong>:
-    Same for all servers</li>
-  <li><strong class="group-based">Group-based</strong>:
-    Same for all servers in the same <a href="./groups/">Main Group</a></li>
-  <li><strong class="season-based">Season-based</strong>:
-    Changes every season (every 28 days)</li>
+  <li><strong class="fixed">Fixed</strong> configurations are fixed and the
+    same for all servers</li>
+  <li><strong class="group-based">Group-based</strong> configurations are
+    fixed and the same for all servers in the same
+    <a href="./groups/">Server Group</a></li>
+  <li><strong class="season-based">Season-based</strong> configurations
+    are not fixed and may change every season (every 28 days)</li>
 </ul>
+
+<p>Note that <span class="group-based">Group</span> and
+  <span class="season-based">Season</span> are independent of one another.
+  Two servers can be in the same <span class="group-based">Group</span>
+  but in different Seasons. Conversely, two servers can be in the same
+  <span class="season-based">Season</span> but in different Groups.
+  See <a href="./differences">Server Differences</a>.</p>
 </section>
 
 <section id="config">
 <h2>Configurations</h2>
+
+<p>The following is a none-exhaustive list of server configurations
+  based on players' observations.
+  The developer does not release information on server configuration.</p>
+
 <table class="basic-table border-all">
 <tbody>
 <tr class="season-based">
@@ -177,126 +159,6 @@
 </tr>
 </tbody>
 </table>
-</section>
-
-
-<section id="matching">
-<h2>Matching</h2>
-<p>Servers may be matched based on their Group-based and
-  Season-based configurations</p>
-
-<table class="basic-table border-all">
-<tbody>
-<tr class="mixed">
-  <td>Cross-Server Invasion matching</td>
-  <td>Matched if in same Season and Group</td>
-</tr>
-<tr>
-  <td>Battle of Dragon Matching</td>
-  <td>Free-for-all</td>
-</tr>
-<tr class="season-based">
-  <td>Broken Land matching</td>
-  <td>Matched if in same Season</td>
-</tr>
-<tr class="mixed">
-  <td>Mightiest Kingdom Matching</td>
-  <td>Matched if in same Season and Group</td>
-</tr>
-<tr class="mixed">
-  <td>Server Transfer</td>
-  <td>Allowed if in same Season and Group</td>
-</tr> 
-<tr class="group-based">
-  <td>Leaderboard for Special events</td>
-  <td>Group-based</td>
-</tr>
-<tr class="group-based">
-  <td>Ultimate Power Leaderboards</td>
-  <td>Group-based</td>
-</tr>
-<tr class="group-based">
-  <td>Ultimate Hunting Leaderboards</td>
-  <td>Group-based</td>
-</tr>
-<tr class="group-based">
-  <td>Dimensional Tunnel Leaderboards</td>
-  <td>Group-based</td>
-</tr>
-</tbody>
-</table>
-  
-</section>
-
-<section id="example">
-<h2>Example</h2>
-
-<ul class="compact-list">
-  <li><p>Server
-    <span class="orange">1580</span><!--G4.1--> and
-    <span class="blue">1600</span><!--G5.1-->
-    are in the <span class="season-based">same Season</span>
-    but different Groups</p></li>
-  <li><p>Server
-    <span class="blue">1600</span> <!--G5.1--> and
-    <span class="green">1800</span> <!--G5.1-->
-    are in the <span class="group-based">same Group</span>
-    but different Seasons</p></li>
-</ul>
-
-<p></p>
-
-<table class="basic-table border-all">
-<tbody>
-<tr>
-<th>Items</th>
-<th><span class="orange">1580</span> vs <span class="blue">1600</span></th>
-<th><span class="blue">1600</span> vs <span class="green">1800</span></th>
-</tr>
-<tr class="season-based">
-<td>Weapon/Armor/Magic Stone Tiers</td>
-<td><img src="../assets/icons/emoji_check-color.png" class="icon">Same</td>
-<td><img src="../assets/icons/emoji_cross-color.png" class="icon">Different</td>
-</tr>
-<tr class="season-based">
-<td>Per-unit exchange cost in BL Store</td>
-<td><img src="../assets/icons/emoji_check-color.png" class="icon">Same</td>
-<td><img src="../assets/icons/emoji_cross-color.png" class="icon">Different</td>
-</tr>
-<tr class="season-based">
-<td>Per-unit sales cost in Store</td>
-<td><img src="../assets/icons/emoji_check-color.png" class="icon">Same</td>
-<td><img src="../assets/icons/emoji_cross-color.png" class="icon">Different</td>
-</tr>
-<tr class="group-based">
-<td>Dimensional Tunnel Leaderboard</td>
-<td><img src="../assets/icons/emoji_cross-color.png" class="icon">Different</td>
-<td><img src="../assets/icons/emoji_check-color.png" class="icon">Same</td>
-</tr>
-<tr class="group-based">
-<td>Super-Value Hero Calendar</td>
-<td><img src="../assets/icons/emoji_cross-color.png" class="icon">Different</td>
-<td><img src="../assets/icons/emoji_check-color.png" class="icon">Same</td>
-</tr>
-<tr class="season-based">
-<td><abbr title="Mightiest Kingdom">MK</abbr> rewards</td>
-<td><img src="../assets/icons/emoji_check-color.png" class="icon">Same</td>
-<td><img src="../assets/icons/emoji_cross-color.png" class="icon">Different</td>
-</tr>
-<tr class="season-based">
-<td><abbr title="Mightiest Kingdom">MK</abbr> / 
-  <abbr title="Ultimate Power">UP</abbr> point calculation</td>
-<td><img src="../assets/icons/emoji_check-color.png" class="icon">Same</td>
-<td><img src="../assets/icons/emoji_cross-color.png" class="icon">Different</td>
-</tr>
-<tr class="mixed">
-<td>Server Transfer</td>
-<td><img src="../assets/icons/emoji_cross-color.png" class="icon">No Transfer</td>
-<td><img src="../assets/icons/emoji_cross-color.png" class="icon">No Transfer</td>
-</tr>
-</tbody>
-</table>
-
 </section>
 
 </main>
