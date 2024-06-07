@@ -173,11 +173,16 @@ h3.inline-heading {
 
 /* --------------- Simple Text Styles --------------- */
 
-.red { text-decoration: underline 0.15rem var(--red); }
-.blue { text-decoration: underline 0.15rem var(--blue); }
-.orange { text-decoration: underline 0.15rem var(--orange); }
-.green { text-decoration: underline 0.15rem var(--green); }
-.purple { text-decoration: underline 0.15rem var(--purple); }
+.red, .blue, .orange, .green, .purple {
+  text-decoration: underline;
+  text-decoration-thickness: 0.12rem;
+}
+
+.red { text-decoration-color: var(--red); }
+.blue { text-decoration-color: var(--blue); }
+.orange { text-decoration-color: var(--orange); }
+.green { text-decoration-color: var(--green); }
+.purple { text-decoration-color: var(--purple); }
 
 /* ----------- Anchors & Focus Animation  ----------- */
 

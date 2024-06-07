@@ -27,13 +27,14 @@
 .event.war,
 .event.expedition,
 .event.dragon-valley {
+  font-weight: 580;
   border-style: double;
   border-width: 0 0 0 0.3rem ;
   border-color: var(--miku-red);
 }
 
 .no-event {
-  font-weight: bold;
+  font-weight: 580;
   color: var(--dark-neutral);
 }
 
@@ -107,6 +108,8 @@
 }
 
 table.calender {
+  font-family: "Fira Sans Condensed", sans-serif;
+  font-size: 0.9rem;
   margin-left:auto;
   margin-right:auto;
 
@@ -144,10 +147,9 @@ table.calender {
     }
 
     th {
-      height: 3rem;
+      height: 4rem;
       /* background-color: var(--miku-red); */
       /* color: white; */
-      font-size: 0.9rem;
       text-align: center;
       text-transform: uppercase;
       color: var(--dark-neutral);
@@ -268,7 +270,7 @@ table.calender {
   tbody {
     tr:last-child td,
     tr:last-child th {
-      height: 3.25rem;
+      height: 4.25rem;
       padding-bottom: 0.5rem;
       /* border-top: 0.15rem dashed var(--light-neutral); */
     }
