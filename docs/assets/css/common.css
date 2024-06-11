@@ -298,12 +298,22 @@ table.border-all { /* border on all cells */
   td, th { border: 0.11rem solid var(--miku-dark-red); }
 }
 
+table.border-row { /* border on rows only */
+  border-collapse: collapse;
+  border: 0.11rem solid var(--miku-dark-red);
+  td, th {
+    border-top: 0.11rem solid var(--miku-dark-red);
+    border-bottom: 0.11rem solid var(--miku-dark-red);
+  }
+}
+
 table.border-simple { /* border on "sections" only */
   border-collapse: collapse;
   border: 0.11rem solid var(--miku-dark-red);
   thead, tbody, tfoot { border: 0.11rem solid var(--miku-dark-red); }
   td, th { border: none; }
 }
+
 
 table.alt-rows { /* alternating rows */
   tbody tr:nth-child(even) th,
