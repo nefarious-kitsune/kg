@@ -1,0 +1,138 @@
+<html>
+<head>
+<title>Customer Number Formats</title>
+<meta page-data
+  og-desc="How to use custom number format to display large numbers (e.g. displaying 10000000 as &quot;10M&quot;)"
+>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link href="../../assets/css/common.css" rel="stylesheet">
+<link href="../../assets/css/content.css" rel="stylesheet">
+</head>
+
+<body>
+
+<header><nav><ul class="breadcrumb">
+  <li><a href="../../content">Home</a></li>
+  <li><a href="../">CCC</a></li>
+  <li><a href="./">Google Sheets</a></li>
+  <li>{{TITLE}}</li>
+</ul></nav></header>
+
+<main>
+<h1>{{TITLE}}</h1>
+
+<p>Sometimes you want to input large numbers and have Google Sheet (or Excel)
+  automatically displays them in easy-to-understand format. For example,
+  you may want to enter a number like <q>196876526123</q> and have it displayed
+  as <q>196.88B</q>.</p>
+
+<p>You can use <strong>custom number formats</strong> to help you with that.
+  See <a
+  href="https://docs.google.com/spreadsheets/d/1IFFpaeOdTP-D7ag5kUKH3fs4fdmKGchXTo3LUa3yUoA/edit?usp=sharing"
+  >Sample Google Sheets File</a></p>
+
+<section id="t-range">
+<h2>Example: Number in Trillions</h2>
+
+<p>To display large numbers in the Trillions (T) and Billions (B) range,
+  use the custom number format
+  <code>[&gt;999999999999] #.00,,,,"T";[&gt;999999999] #,,,"B";General</code></p>
+
+<table class="basic-table border-all">
+<thead>
+<tr>
+  <th class="right-align">Raw</th>
+  <th class="right-align">Displayed</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td class="right-align">96625612434789</td>
+  <td class="right-align">96.63T</td>
+</tr>
+<tr>
+  <td class="right-align">753256980000</td>
+  <td class="right-align">753B</td>
+</tr>
+</tbody>
+</table>
+</section>
+
+<section id="b-range">
+<h2>Example: Number in Billions</h2>
+
+<p>To display large numbers in the Billions (B) and Millions (M) range,
+  use the custom number format
+  <code>[&gt;999999999] #.00,,,"B";[&gt;999999] #,,"M";General</code></p>
+
+<table class="basic-table border-all">
+<thead>
+<tr>
+  <th class="right-align">Raw</th>
+  <th class="right-align">Displayed</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td class="right-align">196876526123</td>
+  <td class="right-align">196.88B</td>
+</tr>
+<tr>
+  <td class="right-align">756560077</td>
+  <td class="right-align">757M</td>
+</tr>
+</tbody>
+</table>
+</section>
+
+<section id="exmple">
+<h2>Example: Sum It Up</h2>
+
+<p>Using a custom number format is especially useful if you want to
+  enter many numbers and sum them up to a much larger number.</p>
+
+<table class="basic-table border-all">
+<caption>Example: Summing Numbers</caption>
+<thead>
+<tr>
+  <th class="right-align"></th>
+  <th class="right-align">Raw</th>
+  <th class="right-align">Displayed</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>Item 1</td>
+  <td class="right-align">368765000</td>
+  <td class="right-align">369M</td>
+</tr>
+<tr>
+  <td>Item 2</td>
+  <td class="right-align">482236000</td>
+  <td class="right-align">482M</td>
+</tr>
+<tr>
+  <td>Item 3</td>
+  <td class="right-align">856655000</td>
+  <td class="right-align">857M</td>
+</tr>
+<tr>
+  <td style="font-weight: 700">Total</td>
+  <td style="font-weight: 700" class="right-align">1707656000</td>
+  <td style="font-weight: 700" class="right-align">1.71B</td>
+</tr>
+</tbody>
+</table>
+  
+</section>
+
+<section id="sample">
+<h2>Sample File</h2>
+
+<p><a
+  href="https://docs.google.com/spreadsheets/d/1IFFpaeOdTP-D7ag5kUKH3fs4fdmKGchXTo3LUa3yUoA/edit?usp=sharing"
+  >Sample Google Sheets File</a></p>
+</section>
+
+</main>
+</body></html>
