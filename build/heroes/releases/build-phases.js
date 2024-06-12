@@ -44,7 +44,7 @@ function buildTemplate(phaseName) {
     } else {
       TableBody.push('<td></td>');
     }
-
+    /*
     if (statsRecruit) {
       TableBody.push(
           '<td><img ' +
@@ -57,6 +57,7 @@ function buildTemplate(phaseName) {
     } else {
       TableBody.push('<td></td>');
     }
+    */
 
     if (freePick==='TRUE') {
       TableBody.push(
@@ -111,3 +112,8 @@ buildTemplate('transition');
 buildTemplate('season-2');
 buildTemplate('season-3');
 buildTemplate('season-4');
+buildTemplate('season-5');
+buildTemplate('season-6');
+buildTemplate('season-7');
+buildTemplate('season-8');
+buildTemplate('season-9');
