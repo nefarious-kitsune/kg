@@ -53,7 +53,10 @@ ul.template-list {
   margin-left: auto;
   border: 0.1rem solid var(--neutral);
   outline: none;
-  font-size: 1.2rem;
+  font-family: "Fira Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1rem;
   resize: vertical;
 }
 
