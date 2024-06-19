@@ -75,11 +75,14 @@ ul.template-list {
   background-color: var(--pale-neutral);
 }
 
+.output-example.mail,
 #output.mail {
   background-color: #c6d4e1;
+  color: #60646f;
   font-size: 16px;
 }
 
+.output-example.notice,
 #output.notice {
   background-color: #283b5c;
   color: #7c9fdf;
@@ -99,80 +102,4 @@ ul.template-list {
   background-color: var(--miku-gold);
   color: var(--miku-red);
   border: 0.1rem solid var(--miku-red);
-}
-
-.toolbar {
-  display: flex;
-  align-items: start;
-  margin-block-start: 0;
-  margin-block-end: 0;
-  padding: 0.2rem;
-
-  background-color: var(--dark-neutral);
-  .group { background-color: var(--pale-neutral); }
-
-  .group {
-    display: inline-block;
-    padding: 0.1rem;
-    margin-right: 0.5rem;
-    border-radius: 0.4rem;
-  }
-
-  button {
-    display: inline-block;
-    font-size: 1rem;
-    line-height: 1rem;
-    border: none;
-    border-radius: 0.4rem;
-    background-color: var(--pale-neutral); 
-    border: 0.1rem solid transparent;
-    margin: 0.2rem;
-    padding: 0.2rem;
-    height: 1.8rem;
-    text-align: center;
-  }
-
-  button:hover,
-  button:focus {
-    border: 0.1rem solid var(--dark-neutral);
-    background-color: var(--light-neutral);
-  }
-
-  .color-button {
-    width: 1.8rem;
-
-    span {
-      display: block;
-      width: 0.8rem;
-      height: 0.8rem;
-      margin: auto;
-      border: 0.1rem solid black;
-    }
-
-    &.color-black span { background-color: black;};
-    &.color-gray span { background-color: gray;};
-    &.color-silver span { background-color: silver;};
-    &.color-white span { background-color: white;};
-    &.color-maroon span { background-color: maroon;};
-    &.color-red span { background-color: red;};
-    &.color-purple span { background-color: purple;};
-    &.color-fuchsia span { background-color: fuchsia;};
-    &.color-yellow span { background-color: yellow;};
-    &.color-olive span { background-color: olive;};
-    &.color-green span { background-color: green;};
-    &.color-lime span { background-color: lime;};
-    &.color-aqua span { background-color: aqua;};
-    &.color-teal span { background-color: teal;};
-    &.color-blue span { background-color: blue;};
-    &.color-navy span { background-color: navy;};
-  }
-}
-
-.color-chip {
-  display: inline-block;
-  width: 4rem;
-  text-align: center;
-  margin: 0 0.2rem 0.2rem 0;
-  background-color:#999;
-  padding:0.2rem;
 }

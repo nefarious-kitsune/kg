@@ -1,22 +1,67 @@
 <div class="toolbar">
-  <div class="group"><!--
-  --><button class="text-button" onclick="copyInput()">Copy</button><!--
+  <div class="button-group"><!--
+  --><button class="tool-button copy" onclick="copyInput()" title="Copy"></button><!--
   --></div>
-  <div class="group"><!--
-  --><button class="color-button color-gray"   onclick="setColor('gray')"><span></span></button><!--
-  --><button class="color-button color-silver" onclick="setColor('silver')"><span></span></button><!--
-  --><button class="color-button color-white" onclick="setColor('white')"><span></span></button><!--
-  --><button class="color-button color-maroon"   onclick="setColor('maroon')"><span></span></button><!--
-  --><button class="color-button color-green"   onclick="setColor('green')"><span></span></button><!--
-  --><button class="color-button color-red"   onclick="setColor('red')"><span></span></button><!--
-  --><button class="color-button color-fuchsia" onclick="setColor('fuchsia')"><span></span></button><!--
-  --><button class="color-button color-yellow" onclick="setColor('yellow')"><span></span></button><!--
-  --><button class="color-button color-lime"   onclick="setColor('lime')"><span></span></button><!--
-  --><button class="color-button color-aqua"   onclick="setColor('aqua')"><span></span></button><!--
+  <div class="button-group"><!--
+  --><button class="tool-button undo" onclick="undoAction()"></button><!--
+  --><button class="tool-button redo" onclick="redoAction()"></button><!--
   --></div>
-  <div class="group"><!--
-  --><button class="editor-button" onclick="setBold()">Bold</button><!--
-  --><button class="editor-button" onclick="setItalic()">Italic</button><!--
-  --><button class="editor-button" onclick="setBig()">Big</button><!--
-  --></div>
+  <div class="button-group"
+    ><div class="dropdown"
+      ><button
+        title="Set text size"
+        class="dropdown-button tool-button text-size"
+        onclick="showDropdownList('size-list')"></button
+      ><div id="size-list" class="dropdown-content"><a
+        ><span style="font-size: 12px">30px</span></a
+        ><a href="#" onclick="setSize(35)"><span style="font-size: 14px">35px</span></a
+        ><a href="#" onclick="setSize(40)"><span style="font-size: 16px">40px</span></a
+        ><a href="#" onclick="setSize(50)"><span style="font-size: 20px">50px</span></a
+      ></div
+    ></div
+  ></div>
+  <div class="button-group"
+    ><button class="tool-button bold" onclick="setBold()" title="Bold"></button
+    ><button class="tool-button italic" onclick="setItalic()" title="Italic"></button
+    ><div class="dropdown"
+      ><button
+        title="Set text color"
+        class="dropdown-button tool-button text-color"
+        onclick="showDropdownList('color-list')"></button
+      ><div id="color-list" class="dropdown-content"><a
+          href="#" onclick="setColor('#B8F')"><span
+          class="color-chip" style="background-color: #B8F;"></span></a
+        ><a
+          href="#" onclick="setColor('#D9F')"><span
+          class="color-chip" style="background-color: #D9F;"></span></a
+        ><a
+          href="#" onclick="setColor('#F33')"><span
+          class="color-chip" style="background-color: #F33;"></span></a
+        ><a
+          href="#" onclick="setColor('#F99')"><span
+          class="color-chip" style="background-color: #F99;"></span></a
+        ><a
+          href="#" onclick="setColor('#F80')"><span
+          class="color-chip" style="background-color: #F80;"></span></a
+        ><a
+          href="#" onclick="setColor('#FB0')"><span
+          class="color-chip" style="background-color: #FB0;"></span></a
+        ><a
+          href="#" onclick="setColor('#6D0')"><span
+          class="color-chip" style="background-color: #6D0;"></span></a
+        ><a
+          href="#" onclick="setColor('#3F2')"><span
+          class="color-chip" style="background-color: #3F2;"></span></a
+        ><a
+          href="#" onclick="setColor('#1BF')"><span
+          class="color-chip" style="background-color: #1BF;"></span></a
+        ><a
+          href="#" onclick="setColor('#3EF')"><span
+          class="color-chip" style="background-color: #3EF;"></span></a
+        ><a
+          href="#" onclick="setColor('#8DF')"><span
+          class="color-chip" style="background-color: #8DF;"></span></a
+        ></div
+    ></div
+  ></div>
 </div>
