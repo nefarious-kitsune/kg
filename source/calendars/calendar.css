@@ -101,17 +101,19 @@
   background-position: 0 0, 0.45rem 0.45rem;
 }
 
+/* 
 .calender-container {
   position: relative;
   width: 100%;
   overflow-x: auto;
 }
+*/
 
 table.calender {
   font-family: "Fira Sans Condensed", sans-serif;
   font-size: 0.9rem;
-  margin-left:auto;
-  margin-right:auto;
+  /* margin-left:auto;
+  margin-right:auto; */
 
   border-collapse: collapse;
 
@@ -267,14 +269,6 @@ table.calender {
     }
   }
 
-  tbody {
-    tr:last-child td,
-    tr:last-child th {
-      height: 4.25rem;
-      padding-bottom: 0.5rem;
-      /* border-top: 0.15rem dashed var(--light-neutral); */
-    }
-  }
   tbody ~ tbody {
     tr:first-child td,
     tr:first-child th {
