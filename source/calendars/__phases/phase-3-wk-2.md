@@ -11,10 +11,10 @@
     ><div class="event lava-trial">Lava Trial</div
   ></td>
   <td class="event-col" rowspan="6"
-    ><a href="../../events/up/"><div class="event mightiest">
-      Ultimate Hunting + Mightiest Kingdom
-    </div></a
-  ></td>
+    ><div class="event mightiest"><a href="../../events/mk/">Mightiest Kingdom</a
+  ></div></td>
+  <td class="event-col" rowspan="6"
+    ><div class="event power">Ultimate Hunting</div></td>
   <td class="event-col"><div class="no-event frozen"></div></td>
   <td class="event-col"><div
     class="event castle-event continue-from-previous">Special Event</div
@@ -27,6 +27,7 @@
   <td class="event-col"><div class="no-event frozen"></div></td>
   <!-- Lava Trial 2/5 -->
   <!-- Mightiest Kingdom 2/6 -->
+  <!-- Ultimate Hunting -->
   <td class="event-col"><div class="no-event frozen"></div></td>
   <td class="event-col"><div class="no-event frozen"></div></td>
 </tr>
@@ -37,6 +38,7 @@
   <td class="event-col"><div class="no-event frozen"></div></td>
   <!-- Lava Trial 3/5 -->
   <!-- Mightiest Kingdom 3/6 -->
+  <!-- Ultimate Hunting -->
   <td class="event-col"><div class="no-event frozen"></div></td>
   <td class="event-col"><div class="no-event frozen"></div></td>
 </tr>
@@ -47,6 +49,7 @@
   <td class="event-col"><div class="event esi">Evil Spirit Invasion</div></td>
   <!-- Lava Trial 4/5 -->
   <!-- Mightiest Kingdom 4/6 -->
+  <!-- Ultimate Hunting -->
   <td class="event-col"><div class="no-event frozen"></div></td>
   <td class="event-col"><div class="no-event frozen"></div></td>
 </tr>
@@ -56,6 +59,7 @@
   <!-- Alliance Cross-Server Summon 5/5 -->
   <td class="event-col"><div class="no-event frozen"></div></td>
   <!-- Mightiest Kingdom 5/6 -->
+  <!-- Ultimate Hunting -->
   <td class="event-col"><div class="no-event frozen"></div></td>
   <td class="event-col"><div class="no-event frozen"></div></td>
 </tr>
@@ -66,6 +70,7 @@
   <td class="event-col" rowspan="2"><div class="event elemental">Element Lord</div></td>
   <td class="event-col"><div class="no-event frozen"></div></td>
   <!-- Mightiest Kingdom 6/6 -->
+  <!-- Ultimate Hunting -->
   <td class="event-col"><div class="no-event frozen"></div></td>
   <td class="event-col" rowspan="2"
     ><div class="event treasure continue-to-next">Alliance Treasure</div
@@ -76,6 +81,7 @@
   <td class="event-col"><div class="event war">Cross-Server Invasion</div></td>
   <!-- Burning Expedition -->
   <!-- Element Lord -->
+  <td class="event-col"><div class="no-event frozen"></div></td>
   <td class="event-col"><div class="no-event frozen"></div></td>
   <td class="event-col"><div class="no-event frozen"></div></td>
   <td class="event-col"><div class="no-event frozen"></div></td>

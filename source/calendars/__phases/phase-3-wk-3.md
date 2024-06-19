@@ -9,10 +9,11 @@
     ><div class="event lava-trial">Lava Trial</div
   ></td>
   <td class="event-col" rowspan="6"
-    ><a href="../../events/up/"><div class="event mightiest">
-      Ultimate Power + Mightiest Kingdom
-    </div></a
-  ></td>
+    ><div class="event mightiest"><a href="../../events/mk/">Mightiest Kingdom</a
+  ></div></td>
+  <td class="event-col" rowspan="6"
+    ><div class="event power"><a href="../../events/up/">Ultimate Power</a
+  ></div></td>
   <td class="event-col" rowspan="3"
     ><div class="event lucky">Lucky Wheel</div
   ></td>
@@ -27,6 +28,7 @@
   <td class="event-col"><div class="no-event frozen"></div></td>
   <!-- Lava Trial 2/5 -->
   <!-- Mightiest Kingdom 2/6 -->
+  <!-- Ultimate Power -->
   <!-- Lucky Wheel -->
   <td class="event-col" rowspan="6"
     ><div class="event frame-event continue-to-next">Special Event<br><img
@@ -41,6 +43,7 @@
   <td class="event-col"><div class="no-event frozen"></div></td>
   <!-- Lava Trial 3/5 -->
   <!-- Mightiest Kingdom 3/6 -->
+  <!-- Ultimate Power -->
   <!-- Lucky Wheel -->
 </tr>
 <tr>
@@ -50,6 +53,7 @@
   <td class="event-col"><div class="event esi">Evil Spirit Invasion</div></td>
   <!-- Lava Trial 4/5 -->
   <!-- Mightiest Kingdom 4/6 -->
+  <!-- Ultimate Power -->
   <td class="event-col"><div class="no-event frozen"></div></td>
 </tr>
 <tr>
@@ -58,6 +62,7 @@
   <!-- Burning Expedition -->
   <td class="event-col"><div class="no-event frozen"></div></td>
   <!-- Mightiest Kingdom 5/6 -->
+  <!-- Ultimate Power -->
   <td class="event-col"><div class="no-event frozen"></div></td>
 </tr>
 <tr>
@@ -67,6 +72,7 @@
   <td class="event-col" rowspan="2"><div class="event elemental">Element Lord</div></td>
   <td class="event-col"><div class="no-event frozen"></div></td>
   <!-- Mightiest Kingdom 6/6 -->
+  <!-- Ultimate Power -->
   <td class="event-col"><div class="no-event frozen"></div></td>
 </tr>
 <tr>
@@ -74,6 +80,7 @@
   <td class="event-col"><div class="no-event frozen"></div></td>
   <!-- Burning Expedition -->
   <!-- Element Lord -->
+  <td class="event-col"><div class="no-event frozen"></div></td>
   <td class="event-col"><div class="no-event frozen"></div></td>
   <td class="event-col"><div class="no-event frozen"></div></td>
   <td class="event-col"><div class="no-event frozen"></div></td>

@@ -16,15 +16,15 @@
 <link href="./calendar.css" rel="stylesheet">
 </head>
 
-<body>
-
+<body style="max-width: 100%; margin: 0; border: none;">
+<!-- 
 <header><nav><ul class="breadcrumb">
   <li><a href="../content">Home</a></li>
   <li><a href="./">Calendars</a></li>
   <li>Phase 3</li>
 </ul></nav></header>
-
-<main>
+-->
+<main style="border: none;">
 <h1>Phase 3</h1>
 
 <section>
@@ -41,18 +41,20 @@
 <tbody>
 <tr>
   <th class="day-col"><div class="day">Mon</div></th>
-  <td class="event-col"><div class="no-event sync"></div></td>
-  <td class="event-col"><div class="no-event sync"></div></td>
+  <td class="event-col"><div class="no-event frozen"></div></td>
+  <td class="event-col" rowspan="7"
+    ><div class="event expedition continue-to-next"><a
+      href="../wars/kvk/">Burning Expedition</a></div
+  ></td>
   <td class="event-col"><div class="event esi">Evil Spirit Invasion</div></td>
-  <td class="event-col" rowspan="5"
-    ><div class="event lava-trial">Lava Trial</div
-  ></td>
+  <td class="event-col" rowspan="5"><div class="event lava-trial">Lava Trial</div></td>
   <td class="event-col" rowspan="6"
-    ><a href="../../events/up/"><div class="event mightiest">
-      Ultimate Power + Mightiest Kingdom
-    </div></a
-  ></td>
-  <td class="event-col"><div class="no-event sync"></div></td>
+    ><div class="event mightiest"><a href="../../events/mk/">Mightiest Kingdom</a
+  ></div></td>
+  <td class="event-col" rowspan="6"
+    ><div class="event power"><a href="../../events/up/">Ultimate Power</a
+  ></div></td>
+  <td class="event-col"><div class="no-event frozen"></div></td>
   <td class="event-col" rowspan="7"
     ><div class="event castle-event continue-from-previous continue-to-next">Special Event
     <br><img
@@ -65,13 +67,11 @@
 <tr>
   <th class="day-col"><div class="day">Tue</div></th>
   <td class="event-col"><div class="no-event frozen"></div></td>
-    <td class="event-col" rowspan="6"
-    ><div class="event expedition continue-to-next"><a
-      href="../wars/kvk/">Burning Expedition</a></div
-  ></td>
+  <!-- Burning Expedition -->
   <td class="event-col"><div class="no-event frozen"></div></td>
   <!-- Lava Trial 2/5 -->
   <!-- Mightiest Kingdom 2/6 -->
+  <!-- Ultimate Power -->
   <td class="event-col"><div class="no-event frozen"></div></td>
 </tr>
 <tr>
@@ -81,6 +81,7 @@
   <td class="event-col"><div class="no-event frozen"></div></td>
   <!-- Lava Trial 3/5 -->
   <!-- Mightiest Kingdom 3/6 -->
+  <!-- Ultimate Power -->
   <td class="event-col"><div class="no-event frozen"></div></td>
 </tr>
 <tr>
@@ -90,6 +91,7 @@
   <td class="event-col"><div class="event esi">Evil Spirit Invasion</div></td>
   <!-- Lava Trial 4/5 -->
   <!-- Mightiest Kingdom 4/6 -->
+  <!-- Ultimate Power -->
   <td class="event-col"><div class="no-event frozen"></div></td>
 </tr>
 <tr>
@@ -98,6 +100,7 @@
   <!-- Burning Expedition -->
   <td class="event-col"><div class="no-event frozen"></div></td>
   <!-- Mightiest Kingdom 5/6 -->
+  <!-- Ultimate Power -->
   <td class="event-col"><div class="no-event frozen"></div></td>
 </tr>
 <tr>
@@ -107,6 +110,7 @@
   <td class="event-col" rowspan="2"><div class="event elemental">Element Lord</div></td>
   <td class="event-col"><div class="no-event frozen"></div></td>
   <!-- Mightiest Kingdom 6/6 -->
+  <!-- Ultimate Power -->
   <td class="event-col"><div class="no-event frozen"></div></td>
 </tr>
 <tr>
@@ -114,6 +118,7 @@
   <td class="event-col"><div class="no-event frozen"></div></td>
   <!-- Burning Expedition -->
   <!-- Element Lord -->
+  <td class="event-col"><div class="no-event frozen"></div></td>
   <td class="event-col"><div class="no-event frozen"></div></td>
   <td class="event-col"><div class="no-event frozen"></div></td>
   <td class="event-col"><div class="no-event frozen"></div></td>
@@ -134,10 +139,10 @@
     ><div class="event lava-trial">Lava Trial</div
   ></td>
   <td class="event-col" rowspan="6"
-    ><a href="../../events/up/"><div class="event mightiest">
-      Ultimate Hunting + Mightiest Kingdom
-    </div></a
-  ></td>
+    ><div class="event mightiest"><a href="../../events/mk/">Mightiest Kingdom</a
+  ></div></td>
+  <td class="event-col" rowspan="6"
+    ><div class="event power">Ultimate Hunting</div></td>
   <td class="event-col"><div class="no-event frozen"></div></td>
   <td class="event-col"><div
     class="event castle-event continue-from-previous">Special Event</div
@@ -150,6 +155,7 @@
   <td class="event-col"><div class="no-event frozen"></div></td>
   <!-- Lava Trial 2/5 -->
   <!-- Mightiest Kingdom 2/6 -->
+  <!-- Ultimate Hunting -->
   <td class="event-col"><div class="no-event frozen"></div></td>
   <td class="event-col"><div class="no-event frozen"></div></td>
 </tr>
@@ -160,6 +166,7 @@
   <td class="event-col"><div class="no-event frozen"></div></td>
   <!-- Lava Trial 3/5 -->
   <!-- Mightiest Kingdom 3/6 -->
+  <!-- Ultimate Hunting -->
   <td class="event-col"><div class="no-event frozen"></div></td>
   <td class="event-col"><div class="no-event frozen"></div></td>
 </tr>
@@ -170,6 +177,7 @@
   <td class="event-col"><div class="event esi">Evil Spirit Invasion</div></td>
   <!-- Lava Trial 4/5 -->
   <!-- Mightiest Kingdom 4/6 -->
+  <!-- Ultimate Hunting -->
   <td class="event-col"><div class="no-event frozen"></div></td>
   <td class="event-col"><div class="no-event frozen"></div></td>
 </tr>
@@ -179,6 +187,7 @@
   <!-- Alliance Cross-Server Summon 5/5 -->
   <td class="event-col"><div class="no-event frozen"></div></td>
   <!-- Mightiest Kingdom 5/6 -->
+  <!-- Ultimate Hunting -->
   <td class="event-col"><div class="no-event frozen"></div></td>
   <td class="event-col"><div class="no-event frozen"></div></td>
 </tr>
@@ -189,6 +198,7 @@
   <td class="event-col" rowspan="2"><div class="event elemental">Element Lord</div></td>
   <td class="event-col"><div class="no-event frozen"></div></td>
   <!-- Mightiest Kingdom 6/6 -->
+  <!-- Ultimate Hunting -->
   <td class="event-col"><div class="no-event frozen"></div></td>
   <td class="event-col" rowspan="2"
     ><div class="event treasure continue-to-next">Alliance Treasure</div
@@ -199,6 +209,7 @@
   <td class="event-col"><div class="event war">Cross-Server Invasion</div></td>
   <!-- Burning Expedition -->
   <!-- Element Lord -->
+  <td class="event-col"><div class="no-event frozen"></div></td>
   <td class="event-col"><div class="no-event frozen"></div></td>
   <td class="event-col"><div class="no-event frozen"></div></td>
   <td class="event-col"><div class="no-event frozen"></div></td>
@@ -218,10 +229,11 @@
     ><div class="event lava-trial">Lava Trial</div
   ></td>
   <td class="event-col" rowspan="6"
-    ><a href="../../events/up/"><div class="event mightiest">
-      Ultimate Power + Mightiest Kingdom
-    </div></a
-  ></td>
+    ><div class="event mightiest"><a href="../../events/mk/">Mightiest Kingdom</a
+  ></div></td>
+  <td class="event-col" rowspan="6"
+    ><div class="event power"><a href="../../events/up/">Ultimate Power</a
+  ></div></td>
   <td class="event-col" rowspan="3"
     ><div class="event lucky">Lucky Wheel</div
   ></td>
@@ -236,6 +248,7 @@
   <td class="event-col"><div class="no-event frozen"></div></td>
   <!-- Lava Trial 2/5 -->
   <!-- Mightiest Kingdom 2/6 -->
+  <!-- Ultimate Power -->
   <!-- Lucky Wheel -->
   <td class="event-col" rowspan="6"
     ><div class="event frame-event continue-to-next">Special Event<br><img
@@ -250,6 +263,7 @@
   <td class="event-col"><div class="no-event frozen"></div></td>
   <!-- Lava Trial 3/5 -->
   <!-- Mightiest Kingdom 3/6 -->
+  <!-- Ultimate Power -->
   <!-- Lucky Wheel -->
 </tr>
 <tr>
@@ -259,6 +273,7 @@
   <td class="event-col"><div class="event esi">Evil Spirit Invasion</div></td>
   <!-- Lava Trial 4/5 -->
   <!-- Mightiest Kingdom 4/6 -->
+  <!-- Ultimate Power -->
   <td class="event-col"><div class="no-event frozen"></div></td>
 </tr>
 <tr>
@@ -267,6 +282,7 @@
   <!-- Burning Expedition -->
   <td class="event-col"><div class="no-event frozen"></div></td>
   <!-- Mightiest Kingdom 5/6 -->
+  <!-- Ultimate Power -->
   <td class="event-col"><div class="no-event frozen"></div></td>
 </tr>
 <tr>
@@ -276,6 +292,7 @@
   <td class="event-col" rowspan="2"><div class="event elemental">Element Lord</div></td>
   <td class="event-col"><div class="no-event frozen"></div></td>
   <!-- Mightiest Kingdom 6/6 -->
+  <!-- Ultimate Power -->
   <td class="event-col"><div class="no-event frozen"></div></td>
 </tr>
 <tr>
@@ -283,6 +300,7 @@
   <td class="event-col"><div class="no-event frozen"></div></td>
   <!-- Burning Expedition -->
   <!-- Element Lord -->
+  <td class="event-col"><div class="no-event frozen"></div></td>
   <td class="event-col"><div class="no-event frozen"></div></td>
   <td class="event-col"><div class="no-event frozen"></div></td>
   <td class="event-col"><div class="no-event frozen"></div></td>
@@ -303,10 +321,10 @@
     ><div class="event lava-trial">Lava Trial</div
   ></td>
   <td class="event-col" rowspan="6"
-    ><a href="../../events/up/"><div class="event mightiest">
-      Ultimate Hunting + Mightiest Kingdom
-    </div></a
-  ></td>
+    ><div class="event mightiest"><a href="../../events/mk/">Mightiest Kingdom</a
+  ></div></td>
+  <td class="event-col" rowspan="6"
+    ><div class="event power">Ultimate Hunting</div></td>
   <td class="event-col" rowspan="3"
     ><div class="event wishing">Wishing Crystal Ball</div
   ></td>
@@ -321,6 +339,7 @@
   <td class="event-col"><div class="no-event sync"></div></td>
   <!-- Lava Trial 2/5 -->
   <!-- Mightiest Kingdom 2/6 -->
+  <!-- Ultimate Hunting -->
   <!-- Wishing Crystal Ball 2/3 -->
   <td class="event-col"><div class="no-event sync"></div></td>
 </tr>
@@ -331,6 +350,7 @@
   <td class="event-col"><div class="no-event sync"></div></td>
   <!-- Lava Trial 3/5 -->
   <!-- Mightiest Kingdom 3/6 -->
+  <!-- Ultimate Hunting -->
   <!-- Wishing Crystal Ball 3/3 -->
   <td class="event-col"><div class="no-event sync"></div></td>
 </tr>
@@ -341,6 +361,7 @@
   <td class="event-col"><div class="event esi">Evil Spirit Invasion</div></td>
   <!-- Lava Trial 4/5 -->
   <!-- Mightiest Kingdom 4/6 -->
+  <!-- Ultimate Hunting -->
   <td class="event-col"><div class="no-event sync"></div></td>
   <td class="event-col"><div class="no-event sync"></div></td>
 </tr>
@@ -350,6 +371,7 @@
   <!-- Alliance Cross-Server Summon 5/5 -->
   <td class="event-col"><div class="no-event sync"></div></td>
   <!-- Mightiest Kingdom 5/6 -->
+  <!-- Ultimate Hunting -->
   <td class="event-col"><div class="no-event sync"></div></td>
   <td class="event-col"><div class="no-event sync"></div></td>
 </tr>
@@ -360,6 +382,7 @@
   <td class="event-col" rowspan="2"><div class="event elemental">Element Lord</div></td>
   <td class="event-col"><div class="no-event sync"></div></td>
   <!-- Mightiest Kingdom 6/6 -->
+  <!-- Ultimate Hunting -->
   <td class="event-col"><div class="no-event sync"></div></td>
   <td class="event-col"><div class="no-event sync"></div></td>
 </tr>
@@ -368,6 +391,7 @@
   <td class="event-col"><div class="event war">Cross-Server Invasion</div></td>
   <td class="event-col"><div class="no-event sync"></div></td>
   <!-- Element Lord -->
+  <td class="event-col"><div class="no-event sync"></div></td>
   <td class="event-col"><div class="no-event sync"></div></td>
   <td class="event-col"><div class="no-event sync"></div></td>
   <td class="event-col"><div class="no-event sync"></div></td>
@@ -388,10 +412,10 @@
     >Hero availability in Season 2</a></li>
 </ul>
 </section>
-
+<!-- 
 <nav class="left-right">
   <div class="left-arrow"><a href="./transition">↞</a></div>
 </nav>
-
+-->
 </main>
 </body></html>
