@@ -46,6 +46,7 @@ header:first-child nav {
       z-index: 100;
       left: -5px;
       top: 45%;
+      border-radius: 45% / 0 50% 50% 0;
     }
   
     .right-arrow a {
@@ -53,6 +54,7 @@ header:first-child nav {
       z-index: 100;
       right: -5px;
       top: 45%;
+      border-radius: 45% / 50% 0 0 50%; 
     }
 
     .left-arrow a:hover,
@@ -66,8 +68,7 @@ header:first-child nav {
       color: var(--miku-light-gold);
       text-decoration: none;
       font-size: 1.6rem;
-      border-radius: 45% / 50% 0 0 50%; 
-    }  
+    }
   }
 }
 
