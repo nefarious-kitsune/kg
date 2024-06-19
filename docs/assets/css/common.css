@@ -234,6 +234,11 @@ strong.important {
   text-transform: uppercase;
 }
 
+code {
+  font-family: "Fira Mono", monospace;
+  font-size: 0.9em;
+}
+
 /* -------------------- Others -------------------- */
 
 .hidden { display: none; }
