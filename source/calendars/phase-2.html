@@ -12,15 +12,15 @@
 <link href="./calendar.css" rel="stylesheet">
 </head>
 
-<body class="content">
-
+<body style="max-width: 100%; margin: 0; border: none;">
+<!-- 
 <header><nav><ul class="breadcrumb">
   <li><a href="../content">Home</a></li>
   <li><a href="./">Calendars</a></li>
   <li>Phase 2</li>
 </ul></nav></header>
-
-<main class="content">
+ -->
+<main>
 <h1>{{TITLE}}</h1>
 
 <section>
@@ -38,78 +38,8 @@
 <table class="basic-table sticky-col calender">
 <tbody>
 <tr>
-  <th class="day-col"><div class="day">Day 21</div></th>
-  <td class="event-col"><div class="no-event local"></div></td>
-  <td class="event-col"><div class="no-event local"></div></td>
-  <td class="event-col"><div class="no-event local"></div></td>
-  <td class="event-col"><div class="event lava-trial continue-from-previous">Lava Trial</div></td>
-  <td class="event-col" rowspan="7"
-    ><a href="../../events/ml/"
-      ><div class="event mightiest">Mightiest Lord</div
-    ></a
-  ></td>
-  <td class="event-col" rowspan="3"
-    ><div class="event lucky">Lucky Wheel</div
-  ></td>
-</tr>
-<tr>
-  <th class="day-col"><div class="day">Day 22</div></th>
-  <td class="event-col"><div class="no-event local"></div></td>
-  <td class="event-col"><div class="no-event local"></div></td>
-  <td class="event-col"><div class="event esi">Evil Spirit Invasion</div></td>
-  <td class="event-col"><div class="no-event local"></div></td>
-  <!-- Mightiest Lord 2/7 -->
-  <!-- Lucky Wheel 2/3 -->
-</tr>
-<tr>
-  <th class="day-col"><div class="day">Day 23</div></th>
-  <td class="event-col"><div class="no-event local"></div></td>
-  <td class="event-col"><div class="no-event local"></div></td>
-  <td class="event-col"><div class="no-event local"></div></td>
-  <td class="event-col"><div class="no-event local"></div></td>
-  <!-- Mightiest Lord 3/7 -->
-  <!-- Lucky Wheel 3/3 -->
-</tr>
-<tr>
-  <th class="day-col"><div class="day">Day 24</div></th>
-  <td class="event-col"><div class="no-event local"></div></td>
-  <td class="event-col"><div class="no-event local"></div></td>
-  <td class="event-col"><div class="no-event local"></div></td>
-  <td class="event-col"><div class="no-event local"></div></td>
-  <!-- Mightiest Lord 3/7 -->
-  <td class="event-col" rowspan="3"
-    ><div class="event treasure">Treasure Hunt</div
-  ></td>
-</tr>
-<tr>
-  <th class="day-col"><div class="day">Day 25</div></th>
-  <td class="event-col"><div class="no-event local"></div></td>
-  <td class="event-col"><div class="event unlock">Summon Altar unlocks</div></td>
-  <td class="event-col"><div class="event esi">Evil Spirit Invasion</div></td>
-  <td class="event-col"><div class="no-event local"></div></td>
-  <!-- Mightiest Lord 4/7 -->
-  <!-- Treasure Hunt 2/3 -->
-</tr>
-<tr>
-  <th class="day-col"><div class="day">Day 26</div></th>
-  <td class="event-col"><div class="no-event local"></div></td>
-  <td class="event-col"><div class="no-event local"></div></td>
-  <td class="event-col" rowspan="2"><div class="event elemental">Element Lord</div></td>
-  <td class="event-col"><div class="no-event local"></div></td>
-  <!-- Mightiest Lord 5/7 -->
-  <!-- Treasure Hunt 3/3 -->
-</tr>
-<tr>
-  <th class="day-col"><div class="day">Day 27</div></th>
-  <td class="event-col"><div class="event war">Throne War</div></td>
-  <td class="event-col"><div class="no-event local"></div></td>
-  <!-- Element Lord -->
-  <td class="event-col"><div class="no-event local"></div></td>
-  <!-- Mightiest Lord 6/7 -->
-  <td class="event-col"><div class="no-event local"></div></td>
-</tr>
-<tr>
   <th class="day-col"><div class="day">Day 28</div></th>
+  <td class="event-col"><div class="no-event local"></div></td>
   <td class="event-col"><div class="no-event local"></div></td>
   <td class="event-col"><div class="no-event local"></div></td>
   <td class="event-col"><div class="no-event local"></div></td>
@@ -120,9 +50,17 @@
     ></a
   ></td>
   <td class="event-col"><div class="no-event local"></div></td>
+  <td class="event-col" rowspan="7"
+    ><div class="event castle-event continue-from-previous">Brave the Dragon's Den<br><img
+      class="icon" title="Avatar Frame" alt="Avatar Frame"
+      src="../assets/icons/emoji_frame-gray.png"><img
+      class="icon" title="Castle Skin" alt="Castle Skin"
+      src="../assets/icons/emoji_castle-gray.png"></div
+  ></td>
 </tr>
 <tr>
   <th class="day-col"><div class="day">Day 29</div></th>
+  <td class="event-col"><div class="no-event local"></div></td>
   <td class="event-col"><div class="no-event local"></div></td>
   <td class="event-col"><div class="no-event local"></div></td>
   <td class="event-col"><div class="no-event local"></div></td>
@@ -136,15 +74,9 @@
   <th class="day-col"><div class="day">Day 30</div></th>
   <td class="event-col"><div class="no-event local"></div></td>
   <td class="event-col"><div class="no-event local"></div></td>
-  <td class="event-col" colspan="2" rowspan="10"><div class="event transition">
-    <p>Subsequent events <em>synchronized</em> with other
-    servers:</p>
-    <ul class="compact-list">
-      <li>Evil Spirit Invasion (Mon, Wed)</li>
-      <li>Lava Trial (Mon-Fri)</li>
-      <li>Element Lord (Sat-Sun)</li>
-    </ul>
-  </div></td>
+  <td class="event-col"><div class="no-event local"></div></td>
+  <td class="event-col"><div class="no-event local"></div></td>
+  <td class="event-col"><div class="no-event local"></div></td>
   <!-- Personal Championship 3/7 -->
   <!-- Wishing Crystal Ball 2/3 -->
 </tr>
@@ -152,8 +84,9 @@
   <th class="day-col"><div class="day">Day 31</div></th>
   <td class="event-col"><div class="no-event local"></div></td>
   <td class="event-col"><div class="no-event local"></div></td>
-  <!-- Sync -->
-  <!-- Sync -->
+  <td class="event-col"><div class="no-event local"></div></td>
+  <td class="event-col"><div class="no-event local"></div></td>
+  <td class="event-col" rowspan="4"><div class="event power">King of Power</div></td>
   <!-- Personal Championship 4/7 -->
   <!-- Wishing Crystal Ball 3/3 -->
 </tr>
@@ -161,83 +94,110 @@
   <th class="day-col"><div class="day">Day 32</div></th>
   <td class="event-col"><div class="no-event local"></div></td>
   <td class="event-col"><div class="no-event local"></div></td>
-  <!-- Sync -->
-  <!-- Sync -->
+  <td class="event-col"><div class="no-event local"></div></td>
+  <td class="event-col"><div class="no-event local"></div></td>
+  <!-- King of Power 2/4 -->
   <!-- Personal Championship 5/7 -->
   <td class="event-col"><div class="no-event local"></div></td>
 </tr>
 <tr>
   <th class="day-col"><div class="day">Day 33</div></th>
+  <td class="event-col"><div class="event war">Sentry War</div></td>
   <td class="event-col"><div class="no-event local"></div></td>
   <td class="event-col"><div class="no-event local"></div></td>
-  <!-- Sync -->
-  <!-- Sync -->
+  <td class="event-col"><div class="no-event local"></div></td>
+  <!-- King of Power 3/4 -->
   <!-- Personal Championship 6/7 -->
-  <td class="event-col" rowspan="4"><div class="event auction">Auction House</div></td>
+  <td class="event-col"><div class="no-event local"></div></td>
 </tr>
 <tr>
   <th class="day-col"><div class="day">Day 34</div></th>
   <td class="event-col"><div class="no-event local"></div></td>
+  <td class="event-col"><div class="event unlock">Exchange Shop unlocks</div></td>
   <td class="event-col"><div class="no-event local"></div></td>
-  <!-- Sync -->
+  <td class="event-col" rowspan="5"><div class="event lava-trial">Lava Trial</div></td>
   <!-- Sync -->
   <!-- Personal Championship 7/7 -->
-  <!-- Auction House 2/4 -->
+  <td class="event-col"><div class="no-event local"></div></td>
 </tr>
 <tr>
   <th class="day-col"><div class="day">Day 35</div></th>
   <td class="event-col"><div class="no-event local"></div></td>
   <td class="event-col"><div class="no-event local"></div></td>
-  <!-- Sync -->
-  <!-- Sync -->
+  <td class="event-col"><div class="event esi">Evil Spirit Invasion</div></td>
+  <!-- Lava Trial -->
   <td class="event-col"><div class="no-event local"></div></td>
-  <!-- Auction House 3/4 -->
+  <td class="event-col"><div class="no-event local"></div></td>
+  <td class="event-col"><div class="no-event local"></div></td>
+  <td class="event-col"><div class="no-event local"></div></td>
 </tr>
 <tr>
   <th class="day-col"><div class="day">Day 36</div></th>
   <td class="event-col"><div class="no-event local"></div></td>
-  <td class="event-col"><div class="event unlock">Witch's Lab unlocks</div></td>
-  <!-- Sync -->
-  <!-- Sync -->
   <td class="event-col"><div class="no-event local"></div></td>
-  <!-- Auction House 4/4 -->
+  <td class="event-col"><div class="no-event local"></div></td>
+  <!-- Lava Trial -->
+  <td class="event-col"><div class="no-event local"></div></td>
+  <td class="event-col"><div class="no-event local"></div></td>
+  <td class="event-col"><div class="no-event local"></div></td>
+  <td class="event-col"><div class="no-event local"></div></td>
 </tr>
 <tr>
   <th class="day-col"><div class="day">Day 37</div></th>
   <td class="event-col"><div class="no-event local"></div></td>
   <td class="event-col"><div class="no-event local"></div></td>
-  <!-- Sync -->
-  <!-- Sync -->
-  <td class="event-col" colspan="2" rowspan="10"><div class="event transition">
-    <p>Subsequent events <em>synchronized</em> with other
-    servers:</p>
-    <ul class="compact-list">
-      <li>Mightiest Kingdom</li>
-      <li>Wishing Crystal Ball</li>
-      <li>Lucky Wheel</li>
-    </ul>
-  </div></td>
+  <td class="event-col"><div class="no-event local"></div></td>
+  <!-- Lava Trial -->
+  <td class="event-col"><div class="no-event local"></div></td>
+  <td class="event-col"><div class="no-event local"></div></td>
+  <td class="event-col"><div class="no-event local"></div></td>
+  <td class="event-col"><div class="no-event local"></div></td>
 </tr>
 <tr>
   <th class="day-col"><div class="day">Day 38</div></th>
   <td class="event-col"><div class="no-event local"></div></td>
   <td class="event-col"><div class="no-event local"></div></td>
-  <!-- Sync -->
-  <!-- Sync -->
-  <!-- Sync -->
-  <!-- Sync -->
+  <td class="event-col"><div class="no-event local"></div></td>
+  <td class="event-col"><div class="no-event local"></div></td>
+  <td class="event-col"><div class="no-event local"></div></td>
+  <td class="event-col"><div class="no-event local"></div></td>
+  <td class="event-col"><div class="no-event local"></div></td>
 </tr>
 <tr>
   <th class="day-col"><div class="day">Day 39</div></th>
   <td class="event-col"><div class="no-event local"></div></td>
   <td class="event-col"><div class="no-event local"></div></td>
-  <!-- Sync -->
-  <!-- Sync -->
-  <!-- Sync -->
-  <!-- Sync -->
+  <td class="event-col"><div class="no-event local"></div></td>
+  <td class="event-col"><div class="no-event local"></div></td>
+  <td class="event-col"><div class="no-event local"></div></td>
+  <td class="event-col"><div class="no-event local"></div></td>
+  <td class="event-col"><div class="no-event local"></div></td>
+  <td class="event-col"><div class="no-event local"></div></td>
+</tr>
+<tr>
+  <th class="day-col"><div class="day">Day 40</div></th>
+  <td class="event-col"><div class="no-event local"></div></td>
+  <td class="event-col"><div class="event unlock">Witch's Lab unlocks</div></td>
+  <td class="event-col"><div class="no-event local"></div></td>
+  <td class="event-col"><div class="no-event local"></div></td>
+  <td class="event-col"><div class="no-event local"></div></td>
+  <td class="event-col"><div class="no-event local"></div></td>
+  <td class="event-col"><div class="no-event local"></div></td>
+  <td class="event-col"><div class="no-event local"></div></td>
 </tr>
 </tbody>
 </table>
+</section>
+
+
+<section id="unlisted">
+<h2>Unlisted</h2>
+<p>Some events are not listed:</p>
+<ul class="butterfly">
+<li>Second in-server Auction House (Day 33? ~ Day 36?)</li>
+<li>Treasure Hunt (Day 24 ~ Day 26)</li>
+<li>Kill Monsters (Day 34 ~ Day 35)</li>
+</ul>
 </section>
 
 <section id="related">
@@ -247,11 +207,11 @@
     >Hero availability in Phase 1 &amp; 2</a></li>
 </ul>
 </section>
-
+<!-- 
 <nav class="left-right">
   <div class="left-arrow"><a href="./phase-1">↞</a></div>
   <div class="right-arrow"><a href="./transition">↠</a></div>
 </nav>
-
+-->
 </main>
 </body></html>
