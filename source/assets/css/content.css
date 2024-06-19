@@ -39,33 +39,6 @@ header:first-child nav {
   }
 }
 
-nav.left-right {
-  .left-arrow a,
-  .right-arrow a {
-    -webkit-transition: .2s ease-in;
-    -moz-transition: .2s ease-in;
-    -o-transition: .2s ease-in;
-    transition: .2s ease-in;
-  }
-
-  .left-arrow a:hover,
-  .left-arrow a:focus,
-  .right-arrow a:hover,
-  .right-arrow a:focus {
-    -webkit-transition: .2s ease-in;
-    -moz-transition: .2s ease-in;
-    -o-transition: .2s ease-in;
-    transition: .2s ease-in;
-    background: var(--miku-dark-red);
-    color: white;
-  }
-
-  .left-arrow a:hover,
-  .left-arrow a:focus { left: 0; }
-  .right-arrow a:hover,
-  .right-arrow a:focus { right: 0; }
-}
-
 @media screen and ( width >= 750px) {
   nav.left-right {
     .left-arrow a {
@@ -82,14 +55,20 @@ nav.left-right {
       top: 45%;
     }
 
+    .left-arrow a:hover,
+    .left-arrow a:focus { left: 0; }
+    .right-arrow a:hover,
+    .right-arrow a:focus { right: 0; }
+
     a {
-      padding: 2rem 0.8rem;
+      padding: 3rem 1rem;
       background: rgba(0, 0, 0, 0.65);
-      color: var(--light-neutral);
+      color: var(--miku-light-gold);
       text-decoration: none;
       font-size: 1.6rem;
+      border-radius: 45% / 50% 0 0 50%; 
     }  
-  }  
+  }
 }
 
 @media screen and (width < 750px) {
@@ -110,13 +89,36 @@ nav.left-right {
     
     a {
       background-color: var(--miku-red);
-      color: white;
+      color: var(--miku-gold);
       text-decoration: none;
       font-size: 1.6rem;
       padding: 0.6rem 1.2rem;
     }  
   }
 }
+
+nav.left-right {
+  .left-arrow a,
+  .right-arrow a {
+    -webkit-transition: .2s ease-in;
+    -moz-transition: .2s ease-in;
+    -o-transition: .2s ease-in;
+    transition: .2s ease-in;
+  }
+
+  .left-arrow a:hover,
+  .left-arrow a:focus,
+  .right-arrow a:hover,
+  .right-arrow a:focus {
+    -webkit-transition: .2s ease-in;
+    -moz-transition: .2s ease-in;
+    -o-transition: .2s ease-in;
+    transition: .2s ease-in;
+    background: var(--miku-dark-red);
+    color: white;
+  }
+}
+
 
 /* ------------------ Basic Format ------------------ */
 
