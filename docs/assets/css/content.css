@@ -3,7 +3,6 @@
 header:first-child nav {
   display: flex;
   height: 1.8rem;
-  padding: 0 0 0 0.5rem;
   justify-content: center;
   align-content: center;
   flex-direction: column;
