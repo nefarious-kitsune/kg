@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>Event Calendar</title>
+<title>Special Events</title>
 <meta page-data
   og-image="calendar"
   og-desc="Schedule of past and current special events"
@@ -9,37 +9,28 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <link href="../assets/css/common.css" rel="stylesheet">
 <link href="../assets/css/content.css" rel="stylesheet">
-<link href="./calendar.css" rel="stylesheet">
+<link href="./events.css" rel="stylesheet">
 </head>
 
 <body>
 
 <header><nav><ul class="breadcrumb">
   <li><a href="../content">Home</a></li>
-  <li><a href="./">Calendars</a></li>
-  <li>Event Calendar</li>
+  <li><a href="./">Events</a></li>
+  <li>{{TITLE}}</li>
 </ul></nav></header>
 
 <main>
 <h1>{{TITLE}}</h1>
 
 <section>
-<p>There are 3 types of events that rotate every 28 days:</p>
+<p>Servers in <a href="../servers/phases/">Transition Phase</a> and 
+  Phase 3 have three types of Special Events.</p>
+</section>
 
-<table class="basic-table sticky-header event-table">
-<thead>
-<tr>
-  <th>Start</th>
-  <th>End</th>
-  <th>Event Name</th>
-  <th>Rewards</th>
-</tr>
-</thead>
-<tbody>
+<section>
+<h2>Past &amp; Upcoming Events</h2>
 <fragment src="./__temp/--events.html"/>
-</tbody>
-</table>
-
 </section>
 
 </main>

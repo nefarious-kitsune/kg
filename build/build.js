@@ -35,10 +35,10 @@ copyDirectory('resources/');
 copyDirectory('tower-defense/');
 copyDirectory('servers/');
 copyDirectory('lava-cave/');
-copyDirectory('events/');
 
-import './calendars/build.js';
 copyDirectory('calendars/');
+import './events/build.js';
+copyDirectory('events/');
 
 copyDirectory('tools/');
 copyDirectory('stacking/');

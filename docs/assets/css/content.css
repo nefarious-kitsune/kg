@@ -340,6 +340,32 @@ ul.butterfly > li::marker {
   font-size: 1.8em;
 }
 
+ul.emoji-markers {
+  /* padding-left: 1.4rem; */
+  padding: 0;
+  list-style: none;
+
+  li {
+    padding-left: 1.6rem;
+  }
+
+  li:before {
+    content: '';
+    display: inline-block;
+    height: 1.2rem;
+    width: 1.2rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left: -1.4rem;
+  }
+
+  li.castle:before { background-image: url("../icons/emoji_castle-color.png"); }
+  li.frame:before { background-image: url("../icons/emoji_frame-color.png"); }
+  li.coupon:before { background-image: url("../icons/emoji_coupon-color.png"); }
+  li.hero:before { background-image: url("../icons/emoji_hero-color.png"); }
+}
+
 ul.pagination {
   padding: 0;
   margin: 0;
