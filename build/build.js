@@ -33,12 +33,14 @@ copyDirectory('mail/');
 copyDirectory('guides/');
 copyDirectory('resources/');
 copyDirectory('tower-defense/');
-copyDirectory('servers/');
 copyDirectory('lava-cave/');
 
 copyDirectory('calendars/');
 import './events/build.js';
 copyDirectory('events/');
+
+copyDirectory('seasons/');
+copyDirectory('servers/');
 
 copyDirectory('tools/');
 copyDirectory('stacking/');
