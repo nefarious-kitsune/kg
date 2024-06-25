@@ -52,7 +52,8 @@
   <!-- Lava Trial 4/5 -->
   <!-- Mightiest Kingdom 4/6 -->
   <!-- Ultimate Hunting -->
-  <td class="event-col"><div class="no-event sync"></div></td>
+  <td class="event-col" rowspan="4"><div
+    class="event auction">Auction House</div></td>
   <td class="event-col"><div class="no-event sync"></div></td>
 </tr>
 <tr>
@@ -62,7 +63,7 @@
   <td class="event-col"><div class="no-event sync"></div></td>
   <!-- Mightiest Kingdom 5/6 -->
   <!-- Ultimate Hunting -->
-  <td class="event-col"><div class="no-event sync"></div></td>
+  <!-- Auction House -->
   <td class="event-col"><div class="no-event sync"></div></td>
 </tr>
 <tr>
@@ -73,7 +74,7 @@
   <td class="event-col"><div class="no-event sync"></div></td>
   <!-- Mightiest Kingdom 6/6 -->
   <!-- Ultimate Hunting -->
-  <td class="event-col"><div class="no-event sync"></div></td>
+  <!-- Auction House -->
   <td class="event-col"><div class="no-event sync"></div></td>
 </tr>
 <tr>
@@ -84,7 +85,7 @@
   <td class="event-col"><div class="no-event sync"></div></td>
   <td class="event-col"><div class="no-event sync"></div></td>
   <td class="event-col"><div class="no-event sync"></div></td>
-  <td class="event-col"><div class="no-event sync"></div></td>
+  <!-- Auction House -->
   <td class="event-col"><div
     class="event castle-event continue-to-next">Special Event</div
   ></td>

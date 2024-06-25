@@ -54,7 +54,9 @@
   <!-- Lava Trial 4/5 -->
   <!-- Mightiest Kingdom 4/6 -->
   <!-- Ultimate Power -->
-  <td class="event-col"><div class="no-event frozen"></div></td>
+  <td class="event-col" rowspan="4"><div
+    class="event auction">Auction House</div></td>
+  <!-- Special Event -->
 </tr>
 <tr>
   <th class="day-col"><div class="day">Fri</div></th>
@@ -63,7 +65,8 @@
   <td class="event-col"><div class="no-event frozen"></div></td>
   <!-- Mightiest Kingdom 5/6 -->
   <!-- Ultimate Power -->
-  <td class="event-col"><div class="no-event frozen"></div></td>
+  <!-- Auction House -->
+  <!-- Special Event -->
 </tr>
 <tr>
   <th class="day-col"><div class="day">Sat</div></th>
@@ -73,7 +76,8 @@
   <td class="event-col"><div class="no-event frozen"></div></td>
   <!-- Mightiest Kingdom 6/6 -->
   <!-- Ultimate Power -->
-  <td class="event-col"><div class="no-event frozen"></div></td>
+  <!-- Auction House -->
+  <!-- Special Event -->
 </tr>
 <tr>
   <th class="day-col"><div class="day">Sun</div></th>
@@ -83,5 +87,6 @@
   <td class="event-col"><div class="no-event frozen"></div></td>
   <td class="event-col"><div class="no-event frozen"></div></td>
   <td class="event-col"><div class="no-event frozen"></div></td>
-  <td class="event-col"><div class="no-event frozen"></div></td>
+  <!-- Auction House -->
+  <!-- Special Event -->
 </tr>

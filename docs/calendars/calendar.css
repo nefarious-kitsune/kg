@@ -244,10 +244,14 @@ table.calender {
 
     .event.wishing,
     .event.lucky,
-    .event.treasure,
-    .event.auction {
+    .event.treasure {
       border-color: var(--secondary-3);
       background-color: var(--pale-secondary-3);
+    }
+
+    .event.auction {
+      border-color: var(--secondary-4);
+      background-color: var(--pale-secondary-4);
     }
   }
 

@@ -15,7 +15,8 @@
   ></div></td>
   <td class="event-col" rowspan="6"
     ><div class="event power">Ultimate Hunting</div></td>
-  <td class="event-col"><div class="no-event frozen"></div></td>
+  <td class="event-col" rowspan="3"
+    ><div class="event treasure">Treasure Hunt</div></td>
   <td class="event-col"><div
     class="event castle-event continue-from-previous">Special Event</div
   ></td>
@@ -28,7 +29,7 @@
   <!-- Lava Trial 2/5 -->
   <!-- Mightiest Kingdom 2/6 -->
   <!-- Ultimate Hunting -->
-  <td class="event-col"><div class="no-event frozen"></div></td>
+  <!-- Treasure Hunt -->
   <td class="event-col"><div class="no-event frozen"></div></td>
 </tr>
 <tr>
@@ -39,7 +40,7 @@
   <!-- Lava Trial 3/5 -->
   <!-- Mightiest Kingdom 3/6 -->
   <!-- Ultimate Hunting -->
-  <td class="event-col"><div class="no-event frozen"></div></td>
+  <!-- Treasure Hunt -->
   <td class="event-col"><div class="no-event frozen"></div></td>
 </tr>
 <tr>
@@ -50,7 +51,8 @@
   <!-- Lava Trial 4/5 -->
   <!-- Mightiest Kingdom 4/6 -->
   <!-- Ultimate Hunting -->
-  <td class="event-col"><div class="no-event frozen"></div></td>
+  <td class="event-col" rowspan="4"><div
+    class="event auction">Auction House</div></td>
   <td class="event-col"><div class="no-event frozen"></div></td>
 </tr>
 <tr>
@@ -60,7 +62,7 @@
   <td class="event-col"><div class="no-event frozen"></div></td>
   <!-- Mightiest Kingdom 5/6 -->
   <!-- Ultimate Hunting -->
-  <td class="event-col"><div class="no-event frozen"></div></td>
+  <!-- Auction House -->
   <td class="event-col"><div class="no-event frozen"></div></td>
 </tr>
 <tr>
@@ -71,7 +73,7 @@
   <td class="event-col"><div class="no-event frozen"></div></td>
   <!-- Mightiest Kingdom 6/6 -->
   <!-- Ultimate Hunting -->
-  <td class="event-col"><div class="no-event frozen"></div></td>
+  <!-- Auction House -->
   <td class="event-col" rowspan="2"
     ><div class="event treasure continue-to-next">Alliance Treasure</div
   ></td>
@@ -84,6 +86,6 @@
   <td class="event-col"><div class="no-event frozen"></div></td>
   <td class="event-col"><div class="no-event frozen"></div></td>
   <td class="event-col"><div class="no-event frozen"></div></td>
-  <td class="event-col"><div class="no-event frozen"></div></td>
+  <!-- Auction House -->
   <!-- Alliance Treasure -->
 </tr>
