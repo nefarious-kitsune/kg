@@ -364,6 +364,17 @@ ul.emoji-markers {
   li.frame:before { background-image: url("../icons/emoji_frame-color.png"); }
   li.coupon:before { background-image: url("../icons/emoji_coupon-color.png"); }
   li.hero:before { background-image: url("../icons/emoji_hero-color.png"); }
+  li.gold-star:before { background-image: url(); }
+  li.red-star:before { background-image: url(); }
+  li.blue-star:before { background-image: url(); }
+  li.elemental-archer:before { background-image: url(); }
+  li.elemental-fire:before { background-image: url(); }
+  li.elemental-ice:before { background-image: url(); }
+  li.elemental-goblin:before { background-image: url(); }
+  li.new:before { background-image: url(); }
+  li.increase:before { background-image: url(); }
+  li.price-down:before { background-image: url(); }
+  li.free-pick:before { background-image: url(../icons/recruit-ssr-2x_s.png); }
 }
 
 ul.pagination {
