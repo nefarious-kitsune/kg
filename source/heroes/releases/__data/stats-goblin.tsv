@@ -1,16 +1,15 @@
-Season	SR Heroes	SSR Heroes	SSR Total %	SSR Ea %
-Phase 2		Catherine, Rosamond, Issac, Gruen, Meniere, Claudia	100.00%	16.67%
-Season 1		Catherine, Rosamond, Arwin, Benjamin, Suad	100.00%	20.00%
-Season 2		Catherine, Rosamond, Arwin, Benjamin, Suad	100.00%	20.00%
-Season 3				0.00%
-Season 4		Catherine, Rosamond, Arwin, Benjamin, Suad, Chiyoko	100.00%	16.67%
-Season 5		Catherine, Rosamond, Arwin, Benjamin, Suad, Chiyoko, Wendy	100.00%	14.29%
-Season 6		Catherine, Rosamond, Arwin, Benjamin, Suad, Chiyoko, Wendy	100.00%	14.29%
-Season 7		Catherine, Rosamond, Arwin, Benjamin, Suad, Chiyoko, Wendy, Luvia	100.00%	12.50%
-Season 8		Catherine, Rosamond, Arwin, Benjamin, Suad, Chiyoko, Wendy, Luvia, Claudia	100.00%	11.11%
-Season 9		Catherine, Rosamond, Arwin, Benjamin, Suad, Chiyoko, Wendy, Luvia, Claudia	100.00%	11.11%
-Season 10		Catherine, Rosamond, Arwin, Benjamin, Suad, Chiyoko, Wendy, Luvia, Claudia	100.00%	11.11%
-Season 11				0.00%
-Season 32		Catherine, Rosamond, Issac, Gruen, Meniere, Claudia, Chiyoko, Wendy, Luvia, Claudia, Meniere, Lomax, Issac	100.00%	7.69%
-Season 33		Catherine, Rosamond, Issac, Gruen, Meniere, Claudia, Chiyoko, Wendy, Luvia, Claudia, Meniere, Lomax, Issac	100.00%	7.69%
-Season 34				0.00%
+Season	SR Heroes	SSR Heroes	SSR %	Verified	SSR Total %
+Phase 1	Alucard	Catherine, Rosamond, Issac, Gruen, Meniere, Claudia	6.98%	TRUE	41.86%
+Phase 2		Catherine, Rosamond, Issac, Gruen, Meniere, Claudia	16.67%	TRUE	100.00%
+Transition		Catherine, Rosamond, Arwin, Benjamin, Suad	20.00%	TRUE	100.00%
+Season 2		Catherine, Rosamond, Arwin, Benjamin, Suad	20.00%	TRUE	100.00%
+Season 3		Catherine, Rosamond, Arwin, Benjamin, Suad	20.00%	FALSE	100.00%
+Season 4		Catherine, Rosamond, Arwin, Benjamin, Suad, Chiyoko	16.67%	TRUE	100.00%
+Season 5		Catherine, Rosamond, Arwin, Benjamin, Suad, Chiyoko, Wendy	14.29%	TRUE	100.00%
+Season 6		Catherine, Rosamond, Arwin, Benjamin, Suad, Chiyoko, Wendy	14.29%	TRUE	100.00%
+Season 7		Catherine, Rosamond, Arwin, Benjamin, Suad, Chiyoko, Wendy, Luvia	12.50%	TRUE	100.00%
+Season 8		Catherine, Rosamond, Arwin, Benjamin, Suad, Chiyoko, Wendy, Luvia, Claudia	11.11%	TRUE	100.00%
+Season 9		Catherine, Rosamond, Arwin, Benjamin, Suad, Chiyoko, Wendy, Luvia, Claudia	11.11%	TRUE	100.00%
+Season 10		Catherine, Rosamond, Arwin, Benjamin, Suad, Chiyoko, Wendy, Luvia, Claudia	11.11%	TRUE	100.00%
+Season 32		Catherine, Rosamond, Arwin, Benjamin, Suad, Chiyoko, Wendy, Luvia, Claudia, Meniere, Lomax, Issac	8.33%	FALSE	100.00%
+Season 33		Catherine, Rosamond, Arwin, Benjamin, Suad, Chiyoko, Wendy, Luvia, Claudia, Meniere, Lomax, Issac	8.33%	TRUE	100.00%

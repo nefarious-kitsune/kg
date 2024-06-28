@@ -11,7 +11,7 @@ const srcBasePath = resolve(ProjectPath, './source/');
 let eventHeroList = [];
 
 /**
- * Build template table content
+ * Load the list of Event Heroes
  * @param {string} fileName
  */
 function loadEventHeroList(fileName) {
