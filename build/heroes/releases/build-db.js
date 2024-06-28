@@ -22,14 +22,6 @@ const srcBasePath = resolve(ProjectPath, './source/heroes/releases/__data/');
 /** @type {Map<String, HeroReleaseData>} */
 export const heroReleaseBase = new Map();
 
-export const seasons = [
-  'phase-1', 'phase-2', 'transition',
-  'season-2', 'season-3', 'season-4',
-  'season-5', 'season-6', 'season-7',
-  'season-8', 'season-9', 'season-10',
-];
-
-
 /** @type {string[]} */
 let eventHeroList = [];
 
@@ -52,8 +44,6 @@ function loadStatsHeroList() {
       const statsHeroes = cols[2].replaceAll(', ', ',').split(',');
       const verified = cols[4] === 'TRUE';
       const dropRate = verified?cols[3]:'?';
-      console.log(statsHeroes);
-      console.log(season, heroReleaseBase.has(season));
 
       if ((statsHeroes.length > 1) && (heroReleaseBase.has(season))) {
         const seasonReleaseData = heroReleaseBase.get(season);
@@ -149,11 +139,20 @@ function buildSeason(seasonId) {
 
 loadEventHeroList('event-heroes.tsv');
 
+export const seasons = [
+  'phase-1', 'phase-2', 'transition',
+  'season-2', 'season-3', 'season-4',
+  'season-5', 'season-6', 'season-7',
+  'season-8', 'season-9', 'season-10',
+  'season-31', 'season-32', 'season-33',
+];
+
 [
   'transition',
   'season-2', 'season-3', 'season-4',
   'season-5', 'season-6', 'season-7',
-  'season-8', 'season-9',
+  'season-8', 'season-9', 'season-10',
+  'season-31', 'season-32', 'season-33',
 ].forEach((s) => buildSeason(s));
 
 loadStatsHeroList();

@@ -1,64 +1,36 @@
 import {fileURLToPath} from 'url';
 import {dirname, resolve} from 'path';
-import {writeFileSync, readFileSync} from 'fs';
+import {writeFileSync} from 'fs';
 
 const ModulePath = dirname(fileURLToPath(import.meta.url));
 const ProjectPath = resolve(ModulePath, '../../../');
 
 const srcBasePath = resolve(ProjectPath, './source/');
 
-/** @type {string[]} */
-let eventHeroList = [];
+import {seasons, heroReleaseBase} from './build-db.js';
 
-/**
- * Load the list of Event Heroes
- * @param {string} fileName
- */
-function loadEventHeroList(fileName) {
-  const tsvFilePath = resolve(
-      srcBasePath,
-      `heroes/releases/__data/${fileName}`,
-  );
-
-  eventHeroList = readFileSync(tsvFilePath, {encoding: 'utf8'})
-      .split('\n');
-}
 
 /**
  * Build template table content
- * @param {string} phaseName - name of the phase
+ * @param {string} seasonId - name of the phase
  */
-function buildTemplate(phaseName) {
-  const tsvFilePath = resolve(
-      srcBasePath,
-      `heroes/releases/__data/${phaseName}.tsv`,
-  );
-  const tsvData = readFileSync(tsvFilePath, {encoding: 'utf8'})
-      .split('\n')
-      .map((row) => row.split('\t'));
+function buildTemplate(seasonId) {
+  const seasonReleaseData = heroReleaseBase.get(seasonId);
+  if (seasonReleaseData === undefined) return;
 
-  const heroes = [];
   const TableBody = [];
 
-  for (let rowIdx=1; rowIdx < tsvData.length; rowIdx++) {
-    const row = tsvData[rowIdx];
-    const [
-      // eslint-disable-next-line no-unused-vars
-      name, advRecruit, statsRecruit, freePick,
-      crystal, wheel, other,
-    ] = row;
-    heroes.push(name);
-
+  seasonReleaseData.forEach((releaseData) => {
     TableBody.push('<tr>');
 
-    TableBody.push(`<td><hero-name>${name}</hero-name></td>`);
+    TableBody.push(`<td><hero-name>${releaseData.hero}</hero-name></td>`);
 
-    if (advRecruit) {
+    if (releaseData.advRecruit) {
       TableBody.push(
           '<td>' +
           '<img class="icon" ' +
             'alt="Advanced Recruitment card" ' +
-            `title="${advRecruit}" ` +
+            `title="${releaseData.advRecruit}" ` +
             'src="../../assets/icons/recruit-adv-2x_s.png">' +
           '</td>',
       );
@@ -66,7 +38,20 @@ function buildTemplate(phaseName) {
       TableBody.push('<td></td>');
     }
 
-    if (freePick==='TRUE') {
+    if (releaseData.statsRecruit) {
+      TableBody.push(
+          '<td>' +
+          '<img class="icon" ' +
+            'alt="Stats Recruitment card" ' +
+            `title="${releaseData.statsRecruit}" ` +
+            'src="../../assets/icons/recruit-stats-2x_s.png">' +
+          '</td>',
+      );
+    } else {
+      TableBody.push('<td></td>');
+    }
+
+    if (releaseData.freePick) {
       TableBody.push(
           '<td><img ' +
             'class="icon" ' +
@@ -78,7 +63,7 @@ function buildTemplate(phaseName) {
       TableBody.push('<td></td>');
     }
 
-    if (crystal==='TRUE') {
+    if (releaseData.crystal) {
       TableBody.push(
           '<td><img ' +
             'class="icon" ' +
@@ -90,7 +75,7 @@ function buildTemplate(phaseName) {
       TableBody.push('<td></td>');
     }
 
-    if (wheel==='TRUE') {
+    if (releaseData.wheel) {
       TableBody.push(
           '<td><img ' +
             'class="icon" ' +
@@ -102,7 +87,7 @@ function buildTemplate(phaseName) {
       TableBody.push('<td></td>');
     }
 
-    if (eventHeroList.indexOf(name) !== -1) {
+    if (releaseData.event) {
       TableBody.push(
           '<td><img ' +
             'class="icon" ' +
@@ -115,47 +100,15 @@ function buildTemplate(phaseName) {
       TableBody.push('<td></td>');
     }
 
-    TableBody.push('<td>' + other + '</td>');
+    TableBody.push('<td>' + releaseData.other + '</td>');
 
-    TableBody.push('</tr>');
-  }
-
-  eventHeroList.filter((h) => heroes.indexOf(h) === -1).forEach((h) => {
-    TableBody.push('<tr>');
-    TableBody.push(`<td><hero-name>${h}</hero-name></td>`);
-    TableBody.push(`<td></td>`); // advanced
-    TableBody.push(`<td></td>`); // free-pick
-    TableBody.push(`<td></td>`); // crystal
-    TableBody.push(`<td></td>`); // wheel
-    TableBody.push(
-        '<td><img ' +
-          'class="icon" ' +
-          'alt="Special event" ' +
-          `title="Special event (crazy mode)" ` +
-          'src="../../assets/icons/event-special_gift.png"' +
-        '></td>',
-    );
-    TableBody.push(`<td></td>`); // Other
     TableBody.push('</tr>');
   });
 
-
   writeFileSync(
-      resolve(srcBasePath, `heroes/releases/__temp/--${phaseName}.html`),
+      resolve(srcBasePath, `heroes/releases/__temp/--${seasonId}.html`),
       TableBody.join('\n'),
   );
 }
 
-buildTemplate('phase-1');
-loadEventHeroList('event-heroes-phase-2.tsv');
-buildTemplate('phase-2');
-loadEventHeroList('event-heroes.tsv');
-buildTemplate('transition');
-buildTemplate('season-2');
-buildTemplate('season-3');
-buildTemplate('season-4');
-buildTemplate('season-5');
-buildTemplate('season-6');
-buildTemplate('season-7');
-buildTemplate('season-8');
-buildTemplate('season-9');
+seasons.forEach((s) => buildTemplate(s));
