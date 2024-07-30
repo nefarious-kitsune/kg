@@ -1,0 +1,8 @@
+code.sheet-formula {
+  color: var(--green);
+  /* background-color: var(--pale-neutral); */
+}
+
+.var1 { color: var(--purple); }
+.var2 { color: var(--blue); }
+.var3 { color: var(--orange); }
