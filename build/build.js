@@ -14,6 +14,8 @@ copyDirectory('units/');
 import './heroes/build.js';
 copyDirectory('heroes/');
 
+import './magic-lab/build.js';
+
 copyDirectory('bounty-hall/');
 copyDirectory('features/');
 copyDirectory('territories/');
