@@ -15,6 +15,7 @@ import './heroes/build.js';
 copyDirectory('heroes/');
 
 import './magic-lab/build.js';
+import './blacksmith/build.js';
 
 copyDirectory('bounty-hall/');
 copyDirectory('features/');
