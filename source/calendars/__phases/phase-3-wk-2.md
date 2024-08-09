@@ -1,6 +1,6 @@
 <tr>
   <th class="day-col"><div class="day">Mon</div></th>
-  <td class="event-col"><div class="event war">BotD Qualifying</div></td>
+  <td class="event-col"><div class="no-event frozen"></div></td>
   <td class="event-col" rowspan="7"
     ><div class="event expedition continue-both-end"><a
       href="../wars/kvk/">Burning Expedition</a></div
@@ -34,7 +34,7 @@
 </tr>
 <tr>
   <th class="day-col"><div class="day">Wed</div></th>
-  <td class="event-col"><div class="event war">BotD Qualifying</div></td>
+  <td class="event-col"><div class="no-event frozen"></div></td>
   <!-- Burning Expedition -->
   <td class="event-col"><div class="no-event frozen"></div></td>
   <!-- Lava Trial 3/5 -->
@@ -57,7 +57,7 @@
 </tr>
 <tr>
   <th class="day-col"><div class="day">Fri</div></th>
-  <td class="event-col"><div class="event war">BotD Elimination 1</div></td>
+  <td class="event-col"><div class="event war">Dragon Valley</div></td>
   <!-- Alliance Cross-Server Summon 5/5 -->
   <td class="event-col"><div class="no-event frozen"></div></td>
   <!-- Mightiest Kingdom 5/6 -->

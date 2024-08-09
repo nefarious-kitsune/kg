@@ -36,7 +36,7 @@
 </tr>
 <tr>
   <th class="day-col"><div class="day">Wed</div></th>
-  <td class="event-col"><div class="event war">BotD Qualifying</div></td>
+  <td class="event-col"><div class="no-event frozen"></div></td>
   <!-- Burning Expedition -->
   <td class="event-col"><div class="no-event frozen"></div></td>
   <!-- Lava Trial 3/5 -->
@@ -47,7 +47,7 @@
 </tr>
 <tr>
   <th class="day-col"><div class="day">Thu</div></th>
-  <td class="event-col"><div class="event war">Luminary Battlefield (Beta)</div></td>
+  <td class="event-col"><div class="no-event frozen"></div></td>
   <!-- Burning Expedition -->
   <td class="event-col"><div class="event esi">Evil Spirit Invasion</div></td>
   <!-- Lava Trial 4/5 -->
@@ -58,7 +58,7 @@
 </tr>
 <tr>
   <th class="day-col"><div class="day">Fri</div></th>
-  <td class="event-col"><div class="event war">BotD Qualifying</div></td>
+  <td class="event-col"><div class="event war">Dragon Valley</div></td>
   <!-- Burning Expedition -->
   <td class="event-col"><div class="no-event frozen"></div></td>
   <!-- Mightiest Kingdom 5/6 -->

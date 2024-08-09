@@ -1,6 +1,6 @@
 <tr>
   <th class="day-col"><div class="day">Mon</div></th>
-  <td class="event-col"><div class="event war">BotD Elimination 2</div></td>
+  <td class="event-col"><div class="no-event frozen"></div></td>
   <td class="event-col" rowspan="7"
     ><div class="event expedition continue-from-previous">Burning Expedition</div
   ></td>
@@ -38,7 +38,7 @@
 </tr>
 <tr>
   <th class="day-col"><div class="day">Wed</div></th>
-  <td class="event-col"><div class="event war">BotD Elimination 3</div></td>
+  <td class="event-col"><div class="no-event frozen"></div></td>
   <!-- Burning Expedition -->
   <td class="event-col"><div class="no-event frozen"></div></td>
   <!-- Lava Trial 3/5 -->
@@ -60,7 +60,7 @@
 </tr>
 <tr>
   <th class="day-col"><div class="day">Fri</div></th>
-  <td class="event-col"><div class="event war">BotD Final</div></td>
+  <td class="event-col"><div class="event war">Dragon Valley</div></td>
   <!-- Burning Expedition -->
   <td class="event-col"><div class="no-event frozen"></div></td>
   <!-- Mightiest Kingdom 5/6 -->
