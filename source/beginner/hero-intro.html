@@ -9,6 +9,12 @@
 <link href="../assets/css/common.css" rel="stylesheet">
 <link href="../assets/css/content.css" rel="stylesheet">
 <link href="../assets/css/heroes.css" rel="stylesheet">
+<style>
+  .hero-intro-table {
+    thead th:nth-child(1) { width: 6rem; }
+    thead th:nth-child(2) { width: 14rem; }
+  }
+</style>
 </head>
 
 <body>
@@ -44,22 +50,93 @@
 <section>
 <h2>Utility Heroes</h2>
 
-<p>Some heroes are especially useful in the early development:</p>
+<p>Utility heroes can help you grow quicker:</p>
+
+<table class="basic-table border-row hero-intro-table">
+<thead>
+<tr>
+  <th>Hero</th>
+  <th>Skills</th>
+  <th>Note</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><hero-name>Kris</hero-name></td>
+  <td><ul class="compact-list">
+    <li>+20% Marching Speed</li>
+    <li>+20% Gold Gathering speed</li>
+  </ul></td>
+  <td>Use her to help with
+    <a href="../guides/territory-building">obelisk building</a> and
+    gold mining</td>
+</tr>
+<tr>
+  <td><hero-name>Harold</hero-name></td>
+  <td><ul class="compact-list">
+    <li>+10% Tower Defense power</li>
+    <li>-10% Action Point</li>
+  </ul></td>
+  <td>Use him to pass stages more quickly and save Action Points.</td>
+</tr>
+<tr>
+  <td><hero-name>Claudia</hero-name> (1-star)</td>
+  <td><ul class="compact-list">
+    <li>+20% Offline Gold </li>
+  </ul></td>
+  <td>Use Claudia as a lead hero for more passive gold.</td>
+</tr>
+</tbody>
+</table>
+</section>
+
+<section>
+<h2>PvP Leaders</h2>
+
+<p>PvP lead heroes are useful for in-server wars
+  (Sentry War, Throne War) and cross-server wars
+  (<abbr title="Cross-Server Invasion">CSI</abbr>,
+   <abbr title="Battle of the Dragon">BotD</abbr>,
+   <abbr title="Burning Expedition">BE</abbr>).</p>
+
+<table class="basic-table border-row hero-intro-table">
+<thead>
+<tr>
+  <th>Hero</th>
+  <th>Skills</th>
+  <th>Note</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><hero-name>Erika</hero-name></td>
+  <td><ul class="compact-list">
+    <li>+25% Marching Speed</li>
+    <li>+15% Recovery speed</li>
+  </ul></td>
+  <td>Erika is the most economical PvP Leader you can get;
+    You can get her from Lucky Wheel,
+    <a href="../heroes/releases/crystal-ball-names">Wishing Crystal Ball</a>,
+    and
+    <a href="../heroes/releases/free-pick-names">Free-Pick Hero Cards</a>.</td>
+</tr>
+<tr>
+  <td><hero-name>Anko</hero-name></td>
+  <td><ul class="compact-list">
+    <li>+30% Marching Speed</li>
+    <li>+15% Recovery speed</li>
+  </ul></td>
+  <td>Anko has better Marching Speed than Erika. Initially
+    you must purchase her, but she will become available in
+    Free-Pick Hero Cards when the server enters
+    <a href="../seasons/transition-phase">Transition Phase</a>,
+    so in the long run she is also quite economical.
+  </td>
+</tr>
+</tbody>
+</table>
 
 <ul class="butterfly">
-<li><hero-name>Kris</hero-name>
-  has <em>March Speed</em> and <em>Gold Gathering</em> bonuses, so she is
-  good for <a href="../guides/territory-building">building obelisks</a>
-  and gold mining.</li>
-
-<li><hero-name>Harold</hero-name>
-  saves AP (Action Points) for monster quests and has
-  <a href="../tower-defense/">Tower Defense</a> buff, so
-  he is very useful for monster quests and pushing stages.</li>
-
-<li>If you need additional gold, consider
-  <hero-name>Claudia</hero-name>. 1-star Claudia can be purchased
-  for only $0.99 and provides you +20% Offline Gold bonus.</li>
 </ul>
 </section>
 
@@ -67,14 +144,43 @@ Jessica can be obtained from Bounty Hall and probably the
 first SSR AP hero you can get.
 
 <section>
-<h2>PvP Heroes</h2>
+<h2>Configurations</h2>
 
-<ul class="butterfly">
-<li><hero-name>Erika</hero-name> is the most economic PvP hero
-  you can get. You can get her from Lucky Wheel,
-  <a href="../heroes/releases/crystal-ball-names">Wishing Crystal Ball</a>,
-  and <a href="../heroes/releases/free-pick-names">Free-Pick Hero Cards</a>.</li>
-</ul>
+<p>For best power,
+
+  change your march configuration depending on the situation.
+
+  but that is not necessary.
+  you can <em>mix it up</em>.
+  you are in a crunch and badly need gold.</p>
+
+<p>When building
+  To utilize your heroes, it's good to build a Troop March that can
+  fill multiple roles. For example, you can have
+  <hero-name>Jessica</hero-name>,
+  <hero-name>Filius</hero-name>, and
+  <hero-name>Merlin</hero-name>
+</p>
+</section>
+
+<section>
+<h2>Element</h2>
+<p></p>
+
+<table class="basic-table border-simple">
+<thead>
+<tr>
+  <th>Element</th>
+  <th>Note</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <th>Fire</th>
+  <td>Some note</td>
+</tr>
+</tbody>
+</table>
 </section>
 
 <section id="related">
