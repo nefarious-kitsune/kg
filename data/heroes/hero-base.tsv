@@ -1,94 +1,108 @@
-Element	Class	Name	Skill 1	Skill 2	Skill 3	Skill 4	Skill 4	Free-Pick	Crystal	Wheel	Recruitment	
-Archer	SSR	Sahar	Rapid March +20%	Guerrilla Master +25%		First Aid +25%	Regeneration +10%	TRUE	TRUE	FALSE		Bounty Hall
-Archer	SSR	Johannes	Rapid March +20%	First Aid +20%		Guerrilla Master +20%	Regeneration +10%	TRUE	FALSE	FALSE		
-Archer	SSR	Maya	Rapid March +20%	First Aid +20%		Guerrilla Master +20%	Regeneration +10%	TRUE	FALSE	FALSE		
-Archer	SSR	Ptolemy	Rapid March +20%	First Aid +20%		Guerrilla Master +20%	Regeneration +10%	TRUE	FALSE	FALSE		
-Archer	SSR	Meg	Rapid March +20%	First Aid +15%		Guerrilla Master +25%	Regeneration +10%	TRUE	FALSE	FALSE		
-Archer	SSR	Trist	Rapid March +20%	First Aid +15%		Guerrilla Master +20%	Regeneration +10%	TRUE	FALSE	FALSE		
-Archer	SSR	Livia	Rapid March +20%	Monster Counter -10%		Guerrilla Master +25%	Regeneration +10%	TRUE	TRUE	FALSE		
-Archer	SSR	Pan	Rapid March +30%	Monster Counter -10%		Load +20%	Regeneration +10%	TRUE	FALSE	FALSE		
-Archer	SSR	Fatima	Rapid March +20%	Load +20%		Monster Counter -10%	Regeneration +10%	TRUE	FALSE	FALSE		
-Archer	SSR	Padme	Rapid March +30%	Guerrilla Master +20%		Guerrilla Master +20%	Regeneration +15%	FALSE	FALSE	FALSE		
-Archer	SSR	Richard	Rapid March +20%	Load +15%		Guerrilla Master +25%	Regeneration +10%	TRUE	TRUE	FALSE		
-Archer	SSR	Torvi	Rapid March +20%	Load +15%		Guerrilla Master +25%	Regeneration +10%	TRUE	TRUE	FALSE		
-Archer	SSR	O'Neil	Rapid March +20%	Load +20%		Guerrilla Master +25%	First Aid +20%	TRUE	TRUE	FALSE		
-Archer	SSR	Ariza	Rapid March +20%	Load +15%		Guerrilla Master +25%	First Aid +20%	TRUE	TRUE	FALSE		Bounty Hall
-Archer	SSR	Collin	Rapid March +30%	Load +20%		Guerrilla Master +20%	Regeneration +10%	TRUE	FALSE	FALSE		
-Archer	SSR	Sabastian	Rapid March +30%	Load +20%		Guerrilla Master +20%	Regeneration +10%	TRUE	FALSE	FALSE		
-Archer	SSR	Gabriel	Rapid March +20%	Load +20%		Guerrilla Master +20%	First Aid +10%	TRUE	TRUE	TRUE		Dimension Tunnel
-Archer	SSR	Arthur	Rapid March +20%	Overseer +20%		Guerrilla Master +20%	Gathering Master +20%	TRUE	TRUE	TRUE		
-Archer	SSR	Jennifer	Rapid March +20%	Piercing Arrow +15%		Guerrilla Master +20%	Load +10%	TRUE	TRUE	TRUE		Elemental Lord
-Archer	SSR	Kadir	Load +20%	Rapid March +20%		First Aid +15%	Regeneration +10%	TRUE	TRUE	FALSE		
-Archer	SSR	Bella	Rapid March +20%	First Aid +15%		Load +20%	Regeneration +10%	TRUE	FALSE	FALSE		
-Archer	SSR	Montag	Load +20%	Gathering Master +20%		Rapid March +20%	Regeneration +10%	TRUE	FALSE	FALSE		
-Archer	SR	Harold	Master of Defense +10%	Monster Counter -10%		Archery Master +15%		TRUE	FALSE	FALSE		
-Archer	SR	Arwyn	Rapid Shot +15%	Piercing Arrow +15%	Archery Master +15%			TRUE	FALSE	FALSE		
-Fire	SSR	Anko	Rapid March +30%	First Aid +15%		Guerrilla Master +20%	Regeneration +10%	TRUE	FALSE	FALSE		
-Fire	SSR	Lovelace	Rapid March +30%	First Aid +15%		Guerrilla Master +20%	Regeneration +10%	TRUE	FALSE	FALSE		
-Fire	SSR	Erika	Rapid March +25%	First Aid +15%		Guerrilla Master +25%	Regeneration +10%	TRUE	TRUE	TRUE		
-Fire	SSR	Daria	Rapid March +25%	First Aid +15%		Guerrilla Master +25%	Regeneration +10%	TRUE	FALSE	FALSE		
-Fire	SSR	Vanessa	Rapid March +20%	First Aid +15%		Guerrilla Master +20%	Regeneration +10%	TRUE	FALSE	FALSE		
-Fire	SSR	Miku	Monster Counter -20%	Rapid March +15%		Guerrilla Master +25%	Regeneration +10%	FALSE	FALSE	FALSE		
-Fire	SSR	Giselle	Rapid March +20%	Monster Counter -10%		Guerrilla Master +25%	Regeneration +10%	TRUE	FALSE	FALSE		
-Fire	SSR	Tracy	Rapid March +30%	Guerrilla Master +20%		Guerrilla Master +20%	Regeneration +15%	FALSE	FALSE	FALSE		
-Fire	SSR	Cosette	Rapid March +20%	Load +30%		Guerrilla Master +30%	First Aid +25%	TRUE	TRUE	FALSE		Bounty Hall
-Fire	SSR	Paul	Rapid March +20%	Load +20%		Guerrilla Master +30%	First Aid +25%	TRUE	TRUE	FALSE		Bounty Hall
-Fire	SSR	Kenshiro	Rapid March +20%	Load +15%		Guerrilla Master +25%	Regeneration +10%	TRUE	FALSE	FALSE		
-Fire	SSR	Penny	Rapid March +20%	Load +15%		Guerrilla Master +25%	Regeneration +10%	TRUE	FALSE	FALSE		
-Fire	SSR	Christie	Rapid March +20%	Load +15%		Guerrilla Master +25%	Regeneration +10%	TRUE	TRUE	FALSE		
-Fire	SSR	Dolvar	Rapid March +20%	Load +15%		Guerrilla Master +25%	Regeneration +15%	TRUE	TRUE	FALSE		Bounty Hall
-Fire	SSR	Wallis	Rapid March +20%	Load +15%		Guerrilla Master +25%	Regeneration +15%	TRUE	TRUE	FALSE		
-Fire	SSR	Allen	Rapid March +20%	Load +10%		Guerrilla Master +25%	First Aid +15%	TRUE	TRUE	TRUE		
-Fire	SSR	Gro	Initiative +15%	Blaze Expert +20%		Orc Curse +40%	First Aid +15%	TRUE	TRUE	TRUE		Elemental Lord
-Fire	SSR	Dean	Load +15%	Guerrilla Master +20%		First Aid +15%	Regeneration +10%	TRUE	TRUE	FALSE		
-Fire	SSR	Simon	Rapid March +20%	Overseer +20%		Guerrilla Master +20%	Gathering Master +20%	TRUE	FALSE	FALSE		
-Fire	SSR	Brie	Load +20%	First Aid +15%		Guerrilla Master +20%	Regeneration +10%	TRUE	FALSE	FALSE		
-Fire	SSR	Apollo	Rapid March +30%	Load +20%		Guerrilla Master +20%	Regeneration +10%	TRUE	TRUE	FALSE		
-Fire	SSR	Dain	Rapid March +20%	Load +20%		First Aid +15%	Regeneration +10%	TRUE	FALSE	FALSE		
-Fire	SR	Kris	Rapid March +20%	Gathering Master +20%		Guerrilla Master +20%		TRUE	FALSE	FALSE		
-Fire	SR	Ophelia	Blaze Expert +20%		Clearcast +20%		Fire Master +20%	TRUE	FALSE	FALSE		
-Fire	SR	Samar	Blaze Expert +20%		Clearcast +20%		Fire Master +20%	TRUE	FALSE	FALSE		
-Goblin	SSR	Lilith	Rapid March +20%	First Aid +20%		Guerrilla Master +20%	Regeneration +10%	TRUE	FALSE	FALSE		
-Goblin	SSR	Rila	Rapid March +20%	First Aid +20%		Guerrilla Master +20%	Regeneration +10%	TRUE	FALSE	FALSE		
-Goblin	SSR	Gruen	Rapid March +25%	First Aid +15%		Guerrilla Master +25%	Regeneration +10%	TRUE	TRUE	FALSE		Bounty Hall
-Goblin	SSR	Boudica	Rapid March +25%	First Aid +15%		Guerrilla Master +25%	Regeneration +10%	FALSE	FALSE	FALSE		
-Goblin	SSR	Wendy	Rapid March +20%	First Aid +15%		Guerrilla Master +25%	Regeneration +10%	TRUE	TRUE	FALSE		
-Goblin	SSR	Luvia	Rapid March +20%	First Aid +15%		Monster Counter -10%	Regeneration +10%	TRUE	FALSE	FALSE		
-Goblin	SSR	Pythia	Monster Counter -10%	Rapid March +15%		Load +20%	Regeneration +10%	TRUE	FALSE	FALSE		
-Goblin	SSR	Tumnus	Rapid March +30%	Guerrilla Master +20%		Guerrilla Master +20%	Regeneration +15%	FALSE	FALSE	FALSE		
-Goblin	SSR	Rosamond	Rapid March +20%	Load +20%		Guerrilla Master +30%	First Aid +25%	TRUE	TRUE	TRUE		Elemental Lord
-Goblin	SSR	Angelina	Rapid March +20%	Load +20%		Guerrilla Master +30%	First Aid +25%	FALSE	FALSE	FALSE		
-Goblin	SSR	Arwin	Rapid March +20%	Load +15%		Guerrilla Master +25%	Regeneration +10%	TRUE	TRUE	FALSE		
-Goblin	SSR	Benjamin	Rapid March +20%	Load +15%		Guerrilla Master +25%	Regeneration +10%	TRUE	TRUE	FALSE		
-Goblin	SSR	Lomax	Rapid March +20%	Load +15%		Guerrilla Master +25%	Regeneration +10%	TRUE	TRUE	FALSE		
-Goblin	SSR	Meniere	Rapid March +20%	Load +15%		Guerrilla Master +25%	Regeneration +10%	TRUE	TRUE	FALSE		Bounty Hall
-Goblin	SSR	Chiyoko	Rapid March +30%	Load +20%		Guerrilla Master +20%	Regeneration +10%	TRUE	FALSE	FALSE		
-Goblin	SSR	Suad	Rapid March +30%	Load +20%		Guerrilla Master +20%	Regeneration +10%	TRUE	FALSE	FALSE		
-Goblin	SSR	Blackwell	Rapid March +20%	Load +20%		Guerrilla Master +20%	Regeneration +10%	FALSE	FALSE	FALSE		
-Goblin	SSR	Issac	Rapid March +20%	Overseer +20%		Guerrilla Master +20%	Load +10%	TRUE	TRUE	FALSE		
-Goblin	SSR	Catherine	Rapid March +20%	Overseer +20%		Guerrilla Master +20%	Gathering Master +20%	TRUE	TRUE	TRUE		
-Goblin	SSR	Rogers	Rapid March +20%	Overseer +20%		Guerrilla Master +20%	Gathering Master +20%	TRUE	FALSE	FALSE		
-Goblin	SSR	Claudia	Overseer +20%	First Aid +15%		Inspiration +20%	Load +20%	TRUE	TRUE	FALSE		
-Goblin	SR	Alucard	Poison +15%	Orc Counter +200%	Overseer +20%			TRUE	FALSE	FALSE		
-Ice	SSR	Ao Deng Ge Ri Le	Rapid March +20%	Guerrilla Master +20%		Guerrilla Master +20%	Regeneration +10%	TRUE	FALSE	FALSE		
-Ice	SSR	Judy	Rapid March +20%	Guerrilla Master +20%		Guerrilla Master +20%	Regeneration +10%	TRUE	FALSE	FALSE		
-Ice	SSR	Ao Yue	Rapid March +20%	First Aid +20%		Guerrilla Master +20%	Regeneration +10%	TRUE	FALSE	FALSE		
-Ice	SSR	Trishy	Rapid March +20%	First Aid +20%		Guerrilla Master +20%	Regeneration +10%	TRUE	FALSE	FALSE		
-Ice	SSR	Filius	Rapid March +20%	First Aid +15%		Guerrilla Master +25%	Regeneration +10%	TRUE	TRUE	FALSE		
-Ice	SSR	Jessica	Rapid March +20%	Monster Counter -10%		Guerrilla Master +25%	Regeneration +10%	TRUE	TRUE	FALSE		Bounty Hall
-Ice	SSR	Pedra	Rapid March +20%	Monster Counter -10%		Guerrilla Master +25%	Regeneration +10%	TRUE	TRUE	FALSE		
-Ice	SSR	Hana	Monster Counter -10%	Rapid March +15%		Guerrilla Master +25%	Regeneration +10%	TRUE	FALSE	FALSE		
-Ice	SSR	Clarence	Rapid March +30%	Guerrilla Master +20%		Guerrilla Master +20%	Regeneration +15%	FALSE	FALSE	FALSE		
-Ice	SSR	Lilani	Rapid March +20%	Load +15%		Guerrilla Master +25%	Regeneration +10%	TRUE	TRUE	FALSE		
-Ice	SSR	Parr	Rapid March +20%	Load +15%		Guerrilla Master +25%	Regeneration +10%	TRUE	TRUE	FALSE		
-Ice	SSR	Rudolph	Rapid March +20%	Load +15%		Guerrilla Master +25%	First Aid +15%	TRUE	TRUE	FALSE		Bounty Hall
-Ice	SSR	Vera	Rapid March +20%	Load +10%		Guerrilla Master +25%	Regeneration +10%	TRUE	TRUE	FALSE		
-Ice	SSR	Paula	Rapid March +20%	Overseer +20%		Guerrilla Master +20%	First Aid +15%	TRUE	TRUE	TRUE		
-Ice	SSR	Keith	Rapid March +30%	Load +20%		Guerrilla Master +20%	Regeneration +10%	TRUE	FALSE	FALSE		
-Ice	SSR	Maud	Rapid March +30%	Load +20%		Guerrilla Master +20%	Regeneration +10%	TRUE	FALSE	FALSE		
-Ice	SSR	Nathaniel	Rapid March +30%	Load +20%		First Aid +15%	Regeneration +10%	TRUE	FALSE	FALSE		
-Ice	SSR	Hadi	Rapid March +20%	Overseer +20%		Guerrilla Master +20%	Gathering Master +20%	TRUE	TRUE	TRUE		
-Ice	SSR	Nicole	Rapid March +20%	Overseer +20%		Guerrilla Master +20%	Gathering Master +20%	TRUE	TRUE	FALSE		Bounty Hall
-Ice	SSR	Ralph	Rapid March +20%	Enhanced Freeze +30%		Guerrilla Master +20%	Load +10%	TRUE	TRUE	TRUE		Elemental Lord
-Ice	SR	Merlin	Enhanced Freeze +20%	Orc Curse +40%	Initiative +15%			TRUE	FALSE	FALSE		
-								FALSE	FALSE	FALSE		
+Element	Class	Name	Skill 1	Skill 2	Skill 3	Skill 4	Skill 4
+Archer	SSR	Sahar	Rapid March +20%	Guerrilla Master +25%		First Aid +25%	Regeneration +10%
+Archer	SSR	Johannes	Rapid March +20%	First Aid +20%		Guerrilla Master +20%	Regeneration +10%
+Archer	SSR	Maya	Rapid March +20%	First Aid +20%		Guerrilla Master +20%	Regeneration +10%
+Archer	SSR	Ptolemy	Rapid March +20%	First Aid +20%		Guerrilla Master +20%	Regeneration +10%
+Archer	SSR	Meg	Rapid March +20%	First Aid +15%		Guerrilla Master +25%	Regeneration +10%
+Archer	SSR	Trist	Rapid March +20%	First Aid +15%		Guerrilla Master +20%	Regeneration +10%
+Archer	SSR	Doris	Rapid March +20%	Guerrilla Master +20%		Guerrilla Master +20%	Regeneration +10%
+Archer	SSR	Livia	Rapid March +20%	Monster Counter -10%		Guerrilla Master +25%	Regeneration +10%
+Archer	SSR	Pan	Rapid March +30%	Monster Counter -10%		Load +20%	Regeneration +10%
+Archer	SSR	Fatima	Rapid March +20%	Load +20%		Monster Counter -10%	Regeneration +10%
+Archer	SSR	Padme	Rapid March +30%	Guerrilla Master +20%		Guerrilla Master +20%	Regeneration +15%
+Archer	SSR	Richard	Rapid March +20%	Load +15%		Guerrilla Master +25%	Regeneration +10%
+Archer	SSR	Torvi	Rapid March +20%	Load +15%		Guerrilla Master +25%	Regeneration +10%
+Archer	SSR	O'Neil	Rapid March +20%	Load +20%		Guerrilla Master +25%	First Aid +20%
+Archer	SSR	Ariza	Rapid March +20%	Load +15%		Guerrilla Master +25%	First Aid +20%
+Archer	SSR	Collin	Rapid March +30%	Load +20%		Guerrilla Master +20%	Regeneration +10%
+Archer	SSR	Sabastian	Rapid March +30%	Load +20%		Guerrilla Master +20%	Regeneration +10%
+Archer	SSR	Gabriel	Rapid March +20%	Load +20%		Guerrilla Master +20%	First Aid +10%
+Archer	SSR	Arthur	Rapid March +20%	Overseer +20%		Guerrilla Master +20%	Gathering Master +20%
+Archer	SSR	Jennifer	Rapid March +20%	Piercing Arrow +15%		Guerrilla Master +20%	Load +10%
+Archer	SSR	Kadir	Load +20%	Rapid March +20%		First Aid +15%	Regeneration +10%
+Archer	SSR	Bella	Rapid March +20%	First Aid +15%		Load +20%	Regeneration +10%
+Archer	SSR	Montag	Load +20%	Gathering Master +20%		Rapid March +20%	Regeneration +10%
+Archer	SR	Harold	Master of Defense +10%	Monster Counter -10%		Archery Master +15%	
+Archer	SR	Arwyn	Rapid Shot +15%	Piercing Arrow +15%	Archery Master +15%		
+Fire	SSR	Ivy	Rapid March +30%	Guerrilla Master +20%		Guerrilla Master +20%	Regeneration +15%
+Fire	SSR	Tracy	Rapid March +30%	Guerrilla Master +20%		Guerrilla Master +20%	Regeneration +15%
+Fire	SSR	Anko	Rapid March +30%	First Aid +15%		Guerrilla Master +20%	Regeneration +10%
+Fire	SSR	Lovelace	Rapid March +30%	First Aid +15%		Guerrilla Master +20%	Regeneration +10%
+Fire	SSR	Erika	Rapid March +25%	First Aid +15%		Guerrilla Master +25%	Regeneration +10%
+Fire	SSR	Daria	Rapid March +25%	First Aid +15%		Guerrilla Master +25%	Regeneration +10%
+Fire	SSR	Vanessa	Rapid March +20%	First Aid +15%		Guerrilla Master +20%	Regeneration +10%
+Fire	SSR	Miku	Monster Counter -20%	Rapid March +15%		Guerrilla Master +25%	Regeneration +10%
+Fire	SSR	Giselle	Rapid March +20%	Monster Counter -10%		Guerrilla Master +25%	Regeneration +10%
+Fire	SSR	Cosette	Rapid March +20%	Load +30%		Guerrilla Master +30%	First Aid +25%
+Fire	SSR	Paul	Rapid March +20%	Load +20%		Guerrilla Master +30%	First Aid +25%
+Fire	SSR	Kenshiro	Rapid March +20%	Load +15%		Guerrilla Master +25%	Regeneration +10%
+Fire	SSR	Penny	Rapid March +20%	Load +15%		Guerrilla Master +25%	Regeneration +10%
+Fire	SSR	Christie	Rapid March +20%	Load +15%		Guerrilla Master +25%	Regeneration +10%
+Fire	SSR	Dolvar	Rapid March +20%	Load +15%		Guerrilla Master +25%	Regeneration +15%
+Fire	SSR	Wallis	Rapid March +20%	Load +15%		Guerrilla Master +25%	Regeneration +15%
+Fire	SSR	Allen	Rapid March +20%	Load +10%		Guerrilla Master +25%	First Aid +15%
+Fire	SSR	Gro	Initiative +15%	Blaze Expert +20%		Orc Curse +40%	First Aid +15%
+Fire	SSR	Dean	Load +15%	Guerrilla Master +20%		First Aid +15%	Regeneration +10%
+Fire	SSR	Simon	Rapid March +20%	Overseer +20%		Guerrilla Master +20%	Gathering Master +20%
+Fire	SSR	Brie	Load +20%	First Aid +15%		Guerrilla Master +20%	Regeneration +10%
+Fire	SSR	Apollo	Rapid March +30%	Load +20%		Guerrilla Master +20%	Regeneration +10%
+Fire	SSR	Dain	Rapid March +20%	Load +20%		First Aid +15%	Regeneration +10%
+Fire	SR	Kris	Rapid March +20%	Gathering Master +20%		Guerrilla Master +20%	
+Fire	SR	Ophelia	Blaze Expert +20%		Clearcast +20%		Fire Master +20%
+Fire	SR	Samar	Blaze Expert +20%		Clearcast +20%		Fire Master +20%
+Goblin	SSR	Lilith	Rapid March +20%	First Aid +20%		Guerrilla Master +20%	Regeneration +10%
+Goblin	SSR	Rila	Rapid March +20%	First Aid +20%		Guerrilla Master +20%	Regeneration +10%
+Goblin	SSR	Gruen	Rapid March +25%	First Aid +15%		Guerrilla Master +25%	Regeneration +10%
+Goblin	SSR	Boudica	Rapid March +25%	First Aid +15%		Guerrilla Master +25%	Regeneration +10%
+Goblin	SSR	Wendy	Rapid March +20%	First Aid +15%		Guerrilla Master +25%	Regeneration +10%
+Goblin	SSR	Luvia	Rapid March +20%	First Aid +15%		Monster Counter -10%	Regeneration +10%
+Goblin	SSR	Pythia	Monster Counter -10%	Rapid March +15%		Load +20%	Regeneration +10%
+Goblin	SSR	Tumnus	Rapid March +30%	Guerrilla Master +20%		Guerrilla Master +20%	Regeneration +15%
+Goblin	SSR	Rosamond	Rapid March +20%	Load +20%		Guerrilla Master +30%	First Aid +25%
+Goblin	SSR	Angelina	Rapid March +20%	Load +20%		Guerrilla Master +30%	First Aid +25%
+Goblin	SSR	Arwin	Rapid March +20%	Load +15%		Guerrilla Master +25%	Regeneration +10%
+Goblin	SSR	Benjamin	Rapid March +20%	Load +15%		Guerrilla Master +25%	Regeneration +10%
+Goblin	SSR	Lomax	Rapid March +20%	Load +15%		Guerrilla Master +25%	Regeneration +10%
+Goblin	SSR	Meniere	Rapid March +20%	Load +15%		Guerrilla Master +25%	Regeneration +10%
+Goblin	SSR	Chiyoko	Rapid March +30%	Load +20%		Guerrilla Master +20%	Regeneration +10%
+Goblin	SSR	Suad	Rapid March +30%	Load +20%		Guerrilla Master +20%	Regeneration +10%
+Goblin	SSR	Blackwell	Rapid March +20%	Load +20%		Guerrilla Master +20%	Regeneration +10%
+Goblin	SSR	Issac	Rapid March +20%	Overseer +20%		Guerrilla Master +20%	Load +10%
+Goblin	SSR	Catherine	Rapid March +20%	Overseer +20%		Guerrilla Master +20%	Gathering Master +20%
+Goblin	SSR	Rogers	Rapid March +20%	Overseer +20%		Guerrilla Master +20%	Gathering Master +20%
+Goblin	SSR	Claudia	Overseer +20%	First Aid +15%		Inspiration +20%	Load +20%
+Goblin	SR	Alucard	Poison +15%	Orc Counter +200%	Overseer +20%		
+Ice	SSR	Ao Deng Ge Ri Le	Rapid March +20%	Guerrilla Master +20%		Guerrilla Master +20%	Regeneration +10%
+Ice	SSR	Judy	Rapid March +20%	Guerrilla Master +20%		Guerrilla Master +20%	Regeneration +10%
+Ice	SSR	Ao Yue	Rapid March +20%	First Aid +20%		Guerrilla Master +20%	Regeneration +10%
+Ice	SSR	Trishy	Rapid March +20%	First Aid +20%		Guerrilla Master +20%	Regeneration +10%
+Ice	SSR	Filius	Rapid March +20%	First Aid +15%		Guerrilla Master +25%	Regeneration +10%
+Ice	SSR	Enzo	Rapid March +20%	First Aid +20%		Guerrilla Master +20%	First Aid +10%
+Ice	SSR	j	Rapid March +20%	Monster Counter -10%		Guerrilla Master +25%	Regeneration +10%
+Ice	SSR	Pedra	Rapid March +20%	Monster Counter -10%		Guerrilla Master +25%	Regeneration +10%
+Ice	SSR	Hana	Monster Counter -10%	Rapid March +15%		Guerrilla Master +25%	Regeneration +10%
+Ice	SSR	Clarence	Rapid March +30%	Guerrilla Master +20%		Guerrilla Master +20%	Regeneration +15%
+Ice	SSR	Lilani	Rapid March +20%	Load +15%		Guerrilla Master +25%	Regeneration +10%
+Ice	SSR	Parr	Rapid March +20%	Load +15%		Guerrilla Master +25%	Regeneration +10%
+Ice	SSR	Rudolph	Rapid March +20%	Load +15%		Guerrilla Master +25%	First Aid +15%
+Ice	SSR	Vera	Rapid March +20%	Load +10%		Guerrilla Master +25%	Regeneration +10%
+Ice	SSR	Paula	Rapid March +20%	Overseer +20%		Guerrilla Master +20%	First Aid +15%
+Ice	SSR	Keith	Rapid March +30%	Load +20%		Guerrilla Master +20%	Regeneration +10%
+Ice	SSR	Maud	Rapid March +30%	Load +20%		Guerrilla Master +20%	Regeneration +10%
+Ice	SSR	Nathaniel	Rapid March +30%	Load +20%		First Aid +15%	Regeneration +10%
+Ice	SSR	Hadi	Rapid March +20%	Overseer +20%		Guerrilla Master +20%	Gathering Master +20%
+Ice	SSR	Nicole	Rapid March +20%	Overseer +20%		Guerrilla Master +20%	Gathering Master +20%
+Ice	SSR	Ralph	Rapid March +20%	Enhanced Freeze +30%		Guerrilla Master +20%	Load +10%
+Ice	SR	Merlin	Enhanced Freeze +20%	Orc Curse +40%	Initiative +15%		
+Fire	SSR	Catrina	Rapid March +20%	First Aid +15%		Guerrilla Master +25%	Regeneration +10%
+Ice	SSR	Nina	Rapid March +20%	First Aid +15%		Guerrilla Master +25%	First Aid +10%
+Archer	SSR	Layla	Rapid March +25%	First Aid +15%		Guerrilla Master +25%	Regeneration +10%
+Goblin	SSR	Daisy	Rapid March +20%	First Aid +20%		Guerrilla Master +20%	First Aid +10%
+Ice	SSR	Enzo	Rapid March +20%	First Aid +20%		Guerrilla Master +20%	First Aid +10%
+Fire	SSR	Ivy	Rapid March +30%	Guerrilla Master +20%		Guerrilla Master +20%	Regeneration +15%
+Archer	SSR	Dylan	Rapid March +20%	First Aid +20%		Guerrilla Master +20%	Regeneration +10%
+Fire	SSR	Sindra	Rapid March +20%	First Aid +20%		Guerrilla Master +20%	First Aid +20%
+Ice	SSR	Rebecca	Rapid March +20%	First Aid +15%		Guerrilla Master +20%	First Aid +10%
+Goblin	SSR	Mycelia	Rapid March +20%	First Aid +15%		Guerrilla Master +20%	First Aid +10%
+Fire	SSR	Edmund	Rapid March +20%	First Aid +20%		Guerrilla Master +20%	Regeneration +10%
+Archer	SSR	Ryan	Rapid March +20%	Monster Counter -10%		Guerrilla Master +25%	First Aid +10%

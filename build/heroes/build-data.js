@@ -251,36 +251,44 @@ function calcRating() {
     const round = (num) => Math.round(num*2)/2;
 
     /**
-     * Rating of a hero's ability in ATTACKING castles and towers, based on
+     * Rating (0 ~ 10) on hero's ability in ATTACKING castles and fortresses, based on
      *   1) how quickly can the hero reach the target (Rapid March),
      *   2) can the hero defend home city after returning? (Regeneration),
      *   3) unit-power boost (Guerrilla Master)
      *   4) saving on healing scroll (First Aid)
      */
     let attackRating = round(
-        4.0 * scale(bonus.march, maxBonus.march) +
-        3.0 * scale(bonus.regeneration, maxBonus.regeneration) +
-        3.0 * scale(bonus['unit-power'], maxBonus['unit-power']) +
-        2.5 * scale(bonus.recovery, maxBonus.recovery),
+        4 * scale(bonus.march, maxBonus.march) +
+        3 * scale(bonus.regeneration, maxBonus.regeneration) +
+        2.5 * scale(bonus['unit-power'], maxBonus['unit-power']) +
+        3 * scale(bonus.recovery, maxBonus.recovery),
     );
 
     attackRating = Math.min(10, attackRating);
 
-    // Rating of a hero's ability in DEFENDING towers, based on
-    //   1) health recovered after a successful defense? (Regeneration),
-    //   2) unit-power boost (Guerrilla Master)
-    //   3) saving on healing scroll (First Aid)
+    /**
+     * Rating (0 ~ 10) on hero's ability in DEFENDING fortresses, based on
+     *  1) health recovered after a successful defense? (Regeneration),
+     *  2) unit-power boost (Guerrilla Master)
+     *  3) saving on healing scroll (First Aid)
+     */
     const defenseRating = round(
         4 * scale(bonus.regeneration, maxBonus.regeneration) +
         4 * scale(bonus['unit-power'], maxBonus['unit-power']) +
         2 * scale(bonus.recovery, maxBonus.recovery),
     );
 
+    /**
+     * Rating (0 ~ 5) on hero's utility in defeating monsters
+     */
     const huntingRating = round(
         1 * scale(bonus.march, maxBonus.march) +
         4 * scale(bonus.AP, maxBonus.AP),
     );
 
+    /**
+     * Rating (0 ~ 5) on hero's utility in gold gathering
+     */
     const miningRating = round(
         1.0 * scale(bonus.march, maxBonus.march) +
         2.5 * scale(bonus.gathering, maxBonus.gathering) +
@@ -310,6 +318,7 @@ function calcRating() {
     else if (rankingScore >= 4) heroData.tier = 'D';
     else if (rankingScore >= 2) heroData.tier = 'E';
     else if (rankingScore >= 1) heroData.tier = 'F';
+    else heroData.tier = 'F';
 
     // Add additional decimal digit to help with sorting
     // heroData.ranking = rankingScore + (defenseRating / 20);
