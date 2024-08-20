@@ -352,8 +352,14 @@ function saveRating() {
         'Element',
         'Rarity',
         'Tier',
-        // 'Ranking',
         'Hero',
+
+        'March Speed',
+        'Recovery',
+        'Regeneration',
+        'Unit Power',
+        'AP',
+
         'Attacking',
         'Defending',
         'Hunting',
@@ -366,6 +372,13 @@ function saveRating() {
       heroData.rarity,
       heroData.tier,
       heroData.name,
+
+      heroData.bonus.march,
+      heroData.bonus.recovery,
+      heroData.bonus.regeneration,
+      heroData.bonus['unit-power'],
+      heroData.bonus.AP,
+
       heroData.rating.attacking,
       heroData.rating.defending,
       heroData.rating.hunting,

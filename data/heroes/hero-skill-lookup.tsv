@@ -19,8 +19,8 @@ First Aid +10%	First Aid	10	recovery	FALSE	Recovery +{{value}}%	Recovery Speed o
 First Aid +15%	First Aid	15	recovery	FALSE	Recovery +{{value}}%	Recovery Speed of wounded units in the troop +{{value}}%
 First Aid +20%	First Aid	20	recovery	FALSE	Recovery +{{value}}%	Recovery Speed of wounded units in the troop +{{value}}%
 First Aid +25%	First Aid	25	recovery	FALSE	Recovery +{{value}}%	Recovery Speed of wounded units in the troop +{{value}}%
-Regeneration +15%	Regeneration	15	recovery	FALSE	Regeneration +{{value}}%	Recovery of units wounded in battle +{{value}}%
-Regeneration +10%	Regeneration	10	recovery	FALSE	Regeneration +{{value}}%	Recovery of units wounded in battle +{{value}}%
+Regeneration +15%	Regeneration	15	regeneration	FALSE	Regeneration +{{value}}%	Recovery of units wounded in battle +{{value}}%
+Regeneration +10%	Regeneration	10	regeneration	FALSE	Regeneration +{{value}}%	Recovery of units wounded in battle +{{value}}%
 Monster Counter -20%	Monster Counter	20	AP	FALSE	AP Discount {{value}}%	Attacking a monster costs {{value}}% less AP.\nAttacking monsters restore an additional 90% of wounded soldiers
 Monster Counter -10%	Monster Counter	10	AP	FALSE	AP Discount {{value}}%	Attacking a monster costs {{value}}% less AP.\nAttacking monsters restore an additional 90% of wounded soldiers
 Gathering Master +20%	Gathering Master	20	gathering	FALSE	Gathering +{{value}}%	Gold Gathering Speed +{{value}}%

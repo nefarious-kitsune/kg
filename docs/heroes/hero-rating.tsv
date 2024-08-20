@@ -1,108 +1,108 @@
-Element	Rarity	Tier	Hero	Attacking	Defending	Hunting	Mining
-Archer	SSR	A	Padme	8.5	5	1	1
-Archer	SSR	B	Sahar	7.5	5	1	1
-Archer	SSR	B	Layla	7.5	4.5	1	1
-Archer	SSR	C	O'Neil	7	4.5	1	2
-Archer	SSR	C	Collin	7	3.5	1	2
-Archer	SSR	C	Sabastian	7	3.5	1	2
-Archer	SSR	C	Johannes	7	4.5	1	1
-Archer	SSR	C	Maya	7	4.5	1	1
-Archer	SSR	C	Ptolemy	7	4.5	1	1
-Archer	SSR	C	Meg	7	4.5	1	1
-Archer	SSR	C	Trist	7	4	1	1
-Archer	SSR	C	Doris	7	5	1	1
-Archer	SSR	C	Ariza	7	4.5	1	1.5
-Archer	SSR	C	Dylan	7	4.5	1	1
-Archer	SSR	C	Livia	6.5	4	3	1
-Archer	SSR	C	Ryan	6.5	4	3	1
-Archer	SSR	C	Richard	6.5	4	1	1.5
-Archer	SSR	C	Torvi	6.5	4	1	1.5
-Archer	SSR	C	Gabriel	6	3.5	1	2
-Archer	SSR	D	Pan	5.5	1	3	2
-Archer	SSR	D	Kadir	5.5	1.5	1	2
-Archer	SSR	D	Bella	5.5	1.5	1	2
-Archer	SSR	D	Fatima	4.5	1	3	2
-Archer	SSR	D	Montag	4.5	1	1	4.5
-Archer	SSR	D	Arthur	4.5	2.5	1	3.5
-Archer	SSR	D	Jennifer	4.5	2.5	1	1.5
-Archer	SR	F	Harold	1.5	2.5	2	0
-Archer	SR	F	Arwyn	1.5	2.5	0	0
-Fire	SSR	A	Ivy	8.5	5	1	1
-Fire	SSR	A	Tracy	8.5	5	1	1
-Fire	SSR	A	Ivy	8.5	5	1	1
-Fire	SSR	B	Anko	8	4	1	1
-Fire	SSR	B	Lovelace	8	4	1	1
-Fire	SSR	B	Cosette	7.5	5	1	2.5
-Fire	SSR	B	Paul	7.5	5	1	2
-Fire	SSR	B	Erika	7.5	4.5	1	1
-Fire	SSR	B	Daria	7.5	4.5	1	1
-Fire	SSR	B	Sindra	7.5	4.5	1	1
-Fire	SSR	C	Apollo	7	3.5	1	2
-Fire	SSR	C	Vanessa	7	4	1	1
-Fire	SSR	C	Catrina	7	4.5	1	1
-Fire	SSR	C	Edmund	7	4.5	1	1
-Fire	SSR	C	Giselle	6.5	4	3	1
-Fire	SSR	C	Miku	6	4	4.5	0.5
-Fire	SSR	C	Kenshiro	6.5	4	1	1.5
-Fire	SSR	C	Penny	6.5	4	1	1.5
-Fire	SSR	C	Christie	6.5	4	1	1.5
-Fire	SSR	C	Dolvar	6.5	4	1	1.5
-Fire	SSR	C	Wallis	6.5	4	1	1.5
-Fire	SSR	C	Allen	6.5	4	1	1.5
-Fire	SSR	C	Gro	6	4	0.5	0.5
-Fire	SSR	D	Dain	5.5	1.5	1	2
-Fire	SSR	D	Simon	4.5	2.5	1	3.5
-Fire	SR	D	Kris	4.5	2.5	1	3.5
-Fire	SSR	D	Dean	4	4	0	1
-Fire	SSR	D	Brie	4	4	0	1
-Fire	SR	F	Ophelia	1.5	2.5	0	0
-Fire	SR	F	Samar	1.5	2.5	0	0
-Ice	SSR	A	Clarence	8.5	5	1	1
-Ice	SSR	C	Keith	7	3.5	1	2
-Ice	SSR	C	Maud	7	3.5	1	2
-Ice	SSR	C	Ao Deng Ge Ri Le	7	5	1	1
-Ice	SSR	C	Judy	7	5	1	1
-Ice	SSR	C	Ao Yue	7	4.5	1	1
-Ice	SSR	C	Trishy	7	4.5	1	1
-Ice	SSR	C	Filius	7	4.5	1	1
-Ice	SSR	C	Enzo	7	4.5	1	1
-Ice	SSR	C	Nina	7	4.5	1	1
-Ice	SSR	C	Enzo	7	4.5	1	1
-Ice	SSR	C	Rebecca	7	4	1	1
-Ice	SSR	C	j	6.5	4	3	1
-Ice	SSR	C	Pedra	6.5	4	3	1
-Ice	SSR	C	Nathaniel	6.5	1.5	1	2
-Ice	SSR	C	Lilani	6.5	4	1	1.5
-Ice	SSR	C	Parr	6.5	4	1	1.5
-Ice	SSR	C	Rudolph	6.5	4	1	1.5
-Ice	SSR	C	Vera	6.5	4	1	1.5
-Ice	SSR	C	Paula	6.5	4	1	1
-Ice	SSR	C	Hana	6	4	2.5	0.5
-Ice	SSR	D	Hadi	4.5	2.5	1	3.5
-Ice	SSR	D	Nicole	4.5	2.5	1	3.5
-Ice	SSR	D	Ralph	4.5	2.5	1	1.5
-Ice	SR	E	Merlin	2.5	0	0.5	0.5
-Goblin	SSR	A	Tumnus	8.5	5	1	1
-Goblin	SSR	B	Rosamond	7.5	5	1	2
-Goblin	SSR	B	Angelina	7.5	5	1	2
-Goblin	SSR	B	Gruen	7.5	4.5	1	1
-Goblin	SSR	B	Boudica	7.5	4.5	1	1
-Goblin	SSR	C	Chiyoko	7	3.5	1	2
-Goblin	SSR	C	Suad	7	3.5	1	2
-Goblin	SSR	C	Lilith	7	4.5	1	1
-Goblin	SSR	C	Rila	7	4.5	1	1
-Goblin	SSR	C	Wendy	7	4.5	1	1
-Goblin	SSR	C	Daisy	7	4.5	1	1
-Goblin	SSR	C	Mycelia	7	4	1	1
-Goblin	SSR	C	Arwin	6.5	4	1	1.5
-Goblin	SSR	C	Benjamin	6.5	4	1	1.5
-Goblin	SSR	C	Lomax	6.5	4	1	1.5
-Goblin	SSR	C	Meniere	6.5	4	1	1.5
-Goblin	SSR	C	Blackwell	6	3.5	1	2
-Goblin	SSR	D	Luvia	5.5	1.5	3	1
-Goblin	SSR	D	Catherine	4.5	2.5	1	3.5
-Goblin	SSR	D	Rogers	4.5	2.5	1	3.5
-Goblin	SSR	D	Issac	4.5	2.5	1	1.5
-Goblin	SSR	D	Pythia	4	1	2.5	2
-Goblin	SSR	E	Claudia	3.5	4	0	1
-Goblin	SR	F	Alucard	0	0	0	0
+Element	Rarity	Tier	Hero	March Speed	Recovery	Regeneration	Unit Power	AP	Attacking	Defending	Hunting	Mining
+Archer	SSR	S	Padme	30	0	15	40	0	9.5	8	1	1
+Archer	SSR	A	Sahar	20	25	10	25	0	8.5	6.5	1	1
+Archer	SSR	A	Layla	25	15	10	25	0	8.5	6	1	1
+Archer	SSR	B	Johannes	20	20	10	20	0	8	6	1	1
+Archer	SSR	B	Maya	20	20	10	20	0	8	6	1	1
+Archer	SSR	B	Ptolemy	20	20	10	20	0	8	6	1	1
+Archer	SSR	B	Meg	20	15	10	25	0	8	6	1	1
+Archer	SSR	B	Trist	20	15	10	20	0	8	6	1	1
+Archer	SSR	B	Dylan	20	20	10	20	0	8	6	1	1
+Archer	SSR	C	O'Neil	20	20	0	25	0	7	4.5	1	2
+Archer	SSR	C	Collin	30	0	10	20	0	7	4.5	1	2
+Archer	SSR	C	Sabastian	30	0	10	20	0	7	4.5	1	2
+Archer	SSR	C	Doris	20	0	10	40	0	7	6	1	1
+Archer	SSR	C	Ariza	20	20	0	25	0	7	4.5	1	1.5
+Archer	SSR	C	Livia	20	0	10	25	10	6.5	5	3	1
+Archer	SSR	C	Ryan	20	10	0	25	10	6.5	4	3	1
+Archer	SSR	C	Kadir	20	15	10	0	0	6.5	3	1	2
+Archer	SSR	C	Bella	20	15	10	0	0	6.5	3	1	2
+Archer	SSR	C	Richard	20	0	10	25	0	6.5	5	1	1.5
+Archer	SSR	C	Torvi	20	0	10	25	0	6.5	5	1	1.5
+Archer	SSR	C	Gabriel	20	10	0	20	0	6	3.5	1	2
+Archer	SSR	D	Pan	30	0	10	0	10	5.5	2	3	2
+Archer	SSR	D	Fatima	20	0	10	0	10	4.5	2	3	2
+Archer	SSR	D	Montag	20	0	10	0	0	4.5	2	1	4.5
+Archer	SSR	D	Arthur	20	0	0	20	0	4.5	2.5	1	3.5
+Archer	SSR	D	Jennifer	20	0	0	20	0	4.5	2.5	1	1.5
+Archer	SR	F	Harold	0	0	0	15	10	1.5	2.5	2	0
+Archer	SR	F	Arwyn	0	0	0	15	0	1.5	2.5	0	0
+Fire	SSR	S	Ivy	30	0	15	40	0	9.5	8	1	1
+Fire	SSR	S	Tracy	30	0	15	40	0	9.5	8	1	1
+Fire	SSR	S	Ivy	30	0	15	40	0	9.5	8	1	1
+Fire	SSR	A	Anko	30	15	10	20	0	9	6	1	1
+Fire	SSR	A	Lovelace	30	15	10	20	0	9	6	1	1
+Fire	SSR	A	Erika	25	15	10	25	0	8.5	6	1	1
+Fire	SSR	A	Daria	25	15	10	25	0	8.5	6	1	1
+Fire	SSR	B	Vanessa	20	15	10	20	0	8	6	1	1
+Fire	SSR	B	Dolvar	20	0	15	25	0	8	7	1	1.5
+Fire	SSR	B	Wallis	20	0	15	25	0	8	7	1	1.5
+Fire	SSR	B	Catrina	20	15	10	25	0	8	6	1	1
+Fire	SSR	B	Edmund	20	20	10	20	0	8	6	1	1
+Fire	SSR	B	Cosette	20	25	0	30	0	7.5	5	1	2.5
+Fire	SSR	B	Paul	20	25	0	30	0	7.5	5	1	2
+Fire	SSR	B	Sindra	20	40	0	20	0	7.5	4.5	1	1
+Fire	SSR	C	Apollo	30	0	10	20	0	7	4.5	1	2
+Fire	SSR	C	Giselle	20	0	10	25	10	6.5	5	3	1
+Fire	SSR	C	Dain	20	15	10	0	0	6.5	3	1	2
+Fire	SSR	C	Miku	15	0	10	25	20	6	5	4.5	0.5
+Fire	SSR	C	Kenshiro	20	0	10	25	0	6.5	5	1	1.5
+Fire	SSR	C	Penny	20	0	10	25	0	6.5	5	1	1.5
+Fire	SSR	C	Christie	20	0	10	25	0	6.5	5	1	1.5
+Fire	SSR	C	Allen	20	15	0	25	0	6.5	4	1	1.5
+Fire	SSR	C	Gro	15	15	0	20	0	6	4	0.5	0.5
+Fire	SSR	D	Dean	0	15	10	20	0	5	6	0	1
+Fire	SSR	D	Brie	0	15	10	20	0	5	6	0	1
+Fire	SSR	D	Simon	20	0	0	20	0	4.5	2.5	1	3.5
+Fire	SR	D	Kris	20	0	0	20	0	4.5	2.5	1	3.5
+Fire	SR	F	Ophelia	0	0	0	20	0	1.5	2.5	0	0
+Fire	SR	F	Samar	0	0	0	20	0	1.5	2.5	0	0
+Ice	SSR	S	Clarence	30	0	15	40	0	9.5	8	1	1
+Ice	SSR	B	Ao Yue	20	20	10	20	0	8	6	1	1
+Ice	SSR	B	Trishy	20	20	10	20	0	8	6	1	1
+Ice	SSR	B	Filius	20	15	10	25	0	8	6	1	1
+Ice	SSR	B	Nathaniel	30	15	10	0	0	7.5	3	1	2
+Ice	SSR	C	Keith	30	0	10	20	0	7	4.5	1	2
+Ice	SSR	C	Maud	30	0	10	20	0	7	4.5	1	2
+Ice	SSR	C	Ao Deng Ge Ri Le	20	0	10	40	0	7	6	1	1
+Ice	SSR	C	Judy	20	0	10	40	0	7	6	1	1
+Ice	SSR	C	Enzo	20	30	0	20	0	7	4.5	1	1
+Ice	SSR	C	Nina	20	25	0	25	0	7	4.5	1	1
+Ice	SSR	C	Enzo	20	30	0	20	0	7	4.5	1	1
+Ice	SSR	C	Rebecca	20	25	0	20	0	7	4	1	1
+Ice	SSR	C	j	20	0	10	25	10	6.5	5	3	1
+Ice	SSR	C	Pedra	20	0	10	25	10	6.5	5	3	1
+Ice	SSR	C	Lilani	20	0	10	25	0	6.5	5	1	1.5
+Ice	SSR	C	Parr	20	0	10	25	0	6.5	5	1	1.5
+Ice	SSR	C	Rudolph	20	15	0	25	0	6.5	4	1	1.5
+Ice	SSR	C	Vera	20	0	10	25	0	6.5	5	1	1.5
+Ice	SSR	C	Paula	20	15	0	20	0	6.5	4	1	1
+Ice	SSR	C	Hana	15	0	10	25	10	6	5	2.5	0.5
+Ice	SSR	D	Hadi	20	0	0	20	0	4.5	2.5	1	3.5
+Ice	SSR	D	Nicole	20	0	0	20	0	4.5	2.5	1	3.5
+Ice	SSR	D	Ralph	20	0	0	20	0	4.5	2.5	1	1.5
+Ice	SR	E	Merlin	15	0	0	0	0	2.5	0	0.5	0.5
+Goblin	SSR	S	Tumnus	30	0	15	40	0	9.5	8	1	1
+Goblin	SSR	A	Gruen	25	15	10	25	0	8.5	6	1	1
+Goblin	SSR	A	Boudica	25	15	10	25	0	8.5	6	1	1
+Goblin	SSR	B	Lilith	20	20	10	20	0	8	6	1	1
+Goblin	SSR	B	Rila	20	20	10	20	0	8	6	1	1
+Goblin	SSR	B	Wendy	20	15	10	25	0	8	6	1	1
+Goblin	SSR	B	Rosamond	20	25	0	30	0	7.5	5	1	2
+Goblin	SSR	B	Angelina	20	25	0	30	0	7.5	5	1	2
+Goblin	SSR	C	Chiyoko	30	0	10	20	0	7	4.5	1	2
+Goblin	SSR	C	Suad	30	0	10	20	0	7	4.5	1	2
+Goblin	SSR	C	Daisy	20	30	0	20	0	7	4.5	1	1
+Goblin	SSR	C	Mycelia	20	25	0	20	0	7	4	1	1
+Goblin	SSR	C	Luvia	20	15	10	0	10	6.5	3	3	1
+Goblin	SSR	C	Arwin	20	0	10	25	0	6.5	5	1	1.5
+Goblin	SSR	C	Benjamin	20	0	10	25	0	6.5	5	1	1.5
+Goblin	SSR	C	Lomax	20	0	10	25	0	6.5	5	1	1.5
+Goblin	SSR	C	Meniere	20	0	10	25	0	6.5	5	1	1.5
+Goblin	SSR	C	Blackwell	20	0	10	20	0	6	4.5	1	2
+Goblin	SSR	D	Catherine	20	0	0	20	0	4.5	2.5	1	3.5
+Goblin	SSR	D	Rogers	20	0	0	20	0	4.5	2.5	1	3.5
+Goblin	SSR	D	Issac	20	0	0	20	0	4.5	2.5	1	1.5
+Goblin	SSR	D	Pythia	15	0	10	0	10	4	2	2.5	2
+Goblin	SSR	E	Claudia	0	15	0	20	0	3.5	4	0	1
+Goblin	SR	F	Alucard	0	0	0	0	0	0	0	0	0
