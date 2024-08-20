@@ -243,9 +243,20 @@ function calcRating() {
   HeroBase.forEach((heroData) => {
     const bonus = heroData.bonus;
 
-    // Proper scaling
+    /**
+     * Helper function for proper scaling of bonus.
+     * If max bonus is 25%:
+     * - If the bonus is 0, the result is 0
+     * - If the bonus is 10%, the result is 0.50
+     * - If the bonus is 15%, the result is 0.66
+     * - If the bonus is 20%, the result is 0.80
+     * - If the bonus is 25%, the result is 1.00
+     * @param {number} bonus - bonus percentage
+     * @param {number} max - max bonus percentage
+     * @return {number}
+     */
     const scale =
-      (point, max) => (point === 0)?0:(0.5 + 0.5*(point-10)/(max-10));
+      (bonus, max) => (bonus === 0)?0:(0.5 + 0.5*(bonus-10)/(max-10));
 
     // Round to nearest 0.5
     const round = (num) => Math.round(num*2)/2;
@@ -306,10 +317,10 @@ function calcRating() {
     let rankingScore = attackRating;
 
     // Bump up the ranking score if the hero has utility values
-    if (huntingRating >= 4) rankingScore += 1;
-    else if (huntingRating >= 2) rankingScore += 0.5;
-    else if (miningRating >= 4) rankingScore += 1.0;
-    else if (miningRating >= 2) rankingScore += 0.5;
+    if (huntingRating >= 4) rankingScore += 0.5;
+    else if (huntingRating >= 2) rankingScore += 0.3;
+    else if (miningRating >= 4) rankingScore += 0.3;
+    else if (miningRating >= 2) rankingScore += 0.2;
 
     if (rankingScore >= 9.5) heroData.tier = 'S';
     else if (rankingScore >= 8.5) heroData.tier = 'A';
@@ -325,8 +336,10 @@ function calcRating() {
     heroData.ranking = rankingScore;
   });
 
-  // sort database and remove temporary sorting index
-  // HeroBase.sort((a, b) => b.ranking - a.ranking);
+  // Sort database by sorting index
+  HeroBase.sort((a, b) => b.ranking - a.ranking);
+
+  // Remove temporary sorting index
   HeroBase.forEach((heroData) => delete heroData.ranking);
 }
 
@@ -334,7 +347,7 @@ function calcRating() {
  * Save rating info to .tsv file
  */
 function saveRating() {
-  const content =
+  const headerRow =
       [
         'Element',
         'Rarity',
@@ -345,20 +358,38 @@ function saveRating() {
         'Defending',
         'Hunting',
         'Mining',
-      ].join('\t') + '\n' +
-      HeroBase
-          .map((heroData) => (
-            heroData.element + '\t' +
-            heroData.rarity + '\t' +
-            heroData.tier + '\t' +
-            // heroData.ranking + '\t' +
-            heroData.name + '\t' +
-            heroData.rating.attacking + '\t' +
-            heroData.rating.defending + '\t' +
-            heroData.rating.hunting + '\t' +
-            heroData.rating.mining + '\t'
-          ))
-          .join('\n') + '\n';
+      ].join('\t');
+
+  const makeRow = (heroData) =>
+    [
+      heroData.element,
+      heroData.rarity,
+      heroData.tier,
+      heroData.name,
+      heroData.rating.attacking,
+      heroData.rating.defending,
+      heroData.rating.hunting,
+      heroData.rating.mining,
+    ].join('\t');
+
+  const content =
+    headerRow + '\n' +
+    HeroBase
+        .filter((heroData) => heroData.element === 'Archer')
+        .map((heroData) => makeRow(heroData))
+        .join('\n') + '\n' +
+    HeroBase
+        .filter((heroData) => heroData.element === 'Fire')
+        .map((heroData) => makeRow(heroData))
+        .join('\n') + '\n' +
+    HeroBase
+        .filter((heroData) => heroData.element === 'Ice')
+        .map((heroData) => makeRow(heroData))
+        .join('\n') + '\n' +
+    HeroBase
+        .filter((heroData) => heroData.element === 'Goblin')
+        .map((heroData) => makeRow(heroData))
+        .join('\n');
 
   writeFileSync(resolve(ExportPath, 'hero-rating.tsv'), content);
 }
