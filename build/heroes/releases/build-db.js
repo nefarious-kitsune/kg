@@ -73,10 +73,9 @@ function loadStatsHeroList() {
 
 /**
  * Load the list of Event Heroes
- * @param {string} fileName
  */
-function loadEventHeroList(fileName) {
-  const tsvFilePath = resolve(srcBasePath, fileName);
+function loadEventHeroList() {
+  const tsvFilePath = resolve(srcBasePath, 'event-heroes.tsv');
   eventHeroList = readFileSync(tsvFilePath, {encoding: 'utf8'})
       .split('\n')
       .reverse();
@@ -137,26 +136,32 @@ function buildSeason(seasonId) {
   heroReleaseBase.set(seasonId, seasonReleaseData);
 }
 
-loadEventHeroList('event-heroes.tsv');
-
 export const seasons = [
-  'phase-1', 'phase-2', 'transition',
+  'pre-season',
+  'transition',
   'season-2', 'season-3', 'season-4',
   'season-5', 'season-6', 'season-7',
   'season-8', 'season-9', 'season-10',
-  'season-11',
+  'season-11', 'season-12',
   'season-31', 'season-32', 'season-33',
-  'season-34',
+  'season-34', 'season-35',
 ];
+
+// Easter and Brave the Dragonden events on new server have been removed
+// So the following is no longer necessary
+
+/*
+
+loadEventHeroList('event-heroes.tsv');
 
 [
   'transition',
   'season-2', 'season-3', 'season-4',
   'season-5', 'season-6', 'season-7',
   'season-8', 'season-9', 'season-10',
-  'season-11',
+  'season-11', 'season-12',
   'season-31', 'season-32', 'season-33',
-  'season-34',
+  'season-34', 'season-35',
 ].forEach((s) => buildSeason(s));
 
 loadStatsHeroList();
@@ -165,6 +170,11 @@ loadEventHeroList('event-heroes-phase-1.tsv');
 buildSeason('phase-1');
 loadEventHeroList('event-heroes-phase-2.tsv');
 buildSeason('phase-2');
+*/
+
+loadEventHeroList();
+seasons.forEach((s) => buildSeason(s));
+loadStatsHeroList();
 
 writeFileSync(
     'hero-release-data.json',
