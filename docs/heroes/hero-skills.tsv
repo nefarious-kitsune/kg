@@ -1,0 +1,108 @@
+Element	Rarity	Tier	Hero	Skill 1	Skill 2	Skill 3	Skill 4	Skill 5
+Archer	SSR	S	Padme	March Speed +30%	Unit Power +20%		Unit Power +20%	Regeneration +15%
+Archer	SSR	A	Sahar	March Speed +20%	Unit Power +25%		Recovery +25%	Regeneration +10%
+Archer	SSR	A	Layla	March Speed +25%	Recovery +15%		Unit Power +25%	Regeneration +10%
+Archer	SSR	B	Johannes	March Speed +20%	Recovery +20%		Unit Power +20%	Regeneration +10%
+Archer	SSR	B	Maya	March Speed +20%	Recovery +20%		Unit Power +20%	Regeneration +10%
+Archer	SSR	B	Ptolemy	March Speed +20%	Recovery +20%		Unit Power +20%	Regeneration +10%
+Archer	SSR	B	Meg	March Speed +20%	Recovery +15%		Unit Power +25%	Regeneration +10%
+Archer	SSR	B	Trist	March Speed +20%	Recovery +15%		Unit Power +20%	Regeneration +10%
+Archer	SSR	B	Dylan	March Speed +20%	Recovery +20%		Unit Power +20%	Regeneration +10%
+Archer	SSR	C	O'Neil	March Speed +20%	Load +20%		Unit Power +25%	Recovery +20%
+Archer	SSR	C	Collin	March Speed +30%	Load +20%		Unit Power +20%	Regeneration +10%
+Archer	SSR	C	Sabastian	March Speed +30%	Load +20%		Unit Power +20%	Regeneration +10%
+Archer	SSR	C	Doris	March Speed +20%	Unit Power +20%		Unit Power +20%	Regeneration +10%
+Archer	SSR	C	Ariza	March Speed +20%	Load +15%		Unit Power +25%	Recovery +20%
+Archer	SSR	C	Livia	March Speed +20%	AP Discount 10%		Unit Power +25%	Regeneration +10%
+Archer	SSR	C	Ryan	March Speed +20%	AP Discount 10%		Unit Power +25%	Recovery +10%
+Archer	SSR	C	Kadir	Load +20%	March Speed +20%		Recovery +15%	Regeneration +10%
+Archer	SSR	C	Bella	March Speed +20%	Recovery +15%		Load +20%	Regeneration +10%
+Archer	SSR	C	Richard	March Speed +20%	Load +15%		Unit Power +25%	Regeneration +10%
+Archer	SSR	C	Torvi	March Speed +20%	Load +15%		Unit Power +25%	Regeneration +10%
+Archer	SSR	C	Gabriel	March Speed +20%	Load +20%		Unit Power +20%	Recovery +10%
+Archer	SSR	D	Pan	March Speed +30%	AP Discount 10%		Load +20%	Regeneration +10%
+Archer	SSR	D	Fatima	March Speed +20%	Load +20%		AP Discount 10%	Regeneration +10%
+Archer	SSR	D	Montag	Load +20%	Gathering +20%		March Speed +20%	Regeneration +10%
+Archer	SSR	D	Arthur	March Speed +20%	Offline +20%		Unit Power +20%	Gathering +20%
+Archer	SSR	D	Jennifer	March Speed +20%	Tower Defense		Unit Power +20%	Load +10%
+Archer	SR	F	Harold	Tower Defense	AP Discount 10%		Unit Power +15% (Archer)	
+Archer	SR	F	Arwyn	Tower Defense	Tower Defense	Unit Power +15% (Archer)		
+Fire	SSR	S	Ivy	March Speed +30%	Unit Power +20%		Unit Power +20%	Regeneration +15%
+Fire	SSR	S	Tracy	March Speed +30%	Unit Power +20%		Unit Power +20%	Regeneration +15%
+Fire	SSR	S	Ivy	March Speed +30%	Unit Power +20%		Unit Power +20%	Regeneration +15%
+Fire	SSR	A	Anko	March Speed +30%	Recovery +15%		Unit Power +20%	Regeneration +10%
+Fire	SSR	A	Lovelace	March Speed +30%	Recovery +15%		Unit Power +20%	Regeneration +10%
+Fire	SSR	A	Erika	March Speed +25%	Recovery +15%		Unit Power +25%	Regeneration +10%
+Fire	SSR	A	Daria	March Speed +25%	Recovery +15%		Unit Power +25%	Regeneration +10%
+Fire	SSR	B	Vanessa	March Speed +20%	Recovery +15%		Unit Power +20%	Regeneration +10%
+Fire	SSR	B	Dolvar	March Speed +20%	Load +15%		Unit Power +25%	Regeneration +15%
+Fire	SSR	B	Wallis	March Speed +20%	Load +15%		Unit Power +25%	Regeneration +15%
+Fire	SSR	B	Catrina	March Speed +20%	Recovery +15%		Unit Power +25%	Regeneration +10%
+Fire	SSR	B	Edmund	March Speed +20%	Recovery +20%		Unit Power +20%	Regeneration +10%
+Fire	SSR	B	Cosette	March Speed +20%	Load +30%		Unit Power +30%	Recovery +25%
+Fire	SSR	B	Paul	March Speed +20%	Load +20%		Unit Power +30%	Recovery +25%
+Fire	SSR	B	Sindra	March Speed +20%	Recovery +20%		Unit Power +20%	Recovery +20%
+Fire	SSR	C	Apollo	March Speed +30%	Load +20%		Unit Power +20%	Regeneration +10%
+Fire	SSR	C	Giselle	March Speed +20%	AP Discount 10%		Unit Power +25%	Regeneration +10%
+Fire	SSR	C	Dain	March Speed +20%	Load +20%		Recovery +15%	Regeneration +10%
+Fire	SSR	C	Miku	AP Discount 20%	March Speed +15%		Unit Power +25%	Regeneration +10%
+Fire	SSR	C	Kenshiro	March Speed +20%	Load +15%		Unit Power +25%	Regeneration +10%
+Fire	SSR	C	Penny	March Speed +20%	Load +15%		Unit Power +25%	Regeneration +10%
+Fire	SSR	C	Christie	March Speed +20%	Load +15%		Unit Power +25%	Regeneration +10%
+Fire	SSR	C	Allen	March Speed +20%	Load +10%		Unit Power +25%	Recovery +15%
+Fire	SSR	C	Gro	March Speed +15%	Unit Power +20% (Fire)		Tower Defense	Recovery +15%
+Fire	SSR	D	Dean	Load +15%	Unit Power +20%		Recovery +15%	Regeneration +10%
+Fire	SSR	D	Brie	Load +20%	Recovery +15%		Unit Power +20%	Regeneration +10%
+Fire	SSR	D	Simon	March Speed +20%	Offline +20%		Unit Power +20%	Gathering +20%
+Fire	SR	D	Kris	March Speed +20%	Gathering +20%		Unit Power +20%	
+Fire	SR	F	Ophelia	Unit Power +20% (Fire)		Tower Defense		Tower Defense
+Fire	SR	F	Samar	Unit Power +20% (Fire)		Tower Defense		Tower Defense
+Ice	SSR	S	Clarence	March Speed +30%	Unit Power +20%		Unit Power +20%	Regeneration +15%
+Ice	SSR	B	Ao Yue	March Speed +20%	Recovery +20%		Unit Power +20%	Regeneration +10%
+Ice	SSR	B	Trishy	March Speed +20%	Recovery +20%		Unit Power +20%	Regeneration +10%
+Ice	SSR	B	Filius	March Speed +20%	Recovery +15%		Unit Power +25%	Regeneration +10%
+Ice	SSR	B	Nathaniel	March Speed +30%	Load +20%		Recovery +15%	Regeneration +10%
+Ice	SSR	C	Keith	March Speed +30%	Load +20%		Unit Power +20%	Regeneration +10%
+Ice	SSR	C	Maud	March Speed +30%	Load +20%		Unit Power +20%	Regeneration +10%
+Ice	SSR	C	Ao Deng Ge Ri Le	March Speed +20%	Unit Power +20%		Unit Power +20%	Regeneration +10%
+Ice	SSR	C	Judy	March Speed +20%	Unit Power +20%		Unit Power +20%	Regeneration +10%
+Ice	SSR	C	Enzo	March Speed +20%	Recovery +20%		Unit Power +20%	Recovery +10%
+Ice	SSR	C	Nina	March Speed +20%	Recovery +15%		Unit Power +25%	Recovery +10%
+Ice	SSR	C	Enzo	March Speed +20%	Recovery +20%		Unit Power +20%	Recovery +10%
+Ice	SSR	C	Rebecca	March Speed +20%	Recovery +15%		Unit Power +20%	Recovery +10%
+Ice	SSR	C	j	March Speed +20%	AP Discount 10%		Unit Power +25%	Regeneration +10%
+Ice	SSR	C	Pedra	March Speed +20%	AP Discount 10%		Unit Power +25%	Regeneration +10%
+Ice	SSR	C	Lilani	March Speed +20%	Load +15%		Unit Power +25%	Regeneration +10%
+Ice	SSR	C	Parr	March Speed +20%	Load +15%		Unit Power +25%	Regeneration +10%
+Ice	SSR	C	Rudolph	March Speed +20%	Load +15%		Unit Power +25%	Recovery +15%
+Ice	SSR	C	Vera	March Speed +20%	Load +10%		Unit Power +25%	Regeneration +10%
+Ice	SSR	C	Paula	March Speed +20%	Offline +20%		Unit Power +20%	Recovery +15%
+Ice	SSR	C	Hana	AP Discount 10%	March Speed +15%		Unit Power +25%	Regeneration +10%
+Ice	SSR	D	Hadi	March Speed +20%	Offline +20%		Unit Power +20%	Gathering +20%
+Ice	SSR	D	Nicole	March Speed +20%	Offline +20%		Unit Power +20%	Gathering +20%
+Ice	SSR	D	Ralph	March Speed +20%	Tower Defense		Unit Power +20%	Load +10%
+Ice	SR	E	Merlin	Tower Defense	Tower Defense	March Speed +15%		
+Goblin	SSR	S	Tumnus	March Speed +30%	Unit Power +20%		Unit Power +20%	Regeneration +15%
+Goblin	SSR	A	Gruen	March Speed +25%	Recovery +15%		Unit Power +25%	Regeneration +10%
+Goblin	SSR	A	Boudica	March Speed +25%	Recovery +15%		Unit Power +25%	Regeneration +10%
+Goblin	SSR	B	Lilith	March Speed +20%	Recovery +20%		Unit Power +20%	Regeneration +10%
+Goblin	SSR	B	Rila	March Speed +20%	Recovery +20%		Unit Power +20%	Regeneration +10%
+Goblin	SSR	B	Wendy	March Speed +20%	Recovery +15%		Unit Power +25%	Regeneration +10%
+Goblin	SSR	B	Rosamond	March Speed +20%	Load +20%		Unit Power +30%	Recovery +25%
+Goblin	SSR	B	Angelina	March Speed +20%	Load +20%		Unit Power +30%	Recovery +25%
+Goblin	SSR	C	Chiyoko	March Speed +30%	Load +20%		Unit Power +20%	Regeneration +10%
+Goblin	SSR	C	Suad	March Speed +30%	Load +20%		Unit Power +20%	Regeneration +10%
+Goblin	SSR	C	Daisy	March Speed +20%	Recovery +20%		Unit Power +20%	Recovery +10%
+Goblin	SSR	C	Mycelia	March Speed +20%	Recovery +15%		Unit Power +20%	Recovery +10%
+Goblin	SSR	C	Luvia	March Speed +20%	Recovery +15%		AP Discount 10%	Regeneration +10%
+Goblin	SSR	C	Arwin	March Speed +20%	Load +15%		Unit Power +25%	Regeneration +10%
+Goblin	SSR	C	Benjamin	March Speed +20%	Load +15%		Unit Power +25%	Regeneration +10%
+Goblin	SSR	C	Lomax	March Speed +20%	Load +15%		Unit Power +25%	Regeneration +10%
+Goblin	SSR	C	Meniere	March Speed +20%	Load +15%		Unit Power +25%	Regeneration +10%
+Goblin	SSR	C	Blackwell	March Speed +20%	Load +20%		Unit Power +20%	Regeneration +10%
+Goblin	SSR	D	Catherine	March Speed +20%	Offline +20%		Unit Power +20%	Gathering +20%
+Goblin	SSR	D	Rogers	March Speed +20%	Offline +20%		Unit Power +20%	Gathering +20%
+Goblin	SSR	D	Issac	March Speed +20%	Offline +20%		Unit Power +20%	Load +10%
+Goblin	SSR	D	Pythia	AP Discount 10%	March Speed +15%		Load +20%	Regeneration +10%
+Goblin	SSR	E	Claudia	Offline +20%	Recovery +15%		Unit Power +20% (Goblin)	Load +20%
+Goblin	SR	F	Alucard	Tower Defense	Tower Defense	Offline +20%		

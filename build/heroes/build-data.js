@@ -407,8 +407,63 @@ function saveRating() {
   writeFileSync(resolve(ExportPath, 'hero-rating.tsv'), content);
 }
 
+
+/**
+ * Save skills info to .tsv file
+ */
+function saveSkills() {
+  const headerRow =
+      [
+        'Element',
+        'Rarity',
+        'Tier',
+        'Hero',
+        'Skill 1',
+        'Skill 2',
+        'Skill 3',
+        'Skill 4',
+        'Skill 5',
+      ].join('\t');
+
+  const makeRow = (heroData) =>
+    [
+      heroData.element,
+      heroData.rarity,
+      heroData.tier,
+      heroData.name,
+
+      heroData.skills[0]['short-description'],
+      heroData.skills[1]?.['short-description']||'',
+      heroData.skills[2]?.['short-description']||'',
+      heroData.skills[3]?.['short-description']||'',
+      heroData.skills[4]?.['short-description']||'',
+    ].join('\t');
+
+  const content =
+    headerRow + '\n' +
+    HeroBase
+        .filter((heroData) => heroData.element === 'Archer')
+        .map((heroData) => makeRow(heroData))
+        .join('\n') + '\n' +
+    HeroBase
+        .filter((heroData) => heroData.element === 'Fire')
+        .map((heroData) => makeRow(heroData))
+        .join('\n') + '\n' +
+    HeroBase
+        .filter((heroData) => heroData.element === 'Ice')
+        .map((heroData) => makeRow(heroData))
+        .join('\n') + '\n' +
+    HeroBase
+        .filter((heroData) => heroData.element === 'Goblin')
+        .map((heroData) => makeRow(heroData))
+        .join('\n');
+
+  writeFileSync(resolve(ExportPath, 'hero-skills.tsv'), content);
+}
+
 loadSkillLookups();
 buildDatabase();
 calcRating();
 saveRating();
+saveSkills();
 saveDatabase();
