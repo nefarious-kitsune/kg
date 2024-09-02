@@ -30,7 +30,7 @@ function buildTemplate(seasonId) {
           '<td>' +
           '<img class="icon" ' +
             'alt="Advanced Recruitment card" ' +
-            `title="${releaseData.advRecruit}" ` +
+            // `title="${releaseData.advRecruit}" ` +
             'src="../../assets/icons/recruit-adv-2x_s.png">' +
           '</td>',
       );

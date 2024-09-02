@@ -102,7 +102,7 @@ function buildSeason(seasonId) {
     /** @type {HeroReleaseData} */
     const heroReleaseData = {
       hero: heroName,
-      advRecruit: (advRecruit !== '')?advRecruit:false,
+      advRecruit: advRecruit === 'TRUE',
       statsRecruit: false, // placeholder
       freePick: freePick === 'TRUE',
       crystal: crystal === 'TRUE',
