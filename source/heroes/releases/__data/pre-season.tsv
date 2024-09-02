@@ -1,26 +1,26 @@
 Hero	Advanced Recruitment	Free Pick	Crystal	Wheel	Other
-Gabriel		TRUE	TRUE	TRUE	Dimension Tunnel
-Arthur	7.77%	TRUE	TRUE	TRUE	
-Jennifer		TRUE	TRUE	TRUE	Element Lord
-Erika	3.28%	TRUE	TRUE	TRUE	
-Allen		TRUE	TRUE	TRUE	
-Gro	7.81%	TRUE	TRUE	TRUE	Element Lord
-Rosamond		FALSE	FALSE	TRUE	Element Lord
-Catherine	7.77%	TRUE	TRUE	TRUE	
-Paula	3.24%	TRUE	TRUE	TRUE	
-Hadi	7.77%	TRUE	TRUE	TRUE	
-Ralph		TRUE	TRUE	TRUE	Element Lord
-O'Neil		TRUE	TRUE	FALSE	Bounty Hall
-Cosette		TRUE	TRUE	FALSE	Bounty Hall
-Dolvar		TRUE	TRUE	FALSE	Bounty Hall
-Paul		TRUE	TRUE	FALSE	Bounty Hall
-Wallis		TRUE	TRUE	FALSE	Bounty Hall
-Issac		TRUE	TRUE	FALSE	Bounty Hall
-Ariza		FALSE	FALSE	FALSE	Bounty Hall
-Meniere		FALSE	FALSE	FALSE	Bounty Hall
-Gruen		FALSE	FALSE	FALSE	Bounty Hall
-Sahar		FALSE	FALSE	FALSE	Bounty Hall
-Rudolph		FALSE	FALSE	FALSE	Bounty Hall
-Jessica		FALSE	FALSE	FALSE	Bounty Hall
-Nicole		TRUE	TRUE	FALSE	
-Pan		TRUE	FALSE	FALSE	
+Gabriel	FALSE	TRUE	TRUE	TRUE	Dimension Tunnel
+Arthur	TRUE	TRUE	TRUE	TRUE	
+Jennifer	FALSE	TRUE	TRUE	TRUE	Element Lord
+Erika	FALSE	TRUE	TRUE	TRUE	
+Allen	FALSE	TRUE	TRUE	TRUE	
+Gro	TRUE	TRUE	TRUE	TRUE	Element Lord
+Rosamond	FALSE	FALSE	FALSE	TRUE	Element Lord
+Catherine	TRUE	TRUE	TRUE	TRUE	
+Paula	TRUE	TRUE	TRUE	TRUE	
+Hadi	TRUE	TRUE	TRUE	TRUE	
+Ralph	FALSE	TRUE	TRUE	TRUE	Element Lord
+O'Neil	FALSE	TRUE	TRUE	FALSE	Bounty Hall
+Cosette	FALSE	TRUE	TRUE	FALSE	Bounty Hall
+Dolvar	FALSE	TRUE	TRUE	FALSE	Bounty Hall
+Paul	FALSE	TRUE	TRUE	FALSE	Bounty Hall
+Wallis	FALSE	TRUE	TRUE	FALSE	Bounty Hall
+Issac	FALSE	TRUE	TRUE	FALSE	Bounty Hall
+Ariza	FALSE	FALSE	FALSE	FALSE	Bounty Hall
+Meniere	FALSE	FALSE	FALSE	FALSE	Bounty Hall
+Gruen	FALSE	FALSE	FALSE	FALSE	Bounty Hall
+Sahar	FALSE	FALSE	FALSE	FALSE	Bounty Hall
+Rudolph	FALSE	FALSE	FALSE	FALSE	Bounty Hall
+Jessica	FALSE	FALSE	FALSE	FALSE	Bounty Hall
+Nicole	FALSE	TRUE	TRUE	FALSE	
+Pan	FALSE	TRUE	FALSE	FALSE	
