@@ -151,16 +151,6 @@
       "other": "Bounty Hall"
     },
     {
-      "hero": "Wallis",
-      "advRecruit": false,
-      "statsRecruit": false,
-      "freePick": true,
-      "crystal": true,
-      "wheel": false,
-      "event": true,
-      "other": "Bounty Hall"
-    },
-    {
       "hero": "Issac",
       "advRecruit": false,
       "statsRecruit": "6.98%",
@@ -229,6 +219,16 @@
       "wheel": false,
       "event": true,
       "other": "Bounty Hall"
+    },
+    {
+      "hero": "Wallis",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": true,
+      "crystal": true,
+      "wheel": false,
+      "event": true,
+      "other": ""
     },
     {
       "hero": "Nicole",
@@ -923,16 +923,6 @@
       "other": "Bounty Hall"
     },
     {
-      "hero": "Wallis",
-      "advRecruit": false,
-      "statsRecruit": false,
-      "freePick": true,
-      "crystal": true,
-      "wheel": false,
-      "event": true,
-      "other": "Bounty Hall"
-    },
-    {
       "hero": "Issac",
       "advRecruit": false,
       "statsRecruit": false,
@@ -1001,6 +991,16 @@
       "wheel": false,
       "event": true,
       "other": "Bounty Hall"
+    },
+    {
+      "hero": "Wallis",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": true,
+      "crystal": true,
+      "wheel": false,
+      "event": true,
+      "other": ""
     },
     {
       "hero": "Nicole",
@@ -1695,16 +1695,6 @@
       "other": "Bounty Hall"
     },
     {
-      "hero": "Wallis",
-      "advRecruit": false,
-      "statsRecruit": false,
-      "freePick": true,
-      "crystal": true,
-      "wheel": false,
-      "event": true,
-      "other": "Bounty Hall"
-    },
-    {
       "hero": "Issac",
       "advRecruit": false,
       "statsRecruit": false,
@@ -1773,6 +1763,16 @@
       "wheel": false,
       "event": true,
       "other": "Bounty Hall"
+    },
+    {
+      "hero": "Wallis",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": true,
+      "crystal": true,
+      "wheel": false,
+      "event": true,
+      "other": ""
     },
     {
       "hero": "Nicole",
@@ -2467,16 +2467,6 @@
       "other": "Bounty Hall"
     },
     {
-      "hero": "Wallis",
-      "advRecruit": false,
-      "statsRecruit": false,
-      "freePick": true,
-      "crystal": true,
-      "wheel": false,
-      "event": true,
-      "other": "Bounty Hall"
-    },
-    {
       "hero": "Issac",
       "advRecruit": false,
       "statsRecruit": false,
@@ -2545,6 +2535,16 @@
       "wheel": false,
       "event": true,
       "other": "Bounty Hall"
+    },
+    {
+      "hero": "Wallis",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": true,
+      "crystal": true,
+      "wheel": false,
+      "event": true,
+      "other": ""
     },
     {
       "hero": "Nicole",
@@ -3239,16 +3239,6 @@
       "other": "Bounty Hall"
     },
     {
-      "hero": "Wallis",
-      "advRecruit": false,
-      "statsRecruit": false,
-      "freePick": true,
-      "crystal": true,
-      "wheel": false,
-      "event": true,
-      "other": "Bounty Hall"
-    },
-    {
       "hero": "Issac",
       "advRecruit": false,
       "statsRecruit": false,
@@ -3317,6 +3307,16 @@
       "wheel": false,
       "event": true,
       "other": "Bounty Hall"
+    },
+    {
+      "hero": "Wallis",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": true,
+      "crystal": true,
+      "wheel": false,
+      "event": true,
+      "other": ""
     },
     {
       "hero": "Nicole",
@@ -4011,16 +4011,6 @@
       "other": "Bounty Hall"
     },
     {
-      "hero": "Wallis",
-      "advRecruit": false,
-      "statsRecruit": false,
-      "freePick": true,
-      "crystal": true,
-      "wheel": false,
-      "event": true,
-      "other": "Bounty Hall"
-    },
-    {
       "hero": "Issac",
       "advRecruit": false,
       "statsRecruit": false,
@@ -4089,6 +4079,16 @@
       "wheel": false,
       "event": true,
       "other": "Bounty Hall"
+    },
+    {
+      "hero": "Wallis",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": true,
+      "crystal": true,
+      "wheel": false,
+      "event": true,
+      "other": ""
     },
     {
       "hero": "Nicole",
@@ -4793,16 +4793,6 @@
       "other": "Bounty Hall"
     },
     {
-      "hero": "Wallis",
-      "advRecruit": false,
-      "statsRecruit": false,
-      "freePick": true,
-      "crystal": true,
-      "wheel": false,
-      "event": true,
-      "other": "Bounty Hall"
-    },
-    {
       "hero": "Issac",
       "advRecruit": false,
       "statsRecruit": false,
@@ -4871,6 +4861,16 @@
       "wheel": false,
       "event": true,
       "other": "Bounty Hall"
+    },
+    {
+      "hero": "Wallis",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": true,
+      "crystal": true,
+      "wheel": false,
+      "event": true,
+      "other": ""
     },
     {
       "hero": "Nicole",
@@ -5575,16 +5575,6 @@
       "other": "Bounty Hall"
     },
     {
-      "hero": "Wallis",
-      "advRecruit": false,
-      "statsRecruit": false,
-      "freePick": true,
-      "crystal": true,
-      "wheel": false,
-      "event": true,
-      "other": "Bounty Hall"
-    },
-    {
       "hero": "Issac",
       "advRecruit": false,
       "statsRecruit": false,
@@ -5653,6 +5643,16 @@
       "wheel": false,
       "event": true,
       "other": "Bounty Hall"
+    },
+    {
+      "hero": "Wallis",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": true,
+      "crystal": true,
+      "wheel": false,
+      "event": true,
+      "other": ""
     },
     {
       "hero": "Nicole",
@@ -6357,16 +6357,6 @@
       "other": "Bounty Hall"
     },
     {
-      "hero": "Wallis",
-      "advRecruit": false,
-      "statsRecruit": false,
-      "freePick": true,
-      "crystal": true,
-      "wheel": false,
-      "event": true,
-      "other": "Bounty Hall"
-    },
-    {
       "hero": "Issac",
       "advRecruit": false,
       "statsRecruit": false,
@@ -6435,6 +6425,16 @@
       "wheel": false,
       "event": true,
       "other": "Bounty Hall"
+    },
+    {
+      "hero": "Wallis",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": true,
+      "crystal": true,
+      "wheel": false,
+      "event": true,
+      "other": ""
     },
     {
       "hero": "Nicole",
@@ -7139,16 +7139,6 @@
       "other": "Bounty Hall"
     },
     {
-      "hero": "Wallis",
-      "advRecruit": false,
-      "statsRecruit": false,
-      "freePick": true,
-      "crystal": true,
-      "wheel": false,
-      "event": true,
-      "other": "Bounty Hall"
-    },
-    {
       "hero": "Issac",
       "advRecruit": false,
       "statsRecruit": false,
@@ -7217,6 +7207,16 @@
       "wheel": false,
       "event": true,
       "other": "Bounty Hall"
+    },
+    {
+      "hero": "Wallis",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": true,
+      "crystal": true,
+      "wheel": false,
+      "event": true,
+      "other": ""
     },
     {
       "hero": "Nicole",
@@ -7921,16 +7921,6 @@
       "other": "Bounty Hall"
     },
     {
-      "hero": "Wallis",
-      "advRecruit": false,
-      "statsRecruit": false,
-      "freePick": true,
-      "crystal": true,
-      "wheel": false,
-      "event": true,
-      "other": "Bounty Hall"
-    },
-    {
       "hero": "Issac",
       "advRecruit": false,
       "statsRecruit": false,
@@ -7999,6 +7989,16 @@
       "wheel": false,
       "event": true,
       "other": "Bounty Hall"
+    },
+    {
+      "hero": "Wallis",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": true,
+      "crystal": true,
+      "wheel": false,
+      "event": true,
+      "other": ""
     },
     {
       "hero": "Nicole",
@@ -8703,16 +8703,6 @@
       "other": "Bounty Hall"
     },
     {
-      "hero": "Wallis",
-      "advRecruit": false,
-      "statsRecruit": false,
-      "freePick": true,
-      "crystal": true,
-      "wheel": false,
-      "event": true,
-      "other": "Bounty Hall"
-    },
-    {
       "hero": "Issac",
       "advRecruit": false,
       "statsRecruit": "9.09%",
@@ -8781,6 +8771,16 @@
       "wheel": false,
       "event": true,
       "other": "Bounty Hall"
+    },
+    {
+      "hero": "Wallis",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": true,
+      "crystal": true,
+      "wheel": false,
+      "event": true,
+      "other": ""
     },
     {
       "hero": "Nicole",
@@ -9485,16 +9485,6 @@
       "other": "Bounty Hall"
     },
     {
-      "hero": "Wallis",
-      "advRecruit": false,
-      "statsRecruit": false,
-      "freePick": true,
-      "crystal": true,
-      "wheel": false,
-      "event": true,
-      "other": "Bounty Hall"
-    },
-    {
       "hero": "Issac",
       "advRecruit": false,
       "statsRecruit": "9.09%",
@@ -9563,6 +9553,16 @@
       "wheel": false,
       "event": true,
       "other": "Bounty Hall"
+    },
+    {
+      "hero": "Wallis",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": true,
+      "crystal": true,
+      "wheel": false,
+      "event": true,
+      "other": ""
     },
     {
       "hero": "Nicole",
@@ -10267,16 +10267,6 @@
       "other": "Bounty Hall"
     },
     {
-      "hero": "Wallis",
-      "advRecruit": false,
-      "statsRecruit": false,
-      "freePick": true,
-      "crystal": true,
-      "wheel": false,
-      "event": true,
-      "other": "Bounty Hall"
-    },
-    {
       "hero": "Issac",
       "advRecruit": false,
       "statsRecruit": false,
@@ -10345,6 +10335,16 @@
       "wheel": false,
       "event": true,
       "other": "Bounty Hall"
+    },
+    {
+      "hero": "Wallis",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": true,
+      "crystal": true,
+      "wheel": false,
+      "event": true,
+      "other": ""
     },
     {
       "hero": "Nicole",
@@ -11139,16 +11139,6 @@
       "other": "Bounty Hall"
     },
     {
-      "hero": "Wallis",
-      "advRecruit": false,
-      "statsRecruit": false,
-      "freePick": true,
-      "crystal": true,
-      "wheel": false,
-      "event": true,
-      "other": "Bounty Hall"
-    },
-    {
       "hero": "Issac",
       "advRecruit": false,
       "statsRecruit": "8.33%",
@@ -11217,6 +11207,16 @@
       "wheel": false,
       "event": true,
       "other": "Bounty Hall"
+    },
+    {
+      "hero": "Wallis",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": true,
+      "crystal": true,
+      "wheel": false,
+      "event": true,
+      "other": ""
     },
     {
       "hero": "Nicole",
@@ -12021,16 +12021,6 @@
       "other": "Bounty Hall"
     },
     {
-      "hero": "Wallis",
-      "advRecruit": false,
-      "statsRecruit": "3.70%",
-      "freePick": true,
-      "crystal": true,
-      "wheel": false,
-      "event": true,
-      "other": "Bounty Hall"
-    },
-    {
       "hero": "Issac",
       "advRecruit": false,
       "statsRecruit": "8.33%",
@@ -12099,6 +12089,16 @@
       "wheel": false,
       "event": true,
       "other": "Bounty Hall"
+    },
+    {
+      "hero": "Wallis",
+      "advRecruit": false,
+      "statsRecruit": "3.70%",
+      "freePick": true,
+      "crystal": true,
+      "wheel": false,
+      "event": true,
+      "other": ""
     },
     {
       "hero": "Nicole",
@@ -12913,16 +12913,6 @@
       "other": "Bounty Hall"
     },
     {
-      "hero": "Wallis",
-      "advRecruit": false,
-      "statsRecruit": "3.70%",
-      "freePick": true,
-      "crystal": true,
-      "wheel": false,
-      "event": true,
-      "other": "Bounty Hall"
-    },
-    {
       "hero": "Issac",
       "advRecruit": false,
       "statsRecruit": "8.33%",
@@ -12991,6 +12981,16 @@
       "wheel": false,
       "event": true,
       "other": "Bounty Hall"
+    },
+    {
+      "hero": "Wallis",
+      "advRecruit": false,
+      "statsRecruit": "3.70%",
+      "freePick": true,
+      "crystal": true,
+      "wheel": false,
+      "event": true,
+      "other": ""
     },
     {
       "hero": "Nicole",
@@ -13815,16 +13815,6 @@
       "other": "Bounty Hall"
     },
     {
-      "hero": "Wallis",
-      "advRecruit": false,
-      "statsRecruit": "3.70%",
-      "freePick": true,
-      "crystal": true,
-      "wheel": false,
-      "event": true,
-      "other": "Bounty Hall"
-    },
-    {
       "hero": "Issac",
       "advRecruit": false,
       "statsRecruit": "8.33%",
@@ -13893,6 +13883,16 @@
       "wheel": false,
       "event": true,
       "other": "Bounty Hall"
+    },
+    {
+      "hero": "Wallis",
+      "advRecruit": false,
+      "statsRecruit": "3.70%",
+      "freePick": true,
+      "crystal": true,
+      "wheel": false,
+      "event": true,
+      "other": ""
     },
     {
       "hero": "Nicole",
