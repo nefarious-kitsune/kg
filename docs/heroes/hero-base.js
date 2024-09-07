@@ -3764,7 +3764,7 @@ const ElementHeroData = [
   {
     'element': 'Ice',
     'rarity': 'SSR',
-    'name': 'j',
+    'name': 'Jessica',
     'skills': [
       {
         'name': 'Rapid March',
@@ -5210,6 +5210,72 @@ const ElementHeroData = [
       'defending': 4,
       'hunting': 1,
       'mining': 1
+    },
+    'tier': 'C'
+  },
+  {
+    'element': 'Ice',
+    'rarity': 'SSR',
+    'name': 'Olaf',
+    'skills': [
+      {
+        'name': 'Rapid March',
+        'long-description': 'March Speed of the troop on the world map +20% (cannot stack)',
+        'short-description': 'March Speed +20%',
+        'property': 'march',
+        'percent': 20,
+        'elemental': false
+      },
+      {
+        'name': 'Load',
+        'long-description': 'Troop Load +15%',
+        'short-description': 'Load +15%',
+        'property': 'load',
+        'percent': 15,
+        'elemental': false
+      },
+      null,
+      {
+        'name': 'Guerrilla Master',
+        'long-description': 'Power of all units in the troop +25%',
+        'short-description': 'Unit Power +25%',
+        'property': 'unit-power',
+        'percent': 25,
+        'elemental': false
+      },
+      {
+        'name': 'Regeneration',
+        'long-description': 'Recovery of units wounded in battle +10%',
+        'short-description': 'Regeneration +10%',
+        'property': 'regeneration',
+        'percent': 10,
+        'elemental': false
+      }
+    ],
+    'bonus': {
+      'march': 20,
+      'recovery': 0,
+      'regeneration': 10,
+      'unit-power': 25,
+      'elemental': false,
+      'AP': 0,
+      'gathering': 0,
+      'load': 15,
+      'offline': 0
+    },
+    'acquisition': {
+      'normal': 0,
+      'advanced': 0,
+      'stats': 0,
+      'wheel': 0,
+      'crystal': 0,
+      'free-pick': false
+    },
+    'rating': {
+      'attacking': 6.5,
+      'defending': 5,
+      'hunting': 1,
+      'mining': 1.5
     },
     'tier': 'C'
   },
