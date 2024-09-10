@@ -374,7 +374,7 @@ ul.emoji-markers {
   li.new:before { background-image: url(); }
   li.increase:before { background-image: url(); }
   li.price-down:before { background-image: url(); }
-  li.free-pick:before { background-image: url(../icons/recruit-ssr-2x_s.png); }
+  li.free-pick:before { background-image: url("../icons/recruit-ssr-2x_s.png"); }
 }
 
 ul.pagination {
