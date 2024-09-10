@@ -1,6 +1,9 @@
 {
     "files.eol": "\n",
     "editor.tabSize": 2,
+    "files.associations": {
+      "*.gs": "javascript",
+    },
     "cSpell.words": [
         "Alucard",
         "Anko",
