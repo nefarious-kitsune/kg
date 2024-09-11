@@ -12,12 +12,6 @@
  * @return {[[Number]]}
  */
 function calcUnitUpgrade(unitA, unitB, unitC, unitD, freePick) {
-  if (unitA.length === 1) unitA = unitA[0];
-  if (unitB.length === 1) unitB = unitB[0];
-  if (unitC.length === 1) unitC = unitC[0];
-  if (unitD.length === 1) unitD = unitD[0];
-  let allUnits = [unitA, unitB, unitC, unitD];
-
   const evolution1 = (unit, maxProgress) => {
     let [tier, progress, t1, t2, t3, t4] = unit;
     if (progress >= maxProgress) return [tier + 1, 0, t1, t2, t3, t4];
@@ -34,15 +28,13 @@ function calcUnitUpgrade(unitA, unitB, unitC, unitD, freePick) {
 
     if ((maxProgress - progress) <= freePick) {
       freePick -= (maxProgress - progress);
-      progress = 0;
       tier++;
       return [tier + 1, 0, t1, t2, t3, t4];
     } else {
       progress += freePick;
       freePick = 0;
+      return [tier, progress, t1, t2, t3, t4];
     }
-
-    return [tier, progress, t1, t2, t3, t4];
   };
 
   const evolution2 = (unit, maxProgress) => {
@@ -70,12 +62,11 @@ function calcUnitUpgrade(unitA, unitB, unitC, unitD, freePick) {
       t1 = 0;
       return [tier + 1, 0, t1, t2, t3, t4];
     } else {
+      progress += maxT2;
       freePick -= (maxT2 * 5) - t1;
       t1 = 0;
-      progress += maxT2;
+      return [tier, progress, t1, t2, t3, t4];
     }
-
-    return [tier, progress, t1, t2, t3, t4];
   };
 
   const evolution3 = (unit, maxProgress) => {
@@ -103,17 +94,14 @@ function calcUnitUpgrade(unitA, unitB, unitC, unitD, freePick) {
 
     if ((maxProgress - progress) <= maxT3) {
       freePick -= ((maxProgress - progress) * 25) - (t2 * 5) - t1;
-      t1 = 0;
-      t2 = 0;
+      t1 = t2 = 0;
       return [tier + 1, 0, t1, t2, t3, t4];
     } else {
-      freePick -=  (maxT3 * 25) - (t2 * 5) - t1;
-      t1 = 0;
-      t2 = 0;
       progress += maxT3;
+      freePick -=  (maxT3 * 25) - (t2 * 5) - t1;
+      t1 = t2 = 0;
+      return [tier, progress, t1, t2, t3, t4];
     }
-
-    return [tier, progress, t1, t2, t3, t4];
   };
 
   const evolution4 = (unit, maxProgress) => {
@@ -144,36 +132,34 @@ function calcUnitUpgrade(unitA, unitB, unitC, unitD, freePick) {
 
     if ((maxProgress - progress) <= maxT4) {
       freePick -= ((maxProgress - progress) * 125) - (t3 * 25) - (t2 * 5) - t1;
-      t1 = 0;
-      t2 = 0;
-      t3 = 0;
+      t1 = t2 = t3 = 0;
       return [tier + 1, 0, t1, t2, t3, t4];
     } else {
-      freePick -=  (maxT4 * 125) - (t3 * 25) - (t2 * 5) - t1;
-      t1 = 0;
-      t2 = 0;
-      t3 = 0;
       progress += maxT4;
+      freePick -=  (maxT4 * 125) - (t3 * 25) - (t2 * 5) - t1;
+      t1 = t2 = t3 = 0;
+      return [tier, progress, t1, t2, t3, t4];
     }
-
-    return [tier, progress, t1, t2, t3, t4];
   };
 
-  allUnits = allUnits
+  const results = [
+    (unitA.length === 1)?unitA[0]:unitA,
+    (unitB.length === 1)?unitB[0]:unitB,
+    (unitC.length === 1)?unitC[0]:unitC,
+    (unitD.length === 1)?unitD[0]:unitD,
+  ]
       .map((u) => (u[0] === 1)?evolution1(u, 100):u) // T1 > T2 evolution
       .map((u) => (u[0] === 2)?evolution1(u, 200):u) // T2 > T3 evolution
+
       .map((u) => (u[0] === 3)?evolution2(u, 100):u) // T3 > T4 evolution
       .map((u) => (u[0] === 4)?evolution2(u, 200):u) // T4 > T5 evolution
+
       .map((u) => (u[0] === 5)?evolution3(u, 100):u) // T5 > T6 evolution
       .map((u) => (u[0] === 6)?evolution3(u, 200):u) // T6 > T7 evolution
 
       .map((u) => (u[0] === 7)?evolution4(u, 100):u) // T5 > T6 evolution
       .map((u) => (u[0] === 8)?evolution4(u, 200):u) // T6 > T7 evolution
   ;
-
-  // const results = Array.from(allUnits).push([freePick]);
-  const results = allUnits;
   results.push([freePick]);
-
   return results;
 }
