@@ -58,3 +58,5 @@ copyDirectory('ccc/');
 copyDirectory('wars/');
 
 copyDirectory('community/');
+
+copyDirectory('open-calc/');
