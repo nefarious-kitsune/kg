@@ -1,4 +1,3 @@
-/* eslint-env browser */
 /* eslint-disable no-unused-vars */
 /* eslint-disable no-multi-spaces, key-spacing */
 /* eslint-disable require-jsdoc */
@@ -14,12 +13,9 @@
  */
 function calcUnitUpgrade(unitA, unitB, unitC, unitD, freePick) {
   let allUnits = [unitA, unitB, unitC, unitD];
-  let maxProgress = 100;
 
-  const evolution1 = (unit) => {
+  const evolution1 = (unit, maxProgress) => {
     let [tier, progress, t1, t2, t3, t4] = unit;
-
-    if (tier !== 1) return unit;
     if (progress >= maxProgress) return [[tier + 1, 0, t1, t2, t3, t4]];
 
     if ((maxProgress - progress) <= t1) {
@@ -45,7 +41,7 @@ function calcUnitUpgrade(unitA, unitB, unitC, unitD, freePick) {
     return [tier, progress, t1, t2, t3, t4];
   };
 
-  const evolution2 = (unit) => {
+  const evolution2 = (unit, maxProgress) => {
     let [tier, progress, t1, t2, t3, t4] = unit;
     if (progress >= maxProgress) return [[tier + 1, 0, t1, t2, t3, t4]];
 
@@ -78,21 +74,54 @@ function calcUnitUpgrade(unitA, unitB, unitC, unitD, freePick) {
     return [tier, progress, t1, t2, t3, t4];
   };
 
-  // T1 > T2 Evolution
-  maxProgress = 100;
-  allUnits = allUnits.map((u) => (u[0] === 1)?evolution1(u):u);
+  const evolution3 = (unit, maxProgress) => {
+    let [tier, progress, t1, t2, t3, t4] = unit;
+    if (progress >= maxProgress) return [[tier + 1, 0, t1, t2, t3, t4]];
 
-  // T2 > T3 Evolution
-  maxProgress = 200;
-  allUnits = allUnits.map((u) => (u[0] === 2)?evolution1(u):u);
+    let merged = Math.floor(t1 / 5); // Merge T1 EXP Books
+    t2 += merged;
+    t1 -= merged * 5;
+    merged = Math.floor(t2 / 5); // Merge T2 EXP Books
+    t3 += merged;
+    t2 -= merged * 5;
 
-  // T3 > T4 Evolution
-  maxProgress = 100;
-  allUnits = allUnits.map((u) => (u[0] === 3)?evolution2(u):u);
+    if ((maxProgress - progress) <= t3) { // Use T3 EXP Books
+      t3 -= (maxProgress - progress);
+      return [tier, progress, t1, t2, t3, t4];
+    } else {
+      progress += t3;
+      t3 = 0;
+    }
 
-  // T5 > T6 Evolution
-  maxProgress = 200;
-  allUnits = allUnits.map((u) => (u[0] === 3)?evolution2(u):u);
+    /** Max T3 EXP Book from Free-Picks */
+    const maxT3 = Math.floor( ((freePick + t1) + (t2 * 5)) / 25);
+    if (maxT3 <= 0) return [tier, progress, t1, t2, t3, t4];
+
+    if ((maxProgress - progress) <= maxT3) {
+      freePick -= ((maxProgress - progress) * 25) - (t2 * 5) - t1;
+      t1 = 0;
+      t2 - 0;
+      return [tier + 1, 0, t1, t2, t3, t4];
+    } else {
+      freePick -=  (maxT3 * 25) - (t2 * 5) - t1;
+      t1 = 0;
+      t2 - 0;
+      progress += maxT3;
+    }
+
+    return [tier, progress, t1, t2, t3, t4];
+  };
+
+  allUnits = allUnits
+      .map((u) => (u[0] === 1)?evolution1(u, 100):u) // T1 > T2 evolution
+      .map((u) => (u[0] === 2)?evolution1(u, 200):u) // T2 > T3 evolution
+
+      .map((u) => (u[0] === 3)?evolution2(u, 100):u) // T3 > T4 evolution
+      .map((u) => (u[0] === 4)?evolution2(u, 200):u) // T4 > T5 evolution
+
+      .map((u) => (u[0] === 5)?evolution3(u, 100):u) // T5 > T6 evolution
+      .map((u) => (u[0] === 6)?evolution3(u, 200):u) // T6 > T7 evolution
+  ;
 
   return ([
     allUnits[0],
