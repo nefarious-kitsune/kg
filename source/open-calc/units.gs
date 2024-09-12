@@ -106,10 +106,7 @@ function calcUnitUpgrade(unitA, unitB, unitC, unitD, freePick) {
 
   const evolution4 = (unit, maxProgress) => {
     let [tier, progress, t1, t2, t3, t4] = unit;
-
-    if (progress >= maxProgress) {
-      return (tier === 8)?[9, 0, t1, t2, t3, t4]:[9, 200, t1, t2, t3, t4];
-    }
+    if (progress >= maxProgress) return [tier + 1, 0, t1, t2, t3, t4];
 
     let merged = Math.floor(t1 / 5); // Merge T1 EXP Books
     t2 += merged;
@@ -123,7 +120,7 @@ function calcUnitUpgrade(unitA, unitB, unitC, unitD, freePick) {
 
     if ((maxProgress - progress) <= t4) { // Use T4 EXP Books
       t4 -= (maxProgress - progress);
-      return (tier === 8)?[9, 0, t1, t2, t3, t4]:[9, 200, t1, t2, t3, t4];
+      return [tier + 1, 0, t1, t2, t3, t4];
     } else {
       progress += t4;
       t4 = 0;
@@ -136,7 +133,7 @@ function calcUnitUpgrade(unitA, unitB, unitC, unitD, freePick) {
     if ((maxProgress - progress) <= maxT4) {
       freePick -= ((maxProgress - progress) * 125) - (t3 * 25) - (t2 * 5) - t1;
       t1 = t2 = t3 = 0;
-      return (tier === 8)?[9, 0, t1, t2, t3, t4]:[9, 200, t1, t2, t3, t4];
+      return [tier + 1, 0, t1, t2, t3, t4];
     } else {
       progress += maxT4;
       freePick -=  (maxT4 * 125) - (t3 * 25) - (t2 * 5) - t1;
