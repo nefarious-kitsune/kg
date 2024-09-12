@@ -106,7 +106,11 @@ function calcUnitUpgrade(unitA, unitB, unitC, unitD, freePick) {
 
   const evolution4 = (unit, maxProgress) => {
     let [tier, progress, t1, t2, t3, t4] = unit;
-    if (progress >= maxProgress) return [tier + 1, 0, t1, t2, t3, t4];
+
+    if (progress >= maxProgress) {
+      if (tier === 8) return [9, 0, t1, t2, t3, t4];
+      else return [9, 200, t1, t2, t3, t4]; // Max level. No auto advancing
+    }
 
     let merged = Math.floor(t1 / 5); // Merge T1 EXP Books
     t2 += merged;
