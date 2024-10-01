@@ -24,7 +24,7 @@
 <tr>
   <td></td>
   <td>Friends List</td>
-  <td>Friends List does not reset. If there are people you want to be
+  <td>Friends List does not reset. If there are people you want to stay
     in touch with after you transfer, add them to your friend list before
     you transfer. All your prior direct messages will be cleared, but you
     can send each other messages after you transfer.</td>
