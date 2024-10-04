@@ -99,6 +99,9 @@ export const HeroNameToClassMap = {
   'boudica':   'boudica',
   'angelina':  'angelina',
   'doris':     'doris',
+  'mycelia':   'mycelia',
+  'dylan':     'dylan',
+  'ivy':       'ivy',
 };
 
 const rHeroes = [
