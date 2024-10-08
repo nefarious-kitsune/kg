@@ -1980,6 +1980,72 @@ const ElementHeroData = [
     'tier': 'B'
   },
   {
+    'element': 'Goblin',
+    'rarity': 'SSR',
+    'name': 'Viola',
+    'skills': [
+      {
+        'name': 'Rapid March',
+        'long-description': 'March Speed of the troop on the world map +20% (cannot stack)',
+        'short-description': 'March Speed +20%',
+        'property': 'march',
+        'percent': 20,
+        'elemental': false
+      },
+      {
+        'name': 'First Aid',
+        'long-description': 'Recovery Speed of wounded units in the troop +15%',
+        'short-description': 'Recovery +15%',
+        'property': 'recovery',
+        'percent': 15,
+        'elemental': false
+      },
+      null,
+      {
+        'name': 'Guerrilla Master',
+        'long-description': 'Power of all units in the troop +25%',
+        'short-description': 'Unit Power +25%',
+        'property': 'unit-power',
+        'percent': 25,
+        'elemental': false
+      },
+      {
+        'name': 'Regeneration',
+        'long-description': 'Recovery of units wounded in battle +10%',
+        'short-description': 'Regeneration +10%',
+        'property': 'regeneration',
+        'percent': 10,
+        'elemental': false
+      }
+    ],
+    'bonus': {
+      'march': 20,
+      'recovery': 15,
+      'regeneration': 10,
+      'unit-power': 25,
+      'elemental': false,
+      'AP': 0,
+      'gathering': 0,
+      'load': 0,
+      'offline': 0
+    },
+    'acquisition': {
+      'normal': 0,
+      'advanced': 0,
+      'stats': 0,
+      'wheel': 0,
+      'crystal': 0,
+      'free-pick': false
+    },
+    'rating': {
+      'attacking': 8,
+      'defending': 6,
+      'hunting': 1,
+      'mining': 1
+    },
+    'tier': 'B'
+  },
+  {
     'element': 'Fire',
     'rarity': 'SSR',
     'name': 'Cosette',
@@ -3558,6 +3624,72 @@ const ElementHeroData = [
     'rating': {
       'attacking': 7,
       'defending': 4,
+      'hunting': 1,
+      'mining': 1
+    },
+    'tier': 'C'
+  },
+  {
+    'element': 'Goblin',
+    'rarity': 'SSR',
+    'name': 'Webster',
+    'skills': [
+      {
+        'name': 'Rapid March',
+        'long-description': 'March Speed of the troop on the world map +20% (cannot stack)',
+        'short-description': 'March Speed +20%',
+        'property': 'march',
+        'percent': 20,
+        'elemental': false
+      },
+      {
+        'name': 'Guerrilla Master',
+        'long-description': 'Power of all units in the troop +20%',
+        'short-description': 'Unit Power +20%',
+        'property': 'unit-power',
+        'percent': 20,
+        'elemental': false
+      },
+      null,
+      {
+        'name': 'Guerrilla Master',
+        'long-description': 'Power of all units in the troop +20%',
+        'short-description': 'Unit Power +20%',
+        'property': 'unit-power',
+        'percent': 20,
+        'elemental': false
+      },
+      {
+        'name': 'Regeneration',
+        'long-description': 'Recovery of units wounded in battle +10%',
+        'short-description': 'Regeneration +10%',
+        'property': 'regeneration',
+        'percent': 10,
+        'elemental': false
+      }
+    ],
+    'bonus': {
+      'march': 20,
+      'recovery': 0,
+      'regeneration': 10,
+      'unit-power': 40,
+      'elemental': false,
+      'AP': 0,
+      'gathering': 0,
+      'load': 0,
+      'offline': 0
+    },
+    'acquisition': {
+      'normal': 0,
+      'advanced': 0,
+      'stats': 0,
+      'wheel': 0,
+      'crystal': 0,
+      'free-pick': false
+    },
+    'rating': {
+      'attacking': 7,
+      'defending': 6,
       'hunting': 1,
       'mining': 1
     },
