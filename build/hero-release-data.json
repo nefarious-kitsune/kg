@@ -761,6 +761,16 @@
       "other": ""
     },
     {
+      "hero": "Viola",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": false,
+      "crystal": false,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
       "hero": "Claudia",
       "advRecruit": false,
       "statsRecruit": "6.98%",
@@ -1541,6 +1551,16 @@
       "wheel": false,
       "event": true,
       "other": ""
+    },
+    {
+      "hero": "Viola",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": false,
+      "crystal": false,
+      "wheel": false,
+      "event": true,
+      "other": ""
     }
   ],
   "season-2": [
@@ -2306,6 +2326,16 @@
     },
     {
       "hero": "Nina",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": false,
+      "crystal": false,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Viola",
       "advRecruit": false,
       "statsRecruit": false,
       "freePick": false,
@@ -3085,6 +3115,16 @@
       "wheel": false,
       "event": true,
       "other": ""
+    },
+    {
+      "hero": "Viola",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": false,
+      "crystal": false,
+      "wheel": false,
+      "event": true,
+      "other": ""
     }
   ],
   "season-4": [
@@ -3850,6 +3890,16 @@
     },
     {
       "hero": "Nina",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": false,
+      "crystal": false,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Viola",
       "advRecruit": false,
       "statsRecruit": false,
       "freePick": false,
@@ -4639,6 +4689,16 @@
       "wheel": false,
       "event": true,
       "other": ""
+    },
+    {
+      "hero": "Viola",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": false,
+      "crystal": false,
+      "wheel": false,
+      "event": true,
+      "other": ""
     }
   ],
   "season-6": [
@@ -5414,6 +5474,16 @@
     },
     {
       "hero": "Nina",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": false,
+      "crystal": false,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Viola",
       "advRecruit": false,
       "statsRecruit": false,
       "freePick": false,
@@ -6203,6 +6273,16 @@
       "wheel": false,
       "event": true,
       "other": ""
+    },
+    {
+      "hero": "Viola",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": false,
+      "crystal": false,
+      "wheel": false,
+      "event": true,
+      "other": ""
     }
   ],
   "season-8": [
@@ -6978,6 +7058,16 @@
     },
     {
       "hero": "Nina",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": false,
+      "crystal": false,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Viola",
       "advRecruit": false,
       "statsRecruit": false,
       "freePick": false,
@@ -7767,6 +7857,16 @@
       "wheel": false,
       "event": true,
       "other": ""
+    },
+    {
+      "hero": "Viola",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": false,
+      "crystal": false,
+      "wheel": false,
+      "event": true,
+      "other": ""
     }
   ],
   "season-10": [
@@ -8542,6 +8642,16 @@
     },
     {
       "hero": "Nina",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": false,
+      "crystal": false,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Viola",
       "advRecruit": false,
       "statsRecruit": false,
       "freePick": false,
@@ -9331,6 +9441,16 @@
       "wheel": false,
       "event": true,
       "other": ""
+    },
+    {
+      "hero": "Viola",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": false,
+      "crystal": false,
+      "wheel": false,
+      "event": true,
+      "other": ""
     }
   ],
   "season-12": [
@@ -10106,6 +10226,16 @@
     },
     {
       "hero": "Nina",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": false,
+      "crystal": false,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Viola",
       "advRecruit": false,
       "statsRecruit": false,
       "freePick": false,
@@ -10978,6 +11108,16 @@
     },
     {
       "hero": "Nina",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": false,
+      "crystal": false,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Viola",
       "advRecruit": false,
       "statsRecruit": false,
       "freePick": false,
@@ -11860,6 +12000,16 @@
     },
     {
       "hero": "Nina",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": false,
+      "crystal": false,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Viola",
       "advRecruit": false,
       "statsRecruit": false,
       "freePick": false,
@@ -12752,6 +12902,16 @@
     },
     {
       "hero": "Nina",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": false,
+      "crystal": false,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Viola",
       "advRecruit": false,
       "statsRecruit": false,
       "freePick": false,
@@ -13654,6 +13814,16 @@
     },
     {
       "hero": "Nina",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": false,
+      "crystal": false,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Viola",
       "advRecruit": false,
       "statsRecruit": false,
       "freePick": false,
@@ -14566,6 +14736,16 @@
     },
     {
       "hero": "Nina",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": false,
+      "crystal": false,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Viola",
       "advRecruit": false,
       "statsRecruit": false,
       "freePick": false,
