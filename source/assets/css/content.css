@@ -621,7 +621,7 @@ img.icon {
 
 @media screen and (min-width: 300px) {
   img.icon {
-    font-size: calc(22px + 10 * ((100vw - 320px) / (880 - 300)));
+    height: calc(22px + 10 * ((100vw - 320px) / (880 - 300)));
   }
 }
 
