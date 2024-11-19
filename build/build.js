@@ -45,6 +45,7 @@ copyDirectory('events/');
 
 copyDirectory('seasons/');
 copyDirectory('servers/');
+copyDirectory('alliances/');
 
 copyDirectory('tools/');
 copyDirectory('stacking/');
