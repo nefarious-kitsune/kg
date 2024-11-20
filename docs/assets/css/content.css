@@ -16,12 +16,10 @@ header:first-child nav {
 
     li {
       display: inline;
-      color: var(--miku-dark-red);
     }
 
     li+li:before {
       padding: 0 0.2rem 0 0;
-      color: #ea3033;
       content: "\00BB";
       /* › \203A  */
       /* » \00BB  */
@@ -32,7 +30,6 @@ header:first-child nav {
     }
 
     a {
-      color: var(--miku-dark-red) !important;
       text-decoration: underline solid !important;
     }
   }

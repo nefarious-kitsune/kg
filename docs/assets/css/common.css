@@ -14,6 +14,13 @@
   --miku-pale-gold: #ffe9a9;
 
   --red: #b42328;
+  --dark-red: #871a1e;
+  --light-red: #c34f53;
+
+  --dark-text: #24272f;
+  --dark-bg: #24272f;
+  --light-bg: white;
+  --light-text: #c1bebf;
 
   --primary-1  : #C9803F; /* Caramel */
   --secondary-1: #D59E48; /* Sand */
@@ -217,15 +224,8 @@ h3, h4, h5, h6 {
 
 p { line-height: 1.5em;}
 
-a {
-  color: var(--miku-red);
-  text-decoration: underline;
-}
-
-a:not([href]) {
-  color: black;
-  text-decoration: none;
-}
+a { text-decoration: underline; }
+a:not([href]) { text-decoration: none; }
 
 strong { font-weight: 500; }
 strong.stronger {
@@ -235,12 +235,6 @@ strong.stronger {
 strong.very-strong {
   font-style: italic;
   font-weight: 700;
-  color: var(--miku-dark-red);
-}
-
-em.highlight,
-strong.highlight {
-  color: var(--miku-dark-red);
 }
 
 strong.important {
@@ -306,6 +300,7 @@ main {
 }
 
 body main {
+  color: var(--dark-text);
   background-color: white;
 }
 
@@ -313,30 +308,29 @@ body.landing main {
   background-color: rgba(255, 255, 255, 0.5);
 }
 
-h1 {
-  color: var(--miku-dark-red);
-  text-shadow:
-    1px 1px 4px rgba(124, 26, 32, 0.1),
-    2px 3px 4px rgba(124, 26, 32, 0.15),
-    3px 5px 4px rgba(124, 26, 32, 0.2)
-}
-
-h2 {
-  color: var(--miku-dark-red);
-  text-shadow:
-    1px 1px 4px rgba(124, 26, 32, 0.1),
-    2px 3px 4px rgba(124, 26, 32, 0.2)
-}
-
-a {
-  color: var(--miku-red);
-  text-decoration: underline;
+h1, h2, a {
+  color: var(--dark-red);
 }
 
 a:not([href]) {
-  color: black;
-  text-decoration: none;
+  color: var(--dark-text);
 }
+
+strong.very-strong {
+  color: var(--dark-red);
+}
+
+em.highlight,
+strong.highlight {
+  color: var(--dark-red);
+}
+
+header nav ul.breadcrumb {
+  li { color: var(--dark-red); }
+  li+li:before { color: #ea3033; }
+  a { color: var(--dark-red); }
+}
+
 
 /* ------------------- Night Theme ------------------- */
 
@@ -371,11 +365,30 @@ a:not([href]) {
   }
 
   body main {
-    background-color: #24272f;
+    color: var(--light-text);
+    background-color: var(--dark-bg);
   }
 
   body.landing main {
     background-color: rgba(255, 255, 255, 0.8);
   }
 
+  h1, h2 { color: var(--red); }
+  a { color: var(--light-red); }
+  a:not([href]) { color: var(--light-text); }
+  
+  strong.very-strong {
+    color: var(--dark-red);
+  }
+  
+  em.highlight,
+  strong.highlight {
+    color: var(--dark-red);
+  }
+
+  header nav ul.breadcrumb {
+    li { color: var(--light-red); }
+    li+li:before { color: var(--red); }
+    a { color: var(--light-red); }
+  }
 }
