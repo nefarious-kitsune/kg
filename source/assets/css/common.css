@@ -5,6 +5,8 @@
 /* ---------------------- Root ---------------------- */
 
 :root {
+  color-scheme: light dark;
+
   --miku-red: rgb(180, 35, 40); /*  #b42328; */
   --miku-dark-red: rgb(124, 26, 32); /* #7c1a20 */
   --miku-gold: #fec728;
@@ -84,14 +86,9 @@ html {
   }
 }
 
-/* ------------------- Page Layout ------------------- */
+/* ----------------- Default Layout  ----------------- */
 
 html {
-  /*
-    Image by Nyankosensei
-    https://anime.goodfon.com/art-anime/wallpaper-park-sakura-vesna.html
-  */
-  background-image: url('../images/park-sakura-vesna.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -114,28 +111,6 @@ main {
   margin: 0 0 20rem 0;
 }
 
-header,
-main {
-  border-left: 1px solid var(--miku-red);
-  border-right: 1px solid var(--miku-dark-red);
-}
-
-header {
-  background-color: rgba(255, 255, 255, 0.5);
-}
-
-main {
-  border-bottom: 1px solid var(--miku-dark-red);
-}
-
-body main {
-  background-color: white;
-}
-
-body.landing main {
-  background-color: rgba(255, 255, 255, 0.5);
-}
-
 /* ----------------- Header Section ----------------- */
 
 header:first-child {
@@ -145,8 +120,6 @@ header:first-child {
   &:before {
     display: block;
     content: "";
-    background: url('../../images/logo_text.png') no-repeat;
-    background-size: contain;
     height: 3.3rem;
     width: 18.9rem;
   }
@@ -299,4 +272,110 @@ ul.compact-list {
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 1rem;
+}
+
+/* ------------------- Light Theme ------------------- */
+
+html {
+  /*
+    Image by Nyankosensei
+    https://anime.goodfon.com/art-anime/wallpaper-park-sakura-vesna.html
+  */
+  background-image: url('../images/park-sakura-vesna.jpg');
+}
+
+header {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+header:first-child {
+  &:before {
+    background: url('../../images/logo_text.png') no-repeat;
+    background-size: contain;
+  }
+}
+
+header,
+main {
+  border-left: 1px solid var(--miku-red);
+  border-right: 1px solid var(--miku-dark-red);
+}
+
+main {
+  border-bottom: 1px solid var(--miku-dark-red);
+}
+
+body main {
+  background-color: white;
+}
+
+body.landing main {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+h1 {
+  color: var(--miku-dark-red);
+  text-shadow:
+    1px 1px 4px rgba(124, 26, 32, 0.1),
+    2px 3px 4px rgba(124, 26, 32, 0.15),
+    3px 5px 4px rgba(124, 26, 32, 0.2)
+}
+
+h2 {
+  color: var(--miku-dark-red);
+  text-shadow:
+    1px 1px 4px rgba(124, 26, 32, 0.1),
+    2px 3px 4px rgba(124, 26, 32, 0.2)
+}
+
+a {
+  color: var(--miku-red);
+  text-decoration: underline;
+}
+
+a:not([href]) {
+  color: black;
+  text-decoration: none;
+}
+
+/* ------------------- Night Theme ------------------- */
+
+@media (prefers-color-scheme: dark) {
+  html {
+    /*
+      AI image
+      https://www.goodfon.com/ai-art/wallpaper-iskusstvo-ii-fantastika-ai-art-arka-neon-noch-odinokaia-figu.html
+    */
+    background-image: url('../images/neon-sakura-ai.jpg');
+  }
+
+  header {
+    background-color: rgba(18, 20, 23, 0.7);
+  }
+  
+  header:first-child {
+    &:before {
+      background: url('../../images/logo_text-dark.png') no-repeat;
+      background-size: contain;
+    }
+  }  
+
+  header,
+  main {
+    border-left: 1px solid var(--miku-red);
+    border-right: 1px solid var(--miku-red);
+  }
+
+  main {
+    border-bottom: 1px solid var(--miku-red);
+  }
+
+  body main {
+    background-color: #24272f;
+  }
+
+  body.landing main {
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+
 }
