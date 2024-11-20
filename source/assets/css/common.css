@@ -291,17 +291,17 @@ header:first-child {
 
 header,
 main {
-  border-left: 1px solid var(--miku-red);
-  border-right: 1px solid var(--miku-dark-red);
+  border-left: 1px solid var(--red);
+  border-right: 1px solid var(--dark-red);
 }
 
 main {
-  border-bottom: 1px solid var(--miku-dark-red);
+  border-bottom: 1px solid var(--dark-red);
 }
 
 body main {
   color: var(--dark-text);
-  background-color: white;
+  background-color: var(--light-bg);
 }
 
 body.landing main {
@@ -356,12 +356,12 @@ header nav ul.breadcrumb {
 
   header,
   main {
-    border-left: 1px solid var(--miku-red);
-    border-right: 1px solid var(--miku-red);
+    border-left: 1px solid var(--red);
+    border-right: 1px solid var(--red);
   }
 
   main {
-    border-bottom: 1px solid var(--miku-red);
+    border-bottom: 1px solid var(--red);
   }
 
   body main {
