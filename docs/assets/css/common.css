@@ -14,13 +14,24 @@
   --miku-pale-gold: #ffe9a9;
 
   --red: #b42328;
-  --dark-red: #871a1e;
-  --light-red: #c34f53;
 
-  --dark-text: #24272f;
-  --dark-bg: #24272f;
-  --light-bg: white;
-  --light-text: #c1bebf;
+  --gold: #fec728;
+
+  --red-700: #5a1214;
+  --red-500: #b42328;
+  --red-300: #d27b7e;
+  --red-100: #e4b0b2;
+  --gold-700: #bf951e;
+  --gold-500: #fec728;
+  --gold-300: #fedd7e;
+  --gold-100: #feebb2;
+
+  --gray-900: #121418;
+  --gray-700: #24272f;
+  --gray-500: #505259;
+  --gray-300: #96979B;
+  --gray-100: #B9BABD;
+  --gray-50: #d9dadb;
 
   --primary-1  : #C9803F; /* Caramel */
   --secondary-1: #D59E48; /* Sand */
@@ -127,6 +138,8 @@ header:first-child {
   &:before {
     display: block;
     content: "";
+    background-repeat: no-repeat;
+    background-size: contain;
     height: 3.3rem;
     width: 18.9rem;
   }
@@ -200,26 +213,17 @@ html, body {
 }
 
 h1 {
-  font-size: 1.6rem;
-  font-weight: 800;
-  color: var(--miku-dark-red);
-  text-shadow:
-    1px 1px 4px rgba(124, 26, 32, 0.1),
-    2px 3px 4px rgba(124, 26, 32, 0.15),
-    3px 5px 4px rgba(124, 26, 32, 0.2)
+  font-size: 2rem;
+  font-weight: 600;
 }
 
 h2 {
   font-size: 1.4rem;
-  font-weight: 700;
-  color: var(--miku-dark-red);
-  text-shadow:
-    1px 1px 4px rgba(124, 26, 32, 0.1),
-    2px 3px 4px rgba(124, 26, 32, 0.2)
+  font-weight: 600;
 }
 
 h3, h4, h5, h6 {
-  font-weight: 600;
+  font-weight: 500;
 }
 
 p { line-height: 1.5em;}
@@ -282,26 +286,31 @@ header {
   background-color: rgba(255, 255, 255, 0.5);
 }
 
-header:first-child {
-  &:before {
-    background: url('../../images/logo_text.png') no-repeat;
-    background-size: contain;
-  }
+header:first-child:before {
+  background-image: url('../../images/logo_text.png');
+}
+
+header nav ul.breadcrumb {
+  li { color: var(--red-700); }
+  li+li:before { color: #ea3033; }
+  a { color: var(--red-700); }
 }
 
 header,
 main {
   border-left: 1px solid var(--red);
-  border-right: 1px solid var(--dark-red);
+  border-right: 1px solid var(--red-700);
 }
 
 main {
-  border-bottom: 1px solid var(--dark-red);
+  border-bottom: 1px solid var(--red-700);
 }
 
-body main {
-  color: var(--dark-text);
-  background-color: var(--light-bg);
+body main,
+table th,
+table td {
+  color: var(--gray-700);
+  background-color: white;
 }
 
 body.landing main {
@@ -309,28 +318,37 @@ body.landing main {
 }
 
 h1, h2, a {
-  color: var(--dark-red);
+  color: var(--red-700);
 }
 
 a:not([href]) {
-  color: var(--dark-text);
+  color: var(--gray-700);
 }
 
 strong.very-strong {
-  color: var(--dark-red);
+  color: var(--red-700);
 }
 
 em.highlight,
 strong.highlight {
-  color: var(--dark-red);
+  color: var(--red-700);
 }
 
-header nav ul.breadcrumb {
-  li { color: var(--dark-red); }
-  li+li:before { color: #ea3033; }
-  a { color: var(--dark-red); }
+table th, table td {
+  color: var(--gray-700);
+  background-color: white;
 }
 
+table.basic-table {
+  thead th {
+    background: var(--red-500);
+    color: var(--gray-50);
+    a { color: var(--red-100); }
+  }
+  tfoot {
+    background: var(--gold-500);
+  }
+}
 
 /* ------------------- Night Theme ------------------- */
 
@@ -347,12 +365,15 @@ header nav ul.breadcrumb {
     background-color: rgba(18, 20, 23, 0.7);
   }
   
-  header:first-child {
-    &:before {
-      background: url('../../images/logo_text-dark.png') no-repeat;
-      background-size: contain;
-    }
-  }  
+  header:first-child:before {
+    background-image: url('../../images/logo_text-dark.png');
+  }
+  
+  header nav ul.breadcrumb {
+    li { color: var(--red-300); }
+    li+li:before { color: var(--red); }
+    a { color: var(--red-300); }
+  }
 
   header,
   main {
@@ -364,31 +385,39 @@ header nav ul.breadcrumb {
     border-bottom: 1px solid var(--red);
   }
 
-  body main {
-    color: var(--light-text);
-    background-color: var(--dark-bg);
+  body main,
+  table th,
+  table td {
+    color: var(--gray-50);
+    background-color: var(--gray-900);
   }
+  
+  table.basic-table {
+    thead th {
+      background: var(--gray-900);
+      color: var(--gray-300);
+      a { color: var(--red-300); }
+    }
+    tfoot {
+      background: var(--gold-500);
+    }
+  }  
+ 
 
   body.landing main {
     background-color: rgba(255, 255, 255, 0.8);
   }
 
-  h1, h2 { color: var(--red); }
-  a { color: var(--light-red); }
-  a:not([href]) { color: var(--light-text); }
+  h1, h2 { color: var(--gray-50); }
+  a { color: var(--red-300); }
+  a:not([href]) { color: var(--gray-50); }
   
   strong.very-strong {
-    color: var(--dark-red);
+    color: var(--red-700);
   }
   
   em.highlight,
   strong.highlight {
-    color: var(--dark-red);
-  }
-
-  header nav ul.breadcrumb {
-    li { color: var(--light-red); }
-    li+li:before { color: var(--red); }
-    a { color: var(--light-red); }
-  }
+    color: var(--red-700);
+  }  
 }

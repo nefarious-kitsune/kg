@@ -26,7 +26,7 @@ header:first-child nav {
     }
 
     li:last-child {
-      font-weight: bold;
+      font-weight: 500;
     }
 
     a {
@@ -149,7 +149,7 @@ main > ul { margin-left: 1.2rem !important; }
   h1::after {
     display: inline-block;
     content: "";
-    border-top: .2rem solid var(--miku-dark-red);
+    border-top: .2rem solid var(--red-700);
     width: 3rem;
     margin: 0 1rem;
     transform: translateY(-0.5rem);
@@ -461,23 +461,6 @@ table.sticky-col { /* sticky column */
     position: sticky;
     left: 0;
     z-index: 9;
-  }
-
-  tbody tr > *:first-child {
-    background-color: white;
-  }
-}
-
-table.basic-table { /* basic table (red header, gold footer */
-  thead th {
-    background: var(--miku-red);
-    color: white;
-
-    a { color: white; }
-  }
-
-  tfoot {
-    background: var(--miku-gold);
   }
 }
 
