@@ -26,12 +26,14 @@
   --gold-300: #fedd7e;
   --gold-100: #feebb2;
 
-  --gray-900: #121418;
+  --gray-900: #121314;
+  --gray-800: #171819; /* alt row */
   --gray-700: #24272f;
   --gray-500: #505259;
   --gray-300: #96979B;
   --gray-100: #B9BABD;
   --gray-50: #d9dadb;
+  --gray-25: #f1f2f2; /* alt row */
 
   --primary-1  : #C9803F; /* Caramel */
   --secondary-1: #D59E48; /* Sand */
@@ -317,9 +319,15 @@ body.landing main {
   background-color: rgba(255, 255, 255, 0.5);
 }
 
-h1, h2, a {
-  color: var(--red-700);
+section:target,
+div:target,
+p:target,
+tr:target td, tr:target th {
+  background-color: var(--gold-300);
 }
+
+h1, h2 { color: var(--red-700); }
+a { color: var(--red-500); }
 
 a:not([href]) {
   color: var(--gray-700);
@@ -341,12 +349,39 @@ table th, table td {
 
 table.basic-table {
   thead th {
-    background: var(--red-500);
-    color: var(--gray-50);
-    a { color: var(--red-100); }
+    background: var(--gray-100);
+    color: var(--gray-900);
   }
   tfoot {
     background: var(--gold-500);
+  }
+}
+
+table.border-all { /* border on all cells */
+  border-collapse: collapse;
+  td, th { border: 0.11rem solid var(--gray-500); }
+}
+
+table.border-row { /* border on rows only */
+  border-collapse: collapse;
+  border: 0.11rem solid var(--gray-500);
+  td, th {
+    border-top: 0.11rem solid var(--gray-500);
+    border-bottom: 0.11rem solid var(--gray-500);
+  }
+}
+
+table.border-simple { /* border on "sections" only */
+  border-collapse: collapse;
+  border: 0.11rem solid var(--gray-500);
+  thead, tbody, tfoot { border: 0.11rem solid var(--gray-500); }
+  td, th { border: none; }
+}
+
+table.alt-rows { /* alternating rows */
+  tbody tr:nth-child(even) th,
+  tbody tr:nth-child(even) td {
+    background: var(--gray-25);
   }
 }
 
@@ -392,20 +427,15 @@ table.basic-table {
     background-color: var(--gray-900);
   }
   
-  table.basic-table {
-    thead th {
-      background: var(--gray-900);
-      color: var(--gray-300);
-      a { color: var(--red-300); }
-    }
-    tfoot {
-      background: var(--gold-500);
-    }
-  }  
- 
-
   body.landing main {
     background-color: rgba(255, 255, 255, 0.8);
+  }
+
+  section:target,
+  div:target,
+  p:target,
+  tr:target td, tr:target th {
+    background-color: var(--gold-700);
   }
 
   h1, h2 { color: var(--gray-50); }
@@ -420,4 +450,44 @@ table.basic-table {
   strong.highlight {
     color: var(--red-700);
   }  
+
+  table.basic-table {
+    thead th {
+      background: var(--red-700);
+      color: var(--gray-100);
+      a { color: var(--red-100); }
+    }
+    tfoot {
+      background: var(--gold-700);
+    }
+  }  
+
+  table.border-all { /* border on all cells */
+    border-collapse: collapse;
+    td, th { border: 0.11rem solid var(--gray-500); }
+  }
+  
+  table.border-row { /* border on rows only */
+    border-collapse: collapse;
+    border: 0.11rem solid var(--gray-500);
+    td, th {
+      border-top: 0.11rem solid var(--gray-500);
+      border-bottom: 0.11rem solid var(--gray-500);
+    }
+  }
+  
+  table.border-simple { /* border on "sections" only */
+    border-collapse: collapse;
+    border: 0.11rem solid var(--gray-500);
+    thead, tbody, tfoot { border: 0.11rem solid var(--gray-500); }
+    td, th { border: none; }
+  }
+  
+  table.alt-rows { /* alternating rows */
+    tbody tr:nth-child(even) th,
+    tbody tr:nth-child(even) td {
+      background: var(--gray-800);
+    }
+  } 
+
 }

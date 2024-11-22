@@ -194,14 +194,6 @@ tr th {
           transition: background-color 0.5s linear;
 }
 
-:target,
-div:target,
-p:target,
-tr:target td,
-tr:target th {
-  background-color: var(--miku-gold);
-}
-
 /* --------- Sections & Section Navigation  --------- */
 
 div.quick-access {
@@ -431,10 +423,7 @@ table { /* default */
   font-size: 1rem;
   border-collapse: collapse;
 
-  th, td {
-    background-color: white;
-    padding: 0.5rem;
-  }
+  th, td { padding: 0.5rem; }
 
   th { text-align: left; }
 
@@ -461,35 +450,6 @@ table.sticky-col { /* sticky column */
     position: sticky;
     left: 0;
     z-index: 9;
-  }
-}
-
-table.border-all { /* border on all cells */
-  border-collapse: collapse;
-  td, th { border: 0.11rem solid var(--miku-dark-red); }
-}
-
-table.border-row { /* border on rows only */
-  border-collapse: collapse;
-  border: 0.11rem solid var(--miku-dark-red);
-  td, th {
-    border-top: 0.11rem solid var(--miku-dark-red);
-    border-bottom: 0.11rem solid var(--miku-dark-red);
-  }
-}
-
-table.border-simple { /* border on "sections" only */
-  border-collapse: collapse;
-  border: 0.11rem solid var(--miku-dark-red);
-  thead, tbody, tfoot { border: 0.11rem solid var(--miku-dark-red); }
-  td, th { border: none; }
-}
-
-
-table.alt-rows { /* alternating rows */
-  tbody tr:nth-child(even) th,
-  tbody tr:nth-child(even) td {
-    background: var(--pale-neutral);
   }
 }
 
