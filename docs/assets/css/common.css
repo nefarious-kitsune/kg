@@ -491,3 +491,48 @@ table.alt-rows { /* alternating rows */
   } 
 
 }
+
+/* ----------------- Mini Calendars ----------------- */
+
+.mini-cal {
+  th, td {
+    text-align: center;
+    vertical-align: middle;
+  }
+  th.week-num, td.week-num { text-align: left; }
+  .mon, .tue, .wed, .thu, .fri, .sat, .sun {
+    width: 2rem;
+  }
+  .day-of-month {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0.2rem;
+    margin: 0.2rem;
+    width:  1.6rem;
+    height: 1.6rem;
+  }
+  .day-of-month.event-phase-1 {
+    border-radius: 0.9rem;
+    color: light-dark(var(--gray-700), var(--gold-100));
+    background-color: light-dark(var(--gold-300), var(--gold-700));
+  }
+}
+
+.mini-cal-2, .mini-cal-3 {
+  .mo2 {
+    background-color: light-dark(var(--gray-50), var(--gray-700));
+  }
+}
+
+.mini-cal-3 {
+  thead {
+    .week-num, .mon, .tue, .wed, .thu, .fri {
+      background-color: light-dark(var(--gray-100), var(--gray-700));
+      color: light-dark(var(--gray-900), var(--gray-100))
+    }
+    .sat, .sun {
+      background-color: light-dark(var(--red-100), var(--red-700));
+      color: light-dark(var(--red-500), var(--red-300))
+    }
+  }
+}
