@@ -26,6 +26,20 @@
   --gold-300: #fedd7e;
   --gold-100: #feebb2;
 
+  --sand-700: #A07736;
+  --sand-500: #D59E48;
+  --sand-300: #E6C591;
+  --sand-100: #F0DCBD;
+
+  --copper-700: #A88C3C;
+  --copper-500: #E0BB50;
+  --copper-300: #ECD696;
+  --copper-100: #F4E6C0;
+  --iris-700: #806585;
+  --iris-500: #AA86B2;
+  --iris-300: #CCB6D1;
+  --iris-100: #E0D3E3; 
+
   --gray-900: #121314;
   --gray-800: #171819; /* alt row */
   --gray-700: #24272f;
@@ -34,7 +48,7 @@
   --gray-100: #B9BABD;
   --gray-50: #d9dadb;
   --gray-25: #f1f2f2; /* alt row */
-
+  
   --primary-1  : #C9803F; /* Caramel */
   --secondary-1: #D59E48; /* Sand */
   --primary-2  : #E0BB50; /* Copper */
@@ -319,6 +333,15 @@ body.landing main {
   background-color: rgba(255, 255, 255, 0.5);
 }
 
+div.quick-access {
+  background: linear-gradient(
+    to bottom,
+    rgb(255, 255, 255) 0%,
+    rgb(255, 255, 255) 30%,
+    rgba(255, 255, 255, 0) 100%);
+  z-index: 99;
+}
+
 section:target,
 div:target,
 p:target,
@@ -385,6 +408,16 @@ table.alt-rows { /* alternating rows */
   }
 }
 
+.highlighted.copper, tr.highlighted.copper td {
+  background-color: var(--copper-100);
+  color: var(--copper-700);
+}
+.highlighted.iris, tr.highlighted.iris td {
+  background-color: var(--iris-100);
+  color: var(--iris-700);
+}
+
+
 /* ------------------- Night Theme ------------------- */
 
 @media (prefers-color-scheme: dark) {
@@ -430,6 +463,15 @@ table.alt-rows { /* alternating rows */
   body.landing main {
     background-color: rgba(255, 255, 255, 0.8);
   }
+
+  div.quick-access {
+    background: linear-gradient(
+      to bottom,
+      rgb(18, 19, 20) 0%,
+      rgb(18, 19, 20) 30%,
+      rgba(18, 19, 20, 0) 100%);
+    z-index: 99;
+  }  
 
   section:target,
   div:target,
@@ -488,8 +530,16 @@ table.alt-rows { /* alternating rows */
     tbody tr:nth-child(even) td {
       background: var(--gray-800);
     }
-  } 
+  }
 
+  .highlighted.copper, tr.highlighted.copper td {
+    background-color: var(--copper-700);
+    color: var(--copper-100);
+  }
+  .highlighted.iris, tr.highlighted.iris td {
+    background-color: var(--iris-700);
+    color: var(--iris-100);
+  }
 }
 
 /* ----------------- Mini Calendars ----------------- */

@@ -208,12 +208,6 @@ div.quick-access {
   justify-content: center;
   align-content: center;
   flex-direction: row;
-  background: linear-gradient(
-    to bottom,
-    rgb(255, 255, 255) 0%,
-    rgb(255, 255, 255) 30%,
-    /* rgba(255, 255, 255, 0.8) 50%, */
-    rgba(255, 255, 255, 0) 100%);
   z-index: 99;
 
   ul.quick-access-links {
