@@ -357,12 +357,12 @@ a:not([href]) {
 }
 
 strong.very-strong {
-  color: var(--red-700);
+  color: var(--red-500);
 }
 
 em.highlight,
 strong.highlight {
-  color: var(--red-700);
+  color: var(--red-500);
 }
 
 table th, table td {
@@ -408,6 +408,10 @@ table.alt-rows { /* alternating rows */
   }
 }
 
+.highlighted.red, tr.highlighted.red td {
+  background-color: var(--red-100);
+  color: var(--red-700);
+}
 .highlighted.copper, tr.highlighted.copper td {
   background-color: var(--copper-100);
   color: var(--copper-700);
@@ -485,12 +489,12 @@ table.alt-rows { /* alternating rows */
   a:not([href]) { color: var(--gray-50); }
   
   strong.very-strong {
-    color: var(--red-700);
+    color: var(--red-500);
   }
   
   em.highlight,
   strong.highlight {
-    color: var(--red-700);
+    color: var(--red-500);
   }  
 
   table.basic-table {
@@ -531,7 +535,10 @@ table.alt-rows { /* alternating rows */
       background: var(--gray-800);
     }
   }
-
+  .highlighted.red, tr.highlighted.red td {
+    background-color: var(--red-700);
+    color: var(--red-100);
+  }
   .highlighted.copper, tr.highlighted.copper td {
     background-color: var(--copper-700);
     color: var(--copper-100);
