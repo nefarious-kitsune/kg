@@ -270,6 +270,24 @@ code {
 
 .hidden { display: none; }
 
+details {
+  /* padding: 0.2rem; */
+  margin-bottom: 0.5rem;
+
+  summary {
+    padding: 0.2rem;
+    border-radius: 0.1rem;
+  }
+
+  summary::marker {
+    font-size: 1.2em;
+  }
+
+  div:first-of-type {
+    padding: 0.4rem;
+  }
+}
+
 /* --------------------- Lists  --------------------- */
 
 /*
@@ -421,6 +439,17 @@ table.alt-rows { /* alternating rows */
   color: var(--iris-700);
 }
 
+details {
+  background-color: var(--gray-100);
+
+  summary {
+    background-color: var(--gray-50);
+  }
+
+  summary::marker {
+    color: var(--red-700);
+  }
+}
 
 /* ------------------- Night Theme ------------------- */
 
@@ -546,6 +575,19 @@ table.alt-rows { /* alternating rows */
   .highlighted.iris, tr.highlighted.iris td {
     background-color: var(--iris-700);
     color: var(--iris-100);
+  }
+
+  details {
+    background-color: var(--gray-900);
+    border: 0.15rem solid var(--gray-700);
+  
+    summary {
+      background-color: var(--gray-700);
+    }
+  
+    summary::marker {
+      color: var(--red-500);
+    }
   }
 }
 
