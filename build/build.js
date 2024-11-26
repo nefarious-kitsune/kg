@@ -22,10 +22,6 @@ copyDirectory('bounty-hall/');
 copyDirectory('features/');
 copyDirectory('territories/');
 
-// Build ESI files
-import './esi/build-esi-tables.js'; // generate template files
-copyDirectory('esi/');
-
 copyDirectory('beginner/');
 
 import './skins/build.js';
