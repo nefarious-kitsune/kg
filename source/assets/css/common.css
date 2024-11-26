@@ -244,7 +244,15 @@ h3, h4, h5, h6 {
 
 p { line-height: 1.5em;}
 
-a { text-decoration: underline; }
+a {
+  text-decoration-style: underline;
+  text-decoration-thickness: 0.1rem;
+  text-underline-offset: 0.2rem;
+}
+a:focus,
+a:hover {
+  text-decoration-thickness: 0.15rem;
+}
 a:not([href]) { text-decoration: none; }
 
 strong { font-weight: 500; }
@@ -261,6 +269,12 @@ strong.important {
   text-transform: uppercase;
 }
 
+abbr[title] {
+  text-decoration-line: underline;
+  text-decoration-style: dotted;
+  text-underline-offset: 0.2rem;
+}
+
 code {
   font-family: "Fira Mono", monospace;
   font-size: 0.9em;
@@ -273,10 +287,11 @@ code {
 details {
   /* padding: 0.2rem; */
   margin-bottom: 0.5rem;
+  border-radius: 0.5rem;
 
   summary {
-    padding: 0.2rem;
-    border-radius: 0.1rem;
+    padding: 0.4rem;
+    border-radius: 0.5rem 0.25rem 0.25rem 0.25rem;
   }
 
   summary::marker {
@@ -285,6 +300,12 @@ details {
 
   div:first-of-type {
     padding: 0.4rem;
+  }
+}
+
+details[open] {
+  summary {
+    border-radius: 0.25rem 0.25rem 0 0;
   }
 }
 
@@ -322,12 +343,6 @@ header {
 
 header:first-child:before {
   background-image: url('../../images/logo_text.png');
-}
-
-header nav ul.breadcrumb {
-  li { color: var(--red-700); }
-  li+li:before { color: #ea3033; }
-  a { color: var(--red-700); }
 }
 
 header,
@@ -368,19 +383,50 @@ tr:target td, tr:target th {
 }
 
 h1, h2 { color: var(--red-700); }
-a { color: var(--red-500); }
 
-a:not([href]) {
+a { color: var(--gray-700); }
+a:link { text-decoration-color: var(--red-500); }
+a:visited { text-decoration-color: #A52183; }
+a:focus:link, a:focus:visited {
+  outline: none;
+  border: none;
+  color: var(--gray-25);
+  background-color: var(--red-500);
+  text-decoration-color: var(--red-700);
+}
+
+::selection {
   color: var(--gray-700);
+  background: var(--gold-100);
 }
 
-strong.very-strong {
-  color: var(--red-500);
+ul.breadcrumb {
+  li { color: var(--gray-500); }
+  li+li:before { color: var(--gray-500); }
 }
 
-em.highlight,
-strong.highlight {
-  color: var(--red-500);
+ul.quick-access-links {
+  background-color: var(--gray-100);
+  
+  li {
+    color: var(--gray-500);
+
+    a {
+      color: var(--gray-700);
+      text-decoration: none;
+    }
+    a:hover:link, a:hover:visited {
+      color: var(--red-500);
+    }
+    a:focus:link, a:focus:visited {
+      color: var(--gray-25);
+      background-color: var(--red-500);
+    }
+  }
+
+  li+li:before {
+    color: var(--gray-300);
+  }
 }
 
 table th, table td {
@@ -470,12 +516,6 @@ details {
     background-image: url('../../images/logo_text-dark.png');
   }
   
-  header nav ul.breadcrumb {
-    li { color: var(--red-300); }
-    li+li:before { color: var(--red); }
-    a { color: var(--red-300); }
-  }
-
   header,
   main {
     border-left: 1px solid var(--red);
@@ -504,7 +544,7 @@ details {
       rgb(18, 19, 20) 30%,
       rgba(18, 19, 20, 0) 100%);
     z-index: 99;
-  }  
+  }
 
   section:target,
   div:target,
@@ -514,17 +554,53 @@ details {
   }
 
   h1, h2 { color: var(--gray-50); }
-  a { color: var(--red-300); }
-  a:not([href]) { color: var(--gray-50); }
-  
-  strong.very-strong {
-    color: var(--red-500);
-  }
-  
-  em.highlight,
-  strong.highlight {
-    color: var(--red-500);
+
+  a { color: var(--gray-50); }
+  a:link { text-decoration-color: var(--red-500); }
+  a:visited { text-decoration-color: #A52183; }
+  a:focus:link,
+  a:focus:visited {
+    outline: none;
+    border: none;
+    color: var(--gray-25);
+    background-color: var(--red-500);
+    text-decoration-color: var(--red-700);
   }  
+
+  ::selection {
+    color: var(--gray-700);
+    background: var(--gold-500);
+  }
+
+  ul.breadcrumb {
+    li { color: var(--red-300); }
+    li+li:before { color: var(--red); }
+  }
+
+  ul.quick-access-links {
+    background-color: var(--gray-700);
+    
+    li {
+      color: var(--gray-100);
+
+      a {
+        color: var(--gray-25);
+        text-decoration: none;
+      }
+      a:hover:link, a:hover:visited {
+        text-decoration: underline 0.15rem;
+        text-decoration-color: var(--red-500);
+      }
+      a:focus:link, a:focus:visited {
+        color: var(--gray-25);
+        background-color: var(--red-500);
+      }
+    }
+
+    li+li:before {
+      color: var(--gray-300);
+    }
+  }
 
   table.basic-table {
     thead th {

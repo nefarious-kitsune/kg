@@ -172,6 +172,7 @@ h3.inline-heading {
 
 /* --------------- Simple Text Styles --------------- */
 
+/*
 .red, .blue, .orange, .green, .purple {
   text-decoration: underline;
   text-decoration-thickness: 0.12rem;
@@ -182,6 +183,7 @@ h3.inline-heading {
 .orange { text-decoration-color: var(--orange); }
 .green { text-decoration-color: var(--green); }
 .purple { text-decoration-color: var(--purple); }
+*/
 
 /* ----------- Anchors & Focus Animation  ----------- */
 
@@ -215,19 +217,16 @@ div.quick-access {
     list-style: none;
     margin: 0;
     padding: 0;
-    background-color: var(--neutral);
     border-radius: 1rem;
     color: white;
     
     li {
       display: inline-block;
-      color: var(--light-neutral);
       margin-block-start: 0;
       margin-block-end: 0;
       padding: 0.4rem 0;
 
       a {
-        color: white;
         text-decoration: none;
       }
 
@@ -244,7 +243,6 @@ div.quick-access {
     li+li:before {
       display: inline-block;
       padding: 0 0.2rem 0 0;
-      color: var(--light-neutral);
       content: "|";
     }
   }
