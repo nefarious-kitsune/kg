@@ -23,5 +23,5 @@ If you can, set a timer for the following <color=#90c>Elite</color> and <color=#
 
 Avoid teleportation during the invasion.
 
-If your a castle is not being a target (no Evil Spirit is marching toward it), you can teleport to reinforce others. But if your castle is being targeted (an Evil Spirit is marching toward you) and you teleports, you will get ❌❌ mark and you will no longer get any Evil Spirit attack.
+If your a castle is not being a target (no Evil Spirit is marching toward it), you can teleport to reinforce others. But if your castle is being targeted (an Evil Spirit is marching toward you) and you teleports, you will get <color=#B00>XX</color> mark and you will no longer get any Evil Spirit attack.
 </color>
