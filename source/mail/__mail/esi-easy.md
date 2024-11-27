@@ -1,43 +1,27 @@
-<size=50><b><color=teal>Evil Spirit Invasion</color></b></size>
+<color=#222><size=50><b><color=#04D>Evil Spirit Invasion</color></b></size>
 
 <size=40>Start Time: <color=navy>UTC 1200</color>
-Total Time: ~98 minutes
-Event Level: 1</size>
+Event Level: 1
+<b><color=#B00>19M</color></b> need to pass Wave 18</size>
 
-<size=35>You need <b><color=navy>19M</color></b> at home to pass Wave 18</size>
+If you can, set a timer for the following <color=#90c>Elite</color> and <color=#F00>Boss</color> attack waves:
+- Wave 7 @ <color=#90c>30 min</color> mark
+- Wave 10 @ <color=#f00>45 min</color> mark
+- Wave 14 @ <color=#90c>1 hr 5 min</color> mark
+- Wave 17 @ <color=#90c>1 hr 20 min</color> mark
+- Wave 20 @ <color=#f00>1 hr 35 min</color> mark
 
-<size=35><b><color=teal>Approximate arrival time of Evil Spirits</color></b></size>
+<size=45><b><color=#04D>Basic Rules</color></b></size>
 
-You don't need to be online for the entire invasion. Check the time below to see when you need to check back in.
+☆ Have your castle close to our hive before the invasion
+☆ Only reinforce castles that cannot defend against incoming spirits
+☆ No Titan rally during the invasion
+☆ Big player: <b>max one</b> troops in the Fortress
+☆ Small player: no limit on troops in the Fortress
 
-@<b>52 min</b> <color=blue>Lv. 19 Normal Spirit</color>
-@<b>53 min</b> <b><color=purple>Lv. 14 Elite Spirit</color></b>
-@<b>53 min</b> <b><color=purple>Lv. 17 Elite Spirit</color></b>
-@<b>1h 18 min</b> <b><color=red>Lv. 10 Boss Spirit</color></b>
-@<b>1h 38 min</b> <b><color=red>Lv. 20 Boss Spirit</color></b>
+<size=45><b><color=#04D>Teleports</color></b></size>
 
-<size=35><b><color=teal>Rules and Tips</color></b></size>
+Avoid teleportation during the invasion.
 
-- Only reinforce castles that cannot defend against incoming spirits
-
-- No teleport during the invasion
-
-- No Titan rally during the invasion
-
-- Big player: <b>max one</b> troops in the Fortress
-
-- Small player: no limit on troops in the Fortress
-
-<size=35><b><color=teal>How reinforcement work</color></b></size>
-
-When you reinforce the Fortress, everyone gets the same power bonus as the biggest troops. Similarly, when you reinforce a castle, you may also get some power bonus. So, if you are small, do as much reinforcement as you can. But if you are big, do as little as possible.
-
-<size=35><b><color=teal>How to get points if you are small</color></b></size>
-
-- If you need reinforcement, <b><color=green>share your location</color></b> so we can mark you ahead of the time.
-
-- After wave-19 <color=blue>Normal Spirits</color> hit your castle, start <b><color=green>reinforcing</color></b> other castles.
-
-- If you see <b><color=maroon>xx</color></b> on your castle, it means you will no longer get any attack from <color=blue>Normal Spirits</color>. So start <b><color=green>reinforcing</color></b> other castles.
-
-- After we are done with <color=purple>Elite Spirits</color>, start reinforcing the Fortress.
+If your a castle is not being a target (no Evil Spirit is marching toward it), you can teleport to reinforce others. But if your castle is being targeted (an Evil Spirit is marching toward you) and you teleports, you will get ❌❌ mark and you will no longer get any Evil Spirit attack.
+</color>

@@ -12,23 +12,26 @@ Evil Spirit Invasion will unlock soon. In this event, we start the invasion from
 
 If your castle <b>fails to defend</b> against Evil Spirits twice, or if you <b>teleport</b> during the event, you will see <color=#B00><b>XX</b></color> marks on your castle, and Evil Spirits will stop attacking you.
 
-<size=45><b><color=#04D>Rules and Tips</color></b></size>
+<size=45><b><color=#04D>Basic rules</color></b></size>
 
+☆ Have your castle close to our hive before the invasion
 ☆ Only reinforce castles that cannot defend against incoming spirits
 ☆ No teleport during the invasion
 ☆ No Titan rally during the invasion
 ☆ Big player: <b>max one</b> troops in the Fortress
 ☆ Small player: no limit on troops in the Fortress
 
-<size=45><b><color=#04D>How reinforcement work</color></b></size>
+<size=45><b><color=#04D>Teleports</color></b></size>
 
-When you reinforce the Fortress, everyone gets the same power bonus as the biggest troops. Similarly, when you reinforce a castle, you may also get some power bonus. So, if you are small, do as much reinforcement as you can. But if you are big, do as little as possible.
+Avoid teleportation during the invasion.
 
-<size=60><b><color=#04D>How to get points if you are small</color></b></size>
+If your a castle is not being a target (no Evil Spirit is marching toward it), you can teleport to reinforce others. But if your castle is being targeted (an Evil Spirit is marching toward you) and you teleports, you will get ❌❌ mark and you will no longer get any Evil Spirit attack.
+
+<size=45><b><color=#04D>Tips on getting points</color></b></size>
 
 ☆ If you need reinforcement, <b>share your location</b> so we can mark you ahead of the time.
 
-☆ <b>If your castle has <color=#B00>XX</color> mark</b>, it means you will no longer get any attack from Evil Spirits. So start reinforcing.
+☆ <b>If your castle has <color=#B00>XX</color> mark</b>, you will no longer get any attack from Evil Spirits. So start reinforcing.
 
 ☆ The <color=#90c>Elite</color> and <color=#F00>Boss</color> Spirits will arrive at specific times after the start. Try to be online and reinforce castles
   - Wave 7 @ <color=#90c>30 min</color> mark

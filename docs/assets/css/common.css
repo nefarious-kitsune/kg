@@ -307,7 +307,7 @@ details {
     font-size: 1.2em;
   }
 
-  div:first-of-type {
+  > div:first-of-type {
     padding: 0.4rem;
   }
 }
