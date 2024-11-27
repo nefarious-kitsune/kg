@@ -22,7 +22,7 @@ copyDirectory('bounty-hall/');
 copyDirectory('features/');
 copyDirectory('territories/');
 
-copyDirectory('beginner/');
+copyDirectory('basics/');
 
 import './skins/build.js';
 copyDirectory('skins/');
