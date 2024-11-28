@@ -29,6 +29,8 @@ const MonthNames = [
 const seasonStart = new Date(Date.UTC(2024, 11-1, 4, 0, 0, 0));
 const seasonEnd = new Date(Date.UTC(2024, 12-1, 1, 23, 59, 59));
 const currentTime = new Date();
+currentTime.setUTCHours(0, 0, 0, 0);
+const currentTS = currentTime.getTime();
 
 while (true) {
   if (currentTime > seasonEnd) {
@@ -87,6 +89,10 @@ function makeSeasonCal(templateId, calStartDate, evtDays) {
       daySpan.classList.add('event-end');
     } else if (evtDays.throneDay === day) {
       daySpan.classList.add('throne-day');
+    }
+
+    if (calDate.getTime() === currentTS) {
+      daySpan.classList.add('today');
     }
 
     calDate.setDate(calDate.getDate() + 1);

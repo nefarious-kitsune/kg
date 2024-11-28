@@ -9,6 +9,23 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <link href="../../../assets/css/common.css" rel="stylesheet">
 <link href="../../../assets/css/content.css" rel="stylesheet">
+<script src="../../../js/mini-cal.js"></script>
+<script>
+  const UHCal = {
+    startDays: [],
+    eventDays: [22, 23, 24, 25, 26],
+    endDays: [],
+    throneDay: 0,
+  };
+  document.addEventListener('DOMContentLoaded', (e) => {
+    document.getElementById('thisSeasonCalContainer').appendChild(
+      makeSeasonCal('cal-template', 'this-season', UHCal)
+    );
+    document.getElementById('nextSeasonCalContainer').appendChild(
+      makeSeasonCal('cal-template', 'next-season', UHCal)
+    );
+  });
+</script>
 </head>
 
 <body>
@@ -23,15 +40,27 @@
 <main>
 <h1>{{TITLE}}</h1>
 <section>
+  <p>Alliance Cross-Server Summon is a 5-day event
+    that happens on Week 4 of each
+    <a href="../../../calendars/seasonal">KvK Season</a>.
+    During the event, alliances can post Beckons to recruit players from other
+    servers.</p>
+</section>
 
-<p>
-  On the <a href="../../../calendars/seasonal">last week</a>
-  of each KvK season, there is a
-  <em class="highlight">5-Day</em> Alliance Cross-Server Summon event.
-  During the event, alliances can post Beckons to recruit players from other
-  servers.</p>
+<template id="cal-template">
+<fragment src="../../../events/__temp/season-cal.md"/>
+</template>
 
-<ul class="butterfly">
+<section>
+<div style="column-width: 20rem; padding: 0; margin:0">
+<div id="thisSeasonCalContainer" class="calContainer"><h3>Current Season</h3></div>
+<div id="nextSeasonCalContainer" class="calContainer"><h3>Upcoming Season</h3></div>
+</div>
+</section>
+
+<section>
+<h2>General Guide</h2>
+<ul class="compact-list">
   <li><a href="./post">Posting</a> a Cross-Server Beckon</li>
   <li><a href="./join">Joining</a> a Cross-Server Rally</li>
   <li><a href="./vs-transfer">Differences</a> vs server transfer</li>

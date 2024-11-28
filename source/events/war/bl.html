@@ -32,16 +32,30 @@
 <main>
 <h1>{{TITLE}}</h1>
 
+<section>
+<p>{{PAGE-DESC}}</p>
+</section>
 <template id="cal-template">
 <fragment src="../__temp/season-cal.md"/>
 </template>
-
-<section>
+<section id="calendars">
 <div style="column-width: 20rem; padding: 0; margin:0">
 <div id="thisSeasonCalContainer" class="calContainer"><h3>Current Season</h3></div>
 <div id="nextSeasonCalContainer" class="calContainer"><h3>Upcoming Season</h3></div>
 </div>
 </section>
+
+<section id="event-days">
+<h2>Event Days</h2>
+<p>Event registration is Monday&ndash;Friday on Week 4 of each season.</p>
+
+<p>
+The event happens on Week 1&ndash;3 of each season.
+The Throne War happens on Sunday of Week 3.
+</p>
+
+</section>
+  
 
 </main>
 </body>

@@ -29,6 +29,7 @@
   --red-300: #d27b7e;
   --red-100: #e4b0b2;
   --accent-500: #1CC140;
+  --accent-300: #77DA8C;
   --gold-700: #bf951e;
   --gold-500: #fec728;
   --gold-300: #fedd7e;
@@ -712,27 +713,35 @@ details {
     width: 2rem;
   }
   .day-of-month {
-    display: inline-block;
-    line-height: 2rem;
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    line-height: 1.8rem;
     width: 2rem;
     height: 2rem;
+    z-index: 1;
   }
   .day-of-month.event-day {
-    border-radius: 1rem;
-    border: 0.1rem solid var(--accent-500);
-    background-color: var(--accent-500);
-    color: var(--gray-700);
+    border-bottom: 0.2rem solid var(--accent-500);
   }
   .day-of-month.event-start,
   .day-of-month.event-end {
-    border-radius: 1rem;
-    border: 0.1rem solid var(--accent-500);
+    border-bottom: 0.1rem solid var(--accent-300);
   }
   .day-of-month.throne-day {
-    border-radius: 1rem;
-    border: 0.1rem solid var(--red-500);
-    background-color: var(--red-500);
-    color: var(--red-100);
+    border-bottom: 0.2rem solid var(--red-500);
+  }
+  .day-of-month.today:before {
+    position: absolute;
+    display: block;
+    content: "";
+    font-size: 0.8rem;
+    border-radius: 0.9rem;
+    /* border: 0.2rem solid var(--red-500); */
+    width: 1.8rem; height: 1.8rem;
+    left: 0.1rem; top: 0.1rem;
+    background-color: light-dark(var(--red-500), var(--red-700));
+    z-index: -1;
   }
   .mo2 {
     background-color: light-dark(var(--gray-50), var(--gray-700));

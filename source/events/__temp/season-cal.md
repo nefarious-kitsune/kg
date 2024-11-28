@@ -29,7 +29,7 @@
   <td class="day-10"><span class="day-of-month">13</span></td>
   <td class="day-11"><span class="day-of-month">14</span></td>
   <td class="day-12"><span class="day-of-month">15</span></td>
-  <td class="day-13"><span class="day-of-month">D30</span></td>
+  <td class="day-13"><span class="day-of-month">16</span></td>
   <td class="day-14"><span class="day-of-month">17</span></td>
 </tr>
 <tr>
