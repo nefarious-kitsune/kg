@@ -700,19 +700,55 @@ details {
   th, td {
     text-align: center;
     vertical-align: middle;
+    padding: 0;
   }
-  th.week-num, td.week-num { text-align: left; }
+  th.week-num,
+  td.week-num {
+    text-align: left;
+    width: 3rem;
+  }
   .mon, .tue, .wed, .thu, .fri, .sat, .sun {
     width: 2rem;
   }
   .day-of-month {
     display: inline-block;
-    vertical-align: middle;
-    padding: 0.2rem;
+    line-height: 1.6rem;
     margin: 0.2rem;
     width:  1.6rem;
     height: 1.6rem;
   }
+  .day-of-month.event-day {
+    border-radius: 0.9rem;
+    background-color: var(--accent-500);
+    color: var(--gray-700);
+  }
+  .day-of-month.event-start {
+    position: relative;
+    border-radius: 0.9rem;
+    border: 0.1rem solid var(--accent-500);
+  }
+  .day-of-month.event-start:before {
+    background: none;
+    border-radius: 0.9rem;
+    border: 0.1rem solid var(--accent-500);
+    content: "";
+    display: block;
+    position: absolute;
+    width: 1.2rem;
+    height: 1.2rem;
+    top: 0.1rem;
+    left: 0.1rem;
+    right: 0.1rem;
+    bottom: 0.1rem;
+    pointer-events: none;
+  }
+  .day-of-month.event-end {
+    border-radius: 0.9rem;
+    border: 0.2rem solid var(--accent-500);
+  }
+
+  
+
   .day-of-month.event-phase-1 {
     border-radius: 0.9rem;
     color: light-dark(var(--gray-700), var(--gold-100));

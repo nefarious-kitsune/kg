@@ -698,43 +698,43 @@ details {
 
 .mini-cal {
   th, td {
+    font-weight: 400;
     text-align: center;
     vertical-align: middle;
+    padding: 0.2rem;
   }
-  th.week-num, td.week-num { text-align: left; }
+  th.week-num,
+  td.week-num {
+    text-align: left;
+    width: 3rem;
+  }
   .mon, .tue, .wed, .thu, .fri, .sat, .sun {
     width: 2rem;
   }
   .day-of-month {
     display: inline-block;
-    vertical-align: middle;
-    padding: 0.2rem;
-    margin: 0.2rem;
-    width:  1.6rem;
-    height: 1.6rem;
+    line-height: 2rem;
+    width: 2rem;
+    height: 2rem;
   }
-  .day-of-month.event-phase-1 {
-    border-radius: 0.9rem;
-    color: light-dark(var(--gray-700), var(--gold-100));
-    background-color: light-dark(var(--gold-300), var(--gold-700));
+  .day-of-month.event-day {
+    border-radius: 1rem;
+    border: 0.1rem solid var(--accent-500);
+    background-color: var(--accent-500);
+    color: var(--gray-700);
   }
-}
-
-.mini-cal-2, .mini-cal-3 {
+  .day-of-month.event-start,
+  .day-of-month.event-end {
+    border-radius: 1rem;
+    border: 0.1rem solid var(--accent-500);
+  }
+  .day-of-month.throne-day {
+    border-radius: 1rem;
+    border: 0.1rem solid var(--red-500);
+    background-color: var(--red-500);
+    color: var(--red-100);
+  }
   .mo2 {
     background-color: light-dark(var(--gray-50), var(--gray-700));
-  }
-}
-
-.mini-cal-3 {
-  thead {
-    .week-num, .mon, .tue, .wed, .thu, .fri {
-      background-color: light-dark(var(--gray-100), var(--gray-700));
-      color: light-dark(var(--gray-900), var(--gray-100))
-    }
-    .sat, .sun {
-      background-color: light-dark(var(--red-100), var(--red-700));
-      color: light-dark(var(--red-500), var(--red-300))
-    }
   }
 }
