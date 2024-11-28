@@ -8,6 +8,23 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <link href="../../../assets/css/common.css" rel="stylesheet">
 <link href="../../../assets/css/content.css" rel="stylesheet">
+<script src="../../../js/mini-cal.js"></script>
+<script>
+  const UHCal = {
+    startDays: [2, 9, 16, 23],
+    eventDays: [3, 10, 17, 24],
+    endDays: [4, 11, 18, 25],
+    throneDay: 0,
+  };
+  document.addEventListener('DOMContentLoaded', (e) => {
+    document.getElementById('thisSeasonCalContainer').appendChild(
+      makeSeasonCal('cal-template', 'this-season', UHCal)
+    );
+    document.getElementById('nextSeasonCalContainer').appendChild(
+      makeSeasonCal('cal-template', 'next-season', UHCal)
+    );
+  });
+</script>
 </head>
 <body>
 
@@ -23,6 +40,16 @@
 
 <section>
 <p>Evil Spirit Invasion is an event that is currently under testing.</p>
+
+<template id="cal-template">
+<fragment src="../../__temp/season-cal.md"/>
+</template>
+<section id="calendars">
+<div style="column-width: 20rem; padding: 0; margin:0">
+<div id="thisSeasonCalContainer" class="calContainer"><h3>Current Season</h3></div>
+<div id="nextSeasonCalContainer" class="calContainer"><h3>Upcoming Season</h3></div>
+</div>
+</section>
 
 <ul class="compact-list">
   <li><a href="./titans">Titans and Evil Spirit King</a></li>
