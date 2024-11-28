@@ -1,52 +1,3 @@
-<!DOCTYPE html>
-<html>
-<head>
-<title>Ultimate Hunting - Miku's Shrine</title>
-<link rel="icon" type="image/x-icon" href="/images/logo_mini.png">
-<meta name="format-detection" content="telephone=no">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://kg.kitsune21.com/">
-<meta property="og:image" content="https://kg.kitsune21.com/assets/icons/site_info.png">
-<meta property="og:title" content="Ultimate Hunting">
-<meta property="og:description"
-  content="Ultimate Hunting is bi-weekly event in the Seasonal Phase">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<link href="../../assets/css/common.css" rel="stylesheet">
-<link href="../../assets/css/content.css" rel="stylesheet">
-<script src="../../js/mini-cal.js"></script>
-<script>
-  const UHCal = {
-    startDays: [],
-    eventDays: [
-      8, 9, 10, 11, 12, 13,
-      22, 23, 24, 25, 26, 27,
-    ],
-    endDays: [14, 28],
-    throneDay: 0,
-  };
-  document.addEventListener('DOMContentLoaded', (e) => {
-    document.getElementById('thisSeasonCalContainer').appendChild(
-      makeSeasonCal('cal-template', 'this-season', UHCal)
-    );
-    document.getElementById('nextSeasonCalContainer').appendChild(
-      makeSeasonCal('cal-template', 'next-season', UHCal)
-    );
-  });
-</script>
-</head>
-<body>
-
-<header><nav><ul class="breadcrumb">
-  <li><a href="../../../content">Home</a></li>
-  <li><a href="../../">Events</a></li>
-  <li><a href="../">War</a></li>
-  <li>Ultimate Hunting</li>
-</ul></nav></header>
-
-<main>
-<h1>Ultimate Hunting</h1>
-
-<template id="cal-template">
 <table class="basic-table border-row mini-cal">
 <thead>
 <tr>
@@ -103,15 +54,3 @@
 </tr>
 </tbody>
 </table>
-</template>
-
-<section>
-<div style="column-width: 20rem; padding: 0; margin:0">
-<div id="thisSeasonCalContainer" class="calContainer"><h3>Current Season</h3></div>
-<div id="nextSeasonCalContainer" class="calContainer"><h3>Upcoming Season</h3></div>
-</div>
-</section>
-
-</main>
-</body>
-</html>

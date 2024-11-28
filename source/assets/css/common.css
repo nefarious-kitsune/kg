@@ -706,7 +706,7 @@ details {
   th.week-num,
   td.week-num {
     text-align: left;
-    width: 3rem;
+    width: 4rem;
   }
   .mon, .tue, .wed, .thu, .fri, .sat, .sun {
     width: 2rem;
@@ -736,5 +736,16 @@ details {
   }
   .mo2 {
     background-color: light-dark(var(--gray-50), var(--gray-700));
+  }
+}
+
+.calContainer {
+  margin: 0 0 4rem 0;
+  padding: 0;
+  margin-block-start: 0;
+  margin-block-end: 1rem;
+  h2, h3 {
+    margin: 0;
+    padding: 0;
   }
 }
