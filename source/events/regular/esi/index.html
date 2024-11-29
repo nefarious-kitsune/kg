@@ -8,6 +8,20 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <link href="../../../assets/css/common.css" rel="stylesheet">
 <link href="../../../assets/css/content.css" rel="stylesheet">
+<script src="../../../js/mini-cal.js"></script>
+<script>
+  const ESICal = {
+    startDays: [],
+    eventDays: [1, 4, 8, 11, 15, 18, 22, 25],
+    endDays: [],
+    throneDay: 0,
+  };
+  document.addEventListener('DOMContentLoaded', (e) => {
+    document.getElementById('thisSeasonCalContainer').appendChild(
+      makeSeasonCal('cal-template', 'this-season', ESICal)
+    );
+  });
+</script>
 </head>
 <body>
 
@@ -24,7 +38,21 @@
 <section>
 <p>Evil Spirit Invasion is a <a href="../">regular event</a> that happens
 on Monday and Thursday every week.</p>
+</section>
 
+<template id="cal-template">
+<fragment src="../../__temp/season-cal.md"/>
+</template>
+
+<section id="schedule">
+<h2>Schedule</h2>
+<!-- <div style="column-width: 20rem; padding: 0; margin:0"> -->
+<div id="thisSeasonCalContainer" class="calContainer"><h3>Current Season</h3></div>
+<!-- </div> -->
+</section>
+
+<section id="overview">
+<h2>Overview</h2>
 <ul class="compact-list">
   <li><a href="./mechanics">Mechanics of Evil Spirit Invasion</a></li>
   <li><a href="./tips-all">Tips for all players</a></li>
