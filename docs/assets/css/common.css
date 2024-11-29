@@ -159,6 +159,12 @@ main {
   padding: 0 0 2rem 0;
   margin: 0 0 20rem 0;
 }
+/* main { z-index: 1; }
+main > section { z-index: 2; }
+main > section > table { z-index: 3; } */
+* { z-index: auto; }
+div.quick-access { z-index: 999; }
+.text-tip, .image-tip { z-index: 9999; }
 
 /* ----------------- Header Section ----------------- */
 
@@ -392,7 +398,6 @@ div.quick-access {
     rgb(255, 255, 255) 0%,
     rgb(255, 255, 255) 30%,
     rgba(255, 255, 255, 0) 100%);
-  z-index: 99;
 }
 
 section:target,
@@ -567,7 +572,6 @@ details {
       rgb(18, 19, 20) 0%,
       rgb(18, 19, 20) 30%,
       rgba(18, 19, 20, 0) 100%);
-    z-index: 99;
   }
 
   section:target,
@@ -767,14 +771,15 @@ details {
   text-decoration-line: underline;
   text-decoration-style: dotted;
   text-underline-offset: 0.2rem;
-  z-index: 0;
+  /* z-index: 1; */
 }
 .tip-container .image-tip img {
   max-width: 10rem;
   height: auto;
   margin: 0;
 }
-.tip-container .image-tip, .tip-container .text-tip {
+.tip-container .image-tip,
+.tip-container .text-tip {
   display: none;
   position: absolute;
   top: 1.6rem;
@@ -796,5 +801,4 @@ details {
 .tip-container:hover .image-tip,
 .tip-container:hover .text-tip {
   display: block;
-  z-index: 99;
 }
