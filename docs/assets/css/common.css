@@ -758,3 +758,43 @@ details {
     padding: 0;
   }
 }
+
+/* -------------------- Tooltips -------------------- */
+
+.tip-container {
+  position: relative;
+  display: inline-block;
+  text-decoration-line: underline;
+  text-decoration-style: dotted;
+  text-underline-offset: 0.2rem;
+  z-index: 0;
+}
+.tip-container .image-tip img {
+  max-width: 10rem;
+  height: auto;
+  margin: 0;
+}
+.tip-container .image-tip, .tip-container .text-tip {
+  display: none;
+  position: absolute;
+  top: 1.6rem;
+  left: 0;
+  background: light-dark(var(--gray-100), var(--gray-100));
+  color: light-dark(var(--gray-900), var(--gray-900));
+}
+.tip-container .image-tip {
+  padding: 0;
+}
+.tip-container .text-tip {
+  max-width: 18rem;
+  min-width: 10rem;
+  padding: 0.5rem;
+  text-decoration-line: none;
+}
+.tip-container:focus .image-tip,
+.tip-container:focus .text-tip,
+.tip-container:hover .image-tip,
+.tip-container:hover .text-tip {
+  display: block;
+  z-index: 99;
+}
