@@ -159,12 +159,13 @@ main {
   padding: 0 0 2rem 0;
   margin: 0 0 20rem 0;
 }
-/* main { z-index: 1; }
-main > section { z-index: 2; }
-main > section > table { z-index: 3; } */
+
+/* ----------------- Stacking Order ----------------- */
+
 * { z-index: auto; }
 div.quick-access { z-index: 999; }
-.text-tip, .image-tip { z-index: 9999; }
+.text-tip,
+.image-tip { z-index: 9999; }
 
 /* ----------------- Header Section ----------------- */
 
@@ -771,7 +772,6 @@ details {
   text-decoration-line: underline;
   text-decoration-style: dotted;
   text-underline-offset: 0.2rem;
-  /* z-index: 1; */
 }
 .tip-container .image-tip img {
   max-width: 10rem;
