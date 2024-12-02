@@ -1,20 +1,74 @@
+<!DOCTYPE html>
 <html>
 <head>
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Miku's Shrine</title>
-  <link rel="icon" type="image/x-icon" href="../images/logo_mini.png">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://kg.kitsune21.com/">
-  <meta property="og:title" content="Miku's Shrine">
-  <meta property="og:description" content="Information site for Kingdom Guards">
-  <meta property="og:image" content="https://kg.kitsune21.com/images/logo_torii.png">
-  <link href="./css/common.css" rel="stylesheet" />
-  <link href="./css/home.css" rel="stylesheet" />
+<title>Miku's Shrine</title>
+<link rel="icon" type="image/x-icon" href="/images/logo_mini.png">
+<meta name="format-detection" content="telephone=no">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://kg.kitsune21.com/">
+<meta property="og:image" content="https://kg.kitsune21.com/assets/icons/site_info.png">
+<meta property="og:title" content="Miku's Shrine">
+<meta property="og:description"
+  content="Fan-created information site for Kingdom Guards">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link href="./assets/css/common.css" rel="stylesheet">
+<link href="./assets/css/landing.css" rel="stylesheet">
+<style>
+.system-notice {
+  border-radius: 1.2rem 1.2rem;
+  background-color: var(--gray-25);
+  color: var(--gray-900);
+  width: 30rem;
+  padding: 0;
+  font-size: 1.2rem;
+
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+ }
+
+.system-title {
+  border-radius: 1.2rem 1.2rem 0 0;
+  background-color: var(--red-700);
+  color: white;
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 500;
+  padding: 0.3rem 0 0.5rem 0;
+}
+
+.system-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 10rem;
+}
+
+.system-message {
+  margin: 0 0.5rem 0.5rem 0.5rem;
+  padding: 0.5rem;
+}
+
+.system-count-down-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--gray-50);
+  margin: 0.5rem;
+  padding: 0.5rem;
+  border-radius: 1rem;
+}
+
+a:link,
+a:visited {
+  color: var(--gray-900);
+  /* text-decoration: none; */
+}
+</style>
 </head>
 
 <body class="landing">
-<header id="header">
-</header>
 <div class="system-notice">
   <div class="system-title">System Notice</div>
   <div class="system-content">
