@@ -14,7 +14,8 @@
 
   .hero-avatar-name { visibility: hidden; overflow: clip; }
   .hero-avatar-unknown-name { visibility: visible; }
-  .hero-avatar-name, .hero-avatar-unknown-name {
+  .hero-avatar-name,
+.hero-avatar-unknown-name {
     flex-grow: 1;
   }
 
@@ -321,3 +322,35 @@
 .hero-name.doris:after     { background-image: url('../heroes/Hero-492.png'); }
 .hero-avatar.ivy,
 .hero-name.ivy:after     { background-image: url('../heroes/Hero-493.png'); }
+.hero-avatar.sindra,
+.hero-name.sindra:after  { background-image: url('../heroes/Hero-494.png'); }
+.hero-avatar.enzo,
+.hero-name.enzo:after    { background-image: url('../heroes/Hero-495.png'); }
+.hero-avatar.rebecca,
+.hero-name.rebecca:after { background-image: url('../heroes/Hero-496.png'); }
+.hero-avatar.daisy,
+.hero-name.daisy:after   { background-image: url('../heroes/Hero-498.png'); }
+.hero-avatar.mycelia,
+.hero-name.mycelia:after { background-image: url('../heroes/Hero-.png'); }
+.hero-avatar.layla,
+.hero-name.layla:after   { background-image: url('../heroes/Hero-497.png'); }
+.hero-avatar.edmund,
+.hero-name.edmund:after  { background-image: url('../heroes/Hero-499.png'); }
+.hero-avatar.catrina,
+.hero-name.catrina:after { background-image: url('../heroes/Hero-502.png'); }
+.hero-avatar.nina,
+.hero-name.nina:after    { background-image: url('../heroes/Hero-501.png'); }
+.hero-avatar.ryan,
+.hero-name.ryan:after    { background-image: url('../heroes/Hero-500.png'); }
+.hero-avatar.olaf,
+.hero-name.olaf:after    { background-image: url('../heroes/Hero-504.png'); }
+.hero-avatar.webster,
+.hero-name.webster:after { background-image: url('../heroes/Hero-506.png'); }
+.hero-avatar.viola,
+.hero-name.viola:after   { background-image: url('../heroes/Hero-505.png'); }
+.hero-avatar.eleanora,
+.hero-name.eleanora:after { background-image: url('../heroes/Hero-507.png'); }
+.hero-avatar.green,
+.hero-name.green:after   { background-image: url('../heroes/Hero-509.png'); }
+.hero-avatar.kirona,
+.hero-name.kirona:after  { background-image: url('../heroes/Hero-510.png'); }
