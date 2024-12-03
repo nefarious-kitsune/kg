@@ -102,6 +102,23 @@ export const HeroNameToClassMap = {
   'mycelia':   'mycelia',
   'dylan':     'dylan',
   'ivy':       'ivy',
+  'sindra': 'sindra',
+  'enzo': 'enzo',
+  'rebecca': 'rebecca',
+  'daisy': 'daisy',
+  'mycelia': 'mycelia',
+  'layla': 'layla',
+  'edmund': 'edmund',
+  'catrina': 'catrina',
+  'nina': 'nina',
+  'ryan': 'ryan',
+  'olaf': 'olaf',
+  'webster': 'webster',
+  'viola': 'viola',
+  'eleanora': 'eleanora',
+  'green': 'green',
+  'kirona': 'kirona',
+  // 'alex': 'alex',
 };
 
 const rHeroes = [
