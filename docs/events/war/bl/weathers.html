@@ -13,6 +13,16 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <link href="../../../assets/css/common.css" rel="stylesheet">
 <link href="../../../assets/css/content.css" rel="stylesheet">
+<link href="../../../assets/css/heroes.css" rel="stylesheet">
+<style>
+  .hero-avatar {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+  .bonus {
+    color: var(--accent-500)
+  }
+</style>
 </head>
 <body>
 
@@ -89,42 +99,82 @@
 
 <section id="weathers">
 <h2>Weathers</h2>
-<table class="basic-table border-row">
-<tbody>
-<tr>
-  <td><img src="../../../assets/emojis/4x/sandstorm-weather.png" class="icon"></td>
-  <td>Sandstorm</td>
-  <td><img src="../../../assets/emojis/4x/terra-faction.png" class="icon"></td>
-  <td>+10% power for Terra Faction</td>
-  <td><img src="../../../assets/emojis/4x/archer-element.png" class="icon"></td>
-  <td>+50% power for Arwyn, Arthur, Sahar, Padme, Elanora, Green</td>
-</tr>
-<tr>
-  <td><img src="../../../assets/emojis/4x/thundercloud-weather.png" class="icon"></td>
-  <td>Thundercloud</td>
-  <td><img src="../../../assets/emojis/4x/inferno-faction.png" class="icon"></td>
-  <td>+10% power for Inferno Faction</td>
-  <td><img src="../../../assets/emojis/4x/fire-element.png" class="icon"></td>
-  <td>+50% power for Ophelia, Miku, Erika, Tracy, Catrina, Kirona</td>
-</tr>
-<tr>
-  <td><img src="../../../assets/emojis/4x/snowy-weather.png" class="icon"></td>
-  <td>Snowy Day</td>
-  <td><img src="../../../assets/emojis/4x/frost-faction.png" class="icon"></td>
-  <td>+10% power for Frost Faction</td>
-  <td><img src="../../../assets/emojis/4x/ice-element.png" class="icon"></td>
-  <td>+50% power for Merlin, Hadi, Jessica, Clarence, Olaf, Nina</td>
-</tr>
-<tr>
-  <td><img src="../../../assets/emojis/4x/rainy-weather.png" class="icon"></td>
-  <td>Rainy</td>
-  <td><img src="../../../assets/emojis/4x/verdant-faction.png" class="icon"></td>
-  <td>+10% power for Verdant Faction</td>
-  <td><img src="../../../assets/emojis/4x/goblin-element.png" class="icon"></td>
-  <td>+50% power for Alucard, Claudia, Gruen, Tumnus, Webster, Viola</td>
-</tr>
-</tbody>
-</table>
+
+<p>During Burning Expedition, each day has one of 5 types of weathers:</p>
+
+<h3><img src="../../../assets/emojis/4x/clear-weather.png" class="icon">
+  Clear Day</h3>
+<ul class="compact-list">
+  <li>No bonus</li>
+</ul>
+
+<h3><img src="../../../assets/emojis/4x/sandstorm-weather.png" class="icon">
+  Sandstorm</h3>
+<ul class="compact-list">
+  <li><span class="bonus">+10%</span> bonus power for
+    <span class="tip-container" tabindex="0"><span class="image-tip"><img src="../../../assets/emojis/4x/terra-faction.png"></span>Terra Faction</span
+  ></li>
+  <li><span class="bonus">+50%</span> bonus power for
+    <span class="hero-name arwyn" image-hint tabindex="0">Arwyn</span>,
+    <span class="hero-name arthur" image-hint tabindex="0">Arthur</span>,
+    <span class="hero-name sahar" image-hint tabindex="0">Sahar</span>,
+    <span class="hero-name padme" image-hint tabindex="0">Padme</span>,
+    <span class="hero-name eleanora" image-hint tabindex="0">Eleanora</span>,
+    <span class="hero-name green" image-hint tabindex="0">Green</span></li>
+    <li><span class="bonus">+20%</span>
+      proportion of slightly wounded</li>
+</ul>
+
+<h3><img src="../../../assets/emojis/4x/thundercloud-weather.png" class="icon">
+  Thundercloud</h3>
+<ul class="compact-list">
+  <li><span class="bonus">+10%</span> bonus power for
+    <span class="tip-container" tabindex="0"><span class="image-tip"><img src="../../../assets/emojis/4x/inferno-faction.png"></span>Inferno Faction</span
+  ></li>
+  <li><span class="bonus">+50%</span> bonus power for
+    <span class="hero-name ophelia" image-hint tabindex="0">Ophelia</span>,
+    <span class="hero-name miku" image-hint tabindex="0">Miku</span>,
+    <span class="hero-name erika" image-hint tabindex="0">Erika</span>,
+    <span class="hero-name tracy" image-hint tabindex="0">Tracy</span>,
+    <span class="hero-name catrina" image-hint tabindex="0">Catrina</span>,
+    <span class="hero-name kirona" image-hint tabindex="0">Kirona</span></li>
+    <li><span class="bonus">+20%</span>
+      proportion of slightly wounded</li>
+</ul>
+
+<h3><img src="../../../assets/emojis/4x/snowy-weather.png" class="icon">
+  Snowy Day</h3>
+<ul class="compact-list">
+  <li><span class="bonus">+10%</span> bonus power for
+    <span class="tip-container" tabindex="0"><span class="image-tip"><img src="../../../assets/emojis/4x/frost-faction.png"></span>Frost Faction</span
+  ></li>
+  <li><span class="bonus">+50%</span> bonus power for
+    <span class="hero-name merlin" image-hint tabindex="0">Merlin</span>,
+    <span class="hero-name hadi" image-hint tabindex="0">Hadi</span>,
+    <span class="hero-name jessica" image-hint tabindex="0">Jessica</span>,
+    <span class="hero-name clarence" image-hint tabindex="0">Clarence</span>,
+    <span class="hero-name olaf" image-hint tabindex="0">Olaf</span>,
+    <span class="hero-name nina" image-hint tabindex="0">Nina</span></li>
+    <li><span class="bonus">+20%</span>
+      proportion of slightly wounded</li>
+</ul>
+
+<h3><img src="../../../assets/emojis/4x/rainy-weather.png" class="icon">
+  Rainy Day</h3>
+<ul class="compact-list">
+  <li><span class="bonus">+10%</span> bonus power for
+    <span class="tip-container" tabindex="0"><span class="image-tip"><img src="../../../assets/emojis/4x/verdant-faction.png"></span>Verdant Faction</span
+  ></li>
+  <li><span class="bonus">+50%</span> bonus power for
+    <span class="hero-name alucard" image-hint tabindex="0">Alucard</span>,
+    <span class="hero-name claudia" image-hint tabindex="0">Claudia</span>,
+    <span class="hero-name gruen" image-hint tabindex="0">Gruen</span>,
+    <span class="hero-name tumnus" image-hint tabindex="0">Tumnus</span>,
+    <span class="hero-name webster" image-hint tabindex="0">Webster</span>,
+    <span class="hero-name viola" image-hint tabindex="0">Viola</span></li>
+    <li><span class="bonus">+20%</span>
+      proportion of slightly wounded</li>
+</ul>
 </section>
 
 <section id="voting">
