@@ -11,6 +11,7 @@ Archer	SSR	B	Dylan	20	20	10	20	0	8	6	1	1
 Archer	SSR	C	O'Neil	20	20	0	25	0	7	4.5	1	2
 Archer	SSR	C	Collin	30	0	10	20	0	7	4.5	1	2
 Archer	SSR	C	Sabastian	30	0	10	20	0	7	4.5	1	2
+Archer	SSR	C	Green	25	10	0	25	0	7	4	1	2
 Archer	SSR	C	Doris	20	0	10	40	0	7	6	1	1
 Archer	SSR	C	Ariza	20	20	0	25	0	7	4.5	1	1.5
 Archer	SSR	C	Eleanora	20	0	10	40	0	7	6	1	1
@@ -43,6 +44,7 @@ Fire	SSR	B	Cosette	20	25	0	30	0	7.5	5	1	2.5
 Fire	SSR	B	Paul	20	25	0	30	0	7.5	5	1	2
 Fire	SSR	B	Sindra	20	40	0	20	0	7.5	4.5	1	1
 Fire	SSR	C	Apollo	30	0	10	20	0	7	4.5	1	2
+Fire	SSR	C	Kirona	20	0	10	40	0	7	6	1	1
 Fire	SSR	C	Giselle	20	0	10	25	10	6.5	5	3	1
 Fire	SSR	C	Dain	20	15	10	0	0	6.5	3	1	2
 Fire	SSR	C	Miku	15	0	10	25	20	6	5	4.5	0.5
@@ -50,6 +52,7 @@ Fire	SSR	C	Kenshiro	20	0	10	25	0	6.5	5	1	1.5
 Fire	SSR	C	Penny	20	0	10	25	0	6.5	5	1	1.5
 Fire	SSR	C	Christie	20	0	10	25	0	6.5	5	1	1.5
 Fire	SSR	C	Allen	20	15	0	25	0	6.5	4	1	1.5
+Fire	SSR	C	Alex	20	10	0	25	0	6.5	4	1	1.5
 Fire	SSR	C	Gro	15	15	0	20	0	6	4	0.5	0.5
 Fire	SSR	D	Dean	0	15	10	20	0	5	6	0	1
 Fire	SSR	D	Brie	0	15	10	20	0	5	6	0	1

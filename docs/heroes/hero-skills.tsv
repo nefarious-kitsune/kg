@@ -11,6 +11,7 @@ Archer	SSR	B	Dylan	March Speed +20%	Recovery +20%		Unit Power +20%	Regeneration 
 Archer	SSR	C	O'Neil	March Speed +20%	Load +20%		Unit Power +25%	Recovery +20%
 Archer	SSR	C	Collin	March Speed +30%	Load +20%		Unit Power +20%	Regeneration +10%
 Archer	SSR	C	Sabastian	March Speed +30%	Load +20%		Unit Power +20%	Regeneration +10%
+Archer	SSR	C	Green	March Speed +25%	Load +15%		Unit Power +25%	Recovery +10%
 Archer	SSR	C	Doris	March Speed +20%	Unit Power +20%		Unit Power +20%	Regeneration +10%
 Archer	SSR	C	Ariza	March Speed +20%	Load +15%		Unit Power +25%	Recovery +20%
 Archer	SSR	C	Eleanora	March Speed +20%	Unit Power +20%		Unit Power +20%	Regeneration +10%
@@ -43,6 +44,7 @@ Fire	SSR	B	Cosette	March Speed +20%	Load +30%		Unit Power +30%	Recovery +25%
 Fire	SSR	B	Paul	March Speed +20%	Load +20%		Unit Power +30%	Recovery +25%
 Fire	SSR	B	Sindra	March Speed +20%	Recovery +20%		Unit Power +20%	Recovery +20%
 Fire	SSR	C	Apollo	March Speed +30%	Load +20%		Unit Power +20%	Regeneration +10%
+Fire	SSR	C	Kirona	March Speed +20%	Unit Power +20%		Unit Power +20%	Regeneration +10%
 Fire	SSR	C	Giselle	March Speed +20%	AP Discount 10%		Unit Power +25%	Regeneration +10%
 Fire	SSR	C	Dain	March Speed +20%	Load +20%		Recovery +15%	Regeneration +10%
 Fire	SSR	C	Miku	AP Discount 20%	March Speed +15%		Unit Power +25%	Regeneration +10%
@@ -50,6 +52,7 @@ Fire	SSR	C	Kenshiro	March Speed +20%	Load +15%		Unit Power +25%	Regeneration +10
 Fire	SSR	C	Penny	March Speed +20%	Load +15%		Unit Power +25%	Regeneration +10%
 Fire	SSR	C	Christie	March Speed +20%	Load +15%		Unit Power +25%	Regeneration +10%
 Fire	SSR	C	Allen	March Speed +20%	Load +10%		Unit Power +25%	Recovery +15%
+Fire	SSR	C	Alex	March Speed +20%	Load +15%		Unit Power +25%	Recovery +10%
 Fire	SSR	C	Gro	March Speed +15%	Unit Power +20% (Fire)		Tower Defense	Recovery +15%
 Fire	SSR	D	Dean	Load +15%	Unit Power +20%		Recovery +15%	Regeneration +10%
 Fire	SSR	D	Brie	Load +20%	Recovery +15%		Unit Power +20%	Regeneration +10%
