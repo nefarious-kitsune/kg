@@ -1,132 +1,42 @@
 /* eslint-disable key-spacing */
 import {extractHtmlElement} from '../extract-element.js';
+import {heroBase} from '../../heroes/build-data.js';
 
-export const HeroNameToClassMap = {
-  'daniel':    'daniel',
-  'anton':     'anton',
-  'etley':     'etley',
-  'arwyn':     'arwyn',
-  'peter':     'peter',
-  'ophelia':   'ophelia',
-  'merlin':    'merlin',
-  'arthur':    'arthur',
-  'claudia':   'claudia',
-  'alucard':   'alucard',
-  'gro':       'gro',
-  'catherine': 'catherine',
-  'hadi':      'hadi',
-  'paula':     'paula',
-  'kris':      'kris',
-  'ralph':     'ralph',
-  'gabriel':   'gabriel',
-  'erika':     'erika',
-  'jennifer':  'jennifer',
-  'issac':     'issac',
-  'allen':     'allen',
-  'nicole':    'nicole',
-  'harold':    'harold',
-  'rosamond':  'rosamond',
-  'ariza':     'ariza',
-  'cosette':   'cosette',
-  'o\'neil':   'o-neil',
-  'sahar':     'sahar',
-  'dolvar':    'dolvar',
-  'paul':      'paul',
-  'gruen':     'gruen',
-  'wallis':    'wallis',
-  'rudolph':   'rudolph',
-  'meniere':   'meniere',
-  'jessica':   'jessica',
-  'lomax':     'lomax',
-  'vera':      'vera',
-  'tumnus':    'tumnus',
-  'christie':  'christie',
-  'lilani':    'lilani',
-  'torvi':     'torvi',
-  'arwin':     'arwin',
-  'richard':   'richard',
-  'pedra':     'pedra',
-  'filius':    'filius',
-  'clarence':  'clarence',
-  'livia':     'livia',
-  'kenshiro':  'kenshiro',
-  'padme':     'padme',
-  'tracy':     'tracy',
-  'miku':      'miku',
-  'benjamin':  'benjamin',
-  'penny':     'penny',
-  'maud':      'maud',
-  'giselle':   'giselle',
-  'wendy':     'wendy',
-  'samar':     'samar',
-  'apollo':    'apollo',
-  'dean':      'dean',
-  'kadir':     'kadir',
-  'parr':      'parr',
-  'dain':      'dain',
-  'suad':      'suad',
-  'collin':    'collin',
-  'anko':      'anko',
-  'chiyoko':   'chiyoko',
-  'sabastian': 'sabastian',
-  'keith':     'keith',
-  'brie':      'brie',
-  'nathaniel': 'nathaniel',
-  'pan':       'pan',
-  'vanessa':   'vanessa',
-  'fatima':    'fatima',
-  'luvia':     'luvia',
-  'bella':     'bella',
-  'meg':       'meg',
-  'hana':      'hana',
-  'pythia':    'pythia',
-  'montag':    'montag',
-  'rogers':    'rogers',
-  'blackwell': 'blackwell',
-  'simon':     'simon',
-  'trist':     'trist',
-  'ptolemy':   'ptolemy',
-  'ao deng ge ri le':   'ao-deng',
-  'ao yue':    'ao-yue',
-  'lilith':    'lilith',
-  'rila':      'rila',
-  'johannes':  'johannes',
-  'maya':      'maya',
-  'daria':     'daria',
-  'lovelace':  'lovelace',
-  'judy':      'judy',
-  'trishy':    'trishy',
-  'boudica':   'boudica',
-  'angelina':  'angelina',
-  'doris':     'doris',
-  'mycelia':   'mycelia',
-  'dylan':     'dylan',
-  'ivy':       'ivy',
-  'sindra': 'sindra',
-  'enzo': 'enzo',
-  'rebecca': 'rebecca',
-  'daisy': 'daisy',
-  'mycelia': 'mycelia',
-  'layla': 'layla',
-  'edmund': 'edmund',
-  'catrina': 'catrina',
-  'nina': 'nina',
-  'ryan': 'ryan',
-  'olaf': 'olaf',
-  'webster': 'webster',
-  'viola': 'viola',
-  'eleanora': 'eleanora',
-  'green': 'green',
-  'kirona': 'kirona',
-  // 'alex': 'alex',
-};
-
-const rHeroes = [
-  'anton', 'etley', 'peter'];
-const srHeroes = [
-  'arwyn', 'harold', 'kris',
-  'ophelia', 'samar', 'merlin',
-  'alucard'];
+export const KnownHeroes = [
+  'Daniel',
+  'Anton', 'Etley', 'Peter',
+  'Padme', 'Miku', 'Tracy', 'Clarence', 'Tumnus',
+  'Ophelia', 'Kris', 'Samar', 'Merlin', 'Arwyn', 'Alucard', 'Harold',
+  'Gabriel', 'Arthur', 'Jennifer', 'Erika',
+  'Allen', 'Gro', 'Rosamond', 'Catherine',
+  'Paula', 'Hadi', 'Ralph',
+  'O\'Neil', 'Cosette',
+  'Dolvar', 'Paul', 'Issac', 'Ariza',
+  'Meniere', 'Gruen', 'Sahar', 'Rudolph',
+  'Jessica', 'Wallis', 'Nicole', 'Pan',
+  'Claudia', 'Kadir', 'Christie', 'Anko',
+  'Vera', 'Richard', 'Penny', 'Torvi',
+  'Kenshiro', 'Lilani', 'Lomax', 'Livia',
+  'Giselle', 'Pedra', 'Filius', 'Arwin',
+  'Collin', 'Apollo', 'Parr', 'Benjamin',
+  'Sabastian', 'Dain', 'Wendy', 'Fatima',
+  'Dean', 'Maud', 'Suad', 'Bella',
+  'Brie', 'Keith', 'Chiyoko', 'Meg',
+  'Vanessa', 'Nathaniel', 'Luvia', 'Hana',
+  'Pythia', 'Montag', 'Rogers', 'Simon',
+  'Trist', 'Blackwell', 'Ptolemy',
+  'Ao Yue',
+  'Ao Deng Ge Ri Le',
+  'Lilith', 'Rila', 'Maya', 'Johannes',
+  'Daria', 'Lovelace', 'Judy', 'Trishy',
+  'Boudica', 'Angelina', 'Doris', 'Dylan',
+  'Ivy', 'Sindra', 'Enzo', 'Rebecca',
+  'Daisy', 'Mycelia', 'Layla', 'Edmund',
+  'Catrina', 'Nina', 'Ryan', 'Olaf',
+  'Webster', 'Viola', 'Eleanora', 'Green',
+  'Kirona',
+  // 'Alex'
+];
 
 /**
  * @param {object} content
@@ -141,20 +51,29 @@ export function replaceHeroAvatar(content) {
   if (extracted === null) return false;
 
   const HeroName = extracted.innerContent;
-  let heroId;
+  const HeroData = heroBase.find((data)=> (
+    data.name.toLowerCase() === HeroName.toLowerCase()
+  ));
 
+  let avatarClass;
   const classList = ['hero-avatar'];
   if (HeroName) {
-    heroId = HeroNameToClassMap[HeroName.toLowerCase()];
-    // known hero
-    if (heroId) {
-      classList.push(heroId);
-      if (heroId === 'daniel') classList.push('n');
-      else if (rHeroes.indexOf(heroId) !== -1) classList.push('r');
-      else if (srHeroes.indexOf(heroId) !== -1) classList.push('sr');
-      else classList.push('ssr');
+    if (KnownHeroes.includes(HeroName)) {
+      avatarClass = HeroName.toLowerCase();
+      if (avatarClass === 'o\'neil') avatarClass = 'o-neil';
+      else if (avatarClass === 'ao deng ge ri le') avatarClass = 'ao-deng';
+      else if (avatarClass === 'ao yue') avatarClass = 'ao-yue';
+      classList.push(avatarClass);
     } else {
       classList.push('blank');
+    }
+
+    if (HeroData) {
+      classList.push(
+          HeroData.element.toLowerCase(),
+          HeroData.rarity.toLowerCase(),
+      );
+    } else {
       classList.push('ssr');
     }
   } else {
@@ -179,7 +98,7 @@ export function replaceHeroAvatar(content) {
   }
 
   if (HeroName) {
-    if (heroId) {
+    if (avatarClass) {
       replaceWith += '<span\n' +
         '  ' + 'class="hero-avatar-name">' + HeroName + '</span\n  >';
     } else {

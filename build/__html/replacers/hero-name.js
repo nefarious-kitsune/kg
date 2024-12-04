@@ -1,6 +1,7 @@
 /* eslint-disable key-spacing */
 import {extractHtmlElement} from '../extract-element.js';
-import {HeroNameToClassMap} from './hero-avatar.js';
+import {KnownHeroes} from './hero-avatar.js';
+import {heroBase} from '../../heroes/build-data.js';
 
 /**
  * @param {object} content
@@ -18,19 +19,42 @@ export function replaceHeroName(content) {
 
   const HeroName = extracted.innerContent;
 
+  const HeroData = heroBase.find((data)=> (
+    data.name.toLowerCase() === HeroName.toLowerCase()
+  ));
+
+  let hasAvatar = false;
+  const classList = ['hero-name'];
   if (HeroName) {
-    const heroId = HeroNameToClassMap[HeroName.toLowerCase()];
-    if (heroId) {
-      replaceWith =
-        `<span class="hero-name ${heroId}" image-hint tabindex="0">` +
-        HeroName + '</span>';
-    } else {
-      replaceWith = HeroName;
+    if (KnownHeroes.includes(HeroName)) {
+      let avatarClass = HeroName.toLowerCase();
+      if (avatarClass === 'o\'neil') avatarClass = 'o-neil';
+      else if (avatarClass === 'ao deng ge ri le') avatarClass = 'ao-deng';
+      else if (avatarClass === 'ao yue') avatarClass = 'ao-yue';
+      classList.push(avatarClass);
+      hasAvatar = true;
     }
-  };
+
+    if (HeroData) {
+      classList.push(
+          HeroData.element.toLowerCase(),
+          HeroData.rarity.toLowerCase(),
+      );
+    } else {
+      classList.push('ssr');
+    }
+  }
+
+  if (hasAvatar) {
+    replaceWith =
+      `<span class="${classList.join(' ')}" image-hint tabindex="0">` +
+      HeroName + '</span>';
+  } else {
+    replaceWith =
+    `<span class="${classList.join(' ')}">${HeroName}</span>`;
+  }
 
   content.source = extracted.head + replaceWith + extracted.tail;
-
   return true;
 }
 

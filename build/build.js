@@ -3,6 +3,7 @@
 // import './server-info/build.js';
 
 import {copyDirectory} from './__file/copy-directory.js';
+import './heroes/build.js';
 
 copyDirectory('./', 0);
 
@@ -12,7 +13,6 @@ copyDirectory('features/');
 copyDirectory('marches/');
 copyDirectory('units/');
 
-import './heroes/build.js';
 copyDirectory('heroes/');
 
 import './magic-lab/build.js';

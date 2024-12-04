@@ -467,3 +467,5 @@ calcRating();
 saveRating();
 saveSkills();
 saveDatabase();
+
+export const heroBase = HeroBase;
