@@ -875,3 +875,33 @@ details {
   visibility: visible;
   transition: 0.4s ease-in-out 0.3s;
 }
+
+/* --------------- Heroes & Elements  --------------- */
+
+.hero-avatar {
+  &.n   { border-color: #AFE0A8;}
+  &.r   { border-color: #95C1EE;}
+  &.sr  { border-color: #C297DE;}
+  &.ssr { border-color: #E9ED65;}
+  &.blank { background: transparent; }
+  &.blank.ssr {
+    background: linear-gradient(-45deg, #FF9927 0%, #D5793F 100%);
+  }
+}
+
+.hero-name.archer {
+  text-decoration-color: #DA9D2A;
+  /* color: light-dark(#6D4F15, #E9C47F); */
+}
+.hero-name.fire {
+  text-decoration-color: #FC4614;
+  /* color: light-dark(#7E230A, #FD9072); */
+}
+.hero-name.ice {
+  text-decoration-color: #2DAEFF;
+  /* color: light-dark(#175780, #81CEFF); */
+}
+.hero-name.goblin {
+  text-decoration-color: #2DAEFF;
+  /* color: light-dark(#18743B, #83F1AD); */
+}

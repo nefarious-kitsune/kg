@@ -9,8 +9,7 @@
   background-size: 130% 130%;
   background-position: center;
   border-radius: 0.6rem;
-  border: 0.15rem solid var(--light-neutral);
-  /* outline: 0.15rem solid var(--neutral); */
+  border: 0.18rem solid var(--gray-500);
 
   .hero-avatar-name { visibility: hidden; overflow: clip; }
   .hero-avatar-unknown-name { visibility: visible; }
@@ -50,16 +49,6 @@
     font-weight: bold;
     background: rgba(255, 255, 255, 0.75);
     color: var(--dark-neutral);
-  }
-
-  &.n   { border-color: var(--light-primary-3);  outline-color: var(--primary-3 );}
-  &.r   { border-color: var(--light-primary-4 ); outline-color: var(--primary-4 );}
-  &.sr  { border-color: var(--light-primary-5);  outline-color: var(--primary-5 );}
-  &.ssr { border-color: var(--light-primary-2);  outline-color: var(--primary-2 );}
-
-  &.blank { background: transparent; }
-  &.blank.ssr {
-    background: linear-gradient(-45deg, #FF9927 0%, #D5793F 100%);
   }
 }
 
