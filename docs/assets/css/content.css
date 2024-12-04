@@ -546,19 +546,19 @@ th {
 /* ---------------- Fluid Icon Sizes ---------------- */
 
 img.icon {
-  height: 22px;
-  width: auto;
+  width: 22px;
+  height: auto;
   vertical-align: middle;
 }
 
 @media screen and (min-width: 300px) {
   img.icon {
-    height: calc(22px + 10 * ((100vw - 320px) / (880 - 300)));
+    width: calc(22px + 10 * ((100vw - 320px) / (880 - 300)));
   }
 }
 
 @media screen and (min-width: 880px) {
   img.icon {
-    height: 32px;
+    width: 32px;
   }
 }

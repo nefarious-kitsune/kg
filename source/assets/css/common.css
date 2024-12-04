@@ -840,6 +840,10 @@ details {
   margin: 0;
 }
 
+.tip-container .image-tip img.icon {
+  width: 2.6rem;
+}
+
 .tip-container .image-tip,
 .tip-container .text-tip {
   display: block;

@@ -835,10 +835,13 @@ details {
 }
 
 .tip-container .image-tip img {
-  min-width: min-content;
   max-width: 10rem;
   height: auto;
   margin: 0;
+}
+
+.tip-container .image-tip img.icon {
+  width: 2.6rem;
 }
 
 .tip-container .image-tip,
