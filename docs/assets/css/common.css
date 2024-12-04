@@ -825,6 +825,7 @@ details {
 
 /* -------------------- Tooltips -------------------- */
 
+.hero-name[image-hint],
 .tip-container {
   position: relative;
   display: inline-block;
@@ -832,32 +833,42 @@ details {
   text-decoration-style: dotted;
   text-underline-offset: 0.2rem;
 }
+
 .tip-container .image-tip img {
+  min-width: min-content;
   max-width: 10rem;
   height: auto;
   margin: 0;
 }
+
 .tip-container .image-tip,
 .tip-container .text-tip {
-  display: none;
+  display: block;
   position: absolute;
-  top: 1.6rem;
-  left: 0;
+  top: calc(100% + 0.4rem);
+  left: 50%;
+  transform: translate(-50%);
   background: light-dark(var(--gray-100), var(--gray-100));
   color: light-dark(var(--gray-900), var(--gray-900));
+  padding: 0.25rem;
+  border-radius: 0.2rem;
+
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.6s ease-in-out 0.4s;
 }
-.tip-container .image-tip {
-  padding: 0;
-}
+
 .tip-container .text-tip {
   max-width: 18rem;
   min-width: 10rem;
-  padding: 0.5rem;
   text-decoration-line: none;
 }
+
 .tip-container:focus .image-tip,
 .tip-container:focus .text-tip,
 .tip-container:hover .image-tip,
 .tip-container:hover .text-tip {
-  display: block;
+  opacity: 1;
+  visibility: visible;
+  transition: 0.4s ease-in-out 0.3s;
 }
