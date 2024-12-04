@@ -351,12 +351,6 @@ strong.important {
   text-transform: uppercase;
 }
 
-abbr[title] {
-  text-decoration-line: underline;
-  text-decoration-style: dotted;
-  text-underline-offset: 0.2rem;
-}
-
 code {
   font-family: "Fira Mono", monospace;
   font-size: 0.9em;
@@ -825,13 +819,28 @@ details {
 
 /* -------------------- Tooltips -------------------- */
 
+abbr[title],
+.hero-name[image-hint],
+.tip-container {
+  text-decoration-line: underline;
+  text-decoration-style: dotted;
+  text-underline-offset: 0.2rem;
+  text-decoration-thickness: 0.1rem;
+}
+
 .hero-name[image-hint],
 .tip-container {
   position: relative;
   display: inline-block;
-  text-decoration-line: underline;
-  text-decoration-style: dotted;
-  text-underline-offset: 0.2rem;
+}
+
+abbr[title]:hover,
+.hero-name[image-hint]:hover,
+.tip-container:hover,
+abbr[title]:focus,
+.hero-name[image-hint]:focus,
+.tip-container:focus {
+  text-decoration-thickness: 0.15rem;
 }
 
 .tip-container .image-tip img {
@@ -891,17 +900,35 @@ details {
 
 .hero-name.archer {
   text-decoration-color: #DA9D2A;
-  /* color: light-dark(#6D4F15, #E9C47F); */
 }
 .hero-name.fire {
   text-decoration-color: #FC4614;
-  /* color: light-dark(#7E230A, #FD9072); */
 }
 .hero-name.ice {
   text-decoration-color: #2DAEFF;
-  /* color: light-dark(#175780, #81CEFF); */
 }
 .hero-name.goblin {
   text-decoration-color: #2DAEFF;
-  /* color: light-dark(#18743B, #83F1AD); */
+}
+
+.hero-name.archer:focus,
+.hero-name.archer:hover {
+  color: light-dark(#523B10, #F2DCB2);
+}
+.hero-name.fire:focus,
+.hero-name.fire:hover {
+  color: light-dark( #3F1205, #FEBCAA);
+}
+.hero-name.ice:focus,
+.hero-name.ice:hover {
+  color: light-dark(#0C2C40, #B3E2FF);
+}
+.hero-name.goblin:focus,
+.hero-name.goblin:hover {
+  color: light-dark(#0C3A1E, #B5F7CE);
+}
+
+.hero-name:focus,
+.hero-name:hover {
+  transition: .2s ease-in;
 }
