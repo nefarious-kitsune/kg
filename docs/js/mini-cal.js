@@ -64,9 +64,9 @@ function makeSeasonCal(templateId, calStartDate, evtDays) {
     calDate.setUTCMonth(calStartDate[1]-1);
     calDate.setUTCDate(calStartDate[2]);
   } else if (calStartDate === 'next-season') {
-    calDate.setDate(seasonStart.getDate() + 28);
+    calDate.setTime(seasonStart.getTime() + (28 * 24 * 360 * 1000));
   } else {
-    calDate.setDate(seasonStart.getDate());
+    calDate.setTime(seasonStart.getTime());
   }
 
   for (let day=1; day <= 28; day++) {
