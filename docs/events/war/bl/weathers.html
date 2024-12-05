@@ -19,9 +19,6 @@
     width: 2.5rem;
     height: 2.5rem;
   }
-  .bonus {
-    color: var(--accent-500)
-  }
 </style>
 </head>
 <body>
@@ -36,6 +33,7 @@
 
 <main>
 <h1>Burning Expedition Weathers</h1>
+<p>During Burning Expedition, each day may have one of 5 types of weathers.</p>
 
 <section id="schedule">
 <h2>Schedule</h2>
@@ -107,27 +105,28 @@
 <p><img src="../../../assets/emojis/4x/clear-weather.png" class="icon">
   Weathers of day 1, 13, and 21 are Clear Day</p>
 <p><img src="../../../assets/emojis/4x/vote.png" class="icon">
-  Weathers of day 6, 12, and 18 are influenced by <a href="voting">votes</a>
-  from players with <a href="../../../p2p/vip/">VIP</a> 4 or above</p>
+  Weathers of day 6, 12, and 18 are influenced by <a href="#voting">votes</a>.</p>
 <p><img src="../../../assets/emojis/4x/unknown-weather.png" class="icon">
-  Weathers of other days will be random.</p>
+  Weathers of other days will be
+  <a href="#sandstorm">Sandstorm</a>,
+  <a href="#thundercloud">Thundercloud</a>,
+  <a href="#snowy">Snowy</a>, or
+  <a href="#rainy">Rainy</a>.</p>
 </div>
 </div>
 </section>
 
-<section id="weathers">
-<h2>Weathers</h2>
-
-<p>During Burning Expedition, each day has one of 5 types of weathers:</p>
-
-<h3><img src="../../../assets/emojis/4x/clear-weather.png" class="icon">
-  Clear Day</h3>
+<section id="clear-day">
+<h2><img src="../../../assets/emojis/4x/clear-weather.png" class="icon">
+  Clear Day</h2>
 <ul class="compact-list">
   <li>No bonus</li>
-</ul>
+</ul>  
+</section>
 
-<h3><img src="../../../assets/emojis/4x/sandstorm-weather.png" class="icon">
-  Sandstorm</h3>
+<section id="sandstorm">
+<h2><img src="../../../assets/emojis/4x/sandstorm-weather.png" class="icon">
+  Sandstorm</h2>
 <ul class="compact-list">
   <li><span class="bonus">+10%</span> bonus power for
     <span class="tip-container" tabindex="0"><span class="image-tip"
@@ -143,9 +142,11 @@
     <li><span class="bonus">+20%</span>
       proportion of slightly wounded</li>
 </ul>
+</section>
 
-<h3><img src="../../../assets/emojis/4x/thundercloud-weather.png" class="icon">
-  Thundercloud</h3>
+<section id="thundercloud">
+<h2><img src="../../../assets/emojis/4x/thundercloud-weather.png" class="icon">
+  Thundercloud</h2>
 <ul class="compact-list">
   <li><span class="bonus">+10%</span> bonus power for
     <span class="tip-container" tabindex="0"><span class="image-tip"
@@ -161,9 +162,11 @@
     <li><span class="bonus">+20%</span>
       proportion of slightly wounded</li>
 </ul>
+</section>
 
-<h3><img src="../../../assets/emojis/4x/snowy-weather.png" class="icon">
-  Snowy Day</h3>
+<section id="snowy">
+<h2><img src="../../../assets/emojis/4x/snowy-weather.png" class="icon">
+  Snowy Day</h2>
 <ul class="compact-list">
   <li><span class="bonus">+10%</span> bonus power for
     <span class="tip-container" tabindex="0"><span class="image-tip"
@@ -179,9 +182,11 @@
     <li><span class="bonus">+20%</span>
       proportion of slightly wounded</li>
 </ul>
+</section>
 
-<h3><img src="../../../assets/emojis/4x/rainy-weather.png" class="icon">
-  Rainy Day</h3>
+<section id="rainy">
+<h2><img src="../../../assets/emojis/4x/rainy-weather.png" class="icon">
+  Rainy Day</h2>
 <ul class="compact-list">
   <li><span class="bonus">+10%</span> bonus power for
     <span class="tip-container" tabindex="0"><span class="image-tip"
@@ -201,6 +206,16 @@
 
 <section id="voting">
 <h2>Voting</h2>
+<ul>
+  <li>Players need to have <a href="../../../p2p/vip/">VIP</a> 4 or
+    above to vote.</li>
+  <li>Each player with Crystal Season Card can vote twice per day.</li>
+  <li>Each player without Crystal Season Card can vote once per day.</li>
+  <li>On the day that players vote the weather on,
+    the probability of a specific weather depends on the
+    number of votes for that weather.</li>
+</ul>
+<!-- You cannot vote for a date once that date has passed -->
 </section>
 </main>
 </body>

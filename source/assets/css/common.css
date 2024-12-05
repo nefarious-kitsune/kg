@@ -356,6 +356,7 @@ strong.important {
   font-size: 0.9em;
 }
 
+.bonus,
 .number {
   color: light-dark(var(--red-500), var(--accent-500));
 }
