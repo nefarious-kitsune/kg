@@ -31,11 +31,13 @@ const seasonEnd = new Date(Date.UTC(2024, 12-1, 1, 23, 59, 59));
 const currentTime = new Date();
 currentTime.setUTCHours(0, 0, 0, 0);
 const currentTS = currentTime.getTime();
+let seasonEndTS = seasonEnd.getTime();
 
 while (true) {
-  if (currentTime > seasonEnd) {
+  if (currentTS > seasonEndTS) {
     seasonStart.setDate(seasonStart.getDate() + 28);
     seasonEnd.setDate(seasonEnd.getDate() + 28);
+    seasonEndTS = seasonEnd.getTime();
   } else {
     break;
   }
