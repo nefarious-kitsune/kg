@@ -351,9 +351,16 @@ strong.important {
   text-transform: uppercase;
 }
 
-code {
+.monospace, code {
   font-family: "Fira Mono", monospace;
   font-size: 0.9em;
+}
+
+.number {
+  color: light-dark(var(--red-500), var(--accent-500));
+}
+.number ~ .unit {
+  padding-left: 0.1rem;
 }
 
 /* -------------------- Others -------------------- */
@@ -860,11 +867,11 @@ abbr[title]:focus,
   top: calc(100% + 0.4rem);
   left: 50%;
   transform: translate(-50%);
-  background: light-dark(var(--gray-100), var(--gray-100));
-  color: light-dark(var(--gray-900), var(--gray-900));
+  background: light-dark(var(--gray-50), var(--gray-700));
+  color: light-dark(var(--gray-900), var(--gray-50));
   padding: 0.25rem;
   border-radius: 0.2rem;
-
+  border: 0.1rem solid light-dark(var(--gray-100), var(--gray-300));
   opacity: 0;
   visibility: hidden;
   transition: 0.6s ease-in-out 0.4s;
@@ -873,6 +880,7 @@ abbr[title]:focus,
 .tip-container .text-tip {
   max-width: 18rem;
   min-width: 10rem;
+  font-size: 0.9rem;
   text-decoration-line: none;
 }
 
