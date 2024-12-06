@@ -815,17 +815,26 @@ details {
     height: 2rem;
     z-index: 1;
   }
-  .day-of-month.event-day {
+  .server-day {
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    line-height: 1.8rem;
+    width: 4rem;
+    height: 2rem;
+    z-index: 1;
+  }
+  .event-day {
     border-bottom: 0.2rem solid var(--accent-500);
   }
-  .day-of-month.event-start,
-  .day-of-month.event-end {
+  .event-start,
+  .event-end {
     border-bottom: 0.1rem solid var(--accent-300);
   }
-  .day-of-month.throne-day {
+  .throne-day {
     border-bottom: 0.2rem solid var(--red-500);
   }
-  .day-of-month.today:before {
+  .today:before {
     position: absolute;
     display: block;
     content: "";
