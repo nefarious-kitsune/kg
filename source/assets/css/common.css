@@ -393,7 +393,7 @@ details[open] {
   }
 }
 
-/* --------------------- Lists  --------------------- */
+/* -------------- Lists & Pseudo Lists -------------- */
 
 /*
   If first child of a table cell is a <ul>,
@@ -409,6 +409,34 @@ ul.compact-list {
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 1rem;
+}
+
+div.li, span.li {
+  display: list-item;
+  list-style-position: outside;
+  padding: 0 0 0 0.2rem;
+  margin: 0 0 0 0.8rem;
+}
+
+div.li::marker, span.li::marker {
+  display: inline-block;
+  content: "\25CF";
+}
+
+li, div.li, span.li {
+  &.accent::marker { color: var(--accent-500); }
+  &.red::marker { color: var(--red-500); }
+  &.gold::marker { color: var(--gold-500); }
+  &.caramel::marker { color: var(--caramel-500); }
+  &.sand::marker { color: var(--sand-500); }
+  &.copper::marker { color: var(--copper-500); }
+  &.jade::marker { color: var(--jade-500); }
+  &.sapphire::marker { color: var(--sapphire-500); }
+  &.blue::marker { color: var(--blue-500); }
+  &.glaucous::marker { color: var(--glaucous-500); }
+  &.iris::marker { color: var(--iris-500); }
+  &.mauve::marker { color: var(--mauve-500); }
+  &.rose::marker { color: var(--rose-500); }
 }
 
 /* ------------------- Light Theme ------------------- */
