@@ -64,7 +64,7 @@ function makeSeasonCal(templateId, calStartDate, evtDays) {
     calDate.setUTCMonth(calStartDate[1]-1);
     calDate.setUTCDate(calStartDate[2]);
   } else if (calStartDate === 'next-season') {
-    calDate.setTime(seasonStart.getTime() + (28 * 24 * 360 * 1000));
+    calDate.setTime(seasonStart.getTime() + (28 * 24 * 3600 * 1000));
   } else {
     calDate.setTime(seasonStart.getTime());
   }
@@ -75,7 +75,23 @@ function makeSeasonCal(templateId, calStartDate, evtDays) {
 
     const dayCell = clone.querySelector(`.day-${day}`);
     const daySpan = dayCell.querySelector('span');
-    if ((mm % 2) === 0) dayCell.classList.add('mo2');
+
+    if ((mm % 2) === 0) {
+      dayCell.classList.add('mo2');
+      if (day === 1) {
+        const weekNum = clone.querySelector('.week-1 .week-num');
+        if (weekNum) weekNum.classList.add('mo2');
+      } else if (day === 8) {
+        const weekNum = clone.querySelector('.week-2 .week-num');
+        if (weekNum) weekNum.classList.add('mo2');
+      } else if (day === 15) {
+        const weekNum = clone.querySelector('.week-3 .week-num');
+        if (weekNum) weekNum.classList.add('mo2');
+      } else if (day === 22) {
+        const weekNum = clone.querySelector('.week-4 .week-num');
+        if (weekNum) weekNum.classList.add('mo2');
+      }
+    }
 
     if (dd === 1) {
       daySpan.innerText = MonthNames[mm];
