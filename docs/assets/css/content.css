@@ -7,6 +7,7 @@ header:first-child nav {
   align-content: center;
   flex-direction: column;
 
+  menu.breadcrumb,
   ul.breadcrumb {
     padding: 0;
     margin: 0;
@@ -194,94 +195,6 @@ tr th {
      -moz-transition: background-color 0.5s linear;
        -o-transition: background-color 0.5s linear;
           transition: background-color 0.5s linear;
-}
-
-/* --------- Sections & Section Navigation  --------- */
-
-div.quick-access {
-  position: sticky;
-  top: 0;
-
-  display: flex;
-  height: 1.8rem;
-  margin-top: 0;
-  padding-top: 0.5rem;
-  padding-bottom: 0.8rem;
-  justify-content: center;
-  align-content: center;
-  flex-direction: row;
-  z-index: 99;
-
-  ul.quick-access-links {
-    display: inline-block;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    border-radius: 1rem;
-    color: white;
-    
-    li {
-      display: inline-block;
-      margin-block-start: 0;
-      margin-block-end: 0;
-      padding: 0.4rem 0;
-
-      a {
-        text-decoration: none;
-      }
-
-      a[href="#"] {
-        font-weight: bold;
-        cursor: default;
-      }
-
-    }
-    li { padding: 0.4rem 0.2rem; }
-    li:first-child { padding-left: 0.8rem; }
-    li:last-child { padding-right: 0.8rem; }
-
-    li+li:before {
-      display: inline-block;
-      padding: 0 0.2rem 0 0;
-      content: "|";
-    }
-  }
-
-  a.prev, a.next, a.current {
-    display: inline-block;
-    font-weight: bold;
-    text-decoration: none;
-    padding: 0.4rem 0.5rem;
-    min-width: 3rem;
-    color: var(--dark-neutral);
-    &[href] { color: var(--miku-red); }
-  }
-  a.prev { text-align: right; }
-}
-
-@media screen and (min-width: 0px) {
-  div.quick-access {
-    a.current { display: none; }
-  }
-}
-
-@media screen and (min-width: 700px) {
-  div.quick-access {
-    a.current { display: inline-block; }
-  }
-}
-
-li.prev, li.next {
-  /* background-color: red; */
-  a {
-    color: var(--miku-gold);
-    font-weight: bold;
-    text-decoration: none;
-  }
-  a:not([href="#"]):hover,
-  a:not([href="#"]):focus {
-    color: var(--miku-gold);
-  }
 }
 
 /* ------------------ Flex Layout  ------------------ */
