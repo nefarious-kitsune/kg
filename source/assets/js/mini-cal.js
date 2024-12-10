@@ -1,7 +1,9 @@
 /* eslint-disable no-unused-vars */
 /* eslint-env browser */
 
-const BLDays = {
+
+/** Burning Expedition calendar */
+const BECalendar = {
   startDays: [23, 24, 25, 26, 27],
   eventDays: [
     1, 2, 3, 4, 5, 6, 7,
@@ -10,6 +12,25 @@ const BLDays = {
   ],
   endDays: [],
   throneDay: 21,
+};
+
+/** Ultimate Hunting calendar */
+const UHCalendar = {
+  startDays: [],
+  eventDays: [
+    8, 9, 10, 11, 12, 13,
+    22, 23, 24, 25, 26, 27,
+  ],
+  endDays: [14, 28],
+  throneDay: 0,
+};
+
+/** ES-Battlefield calendar */
+const ESBCalendar = {
+  startDays: [2, 9, 16, 23],
+  eventDays: [3, 10, 17, 24],
+  endDays: [4, 11, 18, 25],
+  throneDay: 0,
 };
 
 /**

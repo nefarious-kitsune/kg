@@ -15,21 +15,12 @@
 <link href="../../assets/css/content.css" rel="stylesheet">
 <script src="../../assets/js/mini-cal.js"></script>
 <script>
-  const UHCal = {
-    startDays: [],
-    eventDays: [
-      8, 9, 10, 11, 12, 13,
-      22, 23, 24, 25, 26, 27,
-    ],
-    endDays: [14, 28],
-    throneDay: 0,
-  };
   document.addEventListener('DOMContentLoaded', (e) => {
     document.getElementById('thisSeasonCalContainer').appendChild(
-      makeSeasonCal('cal-template', 'this-season', UHCal)
+      makeSeasonCal('cal-template', 'this-season', UHCalendar)
     );
     document.getElementById('nextSeasonCalContainer').appendChild(
-      makeSeasonCal('cal-template', 'next-season', UHCal)
+      makeSeasonCal('cal-template', 'next-season', UHCalendar)
     );
   });
 </script>
