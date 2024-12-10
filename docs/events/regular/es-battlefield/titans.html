@@ -13,6 +13,13 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <link href="../../../assets/css/common.css" rel="stylesheet">
 <link href="../../../assets/css/content.css" rel="stylesheet">
+<style>
+  .esb-table {
+    margin-bottom: 1rem;
+    .level-col { width: 2.5rem; }
+    .power-col { width: 3rem; }
+  }
+</style>
 </head>
 <body>
 
@@ -44,7 +51,7 @@
   by troops of a specific counter element. The shield can be
   temporarily removed by Counter Holy Sword.</p>
 
-<table class="basic-table border-rows">
+<table class="basic-table border-rows esb-table">
 <thead>
 <tr>
   <th>Titan</th>
@@ -56,22 +63,22 @@
 <tr>
   <td>Titan of Earth</td>
   <td>NE</td>
-  <td><img src="../../../assets/emojis/4x/fire-element.png" class="icon"></td>
+  <td><img src="../../../assets/emojis/4x/fire-element.png" class="emoji"></td>
 </tr>
 <tr>
   <td>Titan of Fire</td>
   <td>SE</td>
-  <td><img src="../../../assets/emojis/4x/ice-element.png" class="icon"></td>
+  <td><img src="../../../assets/emojis/4x/ice-element.png" class="emoji"></td>
 </tr>
 <tr>
   <td>Titan of Ice</td>
   <td>SW</td>
-  <td><img src="../../../assets/emojis/4x/goblin-element.png" class="icon"></td>
+  <td><img src="../../../assets/emojis/4x/goblin-element.png" class="emoji"></td>
 </tr>
 <tr>
   <td>Titan of Poison</td>
   <td>NW</td>
-  <td><img src="../../../assets/emojis/4x/archer-element.png" class="icon"></td>
+  <td><img src="../../../assets/emojis/4x/archer-element.png" class="emoji"></td>
 </tr>
 </tbody>
 </table>
@@ -81,15 +88,15 @@
 <h2>Levels and Resurrection</h2>
   
 <p>When an Elemental Titan is defeated, it revives with a higher level
-  in <em>30 seconds</em> after the resurrection conditions are met.
-  There are total 50 levels of Elemental Titans.</p>
+  in <span class="number">28</span> seconds after the resurrection
+  conditions are met. There are total 50 levels of Elemental Titans.</p>
 
-<table class="basic-table border-all">
+<table class="basic-table border-row esb-table">
 <thead>
 <tr>
-  <th>Level</th>
-  <th>Power</th>
-  <th>Resurrection</th>
+  <th class="level-col">Level</th>
+  <th class="power-col">Power</th>
+  <th>Resurrection Condition(s)</th>
 </tr>
 </thead>
 <tbody>
@@ -105,40 +112,40 @@
   <td class="right-align"
     ><span class="number monospace">2</span><span class="unit">B</span
   ></td>
-  <td><ul class="compact-list"><li>Lv. 1 of same Titan is defeated</li></ul></td>
+  <td><ul class="min-list"><li>Lv. 1 of same Titan is defeated</li></ul></td>
 </tr>
 <tr>
   <td>&vellip;</td>
-  <td>&vellip;</td>
-  <td>&vellip;</td>
+  <td></td>
+  <td></td>
 </tr>
 <tr>
   <td>8</td>
   <td class="right-align"
     ><span class="number monospace">8</span><span class="unit">B</span
   ></td>
-  <td><ul class="compact-list"><li>Lv. 7 of same Titan is defeated</li></ul></td>
+  <td><ul class="min-list"><li>Lv. 7 of same Titan is defeated</li></ul></td>
 </tr>
 <tr>
   <td>9</td>
   <td class="right-align"
     ><span class="number monospace">9</span><span class="unit">B</span
   ></td>
-  <td><ul class="compact-list"><li>Lv. 8 of same Titan is defeated</li></ul></td>
+  <td><ul class="min-list"><li>Lv. 8 of same Titan is defeated</li></ul></td>
 </tr>
 <tr>
   <td>10</td>
   <td class="right-align"
     ><span class="number monospace">10</span><span class="unit">B</span
   ></td>
-  <td><ul class="compact-list"><li>Lv. 9 of same Titan is defeated</li></ul></td>
+  <td><ul class="min-list"><li>Lv. 9 of same Titan is defeated</li></ul></td>
 </tr>
 <tr>
   <td>11</td>
   <td class="right-align"
     ><span class="number monospace">50</span><span class="unit">B</span
   ></td>
-  <td><ul class="compact-list">
+  <td><ul class="min-list">
     <li>Lv. 10 of all four Titans are defeated</li>
     <li>Lv. 9 Evil Spirit King is defeated</li>
   </ul></td>
@@ -148,70 +155,70 @@
   <td class="right-align"
     ><span class="number monospace">100</span><span class="unit">B</span
   ></td>
-  <td><ul class="compact-list"><li>Lv. 11 of same Titan is defeated</li></ul></td>
+  <td><ul class="min-list"><li>Lv. 11 of same Titan is defeated</li></ul></td>
 </tr>
 <tr>
   <td>13</td>
   <td class="right-align"
     ><span class="number monospace">500</span><span class="unit">B</span
   ></td>
-  <td><ul class="compact-list"><li>Lv. 12 of same Titan is defeated</li></ul></td>
+  <td><ul class="min-list"><li>Lv. 12 of same Titan is defeated</li></ul></td>
 </tr>
 <tr>
   <td>14</td>
   <td class="right-align"
     ><span class="number monospace">1000</span><span class="unit">B</span
   ></td>
-  <td><ul class="compact-list"><li>Lv. 13 of same Titan is defeated</li></ul></td>
+  <td><ul class="min-list"><li>Lv. 13 of same Titan is defeated</li></ul></td>
 </tr>
 <tr>
   <td>15</td>
   <td class="right-align"
     ><span class="number monospace">2000</span><span class="unit">B</span
   ></td>
-  <td><ul class="compact-list"><li>Lv. 14 of same Titan is defeated</li></ul></td>
+  <td><ul class="min-list"><li>Lv. 14 of same Titan is defeated</li></ul></td>
 </tr>
 <tr>
   <td>16</td>
   <td class="right-align"
     ><span class="number monospace">3000</span><span class="unit">B</span
   ></td>
-  <td><ul class="compact-list"><li>Lv. 15 of same Titan is defeated</li></ul></td>
+  <td><ul class="min-list"><li>Lv. 15 of same Titan is defeated</li></ul></td>
 </tr>
 <tr>
   <td>17</td>
   <td class="right-align"
     ><span class="number monospace">4000</span><span class="unit">B</span
   ></td>
-  <td><ul class="compact-list"><li>Lv. 16 of same Titan is defeated</li></ul></td>
+  <td><ul class="min-list"><li>Lv. 16 of same Titan is defeated</li></ul></td>
 </tr>
 <tr>
   <td>18</td>
   <td class="right-align"
     ><span class="number monospace">5000</span><span class="unit">B</span
   ></td>
-  <td><ul class="compact-list"><li>Lv. 17 of same Titan is defeated</li></ul></td>
+  <td><ul class="min-list"><li>Lv. 17 of same Titan is defeated</li></ul></td>
 </tr>
 <tr>
   <td>19</td>
   <td class="right-align"
     ><span class="number monospace">6000</span><span class="unit">B</span
   ></td>
-  <td><ul class="compact-list"><li>Lv. 18 of same Titan is defeated</li></ul></td>
+  <td><ul class="min-list"><li>Lv. 18 of same Titan is defeated</li></ul></td>
 </tr>
 <tr>
   <td>20</td>
   <td class="right-align"
     ><span class="number monospace">7000</span><span class="unit">B</span
   ></td>
-  <td><ul class="compact-list"><li>Lv. 19 of same Titan is defeated</li></ul></td>
+  <td><ul class="min-list"><li>Lv. 19 of same Titan is defeated</li></ul></td>
 </tr>
 <tr>
   <td>21</td>
   <td class="right-align"
     ><span class="number monospace">8000</span><span class="unit">B</span
   ></td>
-  <td><ul class="compact-list">
+  <td><ul class="min-list">
     <li>Lv. 20 of all four Titans are defeated</li>
     <li>Lv. 19 Evil Spirit King is defeated</li>
   </ul></td>
@@ -226,12 +233,10 @@
 <p>When an Elemental Titan is defeated, every Alliance Members
   on the Evil Spirit Battlefield receives the kill rewards.</p>
 
-<table class="basic-table border-all">
+<div style="column-width: 20rem; column-gap: 0.5rem; padding: 0; margin:0">
+<table class="basic-table border-row esb-table" style="width:100%">
 <thead>
-<tr>
-  <th>Level</th>
-  <th>Kill Rewards</th>
-</tr>
+<tr><th class="level-col">Level</th><th>Kill Rewards</th></tr>
 </thead>
 <tbody>
 <tr>
@@ -242,29 +247,36 @@
   </ul></td>
 </tr>
 <tr>
-  <td>10</td>
-  <td><ul class="compact-list">
-    <li>5× Forge Blueprint</li>
-    <li>1000 gem</li>
-  </ul></td>
-</tr>
-<tr>
   <td>11&ndash;19</td>
   <td><ul class="compact-list">
     <li>T1 Unit EXP Book</li>
     <li>Elemental Vial</li>
   </ul></td>
 </tr>
+</tbody>
+</table>
+<table class="basic-table border-row esb-table" style="width:100%">
+<thead>
+<tr><th class="level-col">Level</th><th>Kill Rewards</th></tr>
+</thead>
+<tbody>
+<tr>
+  <td>10</td>
+  <td><ul class="compact-list">
+    <li>5× Forge Blueprint</li>
+    <li>1000 <img src="/assets/emojis/4x/gem.png" alt="gem" class="emoji"></li>
+  </ul></td>
+</tr>
 <tr>
   <td>20</td>
   <td><ul class="compact-list">
     <li>5× Forge Blueprint</li>
-    <li>2000 gem</li>
+    <li>2000 <img src="/assets/emojis/4x/gem.png" alt="gem" class="emoji"></li>
   </ul></td>
 </tr>
 </tbody>
 </table>
-
+</div>
 </section>  
 </main>
 </body>
