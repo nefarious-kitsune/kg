@@ -13,6 +13,13 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <link href="../../../assets/css/common.css" rel="stylesheet">
 <link href="../../../assets/css/content.css" rel="stylesheet">
+<style>
+  .esb-table {
+    margin-bottom: 1rem;
+    .level-col { width: 2.5rem; }
+    .power-col { width: 3rem; }
+  }
+</style>
 </head>
 <body>
 
@@ -40,16 +47,14 @@
 <section id="skills">
 <h2>Skills</h2>
 
-<table class="basic-table border-all">
+<div style="column-width: 20rem; column-gap: 0.5rem; padding: 0; margin:0">
+<table class="basic-table border-all esb-table">
 <thead>
-<tr>
-  <th>Level</th>
-  <th>Skill</th>
-</tr>
+<tr><th class="level-col">Level</th><th>Skill</th></tr>
 </thead>
 <tbody>
 <tr>
-  <td>1</td>
+  <td class="level-col">1</td>
   <td><ul class="compact-list">
     <li><span class="tip-container" tabindex="0">
       Evil Spirit Resurrection
@@ -113,6 +118,13 @@
     </span> (200M)</li>
   </ul></td>
 </tr>
+</tbody>
+</table>
+<table class="basic-table border-all esb-table">
+<thead>
+  <tr><th class="level-col">Level</th><th>Skill</th></tr>
+</thead>
+<tbody>  
 <tr>
   <td>11&ndash;</td>
   <td><!--<ul class="compact-list">
@@ -185,6 +197,7 @@
 
 </tbody>
 </table>
+</div>
 </section>
 
 <section id="levels">
@@ -197,108 +210,154 @@
   in <em>30 seconds</em> after the resurrection conditions are met.
   There are total 50 levels of ES King.</p>
 
-<table class="basic-table border-all">
+<table class="basic-table border-row esb-table">
 <thead>
 <tr>
-  <th>Level</th>
-  <th>Power</th>
-  <th>Resurrection</th>
+  <th class="level-col">Level</th>
+  <th class="power-col">Power</th>
+  <th colspan="2">Resurrection</th>
 </tr>
 </thead>
 <tbody>
 <tr>
   <td>1</td>
-  <td>1<span class="unit">B</span></td>
-  <td></td>
+  <td class="right-align"
+    ><span class="number monospace">1</span><span class="unit">B</span
+  ></td>
+  <td>After</td>
+  <td><ul class="min-list"><li>Level-1 of all four Titans are defeated</li></ul></td>
 </tr>
 <tr>
   <td>2</td>
-  <td>2<span class="unit">B</span></td>
-  <td><ul class="compact-list"><li>Level-1 ES King is defeated</li></ul></td>
+  <td class="right-align"
+    ><span class="number monospace">2</span><span class="unit">B</span
+  ></td>
+  <td>??s after</td>
+  <td><ul class="min-list"><li>Level-1 ES King is defeated</li></ul></td>
 </tr>
 <tr>
   <td>&vellip;</td>
-  <td>&vellip;</td>
-  <td>&vellip;</td>
+  <td></td>
+  <td></td>
+  <td></td>
 </tr>
 <tr>
   <td>8</td>
-  <td>8<span class="unit">B</span></td>
-  <td><ul class="compact-list"><li>Level-7 ES King is defeated</li></ul></td>
+  <td class="right-align"
+    ><span class="number monospace">8</span><span class="unit">B</span
+  ></td>
+  <td>??s after</td>
+  <td><ul class="min-list"><li>Level-7 ES King is defeated</li></ul></td>
 </tr>
 <tr>
   <td>9</td>
-  <td>9<span class="unit">B</span></td>
-  <td><ul class="compact-list"><li>Level-8 ES King is defeated</li></ul></td>
+  <td class="right-align"
+    ><span class="number monospace">9</span><span class="unit">B</span
+  ></td>
+  <td>??s after</td>
+  <td><ul class="min-list"><li>Level-8 ES King is defeated</li></ul></td>
 </tr>
 <tr>
   <td>10</td>
-  <td>10<span class="unit">B</span></td>
-  <td><ul class="compact-list">
+  <td class="right-align"
+    ><span class="number monospace">10</span><span class="unit">B</span
+  ></td>
+  <td>After</td>
+  <td><ul class="min-list">
     <li>Level-10 of all four Titans are defeated</li>
     <li>Level-9 Evil Spirit King is defeated</li>
   </ul></td>
 </tr>
 <tr>
   <td>11</td>
-  <!-- ******************* -->
-  <td>????<span class="unit">B</span></td>
-  <td><ul class="compact-list"><li>Level-10 ES King is defeated</li></ul></td>
+  <td class="right-align"
+    ><span class="number monospace"><!-- 100 --></span><span class="unit">B</span
+  ></td>
+  <td>30s after</td>
+  <td><ul class="min-list"><li>Level-10 ES King is defeated</li></ul></td>
 </tr>
 <tr>
   <td>12</td>
-  <!-- ******************* -->
-  <td>200<span class="unit">B</span></td>
-  <td><ul class="compact-list"><li>Level-11 ES King is defeated</li></ul></td>
+  <td class="right-align"
+    ><span class="number monospace">200</span><span class="unit">B</span
+  ></td>
+  <td>30s after</td>
+  <td><ul class="min-list"><li>Level-11 ES King is defeated</li></ul></td>
 </tr>
 <tr>
   <td>13</td>
-  <td>500<span class="unit">B</span></td>
-  <td><ul class="compact-list"><li>Level-12 ES King is defeated</li></ul></td>
+  <td class="right-align"
+    ><span class="number monospace">500</span><span class="unit">B</span
+  ></td>
+  <td>30s after</td>
+  <td><ul class="min-list"><li>Level-12 ES King is defeated</li></ul></td>
 </tr>
 <tr>
   <td>14</td>
-  <td>1000<span class="unit">B</span></td>
-  <td><ul class="compact-list"><li>Level-13 ES King is defeated</li></ul></td>
+  <td class="right-align"
+    ><span class="number monospace">1000</span><span class="unit">B</span
+  ></td>
+  <td>30s after</td>
+  <td><ul class="min-list"><li>Level-13 ES King is defeated</li></ul></td>
 </tr>
 <tr>
   <td>15</td>
-  <!-- ******************* -->
-  <td>150<span class="unit">B</span></td>
-  <td><ul class="compact-list"><li>Level-14 ES King is defeated</li></ul></td>
+  <td class="right-align"
+    ><span class="number monospace">150</span><span class="unit">B</span
+  ></td>
+  <td>30s after</td>
+  <td><ul class="min-list"><li>Level-14 ES King is defeated</li></ul></td>
 </tr>
 <tr>
   <td>16</td>
-  <td>3000<span class="unit">B</span></td>
-  <td><ul class="compact-list"><li>Level-15 ES King is defeated</li></ul></td>
+  <td class="right-align"
+    ><span class="number monospace">3000</span><span class="unit">B</span
+  ></td>
+  <td>30s after</td>
+  <td><ul class="min-list"><li>Level-15 ES King is defeated</li></ul></td>
 </tr>
 <tr>
   <td>17</td>
-  <td>4000<span class="unit">B</span></td>
-  <td><ul class="compact-list"><li>Level-16 ES King is defeated</li></ul></td>
+  <td class="right-align"
+    ><span class="number monospace">4000</span><span class="unit">B</span
+  ></td>
+  <td>30s after</td>
+  <td><ul class="min-list"><li>Level-16 ES King is defeated</li></ul></td>
 </tr>
 <tr>
   <td>18</td>
-  <td>5000<span class="unit">B</span></td>
-  <td><ul class="compact-list"><li>Level-17 ES King is defeated</li></ul></td>
+  <td class="right-align"
+    ><span class="number monospace">5000</span><span class="unit">B</span
+  ></td>
+  <td>30s after</td>
+  <td><ul class="min-list"><li>Level-17 ES King is defeated</li></ul></td>
 </tr>
 <tr>
   <td>19</td>
-  <td><!--6000-->???<span class="unit">B</span></td>
-  <td><ul class="compact-list"><li>Level-18 ES King is defeated</li></ul></td>
+  <td class="right-align"
+    ><span class="number monospace"><!-- 6000 --></span><span class="unit">B</span
+  ></td>
+  <td>30s after</td>
+  <td><ul class="min-list"><li>Level-18 ES King is defeated</li></ul></td>
 </tr>
 <tr>
   <td>20</td>
-  <td><!-- 7000 -->???<span class="unit">B</span></td>
-  <td><ul class="compact-list">
+  <td class="right-align"
+    ><span class="number monospace"><!-- 7000 --></span><span class="unit">B</span
+  ></td> 
+  <td>After</td>
+  <td><ul class="min-list">
     <li>Level-20 of all four Titans are defeated</li>
     <li>Level-19 ES King is defeated</li>
   </ul></td>
 </tr>
 <tr>
   <td>21</td>
-  <td><!-- 8000 -->???<span class="unit">B</span></td>
-  <td><ul class="compact-list"><li>Level-20 ES King is defeated</li></ul></td>
+  <td class="right-align"
+    ><span class="number monospace"><!-- 8000 --></span><span class="unit">B</span
+  ></td>
+  <td>30s after</td>
+  <td><ul class="min-list"><li>Level-20 ES King is defeated</li></ul></td>
 </tr>
 </tbody>
 </table>
@@ -306,14 +365,15 @@
 
 <section id="rewards">
 <h2>Kill Rewards</h2>
-  
-<p>When an Evil Spirit King Titan is defeated, every Alliance Members
+
+<p>When an Evil Spirit King is defeated, every Alliance Members
   on the Evil Spirit Battlefield receives the kill rewards.</p>
 
-<table class="basic-table border-all">
+<div style="column-width: 20rem; column-gap: 0.5rem; padding: 0; margin:0">
+<table class="basic-table border-row esb-table" style="width:100%">
 <thead>
 <tr>
-  <th>Level</th>
+  <th class="level-col">Level</th>
   <th>Kill Rewards</th>
 </tr>
 </thead>
@@ -326,29 +386,45 @@
   </ul></td>
 </tr>
 <tr>
-  <td>10</td>
-  <td><ul class="compact-list">
-    <li>10× Forge Blueprint</li>
-    <li>2000 gem</li>
-  </ul></td>
-</tr>
-<tr>
   <td>11&ndash;19</td>
   <td><ul class="compact-list">
     <li>Free-Pick Unit EXP Book</li>
     <li>Blood of Titan</li>
   </ul></td>
 </tr>
+</tbody>
+</table>
+<table class="basic-table border-row esb-table" style="width:100%">
+<thead>
+<tr>
+  <th class="level-col">Level</th>
+  <th>Kill Rewards</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>10</td>
+  <td><ul class="compact-list">
+    <li>10× Forge Blueprint</li>
+    <li>2000 <img src="/assets/emojis/4x/gem.png" alt="gem" class="emoji"></li>
+    <!-- <li>10,000 <img src="/assets/emojis/4x/gem.png" alt="gem" class="emoji"></li> -->
+  </ul></td>
+</tr>
 <tr>
   <td>20</td>
   <td><ul class="compact-list">
     <li>10× Forge Blueprint</li>
-    <li>4000 gem</li>
+    <li>4000 <img src="/assets/emojis/4x/gem.png" alt="gem" class="emoji"></li>
+<!--
+    <li>10,000 <img src="/assets/emojis/4x/gem.png" alt="gem" class="emoji"></li>
+    <li>1× Emblem Chest (10, Selectable)</li>
+-->
   </ul></td>
 </tr>
 </tbody>
 </table>
-
+  
+</div>
 </section>  
 </main>
 </body>

@@ -498,6 +498,11 @@ ul.compact-list {
   padding-left: 1rem;
 }
 
+ul.min-list {
+  list-style: none;
+  padding-left: 0 !important;
+}
+
 div.li, span.li {
   display: list-item;
   list-style-position: outside;
@@ -981,10 +986,6 @@ abbr[title]:focus,
   margin: 0;
 }
 
-.tip-container .image-tip img.icon {
-  width: 2.6rem;
-}
-
 .tip-container .image-tip,
 .tip-container .text-tip {
   display: block;
@@ -1016,6 +1017,32 @@ abbr[title]:focus,
   opacity: 1;
   visibility: visible;
   transition: 0.4s ease-in-out 0.3s;
+}
+
+/* ---------------- Icons and Emojis ---------------- */
+
+img.icon {
+  width: 22px !important;
+  height: auto !important;
+  vertical-align: middle;
+}
+
+@media screen and (min-width: 300px) {
+  img.icon {
+    width: calc(22px + 10 * ((100vw - 320px) / (880 - 300))) !important;
+  }
+}
+
+@media screen and (min-width: 880px) {
+  img.icon {
+    width: 32px !important; 
+  }
+}
+
+img.emoji {
+  height: 1rem !important;
+  width: auto !important;
+  vertical-align: middle;
 }
 
 /* --------------- Heroes & Elements  --------------- */

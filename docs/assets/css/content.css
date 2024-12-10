@@ -455,23 +455,3 @@ th {
   visibility: visible;
   transition: 0.4s ease-in-out 0.3s;
 }
-
-/* ---------------- Fluid Icon Sizes ---------------- */
-
-img.icon {
-  width: 22px;
-  height: auto;
-  vertical-align: middle;
-}
-
-@media screen and (min-width: 300px) {
-  img.icon {
-    width: calc(22px + 10 * ((100vw - 320px) / (880 - 300)));
-  }
-}
-
-@media screen and (min-width: 880px) {
-  img.icon {
-    width: 32px;
-  }
-}
