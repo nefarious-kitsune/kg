@@ -8,6 +8,13 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <link href="../../../assets/css/common.css" rel="stylesheet">
 <link href="../../../assets/css/content.css" rel="stylesheet">
+<style>
+  .esb-monster-table {
+    margin-bottom: 1rem;
+    .level-col { width: 2.5rem; }
+    .power-col { width: 4rem; }
+  }
+</style>
 </head>
 <body>
 
@@ -25,7 +32,7 @@
 <div class="quick-access-container"><menu>
   <li><a href="#search">Searching</a></li>
   <li><a href="#monsters">Monsters</a></li>
-  <li><a href="#chests">Chests</a></li>
+  <li><a href="#powers">Powers</a></li>
 </menu></div>
 
 <section>
@@ -58,14 +65,14 @@ chest to the castle to get rewards.</p>
 <thead>
 <tr>
   <th>Monster</th>
-  <th class="right-align">Power</th>
+  <!-- <th class="right-align">Power</th> -->
   <th colspan="2">Evil Spirit Chest</th>
 </tr>
 </thead>
 <tbody>
 <tr>
   <td>Orc Warrior</td>
-  <td class="right-align"><span class="number monospace">140</span><span class="unit">B</span></td>
+  <!-- <td class="right-align"><span class="number monospace">140</span><span class="unit">B</span></td> -->
   <td>T1 Chest</td>
   <td><ul class="compact-list">
     <li>100 points</li>
@@ -78,7 +85,7 @@ chest to the castle to get rewards.</p>
 </tr>
 <tr>
   <td>Goblin Priest</td>
-  <td class="right-align"><span class="number">280</span><span class="unit">B</span></td>
+  <!-- <td class="right-align"><span class="number">280</span><span class="unit">B</span></td> -->
   <td>T2 Chest</td>
   <td><ul class="compact-list">
     <li>200 points</li>
@@ -93,7 +100,7 @@ chest to the castle to get rewards.</p>
 </tr>
 <tr>
   <td>Cyclops</td>
-  <td class="right-align"><span class="number">560</span><span class="unit">B</span></td>
+  <!-- <td class="right-align"><span class="number">560</span><span class="unit">B</span></td> -->
   <td>T3 Chest</td>
   <td><ul class="compact-list">
     <li>400 points</li>
@@ -107,7 +114,7 @@ chest to the castle to get rewards.</p>
 </tr>
 <tr>
   <td>Lava Behemoth</td>
-  <td class="right-align"><span class="number">1120</span><span class="unit">B</span></td>
+  <!-- <td class="right-align"><span class="number">1120</span><span class="unit">B</span></td> -->
   <td>T4 Chest</td>
   <td><ul class="compact-list">
     <li>800 points</li>
@@ -121,7 +128,7 @@ chest to the castle to get rewards.</p>
 </tr>
 <tr>
   <td>Flame Demon</td>
-  <td><span class="number">2240</span><span class="unit">B</span></td>
+  <!-- <td><span class="number">2240</span><span class="unit">B</span></td> -->
   <td>T5 Chest</td>
   <td><ul class="compact-list">
     <li>1600 points</li>
@@ -135,16 +142,57 @@ chest to the castle to get rewards.</p>
 </tr>
 </tbody>
 </table>
-</section>
 
-<section id="chests">
-<h2>Notes on Chests</h2>
+<h4>Notes on Chests</h4>
 <ul>
   <li>Carrying an Evil Spirit Chest will increase the Troop March's
     movement speed.</li>
   <li>Rewards will only be settled when the Evil Spirit Chest is brought
     back to the castle.</li>
 </ul>
+</section>
+
+<section id="powers">
+<h2>Powers</h2>
+<p>Power of monsters <em>may vary</em> between seasons.</p>
+<table class="basic-table border-row esb-monster-table">
+<thead>
+<tr>
+  <th>Season</th>
+  <th class="power-col">Orc Warrior</th>
+  <th class="power-col">Goblin Priest</th>
+  <th class="power-col">Cyclops</th>
+  <th class="power-col">Lava Behemoth</th>  
+  <th class="power-col">Flame Demon</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>Season 4</td>
+  <td><!-- Orc Warrior   -->15<span class="number"></span><span class="unit">B</span></td>
+  <td><!-- Goblin Priest -->30<span class="number"></span><span class="unit">B</span></td>
+  <td><!-- Cyclops       -->60<span class="number"></span><span class="unit">B</span></td>
+  <td><!-- Lava Behemoth --><span class="number">120</span><span class="unit">B</span></td>
+  <td><!-- Flame Demon   --><span class="number">240</span><span class="unit">B</span></td>
+</tr>
+<tr>
+  <td>Season 10</td>
+  <td><!-- Orc Warrior   --><span class="number">110</span><span class="unit">B</span></td>
+  <td><!-- Goblin Priest -->220<span class="number"></span><span class="unit">B</span></td>
+  <td><!-- Cyclops       -->440<span class="number"></span><span class="unit">B</span></td>
+  <td><!-- Lava Behemoth -->880<span class="number"></span><span class="unit">B</span></td>
+  <td><!-- Flame Demon   -->1760<span class="number"></span><span class="unit">B</span></td>
+</tr>
+<tr>
+  <td>Season ??</td>
+  <td><!-- Orc Warrior   --><span class="number">140</span><span class="unit">B</span></td>
+  <td><!-- Goblin Priest --><span class="number">280</span><span class="unit">B</span></td>
+  <td><!-- Cyclops       --><span class="number">560</span><span class="unit">B</span></td>
+  <td><!-- Lava Behemoth --><span class="number">1120</span><span class="unit">B</span></td>
+  <td><!-- Flame Demon   --><span class="number">2240</span><span class="unit">B</span></td>
+</tr>
+</tbody>
+</table>
 </section>
 
 </main>
