@@ -69,10 +69,6 @@ while (true) {
  * @param {string} templateId - Id of the HTML template
  * @param {number[]|string} calStartDate - Start day of the calendar
  * @param {EventDays} evtDays - Event days
- * @param {number[]} startDays - Days to mark as 'event start'
- * @param {number[]} eventDays - Days to mark as 'event day'
- * @param {number[]} endDays - Days to mark as 'event end'
- * @param {number[]} throneDay - Days to mark as 'throne day'
  * @return {DocumentFragment}
  */
 function makeSeasonCal(templateId, calStartDate, evtDays) {
@@ -135,6 +131,33 @@ function makeSeasonCal(templateId, calStartDate, evtDays) {
     }
 
     calDate.setDate(calDate.getDate() + 1);
+  }
+
+  return clone;
+}
+
+
+/**
+ * Generate a pre-season calendar
+ * @param {string} templateId - Id of the HTML template
+ * @param {EventDays} evtDays - Event days
+ * @return {DocumentFragment}
+ */
+function makePreSeasonCal(templateId, evtDays) {
+  const template = document.getElementById(templateId);
+  const clone = template.content.cloneNode(true);
+
+  for (let day=1; day <= 32; day++) {
+    const dayCell = clone.querySelector(`[data-day="${day}"]`);
+    const daySpan = dayCell.querySelector('span');
+
+    if (evtDays.startDays.includes(day)) {
+      daySpan.classList.add('event-start');
+    } else if (evtDays.eventDays.includes(day)) {
+      daySpan.classList.add('event-day');
+    } else if (evtDays.endDays.includes(day)) {
+      daySpan.classList.add('event-end');
+    }
   }
 
   return clone;
