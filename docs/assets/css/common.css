@@ -912,20 +912,19 @@ details {
     display: block;
     box-sizing: border-box;
     line-height: 1.8rem;
-    width: 3.5rem;
+    width: 3rem;
     height: 2rem;
     z-index: 1;
   }
-  .event-day {
-    border-bottom: 0.2rem solid var(--accent-500);
+  
+  .event-0, .event-1, .event-2 {
+    border-bottom: 0.2rem solid;
   }
-  .event-start,
-  .event-end {
-    border-bottom: 0.1rem solid var(--accent-300);
-  }
-  .throne-day {
-    border-bottom: 0.2rem solid var(--red-500);
-  }
+  .event-0 { border-color: light-dark(var(--gray-300), var(--gray-500)); }
+  .event-1 { border-color: var(--accent-500); }
+  .event-2 { border-color: var(--gold-500); }
+  .event-3 { border-color: var(--red-500); }
+
   .today:before {
     position: absolute;
     display: block;

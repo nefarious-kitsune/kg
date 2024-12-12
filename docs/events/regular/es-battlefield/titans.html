@@ -15,6 +15,8 @@
 <link href="../../../assets/css/content.css" rel="stylesheet">
 <style>
   .esb-table {
+    page-break-inside: avoid;
+    break-inside: avoid-column;
     margin-bottom: 1rem;
     .level-col { width: 2.5rem; }
     .power-col { width: 3rem; }
@@ -36,7 +38,8 @@
 
 <div class="quick-access-container"><menu>
   <li><a href="#skills">Skills</a></li>
-  <li><a href="#levels">Levels</a></li>
+  <li><a href="#resurrections">Resurrections</a></li>
+  <li><a href="#powers">Powers</a></li>
   <li><a href="#rewards">Rewards</a></li>
 </menu></div>
 
@@ -84,34 +87,29 @@
 </table>
 </section>
 
-<section id="levels">
-<h2>Levels and Resurrection</h2>
-  
+<section id="resurrections">
+<h2>Resurrections</h2>
+
 <p>When an Elemental Titan is defeated, it revives with a higher level
-  in <span class="number">28</span> seconds after the resurrection
-  conditions are met. There are total 50 levels of Elemental Titans.</p>
+  after the resurrection conditions are met. There are total 50 levels
+  of Elemental Titans.</p>
 
 <table class="basic-table border-row esb-table">
 <thead>
 <tr>
   <th class="level-col">Level</th>
-  <th class="power-col">Power</th>
-  <th>Resurrection Condition(s)</th>
+  <th colspan="2">Resurrection Condition(s)</th>
 </tr>
 </thead>
 <tbody>
 <tr>
   <td>1</td>
-  <td class="right-align"
-    ><span class="number monospace">1</span><span class="unit">B</span
-  ></td>
+  <td></td>
   <td></td>
 </tr>
 <tr>
   <td>2</td>
-  <td class="right-align"
-    ><span class="number monospace">2</span><span class="unit">B</span
-  ></td>
+  <td>8s after</td>
   <td><ul class="min-list"><li>Lv. 1 of same Titan is defeated</li></ul></td>
 </tr>
 <tr>
@@ -120,31 +118,13 @@
   <td></td>
 </tr>
 <tr>
-  <td>8</td>
-  <td class="right-align"
-    ><span class="number monospace">8</span><span class="unit">B</span
-  ></td>
-  <td><ul class="min-list"><li>Lv. 7 of same Titan is defeated</li></ul></td>
-</tr>
-<tr>
-  <td>9</td>
-  <td class="right-align"
-    ><span class="number monospace">9</span><span class="unit">B</span
-  ></td>
-  <td><ul class="min-list"><li>Lv. 8 of same Titan is defeated</li></ul></td>
-</tr>
-<tr>
   <td>10</td>
-  <td class="right-align"
-    ><span class="number monospace">10</span><span class="unit">B</span
-  ></td>
+  <td>8s after</td>
   <td><ul class="min-list"><li>Lv. 9 of same Titan is defeated</li></ul></td>
 </tr>
 <tr>
   <td>11</td>
-  <td class="right-align"
-    ><span class="number monospace">50</span><span class="unit">B</span
-  ></td>
+  <td>18s after</td>
   <td><ul class="min-list">
     <li>Lv. 10 of all four Titans are defeated</li>
     <li>Lv. 9 Evil Spirit King is defeated</li>
@@ -152,72 +132,22 @@
 </tr>
 <tr>
   <td>12</td>
-  <td class="right-align"
-    ><span class="number monospace">100</span><span class="unit">B</span
-  ></td>
+  <td>18s after</td>
   <td><ul class="min-list"><li>Lv. 11 of same Titan is defeated</li></ul></td>
 </tr>
 <tr>
-  <td>13</td>
-  <td class="right-align"
-    ><span class="number monospace">500</span><span class="unit">B</span
-  ></td>
-  <td><ul class="min-list"><li>Lv. 12 of same Titan is defeated</li></ul></td>
-</tr>
-<tr>
-  <td>14</td>
-  <td class="right-align"
-    ><span class="number monospace">1000</span><span class="unit">B</span
-  ></td>
-  <td><ul class="min-list"><li>Lv. 13 of same Titan is defeated</li></ul></td>
-</tr>
-<tr>
-  <td>15</td>
-  <td class="right-align"
-    ><span class="number monospace">2000</span><span class="unit">B</span
-  ></td>
-  <td><ul class="min-list"><li>Lv. 14 of same Titan is defeated</li></ul></td>
-</tr>
-<tr>
-  <td>16</td>
-  <td class="right-align"
-    ><span class="number monospace">3000</span><span class="unit">B</span
-  ></td>
-  <td><ul class="min-list"><li>Lv. 15 of same Titan is defeated</li></ul></td>
-</tr>
-<tr>
-  <td>17</td>
-  <td class="right-align"
-    ><span class="number monospace">4000</span><span class="unit">B</span
-  ></td>
-  <td><ul class="min-list"><li>Lv. 16 of same Titan is defeated</li></ul></td>
-</tr>
-<tr>
-  <td>18</td>
-  <td class="right-align"
-    ><span class="number monospace">5000</span><span class="unit">B</span
-  ></td>
-  <td><ul class="min-list"><li>Lv. 17 of same Titan is defeated</li></ul></td>
-</tr>
-<tr>
-  <td>19</td>
-  <td class="right-align"
-    ><span class="number monospace">6000</span><span class="unit">B</span
-  ></td>
-  <td><ul class="min-list"><li>Lv. 18 of same Titan is defeated</li></ul></td>
+  <td>&vellip;</td>
+  <td></td>
+  <td></td>
 </tr>
 <tr>
   <td>20</td>
-  <td class="right-align"
-    ><span class="number monospace">7000</span><span class="unit">B</span
-  ></td>
+  <td>18s after</td>
   <td><ul class="min-list"><li>Lv. 19 of same Titan is defeated</li></ul></td>
 </tr>
 <tr>
   <td>21</td>
-  <td class="right-align"
-    ><span class="number monospace">8000</span><span class="unit">B</span
-  ></td>
+  <td>?s after</td>
   <td><ul class="min-list">
     <li>Lv. 20 of all four Titans are defeated</li>
     <li>Lv. 19 Evil Spirit King is defeated</li>
@@ -227,6 +157,55 @@
 </table>
 </section>
 
+<section id="powers">
+<h2>Powers</h2>
+
+<div style="column-width: 8rem; column-gap: 0.5rem; padding: 0; margin:0">
+<table class="basic-table border-row esb-table">
+<thead>
+  <tr><th class="level-col">Level</th><th class="power-col">Power</th>
+</tr>
+</thead>
+<tbody>
+  <tr><td>1</td><td class="right-align"><span class="number">1</span><span class="unit">B</span></td></tr>
+  <tr><td>2</td><td class="right-align"><span class="number">2</span><span class="unit">B</span></td></tr>
+  <tr><td>&vellip;</td><td>&vellip;</td></tr>
+  <tr><td>8</td><td class="right-align"><span class="number">8</span><span class="unit">B</span></td></tr>
+  <tr><td>9</td><td class="right-align"><span class="number">9</span><span class="unit">B</span></td></tr>
+  <tr><td>10</td><td class="right-align"><span class="number">10</span><span class="unit">B</span></td></tr>
+</tbody>
+</table>
+<table class="basic-table border-row esb-table">
+<thead>
+  <tr><th class="level-col">Level</th><th class="power-col">Power</th>
+</tr>
+</thead>
+<tbody>
+  <tr><td>11</td><td class="right-align"><span class="number">50</span><span class="unit">B</span></td></tr>
+  <tr><td>12</td><td class="right-align"><span class="number">100</span><span class="unit">B</span></td></tr>
+  <tr><td>13</td><td class="right-align"><span class="number">500</span><span class="unit">B</span></td></tr>
+  <tr><td>14</td><td class="right-align"><span class="number">1000</span><span class="unit">B</span></td></tr>
+  <tr><td>15</td><td class="right-align"><span class="number">2000</span><span class="unit">B</span></td></tr>
+  <tr><td>16</td><td class="right-align"><span class="number">3000</span><span class="unit">B</span></td></tr>
+</tbody>
+</table>
+<table class="basic-table border-row esb-table">
+<thead>
+  <tr><th class="level-col">Level</th><th class="power-col">Power</th>
+</tr>
+</thead>
+<tbody>
+  <tr><td>17</td><td class="right-align"><span class="number">4000</span><span class="unit">B</span></td></tr>
+  <tr><td>18</td><td class="right-align"><span class="number">5000</span><span class="unit">B</span></td></tr>
+  <tr><td>19</td><td class="right-align"><span class="number">6000</span><span class="unit">B</span></td></tr>
+  <tr><td>20</td><td class="right-align"><span class="number">7000</span><span class="unit">B</span></td></tr>
+  <tr><td>21</td><td class="right-align"><span class="number">8000</span><span class="unit">B</span></td></tr>
+</tbody>
+</table>
+</div>
+</section>
+
+  
 <section id="rewards">
 <h2>Kill Rewards</h2>
   

@@ -4,33 +4,26 @@
 
 /** Burning Expedition calendar */
 const BECalendar = {
-  startDays: [23, 24, 25, 26, 27],
-  eventDays: [
+  'event-1': [
     1, 2, 3, 4, 5, 6, 7,
     8, 9, 10, 11, 12, 13, 14,
-    15, 16, 17, 18, 19, 20,
+    15, 16, 17, 18, 19, 20, 21,
   ],
-  endDays: [],
-  throneDay: 21,
+  'event-2': [23, 24, 25, 26, 27], // Registration
 };
 
 /** Ultimate Hunting calendar */
 const UHCalendar = {
-  startDays: [],
-  eventDays: [
+  'event-1': [
     8, 9, 10, 11, 12, 13,
     22, 23, 24, 25, 26, 27,
   ],
-  endDays: [14, 28],
-  throneDay: 0,
 };
 
 /** ES-Battlefield calendar */
 const ESBCalendar = {
-  startDays: [2, 9, 16, 23],
-  eventDays: [3, 10, 17, 24],
-  endDays: [4, 11, 18, 25],
-  throneDay: 0,
+  'event-0': [2, 4, 9, 11, 16, 18, 23, 25],
+  'event-1': [3, 10, 17, 24],
 };
 
 /**
@@ -116,14 +109,14 @@ function makeSeasonCal(templateId, calStartDate, evtDays) {
       daySpan.innerText = dd;
     }
 
-    if (evtDays.startDays.includes(day)) {
-      daySpan.classList.add('event-start');
-    } else if (evtDays.eventDays.includes(day)) {
-      daySpan.classList.add('event-day');
-    } else if (evtDays.endDays.includes(day)) {
-      daySpan.classList.add('event-end');
-    } else if (evtDays.throneDay === day) {
-      daySpan.classList.add('throne-day');
+    if (evtDays['event-0'] && evtDays['event-0'].includes(day)) {
+      daySpan.classList.add('event-0');
+    } else if (evtDays['event-1'] && evtDays['event-1'].includes(day)) {
+      daySpan.classList.add('event-1');
+    } else if (evtDays['event-2'] && evtDays['event-2'].includes(day)) {
+      daySpan.classList.add('event-2');
+    } else if (evtDays['event-3'] && evtDays['event-3'].includes(day)) {
+      daySpan.classList.add('event-3');
     }
 
     if (calDate.getTime() === currentTS) {
@@ -151,12 +144,14 @@ function makePreSeasonCal(templateId, evtDays) {
     const dayCell = clone.querySelector(`[data-day="${day}"]`);
     const daySpan = dayCell.querySelector('span');
 
-    if (evtDays.startDays.includes(day)) {
-      daySpan.classList.add('event-start');
-    } else if (evtDays.eventDays.includes(day)) {
-      daySpan.classList.add('event-day');
-    } else if (evtDays.endDays.includes(day)) {
-      daySpan.classList.add('event-end');
+    if (evtDays['event-0'] && evtDays['event-0'].includes(day)) {
+      daySpan.classList.add('event-0');
+    } else if (evtDays['event-1'] && evtDays['event-1'].includes(day)) {
+      daySpan.classList.add('event-1');
+    } else if (evtDays['event-2'] && evtDays['event-2'].includes(day)) {
+      daySpan.classList.add('event-2');
+    } else if (evtDays['event-3'] && evtDays['event-3'].includes(day)) {
+      daySpan.classList.add('event-3');
     }
   }
 
