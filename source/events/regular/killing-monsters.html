@@ -1,0 +1,74 @@
+<html>
+<head>
+<title>Killing Monsters</title>
+<meta page-data
+  og-desc="Challenge monsters and be rewarded with Advanced Chest and Light Regent"
+  tag-list="event"
+>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link href="../../assets/css/common.css" rel="stylesheet">
+<link href="../../assets/css/content.css" rel="stylesheet">
+<script src="../../assets/js/mini-cal.js"></script>
+<script>
+  const KMCalendar = {
+    'event-1': [
+      1, 2, // MON–TUE
+      12, 13, // FRI, SAT
+      15, 16, // MON–TUE
+      24, 25, // WED–THU
+    ],
+  };
+  document.addEventListener('DOMContentLoaded', (e) => {
+    document.getElementById('thisSeasonCalContainer').appendChild(
+      makeSeasonCal('cal-template', 'this-season', KMCalendar)
+    );
+  });
+</script>
+</head>
+<body>
+
+<header><nav><ul class="breadcrumb">
+  <li><a href="../../../content">Home</a></li>
+  <li><a href="../../">Events</a></li>
+  <li><a href="../">War</a></li>
+  <li>{{TITLE}}</li>
+</ul></nav></header>
+
+<main>
+<h1>{{TITLE}}</h1>
+
+<template id="cal-template">
+<fragment src="../__temp/season-cal.md"/>
+</template>
+
+<section>
+<h2>Calendar</h2>
+<div id="thisSeasonCalContainer" class="calContainer"><h3>Current Season</h3></div>
+
+<p><q>Killing Monsters</q> is a minor event that happen several times during
+  a Season:</p>
+<ul class="compact-list">
+  <li>MON–TUE of Week 1</li><!-- Killing Monsters -->
+  <!-- <li>WED–THU of Week 1</li> --><!-- Join Rallies -->
+  <!-- <li>MON–TUE of Week 2</li> --><!-- Join Rallies -->
+  <li>FRI of Week 2</li><!-- Killing Monsters -->
+  <li>SAT of Week 2</li><!-- Killing Monsters -->
+  <li>MON–TUE of Week 3</li><!-- Killing Monsters -->
+  <!-- <li>Wed&ndash;Thur of Week 3</li> --><!-- Join Rallies -->
+  <li>WED–THU of Week 4</li><!-- Killing Monsters -->
+</ul>
+</section>
+
+<section id="rewards">
+<h2>Rewards</h2>
+<ul class="compact-list">
+  <li>Light Regent</li>
+  <li>Gold</li>
+  <li>Stone</li>
+  <li><a href="../../resources/chests">Advanced Chest</a></li>
+</ul>
+</section>
+  
+</main>
+</body>
+</html>
