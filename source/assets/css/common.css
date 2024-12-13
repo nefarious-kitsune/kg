@@ -531,6 +531,18 @@ li, div.li, span.li {
   &.rose::marker { color: var(--rose-500); }
 }
 
+/* ---------------- Notes and Alerts ---------------- */
+
+div.info-box {
+  border-radius: 0.4rem;
+  padding: 0.4rem;
+}
+
+div.info-box.alert {
+  background-color: light-dark(var(--gold-100), var(--red-700));
+  color: light-dark(var(--red-700), var(--gold-300));
+}
+
 /* ------------------- Light Theme ------------------- */
 
 html {
