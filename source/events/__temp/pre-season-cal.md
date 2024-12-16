@@ -1,7 +1,6 @@
 <table class="basic-table border-row mini-cal">
 <tbody>
 <tr class="week-1">
-  <td class="week-num">Week 1</td>
   <td class="day-1"><span class="day-of-month">Day 1</span></td>
   <td class="day-2"><span class="day-of-month">Day 2</span></td>
   <td class="day-3"><span class="day-of-month">Day 3</span></td>
@@ -11,7 +10,6 @@
   <td class="day-7"><span class="day-of-month">Day 7</span></td>
 </tr>
 <tr class="week-2">
-  <td class="week-num">Week 2</td>
   <td class="day-8"><span class="day-of-month">Day 8</span></td>
   <td class="day-9"><span class="day-of-month">Day 9</span></td>
   <td class="day-10"><span class="day-of-month">13</span></td>
@@ -21,7 +19,6 @@
   <td class="day-14"><span class="day-of-month">17</span></td>
 </tr>
 <tr class="week-3">
-  <td class="week-num">Week 3</td>
   <td class="day-15"><span class="day-of-month">18</span></td>
   <td class="day-16"><span class="day-of-month">19</span></td>
   <td class="day-17"><span class="day-of-month">20</span></td>
@@ -31,7 +28,6 @@
   <td class="day-21"><span class="day-of-month">24</span></td>
 </tr>
 <tr class="week-4">
-  <td class="week-num">Week 4</td>
   <td class="day-22"><span class="day-of-month">25</span></td>
   <td class="day-23"><span class="day-of-month">26</span></td>
   <td class="day-24"><span class="day-of-month">27</span></td>

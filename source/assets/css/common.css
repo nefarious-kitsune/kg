@@ -902,11 +902,6 @@ details {
     vertical-align: middle;
     padding: 0.2rem;
   }
-  th.week-num,
-  td.week-num {
-    text-align: left;
-    width: 4rem;
-  }
   .mon, .tue, .wed, .thu, .fri, .sat, .sun {
     width: 2rem;
   }
@@ -949,6 +944,20 @@ details {
     background-color: light-dark(var(--red-500), var(--red-700));
     z-index: -1;
   }
+  .server-start:before {
+    position: absolute;
+    display: block;
+    content: "";
+    font-size: 0.8rem;
+    box-sizing: border-box;
+    border: 0.2rem dotted;
+    border-color: light-dark(var(--gray-300), var(--gray-500));
+    border-radius: 0.9rem;
+    width: 1.8rem; height: 1.8rem;
+    left: 0.1rem; top: 0.1rem;
+    background-color: none;
+    z-index: -1;
+  }
   .mo2 {
     background-color: light-dark(var(--gray-50), var(--gray-700));
   }
@@ -962,6 +971,37 @@ details {
   h2, h3 {
     margin: 0;
     padding: 0;
+  }
+}
+
+/* -------------- Split-Column Wrapper -------------- */
+
+@media screen and (min-width: 100px) {
+  .split-col-wrapper {
+    display: block;
+    justify-content: center;
+  }
+
+  .split-col-wrapper > .col {
+    margin-block-start: 0;
+    margin-block-end: 1rem;
+  }
+}
+
+@media screen and (min-width: 520px) {
+  .split-col-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 1rem;
+    row-gap: 2rem;
+    justify-content: center;
+  }
+
+  .split-col-wrapper > .col {
+    margin-left: auto;
+    margin-right: auto;
+
+    h2, h3 { margin: 0; padding: 0; }
   }
 }
 

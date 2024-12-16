@@ -103,19 +103,6 @@ function makeSeasonCal(templateId, calStartDate, evtDays) {
 
     if ((mm % 2) === 0) {
       dayCell.classList.add('mo2');
-      if (day === 1) {
-        const weekNum = clone.querySelector('.week-1 .week-num');
-        if (weekNum) weekNum.classList.add('mo2');
-      } else if (day === 8) {
-        const weekNum = clone.querySelector('.week-2 .week-num');
-        if (weekNum) weekNum.classList.add('mo2');
-      } else if (day === 15) {
-        const weekNum = clone.querySelector('.week-3 .week-num');
-        if (weekNum) weekNum.classList.add('mo2');
-      } else if (day === 22) {
-        const weekNum = clone.querySelector('.week-4 .week-num');
-        if (weekNum) weekNum.classList.add('mo2');
-      }
     }
 
     if (dd === 1) {
