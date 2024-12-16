@@ -1053,7 +1053,6 @@ img.icon {
 img.emoji {
   height: 1rem !important;
   width: auto !important;
-  vertical-align: middle;
 }
 
 /* --------------- Heroes & Elements  --------------- */

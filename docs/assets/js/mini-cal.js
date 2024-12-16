@@ -1,6 +1,21 @@
 /* eslint-disable no-unused-vars */
 /* eslint-env browser */
 
+/** Castle Event Calendar 1 */
+const CastleEventCalendar1 = {
+  'event-1': [28],
+  'event-0': [
+    1, 2, 3, 4, 5, 6, 7,
+  ],
+};
+
+/** Castle Event Calendar 1 */
+const CastleEventCalendar2 = {
+  'event-0': [28],
+  'event-1': [
+    1, 2, 3, 4, 5, 6, 7,
+  ],
+};
 
 /** Burning Expedition calendar */
 const BECalendar = {
