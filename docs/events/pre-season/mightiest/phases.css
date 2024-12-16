@@ -1,22 +1,10 @@
 .phase-container {
   display: flex;
+  background-color: light-dark(var(--gray-300), var(--gray-700));
   flex-direction: column;
   .quest-row { flex-grow: 0 };
   .quest-row:last-child { flex-grow: 1 };
 
-  h2 {
-    color: black;
-    text-shadow: none;
-    font-size: 1.2rem;
-  }
-
-  .unit { background-color: var(--light-primary-1);}
-  .magic { background-color: var(--light-primary-2);}
-  .blacksmith { background-color: var(--light-primary-3);}
-  .dragon { background-color: var(--light-primary-4);}
-  .hero { background-color: var(--light-primary-5);}
-  .castle { background-color: var(--light-primary-6);}
-  .common { background-color: var(--pale-neutral);}
    .quest-row {
     display: flex;
     padding: 0.25rem 0.5rem;
@@ -37,7 +25,7 @@
   }
 
   .quest-row.p2p {
-    color: var(--miku-dark-red);
+    color: light-dark(var(--iris-700), var(--iris-300));
     .quest-desc {
       font-size: 0.8rem;
     }
@@ -45,7 +33,7 @@
 }
 
 @media screen and (min-width: 480px) {
-  h2 {
+  h4 {
     margin-block-start: 0;
     margin-block-end: 0.2rem;
     padding: 0;

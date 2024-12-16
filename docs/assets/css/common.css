@@ -963,17 +963,6 @@ details {
   }
 }
 
-.calContainer {
-  margin: 0 0 4rem 0;
-  padding: 0;
-  margin-block-start: 0;
-  margin-block-end: 1rem;
-  h2, h3 {
-    margin: 0;
-    padding: 0;
-  }
-}
-
 /* -------------- Split-Column Wrapper -------------- */
 
 @media screen and (min-width: 100px) {
