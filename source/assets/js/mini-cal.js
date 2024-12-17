@@ -9,12 +9,22 @@ const CastleEventCalendar1 = {
   ],
 };
 
-/** Castle Event Calendar 1 */
+/** Castle Event Calendar 2 */
 const CastleEventCalendar2 = {
   'event-0': [28],
   'event-1': [
     1, 2, 3, 4, 5, 6, 7,
   ],
+};
+
+/** Frame Event Calendar 1 */
+const FrameEventCalendar1 = {
+  'event-1': [16, 17, 18, 19, 20, 21],
+};
+
+/** Frame Event Calendar 2 */
+const FrameEventCalendar2 = {
+  'event-0': [16, 17, 18, 19, 20, 21],
 };
 
 /** Burning Expedition calendar */
