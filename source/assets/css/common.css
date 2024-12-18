@@ -503,6 +503,30 @@ ul.min-list {
   padding-left: 0 !important;
 }
 
+ul.check-list {
+  padding: 0;
+  list-style: none;
+
+  li {
+    padding-left: 1.6rem;
+  }
+
+  li:before {
+    content: '';
+    display: inline-block;
+    height: 1.2rem;
+    width: 1.2rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left: -1.4rem;
+  }
+
+  li.checked:before { background-image: url("../emojis/4x/check-mark.png"); }
+  li.crossed:before { background-image: url("../emojis/4x/cross-mark.png"); }
+  li.unknown:before { background-image: url("../emojis/4x/question-mark.png"); }
+}
+
 div.li, span.li {
   display: list-item;
   list-style-position: outside;
