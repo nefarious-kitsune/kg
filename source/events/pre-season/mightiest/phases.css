@@ -1,3 +1,15 @@
+.ml-phase-table {
+  width: 100%;
+  tr > td:first-child {
+    text-align: right;
+    width: 4rem;
+  }
+}
+
+section.phase-points {
+  padding-bottom: 1rem;
+}
+
 .phase-container {
   display: flex;
   background-color: light-dark(var(--gray-300), var(--gray-700));
