@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Season Challenge Projected Schedule - Miku's Shrine</title>
+<link rel="icon" type="image/x-icon" href="/images/logo_mini.png">
+<meta name="format-detection" content="telephone=no">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://kg.kitsune21.com/">
+<meta property="og:image" content="https://kg.kitsune21.com/assets/icons/site_calendar.png">
+<meta property="og:title" content="Season Challenge Projected Schedule">
+<meta property="og:description"
+  content="Projected schedule of Season Challenge and the featured Hero">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link href="../../../assets/css/common.css" rel="stylesheet">
+<link href="../../../assets/css/content.css" rel="stylesheet">
+<script src="../../../assets/js/mini-cal.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', (e) => {
+    document.getElementById('thisSeasonCalContainer').appendChild(
+      makeSeasonCal('cal-template', 'this-season', SChallengeEventCalendar1)
+    );
+    document.getElementById('nextSeasonCalContainer').appendChild(
+      makeSeasonCal('cal-template', 'next-season', SChallengeEventCalendar2)
+    );
+  });
+</script>
+</head>
+
+<body>
+
+<header><nav><ul class="breadcrumb">
+  <li><a href="../../../content">Home</a></li>
+  <li><a href="./../../">Events</a></li>
+  <li><a href="./../">Special</a></li>
+  <li><a href="./">Season Challenge</a></li>
+  <li>Projected Schedule</li>
+</ul></nav></header>
+
+<main>
+<h1>Season Challenge Projected Schedule</h1>
+
+<section>
+<p>Season Challenge for a Sales Hero typically happens
+  <span class="number">22</span> weeks after the first
+  Sales for the hero.</p>
+
+<table class="basic-table border-row">
+<thead>
+<tr><th>Projected Date</th><th>Hero</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>2025-05-26</td>
+  <td><span class="hero-name ssr">Hathes</span></td>
+</tr>
+<tr>
+  <td>2025-04-28</td>
+  <td><span class="hero-name kirona fire ssr" image-hint tabindex="0">Kirona</span></td>
+</tr>
+<tr>
+  <td>2025-03-31</td>
+  <td><span class="hero-name eleanora archer ssr" image-hint tabindex="0">Eleanora</span></td>
+</tr>
+<tr>
+  <td>2025-03-03</td>
+  <td><span class="hero-name webster goblin ssr" image-hint tabindex="0">Webster</span></td>
+</tr>
+<tr>
+  <td>2025-02-03</td>
+  <td><span class="hero-name ryan archer ssr" image-hint tabindex="0">Ryan</span></td>
+</tr>
+<tr>
+  <td>2025-01-06</td>
+  <td><span class="hero-name catrina fire ssr" image-hint tabindex="0">Catrina</span></td>
+</tr>
+</tbody>
+</table>  
+</section>
+
+</main>
+</body>
+</html>

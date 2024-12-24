@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Season Challenge - Miku's Shrine</title>
+<link rel="icon" type="image/x-icon" href="/images/logo_mini.png">
+<meta name="format-detection" content="telephone=no">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://kg.kitsune21.com/">
+<meta property="og:image" content="https://kg.kitsune21.com/assets/icons/site_calendar.png">
+<meta property="og:title" content="Season Challenge">
+<meta property="og:description"
+  content="Information on the Season Challenge special event">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link href="../../../assets/css/common.css" rel="stylesheet">
+<link href="../../../assets/css/content.css" rel="stylesheet">
+<script src="../../../assets/js/mini-cal.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', (e) => {
+    document.getElementById('thisSeasonCalContainer').appendChild(
+      makeSeasonCal('cal-template', 'this-season', SChallengeEventCalendar1)
+    );
+    document.getElementById('nextSeasonCalContainer').appendChild(
+      makeSeasonCal('cal-template', 'next-season', SChallengeEventCalendar2)
+    );
+  });
+</script>
+</head>
+
+<body>
+
+<header><nav><ul class="breadcrumb">
+  <li><a href="../../../content">Home</a></li>
+  <li><a href="./../../">Events</a></li>
+  <li><a href="./../">Special</a></li>
+  <li><a href="./">Season Challenge</a></li>
+  <li>Challenges</li>
+</ul></nav></header>
+
+<main>
+<h1>Season Challenge</h1>
+
+<p>Season Challenge is a 5-day P2P event where Lords can obtain
+  Hero Cards of a Sales Hero by completing challenges and
+  making purchases.</p>
+
+<template id="cal-template">
+<table class="basic-table border-row mini-cal">
+<thead>
+<tr>
+  <th class="mon">Mon.</th>
+  <th class="tue">Tue.</th>
+  <th class="wed">Wed.</th>
+  <th class="thu">Thu.</th>
+  <th class="fri">Fri.</th>
+  <th class="sat">Sat.</th>
+  <th class="sun">Sun.</th>
+</tr>
+</thead>
+<tbody>
+<tr class="week-1">
+  <td class="day-1"><span class="day-of-month">4</span></td>
+  <td class="day-2"><span class="day-of-month">5</span></td>
+  <td class="day-3"><span class="day-of-month">6</span></td>
+  <td class="day-4"><span class="day-of-month">7</span></td>
+  <td class="day-5"><span class="day-of-month">8</span></td>
+  <td class="day-6"><span class="day-of-month">9</span></td>
+  <td class="day-7"><span class="day-of-month">10</span></td>
+</tr>
+<tr class="week-2">
+  <td class="day-8"><span class="day-of-month">11</span></td>
+  <td class="day-9"><span class="day-of-month">12</span></td>
+  <td class="day-10"><span class="day-of-month">13</span></td>
+  <td class="day-11"><span class="day-of-month">14</span></td>
+  <td class="day-12"><span class="day-of-month">15</span></td>
+  <td class="day-13"><span class="day-of-month">16</span></td>
+  <td class="day-14"><span class="day-of-month">17</span></td>
+</tr>
+<tr class="week-3">
+  <td class="day-15"><span class="day-of-month">18</span></td>
+  <td class="day-16"><span class="day-of-month">19</span></td>
+  <td class="day-17"><span class="day-of-month">20</span></td>
+  <td class="day-18"><span class="day-of-month">21</span></td>
+  <td class="day-19"><span class="day-of-month">22</span></td>
+  <td class="day-20"><span class="day-of-month">23</span></td>
+  <td class="day-21"><span class="day-of-month">24</span></td>
+</tr>
+<tr class="week-4">
+  <td class="day-22"><span class="day-of-month">25</span></td>
+  <td class="day-23"><span class="day-of-month">26</span></td>
+  <td class="day-24"><span class="day-of-month">27</span></td>
+  <td class="day-25"><span class="day-of-month">28</span></td>
+  <td class="day-26"><span class="day-of-month">29</span></td>
+  <td class="day-27"><span class="day-of-month">30</span></td>
+  <td class="day-28"><span class="day-of-month">Dec</span></td>
+</tr>
+</tbody>
+</table>
+</template>
+
+<section id="calendars">
+<div class="split-col-wrapper">
+<div id="thisSeasonCalContainer" class="col"></div>
+<div id="nextSeasonCalContainer" class="col"></div>
+</div>
+</section>
+
+<section id="links">
+<ul class="compact-list">
+  <li><a href="projected">Projected schedule</a> of the event and
+    featured Heroes</li>
+  <li><a href="format">Event format</a> of Season Challenge</li>
+  <li><a href="challenges">Challenges</a> of the Season Challenges tab</li>
+  <li>Buying guide for getting the featured hero to 5-star</li>
+  <li>Buying guide for getting the featured hero to 4-star</li>
+</ul>
+</section>
+</main>
+</body>
+</html>

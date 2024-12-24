@@ -51,6 +51,17 @@ const ESBCalendar = {
   'event-1': [3, 10, 17, 24],
 };
 
+/** Season Challenge Event Calendar 1 */
+const SChallengeEventCalendar1 = {
+  'event-1': [8, 9, 10, 11, 12],
+};
+
+/** Season Challenge Calendar 2 */
+const SChallengeEventCalendar2 = {
+  'event-0': [8, 9, 10, 11, 12],
+};
+
+
 /**
  * @typedef {Object} EventDays
  * @property {number[]} startDays - Days to mark as 'event start'
