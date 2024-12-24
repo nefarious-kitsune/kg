@@ -1,0 +1,125 @@
+<html>
+<head>
+<title>Snowstorm Search and Rescue</title>
+<meta page-data
+  og-desc="Snowstorm Search and Rescue special event (2024-12-1 ~ 2024-12-8)"
+  tag-list="event"
+>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link href="../../../assets/css/common.css" rel="stylesheet">
+<link href="../../../assets/css/content.css" rel="stylesheet">
+<link href="../../../assets/css/heroes.css" rel="stylesheet">
+<style>
+  .hero-avatar {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+</style>
+<script src="../../../assets/js/mini-cal.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', (e) => {
+    document.getElementById('thisSeasonCalContainer').appendChild(
+      makeSeasonCal('cal-template', [2024, 11, 4], CastleEventCalendar1)
+    );
+    document.getElementById('nextSeasonCalContainer').appendChild(
+      makeSeasonCal('cal-template', [2024, 12, 2], CastleEventCalendar2)
+    );
+  });
+</script>
+</head>
+<body>
+
+<header><nav><ul class="breadcrumb">
+  <li><a href="../../../content">Home</a></li>
+  <li><a href="../../">Events</a></li>
+  <li><a href="../">Special</a></li>
+  <li><a href="./">Skin</a></li>
+  <li>{{TITLE}}</li>
+</ul></nav></header>
+
+<main>
+<h1>{{TITLE}}</h1>
+
+<template id="cal-template">
+<fragment src="../../__temp/event-cal.md"/>
+</template>
+  
+<section id="calendars">
+<div class="split-col-wrapper">
+<div id="thisSeasonCalContainer" class="col"></div>
+<div id="nextSeasonCalContainer" class="col"></div>
+</div>
+</section>
+
+<section id="rewards">
+<h2>Event Rewards</h2>
+<ul class="min-list">
+  <li><img src="../../../assets/emojis/4x/hero.png" class="emoji">
+    <hero-name>Alex</hero-name></li>
+  <li><img src="../../../assets/emojis/4x/frame.png" class="emoji">
+    Lighthouse Watch Frame</li>
+  <li><img src="../../../assets/emojis/4x/castle1.png" class="emoji">
+    Polar Adventure Castle</li>
+  <li><img src="../../../assets/emojis/4x/castle2.png" class="emoji">
+    Snowfield Guardian Castle</li>
+</ul>
+</section>
+
+<section id="format">
+<h2>Event Format</h2>
+
+<details>
+<summary>Snowfield First Aid</summary>
+<div><p><strong>Collect Energy Stones</strong>:
+Completing quests grants additional item rewards.
+Each quest type has a daily limit that resets at UTC 00:00.
+(<a href="/assets/screenshots/event-20241201-1.png">Screenshot</a>)</p></div>
+</details>
+
+<details>
+<summary>Pinball Legend</summary>
+<div><p><strong>Consume Energy Stones</strong>:
+You can launch the marbles by consuming Energy Stones and
+clicking any falling button. Your score for this round is
+based on the points from the box where the marbles land.
+The marbles may also collide with the Barricade during
+their descent, and after 5 collisions, you can earn
+extra points displayed by the Barricade.
+(<a href="/assets/screenshots/event-20241201-2.png">Screenshot</a>)</p></div>
+</details>
+
+<details>
+<summary>Road to Rescue</summary>
+<div><p><strong>Pass</strong>:
+Points earned from the Marble Legendary event can be
+used to unlock pass rewards, with advanced rewards
+offering higher quality items.
+(<a href="/assets/screenshots/event-20241201-3.png">Screenshot</a>)</p></div>
+</details>
+
+<details>
+<summary>Wheel of Fate</summary>
+<div><p><strong>Consume Medical Kit</strong>:
+The treasure vault has Normal and Crazy modes;
+click the button in the upper right corner to switch.
+In Crazy mode, you can choose the latest heroes from
+the glowing Free-Pick Heroes box. Activating the
+treasure vault 10 times grants you a discount,
+and accumulating treasure points lets you claim Extra Rewards.
+(<a href="/assets/screenshots/event-20241201-4.png">Screenshot</a>)</p></div>
+</details>
+
+<details>
+<summary>Wishing Spring</summary>
+<div><p><strong>Gem Wishing Pool</strong>:
+After using Gems to Make a wish, you will receive a wish reward.
+The first 100 wishes made daily will receive an extra event item,
+and no additional rewards will be given after exceeding this number.
+(<a href="/assets/screenshots/event-20241201-6.png">Screenshot</a>)</p></div>
+</details>
+  
+</section>
+
+</main>
+</body>
+</html>
