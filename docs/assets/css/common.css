@@ -424,7 +424,9 @@ a:hover {
 }
 a:not([href]) { text-decoration: none; }
 
+span.bold,
 strong { font-weight: 500; }
+
 strong.stronger {
   font-weight: 600;
   font-style: italic;
