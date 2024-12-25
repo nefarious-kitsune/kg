@@ -722,6 +722,10 @@ table.alt-rows { /* alternating rows */
   background-color: var(--copper-100);
   color: var(--copper-700);
 }
+.highlighted.jade, tr.highlighted.jade td {
+  background-color: var(--jade-100);
+  color: var(--jade-700);
+}
 .highlighted.blue, tr.highlighted.blue td {
   background-color: var(--blue-100);
   color: var(--blue-700);
@@ -896,6 +900,10 @@ details {
     background-color: var(--copper-700);
     color: var(--copper-100);
   }
+  .highlighted.jade, tr.highlighted.jade td {
+    background-color: var(--jade-700);
+    color: var(--jade-100);
+  }  
   .highlighted.blue, tr.highlighted.blue td {
     background-color: var(--blue-700);
     color: var(--blue-100);
