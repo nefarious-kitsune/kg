@@ -1,0 +1,70 @@
+<html>
+<head>
+<title>Upcoming Holiday Event</title>
+<meta page-data
+  og-desc="Preview of the upcoming holiday Castle-Skin event"
+  tag-list="event"
+>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link href="../../../assets/css/common.css" rel="stylesheet">
+<link href="../../../assets/css/content.css" rel="stylesheet">
+<link href="../../../assets/css/heroes.css" rel="stylesheet">
+<style>
+  .hero-avatar {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+</style>
+<script src="../../../assets/js/mini-cal.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', (e) => {
+    document.getElementById('thisSeasonCalContainer').appendChild(
+      makeSeasonCal('cal-template', 'this-season', CastleEventCalendar1)
+    );
+    document.getElementById('nextSeasonCalContainer').appendChild(
+      makeSeasonCal('cal-template', 'next-season', CastleEventCalendar2)
+    );
+  });
+</script>
+</head>
+<body>
+
+<header><nav><ul class="breadcrumb">
+  <li><a href="../../../content">Home</a></li>
+  <li><a href="../../">Events</a></li>
+  <li><a href="../">Special</a></li>
+  <li><a href="./">Skin</a></li>
+  <li>{{TITLE}}</li>
+</ul></nav></header>
+
+<main>
+<h1>{{TITLE}}</h1>
+
+<template id="cal-template">
+<fragment src="../../__temp/event-cal.md"/>
+</template>
+  
+<section id="calendars">
+<div class="split-col-wrapper">
+<div id="thisSeasonCalContainer" class="col"></div>
+<div id="nextSeasonCalContainer" class="col"></div>
+</div>
+</section>
+
+<section id="rewards">
+<h2>Event Rewards</h2>
+<ul class="min-list">
+  <li><img src="../../../assets/emojis/4x/hero.png" class="emoji">
+    Hero</li>
+  <li><img src="../../../assets/emojis/4x/frame.png" class="emoji">
+    Avatar Frame</li>
+  <li><img src="../../../assets/emojis/4x/castle1.png" class="emoji">
+    Castle Skin</li>
+  <li><img src="../../../assets/emojis/4x/castle2.png" class="emoji">
+    Limited Castle Skin</li>
+</ul>
+</section>
+
+</main>
+</body>
+</html>
