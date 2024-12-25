@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Upcoming Holiday Event - Miku's Shrine</title>
+<title>Lich's Laboratory - Miku's Shrine</title>
 <link rel="icon" type="image/x-icon" href="/images/logo_mini.png">
 <meta name="format-detection" content="telephone=no">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://kg.kitsune21.com/">
 <meta property="og:image" content="https://kg.kitsune21.com/assets/icons/site_info.png">
-<meta property="og:title" content="Upcoming Holiday Event">
+<meta property="og:title" content="Lich's Laboratory">
 <meta property="og:description"
-  content="Preview of the upcoming holiday Castle-Skin event">
+  content="Lich's Laboratory special event (2024-10-06 ~ 2024-10-13)">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <link href="../../../assets/css/common.css" rel="stylesheet">
 <link href="../../../assets/css/content.css" rel="stylesheet">
@@ -24,10 +24,10 @@
 <script>
   document.addEventListener('DOMContentLoaded', (e) => {
     document.getElementById('thisSeasonCalContainer').appendChild(
-      makeSeasonCal('cal-template', 'this-season', CastleEventCalendar1)
+      makeSeasonCal('cal-template', [2024, 9, 9], CastleEventCalendar1)
     );
     document.getElementById('nextSeasonCalContainer').appendChild(
-      makeSeasonCal('cal-template', 'next-season', CastleEventCalendar2)
+      makeSeasonCal('cal-template', [2024, 9, 9+28], CastleEventCalendar2)
     );
   });
 </script>
@@ -39,16 +39,11 @@
   <li><a href="../../">Events</a></li>
   <li><a href="../">Special</a></li>
   <li><a href="./">Skin</a></li>
-  <li>Upcoming Holiday Event</li>
+  <li>Lich's Laboratory</li>
 </ul></nav></header>
 
 <main>
-<h1>Upcoming Holiday Event</h1>
-
-<section>
-<p>Every 4-weeks, the game has a 8-day Holiday Event that starts on the last
-day of the season. The event is generally <a href="/p2p">pay-to-play</a>.</p>
-</section>
+<h1>Lich's Laboratory</h1>
 
 <template id="cal-template">
 <table class="basic-table border-row mini-cal">
@@ -114,77 +109,84 @@ day of the season. The event is generally <a href="/p2p">pay-to-play</a>.</p>
 <section id="rewards">
 <h2>Event Rewards</h2>
 
-<p>In the holiday special event, Lords have a chance to obtain the
-  following rewards.</p>
+<p>In this event, Lords have a chance to obtain the following rewards.</p>
 
 <ul class="min-list">
-  <li><img src="../../../assets/emojis/4x/hero.png" class="emoji">
-    SSR Hero Cards</li>
-  <li><img src="../../../assets/emojis/4x/frame.png" class="emoji">
-    Avatar Frame</li>
-  <li><img src="../../../assets/emojis/4x/castle1.png" class="emoji">
-    Castle Skin</li>
-  <li><img src="../../../assets/emojis/4x/castle2.png" class="emoji">
-    Limited Castle Skin</li>
+  <li><img src="../../../assets/emojis/4x/hero.jpg" class="emoji">
+    <span class="hero-name viola goblin ssr" image-hint tabindex="0">Viola</span></li>
+  <li><img src="../../../assets/emojis/4x/frame.jpg" class="emoji">
+    Spirit Horn Demon Shadow Frame</li>
+  <li><img src="../../../assets/emojis/4x/castle1.jpg" class="emoji">
+    Mysterious Witch Tower Castle</li>
+  <li><img src="../../../assets/emojis/4x/castle2.jpg" class="emoji">
+    Shadowy Magic Tower Castle</li>
 </ul>
 </section>
 
 <section id="format">
 <h2>Event Format</h2>
 
-<p>Each holiday special event generally follows the same format:</p>
-
-<details>
-<summary>Quest</summary>
+<details><summary>Soul Collection</summary>
 <div>
-<p>Collect <span class="highlighted jade">Lv. 1 Tokens</span> by completing
-<span class="bold">quests</span> such as defeating Titans and monsters.</p>
-</div>
-</details>
-
-<details>
-<summary>Mini Game</summary>
-<div>
-<p>Consume <span class="highlighted jade">Lv. 1 Tokens</span> to play a
-<span class="bold">mini-game</span> such as pinball or Blackjack.</p>
-</div>
-</details>
-
-<details>
-<summary>Event Pass</summary>
-<p>Consume game points earned from the mini-game to unlock
-<span class="bold">Event Pass</span> rewards:</p>
+<p>Collect <span class="highlighted jade">Stirring Rod</span> by completing
+<a href="/assets/screenshots/event-20241006-1.jpg">daily quests</a>:</p>
 <ul class="compact-list">
-  <li>Free-tier: <span class="highlighted iris">Lv. 3 Tokens</span></li>
-  <li>Paid-tier: <span class="highlighted iris">Lv. 3 Tokens</span> and a
+  <li>Defeat Titan and monsters</li>
+  <li>Pass stages</li>
+  <li>Gather gold</li>
+</ul>
+</div>
+</details>
+
+<details><summary>Magic Combo</summary>
+<div>
+<p>Consume <span class="highlighted jade">Stirring Rod</span> to play a
+tile-matching <a href="/assets/screenshots/event-20241006-2.jpg">mini-game</a>.
+Each game move requires 5 Stirring Rod.</p>
+</div>
+</details>
+
+<details>
+<summary>Road of the Dead</summary>
+<div>
+<p>Consume game points earned from the mini-game to unlock
+<a href="/assets/screenshots/event-20241006-3.jpg">Event Pass</a> rewards:</p>
+<ul class="compact-list">
+  <li>Free-tier: <span class="number">500</span><!-- (10 * 50) -->
+    <span class="highlighted iris">Potion Flasks</span></li>
+  <li>Paid-tier: <span class="number">1700</span><!-- (20 * 4 + 90) * 10 -->
+    <span class="highlighted iris">Potion Flasks</span> and a
     permanent Avatar Frame</li>
 </ul>
+</div>
 </details>
 
 <details>
-<summary>Lucky Draw</summary>
+<summary>Enigmatic Wheel</summary>
 <div>
-<p>Consume <span class="highlighted iris">Lv. 3 Tokens</span>
+<p>Consume <span class="highlighted iris">Potion Flasks</span>
 (collected from Event Pass, Wishing Pool, and event pack purchases)
 to draw rewards from the event treasure vault.
 Tap the upper-right button to switch between
-the Normal Mode and the Crazy Mode.</p>
+the <a href="/assets/screenshots/event-20241006-4.jpg">Normal Mode</a> and
+the <a href="/assets/screenshots/event-20241006-5.jpg">Crazy Mode</a>.</p>
 </div>
 </details>
 
 <details>
-<summary>Wishing Pool</summary>
+<summary>Call of the Dead</summary>
 <div>
-<p>Consume Gems to make a wish at the <span class="bold">Wishing Pool</span>
+<p>Consume Gems to make a wish at the
+<a href="/assets/screenshots/event-20241006-6.jpg">Wishing Pool</a>
 and receive rewards. The first 100 wishes made daily will grant
-a <span class="highlighted iris">Lv. 3 Token</span>.</p>
+a <span class="highlighted iris">Potion Flasks</span>.</p>
 <p>Half of all gems used will be added to the grand prize,
 and one lucky Lord will be randomly selected to win the grand prize.</p>
 </div>
 </details>
   
 </section>
-  
+
 </main>
 </body>
 </html>
