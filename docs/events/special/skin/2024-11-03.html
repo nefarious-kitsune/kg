@@ -13,6 +13,8 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <link href="../../../assets/css/common.css" rel="stylesheet">
 <link href="../../../assets/css/content.css" rel="stylesheet">
+<link href="../../../assets/modal/model.css" rel="stylesheet">
+<script src="../../../assets/modal/model.js"></script>
 <link href="../../../assets/css/heroes.css" rel="stylesheet">
 <style>
   .hero-avatar {
@@ -45,6 +47,13 @@
 <main>
 <h1>Reserve Winter Grain</h1>
 
+<div id="modal-container">
+<input class="modal-close" type="image" onclick="closeModal()"
+  src="/assets/emojis/4x/cross-mark.png">
+<img id="modal-image">
+<div id="modal-caption"></div>
+</div>
+  
 <template id="cal-template">
 <table class="basic-table border-row mini-cal">
 <thead>
@@ -108,6 +117,9 @@
 
 <section id="rewards">
 <h2>Event Rewards</h2>
+
+<p>In this event, Lords have a chance to obtain the following rewards.</p>
+
 <ul class="min-list">
   <li><img src="../../../assets/emojis/4x/hero.png" class="emoji">
     <span class="hero-name green archer ssr" image-hint tabindex="0">Green</span></li>
@@ -125,21 +137,31 @@
 
 <details>
 <summary>Chest Collection</summary>
-<div><p><strong>Collect Grain Storage Bags</strong>:
-  Search for chest locations and dispatch troops to
-  collect chests. For every 4 chests collected, you can
-  receive cumulative collection rewards.
-  (Screenshot)</p></div>
+<div>
+<p>Search for chest locations and dispatch troops to
+<a href="/assets/screenshots/event-20241103-1.png" class="modal-link"
+  data-caption="Chest Collection: collect chests for items to unlock Pass rewards"
+>collect chests</a>. For every 4 chests collected, receive a
+<span class="highlighted jade">Grain Storage Bag</span>.</p>
+</div>
 </details>
 
 <details>
 <summary>Grain Storage Pass</summary>
-<div><p><strong>Consume Grain Storage Bags</strong>:
-  Grain Storage Bag items obtained from
-  Chest Collection can be used to unlock the rewards of
-  this pass. Unlocking advanced rewards grants
-  higher-quality items.
-  (Screenshot)</p></div>
+<div>
+<p>Consume <span class="highlighted jade">Grain Storage Bag</span>
+earned from Chest Collection to unlock
+<a href="/assets/screenshots/event-20241103-2.png" class="modal-link"
+  data-caption="Event Pass: unlock rewards with items collected"
+>Event Pass</a> rewards:</p>
+<ul class="compact-list">
+  <li>Free-tier: <span class="number">500</span>
+    <span class="highlighted iris">Gold Action Points</span></li>
+  <li>Paid-tier: <span class="number">1350</span>
+    <span class="highlighted iris">Gold Action Points</span> and a
+    permanent Avatar Frame</li>
+</ul>
+</div>
 </details>
 
 <details>
