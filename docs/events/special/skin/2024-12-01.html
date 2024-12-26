@@ -13,6 +13,8 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <link href="../../../assets/css/common.css" rel="stylesheet">
 <link href="../../../assets/css/content.css" rel="stylesheet">
+<link href="../../../assets/modal/model.css" rel="stylesheet">
+<script src="../../../assets/modal/model.js"></script>
 <link href="../../../assets/css/heroes.css" rel="stylesheet">
 <style>
   .hero-avatar {
@@ -45,6 +47,13 @@
 <main>
 <h1>Snowstorm Search and Rescue</h1>
 
+<div id="modal-container">
+<input class="modal-close" type="image" onclick="closeModal()"
+  src="/assets/emojis/4x/cross-mark.png">
+<img id="modal-image">
+<div id="modal-caption"></div>
+</div>
+  
 <template id="cal-template">
 <table class="basic-table border-row mini-cal">
 <thead>
@@ -123,33 +132,48 @@
 <section id="format">
 <h2>Event Format</h2>
 
-<details>
-<summary>Snowfield First Aid</summary>
-<div><p><strong>Collect Energy Stones</strong>:
-Completing quests grants additional item rewards.
-Each quest type has a daily limit that resets at UTC 00:00.
-(<a href="/assets/screenshots/event-20241201-1.png">Screenshot</a>)</p></div>
+<details><summary>Snowfield First Aid</summary>
+<div>
+<p>Collect <span class="highlighted jade">Energy Stones</span> by completing
+  <a href="/assets/screenshots/event-20241201-1.png" class="modal-link"
+  data-caption="Quest: complete quest for tokens to play the mini-game"
+>daily quests</a>:</p>
+<ul class="compact-list">
+  <li>Defeat Titan and monsters</li>
+  <li>Pass stages</li>
+  <li>Gather gold</li>
+</ul>
+</div>
 </details>
-
-<details>
-<summary>Pinball Legend</summary>
-<div><p><strong>Consume Energy Stones</strong>:
-You can launch the marbles by consuming Energy Stones and
-clicking any falling button. Your score for this round is
-based on the points from the box where the marbles land.
-The marbles may also collide with the Barricade during
-their descent, and after 5 collisions, you can earn
-extra points displayed by the Barricade.
-(<a href="/assets/screenshots/event-20241201-2.png">Screenshot</a>)</p></div>
+  
+<details><summary>Pinball Legend</summary>
+<div>
+<p>Consume <span class="highlighted jade">Energy Stones</span> to play a
+<a href="/assets/screenshots/event-20241201-2.png" class="modal-link"
+  data-caption="Mini game: eliminate tiles of same types"
+>marble game</a>.
+The score from each round is based on the points from the box where
+the marble land. The marbles may also collide with the Barricade
+during their descent, and after 5 collisions, the Lord can earn
+extra points displayed by the Barricade.</p>
+</div>
 </details>
 
 <details>
 <summary>Road to Rescue</summary>
-<div><p><strong>Pass</strong>:
-Points earned from the Pinball Legend event can be
-used to unlock pass rewards, with advanced rewards
-offering higher quality items.
-(<a href="/assets/screenshots/event-20241201-3.png">Screenshot</a>)</p></div>
+<div>
+<p>Consume game points earned from the mini-game to unlock
+<a href="/assets/screenshots/event-20241201-3.png" class="modal-link"
+  data-caption="Event Pass: unlock rewards with points from playing the mini-game"
+>Event Pass</a> rewards for
+<span class="highlighted iris">Medical Kit</span>:</p>
+<ul class="compact-list">
+  <li>Free-tier: <span class="number">500</span>
+    Medical Kit</li>
+  <li>Paid-tier: <span class="number">1350</span>
+    Medical Kit and a permanent Avatar Frame</li>
+</ul>
+</div>
 </details>
 
 <details>
