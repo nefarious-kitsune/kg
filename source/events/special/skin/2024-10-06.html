@@ -8,6 +8,8 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <link href="../../../assets/css/common.css" rel="stylesheet">
 <link href="../../../assets/css/content.css" rel="stylesheet">
+<link href="../../../assets/modal/model.css" rel="stylesheet">
+<script src="../../../assets/modal/model.js"></script>
 <link href="../../../assets/css/heroes.css" rel="stylesheet">
 <style>
   .hero-avatar {
@@ -40,6 +42,14 @@
 <main>
 <h1>{{TITLE}}</h1>
 
+
+<div id="modal-container">
+<input class="modal-close" type="image" onclick="closeModal()"
+  src="/assets/emojis/4x/cross-mark.png">
+<img id="modal-image">
+<div id="modal-caption"></div>
+</div>
+  
 <template id="cal-template">
 <fragment src="../../__temp/event-cal.md"/>
 </template>
@@ -74,7 +84,9 @@
 <details><summary>Soul Collection</summary>
 <div>
 <p>Collect <span class="highlighted jade">Stirring Rod</span> by completing
-<a href="/assets/screenshots/event-20241006-1.png">daily quests</a>:</p>
+  <a href="/assets/screenshots/event-20241006-1.png" class="modal-link"
+  data-caption="Quest: complete quest for tokens to play the mini-game"
+>daily quests</a>:</p>
 <ul class="compact-list">
   <li>Defeat Titan and monsters</li>
   <li>Pass stages</li>
@@ -86,7 +98,10 @@
 <details><summary>Magic Combo</summary>
 <div>
 <p>Consume <span class="highlighted jade">Stirring Rod</span> to play a
-tile-matching <a href="/assets/screenshots/event-20241006-2.png">mini-game</a>.
+tile-matching
+<a href="/assets/screenshots/event-20241006-2.png" class="modal-link"
+  data-caption="Mini game: eliminate tiles of same types"
+>mini-game</a>.
 Each game move requires 5 Stirring Rod.</p>
 </div>
 </details>
@@ -95,7 +110,9 @@ Each game move requires 5 Stirring Rod.</p>
 <summary>Road of the Dead</summary>
 <div>
 <p>Consume game points earned from the mini-game to unlock
-<a href="/assets/screenshots/event-20241006-3.png">Event Pass</a> rewards:</p>
+<a href="/assets/screenshots/event-20241006-3.png" class="modal-link"
+  data-caption="Event Pass: unlock rewards with points from playing the mini-game"
+>Event Pass</a> rewards:</p>
 <ul class="compact-list">
   <li>Free-tier: <span class="number">500</span><!-- (10 * 50) -->
     <span class="highlighted iris">Potion Flasks</span></li>
@@ -117,9 +134,13 @@ Each game move requires 5 Stirring Rod.</p>
 <p>Consume <span class="highlighted iris">Potion Flasks</span>
 (collected from Event Pass, Wishing Pool, and event pack purchases)
 to draw rewards from the event treasure vault.
-Tap the upper-right button to switch between
-the <a href="/assets/screenshots/event-20241006-4.png">Normal Mode</a> and
-the <a href="/assets/screenshots/event-20241006-5.png">Crazy Mode</a>.</p>
+Tap the upper-right button to switch between the
+<a href="/assets/screenshots/event-20241006-4.png" class="modal-link"
+  data-caption="Normal Mode of the event treasure vault"
+>Normal Mode</a> and the
+<a href="/assets/screenshots/event-20241006-5.png" class="modal-link"
+  data-caption="Crazy Mode of the event treasure vault"
+>Crazy Mode</a>.</p>
 </div>
 </details>
 
@@ -127,7 +148,9 @@ the <a href="/assets/screenshots/event-20241006-5.png">Crazy Mode</a>.</p>
 <summary>Call of the Dead</summary>
 <div>
 <p>Consume Gems to make a wish at the
-<a href="/assets/screenshots/event-20241006-6.png">Wishing Pool</a>
+<a href="/assets/screenshots/event-20241006-6.png" class="modal-link"
+  data-caption="Wishing Pool: consume gem for rewards and a chance for the grand prize"
+>Wishing Pool</a>
 and receive rewards. The first 100 wishes made daily will grant
 a <span class="highlighted iris">Potion Flasks</span>.</p>
 <p>Half of all gems used will be added to the grand prize,

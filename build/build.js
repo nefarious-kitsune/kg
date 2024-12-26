@@ -8,7 +8,6 @@ import './heroes/build.js';
 copyDirectory('./', 0);
 
 copyDirectory('assets/');
-copyDirectory('js/');
 copyDirectory('features/');
 copyDirectory('marches/');
 copyDirectory('units/');
