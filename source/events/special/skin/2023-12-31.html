@@ -1,0 +1,155 @@
+<html>
+<head>
+<title>Gunpowder Lab</title>
+<meta page-data
+  og-desc="Gunpowder Lab special event (2023-12-31 ~ 2024-01-08)"
+  tag-list="event"
+>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link href="../../../assets/css/common.css" rel="stylesheet">
+<link href="../../../assets/css/content.css" rel="stylesheet">
+<link href="../../../assets/modal/model.css" rel="stylesheet">
+<script src="../../../assets/modal/model.js"></script>
+<link href="../../../assets/css/heroes.css" rel="stylesheet">
+<style>
+  .hero-avatar {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+</style>
+<script src="../../../assets/js/mini-cal.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', (e) => {
+    document.getElementById('thisSeasonCalContainer').appendChild(
+      makeSeasonCal('cal-template', [2023, 12, 4], CastleEventCalendar1)
+    );
+    document.getElementById('nextSeasonCalContainer').appendChild(
+      makeSeasonCal('cal-template', [2024, 1, 1], CastleEventCalendar2)
+    );
+  });
+</script>
+</head>
+<body>
+
+<header><nav><ul class="breadcrumb">
+  <li><a href="../../../content">Home</a></li>
+  <li><a href="../../">Events</a></li>
+  <li><a href="../">Special</a></li>
+  <li><a href="./">Skin</a></li>
+  <li>{{TITLE}}</li>
+</ul></nav></header>
+
+<main>
+<h1>{{TITLE}}</h1>
+
+<div id="modal-container">
+<input class="modal-close" type="image" onclick="closeModal()"
+  src="/assets/emojis/4x/cross-mark.png">
+<img id="modal-image">
+<div id="modal-caption"></div>
+</div>
+  
+<template id="cal-template">
+<fragment src="../../__temp/event-cal.md"/>
+</template>
+  
+<section id="calendars">
+<div class="split-col-wrapper">
+<div id="thisSeasonCalContainer" class="col"></div>
+<div id="nextSeasonCalContainer" class="col"></div>
+</div>
+</section>
+
+<section id="rewards">
+<h2>Event Rewards</h2>
+
+<p>In this event, Lords have a chance to obtain the following rewards.</p>
+
+<ul class="min-list">
+  <li><img src="../../../assets/emojis/4x/hero.png" class="emoji">
+    <hero-name>Lovelace</hero-name></li>
+  <li><img src="../../../assets/emojis/4x/frame.png" class="emoji">
+    Inventor Frame</li>
+  <li><img src="../../../assets/emojis/4x/castle1.png" class="emoji">
+    Robot Rabbit Assistant Castle</li>
+  <li><img src="../../../assets/emojis/4x/castle2.png" class="emoji">
+    Robot Rabbit Doctor Castle</li>
+</ul>
+</section>
+
+<section id="format">
+<h2>Event Format</h2>
+
+<details>
+<summary>Material Claim Experiment</summary>
+<div>
+<p>Claim gift for <span class="highlighted iris">Gunpowder Pack</span>
+during <a href="/assets/screenshots/event-20231231-1.png"
+  class="modal-link" data-caption="Gift distribution"
+>gift distribution</a> times (UTC 0100, UTC 0700, UTC 1300, and
+UTC 1900). Each Lord may claim the gift twice each day.</p>
+</div>
+</details>
+
+<details>
+<summary>Collect Chest</summary>
+<div>
+<p>Search for chest locations and dispatch troops to
+<a href="/assets/screenshots/event-20231231-2.png" class="modal-link"
+  data-caption="Chest Collection: collect chests for items to unlock Pass rewards"
+>collect chests</a>. For every 4 chests collected, receive an
+experimental item.</p>
+</div>
+</details>
+
+<details>
+<summary>Gunpowder Research</summary>
+<div>
+<p>Consume experiment item earned from Collect Chest to unlock
+Event Pass rewards for
+<span class="highlighted iris">Gunpowder Packs</span>:</p>
+<ul class="compact-list">
+  <li>Free-tier: <span class="number">500</span>
+    Gunpowder Packs</li>
+  <li>Paid-tier: <span class="number">1350</span>
+    Gunpowder Packs and 1 permanent Avatar Frame</li>
+</ul>
+</div>
+</details>
+
+
+<details>
+<summary>Gunpowder Grinder</summary>
+<div>
+<p>Consume Gems to make a wish at the
+<a href="/assets/screenshots/event-20231231-6.png" class="modal-link"
+  data-caption="Wishing Pool: consume gem for rewards and a chance for the grand prize"
+>Wishing Pool</a>
+and receive rewards. The first 100 wishes made daily will grant
+a <span class="highlighted iris">Gunpowder Packs</span>.</p>
+<p>Half of all gems used will be added to the grand prize,
+and one lucky Lord will be randomly selected to win the grand prize.</p>
+</div>
+</details>
+  
+<details>
+<summary>Gunpowder Experiment</summary>
+<div>
+<p>Consume <span class="highlighted iris">Gunpowder Packs</span>
+(collected from Event Pass, gifts, Wishing Pool, and event pack purchases)
+to draw rewards from the event treasure vault.
+Tap the upper-right button to switch between the
+<a href="/assets/screenshots/event-20231231-4.png" class="modal-link"
+  data-caption="Normal Mode of the event treasure vault"
+>Normal Mode</a> and the
+<a href="/assets/screenshots/event-20231231-5.png" class="modal-link"
+  data-caption="Crazy Mode of the event treasure vault"
+>Crazy Mode</a>.</p>
+</div>
+</details>
+
+</section>
+
+</main>
+</body>
+</html>
