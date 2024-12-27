@@ -9,6 +9,11 @@
 <link href="../../../assets/css/common.css" rel="stylesheet">
 <link href="../../../assets/css/content.css" rel="stylesheet">
 <style>
+  .event-section ~ .event-section {
+    margin-top: 1rem;
+    border-top: 0.1rem solid;
+    border-color: light-dark(var(--gray-300), var(--gray-500));
+  }
   .tab-list-container { column-width: 18rem; }
   .tab-list { margin-top: 0; margin-block-start: 0; }
 </style>
@@ -27,16 +32,56 @@
 <h1>{{TITLE}}</h1>
 
 <section>
-<ul class="min-list">
-<li><a href="./qas">Questions &amp; Answers</a></li>
-<li>Winter Surprise
-  (2024-12-29 ~ 2025-01-06)</li>
-<li><a href="./2024-11-03">Snowstorm Search and Rescue</a>
-  (2024-12-1 ~ 2024-12-08)</li>
-<li><a href="./2024-11-03">Reserve Winter Grain</a>
-  (2024-11-3 ~ 2024-11-09)</li>
-</ul>
+<p><a href="./qas">Questions &amp; answers</a> on
+  Castle-Skin special events</p>
+</section>
 
+<section>
+<h2>Events</h2>
+
+<section class="event-section">
+<h4>Winter Surprise</h4>
+<p>(2024-12-29 ~ 2025-01-05)</p>
+<div class="tab-list-container">
+<ul class="compact-list tab-list">
+  <li>Gingerbread Adventure (daily quests)</li>
+  <li>Gift Selection (mini game)</li>
+  <li>Winter Points Pass (event pass)</li>
+  <li>Surprise Spin and Win (treasure vault)</li>
+  <li>Christmas Hearth (wishing pool)</li>
+</ul>
+</div>
+</section>
+
+<section class="event-section">
+<h4><a href="./2024-11-03">Snowstorm Search and Rescue</a></h4>
+<p>(2024-12-1 ~ 2024-12-08)</p>
+<div class="tab-list-container">
+<ul class="compact-list tab-list">
+  <li>Snowfield First Aid (daily quests)</li>
+  <li>Pinball Legend (mini game)</li>
+  <li>Road to Rescue (event pass)</li>
+  <li>Wheel of Fate (treasure vault)</li>
+  <li>Wishing Spring (wishing pool)</li>
+</ul>
+</div>
+</section>
+
+<section class="event-section">
+<h4><a href="./2024-11-03">Reserve Winter Grain</a></h4>
+<p>(2024-11-3 ~ 2024-11-09)</p>
+<div class="tab-list-container">
+<ul class="compact-list tab-list">
+  <li>Chest Collection (chest collection)</li>
+  <li>Grain Storage Pass (event pass)</li>
+  <li>Winter Grain Daily Record (5-day login quests)</li>
+  <li>Lucky Wheel (treasure vault)</li>
+  <li>Winter Blessing Pool (wishing pool)</li>
+</ul>
+</div>
+</section>
+
+<section class="event-section">
 <h4><a href="./2024-10-06">Lich's Laboratory</a></h4>
 <p>(2024-10-06 ~ 2024-10-13)</p>
 <div class="tab-list-container">
@@ -48,7 +93,9 @@
   <li>Call of the Dead (wishing pool)</li>
 </ul>
 </div>
+</section>
 
+<section class="event-section">
 <h4><a href="./2023-12-31">Gunpowder Lab</a></h4>
 <p>(2023-12-31 ~ 2024-01-08)</p>
 <div class="tab-list-container">
@@ -60,6 +107,7 @@
   <li>Gunpowder Experiment (treasure vault)</li>
 </ul>
 </div>
+</section>
 
 </section>
 
