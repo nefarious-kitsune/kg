@@ -1,40 +1,30 @@
-Blueprint	2	T2 Cerulean Dragon Armor
-Blueprint	3	T3 Demonic Dragon Armor
-Blueprint	4	T4 Immortal Dragon Armor
-Blueprint	5	T5 Legendary Dragon Armor
-Blueprint	6	T6 Balrog Dragon Armor
-Blueprint	7	T7 Dark Dragon Armor
-Blueprint	8	T8 Gilded Dragon Armor
-Blueprint	9	T9 IceFlame Dragon Armor
-Blueprint	10	T10 Ziwei Dragon Armor
-Magic Dust	2	T2 Magic Gem
-Magic Dust	3	T3 Magic Gem
-Magic Dust	4	T4 Magic Gem
-Magic Dust	5	T5 Magic Gem
-Magic Dust	6	T6 Magic Gem
-Magic Dust	7	T7 Magic Gem
-Magic Dust	8	T8 Magic Gem
-Magic Dust	9	T9 Magic Gem
-Magic Dust	10	T10 Magic Gem
-Forge Blueprint	2	T2 Dark-Iron Weapon
-Forge Blueprint	3	T3 Excellent Weapon
-Forge Blueprint	4	T4 Epic Weapon
-Forge Blueprint	5	T5 Legendary Weapon
-Forge Blueprint	6	T6 Peacock Plume Weapon
-Forge Blueprint	7	T7 Luxurious Weapon
-Forge Blueprint	8	T8 King's Weapon
-Forge Blueprint	9	T9 Thunder Weapon
-Forge Blueprint	10	T10 Sacred Light Weapon
-Magic Book	1	T1 Treant Guard
-Magic Book	2	T2 Armored Shark
-Magic Book	3	T3 Rainbow Pony
-Magic Book	4	T4 Immortal Phoenix
-Magic Book	5	T5 Imperial Sword
-Magic Book	6	T6 Mucklu
-Magic Book	7	T7 Pumpkin Catapult
-Magic Book	8	T8 Crimson Dragon
-Magic Book	9	T9 Vailian Spirit Armor
-Magic Dust	11	T11 Magic Gem
-Forge Blueprint	11	T11  Weapon
-Blueprint	11	T11  Dragon Armor
-Magic Book	10	T10 Summon Altar Monster
+Blueprint	2	Cerulean Dragon Armor
+Blueprint	3	Demonic Dragon Armor
+Blueprint	4	Immortal Dragon Armor
+Blueprint	5	Legendary Dragon Armor
+Blueprint	6	Balrog Dragon Armor
+Blueprint	7	Dark Dragon Armor
+Blueprint	8	Gilded Dragon Armor
+Blueprint	9	IceFlame Dragon Armor
+Blueprint	10	Ziwei Dragon Armor
+Forge Blueprint	2	Dark-Iron Weapon
+Forge Blueprint	3	Excellent Weapon
+Forge Blueprint	4	Epic Weapon
+Forge Blueprint	5	Legendary Weapon
+Forge Blueprint	6	Peacock Plume Weapon
+Forge Blueprint	7	Luxurious Weapon
+Forge Blueprint	8	King's Weapon
+Forge Blueprint	9	Thunder Weapon
+Forge Blueprint	10	Sacred Light Weapon
+Magic Book	1	Treant Guard 
+Magic Book	2	Armored Shark 
+Magic Book	3	Rainbow Pony 
+Magic Book	4	Immortal Phoenix 
+Magic Book	5	Imperial Sword 
+Magic Book	6	Mucklu 
+Magic Book	7	Pumpkin Catapult 
+Magic Book	8	Crimson Dragon 
+Magic Book	9	Vailian Spirit Armor 
+Magic Dust	11	Magic Gem 
+Magic Book	10	Summon Altar Monster 
+Forge Blueprint	11	Eternal Weapon

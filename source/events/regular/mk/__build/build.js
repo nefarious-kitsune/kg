@@ -14,6 +14,20 @@ rewardsData.shift();
 
 const namesLookup = [];
 
+const rewardType2Name = {
+  'Armor': 'Blueprint',
+  'Magic': 'Magic Dust',
+  'Weapon': 'Forge Blueprint',
+  'Summon': 'Magic Book',
+};
+
+const rewardName2Type = {
+  'Blueprint': 'Armor',
+  'Magic Dust': 'Magic Stone',
+  'Forge Blueprint': 'Weapon',
+  'Magic Book': 'Summon Monster',
+};
+
 namesData.forEach((row) => {
   const [
     RewardName,
@@ -26,6 +40,25 @@ namesData.forEach((row) => {
     desc: RewardDesc,
   });
 });
+
+/**
+ * Find reward desc
+ * @param {string} rewardName
+ * @param {number} rewardTier
+ * @return {string}
+ */
+function findRewardDesc(rewardName, rewardTier) {
+  const namesData = namesLookup.find((data) => (
+    (data.name === rewardName) && (data.tier === rewardTier)
+  ));
+  if (namesData) return namesData.desc;
+
+  if (rewardName !== 'Magic Dust') {
+    console.log(`reward name not found (T${rewardTier} ${rewardName})`);
+  }
+
+  return 'T' + rewardTier + ' ' + rewardName2Type[rewardName];
+}
 
 const sections = [];
 
@@ -41,26 +74,13 @@ rewardsData.forEach((row) => {
 
   let content = sectionTemplate;
 
-  let RewardName;
   const RewardClass = RewardType.toLowerCase();
   // const historical = Historical === 'TRUE';
   const predicted = Predicted === 'TRUE';
   let rewardTier = parseInt(RewardTier);
+  let rewardDesc;
 
-  switch (RewardClass) {
-    case 'armor':
-      RewardName = 'Blueprint';
-      break;
-    case 'magic':
-      RewardName = 'Magic Dust';
-      break;
-    case 'weapon':
-      RewardName = 'Forge Blueprint';
-      break;
-    case 'summon':
-      RewardName = 'Magic Book';
-      break;
-  }
+  const RewardName = rewardType2Name[RewardType];
 
   content = content
       .replace('{{SEASON NAME}}', SeasonName)
@@ -74,31 +94,24 @@ rewardsData.forEach((row) => {
     content = content.replaceAll('{{VERIFIED}}', 'verified');
   }
 
-  let namesData = namesLookup.find((data) => (
-    (data.name === RewardName) && (data.tier === rewardTier)
-  ));
-
+  rewardDesc = findRewardDesc(RewardName, rewardTier);
   content = content
       .replace('{{REWARD 1}}', 'T' + rewardTier + ' ' + RewardName)
-      .replace('{{REWARD 1 DESC}}', namesData.desc)
+      .replace('{{REWARD 1 DESC}}', rewardDesc)
   ;
 
   rewardTier--;
-  namesData = namesLookup.find((data) => (
-    (data.name === RewardName) && (data.tier === rewardTier)
-  ));
+  rewardDesc = findRewardDesc(RewardName, rewardTier);
   content = content
       .replace('{{REWARD 2}}', 'T' + rewardTier + ' ' + RewardName)
-      .replace('{{REWARD 2 DESC}}', namesData.desc)
+      .replace('{{REWARD 2 DESC}}', rewardDesc)
   ;
 
   rewardTier -= 2;
-  namesData = namesLookup.find((data) => (
-    (data.name === RewardName) && (data.tier === rewardTier)
-  ));
+  rewardDesc = findRewardDesc(RewardName, rewardTier);
   content = content
       .replace('{{REWARD 3}}', 'T' + rewardTier + ' ' + RewardName)
-      .replace('{{REWARD 3 DESC}}', namesData.desc)
+      .replace('{{REWARD 3 DESC}}', rewardDesc)
   ;
 
   sections.push(content);
@@ -108,4 +121,3 @@ writeFileSync(
     '../__templates/--all-seasons.md',
     sections.join('\n'),
 );
-

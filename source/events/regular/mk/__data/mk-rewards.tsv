@@ -13,7 +13,7 @@ Season 12	TRUE	FALSE	Armor	7
 Season 13	TRUE	FALSE	Armor	7
 Season 14	TRUE	FALSE	Magic	7
 Season 15	TRUE	FALSE	Weapon	7
-Season 16	FALSE	TRUE	Summon	7
+Season 16	TRUE	FALSE	Summon	7
 Season 17	FALSE	TRUE	Weapon	7
 Season 18	FALSE	TRUE	Armor	8
 Season 19	FALSE	TRUE	Armor	8
@@ -36,7 +36,7 @@ Season 35	TRUE	FALSE	Magic	10
 Season 36	TRUE	FALSE	Armor	10
 Season 37	TRUE	FALSE	Armor	10
 Season 38	TRUE	FALSE	Magic	11
-Season 39	FALSE	TRUE	Weapon	11
+Season 39	TRUE	FALSE	Weapon	11
 Season 40	FALSE	TRUE	Summon	10
 Season 41	FALSE	TRUE	Armor	11
 Season 42	FALSE	TRUE	Armor	11
