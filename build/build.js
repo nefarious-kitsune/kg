@@ -19,7 +19,6 @@ copyDirectory('magic-lab/');
 import './blacksmith/build.js';
 
 copyDirectory('city/');
-copyDirectory('bounty-hall/');
 copyDirectory('features/');
 copyDirectory('territories/');
 
