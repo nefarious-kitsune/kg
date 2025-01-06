@@ -1562,6 +1562,10 @@ table.upgrade-table { /* border on all cells */
     font-size: 0.9em;
     text-align: right;
   }
+  .unverified td,
+  .unverified th {
+    font-style: italic;
+  }
 }
 
 @media (prefers-color-scheme: dark) {
@@ -1571,6 +1575,13 @@ table.upgrade-table { /* border on all cells */
     .sales1999 { color: var(--blue-300); }
     .sales999 { color: var(--jade-300); }
   }
+  .price-table .unverified {
+    td { color: var(--gray-500); }
+    .sales9999 { color: var(--gold-700); }
+    .sales4999 { color: var(--iris-700); }
+    .sales1999 { color: var(--blue-700); }
+    .sales999 { color: var(--jade-700); }
+  }
 }
 
 @media (prefers-color-scheme: light) {
@@ -1579,7 +1590,14 @@ table.upgrade-table { /* border on all cells */
     .sales4999 { background-color: var(--iris-100); }
     .sales1999 { background-color: var(--blue-100); }
     .sales999 { background-color: var(--jade-100); }
-  }  
+  }
+  .price-table .unverified {
+    color: var(--gray-300);
+    .sales9999 { color: var(--gold-300); }
+    .sales4999 { color: var(--iris-300); }
+    .sales1999 { color: var(--blue-300); }
+    .sales999 { color: var(--jade-300); }
+  }
 }
 
 

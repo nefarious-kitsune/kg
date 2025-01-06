@@ -47,21 +47,22 @@ function findRewardDesc(rewardName, rewardTier) {
 }
 
 /**
- * Find reward desc
+ * Build price table
  * @param {number} tableNum
+ * @param {number} rowStart - fist season row
+ * @param {number} rowEnd - last season row
+ * @param {number} tierColStart - fist tier column
  */
-function buildPriceTable(tableNum) {
+function buildPriceTable(tableNum, rowStart, rowEnd, tierColStart) {
   const priceData = readFileSync(
-      `../__data/price-table-${tableNum}.tsv`,
+      '../__data/price-table-1.tsv',
       {encoding: 'utf8'},
   ).split('\n');
 
-  const headerRow = priceData.shift();
+  const headerRow = priceData[0];
   const headerCells = headerRow.split('\t');
-  headerCells.shift();
-  headerCells.shift();
-  headerCells.shift();
-  const tiers = headerCells.map((txt) => parseInt(txt.slice(1)));
+  const tierCells = headerCells.slice(tierColStart, tierColStart+5);
+  const tiers = tierCells.map((txt) => parseInt(txt.slice(1)));
 
   const tableTemplate = readFileSync(
       '../__templates/price-table.md',
@@ -103,24 +104,20 @@ function buildPriceTable(tableNum) {
     }
   };
 
-  priceData.forEach((row) => {
-    const [
-      SeasonName,
-      // eslint-disable-next-line no-unused-vars
-      Historical,
-      Predicted,
-      TierAPrice,
-      TierBPrice,
-      TierCPrice,
-      TierDPrice,
-      TierEPrice,
-    ] = row.split('\t');
-
-    // const historical = Historical === 'TRUE';
-    const predicted = Predicted === 'TRUE';
+  for (let rowIdx = rowStart; rowIdx <= rowEnd; rowIdx++) {
+    const row = priceData[rowIdx];
+    const cells = row.split('\t');
+    const SeasonName = cells[0];
+    // const Historical = row[1];
+    const Predicted = cells[2] === 'TRUE';
+    const TierAPrice = cells[tierColStart];
+    const TierBPrice = cells[tierColStart+2];
+    const TierCPrice = cells[tierColStart+3];
+    const TierDPrice = cells[tierColStart+4];
+    const TierEPrice = cells[tierColStart+5];
 
     const rowOutput = rowTemplate
-        .replace('{{VERIFIED}}', predicted?'unverified':'verified')
+        .replace('{{VERIFIED}}', Predicted?'unverified':'verified')
         .replace('{{SEASON NAME}}', SeasonName)
         .replace('{{PRICE A}}', TierAPrice)
         .replace('{{PRICE A CLASS}}', getTierPriceClass(TierAPrice))
@@ -135,7 +132,7 @@ function buildPriceTable(tableNum) {
     ;
 
     sections.push(rowOutput);
-  });
+  };
 
   tableOutput = tableOutput
       .replace('{{BODY}}', sections.join('\n'))
@@ -147,4 +144,6 @@ function buildPriceTable(tableNum) {
   );
 }
 
-buildPriceTable(1);
+buildPriceTable(1, 1, 16, 3);
+buildPriceTable(2, 17, 31, 5);
+buildPriceTable(3, 32, 46, 6);
