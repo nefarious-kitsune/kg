@@ -9,10 +9,28 @@
     border: 0.11rem solid var(--gray-500);
   }
 
-  thead th.curr-season {
+  thead th {
     background: var(--gray-100);
     color: var(--gray-900);
   }
+  thead th.prev-season {
+    color: var(--gray-500);
+  }
+  tbody td.prev-season {
+    color: var(--gray-500);
+  }
+}
+
+.season-tag {
+  display: inline-block;
+  padding: 0.1rem;
+  vertical-align: middle;
+  background-color: var(--gray-100);
+  color: var(--gray-900);
+}
+
+.prev-season .season-tag {
+  color: var(--gray-500);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -33,20 +51,20 @@
       background: var(--gray-900);
       color: var(--gray-300);
     }
+  }
+
+  .season-tag {
+    display: inline-block;
+    padding: 0.1rem;
+    background-color: var(--gray-500);
+    color: var(--gray-50);
+    vertical-align: middle;
+  }
+  
+  .prev-season .season-tag {
+    background-color: var(--gray-700);
+    color: var(--gray-100);
   }  
-}
-
-.season-tag {
-  display: inline-block;
-  padding: 0.1rem;
-  background-color: var(--gray-500);
-  color: var(--gray-50);
-  vertical-align: middle;
-}
-
-.prev-season .season-tag {
-  background-color: var(--gray-700);
-  color: var(--gray-100);
 }
 
 @media screen and (min-width: 300px) {
