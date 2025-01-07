@@ -560,14 +560,49 @@ li, div.li, span.li {
 /* ---------------- Notes and Alerts ---------------- */
 
 div.info-box {
+  position: relative;
   border-radius: 0.4rem;
-  padding: 0.4rem;
+  margin-block-end: 0.8rem;
+  padding: 0.4rem 0.4rem 0.4rem 3rem;
+  min-height: 2rem;
 }
 
-div.info-box.alert {
-  background-color: light-dark(var(--gold-100), var(--red-700));
-  color: light-dark(var(--red-700), var(--gold-300));
+div.info-box:before{
+  content: "";
+  display: block;
+  position: absolute;
+  width: 1.8rem;
+  height: 1.8rem;
+  left: 0.4rem;
+  top: 0.4rem;
+  background-image: url('../emojis/4x/info.png');
+  background-size: 1.8rem 1.8rem;
+  background-repeat: no-repeat;
 }
+
+
+div.info-box.alert:before{
+  background-image: url('../emojis/4x/alert.png');
+}
+
+@media (prefers-color-scheme: dark) {
+  div.info-box {
+    background-color: var(--gray-700);
+    border: 0.1rem solid var(--gold-500);
+  }
+  div.info-box.alert{
+    border: 0.1rem solid var(--red-500);
+  }
+}
+@media (prefers-color-scheme: light) {
+  div.info-box {
+    background-color: var(--gold-100);
+  }
+  div.info-box.alert{
+    background-color: var(--red-100);
+  }
+}
+
 
 /* ------------------- Light Theme ------------------- */
 
