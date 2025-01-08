@@ -1243,12 +1243,12 @@ header:first-child nav {
   }
 }
 
-@media screen and ( width >= 750px) {
+@media screen and ( width >= 680px) {
   nav.left-right {
     .left-arrow a {
       position: fixed;
       z-index: 100;
-      left: -5px;
+      left: -1.4rem;
       top: 45%;
       border-radius: 45% / 0 50% 50% 0;
     }
@@ -1256,7 +1256,7 @@ header:first-child nav {
     .right-arrow a {
       position: fixed;
       z-index: 100;
-      right: -5px;
+      right: -1.4rem;
       top: 45%;
       border-radius: 45% / 50% 0 0 50%; 
     }
@@ -1269,14 +1269,37 @@ header:first-child nav {
     a {
       padding: 3rem 1rem;
       background: rgba(0, 0, 0, 0.65);
-      color: var(--miku-light-gold);
+      color: var(--gold-500);
       text-decoration: none;
       font-size: 1.6rem;
     }
   }
+  
+  .left-arrow a,
+  .right-arrow a,
+  .left-arrow a:hover,
+  .left-arrow a:focus,
+  .right-arrow a:hover,
+  .right-arrow a:focus {
+    -webkit-transition: .2s ease-in;
+    -moz-transition: .2s ease-in;
+    -o-transition: .2s ease-in;
+    transition: .2s ease-in;
+  }
 }
 
-@media screen and (width < 750px) {
+@media screen and ( width >= 900px) {
+  nav.left-right {
+    .left-arrow a {
+      left: -0.8rem;
+    }
+    .right-arrow a {
+      right: -0.8rem;
+    }
+  }
+}
+
+@media screen and (width < 680px) {
   nav.left-right {
     margin: 0.5rem 0;
     height: 2rem;
@@ -1303,27 +1326,14 @@ header:first-child nav {
 }
 
 nav.left-right {
-  .left-arrow a,
-  .right-arrow a {
-    -webkit-transition: .2s ease-in;
-    -moz-transition: .2s ease-in;
-    -o-transition: .2s ease-in;
-    transition: .2s ease-in;
-  }
-
   .left-arrow a:hover,
   .left-arrow a:focus,
   .right-arrow a:hover,
   .right-arrow a:focus {
-    -webkit-transition: .2s ease-in;
-    -moz-transition: .2s ease-in;
-    -o-transition: .2s ease-in;
-    transition: .2s ease-in;
-    background: var(--miku-dark-red);
-    color: white;
+    background: var(--red-700);
+    color: var(--gold-100);
   }
 }
-
 
 /* ------------------ Basic Format ------------------ */
 
