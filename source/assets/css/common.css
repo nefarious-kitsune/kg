@@ -343,7 +343,7 @@ nav.quick-access-container {
 
 @media screen and (min-width: 0px) {
   div.quick-access-container,
-  menu.quick-access-container {
+  nav.quick-access-container {
     a.current { display: none; }
   }
 }
@@ -645,7 +645,8 @@ body.landing .index-wrapper section {
   border: 0.1rem solid var(--gray-300);
 }
 
-div.quick-access-container {
+div.quick-access-container,
+nav.quick-access-container {
   background: linear-gradient(
     to bottom,
     rgb(255, 255, 255) 0%,
@@ -826,8 +827,8 @@ details {
     background-color: var(--gray-700);
   }
   
-
-  div.quick-access-container {
+  div.quick-access-container,
+  nav.quick-access-container {
     background: linear-gradient(
       to bottom,
       rgb(18, 19, 20) 0%,
