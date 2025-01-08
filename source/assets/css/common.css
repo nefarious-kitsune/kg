@@ -279,7 +279,8 @@ html.minimalist {
 
 /* --------- Sections & Section Navigation  --------- */
 
-div.quick-access-container {
+div.quick-access-container,
+nav.quick-access-container {
   position: sticky;
   top: 0;
 
@@ -341,7 +342,8 @@ div.quick-access-container {
 }
 
 @media screen and (min-width: 0px) {
-  div.quick-access-container {
+  div.quick-access-container,
+  menu.quick-access-container {
     a.current { display: none; }
   }
 }
@@ -676,7 +678,8 @@ a:focus:link, a:focus:visited {
   background: var(--gold-100);
 }
 
-ul.breadcrumb {
+ul.breadcrumb,
+menu.breadcrumb {
   li { color: var(--gray-500); }
   li+li:before { color: var(--gray-500); }
 }
@@ -863,7 +866,8 @@ details {
     li+li:before { color: var(--red); }
   }
 
-  .quick-access-container menu {
+  div.quick-access-container menu,
+  nav.quick-access-container menu {
     background-color: var(--gray-700);
 
     li {
