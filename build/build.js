@@ -14,9 +14,9 @@ copyDirectory('units/');
 
 copyDirectory('heroes/');
 
-import './magic-lab/build.js';
+// import './magic-lab/build.js';
 copyDirectory('magic-lab/');
-import './blacksmith/build.js';
+// import './blacksmith/build.js';
 
 copyDirectory('city/');
 copyDirectory('features/');
