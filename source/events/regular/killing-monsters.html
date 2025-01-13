@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>Killing Monsters</title>
+<title>Kill Monsters &amp; Join Rally</title>
 <meta page-data
   og-desc="Challenge monsters and be rewarded with Advanced Chest and Light Regent"
   tag-list="event"
@@ -12,10 +12,18 @@
 <script>
   const KMCalendar = {
     'event-1': [
-      1, 2, // MON–TUE
-      12, 13, // FRI, SAT
-      15, 16, // MON–TUE
-      24, 25, // WED–THU
+      1, 2,   // W1 Mon–Tue Kill Monsters
+      10, 11, // W2 Wed-Thu Kill Monsters
+      12,     // W2 Fri     Kill Monsters
+      13,     // W2 Sat     Kill Monsters
+      15, 16, // W3 Mon–Tue Kill Monsters
+      24, 25, // W4 Wed-Thu Kill Monsters
+    ],
+    'event-2': [
+      3, 4,   // W2 Wed-Thu Join Rally
+      8, 9,   // W2 Mon-Tue Join Rally
+      17, 18, // W3 Wed-Thu Join Rally
+      22, 23, // W4 Mon–Tue Join Rally
     ],
   };
   document.addEventListener('DOMContentLoaded', (e) => {
@@ -49,28 +57,71 @@
 </div>
 </div>
 
-<p><q>Killing Monsters</q> is a minor event that happen several times during
+<p><q>Killing Monsters</q> and  <q>Join Rally</q>
+  are minor events that happen several times during
   a Season:</p>
-<ul class="compact-list">
-  <li>MON–TUE of Week 1</li><!-- Killing Monsters -->
-  <!-- <li>WED–THU of Week 1</li> --><!-- Join Rallies -->
-  <!-- <li>MON–TUE of Week 2</li> --><!-- Join Rallies -->
-  <li>FRI of Week 2</li><!-- Killing Monsters -->
-  <li>SAT of Week 2</li><!-- Killing Monsters -->
-  <li>MON–TUE of Week 3</li><!-- Killing Monsters -->
-  <!-- <li>Wed&ndash;Thur of Week 3</li> --><!-- Join Rallies -->
-  <li>WED–THU of Week 4</li><!-- Killing Monsters -->
-</ul>
-</section>
 
-<section id="rewards">
-<h2>Rewards</h2>
-<ul class="compact-list">
-  <li>Light Regent</li>
-  <li>Gold</li>
-  <li>Stone</li>
-  <li><a href="../../resources/chests">Advanced Chest</a></li>
-</ul>
+<table class="basic-table border-all">
+<thead>
+<tr>
+  <th>Time</th>
+  <th>Event</th>
+  <th>Rewards</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>Week 1 Mon-Tue</td>
+  <td>Kill Monsters</td>
+  <td>Light Regent, Gold, Stone, <a href="../../resources/chests#normal">Normal Chests</a></td>
+</tr>
+<tr>
+  <td>Week 1 Wed-Thu</td>
+  <td>Join Rally</td>
+  <td>Light Regent, Gold, Stone, <a href="../../resources/chests#advanced">Advanced Chests</a></td>
+</tr>
+<tr>
+  <td>Week 2 Mon-Tue</td>
+  <td>Join Rally</td>
+  <td>Light Regent, Gold, Stone, Normal Chests</td>
+</tr>
+<tr>
+  <td>Week 2 Wed-Thu</td>
+  <td>Kill Monsters</td>
+  <td>Light Regent, Gold, Stone, Advanced Chests</td>
+</tr>
+<tr>
+  <td>Week 2 Fri</td>
+  <td>Kill Monsters</td>
+  <td>Light Regent, Gold, Stone, Advanced Chests</td>
+</tr>
+<tr>
+  <td>Week 2 Sat</td>
+  <td>Kill Monsters</td>
+  <td>Light Regent, Gold, Stone, Advanced Chests</td>
+</tr>
+<tr>
+  <td>Week 3 Mon-Tue</td>
+  <td>Kill Monsters</td>
+  <td>Light Regent, Gold, Stone, Normal Chests</td>
+</tr>
+<tr>
+  <td>Week 3 Wed-Thu</td>
+  <td>Join Rally</td>
+  <td>Light Regent, Gold, Stone, Normal Chests</td>
+</tr>
+<tr>
+  <td>Week 4 Mon-Tue</td>
+  <td>Join Rally</td>
+  <td>Light Regent, Gold, Stone, Normal Chests</td>
+</tr>
+<tr>
+  <td>Week 4 Wed-Thu</td>
+  <td>Kill Monsters</td>
+  <td>Light Regent, Gold, Stone, Advanced Chests</td>
+</tr>
+</tbody>
+</table>
 </section>
   
 </main>
