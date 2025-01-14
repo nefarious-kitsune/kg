@@ -27,7 +27,7 @@ function buildUpgradeTable() {
 
   const rowTemplate = readFileSync(
       resolve(TemplatePath, './upgrade-row.md'),
-      {encoding: 'utf8'}
+      {encoding: 'utf8'},
   );
 
   database['upgrade-data'].forEach((entry) => {
