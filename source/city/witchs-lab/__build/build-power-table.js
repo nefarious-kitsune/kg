@@ -30,7 +30,7 @@ function buildUpgradeTable() {
 
   database['power-data'].forEach((entry, idx) => {
     const marker = entry.verified?'':unverifiedMarker;
-    let table = (idx < 1000)?table1:table2;
+    const table = (idx < 1000)?table1:table2;
 
     table.push(
         rowTemplate
