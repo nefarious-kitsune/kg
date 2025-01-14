@@ -1580,7 +1580,7 @@ table.upgrade-table { /* border on all cells */
 
   td, th {
     border-style: solid;
-    border-color: var(--miku-dark-red);
+    border-color: var(--gray-500);
   }
   .from-level, .to-level { width: 4.8rem; }
   .chevron { width: 1.4rem; }
@@ -1605,6 +1605,25 @@ table.upgrade-table { /* border on all cells */
   .cost {
     font-family: "Fira Mono", monospace;
   }
+}
+
+table.power-table { /* border on all cells */
+  border-collapse: collapse;
+
+  td, th { border: 0.11rem solid var(--gray-500); }
+  th.from-level { width: 4.8rem; }
+  th.power { width: 8rem; }
+  th { text-align: center; }
+
+  td.power { text-align: right; }
+
+  span.level {
+    display: inline-block;
+    width: 3rem;
+    text-align: right;
+  }
+  span.level,
+  span.power { font-family: "Fira Mono", monospace; }
 }
 
 .price-table {
