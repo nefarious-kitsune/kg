@@ -1,5 +1,5 @@
 {
-  "title": "Witch's Lab Upgrade Cost and Power",
+  "title": "Witch's Lab Light Magic Upgrade Cost and Power",
   "power-data": [
     {
       "level": 0,
@@ -2403,248 +2403,248 @@
     },
     {
       "level": 480,
-      "power": 108969000,
-      "verified": false
+      "power": 108563000,
+      "verified": true
     },
     {
       "level": 481,
-      "power": 109375000,
-      "verified": false
+      "power": 108969000,
+      "verified": true
     },
     {
       "level": 482,
-      "power": 109781000,
-      "verified": false
+      "power": 109375000,
+      "verified": true
     },
     {
       "level": 483,
-      "power": 110187000,
-      "verified": false
+      "power": 109781000,
+      "verified": true
     },
     {
       "level": 484,
-      "power": 110593000,
-      "verified": false
+      "power": 110187000,
+      "verified": true
     },
     {
       "level": 485,
-      "power": 110999000,
-      "verified": false
+      "power": 110593000,
+      "verified": true
     },
     {
       "level": 486,
-      "power": 111405000,
-      "verified": false
+      "power": 110999000,
+      "verified": true
     },
     {
       "level": 487,
-      "power": 111811000,
-      "verified": false
+      "power": 111405000,
+      "verified": true
     },
     {
       "level": 488,
-      "power": 112224000,
-      "verified": false
+      "power": 111811000,
+      "verified": true
     },
     {
       "level": 489,
-      "power": 112637000,
-      "verified": false
+      "power": 112224000,
+      "verified": true
     },
     {
       "level": 490,
-      "power": 113050000,
-      "verified": false
+      "power": 112637000,
+      "verified": true
     },
     {
       "level": 491,
-      "power": 113463000,
-      "verified": false
+      "power": 113050000,
+      "verified": true
     },
     {
       "level": 492,
-      "power": 113876000,
-      "verified": false
+      "power": 113463000,
+      "verified": true
     },
     {
       "level": 493,
-      "power": 114289000,
-      "verified": false
+      "power": 113876000,
+      "verified": true
     },
     {
       "level": 494,
-      "power": 114702000,
-      "verified": false
+      "power": 114289000,
+      "verified": true
     },
     {
       "level": 495,
-      "power": 115115000,
-      "verified": false
+      "power": 114702000,
+      "verified": true
     },
     {
       "level": 496,
-      "power": 115528000,
-      "verified": false
+      "power": 115115000,
+      "verified": true
     },
     {
       "level": 497,
-      "power": 115941000,
-      "verified": false
+      "power": 115528000,
+      "verified": true
     },
     {
       "level": 498,
-      "power": 116354000,
-      "verified": false
+      "power": 115941000,
+      "verified": true
     },
     {
       "level": 499,
-      "power": 116774000,
-      "verified": false
+      "power": 116354000,
+      "verified": true
     },
     {
       "level": 500,
-      "power": 117194000,
-      "verified": false
+      "power": 116774000,
+      "verified": true
     },
     {
       "level": 501,
-      "power": 117614000,
-      "verified": false
+      "power": 117194000,
+      "verified": true
     },
     {
       "level": 502,
-      "power": 118034000,
-      "verified": false
+      "power": 117614000,
+      "verified": true
     },
     {
       "level": 503,
-      "power": 118454000,
-      "verified": false
+      "power": 118034000,
+      "verified": true
     },
     {
       "level": 504,
-      "power": 118874000,
-      "verified": false
+      "power": 118454000,
+      "verified": true
     },
     {
       "level": 505,
-      "power": 119294000,
-      "verified": false
+      "power": 118874000,
+      "verified": true
     },
     {
       "level": 506,
-      "power": 119714000,
-      "verified": false
+      "power": 119294000,
+      "verified": true
     },
     {
       "level": 507,
-      "power": 120134000,
-      "verified": false
+      "power": 119714000,
+      "verified": true
     },
     {
       "level": 508,
-      "power": 120554000,
-      "verified": false
+      "power": 120134000,
+      "verified": true
     },
     {
       "level": 509,
-      "power": 120974000,
-      "verified": false
+      "power": 120554000,
+      "verified": true
     },
     {
       "level": 510,
-      "power": 121401000,
-      "verified": false
+      "power": 120974000,
+      "verified": true
     },
     {
       "level": 511,
-      "power": 121828000,
-      "verified": false
+      "power": 121401000,
+      "verified": true
     },
     {
       "level": 512,
-      "power": 122255000,
-      "verified": false
+      "power": 121828000,
+      "verified": true
     },
     {
       "level": 513,
-      "power": 122682000,
-      "verified": false
+      "power": 122255000,
+      "verified": true
     },
     {
       "level": 514,
-      "power": 123109000,
-      "verified": false
+      "power": 122682000,
+      "verified": true
     },
     {
       "level": 515,
-      "power": 123536000,
-      "verified": false
+      "power": 123109000,
+      "verified": true
     },
     {
       "level": 516,
-      "power": 123963000,
-      "verified": false
+      "power": 123536000,
+      "verified": true
     },
     {
       "level": 517,
-      "power": 124390000,
-      "verified": false
+      "power": 123963000,
+      "verified": true
     },
     {
       "level": 518,
-      "power": 124817000,
-      "verified": false
+      "power": 124390000,
+      "verified": true
     },
     {
       "level": 519,
-      "power": 125244000,
-      "verified": false
+      "power": 124817000,
+      "verified": true
     },
     {
       "level": 520,
-      "power": 125678000,
-      "verified": false
+      "power": 125244000,
+      "verified": true
     },
     {
       "level": 521,
-      "power": 126112000,
-      "verified": false
+      "power": 125678000,
+      "verified": true
     },
     {
       "level": 522,
-      "power": 126546000,
-      "verified": false
+      "power": 126112000,
+      "verified": true
     },
     {
       "level": 523,
-      "power": 126980000,
-      "verified": false
+      "power": 126546000,
+      "verified": true
     },
     {
       "level": 524,
-      "power": 127414000,
-      "verified": false
+      "power": 126980000,
+      "verified": true
     },
     {
       "level": 525,
-      "power": 127848000,
-      "verified": false
+      "power": 127414000,
+      "verified": true
     },
     {
       "level": 526,
-      "power": 128282000,
-      "verified": false
+      "power": 127848000,
+      "verified": true
     },
     {
       "level": 527,
-      "power": 128716000,
-      "verified": false
+      "power": 128282000,
+      "verified": true
     },
     {
       "level": 528,
-      "power": 129150000,
-      "verified": false
+      "power": 128716000,
+      "verified": true
     },
     {
       "level": 529,
@@ -3778,1338 +3778,1338 @@
     },
     {
       "level": 755,
-      "power": 244608000,
-      "verified": false
+      "power": 244027008,
+      "verified": true
     },
     {
       "level": 756,
-      "power": 245189000,
-      "verified": false
+      "power": 244608000,
+      "verified": true
     },
     {
       "level": 757,
-      "power": 245770000,
-      "verified": false
+      "power": 245188992,
+      "verified": true
     },
     {
       "level": 758,
-      "power": 246351000,
-      "verified": false
+      "power": 245770000,
+      "verified": true
     },
     {
       "level": 759,
-      "power": 246932000,
-      "verified": false
+      "power": 246351008,
+      "verified": true
     },
     {
       "level": 760,
-      "power": 247513000,
-      "verified": false
+      "power": 246932000,
+      "verified": true
     },
     {
       "level": 761,
-      "power": 248094000,
-      "verified": false
+      "power": 247512992,
+      "verified": true
     },
     {
       "level": 762,
-      "power": 248675000,
-      "verified": false
+      "power": 248094000,
+      "verified": true
     },
     {
       "level": 763,
-      "power": 249256000,
-      "verified": false
+      "power": 248675008,
+      "verified": true
     },
     {
       "level": 764,
-      "power": 249837000,
-      "verified": false
+      "power": 249256000,
+      "verified": true
     },
     {
       "level": 765,
-      "power": 250425000,
-      "verified": false
+      "power": 249836992,
+      "verified": true
     },
     {
       "level": 766,
-      "power": 251013000,
-      "verified": false
+      "power": 250424992,
+      "verified": true
     },
     {
       "level": 767,
-      "power": 251601000,
-      "verified": false
+      "power": 251012992,
+      "verified": true
     },
     {
       "level": 768,
-      "power": 252189000,
-      "verified": false
+      "power": 251600992,
+      "verified": true
     },
     {
       "level": 769,
-      "power": 252777000,
-      "verified": false
+      "power": 252188992,
+      "verified": true
     },
     {
       "level": 770,
-      "power": 253365000,
-      "verified": false
+      "power": 252776992,
+      "verified": true
     },
     {
       "level": 771,
-      "power": 253953000,
-      "verified": false
+      "power": 253364992,
+      "verified": true
     },
     {
       "level": 772,
-      "power": 254541000,
-      "verified": false
+      "power": 253952992,
+      "verified": true
     },
     {
       "level": 773,
-      "power": 255129000,
-      "verified": false
+      "power": 254540992,
+      "verified": true
     },
     {
       "level": 774,
-      "power": 255717000,
-      "verified": false
+      "power": 255128992,
+      "verified": true
     },
     {
       "level": 775,
-      "power": 256305000,
-      "verified": false
+      "power": 255716992,
+      "verified": true
     },
     {
       "level": 776,
-      "power": 256900000,
-      "verified": false
+      "power": 256304992,
+      "verified": true
     },
     {
       "level": 777,
-      "power": 257495000,
-      "verified": false
+      "power": 256900000,
+      "verified": true
     },
     {
       "level": 778,
-      "power": 258090000,
-      "verified": false
+      "power": 257495008,
+      "verified": true
     },
     {
       "level": 779,
-      "power": 258685000,
-      "verified": false
+      "power": 258090000,
+      "verified": true
     },
     {
       "level": 780,
-      "power": 259280000,
-      "verified": false
+      "power": 258684992,
+      "verified": true
     },
     {
       "level": 781,
-      "power": 259875000,
-      "verified": false
+      "power": 259280000,
+      "verified": true
     },
     {
       "level": 782,
-      "power": 260470000,
-      "verified": false
+      "power": 259875008,
+      "verified": true
     },
     {
       "level": 783,
-      "power": 261065000,
-      "verified": false
+      "power": 260470000,
+      "verified": true
     },
     {
       "level": 784,
-      "power": 261660000,
-      "verified": false
+      "power": 261064992,
+      "verified": true
     },
     {
       "level": 785,
-      "power": 262255000,
-      "verified": false
+      "power": 261660000,
+      "verified": true
     },
     {
       "level": 786,
-      "power": 262850000,
-      "verified": false
+      "power": 262255008,
+      "verified": true
     },
     {
       "level": 787,
-      "power": 263445000,
-      "verified": false
+      "power": 262850000,
+      "verified": true
     },
     {
       "level": 788,
-      "power": 264047000,
-      "verified": false
+      "power": 263444992,
+      "verified": true
     },
     {
       "level": 789,
-      "power": 264649000,
-      "verified": false
+      "power": 264047008,
+      "verified": true
     },
     {
       "level": 790,
-      "power": 265251000,
-      "verified": false
+      "power": 264648992,
+      "verified": true
     },
     {
       "level": 791,
-      "power": 265853000,
-      "verified": false
+      "power": 265251008,
+      "verified": true
     },
     {
       "level": 792,
-      "power": 266455000,
-      "verified": false
+      "power": 265852992,
+      "verified": true
     },
     {
       "level": 793,
-      "power": 267057000,
-      "verified": false
+      "power": 266455008,
+      "verified": true
     },
     {
       "level": 794,
-      "power": 267659000,
-      "verified": false
+      "power": 267056992,
+      "verified": true
     },
     {
       "level": 795,
-      "power": 268261000,
-      "verified": false
+      "power": 267659008,
+      "verified": true
     },
     {
       "level": 796,
-      "power": 268863000,
-      "verified": false
+      "power": 268260992,
+      "verified": true
     },
     {
       "level": 797,
-      "power": 269465000,
-      "verified": false
+      "power": 268863008,
+      "verified": true
     },
     {
       "level": 798,
-      "power": 270067000,
-      "verified": false
+      "power": 269464992,
+      "verified": true
     },
     {
       "level": 799,
-      "power": 270676000,
-      "verified": false
+      "power": 270067008,
+      "verified": true
     },
     {
       "level": 800,
-      "power": 271285000,
-      "verified": false
+      "power": 270676000,
+      "verified": true
     },
     {
       "level": 801,
-      "power": 271894000,
-      "verified": false
+      "power": 271284992,
+      "verified": true
     },
     {
       "level": 802,
-      "power": 272503000,
-      "verified": false
+      "power": 271894016,
+      "verified": true
     },
     {
       "level": 803,
-      "power": 273112000,
-      "verified": false
+      "power": 272503008,
+      "verified": true
     },
     {
       "level": 804,
-      "power": 273721000,
-      "verified": false
+      "power": 273112000,
+      "verified": true
     },
     {
       "level": 805,
-      "power": 274330000,
-      "verified": false
+      "power": 273720992,
+      "verified": true
     },
     {
       "level": 806,
-      "power": 274939000,
-      "verified": false
+      "power": 274329984,
+      "verified": true
     },
     {
       "level": 807,
-      "power": 275548000,
-      "verified": false
+      "power": 274939008,
+      "verified": true
     },
     {
       "level": 808,
-      "power": 276157000,
-      "verified": false
+      "power": 275548000,
+      "verified": true
     },
     {
       "level": 809,
-      "power": 276766000,
-      "verified": false
+      "power": 276156992,
+      "verified": true
     },
     {
       "level": 810,
-      "power": 277375000,
-      "verified": false
+      "power": 276766016,
+      "verified": true
     },
     {
       "level": 811,
-      "power": 277991000,
-      "verified": false
+      "power": 277375008,
+      "verified": true
     },
     {
       "level": 812,
-      "power": 278607000,
-      "verified": false
+      "power": 277991008,
+      "verified": true
     },
     {
       "level": 813,
-      "power": 279223000,
-      "verified": false
+      "power": 278607008,
+      "verified": true
     },
     {
       "level": 814,
-      "power": 279839000,
-      "verified": false
+      "power": 279223008,
+      "verified": true
     },
     {
       "level": 815,
-      "power": 280455000,
-      "verified": false
+      "power": 279839008,
+      "verified": true
     },
     {
       "level": 816,
-      "power": 281071000,
-      "verified": false
+      "power": 280455008,
+      "verified": true
     },
     {
       "level": 817,
-      "power": 281687000,
-      "verified": false
+      "power": 281071008,
+      "verified": true
     },
     {
       "level": 818,
-      "power": 282303000,
-      "verified": false
+      "power": 281687008,
+      "verified": true
     },
     {
       "level": 819,
-      "power": 282919000,
-      "verified": false
+      "power": 282303008,
+      "verified": true
     },
     {
       "level": 820,
-      "power": 283535000,
-      "verified": false
+      "power": 282919008,
+      "verified": true
     },
     {
       "level": 821,
-      "power": 284151000,
-      "verified": false
+      "power": 283535008,
+      "verified": true
     },
     {
       "level": 822,
-      "power": 284767000,
-      "verified": false
+      "power": 284151008,
+      "verified": true
     },
     {
       "level": 823,
-      "power": 285390000,
-      "verified": false
+      "power": 284767008,
+      "verified": true
     },
     {
       "level": 824,
-      "power": 286013000,
-      "verified": false
+      "power": 285390016,
+      "verified": true
     },
     {
       "level": 825,
-      "power": 286636000,
-      "verified": false
+      "power": 286012992,
+      "verified": true
     },
     {
       "level": 826,
-      "power": 287259000,
-      "verified": false
+      "power": 286636000,
+      "verified": true
     },
     {
       "level": 827,
-      "power": 287882000,
-      "verified": false
+      "power": 287259008,
+      "verified": true
     },
     {
       "level": 828,
-      "power": 288505000,
-      "verified": false
+      "power": 287881984,
+      "verified": true
     },
     {
       "level": 829,
-      "power": 289128000,
-      "verified": false
+      "power": 288504992,
+      "verified": true
     },
     {
       "level": 830,
-      "power": 289751000,
-      "verified": false
+      "power": 289128000,
+      "verified": true
     },
     {
       "level": 831,
-      "power": 290374000,
-      "verified": false
+      "power": 289751008,
+      "verified": true
     },
     {
       "level": 832,
-      "power": 290997000,
-      "verified": false
+      "power": 290374016,
+      "verified": true
     },
     {
       "level": 833,
-      "power": 291620000,
-      "verified": false
+      "power": 290996992,
+      "verified": true
     },
     {
       "level": 834,
-      "power": 292250000,
-      "verified": false
+      "power": 291620000,
+      "verified": true
     },
     {
       "level": 835,
-      "power": 292880000,
-      "verified": false
+      "power": 292249984,
+      "verified": true
     },
     {
       "level": 836,
-      "power": 293510000,
-      "verified": false
+      "power": 292880000,
+      "verified": true
     },
     {
       "level": 837,
-      "power": 294140000,
-      "verified": false
+      "power": 293510016,
+      "verified": true
     },
     {
       "level": 838,
-      "power": 294770000,
-      "verified": false
+      "power": 294140000,
+      "verified": true
     },
     {
       "level": 839,
-      "power": 295400000,
-      "verified": false
+      "power": 294769984,
+      "verified": true
     },
     {
       "level": 840,
-      "power": 296030000,
-      "verified": false
+      "power": 295400000,
+      "verified": true
     },
     {
       "level": 841,
-      "power": 296660000,
-      "verified": false
+      "power": 296030016,
+      "verified": true
     },
     {
       "level": 842,
-      "power": 297290000,
-      "verified": false
+      "power": 296660000,
+      "verified": true
     },
     {
       "level": 843,
-      "power": 297920000,
-      "verified": false
+      "power": 297289984,
+      "verified": true
     },
     {
       "level": 844,
-      "power": 298550000,
-      "verified": false
+      "power": 297920000,
+      "verified": true
     },
     {
       "level": 845,
-      "power": 299180000,
-      "verified": false
+      "power": 298550016,
+      "verified": true
     },
     {
       "level": 846,
-      "power": 299817000,
-      "verified": false
+      "power": 299180000,
+      "verified": true
     },
     {
       "level": 847,
-      "power": 300454000,
-      "verified": false
+      "power": 299816992,
+      "verified": true
     },
     {
       "level": 848,
-      "power": 301091000,
-      "verified": false
+      "power": 300454016,
+      "verified": true
     },
     {
       "level": 849,
-      "power": 301728000,
-      "verified": false
+      "power": 301091008,
+      "verified": true
     },
     {
       "level": 850,
-      "power": 302365000,
-      "verified": false
+      "power": 301728000,
+      "verified": true
     },
     {
       "level": 851,
-      "power": 303002000,
-      "verified": false
+      "power": 302364992,
+      "verified": true
     },
     {
       "level": 852,
-      "power": 303639000,
-      "verified": false
+      "power": 303001984,
+      "verified": true
     },
     {
       "level": 853,
-      "power": 304276000,
-      "verified": false
+      "power": 303639008,
+      "verified": true
     },
     {
       "level": 854,
-      "power": 304913000,
-      "verified": false
+      "power": 304276000,
+      "verified": true
     },
     {
       "level": 855,
-      "power": 305550000,
-      "verified": false
+      "power": 304912992,
+      "verified": true
     },
     {
       "level": 856,
-      "power": 306187000,
-      "verified": false
+      "power": 305550016,
+      "verified": true
     },
     {
       "level": 857,
-      "power": 306824000,
-      "verified": false
+      "power": 306187008,
+      "verified": true
     },
     {
       "level": 858,
-      "power": 307468000,
-      "verified": false
+      "power": 306824000,
+      "verified": true
     },
     {
       "level": 859,
-      "power": 308112000,
-      "verified": false
+      "power": 307468000,
+      "verified": true
     },
     {
       "level": 860,
-      "power": 308756000,
-      "verified": false
+      "power": 308112000,
+      "verified": true
     },
     {
       "level": 861,
-      "power": 309400000,
-      "verified": false
+      "power": 308756000,
+      "verified": true
     },
     {
       "level": 862,
-      "power": 310044000,
-      "verified": false
+      "power": 309400000,
+      "verified": true
     },
     {
       "level": 863,
-      "power": 310688000,
-      "verified": false
+      "power": 310044000,
+      "verified": true
     },
     {
       "level": 864,
-      "power": 311332000,
-      "verified": false
+      "power": 310688000,
+      "verified": true
     },
     {
       "level": 865,
-      "power": 311976000,
-      "verified": false
+      "power": 311332000,
+      "verified": true
     },
     {
       "level": 866,
-      "power": 312620000,
-      "verified": false
+      "power": 311976000,
+      "verified": true
     },
     {
       "level": 867,
-      "power": 313264000,
-      "verified": false
+      "power": 312620000,
+      "verified": true
     },
     {
       "level": 868,
-      "power": 313908000,
-      "verified": false
+      "power": 313264000,
+      "verified": true
     },
     {
       "level": 869,
-      "power": 314552000,
-      "verified": false
+      "power": 313908000,
+      "verified": true
     },
     {
       "level": 870,
-      "power": 315203000,
-      "verified": false
+      "power": 314552000,
+      "verified": true
     },
     {
       "level": 871,
-      "power": 315854000,
-      "verified": false
+      "power": 315203008,
+      "verified": true
     },
     {
       "level": 872,
-      "power": 316505000,
-      "verified": false
+      "power": 315854016,
+      "verified": true
     },
     {
       "level": 873,
-      "power": 317156000,
-      "verified": false
+      "power": 316504992,
+      "verified": true
     },
     {
       "level": 874,
-      "power": 317807000,
-      "verified": false
+      "power": 317156000,
+      "verified": true
     },
     {
       "level": 875,
-      "power": 318458000,
-      "verified": false
+      "power": 317807008,
+      "verified": true
     },
     {
       "level": 876,
-      "power": 319109000,
-      "verified": false
+      "power": 318457984,
+      "verified": true
     },
     {
       "level": 877,
-      "power": 319760000,
-      "verified": false
+      "power": 319108992,
+      "verified": true
     },
     {
       "level": 878,
-      "power": 320411000,
-      "verified": false
+      "power": 319760000,
+      "verified": true
     },
     {
       "level": 879,
-      "power": 321062000,
-      "verified": false
+      "power": 320411008,
+      "verified": true
     },
     {
       "level": 880,
-      "power": 321713000,
-      "verified": false
+      "power": 321062016,
+      "verified": true
     },
     {
       "level": 881,
-      "power": 322364000,
-      "verified": false
+      "power": 321712992,
+      "verified": true
     },
     {
       "level": 882,
-      "power": 323022000,
-      "verified": false
+      "power": 322364000,
+      "verified": true
     },
     {
       "level": 883,
-      "power": 323680000,
-      "verified": false
+      "power": 323022016,
+      "verified": true
     },
     {
       "level": 884,
-      "power": 324338000,
-      "verified": false
+      "power": 323680000,
+      "verified": true
     },
     {
       "level": 885,
-      "power": 324996000,
-      "verified": false
+      "power": 324337984,
+      "verified": true
     },
     {
       "level": 886,
-      "power": 325654000,
-      "verified": false
+      "power": 324996000,
+      "verified": true
     },
     {
       "level": 887,
-      "power": 326312000,
-      "verified": false
+      "power": 325654016,
+      "verified": true
     },
     {
       "level": 888,
-      "power": 326970000,
-      "verified": false
+      "power": 326312000,
+      "verified": true
     },
     {
       "level": 889,
-      "power": 327628000,
-      "verified": false
+      "power": 326969984,
+      "verified": true
     },
     {
       "level": 890,
-      "power": 328286000,
-      "verified": false
+      "power": 327628000,
+      "verified": true
     },
     {
       "level": 891,
-      "power": 328944000,
-      "verified": false
+      "power": 328286016,
+      "verified": true
     },
     {
       "level": 892,
-      "power": 329602000,
-      "verified": false
+      "power": 328944000,
+      "verified": true
     },
     {
       "level": 893,
-      "power": 330267000,
-      "verified": false
+      "power": 329601984,
+      "verified": true
     },
     {
       "level": 894,
-      "power": 330932000,
-      "verified": false
+      "power": 330267008,
+      "verified": true
     },
     {
       "level": 895,
-      "power": 331597000,
-      "verified": false
+      "power": 330932000,
+      "verified": true
     },
     {
       "level": 896,
-      "power": 332262000,
-      "verified": false
+      "power": 331596992,
+      "verified": true
     },
     {
       "level": 897,
-      "power": 332927000,
-      "verified": false
+      "power": 332262016,
+      "verified": true
     },
     {
       "level": 898,
-      "power": 333592000,
-      "verified": false
+      "power": 332927008,
+      "verified": true
     },
     {
       "level": 899,
-      "power": 334257000,
-      "verified": false
+      "power": 333592000,
+      "verified": true
     },
     {
       "level": 900,
-      "power": 334922000,
-      "verified": false
+      "power": 334256992,
+      "verified": true
     },
     {
       "level": 901,
-      "power": 335587000,
-      "verified": false
+      "power": 334921984,
+      "verified": true
     },
     {
       "level": 902,
-      "power": 336252000,
-      "verified": false
+      "power": 335587008,
+      "verified": true
     },
     {
       "level": 903,
-      "power": 336917000,
-      "verified": false
+      "power": 336252000,
+      "verified": true
     },
     {
       "level": 904,
-      "power": 337582000,
-      "verified": false
+      "power": 336916992,
+      "verified": true
     },
     {
       "level": 905,
-      "power": 338254000,
-      "verified": false
+      "power": 337582016,
+      "verified": true
     },
     {
       "level": 906,
-      "power": 338926000,
-      "verified": false
+      "power": 338254016,
+      "verified": true
     },
     {
       "level": 907,
-      "power": 339598000,
-      "verified": false
+      "power": 338926016,
+      "verified": true
     },
     {
       "level": 908,
-      "power": 340270000,
-      "verified": false
+      "power": 339598016,
+      "verified": true
     },
     {
       "level": 909,
-      "power": 340942000,
-      "verified": false
+      "power": 340270016,
+      "verified": true
     },
     {
       "level": 910,
-      "power": 341614000,
-      "verified": false
+      "power": 340942016,
+      "verified": true
     },
     {
       "level": 911,
-      "power": 342286000,
-      "verified": false
+      "power": 341614016,
+      "verified": true
     },
     {
       "level": 912,
-      "power": 342958000,
-      "verified": false
+      "power": 342286016,
+      "verified": true
     },
     {
       "level": 913,
-      "power": 343630000,
-      "verified": false
+      "power": 342958016,
+      "verified": true
     },
     {
       "level": 914,
-      "power": 344302000,
-      "verified": false
+      "power": 343630016,
+      "verified": true
     },
     {
       "level": 915,
-      "power": 344974000,
-      "verified": false
+      "power": 344302016,
+      "verified": true
     },
     {
       "level": 916,
-      "power": 345646000,
-      "verified": false
+      "power": 344974016,
+      "verified": true
     },
     {
       "level": 917,
-      "power": 346325000,
-      "verified": false
+      "power": 345646016,
+      "verified": true
     },
     {
       "level": 918,
-      "power": 347004000,
-      "verified": false
+      "power": 346324992,
+      "verified": true
     },
     {
       "level": 919,
-      "power": 347683000,
-      "verified": false
+      "power": 347004000,
+      "verified": true
     },
     {
       "level": 920,
-      "power": 348362000,
-      "verified": false
+      "power": 347683008,
+      "verified": true
     },
     {
       "level": 921,
-      "power": 349041000,
-      "verified": false
+      "power": 348361984,
+      "verified": true
     },
     {
       "level": 922,
-      "power": 349720000,
-      "verified": false
+      "power": 349040992,
+      "verified": true
     },
     {
       "level": 923,
-      "power": 350399000,
-      "verified": false
+      "power": 349720000,
+      "verified": true
     },
     {
       "level": 924,
-      "power": 351078000,
-      "verified": false
+      "power": 350399008,
+      "verified": true
     },
     {
       "level": 925,
-      "power": 351757000,
-      "verified": false
+      "power": 351078016,
+      "verified": true
     },
     {
       "level": 926,
-      "power": 352436000,
-      "verified": false
+      "power": 351756992,
+      "verified": true
     },
     {
       "level": 927,
-      "power": 353115000,
-      "verified": false
+      "power": 352436000,
+      "verified": true
     },
     {
       "level": 928,
-      "power": 353794000,
-      "verified": false
+      "power": 353115008,
+      "verified": true
     },
     {
       "level": 929,
-      "power": 354480000,
-      "verified": false
+      "power": 353793984,
+      "verified": true
     },
     {
       "level": 930,
-      "power": 355166000,
-      "verified": false
+      "power": 354480000,
+      "verified": true
     },
     {
       "level": 931,
-      "power": 355852000,
-      "verified": false
+      "power": 355166016,
+      "verified": true
     },
     {
       "level": 932,
-      "power": 356538000,
-      "verified": false
+      "power": 355852000,
+      "verified": true
     },
     {
       "level": 933,
-      "power": 357224000,
-      "verified": false
+      "power": 356537984,
+      "verified": true
     },
     {
       "level": 934,
-      "power": 357910000,
-      "verified": false
+      "power": 357224000,
+      "verified": true
     },
     {
       "level": 935,
-      "power": 358596000,
-      "verified": false
+      "power": 357910016,
+      "verified": true
     },
     {
       "level": 936,
-      "power": 359282000,
-      "verified": false
+      "power": 358596000,
+      "verified": true
     },
     {
       "level": 937,
-      "power": 359968000,
-      "verified": false
+      "power": 359281984,
+      "verified": true
     },
     {
       "level": 938,
-      "power": 360654000,
-      "verified": false
+      "power": 359968000,
+      "verified": true
     },
     {
       "level": 939,
-      "power": 361340000,
-      "verified": false
+      "power": 360654016,
+      "verified": true
     },
     {
       "level": 940,
-      "power": 362026000,
-      "verified": false
+      "power": 361340000,
+      "verified": true
     },
     {
       "level": 941,
-      "power": 362719000,
-      "verified": false
+      "power": 362025984,
+      "verified": true
     },
     {
       "level": 942,
-      "power": 363412000,
-      "verified": false
+      "power": 362719008,
+      "verified": true
     },
     {
       "level": 943,
-      "power": 364105000,
-      "verified": false
+      "power": 363412000,
+      "verified": true
     },
     {
       "level": 944,
-      "power": 364798000,
-      "verified": false
+      "power": 364104992,
+      "verified": true
     },
     {
       "level": 945,
-      "power": 365491000,
-      "verified": false
+      "power": 364798016,
+      "verified": true
     },
     {
       "level": 946,
-      "power": 366184000,
-      "verified": false
+      "power": 365491008,
+      "verified": true
     },
     {
       "level": 947,
-      "power": 366877000,
-      "verified": false
+      "power": 366184000,
+      "verified": true
     },
     {
       "level": 948,
-      "power": 367570000,
-      "verified": false
+      "power": 366876992,
+      "verified": true
     },
     {
       "level": 949,
-      "power": 368263000,
-      "verified": false
+      "power": 367569984,
+      "verified": true
     },
     {
       "level": 950,
-      "power": 368956000,
-      "verified": false
+      "power": 368263008,
+      "verified": true
     },
     {
       "level": 951,
-      "power": 369649000,
-      "verified": false
+      "power": 368956000,
+      "verified": true
     },
     {
       "level": 952,
-      "power": 370342000,
-      "verified": false
+      "power": 369648992,
+      "verified": true
     },
     {
       "level": 953,
-      "power": 371042000,
-      "verified": false
+      "power": 370342016,
+      "verified": true
     },
     {
       "level": 954,
-      "power": 371742000,
-      "verified": false
+      "power": 371041984,
+      "verified": true
     },
     {
       "level": 955,
-      "power": 372442000,
-      "verified": false
+      "power": 371742016,
+      "verified": true
     },
     {
       "level": 956,
-      "power": 373142000,
-      "verified": false
+      "power": 372441984,
+      "verified": true
     },
     {
       "level": 957,
-      "power": 373842000,
-      "verified": false
+      "power": 373142016,
+      "verified": true
     },
     {
       "level": 958,
-      "power": 374542000,
-      "verified": false
+      "power": 373841984,
+      "verified": true
     },
     {
       "level": 959,
-      "power": 375242000,
-      "verified": false
+      "power": 374542016,
+      "verified": true
     },
     {
       "level": 960,
-      "power": 375942000,
-      "verified": false
+      "power": 375241984,
+      "verified": true
     },
     {
       "level": 961,
-      "power": 376642000,
-      "verified": false
+      "power": 375942016,
+      "verified": true
     },
     {
       "level": 962,
-      "power": 377342000,
-      "verified": false
+      "power": 376641984,
+      "verified": true
     },
     {
       "level": 963,
-      "power": 378042000,
-      "verified": false
+      "power": 377342016,
+      "verified": true
     },
     {
       "level": 964,
-      "power": 378742000,
-      "verified": false
+      "power": 378041984,
+      "verified": true
     },
     {
       "level": 965,
-      "power": 379449000,
-      "verified": false
+      "power": 378742016,
+      "verified": true
     },
     {
       "level": 966,
-      "power": 380156000,
-      "verified": false
+      "power": 379448992,
+      "verified": true
     },
     {
       "level": 967,
-      "power": 380863000,
-      "verified": false
+      "power": 380156000,
+      "verified": true
     },
     {
       "level": 968,
-      "power": 381570000,
-      "verified": false
+      "power": 380863008,
+      "verified": true
     },
     {
       "level": 969,
-      "power": 382277000,
-      "verified": false
+      "power": 381569984,
+      "verified": true
     },
     {
       "level": 970,
-      "power": 382984000,
-      "verified": false
+      "power": 382276992,
+      "verified": true
     },
     {
       "level": 971,
-      "power": 383691000,
-      "verified": false
+      "power": 382984000,
+      "verified": true
     },
     {
       "level": 972,
-      "power": 384398000,
-      "verified": false
+      "power": 383691008,
+      "verified": true
     },
     {
       "level": 973,
-      "power": 385105000,
-      "verified": false
+      "power": 384398016,
+      "verified": true
     },
     {
       "level": 974,
-      "power": 385812000,
-      "verified": false
+      "power": 385104992,
+      "verified": true
     },
     {
       "level": 975,
-      "power": 386519000,
-      "verified": false
+      "power": 385812000,
+      "verified": true
     },
     {
       "level": 976,
-      "power": 387226000,
-      "verified": false
+      "power": 386519008,
+      "verified": true
     },
     {
       "level": 977,
-      "power": 387940000,
-      "verified": false
+      "power": 387225984,
+      "verified": true
     },
     {
       "level": 978,
-      "power": 388654000,
-      "verified": false
+      "power": 387940000,
+      "verified": true
     },
     {
       "level": 979,
-      "power": 389368000,
-      "verified": false
+      "power": 388654016,
+      "verified": true
     },
     {
       "level": 980,
-      "power": 390082000,
-      "verified": false
+      "power": 389368000,
+      "verified": true
     },
     {
       "level": 981,
-      "power": 390796000,
-      "verified": false
+      "power": 390081984,
+      "verified": true
     },
     {
       "level": 982,
-      "power": 391510000,
-      "verified": false
+      "power": 390796000,
+      "verified": true
     },
     {
       "level": 983,
-      "power": 392224000,
-      "verified": false
+      "power": 391510016,
+      "verified": true
     },
     {
       "level": 984,
-      "power": 392938000,
-      "verified": false
+      "power": 392224000,
+      "verified": true
     },
     {
       "level": 985,
-      "power": 393652000,
-      "verified": false
+      "power": 392937984,
+      "verified": true
     },
     {
       "level": 986,
-      "power": 394366000,
-      "verified": false
+      "power": 393652000,
+      "verified": true
     },
     {
       "level": 987,
-      "power": 395080000,
-      "verified": false
+      "power": 394366016,
+      "verified": true
     },
     {
       "level": 988,
-      "power": 395794000,
-      "verified": false
+      "power": 395080000,
+      "verified": true
     },
     {
       "level": 989,
-      "power": 396508000,
-      "verified": false
+      "power": 395793984,
+      "verified": true
     },
     {
       "level": 990,
-      "power": 397229000,
-      "verified": false
+      "power": 396508000,
+      "verified": true
     },
     {
       "level": 991,
-      "power": 397950000,
-      "verified": false
+      "power": 397228992,
+      "verified": true
     },
     {
       "level": 992,
-      "power": 398671000,
-      "verified": false
+      "power": 397950016,
+      "verified": true
     },
     {
       "level": 993,
-      "power": 399392000,
-      "verified": false
+      "power": 398671008,
+      "verified": true
     },
     {
       "level": 994,
-      "power": 400113000,
-      "verified": false
+      "power": 399392000,
+      "verified": true
     },
     {
       "level": 995,
-      "power": 400834000,
-      "verified": false
+      "power": 400112992,
+      "verified": true
     },
     {
       "level": 996,
-      "power": 401555000,
-      "verified": false
+      "power": 400833984,
+      "verified": true
     },
     {
       "level": 997,
-      "power": 402276000,
-      "verified": false
+      "power": 401555008,
+      "verified": true
     },
     {
       "level": 998,
-      "power": 402997000,
-      "verified": false
+      "power": 402276000,
+      "verified": true
     },
     {
       "level": 999,
-      "power": 403718000,
-      "verified": false
+      "power": 402996992,
+      "verified": true
     },
     {
       "level": 1000,
-      "power": 404439000,
-      "verified": false
+      "power": 403718016,
+      "verified": true
     },
     {
       "level": 1001,
-      "power": 405160000,
-      "verified": false
+      "power": 404439008,
+      "verified": true
     },
     {
       "level": 1002,
-      "power": 405888000,
-      "verified": false
+      "power": 405160000,
+      "verified": true
     },
     {
       "level": 1003,
-      "power": 406616000,
-      "verified": false
+      "power": 405888000,
+      "verified": true
     },
     {
       "level": 1004,
-      "power": 407344000,
-      "verified": false
+      "power": 406616000,
+      "verified": true
     },
     {
       "level": 1005,
-      "power": 408072000,
-      "verified": false
+      "power": 407344000,
+      "verified": true
     },
     {
       "level": 1006,
-      "power": 408800000,
-      "verified": false
+      "power": 408072000,
+      "verified": true
     },
     {
       "level": 1007,
-      "power": 409528000,
-      "verified": false
+      "power": 408800000,
+      "verified": true
     },
     {
       "level": 1008,
-      "power": 410256000,
-      "verified": false
+      "power": 409528000,
+      "verified": true
     },
     {
       "level": 1009,
-      "power": 410984000,
-      "verified": false
+      "power": 410256000,
+      "verified": true
     },
     {
       "level": 1010,
-      "power": 411712000,
-      "verified": false
+      "power": 410984000,
+      "verified": true
     },
     {
       "level": 1011,
-      "power": 412440000,
-      "verified": false
+      "power": 411712000,
+      "verified": true
     },
     {
       "level": 1012,
-      "power": 413168000,
-      "verified": false
+      "power": 412440000,
+      "verified": true
     },
     {
       "level": 1013,
-      "power": 413896000,
-      "verified": false
+      "power": 413168000,
+      "verified": true
     },
     {
       "level": 1014,
-      "power": 414631000,
-      "verified": false
+      "power": 413896000,
+      "verified": true
     },
     {
       "level": 1015,
-      "power": 415366000,
-      "verified": false
+      "power": 414631008,
+      "verified": true
     },
     {
       "level": 1016,
-      "power": 416101000,
-      "verified": false
+      "power": 415366016,
+      "verified": true
     },
     {
       "level": 1017,
-      "power": 416836000,
-      "verified": false
+      "power": 416100992,
+      "verified": true
     },
     {
       "level": 1018,
-      "power": 417571000,
-      "verified": false
+      "power": 416836000,
+      "verified": true
     },
     {
       "level": 1019,
-      "power": 418306000,
-      "verified": false
+      "power": 417571008,
+      "verified": true
     },
     {
       "level": 1020,
-      "power": 419041000,
-      "verified": false
+      "power": 418305984,
+      "verified": true
     },
     {
       "level": 1021,
-      "power": 419776000,
-      "verified": false
+      "power": 419040992,
+      "verified": true
     },
     {
       "level": 1022,
@@ -5558,323 +5558,323 @@
     },
     {
       "level": 1111,
-      "power": 488327000,
-      "verified": false
+      "power": 487543008,
+      "verified": true
     },
     {
       "level": 1112,
-      "power": 489118000,
-      "verified": false
+      "power": 488327008,
+      "verified": true
     },
     {
       "level": 1113,
-      "power": 489909000,
-      "verified": false
+      "power": 489118016,
+      "verified": true
     },
     {
       "level": 1114,
-      "power": 490700000,
-      "verified": false
+      "power": 489908992,
+      "verified": true
     },
     {
       "level": 1115,
-      "power": 491491000,
-      "verified": false
+      "power": 490700000,
+      "verified": true
     },
     {
       "level": 1116,
-      "power": 492282000,
-      "verified": false
+      "power": 491491008,
+      "verified": true
     },
     {
       "level": 1117,
-      "power": 493073000,
-      "verified": false
+      "power": 492281984,
+      "verified": true
     },
     {
       "level": 1118,
-      "power": 493864000,
-      "verified": false
+      "power": 493072992,
+      "verified": true
     },
     {
       "level": 1119,
-      "power": 494655000,
-      "verified": false
+      "power": 493864000,
+      "verified": true
     },
     {
       "level": 1120,
-      "power": 495446000,
-      "verified": false
+      "power": 494655008,
+      "verified": true
     },
     {
       "level": 1121,
-      "power": 496237000,
-      "verified": false
+      "power": 495446016,
+      "verified": true
     },
     {
       "level": 1122,
-      "power": 497028000,
-      "verified": false
+      "power": 496236992,
+      "verified": true
     },
     {
       "level": 1123,
-      "power": 497819000,
-      "verified": false
+      "power": 497028000,
+      "verified": true
     },
     {
       "level": 1124,
-      "power": 498610000,
-      "verified": false
+      "power": 497819008,
+      "verified": true
     },
     {
       "level": 1125,
-      "power": 499408000,
-      "verified": false
+      "power": 498609984,
+      "verified": true
     },
     {
       "level": 1126,
-      "power": 500206000,
-      "verified": false
+      "power": 499408000,
+      "verified": true
     },
     {
       "level": 1127,
-      "power": 501004000,
-      "verified": false
+      "power": 500206016,
+      "verified": true
     },
     {
       "level": 1128,
-      "power": 501802000,
-      "verified": false
+      "power": 501004000,
+      "verified": true
     },
     {
       "level": 1129,
-      "power": 502600000,
-      "verified": false
+      "power": 501801984,
+      "verified": true
     },
     {
       "level": 1130,
-      "power": 503398000,
-      "verified": false
+      "power": 502600000,
+      "verified": true
     },
     {
       "level": 1131,
-      "power": 504196000,
-      "verified": false
+      "power": 503398016,
+      "verified": true
     },
     {
       "level": 1132,
-      "power": 504994000,
-      "verified": false
+      "power": 504196000,
+      "verified": true
     },
     {
       "level": 1133,
-      "power": 505792000,
-      "verified": false
+      "power": 504993984,
+      "verified": true
     },
     {
       "level": 1134,
-      "power": 506590000,
-      "verified": false
+      "power": 505792000,
+      "verified": true
     },
     {
       "level": 1135,
-      "power": 507388000,
-      "verified": false
+      "power": 506590016,
+      "verified": true
     },
     {
       "level": 1136,
-      "power": 508186000,
-      "verified": false
+      "power": 507388000,
+      "verified": true
     },
     {
       "level": 1137,
-      "power": 508991000,
-      "verified": false
+      "power": 508185984,
+      "verified": true
     },
     {
       "level": 1138,
-      "power": 509796000,
-      "verified": false
+      "power": 508991008,
+      "verified": true
     },
     {
       "level": 1139,
-      "power": 510601000,
-      "verified": false
+      "power": 509796000,
+      "verified": true
     },
     {
       "level": 1140,
-      "power": 511406000,
-      "verified": false
+      "power": 510600992,
+      "verified": true
     },
     {
       "level": 1141,
-      "power": 512211000,
-      "verified": false
+      "power": 511406016,
+      "verified": true
     },
     {
       "level": 1142,
-      "power": 513016000,
-      "verified": false
+      "power": 512211008,
+      "verified": true
     },
     {
       "level": 1143,
-      "power": 513821000,
-      "verified": false
+      "power": 513016000,
+      "verified": true
     },
     {
       "level": 1144,
-      "power": 514626000,
-      "verified": false
+      "power": 513820992,
+      "verified": true
     },
     {
       "level": 1145,
-      "power": 515431000,
-      "verified": false
+      "power": 514625984,
+      "verified": true
     },
     {
       "level": 1146,
-      "power": 516236000,
-      "verified": false
+      "power": 515431008,
+      "verified": true
     },
     {
       "level": 1147,
-      "power": 517041000,
-      "verified": false
+      "power": 516236000,
+      "verified": true
     },
     {
       "level": 1148,
-      "power": 517846000,
-      "verified": false
+      "power": 517040992,
+      "verified": true
     },
     {
       "level": 1149,
-      "power": 518651000,
-      "verified": false
+      "power": 517846016,
+      "verified": true
     },
     {
       "level": 1150,
-      "power": 519463000,
-      "verified": false
+      "power": 518651008,
+      "verified": true
     },
     {
       "level": 1151,
-      "power": 520275000,
-      "verified": false
+      "power": 519463008,
+      "verified": true
     },
     {
       "level": 1152,
-      "power": 521087000,
-      "verified": false
+      "power": 520275008,
+      "verified": true
     },
     {
       "level": 1153,
-      "power": 521899000,
-      "verified": false
+      "power": 521087008,
+      "verified": true
     },
     {
       "level": 1154,
-      "power": 522711000,
-      "verified": false
+      "power": 521899008,
+      "verified": true
     },
     {
       "level": 1155,
-      "power": 523523000,
-      "verified": false
+      "power": 522711005,
+      "verified": true
     },
     {
       "level": 1156,
-      "power": 524335000,
-      "verified": false
+      "power": 523523008,
+      "verified": true
     },
     {
       "level": 1157,
-      "power": 525147000,
-      "verified": false
+      "power": 524335008,
+      "verified": true
     },
     {
       "level": 1158,
-      "power": 525959000,
-      "verified": false
+      "power": 525147008,
+      "verified": true
     },
     {
       "level": 1159,
-      "power": 526771000,
-      "verified": false
+      "power": 525959008,
+      "verified": true
     },
     {
       "level": 1160,
-      "power": 527583000,
-      "verified": false
+      "power": 526771008,
+      "verified": true
     },
     {
       "level": 1161,
-      "power": 528395000,
-      "verified": false
+      "power": 527583008,
+      "verified": true
     },
     {
       "level": 1162,
-      "power": 529214000,
-      "verified": false
+      "power": 528395008,
+      "verified": true
     },
     {
       "level": 1163,
-      "power": 530033000,
-      "verified": false
+      "power": 529214016,
+      "verified": true
     },
     {
       "level": 1164,
-      "power": 530852000,
-      "verified": false
+      "power": 530032992,
+      "verified": true
     },
     {
       "level": 1165,
-      "power": 531671000,
-      "verified": false
+      "power": 530852000,
+      "verified": true
     },
     {
       "level": 1166,
-      "power": 532490000,
-      "verified": false
+      "power": 531671008,
+      "verified": true
     },
     {
       "level": 1167,
-      "power": 533309000,
-      "verified": false
+      "power": 532489984,
+      "verified": true
     },
     {
       "level": 1168,
-      "power": 534128000,
-      "verified": false
+      "power": 533308992,
+      "verified": true
     },
     {
       "level": 1169,
-      "power": 534947000,
-      "verified": false
+      "power": 534128000,
+      "verified": true
     },
     {
       "level": 1170,
-      "power": 535766000,
-      "verified": false
+      "power": 534947008,
+      "verified": true
     },
     {
       "level": 1171,
-      "power": 536585000,
-      "verified": false
+      "power": 535766016,
+      "verified": true
     },
     {
       "level": 1172,
-      "power": 537404000,
-      "verified": false
+      "power": 536584992,
+      "verified": true
     },
     {
       "level": 1173,
-      "power": 538223000,
-      "verified": false
+      "power": 537404032,
+      "verified": true
     },
     {
       "level": 1174,
-      "power": 539042000,
-      "verified": false
+      "power": 538222976,
+      "verified": true
     },
     {
       "level": 1175,
@@ -5973,1123 +5973,1123 @@
     },
     {
       "level": 1194,
-      "power": 555618000,
-      "verified": false
+      "power": 554785024,
+      "verified": true
     },
     {
       "level": 1195,
-      "power": 556451000,
-      "verified": false
+      "power": 555617984,
+      "verified": true
     },
     {
       "level": 1196,
-      "power": 557284000,
-      "verified": false
+      "power": 556451008,
+      "verified": true
     },
     {
       "level": 1197,
-      "power": 558117000,
-      "verified": false
+      "power": 557283968,
+      "verified": true
     },
     {
       "level": 1198,
-      "power": 558950000,
-      "verified": false
+      "power": 558116992,
+      "verified": true
     },
     {
       "level": 1199,
-      "power": 559783000,
-      "verified": false
+      "power": 558950016,
+      "verified": true
     },
     {
       "level": 1200,
-      "power": 560623000,
-      "verified": false
+      "power": 559782976,
+      "verified": true
     },
     {
       "level": 1201,
-      "power": 561463000,
-      "verified": false
+      "power": 560622976,
+      "verified": true
     },
     {
       "level": 1202,
-      "power": 562303000,
-      "verified": false
+      "power": 561462976,
+      "verified": true
     },
     {
       "level": 1203,
-      "power": 563143000,
-      "verified": false
+      "power": 562302976,
+      "verified": true
     },
     {
       "level": 1204,
-      "power": 563983000,
-      "verified": false
+      "power": 563142976,
+      "verified": true
     },
     {
       "level": 1205,
-      "power": 564823000,
-      "verified": false
+      "power": 563982976,
+      "verified": true
     },
     {
       "level": 1206,
-      "power": 565663000,
-      "verified": false
+      "power": 564822976,
+      "verified": true
     },
     {
       "level": 1207,
-      "power": 566503000,
-      "verified": false
+      "power": 565662976,
+      "verified": true
     },
     {
       "level": 1208,
-      "power": 567343000,
-      "verified": false
+      "power": 566502976,
+      "verified": true
     },
     {
       "level": 1209,
-      "power": 568183000,
-      "verified": false
+      "power": 567342976,
+      "verified": true
     },
     {
       "level": 1210,
-      "power": 569023000,
-      "verified": false
+      "power": 568182976,
+      "verified": true
     },
     {
       "level": 1211,
-      "power": 569863000,
-      "verified": false
+      "power": 569022976,
+      "verified": true
     },
     {
       "level": 1212,
-      "power": 570703000,
-      "verified": false
+      "power": 569862976,
+      "verified": true
     },
     {
       "level": 1213,
-      "power": 571550000,
-      "verified": false
+      "power": 570702976,
+      "verified": true
     },
     {
       "level": 1214,
-      "power": 572397000,
-      "verified": false
+      "power": 571550016,
+      "verified": true
     },
     {
       "level": 1215,
-      "power": 573244000,
-      "verified": false
+      "power": 572396992,
+      "verified": true
     },
     {
       "level": 1216,
-      "power": 574091000,
-      "verified": false
+      "power": 573244032,
+      "verified": true
     },
     {
       "level": 1217,
-      "power": 574938000,
-      "verified": false
+      "power": 574091008,
+      "verified": true
     },
     {
       "level": 1218,
-      "power": 575785000,
-      "verified": false
+      "power": 574937984,
+      "verified": true
     },
     {
       "level": 1219,
-      "power": 576632000,
-      "verified": false
+      "power": 575785024,
+      "verified": true
     },
     {
       "level": 1220,
-      "power": 577479000,
-      "verified": false
+      "power": 576632000,
+      "verified": true
     },
     {
       "level": 1221,
-      "power": 578326000,
-      "verified": false
+      "power": 577478976,
+      "verified": true
     },
     {
       "level": 1222,
-      "power": 579173000,
-      "verified": false
+      "power": 578326016,
+      "verified": true
     },
     {
       "level": 1223,
-      "power": 580020000,
-      "verified": false
+      "power": 579172992,
+      "verified": true
     },
     {
       "level": 1224,
-      "power": 580867000,
-      "verified": false
+      "power": 580019968,
+      "verified": true
     },
     {
       "level": 1225,
-      "power": 581721000,
-      "verified": false
+      "power": 580867008,
+      "verified": true
     },
     {
       "level": 1226,
-      "power": 582575000,
-      "verified": false
+      "power": 581721024,
+      "verified": true
     },
     {
       "level": 1227,
-      "power": 583429000,
-      "verified": false
+      "power": 582574976,
+      "verified": true
     },
     {
       "level": 1228,
-      "power": 584283000,
-      "verified": false
+      "power": 583428992,
+      "verified": true
     },
     {
       "level": 1229,
-      "power": 585137000,
-      "verified": false
+      "power": 584283008,
+      "verified": true
     },
     {
       "level": 1230,
-      "power": 585991000,
-      "verified": false
+      "power": 585137024,
+      "verified": true
     },
     {
       "level": 1231,
-      "power": 586845000,
-      "verified": false
+      "power": 585990976,
+      "verified": true
     },
     {
       "level": 1232,
-      "power": 587699000,
-      "verified": false
+      "power": 586844992,
+      "verified": true
     },
     {
       "level": 1233,
-      "power": 588553000,
-      "verified": false
+      "power": 587699008,
+      "verified": true
     },
     {
       "level": 1234,
-      "power": 589407000,
-      "verified": false
+      "power": 588553024,
+      "verified": true
     },
     {
       "level": 1235,
-      "power": 590261000,
-      "verified": false
+      "power": 589406976,
+      "verified": true
     },
     {
       "level": 1236,
-      "power": 591115000,
-      "verified": false
+      "power": 590260992,
+      "verified": true
     },
     {
       "level": 1237,
-      "power": 591969000,
-      "verified": false
+      "power": 591115008,
+      "verified": true
     },
     {
       "level": 1238,
-      "power": 592830000,
-      "verified": false
+      "power": 591969024,
+      "verified": true
     },
     {
       "level": 1239,
-      "power": 593691000,
-      "verified": false
+      "power": 592830016,
+      "verified": true
     },
     {
       "level": 1240,
-      "power": 594552000,
-      "verified": false
+      "power": 593691008,
+      "verified": true
     },
     {
       "level": 1241,
-      "power": 595413000,
-      "verified": false
+      "power": 594552000,
+      "verified": true
     },
     {
       "level": 1242,
-      "power": 596274000,
-      "verified": false
+      "power": 595412992,
+      "verified": true
     },
     {
       "level": 1243,
-      "power": 597135000,
-      "verified": false
+      "power": 596273984,
+      "verified": true
     },
     {
       "level": 1244,
-      "power": 597996000,
-      "verified": false
+      "power": 597134976,
+      "verified": true
     },
     {
       "level": 1245,
-      "power": 598857000,
-      "verified": false
+      "power": 597996032,
+      "verified": true
     },
     {
       "level": 1246,
-      "power": 599718000,
-      "verified": false
+      "power": 598857024,
+      "verified": true
     },
     {
       "level": 1247,
-      "power": 600579000,
-      "verified": false
+      "power": 599718016,
+      "verified": true
     },
     {
       "level": 1248,
-      "power": 601440000,
-      "verified": false
+      "power": 600579008,
+      "verified": true
     },
     {
       "level": 1249,
-      "power": 602301000,
-      "verified": false
+      "power": 601440000,
+      "verified": true
     },
     {
       "level": 1250,
-      "power": 603162000,
-      "verified": false
+      "power": 602300992,
+      "verified": true
     },
     {
       "level": 1251,
-      "power": 604030000,
-      "verified": false
+      "power": 603161984,
+      "verified": true
     },
     {
       "level": 1252,
-      "power": 604898000,
-      "verified": false
+      "power": 604030016,
+      "verified": true
     },
     {
       "level": 1253,
-      "power": 605766000,
-      "verified": false
+      "power": 604897984,
+      "verified": true
     },
     {
       "level": 1254,
-      "power": 606634000,
-      "verified": false
+      "power": 605766016,
+      "verified": true
     },
     {
       "level": 1255,
-      "power": 607502000,
-      "verified": false
+      "power": 606633984,
+      "verified": true
     },
     {
       "level": 1256,
-      "power": 608370000,
-      "verified": false
+      "power": 607502016,
+      "verified": true
     },
     {
       "level": 1257,
-      "power": 609238000,
-      "verified": false
+      "power": 608369984,
+      "verified": true
     },
     {
       "level": 1258,
-      "power": 610106000,
-      "verified": false
+      "power": 609238016,
+      "verified": true
     },
     {
       "level": 1259,
-      "power": 610974000,
-      "verified": false
+      "power": 610105984,
+      "verified": true
     },
     {
       "level": 1260,
-      "power": 611842000,
-      "verified": false
+      "power": 610974016,
+      "verified": true
     },
     {
       "level": 1261,
-      "power": 612710000,
-      "verified": false
+      "power": 611841984,
+      "verified": true
     },
     {
       "level": 1262,
-      "power": 613578000,
-      "verified": false
+      "power": 612710016,
+      "verified": true
     },
     {
       "level": 1263,
-      "power": 614453000,
-      "verified": false
+      "power": 613577984,
+      "verified": true
     },
     {
       "level": 1264,
-      "power": 615328000,
-      "verified": false
+      "power": 614452992,
+      "verified": true
     },
     {
       "level": 1265,
-      "power": 616203000,
-      "verified": false
+      "power": 615328000,
+      "verified": true
     },
     {
       "level": 1266,
-      "power": 617078000,
-      "verified": false
+      "power": 616203008,
+      "verified": true
     },
     {
       "level": 1267,
-      "power": 617953000,
-      "verified": false
+      "power": 617078016,
+      "verified": true
     },
     {
       "level": 1268,
-      "power": 618828000,
-      "verified": false
+      "power": 617953024,
+      "verified": true
     },
     {
       "level": 1269,
-      "power": 619703000,
-      "verified": false
+      "power": 618828032,
+      "verified": true
     },
     {
       "level": 1270,
-      "power": 620578000,
-      "verified": false
+      "power": 619702976,
+      "verified": true
     },
     {
       "level": 1271,
-      "power": 621453000,
-      "verified": false
+      "power": 620577984,
+      "verified": true
     },
     {
       "level": 1272,
-      "power": 622328000,
-      "verified": false
+      "power": 621452992,
+      "verified": true
     },
     {
       "level": 1273,
-      "power": 623203000,
-      "verified": false
+      "power": 622328000,
+      "verified": true
     },
     {
       "level": 1274,
-      "power": 624078000,
-      "verified": false
+      "power": 623203008,
+      "verified": true
     },
     {
       "level": 1275,
-      "power": 624953000,
-      "verified": false
+      "power": 624078016,
+      "verified": true
     },
     {
       "level": 1276,
-      "power": 625835000,
-      "verified": false
+      "power": 624953024,
+      "verified": true
     },
     {
       "level": 1277,
-      "power": 626717000,
-      "verified": false
+      "power": 625835008,
+      "verified": true
     },
     {
       "level": 1278,
-      "power": 627599000,
-      "verified": false
+      "power": 626716992,
+      "verified": true
     },
     {
       "level": 1279,
-      "power": 628481000,
-      "verified": false
+      "power": 627598976,
+      "verified": true
     },
     {
       "level": 1280,
-      "power": 629363000,
-      "verified": false
+      "power": 628481024,
+      "verified": true
     },
     {
       "level": 1281,
-      "power": 630245000,
-      "verified": false
+      "power": 629363008,
+      "verified": true
     },
     {
       "level": 1282,
-      "power": 631127000,
-      "verified": false
+      "power": 630244992,
+      "verified": true
     },
     {
       "level": 1283,
-      "power": 632009000,
-      "verified": false
+      "power": 631126976,
+      "verified": true
     },
     {
       "level": 1284,
-      "power": 632891000,
-      "verified": false
+      "power": 632009024,
+      "verified": true
     },
     {
       "level": 1285,
-      "power": 633773000,
-      "verified": false
+      "power": 632891008,
+      "verified": true
     },
     {
       "level": 1286,
-      "power": 634655000,
-      "verified": false
+      "power": 633772992,
+      "verified": true
     },
     {
       "level": 1287,
-      "power": 635537000,
-      "verified": false
+      "power": 634654976,
+      "verified": true
     },
     {
       "level": 1288,
-      "power": 636419000,
-      "verified": false
+      "power": 635537024,
+      "verified": true
     },
     {
       "level": 1289,
-      "power": 637308000,
-      "verified": false
+      "power": 636419008,
+      "verified": true
     },
     {
       "level": 1290,
-      "power": 638197000,
-      "verified": false
+      "power": 637308032,
+      "verified": true
     },
     {
       "level": 1291,
-      "power": 639086000,
-      "verified": false
+      "power": 638196992,
+      "verified": true
     },
     {
       "level": 1292,
-      "power": 639975000,
-      "verified": false
+      "power": 639086016,
+      "verified": true
     },
     {
       "level": 1293,
-      "power": 640864000,
-      "verified": false
+      "power": 639974976,
+      "verified": true
     },
     {
       "level": 1294,
-      "power": 641753000,
-      "verified": false
+      "power": 640864000,
+      "verified": true
     },
     {
       "level": 1295,
-      "power": 642642000,
-      "verified": false
+      "power": 641753024,
+      "verified": true
     },
     {
       "level": 1296,
-      "power": 643531000,
-      "verified": false
+      "power": 642641986,
+      "verified": true
     },
     {
       "level": 1297,
-      "power": 644420000,
-      "verified": false
+      "power": 643531008,
+      "verified": true
     },
     {
       "level": 1298,
-      "power": 645309000,
-      "verified": false
+      "power": 644419968,
+      "verified": true
     },
     {
       "level": 1299,
-      "power": 646198000,
-      "verified": false
+      "power": 645308992,
+      "verified": true
     },
     {
       "level": 1300,
-      "power": 647087000,
-      "verified": false
+      "power": 646198016,
+      "verified": true
     },
     {
       "level": 1301,
-      "power": 647976000,
-      "verified": false
+      "power": 647086976,
+      "verified": true
     },
     {
       "level": 1302,
-      "power": 648872000,
-      "verified": false
+      "power": 647976000,
+      "verified": true
     },
     {
       "level": 1303,
-      "power": 649768000,
-      "verified": false
+      "power": 648872000,
+      "verified": true
     },
     {
       "level": 1304,
-      "power": 650664000,
-      "verified": false
+      "power": 649768000,
+      "verified": true
     },
     {
       "level": 1305,
-      "power": 651560000,
-      "verified": false
+      "power": 650664000,
+      "verified": true
     },
     {
       "level": 1306,
-      "power": 652456000,
-      "verified": false
+      "power": 651560000,
+      "verified": true
     },
     {
       "level": 1307,
-      "power": 653352000,
-      "verified": false
+      "power": 652456000,
+      "verified": true
     },
     {
       "level": 1308,
-      "power": 654248000,
-      "verified": false
+      "power": 653352000,
+      "verified": true
     },
     {
       "level": 1309,
-      "power": 655144000,
-      "verified": false
+      "power": 654248000,
+      "verified": true
     },
     {
       "level": 1310,
-      "power": 656040000,
-      "verified": false
+      "power": 655144000,
+      "verified": true
     },
     {
       "level": 1311,
-      "power": 656936000,
-      "verified": false
+      "power": 656040000,
+      "verified": true
     },
     {
       "level": 1312,
-      "power": 657832000,
-      "verified": false
+      "power": 656936000,
+      "verified": true
     },
     {
       "level": 1313,
-      "power": 658728000,
-      "verified": false
+      "power": 657832000,
+      "verified": true
     },
     {
       "level": 1314,
-      "power": 659631000,
-      "verified": false
+      "power": 658728000,
+      "verified": true
     },
     {
       "level": 1315,
-      "power": 660534000,
-      "verified": false
+      "power": 659630976,
+      "verified": true
     },
     {
       "level": 1316,
-      "power": 661437000,
-      "verified": false
+      "power": 660534016,
+      "verified": true
     },
     {
       "level": 1317,
-      "power": 662340000,
-      "verified": false
+      "power": 661436992,
+      "verified": true
     },
     {
       "level": 1318,
-      "power": 663243000,
-      "verified": false
+      "power": 662339968,
+      "verified": true
     },
     {
       "level": 1319,
-      "power": 664146000,
-      "verified": false
+      "power": 663243008,
+      "verified": true
     },
     {
       "level": 1320,
-      "power": 665049000,
-      "verified": false
+      "power": 664145984,
+      "verified": true
     },
     {
       "level": 1321,
-      "power": 665952000,
-      "verified": false
+      "power": 665049024,
+      "verified": true
     },
     {
       "level": 1322,
-      "power": 666855000,
-      "verified": false
+      "power": 665952000,
+      "verified": true
     },
     {
       "level": 1323,
-      "power": 667758000,
-      "verified": false
+      "power": 666854976,
+      "verified": true
     },
     {
       "level": 1324,
-      "power": 668661000,
-      "verified": false
+      "power": 667758016,
+      "verified": true
     },
     {
       "level": 1325,
-      "power": 669564000,
-      "verified": false
+      "power": 668660992,
+      "verified": true
     },
     {
       "level": 1326,
-      "power": 670467000,
-      "verified": false
+      "power": 669564032,
+      "verified": true
     },
     {
       "level": 1327,
-      "power": 671370000,
-      "verified": false
+      "power": 670467008,
+      "verified": true
     },
     {
       "level": 1328,
-      "power": 672280000,
-      "verified": false
+      "power": 671377024,
+      "verified": true
     },
     {
       "level": 1329,
-      "power": 673190000,
-      "verified": false
+      "power": 672286976,
+      "verified": true
     },
     {
       "level": 1330,
-      "power": 674100000,
-      "verified": false
+      "power": 673196992,
+      "verified": true
     },
     {
       "level": 1331,
-      "power": 675010000,
-      "verified": false
+      "power": 674107008,
+      "verified": true
     },
     {
       "level": 1332,
-      "power": 675920000,
-      "verified": false
+      "power": 675017024,
+      "verified": true
     },
     {
       "level": 1333,
-      "power": 676830000,
-      "verified": false
+      "power": 675926976,
+      "verified": true
     },
     {
       "level": 1334,
-      "power": 677740000,
-      "verified": false
+      "power": 676836992,
+      "verified": true
     },
     {
       "level": 1335,
-      "power": 678650000,
-      "verified": false
+      "power": 677747008,
+      "verified": true
     },
     {
       "level": 1336,
-      "power": 679560000,
-      "verified": false
+      "power": 678657024,
+      "verified": true
     },
     {
       "level": 1337,
-      "power": 680470000,
-      "verified": false
+      "power": 679566976,
+      "verified": true
     },
     {
       "level": 1338,
-      "power": 681380000,
-      "verified": false
+      "power": 680476992,
+      "verified": true
     },
     {
       "level": 1339,
-      "power": 682290000,
-      "verified": false
+      "power": 681387008,
+      "verified": true
     },
     {
       "level": 1340,
-      "power": 683207000,
-      "verified": false
+      "power": 682297024,
+      "verified": true
     },
     {
       "level": 1341,
-      "power": 684124000,
-      "verified": false
+      "power": 683214016,
+      "verified": true
     },
     {
       "level": 1342,
-      "power": 685041000,
-      "verified": false
+      "power": 684131008,
+      "verified": true
     },
     {
       "level": 1343,
-      "power": 685958000,
-      "verified": false
+      "power": 685048000,
+      "verified": true
     },
     {
       "level": 1344,
-      "power": 686875000,
-      "verified": false
+      "power": 685964992,
+      "verified": true
     },
     {
       "level": 1345,
-      "power": 687792000,
-      "verified": false
+      "power": 686881984,
+      "verified": true
     },
     {
       "level": 1346,
-      "power": 688709000,
-      "verified": false
+      "power": 687798976,
+      "verified": true
     },
     {
       "level": 1347,
-      "power": 689626000,
-      "verified": false
+      "power": 688716032,
+      "verified": true
     },
     {
       "level": 1348,
-      "power": 690543000,
-      "verified": false
+      "power": 689633024,
+      "verified": true
     },
     {
       "level": 1349,
-      "power": 691460000,
-      "verified": false
+      "power": 690550016,
+      "verified": true
     },
     {
       "level": 1350,
-      "power": 692377000,
-      "verified": false
+      "power": 691467008,
+      "verified": true
     },
     {
       "level": 1351,
-      "power": 693294000,
-      "verified": false
+      "power": 692384000,
+      "verified": true
     },
     {
       "level": 1352,
-      "power": 694211000,
-      "verified": false
+      "power": 693300992,
+      "verified": true
     },
     {
       "level": 1353,
-      "power": 695135000,
-      "verified": false
+      "power": 694217984,
+      "verified": true
     },
     {
       "level": 1354,
-      "power": 696059000,
-      "verified": false
+      "power": 695142016,
+      "verified": true
     },
     {
       "level": 1355,
-      "power": 696983000,
-      "verified": false
+      "power": 696065984,
+      "verified": true
     },
     {
       "level": 1356,
-      "power": 697907000,
-      "verified": false
+      "power": 696990016,
+      "verified": true
     },
     {
       "level": 1357,
-      "power": 698831000,
-      "verified": false
+      "power": 697913984,
+      "verified": true
     },
     {
       "level": 1358,
-      "power": 699755000,
-      "verified": false
+      "power": 698838016,
+      "verified": true
     },
     {
       "level": 1359,
-      "power": 700679000,
-      "verified": false
+      "power": 699761984,
+      "verified": true
     },
     {
       "level": 1360,
-      "power": 701603000,
-      "verified": false
+      "power": 700686016,
+      "verified": true
     },
     {
       "level": 1361,
-      "power": 702527000,
-      "verified": false
+      "power": 701609984,
+      "verified": true
     },
     {
       "level": 1362,
-      "power": 703451000,
-      "verified": false
+      "power": 702534016,
+      "verified": true
     },
     {
       "level": 1363,
-      "power": 704375000,
-      "verified": false
+      "power": 703457984,
+      "verified": true
     },
     {
       "level": 1364,
-      "power": 705299000,
-      "verified": false
+      "power": 704382016,
+      "verified": true
     },
     {
       "level": 1365,
-      "power": 706223000,
-      "verified": false
+      "power": 705305984,
+      "verified": true
     },
     {
       "level": 1366,
-      "power": 707154000,
-      "verified": false
+      "power": 706230016,
+      "verified": true
     },
     {
       "level": 1367,
-      "power": 708085000,
-      "verified": false
+      "power": 707161024,
+      "verified": true
     },
     {
       "level": 1368,
-      "power": 709016000,
-      "verified": false
+      "power": 708092032,
+      "verified": true
     },
     {
       "level": 1369,
-      "power": 709947000,
-      "verified": false
+      "power": 709022976,
+      "verified": true
     },
     {
       "level": 1370,
-      "power": 710878000,
-      "verified": false
+      "power": 709953984,
+      "verified": true
     },
     {
       "level": 1371,
-      "power": 711809000,
-      "verified": false
+      "power": 710884992,
+      "verified": true
     },
     {
       "level": 1372,
-      "power": 712740000,
-      "verified": false
+      "power": 711816000,
+      "verified": true
     },
     {
       "level": 1373,
-      "power": 713671000,
-      "verified": false
+      "power": 712747008,
+      "verified": true
     },
     {
       "level": 1374,
-      "power": 714602000,
-      "verified": false
+      "power": 713678016,
+      "verified": true
     },
     {
       "level": 1375,
-      "power": 715533000,
-      "verified": false
+      "power": 714609024,
+      "verified": true
     },
     {
       "level": 1376,
-      "power": 716464000,
-      "verified": false
+      "power": 715539968,
+      "verified": true
     },
     {
       "level": 1377,
-      "power": 717395000,
-      "verified": false
+      "power": 716470976,
+      "verified": true
     },
     {
       "level": 1378,
-      "power": 718326000,
-      "verified": false
+      "power": 717401984,
+      "verified": true
     },
     {
       "level": 1379,
-      "power": 719264000,
-      "verified": false
+      "power": 718332992,
+      "verified": true
     },
     {
       "level": 1380,
-      "power": 720202000,
-      "verified": false
+      "power": 719270976,
+      "verified": true
     },
     {
       "level": 1381,
-      "power": 721140000,
-      "verified": false
+      "power": 720209024,
+      "verified": true
     },
     {
       "level": 1382,
-      "power": 722078000,
-      "verified": false
+      "power": 721147008,
+      "verified": true
     },
     {
       "level": 1383,
-      "power": 723016000,
-      "verified": false
+      "power": 722084992,
+      "verified": true
     },
     {
       "level": 1384,
-      "power": 723954000,
-      "verified": false
+      "power": 723022976,
+      "verified": true
     },
     {
       "level": 1385,
-      "power": 724892000,
-      "verified": false
+      "power": 723961024,
+      "verified": true
     },
     {
       "level": 1386,
-      "power": 725830000,
-      "verified": false
+      "power": 724899008,
+      "verified": true
     },
     {
       "level": 1387,
-      "power": 726768000,
-      "verified": false
+      "power": 725836992,
+      "verified": true
     },
     {
       "level": 1388,
-      "power": 727706000,
-      "verified": false
+      "power": 726774976,
+      "verified": true
     },
     {
       "level": 1389,
-      "power": 728644000,
-      "verified": false
+      "power": 727713024,
+      "verified": true
     },
     {
       "level": 1390,
-      "power": 729582000,
-      "verified": false
+      "power": 728651008,
+      "verified": true
     },
     {
       "level": 1391,
-      "power": 730520000,
-      "verified": false
+      "power": 729588992,
+      "verified": true
     },
     {
       "level": 1392,
-      "power": 731465000,
-      "verified": false
+      "power": 730526976,
+      "verified": true
     },
     {
       "level": 1393,
-      "power": 732410000,
-      "verified": false
+      "power": 731472000,
+      "verified": true
     },
     {
       "level": 1394,
-      "power": 733355000,
-      "verified": false
+      "power": 732417024,
+      "verified": true
     },
     {
       "level": 1395,
-      "power": 734300000,
-      "verified": false
+      "power": 733361984,
+      "verified": true
     },
     {
       "level": 1396,
-      "power": 735245000,
-      "verified": false
+      "power": 734307008,
+      "verified": true
     },
     {
       "level": 1397,
-      "power": 736190000,
-      "verified": false
+      "power": 735251968,
+      "verified": true
     },
     {
       "level": 1398,
-      "power": 737135000,
-      "verified": false
+      "power": 736196992,
+      "verified": true
     },
     {
       "level": 1399,
-      "power": 738080000,
-      "verified": false
+      "power": 737142016,
+      "verified": true
     },
     {
       "level": 1400,
-      "power": 739025000,
-      "verified": false
+      "power": 738086976,
+      "verified": true
     },
     {
       "level": 1401,
-      "power": 739970000,
-      "verified": false
+      "power": 739032000,
+      "verified": true
     },
     {
       "level": 1402,
-      "power": 740915000,
-      "verified": false
+      "power": 739977024,
+      "verified": true
     },
     {
       "level": 1403,
-      "power": 741860000,
-      "verified": false
+      "power": 740921984,
+      "verified": true
     },
     {
       "level": 1404,
-      "power": 742805000,
-      "verified": false
+      "power": 741867008,
+      "verified": true
     },
     {
       "level": 1405,
-      "power": 743757000,
-      "verified": false
+      "power": 742812032,
+      "verified": true
     },
     {
       "level": 1406,
-      "power": 744709000,
-      "verified": false
+      "power": 743763968,
+      "verified": true
     },
     {
       "level": 1407,
-      "power": 745661000,
-      "verified": false
+      "power": 744716032,
+      "verified": true
     },
     {
       "level": 1408,
-      "power": 746613000,
-      "verified": false
+      "power": 745667968,
+      "verified": true
     },
     {
       "level": 1409,
-      "power": 747565000,
-      "verified": false
+      "power": 746620032,
+      "verified": true
     },
     {
       "level": 1410,
-      "power": 748517000,
-      "verified": false
+      "power": 747571968,
+      "verified": true
     },
     {
       "level": 1411,
-      "power": 749469000,
-      "verified": false
+      "power": 748524032,
+      "verified": true
     },
     {
       "level": 1412,
-      "power": 750421000,
-      "verified": false
+      "power": 749475968,
+      "verified": true
     },
     {
       "level": 1413,
-      "power": 751373000,
-      "verified": false
+      "power": 750428032,
+      "verified": true
     },
     {
       "level": 1414,
-      "power": 752325000,
-      "verified": false
+      "power": 751379968,
+      "verified": true
     },
     {
       "level": 1415,
-      "power": 753277000,
-      "verified": false
+      "power": 752332032,
+      "verified": true
     },
     {
       "level": 1416,
-      "power": 754229000,
-      "verified": false
+      "power": 753283968,
+      "verified": true
     },
     {
       "level": 1417,
-      "power": 755181000,
-      "verified": false
+      "power": 754236032,
+      "verified": true
     },
     {
       "level": 1418,
@@ -7498,278 +7498,278 @@
     },
     {
       "level": 1499,
-      "power": 835338000,
-      "verified": false
+      "power": 834344000,
+      "verified": true
     },
     {
       "level": 1500,
-      "power": 836339000,
-      "verified": false
+      "power": 835345024,
+      "verified": true
     },
     {
       "level": 1501,
-      "power": 837340000,
-      "verified": false
+      "power": 836345984,
+      "verified": true
     },
     {
       "level": 1502,
-      "power": 838341000,
-      "verified": false
+      "power": 837347008,
+      "verified": true
     },
     {
       "level": 1503,
-      "power": 839342000,
-      "verified": false
+      "power": 838348032,
+      "verified": true
     },
     {
       "level": 1504,
-      "power": 840343000,
-      "verified": false
+      "power": 839348992,
+      "verified": true
     },
     {
       "level": 1505,
-      "power": 841344000,
-      "verified": false
+      "power": 840350016,
+      "verified": true
     },
     {
       "level": 1506,
-      "power": 842345000,
-      "verified": false
+      "power": 841350976,
+      "verified": true
     },
     {
       "level": 1507,
-      "power": 843346000,
-      "verified": false
+      "power": 842352000,
+      "verified": true
     },
     {
       "level": 1508,
-      "power": 844347000,
-      "verified": false
+      "power": 843353024,
+      "verified": true
     },
     {
       "level": 1509,
-      "power": 845348000,
-      "verified": false
+      "power": 844353984,
+      "verified": true
     },
     {
       "level": 1510,
-      "power": 846356000,
-      "verified": false
+      "power": 845355008,
+      "verified": true
     },
     {
       "level": 1511,
-      "power": 847364000,
-      "verified": false
+      "power": 846363008,
+      "verified": true
     },
     {
       "level": 1512,
-      "power": 848372000,
-      "verified": false
+      "power": 847371008,
+      "verified": true
     },
     {
       "level": 1513,
-      "power": 849380000,
-      "verified": false
+      "power": 848379008,
+      "verified": true
     },
     {
       "level": 1514,
-      "power": 850388000,
-      "verified": false
+      "power": 849387008,
+      "verified": true
     },
     {
       "level": 1515,
-      "power": 851396000,
-      "verified": false
+      "power": 850395008,
+      "verified": true
     },
     {
       "level": 1516,
-      "power": 852404000,
-      "verified": false
+      "power": 851403008,
+      "verified": true
     },
     {
       "level": 1517,
-      "power": 853412000,
-      "verified": false
+      "power": 852411008,
+      "verified": true
     },
     {
       "level": 1518,
-      "power": 854420000,
-      "verified": false
+      "power": 853419008,
+      "verified": true
     },
     {
       "level": 1519,
-      "power": 855428000,
-      "verified": false
+      "power": 854427008,
+      "verified": true
     },
     {
       "level": 1520,
-      "power": 856436000,
-      "verified": false
+      "power": 855435008,
+      "verified": true
     },
     {
       "level": 1521,
-      "power": 857444000,
-      "verified": false
+      "power": 856443008,
+      "verified": true
     },
     {
       "level": 1522,
-      "power": 858452000,
-      "verified": false
+      "power": 857451008,
+      "verified": true
     },
     {
       "level": 1523,
-      "power": 859467000,
-      "verified": false
+      "power": 858459008,
+      "verified": true
     },
     {
       "level": 1524,
-      "power": 860482000,
-      "verified": false
+      "power": 859473984,
+      "verified": true
     },
     {
       "level": 1525,
-      "power": 861497000,
-      "verified": false
+      "power": 860489024,
+      "verified": true
     },
     {
       "level": 1526,
-      "power": 862512000,
-      "verified": false
+      "power": 861504000,
+      "verified": true
     },
     {
       "level": 1527,
-      "power": 863527000,
-      "verified": false
+      "power": 862518976,
+      "verified": true
     },
     {
       "level": 1528,
-      "power": 864542000,
-      "verified": false
+      "power": 863534016,
+      "verified": true
     },
     {
       "level": 1529,
-      "power": 865557000,
-      "verified": false
+      "power": 864548992,
+      "verified": true
     },
     {
       "level": 1530,
-      "power": 866572000,
-      "verified": false
+      "power": 865564032,
+      "verified": true
     },
     {
       "level": 1531,
-      "power": 867587000,
-      "verified": false
+      "power": 866579008,
+      "verified": true
     },
     {
       "level": 1532,
-      "power": 868602000,
-      "verified": false
+      "power": 867593984,
+      "verified": true
     },
     {
       "level": 1533,
-      "power": 869617000,
-      "verified": false
+      "power": 868609024,
+      "verified": true
     },
     {
       "level": 1534,
-      "power": 870632000,
-      "verified": false
+      "power": 869624000,
+      "verified": true
     },
     {
       "level": 1535,
-      "power": 871647000,
-      "verified": false
+      "power": 870638976,
+      "verified": true
     },
     {
       "level": 1536,
-      "power": 872669000,
-      "verified": false
+      "power": 871654016,
+      "verified": true
     },
     {
       "level": 1537,
-      "power": 873691000,
-      "verified": false
+      "power": 872675968,
+      "verified": true
     },
     {
       "level": 1538,
-      "power": 874713000,
-      "verified": false
+      "power": 873697984,
+      "verified": true
     },
     {
       "level": 1539,
-      "power": 875735000,
-      "verified": false
+      "power": 874720000,
+      "verified": true
     },
     {
       "level": 1540,
-      "power": 876757000,
-      "verified": false
+      "power": 875742016,
+      "verified": true
     },
     {
       "level": 1541,
-      "power": 877779000,
-      "verified": false
+      "power": 876764032,
+      "verified": true
     },
     {
       "level": 1542,
-      "power": 878801000,
-      "verified": false
+      "power": 877785984,
+      "verified": true
     },
     {
       "level": 1543,
-      "power": 879823000,
-      "verified": false
+      "power": 878808000,
+      "verified": true
     },
     {
       "level": 1544,
-      "power": 880845000,
-      "verified": false
+      "power": 879830016,
+      "verified": true
     },
     {
       "level": 1545,
-      "power": 881867000,
-      "verified": false
+      "power": 880851968,
+      "verified": true
     },
     {
       "level": 1546,
-      "power": 882889000,
-      "verified": false
+      "power": 881873984,
+      "verified": true
     },
     {
       "level": 1547,
-      "power": 883911000,
-      "verified": false
+      "power": 882896000,
+      "verified": true
     },
     {
       "level": 1548,
-      "power": 884933000,
-      "verified": false
+      "power": 883918016,
+      "verified": true
     },
     {
       "level": 1549,
-      "power": 885955000,
-      "verified": false
+      "power": 884940032,
+      "verified": true
     },
     {
       "level": 1550,
-      "power": 886984000,
-      "verified": false
+      "power": 885961984,
+      "verified": true
     },
     {
       "level": 1551,
-      "power": 888013000,
-      "verified": false
+      "power": 886990976,
+      "verified": true
     },
     {
       "level": 1552,
-      "power": 889042000,
-      "verified": false
+      "power": 888019968,
+      "verified": true
     },
     {
       "level": 1553,
-      "power": 890071000,
-      "verified": false
+      "power": 889049024,
+      "verified": true
     },
     {
       "level": 1554,
@@ -8188,298 +8188,298 @@
     },
     {
       "level": 1637,
-      "power": 978264000,
-      "verified": false
+      "power": 977200000,
+      "verified": true
     },
     {
       "level": 1638,
-      "power": 979335000,
-      "verified": false
+      "power": 978270976,
+      "verified": true
     },
     {
       "level": 1639,
-      "power": 980406000,
-      "verified": false
+      "power": 979342016,
+      "verified": true
     },
     {
       "level": 1640,
-      "power": 981477000,
-      "verified": false
+      "power": 980412992,
+      "verified": true
     },
     {
       "level": 1641,
-      "power": 982548000,
-      "verified": false
+      "power": 981484032,
+      "verified": true
     },
     {
       "level": 1642,
-      "power": 983619000,
-      "verified": false
+      "power": 982555008,
+      "verified": true
     },
     {
       "level": 1643,
-      "power": 984697000,
-      "verified": false
+      "power": 983625984,
+      "verified": true
     },
     {
       "level": 1644,
-      "power": 985775000,
-      "verified": false
+      "power": 984704000,
+      "verified": true
     },
     {
       "level": 1645,
-      "power": 986853000,
-      "verified": false
+      "power": 985782016,
+      "verified": true
     },
     {
       "level": 1646,
-      "power": 987931000,
-      "verified": false
+      "power": 986860032,
+      "verified": true
     },
     {
       "level": 1647,
-      "power": 989009000,
-      "verified": false
+      "power": 987937984,
+      "verified": true
     },
     {
       "level": 1648,
-      "power": 990087000,
-      "verified": false
+      "power": 989016000,
+      "verified": true
     },
     {
       "level": 1649,
-      "power": 991165000,
-      "verified": false
+      "power": 990094016,
+      "verified": true
     },
     {
       "level": 1650,
-      "power": 992243000,
-      "verified": false
+      "power": 991171968,
+      "verified": true
     },
     {
       "level": 1651,
-      "power": 993321000,
-      "verified": false
+      "power": 992249984,
+      "verified": true
     },
     {
       "level": 1652,
-      "power": 994399000,
-      "verified": false
+      "power": 993328000,
+      "verified": true
     },
     {
       "level": 1653,
-      "power": 995477000,
-      "verified": false
+      "power": 994406016,
+      "verified": true
     },
     {
       "level": 1654,
-      "power": 996555000,
-      "verified": false
+      "power": 995484032,
+      "verified": true
     },
     {
       "level": 1655,
-      "power": 997633000,
-      "verified": false
+      "power": 996561984,
+      "verified": true
     },
     {
       "level": 1656,
-      "power": 998718000,
-      "verified": false
+      "power": 997640000,
+      "verified": true
     },
     {
       "level": 1657,
-      "power": 999803000,
-      "verified": false
+      "power": 998724992,
+      "verified": true
     },
     {
       "level": 1658,
-      "power": 1000888000,
-      "verified": false
+      "power": 999809984,
+      "verified": true
     },
     {
       "level": 1659,
-      "power": 1001973000,
-      "verified": false
+      "power": 1000894976,
+      "verified": true
     },
     {
       "level": 1660,
-      "power": 1003058000,
-      "verified": false
+      "power": 1001980032,
+      "verified": true
     },
     {
       "level": 1661,
-      "power": 1004143000,
-      "verified": false
+      "power": 1003065024,
+      "verified": true
     },
     {
       "level": 1662,
-      "power": 1005228000,
-      "verified": false
+      "power": 1004150016,
+      "verified": true
     },
     {
       "level": 1663,
-      "power": 1006313000,
-      "verified": false
+      "power": 1005235008,
+      "verified": true
     },
     {
       "level": 1664,
-      "power": 1007398000,
-      "verified": false
+      "power": 1006320000,
+      "verified": true
     },
     {
       "level": 1665,
-      "power": 1008483000,
-      "verified": false
+      "power": 1007404992,
+      "verified": true
     },
     {
       "level": 1666,
-      "power": 1009568000,
-      "verified": false
+      "power": 1008489984,
+      "verified": true
     },
     {
       "level": 1667,
-      "power": 1010653000,
-      "verified": false
+      "power": 1009574976,
+      "verified": true
     },
     {
       "level": 1668,
-      "power": 1011738000,
-      "verified": false
+      "power": 1010659968,
+      "verified": true
     },
     {
       "level": 1669,
-      "power": 1012823000,
-      "verified": false
+      "power": 1011745024,
+      "verified": true
     },
     {
       "level": 1670,
-      "power": 1013915000,
-      "verified": false
+      "power": 1012830016,
+      "verified": true
     },
     {
       "level": 1671,
-      "power": 1015007000,
-      "verified": false
+      "power": 1013921984,
+      "verified": true
     },
     {
       "level": 1672,
-      "power": 1016099000,
-      "verified": false
+      "power": 1015014016,
+      "verified": true
     },
     {
       "level": 1673,
-      "power": 1017191000,
-      "verified": false
+      "power": 1016105984,
+      "verified": true
     },
     {
       "level": 1674,
-      "power": 1018283000,
-      "verified": false
+      "power": 1017198016,
+      "verified": true
     },
     {
       "level": 1675,
-      "power": 1019375000,
-      "verified": false
+      "power": 1018289984,
+      "verified": true
     },
     {
       "level": 1676,
-      "power": 1020467000,
-      "verified": false
+      "power": 1019382016,
+      "verified": true
     },
     {
       "level": 1677,
-      "power": 1021559000,
-      "verified": false
+      "power": 1020473984,
+      "verified": true
     },
     {
       "level": 1678,
-      "power": 1022651000,
-      "verified": false
+      "power": 1021566016,
+      "verified": true
     },
     {
       "level": 1679,
-      "power": 1023743000,
-      "verified": false
+      "power": 1022657984,
+      "verified": true
     },
     {
       "level": 1680,
-      "power": 1024835000,
-      "verified": false
+      "power": 1023750016,
+      "verified": true
     },
     {
       "level": 1681,
-      "power": 1025927000,
-      "verified": false
+      "power": 1024841984,
+      "verified": true
     },
     {
       "level": 1682,
-      "power": 1027019000,
-      "verified": false
+      "power": 1025934016,
+      "verified": true
     },
     {
       "level": 1683,
-      "power": 1028118000,
-      "verified": false
+      "power": 1027025984,
+      "verified": true
     },
     {
       "level": 1684,
-      "power": 1029217000,
-      "verified": false
+      "power": 1028124992,
+      "verified": true
     },
     {
       "level": 1685,
-      "power": 1030316000,
-      "verified": false
+      "power": 1029224000,
+      "verified": true
     },
     {
       "level": 1686,
-      "power": 1031415000,
-      "verified": false
+      "power": 1030323008,
+      "verified": true
     },
     {
       "level": 1687,
-      "power": 1032514000,
-      "verified": false
+      "power": 1031422016,
+      "verified": true
     },
     {
       "level": 1688,
-      "power": 1033613000,
-      "verified": false
+      "power": 1032521024,
+      "verified": true
     },
     {
       "level": 1689,
-      "power": 1034712000,
-      "verified": false
+      "power": 1033619968,
+      "verified": true
     },
     {
       "level": 1690,
-      "power": 1035811000,
-      "verified": false
+      "power": 1034718976,
+      "verified": true
     },
     {
       "level": 1691,
-      "power": 1036910000,
-      "verified": false
+      "power": 1035817984,
+      "verified": true
     },
     {
       "level": 1692,
-      "power": 1038009000,
-      "verified": false
+      "power": 1036916992,
+      "verified": true
     },
     {
       "level": 1693,
-      "power": 1039108000,
-      "verified": false
+      "power": 1038016000,
+      "verified": true
     },
     {
       "level": 1694,
-      "power": 1040207000,
-      "verified": false
+      "power": 1039115008,
+      "verified": true
     },
     {
       "level": 1695,
-      "power": 1041306000,
-      "verified": false
+      "power": 1040214016,
+      "verified": true
     },
     {
       "level": 1696,
@@ -8528,712 +8528,712 @@
     },
     {
       "level": 1705,
-      "power": 1052359000,
-      "verified": false
+      "power": 1051260032,
+      "verified": true
     },
     {
       "level": 1706,
-      "power": 1053465000,
-      "verified": false
+      "power": 1052366016,
+      "verified": true
     },
     {
       "level": 1707,
-      "power": 1054571000,
-      "verified": false
+      "power": 1053472000,
+      "verified": true
     },
     {
       "level": 1708,
-      "power": 1055677000,
-      "verified": false
+      "power": 1054577984,
+      "verified": true
     },
     {
       "level": 1709,
-      "power": 1056783000,
-      "verified": false
+      "power": 1055683968,
+      "verified": true
     },
     {
       "level": 1710,
-      "power": 1057896000,
-      "verified": false
+      "power": 1056790016,
+      "verified": true
     },
     {
       "level": 1711,
-      "power": 1059009000,
-      "verified": false
+      "power": 1057902976,
+      "verified": true
     },
     {
       "level": 1712,
-      "power": 1060122000,
-      "verified": false
+      "power": 1059016000,
+      "verified": true
     },
     {
       "level": 1713,
-      "power": 1061235000,
-      "verified": false
+      "power": 1060129024,
+      "verified": true
     },
     {
       "level": 1714,
-      "power": 1062348000,
-      "verified": false
+      "power": 1061241984,
+      "verified": true
     },
     {
       "level": 1715,
-      "power": 1063461000,
-      "verified": false
+      "power": 1062355008,
+      "verified": true
     },
     {
       "level": 1716,
-      "power": 1064574000,
-      "verified": false
+      "power": 1063468032,
+      "verified": true
     },
     {
       "level": 1717,
-      "power": 1065687000,
-      "verified": false
+      "power": 1064580992,
+      "verified": true
     },
     {
       "level": 1718,
-      "power": 1066800000,
-      "verified": false
+      "power": 1065694016,
+      "verified": true
     },
     {
       "level": 1719,
-      "power": 1067913000,
-      "verified": false
+      "power": 1066806976,
+      "verified": true
     },
     {
       "level": 1720,
-      "power": 1069026000,
-      "verified": false
+      "power": 1067920000,
+      "verified": true
     },
     {
       "level": 1721,
-      "power": 1070139000,
-      "verified": false
+      "power": 1069033024,
+      "verified": true
     },
     {
       "level": 1722,
-      "power": 1071252000,
-      "verified": false
+      "power": 1070145984,
+      "verified": true
     },
     {
       "level": 1723,
-      "power": 1072365000,
-      "verified": false
+      "power": 1071259008,
+      "verified": true
     },
     {
       "level": 1724,
-      "power": 1073485000,
-      "verified": false
+      "power": 1072371968,
+      "verified": true
     },
     {
       "level": 1725,
-      "power": 1074605000,
-      "verified": false
+      "power": 1073491968,
+      "verified": true
     },
     {
       "level": 1726,
-      "power": 1075725000,
-      "verified": false
+      "power": 1074611968,
+      "verified": true
     },
     {
       "level": 1727,
-      "power": 1076845000,
-      "verified": false
+      "power": 1075731968,
+      "verified": true
     },
     {
       "level": 1728,
-      "power": 1077965000,
-      "verified": false
+      "power": 1076851968,
+      "verified": true
     },
     {
       "level": 1729,
-      "power": 1079085000,
-      "verified": false
+      "power": 1077971968,
+      "verified": true
     },
     {
       "level": 1730,
-      "power": 1080205000,
-      "verified": false
+      "power": 1079091968,
+      "verified": true
     },
     {
       "level": 1731,
-      "power": 1081325000,
-      "verified": false
+      "power": 1080211968,
+      "verified": true
     },
     {
       "level": 1732,
-      "power": 1082445000,
-      "verified": false
+      "power": 1081331968,
+      "verified": true
     },
     {
       "level": 1733,
-      "power": 1083565000,
-      "verified": false
+      "power": 1082451968,
+      "verified": true
     },
     {
       "level": 1734,
-      "power": 1084685000,
-      "verified": false
+      "power": 1083571968,
+      "verified": true
     },
     {
       "level": 1735,
-      "power": 1085805000,
-      "verified": false
+      "power": 1084691968,
+      "verified": true
     },
     {
       "level": 1736,
-      "power": 1086925000,
-      "verified": false
+      "power": 1085811968,
+      "verified": true
     },
     {
       "level": 1737,
-      "power": 1088045000,
-      "verified": false
+      "power": 1086931968,
+      "verified": true
     },
     {
       "level": 1738,
-      "power": 1089172000,
-      "verified": false
+      "power": 1088051968,
+      "verified": true
     },
     {
       "level": 1739,
-      "power": 1090299000,
-      "verified": false
+      "power": 1089179008,
+      "verified": true
     },
     {
       "level": 1740,
-      "power": 1091426000,
-      "verified": false
+      "power": 1090306048,
+      "verified": true
     },
     {
       "level": 1741,
-      "power": 1092553000,
-      "verified": false
+      "power": 1091432960,
+      "verified": true
     },
     {
       "level": 1742,
-      "power": 1093680000,
-      "verified": false
+      "power": 1092560000,
+      "verified": true
     },
     {
       "level": 1743,
-      "power": 1094807000,
-      "verified": false
+      "power": 1093687040,
+      "verified": true
     },
     {
       "level": 1744,
-      "power": 1095934000,
-      "verified": false
+      "power": 1094813952,
+      "verified": true
     },
     {
       "level": 1745,
-      "power": 1097061000,
-      "verified": false
+      "power": 1095940992,
+      "verified": true
     },
     {
       "level": 1746,
-      "power": 1098188000,
-      "verified": false
+      "power": 1097068032,
+      "verified": true
     },
     {
       "level": 1747,
-      "power": 1099315000,
-      "verified": false
+      "power": 1098194944,
+      "verified": true
     },
     {
       "level": 1748,
-      "power": 1100442000,
-      "verified": false
+      "power": 1099321984,
+      "verified": true
     },
     {
       "level": 1749,
-      "power": 1101569000,
-      "verified": false
+      "power": 1100449024,
+      "verified": true
     },
     {
       "level": 1750,
-      "power": 1102696000,
-      "verified": false
+      "power": 1101575936,
+      "verified": true
     },
     {
       "level": 1751,
-      "power": 1103830000,
-      "verified": false
+      "power": 1102702976,
+      "verified": true
     },
     {
       "level": 1752,
-      "power": 1104964000,
-      "verified": false
+      "power": 1103837056,
+      "verified": true
     },
     {
       "level": 1753,
-      "power": 1106098000,
-      "verified": false
+      "power": 1104971008,
+      "verified": true
     },
     {
       "level": 1754,
-      "power": 1107232000,
-      "verified": false
+      "power": 1106104960,
+      "verified": true
     },
     {
       "level": 1755,
-      "power": 1108366000,
-      "verified": false
+      "power": 1107239040,
+      "verified": true
     },
     {
       "level": 1756,
-      "power": 1109500000,
-      "verified": false
+      "power": 1108372992,
+      "verified": true
     },
     {
       "level": 1757,
-      "power": 1110634000,
-      "verified": false
+      "power": 1109506944,
+      "verified": true
     },
     {
       "level": 1758,
-      "power": 1111768000,
-      "verified": false
+      "power": 1110641024,
+      "verified": true
     },
     {
       "level": 1759,
-      "power": 1112902000,
-      "verified": false
+      "power": 1111774976,
+      "verified": true
     },
     {
       "level": 1760,
-      "power": 1114036000,
-      "verified": false
+      "power": 1112909056,
+      "verified": true
     },
     {
       "level": 1761,
-      "power": 1115170000,
-      "verified": false
+      "power": 1114043008,
+      "verified": true
     },
     {
       "level": 1762,
-      "power": 1116304000,
-      "verified": false
+      "power": 1115176960,
+      "verified": true
     },
     {
       "level": 1763,
-      "power": 1117438000,
-      "verified": false
+      "power": 1116311040,
+      "verified": true
     },
     {
       "level": 1764,
-      "power": 1118572000,
-      "verified": false
+      "power": 1117444992,
+      "verified": true
     },
     {
       "level": 1765,
-      "power": 1119713000,
-      "verified": false
+      "power": 1118578944,
+      "verified": true
     },
     {
       "level": 1766,
-      "power": 1120854000,
-      "verified": false
+      "power": 1119719936,
+      "verified": true
     },
     {
       "level": 1767,
-      "power": 1121995000,
-      "verified": false
+      "power": 1120861056,
+      "verified": true
     },
     {
       "level": 1768,
-      "power": 1123136000,
-      "verified": false
+      "power": 1122002048,
+      "verified": true
     },
     {
       "level": 1769,
-      "power": 1124277000,
-      "verified": false
+      "power": 1123143040,
+      "verified": true
     },
     {
       "level": 1770,
-      "power": 1125418000,
-      "verified": false
+      "power": 1124284032,
+      "verified": true
     },
     {
       "level": 1771,
-      "power": 1126559000,
-      "verified": false
+      "power": 1125425024,
+      "verified": true
     },
     {
       "level": 1772,
-      "power": 1127700000,
-      "verified": false
+      "power": 1126566016,
+      "verified": true
     },
     {
       "level": 1773,
-      "power": 1128841000,
-      "verified": false
+      "power": 1127707008,
+      "verified": true
     },
     {
       "level": 1774,
-      "power": 1129982000,
-      "verified": false
+      "power": 1128848000,
+      "verified": true
     },
     {
       "level": 1775,
-      "power": 1131123000,
-      "verified": false
+      "power": 1129988992,
+      "verified": true
     },
     {
       "level": 1776,
-      "power": 1132264000,
-      "verified": false
+      "power": 1131129984,
+      "verified": true
     },
     {
       "level": 1777,
-      "power": 1133405000,
-      "verified": false
+      "power": 1132270976,
+      "verified": true
     },
     {
       "level": 1778,
-      "power": 1134553000,
-      "verified": false
+      "power": 1133411968,
+      "verified": true
     },
     {
       "level": 1779,
-      "power": 1135701000,
-      "verified": false
+      "power": 1134560000,
+      "verified": true
     },
     {
       "level": 1780,
-      "power": 1136849000,
-      "verified": false
+      "power": 1135708032,
+      "verified": true
     },
     {
       "level": 1781,
-      "power": 1137997000,
-      "verified": false
+      "power": 1136856064,
+      "verified": true
     },
     {
       "level": 1782,
-      "power": 1139145000,
-      "verified": false
+      "power": 1138003968,
+      "verified": true
     },
     {
       "level": 1783,
-      "power": 1140293000,
-      "verified": false
+      "power": 1139152000,
+      "verified": true
     },
     {
       "level": 1784,
-      "power": 1141441000,
-      "verified": false
+      "power": 1140300032,
+      "verified": true
     },
     {
       "level": 1785,
-      "power": 1142589000,
-      "verified": false
+      "power": 1141447936,
+      "verified": true
     },
     {
       "level": 1786,
-      "power": 1143737000,
-      "verified": false
+      "power": 1142595968,
+      "verified": true
     },
     {
       "level": 1787,
-      "power": 1144885000,
-      "verified": false
+      "power": 1143744000,
+      "verified": true
     },
     {
       "level": 1788,
-      "power": 1146033000,
-      "verified": false
+      "power": 1144892032,
+      "verified": true
     },
     {
       "level": 1789,
-      "power": 1147181000,
-      "verified": false
+      "power": 1146040064,
+      "verified": true
     },
     {
       "level": 1790,
-      "power": 1148329000,
-      "verified": false
+      "power": 1147187968,
+      "verified": true
     },
     {
       "level": 1791,
-      "power": 1149477000,
-      "verified": false
+      "power": 1148336000,
+      "verified": true
     },
     {
       "level": 1792,
-      "power": 1150632000,
-      "verified": false
+      "power": 1149484032,
+      "verified": true
     },
     {
       "level": 1793,
-      "power": 1151787000,
-      "verified": false
+      "power": 1150638976,
+      "verified": true
     },
     {
       "level": 1794,
-      "power": 1152942000,
-      "verified": false
+      "power": 1151794048,
+      "verified": true
     },
     {
       "level": 1795,
-      "power": 1154097000,
-      "verified": false
+      "power": 1152948992,
+      "verified": true
     },
     {
       "level": 1796,
-      "power": 1155252000,
-      "verified": false
+      "power": 1154104064,
+      "verified": true
     },
     {
       "level": 1797,
-      "power": 1156407000,
-      "verified": false
+      "power": 1155259008,
+      "verified": true
     },
     {
       "level": 1798,
-      "power": 1157562000,
-      "verified": false
+      "power": 1156413952,
+      "verified": true
     },
     {
       "level": 1799,
-      "power": 1158717000,
-      "verified": false
+      "power": 1157569024,
+      "verified": true
     },
     {
       "level": 1800,
-      "power": 1159872000,
-      "verified": false
+      "power": 1158723968,
+      "verified": true
     },
     {
       "level": 1801,
-      "power": 1161027000,
-      "verified": false
+      "power": 1159879040,
+      "verified": true
     },
     {
       "level": 1802,
-      "power": 1162182000,
-      "verified": false
+      "power": 1161033984,
+      "verified": true
     },
     {
       "level": 1803,
-      "power": 1163337000,
-      "verified": false
+      "power": 1162189056,
+      "verified": true
     },
     {
       "level": 1804,
-      "power": 1164492000,
-      "verified": false
+      "power": 1163344000,
+      "verified": true
     },
     {
       "level": 1805,
-      "power": 1165647000,
-      "verified": false
+      "power": 1164498944,
+      "verified": true
     },
     {
       "level": 1806,
-      "power": 1166809000,
-      "verified": false
+      "power": 1165654016,
+      "verified": true
     },
     {
       "level": 1807,
-      "power": 1167971000,
-      "verified": false
+      "power": 1166816000,
+      "verified": true
     },
     {
       "level": 1808,
-      "power": 1169133000,
-      "verified": false
+      "power": 1167977984,
+      "verified": true
     },
     {
       "level": 1809,
-      "power": 1170295000,
-      "verified": false
+      "power": 1169139968,
+      "verified": true
     },
     {
       "level": 1810,
-      "power": 1171457000,
-      "verified": false
+      "power": 1170301952,
+      "verified": true
     },
     {
       "level": 1811,
-      "power": 1172619000,
-      "verified": false
+      "power": 1171463936,
+      "verified": true
     },
     {
       "level": 1812,
-      "power": 1173781000,
-      "verified": false
+      "power": 1172626048,
+      "verified": true
     },
     {
       "level": 1813,
-      "power": 1174943000,
-      "verified": false
+      "power": 1173788032,
+      "verified": true
     },
     {
       "level": 1814,
-      "power": 1176105000,
-      "verified": false
+      "power": 1174950016,
+      "verified": true
     },
     {
       "level": 1815,
-      "power": 1177267000,
-      "verified": false
+      "power": 1176112000,
+      "verified": true
     },
     {
       "level": 1816,
-      "power": 1178429000,
-      "verified": false
+      "power": 1177273984,
+      "verified": true
     },
     {
       "level": 1817,
-      "power": 1179591000,
-      "verified": false
+      "power": 1178435968,
+      "verified": true
     },
     {
       "level": 1818,
-      "power": 1180753000,
-      "verified": false
+      "power": 1179597952,
+      "verified": true
     },
     {
       "level": 1819,
-      "power": 1181922000,
-      "verified": false
+      "power": 1180760064,
+      "verified": true
     },
     {
       "level": 1820,
-      "power": 1183091000,
-      "verified": false
+      "power": 1181928960,
+      "verified": true
     },
     {
       "level": 1821,
-      "power": 1184260000,
-      "verified": false
+      "power": 1183097984,
+      "verified": true
     },
     {
       "level": 1822,
-      "power": 1185429000,
-      "verified": false
+      "power": 1184267008,
+      "verified": true
     },
     {
       "level": 1823,
-      "power": 1186598000,
-      "verified": false
-    },
-    {
-      "level": 1824,
       "power": 1185436032,
       "verified": true
     },
     {
-      "level": 1825,
+      "level": 1824,
       "power": 1186605056,
       "verified": true
     },
     {
-      "level": 1826,
+      "level": 1825,
       "power": 1187773952,
       "verified": true
     },
     {
-      "level": 1827,
+      "level": 1826,
       "power": 1188942976,
       "verified": true
     },
     {
-      "level": 1828,
+      "level": 1827,
       "power": 1190112000,
       "verified": true
     },
     {
-      "level": 1829,
+      "level": 1828,
       "power": 1191281024,
       "verified": true
     },
     {
-      "level": 1830,
+      "level": 1829,
       "power": 1192450048,
       "verified": true
     },
     {
-      "level": 1831,
+      "level": 1830,
       "power": 1193618944,
       "verified": true
     },
     {
-      "level": 1832,
+      "level": 1831,
       "power": 1194787968,
       "verified": true
     },
     {
-      "level": 1833,
+      "level": 1832,
       "power": 1195956992,
       "verified": true
     },
     {
-      "level": 1834,
+      "level": 1833,
       "power": 1197126016,
       "verified": true
     },
     {
-      "level": 1835,
+      "level": 1834,
       "power": 1198301952,
       "verified": true
     },
     {
-      "level": 1836,
+      "level": 1835,
       "power": 1199478016,
       "verified": true
     },
     {
-      "level": 1837,
+      "level": 1836,
       "power": 1200653952,
       "verified": true
     },
     {
-      "level": 1838,
+      "level": 1837,
       "power": 1201830016,
       "verified": true
     },
     {
-      "level": 1839,
+      "level": 1838,
       "power": 1203005952,
       "verified": true
     },
     {
-      "level": 1840,
+      "level": 1839,
       "power": 1204182016,
       "verified": true
     },
     {
-      "level": 1841,
+      "level": 1840,
       "power": 1205357952,
       "verified": true
     },
     {
-      "level": 1842,
+      "level": 1841,
       "power": 1206534016,
       "verified": true
     },
     {
-      "level": 1843,
+      "level": 1842,
       "power": 1207709952,
       "verified": true
     },
     {
-      "level": 1844,
+      "level": 1843,
       "power": 1208886016,
       "verified": true
     },
     {
-      "level": 1845,
+      "level": 1844,
       "power": 1210061952,
       "verified": true
     },
     {
-      "level": 1846,
+      "level": 1845,
       "power": 1211238016,
+      "verified": true
+    },
+    {
+      "level": 1846,
+      "power": 1212413952,
       "verified": true
     },
     {
@@ -17973,7 +17973,7 @@
     {
       "from": 1327,
       "to": 1328,
-      "light-regent": 645,
+      "light-regent": 650,
       "verified": true
     },
     {
@@ -18286,235 +18286,235 @@
       "from": 1379,
       "to": 1380,
       "light-regent": 670,
-      "verified": false
+      "verified": true
     },
     {
       "from": 1380,
       "to": 1381,
       "light-regent": 670,
-      "verified": false
+      "verified": true
     },
     {
       "from": 1381,
       "to": 1382,
       "light-regent": 670,
-      "verified": false
+      "verified": true
     },
     {
       "from": 1382,
       "to": 1383,
       "light-regent": 670,
-      "verified": false
+      "verified": true
     },
     {
       "from": 1383,
       "to": 1384,
       "light-regent": 670,
-      "verified": false
+      "verified": true
     },
     {
       "from": 1384,
       "to": 1385,
       "light-regent": 670,
-      "verified": false
+      "verified": true
     },
     {
       "from": 1385,
       "to": 1386,
       "light-regent": 670,
-      "verified": false
+      "verified": true
     },
     {
       "from": 1386,
       "to": 1387,
       "light-regent": 670,
-      "verified": false
+      "verified": true
     },
     {
       "from": 1387,
       "to": 1388,
       "light-regent": 670,
-      "verified": false
+      "verified": true
     },
     {
       "from": 1388,
       "to": 1389,
       "light-regent": 670,
-      "verified": false
+      "verified": true
     },
     {
       "from": 1389,
       "to": 1390,
       "light-regent": 670,
-      "verified": false
+      "verified": true
     },
     {
       "from": 1390,
       "to": 1391,
       "light-regent": 670,
-      "verified": false
+      "verified": true
     },
     {
       "from": 1391,
       "to": 1392,
       "light-regent": 670,
-      "verified": false
+      "verified": true
     },
     {
       "from": 1392,
       "to": 1393,
       "light-regent": 675,
-      "verified": false
+      "verified": true
     },
     {
       "from": 1393,
       "to": 1394,
       "light-regent": 675,
-      "verified": false
+      "verified": true
     },
     {
       "from": 1394,
       "to": 1395,
       "light-regent": 675,
-      "verified": false
+      "verified": true
     },
     {
       "from": 1395,
       "to": 1396,
       "light-regent": 675,
-      "verified": false
+      "verified": true
     },
     {
       "from": 1396,
       "to": 1397,
       "light-regent": 675,
-      "verified": false
+      "verified": true
     },
     {
       "from": 1397,
       "to": 1398,
       "light-regent": 675,
-      "verified": false
+      "verified": true
     },
     {
       "from": 1398,
       "to": 1399,
       "light-regent": 675,
-      "verified": false
+      "verified": true
     },
     {
       "from": 1399,
       "to": 1400,
       "light-regent": 675,
-      "verified": false
+      "verified": true
     },
     {
       "from": 1400,
       "to": 1401,
       "light-regent": 675,
-      "verified": false
+      "verified": true
     },
     {
       "from": 1401,
       "to": 1402,
       "light-regent": 675,
-      "verified": false
+      "verified": true
     },
     {
       "from": 1402,
       "to": 1403,
       "light-regent": 675,
-      "verified": false
+      "verified": true
     },
     {
       "from": 1403,
       "to": 1404,
       "light-regent": 675,
-      "verified": false
+      "verified": true
     },
     {
       "from": 1404,
       "to": 1405,
       "light-regent": 675,
-      "verified": false
+      "verified": true
     },
     {
       "from": 1405,
       "to": 1406,
       "light-regent": 680,
-      "verified": false
+      "verified": true
     },
     {
       "from": 1406,
       "to": 1407,
       "light-regent": 680,
-      "verified": false
+      "verified": true
     },
     {
       "from": 1407,
       "to": 1408,
       "light-regent": 680,
-      "verified": false
+      "verified": true
     },
     {
       "from": 1408,
       "to": 1409,
       "light-regent": 680,
-      "verified": false
+      "verified": true
     },
     {
       "from": 1409,
       "to": 1410,
       "light-regent": 680,
-      "verified": false
+      "verified": true
     },
     {
       "from": 1410,
       "to": 1411,
       "light-regent": 680,
-      "verified": false
+      "verified": true
     },
     {
       "from": 1411,
       "to": 1412,
       "light-regent": 680,
-      "verified": false
+      "verified": true
     },
     {
       "from": 1412,
       "to": 1413,
       "light-regent": 680,
-      "verified": false
+      "verified": true
     },
     {
       "from": 1413,
       "to": 1414,
       "light-regent": 680,
-      "verified": false
+      "verified": true
     },
     {
       "from": 1414,
       "to": 1415,
       "light-regent": 680,
-      "verified": false
+      "verified": true
     },
     {
       "from": 1415,
       "to": 1416,
       "light-regent": 680,
-      "verified": false
+      "verified": true
     },
     {
       "from": 1416,
       "to": 1417,
       "light-regent": 680,
-      "verified": false
+      "verified": true
     },
     {
       "from": 1417,
       "to": 1418,
       "light-regent": 680,
-      "verified": false
+      "verified": true
     },
     {
       "from": 1418,
@@ -19024,313 +19024,313 @@
       "from": 1502,
       "to": 1503,
       "light-regent": 715,
-      "verified": false
+      "verified": true
     },
     {
       "from": 1503,
       "to": 1504,
       "light-regent": 715,
-      "verified": false
+      "verified": true
     },
     {
       "from": 1504,
       "to": 1505,
       "light-regent": 715,
-      "verified": false
+      "verified": true
     },
     {
       "from": 1505,
       "to": 1506,
       "light-regent": 715,
-      "verified": false
+      "verified": true
     },
     {
       "from": 1506,
       "to": 1507,
       "light-regent": 715,
-      "verified": false
+      "verified": true
     },
     {
       "from": 1507,
       "to": 1508,
       "light-regent": 715,
-      "verified": false
+      "verified": true
     },
     {
       "from": 1508,
       "to": 1509,
       "light-regent": 715,
-      "verified": false
+      "verified": true
     },
     {
       "from": 1509,
       "to": 1510,
       "light-regent": 715,
-      "verified": false
+      "verified": true
     },
     {
       "from": 1510,
       "to": 1511,
       "light-regent": 720,
-      "verified": false
+      "verified": true
     },
     {
       "from": 1511,
       "to": 1512,
       "light-regent": 720,
-      "verified": false
+      "verified": true
     },
     {
       "from": 1512,
       "to": 1513,
       "light-regent": 720,
-      "verified": false
+      "verified": true
     },
     {
       "from": 1513,
       "to": 1514,
       "light-regent": 720,
-      "verified": false
+      "verified": true
     },
     {
       "from": 1514,
       "to": 1515,
       "light-regent": 720,
-      "verified": false
+      "verified": true
     },
     {
       "from": 1515,
       "to": 1516,
       "light-regent": 720,
-      "verified": false
+      "verified": true
     },
     {
       "from": 1516,
       "to": 1517,
       "light-regent": 720,
-      "verified": false
+      "verified": true
     },
     {
       "from": 1517,
       "to": 1518,
       "light-regent": 720,
-      "verified": false
+      "verified": true
     },
     {
       "from": 1518,
       "to": 1519,
       "light-regent": 720,
-      "verified": false
+      "verified": true
     },
     {
       "from": 1519,
       "to": 1520,
       "light-regent": 720,
-      "verified": false
+      "verified": true
     },
     {
       "from": 1520,
       "to": 1521,
       "light-regent": 720,
-      "verified": false
+      "verified": true
     },
     {
       "from": 1521,
       "to": 1522,
       "light-regent": 720,
-      "verified": false
+      "verified": true
     },
     {
       "from": 1522,
       "to": 1523,
       "light-regent": 720,
-      "verified": false
+      "verified": true
     },
     {
       "from": 1523,
       "to": 1524,
       "light-regent": 725,
-      "verified": false
+      "verified": true
     },
     {
       "from": 1524,
       "to": 1525,
       "light-regent": 725,
-      "verified": false
+      "verified": true
     },
     {
       "from": 1525,
       "to": 1526,
       "light-regent": 725,
-      "verified": false
+      "verified": true
     },
     {
       "from": 1526,
       "to": 1527,
       "light-regent": 725,
-      "verified": false
+      "verified": true
     },
     {
       "from": 1527,
       "to": 1528,
       "light-regent": 725,
-      "verified": false
+      "verified": true
     },
     {
       "from": 1528,
       "to": 1529,
       "light-regent": 725,
-      "verified": false
+      "verified": true
     },
     {
       "from": 1529,
       "to": 1530,
       "light-regent": 725,
-      "verified": false
+      "verified": true
     },
     {
       "from": 1530,
       "to": 1531,
       "light-regent": 725,
-      "verified": false
+      "verified": true
     },
     {
       "from": 1531,
       "to": 1532,
       "light-regent": 725,
-      "verified": false
+      "verified": true
     },
     {
       "from": 1532,
       "to": 1533,
       "light-regent": 725,
-      "verified": false
+      "verified": true
     },
     {
       "from": 1533,
       "to": 1534,
       "light-regent": 725,
-      "verified": false
+      "verified": true
     },
     {
       "from": 1534,
       "to": 1535,
       "light-regent": 725,
-      "verified": false
+      "verified": true
     },
     {
       "from": 1535,
       "to": 1536,
       "light-regent": 725,
-      "verified": false
+      "verified": true
     },
     {
       "from": 1536,
       "to": 1537,
       "light-regent": 730,
-      "verified": false
+      "verified": true
     },
     {
       "from": 1537,
       "to": 1538,
       "light-regent": 730,
-      "verified": false
+      "verified": true
     },
     {
       "from": 1538,
       "to": 1539,
       "light-regent": 730,
-      "verified": false
+      "verified": true
     },
     {
       "from": 1539,
       "to": 1540,
       "light-regent": 730,
-      "verified": false
+      "verified": true
     },
     {
       "from": 1540,
       "to": 1541,
       "light-regent": 730,
-      "verified": false
+      "verified": true
     },
     {
       "from": 1541,
       "to": 1542,
       "light-regent": 730,
-      "verified": false
+      "verified": true
     },
     {
       "from": 1542,
       "to": 1543,
       "light-regent": 730,
-      "verified": false
+      "verified": true
     },
     {
       "from": 1543,
       "to": 1544,
       "light-regent": 730,
-      "verified": false
+      "verified": true
     },
     {
       "from": 1544,
       "to": 1545,
       "light-regent": 730,
-      "verified": false
+      "verified": true
     },
     {
       "from": 1545,
       "to": 1546,
       "light-regent": 730,
-      "verified": false
+      "verified": true
     },
     {
       "from": 1546,
       "to": 1547,
       "light-regent": 730,
-      "verified": false
+      "verified": true
     },
     {
       "from": 1547,
       "to": 1548,
       "light-regent": 730,
-      "verified": false
+      "verified": true
     },
     {
       "from": 1548,
       "to": 1549,
       "light-regent": 730,
-      "verified": false
+      "verified": true
     },
     {
       "from": 1549,
       "to": 1550,
       "light-regent": 730,
-      "verified": false
+      "verified": true
     },
     {
       "from": 1550,
       "to": 1551,
       "light-regent": 735,
-      "verified": false
+      "verified": true
     },
     {
       "from": 1551,
       "to": 1552,
       "light-regent": 735,
-      "verified": false
+      "verified": true
     },
     {
       "from": 1552,
       "to": 1553,
       "light-regent": 735,
-      "verified": false
+      "verified": true
     },
     {
       "from": 1553,
       "to": 1554,
       "light-regent": 735,
-      "verified": false
+      "verified": true
     },
     {
       "from": 1554,
@@ -19834,355 +19834,355 @@
       "from": 1637,
       "to": 1638,
       "light-regent": 765,
-      "verified": false
+      "verified": true
     },
     {
       "from": 1638,
       "to": 1639,
       "light-regent": 765,
-      "verified": false
+      "verified": true
     },
     {
       "from": 1639,
       "to": 1640,
       "light-regent": 765,
-      "verified": false
+      "verified": true
     },
     {
       "from": 1640,
       "to": 1641,
       "light-regent": 765,
-      "verified": false
+      "verified": true
     },
     {
       "from": 1641,
       "to": 1642,
       "light-regent": 765,
-      "verified": false
+      "verified": true
     },
     {
       "from": 1642,
       "to": 1643,
       "light-regent": 765,
-      "verified": false
+      "verified": true
     },
     {
       "from": 1643,
       "to": 1644,
       "light-regent": 770,
-      "verified": false
+      "verified": true
     },
     {
       "from": 1644,
       "to": 1645,
       "light-regent": 770,
-      "verified": false
+      "verified": true
     },
     {
       "from": 1645,
       "to": 1646,
       "light-regent": 770,
-      "verified": false
+      "verified": true
     },
     {
       "from": 1646,
       "to": 1647,
       "light-regent": 770,
-      "verified": false
+      "verified": true
     },
     {
       "from": 1647,
       "to": 1648,
       "light-regent": 770,
-      "verified": false
+      "verified": true
     },
     {
       "from": 1648,
       "to": 1649,
       "light-regent": 770,
-      "verified": false
+      "verified": true
     },
     {
       "from": 1649,
       "to": 1650,
       "light-regent": 770,
-      "verified": false
+      "verified": true
     },
     {
       "from": 1650,
       "to": 1651,
       "light-regent": 770,
-      "verified": false
+      "verified": true
     },
     {
       "from": 1651,
       "to": 1652,
       "light-regent": 770,
-      "verified": false
+      "verified": true
     },
     {
       "from": 1652,
       "to": 1653,
       "light-regent": 770,
-      "verified": false
+      "verified": true
     },
     {
       "from": 1653,
       "to": 1654,
       "light-regent": 770,
-      "verified": false
+      "verified": true
     },
     {
       "from": 1654,
       "to": 1655,
       "light-regent": 770,
-      "verified": false
+      "verified": true
     },
     {
       "from": 1655,
       "to": 1656,
       "light-regent": 770,
-      "verified": false
+      "verified": true
     },
     {
       "from": 1656,
       "to": 1657,
       "light-regent": 775,
-      "verified": false
+      "verified": true
     },
     {
       "from": 1657,
       "to": 1658,
       "light-regent": 775,
-      "verified": false
+      "verified": true
     },
     {
       "from": 1658,
       "to": 1659,
       "light-regent": 775,
-      "verified": false
+      "verified": true
     },
     {
       "from": 1659,
       "to": 1660,
       "light-regent": 775,
-      "verified": false
+      "verified": true
     },
     {
       "from": 1660,
       "to": 1661,
       "light-regent": 775,
-      "verified": false
+      "verified": true
     },
     {
       "from": 1661,
       "to": 1662,
       "light-regent": 775,
-      "verified": false
+      "verified": true
     },
     {
       "from": 1662,
       "to": 1663,
       "light-regent": 775,
-      "verified": false
+      "verified": true
     },
     {
       "from": 1663,
       "to": 1664,
       "light-regent": 775,
-      "verified": false
+      "verified": true
     },
     {
       "from": 1664,
       "to": 1665,
       "light-regent": 775,
-      "verified": false
+      "verified": true
     },
     {
       "from": 1665,
       "to": 1666,
       "light-regent": 775,
-      "verified": false
+      "verified": true
     },
     {
       "from": 1666,
       "to": 1667,
       "light-regent": 775,
-      "verified": false
+      "verified": true
     },
     {
       "from": 1667,
       "to": 1668,
       "light-regent": 775,
-      "verified": false
+      "verified": true
     },
     {
       "from": 1668,
       "to": 1669,
       "light-regent": 775,
-      "verified": false
+      "verified": true
     },
     {
       "from": 1669,
       "to": 1670,
       "light-regent": 775,
-      "verified": false
+      "verified": true
     },
     {
       "from": 1670,
       "to": 1671,
       "light-regent": 780,
-      "verified": false
+      "verified": true
     },
     {
       "from": 1671,
       "to": 1672,
       "light-regent": 780,
-      "verified": false
+      "verified": true
     },
     {
       "from": 1672,
       "to": 1673,
       "light-regent": 780,
-      "verified": false
+      "verified": true
     },
     {
       "from": 1673,
       "to": 1674,
       "light-regent": 780,
-      "verified": false
+      "verified": true
     },
     {
       "from": 1674,
       "to": 1675,
       "light-regent": 780,
-      "verified": false
+      "verified": true
     },
     {
       "from": 1675,
       "to": 1676,
       "light-regent": 780,
-      "verified": false
+      "verified": true
     },
     {
       "from": 1676,
       "to": 1677,
       "light-regent": 780,
-      "verified": false
+      "verified": true
     },
     {
       "from": 1677,
       "to": 1678,
       "light-regent": 780,
-      "verified": false
+      "verified": true
     },
     {
       "from": 1678,
       "to": 1679,
       "light-regent": 780,
-      "verified": false
+      "verified": true
     },
     {
       "from": 1679,
       "to": 1680,
       "light-regent": 780,
-      "verified": false
+      "verified": true
     },
     {
       "from": 1680,
       "to": 1681,
       "light-regent": 780,
-      "verified": false
+      "verified": true
     },
     {
       "from": 1681,
       "to": 1682,
       "light-regent": 780,
-      "verified": false
+      "verified": true
     },
     {
       "from": 1682,
       "to": 1683,
       "light-regent": 780,
-      "verified": false
+      "verified": true
     },
     {
       "from": 1683,
       "to": 1684,
       "light-regent": 785,
-      "verified": false
+      "verified": true
     },
     {
       "from": 1684,
       "to": 1685,
       "light-regent": 785,
-      "verified": false
+      "verified": true
     },
     {
       "from": 1685,
       "to": 1686,
       "light-regent": 785,
-      "verified": false
+      "verified": true
     },
     {
       "from": 1686,
       "to": 1687,
       "light-regent": 785,
-      "verified": false
+      "verified": true
     },
     {
       "from": 1687,
       "to": 1688,
       "light-regent": 785,
-      "verified": false
+      "verified": true
     },
     {
       "from": 1688,
       "to": 1689,
       "light-regent": 785,
-      "verified": false
+      "verified": true
     },
     {
       "from": 1689,
       "to": 1690,
       "light-regent": 785,
-      "verified": false
+      "verified": true
     },
     {
       "from": 1690,
       "to": 1691,
       "light-regent": 785,
-      "verified": false
+      "verified": true
     },
     {
       "from": 1691,
       "to": 1692,
       "light-regent": 785,
-      "verified": false
+      "verified": true
     },
     {
       "from": 1692,
       "to": 1693,
       "light-regent": 785,
-      "verified": false
+      "verified": true
     },
     {
       "from": 1693,
       "to": 1694,
       "light-regent": 785,
-      "verified": false
+      "verified": true
     },
     {
       "from": 1694,
       "to": 1695,
       "light-regent": 785,
-      "verified": false
+      "verified": true
     },
     {
       "from": 1695,
       "to": 1696,
       "light-regent": 785,
-      "verified": false
+      "verified": true
     },
     {
       "from": 1696,
@@ -20242,115 +20242,115 @@
       "from": 1705,
       "to": 1706,
       "light-regent": 790,
-      "verified": false
+      "verified": true
     },
     {
       "from": 1706,
       "to": 1707,
       "light-regent": 790,
-      "verified": false
+      "verified": true
     },
     {
       "from": 1707,
       "to": 1708,
       "light-regent": 790,
-      "verified": false
+      "verified": true
     },
     {
       "from": 1708,
       "to": 1709,
       "light-regent": 790,
-      "verified": false
+      "verified": true
     },
     {
       "from": 1709,
       "to": 1710,
       "light-regent": 790,
-      "verified": false
+      "verified": true
     },
     {
       "from": 1710,
       "to": 1711,
       "light-regent": 795,
-      "verified": false
+      "verified": true
     },
     {
       "from": 1711,
       "to": 1712,
       "light-regent": 795,
-      "verified": false
+      "verified": true
     },
     {
       "from": 1712,
       "to": 1713,
       "light-regent": 795,
-      "verified": false
+      "verified": true
     },
     {
       "from": 1713,
       "to": 1714,
       "light-regent": 795,
-      "verified": false
+      "verified": true
     },
     {
       "from": 1714,
       "to": 1715,
       "light-regent": 795,
-      "verified": false
+      "verified": true
     },
     {
       "from": 1715,
       "to": 1716,
       "light-regent": 795,
-      "verified": false
+      "verified": true
     },
     {
       "from": 1716,
       "to": 1717,
       "light-regent": 795,
-      "verified": false
+      "verified": true
     },
     {
       "from": 1717,
       "to": 1718,
       "light-regent": 795,
-      "verified": false
+      "verified": true
     },
     {
       "from": 1718,
       "to": 1719,
       "light-regent": 795,
-      "verified": false
+      "verified": true
     },
     {
       "from": 1719,
       "to": 1720,
       "light-regent": 795,
-      "verified": false
+      "verified": true
     },
     {
       "from": 1720,
       "to": 1721,
       "light-regent": 795,
-      "verified": false
+      "verified": true
     },
     {
       "from": 1721,
       "to": 1722,
       "light-regent": 795,
-      "verified": false
+      "verified": true
     },
     {
       "from": 1722,
       "to": 1723,
       "light-regent": 795,
-      "verified": false
+      "verified": true
     },
     {
       "from": 1723,
       "to": 1724,
       "light-regent": 795,
-      "verified": false
+      "verified": true
     },
     {
       "from": 1724,

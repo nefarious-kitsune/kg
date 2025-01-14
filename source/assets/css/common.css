@@ -1582,14 +1582,12 @@ table.upgrade-table { /* border on all cells */
     border-style: solid;
     border-color: var(--miku-dark-red);
   }
-  .from-level, .to-level { width: 3.2rem; }
+  .from-level, .to-level { width: 4.8rem; }
   .chevron { width: 1.4rem; }
   .upgrade-cost { width: 8rem; }
 
   th { text-align: center;}
 
-  td.from-level,
-  td.to-level,
   td.upgrade-cost { text-align: right; }
   td.chevron { width: 1.4rem; text-align: center;}
 
@@ -1597,6 +1595,16 @@ table.upgrade-table { /* border on all cells */
   .to-level { border-width: 0.11rem 0.11rem 0.11rem 0; }
   .chevron { border-width: 0.11rem 0; }
   .upgrade-cost { border-width: 0.11rem; }
+
+  .level {
+    display: inline-block;
+    width: 3rem;
+    text-align: right;
+    font-family: "Fira Mono", monospace;
+  }
+  .cost {
+    font-family: "Fira Mono", monospace;
+  }
 }
 
 .price-table {

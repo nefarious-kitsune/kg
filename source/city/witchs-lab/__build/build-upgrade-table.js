@@ -1,9 +1,11 @@
 import {fileURLToPath} from 'url';
 import {dirname, resolve} from 'path';
-import {writeFileSync} from 'fs';
+import {readFileSync, writeFileSync} from 'fs';
 
 const ModulePath = dirname(fileURLToPath(import.meta.url));
-const ProjectPath = resolve(ModulePath, '../../');
+const ProjectPath = resolve(ModulePath, '../../../../');
+const TemplatePath = resolve(ModulePath, '../__templates/');
+const ExportPath = resolve(ProjectPath, './docs/city/witchs-lab/');
 
 import {database} from './build-data.js';
 
@@ -20,8 +22,13 @@ function buildUpgradeTable() {
   tsv1.push(['from', 'to', 'light regent cost', 'verified'].join('\t'));
 
   const unverifiedMarker = '<img\n' +
-      '  src="../assets/icons/emoji_question-color.png"\n' +
-      '  class="icon" title="unverified" alt="unverified"></img>';
+      '  src="/assets/emojis/4x/question-mark.png"\n' +
+      '  class="emoji" title="unverified" alt="unverified">';
+
+  const rowTemplate = readFileSync(
+      resolve(TemplatePath, './upgrade-row.md'),
+      {encoding: 'utf8'}
+  );
 
   database['upgrade-data'].forEach((entry) => {
     const regentCost = entry['light-regent'];
@@ -29,12 +36,11 @@ function buildUpgradeTable() {
     const marker = entry.verified?'':unverifiedMarker;
 
     table1.push(
-        '<tr>',
-        `  <td class="from-level">${entry.from}</td>`,
-        '  <td class="chevron">»</td>',
-        `  <td class="to-level">${entry.to}</td>`,
-        `  <td class="upgrade-cost">${marker}${regentCost}</td>`,
-        '</tr>',
+        rowTemplate
+            .replace('{{FROM LEVEL}}', entry.from)
+            .replace('{{TO LEVEL}}', entry.to)
+            .replace('{{MARKER}}', marker)
+            .replace('{{COST}}', regentCost),
     );
 
     tsv1.push([
@@ -45,36 +51,29 @@ function buildUpgradeTable() {
     ].join('\t'));
 
     table2.push(
-        '<tr>',
-        `  <td class="from-level">${entry.from}</td>`,
-        '  <td class="chevron">»</td>',
-        '  <td class="to-level">2000</td>',
-        `  <td class="upgrade-cost">${maxRegentCost}</td>`,
-        '</tr>',
+        rowTemplate
+            .replace('{{FROM LEVEL}}', entry.from)
+            .replace('{{TO LEVEL}}', '2000')
+            .replace('{{MARKER}}', marker)
+            .replace('{{COST}}', maxRegentCost),
     );
 
     cumulativeRegentCost += regentCost;
   }); // for each
 
   writeFileSync(
-      resolve(
-          ProjectPath,
-          './source/magic-lab/__temp/--upgrade-one-level.html'),
+      resolve(TemplatePath, './--upgrade-one-level.md'),
       table1.join('\n'),
   );
 
   writeFileSync(
-      resolve(
-          ProjectPath,
-          './docs/magic-lab/magic-lab-upgrade.tsv'),
-      tsv1.join('\n'),
+      resolve(TemplatePath, './--upgrade-max.md'),
+      table2.join('\n'),
   );
 
   writeFileSync(
-      resolve(
-          ProjectPath,
-          './source/magic-lab/__temp/--upgrade-max.html'),
-      table2.join('\n'),
+      resolve(ExportPath, './light-magic/light-magic-upgrade.tsv'),
+      tsv1.join('\n'),
   );
 }
 

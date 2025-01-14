@@ -3,12 +3,12 @@ import {dirname, resolve} from 'path';
 import {readFileSync, writeFileSync} from 'fs';
 
 const ModulePath = dirname(fileURLToPath(import.meta.url));
-const ProjectPath = resolve(ModulePath, '../../');
-const DataPath = resolve(ProjectPath, './data/magic-lab/');
-const ExportPath = resolve(ProjectPath, './docs/magic-lab/');
+const ProjectPath = resolve(ModulePath, '../../../../');
+const DataPath = resolve(ModulePath, '../__data/');
+const ExportPath = resolve(ProjectPath, './docs/city/witchs-lab/');
 
 export const database = {
-  'title': 'Witch\'s Lab Upgrade Cost and Power',
+  'title': 'Witch\'s Lab Light Magic Upgrade Cost and Power',
   'power-data': [],
   'upgrade-data': [],
 };
@@ -79,9 +79,9 @@ function buildDatabase() {
  * Save Database
  */
 function saveDatabase() {
-  const _json = JSON.stringify(database, null, '  ') + '\n';
-
-  writeFileSync(resolve(ExportPath, 'magic-lab.json'), _json);
+  writeFileSync(
+      resolve(ExportPath, './light-magic/light-magic.json'),
+      JSON.stringify(database, null, '  ') + '\n');
 }
 
 buildDatabase();
