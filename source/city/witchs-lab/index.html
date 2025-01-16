@@ -7,6 +7,8 @@
 >
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <link href="../../assets/css/common.css" rel="stylesheet">
+<link href="/assets/modal/model.css" rel="stylesheet">
+<script src="/assets/modal/model.js"></script>
 <style>
   .intro {
     background-image: url("../../assets/icons/building-witchs-lab.png");
@@ -28,6 +30,14 @@
 <main>
 <h1>{{TITLE}}</h1>
 
+<div class="quick-access-container"><menu>
+  <li><a href="#magic-powers">Magic Powers</a></li>
+  <li><a href="#magic-stones">Magic Stones</a></li>
+  <li><a href="#screenshots">Screenshots</a></li>
+</menu></div>
+
+<fragment src="/__templates/modal-container.md"/>
+
 <div class="intro">
 <fragment src="../__templates/witchs-lab-intro.md"/>
 <p>Light/Dark Magic Power can be <em>extended</em> with
@@ -36,7 +46,7 @@ Summon Altar,
 etc.</p>
 </div>
 
-<section>
+<section id="magic-powers">
 <h2>Light and Dark Magic</h2>
 
 <div class="info-box">Light and Dark Magic <strong>do not</strong>
@@ -53,6 +63,14 @@ is possible (e.g. it is possible to have Dark Magic Power between level
 1900 and 1901).</p>
 </section>
 
+<section id="magic-stones">
+<h2>Magic Stones</h2>
+</section>
+
+<section id="screenshots">
+<h2>Screenshots</h2>
+</section>
+  
 </main>
 </body>
 </html>
