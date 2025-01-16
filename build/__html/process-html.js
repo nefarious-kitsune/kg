@@ -123,7 +123,7 @@ export function processHtml(srcContent, filePath, basePath) {
   const processed = {
     source: srcContent,
     filePath: filePath,
-    rootPath: basePath,
+    basePath: basePath,
   };
 
   replaceTitle(processed);

@@ -1,6 +1,11 @@
+import {fileURLToPath} from 'url';
 import {readFileSync} from 'fs';
 import {dirname, resolve} from 'path';
 import {extractHtmlElement} from '../extract-element.js';
+
+const ModulePath = dirname(fileURLToPath(import.meta.url));
+const ProjectPath = resolve(ModulePath, '../../../');
+const srcBasePath = resolve(ProjectPath, './source/');
 
 /**
  * Replace <fragment> with content from other files
@@ -19,7 +24,7 @@ export function replaceFragment(content) {
   if (!replacementPath) return false;
 
   if (replacementPath.startsWith('/')) {
-    replacementPath = resolve(content.basePath, replacementPath.substring(1));
+    replacementPath = resolve(srcBasePath, replacementPath.substring(1));
   } else {
     replacementPath = resolve(dirname(content.filePath), replacementPath);
   }

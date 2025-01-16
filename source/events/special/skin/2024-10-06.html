@@ -41,19 +41,8 @@
 
 <main>
 <h1>{{TITLE}}</h1>
-
-
-<div id="modal-container">
-<input class="modal-close" type="image" onclick="closeModal()"
-  src="/assets/emojis/4x/cross-mark.png">
-<img id="modal-image">
-<div id="modal-caption"></div>
-</div>
-  
-<template id="cal-template">
-<fragment src="../../__temp/event-cal.md"/>
-</template>
-  
+<fragment src="/__templates/modal-container.md"/>
+<fragment src="/__templates/event-cal-template.md"/>
 <section id="calendars">
 <div class="split-col-wrapper">
 <div id="thisSeasonCalContainer" class="col"></div>
