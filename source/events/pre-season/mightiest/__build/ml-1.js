@@ -1,6 +1,6 @@
 import {readFileSync, writeFileSync} from 'fs';
 
-const tsvData = readFileSync('../__data/ML-2.tsv', {encoding: 'utf8'})
+const tsvData = readFileSync('../__data/ML-1.tsv', {encoding: 'utf8'})
     .split('\n');
 
 const phaseTable = [[], [], [], [], [], []];
@@ -29,13 +29,13 @@ tsvData.forEach((row) => {
     phaseTable[5].push(tableRow);
   } else {
     phaseTable[phaseNumber-1].push(tableRow);
-    if (phaseNumber !== 3) phaseTable[5].push(tableRow);
+    if (phaseNumber !== 2) phaseTable[5].push(tableRow);
   }
 });
 
 let output = '';
 
-const phaseNames = ['Unit', 'Hero', 'Castle', 'Weapon', 'Dragon', 'Power'];
+const phaseNames = ['Unit', 'Castle', 'Dragon', 'Hero', 'Weapon', 'Power'];
 
 phaseTable.forEach((phaseLines, phaseIndex) =>{
   output +=
@@ -47,4 +47,4 @@ phaseTable.forEach((phaseLines, phaseIndex) =>{
     '</section>\n';
 });
 
-writeFileSync('../__temp/--ml-2.md', output);
+writeFileSync('../__temp/--ml-1.md', output);

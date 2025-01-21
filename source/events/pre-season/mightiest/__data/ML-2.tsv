@@ -9,23 +9,23 @@
 1	T2 Unit EXP Book	1	4000	For every {{1}} {{2}} spent
 1	T3 Unit EXP Book	1	20000	For every {{1}} {{2}} spent
 1	T4 Unit EXP Book	1	100000	For every {{1}} {{2}} spent
-4	Rare Dragon Rune	1	70	For every {{1}} {{2}} spent
-4	Excellent Dragon Rune	1	700	For every {{1}} {{2}} spent
-4	Perfect Dragon Rune	1	7000	For every {{1}} {{2}} spent
-4	Epic Dragon Rune	1	14000	For every {{1}} {{2}} spent
-5	Forge Hammer	1	100	For every {{1}} {{2}}(s) spent
+5	Rare Dragon Rune	1	70	For every {{1}} {{2}} spent
+5	Excellent Dragon Rune	1	700	For every {{1}} {{2}} spent
+5	Perfect Dragon Rune	1	7000	For every {{1}} {{2}} spent
+5	Epic Dragon Rune	1	14000	For every {{1}} {{2}} spent
+4	Forge Hammer	1	100	For every {{1}} {{2}}(s) spent
 1	Master Talent	1	700	For every {{1}} {{2}}(s) spent
 1	Crown(s) of the Oracle	1	7000	For every {{1}} {{2}} spent
-4	T2 Cerulean Armor	1	140000	For every {{1}} {{2}}(s) obtained via purchase
-4	T3 Demonic Armor	1	770000	For every {{1}} {{2}}(s) obtained via purchase
-4	T4 Immortal Armor	1	4200000	For every {{1}} {{2}}(s) obtained via purchase
-5	T2 Weapon	1	140000	For every {{1}} {{2}}(s) obtained via purchase
-5	T3 Weapon	1	770000	For every {{1}} {{2}}(s) obtained via purchase
-5	T4 Weapon	1	4200000	For every {{1}} {{2}}(s) obtained via purchase
-5	Elemental Vial	1	700	For every {{1}} {{2}}(s) obtained via purchase
-5	Blood of Titan	1	7000	For every {{1}} {{2}}(s) obtained via purchase
-4	Dragon Soul Stone	1	700	For every {{1}} {{2}}(s) obtained via purchase
-4	Deluxe Dragon Soul Stone	1	7000	For every {{1}} {{2}}(s) obtained via purchase
+5	T2 Cerulean Armor	1	140000	For every {{1}} {{2}}(s) obtained via purchase
+5	T3 Demonic Armor	1	770000	For every {{1}} {{2}}(s) obtained via purchase
+5	T4 Immortal Armor	1	4200000	For every {{1}} {{2}}(s) obtained via purchase
+4	T2 Weapon	1	140000	For every {{1}} {{2}}(s) obtained via purchase
+4	T3 Weapon	1	770000	For every {{1}} {{2}}(s) obtained via purchase
+4	T4 Weapon	1	4200000	For every {{1}} {{2}}(s) obtained via purchase
+4	Elemental Vial	1	700	For every {{1}} {{2}}(s) obtained via purchase
+4	Blood of Titan	1	7000	For every {{1}} {{2}}(s) obtained via purchase
+5	Dragon Soul Stone	1	700	For every {{1}} {{2}}(s) obtained via purchase
+5	Deluxe Dragon Soul Stone	1	7000	For every {{1}} {{2}}(s) obtained via purchase
 99	Monster	1	500	For each monster defeated
-99	Titan	1	1000	Initiating a rally and defeating a Titan
+99	Titan	1	1000	For initiating a rally and defeating a Titan
 99	Gallery Shard	1	1000	For every {{1}} {{2}} consumed
