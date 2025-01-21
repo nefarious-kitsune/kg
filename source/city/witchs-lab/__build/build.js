@@ -1,3 +1,4 @@
-import './build-data.js';
-import './build-upgrade-table.js';
-import './build-power-table.js';
+import './build-light-data.js';
+import './build-light-upgrade-table.js';
+import './build-light-power-table.js';
+import './build-dark-data.js';

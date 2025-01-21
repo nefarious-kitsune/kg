@@ -7,7 +7,7 @@ const ProjectPath = resolve(ModulePath, '../../../../');
 const TemplatePath = resolve(ModulePath, '../__templates/');
 const ExportPath = resolve(ProjectPath, './docs/city/witchs-lab/');
 
-import {database} from './build-data.js';
+import {database} from './build-light-data.js';
 
 /** HTML for power */ const table1 = [];
 /** HTML for power */ const table2 = [];
