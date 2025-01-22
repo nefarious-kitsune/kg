@@ -28,6 +28,7 @@
   --red-500: #b42328;
   --red-300: #d27b7e;
   --red-100: #e4b0b2;
+  --accent-700: #0E6120;
   --accent-500: #1CC140;
   --accent-300: #77DA8C;
   --gold-700: #bf951e;
@@ -449,8 +450,12 @@ strong.important {
 
 .bonus,
 .number {
-  color: light-dark(var(--red-500), var(--accent-500));
+  color: light-dark(var(--accent-700), var(--accent-500));
 }
+.unknown-number {
+  color: light-dark(var(--gray-700), var(--gray-300));
+}
+.unknown-number ~ .unit,
 .number ~ .unit {
   padding-left: 0.1rem;
 }
