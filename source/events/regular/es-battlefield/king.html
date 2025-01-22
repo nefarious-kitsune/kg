@@ -2,19 +2,18 @@
 <head>
 <title>ES-Battlefield Evil Spirit King</title>
 <meta page-data
-  og-desc="Information on Evil Spirit King of the Evil Spirit Battlefield event"
+  og-desc="Information on Evil Spirit King (central boss) of the Evil Spirit Battlefield event"
   tag-list="event"
 >
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <link href="../../../assets/css/common.css" rel="stylesheet">
-<link href="../../../assets/css/content.css" rel="stylesheet">
 <style>
   .esb-table {
     margin-bottom: 1rem;
     page-break-inside: avoid;
     break-inside: avoid-column;
     .level-col { width: 2.5rem; }
-    .power-col { width: 3rem; }
+    .power-col { width: 4rem; }
   }
 </style>
 </head>
@@ -78,9 +77,12 @@
   <td><ul class="compact-list">
     <li><span class="tip-container" tabindex="0">
       Evil Spirit Resurrection
-      <span class="text-tip">Recovers <em>?</em>% power
-      every <em>?</em> seconds</span>
-    </span> (?%/?s)</li>
+      <span class="text-tip">Recovers
+      <span class="unknown-number">?</span><span class="unit">%</span>
+      power every <span class="unknown-number">?</span> seconds</span>
+    </span> (<span
+      class="unknown-number">?</span><span class="unit">%</span>/<span
+      class="unknown-number">?</span><span class="unit">s</span>)</li>
     <li><span class="tip-container" tabindex="0">
       Amethyst Shield
       <span class="text-tip">Take maximum of <em>100M</em>
@@ -156,8 +158,13 @@
   <td><ul class="compact-list">
     <li><span class="tip-container" tabindex="0">
       Evil Spirit Resurrection
-      <span class="text-tip">Recovers 30% power every 30 seconds</span>
-    </span> (30%/30s)</li>
+      <span class="text-tip">Recovers
+      <span class="number">30</span><span class="unit">%</span>
+      power every
+      <span class="number">30</span> seconds</span>
+    </span> (<span
+    class="number">30</span><span class="unit">%</span>/<span
+    class="number">30</span><span class="unit">s</span>)</li>
     <li><span class="tip-container" tabindex="0">
       Counter Spike
       <span class="text-tip">Counter Attack Damage increases 80%</span>
@@ -184,8 +191,13 @@
   <td><ul class="compact-list">
     <li><span class="tip-container" tabindex="0">
       Evil Spirit Resurrection
-      <span class="text-tip">Recovers 50% power every 30 seconds</span>
-    </span> (50%/30s)</li>
+      <span class="text-tip">Recovers
+      <span class="number">50</span><span class="unit">%</span>
+      power every
+      <span class="number">30</span> seconds</span>
+    </span> (<span
+      class="number">50</span><span class="unit">%</span>/<span
+      class="number">30</span><span class="unit">s</span>)</li>
     <li><span class="tip-container" tabindex="0">
       Counter Spike
       <span class="text-tip">Counter Attack Damage increases 100%</span>
@@ -275,7 +287,7 @@
 <section id="powers">
 <h2>Powers</h2>
 
-<div style="column-width: 8rem; column-gap: 0.5rem; padding: 0; margin:0">
+<div style="display: flex; gap: 0.5rem; flex-flow: row wrap; padding: 0; margin:0; align-content: flex-start;">
 <table class="basic-table border-row esb-table">
 <thead>
   <tr><th class="level-col">Level</th><th class="power-col">Power</th>
@@ -285,7 +297,6 @@
   <tr><td>1</td><td class="right-align"><span class="number">1</span><span class="unit">B</span></td></tr>
   <tr><td>2</td><td class="right-align"><span class="number">2</span><span class="unit">B</span></td></tr>
   <tr><td>&vellip;</td><td>&vellip;</td></tr>
-  <tr><td>8</td><td class="right-align"><span class="number">8</span><span class="unit">B</span></td></tr>
   <tr><td>9</td><td class="right-align"><span class="number">9</span><span class="unit">B</span></td></tr>
   <tr><td>10</td><td class="right-align"><span class="number">10</span><span class="unit">B</span></td></tr>
 </tbody>
@@ -301,7 +312,6 @@
   <tr><td>13</td><td class="right-align"><span class="number">500</span><span class="unit">B</span></td></tr>
   <tr><td>14</td><td class="right-align"><span class="number">1000</span><span class="unit">B</span></td></tr>
   <tr><td>15</td><td class="right-align"><span class="number">150</span><span class="unit">B</span></td></tr>
-  <tr><td>16</td><td class="right-align"><span class="number">3000</span><span class="unit">B</span></td></tr>
 </tbody>
 </table>
 <table class="basic-table border-row esb-table">
@@ -310,10 +320,50 @@
 </tr>
 </thead>
 <tbody>
+  <tr><td>16</td><td class="right-align"><span class="number">3000</span><span class="unit">B</span></td></tr>
   <tr><td>17</td><td class="right-align"><span class="number">4000</span><span class="unit">B</span></td></tr>
   <tr><td>18</td><td class="right-align"><span class="number">5000</span><span class="unit">B</span></td></tr>
   <tr><td>19</td><td class="right-align"><span class="number">6000</span><span class="unit">B</span></td></tr>
-  <tr><td>20</td><td class="right-align"><span class="number"></span><span class="unit">B</span></td></tr>
+  <tr><td>20</td><td class="right-align"><span class="unknown-number">7000</span><span class="unit">B</span></td></tr>
+</tbody>
+</table>
+<table class="basic-table border-row esb-table">
+<thead>
+  <tr><th class="level-col">Level</th><th class="power-col">Power</th>
+</tr>
+</thead>
+<tbody>
+  <tr><td>21</td><td class="right-align"><span class="number">8000</span><span class="unit">B</span></td></tr>
+  <tr><td>22</td><td class="right-align"><span class="unknown-number">9000</span><span class="unit">B</span></td></tr>
+  <tr><td>23</td><td class="right-align"><span class="unknown-number">10000</span><span class="unit">B</span></td></tr>
+  <tr><td>24</td><td class="right-align"><span class="unknown-number">15000</span><span class="unit">B</span></td></tr>
+  <tr><td>25</td><td class="right-align"><span class="unknown-number">20000</span><span class="unit">B</span></td></tr>
+</tbody>
+</table>
+<table class="basic-table border-row esb-table">
+<thead>
+  <tr><th class="level-col">Level</th><th class="power-col">Power</th>
+</tr>
+</thead>
+<tbody>
+  <tr><td>26</td><td class="right-align"><span class="unknown-number">25000</span><span class="unit">B</span></td></tr>
+  <tr><td>27</td><td class="right-align"><span class="unknown-number">30000</span><span class="unit">B</span></td></tr>
+  <tr><td>28</td><td class="right-align"><span class="unknown-number">35000</span><span class="unit">B</span></td></tr>
+  <tr><td>29</td><td class="right-align"><span class="unknown-number">40000</span><span class="unit">B</span></td></tr>
+  <tr><td>30</td><td class="right-align"><span class="unknown-number">45000</span><span class="unit">B</span></td></tr>
+</tbody>
+</table>
+<table class="basic-table border-row esb-table">
+<thead>
+  <tr><th class="level-col">Level</th><th class="power-col">Power</th>
+</tr>
+</thead>
+<tbody>
+  <tr><td>31</td><td class="right-align"><span class="unknown-number">50000</span><span class="unit">B</span></td></tr>
+  <tr><td>32</td><td class="right-align"><span class="unknown-number">100000</span><span class="unit">B</span></td></tr>
+  <tr><td>33</td><td class="right-align"><span class="unknown-number">200000</span><span class="unit">B</span></td></tr>
+  <tr><td>34</td><td class="right-align"><span class="unknown-number">300000</span><span class="unit">B</span></td></tr>
+  <tr><td>35</td><td class="right-align"><span class="unknown-number">400000</span><span class="unit">B</span></td></tr>
 </tbody>
 </table>
 </div>
