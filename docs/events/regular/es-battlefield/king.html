@@ -9,7 +9,7 @@
 <meta property="og:image" content="https://kg.kitsune21.com/assets/icons/site_info.png">
 <meta property="og:title" content="ES-Battlefield Evil Spirit King">
 <meta property="og:description"
-  content="Information on Evil Spirit King (central boss) of the Evil Spirit Battlefield event">
+  content="Information on the Evil Spirit King (central boss) of the Evil Spirit Battlefield event">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <link href="../../../assets/css/common.css" rel="stylesheet">
 <style>
@@ -20,6 +20,13 @@
     .level-col { width: 2.5rem; }
     .power-col { width: 4rem; }
   }
+  dl {
+    display: grid;
+    grid-template-columns: max-content auto;
+    row-gap: 0.5rem;
+  }
+  dt { grid-column-start: 1; }
+  dd { grid-column-start: 2; }
 </style>
 </head>
 <body>
@@ -43,11 +50,22 @@
 </menu></div>
 
 <section>
-<p>On the battlefield, there is an Evil Spirit King at the center.</p>
+<p>On the Evil Spirit Battlefield, the central boss is the
+Evil Spirit King at the center.</p>
 </section>
 
 <section id="skills">
 <h2>Skills</h2>
+
+<p>The Evil Spirit King has several skills:</p>
+<dl>
+  <dt class="highlighted iris">Evil Spirit Resurrection</dt>
+  <dd>Recovers certain amount of power after a certain period of time</dd>
+  <dt class="highlighted caramel">Counter Spike</dt>
+  <dd>Counter Attack Damage increases by a certain percentage</dd>
+  <dt class="highlighted sapphire">Amethyst Shield</dt>
+  <dd>Takes a maximum amount of damage from each attack</dd>
+</dl>
 
 <div style="column-width: 20rem; column-gap: 0.5rem; padding: 0; margin:0">
 <table class="basic-table border-all esb-table">
@@ -57,70 +75,55 @@
 <tbody>
 <tr>
   <td class="level-col">1</td>
-  <td><ul class="compact-list">
-    <li><span class="tip-container" tabindex="0">
-      Evil Spirit Resurrection
-      <span class="text-tip">Recovers 10% power every 10 seconds</span>
-    </span> (10%/10s)</li>
+  <td><ul class="min-list">
+    <li><span class="highlighted iris">Evil Spirit Resurrection</span>
+      (<span
+      class="number">10</span><span class="unit">%</span>/<span
+      class="number">10</span><span class="unit">s</span>)</li>
   </ul></td>
 </tr>
 <tr>
   <td>2&ndash;4</td>
-  <td><ul class="compact-list">
-    <li><span class="tip-container" tabindex="0">
-      Evil Spirit Resurrection
-      <span class="text-tip">Recovers 10% power every 10 seconds</span>
-    </span> (10%/10s)</li>
-    <li><span class="tip-container" tabindex="0">
-      Counter Spike
-      <span class="text-tip">Counter Attack Damage increases 20%</span>
-    </span> (20%)</li>
+  <td><ul class="min-list">
+    <li><span class="highlighted iris">Evil Spirit Resurrection</span>
+      (<span
+      class="number">10</span><span class="unit">%</span>/<span
+      class="number">10</span><span class="unit">s</span>)</li>
+    <li><span class="highlighted  caramel">Counter Spike</span>
+      (<span class="number">20</span><span class="unit">%</span>)</li>
   </ul></td>
 </tr>
 <tr>
   <td>5</td>
-  <td><ul class="compact-list">
-    <li><span class="tip-container" tabindex="0">
-      Evil Spirit Resurrection
-      <span class="text-tip">Recovers
-      <span class="unknown-number">?</span><span class="unit">%</span>
-      power every <span class="unknown-number">?</span> seconds</span>
-    </span> (<span
-      class="unknown-number">?</span><span class="unit">%</span>/<span
-      class="unknown-number">?</span><span class="unit">s</span>)</li>
-    <li><span class="tip-container" tabindex="0">
-      Amethyst Shield
-      <span class="text-tip">Take maximum of <em>100M</em>
-      damage from each attack</span>
-    </span> (100M)</li>
+  <td><ul class="min-list">
+    <li><span class="highlighted iris">Evil Spirit Resurrection</span>
+      (<span
+      class="unknown-number">??</span><span class="unit">%</span>/<span
+      class="unknown-number">??</span><span class="unit">s</span>)</li>
+    <li><span class="highlighted sapphire">Amethyst Shield</span>
+      (<span class="number">100</span><span class="unit">M</span>)</li>
   </ul></td>
 </tr>
 <tr>
   <td>6&ndash;9</td>
-  <td><ul class="compact-list">
-    <li><span class="tip-container" tabindex="0">
-      Evil Spirit Resurrection
-      <span class="text-tip">Recovers 20% power every 20 seconds</span>
-    </span> (20%/20s)</li>
-    <li><span class="tip-container" tabindex="0">
-      Counter Spike
-      <span class="text-tip">Counter Attack Damage increases 40%</span>
-    </span> (40%)</li>
+  <td><ul class="min-list">
+    <li><span class="highlighted iris">Evil Spirit Resurrection</span>
+      (<span
+      class="number">20</span><span class="unit">%</span>/<span
+      class="number">20</span><span class="unit">s</span>)</li>
+    <li><span class="highlighted  caramel">Counter Spike</span>
+      (<span class="number">40</span><span class="unit">%</span>)</li>
   </ul></td>
 </tr>
 <tr>
   <td>10</td>
-  <td><ul class="compact-list">
-    <li><span class="tip-container" tabindex="0">
-      Evil Spirit Resurrection
-      <span class="text-tip">Recovers <em>20</em>% power
-      every <em>20</em> seconds</span>
-    </span> (20%/20s)</li>
-    <li><span class="tip-container" tabindex="0">
-      Amethyst Shield
-      <span class="text-tip">Take maximum of <em>200M</em>
-      damage from each attack</span>
-    </span> (200M)</li>
+  <td><ul class="min-list">
+    <li><span class="highlighted iris">Evil Spirit Resurrection</span>
+      (<span
+      class="number">20</span><span class="unit">%</span>/<span
+      class="number">20</span><span class="unit">s</span>)</li>
+    <li><span class="highlighted sapphire">Amethyst Shield</span>
+      (<span class="number">200</span><span class="unit">M</span>)</li>
   </ul></td>
 </tr>
 </tbody>
@@ -145,68 +148,46 @@
 </tr>
 <tr>
   <td>15</td>
-  <td><ul class="compact-list">
-    <li><span class="tip-container" tabindex="0">
-      Evil Spirit Resurrection
-      <span class="text-tip">Recovers <em>30</em>% power
-      every <em>30</em> seconds</span>
-    </span> (30%/30s)</li>
-    <li><span class="tip-container" tabindex="0">
-      Amethyst Shield
-      <span class="text-tip">Take maximum of <em>400M</em>
-      damage from each attack</span>
-    </span>(300M)</li>
+  <td><ul class="min-list">
+    <li><span class="highlighted iris">Evil Spirit Resurrection</span>
+      (<span
+      class="number">30</span><span class="unit">%</span>/<span
+      class="number">30</span><span class="unit">s</span>)</li>
+    <li><span class="highlighted sapphire">Amethyst Shield</span>
+      (<span class="number">300</span><span class="unit">M</span>)</li>
   </ul></td>
 </tr>
 <tr>
   <td>16&ndash;</td>
-  <td><ul class="compact-list">
-    <li><span class="tip-container" tabindex="0">
-      Evil Spirit Resurrection
-      <span class="text-tip">Recovers
-      <span class="number">30</span><span class="unit">%</span>
-      power every
-      <span class="number">30</span> seconds</span>
-    </span> (<span
-    class="number">30</span><span class="unit">%</span>/<span
-    class="number">30</span><span class="unit">s</span>)</li>
-    <li><span class="tip-container" tabindex="0">
-      Counter Spike
-      <span class="text-tip">Counter Attack Damage increases 80%</span>
-    </span> (80%)</li>
+  <td><ul class="min-list">
+    <li><span class="highlighted iris">Evil Spirit Resurrection</span>
+      (<span
+      class="number">30</span><span class="unit">%</span>/<span
+      class="number">30</span><span class="unit">s</span>)</li>
+    <li><span class="highlighted  caramel">Counter Spike</span>
+      (<span class="number">80</span><span class="unit">%</span>)</li>
   </ul></td>
 </tr>
 <tr>
   <td>20</td>
-  <td><ul class="compact-list">
-    <li><span class="tip-container" tabindex="0">
-      Evil Spirit Resurrection
-      <span class="text-tip">Recovers <em>40</em>% power
-      every <em>30</em> seconds</span>
-    </span> (40%/30s)</li>
-    <li><span class="tip-container" tabindex="0">
-      Amethyst Shield
-      <span class="text-tip">Take maximum of <em>400M</em>
-      damage from each attack</span>
-    </span> (400M)</li>
+  <td><ul class="min-list">
+    <li><span class="highlighted iris">Evil Spirit Resurrection</span>
+      (<span
+      class="number">40</span><span class="unit">%</span>/<span
+      class="number">30</span><span class="unit">s</span>)</li>
+    <li><span class="highlighted sapphire">Amethyst Shield</span>
+      (<span class="number">400</span><span class="unit">M</span>)</li>
   </ul></td>
 </tr>
 <tr>
   <td>21&ndash;</td>
-  <td><ul class="compact-list">
-    <li><span class="tip-container" tabindex="0">
-      Evil Spirit Resurrection
-      <span class="text-tip">Recovers
-      <span class="number">50</span><span class="unit">%</span>
-      power every
-      <span class="number">30</span> seconds</span>
-    </span> (<span
+  <td><ul class="min-list">
+    <li><span class="highlighted iris">Evil Spirit Resurrection</span>
+      (<span
       class="number">50</span><span class="unit">%</span>/<span
       class="number">30</span><span class="unit">s</span>)</li>
-    <li><span class="tip-container" tabindex="0">
-      Counter Spike
-      <span class="text-tip">Counter Attack Damage increases 100%</span>
-    </span> (100%)</li>
+    <li><span class="highlighted  caramel">Counter Spike</span>
+      (<span class="number">100</span><span class="unit">%</span>)</li>
   </ul></td>
 </tr>
 

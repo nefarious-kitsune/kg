@@ -36,7 +36,10 @@
   --gold-300: #fedd7e;
   --gold-100: #feebb2;
 
+  --caramel-700: #654020;
   --caramel-500: #C9803F;
+  --caramel-300: #DFB38C;
+  --caramel-100: #ECD1BA;
   --sand-700: #A07736;
   --sand-500: #D59E48;
   --sand-300: #E6C591;
@@ -57,7 +60,10 @@
   --blue-500: #448BD1;
   --blue-300: #8FB9E3;
   --blue-100: #BCD5EE;
+  --glaucous-700: #3C4561;
   --glaucous-500: #7789C2;
+  --glaucous-300: #ADB8DA;
+  --glaucous-100: #CED4E9;
   --iris-700: #806585;
   --iris-500: #AA86B2;
   --iris-300: #CCB6D1;
@@ -761,6 +767,10 @@ table.alt-rows { /* alternating rows */
   background-color: var(--red-100);
   color: var(--red-700);
 }
+.highlighted.caramel, tr.highlighted.caramel td {
+  background-color: var(--caramel-100);
+  color: var(--caramel-700);
+}
 .highlighted.copper, tr.highlighted.copper td {
   background-color: var(--copper-100);
   color: var(--copper-700);
@@ -769,9 +779,21 @@ table.alt-rows { /* alternating rows */
   background-color: var(--jade-100);
   color: var(--jade-700);
 }
+.highlighted.jade, tr.highlighted.jade td {
+  background-color: var(--jade-100);
+  color: var(--jade-700);
+}
+.highlighted.sapphire, tr.highlighted.sapphire td {
+  background-color: var(--sapphire-100);
+  color: var(--sapphire-700);
+}
 .highlighted.blue, tr.highlighted.blue td {
   background-color: var(--blue-100);
   color: var(--blue-700);
+}
+.highlighted.glaucous, tr.highlighted.glaucous td {
+  background-color: var(--glaucous-100);
+  color: var(--glaucous-700);
 }
 .highlighted.iris, tr.highlighted.iris td {
   background-color: var(--iris-100);
@@ -940,6 +962,10 @@ details {
     background-color: var(--red-700);
     color: var(--red-100);
   }
+  .highlighted.caramel, tr.highlighted.caramel td {
+    background-color: var(--caramel-700);
+    color: var(--caramel-100);
+  }
   .highlighted.copper, tr.highlighted.copper td {
     background-color: var(--copper-700);
     color: var(--copper-100);
@@ -947,16 +973,24 @@ details {
   .highlighted.jade, tr.highlighted.jade td {
     background-color: var(--jade-700);
     color: var(--jade-100);
-  }  
+  }
+  .highlighted.sapphire, tr.highlighted.sapphire td {
+    background-color: var(--sapphire-700);
+    color: var(--sapphire-100);
+  }
   .highlighted.blue, tr.highlighted.blue td {
     background-color: var(--blue-700);
     color: var(--blue-100);
+  }
+  .highlighted.glaucous, tr.highlighted.glaucous td {
+    background-color: var(--glaucous-700);
+    color: var(--glaucous-100);
   }
   .highlighted.iris, tr.highlighted.iris td {
     background-color: var(--iris-700);
     color: var(--iris-100);
   }
-
+  
   details {
     background-color: var(--gray-900);
     border: 0.15rem solid var(--gray-700);
