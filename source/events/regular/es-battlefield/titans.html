@@ -9,11 +9,9 @@
 <link href="../../../assets/css/common.css" rel="stylesheet">
 <style>
   .esb-table {
-    page-break-inside: avoid;
-    break-inside: avoid-column;
-    margin-bottom: 1rem;
     .level-col { width: 2.5rem; }
-    .power-col { width: 3rem; }
+    .power-col { width: 4rem; }
+    .skill-col { width: 16rem; }
   }
 </style>
 </head>
@@ -154,7 +152,7 @@
 <section id="powers">
 <h2>Powers</h2>
 
-<div style="column-width: 8rem; column-gap: 0.5rem; padding: 0; margin:0">
+<div class="col-flex">
 <table class="basic-table border-row esb-table">
 <thead>
   <tr><th class="level-col">Level</th><th class="power-col">Power</th>
@@ -208,34 +206,70 @@
 <h2>Kill Rewards</h2>
   
 <p>When an Elemental Titan is defeated, every Alliance Member
-on the Evil Spirit Battlefield receives the kill rewards,
-and the corresponding unit receives a power boost.</p>
+on the Evil Spirit Battlefield receives the Kill Rewards,
+and the corresponding unit receives a 2-minute Kill Boost.</p>
 
-<div style="column-width: 20rem; column-gap: 0.5rem; padding: 0; margin:0">
-<table class="basic-table border-row esb-table" style="width:100%">
+<div class="col-flex">
+<table class="basic-table border-row esb-table">
 <thead>
 <tr>
   <th class="level-col">Level</th>
-  <th>Kill Rewards</th>
-  <th>Kill Boost</th>
+  <th class="rewards-col">Kill Rewards</th>
+  <th class="rewards-col">Kill Boost</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td>1&ndash;9</td>
+  <td>1&ndash;5</td>
   <td><ul class="compact-list">
     <li>T1 Unit EXP Book</li>
     <li>Elemental Vial</li>
   </ul></td>
-  <td></td>
+  <td><span class="number">+5</span><span class="unit">%</span></td>
 </tr>
 <tr>
-  <td>11&ndash;19</td>
+  <td>6&ndash;9</td>
   <td><ul class="compact-list">
     <li>T1 Unit EXP Book</li>
     <li>Elemental Vial</li>
   </ul></td>
-  <td></td>
+  <td><span class="unknown-number">+?</span><span class="unit">%</span></td>
+</tr>
+<tr>
+  <td>10</td>
+  <td><ul class="compact-list">
+    <li>5× Forge Blueprint</li>
+    <li>1000 <img src="/assets/emojis/4x/gem.png" alt="gem" class="emoji"></li>
+  </ul></td>
+  <td><span class="unknown-number">+?</span><span class="unit">%</span></td>
+</tr>
+</tbody>
+</table>
+
+<table class="basic-table border-row esb-table">
+<thead>
+<tr>
+  <th class="level-col">Level</th>
+  <th class="rewards-col">Kill Rewards</th>
+  <th class="rewards-col">Kill Boost</th>
+</tr>
+</thead>
+<tbody>  
+<tr>
+  <td>11&ndash;15</td>
+  <td><ul class="compact-list">
+    <li>T1 Unit EXP Book</li>
+    <li>Elemental Vial</li>
+  </ul></td>
+  <td><span class="unknown-number">+?</span><span class="unit">%</span></td>
+</tr>
+<tr>
+  <td>16&ndash;19</td>
+  <td><ul class="compact-list">
+    <li>T1 Unit EXP Book</li>
+    <li>Elemental Vial</li>
+  </ul></td>
+  <td><span class="number">+20</span><span class="unit">%</span></td>
 </tr>
 <tr>
   <td>21&ndash;29</td>
@@ -247,30 +281,23 @@ and the corresponding unit receives a power boost.</p>
 </tr>
 </tbody>
 </table>
-<table class="basic-table border-row esb-table" style="width:100%">
+
+<table class="basic-table border-row esb-table">
 <thead>
 <tr>
   <th class="level-col">Level</th>
-  <th>Kill Rewards</th>
-  <th>Kill Boost</th>
+  <th class="rewards-col">Kill Rewards</th>
+  <th class="rewards-col">Kill Boost</th>
 </tr>
 </thead>
 <tbody>
-<tr>
-  <td>10</td>
-  <td><ul class="compact-list">
-    <li>5× Forge Blueprint</li>
-    <li>1000 <img src="/assets/emojis/4x/gem.png" alt="gem" class="emoji"></li>
-  </ul></td>
-  <td></td>
-</tr>
 <tr>
   <td>20</td>
   <td><ul class="compact-list">
     <li>5× Forge Blueprint</li>
     <li>2000 <img src="/assets/emojis/4x/gem.png" alt="gem" class="emoji"></li>
   </ul></td>
-  <td></td>
+  <td><span class="number">+20</span><span class="unit">%</span></td>
 </tr>
 <tr>
   <td>30</td>

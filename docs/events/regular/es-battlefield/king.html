@@ -14,11 +14,9 @@
 <link href="../../../assets/css/common.css" rel="stylesheet">
 <style>
   .esb-table {
-    margin-bottom: 1rem;
-    page-break-inside: avoid;
-    break-inside: avoid-column;
     .level-col { width: 2.5rem; }
     .power-col { width: 4rem; }
+    .skill-col { width: 16rem; }
   }
   dl {
     display: grid;
@@ -67,14 +65,17 @@ Evil Spirit King at the center.</p>
   <dd>Takes a maximum amount of damage from each attack</dd>
 </dl>
 
-<div style="column-width: 20rem; column-gap: 0.5rem; padding: 0; margin:0">
+<div class="col-flex">
 <table class="basic-table border-all esb-table">
 <thead>
-<tr><th class="level-col">Level</th><th>Skill</th></tr>
+<tr>
+  <th class="level-col">Level</th>
+  <th class="skill-col">Skill</th>
+</tr>
 </thead>
 <tbody>
 <tr>
-  <td class="level-col">1</td>
+  <td>1</td>
   <td><ul class="min-list">
     <li><span class="highlighted iris">Evil Spirit Resurrection</span>
       (<span
@@ -98,8 +99,8 @@ Evil Spirit King at the center.</p>
   <td><ul class="min-list">
     <li><span class="highlighted iris">Evil Spirit Resurrection</span>
       (<span
-      class="unknown-number">??</span><span class="unit">%</span>/<span
-      class="unknown-number">??</span><span class="unit">s</span>)</li>
+      class="number">10</span><span class="unit">%</span>/<span
+      class="number">10</span><span class="unit">s</span>)</li>
     <li><span class="highlighted sapphire">Amethyst Shield</span>
       (<span class="number">100</span><span class="unit">M</span>)</li>
   </ul></td>
@@ -128,23 +129,25 @@ Evil Spirit King at the center.</p>
 </tr>
 </tbody>
 </table>
+
 <table class="basic-table border-all esb-table">
 <thead>
-  <tr><th class="level-col">Level</th><th>Skill</th></tr>
+<tr>
+  <th class="level-col">Level</th>
+  <th class="skill-col">Skill</th>
+</tr>  
 </thead>
 <tbody>  
 <tr>
-  <td>11&ndash;</td>
-  <td><!--<ul class="compact-list">
-    <li><span class="tip-container" tabindex="0">
-      Evil Spirit Resurrection
-      <span class="text-tip">Recovers 30% power every 30 seconds</span>
-    </span> (30%/30s)</li>
-    <li><span class="tip-container" tabindex="0">
-      Counter Spike
-      <span class="text-tip">Counter Attack Damage increases 60%</span>
-    </span> (60%)</li>
-  </ul>--></td>
+  <td>11&ndash;14</td>
+  <td><ul class="min-list">
+    <li><span class="highlighted iris">Evil Spirit Resurrection</span>
+      (<span
+      class="number">30</span><span class="unit">%</span>/<span
+      class="number">30</span><span class="unit">s</span>)</li>
+    <li><span class="highlighted caramel">Counter Spike</span>
+      (<span class="number">60</span><span class="unit">%</span>)</li>
+  </ul></td>
 </tr>
 <tr>
   <td>15</td>
@@ -158,13 +161,13 @@ Evil Spirit King at the center.</p>
   </ul></td>
 </tr>
 <tr>
-  <td>16&ndash;</td>
+  <td>16&ndash;19</td>
   <td><ul class="min-list">
     <li><span class="highlighted iris">Evil Spirit Resurrection</span>
       (<span
       class="number">30</span><span class="unit">%</span>/<span
       class="number">30</span><span class="unit">s</span>)</li>
-    <li><span class="highlighted  caramel">Counter Spike</span>
+    <li><span class="highlighted caramel">Counter Spike</span>
       (<span class="number">80</span><span class="unit">%</span>)</li>
   </ul></td>
 </tr>
@@ -179,8 +182,19 @@ Evil Spirit King at the center.</p>
       (<span class="number">400</span><span class="unit">M</span>)</li>
   </ul></td>
 </tr>
+</tbody>
+</table>
+
+<table class="basic-table border-all esb-table">
+<thead>
 <tr>
-  <td>21&ndash;</td>
+  <th class="level-col">Level</th>
+  <th class="skill-col">Skill</th>
+</tr>  
+</thead>
+<tbody>  
+<tr>
+  <td>21&ndash;24</td>
   <td><ul class="min-list">
     <li><span class="highlighted iris">Evil Spirit Resurrection</span>
       (<span
@@ -190,7 +204,17 @@ Evil Spirit King at the center.</p>
       (<span class="number">100</span><span class="unit">%</span>)</li>
   </ul></td>
 </tr>
-
+<tr>
+  <td>25</td>
+  <td><ul class="min-list">
+    <li><span class="highlighted iris">Evil Spirit Resurrection</span>
+      (<span
+      class="unknown-number">50</span><span class="unit">%</span>/<span
+      class="unknown-number">30</span><span class="unit">s</span>)</li>
+    <li><span class="highlighted sapphire">Amethyst Shield</span>
+      (<span class="unknown-number">500</span><span class="unit">M</span>)</li>
+  </ul></td>
+</tr>
 </tbody>
 </table>
 </div>
@@ -359,14 +383,14 @@ Evil Spirit King at the center.</p>
 <h2>Kill Rewards</h2>
 
 <p>When an Evil Spirit King is defeated, every Alliance Members
-  on the Evil Spirit Battlefield receives the kill rewards.</p>
+  on the Evil Spirit Battlefield receives the Kill Rewards.</p>
 
-<div style="column-width: 20rem; column-gap: 0.5rem; padding: 0; margin:0">
-<table class="basic-table border-row esb-table" style="width:100%">
+<div class="col-flex">
+<table class="basic-table border-row esb-table">
 <thead>
 <tr>
   <th class="level-col">Level</th>
-  <th>Kill Rewards</th>
+  <th class="rewards-col">Kill Rewards</th>
 </tr>
 </thead>
 <tbody>
@@ -378,28 +402,28 @@ Evil Spirit King at the center.</p>
   </ul></td>
 </tr>
 <tr>
-  <td>11&ndash;19</td>
-  <td><ul class="compact-list">
-    <li>Free-Pick Unit EXP Book</li>
-    <li>Blood of Titan</li>
-  </ul></td>
-</tr>
-</tbody>
-</table>
-<table class="basic-table border-row esb-table" style="width:100%">
-<thead>
-<tr>
-  <th class="level-col">Level</th>
-  <th>Kill Rewards</th>
-</tr>
-</thead>
-<tbody>
-<tr>
   <td>10</td>
   <td><ul class="compact-list">
     <li>10× Forge Blueprint</li>
     <li>2000 <img src="/assets/emojis/4x/gem.png" alt="gem" class="emoji"></li>
     <!-- <li>10,000 <img src="/assets/emojis/4x/gem.png" alt="gem" class="emoji"></li> -->
+  </ul></td>
+</tr>
+</tbody>
+</table>
+<table class="basic-table border-row esb-table">
+<thead>
+<tr>
+  <th class="level-col">Level</th>
+  <th class="rewards-col">Kill Rewards</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>11&ndash;19</td>
+  <td><ul class="compact-list">
+    <li>Free-Pick Unit EXP Book</li>
+    <li>Blood of Titan</li>
   </ul></td>
 </tr>
 <tr>
