@@ -7,7 +7,7 @@
     ><div class="event lava-trial">Lava Trial</div
   ></td>
   <td class="event-col" rowspan="6"
-    ><div class="event mightiest"><a href="../../events/mk/">Mightiest Kingdom</a
+    ><div class="event mightiest"><a href="/events/regular/mk/">Mightiest Kingdom</a
   ></div></td>
   <td class="event-col" rowspan="6"
     ><div class="event power"><a href="../../events/up/">Ultimate Power</a
