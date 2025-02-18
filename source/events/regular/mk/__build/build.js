@@ -35,9 +35,9 @@ namesData.forEach((row) => {
     RewardDesc,
   ] = row.split('\t');
   namesLookup.push({
-    name: RewardName,
+    name: RewardName.trim(),
     tier: parseInt(Tier),
-    desc: RewardDesc,
+    desc: RewardDesc.trim(),
   });
 });
 

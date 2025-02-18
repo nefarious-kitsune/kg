@@ -5,6 +5,11 @@ const namesData = readFileSync(
     {encoding: 'utf8'},
 ).split('\n');
 
+const priceData = readFileSync(
+    '../__data/magic-book-prices.tsv',
+    {encoding: 'utf8'},
+).split('\n');
+
 const namesLookup = [];
 
 const rewardName2Type = {
@@ -54,11 +59,6 @@ function findRewardDesc(rewardName, rewardTier) {
  * @param {number} tierColStart - fist tier column
  */
 function buildPriceTable(tableNum, rowStart, rowEnd, tierColStart) {
-  const priceData = readFileSync(
-      '../__data/price-table-1.tsv',
-      {encoding: 'utf8'},
-  ).split('\n');
-
   const headerRow = priceData[0];
   const headerCells = headerRow.split('\t');
   const tierCells = headerCells.slice(tierColStart, tierColStart+5);
