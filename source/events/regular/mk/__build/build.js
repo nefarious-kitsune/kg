@@ -1,13 +1,19 @@
 import {readFileSync, writeFileSync} from 'fs';
+import {fileURLToPath} from 'url';
+import {dirname, resolve} from 'path';
 
-const namesData = readFileSync('../__data/names.tsv', {encoding: 'utf8'})
-    .split('\n');
+const ModulePath = dirname(fileURLToPath(import.meta.url));
 
-const rewardsData = readFileSync('../__data/mk-rewards.tsv', {encoding: 'utf8'})
-    .split('\n');
+let filePath;
 
-const sectionTemplate =
-  readFileSync('../__templates/reward-section.md', {encoding: 'utf8'});
+filePath = resolve(ModulePath, '../__data/names.tsv');
+const namesData = readFileSync(filePath, {encoding: 'utf8'}).split('\n');
+
+filePath = resolve(ModulePath, '../__data/mk-rewards.tsv');
+const rewardsData = readFileSync(filePath, {encoding: 'utf8'}).split('\n');
+
+filePath = resolve(ModulePath, '../__templates/reward-section.md');
+const sectionTemplate = readFileSync(filePath, {encoding: 'utf8'});
 
 rewardsData.shift();
 rewardsData.shift();
@@ -117,7 +123,5 @@ rewardsData.forEach((row) => {
   sections.push(content);
 });
 
-writeFileSync(
-    '../__templates/--all-seasons.md',
-    sections.join('\n'),
-);
+filePath = resolve(ModulePath, '../__templates/--all-seasons.md');
+writeFileSync(filePath, sections.join('\n'));

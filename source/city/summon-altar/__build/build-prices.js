@@ -1,12 +1,16 @@
 import {readFileSync, writeFileSync} from 'fs';
+import {fileURLToPath} from 'url';
+import {dirname, resolve} from 'path';
+
+const ModulePath = dirname(fileURLToPath(import.meta.url));
 
 const namesData = readFileSync(
-    '../../../events/regular/mk/__data/names.tsv',
+    resolve(ModulePath, '../../../events/regular/mk/__data/names.tsv'),
     {encoding: 'utf8'},
 ).split('\n');
 
 const priceData = readFileSync(
-    '../__data/magic-book-prices.tsv',
+    resolve(ModulePath, '../magic-books/magic-book-prices.tsv'),
     {encoding: 'utf8'},
 ).split('\n');
 
@@ -65,12 +69,12 @@ function buildPriceTable(tableNum, rowStart, rowEnd, tierColStart) {
   const tiers = tierCells.map((txt) => parseInt(txt.slice(1)));
 
   const tableTemplate = readFileSync(
-      '../__templates/price-table.md',
+      resolve(ModulePath, '../__templates/price-table.md'),
       {encoding: 'utf8'},
   );
 
   const rowTemplate = readFileSync(
-      '../__templates/price-row.md',
+      resolve(ModulePath, '../__templates/price-row.md'),
       {encoding: 'utf8'},
   );
 
@@ -140,7 +144,8 @@ function buildPriceTable(tableNum, rowStart, rowEnd, tierColStart) {
       .replaceAll('Event', '<a href="/events/regular/mk/rewards">Event</a>');
 
   writeFileSync(
-      `../__templates/--price-table-${tableNum}.md`, tableOutput,
+      resolve(ModulePath, `../__templates/--price-table-${tableNum}.md`),
+      tableOutput,
   );
 }
 

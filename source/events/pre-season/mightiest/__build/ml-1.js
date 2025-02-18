@@ -1,6 +1,11 @@
 import {readFileSync, writeFileSync} from 'fs';
+import {fileURLToPath} from 'url';
+import {dirname, resolve} from 'path';
 
-const tsvData = readFileSync('../__data/ML-1.tsv', {encoding: 'utf8'})
+const ModulePath = dirname(fileURLToPath(import.meta.url));
+
+const tsvDataFile = resolve(ModulePath, '../__data/ML-1.tsv');
+const tsvData = readFileSync(tsvDataFile, {encoding: 'utf8'})
     .split('\n');
 
 const phaseTable = [[], [], [], [], [], []];
@@ -47,4 +52,4 @@ phaseTable.forEach((phaseLines, phaseIndex) =>{
     '</section>\n';
 });
 
-writeFileSync('../__temp/--ml-1.md', output);
+writeFileSync(resolve(ModulePath, '../__temp/--ml-1.md'), output);
