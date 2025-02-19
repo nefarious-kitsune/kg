@@ -65,8 +65,13 @@ function findRewardDesc(rewardName, rewardTier) {
 function buildPriceTable(tableNum, rowStart, rowEnd, tierColStart) {
   const headerRow = priceData[0];
   const headerCells = headerRow.split('\t');
-  const tierCells = headerCells.slice(tierColStart, tierColStart+5);
-  const tiers = tierCells.map((txt) => parseInt(txt.slice(1)));
+  const tiers = [
+    parseInt(headerCells[tierColStart].slice(1)),
+    parseInt(headerCells[tierColStart+1].slice(1)),
+    parseInt(headerCells[tierColStart+2].slice(1)),
+    parseInt(headerCells[tierColStart+3].slice(1)),
+    parseInt(headerCells[tierColStart+4].slice(1)),
+  ];
 
   const tableTemplate = readFileSync(
       resolve(ModulePath, '../__templates/price-table.md'),
@@ -115,10 +120,10 @@ function buildPriceTable(tableNum, rowStart, rowEnd, tierColStart) {
     // const Historical = row[1];
     const Predicted = cells[2] === 'TRUE';
     const TierAPrice = cells[tierColStart];
-    const TierBPrice = cells[tierColStart+2];
-    const TierCPrice = cells[tierColStart+3];
-    const TierDPrice = cells[tierColStart+4];
-    const TierEPrice = cells[tierColStart+5];
+    const TierBPrice = cells[tierColStart+1];
+    const TierCPrice = cells[tierColStart+2];
+    const TierDPrice = cells[tierColStart+3];
+    const TierEPrice = cells[tierColStart+4];
 
     const rowOutput = rowTemplate
         .replace('{{VERIFIED}}', Predicted?'unverified':'verified')
@@ -149,6 +154,7 @@ function buildPriceTable(tableNum, rowStart, rowEnd, tierColStart) {
   );
 }
 
-buildPriceTable(1, 1, 16, 3);
-buildPriceTable(2, 17, 31, 5);
-buildPriceTable(3, 32, 46, 6);
+buildPriceTable(1, 1, 13, 3); // Season 0-11. Tier 2-6
+buildPriceTable(2, 14, 26, 5); // Season 12-24. Tier 4-8
+buildPriceTable(3, 27, 39, 7); // Season 25-37. Tier 6-10
+buildPriceTable(4, 38, 48, 8); // Season 38-46. Tier 7-11

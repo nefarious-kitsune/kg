@@ -154,6 +154,7 @@ function buildPriceTable(tableNum, rowStart, rowEnd, tierColStart) {
   );
 }
 
-buildPriceTable(1, 1, 13, 3);
-buildPriceTable(2, 17, 31, 5); // Season 15
-buildPriceTable(3, 32, 46, 7); // Season 31
+buildPriceTable(1, 1, 13, 3); // Season 0-11. Tier 2-6
+buildPriceTable(2, 14, 26, 5); // Season 12-24. Tier 4-8
+buildPriceTable(3, 27, 39, 7); // Season 25-37. Tier 6-10
+buildPriceTable(4, 38, 48, 8); // Season 38-46. Tier 7-11
