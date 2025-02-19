@@ -1,20 +1,22 @@
-// Build Mightiest Kingdom data
-// import './event/mk/build.js';
-// import './server-info/build.js';
-
 import './heroes/build.js';
 import './skins/build.js';
 import './events/build.js';
 import './p2p/build.js'; // Build VIP tables
-// import './blacksmith/build.js';
-
 
 // import {copyDirectory} from './__file/copy-directory.js';
 
-import {fileURLToPath, pathToFileURL} from 'url';
+import {fileURLToPath} from 'url';
 import {dirname, resolve, join, extname} from 'path';
-import {readdirSync, statSync, existsSync} from 'fs';
-import fs from 'fs';
+import {
+  constants as fsConstants,
+  readdirSync,
+  readFileSync,
+  writeFileSync,
+  copyFileSync,
+  statSync,
+  existsSync,
+  mkdirSync} from 'fs';
+import {execSync} from 'child_process';
 
 import {processHtml} from './__html/process-html.js';
 
@@ -29,14 +31,17 @@ async function compileSite() {
   const destBasePath = resolve(ProjectPath, './docs/');
   const maxDepth = 6;
   const srcFilePaths = [];
-  const builderFilePaths = [];
   const fileTypes = ['.css', '.html', '.tsv', '.js', '.gs'];
 
   const traverse = (parentPath, currentDepth) => {
     readdirSync(parentPath).forEach((file) => {
       if (file === '__build') {
-        const builderFilePath = join(parentPath, file, 'build.js');
-        if (existsSync(builderFilePath)) builderFilePaths.push(builderFilePath);
+        const builderCwd = join(parentPath, '__build');
+        const builderFilePath = join(builderCwd, 'build.js');
+        if (existsSync(builderFilePath)) {
+          console.log('Executing builder file: ', builderFilePath);
+          execSync('node build', {cwd: builderCwd});
+        }
         return;
       };
 
@@ -54,23 +59,18 @@ async function compileSite() {
 
   traverse(srcBasePath, 0);
 
-  builderFilePaths.forEach(async (filePath) => {
-    console.log('Executing builder file: ', filePath.slice(srcBasePath.length));
-    await import(pathToFileURL(filePath));
-  });
-
   srcFilePaths.forEach((filePath) => {
     const srcPath = filePath;
     const destPath = join(destBasePath, filePath.slice(srcBasePath.length));
     const destDir = dirname(destPath);
 
-    if (!fs.existsSync(destDir)) fs.mkdirSync(destDir, {recursive: true});
+    if (!existsSync(destDir)) mkdirSync(destDir, {recursive: true});
     if (extname(srcPath) === '.html') {
-      const fileContent = fs.readFileSync(srcPath, 'utf-8');
+      const fileContent = readFileSync(srcPath, 'utf-8');
       const processed = processHtml(fileContent, srcPath, srcBasePath);
-      fs.writeFileSync(destPath, processed.source);
+      writeFileSync(destPath, processed.source);
     } else {
-      fs.copyFileSync(srcPath, destPath, fs.constants.COPYFILE_FICLONE);
+      copyFileSync(srcPath, destPath, fsConstants.COPYFILE_FICLONE);
     }
   });
 }
