@@ -10,7 +10,7 @@ const namesData = readFileSync(
 ).split('\n');
 
 const priceData = readFileSync(
-    resolve(ModulePath, '../magic-books/magic-book-prices.tsv'),
+    resolve(ModulePath, '../magic-dusts/magic-dust-prices.tsv'),
     {encoding: 'utf8'},
 ).split('\n');
 
@@ -28,19 +28,6 @@ namesData.forEach((row) => {
     desc: RewardDesc,
   });
 });
-
-/**
- * Find reward desc
- * @param {number} rewardTier
- * @return {string}
- */
-function findRewardDesc(rewardTier) {
-  const rewardName = 'Magic Book';
-  const namesData = namesLookup.find((data) => (
-    (data.name === rewardName) && (data.tier === rewardTier)
-  ));
-  return namesData?namesData.desc:`T${rewardTier} Summon Monster`;
-}
 
 /**
  * Build price table
@@ -74,15 +61,15 @@ function buildPriceTable(tableNum, rowStart, rowEnd, tierColStart) {
 
   tableOutput = tableTemplate
       .replace('{{TIER A}}', tiers[0])
-      .replace('{{TIER A DESC}}', findRewardDesc(tiers[0]))
+      .replace('{{TIER A DESC}}', `T${tiers[0]} Magic Gem`)
       .replace('{{TIER B}}', tiers[1])
-      .replace('{{TIER B DESC}}', findRewardDesc(tiers[1]))
+      .replace('{{TIER B DESC}}', `T${tiers[1]} Magic Gem`)
       .replace('{{TIER C}}', tiers[2])
-      .replace('{{TIER C DESC}}', findRewardDesc(tiers[2]))
+      .replace('{{TIER C DESC}}', `T${tiers[2]} Magic Gem`)
       .replace('{{TIER D}}', tiers[3])
-      .replace('{{TIER D DESC}}', findRewardDesc(tiers[3]))
+      .replace('{{TIER D DESC}}', `T${tiers[3]} Magic Gem`)
       .replace('{{TIER E}}', tiers[4])
-      .replace('{{TIER E DESC}}', findRewardDesc(tiers[4]));
+      .replace('{{TIER E DESC}}', `T${tiers[4]} Magic Gem`);
 
   const sections = [];
 

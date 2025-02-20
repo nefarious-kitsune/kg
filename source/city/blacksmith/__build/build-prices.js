@@ -10,7 +10,7 @@ const namesData = readFileSync(
 ).split('\n');
 
 const priceData = readFileSync(
-    resolve(ModulePath, '../magic-books/magic-book-prices.tsv'),
+    resolve(ModulePath, '../forge-blueprints/forge-blueprint-prices.tsv'),
     {encoding: 'utf8'},
 ).split('\n');
 
@@ -35,11 +35,11 @@ namesData.forEach((row) => {
  * @return {string}
  */
 function findRewardDesc(rewardTier) {
-  const rewardName = 'Magic Book';
+  const rewardName = 'Forge Blueprint';
   const namesData = namesLookup.find((data) => (
     (data.name === rewardName) && (data.tier === rewardTier)
   ));
-  return namesData?namesData.desc:`T${rewardTier} Summon Monster`;
+  return namesData?namesData.desc:`T${rewardTier} Weapon`;
 }
 
 /**

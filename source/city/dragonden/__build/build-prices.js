@@ -16,13 +16,6 @@ const priceData = readFileSync(
 
 const namesLookup = [];
 
-const rewardName2Type = {
-  'Blueprint': 'Armor',
-  'Magic Dust': 'Magic Stone',
-  'Forge Blueprint': 'Weapon',
-  'Magic Book': 'Summon Monster',
-};
-
 namesData.forEach((row) => {
   const [
     RewardName,
@@ -38,21 +31,15 @@ namesData.forEach((row) => {
 
 /**
  * Find reward desc
- * @param {string} rewardName
  * @param {number} rewardTier
  * @return {string}
  */
-function findRewardDesc(rewardName, rewardTier) {
+function findRewardDesc(rewardTier) {
+  const rewardName = 'Blueprint';
   const namesData = namesLookup.find((data) => (
     (data.name === rewardName) && (data.tier === rewardTier)
   ));
-  if (namesData) return namesData.desc;
-
-  if (rewardName !== 'Magic Dust') {
-    console.log(`reward name not found (T${rewardTier} ${rewardName})`);
-  }
-
-  return 'T' + rewardTier + ' ' + rewardName2Type[rewardName];
+  return namesData?namesData.desc:`T${rewardTier} Armor`;
 }
 
 /**
@@ -87,15 +74,15 @@ function buildPriceTable(tableNum, rowStart, rowEnd, tierColStart) {
 
   tableOutput = tableTemplate
       .replace('{{TIER A}}', tiers[0])
-      .replace('{{TIER A DESC}}', findRewardDesc('Blueprint', tiers[0]))
+      .replace('{{TIER A DESC}}', findRewardDesc(tiers[0]))
       .replace('{{TIER B}}', tiers[1])
-      .replace('{{TIER B DESC}}', findRewardDesc('Blueprint', tiers[1]))
+      .replace('{{TIER B DESC}}', findRewardDesc(tiers[1]))
       .replace('{{TIER C}}', tiers[2])
-      .replace('{{TIER C DESC}}', findRewardDesc('Blueprint', tiers[2]))
+      .replace('{{TIER C DESC}}', findRewardDesc(tiers[2]))
       .replace('{{TIER D}}', tiers[3])
-      .replace('{{TIER D DESC}}', findRewardDesc('Blueprint', tiers[3]))
+      .replace('{{TIER D DESC}}', findRewardDesc(tiers[3]))
       .replace('{{TIER E}}', tiers[4])
-      .replace('{{TIER E DESC}}', findRewardDesc('Blueprint', tiers[4]));
+      .replace('{{TIER E DESC}}', findRewardDesc(tiers[4]));
 
   const sections = [];
 
