@@ -1,8 +1,8 @@
 <html>
 <head>
-<title>T{{TIER}} Magic Stone Power Bonuses</title>
+<title>T{{TIER}} Magic Stone Leveling</title>
 <meta page-data
-  og-desc="Power bonuses of T{{TIER}} Magic Stones"
+  og-desc="Leveling of T{{TIER}} Magic Stones"
   tag-list="witch's lab"
 >
 <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -15,41 +15,36 @@
   <li><a href="/city">City</a></li>
   <li><a href="/city/witchs-lab">Witch's Lab</a></li>
   <li><a href="/city/witchs-lab/magic-stones">Magic Stones</a></li>
-  <li>T{{TIER}} Power Bonuses</li>
+  <li>T{{TIER}} Leveling</li>
 </menu></nav></header>
 
 <main>
-<h1>T{{TIER}} Magic Stone Power Bonuses</h1>
-<section>
+<h1>T{{TIER}} Magic Stone Leveling</h1>
 
+<section>
 <p>A T{{TIER}} Magic Stone provides maximum
-{{MAX POWER BONUS}}% power bonus and requires a total
-<a href="./t{{TIER}}-leveling">leveling cost</a> of
+{{MAX POWER BONUS}}%
+<a href="./t{{TIER}}-power">power bonus</a>
+and requires a total leveling cost of
 {{TOTAL STRENGTHENING POTION COST}} Strengthening Potion and
 {{TOTAL FORTUNE POTION COST}} Fortune Potion.</p>
 </section>
 
-<section id="power">
+<section id="leveling">
 <div class="col-flex">
 
-<table class="basic-table power-table sticky-header">
+<table class="basic-table upgrade-table sticky-header">
 <thead>
-<tr><th class="from-level">Level</th><th class="power">Power</th></tr>
+<th class="from-level">From</th>
+  <th class="chevron"></th>
+  <th class="to-level">To</th>
+  <th class="upgrade-cost">Strengthening Potion</th>
+  <th class="upgrade-cost">Fortune Potion</th>
 </thead>
 <tbody>
-{{BODY1}}
+{{BODY}}
 </tbody>
 </table>
-
-<table class="basic-table power-table sticky-header">
-<thead>
-<tr><th class="from-level">Level</th><th class="power">Power</th></tr>
-</thead>
-<tbody>
-{{BODY2}}
-</tbody>
-</table>
-
 </div>
 </section>
 </main>
