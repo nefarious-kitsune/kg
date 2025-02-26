@@ -6,7 +6,7 @@ const ModulePath = dirname(fileURLToPath(import.meta.url));
 
 const maxTier = 10;
 export const database = {
-  'title': 'Witch\'s Lab Magic Stone Power and Levelling',
+  'title': 'Witch\'s Lab Magic Stone Power and Leveling',
   'power-bonus': {
     t1: [], t2: [], t3: [],
     t4: [], t5: [], t6: [],

@@ -31,7 +31,7 @@ async function compileSite() {
   const destBasePath = resolve(ProjectPath, './docs/');
   const maxDepth = 6;
   const srcFilePaths = [];
-  const fileTypes = ['.css', '.html', '.tsv', '.js', '.gs'];
+  const fileTypes = ['.css', '.html', '.tsv', '.json', '.js', '.gs'];
 
   const traverse = (parentPath, currentDepth) => {
     readdirSync(parentPath).forEach((file) => {
