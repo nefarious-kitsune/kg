@@ -1,1 +1,2 @@
-import './build-blacksmith-data.js';
+import './build-base-data.js';
+import './build-base-power-content.js';

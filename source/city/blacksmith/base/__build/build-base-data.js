@@ -15,7 +15,7 @@ export const blacksmithTechDatabase = {
  * Import TSV data and compile it to structured data
  */
 function buildDatabase() {
-  const tsvFilePath = resolve(ModulePath, '../forge-hammer.tsv');
+  const tsvFilePath = resolve(ModulePath, '../__data/forge-hammer.tsv');
   const rows = readFileSync(tsvFilePath, {encoding: 'utf8'}).split('\n');
   rows.shift(); // Remove header row
   rows.pop(); // Remove last row
@@ -56,7 +56,7 @@ function buildDatabase() {
  * Save Database
  */
 function saveDatabase() {
-  const jsonFilePath = resolve(ModulePath, '../forge-hammer.json');
+  const jsonFilePath = resolve(ModulePath, '../blacksmith-base-data.json');
   writeFileSync(
       jsonFilePath,
       JSON.stringify(blacksmithTechDatabase, null, '  ') + '\n');
