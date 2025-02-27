@@ -14,9 +14,9 @@ const table4 = [];
 const tsv = [];
 
 /**
- * Build leveling table
+ * Build power table
  */
-function buildLevelingTable() {
+function buildPowerTable() {
   // Build header row
   tsv.push(['level', 'blacksmith base power', 'verified'].join('\t'));
 
@@ -55,4 +55,4 @@ function buildLevelingTable() {
   writeFileSync(resolve(ModulePath, '../blacksmith-power.tsv'), tsv.join('\n'));
 }
 
-buildLevelingTable();
+buildPowerTable();
