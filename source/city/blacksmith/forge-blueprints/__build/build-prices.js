@@ -1,46 +1,14 @@
 import {readFileSync, writeFileSync} from 'fs';
 import {fileURLToPath} from 'url';
 import {dirname, resolve} from 'path';
+import {getHeroGearDesc} from '../../__build/get-tier-desc.js';
 
 const ModulePath = dirname(fileURLToPath(import.meta.url));
 
-const namesData = readFileSync(
-    resolve(ModulePath, '../../../events/regular/mk/__data/names.tsv'),
-    {encoding: 'utf8'},
-).split('\n');
-
 const priceData = readFileSync(
-    resolve(ModulePath, '../forge-blueprints/forge-blueprint-prices.tsv'),
+    resolve(ModulePath, '../forge-blueprint-prices.tsv'),
     {encoding: 'utf8'},
 ).split('\n');
-
-const namesLookup = [];
-
-namesData.forEach((row) => {
-  const [
-    RewardName,
-    Tier,
-    RewardDesc,
-  ] = row.split('\t');
-  namesLookup.push({
-    name: RewardName,
-    tier: parseInt(Tier),
-    desc: RewardDesc,
-  });
-});
-
-/**
- * Find reward desc
- * @param {number} rewardTier
- * @return {string}
- */
-function findRewardDesc(rewardTier) {
-  const rewardName = 'Forge Blueprint';
-  const namesData = namesLookup.find((data) => (
-    (data.name === rewardName) && (data.tier === rewardTier)
-  ));
-  return namesData?namesData.desc:`T${rewardTier} Weapon`;
-}
 
 /**
  * Build price table
@@ -74,15 +42,15 @@ function buildPriceTable(tableNum, rowStart, rowEnd, tierColStart) {
 
   tableOutput = tableTemplate
       .replace('{{TIER A}}', tiers[0])
-      .replace('{{TIER A DESC}}', findRewardDesc(tiers[0]))
+      .replace('{{TIER A DESC}}', getHeroGearDesc(tiers[0]))
       .replace('{{TIER B}}', tiers[1])
-      .replace('{{TIER B DESC}}', findRewardDesc(tiers[1]))
+      .replace('{{TIER B DESC}}', getHeroGearDesc(tiers[1]))
       .replace('{{TIER C}}', tiers[2])
-      .replace('{{TIER C DESC}}', findRewardDesc(tiers[2]))
+      .replace('{{TIER C DESC}}', getHeroGearDesc(tiers[2]))
       .replace('{{TIER D}}', tiers[3])
-      .replace('{{TIER D DESC}}', findRewardDesc(tiers[3]))
+      .replace('{{TIER D DESC}}', getHeroGearDesc(tiers[3]))
       .replace('{{TIER E}}', tiers[4])
-      .replace('{{TIER E DESC}}', findRewardDesc(tiers[4]));
+      .replace('{{TIER E DESC}}', getHeroGearDesc(tiers[4]));
 
   const sections = [];
 
