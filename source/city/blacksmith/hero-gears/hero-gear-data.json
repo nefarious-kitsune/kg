@@ -1,0 +1,145 @@
+{
+  "title": "Blacksmith Hero Gear Power and Leveling",
+  "power-bonus": {
+    "t1": [
+      "1.0%",
+      "3.0%",
+      "4.0%",
+      "5.0%",
+      "7.0%",
+      "8.0%",
+      "10.0%",
+      "12.0%",
+      "14.0%",
+      "16.0%",
+      "18.0%",
+      "21.0%",
+      "24.0%",
+      "28.0%",
+      "32.0%",
+      "37.0%",
+      "42.0%",
+      "48.0%",
+      "54.0%",
+      "60.0%"
+    ]
+  },
+  "leveling": {
+    "t1": [
+      {
+        "from": 1,
+        "to": 2,
+        "elemental-vial": 1,
+        "blood-of-titan": 0
+      },
+      {
+        "from": 2,
+        "to": 3,
+        "elemental-vial": 1,
+        "blood-of-titan": 0
+      },
+      {
+        "from": 3,
+        "to": 4,
+        "elemental-vial": 2,
+        "blood-of-titan": 0
+      },
+      {
+        "from": 4,
+        "to": 5,
+        "elemental-vial": 2,
+        "blood-of-titan": 0
+      },
+      {
+        "from": 5,
+        "to": 6,
+        "elemental-vial": 2,
+        "blood-of-titan": 0
+      },
+      {
+        "from": 6,
+        "to": 7,
+        "elemental-vial": 3,
+        "blood-of-titan": 0
+      },
+      {
+        "from": 7,
+        "to": 8,
+        "elemental-vial": 3,
+        "blood-of-titan": 0
+      },
+      {
+        "from": 8,
+        "to": 9,
+        "elemental-vial": 4,
+        "blood-of-titan": 0
+      },
+      {
+        "from": 9,
+        "to": 10,
+        "elemental-vial": 4,
+        "blood-of-titan": 0
+      },
+      {
+        "from": 10,
+        "to": 11,
+        "elemental-vial": 5,
+        "blood-of-titan": 1
+      },
+      {
+        "from": 11,
+        "to": 12,
+        "elemental-vial": 5,
+        "blood-of-titan": 1
+      },
+      {
+        "from": 12,
+        "to": 13,
+        "elemental-vial": 5,
+        "blood-of-titan": 1
+      },
+      {
+        "from": 13,
+        "to": 14,
+        "elemental-vial": 6,
+        "blood-of-titan": 1
+      },
+      {
+        "from": 14,
+        "to": 15,
+        "elemental-vial": 6,
+        "blood-of-titan": 1
+      },
+      {
+        "from": 15,
+        "to": 16,
+        "elemental-vial": 7,
+        "blood-of-titan": 1
+      },
+      {
+        "from": 16,
+        "to": 17,
+        "elemental-vial": 8,
+        "blood-of-titan": 1
+      },
+      {
+        "from": 17,
+        "to": 18,
+        "elemental-vial": 8,
+        "blood-of-titan": 1
+      },
+      {
+        "from": 18,
+        "to": 19,
+        "elemental-vial": 9,
+        "blood-of-titan": 2
+      },
+      {
+        "from": 19,
+        "to": 20,
+        "elemental-vial": 9,
+        "blood-of-titan": 2
+      }
+    ]
+  }
+}
