@@ -1,0 +1,90 @@
+<html>
+<head>
+<title>Blacksmith</title>
+<meta page-data
+  og-desc="Blacksmith"
+  tag-list="blacksmith"
+>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link href="../../assets/css/common.css" rel="stylesheet">
+<link href="/assets/modal/model.css" rel="stylesheet">
+<script src="/assets/modal/model.js"></script>
+<style>
+  .building-icon {
+    display: block;
+    float: right;
+    width: 6rem;
+    height: auto;
+    margin: 0rem 0.5rem 0.5rem 0.5rem;
+  }
+</style>
+</head>
+<body>
+
+<header><nav><menu class="breadcrumb">
+  <li><a href="/content">Home</a></li>
+  <li><a href="/city">City</a></li>
+  <li>{{TITLE}}</li>
+</menu></nav></header>
+
+<main>
+<h1>{{TITLE}}</h1>
+
+<div class="quick-access-container"><menu>
+  <li><a href="#tech">Tech</a></li>
+  <li><a href="#hero-gears">Gears</a></li>
+  <li><a href="#screenshots">Screenshots</a></li>
+</menu></div>
+
+<section class="intro">
+<p><img src="../../assets/icons/building-blacksmith.png" class="building-icon">
+Blacksmith <a href="../../basics/unlocking">unlocks</a>
+about <span class="number">7</span> days after server opening.
+The building can be used for
+conducting <a href="./base/">Blacksmith Tech</a> research and
+crafting <a href="./hero-gears/">Hero Gears</a> (Weapons).</p>
+</section>
+
+<section id="tech">
+<h2><a href="./base/">Blacksmith Tech</a></h2>
+
+<!-- Blacksmith Leveling -->
+<p>Blacksmith Tech starts at level <span class="number">1</span> and
+maximizes at level <span class="number">2000</span>. Blacksmith Tech
+level can be enhanced by consuming Forge Hammers.</p>
+
+<!-- Blacksmith Power -->
+<p>Blacksmith Tech provides maximum
+<span class="number">700000000</span> Blacksmith Base Power to each Hero;
+if a <a href="/marches/">Troop March</a> has 3 Heroes,
+the maximum Blacksmith Base Power is
+<span class="number">2100000000</span>.</p>
+</section>
+
+<section id="gears">
+<h2><a href="./hero-gears/">Hero Gears</a></h2>
+
+<p>Crafting each Hero Gear (Weapon) requires <span class="number">100</span>
+<a href="./forge-blueprints/">Forge Blueprints</a>.
+Each Hero can be equipped with maximum 1 Hero Gear which
+provides bonus power based on Blacksmith Base Power.</p>
+</section>
+
+<!--
+Tech
+- research
+- power
+Gear
+- crafting
+- equipping
+- dismantling
+-->
+<section id="screenshots">
+<h2>Screenshots</h2>
+</section>
+
+<fragment src="/__templates/modal-container.md"/>
+
+</main>
+</body>
+</html>
