@@ -2,7 +2,7 @@
 <head>
 <title>T{{TIER}} Hero Gear</title>
 <meta page-data
-  og-desc="Leveling and Power of T{{TIER}} Hero Gear ({{TIER DESC}})"
+  og-desc="Upgrade cost and power bonus of T{{TIER}} Hero Gear ({{TIER DESC}})"
   tag-list="blacksmith"
 >
 <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -21,21 +21,19 @@
 <main>
 <h1>T{{TIER}} Hero Gear</h1>
 
-<div class="quick-access-container"><menu>
-  <li><a href="#leveling">Leveling</a></li>
-  <li><a href="#power-bonus">Power Bonus</a></li>
-</menu></div>
-
 <section>
-<p>A T{{TIER}} Hero Gear ({{TIER DESC}}) provides maximum
-<span class="number">{{MAX POWER BONUS}}</span><span class="unit">%</span>
-power bonus and requires a total leveling cost of
-<span class="number">{{TOTAL COST 1}}</span> Elemental Vial and
-<span class="number">{{TOTAL COST 2}}</span> Blood of Titan.</p>
+<p>A T{{TIER}} Hero Gear ({{TIER DESC}}) can be crafted from
+<span class="number">100</span> T{{TIER}}
+<a href="../forge-blueprints/">Forge Blueprints</a>.</p>
 </section>
 
-<section id="leveling">
-<h2>Leveling</h2>
+<section id="upgrade">
+<h2>Level Upgrade</h2>
+
+<p>The total upgrade cost for a T{{TIER}} Hero Gear is
+<span class="number">{{TOTAL COST 1}}</span> Elemental Vial and
+<span class="number">{{TOTAL COST 2}}</span> Blood of Titan.</p>
+
 <div class="col-flex">
 
 <table class="basic-table upgrade-table sticky-header">
@@ -54,7 +52,11 @@ power bonus and requires a total leveling cost of
 </section>
 
 <section id="power">
-<h2>Power Bonus</h2>
+<h2>Hero Gear Power</h2>
+
+<p>The maximum Hero Gear Power from a T{{TIER}} Hero Gear is
+<span class="number">{{MAX POWER BONUS}}</span><span class="unit">%</span>
+of <a href="../base/">Blacksmith Base Power</a>.</p>
 
 <div class="col-flex">
 <table class="basic-table power-table sticky-header">
@@ -62,7 +64,7 @@ power bonus and requires a total leveling cost of
 <tr><th class="from-level">Level</th><th class="power">Power</th></tr>
 </thead>
 <tbody>
-{{POWER BODY1}}
+{{POWER BODY 1}}
 </tbody>
 </table>
 
@@ -71,12 +73,16 @@ power bonus and requires a total leveling cost of
 <tr><th class="from-level">Level</th><th class="power">Power</th></tr>
 </thead>
 <tbody>
-{{POWR BODY2}}
+{{POWER BODY 2}}
 </tbody>
 </table>
 
 </div>
 </section>
+<nav class="left-right">
+{{PREV LINK}}
+{{NEXT LINK}}
+</nav>
 
 </main>
 

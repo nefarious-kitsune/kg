@@ -6,7 +6,7 @@ import {dirname, resolve} from 'path';
 const ModulePath = dirname(fileURLToPath(import.meta.url));
 
 export const heroGearDatabase = {
-  'title': 'Blacksmith Hero Gear Power and Leveling',
+  'title': 'Hero Gear Power Bonus and Upgrade',
   'power-bonus': {},
   'upgrade': {},
 };

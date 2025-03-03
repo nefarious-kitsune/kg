@@ -1,5 +1,5 @@
 {
-  "title": "Blacksmith Hero Gear Power and Leveling",
+  "title": "Hero Gear Power Bonus and Upgrade",
   "power-bonus": {
     "t1": [
       "1.0%",
@@ -24,7 +24,7 @@
       "60.0%"
     ]
   },
-  "leveling": {
+  "upgrade": {
     "t1": [
       {
         "from": 1,
