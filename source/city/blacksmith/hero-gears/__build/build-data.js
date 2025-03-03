@@ -8,7 +8,7 @@ const ModulePath = dirname(fileURLToPath(import.meta.url));
 export const heroGearDatabase = {
   'title': 'Blacksmith Hero Gear Power and Leveling',
   'power-bonus': {},
-  'leveling': {},
+  'upgrade': {},
 };
 
 /**
@@ -19,7 +19,7 @@ function buildTierData(tier) {
   const powerBonus = [];
   const leveling = [];
   heroGearDatabase['power-bonus'][`t${tier}`] = powerBonus;
-  heroGearDatabase['leveling'][`t${tier}`] = leveling;
+  heroGearDatabase['upgrade'][`t${tier}`] = leveling;
 
   const rows = readFileSync(
       resolve(ModulePath, `../__data/t${tier}.tsv`),

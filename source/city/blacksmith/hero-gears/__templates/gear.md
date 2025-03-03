@@ -47,7 +47,7 @@ power bonus and requires a total leveling cost of
   <th class="upgrade-cost">Blood of Titan</th>
 </thead>
 <tbody>
-{{BODY}}
+{{UPGRADE BODY}}
 </tbody>
 </table>
 </div>
@@ -62,7 +62,7 @@ power bonus and requires a total leveling cost of
 <tr><th class="from-level">Level</th><th class="power">Power</th></tr>
 </thead>
 <tbody>
-{{BODY1}}
+{{POWER BODY1}}
 </tbody>
 </table>
 
@@ -71,7 +71,7 @@ power bonus and requires a total leveling cost of
 <tr><th class="from-level">Level</th><th class="power">Power</th></tr>
 </thead>
 <tbody>
-{{BODY2}}
+{{POWR BODY2}}
 </tbody>
 </table>
 
