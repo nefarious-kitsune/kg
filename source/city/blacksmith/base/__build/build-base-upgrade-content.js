@@ -21,7 +21,7 @@ let cumulatedHammerCost = 0;
 /**
  * Build upgrade table
  */
-function buildLevelingTable() {
+function buildUpgradeTable() {
   // Build header row
   tsv.push(['from', 'to', 'forge hammer cost', 'verified'].join('\t'));
 
@@ -66,15 +66,15 @@ function buildLevelingTable() {
   for (let i=1000; i<1500; i++) makeRow(levelingData[i], stepTables[2], maxTables[2]);
   for (let i=1500; i<1999; i++) makeRow(levelingData[i], stepTables[3], maxTables[3]);
 
-  writeFileSync(resolve(TemplatePath, './--leveling-1.md'), stepTables[0].join('\n'));
-  writeFileSync(resolve(TemplatePath, './--leveling-2.md'), stepTables[1].join('\n'));
-  writeFileSync(resolve(TemplatePath, './--leveling-3.md'), stepTables[2].join('\n'));
-  writeFileSync(resolve(TemplatePath, './--leveling-4.md'), stepTables[3].join('\n'));
-  writeFileSync(resolve(TemplatePath, './--leveling-max-1.md'), maxTables[0].join('\n'));
-  writeFileSync(resolve(TemplatePath, './--leveling-max-2.md'), maxTables[1].join('\n'));
-  writeFileSync(resolve(TemplatePath, './--leveling-max-3.md'), maxTables[2].join('\n'));
-  writeFileSync(resolve(TemplatePath, './--leveling-max-4.md'), maxTables[3].join('\n'));
-  writeFileSync(resolve(ModulePath, '../blacksmith-leveling.tsv'), tsv.join('\n'));
+  writeFileSync(resolve(TemplatePath, './--step-upgrade-1.md'), stepTables[0].join('\n'));
+  writeFileSync(resolve(TemplatePath, './--step-upgrade-2.md'), stepTables[1].join('\n'));
+  writeFileSync(resolve(TemplatePath, './--step-upgrade-3.md'), stepTables[2].join('\n'));
+  writeFileSync(resolve(TemplatePath, './--step-upgrade-4.md'), stepTables[3].join('\n'));
+  writeFileSync(resolve(TemplatePath, './--max-upgrade-1.md'), maxTables[0].join('\n'));
+  writeFileSync(resolve(TemplatePath, './--max-upgrade-2.md'), maxTables[1].join('\n'));
+  writeFileSync(resolve(TemplatePath, './--max-upgrade-3.md'), maxTables[2].join('\n'));
+  writeFileSync(resolve(TemplatePath, './--max-upgrade-4.md'), maxTables[3].join('\n'));
+  writeFileSync(resolve(ModulePath, '../blacksmith-upgrade.tsv'), tsv.join('\n'));
 }
 
-buildLevelingTable();
+buildUpgradeTable();
