@@ -16,10 +16,10 @@ export const heroGearDatabase = {
  * @param {*} tier - Tier
  */
 function buildTierData(tier) {
-  const powerBonus = [];
-  const leveling = [];
-  heroGearDatabase['power-bonus'][`t${tier}`] = powerBonus;
-  heroGearDatabase['upgrade'][`t${tier}`] = leveling;
+  const powerData = [];
+  const upgradeData = [];
+  heroGearDatabase['power-bonus'][`t${tier}`] = powerData;
+  heroGearDatabase['upgrade'][`t${tier}`] = upgradeData;
 
   const rows = readFileSync(
       resolve(ModulePath, `../__data/t${tier}.tsv`),
@@ -29,14 +29,14 @@ function buildTierData(tier) {
   for (let levelIdx = 1; levelIdx <= 20; levelIdx++) {
     const entries = rows[levelIdx].split('\t');
     const bonus = parseFloat(entries[1]);
-    powerBonus.push(bonus.toFixed(1) + '%');
+    powerData.push(bonus.toFixed(1) + '%');
   }
 
   for (let levelIdx = 1; levelIdx < 20; levelIdx++) {
     const entries = rows[levelIdx].split('\t');
     const cost1 = parseInt(entries[3]);
     const cost2 = (entries[4] !== '')?parseInt(entries[4]):0;
-    leveling.push({
+    upgradeData.push({
       'from': levelIdx,
       'to': levelIdx+1,
       'elemental-vial': cost1,
