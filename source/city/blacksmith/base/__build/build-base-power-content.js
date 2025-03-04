@@ -7,52 +7,60 @@ const TemplatePath = resolve(ModulePath, '../__templates/');
 
 import {blacksmithTechDatabase} from './build-base-data.js';
 
-const table1 = [];
-const table2 = [];
-const table3 = [];
-const table4 = [];
-const tsv = [];
+/** HTML table body for power */
+const powTBody = [];
+/** TSV for power */
+const powTsv = [];
 
 /**
- * Build power table
+ * Build temporary content
  */
-function buildPowerTable() {
+function buildPowerContent() {
   // Build header row
-  tsv.push(['level', 'blacksmith base power', 'verified'].join('\t'));
+  powTsv.push(['level', 'blacksmith base power', 'verified'].join('\t'));
 
-  const unverifiedMarker = '<img\n' +
-      '  src="/assets/emojis/4x/question-mark.png"\n' +
-      '  class="emoji" title="unverified" alt="unverified">';
-
+  const unverifiedMarker = readFileSync(
+      resolve(TemplatePath, 'unverified.md'), {encoding: 'utf8'},
+  );
   const rowTemplate = readFileSync(
-      resolve(TemplatePath, './power-row.md'),
-      {encoding: 'utf8'},
+      resolve(TemplatePath, './power-row.md'), {encoding: 'utf8'},
   );
 
-  const makeRow = (entry, table) => {
-    table.push(
+  blacksmithTechDatabase.power.forEach((entry) => {
+    powTBody.push(
         rowTemplate
             .replace('{{FROM LEVEL}}', entry.level)
             .replace('{{MARKER}}', entry.verified?'':unverifiedMarker)
             .replace('{{POWER}}', entry.power),
     );
-    tsv.push([
+    powTsv.push([
       entry.level,
       entry.power,
       entry.verified?'TRUE':'FALSE',
     ].join('\t'));
-  };
-
-  const powerData = blacksmithTechDatabase.power;
-  for (let i=0; i<500; i++) makeRow(powerData[i], table1);
-  for (let i=500; i<1000; i++) makeRow(powerData[i], table2);
-  for (let i=1000; i<1500; i++) makeRow(powerData[i], table3);
-  for (let i=1500; i<2000; i++) makeRow(powerData[i], table4);
-  writeFileSync(resolve(TemplatePath, './--power-1.md'), table1.join('\n'));
-  writeFileSync(resolve(TemplatePath, './--power-2.md'), table2.join('\n'));
-  writeFileSync(resolve(TemplatePath, './--power-3.md'), table3.join('\n'));
-  writeFileSync(resolve(TemplatePath, './--power-4.md'), table4.join('\n'));
-  writeFileSync(resolve(ModulePath, '../blacksmith-power.tsv'), tsv.join('\n'));
+  });
 }
 
-buildPowerTable();
+/**
+ * Build temporary content
+ */
+function savePowerContent() {
+  // Save temp html content for power
+  const powFilePaths = [
+    resolve(TemplatePath, '--power-1.md'),
+    resolve(TemplatePath, '--power-2.md'),
+    resolve(TemplatePath, '--power-3.md'),
+    resolve(TemplatePath, '--power-4.md'),
+  ];
+  writeFileSync(powFilePaths[0], powTBody.slice(0, 500).join('\n'));
+  writeFileSync(powFilePaths[1], powTBody.slice(500, 1000).join('\n'));
+  writeFileSync(powFilePaths[2], powTBody.slice(1000, 1500).join('\n'));
+  writeFileSync(powFilePaths[3], powTBody.slice(1500, 2000).join('\n'));
+
+  // Save temp .tsv content for power
+  const tsvFilePath = resolve(ModulePath, '../blacksmith-power.tsv');
+  writeFileSync(tsvFilePath, powTsv.join('\n'));
+}
+
+buildPowerContent();
+savePowerContent();

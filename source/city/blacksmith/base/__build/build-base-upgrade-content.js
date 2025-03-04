@@ -15,29 +15,24 @@ const stepTBody = [];
 /** HTML table body for max upgrade */
 const maxTBody = [];
 /** TSV for step upgrade */
-const tsv = [];
+const supTsv = [];
 
 /**
  * Build temporary content
  */
 function buildUpgradeContent() {
   // Build header row
-  tsv.push(['from', 'to', 'forge hammer cost', 'verified'].join('\t'));
+  supTsv.push(['from', 'to', 'forge hammer cost', 'verified'].join('\t'));
 
-  const unverifiedMarker = '<img\n' +
-      '  src="/assets/emojis/4x/question-mark.png"\n' +
-      '  class="emoji" title="unverified" alt="unverified">';
-
+  const unverifiedMarker = readFileSync(
+      resolve(TemplatePath, 'unverified.md'), {encoding: 'utf8'},
+  );
   const rowTemplate = readFileSync(
-      resolve(TemplatePath, './upgrade-row.md'),
-      {encoding: 'utf8'},
+      resolve(TemplatePath, './upgrade-row.md'), {encoding: 'utf8'},
   );
 
   let cumulatedHammerCost = 0;
-
-  const upgradeData = blacksmithTechDatabase.upgrade;
-  for (let levelIdx = 0; levelIdx < 1999; levelIdx++) {
-    const entry = upgradeData[levelIdx];
+  blacksmithTechDatabase.upgrade.forEach((entry) => {
     const hammerCost = entry['forge-hammer'];
     const maxHammerCost = totalHammerCost - cumulatedHammerCost;
     stepTBody.push(
@@ -54,14 +49,14 @@ function buildUpgradeContent() {
             .replace('{{MARKER}}', entry.verified?'':unverifiedMarker)
             .replace('{{FORGE HAMMER COST}}', maxHammerCost),
     );
-    tsv.push([
+    supTsv.push([
       entry.from,
       entry.to,
       hammerCost,
       entry.verified?'TRUE':'FALSE',
     ].join('\t'));
     cumulatedHammerCost += hammerCost;
-  }
+  });
 }
 
 /**
@@ -95,7 +90,7 @@ function saveUpgradeContent() {
   // Save temp .tsv content for step upgrade
   writeFileSync(
       resolve(ModulePath, '../blacksmith-upgrade.tsv'),
-      tsv.join('\n'),
+      supTsv.join('\n'),
   );
 }
 

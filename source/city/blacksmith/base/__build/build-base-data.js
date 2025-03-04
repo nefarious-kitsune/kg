@@ -89,4 +89,9 @@ function saveDatabase() {
 buildDatabase();
 saveDatabase();
 
-export {blacksmithTechDatabase, maxBlacksmithPower, totalHammerCost};
+export {
+  blacksmithTechDatabase,
+  maxBlacksmithLevel,
+  maxBlacksmithPower,
+  totalHammerCost,
+};
