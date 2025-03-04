@@ -1,5 +1,5 @@
 {
-  "title": "Blacksmith Tech Power and Leveling",
+  "title": "Blacksmith Tech upgrade cost and power",
   "power": [
     {
       "level": 1,
@@ -10002,7 +10002,7 @@
       "verified": true
     }
   ],
-  "leveling": [
+  "upgrade": [
     {
       "from": 1,
       "to": 2,

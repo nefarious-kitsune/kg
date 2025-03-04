@@ -1,4 +1,3 @@
-/* eslint-disable max-len */
 import {fileURLToPath} from 'url';
 import {dirname, resolve} from 'path';
 import {readFileSync, writeFileSync} from 'fs';
@@ -6,22 +5,22 @@ import {readFileSync, writeFileSync} from 'fs';
 const ModulePath = dirname(fileURLToPath(import.meta.url));
 const TemplatePath = resolve(ModulePath, '../__templates/');
 
-import {blacksmithTechDatabase} from './build-base-data.js';
+import {
+  blacksmithTechDatabase,
+  totalHammerCost,
+} from './build-base-data.js';
 
-/** HTML for step leveling */
-const stepTables = [[], [], [], []];
-/** HTML for max leveling */
-const maxTables = [[], [], [], []];
-/** TSV for step leveling */
+/** HTML table body for step upgrade */
+const stepTBody = [];
+/** HTML table body for max upgrade */
+const maxTBody = [];
+/** TSV for step upgrade */
 const tsv = [];
 
-const totalHammerCost = 1399995;
-let cumulatedHammerCost = 0;
-
 /**
- * Build upgrade table
+ * Build temporary content
  */
-function buildUpgradeTable() {
+function buildUpgradeContent() {
   // Build header row
   tsv.push(['from', 'to', 'forge hammer cost', 'verified'].join('\t'));
 
@@ -30,21 +29,25 @@ function buildUpgradeTable() {
       '  class="emoji" title="unverified" alt="unverified">';
 
   const rowTemplate = readFileSync(
-      resolve(TemplatePath, './leveling-row.md'),
+      resolve(TemplatePath, './upgrade-row.md'),
       {encoding: 'utf8'},
   );
 
-  const makeRow = (entry, stepTable, maxTable) => {
+  let cumulatedHammerCost = 0;
+
+  const upgradeData = blacksmithTechDatabase.upgrade;
+  for (let levelIdx = 0; levelIdx < 1999; levelIdx++) {
+    const entry = upgradeData[levelIdx];
     const hammerCost = entry['forge-hammer'];
     const maxHammerCost = totalHammerCost - cumulatedHammerCost;
-    stepTable.push(
+    stepTBody.push(
         rowTemplate
             .replace('{{FROM LEVEL}}', entry.from)
             .replace('{{TO LEVEL}}', entry.to)
             .replace('{{MARKER}}', entry.verified?'':unverifiedMarker)
             .replace('{{FORGE HAMMER COST}}', hammerCost),
     );
-    maxTable.push(
+    maxTBody.push(
         rowTemplate
             .replace('{{FROM LEVEL}}', entry.from)
             .replace('{{TO LEVEL}}', '2000')
@@ -58,23 +61,43 @@ function buildUpgradeTable() {
       entry.verified?'TRUE':'FALSE',
     ].join('\t'));
     cumulatedHammerCost += hammerCost;
-  };
-
-  const levelingData = blacksmithTechDatabase['leveling'];
-  for (let i=0; i<500; i++) makeRow(levelingData[i], stepTables[0], maxTables[0]);
-  for (let i=500; i<1000; i++) makeRow(levelingData[i], stepTables[1], maxTables[1]);
-  for (let i=1000; i<1500; i++) makeRow(levelingData[i], stepTables[2], maxTables[2]);
-  for (let i=1500; i<1999; i++) makeRow(levelingData[i], stepTables[3], maxTables[3]);
-
-  writeFileSync(resolve(TemplatePath, './--step-upgrade-1.md'), stepTables[0].join('\n'));
-  writeFileSync(resolve(TemplatePath, './--step-upgrade-2.md'), stepTables[1].join('\n'));
-  writeFileSync(resolve(TemplatePath, './--step-upgrade-3.md'), stepTables[2].join('\n'));
-  writeFileSync(resolve(TemplatePath, './--step-upgrade-4.md'), stepTables[3].join('\n'));
-  writeFileSync(resolve(TemplatePath, './--max-upgrade-1.md'), maxTables[0].join('\n'));
-  writeFileSync(resolve(TemplatePath, './--max-upgrade-2.md'), maxTables[1].join('\n'));
-  writeFileSync(resolve(TemplatePath, './--max-upgrade-3.md'), maxTables[2].join('\n'));
-  writeFileSync(resolve(TemplatePath, './--max-upgrade-4.md'), maxTables[3].join('\n'));
-  writeFileSync(resolve(ModulePath, '../blacksmith-upgrade.tsv'), tsv.join('\n'));
+  }
 }
 
-buildUpgradeTable();
+/**
+ * Save temporary content
+ */
+function saveUpgradeContent() {
+  // Save temp html content for step upgrades
+  const supFilePaths = [
+    resolve(TemplatePath, './--step-upgrade-1.md'),
+    resolve(TemplatePath, './--step-upgrade-2.md'),
+    resolve(TemplatePath, './--step-upgrade-3.md'),
+    resolve(TemplatePath, './--step-upgrade-4.md'),
+  ];
+  writeFileSync(supFilePaths[0], stepTBody.slice(0, 500).join('\n'));
+  writeFileSync(supFilePaths[1], stepTBody.slice(500, 1000).join('\n'));
+  writeFileSync(supFilePaths[2], stepTBody.slice(1000, 1500).join('\n'));
+  writeFileSync(supFilePaths[3], stepTBody.slice(1500, 2000).join('\n'));
+
+  // Save temp html content for max upgrades
+  const mupFilePaths = [
+    resolve(TemplatePath, './--max-upgrade-1.md'),
+    resolve(TemplatePath, './--max-upgrade-2.md'),
+    resolve(TemplatePath, './--max-upgrade-3.md'),
+    resolve(TemplatePath, './--max-upgrade-4.md'),
+  ];
+  writeFileSync(mupFilePaths[0], maxTBody.slice(0, 500).join('\n'));
+  writeFileSync(mupFilePaths[1], maxTBody.slice(500, 1000).join('\n'));
+  writeFileSync(mupFilePaths[2], maxTBody.slice(1000, 1500).join('\n'));
+  writeFileSync(mupFilePaths[3], maxTBody.slice(1500, 2000).join('\n'));
+
+  // Save temp .tsv content for step upgrade
+  writeFileSync(
+      resolve(ModulePath, '../blacksmith-upgrade.tsv'),
+      tsv.join('\n'),
+  );
+}
+
+buildUpgradeContent();
+saveUpgradeContent();

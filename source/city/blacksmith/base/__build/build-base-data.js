@@ -3,13 +3,37 @@ import {dirname, resolve} from 'path';
 import {readFileSync, writeFileSync} from 'fs';
 
 const ModulePath = dirname(fileURLToPath(import.meta.url));
-// const ProjectPath = resolve(ModulePath, '../../../../');
 
-export const blacksmithTechDatabase = {
-  'title': 'Blacksmith Tech Power and Leveling',
-  'power': [],
-  'leveling': [],
+/**
+ * @typedef {Object} BlacksmithTechDatabase
+ * Database for Blacksmith Tech
+ * @property {string} title - Title of the database
+ * @property {BlacksmithTechPowerData[]} power - Power from Blacksmith Tech (level 1–2000)
+ * @property {BlacksmithTechUpgradeData[]} upgrade - Upgrade cost of Blacksmith Tech (level 1–2000)
+ *
+ * @typedef {Object} BlacksmithTechPowerData
+ * Data for Blacksmith Tech power
+ * @property {number} level - Level
+ * @property {number} power - Power
+ * @property {boolean} verified - Is this entry verified?
+ *
+ * @typedef {Object} BlacksmithTechUpgradeData
+ * Data for Blacksmith Tech upgrade cost
+ * @property {number} from - Level before upgrade
+ * @property {number} to - Level after upgrade
+ * @property {number} forge-hammer - Cost of Forge Hammer
+ * @property {boolean} verified - Is this entry verified?
+ */
+
+/** @type {BlacksmithTechDatabase} */
+const blacksmithTechDatabase = {
+  title: 'Blacksmith Tech upgrade cost and power',
+  power: [],
+  upgrade: [],
 };
+const maxBlacksmithLevel = 2000;
+const maxBlacksmithPower = 700000000;
+const totalHammerCost = 1399995;
 
 /**
  * Import TSV data and compile it to structured data
@@ -31,13 +55,13 @@ function buildDatabase() {
       parseInt(entries[1]):
       parseInt(entries[2]);
 
-    blacksmithTechDatabase['power'].push({
+    blacksmithTechDatabase.power.push({
       'level': currentLevel,
       'power': power,
       'verified': powerVerified,
     });
 
-    blacksmithTechDatabase['leveling'].push({
+    blacksmithTechDatabase.upgrade.push({
       'from': currentLevel,
       'to': currentLevel + 1,
       'forge-hammer': hammerCost,
@@ -45,9 +69,9 @@ function buildDatabase() {
     });
   }); // rows.forEach()
 
-  blacksmithTechDatabase['power'].push({
-    level: 2000,
-    power: 700000000,
+  blacksmithTechDatabase.power.push({
+    level: maxBlacksmithLevel,
+    power: maxBlacksmithPower,
     verified: true,
   });
 }
@@ -64,3 +88,5 @@ function saveDatabase() {
 
 buildDatabase();
 saveDatabase();
+
+export {blacksmithTechDatabase, maxBlacksmithPower, totalHammerCost};

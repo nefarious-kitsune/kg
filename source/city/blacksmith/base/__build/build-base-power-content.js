@@ -43,7 +43,7 @@ function buildPowerTable() {
     ].join('\t'));
   };
 
-  const powerData = blacksmithTechDatabase['power'];
+  const powerData = blacksmithTechDatabase.power;
   for (let i=0; i<500; i++) makeRow(powerData[i], table1);
   for (let i=500; i<1000; i++) makeRow(powerData[i], table2);
   for (let i=1000; i<1500; i++) makeRow(powerData[i], table3);
