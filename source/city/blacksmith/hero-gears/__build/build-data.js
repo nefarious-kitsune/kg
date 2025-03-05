@@ -38,7 +38,7 @@ const heroGearDatabase = {
   'upgrade': {},
 };
 
-const maxTier = 2;
+const maxTier = 3;
 
 /**
  * Build tier weapon data

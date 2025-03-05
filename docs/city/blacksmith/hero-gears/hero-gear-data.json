@@ -281,5 +281,145 @@
         "blood-of-titan": 6
       }
     ]
+  },
+  "t3": {
+    "power-bonus": [
+      "100.0%",
+      "103.0%",
+      "106.0%",
+      "110.0%",
+      "113.0%",
+      "116.0%",
+      "120.0%",
+      "124.0%",
+      "129.0%",
+      "133.0%",
+      "139.0%",
+      "146.0%",
+      "153.0%",
+      "162.0%",
+      "172.0%",
+      "182.0%",
+      "194.0%",
+      "207.0%",
+      "221.0%",
+      "237.0%"
+    ],
+    "upgrade": [
+      {
+        "from": 1,
+        "to": 2,
+        "elemental-vial": 15,
+        "blood-of-titan": 0
+      },
+      {
+        "from": 2,
+        "to": 3,
+        "elemental-vial": 20,
+        "blood-of-titan": 0
+      },
+      {
+        "from": 3,
+        "to": 4,
+        "elemental-vial": 30,
+        "blood-of-titan": 0
+      },
+      {
+        "from": 4,
+        "to": 5,
+        "elemental-vial": 40,
+        "blood-of-titan": 0
+      },
+      {
+        "from": 5,
+        "to": 6,
+        "elemental-vial": 50,
+        "blood-of-titan": 0
+      },
+      {
+        "from": 6,
+        "to": 7,
+        "elemental-vial": 60,
+        "blood-of-titan": 0
+      },
+      {
+        "from": 7,
+        "to": 8,
+        "elemental-vial": 70,
+        "blood-of-titan": 0
+      },
+      {
+        "from": 8,
+        "to": 9,
+        "elemental-vial": 80,
+        "blood-of-titan": 0
+      },
+      {
+        "from": 9,
+        "to": 10,
+        "elemental-vial": 90,
+        "blood-of-titan": 0
+      },
+      {
+        "from": 10,
+        "to": 11,
+        "elemental-vial": 105,
+        "blood-of-titan": 13
+      },
+      {
+        "from": 11,
+        "to": 12,
+        "elemental-vial": 115,
+        "blood-of-titan": 15
+      },
+      {
+        "from": 12,
+        "to": 13,
+        "elemental-vial": 125,
+        "blood-of-titan": 16
+      },
+      {
+        "from": 13,
+        "to": 14,
+        "elemental-vial": 140,
+        "blood-of-titan": 18
+      },
+      {
+        "from": 14,
+        "to": 15,
+        "elemental-vial": 150,
+        "blood-of-titan": 20
+      },
+      {
+        "from": 15,
+        "to": 16,
+        "elemental-vial": 165,
+        "blood-of-titan": 21
+      },
+      {
+        "from": 16,
+        "to": 17,
+        "elemental-vial": 180,
+        "blood-of-titan": 23
+      },
+      {
+        "from": 17,
+        "to": 18,
+        "elemental-vial": 190,
+        "blood-of-titan": 25
+      },
+      {
+        "from": 18,
+        "to": 19,
+        "elemental-vial": 205,
+        "blood-of-titan": 26
+      },
+      {
+        "from": 19,
+        "to": 20,
+        "elemental-vial": 220,
+        "blood-of-titan": 28
+      }
+    ]
   }
 }
