@@ -39,8 +39,6 @@ const heroGearDatabase = {
 };
 
 const maxTier = 2;
-for (let tier = 1; tier <= maxTier; tier++) buildTierData(tier);
-saveDatabase();
 
 /**
  * Build tier weapon data
@@ -94,6 +92,10 @@ function saveDatabase() {
   );
 }
 
+for (let tier = 1; tier <= maxTier; tier++) buildTierData(tier);
+saveDatabase();
+
 export {
   heroGearDatabase,
+  maxTier,
 };

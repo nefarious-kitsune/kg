@@ -2,7 +2,7 @@ import {readFileSync, writeFileSync} from 'fs';
 import {fileURLToPath} from 'url';
 import {dirname, resolve} from 'path';
 
-import {heroGearDatabase} from './build-data.js';
+import {heroGearDatabase, maxTier} from './build-data.js';
 import {getHeroGearDesc} from '../../__build/get-tier-desc.js';
 
 const ModulePath = dirname(fileURLToPath(import.meta.url));
@@ -15,9 +15,6 @@ const upgradeRowTemplate = readFileSync(
 
 const gearPageTemplate = readFileSync(
     resolve(ModulePath, '../__templates/gear.md'), {encoding: 'utf8'});
-
-const maxTier = 2;
-for (let tier = 1; tier <= maxTier; tier++) buildTierContent(tier);
 
 /**
  * Build tier weapon content
@@ -82,3 +79,5 @@ function buildTierContent(tier) {
       gearPageContent,
   );
 }
+
+for (let tier = 1; tier <= maxTier; tier++) buildTierContent(tier);
