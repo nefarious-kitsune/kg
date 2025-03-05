@@ -23,13 +23,15 @@ const maxTier = 1;
  * @param {*} tier - Tier
  */
 function buildTierTable(tier) {
+  /** @type {import('./build-data.js').HeroGearData} */
+  const heroGearData = heroGearDatabase[`t${tier}`];
   const powerTBody = [];
   const upgradeTBody = [];
   let totalCost1 = 0;
   let totalCost2 = 0;
 
   for (let levelIdx = 0; levelIdx < 20; levelIdx++) {
-    const bonus = heroGearDatabase['power-bonus'][`t${tier}`][levelIdx];
+    const bonus = heroGearData['power-bonus'][levelIdx];
     powerTBody.push(
         powerRowTemplate
             .replace('{{FROM LEVEL}}', levelIdx+1)
@@ -38,7 +40,7 @@ function buildTierTable(tier) {
   }
 
   for (let levelIdx = 0; levelIdx < 19; levelIdx++) {
-    const upgradeData = heroGearDatabase['upgrade'][`t${tier}`][levelIdx];
+    const upgradeData = heroGearData.upgrade[levelIdx];
     const cost1 = upgradeData['elemental-vial'];
     const cost2 = upgradeData['blood-of-titan'];
     totalCost1 += cost1;
@@ -52,7 +54,7 @@ function buildTierTable(tier) {
     );
   }
 
-  const maxBonus = heroGearDatabase['power-bonus'][`t${tier}`][19];
+  const maxBonus = heroGearData['power-bonus'][19];
 
   const prevLink = (tier > 1)?
     `  <div class="left-arrow"><a href="./t${tier-1}">↞</a></div>`:

@@ -1,7 +1,9 @@
 {
-  "title": "Hero Gear Power Bonus and Upgrade",
-  "power-bonus": {
-    "t1": [
+  "title": "Hero Gear upgrade cost and power bonus",
+  "power-bonus": {},
+  "upgrade": {},
+  "t1": {
+    "power-bonus": [
       "1.0%",
       "3.0%",
       "4.0%",
@@ -22,10 +24,8 @@
       "48.0%",
       "54.0%",
       "60.0%"
-    ]
-  },
-  "upgrade": {
-    "t1": [
+    ],
+    "upgrade": [
       {
         "from": 1,
         "to": 2,
