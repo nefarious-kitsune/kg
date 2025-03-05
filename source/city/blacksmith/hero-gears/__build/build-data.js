@@ -38,6 +38,10 @@ const heroGearDatabase = {
   'upgrade': {},
 };
 
+const maxTier = 2;
+for (let tier = 1; tier <= maxTier; tier++) buildTierData(tier);
+saveDatabase();
+
 /**
  * Build tier weapon data
  * @param {*} tier - Tier
@@ -75,12 +79,20 @@ function buildTierData(tier) {
   }
 }
 
-buildTierData(1);
-
 writeFileSync(
     resolve(ModulePath, '../hero-gear-data.json'),
     JSON.stringify(heroGearDatabase, null, '  ') + '\n',
 );
+
+/**
+ * Save tier weapon database
+ */
+function saveDatabase() {
+  writeFileSync(
+      resolve(ModulePath, '../hero-gear-data.json'),
+      JSON.stringify(heroGearDatabase, null, '  ') + '\n',
+  );
+}
 
 export {
   heroGearDatabase,

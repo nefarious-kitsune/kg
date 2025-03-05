@@ -16,13 +16,14 @@ const upgradeRowTemplate = readFileSync(
 const gearPageTemplate = readFileSync(
     resolve(ModulePath, '../__templates/gear.md'), {encoding: 'utf8'});
 
-const maxTier = 1;
+const maxTier = 2;
+for (let tier = 1; tier <= maxTier; tier++) buildTierContent(tier);
 
 /**
- * Build tier weapon table
+ * Build tier weapon content
  * @param {*} tier - Tier
  */
-function buildTierTable(tier) {
+function buildTierContent(tier) {
   /** @type {import('./build-data.js').HeroGearData} */
   const heroGearData = heroGearDatabase[`t${tier}`];
   const powerTBody = [];
@@ -57,11 +58,11 @@ function buildTierTable(tier) {
   const maxBonus = heroGearData['power-bonus'][19];
 
   const prevLink = (tier > 1)?
-    `  <div class="left-arrow"><a href="./t${tier-1}">↞</a></div>`:
+    `  <div class="left-arrow"><a href="./t${tier-1}-gear">↞</a></div>`:
     '';
 
   const nextLink = (tier < maxTier)?
-    `  <div class="right-arrow"><a href="./t${tier+1}">↠</a></div>`:
+    `  <div class="right-arrow"><a href="./t${tier+1}-gear">↠</a></div>`:
     '';
 
   const gearPageContent = gearPageTemplate
@@ -81,5 +82,3 @@ function buildTierTable(tier) {
       gearPageContent,
   );
 }
-
-buildTierTable(1);
