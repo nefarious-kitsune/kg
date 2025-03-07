@@ -17,7 +17,6 @@ const touchScreen =
 const xhr = new XMLHttpRequest();
 xhr.onreadystatechange = function() {
   if (this.readyState == XMLHttpRequest.DONE && this.status == 200) {
-    console.log('xhr done');
     const parser = new DOMParser();
     const dom = parser.parseFromString(htmlString, xhr.responseText);
     loadHintTemplates(dom);
@@ -25,7 +24,8 @@ xhr.onreadystatechange = function() {
     prepareHints();
   }
 };
-xhr.open('GET', 'hint-templates.html', true);
+
+xhr.open('GET', '/assets/hint/hint-templates', true);
 xhr.send();
 
 document.addEventListener('DOMContentLoaded', (e) => {
