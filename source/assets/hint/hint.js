@@ -18,7 +18,7 @@ const xhr = new XMLHttpRequest();
 xhr.onreadystatechange = function() {
   if (this.readyState == XMLHttpRequest.DONE && this.status == 200) {
     const parser = new DOMParser();
-    const dom = parser.parseFromString(htmlString, xhr.responseText);
+    const dom = parser.parseFromString(xhr.responseText, 'text/html');
     loadHintTemplates(dom);
     refDocLoaded = true;
     prepareHints();
