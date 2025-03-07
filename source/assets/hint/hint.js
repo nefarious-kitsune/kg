@@ -56,17 +56,36 @@ function prepareHints() {
   // Prepare .has-hint elements
   const elements = [...document.querySelectorAll('[--has-hint]')];
   elements.forEach((element) => {
+    const hintText = element.getAttribute('--hint-text');
     const hintRef = element.getAttribute('--hint-ref');
-    if (hintRef && hintTemplates.has(hintRef)) {
+    if (hintText) {
+      const hintNode = document.createElement('span');
+      const hintTextNode = document.createTextNode(hintText);
+      hintNode.appendChild(hintTextNode);
+      hintNode.classList.add('hint');
+      element.appendChild(hintNode);
+      element.hintNode = hintNode;
+      element.removeAttribute('--hint-text');
+    } else if (hintRef) {
+      if (!hintTemplates.has(hintRef)) {
+        console.warn(`Hint ref '${hintRef}' not found`);
+        return;
+      }
       const hintNode = hintTemplates.get(hintRef).cloneNode(true);
       element.appendChild(hintNode);
       element.hintNode = element.lastElementChild;
-      element.classList.add('has-hint');
-      if (touchScreen) element.setAttribute('tabindex', 0);
-      else element.addEventListener('mouseover', showHint);
+      element.removeAttribute('--hint-ref');
     } else {
-      console.warn(`Hint ref '${hintRef}' not found`);
+      return;
     };
+
+    element.classList.add('has-hint');
+    element.removeAttribute('--has-hint');
+    if (touchScreen) {
+      element.addEventListener('touchstart', placeHint);
+    } else {
+      element.addEventListener('mouseover', placeHint);
+    }
   });
 }
 
@@ -106,10 +125,10 @@ function getHintPlacement(target, hint) {
 
 
 /**
- * Show hint
+ * Adjust placement of hint on mouse-over/touch-start event
  * @param {MouseEvent} e - event
  */
-function showHint(e) {
+function placeHint(e) {
   /** @type {Element} */ const target = e.target;
   /** @type {Element} */ const hint = target.hintNode;
 

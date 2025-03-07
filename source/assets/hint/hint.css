@@ -38,6 +38,8 @@ a.has-hint, img.has-hint { display: inline-block; }
   visibility: hidden;
   transition: 0.6s ease-in-out 0.4s;
 
+  z-index: 999;
+
   &.place-bottom {
     top: 100%;
     left: 50%;
