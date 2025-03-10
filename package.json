@@ -8,6 +8,10 @@
     "type": "git",
     "url": "https://github.com/nefarious-kitsune/kg.git"
   },
+  "scripts": {
+    "build": "node build/build.js",
+    "test": "node test/test.js"
+  },
   "devDependencies": {
     "eslint": "^8.57.0",
     "eslint-config-google": "^0.14.0",

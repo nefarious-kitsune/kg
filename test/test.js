@@ -4,7 +4,7 @@ import {existsSync, statSync, readFile} from 'fs';
 import {dirname, extname, resolve} from 'path';
 
 const ModulePath = dirname(fileURLToPath(import.meta.url));
-const SitePath = resolve(ModulePath, '../../docs/');
+const SitePath = resolve(ModulePath, '../docs/');
 
 const port = process.argv[2] || 9000;
 
@@ -14,17 +14,21 @@ http.createServer((req, res) => {
   const pathname = `.${parseUrl(req.url).pathname}`;
   let ext = extname(pathname);
 
-  const mimeTypeMap = {
+  // Mapping of file extension to content-type in HTTP response head
+  const contentTypeMap = {
+    // Text
+    '.html': 'text/html; charset=utf-8',
+    '.js': 'text/javascript; charset=utf-8',
+    '.json': 'application/json; charset=utf-8',
+    '.css': 'text/css; charset=utf-8',
+    // Binary
     '.ico': 'image/x-icon',
-    '.html': 'text/html',
-    '.js': 'text/javascript',
-    '.json': 'application/json',
-    '.css': 'text/css',
     '.png': 'image/png',
     '.jpg': 'image/jpeg',
     '.svg': 'image/svg+xml',
     '.pdf': 'application/pdf',
   };
+  const defaultContentType = 'text/plain;  charset=utf-8';
 
   // URL rewriting...
   let localPath = resolve(SitePath, pathname);
@@ -56,7 +60,8 @@ http.createServer((req, res) => {
       res.end(`Error getting the file: ${pathname}.`);
       console.error(`500 Error: ${err}`);
     } else {
-      res.setHeader('Content-type', mimeTypeMap[ext] || 'text/plain' );
+      const contentType = contentTypeMap[ext] || defaultContentType;
+      res.setHeader('Content-type', contentType);
       res.end(data);
     }
   });
