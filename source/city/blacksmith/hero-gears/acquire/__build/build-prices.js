@@ -1,12 +1,12 @@
 import {readFileSync, writeFileSync} from 'fs';
 import {fileURLToPath} from 'url';
 import {dirname, resolve} from 'path';
-import {getHeroGearDesc} from '../../__build/get-tier-desc.js';
+import {getHeroGearDesc} from '../../../__build/get-tier-desc.js';
 
 const ModulePath = dirname(fileURLToPath(import.meta.url));
 
 const priceData = readFileSync(
-    resolve(ModulePath, '../forge-blueprint-prices.tsv'),
+    resolve(ModulePath, '../hero-gear-prices.tsv'),
     {encoding: 'utf8'},
 ).split('\n');
 
