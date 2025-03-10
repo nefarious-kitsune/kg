@@ -26,7 +26,7 @@ a.has-hint, img.has-hint { display: inline-block; }
 .has-hint .hint {
   display: block;
   position: absolute;
-  max-width: 18rem;
+  max-width: 28rem;
   min-width: 10rem;
   font-size: 0.9rem;
   text-decoration-line: none;
