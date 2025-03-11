@@ -24,7 +24,7 @@
 <section>
 <p>A T{{TIER}} Hero Gear ({{TIER DESC}}) can be crafted from
 <span class="number">100</span> T{{TIER}}
-<a href="../forge-blueprints/">Forge Blueprints</a>.</p>
+<a href="/resources/forge-blueprints/">Forge Blueprints</a>.</p>
 </section>
 
 <section id="upgrade">
