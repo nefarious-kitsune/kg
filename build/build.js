@@ -23,46 +23,101 @@ import {processHtml} from './__html/process-html.js';
 const ModulePath = dirname(fileURLToPath(import.meta.url));
 const ProjectPath = resolve(ModulePath, '../');
 
+const maxDepth = 6;
+
 /**
- * Compile site
+ * Write progress to console
+ * @param {*} progress 
  */
-async function compileSite() {
+function updateProgress(progress) {
+  process.stdout.clearLine(0);
+  process.stdout.cursorTo(0);
+  process.stdout.write(progress);
+}
+
+/**
+ * Execute all build files in the source/ directory
+ */
+function prebuild() {
   const srcBasePath = resolve(ProjectPath, './source/');
-  const destBasePath = resolve(ProjectPath, './docs/');
-  const maxDepth = 6;
-  const srcFilePaths = [];
-  const fileTypes = ['.css', '.html', '.tsv', '.json', '.js', '.gs'];
 
   const traverse = (parentPath, currentDepth) => {
     readdirSync(parentPath).forEach((file) => {
       if (file === '__build') {
-        const builderCwd = join(parentPath, '__build');
-        const builderFilePath = join(builderCwd, 'build.js');
-        if (existsSync(builderFilePath)) {
-          console.log('Executing builder file: ', builderFilePath);
+        const builderCwd = join(parentPath, file);
+        const builderCmd = join(builderCwd, 'build.js');
+        if (existsSync(builderCmd)) {
+          updateProgress(`Executing ${builderCmd}`);
           execSync('node build', {cwd: builderCwd});
         }
         return;
       };
 
-      if ((file.startsWith('-')) ||(file.startsWith('_'))) return;
+      if ((file.startsWith('-')) || (file.startsWith('_'))) return;
+      const currentPath = join(parentPath, file);
+      if (statSync(currentPath).isDirectory()) {
+        if (currentDepth < maxDepth) {
+          traverse(currentPath, currentDepth + 1);
+        } else {
+          console.log('Max directory depth reached: ', currentPath);
+        }
+      }
+    });
+  };
+
+  process.stdout.write('Pre-building...\n');
+  traverse(srcBasePath, 0);
+
+  updateProgress('Pre-building completed');
+  process.stdout.write('\n');
+}
+
+/**
+ * Process source files and copy to destination
+ */
+function copyFiles() {
+  const srcBasePath = resolve(ProjectPath, './source/');
+  const destBasePath = resolve(ProjectPath, './docs/');
+  const srcFilePaths = [];
+  const fileTypes = [
+    '.css',
+    '.html',
+    '.tsv',
+    '.json',
+    '.js',
+    '.gs',
+    '.jpg',
+    '.png',
+    '.svg',
+  ];
+
+  const traverse = (parentPath, currentDepth) => {
+    readdirSync(parentPath).forEach((file) => {
+      if ((file.startsWith('-')) || (file.startsWith('_'))) return;
 
       const currentPath = join(parentPath, file);
       if (statSync(currentPath).isFile()) {
         const ext = extname(currentPath);
         if (fileTypes.indexOf(ext) != -1) srcFilePaths.push(currentPath);
       } else if (statSync(currentPath).isDirectory()) {
-        if (currentDepth < maxDepth) traverse(currentPath, currentDepth + 1);
+        if (currentDepth < maxDepth) {
+          traverse(currentPath, currentDepth + 1);
+        } else {
+          console.log('Max directory depth reached: ', currentPath);
+        }
       }
     });
   };
 
+  process.stdout.write('Copying files...\n');
   traverse(srcBasePath, 0);
 
   srcFilePaths.forEach((filePath) => {
     const srcPath = filePath;
     const destPath = join(destBasePath, filePath.slice(srcBasePath.length));
     const destDir = dirname(destPath);
+
+    updateProgress(`Copying '${srcPath}'`);
 
     if (!existsSync(destDir)) mkdirSync(destDir, {recursive: true});
     if (extname(srcPath) === '.html') {
@@ -73,6 +128,10 @@ async function compileSite() {
       copyFileSync(srcPath, destPath, fsConstants.COPYFILE_FICLONE);
     }
   });
+
+  updateProgress('Copying completed');
+  process.stdout.write('\n');
 }
 
-await compileSite();
+prebuild();
+copyFiles();
