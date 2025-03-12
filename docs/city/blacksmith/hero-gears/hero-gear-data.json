@@ -1,425 +1,989 @@
 {
   "title": "Hero Gear upgrade cost and power bonus",
-  "power-bonus": {},
-  "upgrade": {},
-  "t1": {
-    "power-bonus": [
-      "1.0%",
-      "3.0%",
-      "4.0%",
-      "5.0%",
-      "7.0%",
-      "8.0%",
-      "10.0%",
-      "12.0%",
-      "14.0%",
-      "16.0%",
-      "18.0%",
-      "21.0%",
-      "24.0%",
-      "28.0%",
-      "32.0%",
-      "37.0%",
-      "42.0%",
-      "48.0%",
-      "54.0%",
-      "60.0%"
-    ],
-    "upgrade": [
-      {
-        "from": 1,
-        "to": 2,
-        "elemental-vial": 1,
-        "blood-of-titan": 0
-      },
-      {
-        "from": 2,
-        "to": 3,
-        "elemental-vial": 1,
-        "blood-of-titan": 0
-      },
-      {
-        "from": 3,
-        "to": 4,
-        "elemental-vial": 2,
-        "blood-of-titan": 0
-      },
-      {
-        "from": 4,
-        "to": 5,
-        "elemental-vial": 2,
-        "blood-of-titan": 0
-      },
-      {
-        "from": 5,
-        "to": 6,
-        "elemental-vial": 2,
-        "blood-of-titan": 0
-      },
-      {
-        "from": 6,
-        "to": 7,
-        "elemental-vial": 3,
-        "blood-of-titan": 0
-      },
-      {
-        "from": 7,
-        "to": 8,
-        "elemental-vial": 3,
-        "blood-of-titan": 0
-      },
-      {
-        "from": 8,
-        "to": 9,
-        "elemental-vial": 4,
-        "blood-of-titan": 0
-      },
-      {
-        "from": 9,
-        "to": 10,
-        "elemental-vial": 4,
-        "blood-of-titan": 0
-      },
-      {
-        "from": 10,
-        "to": 11,
-        "elemental-vial": 5,
-        "blood-of-titan": 1
-      },
-      {
-        "from": 11,
-        "to": 12,
-        "elemental-vial": 5,
-        "blood-of-titan": 1
-      },
-      {
-        "from": 12,
-        "to": 13,
-        "elemental-vial": 5,
-        "blood-of-titan": 1
-      },
-      {
-        "from": 13,
-        "to": 14,
-        "elemental-vial": 6,
-        "blood-of-titan": 1
-      },
-      {
-        "from": 14,
-        "to": 15,
-        "elemental-vial": 6,
-        "blood-of-titan": 1
-      },
-      {
-        "from": 15,
-        "to": 16,
-        "elemental-vial": 7,
-        "blood-of-titan": 1
-      },
-      {
-        "from": 16,
-        "to": 17,
-        "elemental-vial": 8,
-        "blood-of-titan": 1
-      },
-      {
-        "from": 17,
-        "to": 18,
-        "elemental-vial": 8,
-        "blood-of-titan": 1
-      },
-      {
-        "from": 18,
-        "to": 19,
-        "elemental-vial": 9,
-        "blood-of-titan": 2
-      },
-      {
-        "from": 19,
-        "to": 20,
-        "elemental-vial": 9,
-        "blood-of-titan": 2
-      }
-    ]
-  },
-  "t2": {
-    "power-bonus": [
-      "40.0%",
-      "42.0%",
-      "44.0%",
-      "47.0%",
-      "49.0%",
-      "51.0%",
-      "54.0%",
-      "57.0%",
-      "60.0%",
-      "63.0%",
-      "67.0%",
-      "71.0%",
-      "76.0%",
-      "82.0%",
-      "88.0%",
-      "96.0%",
-      "104.0%",
-      "112.0%",
-      "122.0%",
-      "132.0%"
-    ],
-    "upgrade": [
-      {
-        "from": 1,
-        "to": 2,
-        "elemental-vial": 5,
-        "blood-of-titan": 0
-      },
-      {
-        "from": 2,
-        "to": 3,
-        "elemental-vial": 5,
-        "blood-of-titan": 0
-      },
-      {
-        "from": 3,
-        "to": 4,
-        "elemental-vial": 10,
-        "blood-of-titan": 0
-      },
-      {
-        "from": 4,
-        "to": 5,
-        "elemental-vial": 10,
-        "blood-of-titan": 0
-      },
-      {
-        "from": 5,
-        "to": 6,
-        "elemental-vial": 10,
-        "blood-of-titan": 0
-      },
-      {
-        "from": 6,
-        "to": 7,
-        "elemental-vial": 15,
-        "blood-of-titan": 0
-      },
-      {
-        "from": 7,
-        "to": 8,
-        "elemental-vial": 15,
-        "blood-of-titan": 0
-      },
-      {
-        "from": 8,
-        "to": 9,
-        "elemental-vial": 20,
-        "blood-of-titan": 0
-      },
-      {
-        "from": 9,
-        "to": 10,
-        "elemental-vial": 20,
-        "blood-of-titan": 0
-      },
-      {
-        "from": 10,
-        "to": 11,
-        "elemental-vial": 25,
-        "blood-of-titan": 3
-      },
-      {
-        "from": 11,
-        "to": 12,
-        "elemental-vial": 25,
-        "blood-of-titan": 3
-      },
-      {
-        "from": 12,
-        "to": 13,
-        "elemental-vial": 25,
-        "blood-of-titan": 4
-      },
-      {
-        "from": 13,
-        "to": 14,
-        "elemental-vial": 30,
-        "blood-of-titan": 4
-      },
-      {
-        "from": 14,
-        "to": 15,
-        "elemental-vial": 30,
-        "blood-of-titan": 4
-      },
-      {
-        "from": 15,
-        "to": 16,
-        "elemental-vial": 35,
-        "blood-of-titan": 5
-      },
-      {
-        "from": 16,
-        "to": 17,
-        "elemental-vial": 40,
-        "blood-of-titan": 5
-      },
-      {
-        "from": 17,
-        "to": 18,
-        "elemental-vial": 40,
-        "blood-of-titan": 5
-      },
-      {
-        "from": 18,
-        "to": 19,
-        "elemental-vial": 45,
-        "blood-of-titan": 6
-      },
-      {
-        "from": 19,
-        "to": 20,
-        "elemental-vial": 45,
-        "blood-of-titan": 6
-      }
-    ]
-  },
-  "t3": {
-    "power-bonus": [
-      "100.0%",
-      "103.0%",
-      "106.0%",
-      "110.0%",
-      "113.0%",
-      "116.0%",
-      "120.0%",
-      "124.0%",
-      "129.0%",
-      "133.0%",
-      "139.0%",
-      "146.0%",
-      "153.0%",
-      "162.0%",
-      "172.0%",
-      "182.0%",
-      "194.0%",
-      "207.0%",
-      "221.0%",
-      "237.0%"
-    ],
-    "upgrade": [
-      {
-        "from": 1,
-        "to": 2,
-        "elemental-vial": 15,
-        "blood-of-titan": 0
-      },
-      {
-        "from": 2,
-        "to": 3,
-        "elemental-vial": 20,
-        "blood-of-titan": 0
-      },
-      {
-        "from": 3,
-        "to": 4,
-        "elemental-vial": 30,
-        "blood-of-titan": 0
-      },
-      {
-        "from": 4,
-        "to": 5,
-        "elemental-vial": 40,
-        "blood-of-titan": 0
-      },
-      {
-        "from": 5,
-        "to": 6,
-        "elemental-vial": 50,
-        "blood-of-titan": 0
-      },
-      {
-        "from": 6,
-        "to": 7,
-        "elemental-vial": 60,
-        "blood-of-titan": 0
-      },
-      {
-        "from": 7,
-        "to": 8,
-        "elemental-vial": 70,
-        "blood-of-titan": 0
-      },
-      {
-        "from": 8,
-        "to": 9,
-        "elemental-vial": 80,
-        "blood-of-titan": 0
-      },
-      {
-        "from": 9,
-        "to": 10,
-        "elemental-vial": 90,
-        "blood-of-titan": 0
-      },
-      {
-        "from": 10,
-        "to": 11,
-        "elemental-vial": 105,
-        "blood-of-titan": 13
-      },
-      {
-        "from": 11,
-        "to": 12,
-        "elemental-vial": 115,
-        "blood-of-titan": 15
-      },
-      {
-        "from": 12,
-        "to": 13,
-        "elemental-vial": 125,
-        "blood-of-titan": 16
-      },
-      {
-        "from": 13,
-        "to": 14,
-        "elemental-vial": 140,
-        "blood-of-titan": 18
-      },
-      {
-        "from": 14,
-        "to": 15,
-        "elemental-vial": 150,
-        "blood-of-titan": 20
-      },
-      {
-        "from": 15,
-        "to": 16,
-        "elemental-vial": 165,
-        "blood-of-titan": 21
-      },
-      {
-        "from": 16,
-        "to": 17,
-        "elemental-vial": 180,
-        "blood-of-titan": 23
-      },
-      {
-        "from": 17,
-        "to": 18,
-        "elemental-vial": 190,
-        "blood-of-titan": 25
-      },
-      {
-        "from": 18,
-        "to": 19,
-        "elemental-vial": 205,
-        "blood-of-titan": 26
-      },
-      {
-        "from": 19,
-        "to": 20,
-        "elemental-vial": 220,
-        "blood-of-titan": 28
-      }
-    ]
-  }
+  "gears": [
+    {
+      "tier": 1,
+      "names": [
+        "Hardwood Longbow",
+        "Hardwood Longsword",
+        "Hardwood Dagger",
+        "Walnut Wood Staff"
+      ],
+      "power-bonus": [
+        {
+          "level": 1,
+          "bonus": 1,
+          "verified": true
+        },
+        {
+          "level": 2,
+          "bonus": 3,
+          "verified": true
+        },
+        {
+          "level": 3,
+          "bonus": 4,
+          "verified": true
+        },
+        {
+          "level": 4,
+          "bonus": 5,
+          "verified": true
+        },
+        {
+          "level": 5,
+          "bonus": 7,
+          "verified": true
+        },
+        {
+          "level": 6,
+          "bonus": 8,
+          "verified": true
+        },
+        {
+          "level": 7,
+          "bonus": 10,
+          "verified": true
+        },
+        {
+          "level": 8,
+          "bonus": 12,
+          "verified": true
+        },
+        {
+          "level": 9,
+          "bonus": 14,
+          "verified": true
+        },
+        {
+          "level": 10,
+          "bonus": 16,
+          "verified": true
+        },
+        {
+          "level": 11,
+          "bonus": 18,
+          "verified": true
+        },
+        {
+          "level": 12,
+          "bonus": 21,
+          "verified": true
+        },
+        {
+          "level": 13,
+          "bonus": 24,
+          "verified": true
+        },
+        {
+          "level": 14,
+          "bonus": 28,
+          "verified": true
+        },
+        {
+          "level": 15,
+          "bonus": 32,
+          "verified": true
+        },
+        {
+          "level": 16,
+          "bonus": 37,
+          "verified": true
+        },
+        {
+          "level": 17,
+          "bonus": 42,
+          "verified": true
+        },
+        {
+          "level": 18,
+          "bonus": 48,
+          "verified": true
+        },
+        {
+          "level": 19,
+          "bonus": 54,
+          "verified": true
+        },
+        {
+          "level": 20,
+          "bonus": 60,
+          "verified": true
+        }
+      ],
+      "upgrade": [
+        {
+          "from": 1,
+          "to": 2,
+          "elemental-vial": 1,
+          "blood-of-titan": 0,
+          "verified": true
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "elemental-vial": 1,
+          "blood-of-titan": 0,
+          "verified": true
+        },
+        {
+          "from": 3,
+          "to": 4,
+          "elemental-vial": 2,
+          "blood-of-titan": 0,
+          "verified": true
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "elemental-vial": 2,
+          "blood-of-titan": 0,
+          "verified": true
+        },
+        {
+          "from": 5,
+          "to": 6,
+          "elemental-vial": 2,
+          "blood-of-titan": 0,
+          "verified": true
+        },
+        {
+          "from": 6,
+          "to": 7,
+          "elemental-vial": 3,
+          "blood-of-titan": 0,
+          "verified": true
+        },
+        {
+          "from": 7,
+          "to": 8,
+          "elemental-vial": 3,
+          "blood-of-titan": 0,
+          "verified": true
+        },
+        {
+          "from": 8,
+          "to": 9,
+          "elemental-vial": 4,
+          "blood-of-titan": 0,
+          "verified": true
+        },
+        {
+          "from": 9,
+          "to": 10,
+          "elemental-vial": 4,
+          "blood-of-titan": 0,
+          "verified": true
+        },
+        {
+          "from": 10,
+          "to": 11,
+          "elemental-vial": 5,
+          "blood-of-titan": 1,
+          "verified": true
+        },
+        {
+          "from": 11,
+          "to": 12,
+          "elemental-vial": 5,
+          "blood-of-titan": 1,
+          "verified": true
+        },
+        {
+          "from": 12,
+          "to": 13,
+          "elemental-vial": 5,
+          "blood-of-titan": 1,
+          "verified": true
+        },
+        {
+          "from": 13,
+          "to": 14,
+          "elemental-vial": 6,
+          "blood-of-titan": 1,
+          "verified": true
+        },
+        {
+          "from": 14,
+          "to": 15,
+          "elemental-vial": 6,
+          "blood-of-titan": 1,
+          "verified": true
+        },
+        {
+          "from": 15,
+          "to": 16,
+          "elemental-vial": 7,
+          "blood-of-titan": 1,
+          "verified": true
+        },
+        {
+          "from": 16,
+          "to": 17,
+          "elemental-vial": 8,
+          "blood-of-titan": 1,
+          "verified": true
+        },
+        {
+          "from": 17,
+          "to": 18,
+          "elemental-vial": 8,
+          "blood-of-titan": 1,
+          "verified": true
+        },
+        {
+          "from": 18,
+          "to": 19,
+          "elemental-vial": 9,
+          "blood-of-titan": 2,
+          "verified": true
+        },
+        {
+          "from": 19,
+          "to": 20,
+          "elemental-vial": 9,
+          "blood-of-titan": 2,
+          "verified": true
+        }
+      ]
+    },
+    {
+      "tier": 2,
+      "names": [
+        "Darkiron Longbow",
+        "Darkiron Longsword",
+        "Darkiron Dagger",
+        "Vine Staff"
+      ],
+      "power-bonus": [
+        {
+          "level": 1,
+          "bonus": 40,
+          "verified": true
+        },
+        {
+          "level": 2,
+          "bonus": 42,
+          "verified": true
+        },
+        {
+          "level": 3,
+          "bonus": 44,
+          "verified": true
+        },
+        {
+          "level": 4,
+          "bonus": 47,
+          "verified": true
+        },
+        {
+          "level": 5,
+          "bonus": 49,
+          "verified": true
+        },
+        {
+          "level": 6,
+          "bonus": 51,
+          "verified": true
+        },
+        {
+          "level": 7,
+          "bonus": 54,
+          "verified": true
+        },
+        {
+          "level": 8,
+          "bonus": 57,
+          "verified": true
+        },
+        {
+          "level": 9,
+          "bonus": 60,
+          "verified": true
+        },
+        {
+          "level": 10,
+          "bonus": 63,
+          "verified": true
+        },
+        {
+          "level": 11,
+          "bonus": 67,
+          "verified": true
+        },
+        {
+          "level": 12,
+          "bonus": 71,
+          "verified": true
+        },
+        {
+          "level": 13,
+          "bonus": 76,
+          "verified": true
+        },
+        {
+          "level": 14,
+          "bonus": 82,
+          "verified": true
+        },
+        {
+          "level": 15,
+          "bonus": 88,
+          "verified": true
+        },
+        {
+          "level": 16,
+          "bonus": 96,
+          "verified": true
+        },
+        {
+          "level": 17,
+          "bonus": 104,
+          "verified": true
+        },
+        {
+          "level": 18,
+          "bonus": 112,
+          "verified": true
+        },
+        {
+          "level": 19,
+          "bonus": 122,
+          "verified": true
+        },
+        {
+          "level": 20,
+          "bonus": 132,
+          "verified": true
+        }
+      ],
+      "upgrade": [
+        {
+          "from": 1,
+          "to": 2,
+          "elemental-vial": 5,
+          "blood-of-titan": 0,
+          "verified": true
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "elemental-vial": 5,
+          "blood-of-titan": 0,
+          "verified": true
+        },
+        {
+          "from": 3,
+          "to": 4,
+          "elemental-vial": 10,
+          "blood-of-titan": 0,
+          "verified": true
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "elemental-vial": 10,
+          "blood-of-titan": 0,
+          "verified": true
+        },
+        {
+          "from": 5,
+          "to": 6,
+          "elemental-vial": 10,
+          "blood-of-titan": 0,
+          "verified": true
+        },
+        {
+          "from": 6,
+          "to": 7,
+          "elemental-vial": 15,
+          "blood-of-titan": 0,
+          "verified": true
+        },
+        {
+          "from": 7,
+          "to": 8,
+          "elemental-vial": 15,
+          "blood-of-titan": 0,
+          "verified": true
+        },
+        {
+          "from": 8,
+          "to": 9,
+          "elemental-vial": 20,
+          "blood-of-titan": 0,
+          "verified": true
+        },
+        {
+          "from": 9,
+          "to": 10,
+          "elemental-vial": 20,
+          "blood-of-titan": 0,
+          "verified": true
+        },
+        {
+          "from": 10,
+          "to": 11,
+          "elemental-vial": 25,
+          "blood-of-titan": 3,
+          "verified": true
+        },
+        {
+          "from": 11,
+          "to": 12,
+          "elemental-vial": 25,
+          "blood-of-titan": 3,
+          "verified": true
+        },
+        {
+          "from": 12,
+          "to": 13,
+          "elemental-vial": 25,
+          "blood-of-titan": 4,
+          "verified": true
+        },
+        {
+          "from": 13,
+          "to": 14,
+          "elemental-vial": 30,
+          "blood-of-titan": 4,
+          "verified": true
+        },
+        {
+          "from": 14,
+          "to": 15,
+          "elemental-vial": 30,
+          "blood-of-titan": 4,
+          "verified": true
+        },
+        {
+          "from": 15,
+          "to": 16,
+          "elemental-vial": 35,
+          "blood-of-titan": 5,
+          "verified": true
+        },
+        {
+          "from": 16,
+          "to": 17,
+          "elemental-vial": 40,
+          "blood-of-titan": 5,
+          "verified": true
+        },
+        {
+          "from": 17,
+          "to": 18,
+          "elemental-vial": 40,
+          "blood-of-titan": 5,
+          "verified": true
+        },
+        {
+          "from": 18,
+          "to": 19,
+          "elemental-vial": 45,
+          "blood-of-titan": 6,
+          "verified": true
+        },
+        {
+          "from": 19,
+          "to": 20,
+          "elemental-vial": 45,
+          "blood-of-titan": 6,
+          "verified": true
+        }
+      ]
+    },
+    {
+      "tier": 3,
+      "names": [
+        "Excellent Silverbow",
+        "Excellent Silversword",
+        "Excellent Dagger",
+        "Excellent Silver Staff"
+      ],
+      "power-bonus": [
+        {
+          "level": 1,
+          "bonus": 100,
+          "verified": true
+        },
+        {
+          "level": 2,
+          "bonus": 103,
+          "verified": true
+        },
+        {
+          "level": 3,
+          "bonus": 106,
+          "verified": true
+        },
+        {
+          "level": 4,
+          "bonus": 110,
+          "verified": true
+        },
+        {
+          "level": 5,
+          "bonus": 113,
+          "verified": true
+        },
+        {
+          "level": 6,
+          "bonus": 116,
+          "verified": true
+        },
+        {
+          "level": 7,
+          "bonus": 120,
+          "verified": true
+        },
+        {
+          "level": 8,
+          "bonus": 124,
+          "verified": true
+        },
+        {
+          "level": 9,
+          "bonus": 129,
+          "verified": true
+        },
+        {
+          "level": 10,
+          "bonus": 133,
+          "verified": true
+        },
+        {
+          "level": 11,
+          "bonus": 139,
+          "verified": true
+        },
+        {
+          "level": 12,
+          "bonus": 146,
+          "verified": true
+        },
+        {
+          "level": 13,
+          "bonus": 153,
+          "verified": true
+        },
+        {
+          "level": 14,
+          "bonus": 162,
+          "verified": true
+        },
+        {
+          "level": 15,
+          "bonus": 172,
+          "verified": true
+        },
+        {
+          "level": 16,
+          "bonus": 182,
+          "verified": true
+        },
+        {
+          "level": 17,
+          "bonus": 194,
+          "verified": true
+        },
+        {
+          "level": 18,
+          "bonus": 207,
+          "verified": true
+        },
+        {
+          "level": 19,
+          "bonus": 221,
+          "verified": true
+        },
+        {
+          "level": 20,
+          "bonus": 237,
+          "verified": true
+        }
+      ],
+      "upgrade": [
+        {
+          "from": 1,
+          "to": 2,
+          "elemental-vial": 15,
+          "blood-of-titan": 0,
+          "verified": true
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "elemental-vial": 20,
+          "blood-of-titan": 0,
+          "verified": true
+        },
+        {
+          "from": 3,
+          "to": 4,
+          "elemental-vial": 30,
+          "blood-of-titan": 0,
+          "verified": true
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "elemental-vial": 40,
+          "blood-of-titan": 0,
+          "verified": true
+        },
+        {
+          "from": 5,
+          "to": 6,
+          "elemental-vial": 50,
+          "blood-of-titan": 0,
+          "verified": true
+        },
+        {
+          "from": 6,
+          "to": 7,
+          "elemental-vial": 60,
+          "blood-of-titan": 0,
+          "verified": true
+        },
+        {
+          "from": 7,
+          "to": 8,
+          "elemental-vial": 70,
+          "blood-of-titan": 0,
+          "verified": true
+        },
+        {
+          "from": 8,
+          "to": 9,
+          "elemental-vial": 80,
+          "blood-of-titan": 0,
+          "verified": true
+        },
+        {
+          "from": 9,
+          "to": 10,
+          "elemental-vial": 90,
+          "blood-of-titan": 0,
+          "verified": true
+        },
+        {
+          "from": 10,
+          "to": 11,
+          "elemental-vial": 105,
+          "blood-of-titan": 13,
+          "verified": true
+        },
+        {
+          "from": 11,
+          "to": 12,
+          "elemental-vial": 115,
+          "blood-of-titan": 15,
+          "verified": true
+        },
+        {
+          "from": 12,
+          "to": 13,
+          "elemental-vial": 125,
+          "blood-of-titan": 16,
+          "verified": true
+        },
+        {
+          "from": 13,
+          "to": 14,
+          "elemental-vial": 140,
+          "blood-of-titan": 18,
+          "verified": true
+        },
+        {
+          "from": 14,
+          "to": 15,
+          "elemental-vial": 150,
+          "blood-of-titan": 20,
+          "verified": true
+        },
+        {
+          "from": 15,
+          "to": 16,
+          "elemental-vial": 165,
+          "blood-of-titan": 21,
+          "verified": true
+        },
+        {
+          "from": 16,
+          "to": 17,
+          "elemental-vial": 180,
+          "blood-of-titan": 23,
+          "verified": true
+        },
+        {
+          "from": 17,
+          "to": 18,
+          "elemental-vial": 190,
+          "blood-of-titan": 25,
+          "verified": true
+        },
+        {
+          "from": 18,
+          "to": 19,
+          "elemental-vial": 205,
+          "blood-of-titan": 26,
+          "verified": true
+        },
+        {
+          "from": 19,
+          "to": 20,
+          "elemental-vial": 220,
+          "blood-of-titan": 28,
+          "verified": true
+        }
+      ]
+    },
+    {
+      "tier": 4,
+      "names": [
+        "Magic Longbow",
+        "Flame Longsword",
+        "Frost Dagger",
+        "Ancient Wooden Staff"
+      ],
+      "power-bonus": [
+        {
+          "level": 1,
+          "bonus": 188,
+          "verified": true
+        },
+        {
+          "level": 2,
+          "bonus": 193,
+          "verified": true
+        },
+        {
+          "level": 3,
+          "bonus": 197,
+          "verified": true
+        },
+        {
+          "level": 4,
+          "bonus": 202,
+          "verified": true
+        },
+        {
+          "level": 5,
+          "bonus": 207,
+          "verified": true
+        },
+        {
+          "level": 6,
+          "bonus": 212,
+          "verified": true
+        },
+        {
+          "level": 7,
+          "bonus": 217,
+          "verified": true
+        },
+        {
+          "level": 8,
+          "bonus": 223,
+          "verified": true
+        },
+        {
+          "level": 9,
+          "bonus": 230,
+          "verified": true
+        },
+        {
+          "level": 10,
+          "bonus": 237,
+          "verified": true
+        },
+        {
+          "level": 11,
+          "bonus": 245,
+          "verified": true
+        },
+        {
+          "level": 12,
+          "bonus": 255,
+          "verified": true
+        },
+        {
+          "level": 13,
+          "bonus": 266,
+          "verified": true
+        },
+        {
+          "level": 14,
+          "bonus": 278,
+          "verified": true
+        },
+        {
+          "level": 15,
+          "bonus": null,
+          "verified": false
+        },
+        {
+          "level": 16,
+          "bonus": null,
+          "verified": false
+        },
+        {
+          "level": 17,
+          "bonus": null,
+          "verified": false
+        },
+        {
+          "level": 18,
+          "bonus": null,
+          "verified": false
+        },
+        {
+          "level": 19,
+          "bonus": null,
+          "verified": false
+        },
+        {
+          "level": 20,
+          "bonus": null,
+          "verified": false
+        }
+      ],
+      "upgrade": [
+        {
+          "from": 1,
+          "to": 2,
+          "elemental-vial": 60,
+          "blood-of-titan": 0,
+          "verified": true
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "elemental-vial": 100,
+          "blood-of-titan": 0,
+          "verified": true
+        },
+        {
+          "from": 3,
+          "to": 4,
+          "elemental-vial": 140,
+          "blood-of-titan": 0,
+          "verified": true
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "elemental-vial": 180,
+          "blood-of-titan": 0,
+          "verified": true
+        },
+        {
+          "from": 5,
+          "to": 6,
+          "elemental-vial": 230,
+          "blood-of-titan": 0,
+          "verified": true
+        },
+        {
+          "from": 6,
+          "to": 7,
+          "elemental-vial": 280,
+          "blood-of-titan": 0,
+          "verified": true
+        },
+        {
+          "from": 7,
+          "to": 8,
+          "elemental-vial": 340,
+          "blood-of-titan": 0,
+          "verified": true
+        },
+        {
+          "from": 8,
+          "to": 9,
+          "elemental-vial": 390,
+          "blood-of-titan": 0,
+          "verified": true
+        },
+        {
+          "from": 9,
+          "to": 10,
+          "elemental-vial": 450,
+          "blood-of-titan": 0,
+          "verified": true
+        },
+        {
+          "from": 10,
+          "to": 11,
+          "elemental-vial": 510,
+          "blood-of-titan": 65,
+          "verified": true
+        },
+        {
+          "from": 11,
+          "to": 12,
+          "elemental-vial": 570,
+          "blood-of-titan": 75,
+          "verified": true
+        },
+        {
+          "from": 12,
+          "to": 13,
+          "elemental-vial": 630,
+          "blood-of-titan": 80,
+          "verified": true
+        },
+        {
+          "from": 13,
+          "to": 14,
+          "elemental-vial": 690,
+          "blood-of-titan": 90,
+          "verified": true
+        },
+        {
+          "from": 14,
+          "to": 15,
+          "elemental-vial": null,
+          "blood-of-titan": null,
+          "verified": false
+        },
+        {
+          "from": 15,
+          "to": 16,
+          "elemental-vial": null,
+          "blood-of-titan": null,
+          "verified": false
+        },
+        {
+          "from": 16,
+          "to": 17,
+          "elemental-vial": null,
+          "blood-of-titan": null,
+          "verified": false
+        },
+        {
+          "from": 17,
+          "to": 18,
+          "elemental-vial": null,
+          "blood-of-titan": null,
+          "verified": false
+        },
+        {
+          "from": 18,
+          "to": 19,
+          "elemental-vial": null,
+          "blood-of-titan": null,
+          "verified": false
+        },
+        {
+          "from": 19,
+          "to": 20,
+          "elemental-vial": null,
+          "blood-of-titan": null,
+          "verified": false
+        }
+      ]
+    }
+  ]
 }

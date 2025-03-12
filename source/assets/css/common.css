@@ -1657,17 +1657,20 @@ table.power-table { /* border on all cells */
   td, th { border: 0.11rem solid var(--gray-500); }
   th.from-level { width: 4.6rem; }
   th.power { width: 6rem; }
+  th.power-bonus { width: 6rem; }
   th { text-align: center; }
 
-  td.power { text-align: right; }
+  td.power, td.power-bonus {
+    text-align: right;
+    font-family: "Fira Mono", monospace;
+  }
 
   span.level {
     display: inline-block;
     width: 3rem;
     text-align: right;
+    font-family: "Fira Mono", monospace;
   }
-  span.level,
-  span.power { font-family: "Fira Mono", monospace; }
 }
 
 .price-table {

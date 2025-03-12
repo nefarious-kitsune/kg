@@ -1,12 +1,14 @@
 <html>
 <head>
-<title>T{{TIER}} Hero Gear</title>
+<title>{{ITEM NAME}}</title>
 <meta page-data
-  og-desc="Upgrade cost and power bonus of T{{TIER}} Hero Gear ({{TIER DESC}})"
+  og-desc="Upgrade cost and power bonus of {{ITEM NAME EXPANDED}}"
   tag-list="blacksmith"
 >
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<link href="../../../assets/css/common.css" rel="stylesheet">
+<link href="/assets/css/common.css" rel="stylesheet">
+<link href="/assets/hint/hint.css" rel="stylesheet">
+<script src="/assets/hint/hint.js"></script>
 </head>
 <body>
 
@@ -15,26 +17,29 @@
   <li><a href="/city">City</a></li>
   <li><a href="/city/blacksmith">Blacksmith</a></li>
   <li><a href="/city/blacksmith/hero-gears">Hero Gears</a></li>
-  <li>T{{TIER}} Hero Gear</li>
+  <li>{{ITEM NAME}}</li>
 </menu></nav></header>
 
 <main>
-<h1>T{{TIER}} Hero Gear</h1>
+<h1>{{ITEM NAME}}</h1>
 
-<section>
-<p>A T{{TIER}} Hero Gear ({{TIER DESC}}) can be crafted from
-<span class="number">100</span> T{{TIER}}
-<a href="/resources/forge-blueprints/">Forge Blueprints</a>.</p>
+<section id="overview">
+<p>A {{ITEM NAME EXPANDED}} has maximum
+<span class="{{MAX BONUS CLASS}}">{{MAX BONUS}}</span><span class="unit">%</span>
+<a href="#power-bonus">power bonus</a>.
+The total <a href="#upgrade">upgrade cost</a> is
+<span class="{{TOTAL COST CLASS}}">{{TOTAL COST 1}}</span> Elemental Vials and
+<span class="{{TOTAL COST CLASS}}">{{TOTAL COST 2}}</span> Blood of Titan.</p>
 </section>
 
 <section id="upgrade">
 <h2>Level Upgrade</h2>
 
-<p>The total upgrade cost for a T{{TIER}} Hero Gear is
-<span class="number">{{TOTAL COST 1}}</span> Elemental Vial and
-<span class="number">{{TOTAL COST 2}}</span> Blood of Titan.</p>
-
-<div class="col-flex">
+<p>The total upgrade cost for a {{ITEM NAME}} is
+<span class="{{TOTAL COST CLASS}}">{{TOTAL COST 1}}</span>
+<span --has-hint --hint-ref="res-elemental-vial">Elemental Vials</span> and
+<span class="{{TOTAL COST CLASS}}">{{TOTAL COST 2}}</span>
+<span --has-hint --hint-ref="res-blood-of-titan">Blood of Titan</span>.</p>
 
 <table class="basic-table upgrade-table sticky-header">
 <thead>
@@ -49,19 +54,22 @@
 </tbody>
 </table>
 </div>
-</section>
 
-<section id="power">
-<h2>Hero Gear Power</h2>
+<section id="power-bonus">
+<h2>Power Bonus</h2>
 
-<p>The maximum Hero Gear Power from a T{{TIER}} Hero Gear is
-<span class="number">{{MAX POWER BONUS}}</span><span class="unit">%</span>
-of <a href="../base/">Blacksmith Base Power</a>.</p>
+<p>A {{ITEM NAME}} can provide the equipped Hero with
+a maximum Hero Gear Power of
+<span class="{{MAX BONUS CLASS}}">{{MAX BONUS}}</span><span class="unit">%</span>
+of the <a href="../base/#power">Blacksmith Base Power</a></a>.</p>
 
 <div class="col-flex">
 <table class="basic-table power-table sticky-header">
 <thead>
-<tr><th class="from-level">Level</th><th class="power">Power</th></tr>
+<tr>
+  <th class="from-level">Level</th>
+  <th class="power-bonus">Power Bonus</th>
+</tr>
 </thead>
 <tbody>
 {{POWER BODY 1}}
@@ -70,7 +78,10 @@ of <a href="../base/">Blacksmith Base Power</a>.</p>
 
 <table class="basic-table power-table sticky-header">
 <thead>
-<tr><th class="from-level">Level</th><th class="power">Power</th></tr>
+<tr>
+  <th class="from-level">Level</th>
+  <th class="power-bonus">Power Bonus</th>
+</tr>
 </thead>
 <tbody>
 {{POWER BODY 2}}
