@@ -1583,6 +1583,47 @@ ul.inline-list {
   li { display: inline; }
 }
 
+/* apple | banana | pineapple */
+ul.inline-list.bar {
+  li:after { content: " | "; }
+  li:last-child:after { content: ""; }
+}
+
+/* apple / banana / pineapple */
+ul.inline-list.slash {
+  li:after { content: " / "; }
+  li:last-child:after { content: ""; }
+}
+
+/* apple, banana, pineapple */
+ul.inline-list.comma {
+  li:after { content: ", "; }
+  li:last-child:after { content: ""; }
+}
+
+/* apple, banana, and pineapple */
+ul.inline-list.oxford-comma-and {
+  li:after { content: ", "; }
+  li:last-child:after { content: ""; }
+  li:nth-last-child(2):after { content: " and "; }
+  li:nth-last-child(3) ~ li:nth-last-child(2):after { content: ", and "; }
+}
+
+/* apple, banana, or pineapple */
+ul.inline-list.oxford-comma-or {
+  li:after { content: ", "; }
+  li:last-child:after { content: ""; }
+  li:nth-last-child(2):after { content: " and "; }
+  li:nth-last-child(3) ~ li:nth-last-child(2):after { content: ", or "; }
+}
+
+/* apple, banana, pineapple… */
+ul.inline-list.comma-ellipsis {
+  li:after { content: ", "; }
+  li:last-child:after { content: ",\2026"; }
+}
+
+
 /* --------------------- Tables --------------------- */
 
 table { /* default */
