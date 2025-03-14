@@ -4,43 +4,9 @@ import {dirname, resolve} from 'path';
 
 const ModulePath = dirname(fileURLToPath(import.meta.url));
 
-const namesData = readFileSync(
-    resolve(ModulePath, '../../../events/regular/mk/__data/names.tsv'),
-    {encoding: 'utf8'},
-).split('\n');
-
-const priceData = readFileSync(
-    resolve(ModulePath, '../dragon-gears/blueprint-prices.tsv'),
-    {encoding: 'utf8'},
-).split('\n');
-
-const namesLookup = [];
-
-namesData.forEach((row) => {
-  const [
-    RewardName,
-    Tier,
-    RewardDesc,
-  ] = row.split('\t');
-  namesLookup.push({
-    name: RewardName,
-    tier: parseInt(Tier),
-    desc: RewardDesc,
-  });
-});
-
-/**
- * Find reward desc
- * @param {number} rewardTier
- * @return {string}
- */
-function findRewardDesc(rewardTier) {
-  const rewardName = 'Blueprint';
-  const namesData = namesLookup.find((data) => (
-    (data.name === rewardName) && (data.tier === rewardTier)
-  ));
-  return namesData?namesData.desc:`T${rewardTier} Armor`;
-}
+const priceData =
+    readFileSync(resolve(ModulePath, '../dragon-gear-prices.tsv'), 'utf8')
+        .split('\n');
 
 /**
  * Build price table
@@ -74,15 +40,11 @@ function buildPriceTable(tableNum, rowStart, rowEnd, tierColStart) {
 
   tableOutput = tableTemplate
       .replace('{{TIER A}}', tiers[0])
-      .replace('{{TIER A DESC}}', findRewardDesc(tiers[0]))
       .replace('{{TIER B}}', tiers[1])
-      .replace('{{TIER B DESC}}', findRewardDesc(tiers[1]))
       .replace('{{TIER C}}', tiers[2])
-      .replace('{{TIER C DESC}}', findRewardDesc(tiers[2]))
       .replace('{{TIER D}}', tiers[3])
-      .replace('{{TIER D DESC}}', findRewardDesc(tiers[3]))
       .replace('{{TIER E}}', tiers[4])
-      .replace('{{TIER E DESC}}', findRewardDesc(tiers[4]));
+  ;
 
   const sections = [];
 
@@ -136,7 +98,7 @@ function buildPriceTable(tableNum, rowStart, rowEnd, tierColStart) {
       .replaceAll('Event', '<a href="/events/regular/mk/rewards">Event</a>');
 
   writeFileSync(
-      resolve(ModulePath, `../__templates/--price-table-${tableNum}.md`),
+      resolve(ModulePath, `../__templates/price-table-${tableNum}.html`),
       tableOutput,
   );
 }
