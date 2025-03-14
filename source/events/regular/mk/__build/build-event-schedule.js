@@ -39,6 +39,8 @@ const beRowTemplate =
   readFileSync(resolve(ModulePath, '../__templates/be-row.md'), 'utf8');
 const beRowTemplateFirst =
   readFileSync(resolve(ModulePath, '../__templates/be-row-first.md'), 'utf8');
+const beThroneRowTemplate =
+  readFileSync(resolve(ModulePath, '../__templates/be-throne-row.md'), 'utf8');
 
 /**
  * Build MK event schedule for a particular reward
@@ -137,6 +139,36 @@ function buildBESchedule(seasons) {
   return tBody.join('\n');
 }
 
+/**
+ * Build MK event schedule for a particular reward
+ * @param {MKSeasonalData[]} seasons - Seasonal MK schedule
+ * @return {string}
+ */
+function buildBEThroneSchedule(seasons) {
+  const tBody = [];
+
+  // Skip pre-season
+  let sIdx = 1;
+
+  for (sIdx++; sIdx < seasons.length; sIdx++) {
+    const s = seasons[sIdx];
+    const tier = s['top-3-reward'].tier - 1;
+    const verifiedClass = s.verified?'verified':'unverified';
+
+    const rangeStart = s.season;
+    const rangeEnd = (sIdx < seasons.length - 1)?
+      seasons[sIdx + 1].season - 1:
+      '';
+    tBody.push(beThroneRowTemplate
+        .replaceAll('{{SEASON NAME}}', `Season ${rangeStart}–${rangeEnd}`)
+        .replaceAll('{{VERIFIED}}', verifiedClass)
+        .replaceAll('{{TIER}}', tier)
+        ,
+    );
+  };
+  return tBody.join('\n');
+}
+
 let outputPath;
 let seasons;
 
@@ -152,6 +184,7 @@ function buildSchedules() {
 outputPath =`${ProjectPath}/city/dragonden/dragon-gears/acquire/__templates/`;
 seasons = getSeasons('blueprint');
 buildSchedules();
+writeFileSync(`${outputPath}be-throne.html`, buildBEThroneSchedule(seasons));
 
 // Build Forge Blueprint schedule
 outputPath =`${ProjectPath}/city/blacksmith/hero-gears/acquire/__templates/`;
