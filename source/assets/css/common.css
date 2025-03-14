@@ -1765,6 +1765,25 @@ table.power-table { /* border on all cells */
   }
 }
 
+.event-reward-table {
+  .unverified td,
+  .unverified th {
+    font-style: italic;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .event-reward-table .unverified {
+    td { color: var(--gray-500); }
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  .event-reward-table .unverified {
+    color: var(--gray-300);
+  }
+}
+
 
 /* -------------------- Tooltips -------------------- */
 
