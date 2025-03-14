@@ -54,7 +54,7 @@ function buildMKSchedule(seasons) {
   const rewardC = s1['phase-reward'];
   const verifiedClass = s1.verified?'verified':'unverified';
   tBody.push(mkRowTemplateFirst
-      .replaceAll('{{SEASON NAME}}', s1['season-name'])
+      .replaceAll('{{SEASON NAME}}', s1['season-name'].replace('& ', '&amp; '))
       .replaceAll('{{VERIFIED}}', verifiedClass)
       .replaceAll('{{TIER A}}', rewardA.tier)
       .replaceAll('{{REWARD A}}', rewardA.reward)
@@ -75,7 +75,7 @@ function buildMKSchedule(seasons) {
     const rewardC = s['phase-reward'];
     const verifiedClass = s.verified?'verified':'unverified';
     tBody.push(mkRowTemplate
-        .replaceAll('{{SEASON NAME}}', s['season-name'])
+        .replaceAll('{{SEASON NAME}}', s['season-name'].replace('& ', '&amp; '))
         .replaceAll('{{VERIFIED}}', verifiedClass)
         .replaceAll('{{TIER A}}', rewardA.tier)
         .replaceAll('{{REWARD A}}', rewardA.reward)
@@ -91,7 +91,6 @@ function buildMKSchedule(seasons) {
   };
   return tBody.join('\n');
 }
-
 
 /**
  * Build MK event schedule for a particular reward
@@ -109,7 +108,7 @@ function buildBESchedule(seasons) {
   const tier = s['top-3-reward'].tier - 1;
   const verifiedClass = s.verified?'verified':'unverified';
   tBody.push(beRowTemplateFirst
-      .replaceAll('{{SEASON NAME}}', s['season-name'])
+      .replaceAll('{{SEASON NAME}}', s['season-name'].replace('& ', '&amp; '))
       .replaceAll('{{VERIFIED}}', verifiedClass)
       .replaceAll('{{REWARD}}', reward)
       .replaceAll('{{REWARD NAME}}', rewardNames[reward])
@@ -125,7 +124,7 @@ function buildBESchedule(seasons) {
     const tier = s['top-3-reward'].tier - 1;
     const verifiedClass = s.verified?'verified':'unverified';
     tBody.push(beRowTemplate
-        .replaceAll('{{SEASON NAME}}', s['season-name'])
+        .replaceAll('{{SEASON NAME}}', s['season-name'].replace('& ', '&amp; '))
         .replaceAll('{{VERIFIED}}', verifiedClass)
         .replaceAll('{{REWARD}}', reward)
         .replaceAll('{{REWARD NAME}}', rewardNames[reward])
@@ -138,24 +137,29 @@ function buildBESchedule(seasons) {
   return tBody.join('\n');
 }
 
-let templatePath = '';
-let tBody;
+let outputPath;
 let seasons;
 
-// Build Forge Blueprint schedule
-templatePath =
-  resolve(ProjectPath, './city/blacksmith/hero-gears/acquire/__templates');
-seasons = getSeasons('forge-blueprint');
-tBody = buildMKSchedule(seasons);
-writeFileSync(`${templatePath}/mk.html`, tBody);
-tBody = buildBESchedule(seasons);
-writeFileSync(`${templatePath}/be.html`, tBody);
+/**
+ * Build schedules for a particular reward
+ */
+function buildSchedules() {
+  writeFileSync(`${outputPath}mk.html`, buildMKSchedule(seasons));
+  writeFileSync(`${outputPath}be.html`, buildBESchedule(seasons));
+}
+
+// Build Blueprint schedule
+outputPath =`${ProjectPath}/city/dragonden/dragon-gears/acquire/__templates/`;
+seasons = getSeasons('blueprint');
+buildSchedules();
 
 // Build Forge Blueprint schedule
-templatePath =
-  resolve(ProjectPath, './city/witchs-lab/magic-stones/acquire/__templates');
+outputPath =`${ProjectPath}/city/blacksmith/hero-gears/acquire/__templates/`;
+seasons = getSeasons('forge-blueprint');
+buildSchedules();
+
+// Build Forge Magic Dust schedule
+outputPath =`${ProjectPath}/city/witchs-lab/magic-stones/acquire/__templates/`;
 seasons = getSeasons('magic-dust');
-tBody = buildMKSchedule(seasons);
-writeFileSync(`${templatePath}/mk.html`, tBody);
-tBody = buildBESchedule(seasons);
-writeFileSync(`${templatePath}/be.html`, tBody);
+buildSchedules();
+
