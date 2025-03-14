@@ -48,7 +48,7 @@ const beRowTemplateFirst =
 function buildMKSchedule(seasons) {
   const tBody = [];
 
-  const s1 = seasons.shift();
+  const s1 = seasons[0];
   const rewardA = s1['top-3-reward'];
   const rewardB = s1['top-20-reward'];
   const rewardC = s1['phase-reward'];
@@ -68,7 +68,8 @@ function buildMKSchedule(seasons) {
       ,
   );
 
-  seasons.forEach((s) => {
+  for (let sIdx = 1; sIdx < seasons.length; sIdx++) {
+    const s = seasons[sIdx];
     const rewardA = s['top-3-reward'];
     const rewardB = s['top-20-reward'];
     const rewardC = s['phase-reward'];
@@ -87,7 +88,7 @@ function buildMKSchedule(seasons) {
         .replaceAll('{{REWARD NAME C}}', rewardNames[rewardC.reward])
         ,
     );
-  });
+  };
   return tBody.join('\n');
 }
 
@@ -100,9 +101,10 @@ function buildMKSchedule(seasons) {
 function buildBESchedule(seasons) {
   const tBody = [];
 
-  if (seasons[0].season === 0) seasons.shift();
+  let sIdx = 0;
+  if (seasons[0].season === 0) sIdx = 1;
 
-  const s = seasons.shift();
+  const s = seasons[sIdx];
   const reward = s['top-3-reward'].reward;
   const tier = s['top-3-reward'].tier - 1;
   const verifiedClass = s.verified?'verified':'unverified';
@@ -117,7 +119,8 @@ function buildBESchedule(seasons) {
       ,
   );
 
-  seasons.forEach((s) => {
+  for (sIdx++; sIdx < seasons.length; sIdx++) {
+    const s = seasons[sIdx];
     const reward = s['top-3-reward'].reward;
     const tier = s['top-3-reward'].tier - 1;
     const verifiedClass = s.verified?'verified':'unverified';
@@ -131,7 +134,7 @@ function buildBESchedule(seasons) {
         .replaceAll('{{TIER C}}', tier - 2)
         ,
     );
-  });
+  };
   return tBody.join('\n');
 }
 
