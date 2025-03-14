@@ -889,7 +889,8 @@ details {
     background: var(--gold-500);
   }
 
-  ul.breadcrumb {
+  ul.breadcrumb,
+  menu.breadcrumb {
     li { color: var(--red-300); }
     li+li:before { color: var(--red); }
   }
