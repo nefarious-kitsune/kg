@@ -31,14 +31,18 @@ function getSeasons(reward) {
   ));
 }
 
-const rowTemplate =
+const mkRowTemplate =
   readFileSync(resolve(ModulePath, '../__templates/mk-row.md'), 'utf8');
-const rowTemplateFirst =
+const mkRowTemplateFirst =
   readFileSync(resolve(ModulePath, '../__templates/mk-row-first.md'), 'utf8');
+const beRowTemplate =
+  readFileSync(resolve(ModulePath, '../__templates/be-row.md'), 'utf8');
+const beRowTemplateFirst =
+  readFileSync(resolve(ModulePath, '../__templates/be-row-first.md'), 'utf8');
 
 /**
  * Build MK event schedule for a particular reward
- * @param {MKSeasonalData[]} seasons - Seasonal schedule
+ * @param {MKSeasonalData[]} seasons - Seasonal MK schedule
  * @return {string}
  */
 function buildMKSchedule(seasons) {
@@ -49,7 +53,7 @@ function buildMKSchedule(seasons) {
   const rewardB = s1['top-20-reward'];
   const rewardC = s1['phase-reward'];
   const verifiedClass = s1.verified?'verified':'unverified';
-  tBody.push(rowTemplateFirst
+  tBody.push(mkRowTemplateFirst
       .replaceAll('{{SEASON NAME}}', s1['season-name'])
       .replaceAll('{{VERIFIED}}', verifiedClass)
       .replaceAll('{{TIER A}}', rewardA.tier)
@@ -69,7 +73,7 @@ function buildMKSchedule(seasons) {
     const rewardB = s['top-20-reward'];
     const rewardC = s['phase-reward'];
     const verifiedClass = s.verified?'verified':'unverified';
-    tBody.push(rowTemplate
+    tBody.push(mkRowTemplate
         .replaceAll('{{SEASON NAME}}', s['season-name'])
         .replaceAll('{{VERIFIED}}', verifiedClass)
         .replaceAll('{{TIER A}}', rewardA.tier)
@@ -87,6 +91,50 @@ function buildMKSchedule(seasons) {
   return tBody.join('\n');
 }
 
+
+/**
+ * Build MK event schedule for a particular reward
+ * @param {MKSeasonalData[]} seasons - Seasonal MK schedule
+ * @return {string}
+ */
+function buildBESchedule(seasons) {
+  const tBody = [];
+
+  if (seasons[0].season === 0) seasons.shift();
+
+  const s = seasons.shift();
+  const reward = s['top-3-reward'].reward;
+  const tier = s['top-3-reward'].tier - 1;
+  const verifiedClass = s.verified?'verified':'unverified';
+  tBody.push(beRowTemplateFirst
+      .replaceAll('{{SEASON NAME}}', s['season-name'])
+      .replaceAll('{{VERIFIED}}', verifiedClass)
+      .replaceAll('{{REWARD}}', reward)
+      .replaceAll('{{REWARD NAME}}', rewardNames[reward])
+      .replaceAll('{{TIER A}}', tier)
+      .replaceAll('{{TIER B}}', tier - 1)
+      .replaceAll('{{TIER C}}', tier - 2)
+      ,
+  );
+
+  seasons.forEach((s) => {
+    const reward = s['top-3-reward'].reward;
+    const tier = s['top-3-reward'].tier - 1;
+    const verifiedClass = s.verified?'verified':'unverified';
+    tBody.push(beRowTemplate
+        .replaceAll('{{SEASON NAME}}', s['season-name'])
+        .replaceAll('{{VERIFIED}}', verifiedClass)
+        .replaceAll('{{REWARD}}', reward)
+        .replaceAll('{{REWARD NAME}}', rewardNames[reward])
+        .replaceAll('{{TIER A}}', tier)
+        .replaceAll('{{TIER B}}', tier - 1)
+        .replaceAll('{{TIER C}}', tier - 2)
+        ,
+    );
+  });
+  return tBody.join('\n');
+}
+
 let templatePath = '';
 let tBody;
 let seasons;
@@ -97,6 +145,8 @@ templatePath =
 seasons = getSeasons('forge-blueprint');
 tBody = buildMKSchedule(seasons);
 writeFileSync(`${templatePath}/mk.html`, tBody);
+tBody = buildBESchedule(seasons);
+writeFileSync(`${templatePath}/be.html`, tBody);
 
 // Build Forge Blueprint schedule
 templatePath =
@@ -104,3 +154,5 @@ templatePath =
 seasons = getSeasons('magic-dust');
 tBody = buildMKSchedule(seasons);
 writeFileSync(`${templatePath}/mk.html`, tBody);
+tBody = buildBESchedule(seasons);
+writeFileSync(`${templatePath}/be.html`, tBody);
