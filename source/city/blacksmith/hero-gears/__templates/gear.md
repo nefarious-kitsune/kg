@@ -53,7 +53,7 @@ The total <a href="#upgrade">upgrade cost</a> is
 {{UPGRADE BODY}}
 </tbody>
 </table>
-</div>
+</section>
 
 <section id="power-bonus">
 <h2>Power Bonus</h2>
@@ -61,7 +61,7 @@ The total <a href="#upgrade">upgrade cost</a> is
 <p>A {{ITEM NAME}} can provide the equipped Hero with
 a maximum Hero Gear Power of
 <span class="{{MAX BONUS CLASS}}">{{MAX BONUS}}</span><span class="unit">%</span>
-of the <a href="../base/#power">Blacksmith Base Power</a></a>.</p>
+of the <a href="../base/#power">Blacksmith Base Power</a>.</p>
 
 <div class="col-flex">
 <table class="basic-table power-table sticky-header">
