@@ -22,20 +22,20 @@ const ModulePath = dirname(fileURLToPath(import.meta.url));
  * @property {number} season - Season number
  * @property {string} season-name - Season name
  * @property {MKReward} top-3-reward - Reward for overall ranking 1-3
- * @property {MKReward} top-10-reward - Reward for overall ranking 4-20
+ * @property {MKReward} top-20-reward - Reward for overall ranking 4-20
  * @property {MKReward} phase-reward - Reward for event phase
  * @property {boolean} verified - Is this verified?
 */
 
 /** @type {MKEventDatabase} */
-export const MKEventDatabase = {
+const MKEventDatabase = {
   title: 'Mightiest Kingdom event seasonal rewards',
   seasons: [
     {
       'season': 0,
       'season-name': 'After Throne War',
       'top-3-reward': {tier: 5, reward: 'magic-dust'},
-      'top-10-reward': {tier: 4, reward: 'magic-dust'},
+      'top-20-reward': {tier: 4, reward: 'magic-dust'},
       'phase-reward': {tier: 2, reward: 'blueprint'},
       'verified': true,
     },
@@ -43,7 +43,7 @@ export const MKEventDatabase = {
       'season': 1,
       'season-name': 'Season 1–3',
       'top-3-reward': {tier: 5, reward: 'blueprint'},
-      'top-10-reward': {tier: 4, reward: 'blueprint'},
+      'top-20-reward': {tier: 4, reward: 'blueprint'},
       'phase-reward': {tier: 2, reward: 'blueprint'},
       'verified': true,
     },
@@ -98,8 +98,8 @@ while (rowIdx < rewardsData.length) {
     'season': seasonNumber,
     'season-name': seasonName,
     'top-3-reward': {tier: rewardTier, reward: rewardName},
-    'top-10-reward': {tier: rewardTier-1, reward: rewardName},
-    'phase-reward': {tier: rewardTier-2, reward: rewardName},
+    'top-20-reward': {tier: rewardTier-1, reward: rewardName},
+    'phase-reward': {tier: rewardTier-3, reward: rewardName},
     'verified': (predicted !== true),
   });
 
@@ -111,3 +111,5 @@ writeFileSync(
     resolve(ModulePath, './--mk-data.json'),
     JSON.stringify(MKEventDatabase, null, '  ') + '\n',
 );
+
+export {MKEventDatabase};
