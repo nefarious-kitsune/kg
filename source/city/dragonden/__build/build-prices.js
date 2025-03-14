@@ -10,7 +10,7 @@ const namesData = readFileSync(
 ).split('\n');
 
 const priceData = readFileSync(
-    resolve(ModulePath, '../blueprints/blueprint-prices.tsv'),
+    resolve(ModulePath, '../dragon-gears/blueprint-prices.tsv'),
     {encoding: 'utf8'},
 ).split('\n');
 
