@@ -39,11 +39,11 @@ function buildPriceTable(tableNum, rowStart, rowEnd, tierColStart) {
   let tableOutput = '';
 
   tableOutput = tableTemplate
-      .replace('{{TIER A}}', tiers[0])
-      .replace('{{TIER B}}', tiers[1])
-      .replace('{{TIER C}}', tiers[2])
-      .replace('{{TIER D}}', tiers[3])
-      .replace('{{TIER E}}', tiers[4])
+      .replaceAll('{{TIER A}}', tiers[0])
+      .replaceAll('{{TIER B}}', tiers[1])
+      .replaceAll('{{TIER C}}', tiers[2])
+      .replaceAll('{{TIER D}}', tiers[3])
+      .replaceAll('{{TIER E}}', tiers[4])
   ;
 
   const sections = [];
