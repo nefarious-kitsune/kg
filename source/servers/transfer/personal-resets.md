@@ -71,7 +71,8 @@
 <tr>
   <td></td>
   <td>Daily Quests</td>
-  <td>Progress on Daily Quests and weekly points do not reset.</td>
+  <td>Progress on<a href="/quests/daily-quest/">Daily Quests</a>
+   and weekly points do not reset.</td>
 </tr>
 </tbody>
 </table>
