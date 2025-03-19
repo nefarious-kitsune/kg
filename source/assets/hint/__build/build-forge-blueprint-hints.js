@@ -27,6 +27,6 @@ for (let tierIdx = 1; tierIdx < HeroGearNames.length; tierIdx++) {
 }
 
 writeFileSync(
-    resolve(ModulePath, `../__templates/--forge-blueprints.html`),
+    resolve(ModulePath, `../__templates/forge-blueprints.html`),
     hints.join('\n'),
 );
