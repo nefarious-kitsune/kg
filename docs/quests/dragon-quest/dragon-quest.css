@@ -1,0 +1,13 @@
+.g-q-missions {
+  width: 22rem;
+}
+.g-q-rewards {
+  min-width: 10rem;
+}
+
+
+.g-q-missions h4,
+.g-q-rewards h4 {
+  margin-block-start: 0;
+  margin-block-end: 0.8rem;
+}
