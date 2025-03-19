@@ -88,9 +88,18 @@ function buildTierContent(gearData) {
     '';
 
   const itemName = `T${tier} Hero Gear`;
+  let gearName1 = `T${tier} Archer bow`;
+  let gearName2 = `T${tier} Flame Mage sword`;
+  let gearName3 = `T${tier} Ice Wizard dagger`;
+  let gearName4 = `T${tier} Goblin staff`;
+
   let itemNameExpanded;
   if (gearData.names.length > 0) {
     itemNameExpanded = `T${tier} Hero Gear (${gearData.names.join(', ')})`;
+    gearName1 = `T${tier} ${gearData.names[0]}`;
+    gearName2 = `T${tier} ${gearData.names[1]}`;
+    gearName3 = `T${tier} ${gearData.names[2]}`;
+    gearName4 = `T${tier} ${gearData.names[3]}`;
   } else {
     itemNameExpanded = itemName;
   }
@@ -103,6 +112,10 @@ function buildTierContent(gearData) {
       .replaceAll('{{TIER}}', tier)
       .replaceAll('{{ITEM NAME}}', itemName)
       .replaceAll('{{ITEM NAME EXPANDED}}', itemNameExpanded)
+      .replaceAll('{{GEAR NAME 1}}', gearName1)
+      .replaceAll('{{GEAR NAME 2}}', gearName2)
+      .replaceAll('{{GEAR NAME 3}}', gearName3)
+      .replaceAll('{{GEAR NAME 4}}', gearName4)
       .replace('{{UPGRADE BODY}}', upgradeTBody.join('\n'))
       .replaceAll('{{TOTAL COST 1}}', totalCost1)
       .replaceAll('{{TOTAL COST 2}}', totalCost2)

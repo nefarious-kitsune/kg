@@ -14,6 +14,23 @@
 <link href="/assets/css/common.css" rel="stylesheet">
 <link href="/assets/hint/hint.css" rel="stylesheet">
 <script src="/assets/hint/hint.js"></script>
+<style>
+.overview-subsection {
+  min-width: 10rem;
+  margin-block-end: 0.8rem;
+}
+.overview-subsection h4 {
+  margin-block-start: 0;
+  margin-block-end: 0.8rem;
+}
+.overview-subsection {
+  break-inside: avoid;
+}
+#overview {
+  column-width: 12rem;
+}
+
+</style>
 </head>
 <body>
 
@@ -29,12 +46,21 @@
 <h1>T4 Hero Gear</h1>
 
 <section id="overview">
-<p>A T4 Hero Gear (Magic Longbow, Flame Longsword, Frost Dagger, Ancient Wooden Staff) has maximum
-<span class="unknown-number">?</span><span class="unit">%</span>
-<a href="#power-bonus">power bonus</a>.
-The total <a href="#upgrade">upgrade cost</a> is
-<span class="unknown-number">?</span> Elemental Vials and
-<span class="unknown-number">?</span> Blood of Titan.</p>
+<div class="overview-subsection"><h4>Gears</h4><ul class="min-list">
+  <li>T4 Magic Longbow</li>
+  <li>T4 Flame Longsword</li>
+  <li>T4 Frost Dagger</li>
+  <li>T4 Ancient Wooden Staff</li>
+</ul></div>
+
+<div class="overview-subsection"><h4><a href="#power-bonus">Max Power</a></h4><ul class="min-list">
+  <li><span class="unknown-number">?</span><span class="unit">%</span></li>
+</ul></div>
+
+<div class="overview-subsection"><h4><a href="#upgrade">Upgrade Cost</a></h4><ul class="min-list">
+  <li><span class="unknown-number">?</span> Elemental Vials</li>
+  <li><span class="unknown-number">?</span> Blood of Titan</li>
+</ul></div>
 </section>
 
 <section id="upgrade">

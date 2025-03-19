@@ -14,6 +14,23 @@
 <link href="/assets/css/common.css" rel="stylesheet">
 <link href="/assets/hint/hint.css" rel="stylesheet">
 <script src="/assets/hint/hint.js"></script>
+<style>
+.overview-subsection {
+  min-width: 10rem;
+  margin-block-end: 0.8rem;
+}
+.overview-subsection h4 {
+  margin-block-start: 0;
+  margin-block-end: 0.8rem;
+}
+.overview-subsection {
+  break-inside: avoid;
+}
+#overview {
+  column-width: 12rem;
+}
+
+</style>
 </head>
 <body>
 
@@ -29,12 +46,21 @@
 <h1>T1 Hero Gear</h1>
 
 <section id="overview">
-<p>A T1 Hero Gear (Hardwood Longbow, Hardwood Longsword, Hardwood Dagger, Walnut Wood Staff) has maximum
-<span class="number">60</span><span class="unit">%</span>
-<a href="#power-bonus">power bonus</a>.
-The total <a href="#upgrade">upgrade cost</a> is
-<span class="number">90</span> Elemental Vials and
-<span class="number">12</span> Blood of Titan.</p>
+<div class="overview-subsection"><h4>Gears</h4><ul class="min-list">
+  <li>T1 Hardwood Longbow</li>
+  <li>T1 Hardwood Longsword</li>
+  <li>T1 Hardwood Dagger</li>
+  <li>T1 Walnut Wood Staff</li>
+</ul></div>
+
+<div class="overview-subsection"><h4><a href="#power-bonus">Max Power</a></h4><ul class="min-list">
+  <li><span class="number">60</span><span class="unit">%</span></li>
+</ul></div>
+
+<div class="overview-subsection"><h4><a href="#upgrade">Upgrade Cost</a></h4><ul class="min-list">
+  <li><span class="number">90</span> Elemental Vials</li>
+  <li><span class="number">12</span> Blood of Titan</li>
+</ul></div>
 </section>
 
 <section id="upgrade">
