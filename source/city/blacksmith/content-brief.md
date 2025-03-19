@@ -2,7 +2,7 @@
 
 ## Directory Structure
 
-| path                  | desc       
+| path                  | desc
 |-----------------------|---------------------------------------------
 | /                     | general info on the building
 | /base/                | general info on Blacksmith Tech

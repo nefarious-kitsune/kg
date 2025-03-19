@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', (e) => {
 
 /**
  * Switch table view
- * @param {HTMLAnchorElement|number} tab 
+ * @param {HTMLAnchorElement|number} tab
  */
 function switchView(tab) {
   let selectedIdx = 0;

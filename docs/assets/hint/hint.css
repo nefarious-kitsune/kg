@@ -21,7 +21,7 @@ a.has-hint, img.has-hint { display: inline-block; }
   max-width: 10rem;
   height: auto;
   margin: 0;
-} 
+}
 
 .has-hint .hint {
   display: block;
@@ -30,7 +30,7 @@ a.has-hint, img.has-hint { display: inline-block; }
   min-width: 10rem;
   font-size: 0.9rem;
   text-decoration-line: none;
-  
+
   padding: 0.25rem;
   border-radius: 0.2rem;
   border: 0.1rem solid var(--gray-100);

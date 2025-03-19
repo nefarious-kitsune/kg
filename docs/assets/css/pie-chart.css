@@ -1,7 +1,7 @@
 .pie {
   --width:150px;
   --color: var(--miku-red);
-  
+
   width: var(--width);
   aspect-ratio: 1;
   position: relative;

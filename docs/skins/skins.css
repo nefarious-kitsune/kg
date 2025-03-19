@@ -32,7 +32,7 @@
     justify-content: start; /* left */
     align-content: start; /* top */
     flex-direction: row;
-  
+
     .skin-name {
       font-weight: bold;
       flex-grow: 1;
@@ -45,14 +45,14 @@
       border: 0.1rem solid black;
     }
   }
-  
+
   .skin-stats-line {
     display: flex;
     margin-block-end: 0.5rem;
     justify-content: start; /* left */
     align-content: start; /* top */
     flex-direction: row;
-  
+
     .stats-label {
       flex-grow: 0;
       width: 4.5rem; }
@@ -65,10 +65,10 @@
       width: 3rem;
     }
   }
-  
+
   .stats-value.highlight {
     background-color: var(--miku-light-gold);
-  }  
+  }
 }
 
 .effects {
@@ -76,14 +76,14 @@
     margin-block-end: 0.5rem;
     font-weight: bold;
   }
-  
+
   .effects-stats-line {
     display: flex;
     margin-block-end: 0.5rem;
     justify-content: start; /* left */
     align-content: start; /* top */
     flex-direction: row;
-  
+
     .effects-desc {
       flex-grow: 1;
     }

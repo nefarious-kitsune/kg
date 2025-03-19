@@ -34,7 +34,7 @@
     border-color: light-dark(var(--jade-500), var(--jade-500));
     background-color: light-dark(var(--jade-100), var(--jade-700));
   }
-  
+
   .config-box {
     padding: 0;
     min-height: 5rem;

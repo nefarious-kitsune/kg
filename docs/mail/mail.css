@@ -14,18 +14,18 @@ ul.template-list {
     page-break-inside: avoid;
     break-inside: avoid;
   }
-  
+
   li.notice:before {
     content: "N";
     background-color: var(--primary-1);
   }
-  
+
   li.mail:before {
     content: "M";
     color: white;
     background-color: var(--primary-3);
   }
-  
+
   li:before {
     display: inline-block;
     width: 1rem;

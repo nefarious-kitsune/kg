@@ -106,7 +106,7 @@
       calc(100% - 0.4rem) 100%,
       0 100%
     );
-  }  
+  }
   .year { display: inline; }
 }
 

@@ -70,7 +70,7 @@
   --iris-100: #E0D3E3;
   --mauve-500: #AF6B96;
   --rose-500  : #B35079;
-  
+
   --primary-1  : #C9803F; /* Caramel */
   --secondary-1: #D59E48; /* Sand */
   --primary-2  : #E0BB50; /* Copper */
@@ -308,7 +308,7 @@ nav.quick-access-container {
     padding: 0;
     border-radius: 1rem;
     color: white;
-    
+
     li {
       display: inline-block;
       margin-block-start: 0;
@@ -853,7 +853,7 @@ details {
     border: 0.1rem solid var(--red-700);
     background-color: var(--gray-700);
   }
-  
+
   div.quick-access-container,
   nav.quick-access-container {
     background: linear-gradient(
@@ -991,7 +991,7 @@ details {
     background-color: var(--iris-700);
     color: var(--iris-100);
   }
-  
+
   details {
     background-color: var(--gray-900);
     border: 0.15rem solid var(--gray-700);
@@ -1036,7 +1036,7 @@ details {
     height: 2rem;
     z-index: 1;
   }
-  
+
   .event-0, .event-1, .event-2, .event-3 {
     border-bottom: 0.2rem solid;
   }
@@ -1188,7 +1188,7 @@ img.icon {
 
 @media screen and (min-width: 880px) {
   img.icon {
-    width: 32px !important; 
+    width: 32px !important;
   }
 }
 
@@ -1292,13 +1292,13 @@ header:first-child nav {
       top: 45%;
       border-radius: 45% / 0 50% 50% 0;
     }
-  
+
     .right-arrow a {
       position: fixed;
       z-index: 100;
       right: -1.4rem;
       top: 45%;
-      border-radius: 45% / 50% 0 0 50%; 
+      border-radius: 45% / 50% 0 0 50%;
     }
 
     .left-arrow a:hover,
@@ -1314,7 +1314,7 @@ header:first-child nav {
       font-size: 1.6rem;
     }
   }
-  
+
   .left-arrow a,
   .right-arrow a,
   .left-arrow a:hover,
@@ -1349,19 +1349,19 @@ header:first-child nav {
       position: absolute;
       left: 8rem;
     }
-  
+
     .right-arrow a {
       position: absolute;
       right: 8rem;
     }
-    
+
     a {
       background-color: var(--miku-red);
       color: var(--miku-gold);
       text-decoration: none;
       font-size: 1.6rem;
       padding: 0.6rem 1.2rem;
-    }  
+    }
   }
 }
 
@@ -1637,7 +1637,7 @@ table { /* default */
 
   tbody th,
   tbody td { vertical-align: top; }
-  
+
   th.right-align,
   td.right-align { text-align: right; }
 }

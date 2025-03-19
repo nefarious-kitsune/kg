@@ -36,7 +36,7 @@
     &:hover {
       background-color: var(--miku-red);
     }
-  
+
     &.selected,
     &.selected:hover {
       color: var(--miku-dark-red);
@@ -51,8 +51,8 @@
       to bottom,
       var(--tab-orange),
       var(--tab-orange) 0.5rem,
-      white 4rem, 
+      white 4rem,
       white
-    ); 
-  }  
+    );
+  }
 }

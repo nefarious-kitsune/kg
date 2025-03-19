@@ -10,7 +10,7 @@
 
 .release-phase {
   page-break-inside: avoid;
-  break-inside: avoid-column; 
+  break-inside: avoid-column;
 }
 
 .name-list {
@@ -28,7 +28,7 @@
 .avatar-list {
   line-height: 3.8rem;
   margin-block-start: 0.2rem;
-  margin-block-end: 0.8rem;  
+  margin-block-end: 0.8rem;
 
   .hero-avatar {
     margin: 0;

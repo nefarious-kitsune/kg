@@ -17,7 +17,7 @@
   .hero { background-color: var(--light-primary-5);}
   .castle { background-color: var(--light-primary-6);}
   .common { background-color: var(--pale-neutral);}
-  
+
   .quest-row {
     display: flex;
     padding: 0.25rem 0.5rem;
