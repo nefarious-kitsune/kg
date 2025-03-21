@@ -11,23 +11,12 @@ const ExportPaths = {
   'hero-rating.tsv': resolve(ModulePath, '../hero-rating.tsv'),
 };
 
+import {getHeroSkill} from './hero-skill-lookup.js';
+
 /**
- * @typedef {'march'|'recovery'|'regeneration'|'unit-power'|'AP'|'load'|'offline'|'gathering'|'TD'} HeroProperty
  * @typedef {'N'|'R'|'SR'|'SSR'} HeroRarity
- */
-
-/**
  * @typedef  {'archer'|'fire'|'ice'|'goblin'} HeroElement
- */
-
-/**
- * @typedef {Object} HeroSkill
- * @property {string} name - In-game skill name
- * @property {string} long-description - In-game skill description
- * @property {string} short-description - Short skill description
- * @property {HeroProperty} property - Property that is affected by this skill
- * @property {number} percent - Numerical value of the skill
- * @property {boolean} elemental - For 'unit-power', is this skill elemental?
+ * @typedef {import('./hero-skill-lookup.js').HeroSkill} HeroSkill
  */
 
 /**
@@ -77,55 +66,6 @@ const ExportPaths = {
 
 /** @type {HeroData[]} */
 const HeroBase = [];
-const SkillLookups = new Map();
-
-/**
- * Load skill lookups
- */
-function loadSkillLookups() {
-  const tsvFilePath = resolve(DataPath, 'hero-skill-lookup.tsv');
-  const rows = readFileSync(tsvFilePath, 'utf8').split('\n');
-  rows.forEach((row) => {
-    let [
-      lookupString,
-      skillName,
-      percent,
-      property,
-      elemental,
-      shortDesc,
-      longDesc,
-    ] = row.split('\t');
-
-    // Skip blank line from copy/paste
-    if (lookupString === '') return;
-
-    percent = parseInt(percent);
-
-    shortDesc = shortDesc
-        .replace('{{value}}', percent)
-        .trim();
-
-    longDesc = longDesc
-        .replace('{{value}}', percent)
-        .replace('\\n', '\n')
-        .trim();
-
-    /** @type {HeroSkill} */
-    const heroSkill = {
-      'name': skillName,
-      'long-description': longDesc,
-      'short-description': shortDesc,
-      'property': property,
-      'percent': percent,
-      'elemental': (elemental === 'TRUE'),
-    };
-
-    SkillLookups.set(
-        lookupString.toLowerCase().trim(),
-        heroSkill,
-    );
-  });
-}
 
 /**
  * Add a skill
@@ -133,20 +73,19 @@ function loadSkillLookups() {
  * @param {string} inputString
  */
 function addSkill(data, inputString) {
-  const nameLookup = inputString.toLowerCase().trim();
-  if (nameLookup.length === 0) {
+  const id = inputString.toLowerCase().trim();
+  if (id.length === 0) {
     data.skills.push(null);
     return;
   }
-  if (SkillLookups.has(nameLookup)) {
-    const skill = SkillLookups.get(nameLookup);
+  const skill = getHeroSkill(id);
+  if (skill) {
     if (skill.property !== 'TD') data.bonus[skill.property] += skill.percent;
     data.skills.push(skill);
   } else {
     data.skills.push(null);
   }
 }
-
 
 /**
  * Import TSV data and compile it to structured hero data
@@ -465,7 +404,6 @@ function saveSkills() {
   writeFileSync(ExportPaths['hero-skills.tsv'], content);
 }
 
-loadSkillLookups();
 buildDatabase();
 calcRating();
 saveRating();
