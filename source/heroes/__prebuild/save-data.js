@@ -5,8 +5,7 @@ import {writeFileSync} from 'fs';
 const ModulePath = dirname(fileURLToPath(import.meta.url));
 const ExportPaths = {
   'hero-skills.tsv': resolve(ModulePath, '../hero-skills.tsv'),
-  'hero-base.json': resolve(ModulePath, '../hero-base.json'),
-  'hero-base.js': resolve(ModulePath, '../__exported/hero-base.js'),
+  'heroes.json': resolve(ModulePath, '../heroes.json'),
   'hero-rating.tsv': resolve(ModulePath, '../hero-rating.tsv'),
 };
 
@@ -15,7 +14,7 @@ import {HeroBase} from './build-data.js';
 /** Save database into .json files */
 function saveDatabase() {
   writeFileSync(
-      ExportPaths['hero-base.json'],
+      ExportPaths['heroes.json'],
       JSON.stringify(HeroBase, null, '  ') + '\n');
 }
 

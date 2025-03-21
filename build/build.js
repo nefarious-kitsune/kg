@@ -1,8 +1,10 @@
 import './skins/build.js';
 import './events/build.js';
+/*
+// FIX ME
+// Error if \source\heroes\heroes.json is missing]
 import './p2p/build.js'; // Build VIP tables
-
-// import {copyDirectory} from './__file/copy-directory.js';
+*/
 
 import {fileURLToPath} from 'url';
 import {dirname, resolve, join, extname} from 'path';
@@ -66,9 +68,7 @@ function prebuild(build) {
   traverse(SourcePath, 0);
 }
 
-/**
- * Process source files and copy to destination
- */
+/** Process source files and copy to destination */
 function copyFiles() {
   const srcFilePaths = [];
   const fileTypes = [
@@ -124,14 +124,11 @@ function copyFiles() {
 process.stdout.write('Starting pre-building process...\n');
 prebuild('prebuild');
 updateProgress('Completed\n\n');
-// process.stdout.write('\n');
 
 process.stdout.write('Generating intermediate content...\n');
 prebuild('build');
 updateProgress('Completed\n\n');
-// process.stdout.write('\n');
 
 process.stdout.write('Generating final content...\n');
 copyFiles();
 updateProgress('Completed\n\n');
-// process.stdout.write('\n');

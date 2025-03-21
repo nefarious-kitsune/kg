@@ -43,6 +43,7 @@ export const KnownHeroes = [
  * @return {boolean}
  */
 export function replaceHeroAvatar(content) {
+  const Heroes = HeroBase.getHeroes();
   const source = content.source;
   const tagPos = source.indexOf('<hero-avatar');
   if (tagPos === -1) return false;
@@ -51,7 +52,7 @@ export function replaceHeroAvatar(content) {
   if (extracted === null) return false;
 
   const HeroName = extracted.innerContent;
-  const HeroData = HeroBase.find((data)=> (
+  const HeroData = Heroes.find((data)=> (
     data.name.toLowerCase() === HeroName.toLowerCase()
   ));
 

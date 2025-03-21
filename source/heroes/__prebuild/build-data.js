@@ -87,7 +87,7 @@ function addSkill(data, inputString) {
  * @param {string} rawData - Raw TSV data
  */
 export function buildDatabase() {
-  const tsvFilePath = resolve(DataPath, 'hero-base.tsv');
+  const tsvFilePath = resolve(DataPath, 'heroes.tsv');
   const rows = readFileSync(tsvFilePath, 'utf8').split('\n');
 
   rows.shift(); // Remove header row
@@ -104,9 +104,9 @@ export function buildDatabase() {
 
     /** @type {HeroData} */
     const heroData = {
-      element: element,
-      rarity: rarity,
       name: name,
+      rarity: rarity,
+      element: element,
       skills: [],
       bonus: {
         'march': 0,

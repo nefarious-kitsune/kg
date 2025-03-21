@@ -8,6 +8,7 @@ import {HeroBase} from '../../__hero-base/hero-base.js';
  * @return {boolean}
  */
 export function replaceHeroName(content) {
+  const Heroes = HeroBase.getHeroes();
   const source = content.source;
   const tagPos = source.indexOf('<hero-name');
   if (tagPos === -1) return false;
@@ -19,7 +20,7 @@ export function replaceHeroName(content) {
 
   const HeroName = extracted.innerContent;
 
-  const HeroData = HeroBase.find((data)=> (
+  const HeroData = Heroes.find((data)=> (
     data.name.toLowerCase() === HeroName.toLowerCase()
   ));
 
