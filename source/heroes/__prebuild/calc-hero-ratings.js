@@ -1,55 +1,56 @@
 import {HeroBase} from './build-data.js';
+
+/** @typedef {import('./build-data').HeroBonus} HeroBonus */
+
 /**
- * @typedef {import('./build-data').HeroBonus} HeroBonus
+ * Helper function for proper scaling of bonus.
+ * If max bonus is 25%:
+ * - If the bonus is 0, the result is 0
+ * - If the bonus is 10%, the result is 0.50
+ * - If the bonus is 15%, the result is 0.66
+ * - If the bonus is 20%, the result is 0.80
+ * - If the bonus is 25%, the result is 1.00
+ * @param {number} bonus - bonus percentage
+ * @param {number} max - max bonus percentage
+ * @return {number}
  */
+const scale =
+  (bonus, max) => (bonus === 0)?0:(0.5 + 0.5*(bonus-10)/(max-10));
+
+/**
+ * Helper function for rounding to nearest 0.5
+ * @param {number} num - max bonus percentage
+ * @return {number}
+ */
+const round = (num) => Math.round(num*2)/2;
+
+/**
+ * Calculate maximum bonus for each property
+ * @return {HeroBonus}
+ */
+function calcMaxBonus() {
+  const maxBonus = {};
+  // eslint-disable-next-line max-len
+  const props = ['march', 'recovery', 'regeneration', 'unit-power', 'AP', 'gathering', 'load', 'offline'];
+  props.forEach((prop) => maxBonus[prop] = 0); // Initializing all prop to 0
+
+  HeroBase.forEach((heroData) => {
+    props.forEach((prop) => {
+      maxBonus[prop] = Math.max(maxBonus[prop], heroData.bonus[prop]);
+    });
+  });
+
+  return maxBonus;
+}
 
 /**
  * Calculate hero rating at different roles
  */
 export function calcHeroRatings() {
-  /** @type {HeroBonus} */
-  const maxBonus = {
-    'march': 0,
-    'recovery': 0,
-    'regeneration': 0,
-    'unit-power': 0,
-    'AP': 0,
-    'gathering': 0,
-    'load': 0,
-    'offline': 0,
-  };
-
-  // First pass. Get max values of bonus
-  HeroBase.forEach((data) => {
-    const bonus = data.bonus;
-    [
-      'march', 'recovery', 'regeneration', 'unit-power',
-      'AP', 'gathering', 'load', 'offline',
-    ].forEach((prop) => {
-      maxBonus[prop] = Math.max(maxBonus[prop], bonus[prop]);
-    });
-  });
+  const maxBonus = calcMaxBonus();
 
   HeroBase.forEach((heroData) => {
     const bonus = heroData.bonus;
-
-    /**
-     * Helper function for proper scaling of bonus.
-     * If max bonus is 25%:
-     * - If the bonus is 0, the result is 0
-     * - If the bonus is 10%, the result is 0.50
-     * - If the bonus is 15%, the result is 0.66
-     * - If the bonus is 20%, the result is 0.80
-     * - If the bonus is 25%, the result is 1.00
-     * @param {number} bonus - bonus percentage
-     * @param {number} max - max bonus percentage
-     * @return {number}
-     */
-    const scale =
-      (bonus, max) => (bonus === 0)?0:(0.5 + 0.5*(bonus-10)/(max-10));
-
-    // Round to nearest 0.5
-    const round = (num) => Math.round(num*2)/2;
 
     /**
      * Rating (0 ~ 10) on hero's ability in ATTACKING castles and fortresses, based on
