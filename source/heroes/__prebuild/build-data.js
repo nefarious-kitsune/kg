@@ -3,9 +3,13 @@ import {dirname, resolve} from 'path';
 import {readFileSync, writeFileSync} from 'fs';
 
 const ModulePath = dirname(fileURLToPath(import.meta.url));
-const ProjectPath = resolve(ModulePath, '../../');
-const DataPath = resolve(ProjectPath, './data/heroes/');
-const ExportPath = resolve(ProjectPath, './docs/heroes/');
+const DataPath = resolve(ModulePath, '../__data/');
+const ExportPaths = {
+  'hero-skills.tsv': resolve(ModulePath, '../hero-skills.tsv'),
+  'hero-base.json': resolve(ModulePath, '../hero-base.json'),
+  'hero-base.js': resolve(ModulePath, '../__exported/hero-base.js'),
+  'hero-rating.tsv': resolve(ModulePath, '../hero-rating.tsv'),
+};
 
 /**
  * @typedef {'march'|'recovery'|'regeneration'|'unit-power'|'AP'|'load'|'offline'|'gathering'|'TD'} HeroProperty
@@ -31,7 +35,7 @@ const ExportPath = resolve(ProjectPath, './docs/heroes/');
  * @property {number} march - Total march speed bonus
  * @property {number} recovery - Total recovery speed bonus
  * @property {number} regeneration - Total wound regeneration bonus
- * @property {number} 'unit-power' - Total unit power bonus
+ * @property {number} unit-power - Total unit power bonus
  * @property {boolean} elemental - For 'unit-power', is this skill elemental?
  * @property {number} AP - Total AP Discount
  * @property {number} gathering - Total gathering speed bonus
@@ -80,7 +84,7 @@ const SkillLookups = new Map();
  */
 function loadSkillLookups() {
   const tsvFilePath = resolve(DataPath, 'hero-skill-lookup.tsv');
-  const rows = readFileSync(tsvFilePath, {encoding: 'utf8'}).split('\n');
+  const rows = readFileSync(tsvFilePath, 'utf8').split('\n');
   rows.forEach((row) => {
     let [
       lookupString,
@@ -151,7 +155,7 @@ function addSkill(data, inputString) {
  */
 export function buildDatabase() {
   const tsvFilePath = resolve(DataPath, 'hero-base.tsv');
-  const rows = readFileSync(tsvFilePath, {encoding: 'utf8'}).split('\n');
+  const rows = readFileSync(tsvFilePath, 'utf8').split('\n');
 
   rows.shift(); // Remove header row
 
@@ -209,8 +213,8 @@ function saveDatabase() {
   const _json = JSON.stringify(HeroBase, null, '  ') + '\n';
   const _js = 'const ElementHeroData = ' + _json.replaceAll('"', '\'');
 
-  writeFileSync(resolve(ExportPath, 'hero-base.json'), _json);
-  writeFileSync(resolve(ExportPath, 'hero-base.js'), _js);
+  writeFileSync(ExportPaths['hero-base.json'], _json);
+  writeFileSync(ExportPaths['hero-base.js'], _js);
 }
 
 /**
@@ -404,7 +408,7 @@ function saveRating() {
         .map((heroData) => makeRow(heroData))
         .join('\n');
 
-  writeFileSync(resolve(ExportPath, 'hero-rating.tsv'), content);
+  writeFileSync(ExportPaths['hero-rating.tsv'], content);
 }
 
 
@@ -458,7 +462,7 @@ function saveSkills() {
         .map((heroData) => makeRow(heroData))
         .join('\n');
 
-  writeFileSync(resolve(ExportPath, 'hero-skills.tsv'), content);
+  writeFileSync(ExportPaths['hero-skills.tsv'], content);
 }
 
 loadSkillLookups();
