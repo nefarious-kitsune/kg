@@ -1,2 +1,2 @@
-import './releases/build-db.js';
-import './releases/build-phases.js';
+import './build-db.js';
+import './build-phases.js';

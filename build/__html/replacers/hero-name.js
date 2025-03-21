@@ -1,7 +1,7 @@
 /* eslint-disable key-spacing */
 import {extractHtmlElement} from '../extract-element.js';
 import {KnownHeroes} from './hero-avatar.js';
-import {heroBase} from '../../heroes/build-data.js';
+import {HeroBase} from '../../__hero-base/hero-base.js';
 
 /**
  * @param {object} content
@@ -19,7 +19,7 @@ export function replaceHeroName(content) {
 
   const HeroName = extracted.innerContent;
 
-  const HeroData = heroBase.find((data)=> (
+  const HeroData = HeroBase.find((data)=> (
     data.name.toLowerCase() === HeroName.toLowerCase()
   ));
 

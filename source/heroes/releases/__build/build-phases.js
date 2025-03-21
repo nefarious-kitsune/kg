@@ -3,12 +3,8 @@ import {dirname, resolve} from 'path';
 import {writeFileSync} from 'fs';
 
 const ModulePath = dirname(fileURLToPath(import.meta.url));
-const ProjectPath = resolve(ModulePath, '../../../');
-
-const srcBasePath = resolve(ProjectPath, './source/');
-
+const TemplatePath = resolve(ModulePath, '../__templates/');
 import {seasons, heroReleaseBase} from './build-db.js';
-
 
 /**
  * Build template table content
@@ -106,7 +102,7 @@ function buildTemplate(seasonId) {
   });
 
   writeFileSync(
-      resolve(srcBasePath, `heroes/releases/__temp/--${seasonId}.html`),
+      resolve(TemplatePath, `./${seasonId}.html`),
       TableBody.join('\n'),
   );
 }

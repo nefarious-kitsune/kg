@@ -1,4 +1,3 @@
-import './heroes/build.js';
 import './skins/build.js';
 import './events/build.js';
 import './p2p/build.js'; // Build VIP tables
@@ -37,18 +36,19 @@ function updateProgress(progress) {
 
 /**
  * Execute all build files in the source/ directory
+ * @param {'build'|'prebuild'} build - name of build command
  */
-function prebuild() {
+function prebuild(build) {
   const srcBasePath = resolve(ProjectPath, './source/');
 
   const traverse = (parentPath, currentDepth) => {
     readdirSync(parentPath).forEach((file) => {
-      if (file === '__build') {
+      if (file === `__${build}`) {
         const builderCwd = join(parentPath, file);
         const builderCmd = join(builderCwd, 'build.js');
         if (existsSync(builderCmd)) {
           updateProgress(`Executing ${builderCmd}`);
-          execSync('node build', {cwd: builderCwd});
+          execSync(`node ${build}`, {cwd: builderCwd});
         }
         return;
       };
@@ -133,5 +133,6 @@ function copyFiles() {
   process.stdout.write('\n');
 }
 
-prebuild();
+prebuild('prebuild');
+prebuild('build');
 copyFiles();

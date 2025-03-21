@@ -1,4 +1,786 @@
 {
+  "pre-season": [
+    {
+      "hero": "Gabriel",
+      "advRecruit": false,
+      "statsRecruit": "4.00%",
+      "freePick": true,
+      "crystal": true,
+      "wheel": true,
+      "event": true,
+      "other": "Dimension Tunnel"
+    },
+    {
+      "hero": "Arthur",
+      "advRecruit": true,
+      "statsRecruit": "4.00%",
+      "freePick": true,
+      "crystal": true,
+      "wheel": true,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Jennifer",
+      "advRecruit": false,
+      "statsRecruit": "4.00%",
+      "freePick": true,
+      "crystal": true,
+      "wheel": true,
+      "event": true,
+      "other": "Element Lord"
+    },
+    {
+      "hero": "Erika",
+      "advRecruit": false,
+      "statsRecruit": "2.94%",
+      "freePick": true,
+      "crystal": true,
+      "wheel": true,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Allen",
+      "advRecruit": false,
+      "statsRecruit": "2.94%",
+      "freePick": true,
+      "crystal": true,
+      "wheel": true,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Gro",
+      "advRecruit": true,
+      "statsRecruit": "2.94%",
+      "freePick": true,
+      "crystal": true,
+      "wheel": true,
+      "event": true,
+      "other": "Element Lord"
+    },
+    {
+      "hero": "Rosamond",
+      "advRecruit": false,
+      "statsRecruit": "6.98%",
+      "freePick": false,
+      "crystal": false,
+      "wheel": true,
+      "event": true,
+      "other": "Element Lord"
+    },
+    {
+      "hero": "Catherine",
+      "advRecruit": true,
+      "statsRecruit": "6.98%",
+      "freePick": true,
+      "crystal": true,
+      "wheel": true,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Paula",
+      "advRecruit": true,
+      "statsRecruit": "6.98%",
+      "freePick": true,
+      "crystal": true,
+      "wheel": true,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Hadi",
+      "advRecruit": true,
+      "statsRecruit": "6.98%",
+      "freePick": true,
+      "crystal": true,
+      "wheel": true,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Ralph",
+      "advRecruit": false,
+      "statsRecruit": "6.98%",
+      "freePick": true,
+      "crystal": true,
+      "wheel": true,
+      "event": true,
+      "other": "Element Lord"
+    },
+    {
+      "hero": "O'Neil",
+      "advRecruit": false,
+      "statsRecruit": "4.00%",
+      "freePick": true,
+      "crystal": true,
+      "wheel": false,
+      "event": true,
+      "other": "Bounty Hall"
+    },
+    {
+      "hero": "Cosette",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": true,
+      "crystal": true,
+      "wheel": false,
+      "event": true,
+      "other": "Bounty Hall"
+    },
+    {
+      "hero": "Dolvar",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": true,
+      "crystal": true,
+      "wheel": false,
+      "event": true,
+      "other": "Bounty Hall"
+    },
+    {
+      "hero": "Paul",
+      "advRecruit": false,
+      "statsRecruit": "2.94%",
+      "freePick": true,
+      "crystal": true,
+      "wheel": false,
+      "event": true,
+      "other": "Bounty Hall"
+    },
+    {
+      "hero": "Issac",
+      "advRecruit": false,
+      "statsRecruit": "6.98%",
+      "freePick": true,
+      "crystal": true,
+      "wheel": false,
+      "event": true,
+      "other": "Bounty Hall"
+    },
+    {
+      "hero": "Ariza",
+      "advRecruit": false,
+      "statsRecruit": "4.00%",
+      "freePick": false,
+      "crystal": false,
+      "wheel": false,
+      "event": true,
+      "other": "Bounty Hall"
+    },
+    {
+      "hero": "Meniere",
+      "advRecruit": false,
+      "statsRecruit": "6.98%",
+      "freePick": false,
+      "crystal": false,
+      "wheel": false,
+      "event": true,
+      "other": "Bounty Hall"
+    },
+    {
+      "hero": "Gruen",
+      "advRecruit": false,
+      "statsRecruit": "6.98%",
+      "freePick": false,
+      "crystal": false,
+      "wheel": false,
+      "event": true,
+      "other": "Bounty Hall"
+    },
+    {
+      "hero": "Sahar",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": false,
+      "crystal": false,
+      "wheel": false,
+      "event": true,
+      "other": "Bounty Hall"
+    },
+    {
+      "hero": "Rudolph",
+      "advRecruit": false,
+      "statsRecruit": "6.98%",
+      "freePick": false,
+      "crystal": false,
+      "wheel": false,
+      "event": true,
+      "other": "Bounty Hall"
+    },
+    {
+      "hero": "Jessica",
+      "advRecruit": false,
+      "statsRecruit": "6.98%",
+      "freePick": false,
+      "crystal": false,
+      "wheel": false,
+      "event": true,
+      "other": "Bounty Hall"
+    },
+    {
+      "hero": "Wallis",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": true,
+      "crystal": true,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Nicole",
+      "advRecruit": false,
+      "statsRecruit": "6.98%",
+      "freePick": true,
+      "crystal": true,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Pan",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": true,
+      "crystal": false,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Richard",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": false,
+      "crystal": false,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Torvi",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": false,
+      "crystal": false,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Lilani",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": false,
+      "crystal": false,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Vera",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": false,
+      "crystal": false,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Pedra",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": false,
+      "crystal": false,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Lomax",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": false,
+      "crystal": false,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Arwin",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": false,
+      "crystal": false,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Benjamin",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": false,
+      "crystal": false,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Parr",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": false,
+      "crystal": false,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Christie",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": false,
+      "crystal": false,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Livia",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": false,
+      "crystal": false,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Filius",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": false,
+      "crystal": false,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Apollo",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": false,
+      "crystal": false,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Kadir",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": false,
+      "crystal": false,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Dean",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": false,
+      "crystal": false,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Anko",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": false,
+      "crystal": false,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Chiyoko",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": false,
+      "crystal": false,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Wendy",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": false,
+      "crystal": false,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Penny",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": false,
+      "crystal": false,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Suad",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": false,
+      "crystal": false,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Giselle",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": false,
+      "crystal": false,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Dain",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": false,
+      "crystal": false,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Maud",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": false,
+      "crystal": false,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Nathaniel",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": false,
+      "crystal": false,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Sabastian",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": false,
+      "crystal": false,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Keith",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": false,
+      "crystal": false,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Vanessa",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": false,
+      "crystal": false,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Collin",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": false,
+      "crystal": false,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Luvia",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": false,
+      "crystal": false,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Fatima",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": false,
+      "crystal": false,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Bella",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": false,
+      "crystal": false,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Brie",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": false,
+      "crystal": false,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Meg",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": false,
+      "crystal": false,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Hana",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": false,
+      "crystal": false,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Montag",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": false,
+      "crystal": false,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Rogers",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": false,
+      "crystal": false,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Simon",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": false,
+      "crystal": false,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Trist",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": false,
+      "crystal": false,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Ptolemy",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": false,
+      "crystal": false,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Ao Deng Ge Ri Le",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": false,
+      "crystal": false,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Rila",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": false,
+      "crystal": false,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Johannes",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": false,
+      "crystal": false,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Lovelace",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": false,
+      "crystal": false,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Trishy",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": false,
+      "crystal": false,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Angelina",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": false,
+      "crystal": false,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Dylan",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": false,
+      "crystal": false,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Sindra",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": false,
+      "crystal": false,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Rebecca",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": false,
+      "crystal": false,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Mycelia",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": false,
+      "crystal": false,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Edmund",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": false,
+      "crystal": false,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Nina",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": false,
+      "crystal": false,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Viola",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": false,
+      "crystal": false,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Claudia",
+      "advRecruit": false,
+      "statsRecruit": "6.98%",
+      "freePick": false,
+      "crystal": false,
+      "wheel": false,
+      "event": false,
+      "other": ""
+    }
+  ],
   "transition": [
     {
       "hero": "Gabriel",
@@ -12,7 +794,7 @@
     },
     {
       "hero": "Arthur",
-      "advRecruit": "7.77%",
+      "advRecruit": true,
       "statsRecruit": "7.69%",
       "freePick": true,
       "crystal": true,
@@ -32,7 +814,7 @@
     },
     {
       "hero": "Erika",
-      "advRecruit": "3.28%",
+      "advRecruit": false,
       "statsRecruit": false,
       "freePick": true,
       "crystal": true,
@@ -52,7 +834,7 @@
     },
     {
       "hero": "Gro",
-      "advRecruit": "7.81%",
+      "advRecruit": true,
       "statsRecruit": "6.67%",
       "freePick": true,
       "crystal": true,
@@ -72,7 +854,7 @@
     },
     {
       "hero": "Catherine",
-      "advRecruit": "7.77%",
+      "advRecruit": true,
       "statsRecruit": "20.00%",
       "freePick": true,
       "crystal": true,
@@ -82,7 +864,7 @@
     },
     {
       "hero": "Paula",
-      "advRecruit": "3.24%",
+      "advRecruit": true,
       "statsRecruit": "4.69%",
       "freePick": true,
       "crystal": true,
@@ -92,7 +874,7 @@
     },
     {
       "hero": "Hadi",
-      "advRecruit": "7.77%",
+      "advRecruit": true,
       "statsRecruit": "4.69%",
       "freePick": true,
       "crystal": true,
@@ -142,16 +924,6 @@
     },
     {
       "hero": "Paul",
-      "advRecruit": false,
-      "statsRecruit": false,
-      "freePick": true,
-      "crystal": true,
-      "wheel": false,
-      "event": true,
-      "other": "Bounty Hall"
-    },
-    {
-      "hero": "Wallis",
       "advRecruit": false,
       "statsRecruit": false,
       "freePick": true,
@@ -229,6 +1001,16 @@
       "wheel": false,
       "event": true,
       "other": "Bounty Hall"
+    },
+    {
+      "hero": "Wallis",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": true,
+      "crystal": true,
+      "wheel": false,
+      "event": true,
+      "other": ""
     },
     {
       "hero": "Nicole",
@@ -762,6 +1544,16 @@
     },
     {
       "hero": "Nina",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": false,
+      "crystal": false,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Viola",
       "advRecruit": false,
       "statsRecruit": false,
       "freePick": false,
@@ -784,7 +1576,7 @@
     },
     {
       "hero": "Arthur",
-      "advRecruit": "7.77%",
+      "advRecruit": true,
       "statsRecruit": "7.14%",
       "freePick": true,
       "crystal": true,
@@ -804,7 +1596,7 @@
     },
     {
       "hero": "Erika",
-      "advRecruit": "3.28%",
+      "advRecruit": false,
       "statsRecruit": false,
       "freePick": true,
       "crystal": true,
@@ -824,7 +1616,7 @@
     },
     {
       "hero": "Gro",
-      "advRecruit": "7.81%",
+      "advRecruit": true,
       "statsRecruit": "6.67%",
       "freePick": true,
       "crystal": true,
@@ -844,7 +1636,7 @@
     },
     {
       "hero": "Catherine",
-      "advRecruit": "7.77%",
+      "advRecruit": true,
       "statsRecruit": "20.00%",
       "freePick": true,
       "crystal": true,
@@ -854,7 +1646,7 @@
     },
     {
       "hero": "Paula",
-      "advRecruit": "3.24%",
+      "advRecruit": true,
       "statsRecruit": "4.69%",
       "freePick": true,
       "crystal": true,
@@ -864,7 +1656,7 @@
     },
     {
       "hero": "Hadi",
-      "advRecruit": "7.77%",
+      "advRecruit": true,
       "statsRecruit": "4.69%",
       "freePick": true,
       "crystal": true,
@@ -914,16 +1706,6 @@
     },
     {
       "hero": "Paul",
-      "advRecruit": false,
-      "statsRecruit": false,
-      "freePick": true,
-      "crystal": true,
-      "wheel": false,
-      "event": true,
-      "other": "Bounty Hall"
-    },
-    {
-      "hero": "Wallis",
       "advRecruit": false,
       "statsRecruit": false,
       "freePick": true,
@@ -1001,6 +1783,16 @@
       "wheel": false,
       "event": true,
       "other": "Bounty Hall"
+    },
+    {
+      "hero": "Wallis",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": true,
+      "crystal": true,
+      "wheel": false,
+      "event": true,
+      "other": ""
     },
     {
       "hero": "Nicole",
@@ -1534,6 +2326,16 @@
     },
     {
       "hero": "Nina",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": false,
+      "crystal": false,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Viola",
       "advRecruit": false,
       "statsRecruit": false,
       "freePick": false,
@@ -1556,7 +2358,7 @@
     },
     {
       "hero": "Arthur",
-      "advRecruit": "7.77%",
+      "advRecruit": true,
       "statsRecruit": "7.14%",
       "freePick": true,
       "crystal": true,
@@ -1576,7 +2378,7 @@
     },
     {
       "hero": "Erika",
-      "advRecruit": "3.28%",
+      "advRecruit": false,
       "statsRecruit": false,
       "freePick": true,
       "crystal": true,
@@ -1596,7 +2398,7 @@
     },
     {
       "hero": "Gro",
-      "advRecruit": "7.81%",
+      "advRecruit": true,
       "statsRecruit": "6.67%",
       "freePick": true,
       "crystal": true,
@@ -1616,7 +2418,7 @@
     },
     {
       "hero": "Catherine",
-      "advRecruit": "7.77%",
+      "advRecruit": true,
       "statsRecruit": "16.67%",
       "freePick": true,
       "crystal": true,
@@ -1626,7 +2428,7 @@
     },
     {
       "hero": "Paula",
-      "advRecruit": "3.24%",
+      "advRecruit": true,
       "statsRecruit": "4.69%",
       "freePick": true,
       "crystal": true,
@@ -1636,7 +2438,7 @@
     },
     {
       "hero": "Hadi",
-      "advRecruit": "7.77%",
+      "advRecruit": true,
       "statsRecruit": "4.69%",
       "freePick": true,
       "crystal": true,
@@ -1686,16 +2488,6 @@
     },
     {
       "hero": "Paul",
-      "advRecruit": false,
-      "statsRecruit": false,
-      "freePick": true,
-      "crystal": true,
-      "wheel": false,
-      "event": true,
-      "other": "Bounty Hall"
-    },
-    {
-      "hero": "Wallis",
       "advRecruit": false,
       "statsRecruit": false,
       "freePick": true,
@@ -1773,6 +2565,16 @@
       "wheel": false,
       "event": true,
       "other": "Bounty Hall"
+    },
+    {
+      "hero": "Wallis",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": true,
+      "crystal": true,
+      "wheel": false,
+      "event": true,
+      "other": ""
     },
     {
       "hero": "Nicole",
@@ -2306,6 +3108,16 @@
     },
     {
       "hero": "Nina",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": false,
+      "crystal": false,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Viola",
       "advRecruit": false,
       "statsRecruit": false,
       "freePick": false,
@@ -2328,7 +3140,7 @@
     },
     {
       "hero": "Arthur",
-      "advRecruit": "7.77%",
+      "advRecruit": true,
       "statsRecruit": "6.67%",
       "freePick": true,
       "crystal": true,
@@ -2348,7 +3160,7 @@
     },
     {
       "hero": "Erika",
-      "advRecruit": "3.28%",
+      "advRecruit": false,
       "statsRecruit": false,
       "freePick": true,
       "crystal": true,
@@ -2368,7 +3180,7 @@
     },
     {
       "hero": "Gro",
-      "advRecruit": "7.81%",
+      "advRecruit": true,
       "statsRecruit": "6.67%",
       "freePick": true,
       "crystal": true,
@@ -2388,7 +3200,7 @@
     },
     {
       "hero": "Catherine",
-      "advRecruit": "7.77%",
+      "advRecruit": true,
       "statsRecruit": "16.67%",
       "freePick": true,
       "crystal": true,
@@ -2398,7 +3210,7 @@
     },
     {
       "hero": "Paula",
-      "advRecruit": "3.24%",
+      "advRecruit": true,
       "statsRecruit": "4.69%",
       "freePick": true,
       "crystal": true,
@@ -2408,7 +3220,7 @@
     },
     {
       "hero": "Hadi",
-      "advRecruit": "7.77%",
+      "advRecruit": true,
       "statsRecruit": "4.69%",
       "freePick": true,
       "crystal": true,
@@ -2458,16 +3270,6 @@
     },
     {
       "hero": "Paul",
-      "advRecruit": false,
-      "statsRecruit": false,
-      "freePick": true,
-      "crystal": true,
-      "wheel": false,
-      "event": true,
-      "other": "Bounty Hall"
-    },
-    {
-      "hero": "Wallis",
       "advRecruit": false,
       "statsRecruit": false,
       "freePick": true,
@@ -2545,6 +3347,16 @@
       "wheel": false,
       "event": true,
       "other": "Bounty Hall"
+    },
+    {
+      "hero": "Wallis",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": true,
+      "crystal": true,
+      "wheel": false,
+      "event": true,
+      "other": ""
     },
     {
       "hero": "Nicole",
@@ -3078,6 +3890,16 @@
     },
     {
       "hero": "Nina",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": false,
+      "crystal": false,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Viola",
       "advRecruit": false,
       "statsRecruit": false,
       "freePick": false,
@@ -3100,7 +3922,7 @@
     },
     {
       "hero": "Arthur",
-      "advRecruit": "7.77%",
+      "advRecruit": true,
       "statsRecruit": "6.67%",
       "freePick": true,
       "crystal": true,
@@ -3120,7 +3942,7 @@
     },
     {
       "hero": "Erika",
-      "advRecruit": "3.28%",
+      "advRecruit": false,
       "statsRecruit": false,
       "freePick": true,
       "crystal": true,
@@ -3140,7 +3962,7 @@
     },
     {
       "hero": "Gro",
-      "advRecruit": "7.81%",
+      "advRecruit": true,
       "statsRecruit": "6.67%",
       "freePick": true,
       "crystal": true,
@@ -3160,7 +3982,7 @@
     },
     {
       "hero": "Catherine",
-      "advRecruit": "7.77%",
+      "advRecruit": true,
       "statsRecruit": "14.29%",
       "freePick": true,
       "crystal": true,
@@ -3170,7 +3992,7 @@
     },
     {
       "hero": "Paula",
-      "advRecruit": "3.24%",
+      "advRecruit": true,
       "statsRecruit": "4.69%",
       "freePick": true,
       "crystal": true,
@@ -3180,7 +4002,7 @@
     },
     {
       "hero": "Hadi",
-      "advRecruit": "7.77%",
+      "advRecruit": true,
       "statsRecruit": "4.69%",
       "freePick": true,
       "crystal": true,
@@ -3230,16 +4052,6 @@
     },
     {
       "hero": "Paul",
-      "advRecruit": false,
-      "statsRecruit": false,
-      "freePick": true,
-      "crystal": true,
-      "wheel": false,
-      "event": true,
-      "other": "Bounty Hall"
-    },
-    {
-      "hero": "Wallis",
       "advRecruit": false,
       "statsRecruit": false,
       "freePick": true,
@@ -3317,6 +4129,16 @@
       "wheel": false,
       "event": true,
       "other": "Bounty Hall"
+    },
+    {
+      "hero": "Wallis",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": true,
+      "crystal": true,
+      "wheel": false,
+      "event": true,
+      "other": ""
     },
     {
       "hero": "Nicole",
@@ -3860,6 +4682,16 @@
     },
     {
       "hero": "Nina",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": false,
+      "crystal": false,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Viola",
       "advRecruit": false,
       "statsRecruit": false,
       "freePick": false,
@@ -3882,7 +4714,7 @@
     },
     {
       "hero": "Arthur",
-      "advRecruit": "7.77%",
+      "advRecruit": true,
       "statsRecruit": "6.25%",
       "freePick": true,
       "crystal": true,
@@ -3902,7 +4734,7 @@
     },
     {
       "hero": "Erika",
-      "advRecruit": "3.28%",
+      "advRecruit": true,
       "statsRecruit": "6.25%",
       "freePick": true,
       "crystal": true,
@@ -3922,7 +4754,7 @@
     },
     {
       "hero": "Gro",
-      "advRecruit": "7.81%",
+      "advRecruit": true,
       "statsRecruit": "6.25%",
       "freePick": true,
       "crystal": true,
@@ -3942,7 +4774,7 @@
     },
     {
       "hero": "Catherine",
-      "advRecruit": "7.77%",
+      "advRecruit": true,
       "statsRecruit": "14.29%",
       "freePick": true,
       "crystal": true,
@@ -3952,7 +4784,7 @@
     },
     {
       "hero": "Paula",
-      "advRecruit": "3.24%",
+      "advRecruit": true,
       "statsRecruit": "4.69%",
       "freePick": true,
       "crystal": true,
@@ -3962,7 +4794,7 @@
     },
     {
       "hero": "Hadi",
-      "advRecruit": "7.77%",
+      "advRecruit": true,
       "statsRecruit": "4.69%",
       "freePick": true,
       "crystal": true,
@@ -4012,16 +4844,6 @@
     },
     {
       "hero": "Paul",
-      "advRecruit": false,
-      "statsRecruit": false,
-      "freePick": true,
-      "crystal": true,
-      "wheel": false,
-      "event": true,
-      "other": "Bounty Hall"
-    },
-    {
-      "hero": "Wallis",
       "advRecruit": false,
       "statsRecruit": false,
       "freePick": true,
@@ -4099,6 +4921,16 @@
       "wheel": false,
       "event": true,
       "other": "Bounty Hall"
+    },
+    {
+      "hero": "Wallis",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": true,
+      "crystal": true,
+      "wheel": false,
+      "event": true,
+      "other": ""
     },
     {
       "hero": "Nicole",
@@ -4642,6 +5474,16 @@
     },
     {
       "hero": "Nina",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": false,
+      "crystal": false,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Viola",
       "advRecruit": false,
       "statsRecruit": false,
       "freePick": false,
@@ -4664,7 +5506,7 @@
     },
     {
       "hero": "Arthur",
-      "advRecruit": "7.77%",
+      "advRecruit": true,
       "statsRecruit": "6.25%",
       "freePick": true,
       "crystal": true,
@@ -4684,7 +5526,7 @@
     },
     {
       "hero": "Erika",
-      "advRecruit": "3.28%",
+      "advRecruit": true,
       "statsRecruit": "6.25%",
       "freePick": true,
       "crystal": true,
@@ -4704,7 +5546,7 @@
     },
     {
       "hero": "Gro",
-      "advRecruit": "7.81%",
+      "advRecruit": true,
       "statsRecruit": "6.25%",
       "freePick": true,
       "crystal": true,
@@ -4724,7 +5566,7 @@
     },
     {
       "hero": "Catherine",
-      "advRecruit": "7.77%",
+      "advRecruit": true,
       "statsRecruit": "12.50%",
       "freePick": true,
       "crystal": true,
@@ -4734,7 +5576,7 @@
     },
     {
       "hero": "Paula",
-      "advRecruit": "3.24%",
+      "advRecruit": true,
       "statsRecruit": "4.69%",
       "freePick": true,
       "crystal": true,
@@ -4744,7 +5586,7 @@
     },
     {
       "hero": "Hadi",
-      "advRecruit": "7.77%",
+      "advRecruit": true,
       "statsRecruit": "4.69%",
       "freePick": true,
       "crystal": true,
@@ -4794,16 +5636,6 @@
     },
     {
       "hero": "Paul",
-      "advRecruit": false,
-      "statsRecruit": false,
-      "freePick": true,
-      "crystal": true,
-      "wheel": false,
-      "event": true,
-      "other": "Bounty Hall"
-    },
-    {
-      "hero": "Wallis",
       "advRecruit": false,
       "statsRecruit": false,
       "freePick": true,
@@ -4881,6 +5713,16 @@
       "wheel": false,
       "event": true,
       "other": "Bounty Hall"
+    },
+    {
+      "hero": "Wallis",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": true,
+      "crystal": true,
+      "wheel": false,
+      "event": true,
+      "other": ""
     },
     {
       "hero": "Nicole",
@@ -5424,6 +6266,16 @@
     },
     {
       "hero": "Nina",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": false,
+      "crystal": false,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Viola",
       "advRecruit": false,
       "statsRecruit": false,
       "freePick": false,
@@ -5446,7 +6298,7 @@
     },
     {
       "hero": "Arthur",
-      "advRecruit": "7.77%",
+      "advRecruit": true,
       "statsRecruit": "5.88%",
       "freePick": true,
       "crystal": true,
@@ -5466,7 +6318,7 @@
     },
     {
       "hero": "Erika",
-      "advRecruit": "3.28%",
+      "advRecruit": true,
       "statsRecruit": "4.76%",
       "freePick": true,
       "crystal": true,
@@ -5486,7 +6338,7 @@
     },
     {
       "hero": "Gro",
-      "advRecruit": "7.81%",
+      "advRecruit": true,
       "statsRecruit": "4.76%",
       "freePick": true,
       "crystal": true,
@@ -5498,15 +6350,15 @@
       "hero": "Rosamond",
       "advRecruit": false,
       "statsRecruit": "11.11%",
-      "freePick": true,
-      "crystal": true,
+      "freePick": false,
+      "crystal": false,
       "wheel": true,
       "event": true,
       "other": "Element Lord"
     },
     {
       "hero": "Catherine",
-      "advRecruit": "7.77%",
+      "advRecruit": true,
       "statsRecruit": "11.11%",
       "freePick": true,
       "crystal": true,
@@ -5516,7 +6368,7 @@
     },
     {
       "hero": "Paula",
-      "advRecruit": "3.24%",
+      "advRecruit": true,
       "statsRecruit": "4.69%",
       "freePick": true,
       "crystal": true,
@@ -5526,7 +6378,7 @@
     },
     {
       "hero": "Hadi",
-      "advRecruit": "7.77%",
+      "advRecruit": true,
       "statsRecruit": "4.69%",
       "freePick": true,
       "crystal": true,
@@ -5576,16 +6428,6 @@
     },
     {
       "hero": "Paul",
-      "advRecruit": false,
-      "statsRecruit": false,
-      "freePick": true,
-      "crystal": true,
-      "wheel": false,
-      "event": true,
-      "other": "Bounty Hall"
-    },
-    {
-      "hero": "Wallis",
       "advRecruit": false,
       "statsRecruit": false,
       "freePick": true,
@@ -5663,6 +6505,16 @@
       "wheel": false,
       "event": true,
       "other": "Bounty Hall"
+    },
+    {
+      "hero": "Wallis",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": true,
+      "crystal": true,
+      "wheel": false,
+      "event": true,
+      "other": ""
     },
     {
       "hero": "Nicole",
@@ -6206,6 +7058,16 @@
     },
     {
       "hero": "Nina",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": false,
+      "crystal": false,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Viola",
       "advRecruit": false,
       "statsRecruit": false,
       "freePick": false,
@@ -6228,7 +7090,7 @@
     },
     {
       "hero": "Arthur",
-      "advRecruit": "7.77%",
+      "advRecruit": true,
       "statsRecruit": "5.88%",
       "freePick": true,
       "crystal": true,
@@ -6248,7 +7110,7 @@
     },
     {
       "hero": "Erika",
-      "advRecruit": "3.28%",
+      "advRecruit": true,
       "statsRecruit": "4.76%",
       "freePick": true,
       "crystal": true,
@@ -6268,7 +7130,7 @@
     },
     {
       "hero": "Gro",
-      "advRecruit": "7.81%",
+      "advRecruit": true,
       "statsRecruit": "4.76%",
       "freePick": true,
       "crystal": true,
@@ -6288,7 +7150,7 @@
     },
     {
       "hero": "Catherine",
-      "advRecruit": "7.77%",
+      "advRecruit": true,
       "statsRecruit": "11.11%",
       "freePick": true,
       "crystal": true,
@@ -6298,7 +7160,7 @@
     },
     {
       "hero": "Paula",
-      "advRecruit": "3.24%",
+      "advRecruit": true,
       "statsRecruit": "4.48%",
       "freePick": true,
       "crystal": true,
@@ -6308,7 +7170,7 @@
     },
     {
       "hero": "Hadi",
-      "advRecruit": "7.77%",
+      "advRecruit": true,
       "statsRecruit": "4.48%",
       "freePick": true,
       "crystal": true,
@@ -6358,16 +7220,6 @@
     },
     {
       "hero": "Paul",
-      "advRecruit": false,
-      "statsRecruit": false,
-      "freePick": true,
-      "crystal": true,
-      "wheel": false,
-      "event": true,
-      "other": "Bounty Hall"
-    },
-    {
-      "hero": "Wallis",
       "advRecruit": false,
       "statsRecruit": false,
       "freePick": true,
@@ -6445,6 +7297,16 @@
       "wheel": false,
       "event": true,
       "other": "Bounty Hall"
+    },
+    {
+      "hero": "Wallis",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": true,
+      "crystal": true,
+      "wheel": false,
+      "event": true,
+      "other": ""
     },
     {
       "hero": "Nicole",
@@ -6988,6 +7850,16 @@
     },
     {
       "hero": "Nina",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": false,
+      "crystal": false,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Viola",
       "advRecruit": false,
       "statsRecruit": false,
       "freePick": false,
@@ -7010,7 +7882,7 @@
     },
     {
       "hero": "Arthur",
-      "advRecruit": "7.77%",
+      "advRecruit": true,
       "statsRecruit": "5.56%",
       "freePick": true,
       "crystal": true,
@@ -7030,7 +7902,7 @@
     },
     {
       "hero": "Erika",
-      "advRecruit": "3.28%",
+      "advRecruit": true,
       "statsRecruit": "4.55%",
       "freePick": true,
       "crystal": true,
@@ -7050,7 +7922,7 @@
     },
     {
       "hero": "Gro",
-      "advRecruit": "7.81%",
+      "advRecruit": true,
       "statsRecruit": "4.55%",
       "freePick": true,
       "crystal": true,
@@ -7070,7 +7942,7 @@
     },
     {
       "hero": "Catherine",
-      "advRecruit": "7.77%",
+      "advRecruit": true,
       "statsRecruit": "11.11%",
       "freePick": true,
       "crystal": true,
@@ -7080,7 +7952,7 @@
     },
     {
       "hero": "Paula",
-      "advRecruit": "3.24%",
+      "advRecruit": true,
       "statsRecruit": "4.48%",
       "freePick": true,
       "crystal": true,
@@ -7090,7 +7962,7 @@
     },
     {
       "hero": "Hadi",
-      "advRecruit": "7.77%",
+      "advRecruit": true,
       "statsRecruit": "4.48%",
       "freePick": true,
       "crystal": true,
@@ -7140,16 +8012,6 @@
     },
     {
       "hero": "Paul",
-      "advRecruit": false,
-      "statsRecruit": false,
-      "freePick": true,
-      "crystal": true,
-      "wheel": false,
-      "event": true,
-      "other": "Bounty Hall"
-    },
-    {
-      "hero": "Wallis",
       "advRecruit": false,
       "statsRecruit": false,
       "freePick": true,
@@ -7227,6 +8089,16 @@
       "wheel": false,
       "event": true,
       "other": "Bounty Hall"
+    },
+    {
+      "hero": "Wallis",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": true,
+      "crystal": true,
+      "wheel": false,
+      "event": true,
+      "other": ""
     },
     {
       "hero": "Nicole",
@@ -7770,6 +8642,16 @@
     },
     {
       "hero": "Nina",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": false,
+      "crystal": false,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Viola",
       "advRecruit": false,
       "statsRecruit": false,
       "freePick": false,
@@ -7792,7 +8674,7 @@
     },
     {
       "hero": "Arthur",
-      "advRecruit": "7.77%",
+      "advRecruit": true,
       "statsRecruit": "5.56%",
       "freePick": true,
       "crystal": true,
@@ -7812,8 +8694,8 @@
     },
     {
       "hero": "Erika",
-      "advRecruit": "3.28%",
-      "statsRecruit": "3.70%",
+      "advRecruit": true,
+      "statsRecruit": "4.55%",
       "freePick": true,
       "crystal": true,
       "wheel": true,
@@ -7823,7 +8705,7 @@
     {
       "hero": "Allen",
       "advRecruit": false,
-      "statsRecruit": "3.70%",
+      "statsRecruit": "4.55%",
       "freePick": true,
       "crystal": true,
       "wheel": true,
@@ -7832,8 +8714,8 @@
     },
     {
       "hero": "Gro",
-      "advRecruit": "7.81%",
-      "statsRecruit": "3.70%",
+      "advRecruit": true,
+      "statsRecruit": "4.55%",
       "freePick": true,
       "crystal": true,
       "wheel": true,
@@ -7852,7 +8734,7 @@
     },
     {
       "hero": "Catherine",
-      "advRecruit": "7.77%",
+      "advRecruit": true,
       "statsRecruit": "9.09%",
       "freePick": true,
       "crystal": true,
@@ -7862,7 +8744,7 @@
     },
     {
       "hero": "Paula",
-      "advRecruit": "3.24%",
+      "advRecruit": true,
       "statsRecruit": "4.48%",
       "freePick": true,
       "crystal": true,
@@ -7872,7 +8754,7 @@
     },
     {
       "hero": "Hadi",
-      "advRecruit": "7.77%",
+      "advRecruit": true,
       "statsRecruit": "4.48%",
       "freePick": true,
       "crystal": true,
@@ -7903,7 +8785,7 @@
     {
       "hero": "Cosette",
       "advRecruit": false,
-      "statsRecruit": "3.70%",
+      "statsRecruit": false,
       "freePick": true,
       "crystal": true,
       "wheel": false,
@@ -7913,7 +8795,7 @@
     {
       "hero": "Dolvar",
       "advRecruit": false,
-      "statsRecruit": "3.70%",
+      "statsRecruit": false,
       "freePick": true,
       "crystal": true,
       "wheel": false,
@@ -7923,17 +8805,7 @@
     {
       "hero": "Paul",
       "advRecruit": false,
-      "statsRecruit": "3.70%",
-      "freePick": true,
-      "crystal": true,
-      "wheel": false,
-      "event": true,
-      "other": "Bounty Hall"
-    },
-    {
-      "hero": "Wallis",
-      "advRecruit": false,
-      "statsRecruit": "3.70%",
+      "statsRecruit": false,
       "freePick": true,
       "crystal": true,
       "wheel": false,
@@ -8011,6 +8883,16 @@
       "other": "Bounty Hall"
     },
     {
+      "hero": "Wallis",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": true,
+      "crystal": true,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
       "hero": "Nicole",
       "advRecruit": false,
       "statsRecruit": "4.48%",
@@ -8053,7 +8935,7 @@
     {
       "hero": "Christie",
       "advRecruit": false,
-      "statsRecruit": "3.70%",
+      "statsRecruit": "4.55%",
       "freePick": true,
       "crystal": true,
       "wheel": false,
@@ -8093,7 +8975,7 @@
     {
       "hero": "Penny",
       "advRecruit": false,
-      "statsRecruit": "3.70%",
+      "statsRecruit": "4.55%",
       "freePick": true,
       "crystal": false,
       "wheel": false,
@@ -8113,7 +8995,7 @@
     {
       "hero": "Kenshiro",
       "advRecruit": false,
-      "statsRecruit": "3.70%",
+      "statsRecruit": false,
       "freePick": true,
       "crystal": false,
       "wheel": false,
@@ -8153,7 +9035,7 @@
     {
       "hero": "Giselle",
       "advRecruit": false,
-      "statsRecruit": "3.70%",
+      "statsRecruit": "4.55%",
       "freePick": true,
       "crystal": false,
       "wheel": false,
@@ -8203,7 +9085,7 @@
     {
       "hero": "Apollo",
       "advRecruit": false,
-      "statsRecruit": "3.70%",
+      "statsRecruit": "4.55%",
       "freePick": true,
       "crystal": true,
       "wheel": false,
@@ -8559,6 +9441,808 @@
       "wheel": false,
       "event": true,
       "other": ""
+    },
+    {
+      "hero": "Viola",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": false,
+      "crystal": false,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    }
+  ],
+  "season-12": [
+    {
+      "hero": "Gabriel",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": true,
+      "crystal": true,
+      "wheel": true,
+      "event": true,
+      "other": "Dimension Tunnel"
+    },
+    {
+      "hero": "Arthur",
+      "advRecruit": true,
+      "statsRecruit": "5.26%",
+      "freePick": true,
+      "crystal": true,
+      "wheel": true,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Jennifer",
+      "advRecruit": false,
+      "statsRecruit": "5.26%",
+      "freePick": true,
+      "crystal": true,
+      "wheel": true,
+      "event": true,
+      "other": "Element Lord"
+    },
+    {
+      "hero": "Erika",
+      "advRecruit": true,
+      "statsRecruit": "4.35%",
+      "freePick": true,
+      "crystal": true,
+      "wheel": true,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Allen",
+      "advRecruit": false,
+      "statsRecruit": "4.35%",
+      "freePick": true,
+      "crystal": true,
+      "wheel": true,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Gro",
+      "advRecruit": true,
+      "statsRecruit": "4.35%",
+      "freePick": true,
+      "crystal": true,
+      "wheel": true,
+      "event": true,
+      "other": "Element Lord"
+    },
+    {
+      "hero": "Rosamond",
+      "advRecruit": false,
+      "statsRecruit": "9.09%",
+      "freePick": true,
+      "crystal": true,
+      "wheel": true,
+      "event": true,
+      "other": "Element Lord"
+    },
+    {
+      "hero": "Catherine",
+      "advRecruit": true,
+      "statsRecruit": "9.09%",
+      "freePick": true,
+      "crystal": true,
+      "wheel": true,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Paula",
+      "advRecruit": true,
+      "statsRecruit": "4.48%",
+      "freePick": true,
+      "crystal": true,
+      "wheel": true,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Hadi",
+      "advRecruit": true,
+      "statsRecruit": "4.48%",
+      "freePick": true,
+      "crystal": true,
+      "wheel": true,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Ralph",
+      "advRecruit": false,
+      "statsRecruit": "4.48%",
+      "freePick": true,
+      "crystal": true,
+      "wheel": true,
+      "event": true,
+      "other": "Element Lord"
+    },
+    {
+      "hero": "O'Neil",
+      "advRecruit": false,
+      "statsRecruit": "5.26%",
+      "freePick": true,
+      "crystal": true,
+      "wheel": false,
+      "event": true,
+      "other": "Bounty Hall"
+    },
+    {
+      "hero": "Cosette",
+      "advRecruit": false,
+      "statsRecruit": "4.35%",
+      "freePick": true,
+      "crystal": true,
+      "wheel": false,
+      "event": true,
+      "other": "Bounty Hall"
+    },
+    {
+      "hero": "Dolvar",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": true,
+      "crystal": true,
+      "wheel": false,
+      "event": true,
+      "other": "Bounty Hall"
+    },
+    {
+      "hero": "Paul",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": true,
+      "crystal": true,
+      "wheel": false,
+      "event": true,
+      "other": "Bounty Hall"
+    },
+    {
+      "hero": "Issac",
+      "advRecruit": false,
+      "statsRecruit": "9.09%",
+      "freePick": true,
+      "crystal": true,
+      "wheel": false,
+      "event": true,
+      "other": "Bounty Hall"
+    },
+    {
+      "hero": "Ariza",
+      "advRecruit": false,
+      "statsRecruit": "5.26%",
+      "freePick": true,
+      "crystal": true,
+      "wheel": false,
+      "event": true,
+      "other": "Bounty Hall"
+    },
+    {
+      "hero": "Meniere",
+      "advRecruit": false,
+      "statsRecruit": "9.09%",
+      "freePick": true,
+      "crystal": true,
+      "wheel": false,
+      "event": true,
+      "other": "Bounty Hall"
+    },
+    {
+      "hero": "Gruen",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": true,
+      "crystal": true,
+      "wheel": false,
+      "event": true,
+      "other": "Bounty Hall"
+    },
+    {
+      "hero": "Sahar",
+      "advRecruit": false,
+      "statsRecruit": "5.26%",
+      "freePick": true,
+      "crystal": true,
+      "wheel": false,
+      "event": true,
+      "other": "Bounty Hall"
+    },
+    {
+      "hero": "Rudolph",
+      "advRecruit": false,
+      "statsRecruit": "4.48%",
+      "freePick": false,
+      "crystal": false,
+      "wheel": false,
+      "event": true,
+      "other": "Bounty Hall"
+    },
+    {
+      "hero": "Jessica",
+      "advRecruit": false,
+      "statsRecruit": "4.48%",
+      "freePick": true,
+      "crystal": true,
+      "wheel": false,
+      "event": true,
+      "other": "Bounty Hall"
+    },
+    {
+      "hero": "Wallis",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": true,
+      "crystal": true,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Nicole",
+      "advRecruit": false,
+      "statsRecruit": "4.48%",
+      "freePick": true,
+      "crystal": true,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Pan",
+      "advRecruit": false,
+      "statsRecruit": "5.26%",
+      "freePick": true,
+      "crystal": false,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Claudia",
+      "advRecruit": false,
+      "statsRecruit": "9.09%",
+      "freePick": true,
+      "crystal": true,
+      "wheel": false,
+      "event": false,
+      "other": ""
+    },
+    {
+      "hero": "Kadir",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": true,
+      "crystal": true,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Christie",
+      "advRecruit": false,
+      "statsRecruit": "4.35%",
+      "freePick": true,
+      "crystal": true,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Anko",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": true,
+      "crystal": false,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Vera",
+      "advRecruit": false,
+      "statsRecruit": "4.48%",
+      "freePick": true,
+      "crystal": true,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Richard",
+      "advRecruit": false,
+      "statsRecruit": "5.26%",
+      "freePick": true,
+      "crystal": true,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Penny",
+      "advRecruit": false,
+      "statsRecruit": "4.35%",
+      "freePick": true,
+      "crystal": false,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Torvi",
+      "advRecruit": false,
+      "statsRecruit": "5.26%",
+      "freePick": true,
+      "crystal": true,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Kenshiro",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": true,
+      "crystal": false,
+      "wheel": false,
+      "event": false,
+      "other": ""
+    },
+    {
+      "hero": "Lilani",
+      "advRecruit": false,
+      "statsRecruit": "4.48%",
+      "freePick": true,
+      "crystal": true,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Lomax",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": true,
+      "crystal": true,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Livia",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": true,
+      "crystal": true,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Giselle",
+      "advRecruit": false,
+      "statsRecruit": "4.35%",
+      "freePick": true,
+      "crystal": false,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Pedra",
+      "advRecruit": false,
+      "statsRecruit": "4.48%",
+      "freePick": true,
+      "crystal": true,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Filius",
+      "advRecruit": false,
+      "statsRecruit": "4.48%",
+      "freePick": true,
+      "crystal": true,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Arwin",
+      "advRecruit": false,
+      "statsRecruit": "9.09%",
+      "freePick": true,
+      "crystal": true,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Collin",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": true,
+      "crystal": false,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Apollo",
+      "advRecruit": false,
+      "statsRecruit": "4.35%",
+      "freePick": true,
+      "crystal": true,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Parr",
+      "advRecruit": false,
+      "statsRecruit": "4.48%",
+      "freePick": true,
+      "crystal": true,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Benjamin",
+      "advRecruit": false,
+      "statsRecruit": "9.09%",
+      "freePick": true,
+      "crystal": true,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Dean",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": false,
+      "crystal": false,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Chiyoko",
+      "advRecruit": false,
+      "statsRecruit": "9.09%",
+      "freePick": false,
+      "crystal": false,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Wendy",
+      "advRecruit": false,
+      "statsRecruit": "9.09%",
+      "freePick": false,
+      "crystal": false,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Suad",
+      "advRecruit": false,
+      "statsRecruit": "9.09%",
+      "freePick": false,
+      "crystal": false,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Dain",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": false,
+      "crystal": false,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Maud",
+      "advRecruit": false,
+      "statsRecruit": "4.48%",
+      "freePick": false,
+      "crystal": false,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Nathaniel",
+      "advRecruit": false,
+      "statsRecruit": "4.48%",
+      "freePick": false,
+      "crystal": false,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Sabastian",
+      "advRecruit": false,
+      "statsRecruit": "5.26%",
+      "freePick": false,
+      "crystal": false,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Keith",
+      "advRecruit": false,
+      "statsRecruit": "4.48%",
+      "freePick": false,
+      "crystal": false,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Vanessa",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": false,
+      "crystal": false,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Luvia",
+      "advRecruit": false,
+      "statsRecruit": "9.09%",
+      "freePick": false,
+      "crystal": false,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Fatima",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": false,
+      "crystal": false,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Bella",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": false,
+      "crystal": false,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Brie",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": false,
+      "crystal": false,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Meg",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": false,
+      "crystal": false,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Hana",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": false,
+      "crystal": false,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Montag",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": false,
+      "crystal": false,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Rogers",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": false,
+      "crystal": false,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Simon",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": false,
+      "crystal": false,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Trist",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": false,
+      "crystal": false,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Ptolemy",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": false,
+      "crystal": false,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Ao Deng Ge Ri Le",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": false,
+      "crystal": false,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Rila",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": false,
+      "crystal": false,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Johannes",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": false,
+      "crystal": false,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Lovelace",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": false,
+      "crystal": false,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Trishy",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": false,
+      "crystal": false,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Angelina",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": false,
+      "crystal": false,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Dylan",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": false,
+      "crystal": false,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Sindra",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": false,
+      "crystal": false,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Rebecca",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": false,
+      "crystal": false,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Mycelia",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": false,
+      "crystal": false,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Edmund",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": false,
+      "crystal": false,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Nina",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": false,
+      "crystal": false,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Viola",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": false,
+      "crystal": false,
+      "wheel": false,
+      "event": true,
+      "other": ""
     }
   ],
   "season-31": [
@@ -8574,7 +10258,7 @@
     },
     {
       "hero": "Arthur",
-      "advRecruit": "7.77%",
+      "advRecruit": true,
       "statsRecruit": false,
       "freePick": true,
       "crystal": true,
@@ -8594,7 +10278,7 @@
     },
     {
       "hero": "Erika",
-      "advRecruit": "3.28%",
+      "advRecruit": true,
       "statsRecruit": false,
       "freePick": true,
       "crystal": true,
@@ -8614,7 +10298,7 @@
     },
     {
       "hero": "Gro",
-      "advRecruit": "7.81%",
+      "advRecruit": true,
       "statsRecruit": false,
       "freePick": true,
       "crystal": true,
@@ -8634,7 +10318,7 @@
     },
     {
       "hero": "Catherine",
-      "advRecruit": "7.77%",
+      "advRecruit": true,
       "statsRecruit": false,
       "freePick": true,
       "crystal": true,
@@ -8644,7 +10328,7 @@
     },
     {
       "hero": "Paula",
-      "advRecruit": "3.24%",
+      "advRecruit": true,
       "statsRecruit": false,
       "freePick": true,
       "crystal": true,
@@ -8654,7 +10338,7 @@
     },
     {
       "hero": "Hadi",
-      "advRecruit": "7.77%",
+      "advRecruit": true,
       "statsRecruit": false,
       "freePick": true,
       "crystal": true,
@@ -8704,16 +10388,6 @@
     },
     {
       "hero": "Paul",
-      "advRecruit": false,
-      "statsRecruit": false,
-      "freePick": true,
-      "crystal": true,
-      "wheel": false,
-      "event": true,
-      "other": "Bounty Hall"
-    },
-    {
-      "hero": "Wallis",
       "advRecruit": false,
       "statsRecruit": false,
       "freePick": true,
@@ -8791,6 +10465,16 @@
       "wheel": false,
       "event": true,
       "other": "Bounty Hall"
+    },
+    {
+      "hero": "Wallis",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": true,
+      "crystal": true,
+      "wheel": false,
+      "event": true,
+      "other": ""
     },
     {
       "hero": "Nicole",
@@ -9017,7 +10701,7 @@
       "advRecruit": false,
       "statsRecruit": false,
       "freePick": true,
-      "crystal": false,
+      "crystal": true,
       "wheel": false,
       "event": true,
       "other": ""
@@ -9431,6 +11115,16 @@
       "wheel": false,
       "event": true,
       "other": ""
+    },
+    {
+      "hero": "Viola",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": false,
+      "crystal": false,
+      "wheel": false,
+      "event": true,
+      "other": ""
     }
   ],
   "season-32": [
@@ -9446,7 +11140,7 @@
     },
     {
       "hero": "Arthur",
-      "advRecruit": "7.77%",
+      "advRecruit": true,
       "statsRecruit": "4.35%",
       "freePick": true,
       "crystal": true,
@@ -9466,8 +11160,8 @@
     },
     {
       "hero": "Erika",
-      "advRecruit": "3.28%",
-      "statsRecruit": "3.70%",
+      "advRecruit": true,
+      "statsRecruit": false,
       "freePick": true,
       "crystal": true,
       "wheel": true,
@@ -9477,7 +11171,7 @@
     {
       "hero": "Allen",
       "advRecruit": false,
-      "statsRecruit": "3.70%",
+      "statsRecruit": false,
       "freePick": true,
       "crystal": true,
       "wheel": true,
@@ -9486,8 +11180,8 @@
     },
     {
       "hero": "Gro",
-      "advRecruit": "7.81%",
-      "statsRecruit": "3.70%",
+      "advRecruit": true,
+      "statsRecruit": false,
       "freePick": true,
       "crystal": true,
       "wheel": true,
@@ -9506,7 +11200,7 @@
     },
     {
       "hero": "Catherine",
-      "advRecruit": "7.77%",
+      "advRecruit": true,
       "statsRecruit": "8.33%",
       "freePick": true,
       "crystal": true,
@@ -9516,7 +11210,7 @@
     },
     {
       "hero": "Paula",
-      "advRecruit": "3.24%",
+      "advRecruit": true,
       "statsRecruit": "4.48%",
       "freePick": true,
       "crystal": true,
@@ -9526,7 +11220,7 @@
     },
     {
       "hero": "Hadi",
-      "advRecruit": "7.77%",
+      "advRecruit": true,
       "statsRecruit": "4.48%",
       "freePick": true,
       "crystal": true,
@@ -9557,7 +11251,7 @@
     {
       "hero": "Cosette",
       "advRecruit": false,
-      "statsRecruit": "3.70%",
+      "statsRecruit": false,
       "freePick": true,
       "crystal": true,
       "wheel": false,
@@ -9567,7 +11261,7 @@
     {
       "hero": "Dolvar",
       "advRecruit": false,
-      "statsRecruit": "3.70%",
+      "statsRecruit": false,
       "freePick": true,
       "crystal": true,
       "wheel": false,
@@ -9577,17 +11271,7 @@
     {
       "hero": "Paul",
       "advRecruit": false,
-      "statsRecruit": "3.70%",
-      "freePick": true,
-      "crystal": true,
-      "wheel": false,
-      "event": true,
-      "other": "Bounty Hall"
-    },
-    {
-      "hero": "Wallis",
-      "advRecruit": false,
-      "statsRecruit": "3.70%",
+      "statsRecruit": false,
       "freePick": true,
       "crystal": true,
       "wheel": false,
@@ -9665,6 +11349,16 @@
       "other": "Bounty Hall"
     },
     {
+      "hero": "Wallis",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": true,
+      "crystal": true,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
       "hero": "Nicole",
       "advRecruit": false,
       "statsRecruit": "4.48%",
@@ -9707,7 +11401,7 @@
     {
       "hero": "Christie",
       "advRecruit": false,
-      "statsRecruit": "3.70%",
+      "statsRecruit": false,
       "freePick": true,
       "crystal": true,
       "wheel": false,
@@ -9747,7 +11441,7 @@
     {
       "hero": "Penny",
       "advRecruit": false,
-      "statsRecruit": "3.70%",
+      "statsRecruit": false,
       "freePick": true,
       "crystal": false,
       "wheel": false,
@@ -9767,7 +11461,7 @@
     {
       "hero": "Kenshiro",
       "advRecruit": false,
-      "statsRecruit": "3.70%",
+      "statsRecruit": false,
       "freePick": true,
       "crystal": false,
       "wheel": false,
@@ -9807,7 +11501,7 @@
     {
       "hero": "Giselle",
       "advRecruit": false,
-      "statsRecruit": "3.70%",
+      "statsRecruit": false,
       "freePick": true,
       "crystal": false,
       "wheel": false,
@@ -9857,7 +11551,7 @@
     {
       "hero": "Apollo",
       "advRecruit": false,
-      "statsRecruit": "3.70%",
+      "statsRecruit": false,
       "freePick": true,
       "crystal": true,
       "wheel": false,
@@ -10313,6 +12007,16 @@
       "wheel": false,
       "event": true,
       "other": ""
+    },
+    {
+      "hero": "Viola",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": false,
+      "crystal": false,
+      "wheel": false,
+      "event": true,
+      "other": ""
     }
   ],
   "season-33": [
@@ -10328,7 +12032,7 @@
     },
     {
       "hero": "Arthur",
-      "advRecruit": "7.77%",
+      "advRecruit": true,
       "statsRecruit": "4.35%",
       "freePick": true,
       "crystal": true,
@@ -10348,7 +12052,7 @@
     },
     {
       "hero": "Erika",
-      "advRecruit": "3.28%",
+      "advRecruit": true,
       "statsRecruit": "3.70%",
       "freePick": true,
       "crystal": true,
@@ -10368,7 +12072,7 @@
     },
     {
       "hero": "Gro",
-      "advRecruit": "7.81%",
+      "advRecruit": true,
       "statsRecruit": "3.70%",
       "freePick": true,
       "crystal": true,
@@ -10388,7 +12092,7 @@
     },
     {
       "hero": "Catherine",
-      "advRecruit": "7.77%",
+      "advRecruit": true,
       "statsRecruit": "8.33%",
       "freePick": true,
       "crystal": true,
@@ -10398,7 +12102,7 @@
     },
     {
       "hero": "Paula",
-      "advRecruit": "3.24%",
+      "advRecruit": true,
       "statsRecruit": "4.48%",
       "freePick": true,
       "crystal": true,
@@ -10408,7 +12112,7 @@
     },
     {
       "hero": "Hadi",
-      "advRecruit": "7.77%",
+      "advRecruit": true,
       "statsRecruit": "4.48%",
       "freePick": true,
       "crystal": true,
@@ -10458,16 +12162,6 @@
     },
     {
       "hero": "Paul",
-      "advRecruit": false,
-      "statsRecruit": "3.70%",
-      "freePick": true,
-      "crystal": true,
-      "wheel": false,
-      "event": true,
-      "other": "Bounty Hall"
-    },
-    {
-      "hero": "Wallis",
       "advRecruit": false,
       "statsRecruit": "3.70%",
       "freePick": true,
@@ -10545,6 +12239,16 @@
       "wheel": false,
       "event": true,
       "other": "Bounty Hall"
+    },
+    {
+      "hero": "Wallis",
+      "advRecruit": false,
+      "statsRecruit": "3.70%",
+      "freePick": true,
+      "crystal": true,
+      "wheel": false,
+      "event": true,
+      "other": ""
     },
     {
       "hero": "Nicole",
@@ -11205,6 +12909,16 @@
       "wheel": false,
       "event": true,
       "other": ""
+    },
+    {
+      "hero": "Viola",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": false,
+      "crystal": false,
+      "wheel": false,
+      "event": true,
+      "other": ""
     }
   ],
   "season-34": [
@@ -11220,7 +12934,7 @@
     },
     {
       "hero": "Arthur",
-      "advRecruit": "7.77%",
+      "advRecruit": true,
       "statsRecruit": "4.35%",
       "freePick": true,
       "crystal": true,
@@ -11240,8 +12954,8 @@
     },
     {
       "hero": "Erika",
-      "advRecruit": "3.28%",
-      "statsRecruit": "?",
+      "advRecruit": true,
+      "statsRecruit": "3.70%",
       "freePick": true,
       "crystal": true,
       "wheel": true,
@@ -11251,7 +12965,7 @@
     {
       "hero": "Allen",
       "advRecruit": false,
-      "statsRecruit": "?",
+      "statsRecruit": "3.70%",
       "freePick": true,
       "crystal": true,
       "wheel": true,
@@ -11260,8 +12974,8 @@
     },
     {
       "hero": "Gro",
-      "advRecruit": "7.81%",
-      "statsRecruit": "?",
+      "advRecruit": true,
+      "statsRecruit": "3.70%",
       "freePick": true,
       "crystal": true,
       "wheel": true,
@@ -11280,7 +12994,7 @@
     },
     {
       "hero": "Catherine",
-      "advRecruit": "7.77%",
+      "advRecruit": true,
       "statsRecruit": "8.33%",
       "freePick": true,
       "crystal": true,
@@ -11290,7 +13004,7 @@
     },
     {
       "hero": "Paula",
-      "advRecruit": "3.24%",
+      "advRecruit": true,
       "statsRecruit": "4.48%",
       "freePick": true,
       "crystal": true,
@@ -11300,7 +13014,7 @@
     },
     {
       "hero": "Hadi",
-      "advRecruit": "7.77%",
+      "advRecruit": true,
       "statsRecruit": "4.48%",
       "freePick": true,
       "crystal": true,
@@ -11331,7 +13045,7 @@
     {
       "hero": "Cosette",
       "advRecruit": false,
-      "statsRecruit": "?",
+      "statsRecruit": "3.70%",
       "freePick": true,
       "crystal": true,
       "wheel": false,
@@ -11341,7 +13055,7 @@
     {
       "hero": "Dolvar",
       "advRecruit": false,
-      "statsRecruit": "?",
+      "statsRecruit": "3.70%",
       "freePick": true,
       "crystal": true,
       "wheel": false,
@@ -11351,17 +13065,7 @@
     {
       "hero": "Paul",
       "advRecruit": false,
-      "statsRecruit": "?",
-      "freePick": true,
-      "crystal": true,
-      "wheel": false,
-      "event": true,
-      "other": "Bounty Hall"
-    },
-    {
-      "hero": "Wallis",
-      "advRecruit": false,
-      "statsRecruit": "?",
+      "statsRecruit": "3.70%",
       "freePick": true,
       "crystal": true,
       "wheel": false,
@@ -11439,6 +13143,16 @@
       "other": "Bounty Hall"
     },
     {
+      "hero": "Wallis",
+      "advRecruit": false,
+      "statsRecruit": "3.70%",
+      "freePick": true,
+      "crystal": true,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
       "hero": "Nicole",
       "advRecruit": false,
       "statsRecruit": "4.48%",
@@ -11481,7 +13195,7 @@
     {
       "hero": "Christie",
       "advRecruit": false,
-      "statsRecruit": "?",
+      "statsRecruit": "3.70%",
       "freePick": true,
       "crystal": true,
       "wheel": false,
@@ -11521,7 +13235,7 @@
     {
       "hero": "Penny",
       "advRecruit": false,
-      "statsRecruit": "?",
+      "statsRecruit": "3.70%",
       "freePick": true,
       "crystal": false,
       "wheel": false,
@@ -11541,7 +13255,7 @@
     {
       "hero": "Kenshiro",
       "advRecruit": false,
-      "statsRecruit": "?",
+      "statsRecruit": "3.70%",
       "freePick": true,
       "crystal": false,
       "wheel": false,
@@ -11581,7 +13295,7 @@
     {
       "hero": "Giselle",
       "advRecruit": false,
-      "statsRecruit": "?",
+      "statsRecruit": "3.70%",
       "freePick": true,
       "crystal": false,
       "wheel": false,
@@ -11631,7 +13345,7 @@
     {
       "hero": "Apollo",
       "advRecruit": false,
-      "statsRecruit": "?",
+      "statsRecruit": "3.70%",
       "freePick": true,
       "crystal": true,
       "wheel": false,
@@ -12107,261 +13821,9 @@
       "wheel": false,
       "event": true,
       "other": ""
-    }
-  ],
-  "phase-1": [
-    {
-      "hero": "Gabriel",
-      "advRecruit": false,
-      "statsRecruit": false,
-      "freePick": true,
-      "crystal": true,
-      "wheel": true,
-      "event": true,
-      "other": "Dimension Tunnel"
     },
     {
-      "hero": "Arthur",
-      "advRecruit": "7.47%",
-      "statsRecruit": false,
-      "freePick": true,
-      "crystal": true,
-      "wheel": true,
-      "event": true,
-      "other": ""
-    },
-    {
-      "hero": "Jennifer",
-      "advRecruit": false,
-      "statsRecruit": false,
-      "freePick": true,
-      "crystal": true,
-      "wheel": true,
-      "event": true,
-      "other": "Element Lord"
-    },
-    {
-      "hero": "Erika",
-      "advRecruit": "4.21%",
-      "statsRecruit": false,
-      "freePick": true,
-      "crystal": true,
-      "wheel": true,
-      "event": true,
-      "other": ""
-    },
-    {
-      "hero": "Allen",
-      "advRecruit": false,
-      "statsRecruit": false,
-      "freePick": true,
-      "crystal": true,
-      "wheel": true,
-      "event": true,
-      "other": ""
-    },
-    {
-      "hero": "Gro",
-      "advRecruit": "7.52%",
-      "statsRecruit": false,
-      "freePick": true,
-      "crystal": true,
-      "wheel": true,
-      "event": true,
-      "other": "Element Lord"
-    },
-    {
-      "hero": "Rosamond",
-      "advRecruit": false,
-      "statsRecruit": false,
-      "freePick": false,
-      "crystal": false,
-      "wheel": true,
-      "event": false,
-      "other": "Element Lord"
-    },
-    {
-      "hero": "Catherine",
-      "advRecruit": "7.47%",
-      "statsRecruit": false,
-      "freePick": true,
-      "crystal": true,
-      "wheel": true,
-      "event": true,
-      "other": ""
-    },
-    {
-      "hero": "Paula",
-      "advRecruit": "4.16%",
-      "statsRecruit": false,
-      "freePick": true,
-      "crystal": true,
-      "wheel": true,
-      "event": true,
-      "other": ""
-    },
-    {
-      "hero": "Hadi",
-      "advRecruit": "7.47%",
-      "statsRecruit": false,
-      "freePick": true,
-      "crystal": true,
-      "wheel": true,
-      "event": true,
-      "other": ""
-    },
-    {
-      "hero": "Ralph",
-      "advRecruit": false,
-      "statsRecruit": false,
-      "freePick": true,
-      "crystal": true,
-      "wheel": true,
-      "event": true,
-      "other": "Element Lord"
-    },
-    {
-      "hero": "O'Neil",
-      "advRecruit": false,
-      "statsRecruit": false,
-      "freePick": true,
-      "crystal": true,
-      "wheel": false,
-      "event": true,
-      "other": "Bounty Hall"
-    },
-    {
-      "hero": "Cosette",
-      "advRecruit": false,
-      "statsRecruit": false,
-      "freePick": true,
-      "crystal": true,
-      "wheel": false,
-      "event": false,
-      "other": "Bounty Hall"
-    },
-    {
-      "hero": "Dolvar",
-      "advRecruit": false,
-      "statsRecruit": false,
-      "freePick": true,
-      "crystal": true,
-      "wheel": false,
-      "event": false,
-      "other": "Bounty Hall"
-    },
-    {
-      "hero": "Paul",
-      "advRecruit": false,
-      "statsRecruit": false,
-      "freePick": true,
-      "crystal": true,
-      "wheel": false,
-      "event": false,
-      "other": "Bounty Hall"
-    },
-    {
-      "hero": "Wallis",
-      "advRecruit": false,
-      "statsRecruit": false,
-      "freePick": true,
-      "crystal": true,
-      "wheel": false,
-      "event": false,
-      "other": "Bounty Hall"
-    },
-    {
-      "hero": "Issac",
-      "advRecruit": false,
-      "statsRecruit": false,
-      "freePick": true,
-      "crystal": true,
-      "wheel": false,
-      "event": false,
-      "other": "Bounty Hall"
-    },
-    {
-      "hero": "Ariza",
-      "advRecruit": false,
-      "statsRecruit": false,
-      "freePick": false,
-      "crystal": false,
-      "wheel": false,
-      "event": false,
-      "other": "Bounty Hall"
-    },
-    {
-      "hero": "Meniere",
-      "advRecruit": false,
-      "statsRecruit": false,
-      "freePick": false,
-      "crystal": false,
-      "wheel": false,
-      "event": false,
-      "other": "Bounty Hall"
-    },
-    {
-      "hero": "Gruen",
-      "advRecruit": false,
-      "statsRecruit": false,
-      "freePick": false,
-      "crystal": false,
-      "wheel": false,
-      "event": false,
-      "other": "Bounty Hall"
-    },
-    {
-      "hero": "Sahar",
-      "advRecruit": false,
-      "statsRecruit": false,
-      "freePick": false,
-      "crystal": false,
-      "wheel": false,
-      "event": false,
-      "other": "Bounty Hall"
-    },
-    {
-      "hero": "Rudolph",
-      "advRecruit": false,
-      "statsRecruit": false,
-      "freePick": false,
-      "crystal": false,
-      "wheel": false,
-      "event": false,
-      "other": "Bounty Hall"
-    },
-    {
-      "hero": "Jessica",
-      "advRecruit": false,
-      "statsRecruit": false,
-      "freePick": false,
-      "crystal": false,
-      "wheel": false,
-      "event": false,
-      "other": "Bounty Hall"
-    },
-    {
-      "hero": "Nicole",
-      "advRecruit": false,
-      "statsRecruit": false,
-      "freePick": true,
-      "crystal": true,
-      "wheel": false,
-      "event": false,
-      "other": ""
-    },
-    {
-      "hero": "Fatima",
-      "advRecruit": false,
-      "statsRecruit": false,
-      "freePick": false,
-      "crystal": false,
-      "wheel": false,
-      "event": true,
-      "other": ""
-    },
-    {
-      "hero": "Bella",
+      "hero": "Viola",
       "advRecruit": false,
       "statsRecruit": false,
       "freePick": false,
@@ -12371,11 +13833,11 @@
       "other": ""
     }
   ],
-  "phase-2": [
+  "season-35": [
     {
       "hero": "Gabriel",
       "advRecruit": false,
-      "statsRecruit": false,
+      "statsRecruit": "4.35%",
       "freePick": true,
       "crystal": true,
       "wheel": true,
@@ -12384,8 +13846,8 @@
     },
     {
       "hero": "Arthur",
-      "advRecruit": "7.77%",
-      "statsRecruit": false,
+      "advRecruit": true,
+      "statsRecruit": "4.35%",
       "freePick": true,
       "crystal": true,
       "wheel": true,
@@ -12395,7 +13857,7 @@
     {
       "hero": "Jennifer",
       "advRecruit": false,
-      "statsRecruit": false,
+      "statsRecruit": "4.35%",
       "freePick": true,
       "crystal": true,
       "wheel": true,
@@ -12404,8 +13866,8 @@
     },
     {
       "hero": "Erika",
-      "advRecruit": "3.28%",
-      "statsRecruit": false,
+      "advRecruit": true,
+      "statsRecruit": "3.70%",
       "freePick": true,
       "crystal": true,
       "wheel": true,
@@ -12415,7 +13877,7 @@
     {
       "hero": "Allen",
       "advRecruit": false,
-      "statsRecruit": false,
+      "statsRecruit": "3.70%",
       "freePick": true,
       "crystal": true,
       "wheel": true,
@@ -12424,8 +13886,8 @@
     },
     {
       "hero": "Gro",
-      "advRecruit": "7.81%",
-      "statsRecruit": false,
+      "advRecruit": true,
+      "statsRecruit": "3.70%",
       "freePick": true,
       "crystal": true,
       "wheel": true,
@@ -12435,17 +13897,17 @@
     {
       "hero": "Rosamond",
       "advRecruit": false,
-      "statsRecruit": false,
-      "freePick": false,
-      "crystal": false,
+      "statsRecruit": "8.33%",
+      "freePick": true,
+      "crystal": true,
       "wheel": true,
-      "event": false,
+      "event": true,
       "other": "Element Lord"
     },
     {
       "hero": "Catherine",
-      "advRecruit": "7.77%",
-      "statsRecruit": false,
+      "advRecruit": true,
+      "statsRecruit": "8.33%",
       "freePick": true,
       "crystal": true,
       "wheel": true,
@@ -12454,8 +13916,8 @@
     },
     {
       "hero": "Paula",
-      "advRecruit": "3.24%",
-      "statsRecruit": false,
+      "advRecruit": true,
+      "statsRecruit": "4.48%",
       "freePick": true,
       "crystal": true,
       "wheel": true,
@@ -12464,8 +13926,8 @@
     },
     {
       "hero": "Hadi",
-      "advRecruit": "7.77%",
-      "statsRecruit": false,
+      "advRecruit": true,
+      "statsRecruit": "4.48%",
       "freePick": true,
       "crystal": true,
       "wheel": true,
@@ -12475,7 +13937,7 @@
     {
       "hero": "Ralph",
       "advRecruit": false,
-      "statsRecruit": false,
+      "statsRecruit": "4.48%",
       "freePick": true,
       "crystal": true,
       "wheel": true,
@@ -12485,7 +13947,7 @@
     {
       "hero": "O'Neil",
       "advRecruit": false,
-      "statsRecruit": false,
+      "statsRecruit": "4.35%",
       "freePick": true,
       "crystal": true,
       "wheel": false,
@@ -12495,127 +13957,217 @@
     {
       "hero": "Cosette",
       "advRecruit": false,
-      "statsRecruit": false,
+      "statsRecruit": "3.70%",
       "freePick": true,
       "crystal": true,
       "wheel": false,
-      "event": false,
+      "event": true,
       "other": "Bounty Hall"
     },
     {
       "hero": "Dolvar",
       "advRecruit": false,
-      "statsRecruit": false,
+      "statsRecruit": "3.70%",
       "freePick": true,
       "crystal": true,
       "wheel": false,
-      "event": false,
+      "event": true,
       "other": "Bounty Hall"
     },
     {
       "hero": "Paul",
       "advRecruit": false,
-      "statsRecruit": false,
+      "statsRecruit": "3.70%",
       "freePick": true,
       "crystal": true,
       "wheel": false,
-      "event": false,
-      "other": "Bounty Hall"
-    },
-    {
-      "hero": "Wallis",
-      "advRecruit": false,
-      "statsRecruit": false,
-      "freePick": true,
-      "crystal": true,
-      "wheel": false,
-      "event": false,
+      "event": true,
       "other": "Bounty Hall"
     },
     {
       "hero": "Issac",
       "advRecruit": false,
-      "statsRecruit": false,
+      "statsRecruit": "8.33%",
       "freePick": true,
       "crystal": true,
       "wheel": false,
-      "event": false,
+      "event": true,
       "other": "Bounty Hall"
     },
     {
       "hero": "Ariza",
       "advRecruit": false,
-      "statsRecruit": false,
-      "freePick": false,
-      "crystal": false,
+      "statsRecruit": "4.35%",
+      "freePick": true,
+      "crystal": true,
       "wheel": false,
-      "event": false,
+      "event": true,
       "other": "Bounty Hall"
     },
     {
       "hero": "Meniere",
       "advRecruit": false,
-      "statsRecruit": false,
-      "freePick": false,
-      "crystal": false,
+      "statsRecruit": "8.33%",
+      "freePick": true,
+      "crystal": true,
       "wheel": false,
-      "event": false,
+      "event": true,
       "other": "Bounty Hall"
     },
     {
       "hero": "Gruen",
       "advRecruit": false,
       "statsRecruit": false,
-      "freePick": false,
-      "crystal": false,
+      "freePick": true,
+      "crystal": true,
       "wheel": false,
-      "event": false,
+      "event": true,
       "other": "Bounty Hall"
     },
     {
       "hero": "Sahar",
       "advRecruit": false,
-      "statsRecruit": false,
-      "freePick": false,
-      "crystal": false,
+      "statsRecruit": "4.35%",
+      "freePick": true,
+      "crystal": true,
       "wheel": false,
-      "event": false,
+      "event": true,
       "other": "Bounty Hall"
     },
     {
       "hero": "Rudolph",
       "advRecruit": false,
-      "statsRecruit": false,
-      "freePick": false,
-      "crystal": false,
+      "statsRecruit": "4.48%",
+      "freePick": true,
+      "crystal": true,
       "wheel": false,
-      "event": false,
+      "event": true,
       "other": "Bounty Hall"
     },
     {
       "hero": "Jessica",
       "advRecruit": false,
-      "statsRecruit": false,
-      "freePick": false,
-      "crystal": false,
+      "statsRecruit": "4.48%",
+      "freePick": true,
+      "crystal": true,
       "wheel": false,
-      "event": false,
+      "event": true,
       "other": "Bounty Hall"
+    },
+    {
+      "hero": "Wallis",
+      "advRecruit": false,
+      "statsRecruit": "3.70%",
+      "freePick": true,
+      "crystal": true,
+      "wheel": false,
+      "event": true,
+      "other": ""
     },
     {
       "hero": "Nicole",
       "advRecruit": false,
-      "statsRecruit": false,
+      "statsRecruit": "4.48%",
       "freePick": true,
       "crystal": true,
       "wheel": false,
-      "event": false,
+      "event": true,
       "other": ""
     },
     {
       "hero": "Pan",
       "advRecruit": false,
+      "statsRecruit": "4.35%",
+      "freePick": true,
+      "crystal": false,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Claudia",
+      "advRecruit": false,
+      "statsRecruit": "8.33%",
+      "freePick": true,
+      "crystal": true,
+      "wheel": false,
+      "event": false,
+      "other": ""
+    },
+    {
+      "hero": "Kadir",
+      "advRecruit": false,
+      "statsRecruit": "4.35%",
+      "freePick": true,
+      "crystal": true,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Christie",
+      "advRecruit": false,
+      "statsRecruit": "3.70%",
+      "freePick": true,
+      "crystal": true,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Anko",
+      "advRecruit": false,
       "statsRecruit": false,
+      "freePick": true,
+      "crystal": false,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Vera",
+      "advRecruit": false,
+      "statsRecruit": "4.48%",
+      "freePick": true,
+      "crystal": true,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Richard",
+      "advRecruit": false,
+      "statsRecruit": "4.35%",
+      "freePick": true,
+      "crystal": true,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Penny",
+      "advRecruit": false,
+      "statsRecruit": "3.70%",
+      "freePick": true,
+      "crystal": false,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Torvi",
+      "advRecruit": false,
+      "statsRecruit": "4.35%",
+      "freePick": true,
+      "crystal": true,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Kenshiro",
+      "advRecruit": false,
+      "statsRecruit": "3.70%",
       "freePick": true,
       "crystal": false,
       "wheel": false,
@@ -12623,10 +14175,180 @@
       "other": ""
     },
     {
+      "hero": "Lilani",
+      "advRecruit": false,
+      "statsRecruit": "4.48%",
+      "freePick": true,
+      "crystal": true,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Lomax",
+      "advRecruit": false,
+      "statsRecruit": "8.33%",
+      "freePick": true,
+      "crystal": true,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Livia",
+      "advRecruit": false,
+      "statsRecruit": "4.35%",
+      "freePick": true,
+      "crystal": true,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Giselle",
+      "advRecruit": false,
+      "statsRecruit": "3.70%",
+      "freePick": true,
+      "crystal": false,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Pedra",
+      "advRecruit": false,
+      "statsRecruit": "4.48%",
+      "freePick": true,
+      "crystal": true,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Filius",
+      "advRecruit": false,
+      "statsRecruit": "4.48%",
+      "freePick": true,
+      "crystal": true,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Arwin",
+      "advRecruit": false,
+      "statsRecruit": "8.33%",
+      "freePick": true,
+      "crystal": true,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Collin",
+      "advRecruit": false,
+      "statsRecruit": "4.35%",
+      "freePick": true,
+      "crystal": false,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Apollo",
+      "advRecruit": false,
+      "statsRecruit": "3.70%",
+      "freePick": true,
+      "crystal": true,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Parr",
+      "advRecruit": false,
+      "statsRecruit": "4.48%",
+      "freePick": true,
+      "crystal": true,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Benjamin",
+      "advRecruit": false,
+      "statsRecruit": "8.33%",
+      "freePick": true,
+      "crystal": true,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Sabastian",
+      "advRecruit": false,
+      "statsRecruit": "4.35%",
+      "freePick": true,
+      "crystal": false,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Dain",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": true,
+      "crystal": false,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Wendy",
+      "advRecruit": false,
+      "statsRecruit": "8.33%",
+      "freePick": true,
+      "crystal": true,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
       "hero": "Fatima",
       "advRecruit": false,
       "statsRecruit": false,
-      "freePick": false,
+      "freePick": true,
+      "crystal": false,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Dean",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": true,
+      "crystal": true,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Maud",
+      "advRecruit": false,
+      "statsRecruit": "4.48%",
+      "freePick": true,
+      "crystal": false,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Suad",
+      "advRecruit": false,
+      "statsRecruit": "8.33%",
+      "freePick": true,
       "crystal": false,
       "wheel": false,
       "event": true,
@@ -12636,7 +14358,87 @@
       "hero": "Bella",
       "advRecruit": false,
       "statsRecruit": false,
-      "freePick": false,
+      "freePick": true,
+      "crystal": false,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Brie",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": true,
+      "crystal": false,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Keith",
+      "advRecruit": false,
+      "statsRecruit": "4.48%",
+      "freePick": true,
+      "crystal": false,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Chiyoko",
+      "advRecruit": false,
+      "statsRecruit": "8.33%",
+      "freePick": true,
+      "crystal": false,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Meg",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": true,
+      "crystal": false,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Vanessa",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": true,
+      "crystal": false,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Nathaniel",
+      "advRecruit": false,
+      "statsRecruit": "4.48%",
+      "freePick": true,
+      "crystal": false,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Luvia",
+      "advRecruit": false,
+      "statsRecruit": "8.33%",
+      "freePick": true,
+      "crystal": false,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Hana",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": true,
       "crystal": false,
       "wheel": false,
       "event": true,
@@ -12644,6 +14446,306 @@
     },
     {
       "hero": "Pythia",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": true,
+      "crystal": false,
+      "wheel": false,
+      "event": false,
+      "other": ""
+    },
+    {
+      "hero": "Montag",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": true,
+      "crystal": false,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Rogers",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": true,
+      "crystal": false,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Simon",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": true,
+      "crystal": false,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Trist",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": true,
+      "crystal": false,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Blackwell",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": true,
+      "crystal": false,
+      "wheel": false,
+      "event": false,
+      "other": ""
+    },
+    {
+      "hero": "Ptolemy",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": true,
+      "crystal": false,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Ao Yue",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": true,
+      "crystal": false,
+      "wheel": false,
+      "event": false,
+      "other": ""
+    },
+    {
+      "hero": "Ao Deng Ge Ri Le",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": true,
+      "crystal": false,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Lilith",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": true,
+      "crystal": false,
+      "wheel": false,
+      "event": false,
+      "other": ""
+    },
+    {
+      "hero": "Rila",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": true,
+      "crystal": false,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Maya",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": true,
+      "crystal": false,
+      "wheel": false,
+      "event": false,
+      "other": ""
+    },
+    {
+      "hero": "Johannes",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": true,
+      "crystal": false,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Daria",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": true,
+      "crystal": false,
+      "wheel": false,
+      "event": false,
+      "other": ""
+    },
+    {
+      "hero": "Lovelace",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": true,
+      "crystal": false,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Judy",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": true,
+      "crystal": false,
+      "wheel": false,
+      "event": false,
+      "other": ""
+    },
+    {
+      "hero": "Trishy",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": true,
+      "crystal": false,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Boudica",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": true,
+      "crystal": false,
+      "wheel": false,
+      "event": false,
+      "other": ""
+    },
+    {
+      "hero": "Angelina",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": true,
+      "crystal": false,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Doris",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": true,
+      "crystal": false,
+      "wheel": false,
+      "event": false,
+      "other": ""
+    },
+    {
+      "hero": "Dylan",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": true,
+      "crystal": false,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Ivy",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": true,
+      "crystal": false,
+      "wheel": false,
+      "event": false,
+      "other": ""
+    },
+    {
+      "hero": "Sindra",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": true,
+      "crystal": false,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Enzo",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": true,
+      "crystal": false,
+      "wheel": false,
+      "event": false,
+      "other": ""
+    },
+    {
+      "hero": "Rebecca",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": true,
+      "crystal": false,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Daisy",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": true,
+      "crystal": false,
+      "wheel": false,
+      "event": false,
+      "other": ""
+    },
+    {
+      "hero": "Mycelia",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": true,
+      "crystal": false,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Layla",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": true,
+      "crystal": false,
+      "wheel": false,
+      "event": false,
+      "other": ""
+    },
+    {
+      "hero": "Edmund",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": true,
+      "crystal": false,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Nina",
+      "advRecruit": false,
+      "statsRecruit": false,
+      "freePick": false,
+      "crystal": false,
+      "wheel": false,
+      "event": true,
+      "other": ""
+    },
+    {
+      "hero": "Viola",
       "advRecruit": false,
       "statsRecruit": false,
       "freePick": false,

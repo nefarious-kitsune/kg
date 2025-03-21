@@ -3,9 +3,7 @@ import {dirname, resolve} from 'path';
 import {writeFileSync, readFileSync} from 'fs';
 
 const ModulePath = dirname(fileURLToPath(import.meta.url));
-const ProjectPath = resolve(ModulePath, '../../../');
-
-const srcBasePath = resolve(ProjectPath, './source/heroes/releases/__data/');
+const DataPath = resolve(ModulePath, '../__data/');
 
 /**
  * @typedef {Object} HeroReleaseData - Hero release data
@@ -35,7 +33,8 @@ function loadStatsHeroList() {
     'stats-goblin.tsv',
     'stats-ice.tsv',
   ].forEach((fileName) => {
-    const fPath = resolve(srcBasePath, fileName);
+    const fPath = resolve(DataPath, fileName);
+
     const rows = readFileSync(fPath, {encoding: 'utf8'}).split('\n');
     rows.shift(); // Remove header row
     rows.forEach((row) => {
@@ -75,7 +74,7 @@ function loadStatsHeroList() {
  * Load the list of Event Heroes
  */
 function loadEventHeroList() {
-  const tsvFilePath = resolve(srcBasePath, 'event-heroes.tsv');
+  const tsvFilePath = resolve(DataPath, './event-heroes.tsv');
   eventHeroList = readFileSync(tsvFilePath, {encoding: 'utf8'})
       .split('\n')
       .reverse();
@@ -86,7 +85,7 @@ function loadEventHeroList() {
  * @param {string} seasonId - id of the phase or season
  */
 function buildSeason(seasonId) {
-  const tsvFilePath = resolve(srcBasePath, `${seasonId}.tsv`);
+  const tsvFilePath = resolve(DataPath, `./${seasonId}.tsv`);
   const rows = readFileSync(tsvFilePath, {encoding: 'utf8'}).split('\n');
 
   rows.shift(); // Remove header row
