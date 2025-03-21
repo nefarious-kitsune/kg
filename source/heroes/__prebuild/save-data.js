@@ -12,13 +12,11 @@ const ExportPaths = {
 
 import {HeroBase} from './build-data.js';
 
-/** Save Database into .js and .json files */
+/** Save database into .json files */
 function saveDatabase() {
-  const _json = JSON.stringify(HeroBase, null, '  ') + '\n';
-  const _js = 'const ElementHeroData = ' + _json.replaceAll('"', '\'');
-
-  writeFileSync(ExportPaths['hero-base.json'], _json);
-  writeFileSync(ExportPaths['hero-base.js'], _js);
+  writeFileSync(
+      ExportPaths['hero-base.json'],
+      JSON.stringify(HeroBase, null, '  ') + '\n');
 }
 
 /** Save rating info to .tsv file */
