@@ -20,13 +20,14 @@ import {execSync} from 'child_process';
 import {processHtml} from './__html/process-html.js';
 
 const ModulePath = dirname(fileURLToPath(import.meta.url));
-const ProjectPath = resolve(ModulePath, '../');
+const SourcePath = resolve(ModulePath, '../source/');
+const DocsPath = resolve(ModulePath, '../docs/');
 
 const maxDepth = 6;
 
 /**
  * Write progress to console
- * @param {*} progress 
+ * @param {*} progress
  */
 function updateProgress(progress) {
   process.stdout.clearLine(0);
@@ -39,13 +40,11 @@ function updateProgress(progress) {
  * @param {'build'|'prebuild'} build - name of build command
  */
 function prebuild(build) {
-  const srcBasePath = resolve(ProjectPath, './source/');
-
   const traverse = (parentPath, currentDepth) => {
     readdirSync(parentPath).forEach((file) => {
       if (file === `__${build}`) {
         const builderCwd = join(parentPath, file);
-        const builderCmd = join(builderCwd, 'build.js');
+        const builderCmd = join(builderCwd, `${build}.js`);
         if (existsSync(builderCmd)) {
           updateProgress(`Executing ${builderCmd}`);
           execSync(`node ${build}`, {cwd: builderCwd});
@@ -64,20 +63,13 @@ function prebuild(build) {
       }
     });
   };
-
-  process.stdout.write('Pre-building...\n');
-  traverse(srcBasePath, 0);
-
-  updateProgress('Pre-building completed');
-  process.stdout.write('\n');
+  traverse(SourcePath, 0);
 }
 
 /**
  * Process source files and copy to destination
  */
 function copyFiles() {
-  const srcBasePath = resolve(ProjectPath, './source/');
-  const destBasePath = resolve(ProjectPath, './docs/');
   const srcFilePaths = [];
   const fileTypes = [
     '.css',
@@ -109,30 +101,37 @@ function copyFiles() {
     });
   };
 
-  process.stdout.write('Copying files...\n');
-  traverse(srcBasePath, 0);
+  traverse(SourcePath, 0);
 
   srcFilePaths.forEach((filePath) => {
     const srcPath = filePath;
-    const destPath = join(destBasePath, filePath.slice(srcBasePath.length));
+    const destPath = join(DocsPath, filePath.slice(SourcePath.length));
     const destDir = dirname(destPath);
 
-    updateProgress(`Copying '${srcPath}'`);
+    updateProgress(`Processing '${srcPath}'`);
 
     if (!existsSync(destDir)) mkdirSync(destDir, {recursive: true});
     if (extname(srcPath) === '.html') {
       const fileContent = readFileSync(srcPath, 'utf-8');
-      const processed = processHtml(fileContent, srcPath, srcBasePath);
+      const processed = processHtml(fileContent, srcPath, SourcePath);
       writeFileSync(destPath, processed.source);
     } else {
       copyFileSync(srcPath, destPath, fsConstants.COPYFILE_FICLONE);
     }
   });
-
-  updateProgress('Copying completed');
-  process.stdout.write('\n');
 }
 
+process.stdout.write('Starting pre-building process...\n');
 prebuild('prebuild');
+updateProgress('Completed\n\n');
+// process.stdout.write('\n');
+
+process.stdout.write('Generating intermediate content...\n');
 prebuild('build');
+updateProgress('Completed\n\n');
+// process.stdout.write('\n');
+
+process.stdout.write('Generating final content...\n');
 copyFiles();
+updateProgress('Completed\n\n');
+// process.stdout.write('\n');
