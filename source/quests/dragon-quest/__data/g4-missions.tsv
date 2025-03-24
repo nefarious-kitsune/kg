@@ -23,10 +23,10 @@ Complete {{num}} Station quest(s) in total	2
 Upgrade any 1 Hero(es) to Lv. {{num}}	7
 Reach Stage {{num}}	140
 Castle reaches Lv. {{num}}	16
-Complete {{num}} Station quest(s) in total	5
 Upgrade any 2 Hero(es) to Lv. {{num}}	10
-Make {{num}} purchase(s) in Alliance Store in total	1
 Merge unit {{num}} time(s)	25
+Make {{num}} purchase(s) in Alliance Store in total	1
+Complete {{num}} Station quest(s) in total	5
 Castle reaches Lv. {{num}}	19
 Perform Hero Recruitment {{num}} time(s)	5
 Train {{num}} unit(s)	50
@@ -98,23 +98,23 @@ Challenge any level of monsters {{num}} time(s)	5
 Upgrade 1 Dragon Emblem(s) to Lv. {{num}}	20
 Power reaches {{num}}	12,000,000
 Castle reaches Lv. {{num}}	115
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 Upgrade Any Unit {{num}} time(s)	20
+Upgrade any 2 Hero(es) to Lv. {{num}}	40
+Upgrade 1 Dragon Emblem(s) to Lv. {{num}}	25
+Earn {{num}} daily quest point(s)	100
+Castle reaches Lv. {{num}}	125
+Challenge any level of monsters {{num}} time(s)	5
+Upgrade 1 Dragon Emblem(s) to Lv. {{num}}	30
 Earn {{num}} daily quest point(s)	60
+Power reaches {{num}}	15,000,000
+Castle reaches Lv. {{num}}	135
+Earn {{num}} daily quest point(s)	100
+Perform Hero Recruitment {{num}} time(s)	10
+Challenge any level of monsters {{num}} time(s)	5
+Power reaches {{num}}	18,000,000
+Castle reaches Lv. {{num}}	145
+Earn {{num}} daily quest point(s)	60
+Upgrade Any Unit {{num}} time(s)	20
 Challenge any level of monsters {{num}} time(s)	5
 Power reaches {{num}}	20,000,000
 Castle reaches Lv. {{num}}	150
@@ -158,11 +158,11 @@ Challenge any level of monsters {{num}} time(s)	5
 Make {{num}} purchase(s) in Alliance Store in total	10
 Upgrade 1 Dragon Emblem(s) to Lv. {{num}}	100
 Castle reaches Lv. {{num}}	190
-	
-	
-	
-	
-	
+Earn {{num}} daily quest point(s)	100
+Perform Hero Recruitment {{num}} time(s)	10
+Upgrade any 1 Hero(es) to Lv. {{num}}	60
+Power reaches {{num}}	45,000,000
+Castle reaches Lv. {{num}}	195
 	
 	
 	
@@ -194,7 +194,7 @@ Upgrade 1 Dragon Emblem(s) to Lv. {{num}}	160
 Power reaches {{num}}	70,000,000
 Castle reaches Lv. {{num}}	230
 Challenge any level of monsters {{num}} time(s)	10
-Upgrade 1 Dragon Emblem(s) to Lv. {{num}}	200
 Upgrade any 1 Hero(es) to Lv. {{num}}	80
+Upgrade 1 Dragon Emblem(s) to Lv. {{num}}	200
 Power reaches {{num}}	80,000,000
 Castle reaches Lv. {{num}}	240
