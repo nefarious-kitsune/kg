@@ -1,13 +1,13 @@
-.g-q-missions {
+.quest-missions {
   width: 22rem;
 }
-.g-q-rewards {
+.quest-rewards {
   min-width: 10rem;
 }
 
 
-.g-q-missions h4,
-.g-q-rewards h4 {
+.quest-missions h4,
+.quest-rewards h4 {
   margin-block-start: 0;
   margin-block-end: 0.8rem;
 }

@@ -46,7 +46,7 @@ function buildQuestData(group) {
   const titleRows =
     readFileSync(`${DataPath}/${group}-titles.tsv`, 'utf8').split('\n');
 
-  for (let chapterNbr = 1; chapterNbr < 40; chapterNbr++) {
+  for (let chapterNbr = 1; chapterNbr <= 40; chapterNbr++) {
     /** @type {ChapterData} */
     const chapterData = {
       number: chapterNbr,
@@ -98,7 +98,7 @@ function saveQuestData(database, group) {
 }
 
 const DragonQuestDatabaseG4 = buildQuestData('g4');
-saveQuestData('g4', DragonQuestDatabaseG4);
+saveQuestData(DragonQuestDatabaseG4, 'g4');
 
 export {
   DragonQuestDatabaseG4,
