@@ -29,6 +29,7 @@ const ModulePath = dirname(fileURLToPath(import.meta.url));
 /**
  * Build quest data
  * @param {string} group - Server Group
+ * @return {DragonQuestDatabase}
  */
 function buildQuestData(group) {
   /** @type {DragonQuestDatabase} */
@@ -81,11 +82,24 @@ function buildQuestData(group) {
     database.chapters.push(chapterData);
   }
 
+  return database;
+}
+
+/**
+ * Build quest data
+ * @param {DragonQuestDatabase} database - Dragon Quest database
+ * @param {string} group - Server Group
+ */
+function saveQuestData(database, group) {
   writeFileSync(
       resolve(ModulePath, `../--dragon-quest-${group}.json`),
       JSON.stringify(database, null, '  ') + '\n',
   );
 }
 
+const DragonQuestDatabaseG4 = buildQuestData('g4');
+saveQuestData('g4', DragonQuestDatabaseG4);
 
-buildQuestData('g4');
+export {
+  DragonQuestDatabaseG4,
+};
