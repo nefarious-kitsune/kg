@@ -1,0 +1,102 @@
+#section-a .content-wrap,
+#section-f .content-wrap {
+  padding: 0 1.5em;
+}
+
+/**
+ * Staggered Sections
+ */
+
+/* Section A & F */
+
+#section-a {
+  background: #eaeaea;
+  color: #333;
+  padding-bottom: 2em;
+}
+
+.card-content {
+  padding: 1.5em;
+}
+
+/* Section C */
+
+#section-c {
+  background: #fff;
+  color: #333;
+  padding: 2em;
+}
+
+/* Section D & G / Boxes */
+
+#section-d .box {
+  padding: 2em;
+  color: #fff;
+}
+
+/* Section E & H / Boxes */
+
+#section-e .box {
+  padding: 2em;
+  color: #fff;
+}
+
+/**
+ * Note that we are using CSS Grid here.
+ */
+
+/* Media Queries */
+
+@media (min-width: 700px) {
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr;
+  }
+
+  #section-a .content-text,
+  #section-f .content-text {
+    columns: 2;
+    column-gap: 2em;
+  }
+
+  #section-a .content-text p,
+  #section-f .content-text p {
+    padding-top: 0;
+  }
+
+  .content-wrap,
+  #section-b ul {
+    grid-column: 2/4;
+  }
+
+  .box,
+  #main-footer div {
+    grid-column: span 2;
+  }
+
+  #section-b ul {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  #section-b li {
+    width: 31%;
+  }
+
+  /** 
+   * Mobile First - The images are placed above the text by
+   * default.
+   * 
+   * Only Re-order Columns for Larger Displays 
+   *
+   * These two lines of code is where the rubber meets the road.
+   * This only affects the second row where we will put the text
+   * on the left and the image on the right.
+   */
+  #section-h.grid div:nth-of-type(1) {
+    order: 2; /* This is the image. Make it go to the right. */
+  }
+  #section-h.grid div:nth-of-type(2) {
+    order: 1; /* This is the text. Make it go to the left. */
+  }
+}
