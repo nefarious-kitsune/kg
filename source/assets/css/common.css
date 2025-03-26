@@ -1635,71 +1635,61 @@ dl.two-column {
   dd { grid-column-start: 2; }
 }
 
-.tech-upgrade-table {
+.upgrade-grid {
   display: grid;
   column-gap: 0.6rem;
   row-gap: 0.4rem;
   grid-template-columns: repeat(6, max-content);
 
-  div { padding: 0.2rem; }
-
-  .heading-level, .heading-cost {
+  .header {
     text-align: center;
-    background: light-dark(var(--gray-100), var(--red-700));
-    color: light-dark(var(--gray-900), var(--gray-100));
+    color: var(--gray-300);
   }
 
-  .heading-level { grid-column-start: 1; }
+  .header,
+  .label,
+  .data { padding: 0.2rem; }
 
-  .from-level,
-  .to-level { text-align: right; }
-  .cost { text-align: right; }
-  .to-level + .cost { margin-left: 0.6rem; }
-  .cost + .cost { margin-left: 0.4rem; }
+  .header.level  {
+    grid-column-start: 1;
+  }
+
+  .label.level   {
+    grid-column-start: 1;
+    color: var(--gray-300);
+  }
+
+  .data.prev-level, /* previous level */
+  .data.level,      /* current level  */
+  .data.cost {      /* resource cost  */
+    text-align: right;
+  }
+  .data.level + .cost { margin-left: 0.6rem; }
+  .data.cost + .cost { margin-left: 0.4rem; }
 }
 
 @media screen and (width < 680px) {
-  .tech-upgrade-table {
-    /* grid-template-columns:
-      1.4rem [chevron]
-      max-content [to-level]
-      repeat(4, max-content); */
-
-    .from-level { display: none; }
-    .heading-level { grid-column: span 2; }
-    .chevron { grid-column-start: 1; }
+  .upgrade-grid {
+    .label.level:before { content: "Lv."; }
+    .header.level { grid-column: span 2; }
+    .prev-level { display: none; }
   }
 }
 
 @media screen and ( width >= 680px) {
-  .tech-upgrade-table {
-    /* grid-template-columns:
-      max-content [from-level]
-      1.4rem [chevron]
-      max-content [to-level]
-      repeat(4, max-content); */
-
-    .heading-level { grid-column: span 3; }
-    .from-level { grid-column-start: 1; }
-  }
-}
-
-@media screen and ( width >= 900px) {
-  .tech-upgrade-table {
-    /* grid-template-columns:
-      max-content [from-level]
-      max-content [chevron]
-      max-content [to-level]
-      repeat(4, max-content); */
-
-    .from-level:before,
-    .to-level:before {
-      content: "Lv. ";
+  .upgrade-grid {
+    .label.level:before { content: "Level"; }
+    .header.level { grid-column: span 3; }
+    .data.prev-level:after {
+      display: inline-block;
+      content: "\00BB";
+      /* text-align: center; */
       color: var(--gray-300);
-    }
+      /* width: 1.4rem; */
+      padding-left: 0.8rem;
+    }  
   }
 }
-
 
 /* --------------------- Tables --------------------- */
 

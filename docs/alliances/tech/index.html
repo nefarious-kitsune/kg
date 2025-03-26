@@ -12,7 +12,6 @@
   content="Information on Alliance Tech">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <link href="../../assets/css/common.css" rel="stylesheet">
-<link href="./tech.css" rel="stylesheet">
 </head>
 <body>
 <header><nav><ul class="breadcrumb">
@@ -28,52 +27,318 @@
 <section>
 </section>
 
-<section>
-<div class="col-flex">
+<template --hint-id="alliance-tech-population-1"><div class="hint">
+<h2>Population Boom I</h2>
+<dl class="two-column">
+<dt>Effect:</dt>   <dd>Alliance Members +2</dd>
+<dt>Research:</dt> <dd>2 hr</dd>
+</dl>
+<div class="upgrade-grid">
+<div class="header level"><!-- Level --></div>
+<div class="header cost">Contrib. Points</div>
+<div class="label level"></div>
+<div class="data prev-level">0</div>
+<div class="data level">1</div>
+<div class="data cost number">100,000</div>
 
-<details>
-<summary>Alliance Tech</summary>
-<div>
-  <ul class="min-list">
-    <li class="effect">{{EFFECT}}</li>
-    <li class="time">{{TIME}}</li>
-  </ul>
-  <div class="tech-upgrade-table">
-    <div class="from-level">0</div>
-    <div class="chevron">»</div>
-    <div class="to-level">1</div>
-    <div class="cost-1">100,000</div>
-  
-    <div class="from-level">1</div>
-    <div class="chevron">»</div>
-    <div class="to-level">2</div>
-    <div class="cost-1">150,000</div>
-  </div>  
+<div class="label level"></div>
+<div class="data prev-level">1</div>
+<div class="data level">2</div>
+<div class="data cost number">150,000</div>
+
+<div class="label level"></div>
+<div class="data prev-level">2</div>
+<div class="data level">3</div>
+<div class="data cost number">200,000</div>
+
+<div class="label level"></div>
+<div class="data prev-level">3</div>
+<div class="data level">4</div>
+<div class="data cost number">250,000</div>
+
+<div class="label level"></div>
+<div class="data prev-level">4</div>
+<div class="data level">5</div>
+<div class="data cost number">300,000</div>
+
 </div>
-</details>
-<details>
-<summary>Alliance Tech</summary>
-<div>
-  <ul class="min-list">
-    <li class="effect">{{EFFECT}}</li>
-    <li class="time">{{TIME}}</li>
-  </ul>
-  <div class="tech-upgrade-table">
-    <div class="from-level">0</div>
-    <div class="chevron">»</div>
-    <div class="to-level">1</div>
-    <div class="cost-1">100,000</div>
-  
-    <div class="from-level">1</div>
-    <div class="chevron">»</div>
-    <div class="to-level">2</div>
-    <div class="cost-1">150,000</div>
-  </div>  
+</div></template>
+
+<template --hint-id="alliance-tech-gathering-1"><div class="hint">
+<h2>Fast Gathering I</h2>
+<dl class="two-column">
+<dt>Effect:</dt>   <dd>Gathering Speed +2%</dd>
+<dt>Research:</dt> <dd>2 hr</dd>
+</dl>
+<div class="upgrade-grid">
+<div class="header level"><!-- Level --></div>
+<div class="header cost">Contrib. Points</div>
+<div class="label level"></div>
+<div class="data prev-level">0</div>
+<div class="data level">1</div>
+<div class="data cost number">150,000</div>
+
+<div class="label level"></div>
+<div class="data prev-level">1</div>
+<div class="data level">2</div>
+<div class="data cost number">200,000</div>
+
+<div class="label level"></div>
+<div class="data prev-level">2</div>
+<div class="data level">3</div>
+<div class="data cost number">250,000</div>
+
+<div class="label level"></div>
+<div class="data prev-level">3</div>
+<div class="data level">4</div>
+<div class="data cost number">300,000</div>
+
+<div class="label level"></div>
+<div class="data prev-level">4</div>
+<div class="data level">5</div>
+<div class="data cost number">250,000</div>
+
 </div>
-</details>
-    
+</div></template>
+
+<template --hint-id="alliance-tech-gold-1"><div class="hint">
+<h2>Rain of Gold I</h2>
+<dl class="two-column">
+<dt>Effect:</dt>   <dd>Offline Gold Output Speed +1%</dd>
+<dt>Research:</dt> <dd>2 hr</dd>
+</dl>
+<div class="upgrade-grid">
+<div class="header level"><!-- Level --></div>
+<div class="header cost">Contrib. Points</div>
+<div class="label level"></div>
+<div class="data prev-level">0</div>
+<div class="data level">1</div>
+<div class="data cost number">300,000</div>
+
+<div class="label level"></div>
+<div class="data prev-level">1</div>
+<div class="data level">2</div>
+<div class="data cost number">350,000</div>
+
+<div class="label level"></div>
+<div class="data prev-level">2</div>
+<div class="data level">3</div>
+<div class="data cost number">400,000</div>
+
+<div class="label level"></div>
+<div class="data prev-level">3</div>
+<div class="data level">4</div>
+<div class="data cost number">450,000</div>
+
+<div class="label level"></div>
+<div class="data prev-level">4</div>
+<div class="data level">5</div>
+<div class="data cost number">500,000</div>
+
 </div>
-</section>
+</div></template>
+
+<template --hint-id="alliance-tech-territory-1"><div class="hint">
+<h2>Territory Expansion I</h2>
+<dl class="two-column">
+<dt>Effect:</dt>   <dd>Alliance Obelisk Quantity +5</dd>
+<dt>Research:</dt> <dd>24 hr</dd>
+</dl>
+<div class="upgrade-grid">
+<div class="header level"><!-- Level --></div>
+<div class="header cost">Contrib. Points</div>
+<div class="label level"></div>
+<div class="data prev-level">0</div>
+<div class="data level">1</div>
+<div class="data cost number">200,000</div>
+
+<div class="label level"></div>
+<div class="data prev-level">1</div>
+<div class="data level">2</div>
+<div class="data cost number">200,000</div>
+
+<div class="label level"></div>
+<div class="data prev-level">2</div>
+<div class="data level">3</div>
+<div class="data cost number">200,000</div>
+
+<div class="label level"></div>
+<div class="data prev-level">3</div>
+<div class="data level">4</div>
+<div class="data cost number">200,000</div>
+
+<div class="label level"></div>
+<div class="data prev-level">4</div>
+<div class="data level">5</div>
+<div class="data cost number">200,000</div>
+
+</div>
+</div></template>
+
+<template --hint-id="alliance-tech-protection"><div class="hint">
+<h2></h2>
+<dl class="two-column">
+<dt>Effect:</dt>   <dd></dd>
+<dt>Research:</dt> <dd></dd>
+</dl>
+<div class="upgrade-grid">
+<div class="header level"><!-- Level --></div>
+<div class="header cost">Contrib. Points</div>
+<div class="label level"></div>
+<div class="data prev-level">0</div>
+<div class="data level">1</div>
+<div class="data cost number"></div>
+
+</div>
+</div></template>
+
+<template --hint-id="alliance-tech-gift-1"><div class="hint">
+<h2>Gift Galore I</h2>
+<dl class="two-column">
+<dt>Effect:</dt>   <dd>Daily Gift Limit +10</dd>
+<dt>Research:</dt> <dd>2 hr</dd>
+</dl>
+<div class="upgrade-grid">
+<div class="header level"><!-- Level --></div>
+<div class="header cost">Contrib. Points</div>
+<div class="label level"></div>
+<div class="data prev-level">0</div>
+<div class="data level">1</div>
+<div class="data cost number">250,000</div>
+
+<div class="label level"></div>
+<div class="data prev-level">1</div>
+<div class="data level">2</div>
+<div class="data cost number">300,000</div>
+
+<div class="label level"></div>
+<div class="data prev-level">2</div>
+<div class="data level">3</div>
+<div class="data cost number">350,000</div>
+
+<div class="label level"></div>
+<div class="data prev-level">3</div>
+<div class="data level">4</div>
+<div class="data cost number">400,000</div>
+
+<div class="label level"></div>
+<div class="data prev-level">4</div>
+<div class="data level">5</div>
+<div class="data cost number">450,000</div>
+
+</div>
+</div></template>
+
+<template --hint-id="alliance-tech-capacity-1"><div class="hint">
+<h2>High Capacity I</h2>
+<dl class="two-column">
+<dt>Effect:</dt>   <dd>Troop Load +1%</dd>
+<dt>Research:</dt> <dd>2 hr</dd>
+</dl>
+<div class="upgrade-grid">
+<div class="header level"><!-- Level --></div>
+<div class="header cost">Contrib. Points</div>
+<div class="label level"></div>
+<div class="data prev-level">0</div>
+<div class="data level">1</div>
+<div class="data cost number">200,000</div>
+
+<div class="label level"></div>
+<div class="data prev-level">1</div>
+<div class="data level">2</div>
+<div class="data cost number">250,000</div>
+
+<div class="label level"></div>
+<div class="data prev-level">2</div>
+<div class="data level">3</div>
+<div class="data cost number">300,000</div>
+
+<div class="label level"></div>
+<div class="data prev-level">3</div>
+<div class="data level">4</div>
+<div class="data cost number">350,000</div>
+
+<div class="label level"></div>
+<div class="data prev-level">4</div>
+<div class="data level">5</div>
+<div class="data cost number">400,000</div>
+
+</div>
+</div></template>
+
+<template --hint-id="alliance-tech-recovery-1"><div class="hint">
+<h2>Rapid Recovery I</h2>
+<dl class="two-column">
+<dt>Effect:</dt>   <dd>Power Recovery Speed +1%</dd>
+<dt>Research:</dt> <dd>2 hr</dd>
+</dl>
+<div class="upgrade-grid">
+<div class="header level"><!-- Level --></div>
+<div class="header cost">Contrib. Points</div>
+<div class="label level"></div>
+<div class="data prev-level">0</div>
+<div class="data level">1</div>
+<div class="data cost number">350,000</div>
+
+<div class="label level"></div>
+<div class="data prev-level">1</div>
+<div class="data level">2</div>
+<div class="data cost number">400,000</div>
+
+<div class="label level"></div>
+<div class="data prev-level">2</div>
+<div class="data level">3</div>
+<div class="data cost number">450,000</div>
+
+<div class="label level"></div>
+<div class="data prev-level">3</div>
+<div class="data level">4</div>
+<div class="data cost number">500,000</div>
+
+<div class="label level"></div>
+<div class="data prev-level">4</div>
+<div class="data level">5</div>
+<div class="data cost number">550,000</div>
+
+</div>
+</div></template>
+
+<template --hint-id="alliance-tech-territory-2"><div class="hint">
+<h2>Territory Expansion II</h2>
+<dl class="two-column">
+<dt>Effect:</dt>   <dd>Alliance Obelisk Quantity +5</dd>
+<dt>Research:</dt> <dd>24 hr</dd>
+</dl>
+<div class="upgrade-grid">
+<div class="header level"><!-- Level --></div>
+<div class="header cost">Contrib. Points</div>
+<div class="label level"></div>
+<div class="data prev-level">0</div>
+<div class="data level">1</div>
+<div class="data cost number">400,000</div>
+
+<div class="label level"></div>
+<div class="data prev-level">1</div>
+<div class="data level">2</div>
+<div class="data cost number">400,000</div>
+
+<div class="label level"></div>
+<div class="data prev-level">2</div>
+<div class="data level">3</div>
+<div class="data cost number">400,000</div>
+
+<div class="label level"></div>
+<div class="data prev-level">3</div>
+<div class="data level">4</div>
+<div class="data cost number">400,000</div>
+
+<div class="label level"></div>
+<div class="data prev-level">4</div>
+<div class="data level">5</div>
+<div class="data cost number">400,000</div>
+
+</div>
+</div></template>
 
 </main>
 </body>
