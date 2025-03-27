@@ -1,9 +1,8 @@
-<template --hint-id="alliance-tech-{{ID}}"><div class="hint">
-<h2>{{TITLE}}</h2>
-<dl class="two-column">
-<dt>Effect:</dt>   <dd>{{EFFECT}}</dd>
-<dt>Research:</dt> <dd>{{RESEARCH TIME}}</dd>
-</dl>
+<template --hint-id="{{ID}}"><div class="hint">
+<ul class="min-list">
+  <li>{{EFFECT}}</li>
+  <li>Research: {{RESEARCH TIME}}</li>
+</ul>
 <div class="upgrade-grid">
 <div class="header level"><!-- Level --></div>
 <div class="header cost">Contrib. Points</div>
