@@ -9,17 +9,18 @@ const OutputPath = resolve(ModulePath, '../__generated/');
 
 const rawData = readFileSync(resolve(DataPath, './data.tsv'), 'utf8');
 
-const snippetTemplate = readFileSync(
-    resolve(TemplatePath, './tech-snippet.html'), 'utf8');
+const snippetTemplate =
+  readFileSync(resolve(TemplatePath, './tech-snippet.html'), 'utf8');
 
-const upgradeRowTemplate = readFileSync(
-    resolve(TemplatePath, './tech-upgrade-line.html'), 'utf8');
+const upgradeRowTemplate =
+  readFileSync(resolve(TemplatePath, './tech-upgrade-line.html'), 'utf8');
 
-const labelTemplate = readFileSync(
-    resolve(TemplatePath, './tech-label.html'), 'utf8');
+const indexItemTemplate =
+  readFileSync(resolve(TemplatePath, './tech-label.html'), 'utf8');
 
 const hints = [];
-const labels = [];
+
+const index = [];
 
 const classes = [
   'population',
@@ -33,6 +34,19 @@ const classes = [
   'march',
   'power',
 ];
+
+const upgrades = {
+  population: [],
+  gathering: [],
+  gold: [],
+  expansion: [],
+  protection: [],
+  gift: [],
+  capacity: [],
+  recovery: [],
+  march: [],
+  power: [],
+};
 
 /**
  * Build tiered Hero Gear content
@@ -61,7 +75,7 @@ function buildTechContent(data) {
       ,
   );
 
-  labels.push(labelTemplate
+  index.push(indexItemTemplate
       .replace('{{ID}}', id)
       .replace('{{TITLE}}', title)
       .replace('{{CLASS}}', techClass?`${techClass}-tech`:'')
@@ -84,34 +98,30 @@ function extract(rowIdx, colIdx, levels) {
       .map((row) => row[colIdx]);
 }
 
+// Tier 1 Tech
 let rowStart = 0;
-
-let levels = 5;
+let levels = 5; // 5 Tech levels
 buildTechContent(extract(rowStart, 0, levels));
 buildTechContent(extract(rowStart, 1, levels));
 buildTechContent(extract(rowStart, 2, levels));
 buildTechContent(extract(rowStart, 3, levels));
-writeFileSync(resolve(OutputPath, `./labels-1.html`), labels.join('\n'));
-labels.length = 0;
-
 rowStart += (levels + 3);
 
+levels = 1; // 1 Tech levels
+buildTechContent(extract(rowStart, 0, levels));
 
-levels = 1;
-buildTechContent(extract(8, 3, 1));
-writeFileSync(resolve(OutputPath, `./labels-p.html`), hints.join('\n'));
-labels.length = 0;
-
-rowStart += (levels + 3);
+writeFileSync(resolve(OutputPath, `./tech-index-1.html`), index.join('\n'));
+index.length = 0; // Reset index
 
 // Tier 2 Tech
-levels = 5;
+rowStart += (levels + 3);
+levels = 5; // 5 Tech levels
 buildTechContent(extract(rowStart, 0, levels));
 buildTechContent(extract(rowStart, 1, levels));
 buildTechContent(extract(rowStart, 2, levels));
 buildTechContent(extract(rowStart, 3, levels));
-writeFileSync(resolve(OutputPath, `./labels-2.html`), labels.join('\n'));
-labels.length = 0;
+writeFileSync(resolve(OutputPath, `./tech-index-2.html`), index.join('\n'));
+index.length = 0; // reset index
 
 rowStart += (levels + 3);
 
@@ -121,12 +131,11 @@ for (let techTier = 3; techTier <= 10; techTier++) {
   buildTechContent(extract(rowStart, 1, levels));
   buildTechContent(extract(rowStart, 2, levels));
   buildTechContent(extract(rowStart, 3, levels));
-
   writeFileSync(
-      resolve(OutputPath, `./labels-${techTier}.html`),
-      labels.join('\n'),
+      resolve(OutputPath, `./tech-index-${techTier}.html`),
+      index.join('\n'),
   );
-  labels.length = 0;
+  index.length = 0; // reset index
 
   rowStart += (levels + 3);
 }

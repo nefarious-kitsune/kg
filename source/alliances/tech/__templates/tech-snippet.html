@@ -1,11 +1,13 @@
-<template --hint-id="{{ID}}"><div class="hint">
-<ul class="min-list">
-  <li>{{EFFECT}}</li>
-  <li>Research: {{RESEARCH TIME}}</li>
-</ul>
+<div>
+<h4>{{TITLE}}</h4>
+<dl class="two-column">
+<dt>Research</dt>
+<dd>{{RESEARCH TIME}}</dd>
+</dl>
 <div class="upgrade-grid">
 <div class="header level"><!-- Level --></div>
-<div class="header cost">Contrib. Points</div>
+<div class="header cost">EXP Points</div>
 {{UPGRADE DATA}}
 </div>
-</div></template>
+ 
+</div>
