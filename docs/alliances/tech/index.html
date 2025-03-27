@@ -14,36 +14,7 @@
 <link href="/assets/css/common.css" rel="stylesheet">
 <link href="/assets/hint/hint.css" rel="stylesheet">
 <script src="/assets/hint/hint.js"></script>
-<style>
-  .tech-labels {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 1rem;
-    row-gap: 1rem;
-  }
-  .tech-labels > div {
-    padding: 0.8rem;
-  }
-  @media screen and (width < 680px) {}
-  @media screen and ( width >= 680px) {
-    .tech-labels {
-      grid-template-columns: repeat(4, 1fr);
-      column-gap: 2rem;
-      row-gap: 2rem;
-    }
-  }
-
-  .population-tech { border: 0.1rem solid #3396AA; }
-  .gathering-tech { border: 0.1rem solid #405A1A; }
-  .gold-tech { border: 0.1rem solid #E1991A; }
-  .expansion-tech { border: 0.1rem solid #001FC1; }
-  .protection-tech { border: 0.1rem solid #E97300; }
-  .gift-tech { border: 0.1rem solid #4B1C9A; }
-  .capacity-tech { border: 0.1rem solid #8741E0; }
-  .recovery-tech { border: 0.1rem solid #249B26; }
-  .march-tech { border: 0.1rem solid #5EB0B9; }
-  .power-tech { border: 0.1rem solid #FD6800; }
-</style>
+<link href="./tech.css" rel="stylesheet">
 </head>
 <body>
 <header><nav><ul class="breadcrumb">
@@ -56,1692 +27,972 @@
 
 <h1>Alliance Tech</h1>
 
-<section><h2>Level 1</h2><div class="tech-labels">
-<div class="population-tech" --has-hint --hint-ref="population-boom-i">Population Boom I</div>
-<div class="gathering-tech" --has-hint --hint-ref="fast-gathering-i">Fast Gathering I</div>
-<div class="gold-tech" --has-hint --hint-ref="rain-of-gold-i">Rain of Gold I</div>
-<div class="expansion-tech" --has-hint --hint-ref="territory-expansion-i">Territory Expansion I</div>  
-</div>
+<section id="intro">
+<p>Alliance Tech is very important in building a strong alliance.
+Alliance Tech provides buffs such as marching speed, gold gathering,
+and damage recovery.</p>
 
-<div class="tech-labels">
+<p>If you lose a <a href="../territory/">territory</a>
+(e.g. from territory war or server transfer),
+you will lose the buffs from previously claimed altars.
+However, you will never lose the Alliance Tech
+(even if you lost the <a href="./territory/fortresses">Central Fortress</a>!)</p>
+</section>
+
+<section id="tips">
+<h2>Tips for R5 &amp; R4</h2>
+<p>If you are an <a href="../ranks/r5">R5</a> or <a href="../ranks/r4">R4</a>,
+you can send out regular
+<a href="../../mail/alliance-tech-reminder">reminder mail</a>
+and ask fellow Alliance Members to do Tech donation.
+
+<strong>Mark the Tech</strong> you want to focus
+on with a <em>star</em> so that the Tech can complete faster.</p>  
+</section>
+
+<section id="tech">
+<h2>Tech</h2>
+<dl class="tech-list two-column">
+
+<dt>Lv. 1</dt>
+<dd><ul>
+<li class="population-tech"><a
+  href="./population-tech" --has-hint --hint-ref="population-boom-i">Population Boom I</a
+></li>
+<li class="gathering-tech"><a
+  href="./gathering-tech" --has-hint --hint-ref="fast-gathering-i">Fast Gathering I</a
+></li>
+<li class="gold-tech"><a
+  href="./gold-tech" --has-hint --hint-ref="rain-of-gold-i">Rain of Gold I</a
+></li>
+<li class="expansion-tech"><a
+  href="./expansion-tech" --has-hint --hint-ref="territory-expansion-i">Territory Expansion I</a
+></li>
+<li class="protection-tech"><a
+  href="./protection-tech" --has-hint --hint-ref="territory-protection">Territory Protection</a
+></li>
+</ul></dd>
+
+<dt>Lv. 2</dt>
+<dd><ul>
+<li class="gift-tech"><a
+  href="./gift-tech" --has-hint --hint-ref="gift-galore-i">Gift Galore I</a
+></li>
+<li class="capacity-tech"><a
+  href="./capacity-tech" --has-hint --hint-ref="high-capacity-i">High Capacity I</a
+></li>
+<li class="recovery-tech"><a
+  href="./recovery-tech" --has-hint --hint-ref="rapid-recovery-i">Rapid Recovery I</a
+></li>
+<li class="expansion-tech"><a
+  href="./expansion-tech" --has-hint --hint-ref="territory-expansion-ii">Territory Expansion II</a
+></li>
+</ul></dd>
+
+<dt>Lv. 3</dt>
+<dd><ul>
+<li class="population-tech"><a
+  href="./population-tech" --has-hint --hint-ref="population-boom-ii">Population Boom II</a
+></li>
+<li class="gathering-tech"><a
+  href="./gathering-tech" --has-hint --hint-ref="fast-gathering-i">Fast Gathering I</a
+></li>
+<li class="gold-tech"><a
+  href="./gold-tech" --has-hint --hint-ref="rain-of-gold-ii">Rain of Gold II</a
+></li>
+<li class="expansion-tech"><a
+  href="./expansion-tech" --has-hint --hint-ref="territory-expansion-iii">Territory Expansion III</a
+></li>
+</ul></dd>
+
+<dt>Lv. 4</dt>
+<dd><ul>
+<li class="gift-tech"><a
+  href="./gift-tech" --has-hint --hint-ref="gift-galore-ii">Gift Galore II</a
+></li>
+<li class="gathering-tech"><a
+  href="./gathering-tech" --has-hint --hint-ref="fast-gathering-ii">Fast Gathering II</a
+></li>
+<li class="recovery-tech"><a
+  href="./recovery-tech" --has-hint --hint-ref="rapid-recovery-ii">Rapid Recovery II</a
+></li>
+<li class="expansion-tech"><a
+  href="./expansion-tech" --has-hint --hint-ref="territory-expansion-iv">Territory Expansion IV</a
+></li>
+</ul></dd>
+
+<dt>Lv. 5</dt>
+<dd><ul>
+<li class="population-tech"><a
+  href="./population-tech" --has-hint --hint-ref="population-boom-iii">Population Boom III</a
+></li>
+<li class="capacity-tech"><a
+  href="./capacity-tech" --has-hint --hint-ref="high-capacity-i">High Capacity I</a
+></li>
+<li class="power-tech"><a
+  href="./power-tech" --has-hint --hint-ref="power-boost-i">Power Boost I</a
+></li>
+<li class="expansion-tech"><a
+  href="./expansion-tech" --has-hint --hint-ref="territory-expansion-v">Territory Expansion V</a
+></li>
+</ul></dd>
+
+<dt>Lv. 6</dt>
+<dd><ul>
+<li class="gift-tech"><a
+  href="./gift-tech" --has-hint --hint-ref="gift-galore-iii">Gift Galore III</a
+></li>
+<li class="capacity-tech"><a
+  href="./capacity-tech" --has-hint --hint-ref="high-capacity-ii">High Capacity II</a
+></li>
+<li class="gold-tech"><a
+  href="./gold-tech" --has-hint --hint-ref="rain-of-gold-iii">Rain of Gold III</a
+></li>
+<li class="expansion-tech"><a
+  href="./expansion-tech" --has-hint --hint-ref="territory-expansion-vi">Territory Expansion VI</a
+></li>
+</ul></dd>
+
+<dt>Lv. 7</dt>
+<dd><ul>
+<li class="march-tech"><a
+  href="./march-tech" --has-hint --hint-ref="rapid-march-i">Rapid March I</a
+></li>
+<li class="gathering-tech"><a
+  href="./gathering-tech" --has-hint --hint-ref="fast-gathering-iii">Fast Gathering III</a
+></li>
+<li class="recovery-tech"><a
+  href="./recovery-tech" --has-hint --hint-ref="rapid-recovery-iii">Rapid Recovery III</a
+></li>
+<li class="expansion-tech"><a
+  href="./expansion-tech" --has-hint --hint-ref="territory-expansion-vii">Territory Expansion VII</a
+></li>
+</ul></dd>
+
+<dt>Lv. 8</dt>
+<dd><ul>
+<li class="gift-tech"><a
+  href="./gift-tech" --has-hint --hint-ref="gift-galore-iv">Gift Galore IV</a
+></li>
+<li class="capacity-tech"><a
+  href="./capacity-tech" --has-hint --hint-ref="high-capacity-iii">High Capacity III</a
+></li>
+<li class="gold-tech"><a
+  href="./gold-tech" --has-hint --hint-ref="rain-of-gold-iv">Rain of Gold IV</a
+></li>
+<li class="expansion-tech"><a
+  href="./expansion-tech" --has-hint --hint-ref="territory-expansion-viii">Territory Expansion VIII</a
+></li>
+</ul></dd>
+
+<dt>Lv. 9</dt>
+<dd><ul>
+<li class="march-tech"><a
+  href="./march-tech" --has-hint --hint-ref="rapid-march-ii">Rapid March II</a
+></li>
+<li class="gathering-tech"><a
+  href="./gathering-tech" --has-hint --hint-ref="fast-gathering-iv">Fast Gathering IV</a
+></li>
+<li class="recovery-tech"><a
+  href="./recovery-tech" --has-hint --hint-ref="rapid-recovery-iv">Rapid Recovery IV</a
+></li>
+<li class="expansion-tech"><a
+  href="./expansion-tech" --has-hint --hint-ref="territory-expansion-ix">Territory Expansion IX</a
+></li>
+</ul></dd>
+
+<dt>Lv. 10</dt>
+<dd><ul>
+<li class="gift-tech"><a
+  href="./gift-tech" --has-hint --hint-ref="gift-galore-v">Gift Galore V</a
+></li>
+<li class="capacity-tech"><a
+  href="./capacity-tech" --has-hint --hint-ref="high-capacity-iv">High Capacity IV</a
+></li>
+<li class="power-tech"><a
+  href="./power-tech" --has-hint --hint-ref="power-boost-ii">Power Boost II</a
+></li>
+<li class="expansion-tech"><a
+  href="./expansion-tech" --has-hint --hint-ref="territory-expansion-x">Territory Expansion X</a
+></li>
+</ul></dd>
+
+</dl>
+</section>
+  
 <template --hint-id="population-boom-i"><div class="hint">
-<ul class="min-list">
-  <li>Alliance Members +2</li>
-  <li>Research: 2 hr</li>
-</ul>
-<div class="upgrade-grid">
-<div class="header level"><!-- Level --></div>
-<div class="header cost">Contrib. Points</div>
-<div class="label level"></div>
-<div class="data prev-level">0</div>
-<div class="data level">1</div>
-<div class="data cost number">100,000</div>
+<dl>
+<dt>Effect</dt>
+<dd>Alliance Members +2</dd>
 
-<div class="label level"></div>
-<div class="data prev-level">1</div>
-<div class="data level">2</div>
-<div class="data cost number">150,000</div>
+<dt>Research</dt>
+<dd>2 hr</dd>
 
-<div class="label level"></div>
-<div class="data prev-level">2</div>
-<div class="data level">3</div>
-<div class="data cost number">200,000</div>
-
-<div class="label level"></div>
-<div class="data prev-level">3</div>
-<div class="data level">4</div>
-<div class="data cost number">250,000</div>
-
-<div class="label level"></div>
-<div class="data prev-level">4</div>
-<div class="data level">5</div>
-<div class="data cost number">300,000</div>
-
-</div>
+<dt>Upgrade</dt>
+<dd><ul class="inline-list slash">
+<li>100,000</li>
+<li>150,000</li>
+<li>200,000</li>
+<li>250,000</li>
+<li>300,000</li>
+</ul></dd>
+</dl>
 </div></template>
 
 <template --hint-id="fast-gathering-i"><div class="hint">
-<ul class="min-list">
-  <li>Gathering Speed +2%</li>
-  <li>Research: 2 hr</li>
-</ul>
-<div class="upgrade-grid">
-<div class="header level"><!-- Level --></div>
-<div class="header cost">Contrib. Points</div>
-<div class="label level"></div>
-<div class="data prev-level">0</div>
-<div class="data level">1</div>
-<div class="data cost number">150,000</div>
+<dl>
+<dt>Effect</dt>
+<dd>Gathering Speed +2%</dd>
 
-<div class="label level"></div>
-<div class="data prev-level">1</div>
-<div class="data level">2</div>
-<div class="data cost number">200,000</div>
+<dt>Research</dt>
+<dd>2 hr</dd>
 
-<div class="label level"></div>
-<div class="data prev-level">2</div>
-<div class="data level">3</div>
-<div class="data cost number">250,000</div>
-
-<div class="label level"></div>
-<div class="data prev-level">3</div>
-<div class="data level">4</div>
-<div class="data cost number">300,000</div>
-
-<div class="label level"></div>
-<div class="data prev-level">4</div>
-<div class="data level">5</div>
-<div class="data cost number">250,000</div>
-
-</div>
+<dt>Upgrade</dt>
+<dd><ul class="inline-list slash">
+<li>150,000</li>
+<li>200,000</li>
+<li>250,000</li>
+<li>300,000</li>
+<li>250,000</li>
+</ul></dd>
+</dl>
 </div></template>
 
 <template --hint-id="rain-of-gold-i"><div class="hint">
-<ul class="min-list">
-  <li>Offline Gold Output Speed +1%</li>
-  <li>Research: 2 hr</li>
-</ul>
-<div class="upgrade-grid">
-<div class="header level"><!-- Level --></div>
-<div class="header cost">Contrib. Points</div>
-<div class="label level"></div>
-<div class="data prev-level">0</div>
-<div class="data level">1</div>
-<div class="data cost number">300,000</div>
+<dl>
+<dt>Effect</dt>
+<dd>Offline Gold Output Speed +1%</dd>
 
-<div class="label level"></div>
-<div class="data prev-level">1</div>
-<div class="data level">2</div>
-<div class="data cost number">350,000</div>
+<dt>Research</dt>
+<dd>2 hr</dd>
 
-<div class="label level"></div>
-<div class="data prev-level">2</div>
-<div class="data level">3</div>
-<div class="data cost number">400,000</div>
-
-<div class="label level"></div>
-<div class="data prev-level">3</div>
-<div class="data level">4</div>
-<div class="data cost number">450,000</div>
-
-<div class="label level"></div>
-<div class="data prev-level">4</div>
-<div class="data level">5</div>
-<div class="data cost number">500,000</div>
-
-</div>
+<dt>Upgrade</dt>
+<dd><ul class="inline-list slash">
+<li>300,000</li>
+<li>350,000</li>
+<li>400,000</li>
+<li>450,000</li>
+<li>500,000</li>
+</ul></dd>
+</dl>
 </div></template>
 
 <template --hint-id="territory-expansion-i"><div class="hint">
-<ul class="min-list">
-  <li>Alliance Obelisk Quantity +5</li>
-  <li>Research: 24 hr</li>
-</ul>
-<div class="upgrade-grid">
-<div class="header level"><!-- Level --></div>
-<div class="header cost">Contrib. Points</div>
-<div class="label level"></div>
-<div class="data prev-level">0</div>
-<div class="data level">1</div>
-<div class="data cost number">200,000</div>
+<dl>
+<dt>Effect</dt>
+<dd>Alliance Obelisk Quantity +5</dd>
 
-<div class="label level"></div>
-<div class="data prev-level">1</div>
-<div class="data level">2</div>
-<div class="data cost number">200,000</div>
+<dt>Research</dt>
+<dd>24 hr</dd>
 
-<div class="label level"></div>
-<div class="data prev-level">2</div>
-<div class="data level">3</div>
-<div class="data cost number">200,000</div>
-
-<div class="label level"></div>
-<div class="data prev-level">3</div>
-<div class="data level">4</div>
-<div class="data cost number">200,000</div>
-
-<div class="label level"></div>
-<div class="data prev-level">4</div>
-<div class="data level">5</div>
-<div class="data cost number">200,000</div>
-
-</div>
+<dt>Upgrade</dt>
+<dd><ul class="inline-list slash">
+<li>200,000</li>
+<li>200,000</li>
+<li>200,000</li>
+<li>200,000</li>
+<li>200,000</li>
+</ul></dd>
+</dl>
 </div></template>
 
-<template --hint-id=""><div class="hint">
-<ul class="min-list">
-  <li></li>
-  <li>Research: </li>
-</ul>
-<div class="upgrade-grid">
-<div class="header level"><!-- Level --></div>
-<div class="header cost">Contrib. Points</div>
-<div class="label level"></div>
-<div class="data prev-level">0</div>
-<div class="data level">1</div>
-<div class="data cost number"></div>
+<template --hint-id="territory-protection"><div class="hint">
+<dl>
+<dt>Effect</dt>
+<dd>Territory Protection</dd>
 
-</div>
-</div></template>  
-</div></section>
+<dt>Research</dt>
+<dd>?</dd>
 
-<section><h2>Level 2</h2><div class="tech-labels">
-<div class="gift-tech" --has-hint --hint-ref="gift-galore-i">Gift Galore I</div>
-<div class="capacity-tech" --has-hint --hint-ref="high-capacity-i">High Capacity I</div>
-<div class="recovery-tech" --has-hint --hint-ref="rapid-recovery-i">Rapid Recovery I</div>
-<div class="expansion-tech" --has-hint --hint-ref="territory-expansion-ii">Territory Expansion II</div>  
-</div></section>
-
-<section><h2>Level 3</h2><div class="tech-labels">
-<div class="gift-tech" --has-hint --hint-ref="gift-galore-i">Gift Galore I</div>
-<div class="capacity-tech" --has-hint --hint-ref="high-capacity-i">High Capacity I</div>
-<div class="recovery-tech" --has-hint --hint-ref="rapid-recovery-i">Rapid Recovery I</div>
-<div class="expansion-tech" --has-hint --hint-ref="territory-expansion-ii">Territory Expansion II</div>  
-</div></section>
-
-<section><h2>Level 4</h2><div class="tech-labels">
-<div class="gift-tech" --has-hint --hint-ref="gift-galore-ii">Gift Galore II</div>
-<div class="gathering-tech" --has-hint --hint-ref="fast-gathering-ii">Fast Gathering II</div>
-<div class="recovery-tech" --has-hint --hint-ref="rapid-recovery-ii">Rapid Recovery II</div>
-<div class="expansion-tech" --has-hint --hint-ref="territory-expansion-iv">Territory Expansion IV</div>  
-</div></section>
-
-<section><h2>Level 5</h2><div class="tech-labels">
-<div class="population-tech" --has-hint --hint-ref="population-boom-iii">Population Boom III</div>
-<div class="capacity-tech" --has-hint --hint-ref="high-capacity-i">High Capacity I</div>
-<div class="power-tech" --has-hint --hint-ref="power-boost-i">Power Boost I</div>
-<div class="expansion-tech" --has-hint --hint-ref="territory-expansion-v">Territory Expansion V</div>  
-</div></section>
-
-<section><h2>Level 6</h2><div class="tech-labels">
-<div class="gift-tech" --has-hint --hint-ref="gift-galore-iii">Gift Galore III</div>
-<div class="capacity-tech" --has-hint --hint-ref="high-capacity-ii">High Capacity II</div>
-<div class="gold-tech" --has-hint --hint-ref="rain-of-gold-iii">Rain of Gold III</div>
-<div class="expansion-tech" --has-hint --hint-ref="territory-expansion-vi">Territory Expansion VI</div>  
-</div></section>
-
-<section><h2>Level 7</h2><div class="tech-labels">
-<div class="march-tech" --has-hint --hint-ref="rapid-march-i">Rapid March I</div>
-<div class="gathering-tech" --has-hint --hint-ref="fast-gathering-iii">Fast Gathering III</div>
-<div class="recovery-tech" --has-hint --hint-ref="rapid-recovery-iii">Rapid Recovery III</div>
-<div class="expansion-tech" --has-hint --hint-ref="territory-expansion-vii">Territory Expansion VII</div>  
-</div></section>
-
-<section><h2>Level 8</h2><div class="tech-labels">
-<div class="gift-tech" --has-hint --hint-ref="gift-galore-iv">Gift Galore IV</div>
-<div class="capacity-tech" --has-hint --hint-ref="high-capacity-iii">High Capacity III</div>
-<div class="gold-tech" --has-hint --hint-ref="rain-of-gold-iv">Rain of Gold IV</div>
-<div class="expansion-tech" --has-hint --hint-ref="territory-expansion-viii">Territory Expansion VIII</div>  
-</div></section>
-
-<section><h2>Level 9</h2><div class="tech-labels">
-<div class="march-tech" --has-hint --hint-ref="rapid-march-ii">Rapid March II</div>
-<div class="gathering-tech" --has-hint --hint-ref="fast-gathering-iv">Fast Gathering IV</div>
-<div class="recovery-tech" --has-hint --hint-ref="rapid-recovery-iv">Rapid Recovery IV</div>
-<div class="expansion-tech" --has-hint --hint-ref="territory-expansion-ix">Territory Expansion IX</div>  
-</div></section>
-
-<section><h2>Level 10</h2><div class="tech-labels">
-<div class="gift-tech" --has-hint --hint-ref="gift-galore-v">Gift Galore V</div>
-<div class="capacity-tech" --has-hint --hint-ref="high-capacity-iv">High Capacity IV</div>
-<div class="power-tech" --has-hint --hint-ref="power-boost-ii">Power Boost II</div>
-<div class="expansion-tech" --has-hint --hint-ref="territory-expansion-x">Territory Expansion X</div>  
-</div></section>
-    
-<template --hint-id="population-boom-i"><div class="hint">
-<ul class="min-list">
-  <li>Alliance Members +2</li>
-  <li>Research: 2 hr</li>
-</ul>
-<div class="upgrade-grid">
-<div class="header level"><!-- Level --></div>
-<div class="header cost">Contrib. Points</div>
-<div class="label level"></div>
-<div class="data prev-level">0</div>
-<div class="data level">1</div>
-<div class="data cost number">100,000</div>
-
-<div class="label level"></div>
-<div class="data prev-level">1</div>
-<div class="data level">2</div>
-<div class="data cost number">150,000</div>
-
-<div class="label level"></div>
-<div class="data prev-level">2</div>
-<div class="data level">3</div>
-<div class="data cost number">200,000</div>
-
-<div class="label level"></div>
-<div class="data prev-level">3</div>
-<div class="data level">4</div>
-<div class="data cost number">250,000</div>
-
-<div class="label level"></div>
-<div class="data prev-level">4</div>
-<div class="data level">5</div>
-<div class="data cost number">300,000</div>
-
-</div>
-</div></template>
-
-<template --hint-id="fast-gathering-i"><div class="hint">
-<ul class="min-list">
-  <li>Gathering Speed +2%</li>
-  <li>Research: 2 hr</li>
-</ul>
-<div class="upgrade-grid">
-<div class="header level"><!-- Level --></div>
-<div class="header cost">Contrib. Points</div>
-<div class="label level"></div>
-<div class="data prev-level">0</div>
-<div class="data level">1</div>
-<div class="data cost number">150,000</div>
-
-<div class="label level"></div>
-<div class="data prev-level">1</div>
-<div class="data level">2</div>
-<div class="data cost number">200,000</div>
-
-<div class="label level"></div>
-<div class="data prev-level">2</div>
-<div class="data level">3</div>
-<div class="data cost number">250,000</div>
-
-<div class="label level"></div>
-<div class="data prev-level">3</div>
-<div class="data level">4</div>
-<div class="data cost number">300,000</div>
-
-<div class="label level"></div>
-<div class="data prev-level">4</div>
-<div class="data level">5</div>
-<div class="data cost number">250,000</div>
-
-</div>
-</div></template>
-
-<template --hint-id="rain-of-gold-i"><div class="hint">
-<ul class="min-list">
-  <li>Offline Gold Output Speed +1%</li>
-  <li>Research: 2 hr</li>
-</ul>
-<div class="upgrade-grid">
-<div class="header level"><!-- Level --></div>
-<div class="header cost">Contrib. Points</div>
-<div class="label level"></div>
-<div class="data prev-level">0</div>
-<div class="data level">1</div>
-<div class="data cost number">300,000</div>
-
-<div class="label level"></div>
-<div class="data prev-level">1</div>
-<div class="data level">2</div>
-<div class="data cost number">350,000</div>
-
-<div class="label level"></div>
-<div class="data prev-level">2</div>
-<div class="data level">3</div>
-<div class="data cost number">400,000</div>
-
-<div class="label level"></div>
-<div class="data prev-level">3</div>
-<div class="data level">4</div>
-<div class="data cost number">450,000</div>
-
-<div class="label level"></div>
-<div class="data prev-level">4</div>
-<div class="data level">5</div>
-<div class="data cost number">500,000</div>
-
-</div>
-</div></template>
-
-<template --hint-id="territory-expansion-i"><div class="hint">
-<ul class="min-list">
-  <li>Alliance Obelisk Quantity +5</li>
-  <li>Research: 24 hr</li>
-</ul>
-<div class="upgrade-grid">
-<div class="header level"><!-- Level --></div>
-<div class="header cost">Contrib. Points</div>
-<div class="label level"></div>
-<div class="data prev-level">0</div>
-<div class="data level">1</div>
-<div class="data cost number">200,000</div>
-
-<div class="label level"></div>
-<div class="data prev-level">1</div>
-<div class="data level">2</div>
-<div class="data cost number">200,000</div>
-
-<div class="label level"></div>
-<div class="data prev-level">2</div>
-<div class="data level">3</div>
-<div class="data cost number">200,000</div>
-
-<div class="label level"></div>
-<div class="data prev-level">3</div>
-<div class="data level">4</div>
-<div class="data cost number">200,000</div>
-
-<div class="label level"></div>
-<div class="data prev-level">4</div>
-<div class="data level">5</div>
-<div class="data cost number">200,000</div>
-
-</div>
-</div></template>
-
-<template --hint-id=""><div class="hint">
-<ul class="min-list">
-  <li></li>
-  <li>Research: </li>
-</ul>
-<div class="upgrade-grid">
-<div class="header level"><!-- Level --></div>
-<div class="header cost">Contrib. Points</div>
-<div class="label level"></div>
-<div class="data prev-level">0</div>
-<div class="data level">1</div>
-<div class="data cost number"></div>
-
-</div>
+<dt>Upgrade</dt>
+<dd><ul class="inline-list slash">
+<li>300,000</li>
+</ul></dd>
+</dl>
 </div></template>
 
 <template --hint-id="gift-galore-i"><div class="hint">
-<ul class="min-list">
-  <li>Daily Gift Limit +10</li>
-  <li>Research: 2 hr</li>
-</ul>
-<div class="upgrade-grid">
-<div class="header level"><!-- Level --></div>
-<div class="header cost">Contrib. Points</div>
-<div class="label level"></div>
-<div class="data prev-level">0</div>
-<div class="data level">1</div>
-<div class="data cost number">250,000</div>
+<dl>
+<dt>Effect</dt>
+<dd>Daily Gift Limit +10</dd>
 
-<div class="label level"></div>
-<div class="data prev-level">1</div>
-<div class="data level">2</div>
-<div class="data cost number">300,000</div>
+<dt>Research</dt>
+<dd>2 hr</dd>
 
-<div class="label level"></div>
-<div class="data prev-level">2</div>
-<div class="data level">3</div>
-<div class="data cost number">350,000</div>
-
-<div class="label level"></div>
-<div class="data prev-level">3</div>
-<div class="data level">4</div>
-<div class="data cost number">400,000</div>
-
-<div class="label level"></div>
-<div class="data prev-level">4</div>
-<div class="data level">5</div>
-<div class="data cost number">450,000</div>
-
-</div>
+<dt>Upgrade</dt>
+<dd><ul class="inline-list slash">
+<li>250,000</li>
+<li>300,000</li>
+<li>350,000</li>
+<li>400,000</li>
+<li>450,000</li>
+</ul></dd>
+</dl>
 </div></template>
 
 <template --hint-id="high-capacity-i"><div class="hint">
-<ul class="min-list">
-  <li>Troop Load +1%</li>
-  <li>Research: 2 hr</li>
-</ul>
-<div class="upgrade-grid">
-<div class="header level"><!-- Level --></div>
-<div class="header cost">Contrib. Points</div>
-<div class="label level"></div>
-<div class="data prev-level">0</div>
-<div class="data level">1</div>
-<div class="data cost number">200,000</div>
+<dl>
+<dt>Effect</dt>
+<dd>Troop Load +1%</dd>
 
-<div class="label level"></div>
-<div class="data prev-level">1</div>
-<div class="data level">2</div>
-<div class="data cost number">250,000</div>
+<dt>Research</dt>
+<dd>2 hr</dd>
 
-<div class="label level"></div>
-<div class="data prev-level">2</div>
-<div class="data level">3</div>
-<div class="data cost number">300,000</div>
-
-<div class="label level"></div>
-<div class="data prev-level">3</div>
-<div class="data level">4</div>
-<div class="data cost number">350,000</div>
-
-<div class="label level"></div>
-<div class="data prev-level">4</div>
-<div class="data level">5</div>
-<div class="data cost number">400,000</div>
-
-</div>
+<dt>Upgrade</dt>
+<dd><ul class="inline-list slash">
+<li>200,000</li>
+<li>250,000</li>
+<li>300,000</li>
+<li>350,000</li>
+<li>400,000</li>
+</ul></dd>
+</dl>
 </div></template>
 
 <template --hint-id="rapid-recovery-i"><div class="hint">
-<ul class="min-list">
-  <li>Power Recovery Speed +1%</li>
-  <li>Research: 2 hr</li>
-</ul>
-<div class="upgrade-grid">
-<div class="header level"><!-- Level --></div>
-<div class="header cost">Contrib. Points</div>
-<div class="label level"></div>
-<div class="data prev-level">0</div>
-<div class="data level">1</div>
-<div class="data cost number">350,000</div>
+<dl>
+<dt>Effect</dt>
+<dd>Power Recovery Speed +1%</dd>
 
-<div class="label level"></div>
-<div class="data prev-level">1</div>
-<div class="data level">2</div>
-<div class="data cost number">400,000</div>
+<dt>Research</dt>
+<dd>2 hr</dd>
 
-<div class="label level"></div>
-<div class="data prev-level">2</div>
-<div class="data level">3</div>
-<div class="data cost number">450,000</div>
-
-<div class="label level"></div>
-<div class="data prev-level">3</div>
-<div class="data level">4</div>
-<div class="data cost number">500,000</div>
-
-<div class="label level"></div>
-<div class="data prev-level">4</div>
-<div class="data level">5</div>
-<div class="data cost number">550,000</div>
-
-</div>
+<dt>Upgrade</dt>
+<dd><ul class="inline-list slash">
+<li>350,000</li>
+<li>400,000</li>
+<li>450,000</li>
+<li>500,000</li>
+<li>550,000</li>
+</ul></dd>
+</dl>
 </div></template>
 
 <template --hint-id="territory-expansion-ii"><div class="hint">
-<ul class="min-list">
-  <li>Alliance Obelisk Quantity +5</li>
-  <li>Research: 24 hr</li>
-</ul>
-<div class="upgrade-grid">
-<div class="header level"><!-- Level --></div>
-<div class="header cost">Contrib. Points</div>
-<div class="label level"></div>
-<div class="data prev-level">0</div>
-<div class="data level">1</div>
-<div class="data cost number">400,000</div>
+<dl>
+<dt>Effect</dt>
+<dd>Alliance Obelisk Quantity +5</dd>
 
-<div class="label level"></div>
-<div class="data prev-level">1</div>
-<div class="data level">2</div>
-<div class="data cost number">400,000</div>
+<dt>Research</dt>
+<dd>24 hr</dd>
 
-<div class="label level"></div>
-<div class="data prev-level">2</div>
-<div class="data level">3</div>
-<div class="data cost number">400,000</div>
-
-<div class="label level"></div>
-<div class="data prev-level">3</div>
-<div class="data level">4</div>
-<div class="data cost number">400,000</div>
-
-<div class="label level"></div>
-<div class="data prev-level">4</div>
-<div class="data level">5</div>
-<div class="data cost number">400,000</div>
-
-</div>
+<dt>Upgrade</dt>
+<dd><ul class="inline-list slash">
+<li>400,000</li>
+<li>400,000</li>
+<li>400,000</li>
+<li>400,000</li>
+<li>400,000</li>
+</ul></dd>
+</dl>
 </div></template>
 
 <template --hint-id="population-boom-ii"><div class="hint">
-<ul class="min-list">
-  <li>Alliance Members +2</li>
-  <li>Research: 2 hr</li>
-</ul>
-<div class="upgrade-grid">
-<div class="header level"><!-- Level --></div>
-<div class="header cost">Contrib. Points</div>
-<div class="label level"></div>
-<div class="data prev-level">0</div>
-<div class="data level">1</div>
-<div class="data cost number">400,000</div>
+<dl>
+<dt>Effect</dt>
+<dd>Alliance Members +2</dd>
 
-<div class="label level"></div>
-<div class="data prev-level">1</div>
-<div class="data level">2</div>
-<div class="data cost number">450,000</div>
+<dt>Research</dt>
+<dd>2 hr</dd>
 
-<div class="label level"></div>
-<div class="data prev-level">2</div>
-<div class="data level">3</div>
-<div class="data cost number">500,000</div>
-
-<div class="label level"></div>
-<div class="data prev-level">3</div>
-<div class="data level">4</div>
-<div class="data cost number">550,000</div>
-
-<div class="label level"></div>
-<div class="data prev-level">4</div>
-<div class="data level">5</div>
-<div class="data cost number">600,000</div>
-
-</div>
+<dt>Upgrade</dt>
+<dd><ul class="inline-list slash">
+<li>400,000</li>
+<li>450,000</li>
+<li>500,000</li>
+<li>550,000</li>
+<li>600,000</li>
+</ul></dd>
+</dl>
 </div></template>
 
 <template --hint-id="fast-gathering-i"><div class="hint">
-<ul class="min-list">
-  <li>Gathering Speed +2%</li>
-  <li>Research: 2 hr</li>
-</ul>
-<div class="upgrade-grid">
-<div class="header level"><!-- Level --></div>
-<div class="header cost">Contrib. Points</div>
-<div class="label level"></div>
-<div class="data prev-level">0</div>
-<div class="data level">1</div>
-<div class="data cost number">200,000</div>
+<dl>
+<dt>Effect</dt>
+<dd>Gathering Speed +2%</dd>
 
-<div class="label level"></div>
-<div class="data prev-level">1</div>
-<div class="data level">2</div>
-<div class="data cost number">250,000</div>
+<dt>Research</dt>
+<dd>2 hr</dd>
 
-<div class="label level"></div>
-<div class="data prev-level">2</div>
-<div class="data level">3</div>
-<div class="data cost number">300,000</div>
-
-<div class="label level"></div>
-<div class="data prev-level">3</div>
-<div class="data level">4</div>
-<div class="data cost number">350,000</div>
-
-<div class="label level"></div>
-<div class="data prev-level">4</div>
-<div class="data level">5</div>
-<div class="data cost number">400,000</div>
-
-</div>
+<dt>Upgrade</dt>
+<dd><ul class="inline-list slash">
+<li>200,000</li>
+<li>250,000</li>
+<li>300,000</li>
+<li>350,000</li>
+<li>400,000</li>
+</ul></dd>
+</dl>
 </div></template>
 
 <template --hint-id="rain-of-gold-ii"><div class="hint">
-<ul class="min-list">
-  <li>Offline Gold Output Speed +1%</li>
-  <li>Research: 2 hr</li>
-</ul>
-<div class="upgrade-grid">
-<div class="header level"><!-- Level --></div>
-<div class="header cost">Contrib. Points</div>
-<div class="label level"></div>
-<div class="data prev-level">0</div>
-<div class="data level">1</div>
-<div class="data cost number">600,000</div>
+<dl>
+<dt>Effect</dt>
+<dd>Offline Gold Output Speed +1%</dd>
 
-<div class="label level"></div>
-<div class="data prev-level">1</div>
-<div class="data level">2</div>
-<div class="data cost number">650,000</div>
+<dt>Research</dt>
+<dd>2 hr</dd>
 
-<div class="label level"></div>
-<div class="data prev-level">2</div>
-<div class="data level">3</div>
-<div class="data cost number">700,000</div>
-
-<div class="label level"></div>
-<div class="data prev-level">3</div>
-<div class="data level">4</div>
-<div class="data cost number">750,000</div>
-
-<div class="label level"></div>
-<div class="data prev-level">4</div>
-<div class="data level">5</div>
-<div class="data cost number">800,000</div>
-
-</div>
+<dt>Upgrade</dt>
+<dd><ul class="inline-list slash">
+<li>600,000</li>
+<li>650,000</li>
+<li>700,000</li>
+<li>750,000</li>
+<li>800,000</li>
+</ul></dd>
+</dl>
 </div></template>
 
 <template --hint-id="territory-expansion-iii"><div class="hint">
-<ul class="min-list">
-  <li>Alliance Obelisk Quantity +5</li>
-  <li>Research: 48 hr</li>
-</ul>
-<div class="upgrade-grid">
-<div class="header level"><!-- Level --></div>
-<div class="header cost">Contrib. Points</div>
-<div class="label level"></div>
-<div class="data prev-level">0</div>
-<div class="data level">1</div>
-<div class="data cost number">600,000</div>
+<dl>
+<dt>Effect</dt>
+<dd>Alliance Obelisk Quantity +5</dd>
 
-<div class="label level"></div>
-<div class="data prev-level">1</div>
-<div class="data level">2</div>
-<div class="data cost number">600,000</div>
+<dt>Research</dt>
+<dd>48 hr</dd>
 
-<div class="label level"></div>
-<div class="data prev-level">2</div>
-<div class="data level">3</div>
-<div class="data cost number">600,000</div>
-
-<div class="label level"></div>
-<div class="data prev-level">3</div>
-<div class="data level">4</div>
-<div class="data cost number">600,000</div>
-
-<div class="label level"></div>
-<div class="data prev-level">4</div>
-<div class="data level">5</div>
-<div class="data cost number">600,000</div>
-
-</div>
+<dt>Upgrade</dt>
+<dd><ul class="inline-list slash">
+<li>600,000</li>
+<li>600,000</li>
+<li>600,000</li>
+<li>600,000</li>
+<li>600,000</li>
+</ul></dd>
+</dl>
 </div></template>
 
 <template --hint-id="gift-galore-ii"><div class="hint">
-<ul class="min-list">
-  <li>Daily Gift Limit +10</li>
-  <li>Research: 2 hr</li>
-</ul>
-<div class="upgrade-grid">
-<div class="header level"><!-- Level --></div>
-<div class="header cost">Contrib. Points</div>
-<div class="label level"></div>
-<div class="data prev-level">0</div>
-<div class="data level">1</div>
-<div class="data cost number">400,000</div>
+<dl>
+<dt>Effect</dt>
+<dd>Daily Gift Limit +10</dd>
 
-<div class="label level"></div>
-<div class="data prev-level">1</div>
-<div class="data level">2</div>
-<div class="data cost number">450,000</div>
+<dt>Research</dt>
+<dd>2 hr</dd>
 
-<div class="label level"></div>
-<div class="data prev-level">2</div>
-<div class="data level">3</div>
-<div class="data cost number">500,000</div>
-
-<div class="label level"></div>
-<div class="data prev-level">3</div>
-<div class="data level">4</div>
-<div class="data cost number">550,000</div>
-
-<div class="label level"></div>
-<div class="data prev-level">4</div>
-<div class="data level">5</div>
-<div class="data cost number">600,000</div>
-
-</div>
+<dt>Upgrade</dt>
+<dd><ul class="inline-list slash">
+<li>400,000</li>
+<li>450,000</li>
+<li>500,000</li>
+<li>550,000</li>
+<li>600,000</li>
+</ul></dd>
+</dl>
 </div></template>
 
 <template --hint-id="fast-gathering-ii"><div class="hint">
-<ul class="min-list">
-  <li>Gathering Speed +2%</li>
-  <li>Research: 2 hr</li>
-</ul>
-<div class="upgrade-grid">
-<div class="header level"><!-- Level --></div>
-<div class="header cost">Contrib. Points</div>
-<div class="label level"></div>
-<div class="data prev-level">0</div>
-<div class="data level">1</div>
-<div class="data cost number">450,000</div>
+<dl>
+<dt>Effect</dt>
+<dd>Gathering Speed +2%</dd>
 
-<div class="label level"></div>
-<div class="data prev-level">1</div>
-<div class="data level">2</div>
-<div class="data cost number">500,000</div>
+<dt>Research</dt>
+<dd>2 hr</dd>
 
-<div class="label level"></div>
-<div class="data prev-level">2</div>
-<div class="data level">3</div>
-<div class="data cost number">550,000</div>
-
-<div class="label level"></div>
-<div class="data prev-level">3</div>
-<div class="data level">4</div>
-<div class="data cost number">600,000</div>
-
-<div class="label level"></div>
-<div class="data prev-level">4</div>
-<div class="data level">5</div>
-<div class="data cost number">650,000</div>
-
-</div>
+<dt>Upgrade</dt>
+<dd><ul class="inline-list slash">
+<li>450,000</li>
+<li>500,000</li>
+<li>550,000</li>
+<li>600,000</li>
+<li>650,000</li>
+</ul></dd>
+</dl>
 </div></template>
 
 <template --hint-id="rapid-recovery-ii"><div class="hint">
-<ul class="min-list">
-  <li>Power Recovery Speed +1%</li>
-  <li>Research: 2 hr</li>
-</ul>
-<div class="upgrade-grid">
-<div class="header level"><!-- Level --></div>
-<div class="header cost">Contrib. Points</div>
-<div class="label level"></div>
-<div class="data prev-level">0</div>
-<div class="data level">1</div>
-<div class="data cost number">650,000</div>
+<dl>
+<dt>Effect</dt>
+<dd>Power Recovery Speed +1%</dd>
 
-<div class="label level"></div>
-<div class="data prev-level">1</div>
-<div class="data level">2</div>
-<div class="data cost number">700,000</div>
+<dt>Research</dt>
+<dd>2 hr</dd>
 
-<div class="label level"></div>
-<div class="data prev-level">2</div>
-<div class="data level">3</div>
-<div class="data cost number">750,000</div>
-
-<div class="label level"></div>
-<div class="data prev-level">3</div>
-<div class="data level">4</div>
-<div class="data cost number">800,000</div>
-
-<div class="label level"></div>
-<div class="data prev-level">4</div>
-<div class="data level">5</div>
-<div class="data cost number">850,000</div>
-
-</div>
+<dt>Upgrade</dt>
+<dd><ul class="inline-list slash">
+<li>650,000</li>
+<li>700,000</li>
+<li>750,000</li>
+<li>800,000</li>
+<li>850,000</li>
+</ul></dd>
+</dl>
 </div></template>
 
 <template --hint-id="territory-expansion-iv"><div class="hint">
-<ul class="min-list">
-  <li>Alliance Obelisk Quantity +5</li>
-  <li>Research: 48 hr</li>
-</ul>
-<div class="upgrade-grid">
-<div class="header level"><!-- Level --></div>
-<div class="header cost">Contrib. Points</div>
-<div class="label level"></div>
-<div class="data prev-level">0</div>
-<div class="data level">1</div>
-<div class="data cost number">800,000</div>
+<dl>
+<dt>Effect</dt>
+<dd>Alliance Obelisk Quantity +5</dd>
 
-<div class="label level"></div>
-<div class="data prev-level">1</div>
-<div class="data level">2</div>
-<div class="data cost number">800,000</div>
+<dt>Research</dt>
+<dd>48 hr</dd>
 
-<div class="label level"></div>
-<div class="data prev-level">2</div>
-<div class="data level">3</div>
-<div class="data cost number">800,000</div>
-
-<div class="label level"></div>
-<div class="data prev-level">3</div>
-<div class="data level">4</div>
-<div class="data cost number">800,000</div>
-
-<div class="label level"></div>
-<div class="data prev-level">4</div>
-<div class="data level">5</div>
-<div class="data cost number">800,000</div>
-
-</div>
+<dt>Upgrade</dt>
+<dd><ul class="inline-list slash">
+<li>800,000</li>
+<li>800,000</li>
+<li>800,000</li>
+<li>800,000</li>
+<li>800,000</li>
+</ul></dd>
+</dl>
 </div></template>
 
 <template --hint-id="population-boom-iii"><div class="hint">
-<ul class="min-list">
-  <li>Alliance Members +2</li>
-  <li>Research: </li>
-</ul>
-<div class="upgrade-grid">
-<div class="header level"><!-- Level --></div>
-<div class="header cost">Contrib. Points</div>
-<div class="label level"></div>
-<div class="data prev-level">0</div>
-<div class="data level">1</div>
-<div class="data cost number">700,000</div>
+<dl>
+<dt>Effect</dt>
+<dd>Alliance Members +2</dd>
 
-<div class="label level"></div>
-<div class="data prev-level">1</div>
-<div class="data level">2</div>
-<div class="data cost number">750,000</div>
+<dt>Research</dt>
+<dd>?</dd>
 
-<div class="label level"></div>
-<div class="data prev-level">2</div>
-<div class="data level">3</div>
-<div class="data cost number">800,000</div>
-
-<div class="label level"></div>
-<div class="data prev-level">3</div>
-<div class="data level">4</div>
-<div class="data cost number">850,000</div>
-
-<div class="label level"></div>
-<div class="data prev-level">4</div>
-<div class="data level">5</div>
-<div class="data cost number">900,000</div>
-
-</div>
+<dt>Upgrade</dt>
+<dd><ul class="inline-list slash">
+<li>700,000</li>
+<li>750,000</li>
+<li>800,000</li>
+<li>850,000</li>
+<li>900,000</li>
+</ul></dd>
+</dl>
 </div></template>
 
 <template --hint-id="high-capacity-i"><div class="hint">
-<ul class="min-list">
-  <li>Troop Load +1%</li>
-  <li>Research: </li>
-</ul>
-<div class="upgrade-grid">
-<div class="header level"><!-- Level --></div>
-<div class="header cost">Contrib. Points</div>
-<div class="label level"></div>
-<div class="data prev-level">0</div>
-<div class="data level">1</div>
-<div class="data cost number">500,000</div>
+<dl>
+<dt>Effect</dt>
+<dd>Troop Load +1%</dd>
 
-<div class="label level"></div>
-<div class="data prev-level">1</div>
-<div class="data level">2</div>
-<div class="data cost number">550,000</div>
+<dt>Research</dt>
+<dd>?</dd>
 
-<div class="label level"></div>
-<div class="data prev-level">2</div>
-<div class="data level">3</div>
-<div class="data cost number">600,000</div>
-
-<div class="label level"></div>
-<div class="data prev-level">3</div>
-<div class="data level">4</div>
-<div class="data cost number">650,000</div>
-
-<div class="label level"></div>
-<div class="data prev-level">4</div>
-<div class="data level">5</div>
-<div class="data cost number">700,000</div>
-
-</div>
+<dt>Upgrade</dt>
+<dd><ul class="inline-list slash">
+<li>500,000</li>
+<li>550,000</li>
+<li>600,000</li>
+<li>650,000</li>
+<li>700,000</li>
+</ul></dd>
+</dl>
 </div></template>
 
 <template --hint-id="power-boost-i"><div class="hint">
-<ul class="min-list">
-  <li>Alliance Power+1%</li>
-  <li>Research: 2 hr</li>
-</ul>
-<div class="upgrade-grid">
-<div class="header level"><!-- Level --></div>
-<div class="header cost">Contrib. Points</div>
-<div class="label level"></div>
-<div class="data prev-level">0</div>
-<div class="data level">1</div>
-<div class="data cost number">1,000,000</div>
+<dl>
+<dt>Effect</dt>
+<dd>Alliance Power+1%</dd>
 
-<div class="label level"></div>
-<div class="data prev-level">1</div>
-<div class="data level">2</div>
-<div class="data cost number">1,000,000</div>
+<dt>Research</dt>
+<dd>2 hr</dd>
 
-<div class="label level"></div>
-<div class="data prev-level">2</div>
-<div class="data level">3</div>
-<div class="data cost number">1,000,000</div>
-
-<div class="label level"></div>
-<div class="data prev-level">3</div>
-<div class="data level">4</div>
-<div class="data cost number">1,000,000</div>
-
-<div class="label level"></div>
-<div class="data prev-level">4</div>
-<div class="data level">5</div>
-<div class="data cost number">1,000,000</div>
-
-</div>
+<dt>Upgrade</dt>
+<dd><ul class="inline-list slash">
+<li>1,000,000</li>
+<li>1,000,000</li>
+<li>1,000,000</li>
+<li>1,000,000</li>
+<li>1,000,000</li>
+</ul></dd>
+</dl>
 </div></template>
 
 <template --hint-id="territory-expansion-v"><div class="hint">
-<ul class="min-list">
-  <li>Alliance Obelisk Quantity +5</li>
-  <li>Research: 3 d</li>
-</ul>
-<div class="upgrade-grid">
-<div class="header level"><!-- Level --></div>
-<div class="header cost">Contrib. Points</div>
-<div class="label level"></div>
-<div class="data prev-level">0</div>
-<div class="data level">1</div>
-<div class="data cost number">1,000,000</div>
+<dl>
+<dt>Effect</dt>
+<dd>Alliance Obelisk Quantity +5</dd>
 
-<div class="label level"></div>
-<div class="data prev-level">1</div>
-<div class="data level">2</div>
-<div class="data cost number">1,000,000</div>
+<dt>Research</dt>
+<dd>3 d</dd>
 
-<div class="label level"></div>
-<div class="data prev-level">2</div>
-<div class="data level">3</div>
-<div class="data cost number">1,000,000</div>
-
-<div class="label level"></div>
-<div class="data prev-level">3</div>
-<div class="data level">4</div>
-<div class="data cost number">1,000,000</div>
-
-<div class="label level"></div>
-<div class="data prev-level">4</div>
-<div class="data level">5</div>
-<div class="data cost number">1,000,000</div>
-
-</div>
+<dt>Upgrade</dt>
+<dd><ul class="inline-list slash">
+<li>1,000,000</li>
+<li>1,000,000</li>
+<li>1,000,000</li>
+<li>1,000,000</li>
+<li>1,000,000</li>
+</ul></dd>
+</dl>
 </div></template>
 
 <template --hint-id="gift-galore-iii"><div class="hint">
-<ul class="min-list">
-  <li>Daily Gift Limit +10</li>
-  <li>Research: 2 hr</li>
-</ul>
-<div class="upgrade-grid">
-<div class="header level"><!-- Level --></div>
-<div class="header cost">Contrib. Points</div>
-<div class="label level"></div>
-<div class="data prev-level">0</div>
-<div class="data level">1</div>
-<div class="data cost number">550,000</div>
+<dl>
+<dt>Effect</dt>
+<dd>Daily Gift Limit +10</dd>
 
-<div class="label level"></div>
-<div class="data prev-level">1</div>
-<div class="data level">2</div>
-<div class="data cost number">600,000</div>
+<dt>Research</dt>
+<dd>2 hr</dd>
 
-<div class="label level"></div>
-<div class="data prev-level">2</div>
-<div class="data level">3</div>
-<div class="data cost number">650,000</div>
-
-<div class="label level"></div>
-<div class="data prev-level">3</div>
-<div class="data level">4</div>
-<div class="data cost number">700,000</div>
-
-<div class="label level"></div>
-<div class="data prev-level">4</div>
-<div class="data level">5</div>
-<div class="data cost number">750,000</div>
-
-</div>
+<dt>Upgrade</dt>
+<dd><ul class="inline-list slash">
+<li>550,000</li>
+<li>600,000</li>
+<li>650,000</li>
+<li>700,000</li>
+<li>750,000</li>
+</ul></dd>
+</dl>
 </div></template>
 
 <template --hint-id="high-capacity-ii"><div class="hint">
-<ul class="min-list">
-  <li>Troop Load +1%</li>
-  <li>Research: 2 hr</li>
-</ul>
-<div class="upgrade-grid">
-<div class="header level"><!-- Level --></div>
-<div class="header cost">Contrib. Points</div>
-<div class="label level"></div>
-<div class="data prev-level">0</div>
-<div class="data level">1</div>
-<div class="data cost number">500,000</div>
+<dl>
+<dt>Effect</dt>
+<dd>Troop Load +1%</dd>
 
-<div class="label level"></div>
-<div class="data prev-level">1</div>
-<div class="data level">2</div>
-<div class="data cost number">550,000</div>
+<dt>Research</dt>
+<dd>2 hr</dd>
 
-<div class="label level"></div>
-<div class="data prev-level">2</div>
-<div class="data level">3</div>
-<div class="data cost number">600,000</div>
-
-<div class="label level"></div>
-<div class="data prev-level">3</div>
-<div class="data level">4</div>
-<div class="data cost number">650,000</div>
-
-<div class="label level"></div>
-<div class="data prev-level">4</div>
-<div class="data level">5</div>
-<div class="data cost number">700,000</div>
-
-</div>
+<dt>Upgrade</dt>
+<dd><ul class="inline-list slash">
+<li>500,000</li>
+<li>550,000</li>
+<li>600,000</li>
+<li>650,000</li>
+<li>700,000</li>
+</ul></dd>
+</dl>
 </div></template>
 
 <template --hint-id="rain-of-gold-iii"><div class="hint">
-<ul class="min-list">
-  <li>Offline Gold Output Speed +1%</li>
-  <li>Research: 2 hr</li>
-</ul>
-<div class="upgrade-grid">
-<div class="header level"><!-- Level --></div>
-<div class="header cost">Contrib. Points</div>
-<div class="label level"></div>
-<div class="data prev-level">0</div>
-<div class="data level">1</div>
-<div class="data cost number">900,000</div>
+<dl>
+<dt>Effect</dt>
+<dd>Offline Gold Output Speed +1%</dd>
 
-<div class="label level"></div>
-<div class="data prev-level">1</div>
-<div class="data level">2</div>
-<div class="data cost number">950,000</div>
+<dt>Research</dt>
+<dd>2 hr</dd>
 
-<div class="label level"></div>
-<div class="data prev-level">2</div>
-<div class="data level">3</div>
-<div class="data cost number">1,000,000</div>
-
-<div class="label level"></div>
-<div class="data prev-level">3</div>
-<div class="data level">4</div>
-<div class="data cost number">1,050,000</div>
-
-<div class="label level"></div>
-<div class="data prev-level">4</div>
-<div class="data level">5</div>
-<div class="data cost number">1,100,000</div>
-
-</div>
+<dt>Upgrade</dt>
+<dd><ul class="inline-list slash">
+<li>900,000</li>
+<li>950,000</li>
+<li>1,000,000</li>
+<li>1,050,000</li>
+<li>1,100,000</li>
+</ul></dd>
+</dl>
 </div></template>
 
 <template --hint-id="territory-expansion-vi"><div class="hint">
-<ul class="min-list">
-  <li>Alliance Obelisk Quantity +5</li>
-  <li>Research: 3 d</li>
-</ul>
-<div class="upgrade-grid">
-<div class="header level"><!-- Level --></div>
-<div class="header cost">Contrib. Points</div>
-<div class="label level"></div>
-<div class="data prev-level">0</div>
-<div class="data level">1</div>
-<div class="data cost number">1,200,000</div>
+<dl>
+<dt>Effect</dt>
+<dd>Alliance Obelisk Quantity +5</dd>
 
-<div class="label level"></div>
-<div class="data prev-level">1</div>
-<div class="data level">2</div>
-<div class="data cost number">1,200,000</div>
+<dt>Research</dt>
+<dd>3 d</dd>
 
-<div class="label level"></div>
-<div class="data prev-level">2</div>
-<div class="data level">3</div>
-<div class="data cost number">1,200,000</div>
-
-<div class="label level"></div>
-<div class="data prev-level">3</div>
-<div class="data level">4</div>
-<div class="data cost number">1,200,000</div>
-
-<div class="label level"></div>
-<div class="data prev-level">4</div>
-<div class="data level">5</div>
-<div class="data cost number">1,200,000</div>
-
-</div>
+<dt>Upgrade</dt>
+<dd><ul class="inline-list slash">
+<li>1,200,000</li>
+<li>1,200,000</li>
+<li>1,200,000</li>
+<li>1,200,000</li>
+<li>1,200,000</li>
+</ul></dd>
+</dl>
 </div></template>
 
 <template --hint-id="rapid-march-i"><div class="hint">
-<ul class="min-list">
-  <li>March Speed +1%</li>
-  <li>Research: 2 hr</li>
-</ul>
-<div class="upgrade-grid">
-<div class="header level"><!-- Level --></div>
-<div class="header cost">Contrib. Points</div>
-<div class="label level"></div>
-<div class="data prev-level">0</div>
-<div class="data level">1</div>
-<div class="data cost number">150,000</div>
+<dl>
+<dt>Effect</dt>
+<dd>March Speed +1%</dd>
 
-<div class="label level"></div>
-<div class="data prev-level">1</div>
-<div class="data level">2</div>
-<div class="data cost number">200,000</div>
+<dt>Research</dt>
+<dd>2 hr</dd>
 
-<div class="label level"></div>
-<div class="data prev-level">2</div>
-<div class="data level">3</div>
-<div class="data cost number">250,000</div>
-
-<div class="label level"></div>
-<div class="data prev-level">3</div>
-<div class="data level">4</div>
-<div class="data cost number">300,000</div>
-
-<div class="label level"></div>
-<div class="data prev-level">4</div>
-<div class="data level">5</div>
-<div class="data cost number">350,000</div>
-
-</div>
+<dt>Upgrade</dt>
+<dd><ul class="inline-list slash">
+<li>150,000</li>
+<li>200,000</li>
+<li>250,000</li>
+<li>300,000</li>
+<li>350,000</li>
+</ul></dd>
+</dl>
 </div></template>
 
 <template --hint-id="fast-gathering-iii"><div class="hint">
-<ul class="min-list">
-  <li>Gathering Speed +2%</li>
-  <li>Research: </li>
-</ul>
-<div class="upgrade-grid">
-<div class="header level"><!-- Level --></div>
-<div class="header cost">Contrib. Points</div>
-<div class="label level"></div>
-<div class="data prev-level">0</div>
-<div class="data level">1</div>
-<div class="data cost number">800,000</div>
+<dl>
+<dt>Effect</dt>
+<dd>Gathering Speed +2%</dd>
 
-<div class="label level"></div>
-<div class="data prev-level">1</div>
-<div class="data level">2</div>
-<div class="data cost number">850,000</div>
+<dt>Research</dt>
+<dd>?</dd>
 
-<div class="label level"></div>
-<div class="data prev-level">2</div>
-<div class="data level">3</div>
-<div class="data cost number">900,000</div>
-
-<div class="label level"></div>
-<div class="data prev-level">3</div>
-<div class="data level">4</div>
-<div class="data cost number">950,000</div>
-
-<div class="label level"></div>
-<div class="data prev-level">4</div>
-<div class="data level">5</div>
-<div class="data cost number">1,000,000</div>
-
-</div>
+<dt>Upgrade</dt>
+<dd><ul class="inline-list slash">
+<li>800,000</li>
+<li>850,000</li>
+<li>900,000</li>
+<li>950,000</li>
+<li>1,000,000</li>
+</ul></dd>
+</dl>
 </div></template>
 
 <template --hint-id="rapid-recovery-iii"><div class="hint">
-<ul class="min-list">
-  <li>Power Recovery Speed +1%</li>
-  <li>Research: </li>
-</ul>
-<div class="upgrade-grid">
-<div class="header level"><!-- Level --></div>
-<div class="header cost">Contrib. Points</div>
-<div class="label level"></div>
-<div class="data prev-level">0</div>
-<div class="data level">1</div>
-<div class="data cost number">350,000</div>
+<dl>
+<dt>Effect</dt>
+<dd>Power Recovery Speed +1%</dd>
 
-<div class="label level"></div>
-<div class="data prev-level">1</div>
-<div class="data level">2</div>
-<div class="data cost number">400,000</div>
+<dt>Research</dt>
+<dd>?</dd>
 
-<div class="label level"></div>
-<div class="data prev-level">2</div>
-<div class="data level">3</div>
-<div class="data cost number">450,000</div>
-
-<div class="label level"></div>
-<div class="data prev-level">3</div>
-<div class="data level">4</div>
-<div class="data cost number">500,000</div>
-
-<div class="label level"></div>
-<div class="data prev-level">4</div>
-<div class="data level">5</div>
-<div class="data cost number">550,000</div>
-
-</div>
+<dt>Upgrade</dt>
+<dd><ul class="inline-list slash">
+<li>350,000</li>
+<li>400,000</li>
+<li>450,000</li>
+<li>500,000</li>
+<li>550,000</li>
+</ul></dd>
+</dl>
 </div></template>
 
 <template --hint-id="territory-expansion-vii"><div class="hint">
-<ul class="min-list">
-  <li>Alliance Obelisk Quantity +5</li>
-  <li>Research: </li>
-</ul>
-<div class="upgrade-grid">
-<div class="header level"><!-- Level --></div>
-<div class="header cost">Contrib. Points</div>
-<div class="label level"></div>
-<div class="data prev-level">0</div>
-<div class="data level">1</div>
-<div class="data cost number">1,400,000</div>
+<dl>
+<dt>Effect</dt>
+<dd>Alliance Obelisk Quantity +5</dd>
 
-<div class="label level"></div>
-<div class="data prev-level">1</div>
-<div class="data level">2</div>
-<div class="data cost number">1,400,000</div>
+<dt>Research</dt>
+<dd>?</dd>
 
-<div class="label level"></div>
-<div class="data prev-level">2</div>
-<div class="data level">3</div>
-<div class="data cost number">1,400,000</div>
-
-<div class="label level"></div>
-<div class="data prev-level">3</div>
-<div class="data level">4</div>
-<div class="data cost number">1,400,000</div>
-
-<div class="label level"></div>
-<div class="data prev-level">4</div>
-<div class="data level">5</div>
-<div class="data cost number">1,400,000</div>
-
-</div>
+<dt>Upgrade</dt>
+<dd><ul class="inline-list slash">
+<li>1,400,000</li>
+<li>1,400,000</li>
+<li>1,400,000</li>
+<li>1,400,000</li>
+<li>1,400,000</li>
+</ul></dd>
+</dl>
 </div></template>
 
 <template --hint-id="gift-galore-iv"><div class="hint">
-<ul class="min-list">
-  <li>Daily Gift Limit +10</li>
-  <li>Research: </li>
-</ul>
-<div class="upgrade-grid">
-<div class="header level"><!-- Level --></div>
-<div class="header cost">Contrib. Points</div>
-<div class="label level"></div>
-<div class="data prev-level">0</div>
-<div class="data level">1</div>
-<div class="data cost number">850,000</div>
+<dl>
+<dt>Effect</dt>
+<dd>Daily Gift Limit +10</dd>
 
-<div class="label level"></div>
-<div class="data prev-level">1</div>
-<div class="data level">2</div>
-<div class="data cost number">900,000</div>
+<dt>Research</dt>
+<dd>?</dd>
 
-<div class="label level"></div>
-<div class="data prev-level">2</div>
-<div class="data level">3</div>
-<div class="data cost number">950,000</div>
-
-<div class="label level"></div>
-<div class="data prev-level">3</div>
-<div class="data level">4</div>
-<div class="data cost number">1,000,000</div>
-
-<div class="label level"></div>
-<div class="data prev-level">4</div>
-<div class="data level">5</div>
-<div class="data cost number">1,050,000</div>
-
-</div>
+<dt>Upgrade</dt>
+<dd><ul class="inline-list slash">
+<li>850,000</li>
+<li>900,000</li>
+<li>950,000</li>
+<li>1,000,000</li>
+<li>1,050,000</li>
+</ul></dd>
+</dl>
 </div></template>
 
 <template --hint-id="high-capacity-iii"><div class="hint">
-<ul class="min-list">
-  <li>Troop Load +1%</li>
-  <li>Research: 2 hr</li>
-</ul>
-<div class="upgrade-grid">
-<div class="header level"><!-- Level --></div>
-<div class="header cost">Contrib. Points</div>
-<div class="label level"></div>
-<div class="data prev-level">0</div>
-<div class="data level">1</div>
-<div class="data cost number">800,000</div>
+<dl>
+<dt>Effect</dt>
+<dd>Troop Load +1%</dd>
 
-<div class="label level"></div>
-<div class="data prev-level">1</div>
-<div class="data level">2</div>
-<div class="data cost number">850,000</div>
+<dt>Research</dt>
+<dd>2 hr</dd>
 
-<div class="label level"></div>
-<div class="data prev-level">2</div>
-<div class="data level">3</div>
-<div class="data cost number">900,000</div>
-
-<div class="label level"></div>
-<div class="data prev-level">3</div>
-<div class="data level">4</div>
-<div class="data cost number">950,000</div>
-
-<div class="label level"></div>
-<div class="data prev-level">4</div>
-<div class="data level">5</div>
-<div class="data cost number">1,000,000</div>
-
-</div>
+<dt>Upgrade</dt>
+<dd><ul class="inline-list slash">
+<li>800,000</li>
+<li>850,000</li>
+<li>900,000</li>
+<li>950,000</li>
+<li>1,000,000</li>
+</ul></dd>
+</dl>
 </div></template>
 
 <template --hint-id="rain-of-gold-iv"><div class="hint">
-<ul class="min-list">
-  <li>Offline Gold Output Speed +1%</li>
-  <li>Research: 2 hr</li>
-</ul>
-<div class="upgrade-grid">
-<div class="header level"><!-- Level --></div>
-<div class="header cost">Contrib. Points</div>
-<div class="label level"></div>
-<div class="data prev-level">0</div>
-<div class="data level">1</div>
-<div class="data cost number">1,050,000</div>
+<dl>
+<dt>Effect</dt>
+<dd>Offline Gold Output Speed +1%</dd>
 
-<div class="label level"></div>
-<div class="data prev-level">1</div>
-<div class="data level">2</div>
-<div class="data cost number">1,100,000</div>
+<dt>Research</dt>
+<dd>2 hr</dd>
 
-<div class="label level"></div>
-<div class="data prev-level">2</div>
-<div class="data level">3</div>
-<div class="data cost number">1,150,000</div>
-
-<div class="label level"></div>
-<div class="data prev-level">3</div>
-<div class="data level">4</div>
-<div class="data cost number">1,200,000</div>
-
-<div class="label level"></div>
-<div class="data prev-level">4</div>
-<div class="data level">5</div>
-<div class="data cost number">1,250,000</div>
-
-</div>
+<dt>Upgrade</dt>
+<dd><ul class="inline-list slash">
+<li>1,050,000</li>
+<li>1,100,000</li>
+<li>1,150,000</li>
+<li>1,200,000</li>
+<li>1,250,000</li>
+</ul></dd>
+</dl>
 </div></template>
 
 <template --hint-id="territory-expansion-viii"><div class="hint">
-<ul class="min-list">
-  <li>Alliance Obelisk Quantity +5</li>
-  <li>Research: 4 d</li>
-</ul>
-<div class="upgrade-grid">
-<div class="header level"><!-- Level --></div>
-<div class="header cost">Contrib. Points</div>
-<div class="label level"></div>
-<div class="data prev-level">0</div>
-<div class="data level">1</div>
-<div class="data cost number">1,600,000</div>
+<dl>
+<dt>Effect</dt>
+<dd>Alliance Obelisk Quantity +5</dd>
 
-<div class="label level"></div>
-<div class="data prev-level">1</div>
-<div class="data level">2</div>
-<div class="data cost number">1,600,000</div>
+<dt>Research</dt>
+<dd>4 d</dd>
 
-<div class="label level"></div>
-<div class="data prev-level">2</div>
-<div class="data level">3</div>
-<div class="data cost number">1,600,000</div>
-
-<div class="label level"></div>
-<div class="data prev-level">3</div>
-<div class="data level">4</div>
-<div class="data cost number">1,600,000</div>
-
-<div class="label level"></div>
-<div class="data prev-level">4</div>
-<div class="data level">5</div>
-<div class="data cost number">1,600,000</div>
-
-</div>
+<dt>Upgrade</dt>
+<dd><ul class="inline-list slash">
+<li>1,600,000</li>
+<li>1,600,000</li>
+<li>1,600,000</li>
+<li>1,600,000</li>
+<li>1,600,000</li>
+</ul></dd>
+</dl>
 </div></template>
 
 <template --hint-id="rapid-march-ii"><div class="hint">
-<ul class="min-list">
-  <li>March Speed +1%</li>
-  <li>Research: 2 hr</li>
-</ul>
-<div class="upgrade-grid">
-<div class="header level"><!-- Level --></div>
-<div class="header cost">Contrib. Points</div>
-<div class="label level"></div>
-<div class="data prev-level">0</div>
-<div class="data level">1</div>
-<div class="data cost number"></div>
+<dl>
+<dt>Effect</dt>
+<dd>March Speed +1%</dd>
 
-<div class="label level"></div>
-<div class="data prev-level">1</div>
-<div class="data level">2</div>
-<div class="data cost number"></div>
+<dt>Research</dt>
+<dd>2 hr</dd>
 
-<div class="label level"></div>
-<div class="data prev-level">2</div>
-<div class="data level">3</div>
-<div class="data cost number"></div>
-
-<div class="label level"></div>
-<div class="data prev-level">3</div>
-<div class="data level">4</div>
-<div class="data cost number"></div>
-
-<div class="label level"></div>
-<div class="data prev-level">4</div>
-<div class="data level">5</div>
-<div class="data cost number"></div>
-
-</div>
+<dt>Upgrade</dt>
+<dd><ul class="inline-list slash">
+<li>?</li>
+<li>?</li>
+<li>?</li>
+<li>?</li>
+<li>?</li>
+</ul></dd>
+</dl>
 </div></template>
 
 <template --hint-id="fast-gathering-iv"><div class="hint">
-<ul class="min-list">
-  <li>Gathering Speed +2%</li>
-  <li>Research: </li>
-</ul>
-<div class="upgrade-grid">
-<div class="header level"><!-- Level --></div>
-<div class="header cost">Contrib. Points</div>
-<div class="label level"></div>
-<div class="data prev-level">0</div>
-<div class="data level">1</div>
-<div class="data cost number">950,000</div>
+<dl>
+<dt>Effect</dt>
+<dd>Gathering Speed +2%</dd>
 
-<div class="label level"></div>
-<div class="data prev-level">1</div>
-<div class="data level">2</div>
-<div class="data cost number">1,000,000</div>
+<dt>Research</dt>
+<dd>?</dd>
 
-<div class="label level"></div>
-<div class="data prev-level">2</div>
-<div class="data level">3</div>
-<div class="data cost number">1,050,000</div>
-
-<div class="label level"></div>
-<div class="data prev-level">3</div>
-<div class="data level">4</div>
-<div class="data cost number">1,100,000</div>
-
-<div class="label level"></div>
-<div class="data prev-level">4</div>
-<div class="data level">5</div>
-<div class="data cost number">1,150,000</div>
-
-</div>
+<dt>Upgrade</dt>
+<dd><ul class="inline-list slash">
+<li>950,000</li>
+<li>1,000,000</li>
+<li>1,050,000</li>
+<li>1,100,000</li>
+<li>1,150,000</li>
+</ul></dd>
+</dl>
 </div></template>
 
 <template --hint-id="rapid-recovery-iv"><div class="hint">
-<ul class="min-list">
-  <li>Power Recovery Speed +1%</li>
-  <li>Research: </li>
-</ul>
-<div class="upgrade-grid">
-<div class="header level"><!-- Level --></div>
-<div class="header cost">Contrib. Points</div>
-<div class="label level"></div>
-<div class="data prev-level">0</div>
-<div class="data level">1</div>
-<div class="data cost number"></div>
+<dl>
+<dt>Effect</dt>
+<dd>Power Recovery Speed +1%</dd>
 
-<div class="label level"></div>
-<div class="data prev-level">1</div>
-<div class="data level">2</div>
-<div class="data cost number"></div>
+<dt>Research</dt>
+<dd>?</dd>
 
-<div class="label level"></div>
-<div class="data prev-level">2</div>
-<div class="data level">3</div>
-<div class="data cost number"></div>
-
-<div class="label level"></div>
-<div class="data prev-level">3</div>
-<div class="data level">4</div>
-<div class="data cost number"></div>
-
-<div class="label level"></div>
-<div class="data prev-level">4</div>
-<div class="data level">5</div>
-<div class="data cost number"></div>
-
-</div>
+<dt>Upgrade</dt>
+<dd><ul class="inline-list slash">
+<li>?</li>
+<li>?</li>
+<li>?</li>
+<li>?</li>
+<li>?</li>
+</ul></dd>
+</dl>
 </div></template>
 
 <template --hint-id="territory-expansion-ix"><div class="hint">
-<ul class="min-list">
-  <li>Alliance Obelisk Quantity +5</li>
-  <li>Research: 5 d</li>
-</ul>
-<div class="upgrade-grid">
-<div class="header level"><!-- Level --></div>
-<div class="header cost">Contrib. Points</div>
-<div class="label level"></div>
-<div class="data prev-level">0</div>
-<div class="data level">1</div>
-<div class="data cost number">1,800,000</div>
+<dl>
+<dt>Effect</dt>
+<dd>Alliance Obelisk Quantity +5</dd>
 
-<div class="label level"></div>
-<div class="data prev-level">1</div>
-<div class="data level">2</div>
-<div class="data cost number">1,800,000</div>
+<dt>Research</dt>
+<dd>5 d</dd>
 
-<div class="label level"></div>
-<div class="data prev-level">2</div>
-<div class="data level">3</div>
-<div class="data cost number">1,800,000</div>
-
-<div class="label level"></div>
-<div class="data prev-level">3</div>
-<div class="data level">4</div>
-<div class="data cost number">1,800,000</div>
-
-<div class="label level"></div>
-<div class="data prev-level">4</div>
-<div class="data level">5</div>
-<div class="data cost number">1,800,000</div>
-
-</div>
+<dt>Upgrade</dt>
+<dd><ul class="inline-list slash">
+<li>1,800,000</li>
+<li>1,800,000</li>
+<li>1,800,000</li>
+<li>1,800,000</li>
+<li>1,800,000</li>
+</ul></dd>
+</dl>
 </div></template>
 
 <template --hint-id="gift-galore-v"><div class="hint">
-<ul class="min-list">
-  <li>Daily Gift Limit +10</li>
-  <li>Research: </li>
-</ul>
-<div class="upgrade-grid">
-<div class="header level"><!-- Level --></div>
-<div class="header cost">Contrib. Points</div>
-<div class="label level"></div>
-<div class="data prev-level">0</div>
-<div class="data level">1</div>
-<div class="data cost number">1,000,000</div>
+<dl>
+<dt>Effect</dt>
+<dd>Daily Gift Limit +10</dd>
 
-<div class="label level"></div>
-<div class="data prev-level">1</div>
-<div class="data level">2</div>
-<div class="data cost number">1,050,000</div>
+<dt>Research</dt>
+<dd>?</dd>
 
-<div class="label level"></div>
-<div class="data prev-level">2</div>
-<div class="data level">3</div>
-<div class="data cost number">1,100,000</div>
-
-<div class="label level"></div>
-<div class="data prev-level">3</div>
-<div class="data level">4</div>
-<div class="data cost number">1,150,000</div>
-
-<div class="label level"></div>
-<div class="data prev-level">4</div>
-<div class="data level">5</div>
-<div class="data cost number">1,200,000</div>
-
-</div>
+<dt>Upgrade</dt>
+<dd><ul class="inline-list slash">
+<li>1,000,000</li>
+<li>1,050,000</li>
+<li>1,100,000</li>
+<li>1,150,000</li>
+<li>1,200,000</li>
+</ul></dd>
+</dl>
 </div></template>
 
 <template --hint-id="high-capacity-iv"><div class="hint">
-<ul class="min-list">
-  <li>Troop Load +1%</li>
-  <li>Research: </li>
-</ul>
-<div class="upgrade-grid">
-<div class="header level"><!-- Level --></div>
-<div class="header cost">Contrib. Points</div>
-<div class="label level"></div>
-<div class="data prev-level">0</div>
-<div class="data level">1</div>
-<div class="data cost number">950,000</div>
+<dl>
+<dt>Effect</dt>
+<dd>Troop Load +1%</dd>
 
-<div class="label level"></div>
-<div class="data prev-level">1</div>
-<div class="data level">2</div>
-<div class="data cost number">1,000,000</div>
+<dt>Research</dt>
+<dd>?</dd>
 
-<div class="label level"></div>
-<div class="data prev-level">2</div>
-<div class="data level">3</div>
-<div class="data cost number">1,050,000</div>
-
-<div class="label level"></div>
-<div class="data prev-level">3</div>
-<div class="data level">4</div>
-<div class="data cost number">1,100,000</div>
-
-<div class="label level"></div>
-<div class="data prev-level">4</div>
-<div class="data level">5</div>
-<div class="data cost number">1,150,000</div>
-
-</div>
+<dt>Upgrade</dt>
+<dd><ul class="inline-list slash">
+<li>950,000</li>
+<li>1,000,000</li>
+<li>1,050,000</li>
+<li>1,100,000</li>
+<li>1,150,000</li>
+</ul></dd>
+</dl>
 </div></template>
 
 <template --hint-id="power-boost-ii"><div class="hint">
-<ul class="min-list">
-  <li>Alliance Power+1%</li>
-  <li>Research: 2 hr</li>
-</ul>
-<div class="upgrade-grid">
-<div class="header level"><!-- Level --></div>
-<div class="header cost">Contrib. Points</div>
-<div class="label level"></div>
-<div class="data prev-level">0</div>
-<div class="data level">1</div>
-<div class="data cost number">2,000,000</div>
+<dl>
+<dt>Effect</dt>
+<dd>Alliance Power+1%</dd>
 
-<div class="label level"></div>
-<div class="data prev-level">1</div>
-<div class="data level">2</div>
-<div class="data cost number">2,000,000</div>
+<dt>Research</dt>
+<dd>2 hr</dd>
 
-<div class="label level"></div>
-<div class="data prev-level">2</div>
-<div class="data level">3</div>
-<div class="data cost number">2,000,000</div>
-
-<div class="label level"></div>
-<div class="data prev-level">3</div>
-<div class="data level">4</div>
-<div class="data cost number">2,000,000</div>
-
-<div class="label level"></div>
-<div class="data prev-level">4</div>
-<div class="data level">5</div>
-<div class="data cost number">2,000,000</div>
-
-</div>
+<dt>Upgrade</dt>
+<dd><ul class="inline-list slash">
+<li>2,000,000</li>
+<li>2,000,000</li>
+<li>2,000,000</li>
+<li>2,000,000</li>
+<li>2,000,000</li>
+</ul></dd>
+</dl>
 </div></template>
 
 <template --hint-id="territory-expansion-x"><div class="hint">
-<ul class="min-list">
-  <li>Alliance Obelisk Quantity +5</li>
-  <li>Research: 5 d</li>
-</ul>
-<div class="upgrade-grid">
-<div class="header level"><!-- Level --></div>
-<div class="header cost">Contrib. Points</div>
-<div class="label level"></div>
-<div class="data prev-level">0</div>
-<div class="data level">1</div>
-<div class="data cost number">2,000,000</div>
+<dl>
+<dt>Effect</dt>
+<dd>Alliance Obelisk Quantity +5</dd>
 
-<div class="label level"></div>
-<div class="data prev-level">1</div>
-<div class="data level">2</div>
-<div class="data cost number">2,000,000</div>
+<dt>Research</dt>
+<dd>5 d</dd>
 
-<div class="label level"></div>
-<div class="data prev-level">2</div>
-<div class="data level">3</div>
-<div class="data cost number">2,000,000</div>
-
-<div class="label level"></div>
-<div class="data prev-level">3</div>
-<div class="data level">4</div>
-<div class="data cost number">2,000,000</div>
-
-<div class="label level"></div>
-<div class="data prev-level">4</div>
-<div class="data level">5</div>
-<div class="data cost number">2,000,000</div>
-
-</div>
+<dt>Upgrade</dt>
+<dd><ul class="inline-list slash">
+<li>2,000,000</li>
+<li>2,000,000</li>
+<li>2,000,000</li>
+<li>2,000,000</li>
+<li>2,000,000</li>
+</ul></dd>
+</dl>
 </div></template>
 
 </main>

@@ -7,6 +7,8 @@ const DataPath = resolve(ModulePath, '../__data/');
 const TemplatePath = resolve(ModulePath, '../__templates/');
 const OutputPath = resolve(ModulePath, '../__generated/');
 
+const rawData = readFileSync(resolve(DataPath, './data.tsv'), 'utf8');
+
 /**
  * @param {string} fPath
  * @return {string}
@@ -14,12 +16,11 @@ const OutputPath = resolve(ModulePath, '../__generated/');
 const readTemplate =
   (fPath) => readFileSync(resolve(TemplatePath, fPath), 'utf8');
 
-const rawData = readTemplate('./data.tsv');
-const snippetTemplate = readTemplate('./tech-snippet.html');
+const snippetTemplate = readTemplate('./tech-upgrade.html');
 const snippetLineTemplate = readTemplate('./tech-upgrade-line.html');
-const hintTemplate = readTemplate('./tech-snippet.html');
-const hintLineTemplate = readTemplate('./tech-upgrade-line.html');
-const indexItemTemplate = hintLineTemplate('./tech-index-item.html');
+const hintTemplate = readTemplate('./tech-hint.html');
+const hintLineTemplate = readTemplate('./tech-hint-line.html');
+const indexItemTemplate = readTemplate('./tech-index-item.html');
 
 const hints = [];
 const index = [];
@@ -58,32 +59,33 @@ function buildTechContent(data) {
   const title = data.shift();
   const id = title.toLowerCase().replaceAll(' ', '-');
   const effect = data.shift();
-  const researchTime = data.shift();
+  let researchTime = data.shift();
+  if (!researchTime) researchTime = '?';
 
   const techClass = classes.find((c) => id.includes(c));
 
   const snippetUpgrade = data.map((cost, index) => snippetLineTemplate
       .replace('{{PREV LEVEL}}', index)
       .replace('{{LEVEL}}', index+1)
-      .replace('{{COST 1}}', cost),
+      .replace('{{COST 1}}', cost?cost:'?'),
   );
 
   snippets[techClass].push(snippetTemplate
-      .replace('{{ID}}', id)
-      .replace('{{TITLE}}', title)
+      .replaceAll('{{ID}}', id)
+      .replaceAll('{{TITLE}}', title)
       .replace('{{EFFECT}}', effect)
       .replace('{{RESEARCH TIME}}', researchTime)
       .replace('{{UPGRADE DATA}}', snippetUpgrade.join('\n'))
       ,
   );
 
-  const hintUpgrade = data.map((cost, index) => snippetLineTemplate
-      .replace('{{COST 1}}', cost),
+  const hintUpgrade = data.map((cost, index) => hintLineTemplate
+      .replace('{{COST 1}}', cost?cost:'?'),
   );
 
   hints.push(hintTemplate
-      .replace('{{ID}}', id)
-      .replace('{{TITLE}}', title)
+      .replaceAll('{{ID}}', id)
+      .replaceAll('{{TITLE}}', title)
       .replace('{{EFFECT}}', effect)
       .replace('{{RESEARCH TIME}}', researchTime)
       .replace('{{UPGRADE DATA}}', hintUpgrade.join('\n'))
@@ -91,9 +93,9 @@ function buildTechContent(data) {
   );
 
   index.push(indexItemTemplate
-      .replace('{{ID}}', id)
-      .replace('{{TITLE}}', title)
-      .replace('{{CLASS}}', techClass?`${techClass}-tech`:'')
+      .replaceAll('{{ID}}', id)
+      .replaceAll('{{TITLE}}', title)
+      .replaceAll('{{CLASS}}', techClass?`${techClass}-tech`:'')
       ,
   );
 }
@@ -158,5 +160,5 @@ for (let techTier = 3; techTier <= 10; techTier++) {
 writeFileSync(resolve(OutputPath, `./hints.html`), hints.join('\n'));
 classes.forEach((c) => writeFileSync(
     resolve(OutputPath, `./${c}-tech.html`),
-    hints.join('\n'),
+    snippets[c].join('\n'),
 ));

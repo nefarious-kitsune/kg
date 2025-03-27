@@ -1629,10 +1629,17 @@ ul.inline-list.comma-ellipsis {
 
 /* Two-column layout of description list (dt and dd at the same line) */
 dl.two-column {
-  display: grid; column-gap: 0.6rem; row-gap: 0.4rem;
+  display: grid;
+  column-gap: 0.6rem;
+  row-gap: 0.6rem;
   grid-template-columns: max-content auto; 
-  dt { grid-column-start: 1; }
-  dd { grid-column-start: 2; }
+}
+dl.two-column > dt {
+  grid-column-start: 1;
+}
+dl.two-column > dd {
+  grid-column-start: 2;
+  margin-inline-start: 0;
 }
 
 .upgrade-grid {
