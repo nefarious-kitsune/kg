@@ -7,19 +7,21 @@ const DataPath = resolve(ModulePath, '../__data/');
 const TemplatePath = resolve(ModulePath, '../__templates/');
 const OutputPath = resolve(ModulePath, '../__generated/');
 
-const rawData = readFileSync(resolve(DataPath, './data.tsv'), 'utf8');
+/**
+ * @param {string} fPath
+ * @return {string}
+ */
+const readTemplate =
+  (fPath) => readFileSync(resolve(TemplatePath, fPath), 'utf8');
 
-const snippetTemplate =
-  readFileSync(resolve(TemplatePath, './tech-snippet.html'), 'utf8');
-
-const upgradeRowTemplate =
-  readFileSync(resolve(TemplatePath, './tech-upgrade-line.html'), 'utf8');
-
-const indexItemTemplate =
-  readFileSync(resolve(TemplatePath, './tech-label.html'), 'utf8');
+const rawData = readTemplate('./data.tsv');
+const snippetTemplate = readTemplate('./tech-snippet.html');
+const snippetLineTemplate = readTemplate('./tech-upgrade-line.html');
+const hintTemplate = readTemplate('./tech-snippet.html');
+const hintLineTemplate = readTemplate('./tech-upgrade-line.html');
+const indexItemTemplate = hintLineTemplate('./tech-index-item.html');
 
 const hints = [];
-
 const index = [];
 
 const classes = [
@@ -35,7 +37,7 @@ const classes = [
   'power',
 ];
 
-const upgrades = {
+const snippets = {
   population: [],
   gathering: [],
   gold: [],
@@ -60,18 +62,31 @@ function buildTechContent(data) {
 
   const techClass = classes.find((c) => id.includes(c));
 
-  const upgradeBody = data.map((cost, index) => upgradeRowTemplate
+  const snippetUpgrade = data.map((cost, index) => snippetLineTemplate
       .replace('{{PREV LEVEL}}', index)
       .replace('{{LEVEL}}', index+1)
       .replace('{{COST 1}}', cost),
   );
 
-  hints.push(snippetTemplate
+  snippets[techClass].push(snippetTemplate
       .replace('{{ID}}', id)
       .replace('{{TITLE}}', title)
       .replace('{{EFFECT}}', effect)
       .replace('{{RESEARCH TIME}}', researchTime)
-      .replace('{{UPGRADE DATA}}', upgradeBody.join('\n'))
+      .replace('{{UPGRADE DATA}}', snippetUpgrade.join('\n'))
+      ,
+  );
+
+  const hintUpgrade = data.map((cost, index) => snippetLineTemplate
+      .replace('{{COST 1}}', cost),
+  );
+
+  hints.push(hintTemplate
+      .replace('{{ID}}', id)
+      .replace('{{TITLE}}', title)
+      .replace('{{EFFECT}}', effect)
+      .replace('{{RESEARCH TIME}}', researchTime)
+      .replace('{{UPGRADE DATA}}', hintUpgrade.join('\n'))
       ,
   );
 
@@ -141,3 +156,7 @@ for (let techTier = 3; techTier <= 10; techTier++) {
 }
 
 writeFileSync(resolve(OutputPath, `./hints.html`), hints.join('\n'));
+classes.forEach((c) => writeFileSync(
+    resolve(OutputPath, `./${c}-tech.html`),
+    hints.join('\n'),
+));
