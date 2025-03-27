@@ -3,7 +3,7 @@ docs/assets/emojis/1x
 docs/assets/emojis/3x
 docs/assets/emojis/SVG
 
-# Igore symbolic links
+# Ignore symbolic links
 source/assets/heroes
 
 # Work-in-progress and other temporary files
