@@ -5,7 +5,7 @@ import {readFileSync, writeFileSync} from 'fs';
 const ModulePath = dirname(fileURLToPath(import.meta.url));
 const ProjectPath = resolve(ModulePath, '../../');
 // const DataPath = resolve(ProjectPath, './data/heroes/');
-const ExportPath = resolve(ProjectPath, './docs/heroes/');
+const ExportPath = resolve(ProjectPath, './site/heroes/');
 const TemplatePath = resolve(ProjectPath, './source/heroes/');
 
 // const contentTemplate = readFileSync(

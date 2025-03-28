@@ -1,0 +1,24 @@
+/* Override */
+.hero-avatar {
+  width: 2rem;
+  height: 2rem;
+}
+
+table.hero-skills-table {
+  table-layout: fixed;
+  width: 100%;
+}
+
+/* Default */
+.hero-skills-table .name-col {
+  max-width: 16rem;
+  .hero-avatar { display: none; }
+}
+
+/* Tablet screen */
+@media screen and (min-width: 480px) {
+  .hero-skills-table .name-col {
+    max-width: 20rem;
+    .hero-avatar { display: inline-block; }
+  }
+}

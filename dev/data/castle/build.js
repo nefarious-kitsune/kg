@@ -1,7 +1,7 @@
 import fs from 'fs';
 import {getDateFormatStrings} from '../../utils/date-utils.js';
 
-const exportDirectory = '../../../docs/data';
+const exportDirectory = '../../../site/data';
 const exportFileFragment = `${exportDirectory}/castleUpgradeCost`;
 const tableName = 'Castle Upgrade';
 

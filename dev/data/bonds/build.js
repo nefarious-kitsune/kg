@@ -11,7 +11,7 @@ const ModulePath = dirname(fileURLToPath(import.meta.url));
 const bondJSON = readFileSync(resolve(ModulePath, './converted/hero-bonds.json'), 'utf-8');
 const bondData = JSON.parse(bondJSON);
 
-const ExportPath = resolve(ModulePath, '../../../docs/data/')
+const ExportPath = resolve(ModulePath, '../../../site/data/')
 writeFileSync(resolve(ExportPath, './hero-bonds.json'), bondJSON);
 
 const tableBody = [];

@@ -1,0 +1,65 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-2 {
+        fill: #b7a376;
+      }
+
+      .cls-3 {
+        fill: url(#linear-gradient-2);
+      }
+
+      .cls-4 {
+        fill: #665d49;
+      }
+
+      .cls-5 {
+        fill: #fff;
+      }
+
+      .cls-6 {
+        opacity: 0.5;
+      }
+
+      .cls-7 {
+        fill: #333;
+      }
+
+      .cls-8 {
+        fill: url(#linear-gradient-3);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="16" y1="31" x2="16" y2="23.35" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#a69d89"/>
+      <stop offset="0.66" stop-color="#b7a376"/>
+      <stop offset="1" stop-color="#5c523b"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="3.47" y1="14.74" x2="29.56" y2="21.73" gradientUnits="userSpaceOnUse">
+      <stop offset="0.13" stop-color="#d4c8ad"/>
+      <stop offset="0.61" stop-color="#b7a376"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-3" x1="20.26" y1="13.37" x2="14.52" y2="9.03" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#2c6825"/>
+      <stop offset="1" stop-color="#5db552"/>
+    </linearGradient>
+  </defs>
+  <g>
+    <rect class="cls-1" x="3.35" y="23.35" width="25.3" height="7.65"/>
+    <rect class="cls-2" x="2.02" y="20.15" width="27.96" height="3.2"/>
+    <polygon class="cls-3" points="27.06 15.26 4.94 15.26 2.02 20.15 29.98 20.15 27.06 15.26"/>
+    <polygon class="cls-4" points="21.32 17.09 10.68 17.09 9.95 18.32 22.05 18.32 21.32 17.09"/>
+    <g>
+      <g>
+        <polygon class="cls-5" points="25.26 10.72 17.66 18.32 15.26 18.32 6.74 9.79 15.54 1 25.26 10.72"/>
+        <g class="cls-6">
+          <path class="cls-7" d="M15.54,1.71l9,9-7.09,7.09h-2l-8-8,8.09-8.08m0-.71L6.74,9.79l8.52,8.52h2.4l7.6-7.59L15.54,1Z"/>
+        </g>
+      </g>
+      <polygon id="Cross" class="cls-8" points="13.84 12.42 14.07 13.7 17.44 13.49 17.05 5.94 14.98 6.6 15.83 11.95 13.84 12.42"/>
+    </g>
+  </g>
+</svg>

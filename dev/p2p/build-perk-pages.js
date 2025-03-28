@@ -8,7 +8,7 @@ const ModulePath = dirname(fileURLToPath(import.meta.url));
 const ProjectPath = resolve(ModulePath, '../../');
 
 const srcBasePath = resolve(ProjectPath, './source/');
-const destBasePath = resolve(ProjectPath, './docs/');
+const destBasePath = resolve(ProjectPath, './site/');
 
 const tsvFilePath = resolve(srcBasePath, 'p2p/vip/vip-perks.tsv');
 const tsvData = readFileSync(tsvFilePath, {encoding: 'utf8'})
