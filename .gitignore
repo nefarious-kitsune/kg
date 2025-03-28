@@ -1,0 +1,10 @@
+# Google drive only
+/assets/emojis/1x
+/assets/emojis/3x
+/assets/emojis/SVG
+
+# Local working files
+--*.*
+--*/
+*.ai
+*.psd
