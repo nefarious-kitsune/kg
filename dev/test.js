@@ -4,7 +4,7 @@ import {existsSync, statSync, readFile} from 'fs';
 import {dirname, extname, resolve} from 'path';
 
 const ModulePath = dirname(fileURLToPath(import.meta.url));
-const SitePath = resolve(ModulePath, '../docs/');
+const SitePath = resolve(ModulePath, '../site/');
 
 const port = process.argv[2] || 9000;
 
