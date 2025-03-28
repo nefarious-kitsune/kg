@@ -5,7 +5,7 @@ import {readFileSync, writeFileSync} from 'fs';
 const ModulePath = dirname(fileURLToPath(import.meta.url));
 const ProjectPath = resolve(ModulePath, '../../../../');
 const DataPath = resolve(ModulePath, '../__data/');
-const ExportPath = resolve(ProjectPath, './docs/city/witchs-lab/');
+const ExportPath = resolve(ProjectPath, './site/city/witchs-lab/');
 
 export const database = {
   'title': 'Witch\'s Lab Dark Magic Upgrade Cost and Power',

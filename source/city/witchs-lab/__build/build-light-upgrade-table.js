@@ -6,7 +6,7 @@ import {readFileSync, writeFileSync} from 'fs';
 const ModulePath = dirname(fileURLToPath(import.meta.url));
 const ProjectPath = resolve(ModulePath, '../../../../');
 const TemplatePath = resolve(ModulePath, '../__templates/');
-const ExportPath = resolve(ProjectPath, './docs/city/witchs-lab/light-magic/');
+const ExportPath = resolve(ProjectPath, './site/city/witchs-lab/light-magic/');
 const ExportFilePath = resolve(ExportPath, './light-magic-upgrade.tsv');
 
 import {database} from './build-light-data.js';
