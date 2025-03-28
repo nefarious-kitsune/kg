@@ -1,6 +1,6 @@
 import fs from 'fs';
 
-const exportDirectory = '../../../site/tools';
+const exportDirectory = '../../../docs/tools';
 const importFileName = 'template';
 const exportFileName = 'hero-upgrade-calculator';
 

@@ -23,7 +23,7 @@ import {processHtml} from './__html/process-html.js';
 
 const ModulePath = dirname(fileURLToPath(import.meta.url));
 const SourcePath = resolve(ModulePath, '../source/');
-const DocsPath = resolve(ModulePath, '../site/');
+const DocsPath = resolve(ModulePath, '../docs/');
 
 const maxDepth = 6;
 
