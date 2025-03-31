@@ -1145,7 +1145,7 @@ img.emoji {
   text-decoration-color: #2DAEFF;
 }
 .hero-name.goblin {
-  text-decoration-color: #2DAEFF;
+  text-decoration-color: #30E773;
 }
 
 .hero-name.archer:focus,
@@ -1494,8 +1494,13 @@ li, div.li, span.li {
   &.glaucous::marker { color: var(--glaucous-500); }
   &.iris::marker { color: var(--iris-500); }
   &.mauve::marker { color: var(--mauve-500); }
-  &.rose::marker { color: var(--rose-500); }
+  &.rose::marker { color: var(--rose-500); } 
 }
+
+li.elemental.archer::marker { color: #DA9D2A; }
+li.elemental.fire::marker { color: #FC4614; }
+li.elemental.ice::marker { color: #2DAEFF; }
+li.elemental.goblin::marker { color: #30E773; }
 
 ul.emoji-markers {
   /* padding-left: 1.4rem; */
@@ -1577,6 +1582,17 @@ ul.timeline li+li:before {
   content: "\203A" !important
 }
 
+/* Inline list with bullet mark: • apple • banana • orange */
+ul.inline-bullet {
+  display: inline-block;
+  list-style: disc;
+  padding: 0;
+  margin: 0;
+  li:after { content: " "; }
+  li:last-child:after { content: ""; }
+}
+
+/* Inline list without mark: apple, banana, organge */
 ul.inline-list {
   display: inline-block;
   list-style: none;
@@ -1632,7 +1648,7 @@ dl.two-column {
   display: grid;
   column-gap: 0.6rem;
   row-gap: 0.6rem;
-  grid-template-columns: max-content auto; 
+  grid-template-columns: max-content auto;
 }
 dl.two-column > dt {
   grid-column-start: 1;
@@ -1694,7 +1710,7 @@ dl.two-column > dd {
       color: var(--gray-300);
       /* width: 1.4rem; */
       padding-left: 0.8rem;
-    }  
+    }
   }
 }
 
