@@ -11,6 +11,7 @@
   "scripts": {
     "build": "node dev/build.js",
     "clean": "node dev/clean.js",
+    "git": "node dev/git.js",
     "test": "node dev/test.js"
   },
   "devDependencies": {
