@@ -84,7 +84,7 @@ function buildTechContent(data) {
   );
 
   hints.push(hintTemplate
-      .replaceAll('{{ID}}', id)
+      .replaceAll('{{TIER}}', tier)
       .replaceAll('{{TITLE}}', title)
       .replace('{{EFFECT}}', effect)
       .replace('{{RESEARCH TIME}}', researchTime)
