@@ -1,0 +1,2 @@
+<h1>{{MAIN-HEADING}}</h1>
+{{MAIN-CONTENT}}

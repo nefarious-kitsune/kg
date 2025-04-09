@@ -1,35 +1,30 @@
-<html>
-<head>
-<title>Witch's Lab</title>
-<meta page-data
-  og-desc="Witch's Lab"
-  tag-list="witch's lab"
->
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<link href="../../assets/css/common.css" rel="stylesheet">
-<link href="/assets/modal/model.css" rel="stylesheet">
-<script src="/assets/modal/model.js"></script>
-<style>
+---
+title            : Witch's Lab
+short-title      : Witch's Lab
+breadcrumb-title : Witch's Lab
+index  : true
+topics : [City, Witch's Lab, Magic Power]
+desc   : >
+  Witch's Lab unlocks about 30–36 days after server opening.
+  The building provides Magic Power through
+  Light Magic, Dark Magic, and Magic Stones….
+css:
+  - /assets/hint/hint.css
+  - /assets/modal/model.css
+js:
+  - /assets/hint/hint.js
+  - /assets/modal/model.js # Remember to embed /__templates/modal-container.md
+css-code : >
   .intro {
-    background-image: url("../../assets/icons/building-witchs-lab.png");
+    background-image: url("/assets/icons/building-witchs-lab.png");
     background-size: 6rem auto;
     background-position: right 1rem top 1rem;
     background-repeat: no-repeat;
     p:first-child { margin-right: 7rem; }
   }
-</style>
-</head>
-<body>
-
-<header><nav><menu class="breadcrumb">
-  <li><a href="/content">Home</a></li>
-  <li><a href="/city">City</a></li>
-  <li>{{TITLE}}</li>
-</menu></nav></header>
-
-<main>
-<h1>{{TITLE}}</h1>
-
+prev:
+next:
+---
 <div class="quick-access-container"><menu>
   <li><a href="#light-magic">Light Magic</a></li>
   <li><a href="#dark-magic">Dark Magic</a></li>
@@ -37,10 +32,9 @@
   <li><a href="#screenshots">Screenshots</a></li>
 </menu></div>
 
-<fragment src="/__templates/modal-container.md"/>
-
+{{/__templates/modal-container.md}}
 <div class="intro">
-<fragment src="/city/__templates/witchs-lab-intro.md"/>
+{{/city/__templates/witchs-lab-intro.md}}
 <!--
 <p>Light/Dark Magic Power can be <em>extended</em> with
 Magic Stones,
@@ -54,7 +48,7 @@ need to be balanced.</div>
 
 <section id="light-magic">
 <h2>Light Magic</h2>
-<fragment src="/city/__templates/light-magic-leveling-intro.md"/>
+{{/city/__templates/light-magic-leveling-intro.md}}
 <p>See <a href="./light-magic/">Light Magic</a></p>
 </section>
 
@@ -75,7 +69,3 @@ Each Magic Stone requires 100 <a href="./magic-dusts/">Magic Dust</a></p>
 <section id="screenshots">
 <h2>Screenshots</h2>
 </section>
-
-</main>
-</body>
-</html>

@@ -93,7 +93,7 @@ function buildGearData(tier, data) {
 /** Save gear database */
 function saveDatabase() {
   const jsonData = JSON.stringify(gearDatabase, null, '  ') + '\n';
-  const filePath = resolve(ModulePath, `../magic-gear-data.json`);
+  const filePath = resolve(ModulePath, `../magic-stone-data.json`);
   writeFileSync(filePath, jsonData);
 }
 

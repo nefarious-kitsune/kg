@@ -1,0 +1,4 @@
+<div class="label level"></div>
+<div class="data level">{{LEVEL}}</div>
+<div class="data power number">+<span class="{{BONUS-CLASS}}">{{BONUS}}</span><span class="unit">%</span
+></div>

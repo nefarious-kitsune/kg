@@ -1,26 +1,15 @@
-<html>
-<head>
-<title>City</title>
-<meta page-data
-  og-desc="Information on City"
-  tag-list="dimension tunnel"
->
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<link href="../assets/css/common.css" rel="stylesheet">
-</head>
-<body>
-
-<header><nav><menu class="breadcrumb">
-  <li><a href="/content">Home</a></li>
-  <li>City</li>
-</menu></nav></header>
-
-<main>
-<h1>{{TITLE}}</h1>
-
-<section>
-</section>
-
+---
+title            : City
+short-title      : City
+breadcrumb-title : City
+index  : true
+topics : [City, Witch's Lab, Dimension Tunnel]
+desc   : >
+  City has many important buildings such as
+  Castle, Barrack, Witch's Lab, Blacksmith, Dimension Tunnel….
+css:
+js:
+---
 <section id="buildings">
 <h2>Buildings</h2>
 
@@ -103,7 +92,3 @@
 </tbody>
 </table>
 </section>
-
-</main>
-</body>
-</html>

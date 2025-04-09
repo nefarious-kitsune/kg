@@ -1,3 +1,3 @@
 <nav><menu class="breadcrumb">
-{{ITEMS}}
+{{BREADCRUMB-CONTENT}}
 </menu></nav>
