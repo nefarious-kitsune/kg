@@ -1,1 +1,1 @@
-  <li><a href="{{LINK-URL}}">{{BREADCRUMB-TITLE}}</a></li>
+  <li><a href="{{LINK-URL}}">{{SHORT-TITLE}}</a></li>

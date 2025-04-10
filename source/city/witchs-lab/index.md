@@ -1,7 +1,6 @@
 ---
-title            : Witch's Lab
-short-title      : Witch's Lab
-breadcrumb-title : Witch's Lab
+title       : Witch's Lab
+short-title : Witch's Lab
 index  : true
 topics : [City, Witch's Lab, Magic Power]
 desc   : >
@@ -34,7 +33,7 @@ next:
 
 {{/__templates/modal-container.md}}
 <div class="intro">
-{{/city/__templates/witchs-lab-intro.md}}
+{{../__snippets/witchs-lab-intro.md}}
 <!--
 <p>Light/Dark Magic Power can be <em>extended</em> with
 Magic Stones,
@@ -48,7 +47,7 @@ need to be balanced.</div>
 
 <section id="light-magic">
 <h2>Light Magic</h2>
-{{/city/__templates/light-magic-leveling-intro.md}}
+<p>{{../__snippets/light-magic-upgrade.md}}</p>
 <p>See <a href="./light-magic/">Light Magic</a></p>
 </section>
 

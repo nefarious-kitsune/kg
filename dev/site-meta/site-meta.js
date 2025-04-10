@@ -2,15 +2,14 @@ import path from 'path';
 import fs from 'fs';
 import YAML from 'yaml';
 
-import * as consts from '../consts.js';
-// import * as logger from '../logger/logger.js';
+import consts from '../consts.js';
 import {findContentFiles} from '../files/find-files.js';
 
 /** @typedef {import('./typedef.js').PageMeta} PageMeta */
 
-export const siteMeta = {
-  'title': 'Miku\'s Shrine',
-  'base-url': 'http://kg.kitsune21.com',
+const siteMeta = {
+  'title': consts.siteTitle,
+  'base-url': consts.baseUrl,
   'pages': new Map(),
 };
 
@@ -46,11 +45,6 @@ function parsePageMeta(fUrl) {
     'index': (typeof frontMatter.index === 'boolean')?frontMatter.index:true,
   };
 
-  const shortTitle = frontMatter['short-title'] || frontMatter.title;
-  const breadcrumbTitle = frontMatter['breadcrumb-title'] || shortTitle;
-  pageMeta['breadcrumb-title'] = breadcrumbTitle;
-  pageMeta['short-title'] = shortTitle;
-
   let permaLink;
   if (frontMatter.permaLink) {
     permaLink = frontMatter.permaLink;
@@ -82,5 +76,5 @@ function buildMeta() {
 }
 
 buildMeta();
-// logger.log(...siteMeta.pages.keys());
 
+export default siteMeta;

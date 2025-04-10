@@ -1,7 +1,6 @@
 ---
-title            : City
-short-title      : City
-breadcrumb-title : City
+title       : City
+short-title : City
 index  : true
 topics : [City, Witch's Lab, Dimension Tunnel]
 desc   : >

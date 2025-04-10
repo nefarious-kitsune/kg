@@ -1,29 +1,29 @@
-import {readFileSync, writeFileSync} from 'fs';
-import {fileURLToPath} from 'url';
-import {dirname, resolve} from 'path';
+import path from 'path';
 
-import {MagicGearDatabase} from './build-data.js';
-const maxTier = MagicGearDatabase.gears.length - 1;
+import {readTextFile, saveTextFile} from '../../../../../dev/files/files.js';
+import {dirs} from './dirs.js';
 
-/** @typedef {import('./build-data.js').MagicGearData} MagicGearData */
+/** @typedef {import('./typedef.js').MagicStoneData} MagicStoneData */
+/** @typedef {import('./typedef.js').MagicStoneDatabase} MagicStoneDatabase */
 
-const BaseDir = resolve(dirname(fileURLToPath(import.meta.url)), '../');
-const TemplateDir = `${BaseDir}/__templates/`;
-const GeneratedDir = `${BaseDir}/__generated/`;
-
-const loadFile = (path) => readFileSync(path, 'utf8');
-const saveFile = (path, content) => writeFileSync(path, content);
+import {MagicStoneDatabase} from './load-data.js';
 
 const templates = {
-  'page': loadFile(`${TemplateDir}/gear.md`),
-  'page-power-row': loadFile(`${TemplateDir}/gear-power-row.md`),
-  'page-upgrade-row': loadFile(`${TemplateDir}/gear-upgrade-row.md`),
-  'hint': loadFile(`${TemplateDir}/gear-hint.md`),
-  'gear-list-item': loadFile(`${TemplateDir}/gear-list-item.md`),
+  'page': readTextFile(`${dirs.__temp}/gear.md`),
+  'page-power-row': readTextFile(`${dirs.__temp}/gear-power-row.md`),
+  'page-upgrade-row': readTextFile(`${dirs.__temp}/gear-upgrade-row.md`),
+  'hint': readTextFile(`${dirs.__temp}/gear-hint.md`),
+  'gear-list-item': readTextFile(`${dirs.__temp}/gear-list-item.md`),
 };
 
 const gearHints = [];
 const gearList = [];
+
+const pagination = MagicStoneDatabase['magic-stones'].map((data) => {
+  const linkText = `T${data.tier}`;
+  const linkUrl = `/city/witchs-lab/magic-stones//magic-stone-t${data.tier}`;
+  return `  - [${linkText}](${linkUrl})`;
+}).join('\n');
 
 const formatBonus = (bonus) => bonus.toFixed(1);
 // const formatBonus = (bonus) => bonus;
@@ -87,10 +87,6 @@ function buildGearContent(gearData) {
   totalCost1 = totalCostVerified?totalCost1:'?';
   totalCost2 = totalCostVerified?totalCost2:'?';
 
-  // Left/right navigation link
-  const prevLink = (tier > 1)?`./magic-stone-t${tier-1}`:'';
-  const nextLink = (tier < maxTier)?`./magic-stone-t${tier+1}`:'';
-
   const gearPageContent = templates['page']
       .replaceAll('{{TIER}}', tier)
       .replaceAll('{{GEAR-NAME-1}}', gearData.names[0])
@@ -105,11 +101,13 @@ function buildGearContent(gearData) {
       .replace('{{POWER-BODY-2}}', powerBody.slice(10).join('\n'))
       .replaceAll('{{MAX-BONUS}}', maxBonus)
       .replaceAll('{{MAX-BONUS-CLASS}}', maxBonusClass)
-      .replace('{{PREV-LINK}}', prevLink)
-      .replace('{{NEXT-LINK}}', nextLink)
+      .replace('{{PAGINATION-LINKS}}', pagination)
   ;
 
-  saveFile(`${BaseDir}/magic-stone-t${tier}.md`, gearPageContent);
+  saveTextFile(
+      path.join(dirs.__content, `/magic-stone-t${tier}.md`),
+      gearPageContent,
+  );
 
   gearHints.push(templates.hint
       .replace('{{TIER}}', tier)
@@ -122,7 +120,14 @@ function buildGearContent(gearData) {
   gearList.push(templates['gear-list-item'].replaceAll('{{TIER}}', tier));
 }
 
-MagicGearDatabase.gears.forEach((data) => buildGearContent(data));
+MagicStoneDatabase['magic-stones'].forEach((data) => buildGearContent(data));
 
-writeFileSync(resolve(GeneratedDir, `./gear-hints.md`), gearHints.join('\n'));
-writeFileSync(resolve(GeneratedDir, `./gear-index.md`), gearList.join('\n'));
+saveTextFile(
+    path.join(dirs.__generated, `/gear-hints.md`),
+    gearHints.join('\n'),
+);
+
+saveTextFile(
+    path.join(dirs.__generated, `/gear-index.md`),
+    gearList.join('\n'),
+);

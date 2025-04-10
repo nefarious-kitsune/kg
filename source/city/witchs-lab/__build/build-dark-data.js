@@ -1,9 +1,18 @@
 import {fileURLToPath} from 'url';
 import {dirname, resolve} from 'path';
 import {readFileSync, writeFileSync} from 'fs';
+// import path from 'path';
+// import fs from 'fs';
+import consts from '../../../../dev/consts.js';
+
+// const directories = {
+//   repo: consts.repoDir,
+//   site: consts.siteDir,
+//   source: consts.sourceDir,
+// };
 
 const ModulePath = dirname(fileURLToPath(import.meta.url));
-const ProjectPath = resolve(ModulePath, '../../../../');
+const ProjectPath = consts.repoDir;
 const DataPath = resolve(ModulePath, '../__data/');
 const ExportPath = resolve(ProjectPath, './site/city/witchs-lab/');
 

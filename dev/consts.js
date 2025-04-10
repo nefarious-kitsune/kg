@@ -1,22 +1,27 @@
 import {fileURLToPath} from 'url';
-import {dirname, resolve, join} from 'path';
+import fs from 'fs';
+import path from 'path';
+import YAML from 'yaml';
 
-/**
- * Repository directory,
- * e.g. `C:\GitHub\kg`
- */
-const repoDir = resolve(dirname(fileURLToPath(import.meta.url)), '../');
+const repoDir =
+    path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../');
 
-/**
- * Default directory for content source,
- * e.g. `C:\GitHub\kg\source`
- */
-const sourceDir = join(repoDir, '/source');
+const config =
+    YAML.parse(fs.readFileSync(path.join(repoDir, '/config.yaml'), 'utf8'));
 
-/**
- * Default directory for compiled site,
- * e.g. `C:\GitHub\kg\site`
- */
-const siteDir = join(repoDir, '/site');
+export default {
+  /** @type {string} Site title */
+  siteTitle: config['site-title'] || 'Demo Site',
 
-export {repoDir, sourceDir, siteDir};
+  /** @type {string} Base URL, e.g. `https://example.com` */
+  baseUrl: config['base-url'] || 'https://example.com',
+
+  /** Repository directory, e.g. `C:\GitHub\kg` */
+  repoDir: repoDir,
+
+  /** Default directory for content source, e.g. `C:\GitHub\kg\source` */
+  sourceDir: path.join(repoDir, '/source'),
+
+  /** Default directory for compiled site, e.g. `C:\GitHub\kg\site` */
+  siteDir: path.join(repoDir, '/site'),
+};

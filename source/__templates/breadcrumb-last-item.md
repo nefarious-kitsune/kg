@@ -1,1 +1,1 @@
-  <li>{{BREADCRUMB-TITLE}}</li>
+  <li>{{SHORT-TITLE}}</li>

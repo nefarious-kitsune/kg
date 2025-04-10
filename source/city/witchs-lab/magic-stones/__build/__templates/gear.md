@@ -1,7 +1,6 @@
 ---
-title            : T{{TIER}} Magic Stones
-short-title      : T{{TIER}} Magic Stones
-breadcrumb-title : T{{TIER}} Magic Stones
+title       : T{{TIER}} Magic Stones
+short-title : T{{TIER}} Magic Stones
 index  : true
 topics : [Magic Stones]
 desc   : >
@@ -11,8 +10,8 @@ js:
 css:
   - /assets/hint/hint.css
   - /city/dragonden/armors/gears.css
-prev: {{PREV-LINK}}
-next: {{NEXT-LINK}}
+pagination:
+{{PAGINATION-LINKS}}
 ---
 <section class="gear-overview" id="overview">
 

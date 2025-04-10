@@ -8,9 +8,7 @@
  * @property {string} title
  * - Full title of the page
  * @property {string} short-title
- * - Short title of the page
- * @property {string} breadcrumb-title
- * - Short title for use in breadcrumb
+ * - Short title of the page (for use in breadcrumb)
  * @property {string} [desc]
  * - Short description of page content
  * @property {string} [image-url]

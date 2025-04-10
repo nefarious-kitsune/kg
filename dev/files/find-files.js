@@ -1,6 +1,6 @@
 import path from 'path';
 import fs from 'fs';
-import * as consts from '../consts.js';
+import consts from '../consts.js';
 
 /**
  * Get a list of build scripts
