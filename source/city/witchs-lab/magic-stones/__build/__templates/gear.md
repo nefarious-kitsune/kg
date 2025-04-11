@@ -54,7 +54,7 @@ pagination:
 <h2>Power Bonus</h2>
 
 <p>Each T{{TIER}} can provide Magic Stone Power that is
-a certain percentage of the of the <a href="../magic/">Magic Power</a>.</p>
+a certain percentage of the <a href="../magic/">Magic Power</a>.</p>
 
 <div class="col-flex">
 <div class="power-grid">
