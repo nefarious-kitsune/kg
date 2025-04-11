@@ -1,31 +1,12 @@
-import {readFileSync, writeFileSync} from 'fs';
-import {fileURLToPath} from 'url';
-import {dirname, resolve} from 'path';
+import path from 'path';
 
-const ModulePath = dirname(fileURLToPath(import.meta.url));
+import {readTsvFile, saveTextFile} from '../../../../../dev/files/files.js';
+import {dirs} from './dirs.js';
 
-/**
- * @typedef {Object} MKEventDatabase
- * Database for Mightiest Kingdom event
- * @property {string} title - Title of the database
- * @property {MKSeasonalData[]} seasons - Data of Mightiest Kingdom seasons
- *
- * @typedef {'blueprint'|'magic-dust'|'forge-blueprint'|'magic-book'} MKRewardName
- *
- * @typedef {Object} MKReward
- * MK reward
- * @property {number} tier - Tier number
- * @property {MKRewardName} reward - Reward name
- *
- * @typedef {Object} MKSeasonalData
- * Data for Mightiest Kingdom season
- * @property {number} season - Season number
- * @property {string} season-name - Season name
- * @property {MKReward} top-3-reward - Reward for overall ranking 1-3
- * @property {MKReward} top-20-reward - Reward for overall ranking 4-20
- * @property {MKReward} phase-reward - Reward for event phase
- * @property {boolean} verified - Is this verified?
-*/
+/** @typedef {import('./typedef.js').MKEventDatabase} MKEventDatabase */
+/** @typedef {import('./typedef.js').MKSeasonalData} MKSeasonalData */
+
+const jsonFilePath = path.join(dirs.__content, `/mk-data.json`);
 
 /** @type {MKEventDatabase} */
 const MKEventDatabase = {
@@ -50,11 +31,7 @@ const MKEventDatabase = {
   ],
 };
 
-const rewardsData = readFileSync(
-    resolve(ModulePath, '../__data/mk-rewards.tsv'),
-    {encoding: 'utf8'},
-).split('\n');
-
+const rewardsData = readTsvFile(path.join(dirs.__data, './mk-rewards.tsv'));
 rewardsData.shift(); // Remove header
 rewardsData.shift(); // Remove 'after throne war' row
 rewardsData.shift(); // Remove 'season 1-3' row
@@ -63,22 +40,20 @@ let seasonNumber = 4;
 
 let rowIdx = 0;
 while (rowIdx < rewardsData.length) {
-  const row = rewardsData[rowIdx];
-  const entries = row.split('\t');
+  const currRow = rewardsData[rowIdx];
 
   let seasonName = `Season ${seasonNumber}`;
   // const historical = entries[1] === 'TRUE';
-  const predicted = entries[2] === 'TRUE';
-  const rewardType = entries[3].toLowerCase();
-  const rewardTier = parseInt(entries[4]);
+  const predicted = currRow[2] === 'TRUE';
+  const rewardType = currRow[3].toLowerCase();
+  const rewardTier = parseInt(currRow[4]);
 
   let nextRowIdx = rowIdx + 1;
   let nextSeasonNumber = seasonNumber + 1;
   if (rowIdx < rewardsData.length-1) {
     const nextRow = rewardsData[nextRowIdx];
-    const nextEntries = nextRow.split('\t');
-    const nextRewardType = nextEntries[3].toLowerCase();
-    const nextRewardTier = parseInt(nextEntries[4]);
+    const nextRewardType = nextRow[3].toLowerCase();
+    const nextRewardTier = parseInt(nextRow[4]);
     if ((nextRewardTier === rewardTier) && (nextRewardType === rewardType)) {
       seasonName = `Season ${seasonNumber} & ${nextSeasonNumber}`;
       nextRowIdx++;
@@ -107,9 +82,6 @@ while (rowIdx < rewardsData.length) {
   rowIdx = nextRowIdx;
 }
 
-writeFileSync(
-    resolve(ModulePath, './--mk-data.json'),
-    JSON.stringify(MKEventDatabase, null, '  ') + '\n',
-);
+saveTextFile(jsonFilePath, MKEventDatabase);
 
 export {MKEventDatabase};
