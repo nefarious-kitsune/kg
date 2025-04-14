@@ -1,0 +1,1 @@
+<span --has-hint --hint-ref="item-magic-stone-t{{TIER}}">T{{TIER}}</span>

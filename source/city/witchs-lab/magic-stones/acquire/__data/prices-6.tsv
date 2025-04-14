@@ -1,0 +1,7 @@
+Season	Historical	Predicted	T2–7	T8	T9	T10	T11	T12
+38	TRUE	FALSE	$0.99	$4.99	$19.99	$99.99	Event	Locked
+39	TRUE	FALSE	$0.99	$4.99	$19.99	$99.99		Locked
+40	TRUE	FALSE	$0.99	$4.99	$9.99	$49.99		Locked
+41	FALSE	TRUE	$0.99	$0.99	$9.99	$49.99	Event	Locked
+42	FALSE	TRUE	$0.99	$0.99	$4.99	$19.99		Locked
+43	FALSE	TRUE	$0.99	$0.99	$4.99	$19.99		Locked
