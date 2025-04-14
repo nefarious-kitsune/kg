@@ -1,25 +1,14 @@
-<html>
-<head>
-<title>Servers</title>
-<meta page-data
-  og-image="server"
-  og-desc="Information on KG servers, such as personal/alliance transfer, server configuration, and Server Groups"
-  tag-list="servers"
->
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<link href="../assets/css/common.css" rel="stylesheet">
-</head>
-
-<body>
-
-<header><nav><ul class="breadcrumb">
-  <li><a href="../content">Home</a></li>
-  <li>Servers</li>
-</ul></nav></header>
-
-<main>
-<h1>{{TITLE}}</h1>
-
+---
+title       : Servers
+short-title : Servers
+index  : false
+topics : [Servers]
+desc   : >
+  Information on KG servers, such as personal/alliance transfer, server
+  configuration, and Server Groups
+css:
+js:
+---
 <section>
 <h2>Phases</h2>
 
@@ -53,6 +42,3 @@
   <li><a href="./mapping/">Server Mapping &amp; History</a></li>
 </ul>
 </section>
-</main>
-</body>
-</html>
