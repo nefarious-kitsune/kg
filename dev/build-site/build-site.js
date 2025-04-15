@@ -4,7 +4,9 @@ import fs from 'fs';
 import consts from '../consts.js';
 import logger from '../logger/logger.js';
 import siteMeta from '../site-meta/site-meta.js';
+
 import {buildBreadcrumb} from './build-breadcrumb.js';
+import {transclude} from './transclude.js';
 
 /** @typedef {import('../site-meta/typedef.js').PageMeta} PageMeta */
 
@@ -37,10 +39,12 @@ function buildPageContent(pageMeta) {
   const separator = '---\n';
   if (!srcContent.startsWith(separator)) return;
   const fmEnd = srcContent.indexOf(separator, separator.length);
-  const sourceContent = srcContent.slice(fmEnd);
+  let sourceContent = srcContent.slice(fmEnd + 4);
 
   const breadcrumb = buildBreadcrumb(pageMeta);
   // logger.print(breadcrumb);
+  sourceContent = transclude(pageMeta, sourceContent);
+  // logger.print(sourceContent);
 
   const output = sourceContent;
   return output;

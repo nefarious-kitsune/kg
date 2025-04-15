@@ -31,9 +31,9 @@ next:
   <li><a href="#screenshots">Screenshots</a></li>
 </menu></div>
 
-{{/__templates/modal-container.md}}
+{{</__templates/modal-container.md>}}
 <div class="intro">
-{{../__snippets/witchs-lab-intro.md}}
+{{<../__snippets/witchs-lab-intro.md>}}
 <!--
 <p>Light/Dark Magic Power can be <em>extended</em> with
 Magic Stones,
@@ -47,7 +47,7 @@ need to be balanced.</div>
 
 <section id="light-magic">
 <h2>Light Magic</h2>
-<p>{{../__snippets/light-magic-upgrade.md}}</p>
+<p>{{<../__snippets/light-magic-upgrade.md>}}</p>
 <p>See <a href="./light-magic/">Light Magic</a></p>
 </section>
 
