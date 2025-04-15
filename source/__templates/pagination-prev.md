@@ -1,1 +1,0 @@
-<div class="pagination-prev"><a href="{{PREV-URL}}">↞</a></div>

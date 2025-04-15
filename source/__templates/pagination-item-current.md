@@ -1,0 +1,1 @@
+<li class="pagination-current-item">{{TITLE}}</li>

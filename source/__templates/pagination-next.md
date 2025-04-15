@@ -1,1 +1,0 @@
-<div class="pagination-next"><a href="{{NEXT-URL}}">↠</a></div>

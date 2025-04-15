@@ -1,4 +1,3 @@
-<nav class="pagination">
-{{PREV-LINK}}
-{{NEXT-LINK}}
-</nav>
+<nav><menu class="pagination">
+{{ITEMS}}
+</menu></nav>

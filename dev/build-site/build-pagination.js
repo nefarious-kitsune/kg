@@ -1,56 +1,112 @@
+import path from 'path';
+import fs from 'fs';
+import consts from '../consts.js';
 import logger from '../logger/logger.js';
-import siteMeta from '../site-meta/site-meta.js';
 
-import {Templates} from './build-site.js';
+import {readTextFile} from '../files/files.js';
 
 /** @typedef {import('../site-meta/typedef.js').PageMeta} PageMeta */
+/** @typedef {import('../site-meta/typedef.js').ContentPartials} ContentPartials */
+
+const tempDir = path.join(consts.sourceDir, '__templates/');
+export const templates = {
+  'pagination': readTextFile(`${tempDir}/pagination.md`),
+  'item': readTextFile(`${tempDir}/pagination-item.md`),
+  'item-current': readTextFile(`${tempDir}/pagination-item-current.md`),
+  'item-inactive': readTextFile(`${tempDir}/pagination-item-inactive.md`),
+};
+
+const mdLinkRe = /\[([^\]]+)\]\(([^\)]+)\)/i;
 
 /**
  * Generate HTML content for breadcrumb
- * @param {PageMeta} pageMeta
- * @return {string}
+ * @param {PageMeta} meta
+ * @param {ContentPartials} partials
  **/
-export function buildPagination(pageMeta) {
+export function buildPagination(meta) {
   // let url = pageMeta.permaLink;
   // let title = siteMeta.pages.get(url)['breadcrumb-title'];
+  if (!Array.isArray(meta.pagination)) return;
 
-  const parts = [];
+  const parts = meta.pagination.map((item, idx) => {
+    const reResult = item.match(mdLinkRe);
+    if (reResult) return {text: reResult[1], url: reResult[2]}
+    else return {text: idx + 1, url: item};
+  });
 
-  let upLink = pageMeta.permaLink;
-  if (upLink.endsWith('/')) upLink = upLink.slice(0, -1);
-  let lastSep = upLink.lastIndexOf('/');
-  while (lastSep > 0) {
-    upLink = upLink.slice(0, lastSep);
-    const refLink = upLink + '/';
-    const refPageMeta = siteMeta.pages.get(refLink);
-    if (!refPageMeta) {
-      logger.warn(
-          `Error when building breadcrumb for '${pageMeta.permaLink}'` +
-          `(information for '${refLink}' not found'`,
-      );
-    } else {
-      const refTitle = refPageMeta['short-title'];
-      parts.unshift({url: refLink, title: refTitle});
-    }
-    lastSep = upLink.lastIndexOf('/');
+  let firstItem;
+  let lastItem;
+  const items = [];
+  let pRangeStart;
+  let pRangeEnd;
+  const pIndex = parts.findIndex((p) => p.url === meta.permaLink);
+
+  if (pIndex > 0) {
+    firstItem = templates['item']
+        .replace('{{TITLE}}', '⟨')
+        .replace('{{URL}}', parts[pIndex-1].url);
+  } else {
+    firstItem = templates['item-inactive'].replace('{{TITLE}}', '⟨');
   }
 
-  if (parts.length === 0) return '';
+  if (pIndex < parts.length - 1) {
+    lastItem = templates['item']
+        .replace('{{TITLE}}', '⟩')
+        .replace('{{URL}}', parts[pIndex+1].url);
+  } else {
+    lastItem = templates['item-inactive'].replace('{{TITLE}}', '⟩');
+  }
 
-  const breadcrumbItems = parts.map((p) =>
-    Templates['breadcrumb-item']
-        .replace('{{SHORT-TITLE}}', p.title)
-        .replace('{{LINK-URL}}', p.url),
-  );
+  /*
+    Possible layouts:
+      ⟪ ⟨ 1 𝟐 3 4 5 6 7 ⟩ ⟫
+      ⟪ ⟨ 1 𝟐 3 4 5 … 9 ⟩ ⟫
+      ⟪ ⟨ 1 … 5 6 7 𝟖 9 ⟩ ⟫
+      ⟪ ⟨ 1 … 4 𝟓 6 … 9 ⟩ ⟫
+  */
 
-  const firstItem = Templates['breadcrumb-first-item'];
-  const lastItem = Templates['breadcrumb-last-item']
-      .replace('{{SHORT-TITLE}}', pageMeta['short-title']);
+  let currItem;
+  let currPart;
+  if (parts.length <= 7) {
+    // Layout: ⟨ 1 𝟐 3 4 5 6 7 ⟩
+    parts.forEach((p, i) => {
+      if (i === pIndex) {
+        currItem = templates['item-current'].replace('{{TITLE}}', p.text);
+      } else {
+        currItem = templates['item']
+            .replace('{{TITLE}}', p.text)
+            .replace('{{URL}}', p.url);
+      }
+      items.push(currItem);
+    });
+  } else if (pIndex < 5) {
+    // Layout: ⟪ ⟨ 1 𝟐 3 4 5 … 9 ⟩ ⟫
+    for (let i = 0; i < 5; i++) {
+      currPart = parts[i];
+      if (i === pIndex) {
+        currItem = templates['item-current']
+            .replace('{{TITLE}}', currPart.text);
+      } else {
+        currItem = templates['item']
+            .replace('{{TITLE}}', currPart.text)
+            .replace('{{URL}}', currPart.url);
+      }
+      items.push(currItem);
+    }
 
-  breadcrumbItems.unshift(firstItem);
-  breadcrumbItems.push(lastItem);
+    currItem = templates['item-inactive']
+        .replace('{{TITLE}}', '…');
+    items.push(currItem);
 
-  return Templates['breadcrumb']
-      .replace('{{BREADCRUMB-CONTENT}}', breadcrumbItems.join('\n'))
-  ;
+    currPart = parts[parts.length-1];
+    currItem = templates['item']
+        .replace('{{TITLE}}', currPart.text)
+        .replace('{{URL}}', currPart.url);
+    items.push(currItem);
+  }
+
+  items.unshift(firstItem);
+  items.push(lastItem);
+
+  partials.pagination = parts;
 }
