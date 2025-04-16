@@ -1,0 +1,24 @@
+details {
+  /* padding: 0.2rem; */
+  margin-bottom: 0.5rem;
+  border-radius: 0.5rem;
+
+  summary {
+    padding: 0.4rem;
+    border-radius: 0.5rem 0.25rem 0.25rem 0.25rem;
+  }
+
+  summary::marker {
+    font-size: 1.2em;
+  }
+
+  > div:first-of-type {
+    padding: 0.4rem;
+  }
+}
+
+details[open] {
+  summary {
+    border-radius: 0.25rem 0.25rem 0 0;
+  }
+}

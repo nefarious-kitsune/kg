@@ -1,0 +1,306 @@
+:root {
+  color-scheme: light dark;
+
+  --miku-red: rgb(180, 35, 40); /*  #b42328; */
+  --miku-dark-red: rgb(124, 26, 32); /* #7c1a20 */
+  --miku-gold: #fec728;
+  --miku-light-gold: #fedd7e;
+  --miku-pale-gold: #ffe9a9;
+  --red: #b42328;
+  --gold: #fec728;
+
+  --primary-1  : #C9803F; /* Caramel */
+  --secondary-1: #D59E48; /* Sand */
+  --primary-2  : #E0BB50; /* Copper */
+  --secondary-2: #9FB851; /* Olive */
+  --primary-3  : #5DB552; /* Jade */
+  --secondary-3: #51A092; /* Sapphire */
+  --primary-4  : #448BD1; /* Blue */
+  --secondary-4: #7789C2; /* Glaucous */
+  --primary-5  : #AA86B2; /* Iris */
+  --secondary-5: #AF6B96; /* Mauve */
+  --primary-6  : #B35079; /* Rose */
+
+  --light-primary-1  : #DFB38C;
+  --light-secondary-1: #E6C591;
+  --light-primary-2  : #ECD696;
+  --light-secondary-2: #C5D497;
+  --light-primary-3  : #9ED397;
+  --light-secondary-3: #97C6BE;
+  --light-primary-4  : #8FB9E3;
+  --light-secondary-4: #ADB8DA;
+  --light-primary-5  : #CCB6D1;
+  --light-secondary-5: #CFA6C0;
+  --light-primary-6  : #D196AF;
+
+  --pale-primary-1  : #E9CCB2;
+  --pale-secondary-1: #EED8B6;
+  --pale-primary-2  : #F3E4B9;
+  --pale-secondary-2: #D9E3B9;
+  --pale-primary-3  : #BEE1BA;
+  --pale-secondary-3: #B9D9D3;
+  --pale-primary-4  : #B4D1ED;
+  --pale-secondary-4: #C9D0E7;
+  --pale-primary-5  : #DDCFE0;
+  --pale-secondary-5: #DFC4D5;
+  --pale-primary-6  : #E1B9C9;
+
+  --dark-neutral:#363E4A;
+  --neutral: #485363; /* Charcoal */
+  --light-neutral: #9198A1;
+  --pale-neutral: #dadde0;
+
+  /* alternative variable names for primary colors */
+  --orange : #C9803F; /* Caramel */
+  --gold   : #E0BB50; /* Copper */
+  --green  : #5DB552; /* Jade */
+  --blue   : #448BD1; /* Blue */
+  --purple : #AA86B2; /* Iris */
+}
+
+
+strong.stronger {
+  font-weight: 600;
+  font-style: italic;
+}
+strong.very-strong {
+  font-style: italic;
+  font-weight: 700;
+}
+
+strong.important {
+  text-transform: uppercase;
+}
+
+/* -------------------- Tooltips -------------------- */
+
+abbr[title],
+.hero-name[image-hint],
+.tip-container {
+  text-decoration-line: underline;
+  text-decoration-style: dotted;
+  text-underline-offset: 0.2rem;
+  text-decoration-thickness: 0.1rem;
+}
+
+.hero-name[image-hint],
+.tip-container {
+  position: relative;
+  display: inline-block;
+}
+
+abbr[title]:hover,
+.hero-name[image-hint]:hover,
+.tip-container:hover,
+abbr[title]:focus,
+.hero-name[image-hint]:focus,
+.tip-container:focus {
+  text-decoration-thickness: 0.15rem;
+}
+
+.tip-container .image-tip img {
+  max-width: 10rem;
+  height: auto;
+  margin: 0;
+}
+
+.tip-container .image-tip,
+.tip-container .text-tip {
+  display: block;
+  position: absolute;
+  top: calc(100% + 0.4rem);
+  left: 50%;
+  transform: translate(-50%);
+  background: light-dark(var(--gray-50), var(--gray-700));
+  color: light-dark(var(--gray-900), var(--gray-50));
+  padding: 0.25rem;
+  border-radius: 0.2rem;
+  border: 0.1rem solid light-dark(var(--gray-100), var(--gray-300));
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.6s ease-in-out 0.4s;
+}
+
+.tip-container .text-tip {
+  max-width: 18rem;
+  min-width: 10rem;
+  font-size: 0.9rem;
+  text-decoration-line: none;
+}
+
+.tip-container:focus .image-tip,
+.tip-container:focus .text-tip,
+.tip-container:hover .image-tip,
+.tip-container:hover .text-tip {
+  opacity: 1;
+  visibility: visible;
+  transition: 0.4s ease-in-out 0.3s;
+}
+
+
+/* --------------- Heroes & Elements  --------------- */
+
+.hero-avatar {
+  &.n   { border-color: #AFE0A8;}
+  &.r   { border-color: #95C1EE;}
+  &.sr  { border-color: #C297DE;}
+  &.ssr { border-color: #E9ED65;}
+  &.blank { background: transparent; }
+  &.blank.ssr {
+    background: linear-gradient(-45deg, #FF9927 0%, #D5793F 100%);
+  }
+}
+
+/* ---------------- Site Navigation  ---------------- */
+
+@media screen and ( width >= 680px) {
+  nav.left-right {
+    .left-arrow a {
+      position: fixed;
+      z-index: 100;
+      left: -1.4rem;
+      top: 45%;
+      border-radius: 45% / 0 50% 50% 0;
+    }
+
+    .right-arrow a {
+      position: fixed;
+      z-index: 100;
+      right: -1.4rem;
+      top: 45%;
+      border-radius: 45% / 50% 0 0 50%;
+    }
+
+    .left-arrow a:hover,
+    .left-arrow a:focus { left: 0; }
+    .right-arrow a:hover,
+    .right-arrow a:focus { right: 0; }
+
+    a {
+      padding: 3rem 1rem;
+      background: rgba(0, 0, 0, 0.65);
+      color: var(--gold-500);
+      text-decoration: none;
+      font-size: 1.6rem;
+    }
+  }
+
+  .left-arrow a,
+  .right-arrow a,
+  .left-arrow a:hover,
+  .left-arrow a:focus,
+  .right-arrow a:hover,
+  .right-arrow a:focus {
+    -webkit-transition: .2s ease-in;
+    -moz-transition: .2s ease-in;
+    -o-transition: .2s ease-in;
+    transition: .2s ease-in;
+  }
+}
+
+@media screen and ( width >= 900px) {
+  nav.left-right {
+    .left-arrow a {
+      left: -0.8rem;
+    }
+    .right-arrow a {
+      right: -0.8rem;
+    }
+  }
+}
+
+@media screen and (width < 680px) {
+  nav.left-right {
+    margin: 0.5rem 0;
+    height: 2rem;
+    position: relative;
+
+    .left-arrow a {
+      position: absolute;
+      left: 8rem;
+    }
+
+    .right-arrow a {
+      position: absolute;
+      right: 8rem;
+    }
+
+    a {
+      background-color: var(--miku-red);
+      color: var(--miku-gold);
+      text-decoration: none;
+      font-size: 1.6rem;
+      padding: 0.6rem 1.2rem;
+    }
+  }
+}
+
+nav.left-right {
+  .left-arrow a:hover,
+  .left-arrow a:focus,
+  .right-arrow a:hover,
+  .right-arrow a:focus {
+    background: var(--red-700);
+    color: var(--gold-100);
+  }
+}
+
+/* -------------- Lists & Pseudo Lists -------------- */
+
+ul.butterfly {
+  padding-left: 1.8rem;
+}
+
+ul.butterfly > li {
+  list-style-image: url("../../images/butterfly-red.svg");
+  margin-bottom: 0.2rem;
+}
+
+ul.butterfly > li::marker {
+  font-size: 1.8em;
+}
+
+
+
+ul.pagination {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: inline-block;
+  text-align: center;
+  font-size: 0.9rem;
+
+  li {
+    display: inline;
+    float: left;
+    padding: 0.4rem 0.8rem;
+    margin: 0 0.2rem;
+    border-radius: 0.4rem;
+    transition: background-color .3s;
+
+    a {
+      color: black;
+      text-decoration: none !important;
+    }
+
+    &.selected {
+      font-weight: bold;
+      color: white;
+      background-color: var(--miku-red);
+    }
+
+    &.selected a { color: white; }
+
+    &:not(.selected):hover {
+      background-color: var(--light-neutral);
+    }
+  }
+}
+
+ul.timeline li+li:before {
+  display: inline-block;
+  padding-left: 0.2rem;
+  padding-right: 0.2rem;
+  font-weight: bold;
+  content: "\203A" !important
+}
