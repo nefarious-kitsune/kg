@@ -36,34 +36,28 @@ function parsePageMeta(fUrl) {
   if (!published) return;
 
   /** @type {PageMeta} */
-  const pageMeta = {
-    'source-url': fUrl,
-    'title': frontMatter.title,
-    'short-title': frontMatter['short-title'] || frontMatter.title,
-    'desc': frontMatter.desc,
-    'published': true,
-    'index': (typeof frontMatter.index === 'boolean')?frontMatter.index:true,
-    'pagination': frontMatter.pagination,
-  };
+  const pageMeta = Object.assign({'source-url': fUrl}, frontMatter);
 
-  let permaLink;
-  if (frontMatter.permaLink) {
-    permaLink = frontMatter.permaLink;
-  } else if (path.basename(fUrl) === 'index.md') {
-    permaLink = path.dirname(fUrl) + '/';
-  } else {
-    permaLink = fUrl.slice(0, -'.md'.length);
-  }
-  pageMeta.permaLink = permaLink;
+  if (!pageMeta['short-title']) pageMeta['short-title'] = pageMeta.title;
+  if (typeof pageMeta.index !== 'boolean') pageMeta.index = true;
 
-  if ((frontMatter.prev) && (!frontMatter.prev.startsWith('{{'))) {
-    pageMeta.prev = frontMatter.prev;
-  }
-  if ((frontMatter.next) && (!frontMatter.next.startsWith('{{'))) {
-    pageMeta.next = frontMatter.next;
+  if (!pageMeta.permaLink) {
+    if (path.basename(fUrl) === 'index.md') {
+      pageMeta.permaLink = path.dirname(fUrl) + '/';
+    } else {
+      pageMeta.permaLink = fUrl.slice(0, -'.md'.length);
+    }
   }
 
-  siteMeta.pages.set(permaLink, pageMeta);
+  if ((pageMeta.prev) && (!pageMeta.prev.startsWith('{{'))) {
+    delete pageMeta.prev;
+  }
+
+  if ((pageMeta.next) && (!pageMeta.next.startsWith('{{'))) {
+    delete pageMeta.next;
+  }
+
+  siteMeta.pages.set(pageMeta.permaLink, pageMeta);
 }
 
 /** Build page meta */
