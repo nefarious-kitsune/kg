@@ -7,6 +7,7 @@ import siteMeta from '../site-meta/site-meta.js';
 
 import {buildPagination} from './build-pagination.js';
 import {buildBreadcrumb} from './build-breadcrumb.js';
+import {buildHead} from './build-head.js';
 import {transclude} from './transclude.js';
 
 /** @typedef {import('../site-meta/typedef.js').PageMeta} PageMeta */
@@ -33,6 +34,7 @@ function buildPageContent(pageMeta) {
   /** @type {ContentPartials} */
   const contentPartials = {
     head: '',
+    header: '',
     main: srcContent.slice(fmEnd + 4),
     footer: '',
     aside: '',
@@ -48,6 +50,10 @@ function buildPageContent(pageMeta) {
   logger.printProgress('Building pagination…');
   buildPagination(pageMeta, contentPartials);
   logger.updateProgress('Pagination built\n');
+
+  logger.printProgress('Building head body…');
+  buildHead(pageMeta, contentPartials);
+  logger.updateProgress('Head body built\n');
 
   logger.printProgress('Performing transclusion…');
   transclude(pageMeta, contentPartials);
@@ -65,8 +71,6 @@ function buildPageContent(pageMeta) {
   ;
 
   const html = templates.html
-      .replace('{{PAGE-TITLE}}', pageMeta.title)
-      .replace('{{SITE-TITLE}}', siteMeta.title)
       .replace('{{HEAD-BODY}}', contentPartials.head)
       .replace('{{HEADER-BODY}}', contentPartials.header)
       .replace('{{MAIN-BODY}}', mainBody)
@@ -82,9 +86,12 @@ function buildPageContent(pageMeta) {
  **/
 /** Process source files and copy to destination */
 function buildMarkdownContent() {
+  let htmlContent;
   const permalinks = [...siteMeta.pages.keys()];
   permalinks.forEach((permalink) => {
-    buildPageContent(siteMeta.pages.get(permalink));
+    const meta = siteMeta.pages.get(permalink);
+    htmlContent = buildPageContent(meta);
+    // if (meta.pagination) logger.log(htmlContent);
   });
 }
 

@@ -29,17 +29,14 @@ function parsePageMeta(fUrl) {
   const fmContent = srcContent.slice(fmStart, fmEnd);
   const frontMatter = YAML.parse(fmContent);
 
-  const published = (typeof frontMatter.published === 'boolean')?
-    frontMatter.published:
-    true;
-
-  if (!published) return;
-
   /** @type {PageMeta} */
   const pageMeta = Object.assign({'source-url': fUrl}, frontMatter);
 
   if (!pageMeta['short-title']) pageMeta['short-title'] = pageMeta.title;
   if (typeof pageMeta.index !== 'boolean') pageMeta.index = true;
+  if (typeof pageMeta.published !== 'boolean') pageMeta.published = true;
+
+  if (!pageMeta.published) return;
 
   if (!pageMeta.permaLink) {
     if (path.basename(fUrl) === 'index.md') {

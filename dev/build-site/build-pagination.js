@@ -68,11 +68,12 @@ export function buildPagination(meta, partials) {
           .replace('{{TITLE}}', a.title);
     }
   };
-
-  const prevAnchor = {title: '⟨', url: anchors[currPos-1]?.url||''};
-  const nextAnchor = {title: '⟩', url: anchors[currPos+1]?.url||''};
-  const prevItem = makeItem(prevAnchor);
-  const nextItem = makeItem(nextAnchor);
+  const prevUrl = anchors[currPos-1]?.url||null;
+  const nextUrl = anchors[currPos+1]?.url||null;
+  if (prevUrl) meta.prev = prevUrl;
+  if (nextUrl) meta.next = nextUrl;
+  const prevItem = makeItem({title: '⟨', url: prevUrl});
+  const nextItem = makeItem({title: '⟩', url: nextUrl});
   const firstItem = makeItem(anchors[0]);
   const lastItem = makeItem(anchors[anchors.length-1]);
   const ellipsisItem = makeItem({title: '…', url: null});

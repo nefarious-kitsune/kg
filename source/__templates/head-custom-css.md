@@ -1,0 +1,3 @@
+<style>
+{{CSS-CODE}}
+</style>
