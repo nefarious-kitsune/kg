@@ -21,7 +21,7 @@ const gearList = [];
 
 const pagination = MagicStoneDatabase['magic-stones'].map((data) => {
   const linkText = `T${data.tier}`;
-  const linkUrl = `/city/witchs-lab/magic-stones//magic-stone-t${data.tier}`;
+  const linkUrl = `/city/witchs-lab/magic-stones/magic-stone-t${data.tier}`;
   return `  - "[${linkText}](${linkUrl})"`;
 }).join('\n');
 
