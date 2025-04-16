@@ -22,7 +22,14 @@ each tier level.</p>
 <h2>Magic Stones</h2>
 
 <ul class="compact-list">
-{{./__generated/gear-index.md}}
+{{<./__build/__generated/gear-index.md>}}
+</ul>
+
+<section id="acquire" title="Acquiring Magic Stones">
+<h2>Acquiring</h2>
+
+<ul class="compact-list">
+{{<./__build/__generated/gear-index.md>}}
 </ul>
 
 </section>

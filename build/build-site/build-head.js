@@ -46,7 +46,7 @@ export function buildHead(meta, partials) {
   }
 
   if (meta.prev) {
-    block = templates['prev-link'].replace('{{URL}}', meta.prev)
+    block = templates['prev-link'].replace('{{URL}}', meta.prev);
     items.push(block);
   }
   if (meta.next) {
