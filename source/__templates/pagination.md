@@ -1,3 +1,3 @@
 <nav><menu class="pagination">
-{{ITEMS}}
+{{PAGINATION-CONTENT}}
 </menu></nav>

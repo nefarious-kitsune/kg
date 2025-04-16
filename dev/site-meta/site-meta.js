@@ -43,6 +43,7 @@ function parsePageMeta(fUrl) {
     'desc': frontMatter.desc,
     'published': true,
     'index': (typeof frontMatter.index === 'boolean')?frontMatter.index:true,
+    'pagination': frontMatter.pagination,
   };
 
   let permaLink;

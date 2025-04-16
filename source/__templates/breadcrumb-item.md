@@ -1,1 +1,1 @@
-  <li><a href="{{LINK-URL}}">{{SHORT-TITLE}}</a></li>
+  <li><a href="{{LINK-URL}}">{{TITLE}}</a></li>

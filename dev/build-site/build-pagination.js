@@ -1,15 +1,13 @@
 import path from 'path';
-import fs from 'fs';
+import {readTextFile} from '../files/files.js';
 import consts from '../consts.js';
 import logger from '../logger/logger.js';
 
-import {readTextFile} from '../files/files.js';
-
 /** @typedef {import('../site-meta/typedef.js').PageMeta} PageMeta */
-/** @typedef {import('../site-meta/typedef.js').ContentPartials} ContentPartials */
+/** @typedef {import('./typedef.js').ContentPartials} ContentPartials */
 
 const tempDir = path.join(consts.sourceDir, '__templates/');
-export const templates = {
+const templates = {
   'pagination': readTextFile(`${tempDir}/pagination.md`),
   'item': readTextFile(`${tempDir}/pagination-item.md`),
   'item-current': readTextFile(`${tempDir}/pagination-item-current.md`),
@@ -19,94 +17,113 @@ export const templates = {
 const mdLinkRe = /\[([^\]]+)\]\(([^\)]+)\)/i;
 
 /**
- * Generate HTML content for breadcrumb
+ * Build content fragment for pagination
  * @param {PageMeta} meta
  * @param {ContentPartials} partials
  **/
-export function buildPagination(meta) {
-  // let url = pageMeta.permaLink;
-  // let title = siteMeta.pages.get(url)['breadcrumb-title'];
+export function buildPagination(meta, partials) {
   if (!Array.isArray(meta.pagination)) return;
 
-  const parts = meta.pagination.map((item, idx) => {
-    const reResult = item.match(mdLinkRe);
-    if (reResult) return {text: reResult[1], url: reResult[2]}
-    else return {text: idx + 1, url: item};
+  /**
+   * @typedef {Object} Anchor
+   * @property {string} url - Anchor URL
+   * @property {string} text - Anchor text
+  */
+
+  /** @type {Anchor[]} - Pagination item information */
+  const anchors = meta.pagination.map((markdown, idx) => {
+    if (markdown.indexOf('\\') !== -1) {
+      logger.warn(`Pagination item not well formed: '${markdown}'`),
+      markdown = markdown.replaceAll('\\', '/');
+    }
+
+    if (markdown.indexOf('//') !== -1) {
+      logger.warn(`Pagination item not well formed: ${markdown}`),
+      markdown = markdown.replaceAll('//', '/');
+    }
+
+    const reResult = markdown.match(mdLinkRe);
+    if (reResult) return {url: reResult[2], title: reResult[1]};
+    else return {url: markdown, title: idx + 1};
   });
 
-  let firstItem;
-  let lastItem;
-  const items = [];
-  let pRangeStart;
-  let pRangeEnd;
-  const pIndex = parts.findIndex((p) => p.url === meta.permaLink);
+  /** Position of the current page */
+  const currPos = anchors.findIndex((p) => p.url === meta.permaLink);
 
-  if (pIndex > 0) {
-    firstItem = templates['item']
-        .replace('{{TITLE}}', '⟨')
-        .replace('{{URL}}', parts[pIndex-1].url);
-  } else {
-    firstItem = templates['item-inactive'].replace('{{TITLE}}', '⟨');
-  }
+  // "Unlink" current item
+  if (currPos >= 0) anchors[currPos].url = '';
 
-  if (pIndex < parts.length - 1) {
-    lastItem = templates['item']
-        .replace('{{TITLE}}', '⟩')
-        .replace('{{URL}}', parts[pIndex+1].url);
-  } else {
-    lastItem = templates['item-inactive'].replace('{{TITLE}}', '⟩');
-  }
+  /**
+   * Make HTML fragment for a pagination item
+   * @param {Anchor} a
+   * @return {string}
+   */
+  const makeItem = (a) => {
+    if (a.url) {
+      return templates['item']
+          .replace('{{TITLE}}', a.title)
+          .replace('{{URL}}', a.url);
+    } else {
+      return templates['item-inactive']
+          .replace('{{TITLE}}', a.title);
+    }
+  };
+
+  const prevAnchor = {title: '⟨', url: anchors[currPos-1]?.url||''};
+  const nextAnchor = {title: '⟩', url: anchors[currPos+1]?.url||''};
+  const prevItem = makeItem(prevAnchor);
+  const nextItem = makeItem(nextAnchor);
+  const firstItem = makeItem(anchors[0]);
+  const lastItem = makeItem(anchors[anchors.length-1]);
+  const ellipsisItem = makeItem({title: '…', url: null});
+  /** @type {string[]}*/
+  let items;
 
   /*
     Possible layouts:
       ⟪ ⟨ 1 𝟐 3 4 5 6 7 ⟩ ⟫
       ⟪ ⟨ 1 𝟐 3 4 5 … 9 ⟩ ⟫
       ⟪ ⟨ 1 … 5 6 7 𝟖 9 ⟩ ⟫
-      ⟪ ⟨ 1 … 4 𝟓 6 … 9 ⟩ ⟫
   */
 
-  let currItem;
-  let currPart;
-  if (parts.length <= 7) {
+  if (anchors.length <= 7) {
     // Layout: ⟨ 1 𝟐 3 4 5 6 7 ⟩
-    parts.forEach((p, i) => {
-      if (i === pIndex) {
-        currItem = templates['item-current'].replace('{{TITLE}}', p.text);
-      } else {
-        currItem = templates['item']
-            .replace('{{TITLE}}', p.text)
-            .replace('{{URL}}', p.url);
-      }
-      items.push(currItem);
-    });
-  } else if (pIndex < 5) {
-    // Layout: ⟪ ⟨ 1 𝟐 3 4 5 … 9 ⟩ ⟫
-    for (let i = 0; i < 5; i++) {
-      currPart = parts[i];
-      if (i === pIndex) {
-        currItem = templates['item-current']
-            .replace('{{TITLE}}', currPart.text);
-      } else {
-        currItem = templates['item']
-            .replace('{{TITLE}}', currPart.text)
-            .replace('{{URL}}', currPart.url);
-      }
-      items.push(currItem);
-    }
-
-    currItem = templates['item-inactive']
-        .replace('{{TITLE}}', '…');
-    items.push(currItem);
-
-    currPart = parts[parts.length-1];
-    currItem = templates['item']
-        .replace('{{TITLE}}', currPart.text)
-        .replace('{{URL}}', currPart.url);
-    items.push(currItem);
+    items = [
+      prevItem,
+      ...anchors.map((a) => makeItem(a)),
+      nextItem,
+    ];
+  } else if (currPos <= 5) {
+    // Layout: ⟨ 1 𝟐 3 4 5 … 9 ⟩
+    items = [
+      prevItem,
+      ...anchors.slice(0, 5).map((a) => makeItem(a)),
+      ellipsisItem,
+      lastItem,
+      nextItem,
+    ];
+  } else if (currPos >= anchors.length - 4) {
+    // Layout: ⟨ 1 … 5 6 7 𝟖 9 ⟩
+    items = [
+      prevItem,
+      firstItem,
+      ellipsisItem,
+      ...anchors.slice(anchors.length - 4).map((a) => makeItem(a)),
+      nextItem,
+    ];
+  } else {
+    // Layout: ⟨ 1 … 4 𝟓 6 … 9 ⟩
+    items = [
+      prevItem,
+      firstItem,
+      ellipsisItem,
+      ...anchors.slice(currPos-1, currPos+2).map((a) => makeItem(a)),
+      ellipsisItem,
+      lastItem,
+      nextItem,
+    ];
   }
 
-  items.unshift(firstItem);
-  items.push(lastItem);
-
-  partials.pagination = parts;
+  partials.pagination =
+      templates.pagination.replace('{{PAGINATION-CONTENT}}', items.join('\n'));
 }

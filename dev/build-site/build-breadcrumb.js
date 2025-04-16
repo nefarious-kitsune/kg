@@ -1,20 +1,34 @@
+import path from 'path';
+import {readTextFile} from '../files/files.js';
+import consts from '../consts.js';
 import logger from '../logger/logger.js';
 import siteMeta from '../site-meta/site-meta.js';
 
-import {Templates} from './build-site.js';
-
 /** @typedef {import('../site-meta/typedef.js').PageMeta} PageMeta */
+/** @typedef {import('./typedef.js').ContentPartials} ContentPartials */
+
+const tempDir = path.join(consts.sourceDir, '__templates/');
+const templates = {
+  'breadcrumb': readTextFile(`${tempDir}/breadcrumb.md`),
+  'first-item': readTextFile(`${tempDir}/breadcrumb-first-item.md`),
+  'item': readTextFile(`${tempDir}/breadcrumb-item.md`),
+  'last-item': readTextFile(`${tempDir}/breadcrumb-last-item.md`),
+};
 
 /**
- * Generate HTML content for breadcrumb
+ * Build content fragment for breadcrumb
  * @param {PageMeta} pageMeta
- * @return {string}
+ * @param {ContentPartials} partials
  **/
-export function buildBreadcrumb(pageMeta) {
-  // let url = pageMeta.permaLink;
-  // let title = siteMeta.pages.get(url)['breadcrumb-title'];
+export function buildBreadcrumb(pageMeta, partials) {
+  /**
+   * @typedef {Object} Anchor
+   * @property {string} url - Anchor URL
+   * @property {string} text - Anchor text
+  */
 
-  const parts = [];
+  /** @type {Anchor[]} - Breadcrumb item information */
+  const anchors = [];
 
   let upLink = pageMeta.permaLink;
   if (upLink.endsWith('/')) upLink = upLink.slice(0, -1);
@@ -30,27 +44,33 @@ export function buildBreadcrumb(pageMeta) {
       );
     } else {
       const refTitle = refPageMeta['short-title'];
-      parts.unshift({url: refLink, title: refTitle});
+      anchors.unshift({url: refLink, title: refTitle});
     }
     lastSep = upLink.lastIndexOf('/');
   }
 
-  if (parts.length === 0) return '';
+  if (anchors.length === 0) return;
 
-  const breadcrumbItems = parts.map((p) =>
-    Templates['breadcrumb-item']
-        .replace('{{SHORT-TITLE}}', p.title)
-        .replace('{{LINK-URL}}', p.url),
+  /**
+   * Make HTML fragment for a breadcrumb item
+   * @param {Anchor} a
+   * @return {string}
+   */
+  const makeItem = (a) => (
+    templates['item']
+        .replace('{{TITLE}}', a.title)
+        .replace('{{URL}}', a.url)
   );
 
-  const firstItem = Templates['breadcrumb-first-item'];
-  const lastItem = Templates['breadcrumb-last-item']
-      .replace('{{SHORT-TITLE}}', pageMeta['short-title']);
+  const firstItem = templates['first-item'];
+  const lastItem = templates['last-item']
+      .replace('{{TITLE}}', pageMeta['short-title']);
+  const items = [
+    firstItem,
+    ...anchors.map((a) => makeItem(a)),
+    lastItem,
+  ];
 
-  breadcrumbItems.unshift(firstItem);
-  breadcrumbItems.push(lastItem);
-
-  return Templates['breadcrumb']
-      .replace('{{BREADCRUMB-CONTENT}}', breadcrumbItems.join('\n'))
-  ;
+  partials.breadcrumb =
+      templates.breadcrumb.replace('{{BREADCRUMB-CONTENT}}', items.join('\n'));
 }

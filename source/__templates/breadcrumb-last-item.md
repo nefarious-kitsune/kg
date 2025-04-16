@@ -1,1 +1,1 @@
-  <li>{{SHORT-TITLE}}</li>
+  <li>{{TITLE}}</li>

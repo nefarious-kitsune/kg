@@ -6,19 +6,21 @@ import logger from '../logger/logger.js';
 import {readTextFile} from '../files/files.js';
 
 /** @typedef {import('../site-meta/typedef.js').PageMeta} PageMeta */
+/** @typedef {import('./typedef.js').ContentPartials} ContentPartials */
 
 /**
  * Perform snippet transclusion
  * @param {PageMeta} pageMeta - Page meta
- * @param {string} content - Text content
- * @return {string}
+ * @param {ContentPartials} partials
  **/
-export function transclude(pageMeta, content) {
+export function transclude(pageMeta, partials) {
   const tcStartTag = '{{<';
   const tcEndTag = '>}}';
   let tcStart;
   let tcEnd;
   let tcLink;
+
+  let content = partials.main;
 
   const findTranscludeTag = () => {
     const idx0 = content.indexOf(tcStartTag);
@@ -60,5 +62,5 @@ export function transclude(pageMeta, content) {
     ;
   }
 
-  return content;
+  partials.main = content;
 }
