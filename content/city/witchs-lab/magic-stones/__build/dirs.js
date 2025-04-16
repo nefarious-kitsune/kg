@@ -10,7 +10,7 @@ export const dirs = {
   // Global directories
   repo: consts.repoDir,
   content: consts.contentDir,
-  site: consts.siteDir,
+  site: consts.publicDir,
   // Local directories
   __base: baseDir,
   __content: contentDir,

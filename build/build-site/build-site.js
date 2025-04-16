@@ -28,7 +28,7 @@ function buildPages() {
       permalink + 'index.html':
       permalink + '.html';
 
-    const destPath = path.join(consts.siteDir, destUrl);
+    const destPath = path.join(consts.publicDir, destUrl);
     const destDir = path.dirname(destPath);
     if (!fs.existsSync(destDir)) fs.mkdirSync(destDir, {recursive: true});
     logger.log(`Published: '${destUrl}'`);

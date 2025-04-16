@@ -7,7 +7,7 @@ import consts from '../../../../dev/consts.js';
 
 // const directories = {
 //   repo: consts.repoDir,
-//   site: consts.siteDir,
+//   site: consts.publicDir,
 //   content: consts.contentDir,
 // };
 
