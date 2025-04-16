@@ -58,5 +58,8 @@
       "Tumnus",
       "vellip",
       "witchs-lab"
-    ]
+    ],
+    "files.exclude": {
+      "**/node_modules/": true
+    }
 }
