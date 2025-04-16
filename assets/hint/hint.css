@@ -1,0 +1,85 @@
+/* -------------------- Tooltips -------------------- */
+
+/* Hinted inline elements (except A and IMG) */
+span.has-hint, strong.has-hint, em.has-hint, a.has-hint,
+label.has-hint, input.has-hint, output.has-hint {
+  display: inline-block;
+  text-decoration-line: underline;
+  text-decoration-style: dotted;
+  text-underline-offset: 0.2rem;
+  text-decoration-thickness: 0.1rem;
+}
+
+/* Hinted A and IMG elements */
+a.has-hint, img.has-hint { display: inline-block; }
+
+/* Hinted elements */
+.has-hint { position: relative; }
+
+/* Restrict the size of image in .hint */
+.hint img {
+  max-width: 10rem;
+  height: auto;
+  margin: 0;
+}
+
+.has-hint .hint {
+  display: block;
+  position: absolute;
+  max-width: 52rem;
+  min-width: 10rem;
+  font-size: 0.9rem;
+  text-decoration-line: none;
+
+  padding: 0.25rem;
+  border-radius: 0.2rem;
+  border: 0.1rem solid var(--gray-100);
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.6s ease-in-out 0.4s;
+
+  z-index: 999;
+
+  &.place-bottom {
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, 8px);
+  }
+  &.place-top {
+    bottom: 100%;
+    left: 50%;
+    transform: translate(-50%, -4px);
+  }
+  &.place-right {
+    top: 50%;
+    left: 100%;
+    transform: translate(8px, -50%);
+  }
+  &.place-left {
+    top: 50%;
+    right: 100%;
+    transform: translate(-8px, -50%);
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .hint {
+    background: var(--gray-700);
+    color: var(--gray-50);
+    border-color: var(--gray-300);
+  }
+}
+@media (prefers-color-scheme: light) {
+  .hint {
+    background: var(--gray-50);
+    color: var(--gray-900);
+    border-color: var(--gray-100);
+  }
+}
+
+.has-hint:hover .hint,
+.has-hint:active .hint {
+  opacity: 1;
+  visibility: visible;
+  transition: 0.4s ease-in-out 0.3s;
+}
