@@ -1,1 +1,3 @@
-import './build-site/build-site.js';
+import {buildSite} from './build-site/build-site.js';
+
+buildSite();
