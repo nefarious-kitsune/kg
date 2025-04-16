@@ -18,7 +18,7 @@ const siteMeta = {
  * @param {string} fUrl - URL of the file
  */
 function parsePageMeta(fUrl) {
-  const fPath = path.join(consts.sourceDir, fUrl);
+  const fPath = path.join(consts.contentDir, fUrl);
   const srcContent = fs.readFileSync(fPath, 'utf8').replaceAll('\r\n', '\n');
 
   const separator = '---\n';
@@ -63,7 +63,7 @@ function buildMeta() {
     (path.extname(url) === '.md') &&
     (path.basename(url) !== 'readme.md')
   );
-  const mdFiles = findContentFiles(consts.sourceDir, filter);
+  const mdFiles = findContentFiles(consts.contentDir, filter);
   mdFiles.forEach((fUrl) => parsePageMeta(fUrl));
 }
 

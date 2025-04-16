@@ -9,7 +9,7 @@ import consts from '../consts.js';
  * @return {string[]} - URLs of all files found
  */
 export function findBuildScripts(
-    baseDir = consts.sourceDir,
+    baseDir = consts.contentDir,
     builder = 'build',
 ) {
   /** @type {FileResult[]} */
@@ -61,7 +61,7 @@ export function findBuildScripts(
  * @return {string[]} - URLs of all files found
  */
 export function findContentFiles(
-    baseDir = consts.sourceDir,
+    baseDir = consts.contentDir,
     filter = (fn) => path.extname(fn) == '.html',
 ) {
   /** @type {FileResult[]} */

@@ -39,10 +39,10 @@ export function transclude(pageMeta, partials) {
   while (findTranscludeTag()) {
     let tcPath;
     if (tcLink.startsWith('/')) {
-      tcPath = path.join(consts.sourceDir, tcLink);
+      tcPath = path.join(consts.contentDir, tcLink);
     } else {
       tcPath = path.join(
-          consts.sourceDir,
+          consts.contentDir,
           path.dirname(pageMeta['source-url']),
           tcLink,
       );

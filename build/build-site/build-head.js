@@ -6,7 +6,7 @@ import siteMeta from '../site-meta/site-meta.js';
 /** @typedef {import('../site-meta/typedef.js').PageMeta} PageMeta */
 /** @typedef {import('./typedef.js').ContentPartials} ContentPartials */
 
-const tempDir = path.join(consts.sourceDir, '__templates/');
+const tempDir = path.join(consts.contentDir, '__templates/');
 const templates = {
   'head': readTextFile(`${tempDir}/head.md`),
   'css': readTextFile(`${tempDir}/head-css.md`),

@@ -9,7 +9,7 @@ const contentDir = path.join(baseDir, '../');
 export const dirs = {
   // Global directories
   repo: consts.repoDir,
-  source: consts.sourceDir,
+  content: consts.contentDir,
   site: consts.siteDir,
   // Local directories
   __base: baseDir,

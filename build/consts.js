@@ -19,8 +19,8 @@ export default {
   /** Repository directory, e.g. `C:\GitHub\kg` */
   repoDir: repoDir,
 
-  /** Default directory for content source, e.g. `C:\GitHub\kg\source` */
-  sourceDir: path.join(repoDir, '/source'),
+  /** Default directory for content source, e.g. `C:\GitHub\kg\content` */
+  contentDir: path.join(repoDir, '/content'),
 
   /** Default directory for compiled site, e.g. `C:\GitHub\kg\site` */
   siteDir: path.join(repoDir, '/site'),

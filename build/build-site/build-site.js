@@ -13,7 +13,7 @@ import {transclude} from './transclude.js';
 /** @typedef {import('../site-meta/typedef.js').PageMeta} PageMeta */
 /** @typedef {import('./typedef.js').ContentPartials} ContentPartials */
 
-const tempDir = path.join(consts.sourceDir, '__templates/');
+const tempDir = path.join(consts.contentDir, '__templates/');
 const templates = {
   'html': readTextFile(`${tempDir}/html.md`),
   'html-main': readTextFile(`${tempDir}/html-main.md`),
@@ -25,7 +25,7 @@ const templates = {
  * @return {string}
  */
 function buildPageContent(pageMeta) {
-  const fPath = path.join(consts.sourceDir, pageMeta['source-url']);
+  const fPath = path.join(consts.contentDir, pageMeta['source-url']);
   const srcContent = fs.readFileSync(fPath, 'utf8').replaceAll('\r\n', '\n');
   const separator = '---\n';
   if (!srcContent.startsWith(separator)) return;

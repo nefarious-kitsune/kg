@@ -8,7 +8,7 @@ import consts from '../../../../dev/consts.js';
 // const directories = {
 //   repo: consts.repoDir,
 //   site: consts.siteDir,
-//   source: consts.sourceDir,
+//   content: consts.contentDir,
 // };
 
 const ModulePath = dirname(fileURLToPath(import.meta.url));

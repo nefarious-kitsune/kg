@@ -9,10 +9,10 @@
     "url": "https://github.com/nefarious-kitsune/kg.git"
   },
   "scripts": {
-    "build": "node dev/build.js",
-    "clean": "node dev/clean.js",
-    "git": "node dev/git.js",
-    "test": "node dev/test.js"
+    "build": "node build/build.js",
+    "clean": "node build/clean.js",
+    "git": "node build/git.js",
+    "test": "node build/test.js"
   },
   "dependencies": {
     "eslint": "^8.57.0",
