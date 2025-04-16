@@ -1,0 +1,396 @@
+Number	Name	Piece		Shard	Power (collected)	Power (calculated)	Verified
+1	Frost Cyclops	1/4		1	10,000	10,000	TRUE
+1	Frost Cyclops	2/4		1	20,000	20,000	TRUE
+1	Frost Cyclops	3/4		2	40,000	40,000	TRUE
+1	Frost Cyclops	4/4		3	70,000	70,000	TRUE
+2	Lava Behemoth	1/4		4	110,000	110,000	TRUE
+2	Lava Behemoth	2/4		4	150,000	150,000	TRUE
+2	Lava Behemoth	3/4		6	210,000	210,000	TRUE
+2	Lava Behemoth	4/4		6	270,000	270,000	FALSE
+3	Gold Goblin	1/4		7		340,000	FALSE
+3	Gold Goblin	2/4		9	440,000	430,000	FALSE
+3	Gold Goblin	3/4		10	540,000	530,000	TRUE
+3	Gold Goblin	4/4		11	650,000	640,000	TRUE
+4	Goblin Priest	1/4		13	780,000	770,000	TRUE
+4	Goblin Priest	2/4		13	910,000	900,000	TRUE
+4	Goblin Priest	3/4		15	1,060,000	1,050,000	TRUE
+4	Goblin Priest	4/4		16	1,220,000	1,210,000	TRUE
+5	Cyclops	1/4		17	1,390,000	1,380,000	TRUE
+5	Cyclops	2/4		19	1,580,000	1,570,000	TRUE
+5	Cyclops	3/4		20	1,780,000	1,770,000	TRUE
+5	Cyclops	4/4		21	1,990,000	1,980,000	TRUE
+6	My Castle	1/9		22	2,210,000	2,200,000	TRUE
+6	My Castle	2/9		24	2,450,000	2,440,000	TRUE
+6	My Castle	3/9		25	2,700,000	2,690,000	TRUE
+6	My Castle	4/9		26	2,960,000	2,950,000	TRUE
+6	My Castle	5/9		28	3,240,000	3,230,000	TRUE
+6	My Castle	6/9		29	3,530,000	3,520,000	TRUE
+6	My Castle	7/9		31	3,840,000	3,830,000	TRUE
+6	My Castle	8/9		32	4,160,000	4,150,000	TRUE
+6	My Castle	9/9		33	4,490,000	4,480,000	TRUE
+7	Dimensional Tunnel	1/9		34	4,830,000	4,820,000	TRUE
+7	Dimensional Tunnel	2/9		37	5,200,000	5,190,000	TRUE
+7	Dimensional Tunnel	3/9		37	5,570,000	5,560,000	TRUE
+7	Dimensional Tunnel	4/9		39	5,960,000	5,950,000	TRUE
+7	Dimensional Tunnel	5/9		40	6,360,000	6,350,000	TRUE
+7	Dimensional Tunnel	6/9		42	6,780,000	6,770,000	TRUE
+7	Dimensional Tunnel	7/9		43	7,210,000	7,200,000	TRUE
+7	Dimensional Tunnel	8/9		45	7,660,000	7,650,000	TRUE
+7	Dimensional Tunnel	9/9		46	8,120,000	8,110,000	TRUE
+8	Arena	1/9		48	8,600,000	8,590,000	TRUE
+8	Arena	2/9		49	9,090,000	9,080,000	TRUE
+8	Arena	3/9		51	9,600,000	9,590,000	TRUE
+8	Arena	4/9		52	10,120,000	10,110,000	TRUE
+8	Arena	5/9		54	10,660,000	10,650,000	TRUE
+8	Arena	6/9		55	11,210,000	11,200,000	TRUE
+8	Arena	7/9		57	11,780,000	11,770,000	TRUE
+8	Arena	8/9		58	12,360,000	12,350,000	TRUE
+8	Arena	9/9		60	12,960,000	12,950,000	TRUE
+9	Summon Altar	1/9		61	13,570,000	13,560,000	TRUE
+9	Summon Altar	2/9		63		14,190,000	FALSE
+9	Summon Altar	3/9		65		14,840,000	FALSE
+9	Summon Altar	4/9		66		15,500,000	FALSE
+9	Summon Altar	5/9		68		16,180,000	FALSE
+9	Summon Altar	6/9		69	16,880,000	16,870,000	FALSE
+9	Summon Altar	7/9		71	17,590,000	17,580,000	TRUE
+9	Summon Altar	8/9		72	18,310,000	18,300,000	TRUE
+9	Summon Altar	9/9		74	19,050,000	19,040,000	TRUE
+10	Tavern	1/9		76	19,810,000	19,800,000	TRUE
+10	Tavern	2/9		77		20,570,000	FALSE
+10	Tavern	3/9		79		21,360,000	FALSE
+10	Tavern	4/9		80		22,160,000	FALSE
+10	Tavern	5/9		82		22,980,000	FALSE
+10	Tavern	6/9		84		23,820,000	FALSE
+10	Tavern	7/9		85		24,670,000	FALSE
+10	Tavern	8/9		87		25,540,000	FALSE
+10	Tavern	9/9		89		26,430,000	FALSE
+11	Gold Mine	1/9		90		27,330,000	FALSE
+11	Gold Mine	2/9		92	28,260,000	28,250,000	FALSE
+11	Gold Mine	3/9		94	29,200,000	29,190,000	TRUE
+11	Gold Mine	4/9		95	30,150,000	30,140,000	TRUE
+11	Gold Mine	5/9		97	31,120,000	31,110,000	TRUE
+11	Gold Mine	6/9		98	32,100,000	32,090,000	TRUE
+11	Gold Mine	7/9		101	33,110,000	33,100,000	TRUE
+11	Gold Mine	8/9		102	34,130,000	34,120,000	TRUE
+11	Gold Mine	9/9		103	35,160,000	35,150,000	TRUE
+12	Witch's Lab	1/9		106	36,220,000	36,210,000	TRUE
+12	Witch's Lab	2/9		107	37,290,000	37,280,000	TRUE
+12	Witch's Lab	3/9		108	38,370,000	38,360,000	TRUE
+12	Witch's Lab	4/9		111		39,470,000	FALSE
+12	Witch's Lab	5/9		112		40,590,000	FALSE
+12	Witch's Lab	6/9		114		41,730,000	FALSE
+12	Witch's Lab	7/9		115		42,880,000	FALSE
+12	Witch's Lab	8/9		118		44,060,000	FALSE
+12	Witch's Lab	9/9		119		45,250,000	FALSE
+13	Blacksmith	1/9		121	46,470,000	46,460,000	FALSE
+13	Blacksmith	2/9		122	47,690,000	47,680,000	TRUE
+13	Blacksmith	3/9		124	48,930,000	48,920,000	TRUE
+13	Blacksmith	4/9		127	50,200,000	50,190,000	TRUE
+13	Blacksmith	5/9		127	51,470,000	51,460,000	TRUE
+13	Blacksmith	6/9		130	52,770,000	52,760,000	TRUE
+13	Blacksmith	7/9		131	54,080,000	54,070,000	TRUE
+13	Blacksmith	8/9		133	55,410,000	55,400,000	TRUE
+13	Blacksmith	9/9		135	56,760,000	56,750,000	TRUE
+14	Academy	1/9		137	58,130,000	58,120,000	TRUE
+14	Academy	2/9		138	59,510,000	59,500,000	TRUE
+14	Academy	3/9		140	60,910,000	60,900,000	TRUE
+14	Academy	4/9		142		62,320,000	FALSE
+14	Academy	5/9		144		63,760,000	FALSE
+14	Academy	6/9		145		65,210,000	FALSE
+14	Academy	7/9		147		66,680,000	FALSE
+14	Academy	8/9		150	68,190,000	68,180,000	FALSE
+14	Academy	9/9		150	69,690,000	69,680,000	TRUE
+15	Dragonden	1/9		153	71,220,000	71,210,000	TRUE
+15	Dragonden	2/9		155		72,760,000	FALSE
+15	Dragonden	3/9		156		74,320,000	FALSE
+15	Dragonden	4/9		158		75,900,000	FALSE
+15	Dragonden	5/9		160		77,500,000	FALSE
+15	Dragonden	6/9		162		79,120,000	FALSE
+15	Dragonden	7/9		163		80,750,000	FALSE
+15	Dragonden	8/9		166		82,410,000	FALSE
+15	Dragonden	9/9		167		84,080,000	FALSE
+16	Middle East Town	1/16		169		85,770,000	FALSE
+16	Middle East Town	2/16		171		87,480,000	FALSE
+16	Middle East Town	3/16		173		89,210,000	FALSE
+16	Middle East Town	4/16		174		90,950,000	FALSE
+16	Middle East Town	5/16		177		92,720,000	FALSE
+16	Middle East Town	6/16		178		94,500,000	FALSE
+16	Middle East Town	7/16		180		96,300,000	FALSE
+16	Middle East Town	8/16		182		98,120,000	FALSE
+16	Middle East Town	9/16		184		99,960,000	FALSE
+16	Middle East Town	10/16		186		101,820,000	FALSE
+16	Middle East Town	11/16		187		103,690,000	FALSE
+16	Middle East Town	12/16		190		105,590,000	FALSE
+16	Middle East Town	13/16		191		107,500,000	FALSE
+16	Middle East Town	14/16		193		109,430,000	FALSE
+16	Middle East Town	15/16		195		111,380,000	FALSE
+16	Middle East Town	16/16		197		113,350,000	FALSE
+17	Tropical Rainforest	1/16		199		115,340,000	FALSE
+17	Tropical Rainforest	2/16		201		117,350,000	FALSE
+17	Tropical Rainforest	3/16		203		119,380,000	FALSE
+17	Tropical Rainforest	4/16		201		121,390,000	FALSE
+17	Tropical Rainforest	5/16		207		123,460,000	FALSE
+17	Tropical Rainforest	6/16		208		125,540,000	FALSE
+17	Tropical Rainforest	7/16		213		127,670,000	FALSE
+17	Tropical Rainforest	8/16		212		129,790,000	FALSE
+17	Tropical Rainforest	9/16		214		131,930,000	FALSE
+17	Tropical Rainforest	10/16		216		134,090,000	FALSE
+17	Tropical Rainforest	11/16		218		136,270,000	FALSE
+17	Tropical Rainforest	12/16		220		138,470,000	FALSE
+17	Tropical Rainforest	13/16		222		140,690,000	FALSE
+17	Tropical Rainforest	14/16		223		142,920,000	FALSE
+17	Tropical Rainforest	15/16		226		145,180,000	FALSE
+17	Tropical Rainforest	16/16		227	147,460,000	147,450,000	FALSE
+18	Lava Cave	1/16		230	149,760,000	149,750,000	TRUE
+18	Lava Cave	2/16		231	152,070,000	152,060,000	TRUE
+18	Lava Cave	3/16		233		154,390,000	FALSE
+18	Lava Cave	4/16		236		156,750,000	FALSE
+18	Lava Cave	5/16		237		159,120,000	FALSE
+18	Lava Cave	6/16		239		161,510,000	FALSE
+18	Lava Cave	7/16		241		163,920,000	FALSE
+18	Lava Cave	8/16		243		166,350,000	FALSE
+18	Lava Cave	9/16		245		168,800,000	FALSE
+18	Lava Cave	10/16		247		171,270,000	FALSE
+18	Lava Cave	11/16		249		173,760,000	FALSE
+18	Lava Cave	12/16		250		176,260,000	FALSE
+18	Lava Cave	13/16		253		178,790,000	FALSE
+18	Lava Cave	14/16		255		181,340,000	FALSE
+18	Lava Cave	15/16		257		183,910,000	FALSE
+18	Lava Cave	16/16		258		186,490,000	FALSE
+19	Sakura Romance	1/16		261		189,100,000	FALSE
+19	Sakura Romance	2/16		263		191,730,000	FALSE
+19	Sakura Romance	3/16		264		194,370,000	FALSE
+19	Sakura Romance	4/16		267		197,040,000	FALSE
+19	Sakura Romance	5/16		268		199,720,000	FALSE
+19	Sakura Romance	6/16		271		202,430,000	FALSE
+19	Sakura Romance	7/16		272		205,150,000	FALSE
+19	Sakura Romance	8/16		275		207,900,000	FALSE
+19	Sakura Romance	9/16		277		210,670,000	FALSE
+19	Sakura Romance	10/16		278		213,450,000	FALSE
+19	Sakura Romance	11/16		281		216,260,000	FALSE
+19	Sakura Romance	12/16		282		219,080,000	FALSE
+19	Sakura Romance	13/16		285		221,930,000	FALSE
+19	Sakura Romance	14/16		286		224,790,000	FALSE
+19	Sakura Romance	15/16		289		227,680,000	FALSE
+19	Sakura Romance	16/16		290		230,580,000	FALSE
+20	Icefield Adventure	1/16		293		233,510,000	FALSE
+20	Icefield Adventure	2/16		294		236,450,000	FALSE
+20	Icefield Adventure	3/16		297		239,420,000	FALSE
+20	Icefield Adventure	4/16		298		242,400,000	FALSE
+20	Icefield Adventure	5/16		301		245,410,000	FALSE
+20	Icefield Adventure	6/16		303		248,440,000	FALSE
+20	Icefield Adventure	7/16		304		251,480,000	FALSE
+20	Icefield Adventure	8/16		307		254,550,000	FALSE
+20	Icefield Adventure	9/16		309		257,640,000	FALSE
+20	Icefield Adventure	10/16		310		260,740,000	FALSE
+20	Icefield Adventure	11/16		313		263,870,000	FALSE
+20	Icefield Adventure	12/16		315		267,020,000	FALSE
+20	Icefield Adventure	13/16		317		270,190,000	FALSE
+20	Icefield Adventure	14/16		319		273,380,000	FALSE
+20	Icefield Adventure	15/16		321		276,590,000	FALSE
+20	Icefield Adventure	16/16		323		279,820,000	FALSE
+21	Halloween Cabin	1/16		325		283,070,000	FALSE
+21	Halloween Cabin	2/16		327		286,340,000	FALSE
+21	Halloween Cabin	3/16		329		289,630,000	FALSE
+21	Halloween Cabin	4/16		331		292,940,000	FALSE
+21	Halloween Cabin	5/16		333		296,270,000	FALSE
+21	Halloween Cabin	6/16		336		299,630,000	FALSE
+21	Halloween Cabin	7/16		337		303,000,000	FALSE
+21	Halloween Cabin	8/16		339		306,390,000	FALSE
+21	Halloween Cabin	9/16		342		309,810,000	FALSE
+21	Halloween Cabin	10/16		343		313,240,000	FALSE
+21	Halloween Cabin	11/16		346		316,700,000	FALSE
+21	Halloween Cabin	12/16		348		320,180,000	FALSE
+21	Halloween Cabin	13/16		349		323,670,000	FALSE
+21	Halloween Cabin	14/16		352		327,190,000	FALSE
+21	Halloween Cabin	15/16		354		330,730,000	FALSE
+21	Halloween Cabin	16/16		356		334,290,000	FALSE
+22	Highland Waterfall	1/16		358		337,870,000	FALSE
+22	Highland Waterfall	2/16		360		341,470,000	FALSE
+22	Highland Waterfall	3/16		362		345,090,000	FALSE
+22	Highland Waterfall	4/16		365		348,740,000	FALSE
+22	Highland Waterfall	5/16		366		352,400,000	FALSE
+22	Highland Waterfall	6/16		369		356,090,000	FALSE
+22	Highland Waterfall	7/16		370	359,800,000	359,790,000	FALSE
+22	Highland Waterfall	8/16		373	363,529,984	363,520,000	TRUE
+22	Highland Waterfall	9/16		374	367,270,016	367,260,000	TRUE
+22	Highland Waterfall	10/16		377	371,040,000	371,030,000	TRUE
+22	Highland Waterfall	11/16		379	374,830,016	374,820,000	TRUE
+22	Highland Waterfall	12/16		381	378,640,000	378,630,000	TRUE
+22	Highland Waterfall	13/16		384	382,480,000	382,470,000	TRUE
+22	Highland Waterfall	14/16		385	386,329,984	386,320,000	TRUE
+22	Highland Waterfall	15/16		387	390,200,000	390,190,000	TRUE
+22	Highland Waterfall	16/16		390	394,100,000	394,090,000	TRUE
+23	Garden Depths	1/16		391	398,009,984	398,000,000	TRUE
+23	Garden Depths	2/16		394		401,940,000	FALSE
+23	Garden Depths	3/16		396		405,900,000	FALSE
+23	Garden Depths	4/16		398		409,880,000	FALSE
+23	Garden Depths	5/16		400		413,880,000	FALSE
+23	Garden Depths	6/16		402		417,900,000	FALSE
+23	Garden Depths	7/16		404		421,940,000	FALSE
+23	Garden Depths	8/16		407		426,010,000	FALSE
+23	Garden Depths	9/16		408		430,090,000	FALSE
+23	Garden Depths	10/16		411		434,200,000	FALSE
+23	Garden Depths	11/16		413		438,330,000	FALSE
+23	Garden Depths	12/16		415		442,480,000	FALSE
+23	Garden Depths	13/16		417		446,650,000	FALSE
+23	Garden Depths	14/16		419		450,840,000	FALSE
+23	Garden Depths	15/16		421		455,050,000	FALSE
+23	Garden Depths	16/16		424		459,290,000	FALSE
+24	Desert Cactus	1/16		425		463,540,000	FALSE
+24	Desert Cactus	2/16		428		467,820,000	FALSE
+24	Desert Cactus	3/16		430		472,120,000	FALSE
+24	Desert Cactus	4/16		432		476,440,000	FALSE
+24	Desert Cactus	5/16		434		480,780,000	FALSE
+24	Desert Cactus	6/16		437		485,150,000	FALSE
+24	Desert Cactus	7/16		438		489,530,000	FALSE
+24	Desert Cactus	8/16		441		493,940,000	FALSE
+24	Desert Cactus	9/16		442		498,360,000	FALSE
+24	Desert Cactus	10/16		445		502,810,000	FALSE
+24	Desert Cactus	11/16		448		507,290,000	FALSE
+24	Desert Cactus	12/16		449		511,780,000	FALSE
+24	Desert Cactus	13/16					FALSE
+24	Desert Cactus	14/16		454			FALSE
+24	Desert Cactus	15/16		456			FALSE
+24	Desert Cactus	16/16					FALSE
+25	Christmas Sleigh	1/16		460			FALSE
+25	Christmas Sleigh	2/16		462			FALSE
+25	Christmas Sleigh	3/16		464			FALSE
+25	Christmas Sleigh	4/16					FALSE
+25	Christmas Sleigh	5/16					FALSE
+25	Christmas Sleigh	6/16		471			FALSE
+25	Christmas Sleigh	7/16		473			FALSE
+25	Christmas Sleigh	8/16		475			FALSE
+25	Christmas Sleigh	9/16		478			FALSE
+25	Christmas Sleigh	10/16		480			FALSE
+25	Christmas Sleigh	11/16		481			FALSE
+25	Christmas Sleigh	12/16		485			FALSE
+25	Christmas Sleigh	13/16		486			FALSE
+25	Christmas Sleigh	14/16		488			FALSE
+25	Christmas Sleigh	15/16		491			FALSE
+25	Christmas Sleigh	16/16		493			FALSE
+26	Exotic Castle	1/25		497			FALSE
+26	Exotic Castle	2/25		499			FALSE
+26	Exotic Castle	3/25		499			FALSE
+26	Exotic Castle	4/25		502			FALSE
+26	Exotic Castle	5/25		504			FALSE
+26	Exotic Castle	6/25					FALSE
+26	Exotic Castle	7/25					FALSE
+26	Exotic Castle	8/25		511			FALSE
+26	Exotic Castle	9/25		512			FALSE
+26	Exotic Castle	10/25		515			FALSE
+26	Exotic Castle	11/25					FALSE
+26	Exotic Castle	12/25		520			FALSE
+26	Exotic Castle	13/25		521			FALSE
+26	Exotic Castle	14/25		524			FALSE
+26	Exotic Castle	15/25					FALSE
+26	Exotic Castle	16/25					FALSE
+26	Exotic Castle	17/25					FALSE
+26	Exotic Castle	18/25					FALSE
+26	Exotic Castle	19/25					FALSE
+26	Exotic Castle	20/25					FALSE
+26	Exotic Castle	21/25					FALSE
+26	Exotic Castle	22/25		541			FALSE
+26	Exotic Castle	23/25		544			FALSE
+26	Exotic Castle	24/25					FALSE
+26	Exotic Castle	25/25					FALSE
+27	Twin Castle - Bright Moon	1/25					FALSE
+27	Twin Castle - Bright Moon	2/25		552			FALSE
+27	Twin Castle - Bright Moon	3/25					FALSE
+27	Twin Castle - Bright Moon	4/25		560			FALSE
+27	Twin Castle - Bright Moon	5/25		560			FALSE
+27	Twin Castle - Bright Moon	6/25					FALSE
+27	Twin Castle - Bright Moon	7/25					FALSE
+27	Twin Castle - Bright Moon	8/25					FALSE
+27	Twin Castle - Bright Moon	9/25		570			FALSE
+27	Twin Castle - Bright Moon	10/25		570			FALSE
+27	Twin Castle - Bright Moon	11/25					FALSE
+27	Twin Castle - Bright Moon	12/25					FALSE
+27	Twin Castle - Bright Moon	13/25					FALSE
+27	Twin Castle - Bright Moon	14/25					FALSE
+27	Twin Castle - Bright Moon	15/25		582			FALSE
+27	Twin Castle - Bright Moon	16/25					FALSE
+27	Twin Castle - Bright Moon	17/25					FALSE
+27	Twin Castle - Bright Moon	18/25					FALSE
+27	Twin Castle - Bright Moon	19/25					FALSE
+27	Twin Castle - Bright Moon	20/25					FALSE
+27	Twin Castle - Bright Moon	21/25					FALSE
+27	Twin Castle - Bright Moon	22/25					FALSE
+27	Twin Castle - Bright Moon	23/25					FALSE
+27	Twin Castle - Bright Moon	24/25					FALSE
+27	Twin Castle - Bright Moon	25/25					FALSE
+28	Christmas Castle	1/25					FALSE
+28	Christmas Castle	2/25					FALSE
+28	Christmas Castle	3/25					FALSE
+28	Christmas Castle	4/25					FALSE
+28	Christmas Castle	5/25					FALSE
+28	Christmas Castle	6/25					FALSE
+28	Christmas Castle	7/25					FALSE
+28	Christmas Castle	8/25					FALSE
+28	Christmas Castle	9/25					FALSE
+28	Christmas Castle	10/25					FALSE
+28	Christmas Castle	11/25					FALSE
+28	Christmas Castle	12/25					FALSE
+28	Christmas Castle	13/25					FALSE
+28	Christmas Castle	14/25					FALSE
+28	Christmas Castle	15/25					FALSE
+28	Christmas Castle	16/25					FALSE
+28	Christmas Castle	17/25					FALSE
+28	Christmas Castle	18/25					FALSE
+28	Christmas Castle	19/25		648			FALSE
+28	Christmas Castle	20/25					FALSE
+28	Christmas Castle	21/25					FALSE
+28	Christmas Castle	22/25					FALSE
+28	Christmas Castle	23/25					FALSE
+28	Christmas Castle	24/25					FALSE
+28	Christmas Castle	25/25					FALSE
+29	Spring Festival Castle	1/25					FALSE
+29	Spring Festival Castle	2/25					FALSE
+29	Spring Festival Castle	3/25					FALSE
+29	Spring Festival Castle	4/25					FALSE
+29	Spring Festival Castle	5/25					FALSE
+29	Spring Festival Castle	6/25					FALSE
+29	Spring Festival Castle	7/25					FALSE
+29	Spring Festival Castle	8/25					FALSE
+29	Spring Festival Castle	9/25					FALSE
+29	Spring Festival Castle	10/25					FALSE
+29	Spring Festival Castle	11/25					FALSE
+29	Spring Festival Castle	12/25					FALSE
+29	Spring Festival Castle	13/25					FALSE
+29	Spring Festival Castle	14/25					FALSE
+29	Spring Festival Castle	15/25					FALSE
+29	Spring Festival Castle	16/25					FALSE
+29	Spring Festival Castle	17/25					FALSE
+29	Spring Festival Castle	18/25					FALSE
+29	Spring Festival Castle	19/25					FALSE
+29	Spring Festival Castle	20/25					FALSE
+29	Spring Festival Castle	21/25					FALSE
+29	Spring Festival Castle	22/25					FALSE
+29	Spring Festival Castle	23/25					FALSE
+29	Spring Festival Castle	24/25					FALSE
+29	Spring Festival Castle	25/25					FALSE
+30	Dragon Castle	1/25					FALSE
+30	Dragon Castle	2/25					FALSE
+30	Dragon Castle	3/25					FALSE
+30	Dragon Castle	4/25					FALSE
+30	Dragon Castle	5/25					FALSE
+30	Dragon Castle	6/25					FALSE
+30	Dragon Castle	7/25					FALSE
+30	Dragon Castle	8/25					FALSE
+30	Dragon Castle	9/25					FALSE
+30	Dragon Castle	10/25					FALSE
+30	Dragon Castle	11/25					FALSE
+30	Dragon Castle	12/25					FALSE
+30	Dragon Castle	13/25					FALSE
+30	Dragon Castle	14/25					FALSE
+30	Dragon Castle	15/25					FALSE
+30	Dragon Castle	16/25					FALSE
+30	Dragon Castle	17/25					FALSE
+30	Dragon Castle	18/25					FALSE
+30	Dragon Castle	19/25					FALSE
+30	Dragon Castle	20/25		766			FALSE
+30	Dragon Castle	21/25					FALSE
+30	Dragon Castle	22/25					FALSE
+30	Dragon Castle	23/25					FALSE
+30	Dragon Castle	24/25					FALSE
+30	Dragon Castle	25/25					FALSE
