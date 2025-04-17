@@ -134,6 +134,66 @@ header:first-child {
   }
 }
 
+/* ----------------- Footer Section ----------------- */
+
+footer.page-footer {
+  padding: 2rem 1.2rem;
+  display: grid;
+  gap: 1rem;
+  grid-template-areas:
+    "about  nav1   nav2   nav3   nav4"
+    "res    nav1   nav2   nav3   nav4"
+    "legal  legal  legal  legal  legal";
+  grid-template-columns: repeat(5, 1fr);
+  font-size: 0.8rem;
+}
+
+@media screen and (width < 480px) { /* Mobile */
+  footer.page-footer {
+    padding: 1.2rem;
+    gap: 2rem;
+    grid-template-areas:
+      "about res "
+      "nav1  nav2"
+      "nav3  nav4"
+      "legal legal";
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.page-footer-about { grid-area: about; }
+.page-footer-resources { grid-area: res; }
+.page-footer-nav-col-1 { grid-area: nav1; }
+.page-footer-nav-col-2 { grid-area: nav2; }
+.page-footer-nav-col-3 { grid-area: nav3; }
+.page-footer-nav-col-4 { grid-area: nav4; }
+.page-footer-legal { grid-area: legal; }
+
+footer.page-footer .footer-nav-heading {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-block-start: 0.8rem;
+}
+
+footer.page-footer .page-footer-about .footer-nav-heading {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: var(--red-500);
+}
+
+footer.page-footer .footer-nav-heading:first-of-type {
+  margin-block-start: 0;
+}
+
+
+footer a,
+footer a:hover,
+footer a:active {
+  text-decoration: none;
+}
+
 /* --------- Sections & Section Navigation  --------- */
 
 div.quick-access-container,
@@ -268,7 +328,7 @@ h3, h4, h5, h6 {
   font-weight: 500;
 }
 
-p { line-height: 1.5em;}
+main p { line-height: 1.5em;}
 
 a {
   text-decoration-style: underline;
@@ -1108,7 +1168,7 @@ li, div.li, span.li {
   &.glaucous::marker { color: var(--glaucous-500); }
   &.iris::marker { color: var(--iris-500); }
   &.mauve::marker { color: var(--mauve-500); }
-  &.rose::marker { color: var(--rose-500); } 
+  &.rose::marker { color: var(--rose-500); }
 }
 
 li.elemental.archer::marker { color: #DA9D2A; }
@@ -1304,7 +1364,7 @@ dl.two-column > dd {
 
   .header.season {
     grid-column-start: 1;
-    grid-column: span 2; 
+    grid-column: span 2;
   }
 
   .label.season {

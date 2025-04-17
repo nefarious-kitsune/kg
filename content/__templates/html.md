@@ -4,10 +4,14 @@
 {{HEAD-BODY}}
 </head>
 <body>
-<header>{{HEADER-BODY}}</header>
+<header>
+{{BREADCRUMB-BODY}}
+</header>
 <main>
 {{MAIN-BODY}}
 </main>
-<footer>{{FOOTER-BODY}}</footer>
+<footer class="page-footer">
+{{FOOTER-BODY}}
+</footer>
 </body>
 </html>

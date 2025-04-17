@@ -7,6 +7,8 @@ import logger from '../logger/logger.js';
 import {buildPagination} from './build-pagination.js';
 import {buildBreadcrumb} from './build-breadcrumb.js';
 import {buildHead} from './build-head.js';
+import {buildFooter} from './build-footer.js';
+
 import {transclude} from './transclude.js';
 
 /** @typedef {import('../site-meta/typedef.js').PageMeta} PageMeta */
@@ -44,19 +46,15 @@ export function buildPage(pageMeta) {
   logger.log(`Building ${pageMeta['source-url']}`);
   logger.printProgress('Building breadcrumb…');
   buildBreadcrumb(pageMeta, contentPartials);
-  logger.updateProgress('Breadcrumb built\n');
+  // logger.updateProgress('Breadcrumb built\n');
 
-  logger.printProgress('Building pagination…');
   buildPagination(pageMeta, contentPartials);
-  logger.updateProgress('Pagination built\n');
-
-  logger.printProgress('Building head body…');
   buildHead(pageMeta, contentPartials);
-  logger.updateProgress('Head body built\n');
+  buildFooter(pageMeta, contentPartials);
 
-  logger.printProgress('Performing transclusion…');
+  // logger.printProgress('Performing transclusion…');
   transclude(pageMeta, contentPartials);
-  logger.updateProgress('Transclusion completed\n');
+  // logger.updateProgress('Transclusion completed\n');
 
   logger.log('\n');
 
@@ -72,6 +70,7 @@ export function buildPage(pageMeta) {
   const html = templates.html
       .replace('{{HEAD-BODY}}', contentPartials.head)
       .replace('{{HEADER-BODY}}', contentPartials.header)
+      .replace('{{BREADCRUMB-BODY}}', contentPartials.breadcrumb)
       .replace('{{MAIN-BODY}}', mainBody)
       .replace('{{FOOTER-BODY}}', contentPartials.footer)
   ;
