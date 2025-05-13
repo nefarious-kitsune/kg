@@ -1,0 +1,59 @@
+:root {
+  color-scheme: light dark;
+
+  --gray-900: #121314;
+  --gray-800: #171819; /* alt row */
+  --gray-700: #24272f;
+  --gray-500: #505259;
+  --gray-300: #96979B;
+  --gray-100: #B9BABD;
+  --gray-50: #d9dadb;
+  --gray-25: #f1f2f2; /* alt row */
+  --red-900: #2D090A;
+  --red-700: #5a1214;
+  --red-500: #b42328;
+  --red-300: #d27b7e;
+  --red-100: #e4b0b2;
+  --accent-700: #0E6120;
+  --accent-500: #1CC140;
+  --accent-300: #77DA8C;
+  --gold-700: #bf951e;
+  --gold-500: #fec728;
+  --gold-300: #fedd7e;
+  --gold-100: #feebb2;
+
+  --caramel-700: #654020;
+  --caramel-500: #C9803F;
+  --caramel-300: #DFB38C;
+  --caramel-100: #ECD1BA;
+  --sand-700: #A07736;
+  --sand-500: #D59E48;
+  --sand-300: #E6C591;
+  --sand-100: #F0DCBD;
+  --copper-700: #A88C3C;
+  --copper-500: #E0BB50;
+  --copper-300: #ECD696;
+  --copper-100: #F4E6C0;
+  --jade-700: #2F5B29;
+  --jade-500: #5DB552;
+  --jade-300: #9ED397;
+  --jade-100: #C5E5C1;
+  --sapphire-700: #295049;
+  --sapphire-500: #51A092;
+  --sapphire-300: #97C6BE;
+  --sapphire-100: #C1DDD8;
+  --blue-700: #224669;
+  --blue-500: #448BD1;
+  --blue-300: #8FB9E3;
+  --blue-100: #BCD5EE;
+  --glaucous-700: #3C4561;
+  --glaucous-500: #7789C2;
+  --glaucous-300: #ADB8DA;
+  --glaucous-100: #CED4E9;
+  --iris-700: #806585;
+  --iris-500: #AA86B2;
+  --iris-300: #CCB6D1;
+  --iris-100: #E0D3E3;
+  --mauve-500: #AF6B96;
+  --rose-500  : #B35079;
+}
