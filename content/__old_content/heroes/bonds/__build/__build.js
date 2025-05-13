@@ -70,7 +70,7 @@ const outputOptions = {
   },
   css: {
     links: [
-      '/css/common.css',
+      '/css/default.css',
       '/data/data.css',
     ],
   },

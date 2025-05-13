@@ -76,7 +76,7 @@ export function findContentFiles(
     const parentPath = path.join(baseDir, parentUrl);
 
     fs.readdirSync(parentPath).forEach((fName) => {
-      /** Current URL (e.g. `/assets/common/common.css`) */
+      /** Current URL (e.g. `/assets/common/default.css`) */
       const currUrl = `${parentUrl}/${fName}`;
       /** Current file path (e.g. `c:\\GitHub\\source\\assets\\common\common.js`) */
       const currPath = path.join(baseDir, currUrl);
