@@ -54,6 +54,8 @@ function parsePageMeta(fUrl) {
     delete pageMeta.next;
   }
 
+  if (!pageMeta.layout) pageMeta.layout = 'default';
+
   siteMeta.pages.set(pageMeta.permaLink, pageMeta);
 }
 

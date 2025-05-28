@@ -1,18 +1,8 @@
-import path from 'path';
-import {readTextFile} from '../files/files.js';
-import consts from '../consts.js';
 import logger from '../logger/logger.js';
 
 /** @typedef {import('../site-meta/typedef.js').PageMeta} PageMeta */
+/** @typedef {import('./typedef.js').PageLayout} PageLayout */
 /** @typedef {import('./typedef.js').ContentPartials} ContentPartials */
-
-const tempDir = path.join(consts.contentDir, '__templates/');
-const templates = {
-  'pagination': readTextFile(`${tempDir}/pagination.md`),
-  'item': readTextFile(`${tempDir}/pagination-item.md`),
-  'item-current': readTextFile(`${tempDir}/pagination-item-current.md`),
-  'item-inactive': readTextFile(`${tempDir}/pagination-item-inactive.md`),
-};
 
 const mdLinkRe = /\[([^\]]+)\]\(([^\)]+)\)/i;
 
@@ -20,8 +10,9 @@ const mdLinkRe = /\[([^\]]+)\]\(([^\)]+)\)/i;
  * Build content fragment for pagination
  * @param {PageMeta} meta
  * @param {ContentPartials} partials
+ * @param {PageLayout} layout
  **/
-export function buildPagination(meta, partials) {
+export function buildPagination(meta, partials, layout) {
   if (!Array.isArray(meta.pagination)) return;
 
   /**
@@ -60,11 +51,11 @@ export function buildPagination(meta, partials) {
    */
   const makeItem = (a) => {
     if (a.url) {
-      return templates['item']
+      return layout['pagination-link-item']
           .replace('{{TITLE}}', a.title)
           .replace('{{URL}}', a.url);
     } else {
-      return templates['item-inactive']
+      return layout['pagination-text-item']
           .replace('{{TITLE}}', a.title);
     }
   };
@@ -125,6 +116,6 @@ export function buildPagination(meta, partials) {
     ];
   }
 
-  partials.pagination =
-      templates.pagination.replace('{{PAGINATION-CONTENT}}', items.join('\n'));
+  partials.pagination = layout.pagination
+      .replace('{{PAGINATION-CONTENT}}', items.join('\n'));
 }

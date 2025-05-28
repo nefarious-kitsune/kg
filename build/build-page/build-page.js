@@ -1,9 +1,9 @@
 import path from 'path';
 import fs from 'fs';
-import {readTextFile} from '../files/files.js';
 import consts from '../consts.js';
 import logger from '../logger/logger.js';
 
+import {getLayout} from './layouts.js';
 import {buildPagination} from './build-pagination.js';
 import {buildBreadcrumb} from './build-breadcrumb.js';
 import {buildHead} from './build-head.js';
@@ -13,12 +13,6 @@ import {transclude} from './transclude.js';
 
 /** @typedef {import('../site-meta/typedef.js').PageMeta} PageMeta */
 /** @typedef {import('./typedef.js').ContentPartials} ContentPartials */
-
-const tempDir = path.join(consts.contentDir, '__templates/');
-const templates = {
-  'html': readTextFile(`${tempDir}/html.md`),
-  'html-main': readTextFile(`${tempDir}/html-main.md`),
-};
 
 /**
  * Build page content
@@ -43,14 +37,16 @@ export function buildPage(pageMeta) {
     pagination: '',
   };
 
+  const layout = getLayout(pageMeta.layout);
+
   logger.log(`Building ${pageMeta['source-url']}`);
   logger.printProgress('Building breadcrumb…');
-  buildBreadcrumb(pageMeta, contentPartials);
+  buildBreadcrumb(pageMeta, contentPartials, layout);
   // logger.updateProgress('Breadcrumb built\n');
 
-  buildPagination(pageMeta, contentPartials);
-  buildHead(pageMeta, contentPartials);
-  buildFooter(pageMeta, contentPartials);
+  buildPagination(pageMeta, contentPartials, layout);
+  buildHead(pageMeta, contentPartials, layout);
+  buildFooter(pageMeta, contentPartials, layout);
 
   // logger.printProgress('Performing transclusion…');
   transclude(pageMeta, contentPartials);
@@ -62,12 +58,12 @@ export function buildPage(pageMeta) {
       pageMeta['short-title']:
       pageMeta.title;
 
-  const mainBody = templates['html-main']
+  const mainBody = layout.main
       .replace('{{MAIN-HEADING}}', mainHeading)
       .replace('{{MAIN-CONTENT}}', contentPartials.main)
   ;
 
-  const html = templates.html
+  const html = layout.html
       .replace('{{HEAD-BODY}}', contentPartials.head)
       .replace('{{HEADER-BODY}}', contentPartials.header)
       .replace('{{BREADCRUMB-BODY}}', contentPartials.breadcrumb)

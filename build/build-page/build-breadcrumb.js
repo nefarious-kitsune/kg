@@ -1,26 +1,17 @@
-import path from 'path';
-import {readTextFile} from '../files/files.js';
-import consts from '../consts.js';
 import logger from '../logger/logger.js';
 import siteMeta from '../site-meta/site-meta.js';
 
 /** @typedef {import('../site-meta/typedef.js').PageMeta} PageMeta */
+/** @typedef {import('./typedef.js').PageLayout} PageLayout */
 /** @typedef {import('./typedef.js').ContentPartials} ContentPartials */
-
-const tempDir = path.join(consts.contentDir, '__templates/');
-const templates = {
-  'breadcrumb': readTextFile(`${tempDir}/breadcrumb.md`),
-  'first-item': readTextFile(`${tempDir}/breadcrumb-first-item.md`),
-  'item': readTextFile(`${tempDir}/breadcrumb-item.md`),
-  'last-item': readTextFile(`${tempDir}/breadcrumb-last-item.md`),
-};
 
 /**
  * Build content fragment for breadcrumb
  * @param {PageMeta} pageMeta
  * @param {ContentPartials} partials
+ * @param {PageLayout} layout
  **/
-export function buildBreadcrumb(pageMeta, partials) {
+export function buildBreadcrumb(pageMeta, partials, layout) {
   /**
    * @typedef {Object} Anchor
    * @property {string} url - Anchor URL
@@ -32,9 +23,9 @@ export function buildBreadcrumb(pageMeta, partials) {
 
   let upLink = pageMeta.permaLink;
   if (upLink.endsWith('/')) upLink = upLink.slice(0, -1);
-  let lastSep = upLink.lastIndexOf('/');
-  while (lastSep > 0) {
-    upLink = upLink.slice(0, lastSep);
+  let lastDelimiterPos = upLink.lastIndexOf('/');
+  while (lastDelimiterPos > 0) {
+    upLink = upLink.slice(0, lastDelimiterPos);
     const refLink = upLink + '/';
     const refPageMeta = siteMeta.pages.get(refLink);
     if (!refPageMeta) {
@@ -46,7 +37,7 @@ export function buildBreadcrumb(pageMeta, partials) {
       const refTitle = refPageMeta['short-title'];
       anchors.unshift({url: refLink, title: refTitle});
     }
-    lastSep = upLink.lastIndexOf('/');
+    lastDelimiterPos = upLink.lastIndexOf('/');
   }
 
   if (anchors.length === 0) return;
@@ -57,20 +48,20 @@ export function buildBreadcrumb(pageMeta, partials) {
    * @return {string}
    */
   const makeItem = (a) => (
-    templates['item']
+    layout['breadcrumb-item']
         .replace('{{TITLE}}', a.title)
         .replace('{{URL}}', a.url)
   );
 
-  const firstItem = templates['first-item'];
-  const lastItem = templates['last-item']
+  const homeItem = layout['breadcrumb-home-item'];
+  const currentItem = layout['breadcrumb-current-item']
       .replace('{{TITLE}}', pageMeta['short-title']);
   const items = [
-    firstItem,
+    homeItem,
     ...anchors.map((a) => makeItem(a)),
-    lastItem,
+    currentItem,
   ];
 
-  partials.breadcrumb =
-      templates.breadcrumb.replace('{{BREADCRUMB-CONTENT}}', items.join('\n'));
+  partials.breadcrumb = layout['breadcrumb']
+      .replace('{{BREADCRUMB-CONTENT}}', items.join('\n'));
 }

@@ -33,6 +33,8 @@
  * - Indicates if the page should be listed in Site Index and Topics Index
  * @property {boolean} published
  * - Indicates if the page should be published
+ * @property {string} layout
+ * - Page layout
  */
 
 export {};
