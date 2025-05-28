@@ -4,8 +4,9 @@ import {readTextFile} from '../files/files.js';
 import consts from '../consts.js';
 
 /** @typedef {import('../site-meta/typedef.js').PageMeta} PageMeta */
-/** @typedef {import('./typedef.js').ContentPartials} ContentPartials */
+/** @typedef {import('./typedef.js').PageLayout} PageLayout */
 
+/** @type {Map<String, PageLayout>} */
 const layoutMap = new Map();
 
 /** RegEx for HTML comment */
@@ -34,6 +35,7 @@ const templateFileMap = {
 };
 
 const defaultLayoutDir = path.join(consts.contentDir, '.layouts/default/');
+/** @type {PageLayout} */
 const defaultLayout = {};
 for (const [id, pathFrag] of Object.entries(templateFileMap)) {
   const templateFilePath = `${defaultLayoutDir}${pathFrag}`;
@@ -45,7 +47,7 @@ layoutMap.set('default', defaultLayout);
 /**
  * Get layout
  * @param {string} layoutName - name of the layout
- * @return {Object}
+ * @return {PageLayout}
  */
 export function getLayout(layoutName) {
   layoutName = layoutName.toLowerCase();
