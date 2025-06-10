@@ -1,10 +1,9 @@
 import http from 'http';
-import {fileURLToPath, parse as parseUrl} from 'url';
+import {parse as parseUrl} from 'url';
 import {existsSync, statSync, readFile} from 'fs';
-import {dirname, extname, resolve} from 'path';
+import {extname, resolve} from 'path';
+import consts from './consts.js';
 
-const ModulePath = dirname(fileURLToPath(import.meta.url));
-const SitePath = resolve(ModulePath, '../site/');
 
 const port = process.argv[2] || 9000;
 
@@ -30,7 +29,7 @@ http.createServer((req, res) => {
   const pathname = parseUrl(req.url).pathname;
   let ext = extname(pathname);
 
-  let localPath = resolve(SitePath, `.${pathname}`);
+  let localPath = resolve(consts.publicDir, `.${pathname}`);
 
   // URL rewriting...
   if (existsSync(localPath)) {
