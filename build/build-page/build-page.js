@@ -69,6 +69,7 @@ export function buildPage(pageMeta) {
       .replace('{{BREADCRUMB-BODY}}', contentPartials.breadcrumb)
       .replace('{{MAIN-BODY}}', mainBody)
       .replace('{{FOOTER-BODY}}', contentPartials.footer)
+      .replace('{{PAGINATION-BODY}}', contentPartials.pagination)
   ;
 
   return html;
