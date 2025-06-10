@@ -242,6 +242,33 @@ nav.quick-access-container {
   }
 }
 
+/* ----------------- Pagination Nav ----------------- */
+nav .pagination {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: inline-block;
+  font-size: 0.9rem;
+
+  li {
+    display: inline-block;
+    padding: 0.4rem 0.8rem;
+    margin: 0 0.2rem;
+    border-radius: 0.4rem;
+    border: 0.1rem solid light-dark(var(--gray-500), var(--gray-300));
+  }
+
+  .pagination-item {
+    color: light-dark(var(--gray-700), var(--gray-500));
+  }
+  .pagination-link-item a {
+    text-decoration: none !important;
+  }
+  .pagination-current-item {
+    background-color: light-dark(var(--gray-300), var(--gray-700));;
+  }
+}
+
 /* ------------------ Body Section ------------------ */
 
 /* Paddings. Needed for :target to work */

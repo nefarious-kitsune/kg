@@ -19,6 +19,7 @@ export function buildPagination(meta, partials, layout) {
    * @typedef {Object} Anchor
    * @property {string} url - Anchor URL
    * @property {string} text - Anchor text
+   * @property {boolean} current - Current page
   */
 
   /** @type {Anchor[]} - Pagination item information */
@@ -34,15 +35,29 @@ export function buildPagination(meta, partials, layout) {
     }
 
     const reResult = markdown.match(mdLinkRe);
-    if (reResult) return {url: reResult[2], title: reResult[1]};
-    else return {url: markdown, title: idx + 1};
+    if (reResult) {
+      return ({
+        url: reResult[2],
+        title: reResult[1],
+        current: false,
+      });
+    } else {
+      return ({
+        url: markdown,
+        title: idx + 1,
+        current: false,
+      });
+    }
   });
 
   /** Position of the current page */
   const currPos = anchors.findIndex((p) => p.url === meta.permaLink);
 
   // "Unlink" current item
-  if (currPos >= 0) anchors[currPos].url = '';
+  if (currPos >= 0) {
+    anchors[currPos].url = '';
+    anchors[currPos].current = true;
+  }
 
   /**
    * Make HTML fragment for a pagination item
@@ -54,6 +69,9 @@ export function buildPagination(meta, partials, layout) {
       return layout['pagination-link-item']
           .replace('{{TITLE}}', a.title)
           .replace('{{URL}}', a.url);
+    } else if (a.current) {
+      return layout['pagination-current-item']
+          .replace('{{TITLE}}', a.title);
     } else {
       return layout['pagination-text-item']
           .replace('{{TITLE}}', a.title);
