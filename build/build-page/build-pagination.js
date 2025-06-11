@@ -70,7 +70,7 @@ export function buildPagination(meta, partials, layout) {
           .replace('{{TITLE}}', a.title)
           .replace('{{URL}}', a.url);
     } else if (a.current) {
-      return layout['pagination-current-item']
+      return layout['pagination-text-item-current']
           .replace('{{TITLE}}', a.title);
     } else {
       return layout['pagination-text-item']

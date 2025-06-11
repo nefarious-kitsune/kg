@@ -18,8 +18,8 @@ const templateFileMap = {
   'main': 'main/main.md',
   'pagination': 'pagination/pagination.md',
   'pagination-link-item': 'pagination/link-item.md',
-  'pagination-current-item': 'pagination/current-item.md',
   'pagination-text-item': 'pagination/text-item.md',
+  'pagination-text-item-current': 'pagination/text-item-current.md',
   'head': 'head/head.md',
   'css-link': 'head/css-link.md',
   'css-code': 'head/css-code.md',
@@ -30,8 +30,9 @@ const templateFileMap = {
   'footer': 'footer/footer.md',
   'breadcrumb': 'breadcrumb/breadcrumb.md',
   'breadcrumb-home-item': 'breadcrumb/home-item.md',
-  'breadcrumb-current-item': 'breadcrumb/home-item.md',
-  'breadcrumb-item': 'breadcrumb/home-item.md',
+  'breadcrumb-link-item': 'breadcrumb/link-item.md',
+  'breadcrumb-text-item': 'breadcrumb/text-item.md',
+  'breadcrumb-text-item-current': 'breadcrumb/home-item.md',
 };
 
 const defaultLayoutDir = path.join(consts.contentDir, '.layouts/default/');

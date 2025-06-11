@@ -42,25 +42,18 @@ export function buildBreadcrumb(pageMeta, partials, layout) {
 
   if (anchors.length === 0) return;
 
-  /**
-   * Make HTML fragment for a breadcrumb item
-   * @param {Anchor} a
-   * @return {string}
-   */
-  const makeItem = (a) => (
-    layout['breadcrumb-item']
+  const items = anchors.map((a) => (
+    layout['breadcrumb-link-item']
         .replace('{{TITLE}}', a.title)
         .replace('{{URL}}', a.url)
-  );
+  ));
 
-  const homeItem = layout['breadcrumb-home-item'];
-  const currentItem = layout['breadcrumb-current-item']
-      .replace('{{TITLE}}', pageMeta['short-title']);
-  const items = [
-    homeItem,
-    ...anchors.map((a) => makeItem(a)),
-    currentItem,
-  ];
+  items.unshift(layout['breadcrumb-home-item']);
+
+  items.push(
+      layout['breadcrumb-text-item-current']
+          .replace('{{TITLE}}', pageMeta['short-title']),
+  );
 
   partials.breadcrumb = layout['breadcrumb']
       .replace('{{BREADCRUMB-CONTENT}}', items.join('\n'));

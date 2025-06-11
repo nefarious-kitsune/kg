@@ -1,1 +1,1 @@
-<li class="pagination-item">{{TITLE}}</li>
+<li class="text-item"><span>{{TITLE}}</span></li>
