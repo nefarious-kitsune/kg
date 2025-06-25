@@ -53,6 +53,12 @@ export function transclude(pageMeta, partials) {
       logger.error(`Transclusion Error: ${tcLink} NOT FOUND`);
     } else {
       replaceWith = readTextFile(tcPath);
+      if (path.extname(tcPath) === '.txt') {
+        replaceWith = replaceWith
+            .replaceAll('&', '&amp;')
+            .replaceAll('<', '&lt;')
+            .replaceAll('>', '&gt;');
+      }
     }
 
     content =
