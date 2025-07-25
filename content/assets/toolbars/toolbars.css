@@ -1,11 +1,12 @@
 .toolbar {
+  box-sizing: border-box;
   display: flex;
   align-items: start;
   margin-block-start: 0;
   margin-block-end: 0;
   padding: 0.2rem;
 
-  background-color: var(--pale-neutral);
+  background-color: light-dark(var(--gray-50), var(--gray-700));
 
   .button-group {
     display: inline-block;
@@ -13,7 +14,7 @@
   }
 
   .button-group ~ .button-group {
-    border-left: 0.1rem solid var(--light-neutral);
+    border-left: 0.1rem solid light-dark(var(--gray-100), var(--gray-300));
     padding-left: 0.2rem;
   }
 
@@ -24,7 +25,7 @@
     padding: 0;
     font-size: 0.9rem;
     text-align: center;
-    background-color: var(--pale-neutral);
+    background-color: light-dark(var(--gray-50), var(--gray-700));;
     border: 0.1rem solid transparent;
     border-radius: 0.2rem;
     cursor: pointer;
@@ -40,12 +41,7 @@
 
   .tool-button:hover,
   .tool-button:focus {
-    background-color: #a3a6a8;
-  }
-
-  .tool-button:focus {
-    border: 0.1rem solid var(--dark-neutral);
-  }
+    background-color: light-dark(var(--gray-100), var(--gray-500)) }
 
   .dropdown {
     position: relative;
@@ -55,21 +51,22 @@
       display: none;
       position: absolute;
       min-width: 10rem;
-      background-color: var(--pale-neutral);
-      box-shadow: 1px 1px 2px var(--dark-neutral);
+      background-color: light-dark(var(--gray-100), var(--gray-500));
+      box-shadow: 1px 1px 2px light-dark(var(--gray-500), var(--gray-700));
       padding: 0.2rem;
       z-index: 1;
 
       a {
         display: inline-block;
-        color: var(--dark-neutral);
+        color: light-dark(var(--gray-500), var(--gray-300));
         text-decoration: none;
         padding: 0.2rem;
       }
 
       a[href]:hover,
       a[href]:focus {
-        background-color: #a3a6a8;
+        /* color: light-dark(var(--gray-300), var(--gray-300)); */
+        background-color: light-dark(var(--gray-300), var(--gray-700));
       }
     }
 
@@ -79,26 +76,26 @@
   }
 }
 
-.tool-button.text-color {
-  background-image: url(../icons/editor-icon_text-color.png);
+.tool-button {
+  &.text-color {background-image: url('../images/toolbar/text-color.png'); }
+  &.copy { background-image: url('../images/toolbar/copy.png'); }
+  &.redo { background-image: url('../images/toolbar/redo.png'); }
+  &.undo { background-image:url('../images/toolbar/undo.png') }
+  &.text-size { background-image:url('../images/toolbar/text-size.png') }
+  &.bold { background-image: url('../images/toolbar/text-bold.png'); }
+  &.italic { background-image: url('../images/toolbar/text-italic.png') }
 }
-.tool-button.copy {
-  background-image: url(../icons/editor-icon_copy.png);
-}
-.tool-button.redo {
-  background-image: url(../icons/editor-icon_redo.png);
-}
-.tool-button.undo {
-  background-image: url(../icons/editor-icon_undo.png);
-}
-.tool-button.text-size {
-  background-image: url(../icons/editor-icon_text-size.png);
-}
-.tool-button.bold {
-  background-image: url(../icons/editor-icon_bold.png);
-}
-.tool-button.italic {
-  background-image: url(../icons/editor-icon_italic.png);
+
+@media (prefers-color-scheme: dark) {
+  .tool-button {
+    &.text-color {background-image: url('../images/toolbar/text-color-dark.png'); }
+    &.copy { background-image: url('../images/toolbar/copy-dark.png'); }
+    &.redo { background-image: url('../images/toolbar/redo-dark.png'); }
+    &.undo { background-image:url('../images/toolbar/undo-dark.png') }
+    &.text-size { background-image:url('../images/toolbar/text-size-dark.png') }
+    &.bold { background-image: url('../images/toolbar/text-bold-dark.png'); }
+    &.italic { background-image: url('../images/toolbar/text-italic-dark.png') }
+  }
 }
 
 .color-chip {
