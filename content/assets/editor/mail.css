@@ -82,12 +82,20 @@ ul.template-list {
   font-size: 16px;
 }
 
-.output-example.notice,
-#output.notice {
+.output-example.announcement,
+#output.announcement {
   background-color: #283b5c;
   color: #7c9fdf;
   font-size: 12px;
 }
+
+.output-example.notice,
+#output.notice {
+  background-color: #fcefbb;
+  color: #b48058;
+  font-size: 12px;
+}
+
 
 #output {
   position: relative;;

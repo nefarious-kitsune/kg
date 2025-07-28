@@ -130,6 +130,29 @@ function startPreviewCooldown() {
 }
 
 /**
+ * Save text to File
+ * @param {string} suggestedName
+ */
+async function saveFile(suggestedName) {
+  const blob = new Blob(
+      [inputElement.value],
+      {type: 'text/plain;charset=utf-8'},
+  );
+  const blobURL = URL.createObjectURL(blob);
+  const downloadLink = document.createElement('a');
+  downloadLink.href = blobURL;
+  downloadLink.download = suggestedName;
+  downloadLink.style.display = 'none';
+  document.body.append(downloadLink);
+  downloadLink.click();
+  setTimeout(() => {
+    URL.revokeObjectURL(blobURL);
+    downloadLink.remove();
+  }, 1000);
+}
+
+
+/**
  * Copy input text to the clipboard
  */
 function copyInput() {
