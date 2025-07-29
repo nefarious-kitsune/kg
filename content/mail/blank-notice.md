@@ -1,10 +1,10 @@
 ---
-title       : Blank Alliance Mail
-short-title : Blank Mail
+title       : Blank Text Notice
+short-title : Blank Notice
 index  : true
 topics : [Mail]
 desc   : >
-  Compose and preview an Alliance Mail message
+  Compose and preview an Text Notice message
 layout: editor
 css:
 js:
@@ -21,7 +21,7 @@ next:
 
 <section id="preview-pane">
 <h2>Preview</h2>
-<div id="output" class="mail"></div>
+<div id="output" class="notice"></div>
 </section>
 </div>
 {{<./__templates/__note.html>}}

@@ -134,7 +134,7 @@ function startPreviewCooldown() {
 }
 
 /**
- * Save text to File
+ * Save text to file
  * @param {string} suggestedName
  */
 function saveFile(suggestedName) {
@@ -147,6 +147,30 @@ function saveFile(suggestedName) {
   downloadLinkElement.download = suggestedName;
   downloadLinkElement.click();
   setTimeout(() => URL.revokeObjectURL(blobURL), 1000);
+}
+
+/**
+ * Open a text file
+ * @param {string} suggestedName
+ */
+function openFile() {
+  fileSelectorElement.click();
+}
+
+/**
+ * Read file from FilePicker
+ * @param {Event} e
+ */
+function readFile(e) {
+  const file = e.target.files[0];
+
+  if (!file) return;
+  const reader = new FileReader();
+  reader.onload = function(e) {
+    inputElement.value = e.target.result;
+    updatePreview();
+  };
+  reader.readAsText(file);
 }
 
 /**

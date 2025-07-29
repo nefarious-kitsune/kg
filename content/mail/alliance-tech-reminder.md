@@ -1,17 +1,14 @@
 ---
-title       : Tech Donation Mail Template
-short-title : Tech Donation Mail
+title       : Tech Donation Reminder
+short-title : Tech Reminder
 index  : true
-topics : [Mail Template]
+topics : [Mail]
 desc   : >
-  Mail template for reminding people to do Alliance Tech donation
+  Compose a reminder mail for Alliance Tech donation
+layout: editor
 css:
-  - ./mail.css
-  - /assets/toolbars/toolbars.css
 js:
-  - ./mail.js
-  - ./parser.js
-  - /assets/toolbars/toolbars.js
+css-code : >
 prev:
 next:
 ---
@@ -20,7 +17,7 @@ next:
 <div class="editor-container">
 <section id="edit-pane">
 <h2>Edit</h2>
-{{<./__templates/__toolbar-mail.html>}}
+{{<./editor/__mail_toolbar.html>}}
 <fragment src=""/>
 <textarea id="input"
   placeholder="Enter your Alliance Mail message"

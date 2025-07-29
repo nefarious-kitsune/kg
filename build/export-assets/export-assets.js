@@ -20,8 +20,10 @@ export function exportAssets() {
     '.png', '.jpg', '.svg',
   ];
 
-  const srcBaseDir = path.join(consts.contentDir, '/assets/');
-  const destBaseDir = path.join(consts.publicDir, '/assets/');
+  // const srcBaseDir = path.join(consts.contentDir, '/assets/');
+  // const destBaseDir = path.join(consts.publicDir, '/assets/');
+  const srcBaseDir = consts.contentDir;
+  const destBaseDir = consts.publicDir;
 
   const filter = (url) => extensions.indexOf(path.extname(url)) !== -1;
   const assetFiles = findContentFiles(srcBaseDir, filter);

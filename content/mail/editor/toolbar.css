@@ -75,33 +75,37 @@
     }
   }
 
+  .editor-status {
+    margin-left: auto;
+  }
+
   #file-selector { display: none; }
-  #download-link { display: none; }
+  #download-link { display: none; }  
 }
 
 .tool-button {
-  &.text-color {background-image: url('../images/toolbar/text-color.png'); }
-  &.open-file {background-image: url('../images/toolbar/open-file.png'); }
-  &.download-file {background-image: url('../images/toolbar/download-file.png'); }
-  &.copy { background-image: url('../images/toolbar/copy.png'); }
-  &.redo { background-image: url('../images/toolbar/redo.png'); }
-  &.undo { background-image:url('../images/toolbar/undo.png') }
-  &.text-size { background-image:url('../images/toolbar/text-size.png') }
-  &.bold { background-image: url('../images/toolbar/text-bold.png'); }
-  &.italic { background-image: url('../images/toolbar/text-italic.png') }
+  &.text-color {background-image: url('/assets/images/toolbar/text-color.png'); }
+  &.open-file {background-image: url('/assets/images/toolbar/open-file.png'); }
+  &.download-file {background-image: url('/assets/images/toolbar/download-file.png'); }
+  &.copy { background-image: url('/assets/images/toolbar/copy.png'); }
+  &.redo { background-image: url('/assets/images/toolbar/redo.png'); }
+  &.undo { background-image:url('/assets/images/toolbar/undo.png') }
+  &.text-size { background-image:url('/assets/images/toolbar/text-size.png') }
+  &.bold { background-image: url('/assets/images/toolbar/text-bold.png'); }
+  &.italic { background-image: url('/assets/images/toolbar/text-italic.png') }
 }
 
 @media (prefers-color-scheme: dark) {
   .tool-button {
-    &.text-color {background-image: url('../images/toolbar/text-color-dark.png'); }
-    &.open-file {background-image: url('../images/toolbar/open-file-dark.png'); }
-    &.download-file {background-image: url('../images/toolbar/download-file-dark.png'); }
-    &.copy { background-image: url('../images/toolbar/copy-dark.png'); }
-    &.redo { background-image: url('../images/toolbar/redo-dark.png'); }
-    &.undo { background-image:url('../images/toolbar/undo-dark.png') }
-    &.text-size { background-image:url('../images/toolbar/text-size-dark.png') }
-    &.bold { background-image: url('../images/toolbar/text-bold-dark.png'); }
-    &.italic { background-image: url('../images/toolbar/text-italic-dark.png') }
+    &.text-color {background-image: url('/assets/images/toolbar/text-color-dark.png'); }
+    &.open-file {background-image: url('/assets/images/toolbar/open-file-dark.png'); }
+    &.download-file {background-image: url('/assets/images/toolbar/download-file-dark.png'); }
+    &.copy { background-image: url('/assets/images/toolbar/copy-dark.png'); }
+    &.redo { background-image: url('/assets/images/toolbar/redo-dark.png'); }
+    &.undo { background-image:url('/assets/images/toolbar/undo-dark.png') }
+    &.text-size { background-image:url('/assets/images/toolbar/text-size-dark.png') }
+    &.bold { background-image: url('/assets/images/toolbar/text-bold-dark.png'); }
+    &.italic { background-image: url('/assets/images/toolbar/text-italic-dark.png') }
   }
 }
 
