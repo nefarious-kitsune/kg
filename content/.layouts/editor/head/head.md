@@ -6,8 +6,8 @@
       rel="icon" media="(prefers-color-scheme: dark)">
 <link href="/assets/css/default.css" rel="stylesheet">
 {{HEAD-CONTENT}}
-<link href="/assets/toolbars/toolbars.css" rel="stylesheet">
-<script src="/assets/toolbars/toolbars.js"></script>
-<link href="/assets/editor/mail.css" rel="stylesheet">
-<script src="/assets/editor/mail.js"></script>
-<script src="/assets/editor/parser.js"></script>
+<link href="./editor/toolbar.css" rel="stylesheet">
+<script src="./editor/toolbar.js"></script>
+<link href="./editor/editor.css" rel="stylesheet">
+<script src="./editor/editor.js"></script>
+<script src="./editor/parser.js"></script>

@@ -74,10 +74,15 @@
       display:block;
     }
   }
+
+  #file-selector { display: none; }
+  #download-link { display: none; }
 }
 
 .tool-button {
   &.text-color {background-image: url('../images/toolbar/text-color.png'); }
+  &.open-file {background-image: url('../images/toolbar/open-file.png'); }
+  &.download-file {background-image: url('../images/toolbar/download-file.png'); }
   &.copy { background-image: url('../images/toolbar/copy.png'); }
   &.redo { background-image: url('../images/toolbar/redo.png'); }
   &.undo { background-image:url('../images/toolbar/undo.png') }
@@ -89,6 +94,8 @@
 @media (prefers-color-scheme: dark) {
   .tool-button {
     &.text-color {background-image: url('../images/toolbar/text-color-dark.png'); }
+    &.open-file {background-image: url('../images/toolbar/open-file-dark.png'); }
+    &.download-file {background-image: url('../images/toolbar/download-file-dark.png'); }
     &.copy { background-image: url('../images/toolbar/copy-dark.png'); }
     &.redo { background-image: url('../images/toolbar/redo-dark.png'); }
     &.undo { background-image:url('../images/toolbar/undo-dark.png') }
