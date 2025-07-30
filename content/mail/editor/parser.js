@@ -47,6 +47,7 @@ function arrayToHtml(elements) {
   return elements.map((c) => elementToHtml(c)).join('');
 }
 
+// eslint-disable-next-line no-unused-vars
 const parser = {
   /**
    * @type {number}
@@ -62,6 +63,61 @@ const parser = {
 
   /** Document root */
   root: [],
+
+  /**
+   * Return an error message
+   * @param {string} msg - Error message
+   * @param {number} pos - Location of the error
+   * @param {number} len - Length of the error (for highlighting)
+   * @return {Error}
+   */
+  error(msg, pos, len = 1) {
+    const e = new Error('Parser error');
+
+    const lines = this.source.split('\n');
+    let lineNo;
+    let colNo;
+
+    let runningLen = 0;
+    let lineStartPos = 0;
+    let currentLine = '';
+
+    for (lineNo = 0; lineNo < lines.length; lineNo++) {
+      currentLine = lines[lineNo];
+      runningLen += currentLine.length + 1; // Add back '\n' that was removed
+      if (pos < runningLen) {
+        lineNo = lineNo + 1;
+        colNo = pos - lineStartPos;
+        break;
+      }
+      lineStartPos = runningLen;
+    }
+
+    msg = this.escape(msg);
+    e.formattedError =
+      `<div class="message">${msg} [Ln ${lineNo}, Col ${colNo}]</div>` +
+      '<div class="details">' +
+      this.escape(currentLine.substring(0, colNo)) +
+      `<span class="highlighted-error">` +
+      this.escape(currentLine.substring(colNo, colNo + len)) +
+      `</span>` +
+      this.escape(currentLine.substring(colNo + len)) +
+      '</div>';
+
+    return e;
+  },
+
+  /**
+   * Escape text
+   * @param {string} text
+   * @return {string}
+   */
+  escape(text) {
+    return text
+        .replaceAll('&', '&amp;')
+        .replaceAll('<', '&lt;')
+        .replaceAll('>', '&gt;');
+  },
 
   /**
    * Advance cursor position and get next character
@@ -117,12 +173,12 @@ const parser = {
     while (true) {
       if ((char === '') || (char === '\n')) { // EOF or EOL
         this.currentPos = savedPos;
-        throw new Error(`Syntax error at ${savedPos}`);
+        throw this.error('Syntax error', savedPos);
       }
       if (char === '>') break;
       if ('0123456789'.indexOf(char)===-1) {
         this.currentPos = savedPos;
-        throw new Error(`Syntax error at ${savedPos}`);
+        throw this.error('Syntax error', savedPos);
       }
       char = this.nextChar();
     }
@@ -135,34 +191,37 @@ const parser = {
    */
   parseSize() {
     const savedPos = this.currentPos;
+    let startTag = '<size';
     let sizeValue;
     const innerContent = [];
     let innerText = '';
 
-    this.currentPos = this.currentPos + '<size'.length;
+    this.currentPos = this.currentPos + startTag.length;
     const char = this.thisChar();
 
     if (char === '=') {
       this.nextChar();
       sizeValue = this.parseSizeValue();
+      startTag = this.source.substring(savedPos, this.currentPos + 1);
       this.nextChar();
     } else if (char === '>') {
       sizeValue = null;
+      startTag = this.source.substring(savedPos, this.currentPos + 1);
       this.nextChar();
     } else {
-      throw new Error(`Syntax error at ${savedPos}`);
+      throw this.error('Syntax error', savedPos, startTag.length);
     }
 
     while (true) {
       const c = this.parseNext();
 
       if (c.type === 'eof') {
-        throw new Error(`<size> at ${savedPos} not properly closed`);
+        throw this.error('Missing </size> tag', savedPos, startTag.length);
       }
 
       if (c.type === 'end-tag') {
         if (c.for === 'size') break;
-        throw new Error(`<size> at ${savedPos} not properly closed`);
+        throw this.error('Missing </size> tag', savedPos, startTag.length);
       }
 
       innerText += c.text;
@@ -196,7 +255,7 @@ const parser = {
         char = this.nextChar();
         if ((char === '') || (char === '\n')) { // EOF or EOL
           this.currentPos = savedPos;
-          throw new Error(`Syntax error at ${savedPos}`);
+          throw this.error('Syntax error', savedPos);
         }
         if (char === '>') break;
         if (Hexadecimal.indexOf(char)===-1) valid = false;
@@ -208,7 +267,7 @@ const parser = {
       while (true) {
         if ((char === '') || (char === '\n')) { // EOF or EOL
           this.currentPos = savedPos;
-          throw new Error(`Syntax error at ${savedPos}`);
+          throw this.error('Syntax error', savedPos);
         }
         if (char === '>') break;
         value = value + char;
@@ -228,34 +287,37 @@ const parser = {
    */
   parseColor() {
     const savedPos = this.currentPos;
-    let color;
+    let startTag = '<color';
+    let colorValue;
     const innerContent = [];
     let innerText = '';
 
-    this.currentPos = this.currentPos + '<color'.length;
+    this.currentPos = this.currentPos + startTag.length;
     const char = this.thisChar();
 
     if (char === '=') {
       this.nextChar();
-      color = this.parseColorValue();
+      colorValue = this.parseColorValue();
+      startTag = this.source.substring(savedPos, this.currentPos + 1);
       this.nextChar();
     } else if (char === '>') {
-      color = null;
+      colorValue = null;
+      startTag = this.source.substring(savedPos, this.currentPos + 1);
       this.nextChar();
     } else {
-      throw new Error(`Syntax error at ${savedPos}`);
+      throw this.error('Syntax error', savedPos, startTag.length);
     }
 
     while (true) {
       const c = this.parseNext();
 
       if (c.type === 'eof') {
-        throw new Error(`<color> at ${savedPos} not properly closed`);
+        throw this.error('Missing </color> tag', savedPos, startTag.length);
       }
 
       if (c.type === 'end-tag') {
         if (c.for === 'color') break;
-        throw new Error(`<color> at ${savedPos} not properly closed`);
+        throw this.error('Missing </color> tag', savedPos, startTag.length);
       }
 
       innerText += c.text;
@@ -265,7 +327,7 @@ const parser = {
     const res = {
       location: savedPos,
       type: 'color',
-      value: color,
+      value: colorValue,
       inner: innerContent,
       text: innerText,
     };
@@ -287,12 +349,12 @@ const parser = {
       const c = this.parseNext();
 
       if (c.type === 'eof') {
-        throw new Error(`<b> at ${savedPos} not properly closed`);
+        throw this.error('Missing </b> tag', savedPos, 3);
       }
 
       if (c.type === 'end-tag') {
         if (c.for === 'b') break;
-        throw new Error(`<b> at ${savedPos} not properly closed`);
+        throw this.error('Missing </b> tag', savedPos, 3);
       }
 
       innerText += c.text;
@@ -323,12 +385,12 @@ const parser = {
       const c = this.parseNext();
 
       if (c.type === 'eof') {
-        throw new Error(`<i> at ${savedPos} not properly closed`);
+        throw this.error('Missing </i> tag', savedPos, 3);
       }
 
       if (c.type === 'end-tag') {
         if (c.for === 'i') break;
-        throw new Error(`<i> at ${savedPos} not properly closed`);
+        throw this.error('Missing </i> tag', savedPos, 3);
       }
 
       innerText += c.text;

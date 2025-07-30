@@ -51,7 +51,9 @@ ul.template-list {
   padding: 0.8rem;
   margin-right: auto;
   margin-left: auto;
-  border: 0.1rem solid var(--neutral);
+  background-color: light-dark(white, var(--gray-900));
+  color: light-dark(var(--gray-900), var(--gray-300));
+  border: 0.1rem solid light-dark(var(--gray-500), var(--gray-500));
   outline: none;
   font-family: "Fira Mono", monospace;
   font-weight: 400;
@@ -61,8 +63,7 @@ ul.template-list {
 }
 
 #input.preview-pending {
-  border: 0.1rem solid var(--miku-red);
-  outline: 0.2rem solid var(--miku-gold);
+  outline: 0.2rem solid var(--gold-500);
 }
 
 #output {
@@ -71,8 +72,7 @@ ul.template-list {
   margin-left: auto;
   padding: 0.8rem;
   font-size: 1rem;
-  border: 0.1rem solid var(--neutral);
-  background-color: var(--pale-neutral);
+  border: 0.1rem solid light-dark(var(--gray-500), var(--gray-500));
 }
 
 .output-example.mail,
@@ -96,18 +96,36 @@ ul.template-list {
   font-size: 12px;
 }
 
-
 #output {
   position: relative;;
 }
 
-#output.error:before {
-  content: "There is an error with the text formatting";
-  display: block;
-  position: absolute;
-  padding: 0.5rem;
-  top: 0.5rem;
-  background-color: var(--miku-gold);
-  color: var(--miku-red);
-  border: 0.1rem solid var(--miku-red);
+#output.error {
+  background-color: light-dark(white, var(--gray-900));
+  color: light-dark(var(--gray-900), var(--gray-300));
+  border: 0.1rem solid light-dark(var(--red-500), var(--red-500));
+  font-size: 1rem;
+  font-weight: 400;
+  font-style: normal;
+
+  .message:before {
+    content: "Error: ";
+    color: light-dark(var(--red-500), var(--gold-500));
+  }
+
+  .details {
+    background-color: light-dark(var(--gray-50), var(--gray-700));
+    margin-block-start: 0.5rem;
+    padding: 0.5rem;
+    font-family: "Fira Mono", monospace;
+    font-size: 0.8rem;
+    line-height: 1.1rem;
+  }
+
+  .highlighted-error {
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+    text-decoration-thickness: 0.1rem;
+    text-decoration-color: light-dark(var(--red-500), var(--gold-500));
+  }
 }

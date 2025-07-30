@@ -115,8 +115,8 @@ function updatePreview() {
     previewElement.classList.remove('error');
     previewElement.innerHTML = previewText;
   } catch (e) {
-    // previewElement.innerHTML = 'Your message contains an error!';
     previewElement.classList.add('error');
+    previewElement.innerHTML = e.formattedError;
   }
 }
 
