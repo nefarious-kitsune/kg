@@ -419,30 +419,12 @@ div.info-box.alert:before{
 
 /* ------------------- Light Theme ------------------- */
 
-html {
-  /*
-    Image by Nyankosensei
-    https://anime.goodfon.com/art-anime/wallpaper-park-sakura-vesna.html
-  */
-  background-image: url('../images/park-sakura-vesna.jpg');
-}
-
 header {
   background-color: rgba(255, 255, 255, 0.5);
 }
 
 header:first-child:before {
-  background-image: url('../../images/logo_text.png');
-}
-
-header,
-main {
-  border-left: 1px solid var(--red);
-  border-right: 1px solid var(--red-700);
-}
-
-main {
-  border-bottom: 1px solid var(--red-700);
+  background-image: url('../images/identity/mini-header-light.png');
 }
 
 main,
@@ -616,30 +598,12 @@ details {
 /* ------------------- Night Theme ------------------- */
 
 @media (prefers-color-scheme: dark) {
-  html {
-    /*
-      AI image
-      https://www.goodfon.com/ai-art/wallpaper-iskusstvo-ii-fantastika-ai-art-arka-neon-noch-odinokaia-figu.html
-    */
-    background-image: url('../images/neon-sakura-ai.jpg');
-  }
-
   header {
     background-color: rgba(18, 20, 23, 0.7);
   }
 
   header:first-child:before {
-    background-image: url('../../images/logo_text-dark.png');
-  }
-
-  header,
-  main {
-    border-left: 1px solid var(--red);
-    border-right: 1px solid var(--red);
-  }
-
-  main {
-    border-bottom: 1px solid var(--red);
+    background-image: url('../images/identity/mini-header-dark.png');
   }
 
   body main,
@@ -996,18 +960,6 @@ main > section {
 main > ul { margin-left: 1.2rem !important; }
 
 /* -------------------- Headings -------------------- */
-
-@media screen and (min-width: 500px) {
-  h1::before,
-  h1::after {
-    display: inline-block;
-    content: "";
-    border-top: .2rem solid var(--red-700);
-    width: 3rem;
-    margin: 0 1rem;
-    transform: translateY(-0.5rem);
-  }
-}
 
 h1 {
   text-align: center;
