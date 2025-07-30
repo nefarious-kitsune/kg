@@ -79,21 +79,21 @@ ul.template-list {
 #output.mail {
   background-color: #c6d4e1;
   color: #60646f;
-  font-size: 16px;
+  font-size: 16px; /* = 40 * 4 /10 */
 }
 
 .output-example.announcement,
 #output.announcement {
   background-color: #283b5c;
   color: #7c9fdf;
-  font-size: 12px;
+  font-size: 12px; /* = 30 * 4 / 10 */
 }
 
 .output-example.notice,
 #output.notice {
   background-color: #fcefbb;
   color: #b48058;
-  font-size: 12px;
+  font-size: 12px; /* = 30 * 4 / 10 */
 }
 
 #output {
