@@ -58,10 +58,19 @@ export function buildPage(pageMeta) {
       pageMeta['short-title']:
       pageMeta.title;
 
-  const mainBody = layout.main
+  let mainBody = layout.main
       .replace('{{MAIN-HEADING}}', mainHeading)
       .replace('{{MAIN-CONTENT}}', contentPartials.main)
   ;
+
+  const pageVars = pageMeta.variables;
+  if (pageVars) {
+    for (const key in pageVars) {
+      if (Object.prototype.hasOwnProperty.call(pageVars, key)) {
+        mainBody = mainBody.replaceAll(`{{${key}}}`, pageVars[key]);
+      }
+    }
+  }
 
   const html = layout.html
       .replace('{{HEAD-BODY}}', contentPartials.head)
