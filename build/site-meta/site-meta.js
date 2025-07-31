@@ -46,13 +46,8 @@ function parsePageMeta(fUrl) {
     }
   }
 
-  if ((pageMeta.prev) && (!pageMeta.prev.startsWith('{{'))) {
-    delete pageMeta.prev;
-  }
-
-  if ((pageMeta.next) && (!pageMeta.next.startsWith('{{'))) {
-    delete pageMeta.next;
-  }
+  if (pageMeta?.prev?.startsWith('{{')) delete pageMeta.prev;
+  if (pageMeta?.next?.startsWith('{{')) delete pageMeta.next;
 
   if (!pageMeta.layout) pageMeta.layout = 'default';
 
