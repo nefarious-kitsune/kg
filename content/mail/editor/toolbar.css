@@ -1,47 +1,28 @@
-.toolbar {
+.titlebar,
+.toolbar,
+.statusbar {
   box-sizing: border-box;
   display: flex;
   align-items: start;
+  padding: 0.2rem;
+  background-color: light-dark(var(--gray-50), var(--gray-700));
+}
+
+.titlebar {
+  margin-block-start: 0;
+  margin-block-end: 0.5rem;
+}
+
+.toolbar {
   margin-block-start: 0;
   margin-block-end: 0;
-  padding: 0.2rem;
 
   background-color: light-dark(var(--gray-50), var(--gray-700));
-
-  .button-group {
-    display: inline-block;
-    padding: 0 0.2rem;
-  }
 
   .button-group ~ .button-group {
     border-left: 0.1rem solid light-dark(var(--gray-100), var(--gray-300));
     padding-left: 0.2rem;
   }
-
-  .tool-button {
-    display: inline-block;
-    width: 1.8rem;
-    height: 1.8rem;
-    padding: 0;
-    font-size: 0.9rem;
-    text-align: center;
-    background-color: light-dark(var(--gray-50), var(--gray-700));;
-    border: 0.1rem solid transparent;
-    border-radius: 0.2rem;
-    cursor: pointer;
-    transition: all .3s ease-in;
-    background-size: cover;
-    background-position: center;
-
-    .icon {
-      width: 1.8rem;
-      height: 1.8rem;
-    }
-  }
-
-  .tool-button:hover,
-  .tool-button:focus {
-    background-color: light-dark(var(--gray-100), var(--gray-500)) }
 
   .dropdown {
     position: relative;
@@ -74,13 +55,48 @@
       display:block;
     }
   }
+}
 
-  .editor-status {
-    margin-left: auto;
+.titlebar, .toolbar, .statusbar {
+  .button-group,
+  .right-button-group,
+  .text-group {
+    display: inline-block;
+    padding: 0 0.2rem;
   }
 
-  #file-selector { display: none; }
-  #download-link { display: none; }  
+  .right-button-group,
+  .right-text-group {
+    margin-left: auto;
+  }
+}
+
+.titlebar, .toolbar {
+  .tool-button {
+    display: inline-block;
+    width: 1.8rem;
+    height: 1.8rem;
+    padding: 0;
+    font-size: 0.9rem;
+    text-align: center;
+    background-color: light-dark(var(--gray-50), var(--gray-700));;
+    border: 0.1rem solid transparent;
+    border-radius: 0.2rem;
+    cursor: pointer;
+    transition: all .3s ease-in;
+    background-size: cover;
+    background-position: center;
+
+    .icon {
+      width: 1.8rem;
+      height: 1.8rem;
+    }
+  }
+
+  .tool-button:hover,
+  .tool-button:focus {
+    background-color: light-dark(var(--gray-100), var(--gray-500))
+  }
 }
 
 .tool-button {
@@ -109,6 +125,21 @@
   }
 }
 
+.titlebar {
+  box-sizing: border-box;
+  display: flex;
+  align-items: start;
+  margin-block-start: 0;
+  margin-block-end: 0.5rem;
+  padding: 0.2rem;
+  background-color: light-dark(var(--gray-50), var(--gray-700));
+
+  .cursor_location {
+    margin-left: auto;
+  }
+
+}
+
 .color-chip {
   display: inline-block;
   vertical-align: middle;
@@ -118,3 +149,6 @@
   margin: 0;
   padding: 0;
 }
+
+#file-selector { display: none; }
+#download-link { display: none; }  

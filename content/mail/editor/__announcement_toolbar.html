@@ -1,8 +1,13 @@
+<div class="titlebar">
+  <input id="title-input" placeholder="Message title" value="{{MESSAGE TITLE}}">
+  <div class="right-button-group"
+    ><button class="tool-button copy" onclick="" title="Copy to clipboard"></button
+  ></div>
+</div>
 <div class="toolbar">
   <div class="button-group"><!--
   --><button class="tool-button open-file" onclick="openFile()" title="Open file"></button
   ><button class="tool-button download-file" onclick="saveFile('text-notice.txt')" title="Download file"></button
-  ><button class="tool-button copy" onclick="copyInput()" title="Copy to clipboard"></button
   ><!--
   --></div>
   <div class="button-group"><!--
@@ -67,7 +72,24 @@
         ></div
     ></div
   ></div>
-  <input type="file" id="file-selector" accept=".txt, .md" onchange="readFile(event)">
-  <a id="download-link"></a>
-  <div class="editor-status">1000 / 2000 chars</div>
+  <div class="right-button-group"
+    ><input type="file" id="file-selector" accept=".txt, .md" onchange="readFile(event)"
+    ><a id="download-link"></a
+    ><button class="tool-button copy" onclick="copyInput()" title="Copy to clipboard"></button
+  ></div>
+</div>
+<textarea
+  id="input"
+  placeholder="{{MESSAGE BODY PLACEHOLDER}}"
+  maxlength="{{MAX CHAR COUNT}}"
+  rows="5"
+>
+{{MESSAGE BODY}}
+</textarea>
+<div class="statusbar">
+  <div class="text-group" id="status">
+    <div id="normal-status"><span id="char-count"></span> / {{MAX CHAR COUNT}} chars</div>
+    <div id="error-status"></div>
+  </div>
+  <div class="right-text-group" id="cursor-location">Ln 0, Col 0</div>
 </div>
