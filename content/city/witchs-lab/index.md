@@ -41,7 +41,7 @@ Summon Altar,
 etc.</p>
 -->
 
-<div class="info-box">Light and Dark Magic <strong>do not</strong>
+<div class="notice alert-info">Light and Dark Magic <strong>do not</strong>
 need to be balanced.</div>
 </div>
 

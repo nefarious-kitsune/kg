@@ -371,7 +371,48 @@ strong { font-weight: 500; }
 
 .hidden { display: none; }
 
-/* ---------------- Notes and Alerts ---------------- */
+/* ---------------- Notices & Alerts ---------------- */
+
+/* Sticky flash notice */
+.flash-notice, #flash-notice {
+  position: sticky;
+  bottom: 0.5rem;
+  margin-right: auto;
+  margin-left: auto;
+  z-index: 999;
+}
+
+.notice {
+  margin-block-end: 0.8rem;
+  min-height: 2rem;
+}
+
+.notice, .flash-notice, #flash-notice {
+  padding: 0.4rem;
+  border-radius: 0.4rem;
+
+  /* Default color */
+  background-color: light-dark(var(--blue-100), var(--blue-700));
+  color: light-dark(var(--blue-700), var(--blue-100));
+
+  /* Color override */
+  &.alert-danger {
+    background-color: light-dark(var(--red-100), var(--red-700));
+    color: light-dark(var(--red-700), var(--red-100));
+  }
+  &.alert-warning {
+    background-color: light-dark(var(--gold-100), var(--gold-700));
+    color: light-dark(var(--gold-700), var(--gold-100));
+  }
+  &.alert-info {
+    background-color: light-dark(var(--blue-100), var(--blue-700));
+    color: light-dark(var(--blue-700), var(--blue-100));
+  }
+  &.alert-success {
+    background-color: light-dark(var(--jade-100), var(--jade-700));
+    color: light-dark(var(--jade-700), var(--jade-100));
+  }
+}
 
 div.info-box {
   position: relative;
@@ -379,42 +420,6 @@ div.info-box {
   margin-block-end: 0.8rem;
   padding: 0.4rem 0.4rem 0.4rem 3rem;
   min-height: 2rem;
-}
-
-div.info-box:before{
-  content: "";
-  display: block;
-  position: absolute;
-  width: 1.8rem;
-  height: 1.8rem;
-  left: 0.4rem;
-  top: 0.4rem;
-  background-image: url('../emojis/4x/info.png');
-  background-size: 1.8rem 1.8rem;
-  background-repeat: no-repeat;
-}
-
-
-div.info-box.alert:before{
-  background-image: url('../emojis/4x/alert.png');
-}
-
-@media (prefers-color-scheme: dark) {
-  div.info-box {
-    background-color: var(--gray-700);
-    border: 0.1rem solid var(--gold-500);
-  }
-  div.info-box.alert{
-    border: 0.1rem solid var(--red-500);
-  }
-}
-@media (prefers-color-scheme: light) {
-  div.info-box {
-    background-color: var(--gold-100);
-  }
-  div.info-box.alert{
-    background-color: var(--red-100);
-  }
 }
 
 /* ------------------- Light Theme ------------------- */

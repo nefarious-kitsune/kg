@@ -14,7 +14,7 @@ css:
 <p>A Magic Stone can be crafted from
 <span class="number">100</span> Magic Dust.</p>
 
-<div class="info-box">
+<div class="notice alert-info">
 Note that Magic Dust cannot be merged to create a higher-tier Magic Dust.
 </div>
 </section>
