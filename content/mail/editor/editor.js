@@ -23,10 +23,13 @@
 /** @type {string} selected text */
 let selectedText = '';
 
-let inputElement;
+let messageBodyInputElement;
 let previewElement;
 let downloadLinkElement;
 let fileSelectorElement;
+
+let flashNoticeDelay = null;
+let flashNoticeElement;
 
 // IME
 /** @type {string} */ let imeBefore;
@@ -38,10 +41,11 @@ let previewPending = false;
 
 document.addEventListener('DOMContentLoaded', (e) => {
   const bodyElement = document.body;
-  inputElement = document.getElementById('input');
+  messageBodyInputElement = document.getElementById('message-body-input');
   previewElement = document.getElementById('output');
   downloadLinkElement = document.getElementById('download-link');
   fileSelectorElement = document.getElementById('file-selector');
+  flashNoticeElement = document.getElementById('flash-notice');
 
   // For MacOS
   if (navigator.userAgent.toLowerCase().indexOf('mac os') !== -1) {
@@ -51,7 +55,7 @@ document.addEventListener('DOMContentLoaded', (e) => {
     });
 
     // Process undo/redo shortcuts
-    inputElement.addEventListener('keydown', (e) => {
+    messageBodyInputElement.addEventListener('keydown', (e) => {
       if (!e.metaKey) return;
       if (e.key == 'z') {
         if (!e.shiftKey) undoAction();
@@ -65,7 +69,7 @@ document.addEventListener('DOMContentLoaded', (e) => {
     });
 
     // Process undo/redo shortcuts
-    inputElement.addEventListener('keydown', (e) => {
+    messageBodyInputElement.addEventListener('keydown', (e) => {
       if (!e.ctrlKey) return;
       if (e.key == 'z') {
         if (!e.shiftKey) undoAction();
@@ -76,24 +80,25 @@ document.addEventListener('DOMContentLoaded', (e) => {
     });
   }
 
-  inputElement.addEventListener('compositionstart', () => {
+  messageBodyInputElement.addEventListener('compositionstart', () => {
     imeBefore = selectedText;
   });
 
-  inputElement.addEventListener('compositionupdate', () => {
-    imeTextStart = inputElement.selectionStart;
-    imeTextEnd = inputElement.selectionEnd;
+  messageBodyInputElement.addEventListener('compositionupdate', () => {
+    imeTextStart = messageBodyInputElement.selectionStart;
+    imeTextEnd = messageBodyInputElement.selectionEnd;
   });
 
-  inputElement.addEventListener('compositionend', handleIMEChangeEvent);
+  messageBodyInputElement
+      .addEventListener('compositionend', handleIMEChangeEvent);
 
-  inputElement.addEventListener('cut', handleCutEvent);
-  inputElement.addEventListener('paste', processPasteEvent);
+  messageBodyInputElement.addEventListener('cut', handleCutEvent);
+  messageBodyInputElement.addEventListener('paste', processPasteEvent);
 
-  inputElement.addEventListener('beforeinput', beforeInputChange);
+  messageBodyInputElement.addEventListener('beforeinput', beforeInputChange);
 
-  inputElement.addEventListener('input', handleChangeEvent);
-  inputElement.addEventListener('input', startPreviewCooldown);
+  messageBodyInputElement.addEventListener('input', handleChangeEvent);
+  messageBodyInputElement.addEventListener('input', startPreviewCooldown);
 
   // Update selection
   document.addEventListener('selectionchange', handleSectionChange);
@@ -106,10 +111,10 @@ document.addEventListener('DOMContentLoaded', (e) => {
  */
 function updatePreview() {
   if (previewPending) clearTimeout(previewDelay);
-  inputElement.classList.remove('preview-pending');
+  messageBodyInputElement.classList.remove('preview-pending');
   previewPending = false;
 
-  const inputText = inputElement.value;
+  const inputText = messageBodyInputElement.value;
   try {
     const previewText = parser.parse(inputText);
     previewElement.classList.remove('error');
@@ -128,7 +133,7 @@ function startPreviewCooldown() {
     clearTimeout(previewDelay);
   } else {
     previewPending = true;
-    inputElement.classList.add('preview-pending');
+    messageBodyInputElement.classList.add('preview-pending');
   };
   previewDelay = setTimeout(updatePreview, 800);
 }
@@ -139,7 +144,7 @@ function startPreviewCooldown() {
  */
 function saveFile(suggestedName) {
   const blob = new Blob(
-      [inputElement.value],
+      [messageBodyInputElement.value],
       {type: 'text/plain;charset=utf-8'},
   );
   const blobURL = URL.createObjectURL(blob);
@@ -167,29 +172,42 @@ function readFile(e) {
   if (!file) return;
   const reader = new FileReader();
   reader.onload = function(e) {
-    inputElement.value = e.target.result;
+    messageBodyInputElement.value = e.target.result;
     updatePreview();
   };
   reader.readAsText(file);
 }
 
 /**
- * Copy input text to the clipboard
+ * Copy text to the clipboard
+ * @param {'title'|'body'} content - content to copy
  */
-function copyInput() {
-  // from https://stackoverflow.com/questions/1173194/
-  if (document.selection) { // IE
-    const range = document.body.createTextRange();
-    range.moveToElementText(inputElement);
-    range.select();
-  } else if (window.getSelection) {
-    const range = document.createRange();
-    range.selectNode(inputElement);
-    window.getSelection().removeAllRanges();
-    window.getSelection().addRange(range);
+function copyInput(content) {
+  if (content==='title') {
+    navigator.clipboard.writeText(messageBodyInputElement.value);
+  } else {
+    // from https://stackoverflow.com/questions/1173194/
+    if (document.selection) { // IE
+      const range = document.body.createTextRange();
+      range.moveToElementText(messageBodyInputElement);
+      range.select();
+    } else if (window.getSelection) {
+      const range = document.createRange();
+      range.selectNode(messageBodyInputElement);
+      window.getSelection().removeAllRanges();
+      window.getSelection().addRange(range);
+    }
+
+    navigator.clipboard.writeText(messageBodyInputElement.value);
   }
 
-  navigator.clipboard.writeText(inputElement.value);
+
+  if (flashNoticeDelay) clearTimeout(flashNoticeDelay);
+  flashNoticeElement.classList.add('show');
+  flashNoticeDelay = setTimeout(() => {
+    flashNoticeElement.classList.remove('show');
+    flashNoticeDelay = null;
+  }, 3000);
 }
 
 /**
@@ -225,14 +243,14 @@ function setSize(size) {
  * @param {*} endTag
  */
 function setFormatting(startTag, endTag) {
-  const selStart = inputElement.selectionStart;
-  const selEnd = inputElement.selectionEnd;
+  const selStart = messageBodyInputElement.selectionStart;
+  const selEnd = messageBodyInputElement.selectionEnd;
 
   const inserted = startTag + selectedText + endTag;
 
-  inputElement.focus();
+  messageBodyInputElement.focus();
 
-  inputElement.setRangeText(inserted, selStart, selEnd, 'select');
+  messageBodyInputElement.setRangeText(inserted, selStart, selEnd, 'select');
 
   // inputElement.setSelectionRange(
   //     selStart + startTag.length,
@@ -260,13 +278,13 @@ function undoAction(chainedUndo) {
   if (undoStack.length === 0) return;
 
   const data = undoStack.pop();
-  inputElement.setRangeText(
+  messageBodyInputElement.setRangeText(
       data.replacedText,
       data.startPos,
       data.endPos,
       data.selectionMode);
 
-  inputElement.focus();
+  messageBodyInputElement.focus();
 
   redoStack.push({
     inputType: data.inputType,
@@ -289,14 +307,14 @@ function undoAction(chainedUndo) {
 function redoAction() {
   if (redoStack.length === 0) return;
   const data = redoStack.pop();
-  inputElement.setRangeText(
+  messageBodyInputElement.setRangeText(
       data.replacedText,
       data.startPos,
       data.endPos,
       data.selectionMode,
   );
 
-  inputElement.focus();
+  messageBodyInputElement.focus();
 
   undoStack.push(data.undo);
 
@@ -317,9 +335,9 @@ function handleSectionChange(e) {
  * @return {string}
  */
 function getSelectionText() {
-  return inputElement.value.slice(
-      inputElement.selectionStart,
-      inputElement.selectionEnd,
+  return messageBodyInputElement.value.slice(
+      messageBodyInputElement.selectionStart,
+      messageBodyInputElement.selectionEnd,
   );
 }
 
@@ -329,11 +347,11 @@ function getSelectionText() {
  */
 function handleIMEChangeEvent(e) {
   // If all input were deleted
-  if (imeTextStart === inputElement.selectionEnd) return;
+  if (imeTextStart === messageBodyInputElement.selectionEnd) return;
 
   undoStack.push({
     inputType: 'insertCompositionText',
-    insertedText: inputElement.value.slice(imeTextStart, imeTextEnd),
+    insertedText: messageBodyInputElement.value.slice(imeTextStart, imeTextEnd),
     replacedText: imeBefore,
     startPos: imeTextStart,
     endPos: imeTextEnd,
@@ -364,8 +382,8 @@ function handleChangeEvent(e) {
         inputType: e.inputType,
         insertedText: '',
         replacedText: selectedText,
-        startPos: inputElement.selectionEnd,
-        endPos: inputElement.selectionEnd,
+        startPos: messageBodyInputElement.selectionEnd,
+        endPos: messageBodyInputElement.selectionEnd,
         selectionMode: 'end',
         chained: false,
       });
@@ -378,8 +396,8 @@ function handleChangeEvent(e) {
         inputType: e.inputType,
         insertedText: '',
         replacedText: selectedText,
-        startPos: inputElement.selectionEnd,
-        endPos: inputElement.selectionEnd,
+        startPos: messageBodyInputElement.selectionEnd,
+        endPos: messageBodyInputElement.selectionEnd,
         selectionMode: 'start',
         chained: false,
       });
@@ -391,8 +409,8 @@ function handleChangeEvent(e) {
         inputType: e.inputType,
         insertedText: '',
         replacedText: selectedText,
-        startPos: inputElement.selectionEnd,
-        endPos: inputElement.selectionEnd,
+        startPos: messageBodyInputElement.selectionEnd,
+        endPos: messageBodyInputElement.selectionEnd,
         selectionMode: 'select',
         chained: false,
       });
@@ -418,8 +436,8 @@ function handleChangeEvent(e) {
         inputType: e.inputType,
         insertedText: inserted,
         replacedText: '',
-        startPos: inputElement.selectionStart,
-        endPos: inputElement.selectionEnd,
+        startPos: messageBodyInputElement.selectionStart,
+        endPos: messageBodyInputElement.selectionEnd,
         selectionMode: 'select',
         chained: chained,
       });
@@ -434,8 +452,8 @@ function handleChangeEvent(e) {
         inputType: e.inputType,
         insertedText: '\n',
         replacedText: selectedText,
-        startPos: inputElement.selectionEnd - 1,
-        endPos: inputElement.selectionEnd,
+        startPos: messageBodyInputElement.selectionEnd - 1,
+        endPos: messageBodyInputElement.selectionEnd,
         selectionMode: 'end',
         chained: false,
       });
@@ -450,8 +468,8 @@ function handleChangeEvent(e) {
           inputType: e.inputType,
           insertedText: e.data,
           replacedText: selectedText,
-          startPos: inputElement.selectionEnd - e.data.length,
-          endPos: inputElement.selectionEnd,
+          startPos: messageBodyInputElement.selectionEnd - e.data.length,
+          endPos: messageBodyInputElement.selectionEnd,
           selectionMode: 'end',
           chained: false,
         });
@@ -474,18 +492,21 @@ function processDeletionEvent(e) {
  * @param {InputEvent} e
  */
 function beforeInputChange(e) {
-  if (inputElement.selectionStart === inputElement.selectionEnd) {
+  if (
+    messageBodyInputElement.selectionStart ===
+    messageBodyInputElement.selectionEnd
+  ) {
     switch (e.inputType) {
       case 'deleteContentBackward':
-        selectedText = inputElement.value.slice(
-            inputElement.selectionStart - 1,
-            inputElement.selectionEnd,
+        selectedText = messageBodyInputElement.value.slice(
+            messageBodyInputElement.selectionStart - 1,
+            messageBodyInputElement.selectionEnd,
         );
         return;
       case 'deleteContentForward':
-        selectedText = inputElement.value.slice(
-            inputElement.selectionStart,
-            inputElement.selectionEnd + 1,
+        selectedText = messageBodyInputElement.value.slice(
+            messageBodyInputElement.selectionStart,
+            messageBodyInputElement.selectionEnd + 1,
         );
         return;
     }
@@ -502,8 +523,8 @@ function processPasteEvent(e) {
     inputType: 'paste',
     insertedText: value,
     replacedText: selectedText,
-    startPos: inputElement.selectionEnd,
-    endPos: inputElement.selectionEnd + value.length,
+    startPos: messageBodyInputElement.selectionEnd,
+    endPos: messageBodyInputElement.selectionEnd + value.length,
     selectionMode: 'end',
     chained: false,
   });
@@ -519,8 +540,8 @@ function handleCutEvent(e) {
     inputType: 'cut',
     insertedText: '',
     replacedText: selectedText,
-    startPos: inputElement.selectionStart,
-    endPos: inputElement.selectionStart,
+    startPos: messageBodyInputElement.selectionStart,
+    endPos: messageBodyInputElement.selectionStart,
     selectionMode: 'select',
     chained: false,
   });
