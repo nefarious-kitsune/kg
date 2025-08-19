@@ -594,6 +594,15 @@ class URTEditor {
     this.undoStack = [];
     /** @type EditAction[] */
     this.redoStack = [];
+
+    /** @type {URTParser} */
+    this.parser = new URTParser();
+
+    /** @type {number} Timer ID for preview cooldown */
+    this.previewDelay = 0;
+
+    /** @type {boolean} Is the editor under preview cooldown? */
+    this.previewPending = false;
   }
 
   /**
@@ -604,15 +613,15 @@ class URTEditor {
     this.element.classList.remove('preview-pending');
     this.previewPending = false;
 
-    const inputText = bodyInputElement.value;
+    const inputText = this.element.value;
     try {
-      parser.parse(inputText);
-      const previewText = parser.render();
-      previewElement.classList.remove('error');
-      previewElement.innerHTML = previewText;
+      this.parser.parse(inputText);
+      const renderedHTML = this.parser.render();
+      this.preview.classList.remove('error');
+      this.preview.innerHTML = renderedHTML;
     } catch (e) {
-      previewElement.classList.add('error');
-      previewElement.innerHTML = e.formattedError;
+      this.preview.classList.add('error');
+      this.preview.innerHTML = e.formattedError;
     }
   }
 
@@ -621,12 +630,12 @@ class URTEditor {
    */
   startPreviewCooldown() {
     if (previewPending) {
-      clearTimeout(previewDelay);
+      clearTimeout(this.previewDelay);
     } else {
       previewPending = true;
       bodyInputElement.classList.add('preview-pending');
     };
-    previewDelay = setTimeout(updatePreview, 800);
+    this.previewDelay = setTimeout(updatePreview, 800);
   }
 
   /**
@@ -654,29 +663,28 @@ class URTEditor {
    * @param {EditAction} action
    */
   pushUndo(action) {
-    undoStack.push(action);
-    redoStack.length = 0; // Clear redo history
+    this.undoStack.push(action);
+    this.redoStack.length = 0; // Clear redo history
   }
 
-
- /**
- * Undo change
- * @param {*} chained - Continue to do next Undo?
- */
+  /**
+   * Undo change
+   * @param {*} chained - Continue to do next Undo?
+   */
   undo(chained) {
     const {element, undoStack, redoStack} = this;
     if (undoStack.length === 0) return;
 
-    const action = undoStack.pop();
+    const action = this.undoStack.pop();
     element.setRangeText(
         action.replacedText,
         action.startPos,
         action.endPos,
         action.selectionMode);
 
-    bodyInputElement.focus();
+    this.element.focus();
 
-    redoStack.push({
+    this.redoStack.push({
       inputType: action.inputType,
       insertedText: action.replacedText,
       replacedText: action.insertedText,
@@ -687,7 +695,7 @@ class URTEditor {
       undo: action,
     });
 
-    if (action.chained) undoAction(true);
+    if (action.chained) this.undo(true);
     else this.startPreviewCooldown();
   }
 
@@ -695,20 +703,20 @@ class URTEditor {
    * Redo change
    */
   redo() {
-    if (redoStack.length === 0) return;
-    const data = redoStack.pop();
-    bodyInputElement.setRangeText(
+    if (this.redoStack.length === 0) return;
+    const data = this.redoStack.pop();
+    this.element.setRangeText(
         data.replacedText,
         data.startPos,
         data.endPos,
         data.selectionMode,
     );
 
-    bodyInputElement.focus();
+    this.element.focus();
 
-    undoStack.push(data.undo);
+    this.undoStack.push(data.undo);
 
-    if (data.chained) redoAction();
+    if (data.chained) this.redo();
     else this.startPreviewCooldown();
   }
 
@@ -793,6 +801,9 @@ const previewElement = document.getElementById('output');
 
 const flashNoticeElement = document.getElementById('flash-notice');
 let flashNoticeDelay = null;
+
+const editor = new URTEditor(bodyInputElement, previewElement);
+editor.initialize();
 
 // IME
 /** @type {string} */ let imeBefore;
