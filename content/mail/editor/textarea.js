@@ -1,3 +1,4 @@
+let DEBUG = true;
 
 /**
  * @typedef {Object} EditAction - Input action (in Undo/Redo history)
@@ -38,8 +39,58 @@ class URTTextAreaElement extends HTMLTextAreaElement {
   /** @type {number} Update cooldown in milliseconds */
   updateDelay = 800;
 
+  /** @type {boolean} Is the TextArea under update cooldown? */
+  updatePending = false;
+
   /** @type {function} Callback function for content change */
   updateCallback;
+
+  /** @type {function} Callback function for command action */
+  commandCallback;
+
+  /** @type {string} Cached value for delete event */
+  prevValue;
+
+  /**
+   * Event handler for command key stroke
+   * @param {InputEvent} e
+   */
+  commandKey(e) {
+    if (e.key === 'z') {
+      this.undo();
+      e.preventDefault();
+    } else if (e.key === 'Z') {
+      this.redo();
+      e.preventDefault();
+    } else {
+      if (typeof this.commandCallback === 'function') {
+        this.commandCallback.call(this, e);
+      };
+    }
+  }
+
+  /**
+   * Start a timer for update delay
+   */
+  startUpdateDelay() {
+    if (this.updatePending) {
+      clearTimeout(this.updateDelayTimer);
+    } else {
+      this.updatePending = true;
+      this.classList.add('update-pending');
+    };
+    this.updateDelayTimer = setTimeout(() => this.update(), this.updateDelay);
+  }
+
+  /**
+   * Update TextArea
+   */
+  update() {
+    this.updatePending = false;
+    if (typeof this.updateCallback === 'function') {
+      this.updateCallback();
+    }
+  }
 
   /** @type {string} selected text */
   selectedText = '';
@@ -61,21 +112,9 @@ class URTTextAreaElement extends HTMLTextAreaElement {
   }
 
   /**
-   * Start a timer for update delay
-   */
-  startUpdateDelay() {
-    if (this.updateDelayTimer) {
-      clearTimeout(this.updateDelayTimer);
-    } else {
-      this.classList.add('update-pending');
-    };
-    this.updateDelayTimer = setTimeout(updateCallback, this.updateDelay);
-  }
-
-  /**
    * Chained addEventListener
-   * @param {string} type
-   * @param {function} handler
+   * @param {string} type - Event type
+   * @param {function} handler - Event handler
    * @return {HTMLElement}
    */
   on(type, handler) {
@@ -87,7 +126,7 @@ class URTTextAreaElement extends HTMLTextAreaElement {
    * Undo change
    * @param {*} chained - Continue to do next Undo?
    */
-  undo(chained) {
+  undo() {
     if (this.undoStack.length === 0) return;
     const action = this.undoStack.pop();
 
@@ -99,6 +138,8 @@ class URTTextAreaElement extends HTMLTextAreaElement {
 
     this.focus();
 
+    if (DEBUG) console.log('Undo action', action);
+
     this.redoStack.push({
       inputType: action.inputType,
       insertedText: action.replacedText,
@@ -106,12 +147,12 @@ class URTTextAreaElement extends HTMLTextAreaElement {
       startPos: action.startPos,
       endPos: action.startPos + action.replacedText.length,
       selectionMode: action.selectionMode,
-      chained: chained,
+      chained: action.chained,
       undo: action,
     });
 
-    if (action.chained) this.undo(true);
-    else this.startUpdateDelay();
+    if (action.chained) this.undo();
+    else this.update();
   }
 
   /**
@@ -128,25 +169,72 @@ class URTTextAreaElement extends HTMLTextAreaElement {
     );
 
     this.focus();
+
+    if (DEBUG) console.log('Redo action', action);
+
     this.undoStack.push(action.undo);
 
     if (action.chained) this.redo();
-    else this.startUpdateDelay();
+    else this.update();
   }
 
   /**
-   * Add an action to undo history
-   * @param {EditAction} action
+   * Update undo history with a new action
+   * @param {EditAction} newAction
    */
-  pushUndo(action) {
-    this.undoStack.push(action);
+  updateUndo(newAction) {
+    if (this.undoStack.length && this.updatePending) {
+      const prevAction = this.undoStack[this.undoStack.length - 1];
+      if (prevAction.inputType === newAction.inputType) {
+        switch (prevAction.inputType) {
+          case 'insertText':
+            if (prevAction.endPos === newAction.startPos) {
+              prevAction.endPos = newAction.endPos;
+              prevAction.insertedText += newAction.insertedText;
+              if (DEBUG) console.log('Action updated', prevAction);
+              return;
+            };
+            break;
+          case 'insertLineBreak':
+            if (prevAction.endPos === newAction.startPos) {
+              prevAction.endPos = newAction.endPos;
+              prevAction.insertedText += '\n';
+              if (DEBUG) console.log('Action updated', prevAction);
+              return;
+            };
+            break;
+          case 'deleteContentBackward':
+            if (
+              prevAction.endPos ===
+              newAction.endPos + newAction.replacedText.length
+            ) {
+              prevAction.endPos = newAction.endPos;
+              prevAction.startPos = newAction.endPos;
+              prevAction.replacedText =
+                  newAction.replacedText +
+                  prevAction.replacedText;
+              if (DEBUG) console.log('Action updated', prevAction);
+              return;
+            };
+            break;
+          case 'deleteContentForward':
+            if (prevAction.endPos === newAction.endPos) {
+              prevAction.replacedText += newAction.replacedText;
+              if (DEBUG) console.log('Action updated', prevAction);
+              return;
+            };
+            break;
+        };
+      }
+    }
+    this.undoStack.push(newAction);
+    if (DEBUG) console.log('Action added', newAction);
     this.redoStack.length = 0; // Clear redo history
     this.startUpdateDelay();
   }
 
-
   /**
-   * Perform an editing action
+   * Perform a programmatic editing action
    * @param {string} inserted - Replacement text
    * @param {number} selStart - Index of the first selected character.
    * @param {number} selEnd - Index of the character *after* the last selected character
@@ -162,7 +250,7 @@ class URTTextAreaElement extends HTMLTextAreaElement {
       selectionMode: 'select',
       chained: false,
     };
-    this.pushUndo(action);
+    this.updateUndo(action);
   }
 
   /**
@@ -173,7 +261,7 @@ class URTTextAreaElement extends HTMLTextAreaElement {
     if (this.imeTextStart === this.selectionEnd) return; // All input were deleted
     const inserted = this.value.slice(this.imeTextStart, this.imeTextEnd);
     const replaced = this.imeBefore;
-    this.pushUndo({
+    this.updateUndo({
       inputType: 'insertCompositionText',
       insertedText: inserted,
       replacedText: replaced,
@@ -215,7 +303,7 @@ class URTTextAreaElement extends HTMLTextAreaElement {
       selectionMode: 'end',
       chained: false,
     };
-    this.pushUndo(action);
+    this.updateUndo(action);
   }
 
   /**
@@ -232,7 +320,7 @@ class URTTextAreaElement extends HTMLTextAreaElement {
       selectionMode: 'select',
       chained: false,
     };
-    this.pushUndo(action);
+    this.updateUndo(action);
   }
 
   /**
@@ -240,6 +328,15 @@ class URTTextAreaElement extends HTMLTextAreaElement {
    * @param {InputEvent} e
    */
   beforeInputChange(e) {
+    switch (e.inputType) {
+      case 'deleteContentBackward':
+      case 'deleteContentForward':
+      case 'deleteWordBackward':
+      case 'deleteWordForward':
+        this.prevValue = this.value;
+        return;
+    }
+    /*
     const {selectionStart, selectionEnd} = this;
     if (selectionStart === selectionEnd) {
       switch (e.inputType) {
@@ -257,6 +354,7 @@ class URTTextAreaElement extends HTMLTextAreaElement {
           return;
       }
     }
+    */
   }
 
   /**
@@ -264,7 +362,9 @@ class URTTextAreaElement extends HTMLTextAreaElement {
    * @param {InputEvent} e
    */
   inputChange(e) {
-    const replaced = this.getSelectionText();
+    const replaced = this.selectedText;
+    let deletedText;
+    let deletedLen;
 
     /** @type {EditAction|null} */
     let action = null;
@@ -279,24 +379,46 @@ class URTTextAreaElement extends HTMLTextAreaElement {
         return; // Already handled by imgChange
 
       case 'deleteContentBackward':
+      case 'deleteWordBackward':
+        deletedLen = this.prevValue.length - this.value.length;
+        deletedText = this.prevValue.slice(
+            this.selectionStart,
+            this.selectionStart + deletedLen,
+        );
         action = {
           inputType: e.inputType,
           insertedText: '',
+          replacedText: deletedText,
+          startPos: this.selectionEnd,
+          endPos: this.selectionEnd,
+          /*
           replacedText: replaced,
           startPos: this.selectionEnd,
           endPos: this.selectionEnd,
+          */
           selectionMode: 'end',
           chained: false,
         };
         break;
 
       case 'deleteContentForward':
+      case 'deleteWordForward':
+        deletedLen = this.prevValue.length - this.value.length;
+        deletedText = this.prevValue.slice(
+            this.selectionStart,
+            this.selectionStart + deletedLen,
+        );
         action = {
           inputType: e.inputType,
           insertedText: '',
+          replacedText: deletedText,
+          startPos: this.selectionStart,
+          endPos: this.selectionStart,
+          /*
           replacedText: replaced,
           startPos: this.selectionEnd,
           endPos: this.selectionEnd,
+          */
           selectionMode: 'start',
           chained: false,
         };
@@ -366,7 +488,7 @@ class URTTextAreaElement extends HTMLTextAreaElement {
     };
 
     if (action !== null) {
-      this.pushUndo(action);
+      this.updateUndo(action);
       this.startUpdateDelay();
     }
   }
@@ -387,18 +509,11 @@ class URTTextAreaElement extends HTMLTextAreaElement {
 
     if (macOS) {
       this.on('keydown', (e) => {
-        if ((e.metaKey) && (e.key === 'z')) {
-          if (!e.shiftKey) this.undo(); else this.redo();
-        }
+        if (e.metaKey) this.commandKey(e);
       });
     } else {
       this.on('keydown', (e) => {
-        if (!e.ctrlKey) return;
-        if (e.key === 'z') {
-          if (!e.shiftKey) this.undo(); else this.redo();
-        } else if (e.key === 'y') {
-          this.redo();
-        }
+        if (e.ctrlKey) this.commandKey(e);
       });
     }
   }
@@ -421,4 +536,7 @@ class URTTextAreaElement extends HTMLTextAreaElement {
   }
 }
 
-customElements.define('urt-text-area', URTTextAreaElement);
+customElements.define(
+    'urt-text-area',
+    URTTextAreaElement,
+    {extends: 'textarea'});
