@@ -1,15 +1,14 @@
-let DEBUG = true;
+let DEBUG;
 
 /**
- * @typedef {Object} EditAction - Input action (in Undo/Redo history)
+ * @typedef {Object} EditHistory - Edit history
  * @property {string} inputType - Input type of the event
  * @property {string} insertedText - Text added to the input
  * @property {string} replacedText - Text that was replaced
  * @property {number} startPos - Start position of inserted text
- * @property {number} endPos - Start position of inserted text
+ * @property {number} endPos - End position of inserted text
  * @property {'select'|'start'|'end'} selectionMode - Selection mode after undo/redo
  * @property {boolean} chained - Is this a chained event?
- * @property {EditAction} [undo] - Previous undo
  */
 
 /** Custom TextArea element with undo/redo stack */
@@ -20,9 +19,9 @@ class URTTextAreaElement extends HTMLTextAreaElement {
     super(); // Always call super first in constructor
   }
 
-  /** @type EditAction[] - Undo stack */
+  /** @type EditHistory[] - Undo stack */
   undoStack = [];
-  /** @type EditAction[] - Redo stack */
+  /** @type EditHistory[] - Redo stack */
   redoStack = [];
   /** @type {string} - IME input text */
   imeBefore = '';
@@ -57,10 +56,10 @@ class URTTextAreaElement extends HTMLTextAreaElement {
    */
   commandKey(e) {
     if (e.key === 'z') {
-      this.undo();
+      this.undoHistory();
       e.preventDefault();
     } else if (e.key === 'Z') {
-      this.redo();
+      this.redoHistory();
       e.preventDefault();
     } else {
       if (typeof this.commandCallback === 'function') {
@@ -126,7 +125,7 @@ class URTTextAreaElement extends HTMLTextAreaElement {
    * Undo change
    * @param {*} chained - Continue to do next Undo?
    */
-  undo() {
+  undoHistory() {
     if (this.undoStack.length === 0) return;
     const action = this.undoStack.pop();
 
@@ -140,31 +139,22 @@ class URTTextAreaElement extends HTMLTextAreaElement {
 
     if (DEBUG) console.log('Undo action', action);
 
-    this.redoStack.push({
-      inputType: action.inputType,
-      insertedText: action.replacedText,
-      replacedText: action.insertedText,
-      startPos: action.startPos,
-      endPos: action.startPos + action.replacedText.length,
-      selectionMode: action.selectionMode,
-      chained: action.chained,
-      undo: action,
-    });
+    this.redoStack.push(action);
 
-    if (action.chained) this.undo();
+    if (action.chained) this.undoHistory();
     else this.update();
   }
 
   /**
    * Redo change
    */
-  redo() {
+  redoHistory() {
     if (this.redoStack.length === 0) return;
     const action = this.redoStack.pop();
     this.setRangeText(
-        action.replacedText,
+        action.insertedText,
         action.startPos,
-        action.endPos,
+        action.startPos + action.replacedText.length,
         action.selectionMode,
     );
 
@@ -172,20 +162,24 @@ class URTTextAreaElement extends HTMLTextAreaElement {
 
     if (DEBUG) console.log('Redo action', action);
 
-    this.undoStack.push(action.undo);
+    // this.undoStack.push(action.undo);
+    this.undoStack.push(action);
 
-    if (action.chained) this.redo();
+    if (action.chained) this.redoHistory();
     else this.update();
   }
 
   /**
    * Update undo history with a new action
-   * @param {EditAction} newAction
+   * @param {EditHistory} newAction
    */
-  updateUndo(newAction) {
+  updateHistory(newAction) {
     if (this.undoStack.length && this.updatePending) {
       const prevAction = this.undoStack[this.undoStack.length - 1];
-      if (prevAction.inputType === newAction.inputType) {
+      if (
+        (prevAction.inputType === newAction.inputType) &&
+        (prevAction.selectionMode !== 'select')
+      ) {
         switch (prevAction.inputType) {
           case 'insertText':
             if (prevAction.endPos === newAction.startPos) {
@@ -250,7 +244,7 @@ class URTTextAreaElement extends HTMLTextAreaElement {
       selectionMode: 'select',
       chained: false,
     };
-    this.updateUndo(action);
+    this.updateHistory(action);
   }
 
   /**
@@ -261,7 +255,7 @@ class URTTextAreaElement extends HTMLTextAreaElement {
     if (this.imeTextStart === this.selectionEnd) return; // All input were deleted
     const inserted = this.value.slice(this.imeTextStart, this.imeTextEnd);
     const replaced = this.imeBefore;
-    this.updateUndo({
+    this.updateHistory({
       inputType: 'insertCompositionText',
       insertedText: inserted,
       replacedText: replaced,
@@ -292,35 +286,144 @@ class URTTextAreaElement extends HTMLTextAreaElement {
    * Event handler for paste command
    * @param {InputEvent} e
    */
-  paste(e) {
-    const inserted = e.clipboardData.getData('text');
-    const action = {
-      inputType: 'paste',
-      insertedText: inserted,
-      replacedText: this.selectedText,
-      startPos: this.selectionEnd,
-      endPos: this.selectionEnd + inserted.length,
-      selectionMode: 'end',
-      chained: false,
-    };
-    this.updateUndo(action);
-  }
+  // paste(e) {
+  //   const inserted = e.clipboardData.getData('text');
+  //   const replaced = this.selectedText;
+  //   const action = {
+  //     inputType: 'paste',
+  //     insertedText: inserted,
+  //     replacedText: replaced,
+  //     startPos: this.selectionStart,
+  //     endPos: this.selectionStart + inserted.length,
+  //     selectionMode: 'end',
+  //     chained: false,
+  //   };
+
+  //   if (this.selectedText.length) {
+  //     action.selectionMode = 'select';
+  //   }
+
+  //   this.updateHistory(action);
+  // }
 
   /**
    * Event handler for cut command
    * @param {InputEvent} e
    */
-  cut(e) {
+  // cut(e) {
+  //   const action = {
+  //     inputType: 'cut',
+  //     insertedText: '',
+  //     replacedText: this.selectedText,
+  //     startPos: this.selectionStart,
+  //     endPos: this.selectionStart,
+  //     selectionMode: 'select',
+  //     chained: false,
+  //   };
+  //   this.updateHistory(action);
+  // }
+
+  /**
+   * Event handler for text insertion
+   * @param {InputEvent} e
+   */
+  insertText(e) {
+    const inserted = e.data;
+    const replaced = this.selectedText;
     const action = {
-      inputType: 'cut',
-      insertedText: '',
-      replacedText: this.selectedText,
+      inputType: e.inputType,
+      insertedText: inserted,
+      replacedText: replaced,
+      startPos: this.selectionEnd - inserted.length,
+      endPos: this.selectionEnd,
+      selectionMode: 'end',
+      chained: false,
+    };
+    if (replaced.length) action.selectionMode = 'select';
+    this.updateHistory(action);
+  }
+
+  /**
+   * Event handler for text drag and drop
+   * @param {InputEvent} e
+   */
+  insertFromDrop(e) {
+    const inserted = e.data;
+    const replaced = '';
+    const action = {
+      inputType: e.inputType,
+      insertedText: inserted,
+      replacedText: replaced,
       startPos: this.selectionStart,
-      endPos: this.selectionStart,
+      endPos: this.selectionEnd,
       selectionMode: 'select',
       chained: false,
     };
-    this.updateUndo(action);
+    if (this.undoStack.length) {
+      const prevUndo = this.undoStack[this.undoStack.length - 1];
+      if (
+        (prevUndo.inputType === 'deleteByDrag') &&
+        (prevUndo.replacedText === inserted)
+      ) {
+        action.chained = true;
+      }
+    }
+    this.updateHistory(action);
+  }
+
+  /**
+   * Event handler for 'deleteContentForward' and 'deleteWordForward'
+   * @param {InputEvent} e
+   */
+  deleteForward(e) {
+    const deletedLen = this.prevValue.length - this.value.length;
+    const deletedText = this.prevValue.slice(
+        this.selectionStart,
+        this.selectionStart + deletedLen,
+    );
+
+    const action = {
+      inputType: e.inputType,
+      insertedText: '',
+      replacedText: deletedText,
+      startPos: this.selectionStart,
+      endPos: this.selectionStart,
+      selectionMode: 'start',
+      chained: false,
+    };
+
+    if (this.selectedText.length) action.selectionMode = 'select';
+
+    this.updateHistory(action);
+  }
+
+  /**
+   * Event handler for 'deleteContentBackward' and 'deleteWordBackward'
+   * @param {InputEvent} e
+   */
+  deleteBackward(e) {
+    const deletedLen = this.prevValue.length - this.value.length;
+    const deletedText = this.prevValue.slice(
+        this.selectionStart,
+        this.selectionStart + deletedLen,
+    );
+
+    const action = {
+      inputType: 'deleteContentBackward',
+      insertedText: '',
+      replacedText: deletedText,
+      startPos: this.selectionEnd,
+      endPos: this.selectionEnd,
+      selectionMode: 'end',
+      chained: false,
+    };
+
+    if (this.selectedText.length) {
+      // action.endPos += this.selectedText.length;
+      action.selectionMode = 'select';
+    }
+
+    this.updateHistory(action);
   }
 
   /**
@@ -328,33 +431,15 @@ class URTTextAreaElement extends HTMLTextAreaElement {
    * @param {InputEvent} e
    */
   beforeInputChange(e) {
-    switch (e.inputType) {
-      case 'deleteContentBackward':
-      case 'deleteContentForward':
-      case 'deleteWordBackward':
-      case 'deleteWordForward':
-        this.prevValue = this.value;
-        return;
-    }
-    /*
-    const {selectionStart, selectionEnd} = this;
-    if (selectionStart === selectionEnd) {
-      switch (e.inputType) {
-        case 'deleteContentBackward':
-          this.selectedText = this.value.slice(
-              selectionStart - 1,
-              selectionEnd,
-          );
-          return;
-        case 'deleteContentForward':
-          this.selectedText = this.value.slice(
-              selectionStart,
-              selectionEnd + 1,
-          );
-          return;
-      }
-    }
-    */
+    this.prevValue = this.value;
+    // switch (e.inputType) {
+    //   case 'deleteContentBackward':
+    //   case 'deleteContentForward':
+    //   case 'deleteWordBackward':
+    //   case 'deleteWordForward':
+    //     this.prevValue = this.value;
+    //     return;
+    // }
   }
 
   /**
@@ -362,135 +447,48 @@ class URTTextAreaElement extends HTMLTextAreaElement {
    * @param {InputEvent} e
    */
   inputChange(e) {
-    const replaced = this.selectedText;
-    let deletedText;
-    let deletedLen;
-
-    /** @type {EditAction|null} */
-    let action = null;
-
     switch (e.inputType) {
       case 'historyUndo':
       case 'historyRedo':
         e.preventDefault();
         return;
 
-      case 'insertCompositionText':
-        return; // Already handled by imgChange
+      case 'insertCompositionText': // Already handled by imgChange()
+        return;
 
+      case 'deleteWordBackward': e.inputType = 'deleteContentBackward';
       case 'deleteContentBackward':
-      case 'deleteWordBackward':
-        deletedLen = this.prevValue.length - this.value.length;
-        deletedText = this.prevValue.slice(
-            this.selectionStart,
-            this.selectionStart + deletedLen,
-        );
-        action = {
-          inputType: e.inputType,
-          insertedText: '',
-          replacedText: deletedText,
-          startPos: this.selectionEnd,
-          endPos: this.selectionEnd,
-          /*
-          replacedText: replaced,
-          startPos: this.selectionEnd,
-          endPos: this.selectionEnd,
-          */
-          selectionMode: 'end',
-          chained: false,
-        };
-        break;
+        this.deleteBackward(e);
+        return;
 
+      case 'deleteWordForward': e.inputType = 'deleteContentForward';
       case 'deleteContentForward':
-      case 'deleteWordForward':
-        deletedLen = this.prevValue.length - this.value.length;
-        deletedText = this.prevValue.slice(
-            this.selectionStart,
-            this.selectionStart + deletedLen,
-        );
-        action = {
-          inputType: e.inputType,
-          insertedText: '',
-          replacedText: deletedText,
-          startPos: this.selectionStart,
-          endPos: this.selectionStart,
-          /*
-          replacedText: replaced,
-          startPos: this.selectionEnd,
-          endPos: this.selectionEnd,
-          */
-          selectionMode: 'start',
-          chained: false,
-        };
-        break;
+        this.deleteForward(e);
+        return;
 
+      case 'deleteContent':
+      case 'deleteByCut':
       case 'deleteByDrag':
-        action = {
-          inputType: e.inputType,
-          insertedText: '',
-          replacedText: replaced,
-          startPos: this.selectionEnd,
-          endPos: this.selectionEnd,
-          selectionMode: 'select',
-          chained: false,
-        };
-        break;
+        this.deleteForward(e);
+        return;
 
-      case 'insertFromDrop': {
-        action = {
-          inputType: e.inputType,
-          insertedText: replaced,
-          replacedText: '',
-          startPos: this.selectionStart,
-          endPos: this.selectionEnd,
-          selectionMode: 'select',
-          chained: false,
-        };
-        if (this.undoStack.length) {
-          const prevUndo = this.undoStack[this.undoStack.length - 1];
-          if (
-            (prevUndo.inputType === 'deleteByDrag') &&
-            (prevUndo.replacedText === replaced)
-          ) {
-            action.chained = true;
-          }
-        }
-        break;
-      }
-
-      case 'insertLineBreak': {
-        action = {
-          inputType: e.inputType,
-          insertedText: '\n',
-          replacedText: replaced,
-          startPos: this.selectionEnd - 1,
-          endPos: this.selectionEnd,
-          selectionMode: 'end',
-          chained: false,
-        };
-        break;
-      }
-
+      case 'insertLineBreak':
+        e.data = '\n';
       case 'insertText':
+      case 'insertFromPaste':
+        this.insertText(e);
+        return;
+
+      case 'insertFromDrop':
+        this.insertFromDrop(e);
+        return;
+
       default: {
-        if (e.data !== null) {
-          action = {
-            inputType: e.inputType,
-            insertedText: e.data,
-            replacedText: replaced,
-            startPos: this.selectionEnd - e.data.length,
-            endPos: this.selectionEnd,
-            selectionMode: 'end',
-            chained: false,
-          };
-        };
+        if (DEBUG) console.log('Unknown event: ', e.inputType);
+        if (e.data !== null) this.insertText(e);
+        else this.deleteForward(e);
       }
     };
-
-    if (action !== null) {
-      this.updateUndo(action);
-      this.startUpdateDelay();
-    }
   }
 
   /** Called when added to DOM */
@@ -500,8 +498,8 @@ class URTTextAreaElement extends HTMLTextAreaElement {
         .on('compositionstart', (e) => this.imeStart(e))
         .on('compositionupdate', (e) => this.imeUpdate(e))
         .on('compositionend', (e) => this.imgChange(e))
-        .on('cut', (e) => this.cut(e))
-        .on('paste', (e) => this.paste(e))
+        // .on('cut', (e) => this.cut(e))
+        // .on('paste', (e) => this.paste(e))
         .on('beforeinput', (e) => this.beforeInputChange(e))
         .on('input', (e) => this.inputChange(e));
 
