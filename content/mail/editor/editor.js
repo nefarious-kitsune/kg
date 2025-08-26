@@ -4,6 +4,7 @@
 // Undo/redo stack code is partly based on
 // https://github.com/shikatan0/textarea-undo-redo/blob/master/src/index.ts
 
+
 const Hexadecimal = '0123456789abcdefABCDEF';
 const NamedColors = [
   'aqua', 'black', 'blue', 'brown', 'cyan', 'darkblue', 'fuchsia',
@@ -552,68 +553,77 @@ class URTParser {
   }
 };
 
-/**
- * @typedef {Object} EditAction - Input action (in Undo/Redo history)
- * @property {string} inputType - Input type of the event
- * @property {string} insertedText - Text added to the input
- * @property {string} replacedText - Text that was replaced
- * @property {number} startPos - Start position of inserted text
- * @property {number} endPos - Start position of inserted text
- * @property {'select'|'start'|'end'} selectionMode - Selection mode after undo/redo
- * @property {boolean} chained - Is this a chained event?
- * @property {EditAction} [undo] - Previous undo
- */
+/** @typedef {import('./textarea.js').URTTextAreaElement} URTTextAreaElement */
 
 /**
- * Unity Rich Text editor
+ * @typedef {Object} URTOptions - Initialization options for URTEditor
+ * @property {number} maxLength - Character limit (-1 if it's unlimited)
+ * @property {number[]} textSizeOptions - Text size options
+ * @property {string[]} textColorOptions - Text color options
+ * @property {number} defaultTextSize - Default text size
+ * @property {string} defaultTextColor - Default text color
+ * @property {string} defaultBackgroundColor - Default background color
  */
-class URTEditor {
+
+/** Custom TextArea element with undo/redo stack */
+export class URTEditorElement extends HTMLDivElement {
+  // static observedAttributes = ['max'+'length'];
+  /** Constructor */
+  constructor() {
+    super(); // Always call super first in constructor
+
+    const shadow = this.attachShadow({mode: 'open'});
+    const template = document.getElementById('urt-editor-template');
+    shadow.appendChild(template.content);
+  }
+
+  /** @type {URTParser} */
+  parser = new URTParser();
+
+  /** @type {URTTextAreaElement} - Input element for message body */
+  bodyInput;
+
+  /** @type {HTMLInputElement} - Input element for message title */
+  titleInput;
+
+  /** @type {HTMLDivElement} - Element for preview rendering */
+  preview;
+
+  /** @type {HTMLDivElement} - Toolbar element   */ toolbar;
+  /** @type {HTMLDivElement} - Statusbar element */ statusbar;
+  /** @type {HTMLDivElement} - Title bar element */ titlebar;
+
+  /** @type {HTMLAnchorElement} - Hidden element (a#file-download) */
+  saveFileLink;
+  /** @type {HTMLButtonElement} - Toolbar button for saving a file */
+  saveFileButton;
+
+  /** Called when added to DOM */
+  connectedCallback() {
+  }
+
+  /** Called when removed to DOM */
+  disconnectedCallback() {
+  }
+
+  /** Called when moved within DOM */
+  connectedMoveCallback() {
+  }
+
   /**
-   * Create a new editor
-   * @param {HTMLTextAreaElement} input - HTML element for text input
-   * @param {HTMLDivElement} output - HTML element for preview rendering
+   * Called when observed attributes are changed
+   * @param {*} name Attribute name
+   * @param {*} oldValue Old attribute value
+   * @param {*} newValue New attribute value
    */
-  constructor(input, output) {
-    /** @type {HTMLTextAreaElement} */
-    this.element = input;
-
-    /** @type {HTMLDivElement} */
-    this.preview = output;
-
-    /** @type {string} - IME input text */
-    this.imeBefore = '';
-    /** @type {number} - IME selection start position */
-    this.imeTextStart = 0;
-    /** @type {number} - IME selection end position*/
-    this.imeTextEnd = 0;
-
-    /** @type {string} selected text */
-    this.selectedText = '';
-
-    /** @type EditAction[] */
-    this.undoStack = [];
-    /** @type EditAction[] */
-    this.redoStack = [];
-
-    /** @type {URTParser} */
-    this.parser = new URTParser();
-
-    /** @type {number} Timer ID for preview cooldown */
-    this.previewDelay = 0;
-
-    /** @type {boolean} Is the editor under preview cooldown? */
-    this.previewPending = false;
+  attributeChangedCallback(name, oldValue, newValue) {
   }
 
   /**
    * Validate input and generate a preview
    */
   render() {
-    if (this.previewPending) clearTimeout(this.previewDelay);
-    this.element.classList.remove('preview-pending');
-    this.previewPending = false;
-
-    const inputText = this.element.value;
+    const inputText = this.bodyInput.value;
     try {
       this.parser.parse(inputText);
       const renderedHTML = this.parser.render();
@@ -626,704 +636,221 @@ class URTEditor {
   }
 
   /**
-   * Watch for input change
+   * Format the selected text
+   * @param {string} startTag
+   * @param {string} endTag
    */
-  startPreviewCooldown() {
-    if (previewPending) {
-      clearTimeout(this.previewDelay);
-    } else {
-      previewPending = true;
-      bodyInputElement.classList.add('preview-pending');
+  formatText(startTag, endTag) {
+    const input = this.bodyInput;
+    const selStart = input.selectionStart;
+    const selEnd = input.selectionEnd;
+    const replaced = input.getSelectionText();
+    const inserted = startTag + replaced + endTag;
+    this.bodyInput.edit(inserted, selStart, selEnd)
+  }
+
+  /**
+   * Wrap selected text with color tag
+   * @param {PointerEvent} e
+   */
+  setTextColor(e) {
+    e.stopPropagation();
+    const value = e.target.dataset.value;
+    this.formatText(`<color=${value}>`, '</color>');
+  }
+
+  /**
+   * Wrap selected text with size tag
+   * @param {PointerEvent} e
+   */
+  setTextSize(e) {
+    e.stopPropagation();
+    const value = e.target.dataset.value;
+    this.formatText(`<size=${value}>`, '</size>');
+  }
+
+  /**
+   * Wrap selected text with bold tag
+   * @param {PointerEvent} e
+   */
+  setBold(e) {
+    e.stopPropagation();
+    this.formatText('<b>', '</b>');
+  }
+
+  /**
+   * Wrap selected text with italic tag
+   * @param {PointerEvent} e
+   */
+  setItalic(e) {
+    e.stopPropagation();
+    this.formatText('<i>', '</i>');
+  }
+
+
+  /**
+   * Read file from FilePicker
+   * @param {Event} e
+   */
+  readFile(e) {
+    const file = e.target.files[0];
+    if (!file) return;
+    const editor = this;
+    const reader = new FileReader();
+    reader.onload = (e) => {
+      editor.bodyInput.clearUpdateDelay();
+      editor.bodyInput.clearHistory();
+      editor.bodyInput.value = e.target.result;
+      editor.render();
     };
-    this.previewDelay = setTimeout(updatePreview, 800);
+    reader.readAsText(file);
   }
 
   /**
-   * Get selection text
-   * @return {string}
+   * Save text to file
+   * @param {string} suggestedName
    */
-  getSelectionText() {
-    return this.element.value.slice(
-        this.element.selectionStart,
-        this.element.selectionEnd,
+  saveFile(suggestedName) {
+    const blob = new Blob(
+        [this.bodyInput.value],
+        {type: 'text/plain;charset=utf-8'},
     );
+    const blobURL = URL.createObjectURL(blob);
+    this.saveFileLink.href = blobURL;
+    this.saveFileLink.download = suggestedName;
+    this.saveFileLink.click();
+    setTimeout(() => URL.revokeObjectURL(blobURL), 1000);
   }
 
   /**
-   * Event handler for selection change
-   * @param {InputEvent} e
+   * Copy text to the clipboard
+   * @param {'title'|'body'} content - content to copy
    */
-  selectionChange(e) {
-    this.selectedText = this.getSelectionText();
+  copyBodyToClipboard() {
+    // from https://stackoverflow.com/questions/1173194/
+    const range = document.createRange();
+    range.selectNode(this.bodyInput);
+    window.getSelection().removeAllRanges();
+    window.getSelection().addRange(range);
+
+    navigator.clipboard.writeText(this.bodyInput.value);
+
+    // if (flashNoticeDelay) clearTimeout(flashNoticeDelay);
+    // flashNoticeElement.classList.add('show');
+    // flashNoticeDelay = setTimeout(() => {
+    //   flashNoticeElement.classList.remove('show');
+    //   flashNoticeDelay = null;
+    // }, 3000);
   }
 
-
   /**
-   * Add an action to undo history
-   * @param {EditAction} action
+   * Link a preview element
+   * @param {HTMLDivElement} element
    */
-  pushUndo(action) {
-    this.undoStack.push(action);
-    this.redoStack.length = 0; // Clear redo history
+  linkPreview(element) {
+    this.preview = element;
   }
 
   /**
-   * Undo change
-   * @param {*} chained - Continue to do next Undo?
+   * Initialize the editor UI
+   * @param {URTOptions} options
    */
-  undo(chained) {
-    const {element, undoStack, redoStack} = this;
-    if (undoStack.length === 0) return;
+  initialize(options) {
+    const shadow = this.attachShadow({mode: 'open'});
+    const template = document.getElementById('urt-editor-template');
+    shadow.appendChild(template.content);
 
-    const action = this.undoStack.pop();
-    element.setRangeText(
-        action.replacedText,
-        action.startPos,
-        action.endPos,
-        action.selectionMode);
+    /** @type {HTMLInputElement} - Hidden element (input#file-selector) */
+    const fileSelector = shadow.getElementById('open-file-selector');
+    fileSelector.addEventListener('change', (e) => this.readFile(e));
+    /** @type {HTMLButtonElement} - Toolbar button for opening a file */
+    const openFileButton = shadow.getElementById('open-file-button');
+    openFileButton.addEventListener('click', (e) => fileSelector.click());
 
-    this.element.focus();
+    this.saveFileButton = shadow.getElementById('save-file-button');
+    this.saveFileButton.addEventListener('click', (e) => this.saveFile());
+    this.saveFileLink = shadow.getElementById('save-file-link');
 
-    this.redoStack.push({
-      inputType: action.inputType,
-      insertedText: action.replacedText,
-      replacedText: action.insertedText,
-      startPos: action.startPos,
-      endPos: action.startPos + action.replacedText.length,
-      selectionMode: action.selectionMode,
-      chained: chained,
-      undo: action,
-    });
+    this.bodyInput = shadow.getElementById('message-body-input');
+    this.titleInput = shadow.getElementById('message-title-input');
+    this.toolbar = shadow.getElementById('toolbar');
+    this.statusbar = shadow.getElementById('statusbar');
 
-    if (action.chained) this.undo(true);
-    else this.startPreviewCooldown();
-  }
+    if (options.maxLength > 0) {
+      this.bodyInput.setAttribute('maxLength', options.maxLength);
+    }
 
-  /**
-   * Redo change
-   */
-  redo() {
-    if (this.redoStack.length === 0) return;
-    const data = this.redoStack.pop();
-    this.element.setRangeText(
-        data.replacedText,
-        data.startPos,
-        data.endPos,
-        data.selectionMode,
-    );
-
-    this.element.focus();
-
-    this.undoStack.push(data.undo);
-
-    if (data.chained) this.redo();
-    else this.startPreviewCooldown();
-  }
-
-
-  /**
-  * Event handler for IME input change
-  * @param {InputEvent} e
-  */
-  imgChange(e) {
-    const {element, imeBefore, imeTextStart, imeTextEnd} = this;
-
-    // If all input were deleted
-    if (imeTextStart === element.selectionEnd) return;
-
-    const imeAfter =
-      element.value.slice(imeTextStart, imeTextEnd);
-
-    this.pushUndo({
-      inputType: 'insertCompositionText',
-      insertedText: imeAfter,
-      replacedText: imeBefore,
-      startPos: imeTextStart,
-      endPos: imeTextEnd,
-      selectionMode: 'end',
-    });
-  }
-
-  /**
-   * Event handler for IME composition start
-   * @param {InputEvent} e
-   */
-  imeStart(e) {
-    this.imeBefore = this.selectedText;
-  }
-
-  /**
-   * Event handler for IME composition update
-   * @param {InputEvent} e
-   */
-  imeUpdate(e) {
-    this.imeTextStart = this.element.selectionStart;
-    this.imeTextEnd = this.element.selectionEnd;
-  }
-
-  /**
-   * Chained addEventListener
-   * @param {string} type
-   * @param {function} handler
-   * @return {URTEditor}
-   */
-  on(type, handler) {
-    this.element.addEventListener(type, handler);
-    return this;
-  }
-
-  /** Initialize the editor object */
-  initialize() {
-    this
-        .on('selectionchange', (e) => this.selectionChange(e))
-        .on('compositionstart', (e) => this.imeStart(e))
-        .on('compositionupdate', (e) => this.imeUpdate(e))
-        .on('compositionend', (e) => this.imgChange(e));
-  }
-}
-
-// Undo/Redo
-/** @type EditAction[] */ const undoStack = [];
-/** @type EditAction[] */ const redoStack = [];
-
-/** @type {string} selected text */
-let selectedText = '';
-
-const bodyInputElement = document.getElementById('message-body-input');
-const titleInputElement = document.getElementById('message-title-input');
-
-const downloadLinkElement = document.getElementById('download-link');
-const fileSelectorElement = document.getElementById('file-selector');
-
-let previewDelay;
-let previewPending = false;
-const previewElement = document.getElementById('output');
-
-const flashNoticeElement = document.getElementById('flash-notice');
-let flashNoticeDelay = null;
-
-const editor = new URTEditor(bodyInputElement, previewElement);
-editor.initialize();
-
-// IME
-/** @type {string} */ let imeBefore;
-/** @type {number} */ let imeTextStart;
-/** @type {number} */ let imeTextEnd;
-
-// Override command keystrokes
-(function(input) {
-  const macOS = (navigator.userAgent.toLowerCase().indexOf('mac os') !== -1);
-  if (macOS) {
-    document.body.addEventListener('keydown', (e) => {
-      if ((e.metaKey) && (e.key === 'z')) e.preventDefault();
-    });
-    input.addEventListener('keydown', (e) => {
-      if (!e.metaKey) return;
-      if (e.key === 'z') {
-        if (!e.shiftKey) undoAction();
-        else redoAction();
+    // Initialize text size options
+    /** @type {HTMLDivElement} */
+    const textSizeList = shadow.getElementById('size-list');
+    const textSizeOptions =
+      (
+        Array.isArray(options.textSizeOptions) &&
+        (options.textSizeOptions.length)
+      )?
+      options.textSizeOptions:
+      [30, 35, 40, 50];
+    const defaultTextSize = options.defaultTextSize || textSizeOptions[0];
+    textSizeOptions.forEach((value) => {
+      const anchor = shadow.createElement('a');
+      anchor.innerText = `${value}px`;
+      anchor.style.setProperty('font-size', `${value/2.5}px`);
+      if (value !== defaultTextSize) {
+        anchor.setAttribute('href', '#');
+        anchor.setAttribute('data-value', value);
+        anchor.addEventListener('click', (e) => this.setTextSize(e));
       }
+      textSizeList.appendChild(anchor);
     });
-  } else {
-    document.body.addEventListener('keydown', (e) => {
-      if (e.ctrlKey) {
-        if ((e.key === 'z') || (e.key === 'y')) e.preventDefault();
-      }
-    });
-    input.addEventListener('keydown', (e) => {
-      if (!e.ctrlKey) return;
-      if (e.key === 'z') {
-        if (!e.shiftKey) undoAction();
-        else redoAction();
-      } else if (e.key === 'y') {
-        redoAction();
-      }
-    });
-  }
-})(bodyInputElement);
 
-/**
- * Initialize editor user interface
- */
-function initializeEditorUi() {
-  // Initialize text size options
-  const sizeListElement = document.getElementById('size-list');
-  const _sizeOptions = textSizeOptions || [30, 35, 40, 50];
-  const _defaultSize = defaultTextSize || 30;
-  _sizeOptions.forEach((value) => {
-    const anchor = document.createElement('a');
-    anchor.innerText = `${value}px`;
-    anchor.style.setProperty('font-size', `${value/2.5}px`);
-    if (value !== _defaultSize) {
+    // Initialize text color options
+    const textColorList = shadow.getElementById('color-list');
+    const colorOptions =
+      (
+        Array.isArray(options.textColorOptions) &&
+        (options.textColorOptions.length)
+      )?
+      options.textColorOptions:
+      [
+        '#B8F', '#D9F', '#F33', '#F99', '#F80', '#FB0',
+        '#6D0', '#3F2', '#1BF', '#3EF', '#8DF',
+      ];
+
+    colorOptions.forEach((value) => {
+      const anchor = shadow.createElement('a');
+      anchor.classList.add('color-chip');
+      anchor.style.setProperty('background-color', value);
       anchor.setAttribute('href', '#');
       anchor.setAttribute('data-value', value);
-      anchor.addEventListener('click', setTextSize);
-    }
-    sizeListElement.appendChild(anchor);
-  });
-
-  // Initialize text color options
-  const colorListElement = document.getElementById('color-list');
-  const _colorOptions = textColorOptions || [
-    '#B8F', '#D9F', '#F33', '#F99', '#F80', '#FB0',
-    '#6D0', '#3F2', '#1BF', '#3EF', '#8DF',
-  ];
-  _colorOptions.forEach((value) => {
-    const anchor = document.createElement('a');
-    anchor.classList.add('color-chip');
-    anchor.style.setProperty('background-color', value);
-    anchor.setAttribute('href', '#');
-    anchor.setAttribute('data-value', value);
-    anchor.addEventListener('click', setTextColor);
-    colorListElement.appendChild(anchor);
-  });
-}
-
-/**
- * Validate input and generate a preview
- */
-function updatePreview() {
-  if (previewPending) clearTimeout(previewDelay);
-  bodyInputElement.classList.remove('preview-pending');
-  previewPending = false;
-
-  const inputText = bodyInputElement.value;
-  try {
-    parser.parse(inputText);
-    const previewText = parser.render();
-    previewElement.classList.remove('error');
-    previewElement.innerHTML = previewText;
-  } catch (e) {
-    previewElement.classList.add('error');
-    previewElement.innerHTML = e.formattedError;
-  }
-}
-
-/**
- * Watch for input change
- */
-function startPreviewCooldown() {
-  if (previewPending) {
-    clearTimeout(previewDelay);
-  } else {
-    previewPending = true;
-    bodyInputElement.classList.add('preview-pending');
-  };
-  previewDelay = setTimeout(updatePreview, 800);
-}
-
-/**
- * Save text to file
- * @param {string} suggestedName
- */
-function saveFile(suggestedName) {
-  const blob = new Blob(
-      [bodyInputElement.value],
-      {type: 'text/plain;charset=utf-8'},
-  );
-  const blobURL = URL.createObjectURL(blob);
-  downloadLinkElement.href = blobURL;
-  downloadLinkElement.download = suggestedName;
-  downloadLinkElement.click();
-  setTimeout(() => URL.revokeObjectURL(blobURL), 1000);
-}
-
-/**
- * Open a text file
- * @param {string} suggestedName
- */
-function openFile() {
-  fileSelectorElement.click();
-}
-
-/**
- * Read file from FilePicker
- * @param {Event} e
- */
-function readFile(e) {
-  const file = e.target.files[0];
-
-  if (!file) return;
-  const reader = new FileReader();
-  reader.onload = function(e) {
-    bodyInputElement.value = e.target.result;
-    updatePreview();
-  };
-  reader.readAsText(file);
-}
-
-/**
- * Copy text to the clipboard
- * @param {'title'|'body'} content - content to copy
- */
-function copyInput(content) {
-  if (content==='title') {
-    navigator.clipboard.writeText(bodyInputElement.value);
-  } else {
-    // from https://stackoverflow.com/questions/1173194/
-    if (document.selection) { // IE
-      const range = document.body.createTextRange();
-      range.moveToElementText(bodyInputElement);
-      range.select();
-    } else if (window.getSelection) {
-      const range = document.createRange();
-      range.selectNode(bodyInputElement);
-      window.getSelection().removeAllRanges();
-      window.getSelection().addRange(range);
-    }
-
-    navigator.clipboard.writeText(bodyInputElement.value);
+      anchor.addEventListener('click', (e) => this.setTextColor(e));
+      textColorList.appendChild(anchor);
+    });
   }
 
-
-  if (flashNoticeDelay) clearTimeout(flashNoticeDelay);
-  flashNoticeElement.classList.add('show');
-  flashNoticeDelay = setTimeout(() => {
-    flashNoticeElement.classList.remove('show');
-    flashNoticeDelay = null;
-  }, 3000);
+  /**
+   * Activate the editor
+   */
+  activate() {}
 }
 
-/**
- * Add a color tag
- * @param {Event} event
- */
-function setTextColor(event) {
-  event.stopPropagation();
-  const value = event.target.dataset.value;
-  setFormatting(`<color=${value}>`, '</color>');
-}
-
-/** Add a bold tag */
-function setBold() {
-  setFormatting('<b>', '</b>');
-}
-
-/** Add an italic tag */
-function setItalic() {
-  setFormatting('<i>', '</i>');
-}
-
-/**
- * Add a size tag
- * @param {Event} event
- */
-function setTextSize(event) {
-  event.stopPropagation();
-  const value = event.target.dataset.value;
-  setFormatting(`<size=${value}>`, '</size>');
-}
-
-
-/**
- * Format the selected text
- * @param {*} startTag
- * @param {*} endTag
- */
-function setFormatting(startTag, endTag) {
-  const selStart = bodyInputElement.selectionStart;
-  const selEnd = bodyInputElement.selectionEnd;
-
-  const inserted = startTag + selectedText + endTag;
-
-  bodyInputElement.focus();
-
-  bodyInputElement.setRangeText(inserted, selStart, selEnd, 'select');
-
-  undoStack.push({
-    insertedText: inserted,
-    replacedText: selectedText,
-    startPos: selStart,
-    endPos: selStart + inserted.length,
-    selectionMode: 'select',
-    chained: false,
+const macOS = (navigator.userAgent.toLowerCase().indexOf('mac os') !== -1);
+if (macOS) {
+  document.body.addEventListener('keydown', (e) => {
+    if ((e.metaKey) && (e.key === 'z')) e.preventDefault();
   });
-  redoStack.length = 0;
-
-  startPreviewCooldown();
-}
-
-/**
- * Undo change
- * @param {*} chainedUndo - Continue to do next Undo?
- */
-function undoAction(chainedUndo) {
-  if (undoStack.length === 0) return;
-
-  const data = undoStack.pop();
-  bodyInputElement.setRangeText(
-      data.replacedText,
-      data.startPos,
-      data.endPos,
-      data.selectionMode);
-
-  bodyInputElement.focus();
-
-  redoStack.push({
-    inputType: data.inputType,
-    insertedText: data.replacedText,
-    replacedText: data.insertedText,
-    startPos: data.startPos,
-    endPos: data.startPos + data.replacedText.length,
-    selectionMode: data.selectionMode,
-    chained: chainedUndo,
-    undo: data,
+} else {
+  document.body.addEventListener('keydown', (e) => {
+    if (e.ctrlKey) {
+      if ((e.key === 'z') || (e.key === 'y')) e.preventDefault();
+    }
   });
-
-  if (data.chained) undoAction(true);
-  else startPreviewCooldown();
 }
 
-/**
- * Redo change
- */
-function redoAction() {
-  if (redoStack.length === 0) return;
-  const data = redoStack.pop();
-  bodyInputElement.setRangeText(
-      data.replacedText,
-      data.startPos,
-      data.endPos,
-      data.selectionMode,
-  );
+// const flashNoticeElement = document.getElementById('flash-notice');
+// let flashNoticeDelay = null;
 
-  bodyInputElement.focus();
-
-  undoStack.push(data.undo);
-
-  if (data.chained) redoAction();
-  else startPreviewCooldown();
-}
-
-/**
- * Handle selection change
- * @param {InputEvent} e
- */
-function handleSectionChange(e) {
-  selectedText = getSelectionText();
-}
-
-/**
- * Get selection text
- * @return {string}
- */
-function getSelectionText() {
-  return bodyInputElement.value.slice(
-      bodyInputElement.selectionStart,
-      bodyInputElement.selectionEnd,
-  );
-}
-
-/**
- * Handle IME input change event
- * @param {InputEvent} e
- */
-function handleIMEChange(e) {
-  // If all input were deleted
-  if (imeTextStart === bodyInputElement.selectionEnd) return;
-
-  undoStack.push({
-    inputType: 'insertCompositionText',
-    insertedText: bodyInputElement.value.slice(imeTextStart, imeTextEnd),
-    replacedText: imeBefore,
-    startPos: imeTextStart,
-    endPos: imeTextEnd,
-    selectionMode: 'end',
-  });
-  redoStack.length = 0;
-}
-
-/**
- * Process input event related to text insertion
- * @param {InputEvent} e
- */
-function handleChangeEvent(e) {
-  switch (e.inputType) {
-    case 'historyUndo':
-    case 'historyRedo': {
-      e.preventDefault();
-      return;
-    }
-
-    case 'insertCompositionText': {
-      // ignore. Already handled by handleIMEChangeEvent
-      return;
-    }
-
-    case 'deleteContentBackward': {
-      undoStack.push({
-        inputType: e.inputType,
-        insertedText: '',
-        replacedText: selectedText,
-        startPos: bodyInputElement.selectionEnd,
-        endPos: bodyInputElement.selectionEnd,
-        selectionMode: 'end',
-        chained: false,
-      });
-      redoStack.length = 0;
-      return;
-    }
-
-    case 'deleteContentForward':
-      undoStack.push({
-        inputType: e.inputType,
-        insertedText: '',
-        replacedText: selectedText,
-        startPos: bodyInputElement.selectionEnd,
-        endPos: bodyInputElement.selectionEnd,
-        selectionMode: 'start',
-        chained: false,
-      });
-      redoStack.length = 0;
-      return;
-
-    case 'deleteByDrag': {
-      undoStack.push({
-        inputType: e.inputType,
-        insertedText: '',
-        replacedText: selectedText,
-        startPos: bodyInputElement.selectionEnd,
-        endPos: bodyInputElement.selectionEnd,
-        selectionMode: 'select',
-        chained: false,
-      });
-      redoStack.length = 0;
-      return;
-    }
-
-    case 'insertFromDrop': {
-      let chained = false;
-      const inserted = getSelectionText();
-
-      if (undoStack.length) {
-        const prevUndo = undoStack[undoStack.length - 1];
-        if (
-          (prevUndo.inputType === 'deleteByDrag') &&
-          (prevUndo.replacedText === inserted)
-        ) {
-          chained = true;
-        }
-      }
-
-      undoStack.push({
-        inputType: e.inputType,
-        insertedText: inserted,
-        replacedText: '',
-        startPos: bodyInputElement.selectionStart,
-        endPos: bodyInputElement.selectionEnd,
-        selectionMode: 'select',
-        chained: chained,
-      });
-      // 'deleteByDrag'
-      redoStack.length = 0;
-      return;
-    }
-
-    // Line break
-    case 'insertLineBreak': {
-      undoStack.push({
-        inputType: e.inputType,
-        insertedText: '\n',
-        replacedText: selectedText,
-        startPos: bodyInputElement.selectionEnd - 1,
-        endPos: bodyInputElement.selectionEnd,
-        selectionMode: 'end',
-        chained: false,
-      });
-      redoStack.length = 0;
-      return;
-    }
-
-    case 'insertText':
-    default: {
-      if (e.data !== null) {
-        undoStack.push({
-          inputType: e.inputType,
-          insertedText: e.data,
-          replacedText: selectedText,
-          startPos: bodyInputElement.selectionEnd - e.data.length,
-          endPos: bodyInputElement.selectionEnd,
-          selectionMode: 'end',
-          chained: false,
-        });
-        redoStack.length = 0;
-        return;
-      };
-    }
-  };
-}
-
-/**
- * Cache content deleted by BackSpace/Delete
- * @param {InputEvent} e
- */
-function beforeInputChange(e) {
-  if (
-    bodyInputElement.selectionStart ===
-    bodyInputElement.selectionEnd
-  ) {
-    switch (e.inputType) {
-      case 'deleteContentBackward':
-        selectedText = bodyInputElement.value.slice(
-            bodyInputElement.selectionStart - 1,
-            bodyInputElement.selectionEnd,
-        );
-        return;
-      case 'deleteContentForward':
-        selectedText = bodyInputElement.value.slice(
-            bodyInputElement.selectionStart,
-            bodyInputElement.selectionEnd + 1,
-        );
-        return;
-    }
-  }
-}
-
-/**
- * Process paste command
- * @param {InputEvent} e
- */
-function handlePaste(e) {
-  const value = e.clipboardData.getData('text');
-  undoStack.push({
-    inputType: 'paste',
-    insertedText: value,
-    replacedText: selectedText,
-    startPos: bodyInputElement.selectionEnd,
-    endPos: bodyInputElement.selectionEnd + value.length,
-    selectionMode: 'end',
-    chained: false,
-  });
-  redoStack.length = 0;
-}
-
-/**
- * Process cut command
- * @param {InputEvent} e
- */
-function handleCutEvent(e) {
-  undoStack.push({
-    inputType: 'cut',
-    insertedText: '',
-    replacedText: selectedText,
-    startPos: bodyInputElement.selectionStart,
-    endPos: bodyInputElement.selectionStart,
-    selectionMode: 'select',
-    chained: false,
-  });
-  redoStack.length = 0;
-}
-
-// bodyInputElement.addEventListener('compositionstart', compositionStart);
-// bodyInputElement.addEventListener('compositionupdate', compositionUpdate);
-// bodyInputElement.addEventListener('compositionend', handleIMEChange);
-bodyInputElement.addEventListener('cut', handleCutEvent);
-bodyInputElement.addEventListener('paste', handlePaste);
-bodyInputElement.addEventListener('beforeinput', beforeInputChange);
-bodyInputElement.addEventListener('input', handleChangeEvent);
-bodyInputElement.addEventListener('input', startPreviewCooldown);
-
-// // Update selection
-// document.addEventListener('selectionchange', handleSectionChange);
-
-updatePreview();
+// const urtEditor = new URTEditorElement();
+// const urtPreview = document.getElementById('preview');
+// urtEditor.initialize();
+// urtEditor.linkPreview(urtPreview);
+// urtEditor.render();

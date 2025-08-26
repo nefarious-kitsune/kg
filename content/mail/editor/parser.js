@@ -502,4 +502,8 @@ const parser = {
     }
     return arrayToHtml(this.root);
   },
+
+  render() {
+    return this.root.map((c) => elementToHtml(c)).join('');
+  }
 };

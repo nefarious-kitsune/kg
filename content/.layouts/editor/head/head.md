@@ -7,7 +7,13 @@
 <link href="/assets/css/default.css" rel="stylesheet">
 {{HEAD-CONTENT}}
 <link href="/mail/editor/toolbar.css" rel="stylesheet">
-<script src="/mail/editor/toolbar.js"></script>
+<script defer src="/mail/editor/toolbar.js"></script>
 <link href="/mail/editor/editor.css" rel="stylesheet">
-<script src="/mail/editor/editor.js"></script>
-<script src="/mail/editor/parser.js"></script>
+<script defer src="/mail/editor/editor.js"></script>
+<script>
+  const urtEditor = new URTEditorElement();
+  const urtPreview = document.getElementById('preview');
+  urtEditor.initialize();
+  urtEditor.linkPreview(urtPreview);
+  urtEditor.render();
+</script>
