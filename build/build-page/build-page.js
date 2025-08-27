@@ -67,7 +67,10 @@ export function buildPage(pageMeta) {
   if (pageVars) {
     for (const key in pageVars) {
       if (Object.prototype.hasOwnProperty.call(pageVars, key)) {
-        mainBody = mainBody.replaceAll(`{{${key}}}`, pageVars[key]);
+        const value = Array.isArray(pageVars[key])?
+          JSON.stringify(pageVars[key]):
+          pageVars[key];
+        mainBody = mainBody.replaceAll(`{{${key}}}`, value);
       }
     }
   }
