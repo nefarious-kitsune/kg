@@ -565,20 +565,20 @@ class URTParser {
  * @property {string} defaultBackgroundColor - Default background color
  */
 
-/** Custom TextArea element with undo/redo stack */
+/** Editor for Unity RichText widget */
 export class URTEditorElement extends HTMLDivElement {
-  // static observedAttributes = ['max'+'length'];
+  /** @type {URTParser} */ parser = new URTParser();
+  /** @type {ShadowRoot} - Shadow DOM */ shadow;
+
   /** Constructor */
   constructor() {
-    super(); // Always call super first in constructor
+    super();
 
     const shadow = this.attachShadow({mode: 'open'});
     const template = document.getElementById('urt-editor-template');
     shadow.appendChild(template.content);
+    this.shadow = shadow;
   }
-
-  /** @type {URTParser} */
-  parser = new URTParser();
 
   /** @type {URTTextAreaElement} - Input element for message body */
   bodyInput;
@@ -595,20 +595,15 @@ export class URTEditorElement extends HTMLDivElement {
 
   /** @type {HTMLAnchorElement} - Hidden element (a#file-download) */
   saveFileLink;
-  /** @type {HTMLButtonElement} - Toolbar button for saving a file */
-  saveFileButton;
 
   /** Called when added to DOM */
-  connectedCallback() {
-  }
+  // connectedCallback() { }
 
-  /** Called when removed to DOM */
-  disconnectedCallback() {
-  }
+  /** Called when removed from DOM */
+  // disconnectedCallback() { }
 
   /** Called when moved within DOM */
-  connectedMoveCallback() {
-  }
+  // connectedMoveCallback() { }
 
   /**
    * Called when observed attributes are changed
@@ -616,8 +611,7 @@ export class URTEditorElement extends HTMLDivElement {
    * @param {*} oldValue Old attribute value
    * @param {*} newValue New attribute value
    */
-  attributeChangedCallback(name, oldValue, newValue) {
-  }
+  attributeChangedCallback(name, oldValue, newValue) { }
 
   /**
    * Validate input and generate a preview
@@ -646,7 +640,7 @@ export class URTEditorElement extends HTMLDivElement {
     const selEnd = input.selectionEnd;
     const replaced = input.getSelectionText();
     const inserted = startTag + replaced + endTag;
-    this.bodyInput.edit(inserted, selStart, selEnd)
+    this.bodyInput.edit(inserted, selStart, selEnd);
   }
 
   /**
@@ -687,7 +681,6 @@ export class URTEditorElement extends HTMLDivElement {
     this.formatText('<i>', '</i>');
   }
 
-
   /**
    * Read file from FilePicker
    * @param {Event} e
@@ -695,13 +688,12 @@ export class URTEditorElement extends HTMLDivElement {
   readFile(e) {
     const file = e.target.files[0];
     if (!file) return;
-    const editor = this;
     const reader = new FileReader();
     reader.onload = (e) => {
-      editor.bodyInput.clearUpdateDelay();
-      editor.bodyInput.clearHistory();
-      editor.bodyInput.value = e.target.result;
-      editor.render();
+      this.bodyInput.clearUpdateDelay();
+      this.bodyInput.clearHistory();
+      this.bodyInput.value = e.target.result;
+      this.render();
     };
     reader.readAsText(file);
   }
@@ -756,20 +748,27 @@ export class URTEditorElement extends HTMLDivElement {
    * @param {URTOptions} options
    */
   initialize(options) {
-    const shadow = this.attachShadow({mode: 'open'});
-    const template = document.getElementById('urt-editor-template');
-    shadow.appendChild(template.content);
+    const shadow = this.shadow;
 
     /** @type {HTMLInputElement} - Hidden element (input#file-selector) */
     const fileSelector = shadow.getElementById('open-file-selector');
     fileSelector.addEventListener('change', (e) => this.readFile(e));
-    /** @type {HTMLButtonElement} - Toolbar button for opening a file */
-    const openFileButton = shadow.getElementById('open-file-button');
-    openFileButton.addEventListener('click', (e) => fileSelector.click());
+    shadow
+        .getElementById('open-file-button')
+        .addEventListener('click', (e) => fileSelector.click());
 
-    this.saveFileButton = shadow.getElementById('save-file-button');
-    this.saveFileButton.addEventListener('click', (e) => this.saveFile());
+    shadow
+        .getElementById('format-bold-button')
+        .addEventListener('click', (e) => this.setBold());
+    shadow
+        .getElementById('format-italic-button')
+        .addEventListener('click', (e) => this.setItalic());
+
+    shadow
+        .getElementById('save-file-button')
+        .addEventListener('click', (e) => this.saveFile());
     this.saveFileLink = shadow.getElementById('save-file-link');
+
 
     this.bodyInput = shadow.getElementById('message-body-input');
     this.titleInput = shadow.getElementById('message-title-input');

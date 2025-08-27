@@ -10,10 +10,3 @@
 <script defer src="/mail/editor/toolbar.js"></script>
 <link href="/mail/editor/editor.css" rel="stylesheet">
 <script defer src="/mail/editor/editor.js"></script>
-<script>
-  const urtEditor = new URTEditorElement();
-  const urtPreview = document.getElementById('preview');
-  urtEditor.initialize();
-  urtEditor.linkPreview(urtPreview);
-  urtEditor.render();
-</script>

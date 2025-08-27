@@ -1,4 +1,6 @@
 <h1>{{MAIN-HEADING}}</h1>
+{{MAIN-CONTENT}}
+
 <template id="urt-editor-template">
 <div id="title-bar">
   <input id="message-title-input" placeholder="Message title" value="{{MESSAGE TITLE}}">
@@ -21,32 +23,18 @@
         title="Set text size"
         class="dropdown-button tool-button text-size"
         onclick="showDropdownList('size-list')"></button
-      ><div id="size-list" class="dropdown-content"><a
-        ><span style="font-size: 12px">30px</span></a
-        ><a href="#" onclick="setSize(35)"><span style="font-size: 14px">35px</span></a
-        ><a href="#" onclick="setSize(40)"><span style="font-size: 16px">40px</span></a
-        ><a href="#" onclick="setSize(50)"><span style="font-size: 20px">50px</span></a
-      ></div
+      ><div id="size-list" class="dropdown-content"></div
     ></div
   ></div>
   <div class="button-group"
-    ><button class="tool-button bold" onclick="setBold()" title="Bold"></button
-    ><button class="tool-button italic" onclick="setItalic()" title="Italic"></button
-    ><div class="dropdown" id="color-selector-0"
+    ><button class="tool-button" id="format-bold-button" title="Bold"></button
+    ><button class="tool-button" id="format-italic-button" title="Italic"></button
+    ><div class="dropdown" id="color-selector"
       ><button
         title="Set text color"
         class="dropdown-button tool-button text-color"
         onclick="showDropdownList('color-list')"></button
-      ><div id="color-list" class="dropdown-content"><a
-          href="#" onclick="setColor('#B8F')"><span
-          class="color-chip" style="background-color: #B8F;"></span></a
-        ><a
-          href="#" onclick="setColor('#D9F')"><span
-          class="color-chip" style="background-color: #D9F;"></span></a
-        ><a
-          href="#" onclick="setColor('#F33')"><span
-          class="color-chip" style="background-color: #F33;"></span></a
-        ></div
+      ><div id="color-list" class="dropdown-content"></div
     ></div
   ></div>
   <div class="right-button-group"
@@ -68,11 +56,55 @@
   </div>
   <div class="right-text-group" id="cursor-location">Ln 0, Col 0</div>
 </div>
-<div id="flash-notice" class="alert-success">Copied to clipboard</div>
 </template>
-{{MAIN-CONTENT}}
-{{PAGINATION-BODY}}
-<div is="urt-editor"></div>
-<script>
+
+<div class="editor-container">
+<section id="edit-pane">
+<h2>Edit</h2>
+<div id="urt-editor-host"></div>
+</section>
+
+<section id="preview-pane">
+<h2>Preview</h2>
+<div id="urt-preview"></div>
+</section>
+</div>
+
+<section>
+<h2>Note</h2>
+<p>This tool is based on reverse engineering of the
+<a href="./text-formatting">text formatting</a>
+rules and may not replicate the output exactly. To ensure that
+your in-game mail/message display properly, send it to an alt
+account first.</p>
+</section>
+
+<div id="flash-notice" class="alert-success">Copied to clipboard</div>  
+
+<script type="application/json" id="urtEditorOption">
+{
+  "maxLength" : {{MESSAGE MAX LENGTH}},
+  "textSizeOptions"  : {{MESSAGE TEXT SIZE OPTIONS}},
+  "textColorOptions" : {{MESSAGE TEXT COLOR OPTIONS}},
+  "defaultTextSize"  : {{MESSAGE TEXT SIZE}},
+  "defaultTextColor" : "{{MESSAGE TEXT COLOR}}",
+  "defaultBackgroundColor": "{{MESSAGE BACKGROUND COLOR}}"
+}
 </script>
-<div id="flash-notice" class="alert-success">Copied to clipboard</div>
+<script >
+  const urtPreview = document.getElementById('urt-preview');
+  const urtHost = document.getElementById('urt-editor-host');
+  const urtEditor = new URTEditorElement();
+  const urtOptions = JSON.parse(
+    document.getElementById('URTOptions').textContent
+  );
+
+  urtEditor.initialize(URTOptions);
+  urtEditor.linkPreview(urtPreview);
+
+  urtHost.appendChild(urtEditor);
+
+  urtEditor.render();
+</script>
+
+{{PAGINATION-BODY}}

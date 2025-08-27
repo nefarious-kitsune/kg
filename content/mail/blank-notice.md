@@ -6,7 +6,23 @@ topics : [Mail]
 desc   : >
   Compose and preview an Text Notice message
 variables:
-  MAX CHAR COUNT: 100
+  MESSAGE TEXT COLOR OPTIONS:
+    - '#D0D'
+    - '#F3F'
+    - '#B00'
+    - '#F00'
+    - '#b30'
+    - '#F50'
+    - '#060'
+    - '#081'
+    - '#04D'
+    - '#07F'
+    - '#222'
+  MESSAGE TEXT SIZE OPTIONS: [30, 35, 40, 50]
+  MESSAGE TEXT SIZE: 30
+  MESSAGE TEXT COLOR: '#7c9fdf'
+  MESSAGE BACKGROUND COLOR: '#283b5c'
+  MESSAGE MAX LENGTH: 1024
   MESSAGE TITLE: Blank text notice
   MESSAGE BODY: >
     <color=#222><size=50>At reset (UTC 0000), please remember
@@ -18,15 +34,3 @@ js:
 prev:
 next:
 ---
-<div class="editor-container">
-<section id="edit-pane">
-<h2>Edit</h2>
-{{<./editor/__announcement_toolbar.html>}}
-</section>
-
-<section id="preview-pane">
-<h2>Preview</h2>
-<div id="output" class="notice"></div>
-</section>
-</div>
-{{<./__templates/__note.html>}}
