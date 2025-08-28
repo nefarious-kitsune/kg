@@ -8,7 +8,7 @@ const NamedColors = [
 
 /**
  * Convert a parsed element to HTML
- * @param {*} element
+ * @param {RTNode} element
  * @return {string}
  */
 function elementToHtml(element) {
@@ -40,12 +40,44 @@ function elementToHtml(element) {
 
 /**
  * Collapse an element array to HTML
- * @param {object[]} elements
+ * @param {RTNode[]} elements
  * @return {string}
  */
 function arrayToHtml(elements) {
   return elements.map((c) => elementToHtml(c)).join('');
 }
+
+/** // Rich Text Tokens
+ *
+ * @typedef {Object} RTTag - Rich Text token for a tag
+ * @property {'open-tag', 'close-tag', 'void-tag'} type - Tag type
+ * @property {number} position - Start position of the token within the source
+ * @property {number} length - Length of the token code within the source
+ * @property {string} name - Tag name
+ * @property {string|number} [value] - Tag value
+ *
+ * @typedef {Object} RTText - Token for plain text
+ * @property {'text'} type - Token type
+ * @property {number} position - Start position of the token within the source
+ * @property {number} length - Length of the text within the source
+ * @property {string} text - Text
+ *
+ * @typedef {Object} RTWhiteSpace - Token for white space text
+ * @property {'white-space'} type - Token type
+ * @property {number} position - Start position of the token within the source
+ * @property {number} length - Length of the text within the source
+ * @property {string} text - Text
+ */
+
+/**
+ * @typedef {Object} RTNode - Node of a Rich Text AST
+ * @property {number} location - Start location of the token
+ * @property {string} type - Token type
+ * @property {string|number} [value] - Token value
+ * @property {string} [for] - Tag name (for End-Tag token)
+ * @property {RTNode[]} inner - Nested child tokens
+ * @property {string} text - Inner text
+ */
 
 // eslint-disable-next-line no-unused-vars
 const parser = {
@@ -120,6 +152,14 @@ const parser = {
   },
 
   /**
+   * Get next character (without advancing cursor position)
+   * @return {string}
+   */
+  peek() {
+    return this.source.charAt(this.currentPos+1);
+  },
+
+  /**
    * Advance cursor position and get next character
    * @return {string}
    */
@@ -140,14 +180,14 @@ const parser = {
    * @param {number} len - length
    * @return {string}
    */
-  subString(len) {
+  peak(len=1) {
     const p = this.currentPos;
     return this.source.substring(p, p + len);
   },
 
   /**
-   * Parse a text fragment
-   * @return {object}
+   * Parse a text node
+   * @return {RTNode}
    */
   parseText() {
     const savedPos = this.currentPos;
@@ -155,12 +195,13 @@ const parser = {
       const char = this.nextChar();
       if ((char === '\n') || (char === '<') || (char === '\\')) break;
     }
-    const res = {
+    /** @type {RTNode} */
+    const node = {
       location: savedPos,
       type: 'text',
       text: this.source.substring(savedPos, this.currentPos),
     };
-    return res;
+    return node;
   },
 
   /**
@@ -186,8 +227,8 @@ const parser = {
   },
 
   /**
-   * Parse a color text
-   * @return {object}
+   * Parse a size node
+   * @return {RTNode}
    */
   parseSize() {
     const savedPos = this.currentPos;
@@ -228,14 +269,15 @@ const parser = {
       innerContent.push(c);
     }
 
-    const res = {
+    /** @type {RTNode} */
+    const token = {
       location: savedPos,
       type: 'size',
       value: sizeValue,
       inner: innerContent,
       text: innerText,
     };
-    return res;
+    return token;
   },
 
   /**
@@ -413,7 +455,7 @@ const parser = {
   parseEndTag() {
     const savedPos = this.currentPos;
 
-    let tag = this.subString('</b>'.length).toLowerCase();
+    let tag = this.peak('</b>'.length).toLowerCase();
 
     if (tag === '</b>') {
       this.currentPos = savedPos + '</b>'.length;
@@ -425,13 +467,13 @@ const parser = {
       return {location: savedPos, type: 'end-tag', for: 'i', text: ''};
     }
 
-    tag = this.subString('</color>'.length).toLowerCase();
+    tag = this.peak('</color>'.length).toLowerCase();
     if (tag === '</color>') {
       this.currentPos = savedPos + '</color>'.length;
       return {location: savedPos, type: 'end-tag', for: 'color', text: ''};
     }
 
-    tag = this.subString('</size>'.length).toLowerCase();
+    tag = this.peak('</size>'.length).toLowerCase();
     if (tag === '</size>') {
       this.currentPos = savedPos + '</size>'.length;
       return {location: savedPos, type: 'end-tag', for: 'size', text: ''};
@@ -446,6 +488,10 @@ const parser = {
     return res;
   },
 
+  /**
+   * Parse next token
+   * @return {RTNode}
+   */
   parseNext() {
     if (!(this.currentPos < this.source.length)) {
       return {
@@ -456,20 +502,22 @@ const parser = {
     };
 
     const char = this.thisChar();
-    const nextChar = this.source.charAt(this.currentPos+1);
 
     if (char === '<') {
-      let tag = this.subString('<b>'.length).toLowerCase();
-      if (tag === '<b>') return this.parseBold();
-      if (tag === '<i>') return this.parseItalic();
-      tag = this.subString('<color'.length).toLowerCase();
-      if (tag === '<color') return this.parseColor();
-      tag = this.subString('<size'.length).toLowerCase();
-      if (tag === '<size') return this.parseSize();
-      if (nextChar == '/') return this.parseEndTag();
+      const peaked = this.peak(4).toLowerCase();
+      switch (peaked) {
+        case '<b>':
+        case '<b=': return this.parseBold();
+        case '<i>':
+        case '<i=': return this.parseItalic();
+      }
+      if (this.peak(5).toLowerCase() === '<size' ) return this.parseSize();
+      if (this.peak(6).toLowerCase() === '<color') return this.parseColor();
+      if (this.peak(2) == '</') return this.parseEndTag();
     };
 
     if (char === '\n') {
+      /** @type {RTNode} */
       const res = {
         location: this.currentPos,
         type: 'line-break',
@@ -479,7 +527,8 @@ const parser = {
       return res;
     };
 
-    if (char === '\\' && (nextChar === 'n')) {
+    if (this.peak(2) === '\\n') {
+      /** @type {RTNode} */
       const res = {
         location: this.currentPos,
         type: 'line-break',
@@ -488,6 +537,7 @@ const parser = {
       this.currentPos += 2;
       return res;
     }
+
     return this.parseText();
   },
 
@@ -505,5 +555,5 @@ const parser = {
 
   render() {
     return this.root.map((c) => elementToHtml(c)).join('');
-  }
+  },
 };
