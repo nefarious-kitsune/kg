@@ -210,25 +210,53 @@ const parser = {
   },
 
   /**
-   * Parse a size value
-   * @return {null|number}
+   * Parse an integer value
+   * @return {string}
    */
-  parseSizeValue() {
+  parseIntegerValue() {
     const savedPos = this.currentPos;
-    let char = this.thisChar();
-    while (true) {
-      if ((char === '') || (char === '\n')) { // EOF or EOL
-        this.currentPos = savedPos;
-        throw this.error('Syntax error', savedPos);
-      }
-      if (char === '>') break;
-      if ('0123456789'.indexOf(char)===-1) {
-        this.currentPos = savedPos;
-        throw this.error('Syntax error', savedPos);
-      }
-      char = this.nextChar();
+    const _start = savedPos;
+    const _end = this.source.indexOf('>', _start);
+
+    if (_end < 0) throw this.error('Syntax error', savedPos);
+
+    let _value = this.source.slice(_start, _end);
+
+    if (_value.startsWith('"') && _value.endsWith('"')) {
+      _value = _value.slice(1, -1);
     }
-    return parseInt(this.source.substring(savedPos, this.currentPos));
+
+    const value = parseInt(_value);
+    if (Number.isNaN(value)) return null;
+    this.currentPos = _end;
+    return value;
+  },
+
+  /**
+   * Parse a color value
+   * @return {null|string}
+   */
+  parseColorValue() {
+    const savedPos = this.currentPos;
+    const _start = savedPos;
+    const _end = this.source.indexOf('>', _start);
+
+    if (_end < 0) throw this.error('Syntax error', savedPos);
+
+    let _value = this.source.slice(_start, _end).toLowerCase();
+
+    if (_value.startsWith('#')) {
+      const isValid = [..._value.slice(1)].reduce(
+        (valid, char) => valid && (Hexadecimal.indexOf(char) >= 0),
+        true,
+      )
+      if (!isValid) _value = null;
+    } else {
+      if (NamedColors.indexOf(_value()) === -1) _value = null;
+    }
+
+    this.currentPos = _end;
+    return _value;
   },
 
   /**
@@ -247,7 +275,7 @@ const parser = {
 
     if (char === '=') {
       this.nextChar();
-      sizeValue = this.parseSizeValue();
+      sizeValue = this.parseIntegerValue();
       startTag = this.source.substring(savedPos, this.currentPos + 1);
       this.nextChar();
     } else if (char === '>') {
@@ -286,70 +314,31 @@ const parser = {
   },
 
   /**
-   * Parse a color value
-   * @return {null|string}
-   */
-  parseColorValue() {
-    const savedPos = this.currentPos;
-
-    let value = '';
-    let valid = true;
-
-    let char = this.thisChar();
-    if (char === '#') {
-      value = '#';
-      while (true) {
-        char = this.nextChar();
-        if ((char === '') || (char === '\n')) { // EOF or EOL
-          this.currentPos = savedPos;
-          throw this.error('Syntax error', savedPos);
-        }
-        if (char === '>') break;
-        if (Hexadecimal.indexOf(char)===-1) valid = false;
-        if (valid) value += char;
-      }
-      if (value.length === 1) valid = false;
-      if (value.length > 9) valid = false;
-    } else {
-      while (true) {
-        if ((char === '') || (char === '\n')) { // EOF or EOL
-          this.currentPos = savedPos;
-          throw this.error('Syntax error', savedPos);
-        }
-        if (char === '>') break;
-        value = value + char;
-        char = this.nextChar();
-      }
-      value = value.toLowerCase();
-      if (NamedColors.indexOf(value.toLowerCase()) === -1) {
-        valid = false;
-      };
-    }
-    return valid?value:'white';
-  },
-
-  /**
    * Parse a formatted text node marked by <color> tag
    * @return {RTFormattedText}
    */
   parseColor() {
     const savedPos = this.currentPos;
-    let startTag = '<color';
-    let colorValue;
-    const children = [];
-    let innerText = '';
-    /** @type {RTOpenTag} */
-    let openTag;
-    let closeTag;
 
-    this.currentPos = this.currentPos + startTag.length;
+    /** @type {RTFormattedText} */
+    const node = {
+      type: 'formatted',
+      position: savedPos,
+      length: 0,
+      format: 'color',
+      openTag: undefined,
+      closeTag: undefined,
+      children: [],
+      text: '',
+    };
+
+    this.currentPos = this.currentPos + '<color'.length;
+
     const char = this.thisChar();
-
     if (char === '=') {
       this.nextChar();
-      colorValue = this.parseColorValue();
-      startTag = this.source.substring(savedPos, this.currentPos + 1);
-      openTag = {
+      const colorValue = this.parseColorValue();
+      node.openTag = {
         type: 'open-tag',
         position: savedPos,
         length: this.currentPos - savedPos,
@@ -358,42 +347,45 @@ const parser = {
       };
       this.nextChar();
     } else if (char === '>') {
-      colorValue = null;
-      startTag = this.source.substring(savedPos, this.currentPos + 1);
+      node.openTag = {
+        type: 'open-tag',
+        position: savedPos,
+        length: this.currentPos - savedPos,
+        tagName: 'color',
+        tagValue: null,
+      };
       this.nextChar();
     } else {
-      throw this.error('Syntax error', savedPos, startTag.length);
+      throw this.error('Syntax error', savedPos, '<color'.length);
     }
 
     while (true) {
       const childToken = this.parseNext();
 
       if (childToken.type === 'eof') {
-        throw this.error('Missing </color> tag', savedPos, startTag.length);
+        throw this.error('Missing </color> tag', savedPos, '<color'.length);
       }
 
       if (childToken.type === 'end-tag') {
         if (childToken.tagName === 'color') {
+          node.closeTag = childToken;
           break;
+        } else {
+          // const text = this.source.slice(
+          //     childToken.position,
+          //     childToken.position + childToken.length);
+          // childToken.text = text;
+          // childToken.type = 'text';
+          // children.push(childToken);
+          throw this.error('Missing </color> tag', savedPos, '<color'.length);
         }
-        throw this.error('Missing </color> tag', savedPos, startTag.length);
+      } else {
+        node.text += childToken.text;
+        node.children.push(childToken);
       }
-
-      innerText += childToken.text;
-      children.push(childToken);
     }
 
-    /** @type {RTFormattedText} */
-    const res = {
-      type: 'formatted',
-      location: savedPos,
-      value: colorValue,
-      openTag: openTag,
-      // closeTag:
-      children: children,
-      text: innerText,
-    };
-    return res;
+    return node;
   },
 
   /**
