@@ -8,7 +8,7 @@ const NamedColors = [
 
 /**
  * Convert a parsed element to HTML
- * @param {RTNode} element
+ * @param {RTToken} element
  * @return {string}
  */
 function elementToHtml(element) {
@@ -40,7 +40,7 @@ function elementToHtml(element) {
 
 /**
  * Collapse an element array to HTML
- * @param {RTNode[]} elements
+ * @param {RTToken[]} elements
  * @return {string}
  */
 function arrayToHtml(elements) {
@@ -49,34 +49,44 @@ function arrayToHtml(elements) {
 
 /** // Rich Text Tokens
  *
- * @typedef {Object} RTTag - Rich Text token for a tag
- * @property {'open-tag', 'close-tag', 'void-tag'} type - Tag type
+ * @typedef {Object} RTOpenTag - Token for an open tag
+ * @property {'open-tag'} type - Tag type
  * @property {number} position - Start position of the token within the source
  * @property {number} length - Length of the token code within the source
- * @property {string} name - Tag name
- * @property {string|number} [value] - Tag value
+ * @property {'b'|'i'|'color'|'size'} tagName - Tag name
+ * @property {string|number} [tagValue] - Tag value
  *
- * @typedef {Object} RTText - Token for plain text
+ * @typedef {Object} RTCloseTag - Token for a close tag
+ * @property {'close-tag'} type - Tag type
+ * @property {number} position - Start position of the token within the source
+ * @property {number} length - Length of the token code within the source
+ * @property {'b'|'i'|'color'|'size'} tagName - Tag name
+ *
+ * @typedef {Object} RTLineFeed - Token for a line feed
+ * @property {'line-feed'} type - Token type
+ * @property {number} position - Start position of the token within the source
+ * @property {number} length - Length of the token code within the source
+ * @property {string} text - Text
+ *
+ * @typedef {Object} RTText - Token for a plain text
  * @property {'text'} type - Token type
  * @property {number} position - Start position of the token within the source
  * @property {number} length - Length of the text within the source
  * @property {string} text - Text
  *
- * @typedef {Object} RTWhiteSpace - Token for white space text
- * @property {'white-space'} type - Token type
+ * @typedef {Object} RTFormattedText - Token for a formatted text
+ * @property {'formatted'} type - Token type
  * @property {number} position - Start position of the token within the source
- * @property {number} length - Length of the text within the source
+ * @property {number} length - Length of the code within the source
+ * @property {'b'|'i'|'color'|'size'} format - Formatting type
+ * @property {string|number} [value] - Formatting value
+ * @property {RTOpenTag} openTag - Open tag
+ * @property {RTCloseTag} closeTag - Close tag
+ * @property {RTToken[]} children - Child tokens
  * @property {string} text - Text
- */
-
-/**
- * @typedef {Object} RTNode - Node of a Rich Text AST
- * @property {number} location - Start location of the token
- * @property {string} type - Token type
- * @property {string|number} [value] - Token value
- * @property {string} [for] - Tag name (for End-Tag token)
- * @property {RTNode[]} inner - Nested child tokens
- * @property {string} text - Inner text
+ *
+ * @typedef {RTLineFeed|RTText|RTFormattedText} RTToken
+ * Node of a Rich Text AST
  */
 
 // eslint-disable-next-line no-unused-vars
@@ -152,14 +162,6 @@ const parser = {
   },
 
   /**
-   * Get next character (without advancing cursor position)
-   * @return {string}
-   */
-  peek() {
-    return this.source.charAt(this.currentPos+1);
-  },
-
-  /**
    * Advance cursor position and get next character
    * @return {string}
    */
@@ -186,22 +188,25 @@ const parser = {
   },
 
   /**
-   * Parse a text node
-   * @return {RTNode}
+   * Parse a text token
+   * @return {RTText}
    */
   parseText() {
     const savedPos = this.currentPos;
     while (this.currentPos < this.source.length) {
       const char = this.nextChar();
-      if ((char === '\n') || (char === '<') || (char === '\\')) break;
+      if ((char === '\\') && (this.peak(2)=== '\\n')) break;
+      if (char === '<') break;
     }
-    /** @type {RTNode} */
-    const node = {
-      location: savedPos,
+
+    /** @type {RTText} */
+    const token = {
       type: 'text',
+      location: savedPos,
+      length: this.currentPos - savedPos,
       text: this.source.substring(savedPos, this.currentPos),
     };
-    return node;
+    return token;
   },
 
   /**
@@ -228,7 +233,7 @@ const parser = {
 
   /**
    * Parse a size node
-   * @return {RTNode}
+   * @return {RTToken}
    */
   parseSize() {
     const savedPos = this.currentPos;
@@ -269,7 +274,7 @@ const parser = {
       innerContent.push(c);
     }
 
-    /** @type {RTNode} */
+    /** @type {RTToken} */
     const token = {
       location: savedPos,
       type: 'size',
@@ -324,15 +329,18 @@ const parser = {
   },
 
   /**
-   * Parse a color text
-   * @return {object}
+   * Parse a formatted text node marked by <color> tag
+   * @return {RTFormattedText}
    */
   parseColor() {
     const savedPos = this.currentPos;
     let startTag = '<color';
     let colorValue;
-    const innerContent = [];
+    const children = [];
     let innerText = '';
+    /** @type {RTOpenTag} */
+    let openTag;
+    let closeTag;
 
     this.currentPos = this.currentPos + startTag.length;
     const char = this.thisChar();
@@ -341,6 +349,13 @@ const parser = {
       this.nextChar();
       colorValue = this.parseColorValue();
       startTag = this.source.substring(savedPos, this.currentPos + 1);
+      openTag = {
+        type: 'open-tag',
+        position: savedPos,
+        length: this.currentPos - savedPos,
+        tagName: 'color',
+        tagValue: colorValue,
+      };
       this.nextChar();
     } else if (char === '>') {
       colorValue = null;
@@ -351,26 +366,31 @@ const parser = {
     }
 
     while (true) {
-      const c = this.parseNext();
+      const childToken = this.parseNext();
 
-      if (c.type === 'eof') {
+      if (childToken.type === 'eof') {
         throw this.error('Missing </color> tag', savedPos, startTag.length);
       }
 
-      if (c.type === 'end-tag') {
-        if (c.for === 'color') break;
+      if (childToken.type === 'end-tag') {
+        if (childToken.tagName === 'color') {
+          break;
+        }
         throw this.error('Missing </color> tag', savedPos, startTag.length);
       }
 
-      innerText += c.text;
-      innerContent.push(c);
+      innerText += childToken.text;
+      children.push(childToken);
     }
 
+    /** @type {RTFormattedText} */
     const res = {
+      type: 'formatted',
       location: savedPos,
-      type: 'color',
       value: colorValue,
-      inner: innerContent,
+      openTag: openTag,
+      // closeTag:
+      children: children,
       text: innerText,
     };
     return res;
@@ -450,47 +470,75 @@ const parser = {
 
   /**
    * "</" found. Attempt to parse a close tag
-   * @return {object}
+   * @return {RTCloseTag|RTText}
    */
   parseEndTag() {
     const savedPos = this.currentPos;
 
-    let tag = this.peak('</b>'.length).toLowerCase();
+    let tagLen = '</b>'.length;
+    let tag = this.peak(tagLen).toLowerCase();
+
 
     if (tag === '</b>') {
-      this.currentPos = savedPos + '</b>'.length;
-      return {location: savedPos, type: 'end-tag', for: 'b', text: ''};
+      this.currentPos = savedPos + tagLen;
+      return {
+        position: savedPos,
+        type: 'end-tag',
+        length: tagLen,
+        tagName: 'b',
+      };
     }
 
     if (tag === '</i>') {
-      this.currentPos = savedPos + '</i>'.length;
-      return {location: savedPos, type: 'end-tag', for: 'i', text: ''};
+      this.currentPos = savedPos + tagLen;
+      return {
+        position: savedPos,
+        type: 'end-tag',
+        length: tagLen,
+        tagName: 'i',
+      };
     }
 
-    tag = this.peak('</color>'.length).toLowerCase();
+    tagLen = '</color>'.length;
+    tag = this.peak(tagLen).toLowerCase();
     if (tag === '</color>') {
-      this.currentPos = savedPos + '</color>'.length;
-      return {location: savedPos, type: 'end-tag', for: 'color', text: ''};
+      this.currentPos = savedPos + tagLen;
+      return {
+        position: savedPos,
+        type: 'end-tag',
+        length: tagLen,
+        tagName: 'color',
+      };
     }
 
-    tag = this.peak('</size>'.length).toLowerCase();
+    tagLen = '</size>'.length;
+    tag = this.peak(tagLen).toLowerCase();
     if (tag === '</size>') {
-      this.currentPos = savedPos + '</size>'.length;
-      return {location: savedPos, type: 'end-tag', for: 'size', text: ''};
+      this.currentPos = savedPos + tagLen;
+      return {
+        position: savedPos,
+        type: 'end-tag',
+        length: tagLen,
+        tagName: 'size',
+      };
     }
 
     this.currentPos = savedPos + 2;
-    const res = {
-      location: savedPos,
+
+    /** @type {RTText} */
+    const token = {
       type: 'text',
+      position: savedPos,
+      length: 2,
       text: '</',
     };
-    return res;
+
+    return token;
   },
 
   /**
    * Parse next token
-   * @return {RTNode}
+   * @return {RTToken}
    */
   parseNext() {
     if (!(this.currentPos < this.source.length)) {
@@ -504,38 +552,40 @@ const parser = {
     const char = this.thisChar();
 
     if (char === '<') {
-      const peaked = this.peak(4).toLowerCase();
+      const peaked = this.peak(3).toLowerCase();
       switch (peaked) {
-        case '<b>':
-        case '<b=': return this.parseBold();
-        case '<i>':
-        case '<i=': return this.parseItalic();
+        // case '<b=': // Quirk. Ignore
+        case '<b>': return this.parseBold();
+        // case '<i=': // Quirk. Ignore
+        case '<i>': return this.parseItalic();
       }
       if (this.peak(5).toLowerCase() === '<size' ) return this.parseSize();
       if (this.peak(6).toLowerCase() === '<color') return this.parseColor();
       if (this.peak(2) == '</') return this.parseEndTag();
-    };
 
-    if (char === '\n') {
-      /** @type {RTNode} */
-      const res = {
-        location: this.currentPos,
-        type: 'line-break',
-        text: '\n',
-      };
-      this.currentPos++;
-      return res;
+      if (this.peak(4).toLowerCase() == '<br>') {
+        /** @type {RTLineFeed} */
+        const res = {
+          type: 'line-feed',
+          position: this.currentPos,
+          length: 4,
+          text: '\n',
+        };
+        this.currentPos += 3;
+        return res;
+      }
     };
 
     if (this.peak(2) === '\\n') {
-      /** @type {RTNode} */
-      const res = {
-        location: this.currentPos,
-        type: 'line-break',
-        text: '\\n',
+      /** @type {RTLineFeed} */
+      const token = {
+        type: 'line-feed',
+        position: this.currentPos,
+        length: 3,
+        text: '\n',
       };
       this.currentPos += 2;
-      return res;
+      return token;
     }
 
     return this.parseText();
@@ -550,7 +600,6 @@ const parser = {
       if (next.type === 'eof') break;
       this.root.push(next);
     }
-    return arrayToHtml(this.root);
   },
 
   render() {
