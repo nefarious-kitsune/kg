@@ -8,34 +8,42 @@ const NamedColors = [
 
 /**
  * Convert a parsed element to HTML
- * @param {RTToken} element
+ * @param {RTToken} node
  * @return {string}
  */
-function elementToHtml(element) {
-  if (element.type === 'bold') {
-    return '<b>' + arrayToHtml(element.inner) + '</b>';
-  };
-  if (element.type === 'italic') {
-    return '<i>' + arrayToHtml(element.inner) + '</i>';
-  };
-  if (element.type === 'color') {
-    const inner = arrayToHtml(element.inner);
-    if (element.value === null) return inner;
-    return `<span style="color:${element.value}">` + inner + '</span>';
-  };
-  if (element.type === 'size') {
-    const inner = arrayToHtml(element.inner);
-    if (element.value === null) return inner;
-    const size = Math.floor(element.value * 4 / 10);
-    return `<span style="font-size:${size}px">` + inner + '</span>';
+function tokenToHTML(node) {
+  let inner;
+  if (node.type === 'formatted') {
+    switch (node.format) {
+      case 'b': return '<b>' + tokenArrayToHTML(node.children) + '</b>';
+      case 'i': return '<i>' + tokenArrayToHTML(node.inner) + '</i>';
+      case 'color':
+        inner = tokenArrayToHTML(node.inner);
+        if (node.value === null) {
+          return `<span class="color-reset">` + inner + '</span>';
+        }
+        return `<span style="color:${node.value}">` + inner + '</span>';
+      case 'size':
+        inner = tokenArrayToHTML(node.inner);
+        if ((node.value === null) || (node.value <= 0)) {
+          return `<span class="size-reset">` + inner + '</span>';
+        }
+        const size = Math.floor(node.value * 4 / 10);
+        return `<span style="font-size:${size}px">` + inner + '</span>';
+    }
   }
-  if (element.type === 'line-break') {
+
+  if (node.type === 'line-feed') {
     return '<br>';
   }
-  return element.text
+
+  return node.text
+      .replaceAll('\t', ' ')
       .replaceAll('&', '&amp;')
       .replaceAll('<', '&lt;')
-      .replaceAll('>', '&gt;');
+      .replaceAll('>', '&gt;')
+      .replaceAll('  ', ' &nbsp;')
+  ;
 }
 
 /**
@@ -43,8 +51,8 @@ function elementToHtml(element) {
  * @param {RTToken[]} elements
  * @return {string}
  */
-function arrayToHtml(elements) {
-  return elements.map((c) => elementToHtml(c)).join('');
+function tokenArrayToHTML(elements) {
+  return elements.map((c) => tokenToHTML(c)).join('');
 }
 
 /** // Rich Text Tokens
@@ -247,9 +255,9 @@ const parser = {
 
     if (_value.startsWith('#')) {
       const isValid = [..._value.slice(1)].reduce(
-        (valid, char) => valid && (Hexadecimal.indexOf(char) >= 0),
-        true,
-      )
+          (valid, char) => valid && (Hexadecimal.indexOf(char) >= 0),
+          true,
+      );
       if (!isValid) _value = null;
     } else {
       if (NamedColors.indexOf(_value()) === -1) _value = null;
@@ -390,74 +398,90 @@ const parser = {
 
   /**
    * Parse a bold text
-   * @return {object}
+   * @return {RTFormattedText}
    */
   parseBold() {
     const savedPos = this.currentPos;
-    const innerContent = [];
-    let innerText = '';
+
+    /** @type {RTFormattedText} */
+    const node = {
+      type: 'formatted',
+      position: savedPos,
+      length: 0,
+      format: 'b',
+      openTag: undefined,
+      closeTag: undefined,
+      children: [],
+      text: '',
+    };
 
     this.currentPos = this.currentPos + '<b>'.length;
 
     while (true) {
-      const c = this.parseNext();
+      const childToken = this.parseNext();
 
-      if (c.type === 'eof') {
+      if (childToken.type === 'eof') {
         throw this.error('Missing </b> tag', savedPos, 3);
       }
 
-      if (c.type === 'end-tag') {
-        if (c.for === 'b') break;
-        throw this.error('Missing </b> tag', savedPos, 3);
+      if (childToken.type === 'end-tag') {
+        if (childToken.tagName === 'b') {
+          node.closeTag = childToken;
+          break;
+        } else {
+          throw this.error('Missing </b> tag', savedPos, '<b>'.length);
+        }
+      } else {
+        node.text += childToken.text;
+        node.children.push(childToken);
       }
-
-      innerText += c.text;
-      innerContent.push(c);
     }
 
-    const res = {
-      location: savedPos,
-      type: 'bold',
-      inner: innerContent,
-      text: innerText,
-    };
-    return res;
+    return node;
   },
 
   /**
    * Parse a italic text
-   * @return {object}
+   * @return {RTFormattedText}
    */
   parseItalic() {
     const savedPos = this.currentPos;
-    const innerContent = [];
-    let innerText = '';
 
-    this.currentPos = this.currentPos + '<b>'.length;
+    /** @type {RTFormattedText} */
+    const node = {
+      type: 'formatted',
+      position: savedPos,
+      length: 0,
+      format: 'b',
+      openTag: undefined,
+      closeTag: undefined,
+      children: [],
+      text: '',
+    };
+
+    this.currentPos = this.currentPos + '<i>'.length;
 
     while (true) {
-      const c = this.parseNext();
+      const childToken = this.parseNext();
 
-      if (c.type === 'eof') {
+      if (childToken.type === 'eof') {
         throw this.error('Missing </i> tag', savedPos, 3);
       }
 
-      if (c.type === 'end-tag') {
-        if (c.for === 'i') break;
-        throw this.error('Missing </i> tag', savedPos, 3);
+      if (childToken.type === 'end-tag') {
+        if (childToken.tagName === 'i') {
+          node.closeTag = childToken;
+          break;
+        } else {
+          throw this.error('Missing </i> tag', savedPos, '<i>'.length);
+        }
+      } else {
+        node.text += childToken.text;
+        node.children.push(childToken);
       }
-
-      innerText += c.text;
-      innerContent.push(c);
     }
 
-    const res = {
-      location: savedPos,
-      type: 'italic',
-      inner: innerContent,
-      text: innerText,
-    };
-    return res;
+    return node;
   },
 
   /**
@@ -595,6 +619,6 @@ const parser = {
   },
 
   render() {
-    return this.root.map((c) => elementToHtml(c)).join('');
+    return this.root.map((c) => tokenToHTML(c)).join('');
   },
 };
