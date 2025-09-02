@@ -14,8 +14,8 @@
     ><button class="tool-button" id="save-file-button" onclick="saveFile('text-notice.txt')" title="Download file"></button
   ></div>
   <div class="button-group"
-    ><button class="tool-button undo" onclick="undoAction()"></button
-    ><button class="tool-button redo" onclick="redoAction()"></button
+    ><button class="tool-button" id="undo-history-button" title="Undo change"></button
+    ><button class="tool-button" id="redo-history-button" title="Redo change"></button
   ></div>
   <div class="button-group"
     ><div class="dropdown"
@@ -51,7 +51,7 @@
 ></textarea>
 <div class="statusbar">
   <div class="text-group" id="status">
-    <div id="normal-status"><span id="char-count"></span> / {{MAX CHAR COUNT}} chars</div>
+    <div id="normal-status"><span id="char-count"></span> / <span id="max-char-count"></span> chars</div>
     <div id="error-status"></div>
   </div>
   <div class="right-text-group" id="cursor-location">Ln 0, Col 0</div>

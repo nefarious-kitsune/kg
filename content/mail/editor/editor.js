@@ -5,6 +5,30 @@
 // https://github.com/shikatan0/textarea-undo-redo/blob/master/src/index.ts
 
 
+/**
+ * Helper function for encoding title as
+ * filename without conflict with OS File system
+ * @param {string} title
+ * @return {string}
+ */
+const encodeTitle = (title) => (title
+    .replace(
+        // Escape % ! * " < > ? : \ / | + , . ; = * [ ]
+        /[%!*"<>?:\\/|+,.;=*\[\]]/g,
+        (c) => '%' + c.charCodeAt(0).toString(16).toUpperCase(),
+    ));
+
+/**
+ * Helper function for decoding filename
+ * @param {encoded} encoded
+ * @return {string}
+ */
+const decodeTitle = (encoded) => (encoded
+    .replace(
+        /%[0-9A-Z]{2}/g,
+        (c) => String.fromCharCode(parseInt(c.slice(1), 16)),
+    ));
+
 const Hexadecimal = '0123456789abcdefABCDEF';
 const NamedColors = [
   'aqua', 'black', 'blue', 'brown', 'cyan', 'darkblue', 'fuchsia',
@@ -797,18 +821,40 @@ export class URTEditorElement extends HTMLDivElement {
 
   /**
    * Save text to file
-   * @param {string} suggestedName
    */
-  saveFile(suggestedName) {
+  saveFile() {
     const blob = new Blob(
         [this.bodyInput.value],
         {type: 'text/plain;charset=utf-8'},
     );
+
+    const title = this.titleInput.value;
+    const filename = encodeTitle(title);
+
     const blobURL = URL.createObjectURL(blob);
     this.saveFileLink.href = blobURL;
-    this.saveFileLink.download = suggestedName;
+    this.saveFileLink.download = filename + '.txt';
     this.saveFileLink.click();
     setTimeout(() => URL.revokeObjectURL(blobURL), 1000);
+  }
+
+  /**
+   * Handle file drop event
+   * @param {DragEvent} e
+   */
+  dropFile(e) {
+    e.preventDefault();
+    const item = [...e.dataTransfer.items][0];
+    if (item.kind === 'file') {
+      let filename = item.getAsFile().name;
+      if (filename.endsWith('.txt')) filename = filename.slice(0, -4);
+      this.titleInput.value = decodeTitle(filename);
+      item.getAsString((s) => {
+        this.bodyInput.value = s;
+        this.bodyInput.clearHistory();
+        this.render();
+      });
+    }
   }
 
   /**
@@ -847,12 +893,26 @@ export class URTEditorElement extends HTMLDivElement {
   initialize(options) {
     const shadow = this.shadow;
 
-    /** @type {HTMLInputElement} - Hidden element (input#file-selector) */
+    this.bodyInput = shadow.getElementById('message-body-input');
+    this.titleInput = shadow.getElementById('message-title-input');
+    this.toolbar = shadow.getElementById('toolbar');
+    this.statusbar = shadow.getElementById('statusbar');
+
+    shadow
+        .getElementById('undo-history-button')
+        .addEventListener('click', (e) => this.bodyInput.undoHistory());
+    shadow
+        .getElementById('redo-history-button')
+        .addEventListener('click', (e) => this.bodyInput.redoHistory());
+
+    /** @type {HTMLInputElement} - Hidden element */
     const fileSelector = shadow.getElementById('open-file-selector');
     fileSelector.addEventListener('change', (e) => this.readFile(e));
     shadow
         .getElementById('open-file-button')
         .addEventListener('click', (e) => fileSelector.click());
+
+    this.addEventListener('drop', (e) => this.dropFile());
 
     shadow
         .getElementById('format-bold-button')
@@ -866,12 +926,6 @@ export class URTEditorElement extends HTMLDivElement {
         .addEventListener('click', (e) => this.saveFile());
     this.saveFileLink = shadow.getElementById('save-file-link');
 
-
-    this.bodyInput = shadow.getElementById('message-body-input');
-    this.titleInput = shadow.getElementById('message-title-input');
-    this.toolbar = shadow.getElementById('toolbar');
-    this.statusbar = shadow.getElementById('statusbar');
-
     if (options.maxLength > 0) {
       this.bodyInput.setAttribute('maxLength', options.maxLength);
     }
@@ -880,12 +934,10 @@ export class URTEditorElement extends HTMLDivElement {
     /** @type {HTMLDivElement} */
     const textSizeList = shadow.getElementById('size-list');
     const textSizeOptions =
-      (
-        Array.isArray(options.textSizeOptions) &&
-        (options.textSizeOptions.length)
-      )?
+      (options?.textSizeOptions?.length)?
       options.textSizeOptions:
       [30, 35, 40, 50];
+
     const defaultTextSize = options.defaultTextSize || textSizeOptions[0];
     textSizeOptions.forEach((value) => {
       const anchor = shadow.createElement('a');
@@ -941,6 +993,9 @@ if (macOS) {
     }
   });
 }
+
+window.addEventListener('dragover', (e) => e.preventDefault());
+window.addEventListener('drop', (e) => e.preventDefault());
 
 // const flashNoticeElement = document.getElementById('flash-notice');
 // let flashNoticeDelay = null;
