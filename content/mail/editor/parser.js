@@ -6,55 +6,6 @@ const NamedColors = [
   'yellow',
 ];
 
-/**
- * Convert a parsed element to HTML
- * @param {RTToken} node
- * @return {string}
- */
-function tokenToHTML(node) {
-  let inner;
-  if (node.type === 'formatted') {
-    switch (node.format) {
-      case 'b': return '<b>' + tokenArrayToHTML(node.children) + '</b>';
-      case 'i': return '<i>' + tokenArrayToHTML(node.inner) + '</i>';
-      case 'color':
-        inner = tokenArrayToHTML(node.inner);
-        if (node.value === null) {
-          return `<span class="color-reset">` + inner + '</span>';
-        }
-        return `<span style="color:${node.value}">` + inner + '</span>';
-      case 'size':
-        inner = tokenArrayToHTML(node.inner);
-        if ((node.value === null) || (node.value <= 0)) {
-          return `<span class="size-reset">` + inner + '</span>';
-        }
-        const size = Math.floor(node.value * 4 / 10);
-        return `<span style="font-size:${size}px">` + inner + '</span>';
-    }
-  }
-
-  if (node.type === 'line-feed') {
-    return '<br>';
-  }
-
-  return node.text
-      .replaceAll('\t', ' ')
-      .replaceAll('&', '&amp;')
-      .replaceAll('<', '&lt;')
-      .replaceAll('>', '&gt;')
-      .replaceAll('  ', ' &nbsp;')
-  ;
-}
-
-/**
- * Collapse an element array to HTML
- * @param {RTToken[]} elements
- * @return {string}
- */
-function tokenArrayToHTML(elements) {
-  return elements.map((c) => tokenToHTML(c)).join('');
-}
-
 /** // Rich Text Tokens
  *
  * @typedef {Object} RTOpenTag - Token for an open tag
@@ -97,22 +48,29 @@ function tokenArrayToHTML(elements) {
  * Node of a Rich Text AST
  */
 
-// eslint-disable-next-line no-unused-vars
-const parser = {
+/** Parser for formatted text in Unity RichText widget */
+class URTParser {
   /**
    * @type {number}
    * Current parser position
    */
-  currentPos: 0,
+  currentPos = 0;
 
   /**
    * @type {string}
    * Source
    */
-  source: '',
+  source = '';
 
-  /** Document root */
-  root: [],
+  /**
+   * @type {RTToken[]}
+   * Document root
+   */
+  root = [];
+
+  /** Constructor */
+  constructor() {
+  }
 
   /**
    * Return an error message
@@ -155,7 +113,7 @@ const parser = {
       '</div>';
 
     return e;
-  },
+  };
 
   /**
    * Escape text
@@ -167,7 +125,7 @@ const parser = {
         .replaceAll('&', '&amp;')
         .replaceAll('<', '&lt;')
         .replaceAll('>', '&gt;');
-  },
+  };
 
   /**
    * Advance cursor position and get next character
@@ -175,7 +133,7 @@ const parser = {
    */
   nextChar() {
     return this.source.charAt(++this.currentPos);
-  },
+  };
 
   /**
    * Get character at current cursor position
@@ -183,7 +141,7 @@ const parser = {
    */
   thisChar() {
     return this.source.charAt(this.currentPos);
-  },
+  };
 
   /**
    * Get a string fragment of certain length from current position
@@ -193,7 +151,7 @@ const parser = {
   peak(len=1) {
     const p = this.currentPos;
     return this.source.substring(p, p + len);
-  },
+  };
 
   /**
    * Parse a text token
@@ -215,7 +173,7 @@ const parser = {
       text: this.source.substring(savedPos, this.currentPos),
     };
     return token;
-  },
+  };
 
   /**
    * Parse an integer value
@@ -238,7 +196,7 @@ const parser = {
     if (Number.isNaN(value)) return null;
     this.currentPos = _end;
     return value;
-  },
+  };
 
   /**
    * Parse a color value
@@ -260,12 +218,12 @@ const parser = {
       );
       if (!isValid) _value = null;
     } else {
-      if (NamedColors.indexOf(_value()) === -1) _value = null;
+      if (NamedColors.indexOf(_value) === -1) _value = null;
     }
 
     this.currentPos = _end;
     return _value;
-  },
+  };
 
   /**
    * Parse a size node
@@ -319,7 +277,7 @@ const parser = {
       text: innerText,
     };
     return token;
-  },
+  };
 
   /**
    * Parse a formatted text node marked by <color> tag
@@ -334,6 +292,7 @@ const parser = {
       position: savedPos,
       length: 0,
       format: 'color',
+      value: null,
       openTag: undefined,
       closeTag: undefined,
       children: [],
@@ -346,6 +305,7 @@ const parser = {
     if (char === '=') {
       this.nextChar();
       const colorValue = this.parseColorValue();
+      node.value = colorValue;
       node.openTag = {
         type: 'open-tag',
         position: savedPos,
@@ -394,7 +354,7 @@ const parser = {
     }
 
     return node;
-  },
+  };
 
   /**
    * Parse a bold text
@@ -438,7 +398,7 @@ const parser = {
     }
 
     return node;
-  },
+  };
 
   /**
    * Parse a italic text
@@ -482,7 +442,7 @@ const parser = {
     }
 
     return node;
-  },
+  };
 
   /**
    * "</" found. Attempt to parse a close tag
@@ -550,7 +510,7 @@ const parser = {
     };
 
     return token;
-  },
+  };
 
   /**
    * Parse next token
@@ -605,8 +565,12 @@ const parser = {
     }
 
     return this.parseText();
-  },
+  };
 
+  /**
+   * Parse
+   * @param {string} source
+   */
   parse(source) {
     this.currentPos = 0;
     this.source = source;
@@ -616,9 +580,67 @@ const parser = {
       if (next.type === 'eof') break;
       this.root.push(next);
     }
-  },
+  };
 
+
+  /**
+   * Render source as HTML
+   * @return {string}
+   */
   render() {
-    return this.root.map((c) => tokenToHTML(c)).join('');
-  },
+    return this.tokenArrayToHTML(this.root);
+  }
+
+  /**
+   * Collapse an element array to HTML
+   * @param {RTToken[]} tokens
+   * @return {string}
+  */
+  tokenArrayToHTML(tokens) {
+    if (Array.isArray(tokens)) return this.tokenToHTML(c);
+    else return tokens.map((t) => this.tokenToHTML(t)).join('');
+  }
+
+  /**
+   * Convert a parsed element to HTML
+   * @param {RTToken} node
+   * @return {string}
+   */
+  tokenToHTML(node) {
+    let inner;
+    if (node.type === 'formatted') {
+      switch (node.format) {
+        case 'b': return '<b>' + this.tokenArrayToHTML(node.children) + '</b>';
+        case 'i': return '<i>' + this.tokenArrayToHTML(node.children) + '</i>';
+        case 'color':
+          inner = this.tokenArrayToHTML(node.children);
+          if (node.value === null) {
+            return `<span class="color-reset">` + inner + '</span>';
+          }
+          return `<span style="color:${node.value}">` + inner + '</span>';
+        case 'size':
+          inner = this.tokenArrayToHTML(node.children);
+          if ((node.value === null) || (node.value <= 0)) {
+            return `<span class="size-reset">` + inner + '</span>';
+          }
+          const size = Math.floor(node.value * 4 / 10);
+          return `<span style="font-size:${size}px">` + inner + '</span>';
+      }
+    }
+
+    if (node.type === 'line-feed') {
+      return '<br>';
+    }
+
+    return this.escape(node.text)
+        .replaceAll('\t', ' ')
+        .replaceAll('  ', ' &nbsp;')
+    ;
+  }
 };
+
+const p = new URTParser();
+p.parse('<b>sample <color= red>text</color></b><size');
+// console.log(JSON.stringify(p.root, null, '  '));
+console.log(p.render());
+

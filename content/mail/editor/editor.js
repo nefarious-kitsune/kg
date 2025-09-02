@@ -13,39 +13,70 @@ const NamedColors = [
   'yellow',
 ];
 
-/**
- * @typedef {'size'|'bold'|'italic'|'color'|'line-break'|'eof'} URTTokenType
- * Type of URT Token
+/** // Rich Text Tokens
  *
- * @typedef {Object} URTToken - Token inside a URT syntax tree
- * @property {URTTokenType} type - Type of the token
- * @property {string|number|null} [value] - Value of a size or color token
- * @property {URTToken[]} inner - Child tokens of the inner content
- * @property {string} text - Text of the inner content
- * @property {number} location - Start location within the source
+ * @typedef {Object} RTOpenTag - Token for an open tag
+ * @property {'open-tag'} type - Tag type
+ * @property {number} position - Start position of the token within the source
+ * @property {number} length - Length of the token code within the source
+ * @property {'b'|'i'|'color'|'size'} tagName - Tag name
+ * @property {string|number} [tagValue] - Tag value
+ *
+ * @typedef {Object} RTCloseTag - Token for a close tag
+ * @property {'close-tag'} type - Tag type
+ * @property {number} position - Start position of the token within the source
+ * @property {number} length - Length of the token code within the source
+ * @property {'b'|'i'|'color'|'size'} tagName - Tag name
+ *
+ * @typedef {Object} RTLineFeed - Token for a line feed
+ * @property {'line-feed'} type - Token type
+ * @property {number} position - Start position of the token within the source
+ * @property {number} length - Length of the token code within the source
+ * @property {string} text - Text
+ *
+ * @typedef {Object} RTText - Token for a plain text
+ * @property {'text'} type - Token type
+ * @property {number} position - Start position of the token within the source
+ * @property {number} length - Length of the text within the source
+ * @property {string} text - Text
+ *
+ * @typedef {Object} RTFormattedText - Token for a formatted text
+ * @property {'formatted'} type - Token type
+ * @property {number} position - Start position of the token within the source
+ * @property {number} length - Length of the code within the source
+ * @property {'b'|'i'|'color'|'size'} format - Formatting type
+ * @property {string|number} [value] - Formatting value
+ * @property {RTOpenTag} openTag - Open tag
+ * @property {RTCloseTag} closeTag - Close tag
+ * @property {RTToken[]} children - Child tokens
+ * @property {string} text - Text
+ *
+ * @typedef {RTLineFeed|RTText|RTFormattedText} RTToken
+ * Node of a Rich Text AST
  */
 
 /** Parser for formatted text in Unity RichText widget */
 class URTParser {
+  /**
+   * @type {number}
+   * Current parser position
+   */
+  currentPos = 0;
+
+  /**
+   * @type {string}
+   * Source
+   */
+  source = '';
+
+  /**
+   * @type {RTToken[]}
+   * Document root
+   */
+  root = [];
+
   /** Constructor */
   constructor() {
-    /**
-     * @type {number}
-     * Current parser position
-     */
-    this.currentPos = 0;
-
-    /**
-     * @type {string}
-     * Source
-     */
-    this.source = '',
-
-    /**
-     * @type {URTToken[]}
-     * Document root
-     */
-    this.root = [];
   }
 
   /**
@@ -89,7 +120,7 @@ class URTParser {
       '</div>';
 
     return e;
-  }
+  };
 
   /**
    * Escape text
@@ -101,7 +132,7 @@ class URTParser {
         .replaceAll('&', '&amp;')
         .replaceAll('<', '&lt;')
         .replaceAll('>', '&gt;');
-  }
+  };
 
   /**
    * Advance cursor position and get next character
@@ -109,7 +140,7 @@ class URTParser {
    */
   nextChar() {
     return this.source.charAt(++this.currentPos);
-  }
+  };
 
   /**
    * Get character at current cursor position
@@ -117,71 +148,93 @@ class URTParser {
    */
   thisChar() {
     return this.source.charAt(this.currentPos);
-  }
+  };
 
   /**
    * Get a string fragment of certain length from current position
    * @param {number} len - length
    * @return {string}
    */
-  subString(len) {
+  peak(len=1) {
     const p = this.currentPos;
     return this.source.substring(p, p + len);
-  }
+  };
 
   /**
-   * Get a sub-string
-   * @param {number} start
-   * @param {number} stop
-   * @return {string}
-   */
-  slice(start, stop) {
-    return this.source.slice(start, stop);
-  }
-
-  /**
-   * Parse a text fragment
-   * @return {object}
+   * Parse a text token
+   * @return {RTText}
    */
   parseText() {
     const savedPos = this.currentPos;
     while (this.currentPos < this.source.length) {
       const char = this.nextChar();
-      if ((char === '\n') || (char === '<') || (char === '\\')) break;
+      if ((char === '\\') && (this.peak(2)=== '\\n')) break;
+      if (char === '<') break;
     }
-    const res = {
-      location: savedPos,
+
+    /** @type {RTText} */
+    const token = {
       type: 'text',
+      location: savedPos,
+      length: this.currentPos - savedPos,
       text: this.source.substring(savedPos, this.currentPos),
     };
-    return res;
-  }
+    return token;
+  };
 
   /**
-   * Parse a size value
-   * @return {null|number}
+   * Parse an integer value
+   * @return {string}
    */
-  parseSizeValue() {
+  parseIntegerValue() {
     const savedPos = this.currentPos;
-    let char = this.thisChar();
-    while (true) {
-      if ((char === '') || (char === '\n')) { // EOF or EOL
-        this.currentPos = savedPos;
-        throw this.error('Syntax error', savedPos);
-      }
-      if (char === '>') break;
-      if ('0123456789'.indexOf(char)===-1) {
-        this.currentPos = savedPos;
-        throw this.error('Syntax error', savedPos);
-      }
-      char = this.nextChar();
+    const _start = savedPos;
+    const _end = this.source.indexOf('>', _start);
+
+    if (_end < 0) throw this.error('Syntax error', savedPos);
+
+    let _value = this.source.slice(_start, _end);
+
+    if (_value.startsWith('"') && _value.endsWith('"')) {
+      _value = _value.slice(1, -1);
     }
-    return parseInt(this.slice(savedPos, this.currentPos));
-  }
+
+    const value = parseInt(_value);
+    if (Number.isNaN(value)) return null;
+    this.currentPos = _end;
+    return value;
+  };
 
   /**
-   * Parse a color text
-   * @return {object}
+   * Parse a color value
+   * @return {null|string}
+   */
+  parseColorValue() {
+    const savedPos = this.currentPos;
+    const _start = savedPos;
+    const _end = this.source.indexOf('>', _start);
+
+    if (_end < 0) throw this.error('Syntax error', savedPos);
+
+    let _value = this.source.slice(_start, _end).toLowerCase();
+
+    if (_value.startsWith('#')) {
+      const isValid = [..._value.slice(1)].reduce(
+          (valid, char) => valid && (Hexadecimal.indexOf(char) >= 0),
+          true,
+      );
+      if (!isValid) _value = null;
+    } else {
+      if (NamedColors.indexOf(_value) === -1) _value = null;
+    }
+
+    this.currentPos = _end;
+    return _value;
+  };
+
+  /**
+   * Parse a size node
+   * @return {RTToken}
    */
   parseSize() {
     const savedPos = this.currentPos;
@@ -195,7 +248,7 @@ class URTParser {
 
     if (char === '=') {
       this.nextChar();
-      sizeValue = this.parseSizeValue();
+      sizeValue = this.parseIntegerValue();
       startTag = this.source.substring(savedPos, this.currentPos + 1);
       this.nextChar();
     } else if (char === '>') {
@@ -222,227 +275,253 @@ class URTParser {
       innerContent.push(c);
     }
 
-    const res = {
+    /** @type {RTToken} */
+    const token = {
       location: savedPos,
       type: 'size',
       value: sizeValue,
       inner: innerContent,
       text: innerText,
     };
-    return res;
-  }
+    return token;
+  };
 
   /**
-   * Parse a color value
-   * @return {null|string}
-   */
-  parseColorValue() {
-    const savedPos = this.currentPos;
-
-    let value = '';
-    let valid = true;
-
-    let char = this.thisChar();
-    if (char === '#') {
-      value = '#';
-      while (true) {
-        char = this.nextChar();
-        if ((char === '') || (char === '\n')) { // EOF or EOL
-          this.currentPos = savedPos;
-          throw this.error('Syntax error', savedPos);
-        }
-        if (char === '>') break;
-        if (Hexadecimal.indexOf(char)===-1) valid = false;
-        if (valid) value += char;
-      }
-      if (value.length === 1) valid = false;
-      if (value.length > 9) valid = false;
-    } else {
-      while (true) {
-        if ((char === '') || (char === '\n')) { // EOF or EOL
-          this.currentPos = savedPos;
-          throw this.error('Syntax error', savedPos);
-        }
-        if (char === '>') break;
-        value = value + char;
-        char = this.nextChar();
-      }
-      value = value.toLowerCase();
-      if (NamedColors.indexOf(value.toLowerCase()) === -1) {
-        valid = false;
-      };
-    }
-    return valid?value:'white';
-  }
-
-  /**
-   * Parse a color text
-   * @return {object}
+   * Parse a formatted text node marked by <color> tag
+   * @return {RTFormattedText}
    */
   parseColor() {
     const savedPos = this.currentPos;
-    let startTag = '<color';
-    let colorValue;
-    const innerContent = [];
-    let innerText = '';
 
-    this.currentPos = this.currentPos + startTag.length;
+    /** @type {RTFormattedText} */
+    const node = {
+      type: 'formatted',
+      position: savedPos,
+      length: 0,
+      format: 'color',
+      value: null,
+      openTag: undefined,
+      closeTag: undefined,
+      children: [],
+      text: '',
+    };
+
+    this.currentPos = this.currentPos + '<color'.length;
+
     const char = this.thisChar();
-
     if (char === '=') {
       this.nextChar();
-      colorValue = this.parseColorValue();
-      startTag = this.source.substring(savedPos, this.currentPos + 1);
+      const colorValue = this.parseColorValue();
+      node.value = colorValue;
+      node.openTag = {
+        type: 'open-tag',
+        position: savedPos,
+        length: this.currentPos - savedPos,
+        tagName: 'color',
+        tagValue: colorValue,
+      };
       this.nextChar();
     } else if (char === '>') {
-      colorValue = null;
-      startTag = this.source.substring(savedPos, this.currentPos + 1);
+      node.openTag = {
+        type: 'open-tag',
+        position: savedPos,
+        length: this.currentPos - savedPos,
+        tagName: 'color',
+        tagValue: null,
+      };
       this.nextChar();
     } else {
-      throw this.error('Syntax error', savedPos, startTag.length);
+      throw this.error('Syntax error', savedPos, '<color'.length);
     }
 
     while (true) {
-      const c = this.parseNext();
+      const childToken = this.parseNext();
 
-      if (c.type === 'eof') {
-        throw this.error('Missing </color> tag', savedPos, startTag.length);
+      if (childToken.type === 'eof') {
+        throw this.error('Missing </color> tag', savedPos, '<color'.length);
       }
 
-      if (c.type === 'end-tag') {
-        if (c.for === 'color') break;
-        throw this.error('Missing </color> tag', savedPos, startTag.length);
+      if (childToken.type === 'end-tag') {
+        if (childToken.tagName === 'color') {
+          node.closeTag = childToken;
+          break;
+        } else {
+          // const text = this.source.slice(
+          //     childToken.position,
+          //     childToken.position + childToken.length);
+          // childToken.text = text;
+          // childToken.type = 'text';
+          // children.push(childToken);
+          throw this.error('Missing </color> tag', savedPos, '<color'.length);
+        }
+      } else {
+        node.text += childToken.text;
+        node.children.push(childToken);
       }
-
-      innerText += c.text;
-      innerContent.push(c);
     }
 
-    const res = {
-      location: savedPos,
-      type: 'color',
-      value: colorValue,
-      inner: innerContent,
-      text: innerText,
-    };
-    return res;
-  }
+    return node;
+  };
 
   /**
    * Parse a bold text
-   * @return {object}
+   * @return {RTFormattedText}
    */
   parseBold() {
     const savedPos = this.currentPos;
-    const innerContent = [];
-    let innerText = '';
+
+    /** @type {RTFormattedText} */
+    const node = {
+      type: 'formatted',
+      position: savedPos,
+      length: 0,
+      format: 'b',
+      openTag: undefined,
+      closeTag: undefined,
+      children: [],
+      text: '',
+    };
 
     this.currentPos = this.currentPos + '<b>'.length;
 
     while (true) {
-      const c = this.parseNext();
+      const childToken = this.parseNext();
 
-      if (c.type === 'eof') {
+      if (childToken.type === 'eof') {
         throw this.error('Missing </b> tag', savedPos, 3);
       }
 
-      if (c.type === 'end-tag') {
-        if (c.for === 'b') break;
-        throw this.error('Missing </b> tag', savedPos, 3);
+      if (childToken.type === 'end-tag') {
+        if (childToken.tagName === 'b') {
+          node.closeTag = childToken;
+          break;
+        } else {
+          throw this.error('Missing </b> tag', savedPos, '<b>'.length);
+        }
+      } else {
+        node.text += childToken.text;
+        node.children.push(childToken);
       }
-
-      innerText += c.text;
-      innerContent.push(c);
     }
 
-    const res = {
-      location: savedPos,
-      type: 'bold',
-      inner: innerContent,
-      text: innerText,
-    };
-    return res;
-  }
+    return node;
+  };
 
   /**
    * Parse a italic text
-   * @return {object}
+   * @return {RTFormattedText}
    */
   parseItalic() {
     const savedPos = this.currentPos;
-    const innerContent = [];
-    let innerText = '';
 
-    this.currentPos = this.currentPos + '<b>'.length;
+    /** @type {RTFormattedText} */
+    const node = {
+      type: 'formatted',
+      position: savedPos,
+      length: 0,
+      format: 'b',
+      openTag: undefined,
+      closeTag: undefined,
+      children: [],
+      text: '',
+    };
+
+    this.currentPos = this.currentPos + '<i>'.length;
 
     while (true) {
-      const c = this.parseNext();
+      const childToken = this.parseNext();
 
-      if (c.type === 'eof') {
+      if (childToken.type === 'eof') {
         throw this.error('Missing </i> tag', savedPos, 3);
       }
 
-      if (c.type === 'end-tag') {
-        if (c.for === 'i') break;
-        throw this.error('Missing </i> tag', savedPos, 3);
+      if (childToken.type === 'end-tag') {
+        if (childToken.tagName === 'i') {
+          node.closeTag = childToken;
+          break;
+        } else {
+          throw this.error('Missing </i> tag', savedPos, '<i>'.length);
+        }
+      } else {
+        node.text += childToken.text;
+        node.children.push(childToken);
       }
-
-      innerText += c.text;
-      innerContent.push(c);
     }
 
-    const res = {
-      location: savedPos,
-      type: 'italic',
-      inner: innerContent,
-      text: innerText,
-    };
-    return res;
-  }
+    return node;
+  };
 
   /**
    * "</" found. Attempt to parse a close tag
-   * @return {object}
+   * @return {RTCloseTag|RTText}
    */
   parseEndTag() {
     const savedPos = this.currentPos;
 
-    let tag = this.subString('</b>'.length).toLowerCase();
+    let tagLen = '</b>'.length;
+    let tag = this.peak(tagLen).toLowerCase();
+
 
     if (tag === '</b>') {
-      this.currentPos = savedPos + '</b>'.length;
-      return {location: savedPos, type: 'end-tag', for: 'b', text: ''};
+      this.currentPos = savedPos + tagLen;
+      return {
+        position: savedPos,
+        type: 'end-tag',
+        length: tagLen,
+        tagName: 'b',
+      };
     }
 
     if (tag === '</i>') {
-      this.currentPos = savedPos + '</i>'.length;
-      return {location: savedPos, type: 'end-tag', for: 'i', text: ''};
+      this.currentPos = savedPos + tagLen;
+      return {
+        position: savedPos,
+        type: 'end-tag',
+        length: tagLen,
+        tagName: 'i',
+      };
     }
 
-    tag = this.subString('</color>'.length).toLowerCase();
+    tagLen = '</color>'.length;
+    tag = this.peak(tagLen).toLowerCase();
     if (tag === '</color>') {
-      this.currentPos = savedPos + '</color>'.length;
-      return {location: savedPos, type: 'end-tag', for: 'color', text: ''};
+      this.currentPos = savedPos + tagLen;
+      return {
+        position: savedPos,
+        type: 'end-tag',
+        length: tagLen,
+        tagName: 'color',
+      };
     }
 
-    tag = this.subString('</size>'.length).toLowerCase();
+    tagLen = '</size>'.length;
+    tag = this.peak(tagLen).toLowerCase();
     if (tag === '</size>') {
-      this.currentPos = savedPos + '</size>'.length;
-      return {location: savedPos, type: 'end-tag', for: 'size', text: ''};
+      this.currentPos = savedPos + tagLen;
+      return {
+        position: savedPos,
+        type: 'end-tag',
+        length: tagLen,
+        tagName: 'size',
+      };
     }
 
     this.currentPos = savedPos + 2;
-    const res = {
-      location: savedPos,
+
+    /** @type {RTText} */
+    const token = {
       type: 'text',
+      position: savedPos,
+      length: 2,
       text: '</',
     };
-    return res;
-  }
+
+    return token;
+  };
 
   /**
    * Parse next token
-   * @return {URTToken}
+   * @return {RTToken}
    */
   parseNext() {
     if (!(this.currentPos < this.source.length)) {
@@ -454,43 +533,49 @@ class URTParser {
     };
 
     const char = this.thisChar();
-    const nextChar = this.source.charAt(this.currentPos+1);
 
     if (char === '<') {
-      let tag = this.subString('<b>'.length).toLowerCase();
-      if (tag === '<b>') return this.parseBold();
-      if (tag === '<i>') return this.parseItalic();
-      tag = this.subString('<color'.length).toLowerCase();
-      if (tag === '<color') return this.parseColor();
-      tag = this.subString('<size'.length).toLowerCase();
-      if (tag === '<size') return this.parseSize();
-      if (nextChar == '/') return this.parseEndTag();
+      const peaked = this.peak(3).toLowerCase();
+      switch (peaked) {
+        // case '<b=': // Quirk. Ignore
+        case '<b>': return this.parseBold();
+        // case '<i=': // Quirk. Ignore
+        case '<i>': return this.parseItalic();
+      }
+      if (this.peak(5).toLowerCase() === '<size' ) return this.parseSize();
+      if (this.peak(6).toLowerCase() === '<color') return this.parseColor();
+      if (this.peak(2) == '</') return this.parseEndTag();
+
+      if (this.peak(4).toLowerCase() == '<br>') {
+        /** @type {RTLineFeed} */
+        const res = {
+          type: 'line-feed',
+          position: this.currentPos,
+          length: 4,
+          text: '\n',
+        };
+        this.currentPos += 3;
+        return res;
+      }
     };
 
-    if (char === '\n') {
-      const res = {
-        location: this.currentPos,
-        type: 'line-break',
+    if (this.peak(2) === '\\n') {
+      /** @type {RTLineFeed} */
+      const token = {
+        type: 'line-feed',
+        position: this.currentPos,
+        length: 3,
         text: '\n',
       };
-      this.currentPos++;
-      return res;
-    };
-
-    if (char === '\\' && (nextChar === 'n')) {
-      const res = {
-        location: this.currentPos,
-        type: 'line-break',
-        text: '\\n',
-      };
       this.currentPos += 2;
-      return res;
+      return token;
     }
+
     return this.parseText();
-  }
+  };
 
   /**
-   * Parse Unity RichText text
+   * Parse
    * @param {string} source
    */
   parse(source) {
@@ -502,54 +587,62 @@ class URTParser {
       if (next.type === 'eof') break;
       this.root.push(next);
     }
-  }
+  };
+
 
   /**
-   * Render formatted text
-   * @return {string} - Formatted text (in HTML code)
+   * Render source as HTML
+   * @return {string}
    */
   render() {
-    return this.renderTokens(this.root);
+    return this.tokenArrayToHTML(this.root);
   }
 
   /**
-   * Serialize an element array to HTML
-   * @param {object[]} tokens
+   * Collapse an element array to HTML
+   * @param {RTToken[]} tokens
    * @return {string}
-   */
-  renderTokens(tokens) {
-    return tokens.map((c) => this.renderToken(c)).join('');
+  */
+  tokenArrayToHTML(tokens) {
+    if (Array.isArray(tokens)) return this.tokenToHTML(c);
+    else return tokens.map((t) => this.tokenToHTML(t)).join('');
   }
 
   /**
-   * Convert a parsed token to HTML
-   * @param {object} token
+   * Convert a parsed element to HTML
+   * @param {RTToken} node
    * @return {string}
    */
-  renderToken(token) {
+  tokenToHTML(node) {
     let inner;
-    switch (token.type) {
-      case 'bold':
-        return '<b>' + this.renderTokens(token.inner) + '</b>';
-      case 'italic':
-        return '<i>' + this.renderTokens(token.inner) + '</i>';
-      case 'color':
-        inner = this.renderTokens(token.inner);
-        if (token.value === null) return inner;
-        return `<span style="color:${token.value}">` + inner + '</span>';
-      case 'size':
-        inner = this.renderTokens(token.inner);
-        if (token.value === null) return inner;
-        const size = Math.floor(token.value * 4 / 10);
-        return `<span style="font-size:${size}px">` + inner + '</span>';
-      case 'line-break':
-        return '<br>';
-      default:
-        return token.text
-            .replaceAll('&', '&amp;')
-            .replaceAll('<', '&lt;')
-            .replaceAll('>', '&gt;');
+    if (node.type === 'formatted') {
+      switch (node.format) {
+        case 'b': return '<b>' + this.tokenArrayToHTML(node.children) + '</b>';
+        case 'i': return '<i>' + this.tokenArrayToHTML(node.children) + '</i>';
+        case 'color':
+          inner = this.tokenArrayToHTML(node.children);
+          if (node.value === null) {
+            return `<span class="color-reset">` + inner + '</span>';
+          }
+          return `<span style="color:${node.value}">` + inner + '</span>';
+        case 'size':
+          inner = this.tokenArrayToHTML(node.children);
+          if ((node.value === null) || (node.value <= 0)) {
+            return `<span class="size-reset">` + inner + '</span>';
+          }
+          const size = Math.floor(node.value * 4 / 10);
+          return `<span style="font-size:${size}px">` + inner + '</span>';
+      }
     }
+
+    if (node.type === 'line-feed') {
+      return '<br>';
+    }
+
+    return this.escape(node.text)
+        .replaceAll('\t', ' ')
+        .replaceAll('  ', ' &nbsp;')
+    ;
   }
 };
 
@@ -630,15 +723,19 @@ export class URTEditorElement extends HTMLDivElement {
   }
 
   /**
-   * Format the selected text
-   * @param {string} startTag
-   * @param {string} endTag
+   * Format the selected text with a tag
+   * @param {string} tagName - name of the tag
+   * @param {number|string} [value] - value of the tag, if applicable
    */
-  formatText(startTag, endTag) {
+  formatSelectedText(tagName, value) {
+    tagName = tagName.toLowerCase();
+    const startTag = value?`<${tagName}=${value}>`:`<${tagName}>`;
+
     const input = this.bodyInput;
     const selStart = input.selectionStart;
     const selEnd = input.selectionEnd;
     const replaced = input.getSelectionText();
+    const endTag = `</${tagName}>`;
     const inserted = startTag + replaced + endTag;
     this.bodyInput.edit(inserted, selStart, selEnd);
   }
@@ -650,7 +747,7 @@ export class URTEditorElement extends HTMLDivElement {
   setTextColor(e) {
     e.stopPropagation();
     const value = e.target.dataset.value;
-    this.formatText(`<color=${value}>`, '</color>');
+    this.formatSelectedText('color', value);
   }
 
   /**
@@ -660,7 +757,7 @@ export class URTEditorElement extends HTMLDivElement {
   setTextSize(e) {
     e.stopPropagation();
     const value = e.target.dataset.value;
-    this.formatText(`<size=${value}>`, '</size>');
+    this.formatSelectedText('size', value);
   }
 
   /**
@@ -669,7 +766,7 @@ export class URTEditorElement extends HTMLDivElement {
    */
   setBold(e) {
     e.stopPropagation();
-    this.formatText('<b>', '</b>');
+    this.formatSelectedText('b');
   }
 
   /**
@@ -678,7 +775,7 @@ export class URTEditorElement extends HTMLDivElement {
    */
   setItalic(e) {
     e.stopPropagation();
-    this.formatText('<i>', '</i>');
+    this.formatSelectedText('i');
   }
 
   /**
